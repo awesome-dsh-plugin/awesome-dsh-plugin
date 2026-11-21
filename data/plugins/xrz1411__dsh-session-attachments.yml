@@ -1,0 +1,7 @@
+url: https://github.com/xrz1411/dsh-session-attachments
+name: xrz1411/dsh-session-attachments
+category: session
+description:
+  en: Attach another conversation as context by dragging a sidebar session, pasting its ID, or choosing it from the attachment menu.
+  zh: 通过拖动侧栏会话、粘贴会话 ID 或从附件菜单选择，把另一段对话作为上下文发送。
+tarball: https://github.com/xrz1411/dsh-session-attachments/releases/download/v1.2.1/local-session-attachments-1.2.1.tgz

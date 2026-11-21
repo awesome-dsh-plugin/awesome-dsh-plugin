@@ -1,0 +1,6 @@
+url: https://github.com/Ruak/dsh-native-shared-browser
+name: Ruak/dsh-native-shared-browser
+category: browser
+description:
+  en: A native right-sidebar browser tab for DeepSeek Harness where the user and the agent operate the same live Electron webview through a local command queue.
+  zh: 为 DeepSeek Harness 提供右侧栏原生浏览器标签，用户和 agent 通过本地命令队列操作同一个 Electron webview 实时页面。

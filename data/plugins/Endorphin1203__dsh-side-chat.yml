@@ -1,0 +1,6 @@
+url: https://github.com/Endorphin1203/dsh-side-chat
+name: Endorphin1203/dsh-side-chat
+category: session
+description:
+  en: 'Stage several selected excerpts in a draft composer, then ask in a read-only temporary side chat: only read, glob, grep and read_image are allowed, with its own model and reasoning effort; closing the tab archives the session.'
+  zh: '把多次选中的文字攒进草稿区（计数、悬停预览、一键清除），再在只读的临时侧边聊天里追问：只放行 read/glob/grep/read_image，可单独选择模型与推理强度，关闭标签即归档。'

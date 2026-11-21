@@ -1,0 +1,6 @@
+url: https://github.com/WanX609/dsh-codex-model-effort-selector
+name: WanX609/dsh-codex-model-effort-selector
+category: ui
+description:
+  en: 'Codex desktop-style model and reasoning-effort selector: one trigger, one popover, a model list pane and a pixel-replica effort slider, with every provider projected onto the official Off/Low/High/Max ladder.'
+  zh: 'Codex 桌面端风格的「模型 + 推理强度」选择器：单入口双面板，模型列表与像素级复刻的推理强度滑杆；各 provider 的档位统一投影到官方 Off/Low/High/Max 四档。'

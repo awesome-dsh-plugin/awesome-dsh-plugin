@@ -1,0 +1,6 @@
+url: https://github.com/suifei/dsh-pmo-button/tree/main/packages/dsh-pmo-button
+name: suifei/dsh-pmo-button#dsh-pmo-button
+category: agi
+description:
+  en: 'Adds a persistent PMO reviewer subagent to a session: every turn is reviewed and the loop advances with whole-line STATUS: CONTINUE, DONE or NEED_HUMAN verdicts.'
+  zh: '为会话挂载常驻 PMO 审查子代理：每轮工作自动审查，并用整行 STATUS：CONTINUE / DONE / NEED_HUMAN 推进循环。'

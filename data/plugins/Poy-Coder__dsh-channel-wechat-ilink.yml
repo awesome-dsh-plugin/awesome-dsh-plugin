@@ -1,0 +1,6 @@
+url: https://github.com/Poy-Coder/dsh-channel-wechat-ilink
+name: Poy-Coder/dsh-channel-wechat-ilink
+category: remote
+description:
+  en: 'WeChat (iLink / ClawBot) channel: one complete plain-text answer per turn, typing plus staged progress, media both ways, one workspace per channel, and it can run alongside the Feishu channel. Inbound is off until you turn it on; once on, only the logged-in WeChat account (or allowedUsers) can drive it, and channel sessions run under the workspace-write preset unless you change it.'
+  zh: '微信通道（ClawBot / iLink 协议）：一轮一条完整回答、输入中状态与阶段进度、图片文件双向收发，通道独占工作区，可与飞书通道并存。入站默认关闭；开启后只有登录的微信账号（或 allowedUsers 里的人）能驱动它；通道会话默认使用 workspace-write 权限预设（可改）。'

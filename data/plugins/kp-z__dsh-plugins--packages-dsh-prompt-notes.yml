@@ -1,0 +1,6 @@
+url: https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-prompt-notes
+name: kp-z/dsh-plugins#dsh-prompt-notes
+category: skill
+description:
+  en: 'Notes pad in the right sidebar for standing prompts, skills and MCP servers: each note has a scope (all sessions / one workspace / one session) and a pin that switches it on; MCP notes can only be pinned by a human. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '右侧栏的便签簿：管理常驻提示词、技能与 MCP，每张便签有作用域（所有会话 / 一个工作区 / 单个会话）与图钉；MCP 便签只能由人钉住。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

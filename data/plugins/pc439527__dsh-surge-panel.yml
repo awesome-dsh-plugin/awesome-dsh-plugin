@@ -1,0 +1,6 @@
+url: https://github.com/pc439527/dsh-surge-panel
+name: pc439527/dsh-surge-panel
+category: tools
+description:
+  en: 'Read-only Surge HTTP API dashboard with live traffic trends, LAN devices, multiple-instance connection management and per-endpoint diagnostics; discovers local Surge API settings on macOS. It reads your Surge HTTP API (which may listen on 0.0.0.0) and has no DSH access check on its own routes.'
+  zh: '通过 Surge HTTP API 展示实时流量趋势、LAN 设备和逐端点诊断，支持多个实例的连接管理及 macOS 本机 API 配置发现；对 Surge 仅执行只读监控。它读取你的 Surge HTTP API（可能监听 0.0.0.0），且自身路由没有 DSH 的访问检查。'

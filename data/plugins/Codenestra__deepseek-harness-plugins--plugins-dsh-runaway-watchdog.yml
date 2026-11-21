@@ -1,0 +1,7 @@
+url: "https://github.com/Codenestra/deepseek-harness-plugins/tree/main/plugins/dsh-runaway-watchdog"
+name: "Codenestra/deepseek-harness-plugins#dsh-runaway-watchdog"
+category: security
+description:
+  en: "Repeated tool-call detection, error and spend circuit breakers, subagent limits, and audit records."
+  zh: "重复工具调用检测、错误与花费熔断、子代理限制和审计记录。"
+tarball: "https://github.com/Codenestra/deepseek-harness-plugins/releases/download/dsh-runaway-watchdog-v1.2.1/local-dsh-runaway-watchdog-1.2.1.tgz"

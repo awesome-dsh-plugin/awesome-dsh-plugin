@@ -1,0 +1,6 @@
+url: https://github.com/GarinZ/dsh-sidebar-view
+name: GarinZ/dsh-sidebar-view
+category: ui
+description:
+  en: 'Adds time-bucket grouping (pinned, today, yesterday, this week, earlier) and status tabs (all, running, awaiting, unread) to the DSH sidebar, and labels session rows with their workspace in the flat and time views.'
+  zh: 'DSH 侧栏的时间分组视图与状态标签页：置顶、今天、昨天、本周、更早分桶，全部、运行中、待确认、待查看筛选，单列表与按时间视图在每行标出所属工作区。'

@@ -1,0 +1,6 @@
+url: https://github.com/Lornatang/dsh-security-audit
+name: Lornatang/dsh-security-audit
+category: security
+description:
+  en: 'Security-audit skill for DeepSeek Harness: guided reviews, coverage-led codebase audits, structured findings, and report validators.'
+  zh: 'DeepSeek Harness 的安全审查技能：引导式审查、带覆盖账本的全库审计、结构化问题记录和报告校验器。'

@@ -1,0 +1,6 @@
+url: https://github.com/WJPGKZ/dsh-tidal-memory
+name: WJPGKZ/dsh-tidal-memory
+category: memory
+description:
+  en: "Workspace-shared L0-L3 SQLite memory for DeepSeek Harness: FTS5 plus optional local embeddings, evidence-gated recall with source and revision provenance, two-hop source-graph expansion, scene timelines, and private journals kept as Markdown files bound to one main session."
+  zh: "为 DeepSeek Harness 提供按工作区共享的 L0-L3 SQLite 记忆：FTS5 与可选本地嵌入、带来源与修订出处的证据门槛召回、两跳来源图扩展、场景时间线，以及绑定单一主会话的 Markdown 私人日记。"

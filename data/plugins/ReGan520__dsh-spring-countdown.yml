@@ -1,0 +1,7 @@
+url: https://github.com/ReGan520/dsh-spring-countdown
+name: ReGan520/dsh-spring-countdown
+category: ui
+description:
+  en: Adds a countdown entry to the DSH sidebar footer whose panel shows the days to Chinese New Year's Eve and New Year's Day as split-flap cards that flip like an airport board, next to the current date and time, progress through the ongoing Spring Festival cycle and the day index of the holiday, and registers a spring_festival_countdown tool so the model can answer when the holiday starts.
+  zh: 在 DSH 侧栏底部新增「倒计时」入口，面板用翻板牌显示距除夕与正月初一的天数（秒位每秒真翻一次），旁边是当前年月日时分秒、本轮春节进度与假期第几天，另注册 spring_festival_countdown 工具让模型能回答「还有多久过年」。
+icon: https://raw.githubusercontent.com/ReGan520/dsh-spring-countdown/main/assets/icon.png

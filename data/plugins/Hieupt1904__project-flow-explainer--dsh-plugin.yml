@@ -1,0 +1,9 @@
+url: https://github.com/Hieupt1904/project-flow-explainer/tree/main/dsh-plugin
+name: Hieupt1904/project-flow-explainer#dsh-plugin
+category: docs
+description:
+  en: 'Explains a codebase flow as a self-contained offline HTML diagram with file:line evidence, and
+    gives the agent seven code-intelligence tools (index, search, context pack, impact, verify, refresh,
+    flow) plus a /project-flow-explainer slash command. Static analysis only: it never runs the target
+    repository and makes no network calls.'
+  zh: '把代码库的流程讲解成自包含的离线 HTML 图示，并附 file:line 证据。'

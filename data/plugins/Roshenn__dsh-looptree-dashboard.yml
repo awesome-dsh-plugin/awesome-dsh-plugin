@@ -1,0 +1,6 @@
+url: https://github.com/Roshenn/dsh-looptree-dashboard
+name: Roshenn/dsh-looptree-dashboard
+category: workflow
+description:
+  en: 'Milestone dashboard that keeps a project''s intent on disk next to the code: one swimlane per project showing project vision → milestone → capability → execution records, a candidate-capability pool with reasoning, per-node structured prompts previewed before they are sent, DSH sessions launched from the node that needs them with plan/execute/reflect loops, and the live status of the dev services behind the project. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把项目意图存到代码旁边的里程碑看板：每个项目一条泳道，展示项目愿景 → 里程碑 → 能力 → 执行记录，含带推理的候选能力池、发送前可预览的节点结构化提示词、从需要它的节点发起 DSH 会话并走计划/执行/反思闭环，以及后台开发服务的实时状态。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

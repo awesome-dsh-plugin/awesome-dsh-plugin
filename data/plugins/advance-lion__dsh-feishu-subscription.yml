@@ -1,0 +1,7 @@
+url: https://github.com/advance-lion/dsh-feishu-subscription
+name: advance-lion/dsh-feishu-subscription
+category: model
+description:
+  en: Feishu sign-in provider for Doubao Work enterprise models in DSH, with streaming text, account switching, usage details and optional task archiving.
+  zh: 通过飞书账号在 DSH 中使用豆包工作的企业订阅模型，支持流式文本、账号切换、用量明细与可选任务归档。
+tarball: https://github.com/advance-lion/dsh-feishu-subscription/releases/download/v0.4.0/dsh-feishu-subscription-0.4.0.tgz

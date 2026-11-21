@@ -1,0 +1,6 @@
+url: https://github.com/aXYer-SI/dsh-source-catalog
+name: aXYer-SI/dsh-source-catalog
+category: docs
+description:
+  en: 'Scans past DSH sessions and writes a bilingual catalogue of the tools and data sources they used, one category per row, with pros and cons and an openable URL.'
+  zh: '扫描 DSH 历史会话，把用过的工具与数据源整理成中英双语清单（每行一个类别，含优缺点与可直接打开的网址）。'

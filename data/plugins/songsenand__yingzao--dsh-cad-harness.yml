@@ -1,0 +1,6 @@
+url: https://github.com/songsenand/yingzao/tree/main/dsh-cad-harness
+name: songsenand/yingzao#dsh-cad-harness
+category: tools
+description:
+  en: 'A dsh plugin for mechanical CAD, where the agent generates and the plugin closes the loop — fit, motion and manufacturability checked before you accept a model, with the final call left to you.'
+  zh: 'dsh 的机械 CAD 插件：Agent 负责生成，插件负责闭环——验收前做配合、运动与可制造性检查，最终判断留给你。'

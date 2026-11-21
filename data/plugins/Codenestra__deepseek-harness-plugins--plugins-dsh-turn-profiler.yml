@@ -1,0 +1,7 @@
+url: "https://github.com/Codenestra/deepseek-harness-plugins/tree/main/plugins/dsh-turn-profiler"
+name: "Codenestra/deepseek-harness-plugins#dsh-turn-profiler"
+category: usage
+description:
+  en: "Per-turn latency waterfalls, live timing, token and prompt-cache diagnostics, and JSON export."
+  zh: "逐轮时延瀑布图、实时计时、Token 与提示缓存诊断，以及 JSON 导出。"
+tarball: "https://github.com/Codenestra/deepseek-harness-plugins/releases/download/v0.1.0/local-dsh-turn-profiler-0.1.0.tgz"

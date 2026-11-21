@@ -1,0 +1,7 @@
+url: https://github.com/ZSQS88/dsh-model-switcher-pro
+name: ZSQS88/dsh-model-switcher-pro
+category: model
+description:
+  en: Composer model picker with searchable providers and grouped fuzzy model search, plus a reasoning-effort slider with named tiers, magnetic detents, a damped drag glide, per-tier colors, and dark/light themes. Optional host-composer restyle is off by default.
+  zh: 对话输入区的模型选择器：可搜索服务商、分组模糊搜索模型，旁置推理强度滑条（命名档位、磁吸刻度、阻尼滑行、每档配色、暗/亮主题）；宿主输入框重绘可选、默认关闭。
+tarball: https://github.com/ZSQS88/dsh-model-switcher-pro/releases/latest/download/dsh-model-switcher-pro.tgz

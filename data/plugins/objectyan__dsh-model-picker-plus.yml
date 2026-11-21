@@ -1,0 +1,9 @@
+url: https://github.com/objectyan/dsh-model-picker-plus
+name: objectyan/dsh-model-picker-plus
+category: model
+description:
+  en: 'Replaces the composer model dropdown with a searchable, provider-grouped model library: a global search bar, a left sidebar of fixed views and all providers, and a right pane of models that opens on the current model provider, with capability filters, favorites, recents, usage sorting, and automatic rendering of official model-menu options such as the agent-team switch.'
+  zh: 把输入框的模型下拉换成可搜索、按厂家分组的模型库：顶部全局搜索、左栏固定视图与全部厂家、右栏模型列表并在打开时定位到当前模型的厂家，支持能力筛选、收藏、最近使用、用量排序，并自动渲染官方模型菜单选项（如智能体团队协作开关）。
+# icon 可选：需为 GitHub 托管的方形位图（png/jpg/webp），省略则回退到作者头像。
+# 本仓库暂未提供 96px 方形位图图标，故先省略；如日后添加可按下方格式补上。
+# icon: https://raw.githubusercontent.com/objectyan/dsh-model-picker-plus/main/assets/icon-180.png

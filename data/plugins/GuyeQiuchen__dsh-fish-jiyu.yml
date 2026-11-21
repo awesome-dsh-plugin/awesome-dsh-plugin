@@ -1,0 +1,6 @@
+url: https://github.com/GuyeQiuchen/dsh-fish-jiyu
+name: GuyeQiuchen/dsh-fish-jiyu
+category: session
+description:
+  en: 'Linear-projection context compaction: near history stays verbatim, mid history becomes one fact line per block, far history keeps only keywords plus seq pointers. Every projection is rebuilt from the raw session log, so it never accumulates no matter how often it runs; anything cut stays recallable by seq or keyword.'
+  zh: '线性投影压缩：近段保留原文、中段每块一条事实行、远段只留关键词加 seq 指针。每次投影都从会话原始日志重建，压多少次都不会变重；压掉的内容可按 seq 或关键词取回。'

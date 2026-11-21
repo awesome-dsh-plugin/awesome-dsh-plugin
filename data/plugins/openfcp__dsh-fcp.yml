@@ -1,0 +1,6 @@
+url: https://github.com/openfcp/dsh-fcp
+name: openfcp/dsh-fcp
+category: workflow
+description:
+  en: 'A financial consumer-protection workbench in the DSH sidebar: six expert personas dispatched by keyword or picked manually, a skill catalog aligned with dsh-financial-skills v0.2.3 that installs skills for real into the shared <DSH_HOME>/skills directory with immediate, cross-plugin sync, and IMA / Obsidian / local knowledge sources. The input dock shows the full model name, mic, send button and a standard / PTC / minimal / creative mode picker, and requests run straight through without a second click. Local HTTP routes are guarded by loopback, a Host allowlist and same-origin checks. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 侧栏里的金融消保工作台：六位专家按关键词调度或手动点选；技能页对齐 dsh-financial-skills v0.2.3，技能真实安装到共享 skills 目录，即时生效、跨插件同步；支持 IMA、Obsidian 与本地知识源。输入框展示模型全名、话筒、发送和模式选择（标准 / PTC / 极简 / 创造），需求一键直达流程。本地路由带回环、Host 白名单与同源校验。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

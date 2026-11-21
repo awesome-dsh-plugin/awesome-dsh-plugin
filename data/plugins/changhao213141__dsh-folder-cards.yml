@@ -1,0 +1,6 @@
+url: https://github.com/changhao213141/dsh-folder-cards
+name: changhao213141/dsh-folder-cards
+category: ui
+description:
+  en: 'Turns the sidebar workspace region into 3:4 folder cards, two per row. A card shows a folder glyph and the workspace name, or an image you insert. Clicking a card plays a ripple and opens that folder sessions, with a back button at the top of the list. Ships title and content search, the native session context menu (rename, pin, fork, copy id, archive), an expandable archived section, and sorting by folder order or recent activity. Reads DSH services only and writes no official state; disabling it restores the native list.'
+  zh: '把侧栏「工作区」区换成两列 3:4 竖版文件夹卡片：默认文件夹图标加名称，可给每张卡插入封面图。点卡片以水波过渡进入该文件夹的会话列表，返回按钮在列表最上方。保留标题与正文搜索、原生会话右键菜单（重命名/置顶/分叉/复制 ID/归档）、可展开的已归档区，以及按文件夹顺序/最近活跃排序。只读 DSH 服务、不写官方状态，禁用即还原原生列表。'

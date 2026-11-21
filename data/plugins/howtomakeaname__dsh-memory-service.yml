@@ -1,0 +1,8 @@
+url: https://github.com/howtomakeaname/dsh-memory-service
+name: howtomakeaname/dsh-memory-service
+category: memory
+icon: https://raw.githubusercontent.com/howtomakeaname/dsh-memory-service/main/docs/assets/icon-180.png
+tarball: https://github.com/howtomakeaname/dsh-memory-service/releases/download/v0.2.0/dsh-memory-service-0.2.0.tgz
+description:
+  en: "File-native long-term memory for DSH sessions: Markdown notes, SQLite FTS5 recall, workspace/global scopes, revision conflict handling, and Claude Code import."
+  zh: "为 DSH 会话提供文件原生的长期记忆：Markdown 笔记、SQLite FTS5 召回、workspace/global 作用域、版本冲突处理和 Claude Code 导入。"

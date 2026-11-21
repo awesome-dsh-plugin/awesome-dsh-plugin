@@ -1,0 +1,7 @@
+url: https://github.com/danielcy/dsh-fast-reply
+name: danielcy/dsh-fast-reply
+category: ui
+description:
+  en: 'Adds a quick-reply button to the composer toolbar: pick a saved snippet to insert at the cursor, and add, edit or delete replies in the same panel. Replies are stored in the browser and can contain skill references such as @dsh-doc.'
+  zh: '在输入框工具栏加一个快捷回复按钮：选择一个已保存的片段插入到光标处，并可在同一面板中新增、编辑、删除回复。回复保存在浏览器本地存储中，内容可包含 @dsh-doc 这类技能引用。'
+icon: https://raw.githubusercontent.com/danielcy/dsh-fast-reply/main/assets/icon-180.png

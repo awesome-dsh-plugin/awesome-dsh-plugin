@@ -1,0 +1,6 @@
+url: https://github.com/EricStoneChina/better-auto-review
+name: EricStoneChina/better-auto-review
+category: security
+description:
+  en: 'Codex-style auto-review for sandbox escalation: the auto-mode preset takes over the Claude-style Auto button and becomes the new-session default, keeping workspace-write, while a read-only spawn reviewer returns structured verdicts under per-turn budgets and a denial circuit breaker.'
+  zh: 'Codex 风格的沙箱提权自动审查：auto-mode 预设接管 Claude 样式界面的 Auto 按钮并成为新会话默认档，保留 workspace-write；由只读 spawn 审查子代理在每轮预算和拒绝熔断下返回结构化裁决。'

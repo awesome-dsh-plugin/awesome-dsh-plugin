@@ -1,0 +1,7 @@
+url: https://github.com/Mikajin1206/dsh-glm-quota
+name: Mikajin1206/dsh-glm-quota
+category: usage
+icon: https://raw.githubusercontent.com/Mikajin1206/dsh-glm-quota/main/icon-glm-quota.png
+description:
+  en: "GLM Coding Plan quota, as a glm_quota tool, a left-sidebar panel, an always-visible sidebar footer strip, a settings section and a plugin-page card. Reads /api/monitor/usage/quota/limit from open.bigmodel.cn or api.z.ai and shows the REMAINING allowance (100% untouched, 0% exhausted) for the 5-hour and weekly token windows plus the monthly MCP budget, each with a reset countdown. Parses both upstream shapes: CREDIT_LIMIT with unit 3/6, and TOKENS_LIMIT. The key goes to the DSH credential store, not a config file."
+  zh: "显示 GLM Coding Plan 额度：提供 glm_quota 工具、左侧栏面板、常驻侧边栏底部额度条、设置分区与插件页卡片。请求 open.bigmodel.cn 或 api.z.ai 的 /api/monitor/usage/quota/limit，按剩余额度显示（100% 为未使用，0% 为已用尽），覆盖 5 小时与每周 Token 窗口、每月 MCP 额度，并附重置倒计时；上游 CREDIT_LIMIT（unit 3/6）与 TOKENS_LIMIT 两种形状都能解析。API Key 存入 DSH 凭据库，不写入配置文件。"

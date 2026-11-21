@@ -1,0 +1,6 @@
+url: https://github.com/LYXDSG/dsh-mcp-cost
+name: LYXDSG/dsh-mcp-cost
+category: tools
+description:
+  en: 'MCP cost panel for DeepSeek Harness: lists every MCP server in the current profile from a sidebar entry and a settings tab, toggles each one hot through DSH''s own plugin manager (no restart), shows the runtime phase and startup failure text, supports batch disable and restore, and estimates the input tokens each server adds with a real tools/list probe. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DSH 的 MCP 成本面板：侧边栏入口与设置标签页列出当前 profile 的所有 MCP 服务器，经 DSH 自己的插件管理器热启停（不用重启），显示运行态与启动失败原文，支持批量全关与恢复，并真做一次 tools/list 握手来估算每个服务器每轮要花多少输入 token。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

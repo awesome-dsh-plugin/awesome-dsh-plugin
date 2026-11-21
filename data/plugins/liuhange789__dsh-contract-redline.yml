@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-contract-redline
+name: liuhange789/dsh-contract-redline
+category: tools
+description:
+  en: 'Contract risk quick-scan for small businesses: paste a procurement / supply, lease or service contract and get a checklist of high-risk clauses, unbalanced obligations and missing key clauses, each with a short excerpt and a plain-language reason. Rule-based and local-only; no OCR, no network, no legal advice — it never says whether to sign or whether the contract is valid.'
+  zh: "合同风险速查：粘贴采购/租赁/服务合同全文，逐条扫描出高风险条款、权利义务不对等条款与缺失的关键条款，每条附原文摘录和一句白话解释。纯规则匹配、本地处理，不联网、不做 OCR；只提示条款风险，不出具法律意见，不判断合同是否有效，也不建议签或不签。"

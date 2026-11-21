@@ -1,0 +1,7 @@
+url: https://github.com/ChengruiLabs/dsh-standup-clockoff-reminder
+name: ChengruiLabs/dsh-standup-clockoff-reminder
+category: ui
+description:
+  en: 'A desk cat that counts down to clock-off and nudges you to stand up, with break mode, chime and background notifications.'
+  zh: '工位小猫：下班倒计时与久坐起身提醒，支持休息模式、提示音和后台通知。'
+icon: https://raw.githubusercontent.com/ChengruiLabs/dsh-standup-clockoff-reminder/main/assets/icon-180.png

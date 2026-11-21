@@ -1,0 +1,7 @@
+url: https://github.com/myhylijp/my-dsh-message-search
+name: myhylijp/my-dsh-message-search
+category: session
+description:
+  en: 'Message search across sessions: Ctrl+F to search message bodies in the current session, one workspace, or every session.'
+  zh: '跨会话消息检索：Ctrl+F 打开，可按当前会话、工作区或全部会话检索消息正文。'
+icon: https://raw.githubusercontent.com/myhylijp/my-dsh-message-search/main/assets/icon-180.png

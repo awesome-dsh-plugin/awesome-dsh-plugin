@@ -1,0 +1,7 @@
+url: https://github.com/ExTetragon/dsh-illuminating-skin
+name: ExTetragon/dsh-illuminating-skin
+category: theme
+description:
+  en: 'Frosted-glass theme with six customizable titlebar glow presets, tinted cards, translucent popovers, and Google Sans typography across standalone, claude-style, and ds-bot modes.'
+  zh: '卡片风格简约毛玻璃主题：内置六色可自定义标题栏顶光、彩色卡片开关、磨砂浮层与 Google Sans 字体排版，支持独立模式、dsh-claude-style 与 ds-bot。'
+# icon: https://raw.githubusercontent.com/ExTetragon/dsh-illuminating-skin/main/assets/icon.png

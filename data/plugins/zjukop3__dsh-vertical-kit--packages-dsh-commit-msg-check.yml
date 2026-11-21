@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-commit-msg-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-commit-msg-check'
+category: 'tools'
+description:
+  en: 'Commit-message hygiene from a single message: a type prefix from a known set, a subject that fits a git log line, no trailing period, a blank line before the body, and breaking changes announced in a trailer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '提交信息的形状检查：类型前缀、主题不超过 git log 折行处、标题不写句号、正文前有空格、破坏性变更用 BREAKING CHANGE trailer。单文件判定，可直接挂 commit-msg 钩子。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

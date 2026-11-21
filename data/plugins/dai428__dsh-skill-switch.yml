@@ -1,0 +1,7 @@
+url: https://github.com/dai428/dsh-skill-switch
+name: dai428/dsh-skill-switch
+category: skill
+description:
+  en: 'Switch a skill on for every reply in one session at a chosen level, without changing any SKILL.md file.'
+  zh: '在会话里把一个技能按选定挡位常驻开启，让每次回答自动生效，且不改动任何 SKILL.md 文件。'
+icon: https://raw.githubusercontent.com/dai428/dsh-skill-switch/main/assets/icon-180.png

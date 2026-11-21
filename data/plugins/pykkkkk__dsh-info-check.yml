@@ -1,0 +1,6 @@
+url: https://github.com/pykkkkk/dsh-info-check
+name: pykkkkk/dsh-info-check
+category: workflow
+description:
+  en: An engineering-contract workflow for DSH with a task book, CNY budget sign-off, per-milestone acceptance and budget review, delivery, and settlement.
+  zh: 把 DSH 任务变成一份工程合同：任务书、人民币预算签约、逐里程碑验收与预算审核、交付和结算。

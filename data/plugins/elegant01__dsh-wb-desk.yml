@@ -1,0 +1,7 @@
+url: https://github.com/elegant01/dsh-wb-desk
+name: elegant01/dsh-wb-desk
+category: docs
+icon: https://raw.githubusercontent.com/elegant01/dsh-wb-desk/main/assets/icon.png
+description:
+  en: 'Agent artifact library: new files land in the library automatically, edits to existing files wait in a pending queue for confirmation, and reads pin the version the agent saw. Ships an artifacts index built from session logs, a text and code preview with in-document search, and optional two-way mirroring to Tencent COS, S3-compatible storage or WebDAV with COS pre-signed share links. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Agent 产物资料库：新建文件自动落位、修改已有文件先进「待确认」队列、读取时固定版本；附带从会话日志汇总的本地产物索引、带文档内搜索的文本与代码预览，以及可选的腾讯云 COS / S3 兼容存储 / WebDAV 双向镜像与 COS 预签名分享链接。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

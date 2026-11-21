@@ -1,0 +1,7 @@
+url: https://github.com/Merziller/dsh-video-workbench
+name: Merziller/dsh-video-workbench
+category: tools
+description:
+  en: 'Universal Multi-Agent AI Video Studio (v0.4.0 — DSH / Claude Code / Codex CLI / WorkBuddy / Cursor / Standalone Browser): 29 MCP & Cordis tools, Remotion 4.x TSX + Three.js 3D & HTML5 dual engines, Reference Video Deep Reverse-Engineering & Same-Style Remake (MOTION.md + Brand Kit), high-energy beat-synced silhouette/combat historical animation (34–54 shots, NarrativeDioramaStage + SlashBurstOverlay + beat SFX), optional one-click local TTS installer (Edge-TTS 0GB / IndexTTS-2.5 / GPT-SoVITS with auto voices/ seeding & UTF-8 fix), customizable duration (15–600s), 10-min async AI polish, and low-spec protection (Original Author: Merziller | QQ: 1411574209 | WeChat: Merziller | k26789228@gmail.com).'
+  zh: '全智能体通用双引擎 AI 视频工作台 (v0.4.0 — 同时支持 DSH / Claude Code / Codex / WorkBuddy / Cursor / 独立网页)：集成 29 个 MCP & Cordis 工具、Remotion 4.x TSX + Three.js 3D 与 HTML5 双引擎、参考视频上传深度拆解与同款复刻（自动探测镜头切点/BPM/9宫格多模态视觉基因并生成 MOTION.md 与品牌套件）、高燃历史剪影/骑兵/刀光/地图/竹简卡点动画与 34~54 镜纯音乐快剪节奏、可选本地配音一键依赖安装器（Edge-TTS 0GB / IndexTTS-2.5 / GPT-SoVITS，自动补齐 voices 目录与默认参考音并修复中文报错乱码）、自定义时长与 10 分钟异步 AI 润色及低配电脑保护（原创作者 Merziller｜QQ：1411574209｜微信：Merziller｜Email：k26789228@gmail.com）。'
+tarball: https://github.com/Merziller/dsh-video-workbench/releases/download/v0.4.0/dsh-video-workbench-0.4.0.tgz

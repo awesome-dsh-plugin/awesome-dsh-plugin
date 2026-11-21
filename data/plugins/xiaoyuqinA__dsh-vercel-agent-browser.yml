@@ -1,0 +1,6 @@
+url: https://github.com/xiaoyuqinA/dsh-vercel-agent-browser
+name: xiaoyuqinA/dsh-vercel-agent-browser
+category: browser
+description:
+  en: 'Connects Vercel agent-browser to DeepSeek Harness via MCP, giving the agent core and mobile browser automation tools with zero manual setup.'
+  zh: '通过 MCP 将 Vercel agent-browser 接入 DeepSeek Harness，为 agent 提供桌面与移动端浏览器自动化工具，零配置即用。'

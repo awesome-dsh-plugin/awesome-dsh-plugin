@@ -1,0 +1,8 @@
+url: https://github.com/stallenlu/dsh-research-desk
+name: stallenlu/dsh-research-desk
+category: tools
+tarball: https://github.com/stallenlu/dsh-research-desk/releases/download/v0.3.3/dsh-research-desk-0.3.3.tgz
+description:
+  en: 'Adds a research desk inside DSH: searches arXiv, Europe PMC and OpenAlex without an API key, keeps a paper library with full text, answers questions with citations checked verbatim against the source paragraph, writes hypotheses and drafts, produces a multi-perspective review with five viewpoints, runs user-supplied Python or Node scripts in a restricted working directory for verification, and exports the library to Markdown, BibTeX or JSON.'
+  zh: '在 DSH 内提供科研工作台：免密钥检索 arXiv、Europe PMC 与 OpenAlex，保存文献库与全文，提问时逐条比对原文校验引用，再生成选题假设与草稿，按五个视角产出多视角综述，在受限工作目录内运行用户提供的 Python 或 Node 脚本做验证计算，并把文献库导出为 Markdown、BibTeX 或 JSON。'
+icon: https://raw.githubusercontent.com/stallenlu/dsh-research-desk/main/assets/icon-180.png

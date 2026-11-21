@@ -1,0 +1,7 @@
+url: https://github.com/you112358/dsh-cache-cleaner
+name: you112358/dsh-cache-cleaner
+category: tools
+description:
+  en: 'Finds and removes rebuildable DeepSeek Harness caches — core caches, temp spill, desktop client caches and plugin caches discovered from the active profile — from a settings page, two agent tools (cache_scan, cache_clean) and an authenticated HTTP route, with a per-target age filter that can keep recently written entries.'
+  zh: '扫描并清理 DeepSeek Harness 的可重建缓存——本体缓存、临时文件、桌面客户端缓存，以及从当前 Profile 自动发现的插件缓存——提供设置页、两个 agent 工具（cache_scan、cache_clean）与鉴权 HTTP 路由，可按目标设置时间过滤，保留最近产生的缓存。'
+icon: https://raw.githubusercontent.com/you112358/dsh-cache-cleaner/main/assets/icon-180.png

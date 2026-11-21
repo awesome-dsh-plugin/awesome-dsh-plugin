@@ -1,6 +1,7 @@
 url: https://github.com/STARDUSTLC666/dsh-cite
 name: STARDUSTLC666/dsh-cite
 category: tools
+icon: https://raw.githubusercontent.com/STARDUSTLC666/dsh-cite/master/assets/plugin-icon.webp
 description:
-  en: 'Citation tools for agents: exact DOI lookup, Crossref bibliographic search, GB/T 7714 / APA / MLA / Chicago formatting, BibTeX generation, bounded-concurrency DOI validation and health self-check. A step-by-step first-run guide (3 steps) now opens inside its settings panel.'
-  zh: 参考文献工具：DOI 精确查询与 Crossref 题录检索，GB/T 7714 / APA / MLA / Chicago 格式化，BibTeX 生成、有界并发 DOI 校验与健康自检。面板内置 3 步首次使用引导，看一次后不再出现。
+  en: 'Three-column citation workbench and 6 cite_* tools (lookup/format/bibtex/check/batch/health): local DOI/BibTeX import preview with duplicate and missing-field checks, Crossref DOI verification and empty-field backfill with diff view, GB/T 7714 / APA / MLA / Chicago formatting, BibTeX and raw-source JSON backup export, and 5 switchable workbench themes.'
+  zh: '三栏引文工作台与 6 个 cite_* 工具（lookup/format/bibtex/check/batch/health）：支持 DOI/BibTeX 本地导入去重与缺项预览、Crossref 真实性核查与空字段差异补全、GB/T 7714 / APA / MLA / Chicago 排版复制、BibTeX 与含原始来源的 JSON 备份导出及 5 套工作台主题。'

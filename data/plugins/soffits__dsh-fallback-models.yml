@@ -1,0 +1,6 @@
+url: https://github.com/soffits/dsh-fallback-models
+name: soffits/dsh-fallback-models
+category: model
+description:
+  en: 'Continues a turn on the next model in an ordered list when a request still fails after the built-in retries (rate limit, outage, used-up quota) or the model refuses to answer. Lists can differ per agent preset, each switch shows a banner in the conversation, and switches can also be sent through another plugin''s message service.'
+  zh: '请求在内置重试后仍失败（限流、故障、额度用尽）或模型拒绝回答时，自动换到有序列表里的下一个模型继续这一轮。列表可按 agent 预设区分，每次切换在会话里显示横幅，也可经其他插件的消息服务发出。'

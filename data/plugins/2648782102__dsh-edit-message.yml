@@ -1,0 +1,7 @@
+url: https://github.com/2648782102/dsh-edit-message
+name: 2648782102/dsh-edit-message
+category: ui
+description:
+  en: 'Edits one of your own messages and resends it on a new branch, including while the reply is still streaming; the running reply stops and the replaced conversation is archived, not deleted.'
+  zh: '编辑自己的消息并在新分支中重发，回复过程中也能改（会先停止当前回复，被替换的对话归档而非删除）。'
+icon: https://raw.githubusercontent.com/2648782102/dsh-edit-message/main/assets/icon-180.png

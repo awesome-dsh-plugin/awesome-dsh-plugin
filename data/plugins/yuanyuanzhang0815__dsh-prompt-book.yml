@@ -1,0 +1,6 @@
+url: https://github.com/yuanyuanzhang0815/dsh-prompt-book
+name: yuanyuanzhang0815/dsh-prompt-book
+category: ui
+description:
+  en: 'Prompt presets in the composer tool row: pick one and it is inserted at the caret with focus returned to the input. Rows can be edited in place, added, deleted with undo, and reordered by drag.'
+  zh: '输入框工具行的快捷提示词：选中一条即插入到光标处并把焦点交回输入框，可直接回车发送。支持就地编辑、新增、带撤销的删除、拖拽排序。'

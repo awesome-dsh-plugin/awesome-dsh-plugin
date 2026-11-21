@@ -1,0 +1,7 @@
+url: https://github.com/dhr2333/dsh-ledger
+name: dhr2333/dsh-ledger
+category: tools
+description:
+  en: Local plain-text Beancount ledger panel with reconciliation and an approval-only draft queue; ships an offline Python engine.
+  zh: 本地纯文本 Beancount 账本面板：对账闭环，草稿只能审批不能直写，并随插件自带离线 Python 引擎。
+icon: https://raw.githubusercontent.com/dhr2333/dsh-ledger/main/assets/icon-180.png

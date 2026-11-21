@@ -1,0 +1,7 @@
+url: https://github.com/amoswzw/dsh-macos-menu-bar
+name: amoswzw/dsh-macos-menu-bar
+category: ui
+icon: https://raw.githubusercontent.com/amoswzw/dsh-macos-menu-bar/main/assets/icon-180.png
+description:
+  en: Adds macOS menu bar access to the existing DeepSeek Harness Desktop window, with native approval prompts and optional notch status and approval cards.
+  zh: 将现有 DeepSeek Harness Desktop 窗口接入 macOS 菜单栏，提供原生审批提示，并可选用刘海状态岛和审批卡片。

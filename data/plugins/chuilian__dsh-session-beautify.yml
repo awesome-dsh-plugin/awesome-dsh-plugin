@@ -1,0 +1,7 @@
+url: https://github.com/chuilian/dsh-session-beautify
+name: chuilian/dsh-session-beautify
+category: ui
+icon: https://raw.githubusercontent.com/chuilian/dsh-session-beautify/main/assets/icon-180.png
+description:
+  en: 'Per-row appearance for the DSH sidebar: right-click a session or a workspace to set the colour, text glow, font weight and text shadow of its title. Each row keeps its own style, stored in the browser, and the host''s own row elements are styled rather than a sidebar replacement.'
+  zh: '给 DSH 侧栏的每一行单独设置外观：右键会话行或工作区行，即可设置它的标题颜色、文字发光、字体粗细与文字阴影。每行样式各存各的、留在浏览器本地；插件改的是宿主自己的行元素，而不是替换整个侧栏。'

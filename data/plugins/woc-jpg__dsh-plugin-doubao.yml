@@ -1,0 +1,6 @@
+url: https://github.com/woc-jpg/dsh-plugin-doubao
+name: woc-jpg/dsh-plugin-doubao
+category: model
+description:
+  en: 'Adds a Doubao model provider to DeepSeek Harness with QR sign-in, twelve selectable models, a live credit panel and prompt-bridged tool calls. Sign-in requires a Doubao desktop client signed in once on the same machine for the device fingerprint, and a scan with the Douyin app. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 DeepSeek Harness 增加豆包模型 provider：扫码登录、12 个可选模型、实时额度面板与 prompt 桥接的工具调用。登录需同一台机器上曾登录过的豆包桌面客户端提供设备指纹，并用抖音 App 扫码。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

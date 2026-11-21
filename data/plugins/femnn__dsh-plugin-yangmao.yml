@@ -1,0 +1,7 @@
+url: https://github.com/femnn/dsh-plugin-yangmao
+name: femnn/dsh-plugin-yangmao
+category: tools
+tarball: https://github.com/femnn/dsh-plugin-yangmao/releases/download/v0.2.0/dsh-plugin-yangmao-0.2.0.tgz
+description:
+  en: 'Deals board for DeepSeek Harness: 255 seeded deals plus radar and free-token boards, seven agent tools, a full-page sidebar panel, and a refresh skill that verifies amounts and thresholds against official sources only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '薅羊毛情报看板：255 条种子优惠，另有雷达、免费 Token 两个副榜；七个智能体工具、侧边栏整页看板页，以及金额与门槛只认官方来源的复核技能。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

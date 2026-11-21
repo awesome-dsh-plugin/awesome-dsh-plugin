@@ -1,0 +1,7 @@
+url: https://github.com/elias-didoo/dsh-agent-pipeline
+name: elias-didoo/dsh-agent-pipeline
+category: workflow
+description:
+  en: 'Fixed review pipelines for a workspace: each step fires when the agent finishes the last one, and the flow pauses only where you said it should.'
+  zh: '给工作区配固定评审流程：agent 做完上一步就自动发出下一步，只在你指定的地方停下来等你。'
+tarball: https://github.com/elias-didoo/dsh-agent-pipeline/releases/download/v0.1.0/dsh-agent-pipeline-0.1.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/yunhai89/dsh-clawbot
+name: yunhai89/dsh-clawbot
+category: remote
+description:
+  en: 'WeChat ClawBot (Tencent iLink) channel for DeepSeek Harness: QR login in the DSH Web UI, one persistent DSH Session per WeChat user, conversation/model/workspace commands, and tool approvals forwarded to WeChat. It embeds Tencent''s official openclaw-weixin plugin through an OpenClaw host compatibility layer instead of reimplementing the WeChat protocol.'
+  zh: '把微信 ClawBot（腾讯 iLink）接入 DeepSeek Harness：在 DSH Web 里扫码登录，每个微信用户一个持久 DSH 会话，支持会话/模型/工作区指令，并把工具审批转发到微信。它通过 OpenClaw 宿主兼容层嵌入腾讯官方 openclaw-weixin 插件，而不是重写微信协议。'

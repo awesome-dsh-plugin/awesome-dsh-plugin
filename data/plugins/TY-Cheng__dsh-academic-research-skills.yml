@@ -1,0 +1,6 @@
+url: https://github.com/TY-Cheng/dsh-academic-research-skills
+name: TY-Cheng/dsh-academic-research-skills
+category: skill
+description:
+  en: 'Community-maintained ARS port for DeepSeek Harness with research and writing skills, native Team review and pipeline workflows, and workspace-scoped status and integrity tools.'
+  zh: '面向 DeepSeek Harness 的社区维护版 ARS 移植，提供文献研究与写作技能、原生 Team 评审和论文流程，以及限于会话工作区的状态与完整性工具。'

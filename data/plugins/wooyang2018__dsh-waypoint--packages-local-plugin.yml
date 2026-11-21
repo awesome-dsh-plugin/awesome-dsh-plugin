@@ -1,0 +1,8 @@
+url: https://github.com/wooyang2018/dsh-waypoint/tree/main/packages/local-plugin
+name: wooyang2018/dsh-waypoint#packages/local-plugin
+category: remote
+description:
+  en: 'SSH remote development for DSH: register hosts, mirror their remote Sessions into the sidebar, and use the terminal and files over one tunnel.'
+  zh: '把 SSH 主机接入 DSH：登记主机、把远端 Session 镜像进侧边栏，并经单一隧道使用远端终端与文件。'
+icon: https://raw.githubusercontent.com/wooyang2018/dsh-waypoint/main/packages/local-plugin/icon-180.png
+tarball: https://github.com/wooyang2018/dsh-waypoint/releases/latest/download/dsh-waypoint.tgz

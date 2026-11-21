@@ -1,0 +1,6 @@
+url: https://github.com/wangyz911/dsh-deferred-ask
+name: wangyz911/dsh-deferred-ask
+category: workflow
+description:
+  en: 'Queues questions written in the composer and sends them only while DeepSeek bills at off-peak rates. Delivery is driven by a 30-second clock check rather than a pre-scheduled trigger, so a question missed while the app was closed is not released into the peak window. Up to 50 queued items, localStorage persistence, retry with exponential backoff, and a send-now button that pays the peak price.'
+  zh: '把输入框里的问题排进队列，只在 DeepSeek 低谷计价时段（半价）发出。投递由每 30 秒一次的时钟检查驱动，而不是预先排定触发时间，因此应用关闭期间错过的问题不会被补投进高峰。最多 50 条、localStorage 持久化、失败指数退避重试，也可按高峰价立即发送。'

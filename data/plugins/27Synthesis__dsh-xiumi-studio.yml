@@ -1,0 +1,7 @@
+url: https://github.com/27Synthesis/dsh-xiumi-studio
+name: 27Synthesis/dsh-xiumi-studio
+category: docs
+tarball: https://github.com/27Synthesis/dsh-xiumi-studio/releases/download/v0.1.0/dsh-xiumi-studio-0.1.0.tgz
+description:
+  en: 'Turns a Word manuscript and its images into a laid-out WeChat article: live preview panel, filling the text and photos into an existing Xiumi template, generated covers, and publishing into the user''s own Xiumi article library. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 Word 文稿与配图排成公众号图文：右侧栏实时预览，可把文字与图片灌进秀米已有的模板，生成封面，并发布到账号自己的「我的图文」。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

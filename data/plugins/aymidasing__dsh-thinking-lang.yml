@@ -1,0 +1,7 @@
+url: https://github.com/aymidasing/dsh-thinking-lang
+name: aymidasing/dsh-thinking-lang
+category: session
+description:
+  en: 'Adds a Thinking language picker to Settings → General and injects a rule so the agent reasons in Simplified Chinese, Traditional Chinese or English: the rule is written in the selected language and reminded once per turn. Requires DSH 0.2.0-rc.2 or newer; those three languages only.'
+  zh: '在设置 → 通用中新增「思考语言」选择器，并注入规则让智能体用简体中文、繁體中文或英文思考：规则用所选语言书写，每轮提醒一次。需要 DSH 0.2.0-rc.2 或更新版本；只支持这三种语言。'
+tarball: https://github.com/aymidasing/dsh-thinking-lang/releases/latest/download/dsh-thinking-lang.tgz
