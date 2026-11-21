@@ -1,0 +1,6 @@
+url: https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-session
+name: CoolTea001/dsh-cool-plugins#dsh-cool-session
+category: session
+description:
+  en: 'Session management plugin — adds a delete-session action to the workspace session list menu, and supports managing sessions in bulk (archive, delete) from the Settings panel.'
+  zh: '会话管理插件 —— 工作区会话列表菜单中添加删除会话功能，设置面板中支持批量管理会话（归档、删除）。'

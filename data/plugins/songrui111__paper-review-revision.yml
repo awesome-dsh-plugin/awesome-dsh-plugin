@@ -1,0 +1,7 @@
+url: https://github.com/songrui111/paper-review-revision
+name: songrui111/paper-review-revision
+category: skill
+description:
+  en: 'Adds a four-round review of an engineering or applied-mathematics paper to a DeepSeek Harness session: academic review, line-by-line verification of the maths and theorem proofs, English editing that returns both the original and the revised sentence, and a final pass over the revision against the baseline. Reads multi-file LaTeX projects, DOCX and PDF; every finding keeps a stable ID with its severity, evidence and handling status, and the rounds can run alone or as the full sequence.'
+  zh: '在 DeepSeek Harness 会话里对工程与应用数学论文做四轮审查：学术审查、逐式复核数学推导与定理证明、逐句英文编辑并同时给出原句与改句、以及对照基准稿的修订稿终审。可读多文件 LaTeX 工程、DOCX 与 PDF；每条问题保留稳定编号，并记录严重程度、证据与处理状态；四轮可以单独执行，也可以走完整流程。'
+icon: https://raw.githubusercontent.com/songrui111/paper-review-revision/main/assets/icon.png

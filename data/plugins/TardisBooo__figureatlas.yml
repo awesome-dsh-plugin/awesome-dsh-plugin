@@ -1,0 +1,6 @@
+url: https://github.com/TardisBooo/figureatlas
+name: TardisBooo/figureatlas
+category: skill
+description:
+  en: Figure catalog of 300 verified types for papers, slides, posters, and video frames. Agents pick a figure id and export HTML or SVG.
+  zh: 300 种已截图验证的图鉴，用于论文、幻灯片、海报和视频画面。智能体按图号选取并导出 HTML 或 SVG。

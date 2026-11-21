@@ -1,0 +1,6 @@
+url: https://github.com/Liatos233/dsh-session-status-filter
+name: Liatos233/dsh-session-status-filter
+category: ui
+description:
+  en: Adds a chip row under the workspace toolbar that filters sessions by Running, Needs confirmation, or Unread, listing every matching session with its workspace, title and age so a click opens it. Each session row also gets a status dot.
+  zh: 在工作区工具栏下方加一排状态 chip，按「运行中 / 待确认 / 未读」筛选会话，列出全部匹配项（工作区·标题·时间）并可直接打开；会话行尾同时显示状态圆点。

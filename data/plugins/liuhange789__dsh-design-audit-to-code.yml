@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-design-audit-to-code
+name: liuhange789/dsh-design-audit-to-code
+category: tools
+description:
+  en: 'Design audit that returns the fix, not advice: Babel parses the pasted JSX/TSX into a real AST, hardcoded hex colours in colour properties and JSX colour props are rewritten to `var(--color-*)` tokens by hue family and lightness band, and the result comes back as a unified diff — edits are spliced into the original source by node offsets, so quotes, indentation and the rest of the file stay untouched. Deprecated components are flagged but never renamed, because an unverified rename compiles and then breaks props; semi-transparent colours are reported without a rewrite. Nothing is written to disk, and nothing is done with regex.'
+  zh: "设计审计直出修复代码：用 Babel 把粘贴的 JSX/TSX 解析成真正的 AST，把颜色属性与 JSX 颜色 prop 里的硬编码十六进制改成 `var(--color-*)` Token（按色相归族、按明度归档），并以 unified diff 返回——改写按节点源码区间拼接，引号、缩进和文件其余部分原样保留。废弃组件只报告不改名（未经核对的重命名能编译通过但会打断 props），半透明颜色只报告不改写。不落盘，也不用正则替换。"

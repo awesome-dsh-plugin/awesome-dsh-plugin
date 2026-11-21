@@ -1,0 +1,6 @@
+url: https://github.com/JiamingShi-JsPhys/3d-fabric
+name: JiamingShi-JsPhys/3d-fabric
+category: tools
+description:
+  en: 'Turns a sentence or an edit into a printable mesh. The local SolidCraft CLI builds the part, and the same set of commands then measures it, renders a snapshot, inspects the mesh and repairs it. Inspection covers winding, degenerate faces and bounds; a part that fails is reported before it reaches the printer instead of after a wasted print.'
+  zh: '把一个句子或一次编辑变成可以打印的网格。本地 SolidCraft CLI 负责建模，随后用同一组命令测量尺寸、生成快照、检查网格并修补。检查项包括绕序、退化面和包围盒，不合格的零件在送去打印之前就会报出来，不必等打印完成才发现。'

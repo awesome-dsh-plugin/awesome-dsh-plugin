@@ -1,0 +1,6 @@
+url: https://github.com/aXYer-SI/dsh-architecture-trace
+name: aXYer-SI/dsh-architecture-trace
+category: dev
+description:
+  en: 'Records a DSH task run as Markdown — the system prompt, request headers, every model call with its streamed answer, tool calls, timings and first-token latency — for reading how one turn is wired and for comparing models.'
+  zh: '把一次 DSH 任务的完整过程记录成 Markdown（系统提示、请求头、每次模型调用与流式回答、工具调用、耗时与首字延迟），用来看清一轮任务如何编组，并横向比较模型。'

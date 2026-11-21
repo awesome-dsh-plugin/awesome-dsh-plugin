@@ -1,0 +1,6 @@
+url: https://github.com/SonettoGu14/dsh-tokeneconomizer/tree/master/packages/facts
+name: SonettoGu14/dsh-tokeneconomizer#packages/facts
+category: memory
+description:
+  en: 'Learns the command forms and environment-variable repairs a repository needs from tool results, and injects at most four of them, once, when a task starts; a fact that stops being exercised is retired again.'
+  zh: '从工具结果里学习该仓库需要的命令形式与环境变量修复，在任务开始时一次性注入至多四条；不再被用到的条目会重新退回淘汰状态。'

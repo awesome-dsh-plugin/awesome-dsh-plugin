@@ -1,0 +1,6 @@
+url: https://github.com/JNGKZbird/dsh-chat-with-deepseek
+name: JNGKZbird/dsh-chat-with-deepseek
+category: ui
+description:
+  en: 'A DeepSeek web-style chat panel for DSH: web search, conversation branching, DeepSeek chat export import and export, and official TTS read-aloud. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 的 DeepSeek 网页风格聊天面板：联网搜索、对话树分支、DeepSeek 聊天导出包的导入导出，以及官方 TTS 朗读。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

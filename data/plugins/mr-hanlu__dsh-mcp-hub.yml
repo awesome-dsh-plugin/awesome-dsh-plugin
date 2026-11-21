@@ -1,0 +1,8 @@
+url: https://github.com/mr-hanlu/dsh-mcp-hub
+name: mr-hanlu/dsh-mcp-hub
+category: ui
+description:
+  en: "Import existing MCP configurations from Claude Code, Claude Desktop, Codex, Cursor, VS Code / Copilot, Copilot CLI, Windsurf, Gemini CLI and OpenCode into DeepSeek Harness, search the official MCP registry, then manage the servers from Settings with connection checks and secrets stored in the DSH credential service."
+  zh: "把 Claude Code、Claude Desktop、Codex、Cursor、VS Code / Copilot、Copilot CLI、Windsurf、Gemini CLI、OpenCode 的 MCP 配置导入 DeepSeek Harness，搜索官方 MCP Registry，并在设置页管理这些服务：保存前验证连接，密钥写入 DSH 凭证服务。"
+icon: https://raw.githubusercontent.com/mr-hanlu/dsh-mcp-hub/main/assets/icon-180.png
+tarball: https://github.com/mr-hanlu/dsh-mcp-hub/releases/latest/download/dsh-mcp-hub.tgz

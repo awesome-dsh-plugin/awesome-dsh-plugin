@@ -1,0 +1,7 @@
+url: https://github.com/Geekhyt/dsh-genui-a2ui
+name: Geekhyt/dsh-genui-a2ui
+category: ui
+description:
+  en: 'Google A2UI 1.0 generative UI plugin: streams 57 native components, 19 ECharts chart kinds, Mermaid diagrams, 0ms Chart-Table cross-filtering, and blocking approval cards inline in chat.'
+  zh: 'Google A2UI 1.0 生成式界面插件：在对话内流式渲染 57 种原生交互组件、19 类 ECharts 图表、Mermaid 流程图、图表与表格 0ms 交叉筛选及回合内阻塞确认卡。'
+icon: https://raw.githubusercontent.com/Geekhyt/dsh-genui-a2ui/main/assets/icon-180.png

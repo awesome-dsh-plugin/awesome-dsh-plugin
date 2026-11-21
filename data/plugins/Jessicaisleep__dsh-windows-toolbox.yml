@@ -1,0 +1,6 @@
+url: https://github.com/Jessicaisleep/dsh-windows-toolbox
+name: Jessicaisleep/dsh-windows-toolbox
+category: tools
+description:
+  en: 'Windows only. One panel for what runs at startup and what can be cleaned or tuned: 11 kinds of registration points (services, scheduled tasks, autostart entries, shell extensions, installed programs, AppX packages, drivers, firewall rules, IFEO hijacks, file associations, credential providers) plus 25 maintenance capabilities. Every write is a dry run first, the registry key is exported before it changes, and UAC is asked once per session.'
+  zh: '仅 Windows。一个面板管住「开机会跑什么」和「能清什么、能改什么」：11 类注册点（服务、计划任务、开机自启、外壳扩展、已装程序、AppX 包、驱动、防火墙规则、IFEO 劫持、文件关联、凭据提供程序）加 25 项维护能力。所有写操作先预演，动手前导出要改的注册表键，整个会话只弹一次 UAC。'

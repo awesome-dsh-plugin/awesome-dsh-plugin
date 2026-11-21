@@ -1,0 +1,6 @@
+url: https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-file
+name: CoolTea001/dsh-cool-plugins#dsh-cool-file
+category: ui
+description:
+  en: 'File plugin — adds a Files tab to the session tab bar that shows the file tree of the workspace, with preview and editing.'
+  zh: '文件插件 —— 在会话标签栏中新增文件标签页，展示工作区对应的文件树，支持预览/编辑文件。'
