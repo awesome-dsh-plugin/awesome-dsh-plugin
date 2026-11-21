@@ -2,5 +2,5 @@ url: https://github.com/Godward-Bound/dsh-env-doctor
 name: Godward-Bound/dsh-env-doctor
 category: tools
 description:
-  en: One call reports which local ports are listening, how much disk is left, and how much space DSH's `dsh-*` snapshot folders waste under Temp. Read-only, no deps, no network.
-  zh: 一条调用查本机哪些端口在监听、磁盘还剩多少、Temp 下 DSH 的 dsh-* 快照占了多少空间。只读、零依赖、不联网。
+  en: One call reports which local ports are listening, how much disk is left, and how much space DSH's `dsh-*` snapshot folders waste under Temp. Read-only, no deps, no network. Adds a /env slash command (zero tokens) and a once-per-session startup snapshot.
+  zh: 一条调用查本机哪些端口在监听、磁盘还剩多少、Temp 下 DSH 的 dsh-* 快照占了多少空间。只读、零依赖、不联网。带 /env 斜杠命令（不烧 token）与每个新会话一次的开场快照注入。
