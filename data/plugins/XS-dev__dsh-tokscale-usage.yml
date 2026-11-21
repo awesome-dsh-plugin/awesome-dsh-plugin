@@ -1,7 +1,7 @@
 url: https://github.com/XS-dev/dsh-tokscale-usage
 name: XS-dev/dsh-tokscale-usage
 category: usage
-tarball: https://github.com/XS-dev/dsh-tokscale-usage/releases/download/v0.6.0/dsh-tokscale-usage-0.6.0.tgz
+tarball: https://github.com/XS-dev/dsh-tokscale-usage/releases/download/v0.7.0/dsh-tokscale-usage-0.7.0.tgz
 description:
   en: 'Local multi-agent token usage dashboard powered by tokscale and dsh-context: configurable harness scope, unified Antigravity/Codex/DSH daily trends, 8-week heatmap, workspace treemap, and phase timing breakdown, plus /tokscale and tokscale_usage.'
   zh: '基于 tokscale 与 dsh-context 的本机多 Agent 用量洞察面板：支持自定义常用 Harness 范围、Antigravity/Codex/DSH 统一日趋势、8 周热力图、项目工作区矩阵与阶段耗时分解，并提供 /tokscale 命令与 tokscale_usage 工具。'
