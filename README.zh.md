@@ -7731,7 +7731,7 @@ dsh plugin --profile web add dshmarket
 - [yiyunet/dsh-dingtalk-connector](https://github.com/yiyunet/dsh-dingtalk-connector) — DSH 插件：包装钉钉官方 dws CLI，读写钉钉 AI 表格，提供 10 个钉钉 AI 表格工具（9 个 `dingtalk_aitable_*` 加 1 个 `dingtalk_sync_job`）、设置面板与定时 CSV 导出。
 - [yiyunet/dsh-mcp-client-manager](https://github.com/yiyunet/dsh-mcp-client-manager) — DSH 插件：一块设置面板管理 @deepseek-ai/dsh-mcp-client 的 MCP 行——列出、新增、改写、启停，不必再手写 cordis.patch.yml；零构建、零运行依赖。
 - [yjl9903/AnimeGarden#dsh](https://github.com/yjl9903/AnimeGarden/tree/main/plugins/dsh) — Anime Garden 的 DSH 插件：在 DSH 内搜索来自動漫花園、蜜柑计划、萌番组和 ANi 的动画 BT 资源——支持对话搜索、按字幕组和类型筛选的侧边栏面板、新番周历，以及站内浮窗播放。
-- [ymwang92/dsh-refkeeper](https://github.com/ymwang92/dsh-refkeeper) — 收集对话里引用过的文献，逐条到 Crossref、OpenAlex、arXiv、DataCite、PubMed 核对，通过核对的导出为 BibTeX 或 RIS。
+- [ymwang92/dsh-refkeeper](https://github.com/ymwang92/dsh-refkeeper) — 收集对话里引用过的文献，按标识符分派到对应注册表核验，通过核对的导出为 BibTeX 或 RIS。
 - [YokosWY/dsh-guard#plugin](https://github.com/YokosWY/dsh-guard/tree/main/plugin) — 会话头部的「护航」面板：启停本机 dsh-guard 守护，显示扫描开关、守护心跳与上次扫描时间；做监控的 Python 守护需单独部署，插件通过 DSH_GUARD_ROOT 环境变量定位它的目录。守护默认路径是 Windows 上的 D:\AI\Projects\dsh-guard，可用 DSH_GUARD_ROOT 指向别的目录。
 - [YongjianWan/dsh-loadout](https://github.com/YongjianWan/dsh-loadout) — DSH 的按需工具装配：MCP 工具按 server 自动分组、宿主插件工具按手工前缀分组，进组的默认隐藏、一句话激活，没被规则认领的始终可见。另带写代码/写材料/运维/只读审阅内置模式、新工具观察区用多了自动转正、敏感组激活要用户点头、读网页当轮切断外发组防提示注入，以及长尾工具的内置搜索和代理调用。
 - [you112358/dsh-cache-cleaner](https://github.com/you112358/dsh-cache-cleaner) — 扫描并清理 DeepSeek Harness 的可重建缓存——本体缓存、临时文件、桌面客户端缓存，以及从当前 Profile 自动发现的插件缓存——提供设置页、两个 agent 工具（cache_scan、cache_clean）与鉴权 HTTP 路由，可按目标设置时间过滤，保留最近产生的缓存。
@@ -12543,7 +12543,7 @@ dsh plugin --profile web add dshmarket
 - [Sumcam-L/dsh-big-coming](https://github.com/Sumcam-L/dsh-big-coming) — 盯着官方 DeepSeek 模型有没有变：每轮读取模型目录，并对每个受关注的模型发一次最小补全请求，比对系统指纹、返回的模型名、响应信封结构、目录元数据和固定输入的 token 数。任一项变化就弹一张随机表情包，列出具体改了什么，并放一声轰鸣。需要 DeepSeek API key（存入凭据库）；默认每 60 分钟运行一次，对每个受关注的模型消耗 token。
 - [sunjay-lee/dsh-k-on-pet](https://github.com/sunjay-lee/dsh-k-on-pet) — 为 DSH Web 界面添加《轻音少女》五位角色桌宠，支持拖拽、语音播放和茶桌互动。
 - [sunqing975/dsh-avatar](https://github.com/sunqing975/dsh-avatar) — 常驻界面的 VRM 数字人，支持通过工具控制表情与 VRMA 动作，并提供模型和动作资产管理。
-- [super0plant/dsh-plugin-game-time](https://github.com/super0plant/dsh-plugin-game-time) — 在 DSH 侧边栏里做游戏时长统计与游戏计时：按运行进程记录每款游戏的游玩时长，出今日 / 本周 / 本月 / 累计的游戏统计和时长统计图，数据只留在本机。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [super0plant/dsh-plugin-game-time](https://github.com/super0plant/dsh-plugin-game-time) — 在 DSH 侧边栏里做游戏时长统计与游戏计时：按运行进程记录每款游戏的游玩时长，出今日 / 本周 / 本月 / 累计的游戏统计和时长统计图，数据只留在本机。
 - [Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume) — 鲸鱼娘桌宠：45 项成就、每日任务与周签到、三个小游戏、92 张立绘、620 条台词、成长日记、天气与节日反应、按工具类型切换工作姿态、跨端存档导出/导入（JSON 文件或迁移码）、无障碍模式，以及可选的 MiMo TTS 台词播报。数据只存放在宿主 localStorage，无遥测；已在 DSH 桌面端 0.2.0-rc.2 验收，兼容 0.2.1-rc.1/rc.2 与旧版 0.1.x Web。
 - [suzuran0y/Cute-Partner#cute-partner](https://github.com/suzuran0y/Cute-Partner/tree/main/integrations/harness) — 把 Harness 的对话和任务交互集成到 Windows 桌面上的 Live2D 角色中，采用抽屉式记忆设计。桌面程序默认搭载大肥鱼「哦鲸鲸」。角色功能采用模块化设计，语音组件按需安装，支持语音交流和自定义角色音色。
 - [swaylq/dsh-digipet](https://github.com/swaylq/dsh-digipet) — 数码宝贝式养成：孵一颗吃真实工作长大的蛋（回合、工具调用、报错都是营养），按你的工作方式走四条进化分支；零 token，模型完全看不见。
