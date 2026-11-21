@@ -6752,7 +6752,7 @@ dsh plugin --profile web add dshmarket
 - [jhao0413/dsh-video-clip](https://github.com/jhao0413/dsh-video-clip) — 按时间区间下载视频片段（yt-dlp 分段；长视频的 DASH 直链无法定位时改用 HLS 分片），下载后用 ffprobe 与抽帧拼图核对起止边界，并把成片起成带 Range 的内网 HTTP 下载链接。提供 video_clip_download / video_clip_verify / file_share 三个工具和一个 video-clip skill；需要 ffmpeg/ffprobe。缺少 yt-dlp 时会用 pip 把它装到 $DSH_HOME/cache/video-clip；file_share 默认把文件或目录用无鉴权 HTTP 绑定在 0.0.0.0（局域网可见）上共享 30 分钟。
 - [jiahaozhang516-svg/caopazi](https://github.com/jiahaozhang516-svg/caopazi) — 南京林业大学 ACM AI Hub 每日签到与该校图书馆座位预约（两个站点地址写死），带设置页与完成度角标；面向 Android 上的 DeepSeek Harness Mobile。
 - [JiamingShi-JsPhys/3d-fabric](https://github.com/JiamingShi-JsPhys/3d-fabric) — 把一个句子或一次编辑变成可以打印的网格。本地 SolidCraft CLI 负责建模，随后用同一组命令测量尺寸、生成快照、检查网格并修补。检查项包括绕序、退化面和包围盒，不合格的零件在送去打印之前就会报出来，不必等打印完成才发现。
-- [JiangXingchen4210/Davinci_MCP_DSH_Demo](https://github.com/JiangXingchen4210/Davinci_MCP_DSH_Demo) — 达芬奇调色控制台（DEMO）：灰片还原与官方 LUT 匹配、三层 15 节点调色图、10 个带出处的风格、交付审批；仅支持 macOS。
+- [JiangXingchen4210/dsh-davinci-console-demo](https://github.com/JiangXingchen4210/dsh-davinci-console-demo) — dsh-davinci-console-demo：达芬奇调色控制台（DEMO，0.13.2）— Vibe Color 单入口、Panasonic V-Log 识别、片段级输入色彩空间审计、LUT 输入域校验、三层节点调色、10 个风格、交付审批；仅支持 macOS。
 - [jiangzhenguo/dsh-codegraph](https://github.com/jiangzhenguo/dsh-codegraph) — DSH 插件，注册 13 个原生 codegraph_* 工具包装 codegraph CLI，让代理初始化、维护并查询预索引的代码知识图谱（符号查询、区域探索、节点轨迹、callers/callees、影响分析、受影响测试），无需 grep 文件。
 - [jiayan-xu/dsh-codebase-memory](https://github.com/jiayan-xu/dsh-codebase-memory) — codebase-memory-mcp 的代码知识图谱桥：语义符号搜索（BM25）、源码片段、Leiden 社区架构总览、调用/数据流/跨服务追踪、图增强 grep。
 - [jiayan-xu/dsh-nuphus-mcp](https://github.com/jiayan-xu/dsh-nuphus-mcp) — 桌面 + 浏览器自动化桥（36 个工具）：窗口/屏幕/鼠标/键盘控制配 PaddleOCR 元素感知，Chrome CDP 浏览配无障碍快照。
