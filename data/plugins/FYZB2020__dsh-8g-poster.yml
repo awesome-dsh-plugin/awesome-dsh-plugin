@@ -1,0 +1,6 @@
+url: https://github.com/FYZB2020/dsh-8g-poster
+name: FYZB2020/dsh-8g-poster
+category: tools
+description:
+  en: 'Poster workshop that runs on your own 8 GB GPU. Generates a background in a local ComfyUI (FLUX.2-klein or MOSS-Image), lays out headline, body and spec table, cuts out product shots, detects placeholder slots, stamps a real QR code, self-checks occlusion and bleed, then exports 2048/4096 PNG plus A4 300 dpi PDF. 13 tools; the 4 MB browser workbench opens as a local file with no login and has a layers panel plus Alt-click to select an element buried under another.'
+  zh: '跑在自己 8GB 显卡上的海报工坊。用本地 ComfyUI 出背景（FLUX.2-klein 或 MOSS-Image），往上排标题、正文与参数表，抠产品图、识别占位块、贴真二维码、自检遮挡与出血，导出 2048/4096 PNG 与 A4 300dpi PDF。13 个工具；4MB 网页工作台以本地文件打开、免登录，带图层面板与 Alt+单击穿透选中被压住的元素。'
