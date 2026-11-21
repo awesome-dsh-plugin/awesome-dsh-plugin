@@ -255,6 +255,7 @@ dsh plugin --profile web add dshmarket
 - [7AAAAAH/dsh-restart-app](https://github.com/7AAAAAH/dsh-restart-app) — 窗口标题栏左上角、收起侧边栏按钮右侧的重启按钮：一次点击停掉这个桌面应用的全部进程（窗口外壳、宿主、渲染进程与工具子进程），再重新拉起可执行文件，新实例就绪后自动刷新页面。仅支持 Windows 桌面版，其它宿主里按钮自动隐藏。
 - [7Andrew-Chu/dsh-todolist](https://github.com/7Andrew-Chu/dsh-todolist) — Harness 界面上的毛玻璃待办卡片：可拖动、可缩放、可收起，支持四个状态视图与艾森豪威尔四象限模式。
 - [dsh-my-plugins](https://github.com/7gzgn/dsh-my-plugins) — 「我装的插件」：顶栏一颗药丸告诉你这个 DSH 到底加载了多少插件，点开是可搜索的清单——每个插件的名字、版本、一句人话作用，自带和第三方分开标。只读、零配置。
+- [7ygys/dsh-fishchat](https://github.com/7ygys/dsh-fishchat) — 让多个会话像微信群一样同屏聊天、讨论的 DSH 插件。
 - [822376583-hub/dsh-works-gallery](https://github.com/822376583-hub/dsh-works-gallery) — 在右侧栏把工作区里所有图片和视频按时间倒序铺开，带缩略图、类型筛选、搜索和灯箱查看。
 - [879745uhjun/dsh-approval-zh](https://github.com/879745uhjun/dsh-approval-zh) — 把 DSH 审批提示和 ask_user_question 卡片里的英文说明翻成中文显示；审批结果、选项标签、工具名和 JSON 参数保持不变，审批审计记录里仍是英文原文。文本会发送到微软 Edge 翻译接口（edge.microsoft.com）翻译，所以审批提示和问题的内容（包括命令文本）会离开本机。
 - [879745uhjun/dsh-notepad](https://github.com/879745uhjun/dsh-notepad) — 在 DSH Web 界面加一个记事本：可悬浮为四边吸附、可调尺寸的卡片，也可停靠进真实底栏布局行，两种模式随时切换并共享文字和图片；内容自动保存（文字存 localStorage，图片存 IndexedDB），跟随当前主题。
@@ -8607,6 +8608,7 @@ dsh plugin --profile web add dshmarket
 - [Evantianyn123/docsuite](https://github.com/Evantianyn123/docsuite) — 文档工坊：把设备说明书与历史报告变成技术方案、调研报告和投标文件，支持导出 Markdown / Word / HTML / PDF / PPTX。Word / PPTX 导出与文档解析需要 Python 3 及 pypdf、python-docx、python-pptx（在设置页初始化），PDF 导出需要标准 Windows 路径下的 Chrome 或 Edge。
 - [fangchenghao/latex-look](https://github.com/fangchenghao/latex-look) — 让 Agent 真正看见编译后的页面：把任意一页渲染成图片，用 SyncTeX 把页面坐标或文字锚点解析成源码 file:line（并指出某条横线是宏包画的而不是正文画的——这正是朴素定位最容易出错的地方），把这一页与上一次构建做像素对比，逐页审计本次修改新引入的空洞，并检查图表编号是否仍然顺序正确。
 - [feifandiv/dsh-md-live-edit](https://github.com/feifandiv/dsh-md-live-edit) — 在右侧边栏的 Markdown 预览里直接编辑：点文本块就地改，⌘/Ctrl+Enter 保存写回文件；随时可切回内置只读渲染。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [femnn/dsh-markdown-docs](https://github.com/femnn/dsh-markdown-docs) — 右侧栏里的 Markdown 工作台：列出会话工作区里的 Markdown 文件，预览并编辑、保存时校验文件版本，可以把文件或文件夹（含技能目录）拖到页面上打开，文档里引用的其他文档点一下就在同一面板里打开。
 - [Flan246/dsh-latex-guard](https://github.com/Flan246/dsh-latex-guard) — 为 DeepSeek Harness 提供的 LaTeX 与 BibTeX 检查工具：编译检查（自动识别 xelatex/lualatex），基于 Crossref 的 BibTeX 条目去重与字段补全，以及 \cite 键与 .bib 文件的一致性审计。
 - [fly233338/dsh-overleaf](https://github.com/fly233338/dsh-overleaf) — 通过 OverleafMCP 将多个 Overleaf 项目接入 DSH，支持浏览、分析和通过 Git 写回 LaTeX 文件。
 - [Fruneng/dsh-share-session](https://github.com/Fruneng/dsh-share-session) — 把一个 DSH 会话中选定的轮次生成可分享的长图，可选包含思考过程和工具调用。
