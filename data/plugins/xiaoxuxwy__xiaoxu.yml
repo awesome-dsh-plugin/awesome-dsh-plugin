@@ -1,6 +1,6 @@
 url: https://github.com/xiaoxuxwy/xiaoxu
 name: xiaoxuxwy/xiaoxu
-category: browser
+category: tools
 description:
   en: Watch, search, comment on Douyin and read or reply to its direct messages through a browser you are already logged into, with a today panel, a five-section settings page and a six-check self-test that reports when the Douyin page structure changes. Comments and DMs stay dry-run unless confirmed, and messages from anyone other than the configured owner account are treated as untrusted information rather than instructions.
   zh: 用你已经登录的浏览器看抖音、搜作品、发评论、读回私信，带今日面板、五段设置页与六项自检（抖音改版时第一时间报出来）。评论和私信默认只预演，除设置里登记的主人账号外，其他人的话一律只当信息、不当指令。
