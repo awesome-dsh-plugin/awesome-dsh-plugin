@@ -1,0 +1,6 @@
+url: https://github.com/yuanxiaoye0516/dsh-plugins/tree/main/dsh-session-title-edit
+name: yuanxiaoye0516/dsh-plugins#dsh-session-title-edit
+category: session
+description:
+  en: 'Renames a session from a pencil button in the title bar and exposes a rename_session agent tool that pins the title as user-set.'
+  zh: '在对话标题栏加一支铅笔改会话标题，并给 agent 一个 rename_session 工具，标题以用户来源固定。'

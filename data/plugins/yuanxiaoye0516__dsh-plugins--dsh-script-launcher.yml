@@ -1,0 +1,6 @@
+url: https://github.com/yuanxiaoye0516/dsh-plugins/tree/main/dsh-script-launcher
+name: yuanxiaoye0516/dsh-plugins#dsh-script-launcher
+category: tools
+description:
+  en: 'Scans configured folders for .bat, .cmd and .ps1 scripts, runs one from the sidebar and streams its output live, or opens it in a console window.'
+  zh: '扫描配置目录下的 .bat、.cmd、.ps1 脚本，在侧栏点一下运行并实时显示输出，也可在独立窗口里打开交互脚本。'

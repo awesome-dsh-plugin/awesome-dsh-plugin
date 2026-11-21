@@ -1,0 +1,6 @@
+url: https://github.com/yuanxiaoye0516/dsh-plugins/tree/main/dsh-thinking-expand
+name: yuanxiaoye0516/dsh-plugins#dsh-thinking-expand
+category: ui
+description:
+  en: 'Expands every reasoning ("thinking") block in the DSH chat transcript by default, so the reasoning is visible without clicking each card.'
+  zh: '把 DSH 对话里的思考块默认全部展开，不用逐个点击就能看到模型的推理过程。'

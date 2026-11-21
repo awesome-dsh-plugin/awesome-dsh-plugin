@@ -1,0 +1,6 @@
+url: https://github.com/yuanxiaoye0516/dsh-plugins/tree/main/dsh-context-compact
+name: yuanxiaoye0516/dsh-plugins#dsh-context-compact
+category: workflow
+description:
+  en: 'Compacts a session automatically when context usage crosses a configured threshold, with cooldown and per-day limits; audit-only by default.'
+  zh: '上下文占比超过阈值时自动压缩会话，带冷却与每日上限；默认只写审计不执行。'

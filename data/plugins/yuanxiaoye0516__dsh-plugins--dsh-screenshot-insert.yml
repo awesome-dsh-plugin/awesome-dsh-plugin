@@ -1,0 +1,6 @@
+url: https://github.com/yuanxiaoye0516/dsh-plugins/tree/main/dsh-screenshot-insert
+name: yuanxiaoye0516/dsh-plugins#dsh-screenshot-insert
+category: tools
+description:
+  en: 'Adds a camera button to the composer that inserts the newest image from a configured folder into the current session as a draft attachment.'
+  zh: '在输入框旁加一个相机按钮，把配置目录里最新的截图作为草稿附件插进当前会话。'
