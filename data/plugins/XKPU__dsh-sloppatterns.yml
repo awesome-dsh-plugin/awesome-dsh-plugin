@@ -1,0 +1,7 @@
+url: https://github.com/XKPU/dsh-sloppatterns
+name: XKPU/dsh-sloppatterns
+category: ui
+description:
+  en: Checks CSS, HTML and JSX offline against a bundled Slop Patterns library and returns each matched AI design anti-pattern with its fix.
+  zh: 离线检查 CSS、HTML 与 JSX，对照内置的 Slop Patterns 规则库，列出命中的 AI 设计反模式并给出修复建议。
+icon: https://raw.githubusercontent.com/XKPU/dsh-sloppatterns/refs/heads/main/icon.png
