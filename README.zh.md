@@ -4619,6 +4619,7 @@ dsh plugin --profile web add dshmarket
 - [1420079678-ctrl/agent-body#dsh-zero-residence](https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-zero-residence) — 零驻留上下文引擎：把体积大的工具输出从活跃上下文驱逐到可查询存储，只留下确定性指针，于是每轮的提示词 token 不再随对话长度增长。被遮蔽的内容可随时从会话日志逐字重建，按工具调用 id 或会话 seq 定位。
 - [1502074527-svg/dsh-handoff-at-75](https://github.com/1502074527-svg/dsh-handoff-at-75) — 上下文用量达到设定阈值时自动交接：把交接文档写入项目目录，并在同一工作区的新会话中续接任务，新会话标题带 -N 后缀，并可为侧栏会话行叠加半透明四色状态染色（可开关）；新会话的模型与推理强度可预先设定，也可在交接时弹卡现选。
 - [1Lany2a/dsh-domain-role#dsh-domain-bridge](https://github.com/1Lany2a/dsh-domain-role/tree/main/plugins/dsh-domain-bridge) — 长周期 agent 会话的域身份层——声明优先的域寻址、会话工厂、四级暂停与模型分派，用于协调多个顶层会话。
+- [1Tohka0/dsh-session-wrapup](https://github.com/1Tohka0/dsh-session-wrapup) — 对话收尾：把一次对话产生的文件分成五类列出，勾选删除的文件先进回收站保留 3 天，下次启动时清掉这个会话的日志。
 - [2-qing/dsh-aftermath](https://github.com/2-qing/dsh-aftermath) — 记录每一轮对话在观测目录里改了什么：哪些文件被新建、删除或修改，大致是哪次工具调用干的。不读文件内容。
 - [2026heshao/dsh-forget-session](https://github.com/2026heshao/dsh-forget-session) — 在会话行菜单加入「遗忘会话」（菜单内二次点击确认），把会话从侧栏与磁盘彻底移除：先停掉正在运行的工作，经官方通道解除工作区、归档与置顶记录，删除日志目录与投影缓存条目，并由复活守卫在一个窗口内补删迟到写入或句柄残留重建的文件；灵枢记忆、附件与其他会话不受影响。
 - [2031814001yuyue-tech/dsh-card-tree](https://github.com/2031814001yuyue-tech/dsh-card-tree) — 把对话长成一棵可编辑的卡片树：每张卡片是独立成篇的一问一答，可以派生深入卡片、同层分支或卡内追问；全览里能拖动节点、改父级、连引用虚线、删节点或分支。
@@ -5712,6 +5713,7 @@ dsh plugin --profile web add dshmarket
 - [EternalNight996/memory-eternal](https://github.com/EternalNight996/memory-eternal) — 别的记忆插件让 AI 记住更多，我们让 AI 只记住对的：Agent 只能提案，人工审核才进主库（三库分离 + 不可变审计日志）；召回走 SQLite FTS5/BM25、零模型调用（实测 p50 2.3ms），记忆账本摊开召回成本与有用率。一个库接 DSH / Claude Code / Codex / Cursor / OpenClaw / Hermes / MengBot（任意 MCP 客户端）；v0.31 起内置五套一键切换皮肤（默认暗色 / 波普 / 明亮 / 生化危机 / 蜘蛛侠）与全幅主题头图。
 - [EvoMap/evolver-dsh-plugin](https://github.com/EvoMap/evolver-dsh-plugin) — 越用越聪明的 harness，告别金鱼记忆。每条 prompt 前，Evolver 从本地经验和 EvoMap 网络召回一条验证过的策略；回合结束后，它凭测试结果、改动是否被保留、你的下一句反馈给策略打分，再回报网络按证据加权。每一次成功都变成下一次的捷径，每一次失败都变成下一次的避坑指南。
 - [fangqiing/dsh-knowledge-lite](https://github.com/fangqiing/dsh-knowledge-lite) — 本地知识库：每篇笔记一个 Markdown 文件，支持标签、层级目录、全文检索、附件用系统默认程序打开、Office 零依赖文本抽取，以及引用到对话。面向宿主 DSH 0.2.0-rc.2；Windows 下默认根目录为 E:/dsh-kb。
+- [fangqiuci/feiyu-brain](https://github.com/fangqiuci/feiyu-brain) — 以人设为根的大脑内核，提供 9 个工具（status / wake / observe / tick / feel / app / lint / snapshot / diary）：带权重的命题随经历涨落、蜕皮成记忆，30 天回忆窗口，PAD 三维情绪，她自己的日记，手机/平板/电脑三具身体。
 - [fanyingnie2163663/dsh-whale-journal](https://github.com/fanyingnie2163663/dsh-whale-journal) — 给陪伴型 agent 的日记 / 叙事记忆：按天、按 scope 写「自己视角」的话，每条尽量能回指到当天的消息；附带只读日记页（简笔画 / 照片跟着句子走）与接地审计。
 - [faruzanCN/dsh-memory-cloud](https://github.com/faruzanCN/dsh-memory-cloud) — 把 DSH 全部会话记忆可视化为可交互的 3D 星云，提供神经元信号皮肤、按记忆量缩放的星云团、缩放分级细节，以及基于 SSE 的实时存取活动流。
 - [Firefox2100/dsh-agentic-roleplay#state](https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-roleplay-state) — 为 DSH 角色扮演插件提供持久化 SQLite 会话状态、故事记忆与回忆、数据仓库以及面向模型的记录工具。
