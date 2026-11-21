@@ -7715,6 +7715,7 @@ dsh plugin --profile web add dshmarket
 - [Z06528/dsh-tutorflow](https://github.com/Z06528/dsh-tutorflow) — 一次只讲一个知识点、只问一个问题，在本地画数学图，并把学习进度写在本机。
 - [zdd3143/dsh-vision-click](https://github.com/zdd3143/dsh-vision-click) — 让 Agent 看着屏幕操作 Windows：用 Windows OCR 把界面文字变成可点目标，再执行点击、拖动、滚轮、键入与按键，每步都用逐像素差分和文字增删复核；F6+F7 由独立进程急停。
 - [zdkcomeon/dsh-mcp-link](https://github.com/zdkcomeon/dsh-mcp-link) — 扫描 Cursor、Claude Code、Codex CLI、Gemini CLI、VS Code 等 13 种客户端和项目工作区的 MCP 配置，把选中服务接入当前 DSH profile，并提供连接测试、原地重连、JSON 导入和图形化新增、编辑和移除。
+- [zeki520/dsh-download-nexus](https://github.com/zeki520/dsh-download-nexus) — 统一下载入口：按目标把下载路由到 Motrix、内置直连、yt-dlp 与 Hugging Face，并把 curl -o 这类 shell 写盘命令拦下来。提供五个工具——download、download_status、download_control、download_doctor、motrix_provision——以及一个五页签配置中心，管理引擎、目录白名单、镜像与写盘边界。
 - [zengjunlin2022/dsh-basemind-plugin](https://github.com/zengjunlin2022/dsh-basemind-plugin) — 按会话工作区启动 BaseMind MCP server，并注册其对外提供的代码智能工具，无需配置 MCP 行。需先安装 BaseMind 并在 PATH 上（basemind serve）；否则不会注册任何工具。
 - [zerui-chen/zero-db-tool](https://github.com/zerui-chen/zero-db-tool) — DeepSeek Harness 数据库工作台：连接下拉、对象树、数据/结构/SQL 页签，只读优先的 sql_* 工具，支持 SQLite/PostgreSQL/MySQL。
 - [ZF3373/dsh-algo-trainer](https://github.com/ZF3373/dsh-algo-trainer) — 算法学习工具：同步 Codeforces 与 AtCoder 提交记录，分析弱项画像， AI 生成训练计划，间隔复习排期，覆盖 114 课算法模板库。
@@ -7728,6 +7729,7 @@ dsh plugin --profile web add dshmarket
 - [zhangjunjesse/dsh-claude-code](https://github.com/zhangjunjesse/dsh-claude-code) — 把自包含的编码任务委派给本机 Claude Code 订阅执行（走官方 Claude Agent SDK），并在会话里新增一个标签页，实时显示输出、费用与剩余额度。
 - [zhangweijian97/dsh-clamawake](https://github.com/zhangweijian97/dsh-clamawake) — 只要 DSH 宿主在运行就让 Mac 保持清醒，不论智能体是否在工作：启动 ClamAwake 的虚拟屏（镜像主屏）并挂 caffeinate -d，DSH 退出时一并停止，引擎崩溃自动重启。自包含（随包带 arm64 vd-engine，GPL-3.0）。需要 Apple Silicon 的 macOS。
 - [zhangxinleilyf/dsh-xixi-body](https://github.com/zhangxinleilyf/dsh-xixi-body) — 饮食 / 训练 / 身体记录：12 个工具在对话里记下吃了什么、练了什么、称了多少，左栏六页签面板看当天与本周、钠糖饮水、e1RM 和体重曲线。纯本地 SQLite，不联网，不依赖任何人设插件。
+- [ZhaoDezhang9998/dsh-github-repo-search](https://github.com/ZhaoDezhang9998/dsh-github-repo-search) — 给智能体用的只读 GitHub 检索：仓库（可翻页到 1000 条）、代码内容、issue 与 PR，以及按「最近推送加星标」推导的近期热门。结果收进右侧栏面板，分仓库、代码、议题三类，卡片可展开语言构成、最新 Release 与 README，支持跨会话星标收藏、检索历史，以及 2–3 个候选并排对比。令牌从 DSH 密钥库读取，只发送给 github.com、api.github.com 和 trustedHosts 里列出的主机。
 - [zhaoolee/notes#dsh-plugin](https://github.com/zhaoolee/notes/tree/main/dsh-plugin) — 将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。
 - [zhaoqiminggg/dsh-instruction-optimizer](https://github.com/zhaoqiminggg/dsh-instruction-optimizer) — 指令优化器：DSH 里的指令优化与提示词优化工具。把口语草稿整理成完整、可直接执行的指令，支持会话上下文、多轮修改以及附件和 @文件保留。
 - [ZhdanovDmitriy/dsh-pptx-builder](https://github.com/ZhdanovDmitriy/dsh-pptx-builder) — 面向 DeepSeek Harness 的 PowerPoint 演示文稿生成器：柔和色板、十种幻灯片模板、网络图片、Python 绘制的图表、高亮代码卡片、无需安装 TeX 的 LaTeX 公式（矩阵、积分、带上下限的求和）以及 Presentations 智能体模式。
