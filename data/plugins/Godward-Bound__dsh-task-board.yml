@@ -1,0 +1,6 @@
+url: https://github.com/Godward-Bound/dsh-task-board
+name: Godward-Bound/dsh-task-board
+category: workflow
+description:
+  en: One call lists every task card in the workspace as a board - which never started, which is running, which finished, which is stuck, with per-card goal, report preview and unchecked acceptance items. Read-only, zero dependencies, works on plain markdown files.
+  zh: 一条调用把工作区的任务卡摆成看板——哪张没开工、哪张在跑、哪张做完、哪张卡住，detail 看单卡目标、报告开头与未打勾的验收项。只读、零依赖，直接读纯 Markdown 文件。

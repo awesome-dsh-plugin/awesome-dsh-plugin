@@ -6513,6 +6513,7 @@ dsh plugin --profile web add dshmarket
 - [GIYN-S/dsh-mcloud](https://github.com/GIYN-S/dsh-mcloud) — 中国移动云盘（139）接入 DSH：浏览、上传、下载、转移网盘文件，并提供 12 个模型工具。它的 /api/dsh-mcloud 路由会校验 Host 与 Origin，浏览器里打开的网页无法驱动已登录的云盘。
 - [gluztm/DSHGuard#dsh-guard](https://github.com/gluztm/DSHGuard/tree/main/packages/dsh-guard) — 跨平台 DSH Web 侧边栏与 CLI 伴生管理插件：支持插件/MCP 启停与断链修复、.credentials.yaml 密钥单向盲写、本地配置快照 SHA-256 比对回滚，并与桌面端协同联动。
 - [GodLike2020/dsh-mqtt-tools](https://github.com/GodLike2020/dsh-mqtt-tools) — DeepSeek Harness 的 MQTT 面板：客户端连接池、实时消息日志与内嵌 Broker，并提供九个 mqtt_* 智能体工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Godward-Bound/dsh-env-doctor](https://github.com/Godward-Bound/dsh-env-doctor) — 一条调用查本机哪些端口在监听、磁盘还剩多少、Temp 下 DSH 的 dsh-* 快照占了多少空间。只读、零依赖、不联网。
 - [goecho/dsh-generation](https://github.com/goecho/dsh-generation) — 提供 generation_fork 与 generation_run，用于拷贝 Agent preset 并在新会话上跑任务。
 - [gongyijie85/dsh-agent-frugality](https://github.com/gongyijie85/dsh-agent-frugality) — 多智能体防内耗防御插件：读取台账去重度量、免疫压缩规则区、完成机械门禁、低成本审查 lane。
 - [gongyijie85/dsh-repo-setup](https://github.com/gongyijie85/dsh-repo-setup) — 只读仓库体检引导工具（repo_setup_scan）：识别技术栈/测试/文档/git/数据库线索，给出插件、MCP 与卫生文件的安装建议。
@@ -9435,6 +9436,7 @@ dsh plugin --profile web add dshmarket
 - [gluztm/dsh-chief](https://github.com/gluztm/dsh-chief) — AI 管 AI，你当甩手掌柜 —— 它自己盯流程，跑崩了先拦住。不用守着屏幕，越权改工作区会先问你。
 - [GM-HZ/agent-dag-workflow](https://github.com/GM-HZ/agent-dag-workflow) — 面向 Agent 的 Host-neutral 持久化 DAG 工作流，提供 CLI、MCP、按需 Skill、Trigger、重放和可视化 Canvas。
 - [godv61/dsh-task-engine](https://github.com/godv61/dsh-task-engine) — 为 DeepSeek Harness 提供预设工程流程：dev_task 工具把阶段流转、产物、验证、审核与提交范围做成硬门禁，并带一个安装项目级与个人级技能和规则的工作台。
+- [Godward-Bound/dsh-task-board](https://github.com/Godward-Bound/dsh-task-board) — 一条调用把工作区的任务卡摆成看板——哪张没开工、哪张在跑、哪张做完、哪张卡住，detail 看单卡目标、报告开头与未打勾的验收项。只读、零依赖，直接读纯 Markdown 文件。
 - [Golden2002/dsh-teaching-material-workbench](https://github.com/Golden2002/dsh-teaching-material-workbench) — 按证据链生产教学物料的可视化工作台：页模型、逐页改讲义与课件、PAEG 中文检查、三层门禁、检查中心、版本回退、讲义/课件/分镜/Manim 脚本导出与版权审计。
 - [good-saltfish/dsh-novel-agent](https://github.com/good-saltfish/dsh-novel-agent) — 右栏小说工作台，把「写一章」当成有可核对产物的流水线而不是一段长 prompt：生成骨架，先看清这一章会拿到什么上下文包，同一章一次生成 2–6 版候选挑中才落盘，再按章连写且进度写进磁盘，引擎重启不丢。字数区间、跨章 Jaccard、漂移比写在代码里而不靠模型自评，打回内容回灌为修复证据，最多重写两次；AI 指纹只对照 3956 章人类基线报数、故意不拦，因为两个分布本身重叠。带 7 个 agent 工具。写作引擎是独立 Python 包，首次使用时由插件自己装上。需要 PATH 里有 Python 3.10+（或在插件设置里填解释器路径）。
 - [GooDAnDReaDY/dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) — 为 DeepSeek Harness 提供定时任务、后台自动化与 Agent 执行。
