@@ -1,0 +1,6 @@
+url: https://github.com/JhanSu/dsh-device-badge
+name: JhanSu/dsh-device-badge
+category: ui
+description:
+  en: 'For users running Harness on more than one machine, shows the identity of the terminal DSH is installed on, right in the sidebar account row — so you can tell at a glance which device''s chat you are looking at. Laptops show the model name and battery percentage with a macOS-style charging glyph, so you know how much power is left; iMac, Mac mini, Windows desktops and NAS boxes (Synology, ZSpace, UGREEN, fnOS) show a matching outlined device icon instead. When space runs short the badge steps down through full model name, product family, then icon only, and hovering always reveals the full model.'
+  zh: '针对多设备安装 Harness 的用户，这个插件可以在侧边栏账号行，显示 DSH 所在终端机器的身份标识，便于清楚地知道对应的是哪台设备的聊天界面。笔记本设备为了更好掌握用电情况，采用显示机型、电量百分比的方案，设计上用的是 macOS 风格充电图标；iMac、Mac mini、Windows 台式机与 NAS（群晖、极空间、绿联、飞牛）则显示对应的线性设备图标。空间不足时会按完整型号、产品简称、仅图标逐级降级，鼠标悬停可随时查看完整型号。'
