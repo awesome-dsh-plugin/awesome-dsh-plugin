@@ -1,0 +1,7 @@
+url: https://github.com/linchuncheng/dsh-plugins/tree/main/dsh-skillpie-mail
+name: linchuncheng/dsh-plugins#dsh-skillpie-mail
+category: notify
+description:
+  en: 'SkillPie mailbox manager for DSH: register or attach @skillpie.cn mailboxes, poll IMAP in the background, and surface new mail as a global toast naming the recipient box.'
+  zh: 'SkillPie 邮箱管理：快速注册或挂载 @skillpie.cn 邮箱，后台 IMAP 轮询，新邮件全局弹窗展示并注明收件邮箱。'
+icon: https://raw.githubusercontent.com/linchuncheng/dsh-plugins/main/assets/dsh-skillpie-mail-icon-180.png
