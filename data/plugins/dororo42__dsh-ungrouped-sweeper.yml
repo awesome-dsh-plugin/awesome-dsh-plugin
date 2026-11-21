@@ -1,0 +1,6 @@
+url: https://github.com/dororo42/dsh-ungrouped-sweeper
+name: dororo42/dsh-ungrouped-sweeper
+category: session
+description:
+  en: "Sweeps the dsh web conversation list: a standalone page lists every stored session by workspace with official titles, batch-archives the ungrouped test ones through the workspace registry (stopping running work first), restores them anytime, and physically purges archived sessions as an explicit second stage. Ships a client half that adds a sidebar launcher button."
+  zh: "会话清扫器：独立页面按分组列出全部对话（标题读官方 dsh-session-title 缓存），一键归档未分组的测试对话（走官方 workspace 注册表、先停运行任务），随时恢复；彻底删除作为独立第二阶段、仅限已归档会话。内置客户端注入，在原生侧边栏加清扫入口按钮。零依赖。"

@@ -1,0 +1,7 @@
+url: https://github.com/DaYangtuo247/dsh-composer-display
+name: DaYangtuo247/dsh-composer-display
+category: ui
+description:
+  en: 'Claude-style composer for DeepSeek Harness — a one-row input box with live Markdown highlighting, a tray for messages queued while a reply is running, mode and model menus, a caret that glides between characters, and a back-to-bottom button above the input.'
+  zh: 'Claude 风格输入框：单行输入并实时高亮 Markdown、运行中输入的消息收进排队托盘、模式与模型菜单、字符间平滑滑动的光标，以及输入框上方固定的回到底部按钮。'
+icon: https://raw.githubusercontent.com/DaYangtuo247/dsh-composer-display/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/gabsferreira/dsh-web-search-searchapi
+name: gabsferreira/dsh-web-search-searchapi
+category: browser
+description:
+  en: 'SearchApi search provider for the built-in web_search tool: one GET to SearchApi''s Google engine per search, organic results mapped to sources (title, snippet, ISO publication date), and Google''s goto redirect links followed one hop so sources cite the real page. Key from the credentials service or SEARCHAPI_API_KEY; no UI, web_fetch unchanged.'
+  zh: '内置 web_search 工具的 SearchApi 搜索提供方：每次搜索向 SearchApi 的 Google 引擎发一次 GET，把自然结果映射为来源（标题、摘要、ISO 发布日期），并跟随 Google 的 goto 跳转链接一跳，使来源引用真实页面。密钥来自凭据服务或 SEARCHAPI_API_KEY；无界面，web_fetch 不变。'

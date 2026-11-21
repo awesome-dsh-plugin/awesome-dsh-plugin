@@ -1,0 +1,6 @@
+url: https://github.com/Velestia-star/agent-skill
+name: Velestia-star/agent-skill
+category: agi
+description:
+  en: Build named subagents and skills in a sidebar panel, then call any subagent by name in a conversation. Each subagent selects a model, reasoning effort, spawn or fork mode, a tool allowlist and skills; skills can be global, per workspace or per conversation.
+  zh: 在侧栏里创建具名子智能体和技能，并在对话中按名字调用。子智能体可配置模型、思考强度、spawn/fork 启动方式、工具白名单与技能；技能可全局、按工作区或按单个会话生效。

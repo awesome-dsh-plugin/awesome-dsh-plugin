@@ -1,0 +1,7 @@
+url: https://github.com/highho/dsh-gameart
+name: highho/dsh-gameart
+category: workflow
+description:
+  en: 'ComfyUI game-art production lines: 12 seeded pipelines (SD1.5 and SDXL) for character concepts, sprite alpha, expression diffs, lineart colorize, 3-view turnaround, prop icons, seamless tiles, HD upscale, backgrounds, nine-slice UI, layered character parts and FX, driven through 7 tools plus 3 agent presets and 6 skills.'
+  zh: 'ComfyUI 游戏美术产线组：12 条固定种子的产线（SD1.5 + SDXL 两代底模），覆盖角色概念图、透明立绘、表情差分、线稿上色、三视图、道具图标、无缝瓦片、高清放大、场景背景、九宫格 UI、角色部件分层与光效，由 7 个工具 + 3 套专家预设 + 6 个技能驱动。'
+icon: https://raw.githubusercontent.com/highho/dsh-gameart/master/docs/icon-180.png

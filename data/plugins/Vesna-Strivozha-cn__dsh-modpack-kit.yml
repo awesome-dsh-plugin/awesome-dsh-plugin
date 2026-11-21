@@ -1,0 +1,7 @@
+url: https://github.com/Vesna-Strivozha-cn/dsh-modpack-kit
+name: Vesna-Strivozha-cn/dsh-modpack-kit
+category: tools
+description:
+  en: Pack several DeepSeek Harness plugins into one .dshpack and install them in one pass. Both formats ship a standalone installer, so a machine with only a bare DSH can install (payloads go to a local vendor folder, installed plugins are skipped unless --replace). Packing always scans for secrets and risky code; high-risk hits pause until you confirm, then the same job resumes without scanning again. Installing shares the progress dock, skips plugins you already have and then lets you replace them with the packed versions; when you are online the market version is preferred. Packs can be opened with a file or folder picker, any directory, an imported-packs list or a link. Categories, search, paging and same-name entries come from the plugin-market catalog.
+  zh: 把多个 DeepSeek Harness 插件打成一个 .dshpack 一次装好；两种包都带独立安装器，对方只剩一个裸 DSH 也能装（插件复制进本机 vendor 再登记，默认跳过已装的，加 --replace 才覆盖）。打包前强制查敏感信息与风险代码，高危先停下等你确认，确认后同一任务从检测点续跑、不再重扫。安装与打包共用进度窗，先跳过本机已装的插件，装完再让你选是否替换；联网时优先用市场版本。取包支持文件/文件夹选择器、任意目录、已导入列表与链接。分类/搜索/分页/同名切换市场版都与插件市场同源。
+icon: https://raw.githubusercontent.com/Vesna-Strivozha-cn/dsh-modpack-kit/main/assets/icon-180.png

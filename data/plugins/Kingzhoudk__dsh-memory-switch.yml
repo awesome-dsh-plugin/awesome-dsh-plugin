@@ -1,0 +1,8 @@
+url: https://github.com/Kingzhoudk/dsh-memory-switch
+name: Kingzhoudk/dsh-memory-switch
+category: memory
+icon: https://raw.githubusercontent.com/Kingzhoudk/dsh-memory-switch/main/assets/icon-180.png
+tarball: https://github.com/Kingzhoudk/dsh-memory-switch/releases/latest/download/dsh-memory-switch.tgz
+description:
+  en: 'Per-conversation switch that cuts every cross-conversation memory channel while it is off: session search and trace tools plus the shared research cache are denied, cross-conversation @ references and team relay messages are filtered out of the request, and OpenViking recall, capture and commits are gated when that plugin is installed. Subagents inherit the state, the session log restores it on reload, resume and fork, and the switch is on by default.'
+  zh: '按会话切断跨会话记忆通道的开关：关闭后跨会话历史搜索与追溯工具及共享的研究缓存被拒绝，跨会话 @ 引用与团队转交消息被过滤，安装 OpenViking 时其回忆、捕获与提交也被拦截；子代理继承状态，刷新、恢复与分叉都会从会话日志还原，默认开启。'

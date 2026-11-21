@@ -1,0 +1,6 @@
+url: https://github.com/KorionCN/dsh-d2-diagrams
+name: KorionCN/dsh-d2-diagrams
+category: ui
+description:
+  en: 'Previews D2 diagrams in the DSH sidebar using the local D2 CLI, with live rendering, source editing, zoom, and chart, code, or split views.'
+  zh: '使用本机 D2 CLI 在 DSH 右侧边栏预览图表，支持实时渲染、源码编辑、缩放及图表、代码、分屏视图。'

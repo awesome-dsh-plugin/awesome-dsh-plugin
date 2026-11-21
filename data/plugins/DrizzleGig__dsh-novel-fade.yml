@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-fade
+name: DrizzleGig/dsh-novel-fade
+category: memory
+description:
+  en: 'Writing a novel of hundreds of thousands, even millions, of words with AI — but always worried it will forget earlier plot, characters and foreshadowing? Loading piles of old chapters into the context every time is not only costly; it also crowds out the room that should go to actual creation. Fade gives the AI a long-form memory that gradually fades: the recent plot stays sharp, the distant story keeps its key points, and important characters and events can be recalled whenever needed. When a chapter is finished, its memory is organized and its text archived automatically — no need to carry the whole novel around. Cut unnecessary token consumption, keep more context and budget for the chapters ahead, and let AI help you write a longer story.'
+  zh: '想用 AI 写几十万字、上百万字的长篇小说，却总担心 AI 忘记前面的剧情、人物和伏笔？每次都把大量旧章节塞进上下文，不仅费钱，还会挤占真正用于创作的空间。「褪色」让 AI 拥有一套会逐渐淡化的长篇记忆：最近的剧情记得清楚，久远的故事保留重点，重要人物和事件随时可以找回。写完一章自动整理记忆、保存原文，不必反复携带整部小说。减少不必要的 Token 消耗，把更多上下文和预算留给后续创作，让 AI 陪你把故事写得更长。'

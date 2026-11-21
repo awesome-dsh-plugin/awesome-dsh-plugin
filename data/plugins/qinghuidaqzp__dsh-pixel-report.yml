@@ -1,0 +1,6 @@
+url: https://github.com/qinghuidaqzp/dsh-pixel-report
+name: qinghuidaqzp/dsh-pixel-report
+category: fun
+description:
+  en: 'Turns your agent''s day or week into a shareable 1080x1632 retro pixel-art battle report card in a right-sidebar tab. Passively observes llm/stream, tools/result, session/event and workspace/changes to render real files and lines changed, commands run, sessions and turns, estimated DeepSeek cost and cache savings, a 24-hour (or 7-day) pixel bar chart, a pixel whale mascot, and a deterministic RPG rank title. Includes three color themes (DeepSea, GameBoy, Arcade), a privacy toggle to hide file and workspace names, PNG download and clipboard copy.'
+  zh: '在右侧栏把 Agent 今天或本周的活做成一张 1080×1632 复古像素风战报卡片：旁观 llm/stream、tools/result、session/event 和 workspace/changes，真实统计改动文件与增删行数、执行命令、会话与轮次、按 DeepSeek 峰谷价估算的花费与缓存省钱、24 小时（或近 7 天）像素活跃柱状图、像素鲸角色以及确定性 RPG 评级称号。内置深海、掌机、街机三套配色，支持一键隐藏文件名、下载 PNG 和复制图片分享。'

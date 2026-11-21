@@ -1,0 +1,6 @@
+url: https://github.com/normalform3/dsh-agentsmd-manager
+name: normalform3/dsh-agentsmd-manager
+category: ui
+description:
+  en: 'Browse, search, preview, and edit AGENTS.md across DSH workspaces, with templates and AI suggestions.'
+  zh: '在 DSH 工作区中浏览、搜索、预览和编辑 AGENTS.md，并使用模板与 AI 修改建议。'

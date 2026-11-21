@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-incident-timeline
+name: dingchenhui0618-arch/dsh-incident-timeline
+category: tools
+description:
+  en: 'Read-only incident timeline for DeepSeek Harness session logs: decodes multi-frame zstd JSONL, projects sessions/segments/replacements into SQLite, and labels user rejections, plugin/tool errors and runtime 4xx/5xx HTTP statuses separately. Exports a citable Markdown table with session id, turn/step, physical log line and raw excerpt, filtered by time window, label or session. Ships a conversation-view panel, HTTP routes, a CLI and a standalone preview; never writes back to session files. Zero runtime dependencies.'
+  zh: '给 DeepSeek Harness 会话日志做只读事故时间线：解码多帧 zstd JSONL，把会话/段落/替换投影进 SQLite，并把 user rejected、插件/工具报错、运行时 4xx/5xx HTTP 状态分成三类；导出带会话 id、步号、原始日志行号和原文摘录的可引用 Markdown 表格，支持按时间窗、标签、会话过滤。带对话视图面板、HTTP 路由、CLI 和独立预览页，绝不写回会话文件。零运行时依赖。'

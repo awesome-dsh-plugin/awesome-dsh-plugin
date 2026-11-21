@@ -1,0 +1,6 @@
+url: https://github.com/Domush/dsh-plugin-message-history
+name: Domush/dsh-plugin-message-history
+category: ui
+description:
+  en: 'Shell-style Up/Down arrow key message history navigation for DSH Web UI with cross-session persistence and draft restoration. It keeps up to 100 of your past messages as plain text in ~/.dsh/message-history.json, filling it at startup from the session records already under ~/.dsh/sessions, and makes no network requests.'
+  zh: '类似于 Shell 的上下方向键历史消息导航，支持草稿暂存恢复与跨会话历史持久化。它把你发过的最近 100 条消息以明文存在 ~/.dsh/message-history.json，启动时从 ~/.dsh/sessions 下已有的会话记录补全，不发任何网络请求。'

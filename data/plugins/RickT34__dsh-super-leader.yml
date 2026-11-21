@@ -1,0 +1,6 @@
+url: https://github.com/RickT34/dsh-super-leader
+name: RickT34/dsh-super-leader
+category: session
+description:
+  en: 'Leader agent preset that clarifies requirements, dispatches tasks to workspaces and sessions, and relays worker reports.'
+  zh: 'Leader Agent 预设：澄清需求，将任务派发到工作区和会话，并汇总下属回报。'

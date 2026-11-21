@@ -1,0 +1,6 @@
+url: https://github.com/zhaohaix/DeepSeek-GitHub
+name: zhaohaix/DeepSeek-GitHub
+category: git
+description:
+  en: GitHub authorization, repository browsing, AI-written project intros and confirmed Release publishing inside DeepSeek Harness.
+  zh: 在 DeepSeek Harness 内完成 GitHub 授权、仓库浏览、AI 生成项目介绍与 Release 发布，所有写操作先预览再确认。

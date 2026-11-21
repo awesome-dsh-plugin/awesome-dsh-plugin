@@ -1,0 +1,6 @@
+url: https://github.com/TianjunChi/dsh-workflow-library
+name: TianjunChi/dsh-workflow-library
+category: workflow
+description:
+  en: 'Extract reviewed workflow templates from workspace conversations, save them locally, import and export JSON, and submit parameterized runs to the current session.'
+  zh: '从工作区对话提炼并审阅工作流模板，支持本地保存、JSON 导入导出和向当前会话提交参数化任务。'

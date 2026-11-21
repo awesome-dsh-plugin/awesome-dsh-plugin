@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-bug-perf
+name: mzzsfy/dsh-plugin#dsh-bug-perf
+category: dev
+description:
+  en: 'Runtime workarounds for host defects while upstream fixes land: coalesce repeated session/follow rebuilds, reconnect a terminal view whose output stalled, keep the session stream alive when a proxy idles it out, cap job/list subscriptions, recover a session stuck on load, trim the session-list projection on the host and shrink the first-screen history window. Each feature has its own switch; when the host structure does not match, that feature is skipped, logging the reason or degrading silently.'
+  zh: '官方修复落地前的宿主缺陷兜底:合并 session/follow 重复重建、终端输出停滞自愈、会话流空闲保活、任务状态流条数上限、会话加载停滞自愈、宿主侧会话列表投影瘦身、首屏历史窗口收敛。每项独立开关,宿主结构不匹配时该项跳过,记录原因或静默降级,不影响页面与其它补丁。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-bug-perf.png

@@ -1,0 +1,7 @@
+url: "https://github.com/Codenestra/deepseek-harness-plugins/tree/main/plugins/dsh-plugin-doctor"
+name: "Codenestra/deepseek-harness-plugins#dsh-plugin-doctor"
+category: dev
+description:
+  en: "Plugin health diagnostics, conflict detection, dependency compatibility, installation history, and audited disable/restore actions."
+  zh: "插件健康诊断、冲突检测、依赖兼容性、安装历史与带审计记录的禁用和恢复。"
+tarball: "https://github.com/Codenestra/deepseek-harness-plugins/releases/download/dsh-plugin-doctor-v0.1.0/local-dsh-plugin-doctor-0.1.0.tgz"

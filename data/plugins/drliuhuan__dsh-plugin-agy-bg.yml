@@ -1,0 +1,7 @@
+url: https://github.com/drliuhuan/dsh-plugin-agy-bg
+name: drliuhuan/dsh-plugin-agy-bg
+category: ui
+description:
+  en: 'Paints a mouse-following WebGL particle field behind the DSH Web UI. The palette follows the light/dark theme; Settings → General has an on/off switch and a selectable frame-rate cap (30/60, plus 120 when the display supports it). It inserts nothing into the composer or transcript scroll tree.'
+  zh: '在 DSH Web 界面背后铺一层跟随鼠标的 WebGL 粒子场。配色跟随浅色/深色主题；设置 → 常规里有开关和可选帧率上限（30/60，显示器支持时增加 120）。不会向输入框或会话滚动树插入任何元素。'
+icon: https://raw.githubusercontent.com/drliuhuan/dsh-plugin-agy-bg/main/docs/icon-180.png

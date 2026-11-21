@@ -1,0 +1,8 @@
+url: https://github.com/MagicSandBag/xiaofeiyu-academy
+name: MagicSandBag/xiaofeiyu-academy
+category: fun
+description:
+  en: 'Undersea learning platform for primary-school kids (grades 1-6): grade-based math/Chinese/English quizzes, a textbook shelf with PDF table-of-contents import, photo mistake collection, variant-question mastery tracking, a feedable fish pet with hunger, coins, outfits and achievements, multi-child profiles and progress reports.'
+  zh: '小学 1-6 年级海底学习舱：分年级数语英闯关、教材 PDF 上架与目录导入、拍照收错题与变式掌握度追踪、可投喂的小肥鱼养成（饱食度、贝壳、装扮、成就）、多孩子学习档案与学情报告。'
+tarball: https://github.com/MagicSandBag/xiaofeiyu-academy/releases/latest/download/xiaofeiyu-academy-latest.tgz
+icon: https://raw.githubusercontent.com/MagicSandBag/xiaofeiyu-academy/main/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/guiyuan77/dsh-peek
+name: guiyuan77/dsh-peek
+category: ui
+description:
+  en: Reads EPUB, TXT, Markdown and HTML from the workspaces registered in dsh in a right-sidebar tab, restores the last reading position, and collapses the whole sidebar with Esc to return to the conversation. No runtime dependencies and no build step.
+  zh: 在右侧栏标签里读取 dsh 已注册工作区内的 EPUB、TXT、Markdown 与 HTML，记住上次阅读位置，并可用 Esc 一键收起整个右侧栏回到会话。零运行时依赖、无需构建。
+icon: https://raw.githubusercontent.com/guiyuan77/dsh-peek/main/assets/icon-1024.png

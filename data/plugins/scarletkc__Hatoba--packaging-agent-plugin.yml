@@ -1,0 +1,7 @@
+url: https://github.com/scarletkc/Hatoba/tree/main/packaging/agent-plugin
+name: scarletkc/Hatoba#agent-plugin
+category: remote
+icon: https://raw.githubusercontent.com/scarletkc/Hatoba/main/apps/desktop/src-tauri/icons/icon.png
+description:
+  en: Adds the hatoba-cli skill, which has the agent run commands and copy files on the SSH hosts saved in the Hatoba desktop SSH client with the hatoba command, signed in with the credentials Hatoba keeps. Needs Hatoba open and unlocked.
+  zh: 添加 hatoba-cli 技能，让 agent 用 hatoba 命令在 Hatoba 桌面 SSH 客户端保存的 SSH 主机上运行命令、复制文件，用 Hatoba 保存的凭据登录。需要 Hatoba 已打开并解锁。

@@ -1,0 +1,7 @@
+url: https://github.com/DanneLeung/dsh-multi-key-rotation
+name: DanneLeung/dsh-multi-key-rotation
+category: usage
+icon: https://raw.githubusercontent.com/DanneLeung/dsh-multi-key-rotation/main/assets/icon-180.png
+description:
+  en: 'Give a MiniMax Token Plan route several named API keys and let the plugin rotate between them by remaining quota: a spent plan, a rate limit or an auth error moves the route to the next key of the pool and retries the request. The next key is picked by reset order, so the window that rolls over soonest is spent first. Each key''s remaining share is shown for both quota windows - the 5-hour one and the weekly one - next to its reset countdown, and a capsule in front of the model selector shows the two windows of the key in use. Supports the minimax and minimax-cn routes only.'
+  zh: '给 MiniMax Token Plan 路由配置多个具名 API Key，插件按剩余配额轮换：单个 Key 额度耗尽、触发限流或鉴权失败时，路由切到池中下一个 Key 并重试本次请求。下一个 Key 按重置时间排序，周窗口最先重置的先用。每个 Key 的 5 小时与周两个窗口的剩余比例、距重置倒计时都列在设置页；输入框模型选择器前的胶囊显示当前所用 Key 的两个窗口。仅支持 minimax 与 minimax-cn 路由。'

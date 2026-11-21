@@ -1,0 +1,6 @@
+url: https://github.com/Delthin/dsh-plugins/tree/main/packages/cardex
+name: Delthin/dsh-plugins#cardex
+category: workflow
+description:
+  en: 'Turn useful conversations into a knowledge base you can revisit. Start a discussion with /cardex and end it with /cardex end; a model organizes the questions and answers into Markdown cards, a knowledge tree, and an offline graph. Related discussions can add to existing cards, with links back to the original questions and answers, so your knowledge keeps growing and stays easy to browse. Cards and the graph are written to ~/journal/cardex unless you change it with /cardex dir, and the recorded discussion is sent to the organizing model (the session''s model unless you pin another one).'
+  zh: '把对话中值得保留的讨论整理成自己的知识库。在会话中输入 /cardex 开始讨论，结束时用 /cardex end 让模型把问答整理成 Markdown 知识卡片、知识树和离线图谱。相关讨论可以补充到已有卡片，并保留原始问答的回链，方便日后按分类浏览、查找，让知识随着每次讨论慢慢积累。知识卡片和图谱默认写到 ~/journal/cardex（可用 /cardex dir 修改）；记录下来的讨论会发给整理模型（默认就是当前会话的模型，也可以另行指定）。'

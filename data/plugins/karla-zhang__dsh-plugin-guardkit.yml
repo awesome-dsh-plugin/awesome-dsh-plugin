@@ -1,0 +1,7 @@
+url: https://github.com/karla-zhang/dsh-plugin-guardkit
+name: karla-zhang/dsh-plugin-guardkit
+tarball: https://github.com/karla-zhang/dsh-plugin-guardkit/releases/download/v0.1.2/dsh-plugin-guardkit-0.1.2.tgz
+category: security
+description:
+  en: 'Runtime monitor for the plugins installed in a DSH profile: the panel lists every bundle and plugin entry with its Cordis fiber state and load diagnostics, scores risk from failed entries, missing bundles, version exemptions, install scripts, bin entries, a missing license and non-registry sources, keeps a timeline of state changes, and can disable a plugin entry or a whole bundle without leaving the panel.'
+  zh: '监控 DSH 配置里已安装插件的运行时面板：列出每个 bundle 与插件条目及其 Cordis fiber 状态与加载诊断，依据条目失败、bundle 缺失、版本豁免、安装脚本、bin 入口、缺失许可证与非注册表来源计算风险分，记录状态变化时间线，并可在面板内停用某个插件条目或整个 bundle。'

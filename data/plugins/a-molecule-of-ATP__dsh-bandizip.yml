@@ -1,0 +1,7 @@
+url: https://github.com/a-molecule-of-ATP/dsh-bandizip
+name: a-molecule-of-ATP/dsh-bandizip
+category: tools
+description:
+  en: 'Wraps the installed Bandizip console tool (bz.exe) as one agent tool with eight archive actions; a roundtrip verify proves a packed archive unpacks back to the same files.'
+  zh: '把本机已安装的 Bandizip 命令行（bz.exe）封装成智能体的一个工具，含八个压缩包操作；roundtrip 校验会把包解回来逐文件比对。'
+icon: https://raw.githubusercontent.com/a-molecule-of-ATP/dsh-bandizip/main/assets/icon-180.png

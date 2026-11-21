@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-handover-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-handover-check'
+category: 'tools'
+description:
+  en: 'Handover-doc hygiene: who hands over, who takes over, the effective date, the listed items and their owners, the accounts and permissions that move (or an explicit "none"), what is unfinished, and the receiver sign-off. The accounts rule is the point: a forgotten read-only login does not fail today, it fails at the next audit. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '交接单的检查：谁交接、谁接手、生效日期、事项条数与各自负责人、要转的账号与权限（或显式写"无账号需交接"）、未完成事项、接收人签字。重点是账号那段——漏掉一个只读账号今天不报错，下次审计才报错，那时交接人已经走了。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

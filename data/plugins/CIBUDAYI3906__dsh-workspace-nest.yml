@@ -1,0 +1,8 @@
+# Copy this file into a fork of awesome-dsh-plugin at data/plugins/ and open a PR.
+url: https://github.com/CIBUDAYI3906/dsh-workspace-nest
+name: CIBUDAYI3906/dsh-workspace-nest
+category: ui
+description:
+  en: 'Sidebar workspace tree: create nested sub-workspaces at any level, start a session on any level, and pin a session to the top of its nearest folder.'
+  zh: '侧边栏工作区多级树：任意一级都能新建子工作区与会话，会话可置顶到所属的最近一级文件夹，刷新不丢。'
+icon: https://raw.githubusercontent.com/CIBUDAYI3906/dsh-workspace-nest/main/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/Delthin/dsh-plugins/tree/main/packages/global-pins
+name: Delthin/dsh-plugins#global-pins
+category: workflow
+description:
+  en: "Aggregate pinned sessions that are currently rendered and visible across workspaces into a single sidebar view, saving you from digging through separate workspaces. The aggregated section can either stay above the workspace list with independent scrolling or scroll inline with the list, directly reusing native session rows, status indicators, and actions while respecting current folding and search filters without forcibly expanding hidden items."
+  zh: "将当前原生视图中已渲染可见的各工作区置顶会话汇总到侧栏同一处，省去跨工作区来回翻找。汇总区可固定在工作区列表上方独立滚动，也可并入列表内随整体一起滚动；条目直接复用原生会话行、状态标识与快捷操作，并严格遵循当前视图范围，被折叠或搜索过滤隐藏的会话保持原状不强制展开。"

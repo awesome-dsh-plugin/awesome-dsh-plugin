@@ -1,0 +1,6 @@
+url: https://github.com/PaysNatal/dsh-qwen-skill-gate
+name: PaysNatal/dsh-qwen-skill-gate
+category: skill
+description:
+  en: Shows and loads Qwen (qianwen*) skills only when the session runs on the Qwen Token Plan CN provider, and hides and blocks them on any other provider.
+  zh: 仅当会话运行在 Qwen Token Plan CN 供应商上时才展示并加载千问（qianwen*）技能，其它供应商下隐藏并禁止加载。

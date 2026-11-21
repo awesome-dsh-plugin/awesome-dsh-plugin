@@ -1,0 +1,7 @@
+url: https://github.com/fengpei666/dsh-card-panel
+name: fengpei666/dsh-card-panel
+category: usage
+description:
+  en: 'Manage relay day cards from the DSH sidebar. Paste a seller delivery message to write the model route and store the API key, then see per-card token usage, an expiry countdown and the cost against DeepSeek official prices, with a one-click fix for context-window truncation.'
+  zh: '在 DSH 左侧栏管理中转站日卡。粘贴发货信息即可写入模型路由并保存密钥，随后按卡查看 token 用量、到期倒计时和对照官方价的费用，并一键修复上下文窗口导致的输出截断。'
+icon: https://raw.githubusercontent.com/fengpei666/dsh-card-panel/main/assets/icon.png

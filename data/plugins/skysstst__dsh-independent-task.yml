@@ -1,0 +1,7 @@
+url: https://github.com/skysstst/dsh-independent-task
+name: skysstst/dsh-independent-task
+category: session
+description:
+  en: 'Create timestamped workspace folders and open a session inside each in one click, with a task-folder dropdown, workspace title sync, and automatic cleanup of tasks left without any input.'
+  zh: '一键创建时间戳工作区文件夹并在其中开启会话，支持任务目录下拉选择、会话标题同步，并自动清理没有任何输入的空任务。'
+icon: https://raw.githubusercontent.com/skysstst/dsh-independent-task/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/swluo777/dsh-fish-dandan
+name: swluo777/dsh-fish-dandan
+category: identity
+description:
+  en: A DeepSeek Harness plugin that keeps one persistent persona across every session, with layered memory, mood and state, and optional Douyin automation.
+  zh: 给 DeepSeek Harness 用的统一人格与记忆插件：所有会话保持同一个角色，带三层记忆、心情状态和可选的抖音日常。
+icon: https://raw.githubusercontent.com/swluo777/dsh-fish-dandan/master/assets/icon.png

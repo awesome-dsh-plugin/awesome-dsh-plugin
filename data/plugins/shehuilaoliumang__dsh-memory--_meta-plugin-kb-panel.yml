@@ -1,0 +1,6 @@
+url: https://github.com/shehuilaoliumang/dsh-memory/tree/main/_meta/plugin/kb-panel
+name: shehuilaoliumang/dsh-memory#kb-panel
+category: memory
+description:
+  en: 'Governed long-term memory for dsh. Each turn is appended to an append-only raw layer; a semantic judge distils it into one Markdown note per memory inside a plain vault, and only notes you confirm are ever injected, within a five-slot budget shared by global and project stores, with explicit supersede to retire old conclusions. Ships a memory page that explains why each note was or was not injected, local BM25 search with pinyin fallback, project stores that stay read-only until you authorize writes, and two-step deletion (a terminal-issued ticket plus a one-time key). The plugin ships inside this repository next to its host-independent rule engine, so it installs from a clone and is pointed at your vault. Its HTTP routes pass DSH Connection admission for Host and Origin before its own loopback and token checks.'
+  zh: '为 dsh 提供可治理的长期记忆：每轮对话追加进只增的原文层，由语义裁判提炼成一篇一笔记的纯 Markdown 记忆库；只有你确认过的笔记才会被注入，全局与项目库共用五个注入槽位，旧结论用显式取代退场。附带记忆页（逐条说明为什么选中或没选中）、本地 BM25 检索与拼音回退、需显式授权才可写的项目库，以及两步删除（终端签发票据加一次性密钥）。插件与宿主无关的规则引擎一起随仓库分发，从克隆安装并指向你的记忆库。它的 HTTP 路由先过 DSH Connection 的 Host/Origin 准入，再进插件自己的 loopback 与 token 检查。'

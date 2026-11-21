@@ -2,5 +2,5 @@ url: https://github.com/Yanlrx/dsh-memory-v2
 name: Yanlrx/dsh-memory-v2
 category: memory
 description:
-  en: 'Long-term memory for DeepSeek Harness agents: per-turn archival and recall, two-phase consolidation of the per-day scene log (the host prompts every five unconsolidated rounds and the caller confirms with an ackToken), and validity, weight and expiry as three independent functions.'
-  zh: '给 DeepSeek Harness 的长期记忆插件：每轮自动存档与召回，对按天保存的情景原文做两阶段巩固（攒满五轮未巩固时由宿主提醒，调用方用 ackToken 确认），有效性、权重、过期三个函数各管一件事。'
+  zh: "瑞希的记忆（dsh-memory-v2）——DeepSeek Harness 的本地长期记忆插件：语义、结论、画像、临时四类记忆集合，按天保存对话原文，两阶段巩固与字面溯源。结构化条目召回无命中时自动回退到情景原文搜索：先按时间词窗口（昨天/上周/X天前/具体日期）查，再按近 2/7/30/180 天阶梯逐层翻，命中片段带行号出处。所有数据只保存在本机 DSH 目录；语义召回、诊断日志与敏感调试路由默认关闭。"
+  en: "Rui Xi's Memory (dsh-memory-v2) — a local long-term memory plugin for DeepSeek Harness: four memory collections (semantic / conclusion / profile / temporary), per-day scene archives, two-phase consolidation and literal trace. When structured recall finds nothing, it falls back to searching the daily scene archive: time-window first (yesterday / last week / N days ago / dates), then a 2/7/30/180-day tiered sweep, with line-numbered citations. All data stays in the local DSH directory; semantic recall, diagnostic logs and the sensitive debug route are off by default."

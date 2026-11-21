@@ -1,0 +1,6 @@
+url: https://github.com/poloniumn/dsh-model-panel
+name: poloniumn/dsh-model-panel
+category: model
+description:
+  en: 'Replaces the composer model seat with a searchable provider and model table: per-model discount chips, live balance and plan rows, channel credits, and a per-session subagent switch.'
+  zh: '把输入框的模型选择位换成可搜索的服务商与模型表格，含逐模型折扣倍率、实时余额与套餐进度、渠道积分，以及每会话的启用子任务开关。'

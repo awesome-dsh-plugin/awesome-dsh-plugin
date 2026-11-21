@@ -1,0 +1,6 @@
+url: https://github.com/LiueCreater/dsh-appearance
+name: LiueCreater/dsh-appearance
+category: ui
+description:
+  en: 'A DSH appearance plugin offering wallpaper, glassmorphism, palette theming, and a sidebar usage widget. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 DSH 提供壁纸、玻璃拟态、图片取色主题以及侧栏用量小组件的外观插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

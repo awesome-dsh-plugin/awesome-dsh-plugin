@@ -1,0 +1,7 @@
+url: https://github.com/ganglz1024/dsh-weather-matrix-widget
+name: ganglz1024/dsh-weather-matrix-widget
+category: ui
+description:
+  en: Floating pixel-matrix weather widget for the DSH Web UI with an animated tile scene, hourly and 3-day forecast, city search, custom sizes and a minimized pill.
+  zh: DSH 网页版悬浮「方格马赛克」天气挂件：动态天气场景、逐时与三日预报、城市搜索、自定义大小与最小化胶囊。
+icon: https://raw.githubusercontent.com/ganglz1024/dsh-weather-matrix-widget/main/docs/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/norths7ar/dsh-task-notifications
+name: norths7ar/dsh-task-notifications
+category: notify
+description:
+  en: Get system notifications when tasks finish, fail, or need input, and click to return to the conversation.
+  zh: 任务完成、失败或需要操作时接收系统通知，点击返回对应会话。

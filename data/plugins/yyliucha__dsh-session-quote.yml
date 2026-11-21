@@ -1,0 +1,7 @@
+url: https://github.com/yyliucha/dsh-session-quote
+name: yyliucha/dsh-session-quote
+category: session
+description:
+  en: 'Quote one message from an earlier session into the composer as an inline quote, plus a quote action on each assistant reply; the quote is sent as a Markdown blockquote attached to the reply, so the model knows which message it answers.'
+  zh: 在输入框里引用之前会话中的某一条消息（回复操作栏也有引用按钮），以引用条随提问发送，模型据此知道这条回复针对哪条内容。
+icon: https://raw.githubusercontent.com/yyliucha/dsh-session-quote/main/assets/icon-180.png

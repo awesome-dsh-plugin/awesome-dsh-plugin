@@ -1,0 +1,6 @@
+url: https://github.com/66-zhimeng/dsh-tool-dispatch
+name: 66-zhimeng/dsh-tool-dispatch
+category: dev
+description:
+  en: 'Batches independent tool calls into one model round-trip: run_tools dispatches many steps concurrently (after-dependencies for ordering), run_parallel fans out sub-agents, so fewer round-trips and lower wall-clock time.'
+  zh: '把互不依赖的工具调用合并进一次模型往返：run_tools 并发派发多步（after 表达先后依赖），run_parallel 并行派发子 agent，减少往返次数与墙钟时间。'

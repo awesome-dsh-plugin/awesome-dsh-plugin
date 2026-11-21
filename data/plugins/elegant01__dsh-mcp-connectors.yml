@@ -1,0 +1,7 @@
+url: https://github.com/elegant01/dsh-mcp-connectors
+name: elegant01/dsh-mcp-connectors
+category: tools
+description:
+  en: Manage MCP servers across local AI agents from one panel — read and edit DSH, Claude Code, Codex, Cursor and WorkBuddy configs with automatic backups and rollback, and install connectors from the MCP Registry, mcp.so and the local WorkBuddy marketplace.
+  zh: 在一个面板里管理本机各 Agent 的 MCP 服务器——读写 DSH、Claude Code、Codex、Cursor、WorkBuddy 等配置，写入前自动备份并可回退，还能从 MCP Registry、mcp.so 和本机 WorkBuddy 市场发现并安装连接器。
+icon: https://raw.githubusercontent.com/elegant01/dsh-mcp-connectors/main/assets/icon-market.png

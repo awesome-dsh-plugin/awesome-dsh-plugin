@@ -1,0 +1,6 @@
+url: https://github.com/wth373737/dsh-chat-lite
+name: wth373737/dsh-chat-lite
+category: ui
+description:
+  en: 'A separate chat area for DeepSeek Harness: a sidebar panel and a phone-installable PWA over the same conversations, with a self-managed history library (day grouping, full-text search), attachments inline, and host-side text extraction for PDF, DOCX, PPTX and XLSX so the model needs no file tools. Conversations live in their own directory, not in a coding workspace. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 的独立闲聊区：侧栏面板与可装到手机的 PWA 共用同一批会话，自带历史库（按天分组、全文搜索）、附件内联，并在宿主侧抽取 PDF/DOCX/PPTX/XLSX 文字，模型不需要任何文件工具。会话放在专属目录，不混进写代码的工作区。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

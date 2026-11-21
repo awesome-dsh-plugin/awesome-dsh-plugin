@@ -1,0 +1,6 @@
+url: https://github.com/Watchcats211/dsh-podwave
+name: Watchcats211/dsh-podwave
+category: voice
+description:
+  en: 'Local-first podcast player and transcriber for DeepSeek Harness: plays audio files from your disk, transcribes with local ASR, shows bilingual subtitles and exports SRT or Markdown.'
+  zh: '本地优先的播客播放器与转写插件：播放磁盘音频，本地转写、双语字幕与 SRT/Markdown 导出。'

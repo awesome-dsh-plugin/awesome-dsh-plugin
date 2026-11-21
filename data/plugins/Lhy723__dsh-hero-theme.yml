@@ -1,0 +1,7 @@
+url: https://github.com/Lhy723/dsh-hero-theme
+name: Lhy723/dsh-hero-theme
+category: theme
+description:
+  en: 'HeroUI v3 theme builder for DeepSeek Harness Web and Desktop: live Accent hue, Base tint, font family, radius, form radius and light/dark controls, applied as one token-override layer with HeroUI Slider, Tabs and Select.'
+  zh: '为 DeepSeek Harness Web 与桌面端提供 HeroUI v3 主题构建器：实时调节 Accent 色相、Base 彩度、字体、圆角、表单圆角与明暗模式，通过单层令牌覆盖生效，设置控件使用 HeroUI Slider、Tabs 与 Select。'
+icon: https://raw.githubusercontent.com/Lhy723/dsh-hero-theme/main/.github/asset/icon-180.png

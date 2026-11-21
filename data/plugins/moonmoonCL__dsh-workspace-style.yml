@@ -1,0 +1,6 @@
+url: https://github.com/moonmoonCL/dsh-workspace-style
+name: moonmoonCL/dsh-workspace-style
+category: ui
+description:
+  en: Gives each workspace its own sidebar icon and color through a single Edit dialog that replaces the row menu's Rename item. Each icon has a collapsed outline, an expanded outline, and a filled hollow form shown while the workspace holds the current session.
+  zh: 用一个「编辑」对话框（替换工作区行菜单的「重命名」）为每个工作区设置侧栏图标与颜色。每个图标有三种形态：收起描边、展开描边，以及工作区包含当前会话时显示的实心镂空形态。

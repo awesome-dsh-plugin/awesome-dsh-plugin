@@ -1,0 +1,6 @@
+url: https://github.com/loftspire/dsh-github-inventory
+name: loftspire/dsh-github-inventory
+category: market
+description:
+  en: Settings page that lists everything installed from GitHub — skills, CLI tools and plugin bundles — with origin badges, update checks, one-click updates and on-off switches for skills.
+  zh: 设置页里把从 GitHub 装进来的东西列成一张表——技能、命令行工具、插件包，带来源徽标，可检查更新、一键更新、直接开关技能。

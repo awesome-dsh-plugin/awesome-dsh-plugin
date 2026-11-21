@@ -1,0 +1,6 @@
+url: https://github.com/kuznecov-anatoliy/dsh-opencode-classic-sidebar
+name: kuznecov-anatoliy/dsh-opencode-classic-sidebar
+category: ui
+description:
+  en: 'Classic pre-redesign OpenCode sidebar layout: a project column next to the selected project''s session list with pin, rename, fork, copy id and archive, an archive view, Windows caption-strip panel buttons and an account balance chip.'
+  zh: '重设计之前的经典 OpenCode 侧栏布局：项目列在左、所选项目的会话列表在旁，支持置顶、重命名、分叉、复制 id 与归档，带归档视图、Windows 标题栏面板按钮和账户余额标签。'

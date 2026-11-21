@@ -1,0 +1,6 @@
+url: https://github.com/FukangZ/bilibili-subtitles/tree/main/packages/dsh
+name: FukangZ/bilibili-subtitles#dsh
+category: tools
+description:
+  en: Turns long Bilibili videos into readable Markdown articles using their existing Chinese subtitles.
+  zh: 基于已有中文字幕，将哔哩哔哩（B 站）长视频整理成可通读的 Markdown 全文。

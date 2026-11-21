@@ -1,0 +1,6 @@
+url: https://github.com/misakalemon/dsh-session-backup
+name: misakalemon/dsh-session-backup
+category: session
+description:
+  en: 'Incremental backup of DSH session logs, attachments and storages to WebDAV or a local/shared directory: size+mtime fast path then SHA-256 manifest check, N-version retention, exclude patterns, bandwidth limit, retries with backoff, four schedule triggers, and dry-run restore. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 DSH 会话日志、附件与存储快照增量备份到 WebDAV 或本地/共享目录：先按大小与修改时间快进、再按 SHA-256 清单复核，保留 N 份旧版本，支持排除规则、限速重试、四种调度触发，恢复前可先干跑。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

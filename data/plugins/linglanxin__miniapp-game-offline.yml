@@ -1,0 +1,7 @@
+url: https://github.com/linglanxin/miniapp-game-offline
+name: linglanxin/miniapp-game-offline
+category: skill
+description:
+  en: Registers a skill for identifying original miniapp game builds, verifying mirrored assets, and preparing offline Windows or Android packages.
+  zh: 注册小程序游戏离线移植技能，指导核对原版构建、校验镜像资源和打包 Windows 或 Android 本地版。
+tarball: https://github.com/linglanxin/miniapp-game-offline/releases/download/v1.0.0/dsh-miniapp-game-offline-1.0.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/skillpie/dsh-plugins/tree/main/dsh-webkit
+name: skillpie/dsh-plugins#dsh-webkit
+category: browser
+icon: https://raw.githubusercontent.com/skillpie/dsh-plugins/main/dsh-webkit/assets/icon-180.png
+description:
+  en: 'Element picker and free-size viewport for the right-sidebar browser: hover-highlight a page element to send its selector, styles and HTML snippet into the chat draft, and resize the webview to remembered device presets with auto-fit scaling.'
+  zh: '右侧栏浏览器的元素拾取与自由尺寸视口：悬停高亮页面元素，把选择器、样式与 HTML 片段送进对话草稿；视口条按设备档（手机/平板/桌面/幻灯片）或自定义尺寸缩放网页视图。'

@@ -1,0 +1,6 @@
+url: https://github.com/Mr-cjf/cohub/tree/main/packages/dsh-cohub
+name: Mr-cjf/cohub#dsh-cohub
+category: workflow
+description:
+  en: 'Agent-orchestration plugin for DeepSeek Harness: a dispatch-only orchestrator preset, 13 agent skills, delegation tools, and per-skill model routing.'
+  zh: '面向 DeepSeek Harness 的智能体编排插件：纯调度编排 preset、13 个专职代理技能、委派工具，以及按技能名配置的模型路由。'

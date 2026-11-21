@@ -1,0 +1,6 @@
+url: https://github.com/astelirons-ai/dsh-local-monitor
+name: astelirons-ai/dsh-local-monitor
+category: ui
+description:
+  en: 'Floating, draggable sensor dashboard for the Harness Web UI on Windows: GPU-Z GPU temperature, clock and dedicated VRAM on the left, CPU temperature/clock and system memory on the right.'
+  zh: 'Windows 上 Harness 网页界面的浮动可拖动传感器面板：左侧显示 GPU-Z 的 GPU 温度、频率和专用显存，右侧显示 CPU 温度、频率和系统内存。'

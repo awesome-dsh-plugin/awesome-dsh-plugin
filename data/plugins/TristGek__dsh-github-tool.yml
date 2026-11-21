@@ -1,0 +1,6 @@
+url: https://github.com/TristGek/dsh-github-tool
+name: TristGek/dsh-github-tool
+category: git
+description:
+  en: 'GitHub workspace inside the sidebar: sign in with a personal access token and stay signed in, browse the public repositories created in the last 7 days with the most stars, search repositories, and open an in-panel repository page with Code/Issues tabs, branch switching, clone URLs, file and README views, and Star.'
+  zh: '侧栏里的 GitHub 工作区：用个人访问令牌登录并保持登录，浏览最近 7 天 star 最多的新公开仓库、搜索仓库，并在插件内打开带 Code/Issues 标签、分支切换、克隆地址、文件与 README 视图和 Star 的仓库页。'

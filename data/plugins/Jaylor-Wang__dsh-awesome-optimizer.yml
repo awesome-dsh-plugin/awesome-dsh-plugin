@@ -1,0 +1,6 @@
+url: https://github.com/Jaylor-Wang/dsh-awesome-optimizer
+name: Jaylor-Wang/dsh-awesome-optimizer
+category: dev
+description:
+  en: 'Runtime policy guards that block repeated failing tool calls, oversized shell commands and network commands chained with local ones, composite batch tools (read_batch/edit_batch), a SYSTEM.md mode that replaces the official system-prompt sections with your own file, soft convergence notices, and turn telemetry for DeepSeek Harness.'
+  zh: 'DeepSeek Harness 的运行时策略防护（拦截重复失败的工具调用、超长 shell 命令、与本地命令串联的网络命令）、复合批处理工具（read_batch/edit_batch）、用你自己的 SYSTEM.md 替换官方系统提示词各段的模式、软收敛提醒和回合遥测。'

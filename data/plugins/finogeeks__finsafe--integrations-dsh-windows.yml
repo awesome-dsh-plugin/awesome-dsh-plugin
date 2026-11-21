@@ -1,0 +1,7 @@
+url: https://github.com/finogeeks/finsafe/tree/main/integrations/dsh/windows
+name: finogeeks/finsafe#finshield
+category: security
+description:
+  en: 'Windows sandbox for DSH Desktop: process isolation, permission controls, selected-file protection against accidental deletion, privacy and system security. FinShield limits reading, overwriting and deletion within configured protected files and directories. Privacy protection restricts screen capture and recording, camera and microphone access. System protection guards processes, services and registry settings, and limits desktop and input interference. Finogeeks has published 38 public comparison scenarios. Windows x64 only; install through the DSH Desktop plugin manager. First activation downloads and installs the matching native runtime with SHA256 verification and Windows consent, and runs an updater process. Protection depends on actual activation, configuration and version.'
+  zh: 'Windows x64 安全沙箱，为 DSH Desktop 提供安全防护、进程隔离和权限控制。文件保护、目录保护：防误删，限制指定目录的读取、覆盖与删除；隐私保护：限制截屏、录屏、摄像头和麦克风访问；系统保护：约束进程、服务、注册表及桌面干扰。FinShield 首次启用需下载原生组件并经 Windows 授权。Finogeeks 已发布38项公开对照测评。仅支持 Windows x64，请通过 DSH 桌面版插件管理器安装；原生安装包校验 SHA256，更新器进程负责安装、授权协调和所需重启。防护包括对窗口操控和输入干扰的限制；具体保护取决于实际防护状态、配置与版本。'
+icon: https://raw.githubusercontent.com/finogeeks/finsafe/main/integrations/dsh/windows/assets/finshield.png

@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-onboarding-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-onboarding-check'
+category: 'tools'
+description:
+  en: 'Onboarding doc hygiene: what must be installed first, a pasteable command, what success looks like, where to ask when it fails, and how long it takes — a doc with no time estimate does not get started. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '上手指南的检查：先装什么、一条能粘贴的命令、成功长什么样、失败去哪儿问、要花多久——没写耗时的文档不会被开始打开。代码块按内容判断，显示版本号的 text 块不算命令块。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

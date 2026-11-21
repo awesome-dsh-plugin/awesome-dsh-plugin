@@ -1,0 +1,7 @@
+url: https://github.com/YIFUHEYAN-5/dsh-work-process-3d
+name: YIFUHEYAN-5/dsh-work-process-3d
+category: usage
+description:
+  en: 'Renders the running DSH conversation as a 3D precision factory: token balance in the fuel tank, generation rate in the engine, each tool call at one of ten stations, subagents at the dock, and every turn paired with what it cost.'
+  zh: '把正在进行的 DSH 会话渲染成一座 3D 精密工厂：燃料罐里是 token 余额，引擎上是生成速度，十座工位各对应一类工具调用，坞站里是子智能体，每一轮都在成品库里和它的花费对在一起。'
+tarball: https://github.com/YIFUHEYAN-5/dsh-work-process-3d/releases/latest/download/dsh-work-process-3d.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/JevonsCode/fuli/tree/main/packages/dsh-connector
+name: JevonsCode/fuli#dsh-connector
+category: memory
+description:
+  en: 'Connects DSH to a local FULI install: each turn gets FULI''s task entry (saved preferences and project facts) as a context message, a completed turn closes its FULI task, and FULI''s MCP tools are mounted. Requires FULI 0.27.0 or newer on the same computer.'
+  zh: '把 DSH 接到本机安装的 FULI：每轮开头把 FULI 的任务入口（已保存的偏好与项目事实）作为一条上下文消息加入，本轮完成时收尾 FULI 任务，并挂上 FULI 的 MCP 工具。需要本机安装 FULI 0.27.0 及以上。'

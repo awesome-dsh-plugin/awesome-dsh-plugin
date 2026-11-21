@@ -1,0 +1,6 @@
+url: https://github.com/LUXBYA/dsh-project-hooks
+name: LUXBYA/dsh-project-hooks
+category: workflow
+description:
+  en: 'Per-workspace project hooks: inject project context on each turn and run a compile gate before commits, with a settings panel and a run log. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '按工作区隔离的项目钩子：每轮注入项目上下文，提交前跑编译门禁。内置配置面板与运行日志。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

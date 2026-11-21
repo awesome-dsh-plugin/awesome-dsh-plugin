@@ -1,0 +1,8 @@
+url: https://github.com/Little-Grebe-Inc/dsh-drillr
+name: Little-Grebe-Inc/dsh-drillr
+category: tools
+description:
+  en: 'Connects dsh to drillr''s hosted MCP server through the official @deepseek-ai/dsh-mcp-client, adding ten financial data tools (mcp__drillr__*) for US, Japan and China A-share equities: ticker lookup, company search, filing list and full-text filing search, a table catalog with schemas, read-only SQL over financial and alternative-data tables, news search, and earnings-call based industry inflections and AI adoption. A Settings → drillr page stores your drillr API key in the dsh credential store after a test call to the gateway accepts it; a drillr account is required. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过官方 @deepseek-ai/dsh-mcp-client 把 dsh 接到 drillr 托管的 MCP 服务，新增 10 个金融数据工具（mcp__drillr__*），覆盖美股、日股和 A 股：代码查询、公司检索、公告列表与公告全文检索、数据表目录与字段说明、财务表和另类数据表只读 SQL、新闻检索，以及基于业绩电话会的行业拐点和企业 AI 应用。「设置 → drillr」页面先用 key 试调一次 gateway，通过后才把 drillr API key 存进 dsh 凭据库；需要 drillr 账号。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Little-Grebe-Inc/dsh-drillr/main/assets/icon.png
+tarball: https://github.com/Little-Grebe-Inc/dsh-drillr/releases/latest/download/dsh-drillr.tgz

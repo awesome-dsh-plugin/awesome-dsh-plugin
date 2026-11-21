@@ -1,0 +1,7 @@
+url: https://github.com/happyde2b/dsh-balance-display-simple
+name: happyde2b/dsh-balance-display-simple
+category: usage
+description:
+  en: 'Shows the DeepSeek API account balance under the brand row of the DSH sidebar and refreshes it every 60 seconds. A dot turns green when the account is available, red when it is not, and orange when the request fails. The balance is read through a same-origin endpoint served by the host, so the API key never reaches the browser. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 侧边栏品牌行下方显示 DeepSeek API 账户余额，每 60 秒刷新一次；圆点绿色表示账户可用，红色表示不可用，橙色表示请求失败。余额经宿主提供的同源端点获取，API Key 不会进入浏览器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/happyde2b/dsh-balance-display-simple/releases/latest/download/dsh-balance-display-simple.tgz

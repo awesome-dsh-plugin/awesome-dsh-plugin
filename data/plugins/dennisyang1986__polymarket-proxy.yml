@@ -1,0 +1,6 @@
+url: https://github.com/dennisyang1986/polymarket-proxy
+name: dennisyang1986/polymarket-proxy
+category: tools
+description:
+  en: 'Polymarket on a local panel inside DeepSeek Harness: portfolio, cash and deposit address recovered from public Polygon history, an auto-refreshing market radar, live CLOB betting and one-click position close — for when the official Polymarket deposit or trading page is unavailable. Two read-only agent tools; the signing key stays in the DSH credentials store, and every route passes DSH connection admission.'
+  zh: '在 DeepSeek Harness 里搭一个本机 Polymarket 面板：资产、现金与从 Polygon 公开记录还原的充值地址，自动刷新的盘口雷达，实时 CLOB 下注与一键平仓——官网充值或交易页不可用时继续操作。附带两个只读 Agent 工具；签名私钥只保存在 DSH 凭据库，所有路由都经过 DSH 连接准入检查。'

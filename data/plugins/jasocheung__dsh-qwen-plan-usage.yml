@@ -1,0 +1,6 @@
+url: https://github.com/jasocheung/dsh-qwen-plan-usage
+name: jasocheung/dsh-qwen-plan-usage
+category: usage
+description:
+  en: 'Shows your Qwen AI Platform Token Plan remaining Credits, usage percent and reset time in the DSH sidebar, with model guidance that auto-fetches the console cookie from your browser. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 侧边栏显示千问 AI 平台 Token Plan 剩余 Credits、用量百分比与重置时间，并引导模型自动从浏览器获取控制台 cookie。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

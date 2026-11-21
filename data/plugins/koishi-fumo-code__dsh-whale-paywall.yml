@@ -1,0 +1,8 @@
+url: https://github.com/koishi-fumo-code/dsh-whale-paywall
+name: koishi-fumo-code/dsh-whale-paywall
+category: fun
+description:
+  en: 'Simulated paywall for DSH: starting a session, archiving, downloading a plugin, opening Settings, enabling a plugin, web search and switching models each cost whale coins, with a package mall inside Settings. No real money is involved. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DSH 的模拟收费：新建会话、归档、下载插件、进入设置、启用插件、联网搜索、切换模型各收若干鲸元，并在设置里内嵌礼包商场。不产生任何真实费用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/koishi-fumo-code/dsh-whale-paywall/main/assets/icon-180.png
+tarball: https://github.com/koishi-fumo-code/dsh-whale-paywall/releases/latest/download/dsh-whale-paywall.tgz

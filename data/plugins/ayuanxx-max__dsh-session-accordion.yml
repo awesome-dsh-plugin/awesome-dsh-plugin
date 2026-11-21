@@ -2,5 +2,5 @@ url: https://github.com/ayuanxx-max/dsh-session-accordion
 name: ayuanxx-max/dsh-session-accordion
 category: ui
 description:
-  en: 'Chat turn accordion: every interaction folds into one row with a time pill and question summary, only the newest turn stays open, and switching sessions or starting a new turn resets the open state; the execution process opens only on its own click.'
-  zh: 会话交互折叠：每次交互压成一行（时间胶囊 + 提问摘要），只保留最近一次展开；切换工作区/会话或产生新交互都会重置到最新一条；执行过程仅在单独点击时展开。
+  en: 'Chat turn accordion: every interaction folds into one row with a time pill and question summary, only the newest turn stays open, and a new turn or a session switch resets the open state. 3.0 adds a per-turn pin (a pinned turn never folds and is remembered per session), a persistent search button that is closed by default and opens to the left of the send arrow (Enter jumps to the next match, Esc restores), three visually distinct states for folded / open / pinned turns, day separators, a fork badge, and bilingual copy with aria labels and j/k navigation.'
+  zh: 会话交互折叠：每次交互压成一行（时间胶囊 + 提问摘要），只保留最近一次展开，产生新交互或切换会话都会重置到最新一条。3.0 新增：按轮钉住（钉住的那轮永不折叠，按会话记忆）、常驻搜索按钮（默认不打开，点击才开在发送箭头左侧，Enter 跳下一个命中、Esc 关闭还原）、折叠/展开/钉住三态配色可一眼分辨、日期吸头、分叉徽标，以及中英文案与 aria 无障碍和 j/k 导航。

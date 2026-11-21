@@ -1,0 +1,6 @@
+url: https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-plugin-airlock
+name: gabrielbav/dsh-workspace#dsh-plugin-airlock
+category: security
+description:
+  en: 'Puts every plugin, skill and subagent bundle through 6 security scanners (Cisco Skill Scanner, SkillScan, Cisco MCP Scanner, OSV-Scanner, Trivy, Gitleaks) and an optional LLM judge on your own DSH model, in a quarantine with install scripts off, checking for prompt injection, MCP tool poisoning, vulnerable dependencies and leaked secrets; then it installs, asks you, or blocks, and confirms the installed files are the ones it scanned. Works on stock DSH.'
+  zh: '让每个插件、技能和子代理组合包在禁用安装脚本的隔离区中通过 6 个安全扫描器（Cisco Skill Scanner、SkillScan、Cisco MCP Scanner、OSV-Scanner、Trivy、Gitleaks）和基于你自己 DSH 模型的可选 LLM 判定，检查提示词注入、MCP 工具投毒、有漏洞的依赖和泄露的密钥；随后放行、询问你或阻止，并确认安装的文件就是扫描过的文件。可在原版 DSH 上运行。'

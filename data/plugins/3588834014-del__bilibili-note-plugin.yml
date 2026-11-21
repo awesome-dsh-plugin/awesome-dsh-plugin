@@ -1,0 +1,6 @@
+url: https://github.com/3588834014-del/bilibili-note-plugin
+name: 3588834014-del/bilibili-note-plugin
+category: skill
+description:
+  en: Registers a skill that turns a Bilibili video link into a structured Obsidian note. It fetches subtitles only with yt-dlp and never downloads the video, merges multi-part anthologies onto one continuous timeline, and writes front matter, timestamped jump-link bullets, a summary and tags into the vault.
+  zh: 注册一个技能，把 B站视频链接变成 Obsidian 结构化笔记。只用 yt-dlp 拉字幕、不下载视频；多分 P 合集合并成一条连续时间轴；写入 frontmatter、带时间戳的跳转要点、摘要与标签。

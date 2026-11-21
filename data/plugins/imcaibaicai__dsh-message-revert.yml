@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-message-revert
+name: imcaibaicai/dsh-message-revert
+category: session
+description:
+  en: 'A revert button on every sent message: on confirm it returns that message''s text and attachments to the composer, rolls the session back to before that step and restores workspace files to their captured before-content.'
+  zh: '每条已发送消息上都有回退按钮：确认后把该消息的文字与附件放回输入框，把会话回滚到这一步之前，并把工作区文件恢复到当时记录的修改前内容。'

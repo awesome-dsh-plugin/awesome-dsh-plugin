@@ -1,0 +1,6 @@
+url: https://github.com/yunxiao11xie/dsh-context-meter
+name: yunxiao11xie/dsh-context-meter
+category: ui
+description:
+  en: "Moves the context-occupancy ring out of the lonely dock row below the composer card into the composer tool row, beside the quick-prompt trigger. The same ring and percentage from the contextPressure projection, always visible while generating, with a click-open panel showing the system prompt / tools / conversation breakdown and ~used/window tokens."
+  zh: "把上下文用量圆环从输入卡片下方独占一行的位置搬进输入框工具行（闪电按钮旁）：同样的圆环与百分比（contextPressure 投影），生成回复期间也常驻不消失；点击展开「系统提示 / 工具 / 对话」占比明细与 ~已用/窗口 token 数。"

@@ -1,0 +1,7 @@
+url: https://github.com/vip-pan/dsh-codemap
+name: vip-pan/dsh-codemap
+category: tools
+description:
+  en: 'Project-scoped code graph tools for DSH: one bundle registers nine read-only tools (symbol lookup, call chains, dependencies, Cypher queries) and resolves the repository from each session''s working directory by connecting to the codemap CLI over MCP.'
+  zh: 'DSH 的项目级代码图谱工具：一个插件注册九个只读工具（符号查找、调用链、依赖、Cypher 查询），按会话工作目录自动定位仓库，通过 MCP 连接 codemap CLI。'
+icon: https://raw.githubusercontent.com/vip-pan/dsh-codemap/main/docs/icon-180.png

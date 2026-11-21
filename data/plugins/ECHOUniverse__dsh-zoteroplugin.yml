@@ -1,0 +1,7 @@
+url: https://github.com/ECHOUniverse/dsh-zoteroplugin
+name: ECHOUniverse/dsh-zoteroplugin
+category: tools
+icon: https://raw.githubusercontent.com/ECHOUniverse/dsh-zoteroplugin/main/assets/icon-180.png
+description:
+  en: 'Zotero plugin for DeepSeek Harness: browse and search your library, read PDFs with annotations and highlights in a right-sidebar tab, export BibTeX and RIS citations, and drive the same actions through 19 agent tools.'
+  zh: '面向 DeepSeek Harness 的 Zotero 插件：在右侧标签内浏览检索文库、阅读带注释与高亮的 PDF、导出 BibTeX 与 RIS 引文，并通过 19 个 Agent 工具完成同样的操作。'

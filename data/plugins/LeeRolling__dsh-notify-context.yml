@@ -1,0 +1,6 @@
+url: https://github.com/LeeRolling/dsh-notify-context
+name: LeeRolling/dsh-notify-context
+category: notify
+description:
+  en: 'Desktop notifications for turn completion, pending approval and pending questions, each with a per-situation title and the task summary it carries; silent while the client window is in front, and backed by a rotating diagnostic trace. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '回合完成、等待授权、等待回答时弹系统通知，标题按情况分类并附任务摘要；客户端在前台时不打扰，并保留可轮转的诊断记录。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

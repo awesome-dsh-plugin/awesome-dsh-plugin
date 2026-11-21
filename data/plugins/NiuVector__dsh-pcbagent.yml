@@ -1,0 +1,7 @@
+url: https://github.com/NiuVector/dsh-pcbagent
+name: NiuVector/dsh-pcbagent
+category: tools
+description:
+  en: View KiCad schematics and PCBs side by side with local KiCanvas rendering and optional routing through separately installed KiCad and Freerouting tools.
+  zh: 并排查看 KiCad 原理图与 PCB，使用本地 KiCanvas 渲染，并可调用另行安装的 KiCad 和 Freerouting 工具进行自动布线。
+tarball: https://github.com/NiuVector/dsh-pcbagent/releases/download/v0.1.0/dsh-pcbagent-0.1.0.tgz

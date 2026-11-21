@@ -1,0 +1,6 @@
+url: https://github.com/cqingwang/dsh-editor
+name: cqingwang/dsh-editor
+category: ui
+description:
+  en: JetBrains IDEA-style editor workspace for DeepSeek Harness with Project, Commit, terminal, and find/replace beside the chat, using familiar IDEA shortcuts such as Alt+1/2/3, Alt+F12, and Cmd/Ctrl+Shift+F.
+  zh: 为 DeepSeek Harness 提供 JetBrains IDEA 风格编辑器工作台，在聊天旁集成 Project、Commit、终端和查找替换，并支持 Alt+1/2/3、Alt+F12、Cmd/Ctrl+Shift+F 等常用 IDEA 快捷键。

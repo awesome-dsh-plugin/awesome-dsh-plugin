@@ -1,0 +1,6 @@
+url: https://github.com/clear0/dsh-sag-wiki
+name: clear0/dsh-sag-wiki
+category: tools
+description:
+  en: 'Adds four tools that query a local SAG Wiki index through the installed SAG CLI: semantic search, exact or regex match, and index status or update. Needs the SAG CLI on PATH, and semantic search also needs a JEV model configured in SAG; the model chooses which directory to index or drop (default: the session working directory).'
+  zh: '通过本机 SAG CLI 提供四个工具查询 SAG Wiki 本地索引：语义检索、精确或正则匹配，以及索引状态查询与增删。需要 SAG CLI 在 PATH 里，语义检索还要在 SAG 里配好 JEV 模型；索引或移除哪个目录由模型决定（默认是会话工作目录）。'

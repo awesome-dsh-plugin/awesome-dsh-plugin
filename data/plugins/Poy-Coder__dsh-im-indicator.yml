@@ -1,0 +1,6 @@
+url: https://github.com/Poy-Coder/dsh-im-indicator
+name: Poy-Coder/dsh-im-indicator
+category: ui
+description:
+  en: 'Puts a channel capsule and a live status dot on the one session each IM channel is currently driving in the sidebar; zero dependencies, about 7 kB. Its HTTP route authenticates every request through DSH connection.requestRejection, so a foreign origin receives 401/403 with an empty body.'
+  zh: '在左侧会话列表标出「哪个会话正被 IM 通道驱动」：一行胶囊加一个实时状态点；零依赖、约 7 kB。它的 HTTP 路由通过 DSH 的 connection.requestRejection 鉴权，跨站请求返回 401/403 且无响应体。'

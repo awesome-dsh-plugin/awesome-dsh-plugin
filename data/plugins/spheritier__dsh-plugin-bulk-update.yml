@@ -1,0 +1,7 @@
+url: https://github.com/spheritier/dsh-plugin-bulk-update
+name: spheritier/dsh-plugin-bulk-update
+icon: https://raw.githubusercontent.com/spheritier/dsh-plugin-bulk-update/main/assets/icon-180.png
+category: workflow
+description:
+  en: 'Check installed DSH registry plugins for compatible updates, then choose which versions to apply.'
+  zh: '检查已安装的 DSH registry 插件是否有兼容更新，并选择要应用的版本。'

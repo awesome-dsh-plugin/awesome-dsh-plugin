@@ -1,0 +1,7 @@
+url: https://github.com/p33333333333333l/dsh-specialist-team
+name: p33333333333333l/dsh-specialist-team
+category: workflow
+tarball: https://github.com/p33333333333333l/dsh-specialist-team/releases/download/v0.5.1/dsh-specialist-team-0.5.1.tgz
+description:
+  en: Delegate by role in Agent Teams. Have an engineer fix a bug and a separate verifier retest it. Choose models by role and set file scopes and tool permissions for each assignment.
+  zh: 在 Agent Teams 中按角色派工，例如让工程师修复，再由另一位验收员复测。可按角色选择模型，每次派工可指定文件范围和工具权限。

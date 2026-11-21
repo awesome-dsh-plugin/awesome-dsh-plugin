@@ -1,0 +1,8 @@
+url: https://github.com/yubudong/dsh-time-desk
+name: yubudong/dsh-time-desk
+category: workflow
+description:
+  en: 'A local-first DSH time desk for tasks, rest-aware habits, courses and credit ledgers, with focus timers and a general personal assistant.'
+  zh: 'DSH 原生时间工作台：待办、带休息间隔的习惯、课程课时账本与专注计时，内置通用时间精灵助手。'
+icon: https://raw.githubusercontent.com/yubudong/dsh-time-desk/881b6eef557307bd7f786fc895e3bbea329d0875/assets/time-spirit-a.png
+tarball: https://github.com/yubudong/dsh-time-desk/releases/download/v0.13.0/dsh-time-desk-0.13.0.tgz

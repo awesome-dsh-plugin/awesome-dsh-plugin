@@ -1,0 +1,6 @@
+url: https://github.com/chengzhi43/dsh-desktop-notify
+name: chengzhi43/dsh-desktop-notify
+category: notify
+description:
+  en: Sends a desktop notification when a turn finishes or the agent waits for your choice, and a click returns to that conversation.
+  zh: 回合结束或智能体等待你选择时发送桌面通知，点击即可回到对应会话。

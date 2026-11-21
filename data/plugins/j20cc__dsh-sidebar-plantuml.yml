@@ -1,0 +1,6 @@
+url: https://github.com/j20cc/dsh-sidebar-plantuml
+name: j20cc/dsh-sidebar-plantuml
+category: docs
+description:
+  en: Render PlantUML diagrams from plantuml, puml and wsd fenced code blocks in the DSH sidebar Markdown preview, using a bundled browser-side PlantUML engine; no Java or PlantUML server is required.
+  zh: 在 DSH 侧边栏的 Markdown 预览中，把 plantuml、puml、wsd 围栏代码块渲染为 SVG 图表，使用内置的浏览器端 PlantUML 引擎，无需 Java 或 PlantUML 服务器。

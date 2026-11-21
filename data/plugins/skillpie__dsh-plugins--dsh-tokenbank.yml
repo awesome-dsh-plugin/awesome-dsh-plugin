@@ -1,0 +1,7 @@
+url: https://github.com/skillpie/dsh-plugins/tree/main/dsh-tokenbank
+name: skillpie/dsh-plugins#dsh-tokenbank
+category: model
+icon: https://raw.githubusercontent.com/skillpie/dsh-plugins/main/dsh-tokenbank/assets/icon-180.png
+description:
+  en: 'Free TokenBank GLM models in one click: register for a free API key with a $5 credit, models go straight into the model list with protocol and capabilities auto-configured; balance, daily check-in, key deposits (temporary quota to permanent balance, upstream probe) and CNY recharge via Alipay. No self-hosted relay needed.'
+  zh: '一键用上 TokenBank 免费模型：注册领免费 API Key 送 $5 体验金，模型直接进模型列表（协议与能力自动配置）；自带余额、每日签到、密钥托管（闲置临时额度转永久余额，带上游探活）与人民币充值（支付宝）。无需自建中转。'

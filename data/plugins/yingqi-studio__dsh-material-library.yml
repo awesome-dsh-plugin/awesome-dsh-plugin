@@ -2,6 +2,6 @@ url: https://github.com/yingqi-studio/dsh-material-library
 name: yingqi-studio/dsh-material-library
 category: session
 description:
-  en: 'Material library for dsh: collect a folder, file or note from a conversation, keep it in real folders with tags, browse it Finder-style, reopen the source chat''s output in one click. Ships a materials_archive tool plus auto-filing rules: file a task''s deliverable once, and every later scheduled run files the new documents by itself.'
-  zh: 'dsh 材料库：把对话里产出的目录、文件或笔记收进真实文件夹并打标签，按 Finder 方式浏览，点一下跳回原始会话。内置 materials_archive 工具与自动归档规则：手动收过一次某任务的成品，之后每次定时任务跑完都会自动把新成品收进同一个文件夹。'
-icon: https://raw.githubusercontent.com/yingqi-studio/dsh-material-library/main/docs/three-pane.png
+  en: 'Collect a folder, file or note from a conversation into real folders on disk with tags, browse it Finder-style, and jump back to the source chat in one click — entries reference the original path rather than copying it. Includes a materials_archive tool and auto-filing rules: file a task''s deliverable once and later scheduled runs file their new documents into the same folder.'
+  zh: '对话里产出的成品收藏夹：把聊出来的目录、文件或笔记收进本地真实文件夹，打标签、按 Finder 方式浏览、点一下跳回原会话，条目只记原路径不复制文件。内置 materials_archive 工具与自动归档规则：某个任务的成品收过一次，之后每次定时任务跑完都会自动把新成品归档到同一个文件夹。'
+icon: https://raw.githubusercontent.com/yingqi-studio/dsh-material-library/main/assets/icon-180.png

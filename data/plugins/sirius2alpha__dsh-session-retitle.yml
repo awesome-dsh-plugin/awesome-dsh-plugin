@@ -1,0 +1,6 @@
+url: https://github.com/sirius2alpha/dsh-session-retitle
+name: sirius2alpha/dsh-session-retitle
+category: session
+description:
+  en: 'One-click session title regeneration for the current session: a labelled button beside the title, a row in the session header menu, the /retitle command, and a retitle_session agent tool, all calling the composed session-title service''s explicit refresh.'
+  zh: '一键重新生成当前会话的标题：标题旁的按钮、会话头部菜单里的一行、/retitle 命令，以及 retitle_session 智能体工具，都调用当前组合的会话标题服务的显式刷新。'
