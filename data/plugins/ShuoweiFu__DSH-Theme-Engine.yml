@@ -1,5 +1,5 @@
-url: https://github.com/ShuoweiFu/dsh-liquid-glass
-name: ShuoweiFu/dsh-liquid-glass
+url: https://github.com/ShuoweiFu/DSH-Theme-Engine
+name: DSH-Theme-Engine
 category: theme
 description:
   en: 'A high-performance WebGL liquid glass plugin made for DeepSeek Harness. It features domain distortion, chromatic refraction, and a 5-layer GPU overheat protection system.'
