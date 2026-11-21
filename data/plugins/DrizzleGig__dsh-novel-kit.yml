@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-kit
+name: DrizzleGig/dsh-novel-kit
+category: workflow
+description:
+  en: "An all-in-one novel-writing engine: seven tools take one chapter from plan to committed text, assemble its context from the story's existing notes, and show decisions, memory, style, canon and conflicts in a six-tab sidebar. It reads beat / fade / voice / fanfic ledgers on disk without migrating them, and can take them over and restore them from the panel."
+  zh: "一个独立的小说写作引擎：七个 novel_* 工具把一章从计划推进到落账，写作前装配剧情、设定、记忆与文风四段依据；右栏六页签查看拍板、记忆、文风、设定与冲突。直接读取 beat / fade / voice / fanfic 的账本、不做迁移，并可在面板里一键接管与恢复。"
