@@ -1,0 +1,7 @@
+url: https://github.com/Lee2277-t/dsh-skill-index
+name: Lee2277-t/dsh-skill-index
+category: skill
+description:
+  en: Search a local agent-skill library from inside the Harness. skill_search ranks SKILL.md files by keyword and returns their paths, so an agent can reach skills that never fit into its prompt; block-scalar frontmatter is parsed correctly instead of collapsing to a lone ">".
+  zh: 在 Harness 里检索本机技能库。skill_search 按关键词给 SKILL.md 排序并返回路径，让 agent 用得上原本塞不进系统提示的技能；能正确解析块标量写法的描述，不会只取到一个 ">"。
+icon: https://raw.githubusercontent.com/Lee2277-t/dsh-skill-index/main/assets/icon-180.png

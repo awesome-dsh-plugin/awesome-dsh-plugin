@@ -1,0 +1,7 @@
+url: https://github.com/Lee2277-t/dsh-repo-audit
+name: Lee2277-t/dsh-repo-audit
+category: security
+description:
+  en: Audit a project directory before making it public. Reports credential-shaped strings, leaked local absolute paths, a missing README or LICENSE, and oversized files, each with file and line, then returns an OK, NEEDS-WORK or BLOCK verdict.
+  zh: 项目公开前的机器体检。逐条报出凭据特征、泄漏的本机绝对路径、缺失的 README 或许可以及过大文件，都带文件名与行号，最后给出 OK、NEEDS-WORK 或 BLOCK 判定。
+icon: https://raw.githubusercontent.com/Lee2277-t/dsh-repo-audit/main/assets/icon-180.png
