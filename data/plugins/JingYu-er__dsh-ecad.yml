@@ -1,0 +1,6 @@
+url: https://github.com/JingYu-er/dsh-ecad
+name: JingYu-er/dsh-ecad
+category: tools
+description:
+  en: Headlessly draw schematics and PCBs with KiCad and TSCircuit, automatically complete validation, and export Gerber and STEP files with one click.
+  zh: 通过kicad和tscircuit无头绘制原理图和pcb,自动完成校验,并一键导出gerber,step文件

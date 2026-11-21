@@ -1,0 +1,7 @@
+url: https://github.com/sjnole/dsh-whale-dream
+name: sjnole/dsh-whale-dream
+category: theme
+tarball: https://github.com/sjnole/dsh-whale-dream/releases/download/v0.8.71/dsh-whale-dream-0.8.71.tgz
+description:
+  en: "Whale Dream is a theme plugin for DeepSeek Harness. It replaces the app palette with a deep-sea colour set, draws an ASCII whale backdrop behind the conversation, and plays a short whale-leap startup screen while the app boots. Light and dark skins are both included and follow the app's own appearance setting."
+  zh: "鲸梦是一款 DeepSeek Harness 主题插件：用深海配色替换应用配色，在对话背后绘制字符鲸鱼背景，并在启动时播放一段跃鲸开场动画。包含浅色与深色两套皮肤，跟随应用自身的外观设置切换。"

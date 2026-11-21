@@ -1,0 +1,6 @@
+url: https://github.com/cube-ai/dsh-weixin-channel
+name: cube-ai/dsh-weixin-channel
+category: remote
+description:
+  en: 'DSH WeChat Channel: connect a personal WeChat bot to the local DeepSeek Harness and drive local agents from WeChat. Derived from MichengAI/dsh-im-connect (Apache-2.0) with the other IM channels removed， customed UI desiging and identifiers renamed so both can be installed side by side.'
+  zh: 'DSH微信频道：把个人微信机器人接入本机 DeepSeek Harness，在微信里随时驱动本机智能体。基于 MichengAI/dsh-im-connect（Apache-2.0）改造，删去其它 IM 通道、定制化界面开发并重命名标识，因此可与上游同装。'

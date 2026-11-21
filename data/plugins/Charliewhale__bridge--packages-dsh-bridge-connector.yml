@@ -1,0 +1,7 @@
+url: https://github.com/Charliewhale/bridge/tree/main/packages/dsh-bridge-connector
+name: Charliewhale/bridge#dsh-bridge-connector
+category: remote
+tarball: https://github.com/Charliewhale/bridge/releases/latest/download/dsh-bridge-connector.tgz
+description:
+  en: Loopback HTTP/SSE service that lets an Obsidian plugin drive DSH sessions and tells the model which note you are reading and what you have marked (path, size, marks — coordinates only, the note body stays on disk); the agent also keeps its own separate cursor inside the editor; the companion plugin must be running in Obsidian.
+  zh: 让 Obsidian 插件驱动 DSH 会话、并把「你在读哪一篇、标记了哪里」这类坐标交给模型的回环 HTTP/SSE 服务（只给坐标，正文留在磁盘上，需要时自己去读）；AI 在编辑器里有自己独立的光标；需要在 Obsidian 内配套运行插件。

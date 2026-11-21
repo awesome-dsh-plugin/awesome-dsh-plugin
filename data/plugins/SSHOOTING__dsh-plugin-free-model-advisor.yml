@@ -1,0 +1,6 @@
+url: https://github.com/SSHOOTING/dsh-plugin-free-model-advisor
+name: SSHOOTING/dsh-plugin-free-model-advisor
+category: model
+description:
+  en: 'Read-only DSH command that lists explicitly free models from configuration and recommends a safe default.'
+  zh: '只读 DSH 命令，列出配置中明确标记免费的模型并推荐安全默认值。'

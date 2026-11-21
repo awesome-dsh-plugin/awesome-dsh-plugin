@@ -1,0 +1,6 @@
+url: https://github.com/lqshow/dsh-wechat-studio
+name: lqshow/dsh-wechat-studio
+category: docs
+description:
+  en: 'WeChat Official Account studio: import a Markdown draft, revise it block by block with a quality report, build covers and inline images, preview the formatted article, then schedule it and review imported performance data.'
+  zh: '公众号成稿台：把已有 Markdown 稿件做成可发布的公众号文章——按段改稿与质检、封面与正文配图、排版预览、排期发布，并导入后台数据复盘。'

@@ -2,6 +2,6 @@ url: https://github.com/WNLUO/dsh-mobile-plugin
 name: WNLUO/dsh-mobile-plugin
 category: remote
 description:
-  en: 'Endpoint of a companion mobile app that also runs headless, with no desktop shell or Electron required: it serves a restricted mobile API over a relay tunnel or LAN pairing, for listing, opening and driving DSH sessions, following the live device event stream, and authenticating with revocable per-device credentials.'
-  zh: '手机 App 的对端插件，自身可作无头宿主单独运行（不需要桌面外壳或 Electron）：经中转隧道或局域网配对提供受限的移动 API，用于列出、新建与操控 DSH 会话、订阅设备实时事件流，并以可吊销的设备凭据鉴权。'
+  en: 'The DeepSeek Harness app lets you use the DeepSeek Harness on this computer or server from your phone. Phones and tablets both work, on Android and iOS. On your phone you can keep chatting, look at files and manage plugins, and the machine you are using can also connect to DeepSeek Harness on your other machines and open each one separately.'
+  zh: 'DeepSeek Harness App 让你在手机上使用这台电脑或服务器上的 DeepSeek Harness。手机和平板都能用，安卓和苹果都支持。在手机上可以继续对话、查看文件、管理插件，也可以从正在用的这一台连上其他几台上的 DeepSeek Harness，分别打开来用。'
 icon: https://raw.githubusercontent.com/WNLUO/dsh-mobile-plugin/main/icon.png

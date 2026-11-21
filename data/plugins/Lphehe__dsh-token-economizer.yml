@@ -1,0 +1,6 @@
+url: https://github.com/Lphehe/dsh-token-economizer
+name: Lphehe/dsh-token-economizer
+category: tools
+description:
+  en: Reviews tool usage across sessions and optionally hides unused discovery tools per workspace.
+  zh: 统计跨会话工具使用情况，并可按项目隐藏未使用的发现类工具。

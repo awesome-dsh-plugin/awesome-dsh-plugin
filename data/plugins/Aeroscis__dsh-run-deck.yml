@@ -1,0 +1,6 @@
+url: https://github.com/Aeroscis/dsh-run-deck
+name: Aeroscis/dsh-run-deck
+category: dev
+description:
+  en: 'A launch bar above the composer: one button per launcher a project declares in .dsh/run-deck/run.json, using the VS Code tasks.json vocabulary. Click to run, click again to stop; each button carries live status, and the bar has three label densities plus a pinnable output card.'
+  zh: '输入框上方的启动条：按项目 .dsh/run-deck/run.json 里声明的条目各生成一个按钮（字段沿用 VS Code 的 tasks.json），点一下跑、再点停；每条带实时状态，另有三种按钮密度与可钉住的输出卡。'

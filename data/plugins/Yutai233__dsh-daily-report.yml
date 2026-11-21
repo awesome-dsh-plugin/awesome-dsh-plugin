@@ -2,5 +2,5 @@ url: https://github.com/Yutai233/dsh-daily-report
 name: Yutai233/dsh-daily-report
 category: session
 description:
-  en: Turns this machine's DSH session logs into daily, weekly and monthly briefs with three reading layers, tool-call statistics, token and cost estimates, blockers and unfinished todos, a morning card above the welcome-page whale, and optional Windows idle-time health reminders. By default it writes summaries without calling any model.
-  zh: 把本机 DSH 会话日志整理成日报／周报／月报：三层阅读结构、工具调用统计、token 与花费估算、卡点与未完成待办，另有欢迎页鲸鱼上方的早晨卡片与可选的 Windows 键鼠空闲健康提醒。默认不调用模型即可生成摘要。 
+  en: 'Turns DSH sessions into a one-page daily brief: what you did, tokens spent, where you got stuck and what comes next. A morning card above the welcome-page whale, data pulled from other session plugins, and Windows reminders when you sit too long.'
+  zh: 把 DSH 会话变成一页日报：做了什么、花多少 token、卡在哪、明天接着做什么。欢迎页鲸鱼上方有早晨卡片，可与其他会话插件内容联动，另有 Windows 久坐提醒。

@@ -1,0 +1,6 @@
+url: https://github.com/norths7ar/dsh-model-guidance
+name: norths7ar/dsh-model-guidance
+category: identity
+description:
+  en: Bind prompts to individual providers and models for use across Standard-mode conversations and subagents.
+  zh: 按提供商和模型绑定提示词，在标准模式的会话与子智能体中使用。

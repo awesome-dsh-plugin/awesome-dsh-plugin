@@ -1,0 +1,6 @@
+url: https://github.com/kiritoko1029/dsh-multi-agent
+name: kiritoko1029/dsh-multi-agent
+category: workflow
+description:
+  en: 'Route independent tasks to DSH, Codex, Kimi Code, or Antigravity subagents using configurable natural-language rules, with resumable sessions and a shared task panel.'
+  zh: '按可配置的自然语言规则将独立任务派发给 DSH、Codex、Kimi Code 或 Antigravity 子代理，支持会话续接和统一任务面板。'

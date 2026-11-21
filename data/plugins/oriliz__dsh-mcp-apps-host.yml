@@ -1,0 +1,6 @@
+url: https://github.com/oriliz/dsh-mcp-apps-host
+name: oriliz/dsh-mcp-apps-host
+category: ui
+description:
+  en: 'MCP Apps host: connects an MCP Apps server, keeps the `_meta.ui` payload on its tool results, and renders that HTML card in a sandboxed iframe. Card buttons bridge back to the server through `tools/call` and `resources/read`, with `session_id` injection and per-card CSP; both inline and `resourceUri` card forms work over stdio or streamable HTTP. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'MCP Apps 宿主：连接 MCP Apps 服务器，在工具结果里保留 `_meta.ui`，并把这张 HTML 卡片渲染进沙箱 iframe。卡片按钮经 `tools/call` / `resources/read` 桥接回服务器，自动注入 `session_id`，按卡片下发 CSP；支持 inline 与 `resourceUri` 两种卡片形式，stdio / streamable HTTP 两种传输。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

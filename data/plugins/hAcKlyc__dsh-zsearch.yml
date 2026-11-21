@@ -1,0 +1,6 @@
+url: https://github.com/hAcKlyc/dsh-zsearch
+name: hAcKlyc/dsh-zsearch
+category: tools
+description:
+  en: 'Zhihu and web dual-source search in DeepSeek Harness, with cited answers and a built-in plugin review topic. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DeepSeek Harness 中同时检索知乎与全网，提供带引用的回答和插件评价专题。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

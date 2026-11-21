@@ -1,0 +1,7 @@
+url: https://github.com/cloudylapis/dsh-local-model-worker
+name: cloudylapis/dsh-local-model-worker
+category: model
+description:
+  en: 'Starts a local OpenAI-compatible model server only when the model is about to be used and unloads it after an idle period, with presets for LM Studio, Ollama and llama.cpp, custom start/stop commands for anything else, and a local_model tool for status, start and stop. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '只在真要调用该模型时才启动本地 OpenAI 兼容服务，闲置一段时间自动卸载释放显存；内置 LM Studio、Ollama、llama.cpp 预设，其他服务可自定义启停命令，并提供 local_model 工具查看状态、手动启动和停止。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/cloudylapis/dsh-local-model-worker/main/assets/icon-180.png

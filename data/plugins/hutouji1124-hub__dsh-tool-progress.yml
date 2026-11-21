@@ -1,0 +1,6 @@
+url: https://github.com/hutouji1124-hub/dsh-tool-progress
+name: hutouji1124-hub/dsh-tool-progress
+category: ui
+description:
+  en: 'Adds one row above the composer that reports the current turn rather than the last tool call: tool name, argument summary, elapsed time and a running/done/failed state derived from the turn record. Expanding it shows a bar chart of the eight slowest calls this turn; it flags stuck argument generation, repeated calls on the same target, consecutive failures and calls far slower than this turn''s median for the same tool.'
+  zh: '在输入框上方加一行，描述的是当前回合而非最后一次工具调用：工具名、参数摘要、已用时间，以及由回合记录推导的运行中/已完成/失败状态。展开后显示本轮最慢八次调用的条形图，并会在参数生成卡顿、连续调用同一目标、连续失败、以及明显慢于本回合同工具中位数时给出提示。'

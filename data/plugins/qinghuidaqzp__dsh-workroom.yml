@@ -1,0 +1,6 @@
+url: https://github.com/qinghuidaqzp/dsh-workroom
+name: qinghuidaqzp/dsh-workroom
+category: fun
+description:
+  en: 'A 176×50 pixel room in the right sidebar that keeps an eye on your agent: the monitor types while a session runs, a sign flashes amber and the cat sits up when one waits for your approval, a green light means new results and red means the last turn failed, with an optional chime. Its WebGL2 glass knob switches the room between day, dusk and night and, through tools/pre-execute, sets how often the agent asks before acting (ask every step, normal, hands-off); git push, publish and sudo ask in every level.'
+  zh: '右侧栏里一间会看 Agent 脸色的 176×50 像素小书房：会话在跑时显示器敲代码，等你确认时灯牌闪黄、猫坐起来，跑完亮绿灯，出错变红，可开提示音。WebGL2 玻璃旋钮把房间拨到白天、黄昏或深夜，同时通过 tools/pre-execute 决定 Agent 改文件、跑命令、装依赖前要不要先问你（每步确认、常规、放手跑）；git push、发布、sudo 在任何一档都要确认。'

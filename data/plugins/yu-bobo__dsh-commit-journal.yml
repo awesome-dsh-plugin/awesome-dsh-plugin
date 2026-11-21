@@ -1,0 +1,7 @@
+url: https://github.com/yu-bobo/dsh-commit-journal
+name: yu-bobo/dsh-commit-journal
+category: git
+description:
+  en: Syncs commits from Codeup, GitLab, GitHub, or local git roots into a sidebar journal with an activity heatmap, and exposes agent tools for day/week/month report material.
+  zh: 从 Codeup、GitLab、GitHub 或本机 git 根目录同步提交到侧栏日志与活跃热力图，并向 Agent 提供日、周、月报材料工具。
+tarball: https://github.com/yu-bobo/dsh-commit-journal/releases/latest/download/dsh-commit-journal.tgz

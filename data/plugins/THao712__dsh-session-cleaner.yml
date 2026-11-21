@@ -1,0 +1,6 @@
+url: https://github.com/THao712/dsh-session-cleaner
+name: THao712/dsh-session-cleaner
+category: session
+description:
+  en: 'Preview and permanently delete archived Sessions from Settings → Session cleanup. The preview lists Session logs, projection checkpoints, attachments referenced only by the selected Sessions, spilled tool output, and workspace files they produced; choose ranges, inspect every path, then confirm twice. Safety checks block running Sessions, shared references, symlinks or junctions, protected paths, and stale previews; journal, pending bookkeeping, and a recovery mode handle partial failures and restarts. Install the optional companion session-archive (https://github.com/THao712/dsh-session-archive) to give every conversation its own folder; this plugin can then delete or clean that folder, keep out/ deliverables, and remove orphan folders. The companion is installed separately and is not downloaded automatically; log, attachment, and workspace cleanup works without it.'
+  zh: '在设置 → 会话清理中预览并永久删除已归档会话：预览会列出会话日志、投影检查点、仅被所选会话引用的附件、工具输出溢出目录，以及会话在工作区产生的文件；选择范围、逐项检查后两次确认。运行中的会话、共享引用、符号链接或 Junction、受保护路径和过期预览都会被拒绝；journal、pending 收尾和恢复模式用于处理部分失败与重启。另装可选的 session-archive（https://github.com/THao712/dsh-session-archive）可为每个对话建立独立目录，本插件即可整目录删除、保留 out/ 终产物或清理残留目录；两者独立安装，不会自动下载，单独使用也能清理日志、附件和工作区文件。'

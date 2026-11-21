@@ -1,0 +1,7 @@
+url: https://github.com/yu-bobo/dsh-dev-tools
+name: yu-bobo/dsh-dev-tools
+category: dev
+description:
+  en: Sidebar developer utilities for JSON, timestamp, UUID, hash, AES, Base64, Diff, and model-backed translate, with pinable tabs and agent tools.
+  zh: 侧栏开发者工具，覆盖 JSON、时间戳、UUID、Hash、AES、Base64、Diff 与宿主模型翻译，支持 Pin 到 Tab，并向 Agent 暴露工具。
+tarball: https://github.com/yu-bobo/dsh-dev-tools/releases/latest/download/dsh-dev-tools.tgz

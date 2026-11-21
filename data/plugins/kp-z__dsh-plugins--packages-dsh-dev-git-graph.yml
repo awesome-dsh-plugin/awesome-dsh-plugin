@@ -1,0 +1,6 @@
+url: https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-dev-git-graph
+name: kp-z/dsh-plugins#dsh-dev-git-graph
+category: git
+description:
+  en: 'Git Graph panel in every conversation tab — a port of mhutchie/vscode-git-graph 1.30.0, auto-bound to the current session workspace, with the commit graph and the full right-click git operations. Requires dsh-better-sidebar. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '会话里的 Git Graph：移植 vscode-git-graph 1.30.0，自动绑定当前会话工作区，提交图与右键 git 操作齐全。依赖 dsh-better-sidebar。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

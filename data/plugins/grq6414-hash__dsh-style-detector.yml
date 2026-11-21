@@ -1,0 +1,7 @@
+url: https://github.com/grq6414-hash/dsh-style-detector
+name: grq6414-hash/dsh-style-detector
+category: ui
+description:
+  en: 'Chinese prose "AI-flavor" detector in the right sidebar: a local rule engine scores and highlights template phrasing, uniform sentence rhythm, vague imagery and repetition, with a separate typo-check page; the score is always computed locally. The UI switches between Chinese and English.'
+  zh: '中文「AI 味」检测器：右侧栏面板，本地规则引擎打分并标出套话、句式均匀、缺画面感与重复，另设错字页；分数始终由本地算，界面可切中文 / English。'
+tarball: https://github.com/grq6414-hash/dsh-style-detector/releases/download/v0.2.1/dsh-style-detector-0.2.1.tgz

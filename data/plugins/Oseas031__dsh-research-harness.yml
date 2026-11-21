@@ -1,0 +1,7 @@
+url: https://github.com/Oseas031/dsh-research-harness
+name: Oseas031/dsh-research-harness
+category: skill
+description:
+  en: 'Research workbench with evidence-bound findings, guard receipts, completion gates, a CLI, ten bundled skills, and paired skill-evolution evaluation.'
+  zh: '科研工作台：提供证据约束的发现记录、守卫收据、完成门禁、CLI、十个内置技能与配对技能进化评估。'
+tarball: https://github.com/Oseas031/dsh-research-harness/releases/download/v0.5.0/dsh-research-harness-0.5.0.tgz

@@ -227,7 +227,6 @@
  "https://github.com/ishuowang/dsh-sideband": "2026-08-15T01:06:37.661Z",
  "https://github.com/itr-del/dsh-feishu": "2026-08-14",
  "https://github.com/jeremy9682/dsh-skill-pack": "2026-08-15T01:06:37.661Z",
- "https://github.com/jiangnanquan/dsh-ux": "2026-08-14",
  "https://github.com/jiayan-xu/dsh-codebase-memory": "2026-08-14",
  "https://github.com/jiayan-xu/dsh-memoria": "2026-08-14",
  "https://github.com/jiayan-xu/dsh-memoria-extra": "2026-08-14",
@@ -615,5 +614,18 @@
  "https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-git": "2026-10-17",
  "https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-terminal": "2026-09-11",
  "https://github.com/Calliope-Nicles/technical-english-companion": "2026-11-10",
- "https://github.com/HimLeoing/dsh-progress": "2026-11-11"
+ "https://github.com/HimLeoing/dsh-progress": "2026-11-11",
+ "https://github.com/pokereva/dsh-no-enter-send": "2026-11-13",
+ "https://github.com/taoziliyouchong/dsh-evolve-preset": "2026-11-10",
+ "https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-dev-git-graph": "2026-09-04",
+ "https://github.com/jiaxusummer/dsh-icon-changer": "2026-11-16",
+ "https://github.com/caidows/dsh-quick-model-switch": "2026-11-11",
+ "https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-connectors": "2026-11-14",
+ "https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-plugin-airlock": "2026-11-12",
+ "https://github.com/swswordholy-tech/AgentsChat/tree/main/mcp-plugin": "2026-10-28",
+ "https://github.com/jiangnanquan/dsh-uxexo": "2026-08-14",
+ "https://github.com/QIU-KKKK/DeepSeek-Harness-BT-": "2026-11-18",
+ "https://github.com/gongfpp/dsh-man-report": "2026-11-13",
+ "https://github.com/yuanyuanzhang0815/dsh-prompt-book": "2026-11-20",
+ "https://github.com/Charliewhale/bridge/tree/main/packages/dsh-bridge-connector": "2026-11-04"
 }

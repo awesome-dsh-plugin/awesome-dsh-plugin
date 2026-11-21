@@ -1,0 +1,7 @@
+url: https://github.com/taffy114514/dsh-plugin-unlock
+name: taffy114514/dsh-plugin-unlock
+category: market
+description:
+  en: "Releases the loader fibers whose live state makes the DSH plugin manager refuse an update or removal with bundle-in-use, so the marketplace's own remove, install and reload run instead of failing; also reports a missing pnpm runtime payload and skips plugin versions the running Harness rejects."
+  zh: "先释放挡路的 loader 条目，让 DSH 插件管理器不再以 bundle-in-use 拒绝更新或卸载，市场自己的卸载、安装、重载得以跑完；同时识别缺失的 pnpm 运行时 payload，并跳过当前 Harness 会拒绝的版本。"
+icon: https://raw.githubusercontent.com/taffy114514/dsh-plugin-unlock/main/assets/icon-180.png

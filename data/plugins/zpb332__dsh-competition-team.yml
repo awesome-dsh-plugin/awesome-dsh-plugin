@@ -1,0 +1,6 @@
+url: https://github.com/zpb332/dsh-competition-team
+name: zpb332/dsh-competition-team
+category: workflow
+description:
+  en: 'A competition team of independent sessions with proposals, budget, quality gates and audit. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把竞赛题拆成独立会话的团队：提案制、预算、质量门与审计。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

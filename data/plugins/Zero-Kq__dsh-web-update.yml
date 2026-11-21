@@ -1,0 +1,7 @@
+url: https://github.com/Zero-Kq/dsh-web-update
+name: Zero-Kq/dsh-web-update
+category: dev
+description:
+  en: 'Linux dsh web self-updater: checks npm at startup and every 24 hours, then installs the newer @deepseek-ai/dsh release and restarts dsh web by itself.'
+  zh: 'Linux dsh web 自更新插件：启动时与每 24 小时检查 npm，确认后安装新版 @deepseek-ai/dsh 并自动重启 dsh web。'
+icon: https://raw.githubusercontent.com/Zero-Kq/dsh-web-update/main/assets/icon-180.png

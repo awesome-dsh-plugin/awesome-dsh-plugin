@@ -2,5 +2,5 @@ url: https://github.com/JayYuen666/dsh-session-rescue
 name: JayYuen666/dsh-session-rescue
 category: session
 description:
-  en: 'Automatic recovery when a turn ends badly: resume after a transient failure, continue after output truncation, re-run after an unfinished todo list, plus a request-level 429 backstop and a client dock with edit-resend, manual retry and stop-and-re-ask.'
-  zh: '回合异常收尾时的自动补救：瞬时失败后续跑、输出截断后继续、待办未完成时重跑，另有一层请求级 429 兜底，以及带「改后重发 / 手动重试 / 停止并重问」的客户端停靠栏。'
+  en: 'Automatic recovery when a turn ends badly: resume after a transient failure, continue after `max-tokens` truncation, and re-run a completed turn whose own todo list is still open; a request-level rate-limit retry defers to the official policy, and manual actions add edit-resend, fork-resend, send-continue, retry, resume-interrupted and stop-and-re-ask, with an optional same-turn steer continuation while the todo list is unfinished.'
+  zh: '回合异常收尾时的自动补救：瞬时失败后续跑、`max-tokens` 截断后继续、本回合自己写下的待办仍未完成时补跑；请求级限流重试先让官方策略决定，手动动作提供「改后重发 / 分叉重发 / 继续发送 / 手动重试 / 恢复被中断的回合 / 停止并重问」，另可选用同回合 steer 继续，在待办未完成时不关闭回合。'

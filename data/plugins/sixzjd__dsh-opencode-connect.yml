@@ -1,0 +1,6 @@
+url: https://github.com/sixzjd/dsh-opencode-connect
+name: sixzjd/dsh-opencode-connect
+category: model
+description:
+  en: "Brings OpenCode Zen models (including the limited-time free pool) into DSH through an in-process loopback shim with automatic model fallback; no external process or config-file edits."
+  zh: "通过进程内 loopback shim 把 OpenCode Zen 模型（含限时免费模型池）接入 DSH，支持自动模型 fallback，无需外部进程或改配置文件。"

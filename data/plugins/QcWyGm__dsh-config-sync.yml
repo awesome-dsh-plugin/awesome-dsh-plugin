@@ -2,5 +2,6 @@ url: https://github.com/QcWyGm/dsh-config-sync
 name: QcWyGm/dsh-config-sync
 category: git
 description:
-  en: 'Tracks the DSH config repo against the copy on this machine (files changed, commits ahead or behind, sessions and skills not captured yet) and generates push, pull and restore scripts that run after the client exits. A blocked pull backs up both sides of every conflicting file so one side can be picked per file; every apply snapshots the profile first, and any snapshot can be restored later. Windows only: the generated sync scripts are PowerShell.'
-  zh: '对比本机与云端 DSH 配置仓库的差异（改了哪些文件、领先或落后几个提交、有没有新会话和新技能还没抓取），并生成客户端退出后执行的推送、拉取与还原脚本。拉取被本地改动挡住时两侧文件都会备份，面板里逐项选择保留哪边；每次应用前自动备份配置，之后可还原到任一份快照。仅限 Windows：生成的同步脚本是 PowerShell。'
+  en: 'Sync your DSH setup across machines: see at a glance how this machine differs from the cloud config repo — changed files, commits ahead or behind, sessions and skills not synced yet — then generate the push, pull and restore scripts that run after the client exits. A pull blocked by local edits keeps both sides and lets you pick per file; every apply snapshots the profile first, and config snapshots, plugin backups and session backups all restore in one click, including rolling back a broken plugin install. Windows only (the scripts are PowerShell).'
+  zh: '多机 DSH 配置同步：本机与云端仓库的差异一眼看清——改了哪些文件、提交领先还是落后、哪些会话和技能还没同步，一键生成退出后执行的推送、拉取、还原脚本。拉取撞上本地改动时两侧都留底、逐项选保留哪边；每次应用前自动备份，配置快照、插件备份、会话备份都能一键还原，装坏的插件也能整份回滚。仅限 Windows（脚本为 PowerShell）。'
+icon: https://raw.githubusercontent.com/QcWyGm/dsh-config-sync/main/docs/icon-180.png

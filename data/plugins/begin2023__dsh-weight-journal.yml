@@ -1,0 +1,7 @@
+url: https://github.com/begin2023/dsh-weight-journal
+name: begin2023/dsh-weight-journal
+category: ui
+icon: https://raw.githubusercontent.com/begin2023/dsh-weight-journal/main/assets/icon-180.png
+description:
+  en: 'A daily weight journal for the Web GUI: one reading per calendar day, a monotone-cubic trend chart over 7/30/90-day and all-time windows with the entries'' 7-reading mean and a goal line, weekly-mean comparison bars, a sidebar panel, a weight_journal tool (record, list, delete) that writes through the same store as the page, and a frame-wide reminder capsule that rotates through eight languages.'
+  zh: '每日体重手账：每天一条记录，7/30/90 天与全部时间范围的单调三次曲线趋势图（含 7 次读数均值与目标线）、周均值对比条、侧边栏面板、与页面共用同一存储的 weight_journal 工具（record / list / delete），以及居中的八语轮播提醒胶囊。'

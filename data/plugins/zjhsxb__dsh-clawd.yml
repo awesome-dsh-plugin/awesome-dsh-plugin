@@ -1,0 +1,11 @@
+# 收录到 awesome-dsh-plugin 市场目录的条目文件
+# 投稿方式：fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# 新增 data/plugins/zjhsxb__dsh-clawd.yml（即本文件内容），提一个 PR。
+# 详见官方投稿指南: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+url: https://github.com/zjhsxb/dsh-clawd
+name: zjhsxb/dsh-clawd
+category: fun
+description:
+  en: 'A free-roaming Clawd pixel-crab desktop pet for DeepSeek Harness, with session-aware moods, a double-click balance and session-cost readout, and a context menu. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '自由漫游的 Clawd 像素螃蟹桌宠：会话感知状态、双击查看余额与会话费用、右键菜单。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/zjhsxb/dsh-clawd/main/assets/icon-192.png

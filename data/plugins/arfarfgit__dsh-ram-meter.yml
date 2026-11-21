@@ -1,0 +1,7 @@
+url: https://github.com/arfarfgit/dsh-ram-meter
+name: arfarfgit/dsh-ram-meter
+category: dev
+description:
+  en: 'Live host memory and heap-ceiling meter: a sidebar pill showing RSS, the percentage of the V8 heap limit, and the ceiling itself. It reads the host process directly, so a stock host reports its ~4 GB limit and a high-memory host reports whatever it was launched with.'
+  zh: '实时内存与堆上限监控：侧边栏小条显示常驻内存、占 V8 堆上限的百分比，以及上限本身。它直接读取宿主进程，因此原版宿主显示约 4 GB 上限，高内存宿主则显示启动时的真实上限。'
+icon: https://raw.githubusercontent.com/arfarfgit/dsh-ram-meter/main/assets/icon-180.png

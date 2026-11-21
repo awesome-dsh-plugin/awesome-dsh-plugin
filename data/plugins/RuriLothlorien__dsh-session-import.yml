@@ -1,0 +1,7 @@
+url: https://github.com/RuriLothlorien/dsh-session-import
+name: RuriLothlorien/dsh-session-import
+category: session
+description:
+  en: Import Codex, Claude Code / Claude Desktop and WorkBuddy conversations as DSH sessions, scoped by time range and project, with an optional message cap and four detail levels from prose-only to complete tool output.
+  zh: 把 Codex、Claude Code / Claude Desktop 与 WorkBuddy 的会话导入为 DSH 会话，可按时间范围与项目筛选，可选消息条数上限，并提供从仅正文到完整工具输出的四档详细程度。
+tarball: https://github.com/RuriLothlorien/dsh-session-import/releases/latest/download/dsh-session-import.tgz
