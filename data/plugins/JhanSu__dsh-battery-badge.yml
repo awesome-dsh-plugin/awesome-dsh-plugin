@@ -1,0 +1,6 @@
+url: https://github.com/JhanSu/dsh-battery-badge
+name: JhanSu/dsh-battery-badge
+category: ui
+description:
+  en: 'Shows the machine DSH runs on in the sidebar account row: laptops get the model name, battery percentage and a macOS-style charging glyph; iMac, Mac mini, Windows desktops and NAS boxes (Synology, ZSpace, UGREEN, fnOS) get their own outlined device icon. Degrades through full model, product family and icon-only as the row narrows, and never truncates the user name.'
+  zh: '在侧栏账号行显示 DSH 所在机器的型号与供电状态：笔记本显示机型、电量百分比和 macOS 风格电池图标；iMac、Mac mini、Windows 台式机与 NAS（群晖、极空间、绿联、飞牛）显示各自的线性设备图标。空间不足时按完整型号 → 产品简称 → 仅图标三级降级，且永不压缩用户名。'
