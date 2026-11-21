@@ -1,0 +1,6 @@
+url: https://github.com/Uneadlight/fatfish-lab/tree/main/09-plugins/dsh-chat-background
+name: "Uneadlight/fatfish-lab#dsh-chat-background"
+category: theme
+description:
+  en: "Custom chat background for DeepSeek Harness: solid colors or images, separate light and dark settings, and a built-in Wallpaper Engine library."
+  zh: "给 DeepSeek Harness 聊天界面设置自定义背景：纯色或图片，浅色和深色各自独立；内置 Wallpaper Engine 壁纸库。"
