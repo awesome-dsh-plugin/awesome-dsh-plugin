@@ -2,5 +2,5 @@ url: https://github.com/Tlr18348452080-hub/dsh-soma/tree/main/plugin
 name: Tlr18348452080-hub/dsh-soma#plugin
 category: identity
 description:
-  en: 'A body state for the agent that the agent cannot set directly: touch, temperature, fatigue, hunger, thirst, circadian rhythm and hormones are integrated as differential equations and reach the model only as one [body] line. A single soma_do tool takes newtons, degrees Celsius and cm/s; there is no set(). Tiredness also lowers max_tokens, so a worn-out model writes less instead of saying it is tired. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '给 AI 一副会自己演化的身体：触觉、温度、疲劳、饥饿、昼夜节律、激素按微分方程自走，只以一行 [body] 进到模型。soma_do 只收牛顿、摄氏度、cm/s 这类物理量，没有 set()；累了会真的压低输出预算。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'A body state for the agent that the agent cannot set directly: touch, temperature, fatigue, hunger, thirst, circadian rhythm and hormones are integrated as differential equations and reach the model only as one [body] line. A single soma_do tool takes newtons, degrees Celsius and cm/s; there is no set(). Tiredness also lowers max_tokens, so a worn-out model writes less instead of saying it is tired.'
+  zh: '给 AI 一副会自己演化的身体：触觉、温度、疲劳、饥饿、昼夜节律、激素按微分方程自走，只以一行 [body] 进到模型。soma_do 只收牛顿、摄氏度、cm/s 这类物理量，没有 set()；累了会真的压低输出预算。'
