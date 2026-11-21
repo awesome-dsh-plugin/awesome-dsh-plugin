@@ -1142,7 +1142,7 @@ dsh plugin --profile web add dshmarket
 - [jeffreyren1/dsh-custom-js](https://github.com/jeffreyren1/dsh-custom-js) — 在 DeepSeek Harness 中加载、编辑、管理和热重载可信的 JavaScript / TypeScript 用户脚本。
 - [Jestions-dev/dsh-think-skin](https://github.com/Jestions-dev/dsh-think-skin) — 给 DSH 的「思考状态」行换皮肤：一张图配自己的文案池，文字逐字打出、高光扫过，2–4 色渐变可调。内置三套（39 图 / 41 句 / 184 个动词）。在 设置 → 思考状态 里配，改完下一句话就生效，不用重启；套组可导入导出 .zip。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [jh0oo/dsh-desktop-restart-button](https://github.com/jh0oo/dsh-desktop-restart-button) — 在 Windows 桌面端标题栏加一个重启按钮，并把冷启动时的「正在加载设置…」换成一段科技感动画。
-- [JhanSu/dsh-battery-badge](https://github.com/JhanSu/dsh-battery-badge) — 在侧栏账号行显示 DSH 所在机器的型号与供电状态：笔记本显示机型、电量百分比和 macOS 风格电池图标；iMac、Mac mini、Windows 台式机与 NAS（群晖、极空间、绿联、飞牛）显示各自的线性设备图标。空间不足时按完整型号 → 产品简称 → 仅图标三级降级，且永不压缩用户名。
+- [JhanSu/dsh-device-badge](https://github.com/JhanSu/dsh-device-badge) — 针对多设备安装 Harness 的用户，这个插件可以在侧边栏账号行，显示 DSH 所在终端机器的身份标识，便于清楚地知道对应的是哪台设备的聊天界面。笔记本设备为了更好掌握用电情况，采用显示机型、电量百分比的方案，设计上用的是 macOS 风格充电图标；iMac、Mac mini、Windows 台式机与 NAS（群晖、极空间、绿联、飞牛）则显示对应的线性设备图标。空间不足时会按完整型号、产品简称、仅图标逐级降级，鼠标悬停可随时查看完整型号。
 - [jhuanxx44/dsh-paste-path](https://github.com/jhuanxx44/dsh-paste-path) — macOS Finder 剪贴板粘贴：在 Finder 里 Cmd+C 复制文件或文件夹，回到 DSH 按 Ctrl+V 把绝对路径插入输入框；普通文本粘贴的 Cmd+V 不受影响。
 - [jiahui-huang1/dsh-latex-formula-editor](https://github.com/jiahui-huang1/dsh-latex-formula-editor) — 免费的 DSH 侧栏 LaTeX 公式编辑器，MathJax/PDF.js 渲染全部离线：10 个符号磁贴悬停展开分类面板、10 组公式模板、实时预览、颜色/字体/字号/环境控制、带标题与搜索的收藏夹，以及九种导出格式（SVG/PNG/JPG、LaTeX/AsciiMath/Typst/HTML/MathML/OMML）与转义和分享链接。图片与 PDF 识别需要 DSH 中可用的视觉模型，或你自己配置的 OpenAI 兼容视觉端点；其余功能全部离线运行。
 - [jiangnanquan/dsh-uxexo](https://github.com/jiangnanquan/dsh-uxexo) — DSH Web 界面增强插件，提供独立「界面增强」实时开关设置页：25 套《终端美学》配色主题（适配 0.2.x 玻璃菜单）、浅色三档文字墨色、中文优先 0.5 窄体等宽字体方案与实时字体探测、紧凑布局、思考/工具链折叠胶囊、官方余额/本轮成本与 30 天用量图表、峰谷计费徽标（自动拉取年度法定节假日），以及宿主侧 settings.json 持久化。
@@ -2950,7 +2950,7 @@ dsh plugin --profile web add dshmarket
 - [Iceseas/dsh-ds-whale](https://github.com/Iceseas/dsh-ds-whale) — 右下角小鲸鱼挂件：显示 DeepSeek 余额与官网口径的今日用量，每轮结束播报本轮花费，并提供峰谷定价倒计时；另有六种状态立绘、点击刷新、天气查询与中英双语界面。
 - [Icstick/dsh-usage-card](https://github.com/Icstick/dsh-usage-card) — 侧栏常驻卡片：按 DeepSeek 官方价目（含峰谷与缓存差价）把本会话 token 折算成人民币，并按来源拆开上下文占比；逐轮计价，另附 Markdown/CSV 历史报告。
 - [igormel81/dsh-chat-cost](https://github.com/igormel81/dsh-chat-cost) — 为 DSH Web UI 的每个对话实时计算 token 费用：本对话、其子代理与整棵会话树，价格来自内置的 models.dev 快照：七家供应商、139 个有价模型，缓存读写费率按供应商实际公布的取值，DeepSeek 则使用其官方峰谷价格表。每个完成的回答都会在对话中显示自身费用，未打开的对话则按日志计价而不是整行消失。费用按区间计价，依据写入项目目录的只追加 JSONL 账本，因此已记录的工作保留当时的费率。此外还提供：按金额预算排布的工作计划、展示值得接入哪些模型的路由方案比较、以英语/中文/俄语生成的计划文档，以及当费用未归入任何计划单元时的提醒。
-- [ilyshkafox/dsh-plusvibe-balance](https://github.com/ilyshkafox/dsh-plusvibe-balance) — 在输入框旁显示 PlusVibeAPI 余额，附今日与本月花费、本次对话的估算花费和每日花费图表；API 密钥只留在 Host 进程，页面只访问同源路由。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [ilyshkafox/dsh-plusvibe-balance](https://github.com/ilyshkafox/dsh-plusvibe-balance) — 在输入框旁显示 PlusVibeAPI 余额，附今日与本月花费、本次对话的估算花费和每日花费图表；API 密钥只留在 Host 进程，页面只访问同源路由。
 - [imCBW/dsh-balance-corner](https://github.com/imCBW/dsh-balance-corner) — 在侧边栏左下角账号行的最右侧显示 DeepSeek 账号余额，点击打开用量页或充值页。
 - [imlishiyuan/dsh-keep-running](https://github.com/imlishiyuan/dsh-keep-running) — 配额看门狗：遇到 429 或配额错误时建立循环调度，持续重发「继续任务」提示直到某一轮正常结束，长任务不必手动重开；/keep-running list 与 /keep-running cancel <id> 用于查看和取消。需先挂载 @deepseek-ai/dsh-schedule（调度由它注册）。
 - [inezmitche46-maker/dsh-usage-stats#packages/dsh-session-token-stats](https://github.com/inezmitche46-maker/dsh-usage-stats/tree/main/packages/dsh-session-token-stats) — 输入框里的当前会话 Token 胶囊：总量与未缓存输入、缓存读取、缓存写入、输出四个分桶，并显示缓存命中率；纯客户端消费会话 tokenUsage 投影，不注册宿主服务、不读写文件、不联网。
@@ -6573,7 +6573,7 @@ dsh plugin --profile web add dshmarket
 - [gabrielbav/dsh-workspace#dsh-plugin-aws](https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-plugin-aws) — 为每个 DSH 会话提供 AWS 官方 MCP 服务器：14 个分组共 59 个服务器（文档、IaC、EKS 与 ECS、Lambda、DynamoDB 与 Aurora、CloudWatch、成本与账单、Bedrock 等），可在设置页面中按组或逐个开启。版本固定，支持只读模式的服务器默认以只读方式启动，密钥保存在 DSH 凭据存储中。
 - [Ganglith/dsh-wayland-use](https://github.com/Ganglith/dsh-wayland-use) — GNOME/Mutter 下的 Wayland 桌面控制：截图、带坐标的 OCR、按文字点击，以及批量输入动作。后端为 Python 进程，需 python3-gi 与 GStreamer；OCR 需 Tesseract。
 - [gavin-ali/dsh-leetcode](https://github.com/gavin-ali/dsh-leetcode) — DSH 侧边栏刷题台：题库实时从 leetcode.cn 拉取，Java 编辑器带补全、一键提交看判题，还可把题目和代码复制到对话让 AI 讲解。
-- [gch3212/DSH-library](https://github.com/gch3212/DSH-library) — 本地资料库：侧边栏直接进入，支持文件夹分类、文件与文件夹备注、全文检索，并能查看最近访问与会话生成的文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [gch3212/DSH-library](https://github.com/gch3212/DSH-library) — 本地资料库：侧边栏直接进入，支持文件夹分类、文件与文件夹备注、全文检索，并能查看最近访问与会话生成的文件。它的 HTTP 路由会做 DSH 访问检查（connection.requestRejection），浏览器里打开的网页无法调用它们。
 - [GDWhisper/dsh-ntr](https://github.com/GDWhisper/dsh-ntr) — 把任意支持 ACP 的 Agent 接进 DSH，用 DSH 一个入口管理所有会话和任务。模型、思考等级和权限模式由 Agent 自己提供；工具调用显示在主聊天区，diff 汇总到独立的 NTR 页，权限询问出现在输入框。使用前需在本机安装支持 ACP 的 Agent 命令行工具。
 - [gem-gti/dsh-scrcpy-mirror](https://github.com/gem-gti/dsh-scrcpy-mirror) — 用 scrcpy 把安卓手机画面投到 Windows 电脑（USB 或无线），并把启动、停止、状态、connect（手机重启后重连）、截图暴露为智能体工具与 /mirror 命令。需在本机装好 scrcpy 与 adb（winget install Genymobile.scrcpy），插件不打包这两个可执行文件。
 - [geml-spec/geml#integrations/dsh-plugin](https://github.com/geml-spec/geml/tree/main/integrations/dsh-plugin) — 按块寻址的文档读写：MCP server 提供 geml_get / geml_set / geml_check 等工具，Agent 只取回或改写 Markdown、GEML 文档中的某一个块，而不是整篇文件。另带 GEML 写作技能，以及把项目调用图构建为 GEML codemap 并浏览的代码图谱技能。
@@ -8785,7 +8785,7 @@ dsh plugin --profile web add dshmarket
 - [Nancy0-0/dsh-code-nav#symbol-links](https://github.com/Nancy0-0/dsh-code-nav/tree/main/packages/symbol-links) — 让聊天里行内代码中的标识符可点击：按定义、包装函数、顺序出现三级回退解析，在右侧预览打开文件并定位到对应行。
 - [NoneFire/drender#dsh-drender-plugin](https://github.com/NoneFire/drender/tree/main/plugins/hosts/dsh) — 为 DeepSeek Harness 提供 md-report/1 报告的校验与渲染工具：把 Markdown 与声明的 SQLite/CSV 数据集生成单个离线可交互 HTML 报告或仪表盘，图表默认用 AntV G2、复杂图表回退 ECharts，并提供图表/数据/SQL 与数据表/数据/SQL 视图。
 - [omdsh-dev/dsh-tool-markdown](https://github.com/omdsh-dev/dsh-tool-markdown) — HTML↔Markdown 转换、GFM 表格规范化、目录生成。
-- [OMSociety/dsh-fishpai](https://github.com/OMSociety/dsh-fishpai) — 微信公众号排版工作台：把 Markdown 渲染成带内联样式的 HTML，粘进公众号编辑器即成排版；配右侧栏面板、11 套主题与五个模型工具做块级改稿。
+- [OMSociety/dsh-fishpai](https://github.com/OMSociety/dsh-fishpai) — 鱼排：公众号排版与 Markdown 编辑器，支持微信 HTML、主题、交互组件、协同改稿与一键复制。
 - [OMSociety/dsh-ppt-maker](https://github.com/OMSociety/dsh-ppt-maker) — PPT 制作插件：十一个 ppt_* 工具创建、编辑、逆向、质检与导出演示文稿，内置五族设计系统与主题模板，支持幻灯片动画、海报与信息图。
 - [opdsh/dsh-gh-pages-artifacts](https://github.com/opdsh/dsh-gh-pages-artifacts) — 把 Agent 生成的 HTML 页面和 Markdown 文档发布到 GitHub Pages 并返回可分享链接，提供原地更新、列出、读回和删除的工具；附带侧边栏 Artifacts 面板和内置的页面设计技能。
 - [OtakuP417/dsh-reading-companion](https://github.com/OtakuP417/dsh-reading-companion) — 读书时旁边坐一个 AI 同读的人：它只知道你读到的位置，所以不会剧透，也不会替你把整本书总结掉。觉得哪句有分量就划出来问它，或者直接问刚读完的内容——它多半先复述你的意思，再反问一个具体的问题。想明白的东西可以存成「收获」，之后变成复习卡片，点一下跳回原句。支持 EPUB、MOBI、FB2、TXT、Markdown、HTML、CBZ。
