@@ -1,0 +1,7 @@
+url: https://github.com/Lmacr0/dsh-pet-dsh-bridge
+name: Lmacr0/dsh-pet-dsh-bridge
+category: fun
+description:
+  en: 'Two-way bridge between dsh-pet and DSH sessions: before the pet replies it searches your DSH session history and injects the most relevant recent turns into its context, and every pet exchange is archived to a Markdown file both sides can read. Requires dsh-pet, which provides the petApi7340 service. Fully local, makes no network requests.'
+  zh: '在 dsh-pet 与 DSH 会话之间做双向桥接：宠物开口前会检索你的 DSH 会话历史、把最相关的近期对话注入它的上下文；宠物每轮问答也归档成一份双方都能读的 Markdown 文件。需先安装 dsh-pet（提供 petApi7340 服务）。完全本地运行，不发任何网络请求。'
+icon: https://raw.githubusercontent.com/Lmacr0/dsh-pet-dsh-bridge/main/icon.svg
