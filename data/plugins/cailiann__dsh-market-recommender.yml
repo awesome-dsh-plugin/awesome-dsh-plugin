@@ -1,0 +1,6 @@
+url: https://github.com/cailiann/dsh-market-recommender
+name: cailiann/dsh-market-recommender
+category: market
+description:
+  en: Recommends an existing plugin before a new one is written. One sentence in the Plugins page searches your configured indexes, the community catalog and the built-in plugins, then installs or enables the match you pick.
+  zh: '写新插件之前先查市场：在插件页输入一句需求，搜索已配置的索引、社区目录与 DSH 内置插件，选中后直接安装或启用。'
