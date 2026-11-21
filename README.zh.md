@@ -11554,7 +11554,7 @@ dsh plugin --profile web add dshmarket
 - [Vladimir-Kryshchenko/dsh-route-fence-linter](https://github.com/Vladimir-Kryshchenko/dsh-route-fence-linter) — 审计 profile 内所有插件 HTTP 路由的浏览器信任围栏：插件路由在 Web 服务器的最长前缀匹配中优先，因此缺少围栏的路由会被静默暴露；逐条给出文件与行号级别的证据。
 - [VladimirKuzen/DSH-guardrails#dsh-guardrails](https://github.com/VladimirKuzen/DSH-guardrails/tree/main/dsh-guardrails) — 在 DeepSeek Harness 执行工具调用前先询问或拒绝，并在本地留下哈希链审计记录；仅支持 Windows，零运行时依赖。
 - [Vultwo/dsh-jev-auto-approve](https://github.com/Vultwo/dsh-jev-auto-approve) — 用 TypeSafe Jev 复核 DeepSeek Harness 的审批请求，自动批准低风险且已明确授权的操作；含英文设置页，可填密钥并查看 token 与费用用量。每条审批请求都会连同你的密钥发给第三方 TypeSafe Jev 服务（api.typesafe.ai），低风险的会被自动批准。
-- [wangxy496/dsh-sensitive-guard](https://github.com/wangxy496/dsh-sensitive-guard) — 把密钥、令牌与密码在进入模型上下文前替换为 <SG_> 占位符，明文以 AES-256-GCM 加密保存在本地保管库；设置页与用户消息里可点小锁临时查看。
+- [wangxy496/dsh-sensitive-guard](https://github.com/wangxy496/dsh-sensitive-guard) — 敏感信息脱敏：密钥、令牌、密码、API Key 在进入模型上下文前换成占位符；内置 221 条 gitleaks 规则与 .env/JSON 字段识别，明文 AES-256-GCM 加密存本机保管库，点小锁看真值，可导出给命令用。
 - [we39/dsh-jumpserver](https://github.com/we39/dsh-jumpserver) — 通过对话查询与管理 JumpServer：资产、用户、账号、授权、会话、命令审计、命令过滤与 RBAC 角色，使用 AccessKeyID/AccessKeySecret（HTTP 签名）鉴权。
 - [weibaohui/user-management](https://github.com/weibaohui/user-management) — 用户管理：给 dsh web 加登录门禁，未登录访问弹登录/注册页，首个注册者自动成为管理员；管理员可管理用户/角色，带登录与访问审计。
 - [weisofns/dsh-security-guard](https://github.com/weisofns/dsh-security-guard) — DSH 插件安全卫士：28 条规则静态扫描、风险评分、白名单/黑名单、本地 Web 仪表盘与 DSH 内风险弹窗。
