@@ -5988,6 +5988,7 @@ dsh plugin --profile web add dshmarket
 - [whding110/dsh-dev-progress-memory](https://github.com/whding110/dsh-dev-progress-memory) — 逐轮开发进度记忆：每轮完成后分类写入 doc/progress/ 下按日期索引的 Markdown 文件并维护 INDEX.md，系统级问题记入跨项目 SYSTEM_MEMORY.md 并在出现报错关键词时重新注入，progress_read 工具可按需读取完整文档。
 - [William20100221/dsh-context-graph](https://github.com/William20100221/dsh-context-graph) — 每 4 轮把工作区里的每个对话索引成小型主题图谱，短对话安静下来时也会补一次（一次模型调用，被引用的原文保存在 .context-graph/）；你输入的消息、/goal 的每一轮、提醒、批准的计划和你对模型提问的回答都会计入。在消息末尾附上其他对话中最多 5 个匹配主题，提到某天（“昨天”“上周”）时先排那一天的，并提供 recall 工具按主题、对话、日期或轮次取回原文。默认开启并共享；/context-graph off 与 unshare 可让某个对话退出，stats、build、map、find 用于查看。
 - [Windsander/Mebular#packages/dsh-plugin](https://github.com/Windsander/Mebular/tree/main/packages/dsh-plugin) — 🌌 Mebular 忆云 · 智能体共享记忆与任务协作。通过 DSH 原生插件接入，提供跨设备、跨 Agent 记忆共享与任务图功能，让物理设备不再是你智能体的边界，安全、可控、去中心化！插件连接已有的 Mebular App/CLI 运行时；没有时可在面板里按提示安装共享运行时，不会静默启动或下载 Mebular。
+- [WJPGKZ/dsh-tidal-memory](https://github.com/WJPGKZ/dsh-tidal-memory) — 为 DeepSeek Harness 提供按工作区共享的 L0-L3 SQLite 记忆：FTS5 与可选本地嵌入、带来源与修订出处的证据门槛召回、两跳来源图扩展、场景时间线，以及绑定单一主会话的 Markdown 私人日记。
 - [wojiao42/dsh-chatgpt-to-memory](https://github.com/wojiao42/dsh-chatgpt-to-memory) — 面向 DSH 的完整记忆导入链路：执行 ChatGPT 官方导出（含邮箱验证码自动重新认证），下载并校验压缩包，按会话去重，经宿主 LLM 蒸馏事实、兴趣与观点，再交由 dsh-long-term-memory 合并。不直接写入记忆文件。
 - [wojiao42/dsh-long-term-memory](https://github.com/wojiao42/dsh-long-term-memory) — DSH 的长期记忆：每个会话开始注入你的 Markdown 记忆文件，提供带备份与撤销的读写/检索工具；注入时列出详细记忆文件（兴趣/画像/项目笔记）并提示何时该读。零依赖、不联网。
 - [wojiao42/dsh-memory-file](https://github.com/wojiao42/dsh-memory-file) — 文件型长期记忆：每个会话开始注入你自己的 Markdown 记忆文件，提供带备份与撤销的读写工具，并能查出 DSH_HOME 漂移。默认不读对话；可选开启 autoScan 后，才从本机会话日志里提取你自己的发言交给 agent 归档。不联网。
@@ -7011,6 +7012,7 @@ dsh plugin --profile web add dshmarket
 - [master1Sun/dsh-QQbot](https://github.com/master1Sun/dsh-QQbot) — DSH QQ机器人桥接插件，将DeepSeek Harness对接QQ机器人。
 - [MasterBenC/shangshi-dsh](https://github.com/MasterBenC/shangshi-dsh) — 在 DeepSeek Harness 中本地完成奇门排盘、商务评分、未来择时和方位建议。
 - [Max-Null/dsh-draft-polish](https://github.com/Max-Null/dsh-draft-polish) — DSH 输入框草稿润色：发送键左侧一键调用 LLM 润色草稿，可携带会话上下文，模型渠道可配置。
+- [Maxc100/dsh-cloud-backup](https://github.com/Maxc100/dsh-cloud-backup) — 自动备份，会话、配置、Agent 文件、插件数据，到你的阿里云盘。被覆盖的文件自动留一份旧版，你改过的工作区名字不会被冲掉。扫码即可登录，换台电脑也能把整套环境和插件装回来。
 - [MAXeaglet/dsh-bash-terminal](https://github.com/MAXeaglet/dsh-bash-terminal) — 一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。
 - [MaxHou-infinity/cli-doctor](https://github.com/MaxHou-infinity/cli-doctor) — DSH 侧栏的只读 CLI 工具链体检面板：按生态列出 Homebrew、npm 全局、pip、 Rust/Bun/uv 与自更新类 CLI 的本机版本，标出哪些有可用更新，并展示已安装包 的依赖影响。只报不升，不会改动本机任何工具。DSH 插件在 npm 上以 `dsh-cli-doctor` 发布。
 - [MaxHou-infinity/dsh-scout](https://github.com/MaxHou-infinity/dsh-scout) — 证据驱动的公司与岗位尽调插件：登记带证据等级的来源、添加受证据边界约束的结论、用官方登记信息核验公司主体，并生成推进/核验/停止三态报告，附核验清单与面试问题。
