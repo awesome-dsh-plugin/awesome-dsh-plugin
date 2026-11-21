@@ -2788,6 +2788,7 @@ dsh plugin --profile web add dshmarket
 - [ConTr0L0/dsh-balance-monitor](https://github.com/ConTr0L0/dsh-balance-monitor) — 在 DSH 侧边栏监控多个平台的余额，统计 DeepSeek 峰谷用量成本与会话消耗，并支持配置消费上限。
 - [Cottins-Vanilla/dsh-session-usage](https://github.com/Cottins-Vanilla/dsh-session-usage) — DeepSeek Harness 会话用量面板：价格、token、每轮累计曲线，以及每个回答末尾的价格标记。
 - [cp990207/dsh-usage-ledger](https://github.com/cp990207/dsh-usage-ledger) — 本地用量账本：从本机会话日志统计每日、每模型、每工作区的 token 消耗、缓存命中率、工具请求占比与估算费用，并提供按模型编辑单价的设置面板。
+- [CPHWQ/dsh-balance-strip](https://github.com/CPHWQ/dsh-balance-strip) — 一枚常驻在 DSH 会话标签行右侧的胶囊，始终显示 DeepSeek 账户余额、按余额下降估算的今日已用，以及当前是峰时还是谷时定价，不需要点击；未配置 DEEPSEEK_API_KEY 时改走 DSH 账号服务读取余额。
 - [CQin04/dsh-usage-timer](https://github.com/CQin04/dsh-usage-timer) — 记录 DSH 每次打开的使用时长与累计总时长（退出 3 分钟内重开并入同一次），在左侧栏页面展示。
 - [creatjy/dsh-context-control](https://github.com/creatjy/dsh-context-control) — DeepSeek Harness 上下文管控：按模块查看请求侧与会话侧的 token 构成；技能、MCP、插件可按会话切成加载、简介、隐藏三档，提示段与工具可逐项开关；支持立即压缩或按 5%–95% 阈值自动压缩。
 - [cs-qyzhang/dsh-llm-quota](https://github.com/cs-qyzhang/dsh-llm-quota) — 在 dsh 状态行、模型菜单与「当前模型」标签显示当前模型供应商的余额或 Coding Plan 额度，后台采集历史数据并以趋势图展示变化。
@@ -3460,6 +3461,7 @@ dsh plugin --profile web add dshmarket
 - [ethanchen669/dsh-plugin-fly-skins](https://github.com/ethanchen669/dsh-plugin-fly-skins) — DeepSeek Harness Web UI 的四套配色：实心 / 玻璃 / 体积 / 霓虹，各含明暗两半。霓虹版在整窗场景光场上叠 46px 电路网格，并在模型运行时让一条激光扫描线扫过对话列（停止即消失）；侧栏工作区名为青色 HUD 标牌，界面拉丁字体内置 MiSans，侧栏字号固定 125% 且不随对话区缩放。
 - [Evan1987/dsh-yestermorrow](https://github.com/Evan1987/dsh-yestermorrow) — 为 DSH Web GUI 提供黄昏列车、霓虹雨夜和落日海岸三套复古未来主义皮肤，支持页内切换并在本地保存选择。
 - [exoticknight/dsh-theme-eink-retro](https://github.com/exoticknight/dsh-theme-eink-retro) — DeepSeek Harness Web UI 纸墨风客户端主题，提供保留语义状态色的平衡模式和黑白沉浸模式。
+- [ExTetragon/dsh-illuminating-skin](https://github.com/ExTetragon/dsh-illuminating-skin) — 卡片风格简约毛玻璃主题：内置六色可自定义标题栏顶光、彩色卡片开关、磨砂浮层与 Google Sans 字体排版，支持独立模式、dsh-claude-style 与 ds-bot。
 - [factyy163/dsh-theme-paper-warm](https://github.com/factyy163/dsh-theme-paper-warm) — 护眼暖纸主题：为 DSH 网页界面覆盖画布、表面、文字、描边与滚动条等 token（画布 #F2F0E5、正文 #100F0F），并在「设置 → 通用」增加一行开关。
 - [fatihtoprakk/dsh-scaefy-light-themes](https://github.com/fatihtoprakk/dsh-scaefy-light-themes) — 27 款 DSH Web GUI 浅色主题，移植自 Scaefy OpenCode 浅色主题；在 设置 > 通用 中提供带配色色块的选取器，重启后自动恢复上次选择。
 - [FAVKTOXIC/dsh-theme-liquid-glass](https://github.com/FAVKTOXIC/dsh-theme-liquid-glass) — 适用于 DeepSeek Harness 的液态玻璃主题：输入卡片、气泡、队列坞、菜单与侧边栏带 SVG 边缘折射；半透明 token 覆盖，色调、不透明度、模糊与折射强度都有实时滑块；壁纸可自定义或使用内置动态壁纸；桌面版另把会话顶栏并入系统标题栏，并补了全屏按钮。
@@ -7154,7 +7156,7 @@ dsh plugin --profile web add dshmarket
 - [patrykorwat/open-dream-rsi#deepseek_harness](https://github.com/patrykorwat/open-dream-rsi/tree/main/plugins/deepseek_harness) — 不是又一个记忆插件：ODR 是“演化世界”式（Dream-RSI）自我改进回路——每次尝试都记入发现树（Discovery Tree），任务间歇将数千个策略变体在这棵记录下来的世界上回放；策略、配方或经验只有通过反事实回放的考验才会晋升，绝不因模型自己说好就获得信任，Sentinel 还会在预算耗尽前拦截工具调用；LLM 保持冻结，可从 npm 安装 dsh-open-dream-rsi。
 - [PaysNatal/dsh-qwen-mcp](https://github.com/PaysNatal/dsh-qwen-mcp) — 一步接全千问 Token Plan 的 7 个 Harness 权益 MCP 服务（联网搜索、网页解析、代码解释器、垂类搜索、图像生成、语音合成、语音识别）与决策模型（qwen_decide），附逐服务开关与实时状态面板。
 - [pc439527/dsh-surge-panel](https://github.com/pc439527/dsh-surge-panel) — 通过 Surge HTTP API 展示实时流量趋势、LAN 设备和逐端点诊断，支持多个实例的连接管理及 macOS 本机 API 配置发现；对 Surge 仅执行只读监控。它读取你的 Surge HTTP API（可能监听 0.0.0.0），且自身路由没有 DSH 的访问检查。
-- [pearjelly/deep-blend#bundle](https://github.com/pearjelly/deep-blend/tree/main/packages/deepblend/bundle) — 在 DSH 中创建可编辑的 Blender 产品场景。从音箱、杯与灯具配方或导入模型开始，在光台查看保存结果、比较版本，调整尺寸、材质、相机与灯光。一次操作将静态模型放到实际网格表面并保存，再另存完整静态取景，保留原相机和动画。逐面修复自定义网格上的重复纹理坐标并保持几何不变。保存半搭接前可预览上下槽口，阵列和镜像参数仍可编辑。渲染图片或分镜影片，也可将一个版本连同素材导出为可编辑副本。提供创建、建模、摄影、恢复与工具契约的英文指南。原生几何检查、不可变历史和审批闸门帮助保留已有作品。适配 DSH 0.2.1-rc.1 并保留旧宿主入口，提供 20 个建模、评审与交付工具。
+- [pearjelly/deep-blend#bundle](https://github.com/pearjelly/deep-blend/tree/main/packages/deepblend/bundle) — 在 DSH 中创建可编辑的 Blender 产品场景。从胡桃木格栅垫、音箱、杯与灯具配方或导入模型开始，在光台查看保存结果、比较版本，调整尺寸、材质、相机与灯光。创建或继续改稿时，可将格栅垫横条间距设为 52–92 mm 并保持居中。一次操作将静态模型放到实际网格表面并保存，再另存完整静态取景，保留原相机和动画。逐面修复自定义网格上的重复纹理坐标并保持几何不变。保存半搭接前可预览上下槽口，阵列和镜像参数仍可编辑。渲染图片或分镜影片，也可将一个版本连同素材导出为可编辑副本。提供创建、建模、摄影、恢复与工具契约的英文指南。原生几何检查、不可变历史和审批闸门帮助保留已有作品。适配 DSH 0.2.1-rc.1 并保留旧宿主入口，提供 20 个建模、评审与交付工具。
 - [peijiping/dsh-plugin-litsearch](https://github.com/peijiping/dsh-plugin-litsearch) — 大模型对话主导的多轮文献检索：右侧栏可视化展示结果、轮次与全文可用性；覆盖 PubMed、Europe PMC、OpenAlex、Crossref、Semantic Scholar、arXiv、PubTator、DOAJ、OpenReview、OpenAIRE 十家免费源，可下载 PDF、导出引文、存 Zotero。
 - [peijiping/dsh-plugin-zotero](https://github.com/peijiping/dsh-plugin-zotero) — 把 Zotero 文献库映射进 DSH：用AI管理操作Zotero，读文献时让AI辅助你。右侧栏按分类与标签浏览，双击即在 DSH 内精读 PDF，划词摘录、标注、笔记或整篇文献一键引用进对话；从综述、方法对比、数据提取到检索整理、导入论文、回挂译文，都可由模型代劳。首次使用需在 Zotero 装集成 MCP 插件并开启本地 API。
 - [PengJunchen/dsh-video-studio](https://github.com/PengJunchen/dsh-video-studio) — 本地视频调色工作台，支持 DJI Log LUT 匹配还原、高光与暗部独立调节、可选肤色与局部颜色控制、逐帧预览和 10-bit HEVC 导出。此处列出的通用包不带运行时：首次启动点「配置独立环境」会经 HTTPS 下载固定版本的平台运行时（Python 3.12 + FFmpeg 9，约 100 MB），也可改用自备的 Python 3.10+ 与 FFmpeg/ffprobe 8+；带平台后缀的发行包才内置运行时。
@@ -7345,6 +7347,7 @@ dsh plugin --profile web add dshmarket
 - [siruignaw-sys/dsh-tool-bandit-search](https://github.com/siruignaw-sys/dsh-tool-bandit-search) — 使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 
 - [SixId666/dsh-math-plugin#dsh-math](https://github.com/SixId666/dsh-math-plugin/tree/main/plugins/dsh-math) — SymPy 驱动的考研数学一精确计算与独立验证：14 个工具、214 个算子，默认返回精确符号解，并由独立机制复核每个结果（需本机 Python 3.10+ 及 sympy、mpmath）。
 - [sixtysevenlf/dsh-blender-plugin](https://github.com/sixtysevenlf/dsh-blender-plugin) — 让 DSH agent 通过直连 TCP 通道驱动本地 Blender，提供 15 个工具：视口帧、自定义视角渲染、Python 执行、无头与作业卸载、事务回滚，以及 34 个 family / 228 个 op 的规划层。
+- [sizhe03/dsh-muse-media](https://github.com/sizhe03/dsh-muse-media) — 在对话里用你自己 Muse 账号的每周免费额度生成图片和视频，不需要 API key：驱动你已登录的 Chrome，并在输入框旁显示剩余额度。
 - [sjdhdbbf/dsh-drawai-vectorizer](https://github.com/sjdhdbbf/dsh-drawai-vectorizer) — fork 自 fourzkw/dsh-drawai，保留 .drawio 可编辑画布与两个模型工具，并在原版描边之外新增第二套矢量化引擎：分层颜色聚类 + 贝塞尔样条拟合 + 每通道色彩精度，绘制任务可选三档保真度（同一 1920×1080 帧实测约 18 / 38 / 46 dB PSNR（上游引擎同帧约 26 dB）），并行度提升为逻辑核心数的一半（不再封顶 4）。原版描边仍是默认引擎，也是整段视频的正确选择——新引擎在视频上产物会大出数百倍。
 - [sjh9714/dsh-retry-guard](https://github.com/sjh9714/dsh-retry-guard) — 监视连续相同的工具失败，可在下一个模型步之前选择暂停；保留原始结果与成功的重复调用，并在 DSH Web 里出一份会话内报告。
 - [skillpie/dsh-plugins#dsh-datasource](https://github.com/skillpie/dsh-plugins/tree/main/dsh-datasource) — 在 DeepSeek Harness 中连接 SQLite / PostgreSQL / MySQL 数据源：浏览表结构与数据、执行 SQL，也可以在对话里让助手直接查数和改数。
