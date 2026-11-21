@@ -1,5 +1,5 @@
 ﻿url: https://github.com/flashvayne/dsh-live-captions
-name: flashvayne/dsh-live-captions
+name: dsh-live-captions
 category: voice
 description:
   en: 'Real-time bilingual captions: recognise system audio and the microphone, translate between many languages, and generate meeting minutes in one click.'
