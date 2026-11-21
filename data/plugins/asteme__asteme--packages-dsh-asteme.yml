@@ -1,0 +1,7 @@
+url: https://github.com/asteme/asteme/tree/main/packages/dsh-asteme
+name: asteme/asteme#dsh-asteme
+category: memory
+description:
+  en: 'Long-term memory for agents: recalls memories by the situation they belong to, learns from how each use turned out, and keeps everything in one local SQLite file you can inspect.'
+  zh: '为智能体提供的长期记忆：按场景回忆，根据每次使用的结果调整，并全部保存在一个可查看的本地 SQLite 文件中。'
+tarball: https://github.com/asteme/asteme/releases/download/v0.11.0/dsh-asteme-0.11.0.tgz
