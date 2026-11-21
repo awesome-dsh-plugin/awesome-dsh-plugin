@@ -463,6 +463,7 @@ dsh plugin --profile web add dshmarket
 - [BangBang-03/dsh-client-ui-quote](https://github.com/BangBang-03/dsh-client-ui-quote) — 把 DSH 里的任意选区变成可审阅的引用对象：正文、文件预览、终端、diff 都能引，代码引用带 path#line。发送后原句留下高亮与序号、可跳回；输入框上方「引用 ×N」可逐条编辑或移除；右侧栏引用清单可搜索、按状态与标签审阅、多选插入、导出 Markdown/JSON；侧边线程的结论可回流主会话；已发送的引用能追加修订，旧胶囊标「已修订」；模型可按「引用N」逐条回应。
 - [BaoBao1996121/dsh-huaci-pinglun](https://github.com/BaoBao1996121/dsh-huaci-pinglun) — dsh划词评论（dsh-huaci-pinglun）：基于 BangBang-03/dsh-client-ui-quote 0.11.1 的 MIT 修补分支，提供划词评论与引用对话，修复引用文本框在挂载并可见后测量、补齐边框高度与长文滚动。
 - [BaoBao1996121/dsh-restart-ui](https://github.com/BaoBao1996121/dsh-restart-ui) — 为 DSH Web 界面添加基于本机回环接口的重启按钮，按当前进程的可执行文件、参数和工作目录请求重新启动。
+- [barnetshen/dsh-yingma-canvas](https://github.com/barnetshen/dsh-yingma-canvas) — 在 DSH 侧栏和右侧停靠栏打开小影马 AI 视频无限画布；Agent 通过随包的 yingma CLI 与 MCP 工具读写画布节点。需要小影马账号。
 - [Basspoom/dsh-nextline](https://github.com/Basspoom/dsh-nextline) — NextLine 下一句在 DSH 输入框内显示个性化的下一条消息建议，按 Tab 或右方向键即可填入草稿。
 - [bd233/dsh-bottom-tabs](https://github.com/bd233/dsh-bottom-tabs) — 挂在 DSH Web 窗口底部的浏览器式会话标签栏。一个标签对应一个已打开的会话，点击切换，关闭按钮只把它移出标签栏、不归档会话，＋ 直接新建会话；也可以在侧栏会话右键菜单里「添加到 Tab」。
 - [BeanPaste233/dsh-interaction-optimize](https://github.com/BeanPaste233/dsh-interaction-optimize) — 输入框上方的实时增删胶囊与右侧栏 diff、跨会话完成提醒（点击跳回对应对话）、划词注释、文件链接右键菜单。
@@ -6003,6 +6004,7 @@ dsh plugin --profile web add dshmarket
 - [wackyju2-beep/eventmem#dsh](https://github.com/wackyju2-beep/eventmem/tree/main/adapters/dsh) — 为 DSH 提供本地优先的事件记忆：召回注入、七个记忆工具和原生管理台。daemon 需单独安装；远程 SSH 共享需主动启用，默认不连接任何私人主机。
 - [wafernm-crypto/dsh-memory-library](https://github.com/wafernm-crypto/dsh-memory-library) — 按工作区隔离的记忆库，支持按对话手动开启、可编辑规则、三种共用模式和连续遗忘；记忆卡仍是可读的 Markdown。
 - [WanderingHeart/dsh-auto-memory-WH](https://github.com/WanderingHeart/dsh-auto-memory-WH) — DSH Memory 将项目级和用户级记忆存为本地 Markdown，提供记忆管理页、关系图及备份恢复工具。
+- [wangpeng2015/dsh-unified-memory](https://github.com/wangpeng2015/dsh-unified-memory) — 统一 WorkBuddy、Qoder CN 与 DeepSeek Harness 的长期记忆和历史会话，并把共享事实写回两个应用自己的 Markdown 记忆文件。
 - [waspqj/dsh-study-mode](https://github.com/waspqj/dsh-study-mode) — 学习模式 agent 预设 + 主题知识库：回答先从你自己存的卡片里检索，命中就标出处，查不到标「未验证」，必须查证才联网；侧边栏面板按主题浏览、搜索、编辑卡片，每张卡可 AI 校验补充、核实、回退和看版本；卡片之间可以用 `[[标题]]` 互链，面板里能看到「它连着谁」和「谁引用了它」；新卡片先出预览，确认后才入库；主题名和卡片名都能在界面里改。知识库是本地普通文件，不做后台自动抓取。
 - [webkubor/dsh-mirror](https://github.com/webkubor/dsh-mirror) — 让模型主动记下你的判断依据（原则/红线/工作方式），跨会话复用 —— 有容量上限、会遗忘、每条都说得出为什么记。0.7.0 重构为画像式速写，带证据追溯与红线硬约束，告别冷冰冰的数据库列表。
 - [weibaohui/context-razor](https://github.com/weibaohui/context-razor) — 上下文剃刀：把当前会话上下文逐条列出（角色/预览/≈token 估算），超阈值标红，勾选后不经 LLM 精确裁剪，删了什么一目了然。
@@ -6343,6 +6345,7 @@ dsh plugin --profile web add dshmarket
 - [chimneyQ/dsh-context-toolkit](https://github.com/chimneyQ/dsh-context-toolkit) — 让大块输出不进对话：ctk_execute、ctk_execute_file 与 ctk_batch_execute 在子进程里跑代码只回结论，ctk_index 与 ctk_search 把长材料存进基于 node:sqlite 的本地 FTS5 知识库，路由门禁在执行前拦下 curl 与 wget。附 ctk_stats、ctk_doctor 与带实时上下文占用面板的设置页，零第三方运行时依赖。
 - [ChinXavier/dsh-gui-agent](https://github.com/ChinXavier/dsh-gui-agent) — 鼠标键盘代理操作 · 真人模拟。为 DSH 加一个按会话生效的开关，开启后注册 9 个工具，让代理做 computer-use 式的桌面自动化：截屏、鼠标点击与拖拽、键盘打字与快捷键、窗口切换、UI Automation 控件定位、窗口与账号映射、批量 prompt 队列、下载收集。输入走原生 Win32 SendInput，默认拟真节奏——贝塞尔光标轨迹与末端过冲回拉、真实 VK 击键、对数正态字符间隔并偶发打错重打、点击前犹豫——并提供仿真 / 便捷 / 自定义（0.2–8 倍）三档。适合让 AI 像人一样操作浏览器、聊天框与任何桌面程序。仅 Windows。默认关闭，由用户按会话开启；截图会发给模型；点到发送/支付/删除等控件时需另行确认才会执行。
 - [chiya695/dsh-archiver](https://github.com/chiya695/dsh-archiver) — 把 DSH 里每个技能、每个插件各自打成一个 zip——可手动、定时或随 DSH 启动自动归档，落到本地目录并/或同步到 WebDAV；保留可配置份数的历史快照，为每个包记录 sha256 清单，并能把备份导回 DSH（技能进技能根，插件进导入目录并给出 link 命令）。
+- [chiyan11/dsh-ptforge#dsh-ptforge](https://github.com/chiyan11/dsh-ptforge/tree/main/packages/dsh-ptforge) — DeepSeek Harness 的 Cisco Packet Tracer 自动化：生成、修改并断言 .pkt 实验文件，提供 18 个 pt_* 工具，覆盖离线编辑与 Windows 上真机终端校验。
 - [CHplus0/dsh-learning-mode#plugin](https://github.com/CHplus0/dsh-learning-mode/tree/main/plugin) — 学习模式（Learning Mode）Agent 预设：边做边教的编码 Agent——具体的情景化阐释、苏格拉底式引导、TODO(你) 留白练习，模拟 Claude Code 的 Learning 输出风格；可 `dsh plugin add` 安装（npm 包 dsh-learning-mode）。
 - [CHplus0/dsh-shell-command](https://github.com/CHplus0/dsh-shell-command) — Claude Code 风格的 shell 集成：/! 单命令分析 与 /terminal 交互式终端（带按需历史引用）。
 - [Chsw-CC/dsh-lazy-tools](https://github.com/Chsw-CC/dsh-lazy-tools) — 保留一小份核心工具原生可见，其余收进一个 toolbox 入口：模型先按参数签名列出已加载的工具，只取真正要用的 schema，再经正常的审批与 guard 管线执行调用。目录超预算时先截短签名、再降成前缀计数，让列表在 token 预算内仍然可调用。
@@ -10957,6 +10960,7 @@ dsh plugin --profile web add dshmarket
 - [Jesse-njx/dsh-tmuxctl](https://github.com/Jesse-njx/dsh-tmuxctl) — 掌控你的 tmux 面板：list/send-keys/capture、在面板中运行长任务并 watch，破坏性命令需审批。
 - [jetruan/dsh-tailtransit](https://github.com/jetruan/dsh-tailtransit) — 为 Harness 单独运行一个用户态 tailscaled：网页抓取、命令行、其他插件、大模型四类流量各自选择是否走 Tailscale 出口节点，系统路由与 DNS 不变。需要另行安装 Tailscale 的 tailscaled；它会再启动一个用户级守护进程，把所选流量经本机回环代理转发，并通过 ifconfig.me 查询出口 IP。若设置了 auth key，会保存在插件配置里。
 - [jhuanxx44/dsh-sseye](https://github.com/jhuanxx44/dsh-sseye) — DeepSeek Harness 里的 LLM 调试台：在 llm/stream 层完整捕获每次模型调用（请求参数、流式块、用量、真实 wire 协议），以 DevTools 风格停靠面板展示，支持上下文共享前缀折叠对比、wire JSON 重建、JSON 导出与运行时可调的抓取策略。
+- [jiaowoCheung/dsh-quick-run](https://github.com/jiaowoCheung/dsh-quick-run) — DSH 会话头部的运行配置：自动列出项目里已有的脚本（package.json 的 scripts 与根目录的 .ps1/.bat/.cmd/.sh），在会话工作目录里运行选中的那个，并在浮动面板里实时输出。
 - [JieCore/dsh-team-dev](https://github.com/JieCore/dsh-team-dev) — 为 Agent Teams 的 teammate 提供按回合的工具调用步数预算，并随包提供 team-dev 与 team-boot 技能。
 - [jijijitian/dsh-plugin-syncup](https://github.com/jijijitian/dsh-plugin-syncup) — 通过私有 GitHub Gist 在多台机器间同步插件清单，并把已装插件更新到 npm 或 GitHub 上的最新发布版。推送前先展示差异：版本冲突默认取较新一方，仅线上有的条目默认保留，仅本机有的直接推送。每次更新可逐项选择 npm 或 GitHub 通道，安装全程走插件管理器并输出实时日志。
 - [jilian-dsh/dsh-rules-manager#dsh-rules-manager](https://github.com/jilian-dsh/dsh-rules-manager/tree/main/dsh-rules-manager) — dsh 规则、命令与技能管理：/rules 斜杠命令、设置面板可视化编辑规则（增改禁用删除、自由区域支持）、带参数的自定义命令、技能管理、AGENTS.md 自动备份与一键恢复。
