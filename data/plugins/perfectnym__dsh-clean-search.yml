@@ -1,0 +1,7 @@
+url: https://github.com/perfectnym/dsh-clean-search
+name: perfectnym/dsh-clean-search
+category: browser
+description:
+  en: 'Ad-free search home for DSH: official-site-first results with advertisement demotion, plus weather, stock K-line and minute charts, and reverse image search. The search page keeps history, caches results, and offers a reader mode with ranking-weight sliders.'
+  zh: 'DSH 里的无广告搜索首页：搜索结果官网优先、竞价广告降权，附带天气、行情 K 线/分时与以图搜图；搜索页带搜索历史、结果缓存、阅读模式与排序权重滑杆。'
+icon: https://raw.githubusercontent.com/perfectnym/dsh-clean-search/main/docs/icon-180.png
