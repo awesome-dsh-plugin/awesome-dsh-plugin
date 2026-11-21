@@ -1,0 +1,7 @@
+url: https://github.com/AeolusJack/dsh-computer-pro
+name: AeolusJack/dsh-computer-pro
+category: tools
+description:
+  en: 'Desktop control, saved-document editing, local OCR, application launching and isolated Chromium DOM tools for DeepSeek Harness 0.2.2-rc.5; Windows x64 tested, macOS experimental.'
+  zh: '为 DeepSeek Harness 0.2.2-rc.5 提供桌面控制、办公文件编辑、本地 OCR、应用启动和独立 Chromium DOM 工具；Windows x64 已测试，macOS 为实验性适配。'
+tarball: https://github.com/AeolusJack/dsh-computer-pro/releases/download/v0.3.0/dsh-windows-computer-pro-0.3.0.tgz
