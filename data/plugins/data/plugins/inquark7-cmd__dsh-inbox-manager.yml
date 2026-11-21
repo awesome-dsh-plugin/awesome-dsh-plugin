@@ -1,0 +1,6 @@
+url: https://github.com/inquark7-cmd/dsh-inbox-manager
+name: inquark7-cmd/dsh-inbox-manager
+category: tools
+description:
+  en: Model tools to list, reorder, and remove the session's pending message queue, and to save, edit, list, and send persistent drafts.
+  zh: 为模型提供工具：查看并调整会话待处理消息队列的顺序与移除，以及保存、编辑、列出、发送持久化草稿。
