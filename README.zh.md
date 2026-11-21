@@ -4915,6 +4915,7 @@ dsh plugin --profile web add dshmarket
 - [hoyyang/dsh-smart-compact](https://github.com/hoyyang/dsh-smart-compact) — DeepSeek Harness 的上下文窗口自动管理：窗口快满时零模型调用换窗，旧对话整窗无损归档、可逐字回查；交接锚点带任务定向，工作笔记跨压缩存活，笔记滞后自动 STALE 警示；触发线按（窗口 − max_tokens）预算方程计算，中途切模型也按真实路由测量；一键换窗按钮与 /smart-compact 命令，三带自动换窗，锚点强制脱敏，开箱即用零配置。
 - [HrxSpace/dsh-session-sweeper](https://github.com/HrxSpace/dsh-session-sweeper) — 会话清道夫：在 DSH 设置中扫描、查看并安全清理本机 AI 终端会话历史（Claude Code、Codex CLI、WorkBuddy、DSH），隔离优先、带 SHA-256 清单与一键整批恢复，彻底删除需输入确认短语。
 - [ht719/dsh-session-categories](https://github.com/ht719/dsh-session-categories) — 为 Web 侧边栏添加按 Workspace 隔离的分类树，支持嵌套分类、拖拽归类会话、在分类中新建会话，以及删除分类时归档其中的会话。
+- [htfy23/dsh-velocity](https://github.com/htfy23/dsh-velocity) — 审计 DSH 会话转录里的可回收等待——起了后台又阻塞等、盲等 sleep、可合并却被拆成多轮的分命令、分步启动的 subagent、慢命令前台跑到超时——汇总成一个可净省的时长，并用新对话对比旧对话报出加速百分比。
 - [huajikano/dsh-gatekeeper](https://github.com/huajikano/dsh-gatekeeper) — 在模型的拒绝性回复提交进会话之前检查并处理：丢弃或暂存待你放行，避免这段文字留在会话上下文里。判定用内置短语规则（开头拒绝语、能力否认、政策措辞、第一人称拒绝意图、思考中引用的拒绝句）加自定义词库与可选正则。拦截位置可在 llm/stream、加密前的 HTTP fetch 层（不是 TLS 解密，也拿不到调用属于哪个会话）、两者同时，或「实时预览」模式——原始 chunk 先留在内存，整段输出检查通过后才提交。同一个插件还在 tools/pre-execute 上守工具调用：删除盘符根、文件系统根或用户目录，格式化或重新分区，清空回收站，下载即执行，写裸设备这类命令会被拒绝；构建目录之外的递归删除默认只记录。两档都可设为拒绝、先问我、记录或不处理，磁盘保护另有总开关。两部分都是启发式规则：可能漏掉某些说法；磁盘保护只看得到调用参数，看不到正在运行的脚本内部；出错时一律放行。
 - [huajuan2024/dsh-session-manager](https://github.com/huajuan2024/dsh-session-manager) — 设置 → 插件 下的会话管理面板：列出全部会话的标题、工作目录、agent 预设、更新时间、轮次与步数，展开可查看消息历史，删除非运行中的会话，并经浏览器 Blob URL 导出为 JSON 或 Markdown。
 - [huang13113/dsh-web-share](https://github.com/huang13113/dsh-web-share) — 只读取回 chat.deepseek.com 的对话并交给新会话：生成交接包（所选轮次逐字保留、更早轮次每轮压缩为一行），预填进输入框但不自动发送。发布包仅支持 Windows（package.json os=win32）；需要本机 Edge 或 Chrome，并先在插件里登录一次 chat.deepseek.com。
@@ -8452,6 +8453,7 @@ dsh plugin --profile web add dshmarket
 - [fenglin-ai/dsh-funasr-voice](https://github.com/fenglin-ai/dsh-funasr-voice) — DSH Web 本地离线语音输入：麦克风经本地 FunASR（SenseVoiceSmall）识别后填入输入框，支持一键安装，全程离线。
 - [fishcg/dsh-airpod-control](https://github.com/fishcg/dsh-airpod-control) — 需 macOS 与支持头部追踪的 AirPods。戴着 AirPods 用点头/摇头回答 DSH 的权限许可与提问——点头＝允许或确认，摇头＝拒绝或切换选项；会话里一张卡片就能装好配套的 macOS 菜单栏 App。
 - [Fishsb/dsh-voice-prompt-enhancer](https://github.com/Fishsb/dsh-voice-prompt-enhancer) — 把输入框草稿改写为更清晰、结构化的提示词（5 模式·模型回退链·可选多轮记忆），并为 DSH 语音输入加上说完自动停、热键与口水词清理；识别仍由官方 speechToText 提供，插件不自带引擎。
+- [dsh-live-captions](https://github.com/flashvayne/dsh-live-captions) — 实时字幕：识别系统声音和麦克风，支持双语字幕，多种语言互译，一键生成会议纪要。
 - [flashyiyi/dsh-voice-announcer](https://github.com/flashyiyi/dsh-voice-announcer) — 对话结束语音播报（会话名、轮数、结果），回复生成时实时逐句朗读；内置 edge-tts，零第三方依赖。
 - [FlyingCharon/dsh-hear](https://github.com/FlyingCharon/dsh-hear) — 给纯文本 agent 一副耳朵：本地音频模型先说讲了什么、怎么说，再用基频、能量、停顿去核对；可选 QQ 语音监听。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [flyinghouse-ma/dsha-tts-bridge](https://github.com/flyinghouse-ma/dsha-tts-bridge) — 宿主侧语音桥：用 Edge TTS 协议合成语音并以 MP3 同源提供，解决容器无声卡、WebView 念不出中文的问题。
