@@ -1,0 +1,6 @@
+url: https://github.com/keminoco-beep/dsh-session-delete
+name: keminoco-beep/dsh-session-delete
+category: session
+description:
+  en: Delete DSH conversations and workspace folders from context menus, including live sessions, without restarting DSH.
+  zh: 从右键菜单彻底删除 DSH 会话和工作区文件夹；运行中的会话无需重启 DSH 即可删除。
