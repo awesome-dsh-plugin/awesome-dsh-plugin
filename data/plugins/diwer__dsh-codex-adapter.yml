@@ -1,0 +1,7 @@
+url: https://github.com/diwer/dsh-codex-adapter
+name: diwer/dsh-codex-adapter
+category: model
+tarball: https://github.com/diwer/dsh-codex-adapter/releases/download/v0.1.5/dsh-codex-official-adapter-0.1.5.tgz
+description:
+  en: "Use your ChatGPT subscription in Harness: sign in without an API key, switch GPT/DeepSeek, and work with images and built-in tools."
+  zh: "登录 ChatGPT 即可在 Harness 使用订阅模型，无需 API Key。支持 GPT / DeepSeek 切换、图片理解与内置工具。"
