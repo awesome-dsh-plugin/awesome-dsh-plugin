@@ -6441,7 +6441,7 @@ dsh plugin --profile web add dshmarket
 - [dungcsnd1133/dsh-reach](https://github.com/dungcsnd1133/dsh-reach) — 用四个只读工具覆盖九个公开渠道——网页、GitHub、V2EX、YouTube、Bilibili、雪球、LinkedIn、Reddit 与 Twitter——提供 reach_search、reach_read、reach_run、reach_channels，并注明每个渠道哪些路径无需登录即可读取。YouTube 渠道需 PATH 中有 yt-dlp。
 - [dungcsnd1133/dsh-video-watch](https://github.com/dungcsnd1133/dsh-video-watch) — 下载视频链接、从中抽帧，并用 Groq Whisper 转写语音，让 agent 能回答视频内容相关的问题；过长音频会切成 15 分钟片段以符合上传上限，没有 key 时仍会返回抽帧，只有转写需要该 key。需 PATH 中有 ffmpeg、ffprobe 与 yt-dlp。
 - [Duoasa/DSH-to-Figma](https://github.com/Duoasa/DSH-to-Figma) — 让 DSH 用自然语言读取、创建和编辑 Figma UI，支持参考图比对、设计参考、组件与变量、动效、素材和局部恢复。默认走本地配套插件，保留官方 MCP 接入；需 Figma 桌面版并导入 DSH 生成的配套插件。
-- [Dushiqi1987/dsh-sweeper](https://github.com/Dushiqi1987/dsh-sweeper) — 审计工具执行在你工作区里留下的文件：把 write/edit 写过的每个路径、以及 DSH 的溢出文件，与会话日志、磁盘和 git 三方对账。所有一周内没被任何工具再用过、且未被 git 跟踪的文件分两档列出，只有你勾选的那一档才会被移入可整批恢复的回收站。默认只做报告；模型可以额外推荐候选，但每条建议都要过五道服务端校验。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Dushiqi1987/dsh-sweeper](https://github.com/Dushiqi1987/dsh-sweeper) — 审计工具执行在你工作区里留下的文件：把 write/edit 写过的每个路径、以及 DSH 的溢出文件，与会话日志、磁盘和 git 三方对账。所有一周内没被任何工具再用过、且未被 git 跟踪的文件分两档列出，只有你勾选的那一档才会被移入可整批恢复的回收站。默认只做报告；模型可以额外推荐候选，但每条建议都要过五道服务端校验。
 - [dxxCaO/wincu](https://github.com/dxxCaO/wincu) — 给 DeepSeek Harness 用的 Windows 计算机操作插件：常驻 PowerShell UIA 后端，对外只有 16 个合并入口（读取/点击/输入/观测/验证）；带加固的策略层（红线拒绝、显式审批、观测绑定、落点归属与前台焦点守卫）与一轮性能优化（后端预热、缓存、像素哈希稳定探测）。fork 自 dsh-computer-use-win。
 - [DYF-zs/dsh-qboson-ising-solver](https://github.com/DYF-zs/dsh-qboson-ising-solver) — 将 QBoson Kaiwu 的 Ising 矩阵求解能力作为 solve_ising Agent Tool 接入 DeepSeek Harness。
 - [Eason-22/dsh-cua-driver-indicator](https://github.com/Eason-22/dsh-cua-driver-indicator) — 给 DSH 官方内置的 Cua Driver 电脑控制通道加一层可见提示与精度工具：顶部横幅显示是哪个会话、基于什么目标在控制电脑，按 Esc 真正停止；四件精度工具点得更准 —— 点前查落点有没有被别的窗口挡住、点后校验界面变了没有、按控件名字定位、最多连点 5 个控件、等某个控件出现；控件还可以按元素 ID 精确定位，应用支持时能在后台运行。官方通道没装时还会弹窗询问是否安装，并支持一键安装。仅支持 Windows。
@@ -8645,7 +8645,7 @@ dsh plugin --profile web add dshmarket
 - [EliasRookie66/dsh-inspiration](https://github.com/EliasRookie66/dsh-inspiration) — 中长篇小说写作工作台，支持章节与设定卡管理、AI 起草和由作者确认的行内修改。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Evantianyn123/docsuite](https://github.com/Evantianyn123/docsuite) — 文档工坊：把设备说明书与历史报告变成技术方案、调研报告和投标文件，支持导出 Markdown / Word / HTML / PDF / PPTX。Word / PPTX 导出与文档解析需要 Python 3 及 pypdf、python-docx、python-pptx（在设置页初始化），PDF 导出需要标准 Windows 路径下的 Chrome 或 Edge。
 - [fangchenghao/latex-look](https://github.com/fangchenghao/latex-look) — 让 Agent 真正看见编译后的页面：把任意一页渲染成图片，用 SyncTeX 把页面坐标或文字锚点解析成源码 file:line（并指出某条横线是宏包画的而不是正文画的——这正是朴素定位最容易出错的地方），把这一页与上一次构建做像素对比，逐页审计本次修改新引入的空洞，并检查图表编号是否仍然顺序正确。
-- [feifandiv/dsh-md-live-edit](https://github.com/feifandiv/dsh-md-live-edit) — 在右侧边栏的 Markdown 预览里直接编辑：点文本块就地改，⌘/Ctrl+Enter 保存写回文件；随时可切回内置只读渲染。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [feifandiv/dsh-md-live-edit](https://github.com/feifandiv/dsh-md-live-edit) — 在右侧边栏的 Markdown 预览里直接编辑：点文本块就地改，⌘/Ctrl+Enter 保存写回文件；随时可切回内置只读渲染。
 - [femnn/dsh-markdown-docs](https://github.com/femnn/dsh-markdown-docs) — 右侧栏里的 Markdown 工作台：列出会话工作区里的 Markdown 文件，预览并编辑、保存时校验文件版本，可以把文件或文件夹（含技能目录）拖到页面上打开，文档里引用的其他文档点一下就在同一面板里打开。
 - [Flan246/dsh-latex-guard](https://github.com/Flan246/dsh-latex-guard) — 为 DeepSeek Harness 提供的 LaTeX 与 BibTeX 检查工具：编译检查（自动识别 xelatex/lualatex），基于 Crossref 的 BibTeX 条目去重与字段补全，以及 \cite 键与 .bib 文件的一致性审计。
 - [fly233338/dsh-overleaf](https://github.com/fly233338/dsh-overleaf) — 通过 OverleafMCP 将多个 Overleaf 项目接入 DSH，支持浏览、分析和通过 Git 写回 LaTeX 文件。
