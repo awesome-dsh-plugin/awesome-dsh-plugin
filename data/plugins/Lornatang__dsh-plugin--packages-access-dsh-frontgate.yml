@@ -1,5 +1,5 @@
-url: https://github.com/Lornatang/dsh-frontgate
-name: Lornatang/dsh-frontgate
+url: https://github.com/Lornatang/dsh-plugin/tree/main/packages/access/dsh-frontgate
+name: Lornatang/dsh-plugin#dsh-frontgate
 category: security
 description:
   en: 'Password gate and reverse proxy for the DeepSeek Harness web interface.'
