@@ -2,8 +2,7 @@ url: https://github.com/HAN102300/dsh-bot
 name: HAN102300/dsh-bot
 category: workflow
 description:
-  en: 'Always-on AI teammate: hand it a recurring task in one sentence; dry-run rehearsal by default, snapshot before every real run, one-click rollback, CNY budget circuit-breaker, per-run cost transparency.'
-  zh: '常驻 AI 队友：一句自然语言交给它长期值守；默认演习、执行前后双快照、一键整单回滚、人民币预算熔断、逐轮费用透明。'
+  en: 'Always-on AI teammate with a full management console: hand it a recurring task in one sentence; 4-tab UI (bots / runs / settings / doctor) with a one-line quick bar above the composer, dry-run rehearsal by default, snapshot & one-click rollback, CNY budget circuit-breaker, per-run cost transparency, per-bot notification overrides.'
+  zh: '常驻 AI 队友 + 全新管理界面：一句自然语言交给它长期值守；四页签控制台（Bot / 运行记录 / 设置 / 诊断）与输入框上方的一行快捷条（Bot 切换 / 模型快切 / 执行 / 管理中心）、默认演习、执行前后双快照、一键整单回滚、人民币预算熔断、逐轮费用透明、通知可按 Bot 覆盖。'
 icon: https://raw.githubusercontent.com/HAN102300/dsh-bot/main/assets/icon-180.png
 tarball: https://github.com/HAN102300/dsh-bot/releases/latest/download/dsh-bot.tgz
-

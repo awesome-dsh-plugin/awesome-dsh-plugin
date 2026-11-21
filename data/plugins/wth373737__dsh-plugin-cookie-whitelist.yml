@@ -1,0 +1,6 @@
+url: https://github.com/wth373737/dsh-plugin-cookie-whitelist
+name: wth373737/dsh-plugin-cookie-whitelist
+category: browser
+description:
+  en: 'Gives the agent your browser login state only for domains you approve: a Chromium/Firefox extension filters cookies to the approved list before they leave the browser, a token-gated 127.0.0.1 receiver keeps them in Host memory, and a disposable read-only browser opens pages, follows links and extracts PDF text with form submission and every non-GET request blocked. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '只把你批准的域名的浏览器登录态交给智能体：Chromium/Firefox 扩展在 cookie 离开浏览器前按白名单过滤，带配对令牌的 127.0.0.1 接收器把它们只留在宿主内存里，一次性的只读浏览器可以打开页面、跟随链接、抽取 PDF 文字，表单提交与所有非 GET 请求都被拦截。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

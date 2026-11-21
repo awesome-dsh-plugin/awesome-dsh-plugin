@@ -1,0 +1,6 @@
+url: https://github.com/SSHOOTING/dsh-plugin-mcp-guard
+name: SSHOOTING/dsh-plugin-mcp-guard
+category: security
+description:
+  en: 'Read-only DSH command that audits configured MCP servers for risky settings without connecting to them.'
+  zh: '只读 DSH 命令，审计已配置 MCP 服务器的风险设置，不建立连接。'

@@ -1,0 +1,6 @@
+url: https://github.com/oh-dsh-plugins/dsh-agentdeck
+name: oh-dsh-plugins/dsh-agentdeck
+category: agi
+description:
+  en: 'Provides native DSH delegation for scene agents, explicit model selection, scoped tools, and a bilingual management page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '提供场景智能体的原生 DSH 委派、显式模型选择、作用域工具和双语管理页面。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

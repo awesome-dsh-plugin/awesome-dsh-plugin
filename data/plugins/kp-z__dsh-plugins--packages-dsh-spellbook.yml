@@ -1,0 +1,6 @@
+url: https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-spellbook
+name: kp-z/dsh-plugins#dsh-spellbook
+category: ui
+description:
+  en: 'Front-end effects library as a "Spellbook" right-sidebar tab: 360 spells, each a mechanism description plus code that really runs; one click sends a spell into the chat input, and the model can look one up with spellbook_lookup. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '前端效果库「咒语书」：右侧栏一个 tab，收录 360 条咒语，每条是机制描述 + 真正跑得起来的代码；点一下把咒语送进对话输入框，模型也能用 spellbook_lookup 查回来。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

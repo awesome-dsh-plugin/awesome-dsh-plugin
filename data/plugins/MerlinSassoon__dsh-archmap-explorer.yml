@@ -1,0 +1,8 @@
+url: https://github.com/MerlinSassoon/dsh-archmap-explorer
+name: MerlinSassoon/dsh-archmap-explorer
+category: dev
+description:
+  en: 'Static architecture maps for Python: one command turns a repository into a self-contained, drillable HTML - project overview, execution flow, module surface, method source and callers - without running the code or fetching anything.'
+  zh: '把 Python 仓库变成可逐层下钻的架构图：一个命令生成自包含 HTML，从项目结构与执行流下钻到模块能力面、方法源码和调用者，不运行被测代码、不联网。'
+icon: https://raw.githubusercontent.com/MerlinSassoon/dsh-archmap-explorer/main/docs/assets/icon.png
+tarball: https://github.com/MerlinSassoon/dsh-archmap-explorer/releases/latest/download/dsh-archmap-explorer.tgz

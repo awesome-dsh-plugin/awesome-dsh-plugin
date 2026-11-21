@@ -1,0 +1,6 @@
+url: https://github.com/Lhy220402/traceless
+name: Lhy220402/traceless
+category: session
+description:
+  en: 'Strips past-turn reasoning blocks from replayed context while keeping the session log intact, and lets the model recall the original thinking on demand.'
+  zh: '历史回传不再携带旧回合的思考过程，会话日志完整保留，需要时模型可召回原始思考。'

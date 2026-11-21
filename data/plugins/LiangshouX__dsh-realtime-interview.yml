@@ -1,0 +1,7 @@
+url: https://github.com/LiangshouX/dsh-realtime-interview
+name: LiangshouX/dsh-realtime-interview
+category: tools
+description:
+  en: 'Mock interview room for DeepSeek Harness: a resume and a job JD become a tiered checklist, then a live round-by-round interview runs in the sidebar with camera view, microphone transcription and spoken questions, ending in a per-checkpoint post-interview report. Two skills (interview-prep, interview-conduct) drive the flow, and transcripts, recordings and reports stay on your own machine. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的模拟面试间：简历与岗位 JD 先落成一份分级考点清单，再在侧栏面板里逐轮面试——摄像头画面、麦克风转写、问题自动朗读，结束后按考点逐条评估。流程由 interview-prep / interview-conduct 两个技能驱动，转录、录像与报告全部留在本机。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/LiangshouX/dsh-realtime-interview/main/assets/brand/icon-180.png

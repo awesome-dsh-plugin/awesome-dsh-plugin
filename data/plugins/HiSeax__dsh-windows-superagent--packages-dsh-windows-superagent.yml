@@ -1,0 +1,7 @@
+url: https://github.com/HiSeax/dsh-windows-superagent/tree/main/packages/dsh-windows-superagent
+name: HiSeax/dsh-windows-superagent#dsh-windows-superagent
+category: workflow
+tarball: https://github.com/HiSeax/dsh-windows-superagent/releases/download/v0.2.6/dsh-windows-superagent-0.2.6.tgz
+description:
+  en: 'Route work across agent teammates: policy-gated acceptance, ticket dispatch with an audit ledger, WeChat and Feishu channels, a board panel, and click-to-answer grilling cards. Inbound access defaults to off: the WeChat and Feishu Sources ship disabled, and once enabled only allow-listed senders can drive work (allow-list defaults to empty; evaluation defaults to observe), so a fresh install accepts no inbound channel messages.'
+  zh: '在多个 agent 成员之间派活：策略化接收、工单派发与台账、微信/飞书通道、任务看板，以及点选作答的拷问（grill）选择卡。入站访问默认关闭：微信/飞书源随包 disabled，启用后也仅允许名单（默认为空）内的发送者驱动工作，评估默认 observe 只记录不执行——全新安装不接收任何通道入站消息。'

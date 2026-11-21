@@ -1,0 +1,6 @@
+url: https://github.com/xiaomengxinbb/dsh-todo-freshness
+name: xiaomengxinbb/dsh-todo-freshness
+category: workflow
+description:
+  en: "Tells you when the task card is a stale snapshot. A todoFreshness session projection folds, from events already in the session, how many tool calls have run since the last todo_write, how many items still have no conclusion, and whether the turn closed with work left over. While the list is behind it injects one advisory reminder per threshold asking the model to rewrite the whole list truthfully, and a note above the composer says the card is an old snapshot rather than live progress. It never writes todo/write itself and never marks unfinished items completed."
+  zh: "告诉你任务卡片已经过期。插件注册一个 todoFreshness 会话投影，从会话里已有的事件折叠出：上次 todo_write 之后又跑了多少次工具调用、清单里还有几项没有结论、这一轮结束时是不是还留着未完成项。清单落后时按阈值注入一条提醒，要求模型用真实状态整表重写；同时在输入框上方标明这份清单只是旧快照，而不是实时进度。插件自己不写 todo/write，也不会把没做完的项标成 completed。"

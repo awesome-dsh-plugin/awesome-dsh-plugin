@@ -1,0 +1,6 @@
+url: https://github.com/Maxwelltoo/dsh-live-pixel
+name: Maxwelltoo/dsh-live-pixel
+category: theme
+description:
+  en: Four animated pixel-art scenes rendered with WebGL, with a theme picker and readability controls for DeepSeek Harness.
+  zh: 为 DeepSeek Harness 提供四种实时渲染的动态像素场景，支持场景切换和可读性调节。

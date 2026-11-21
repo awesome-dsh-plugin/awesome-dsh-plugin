@@ -1,0 +1,7 @@
+url: https://github.com/caprimoon/dsh-mcp-settings
+name: caprimoon/dsh-mcp-settings
+category: tools
+description:
+  en: "A Settings page for the MCP servers DSH's built-in mcp-manager runs: list each server with its live connection state and tool count, then add, edit, enable, disable, probe, restart or delete one, with a one-click chrome-devtools example in the add form. Each change is a revision-checked edit of the mcp-manager settings namespace, so it persists in the active profile's cordis.patch.yml."
+  zh: "给 DSH 内置 mcp-manager 的 MCP 服务器用的设置页：列出每台服务器的实时连接状态与工具数，并可新增、编辑、启用、停用、测试连接、重启、删除，新增表单里还带一键填入的 chrome-devtools 示例。每处改动都是对 mcp-manager 设置命名空间的带 revision 校验的编辑，因此会持久化到当前 profile 的 cordis.patch.yml。"
+tarball: https://github.com/caprimoon/dsh-mcp-settings/releases/latest/download/dsh-mcp-settings.tgz

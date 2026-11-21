@@ -1,0 +1,6 @@
+url: https://github.com/qinghuidaqzp/dsh-change-tour
+name: qinghuidaqzp/dsh-change-tour
+category: dev
+description:
+  en: 'A right-sidebar tour of what each agent turn changed, built on dsh''s own workspace-changes records: changed files with line counts and diffs, local rule-based flags (secrets in added lines, .env files, install scripts, deleted files, large deletions, removed or skipped tests, dependency, CI and migration changes, files outside the workspace), and, on request, a plain-language explanation from the session''s model with a summary, one line per file and things worth checking.'
+  zh: '基于 dsh 自带的工作区改动记录，在右侧栏按轮列出 Agent 改了什么：改动的文件、行数和逐行对比；在本地按规则标出新加的密钥、.env 文件、安装脚本、删除的文件、大段删除、删掉或跳过的测试、依赖/CI/数据库迁移改动和工作区以外的文件；点按钮时请这个会话的模型用大白话讲一遍，给出总结、每个文件一句话和值得亲自检查的地方。'
