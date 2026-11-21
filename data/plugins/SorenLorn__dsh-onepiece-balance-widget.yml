@@ -1,0 +1,7 @@
+url: https://github.com/SorenLorn/dsh-onepiece-balance-widget
+name: SorenLorn/dsh-onepiece-balance-widget
+category: ui
+description:
+  en: 'A balance widget for the DSH web GUI, forked from MeteorNOX/DeepSeek-Balance-Whale-Widget, adding 9 One Piece character skins. Shows balance, today''s usage and peak-valley price.'
+  zh: 基于MeteorNOX小鲸鱼挂件二次开发的余额挂件，新增草帽一伙9位角色皮肤；显示余额、今日已用与每轮消耗（含峰谷价），泡泡内容可自定义，高效按事件推送
+icon: https://raw.githubusercontent.com/SorenLorn/dsh-onepiece-balance-widget/main/icon.png
