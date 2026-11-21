@@ -1,0 +1,7 @@
+url: https://github.com/yaojie-dev/netswitch
+name: yaojie-dev/netswitch
+category: tools
+description:
+  en: 'One-click switching between wired intranet and Wi-Fi on macOS, exposed as DSH tools for network mode inspection and switching.'
+  zh: 'macOS 上有线内网与 Wi-Fi 一键切换工具，以 DSH 工具形式提供网络模式查询与切换能力。'
+icon: https://raw.githubusercontent.com/yaojie-dev/netswitch/main/icon.svg
