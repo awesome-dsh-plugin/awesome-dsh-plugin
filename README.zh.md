@@ -2722,7 +2722,6 @@ dsh plugin --profile web add dshmarket
 - [Ayelsh/dsh-zhipu-plan](https://github.com/Ayelsh/dsh-zhipu-plan) — 在 DeepSeek Harness 中登录智谱编程套餐，查看额度与用量并执行额度重置。
 - [Ayowait/dsh-usage-insights](https://github.com/Ayowait/dsh-usage-insights) — 在 DSH 设置里加一页「用量查询」：把每次模型调用记进本地账本，按天、接口、模型汇总请求数、Token 与费用估算，支持单价修改与 CSV 导出。
 - [Azhe0306/dsh-connectors#balance-widget](https://github.com/Azhe0306/dsh-connectors/tree/main/packages/balance-widget) — DSH 会话标题栏右上角的账户余额读数：显示可用总额（充值余额与赠金余额合并），每两分钟刷新一次；未登录或查询失败时不显示任何内容。
-- [bwtymdb/kimi-quota-status](https://github.com/bwtymdb/kimi-quota-status) — 在现有输入框状态项旁直接显示 Kimi 编程套餐的 5 小时、每周与月度已用百分比，支持点击刷新与重置提示。API 月度数据优先；未提供时才通过本机 web-access CDP Proxy 读取 Kimi 订阅页补数，提供手动登录路径，不保存 Cookie、页面令牌或完整正文。安装：`dsh plugin --profile web add github:bwtymdb/kimi-quota-status`。
 - [badai147/dsh-ocgo-usage](https://github.com/badai147/dsh-ocgo-usage) — 在 Web 侧边栏左下角显示 OpenCode Go 用量——滚动/本周/本月配额进度与悬停明细卡片，并附按北京时间标记的 DeepSeek 高峰时段进度条。
 - [bangyu888-cmd/dsh-quota-card](https://github.com/bangyu888-cmd/dsh-quota-card) — 在侧栏登录名上方以紧凑卡片显示 ChatGPT、Gemini、Grok Bot 的剩余额度与重置倒计时，以及 DeepSeek 余额；可配置阈值、刷新间隔与每个 provider 的 HTTP 代理。需事先具备各家登录态：ChatGPT 需 Codex CLI 登录（codex login）、Gemini 需 Antigravity 登录令牌、Grok Bot 需 Cursor 用户 API Key（CURSOR_API_KEY）、DeepSeek 余额需在 DSH 内登录账号；缺哪项，对应行只显示登录提示而不是数字。
 - [baosfeng/my-dsh-plugins#dsh-my-context](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-context) — 上下文透镜：可视化每次请求的 token 用量（上下文构成、KV 缓存命中率），并提供每轮 / 每会话预算控制（超限提醒与拦截）（npm: `dsh-my-context`）。
