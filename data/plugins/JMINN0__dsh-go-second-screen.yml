@@ -1,0 +1,6 @@
+url: https://github.com/JMINN0/dsh-go-second-screen
+name: JMINN0/dsh-go-second-screen
+category: tools
+description:
+  en: 'Gives an agent a virtual display that the user cannot see, so the agent can drive apps without taking over the phone. Based on scrcpy-server plus app_process, runs as adb uid 2000, no root. Requires the phone to be paired over Wireless debugging once; also includes an overlay window that mirrors the hidden screen live.'
+  zh: '给智能体一块用户看不见的虚拟屏，让它在后台操作 App 而不占用你的手机。基于 scrcpy-server 与 app_process，以 adb uid 2000 运行，无需 root。需要先用「无线调试」配对一次；另含一个把后台画面实时显示出来的悬浮窗。'
