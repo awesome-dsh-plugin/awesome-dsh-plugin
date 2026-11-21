@@ -1,0 +1,6 @@
+url: https://github.com/LaoYueHanNi/dsh-session-tools
+name: LaoYueHanNi/dsh-session-tools
+category: session
+description:
+  en: 'Cross-Session tools for DSH: session_list finds a Session by title, id or working directory; session_send hands one message to it (one-way, reply: true asks for the result back); session_read shows another Session''s recent messages only when you ask; session_create opens a Session and hands it a first message; session_models lists the model routes available before you create one. Adds a Session message row to the / menu that inserts a Session chip into the composer.'
+  zh: 'DSH 跨会话工具：session_list 按标题、id 或工作目录定位会话；session_send 单向投递一条消息（reply: true 请对方回报）；session_read 仅在你明确要求时读取近期消息；session_create 新建会话并交办首条消息；session_models 在新建前列出可用模型路由。`/` 菜单新增「会话消息」一行，把会话 chip 插入输入框。'
