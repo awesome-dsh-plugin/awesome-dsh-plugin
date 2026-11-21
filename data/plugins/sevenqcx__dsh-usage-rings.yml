@@ -1,0 +1,7 @@
+url: https://github.com/sevenqcx/dsh-usage-rings
+name: sevenqcx/dsh-usage-rings
+category: usage
+description:
+  en: 'Replaces composer dock stats with context, cache-hit, Tok/s, and per-model usage panels, plus Codex, Gemini, and multi-provider quota gauges read from a local Magpie gateway (127.0.0.1:3425).'
+  zh: '替换底栏统计区为上下文、缓存命中、Tok/s 与本会话模型用量面板，并展示来自本地 Magpie 网关（127.0.0.1:3425）的 Codex、Gemini 额度环及多平台柱状表。'
+icon: https://raw.githubusercontent.com/sevenqcx/dsh-usage-rings/main/assets/icon-180.png
