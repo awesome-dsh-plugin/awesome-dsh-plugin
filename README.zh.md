@@ -470,6 +470,8 @@ dsh plugin --profile web add dshmarket
 - [BearingSteel/dsh-enter-newline](https://github.com/BearingSteel/dsh-enter-newline) — 调换 DSH 输入框的回车键位：Enter 插入换行，Shift+Enter 发送消息。
 - [BearingSteel/dsh-inline-download](https://github.com/BearingSteel/dsh-inline-download) — 在用户消息里的上传文件气泡上添加下载按钮，同时覆盖 present 交付卡片，把原始文件流式下载到浏览器；附件下载通过会话日志与鉴权坐标定位文件，URL 中不携带路径。
 - [BeckChiang/dsh-rsa](https://github.com/BeckChiang/dsh-rsa) — 仅限 Windows 桌面版 DeepSeek Harness 的可配置启动动画（splash）：主进程真实启动画面、设置页实时预览、深浅色跟随。通过改写 app.asar 部署（会保留备份），退出 DSH 后下次启动生效；DSH 升级后需重新部署。
+- [Beeasy-L/DSH-plugin-market#dsh-plugin-categorized](https://github.com/Beeasy-L/DSH-plugin-market/tree/main/plugins/dsh-plugin-categorized) — 给插件页加一个「分类」标签，把已安装的插件按用途自动分组；并用默认模型为新装插件自动补中文标题与说明。
+- [Beeasy-L/DSH-plugin-market#dsh-qq-panel](https://github.com/Beeasy-L/DSH-plugin-market/tree/main/plugins/dsh-qq-panel) — DeepSeek Harness 上 QQ 桥接（OneBot v11）的设置面板：人格卡编辑与热切换、表情包与备注管理、主动发言等行为参数、运行状态与日志。
 - [Beellix-dev/beellix-dsh-ui](https://github.com/Beellix-dev/beellix-dsh-ui) — Beelli X UI 为 Windows 上的 DSH NEXT 提供一套可搜索的设置。左栏按用途导航，「外观」内分为主题、皮肤、字体、吉祥物和效果，「模型」单独管理服务连接。皮肤支持图片或 MP4 壁纸、磨砂面板与方案保存。桌宠可以添加多只、切换显示，并为每只上传默认和额外动作，右键播放。启动动画支持 MP4 或 GIF，可预览、设定时长和跳过。模型可用厂商预设或自定义接口，从服务获取型号后勾选，也能手动填写模型 ID。还支持按原工作区恢复或批量删除归档聊天，以及在插件页直接切换和添加市场。会替换内置设置页与侧栏（停用 ui-settings-general 与 ui-sidebar），请勿与其他接管设置页或侧栏的插件同装。
 - [Beership/dsh-download-progress](https://github.com/Beership/dsh-download-progress) — DSH 会话头里的下载进度：百分比、速率、剩余时间与阶段，下载前先探测文件大小，中断后按字节区间续传。进度卡片以固定浮层显示在聊天窗口右上角。
 - [begin2023/dsh-weight-journal](https://github.com/begin2023/dsh-weight-journal) — 每日体重手账：每天一条记录，7/30/90 天与全部时间范围的单调三次曲线趋势图（含 7 次读数均值与目标线）、周均值对比条、侧边栏面板、与页面共用同一存储的 weight_journal 工具（record / list / delete），以及居中的八语轮播提醒胶囊。
@@ -9939,6 +9941,7 @@ dsh plugin --profile web add dshmarket
 - [wangbobo-coder/gitee-ai-employee](https://github.com/wangbobo-coder/gitee-ai-employee) — Gitee/GitHub AI 员工：在 issue 里 @ 机器人并指定目标分支（如"需要修改 release-v1.2 分支"），它自动克隆仓库开发、向指定分支提交 PR，可自动合并并自动关闭 issue。v1.2 新增代码安全扫描：配置扫描仓库后按内置/自定义提示词审计代码，去重后把新发现提交 issue。
 - [wanghao815/dsh-rtl-flow](https://github.com/wanghao815/dsh-rtl-flow) — 为 DeepSeek Harness 提供 RTL 设计与验证指导、工程脚手架、证据核对和 OpenROAD/ORFS 环境准备。
 - [wangyz911/dsh-deferred-ask](https://github.com/wangyz911/dsh-deferred-ask) — 把输入框里的问题排进队列，只在 DeepSeek 低谷计价时段（半价）发出。投递由每 30 秒一次的时钟检查驱动，而不是预先排定触发时间，因此应用关闭期间错过的问题不会被补投进高峰。最多 50 条、localStorage 持久化、失败指数退避重试，也可按高峰价立即发送。
+- [Wasabi2575/dsh-workflow-canvas](https://github.com/Wasabi2575/dsh-workflow-canvas) — DeepSeek Harness 可视化子代理工作流画布：拖拽节点与三种语义连线、动态并发执行、Lead 节点暂停拍板、节点记忆选择，也支持在对话里一句话搭图与改图。
 - [WaterDJiang/wtt-dsh-plugin#dsh-creation-workbench](https://github.com/WaterDJiang/wtt-dsh-plugin/tree/main/plugins/dsh-creation-workbench) — 在无限画布上做 PPT、图片或视频，想改哪一步就回到那张卡接着做，也能让 Agent 安排 Sub-agent 用你库里的 Skill 接力。
 - [wdj20050927/dsh-quality-guard](https://github.com/wdj20050927/dsh-quality-guard) — 动手回合前先过第二个模型的质检，一条命令装完：bundle 同时装上设置面板和同一个包里的引擎，两半一起起来。一次独立判官调用按编号判据逐条打 0-10 分，任一条低于 6 分即判不合格并打回重写，默认最多回炉 3 轮。出厂是演习模式，只把判定写进审计日志、不打回，看过日志再在面板里关掉。Web 面板编辑判据、阈值与判官提示词。
 - [weibaohui/dsh-flow](https://github.com/weibaohui/dsh-flow) — 执行流程图：把当前会话的执行过程画成一条纵向节点流（回合/用户/助手/工具/审批/重试/压缩），SSE 实时追加——会话执行到哪，图就画到哪，自动跟随滚动。
@@ -10311,6 +10314,7 @@ dsh plugin --profile web add dshmarket
 - [baisama-cloud/dsh-omni-bridge](https://github.com/baisama-cloud/dsh-omni-bridge) — 多通道消息桥接插件：将微信 ClawBot / QQ / 飞书的消息接入 DSH agent，并把回复回传给发送者，按通道独立会话、回复去重。
 - [bakkhos8/dsh-macos-share#dsh-macos-share](https://github.com/bakkhos8/dsh-macos-share/tree/main/plugins/dsh-macos-share) — macOS 分享菜单接收端：把分享的文件、图片、文本和链接追加到 DeepSeek Harness 当前会话的草稿附件（需先安装 DSH Share App）。
 - [baosfeng/my-dsh-plugins#dsh-my-notify](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-notify) — 会话（本轮）结束 / agent 询问 / 等待审批时弹浏览器通知 + 滴声，点击通知跳转会话；预留远程触发接口与 SSE 实时通道（npm: `dsh-my-notify`）。
+- [Beeasy-L/DSH-plugin-market#dsh-watchman](https://github.com/Beeasy-L/DSH-plugin-market/tree/main/plugins/dsh-watchman) — 把 DeepSeek Harness 的待审批、任务报错与任务结束推送到手机（Server酱 / Bark / 企业微信群机器人），并在设置页配置通道、事件过滤与去重。
 - [better-er/dsh-notify-ding](https://github.com/better-er/dsh-notify-ding) — 会话出现待回复交互或一轮跑完落到空闲时弹出浏览器系统通知，提示音由系统通知自带；不判断页面是否聚焦，每个会话最多保留一条通知、新通知顶掉旧的，空闲时若还有后台任务会在正文里说明数量。
 - [BI4PYM/dsh-deepseek-status-monitor](https://github.com/BI4PYM/dsh-deepseek-status-monitor) — 定期读取 DeepSeek 状态源，在 DSH 页面上以可自定义的气泡、横幅或胶囊提示服务中断、性能下降与服务恢复；常驻状态胶囊位置独立，支持六种位置、三种大小与中英双语。
 - [BiBoyang/dsh-im-bridge](https://github.com/BiBoyang/dsh-im-bridge) — 微信（iLink）双向桥：turn 完成/批准请求推送、聊天内批准与消息注入、持久去重与长回复收敛分段；通道层为多 IM 预留。
