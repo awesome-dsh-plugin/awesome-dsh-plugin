@@ -1,0 +1,6 @@
+url: https://github.com/MaHongang/dsh-paste-to-file
+name: MaHongang/dsh-paste-to-file
+category: ui
+description:
+  en: Turns a plain-text paste of 500 characters or more in the composer into a .txt attachment, so one long paste no longer makes the input box very tall. A notice above the input names the file, its Undo puts the text back, and the model reads the saved path of the attached file instead of inline prompt text. Short pastes, pasted files and chats that cannot take attachments keep ordinary pasting.
+  zh: 在输入框粘贴 500 字以上纯文本时自动存成 .txt 附件并上传，输入框不再被撑得很高。上方提示显示文件名，可一键撤销把文本放回输入框；模型读取附件文件的保存路径，而不是直接的正文。短文本、粘贴文件和不能添加附件的会话仍按普通文本粘贴。
