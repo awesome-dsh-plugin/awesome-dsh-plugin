@@ -1,0 +1,6 @@
+url: https://github.com/EthanZhu-07/capability-value-test
+name: EthanZhu-07/capability-value-test
+category: skill
+description:
+  en: Runs human-approved A/B tests that compare an existing method with a newly integrated capability, then generates a traceable HTML report with metrics and invocation evidence.
+  zh: 对原有方法与接入新能力后的方法执行经人工确认的 A/B 测试，并生成包含指标与调用证据的可追溯 HTML 报告。
