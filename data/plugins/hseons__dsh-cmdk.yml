@@ -1,0 +1,6 @@
+url: https://github.com/hseons/dsh-cmdk
+name: hseons/dsh-cmdk
+category: ui
+description:
+  en: 'Adds a keyboard palette to the web UI: search sessions and message text with jumps to the matching message, run commands, switch workspaces, and register third-party providers.'
+  zh: '给 Web 界面加一个键盘面板：搜索会话与消息正文并能跳到命中的那条消息、执行命令、切换工作区，还可用 provider 协议接入第三方命令。'
