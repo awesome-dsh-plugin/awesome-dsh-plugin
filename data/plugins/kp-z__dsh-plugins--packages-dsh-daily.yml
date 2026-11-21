@@ -1,5 +1,6 @@
 url: https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-daily
 name: kp-z/dsh-plugins#dsh-daily
+tarball: https://github.com/kp-z/dsh-plugins/releases/download/dsh-daily-v0.10.4/kpeace-dsh-daily-0.10.4.tgz
 category: tools
 description:
   en: "Daily news digest in the right sidebar: recommends proactively, is tunable in natural language, indexes both articles and videos (YouTube / Bilibili), and renders as a real web page you click through."
