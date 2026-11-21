@@ -1,0 +1,7 @@
+url: https://github.com/Magicqy/dsh-task-notifications
+name: Magicqy/dsh-task-notifications
+category: notify
+tarball: https://github.com/Magicqy/dsh-task-notifications/releases/download/v0.1.0/dsh-task-notifications.tgz
+description:
+  en: 'Highlights the taskbar and sends a silent notification when a background chat finishes in DSH Desktop on Windows.'
+  zh: 'Windows 版 DSH Desktop 的后台对话结束时，高亮任务栏按钮并发送静音通知。'
