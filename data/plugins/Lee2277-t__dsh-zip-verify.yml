@@ -1,0 +1,7 @@
+url: https://github.com/Lee2277-t/dsh-zip-verify
+name: Lee2277-t/dsh-zip-verify
+category: tools
+description:
+  en: Check that a delivery zip really round-trips before you hand it over - every entry inflates, CRCs match, contents equal the source directory file by file, and entry names decode correctly. Reads the central directory itself instead of trusting an external unzip, which is what turns a perfectly good Compress-Archive output into mojibake.
+  zh: 交付包打出来之后验证它真能原样还原，每个条目都能解压、CRC 相符、内容与源目录逐文件一致、条目名编码正确。自己读中央目录而不依赖外部解压工具，避免把一份完全正常的 Compress-Archive 输出看成乱码。
+icon: https://raw.githubusercontent.com/Lee2277-t/dsh-zip-verify/main/assets/icon-180.png
