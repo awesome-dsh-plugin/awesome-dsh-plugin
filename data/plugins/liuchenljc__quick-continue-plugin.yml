@@ -1,0 +1,6 @@
+url: https://github.com/liuchenljc/quick-continue-plugin
+name: liuchenljc/quick-continue-plugin
+category: ui
+description:
+  en: 'Adds a row of one-click reply buttons under the composer (继续 / A / B / C / 你来定), each of which sends its text as the next message. A host-side system-prompt section asks every model to end its reply with a short A/B/C option line, so the buttons and the reply form a click-through loop; 你来定 tells the agent to pick the option itself and continue instead of asking again.'
+  zh: '在输入框下方加一排一键回复按钮（继续 / A / B / C / 你来定），点一下即把对应文字作为下一条消息发出。Host 侧注入一段系统提示词，让所有模型的回复结尾带一行简短的 A/B/C 选项，与按钮形成点击闭环；「你来定」表示由 agent 自行选择并继续执行，不再反问。'
