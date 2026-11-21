@@ -1,0 +1,7 @@
+url: https://github.com/LiuHongXuMaritime/dsh-github-mcp
+name: LiuHongXuMaritime/dsh-github-mcp
+category: git
+tarball: https://github.com/LiuHongXuMaritime/dsh-github-mcp/releases/download/v1.0.1/dsh-github-mcp-1.0.1.tgz
+description:
+  en: 'Unofficial, AI-assisted wrapper that runs the official GitHub MCP server inside DSH: the bundled github-mcp-server binary is started over stdio and publishes mcp__github__* tools for issues, pull requests, repositories, users, Actions, notifications, git and discussions. The personal access token is entered on a Settings -> GitHub page and kept in the DSH credential store, so the connection reconnects on save and no secret ships with the bundle. Community-maintained; not affiliated with or endorsed by GitHub, Inc.'
+  zh: '非官方封装（AI 辅助生成）：把官方 GitHub MCP 服务器接进 DSH，内置 github-mcp-server 二进制，以 stdio 方式启动并发布 mcp__github__* 工具，覆盖 issue、PR、仓库、用户、Actions、通知、git 与 Discussions。个人访问令牌在「设置 → GitHub（非官方）」页填写并存进 DSH 凭据存储，保存后自动重连，包内不含任何密钥。本项目由社区维护，与 GitHub, Inc. 无隶属关系。'
