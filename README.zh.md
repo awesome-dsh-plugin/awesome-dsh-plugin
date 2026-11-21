@@ -4912,6 +4912,7 @@ dsh plugin --profile web add dshmarket
 - [heartmove/dsh-side-chat](https://github.com/heartmove/dsh-side-chat) — 选中对话片段，在右侧面板的侧边聊天中提问（按会话隔离）；AI 回复可原文或摘要后带回主会话。
 - [Heeweelee/dsh-session-plugin](https://github.com/Heeweelee/dsh-session-plugin) — 在输入框内按 ↑/↓ 回填历史消息，并支持右键归档（隐藏）工作区会话。
 - [heiheiha798/dsh-plugin-subagent-delete](https://github.com/heiheiha798/dsh-plugin-subagent-delete) — 带归属校验的工具与 HTTP 路由，用于列出、释放和永久删除子代理会话，删除后自动刷新 web UI。
+- [hello2fun/dsh-session-reaper](https://github.com/hello2fun/dsh-session-reaper) — 给 DSH 补上可恢复的会话删除：左侧栏管理面板把会话移入回收站、恢复或彻底清除，并回收只有这些会话引用的图片附件。路由仅 owner 可用；只要有一个剩余会话日志读不出来，就整体放弃附件清理。
 - [hellodigua/dsh-share](https://github.com/hellodigua/dsh-share) — 一键分享你的对话。
 - [hellokidder/dsh-hotkey](https://github.com/hellokidder/dsh-hotkey) — 键盘流 DSH 会话导航：按住 Control 在侧边栏显示 1-9 编号、Control+Tab 轮转、Control+J 从覆盖全部会话（含折叠分组与未渲染行）的面板跳转；双击 Option 为可点击控件显示字母提示，Option+Enter 聚焦输入框。
 - [HelloWorldGitHub114/dsh-codex-default-workspace](https://github.com/HelloWorldGitHub114/dsh-codex-default-workspace) — 仿照 Codex 的无项目会话：默认工作区中的每段新会话首次运行时自动创建并进入按日期分组的独立文件夹（默认工作区/YYYY-MM-DD/会话ID），内置可开关的 work/ 与 outputs/ 目录约定。
@@ -9798,6 +9799,7 @@ dsh plugin --profile web add dshmarket
 - [panchongyang/dsh-stateboard](https://github.com/panchongyang/dsh-stateboard) — 在 DSH 网页界面和 agent 工具中跨会话管理项目、计划、任务和外置文档引用。仅在 Windows 11 x64 上验证过。
 - [PandaBlessing/dsh-user-sync](https://github.com/PandaBlessing/dsh-user-sync) — DSH 用户级配置同步：技能、插件清单、配置与记忆跨机同步，换机一键恢复、缺插件自动装回、敏感文件硬拒绝。
 - [Passenger-Qin/dsh-task-splitter](https://github.com/Passenger-Qin/dsh-task-splitter) — 面向小上下文本地模型的宿主侧长任务识别：长产出自动拆成分段骨架（每轮只写一段，最后拼装），多步骤任务自动建立 PLAN.md 台账与 notes/（先立计划、每轮执行一步）。判定在宿主侧用启发式完成，不依赖模型自己判断极限。
+- [patrickb46-hub/dsh-workflows](https://github.com/patrickb46-hub/dsh-workflows) — 按会话切换工作流预设：一次切换决定每个磁盘技能在模型目录里的档位（完整 / 只留首句 / 隐藏）、隐藏哪些全局工具、追加的人格段落、切换时套用的权限预设，并可把该预设的提示词模板填进输入框。右侧小窗负责切换预设与改写草稿提示词，改写结果不会写回预设。
 - [PensiveFei/deep-read-summarize](https://github.com/PensiveFei/deep-read-summarize) — DSH 精读与摘要：书籍/论文/视频/网页经可插拔解析器转成结构化 Obsidian 笔记，MapReduce 并行精读子代理、JSON Schema 输出与幂等缓存。
 - [PerryLink/dsh-ap-three-way](https://github.com/PerryLink/dsh-ap-three-way) — 应付三单匹配：导入发票、采购订单与收货单，按容差策略匹配并导出异常底稿——4 个 `ap.*` 工具。
 - [PerryLink/dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) — 官方子代理接缝上的持久化后台子代理：任意会话中启动，Web 侧边栏看进度、随时留言与打断，支持按子代理限定工具、人格与委托深度。
