@@ -1,0 +1,6 @@
+url: https://github.com/SSHOOTING/dsh-plugin-compat-lab
+name: SSHOOTING/dsh-plugin-compat-lab
+category: dev
+description:
+  en: 'Compatibility view: install/load/uninstall signals, scenario count and version matrix.'
+  zh: '兼容性视图：安装/加载/卸载信号、场景数与版本矩阵。'
