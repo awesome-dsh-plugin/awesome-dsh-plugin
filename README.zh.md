@@ -3589,6 +3589,7 @@ dsh plugin --profile web add dshmarket
 - [LittleLemonJam/dsh-chat-background](https://github.com/LittleLemonJam/dsh-chat-background) — 聊天背景：把本地图片文件夹里的一张图铺满 DSH 桌面界面；左侧栏、主窗口、右侧栏遮罩可分别调节，支持背景轮换与分组、淡入淡出特效，并提供输入栏背景条、任务进度条与全会话 Token 总用量。
 - [Liu-ZA-81/dsh-theme-firefly](https://github.com/Liu-ZA-81/dsh-theme-firefly) — 崩坏：星穹铁道「流萤」主题：立绘/动态壁纸、萤火绿霓虹配色、开屏变身动画、萤火氛围粒子、背景音乐、打字音效与按对话触发的表情包彩蛋。
 - [LiueCreater/dsh-lifiwallpaper](https://github.com/LiueCreater/dsh-lifiwallpaper) — 为 DSH 提供壁纸、玻璃拟态、图片取色主题与侧栏用量小组件的背景主题插件。
+- [LiuHongXuMaritime/dsh-nebula-spectrum](https://github.com/LiuHongXuMaritime/dsh-nebula-spectrum) — 极光画布主题，含八套版本——青蓝、余烬、朱红、霓虹（深色）与彩虹、暖阳、冰蓝、玫瑰（浅色）：重设 DSH 设计令牌，让画布、玻璃侧边栏、光谱描边的输入框、渐变发送按钮与代码块跟随配色，并提供设置行切换版本或跟随系统外观。
 - [liushuchang-2012/dsh-skin-liquid-glass](https://github.com/liushuchang-2012/dsh-skin-liquid-glass) — iOS 26 液态玻璃皮肤：整窗共用一层白→灰→淡蓝的静态雾场，雾上只磨一次（blur 40px），左侧栏是悬浮玻璃卡，回复是一条气泡；浅深两套配色，不用照片壁纸，零依赖（33 KB）。
 - [liuyaguang8023/dsh-jcc-theme](https://github.com/liuyaguang8023/dsh-jcc-theme) — 金铲铲同人风格的 DeepSeek Harness Web 界面主题：原创海克斯竞技场背景与金色铲影（浅色为羊皮纸棋盘地图），金/青/紫/蓝四套强化配色与令牌覆盖，界面底层铺六边形棋盘网格，另有可开关的极光与金色浮尘氛围、圆润/锐利棱角切换，以及三选一的海克斯强化草案和 12 张本地图鉴；右下角「海克斯核心」面板可一键关闭、即时还原原生界面；不含游戏素材。
 - [liyy996/dsh-theme-windowsxp](https://github.com/liyy996/dsh-theme-windowsxp) — 把 DSH 换成 Windows XP：Luna 蓝皮肤（米色面板、渐变按钮、#7F9DB9 输入框、圆角蓝色滚动条、纯 CSS 绘制的 Bliss 风格桌面），外加一轮跑完时的提示音，以及智能体停下来等你批准时的另一种提示音。
@@ -4881,6 +4882,7 @@ dsh plugin --profile web add dshmarket
 - [gulagala001/dsh-undo-plugin](https://github.com/gulagala001/dsh-undo-plugin) — 回退会话回合和文件检查点，并在同一历史截点恢复任务与证据。
 - [guo120629-dotcom/dsh-send-timestamp](https://github.com/guo120629-dotcom/dsh-send-timestamp) — 在输入框工具栏加一个「时间戳」开关：开启后，你提交的每条消息后面会跟一条隐藏的上下文消息，携带发送时刻的本地时间，模型因此知道你是什么时候发的；开关按会话分别记住。
 - [guokecloud/dsh-session-janitor](https://github.com/guokecloud/dsh-session-janitor) — 在侧边栏页面里列出 DSH 的会话记录与归档缓存，删除先移入可恢复的回收站，最近 10 分钟仍在写入的会话会被拒绝。
+- [GuyeQiuchen/dsh-fish-jiyu](https://github.com/GuyeQiuchen/dsh-fish-jiyu) — 线性投影压缩：近段保留原文、中段每块一条事实行、远段只留关键词加 seq 指针。每次投影都从会话原始日志重建，压多少次都不会变重；压掉的内容可按 seq 或关键词取回。
 - [GuYou9799/dsh-turn-sieve](https://github.com/GuYou9799/dsh-turn-sieve) — 把会话里低价值的问答或单条消息筛除：在对话内原位选中，从模型可见内容与对话界面中移除，可一步撤销。
 - [gznofeng/dsh-session-note](https://github.com/gznofeng/dsh-session-note) — 对话视图里的备忘录标签页：每个会话在本机保存自己的一组手写备忘——添加、就地编辑、一键复制、删除前二次确认，最近改动排在最前。数据严格按会话 id 隔离（拿不到 id 就拒绝写入而不是猜一个），存于单个 plugin-data JSON，原子写入并兼容 v1 迁移；文件损坏时拒绝一切写入而不是清空。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [gznofeng/dsh-session-panel](https://github.com/gznofeng/dsh-session-panel) — 从侧栏一行进入的会话面板页：全部会话以卡片呈现——默认按所属工作区分组（各节带数量与目录），也可切成带工作区标签的全局最近列表。四级排序（置顶且忙碌 > 置顶 > 忙碌 > 空闲，同级按最近活跃）；会话置顶直接复用宿主数据不存第二份，工作区置顶存于 plugin-data 且按目录路径记忆（重命名不丢）；归档会话默认隐藏可开关，长工作区折叠为「N more」。只读客户端已有的 state，零模型调用、零额外 token；工作区置顶走三条 loopback-only 路由，原子写入，文件损坏时拒绝覆盖。
@@ -5715,6 +5717,7 @@ dsh plugin --profile web add dshmarket
 - [GreatArrow-ai/dsh-greatarrow](https://github.com/GreatArrow-ai/dsh-greatarrow) — 通过 Streamable HTTP 将 dsh 连接到 GreatArrow.ai MCP 服务器，让智能体检索和保存与你其他 AI 客户端共享的工作区记忆、任务与决策；纯配置包，从 dsh 主目录的 great-arrow.token 读取令牌，从不读取环境变量。
 - [greyoak111/siyuan-codex-bridge](https://github.com/greyoak111/siyuan-codex-bridge) — 把 DeepSeek Harness 接到本机思源笔记桌面端：把笔记工具注册为 mcp__siyuan__<tool>，额外把思源里配置好的 AI 与其 agent 回路也做成一个工具（按档位门禁），附带笔记使用技能，并在每次调用上执行只读/创作/完整三级策略；思源关闭时工具列表依然可用。
 - [guo6x/dsh-palate](https://github.com/guo6x/dsh-palate) — 给 DSH agent 的积累型设计品味语料库：喂好坏例子、提炼原则，用学到的判断评审新设计，而不是套固定规则。
+- [GuyeQiuchen/dsh-fish-memory](https://github.com/GuyeQiuchen/dsh-fish-memory) — 给 DeepSeek Harness 的紧凑长期记忆：开机只注入一小段，细节按需检索，写回走工具。家规有独立预算；压缩后回头核对哪些约束被压丢了，丢了在下一轮开头报警。另含心情与整理提醒、主动唤醒，全部模块化可删。
 - [han0han0le0ni/dsh-daughter](https://github.com/han0han0le0ni/dsh-daughter) — 五层人格（L1–L5）、事件记忆（FTS5 与 Dice 混合检索）、认知滤网、技能卡与自固化资产包、毫秒级条件反射、三档安全降级、只读脑星图，另附可选的 VPet-Simulator 桌宠 MOD 桥。
 - [hanhan9999999999999999999/dsh-memory-nebula](https://github.com/hanhan9999999999999999999/dsh-memory-nebula) — 面向 DeepSeek Harness 的本地优先记忆星图，提供图形视图、证据链、记忆体检与离线快照。只读地读取各工作区以及其他记忆插件（如 meow-memory 的 SQLite）的记忆库，只写入 $DSH_HOME/memory-nebula。会注册 9 个 agent 工具和一段系统提示（每轮带用法规则，读过几条记忆后再补充尚未读过的邻近记忆）；/export 与 /share 接口在本地服务上无需认证即返回完整记忆原文；可选的独立引擎监听 127.0.0.1:7890。
 - [hcg91/spike-ltm](https://github.com/hcg91/spike-ltm) — DeepSeek Harness 的本地长期记忆：SQLite 存储、自动提炼、语义召回、纠错、可靠遗忘，以及内置记忆摘要弹窗。
@@ -7402,7 +7405,7 @@ dsh plugin --profile web add dshmarket
 - [sryimnoob123/dsh-tool-pwsh-safe](https://github.com/sryimnoob123/dsh-tool-pwsh-safe) — 把 PowerShell 脚本 base64 编码后执行，引号、$、反斜杠、中文全部原样传递，免去转义地狱。走与内置 pwsh 工具相同的沙箱通道。
 - [stallenlu/dsh-disk-cleaner](https://github.com/stallenlu/dsh-disk-cleaner) — 面向 DeepSeek Harness 的 Windows 磁盘清理插件，扫描已知的安全缓存目录、显示占用大小，在 Web 面板中回收空间，并对无法自动清理的部分提供只读审计。
 - [stallenlu/dsh-research-desk](https://github.com/stallenlu/dsh-research-desk) — 在 DSH 内提供科研工作台：免密钥检索 arXiv、Europe PMC 与 OpenAlex，保存文献库与全文，提问时逐条比对原文校验引用，再生成选题假设与草稿，按五个视角产出多视角综述，在受限工作目录内运行用户提供的 Python 或 Node 脚本做验证计算，并把文献库导出为 Markdown、BibTeX 或 JSON。
-- [stallenlu/dsh-scihub](https://github.com/stallenlu/dsh-scihub) — 为 DSH 注册四个工具：scihub_pdf / scihub_batch 按 DOI 或文章 URL 经 Sci-Hub 镜像下载论文并逐条如实返回状态；libgen_search / libgen_download 用关键词检索 Library Genesis 并按 MD5 下载，保留 pdf / epub / djvu 等真实扩展名。文件按引用元数据经可配置的 fileNameTemplate 生成人类可读名，原子写入、同名不覆盖。所有请求支持 HTTP/HTTPS CONNECT 代理（config.proxy 或环境变量，尊重 NO_PROXY）。批量有界并发、跳过死镜像，并拒绝截断文件与人机验证页。
+- [stallenlu/dsh-scihub](https://github.com/stallenlu/dsh-scihub) — 为 DSH 注册五个工具：scihub_pdf / scihub_batch 按 DOI 或文章 URL 经 Sci-Hub 镜像下载论文并逐条如实返回状态；libgen_search / libgen_download 用关键词检索 Library Genesis 并按 MD5 下载，保留 pdf / epub / djvu 等真实扩展名。文件按引用元数据经可配置的 fileNameTemplate 生成人类可读名，原子写入、同名不覆盖。所有请求支持 HTTP/HTTPS CONNECT 代理（config.proxy 或环境变量，尊重 NO_PROXY）。批量有界并发、跳过死镜像，并拒绝截断文件与人机验证页；scihub_refresh_mirrors 可重测候选镜像并写回可用项实现自愈。
 - [STARDUSTLC666/deepseek-computer-use](https://github.com/STARDUSTLC666/deepseek-computer-use) — 通过 UI Automation、窗口截图和鼠标键盘操作 Windows 桌面软件，支持会话独立应用授权和操作审批。
 - [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) — CalDAV 日历工作台与 7 个 calendar_* 工具（查/建/改/删/搜/找空闲时段/自检），支持 iCloud、Google、Nextcloud 与自建端点：提供月/周/议程视图、空闲时段查找与邀约文案复制、周视图拖拽改期与撤销、RRULE 重复展开、连接先测后存、ICS 导入去重冲突预览及 5 套工作台主题。
 - [STARDUSTLC666/dsh-cite](https://github.com/STARDUSTLC666/dsh-cite) — 三栏引文工作台与 6 个 cite_* 工具（lookup/format/bibtex/check/batch/health）：支持 DOI/BibTeX 本地导入去重与缺项预览、Crossref 真实性核查与空字段差异补全、GB/T 7714 / APA / MLA / Chicago 排版复制、BibTeX 与含原始来源的 JSON 备份导出及 5 套工作台主题。
