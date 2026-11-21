@@ -1,0 +1,6 @@
+url: https://github.com/SUZUNAMI/dsh-cv-warm
+name: SUZUNAMI/dsh-cv-warm
+category: ui
+description:
+  en: Skips offscreen transcript rendering with content-visibility and pre-warms blocks near the viewport so scrolling stays smooth.
+  zh: 用 content-visibility 跳过屏幕外的会话块渲染，并预热视口附近的区块，让滚动更顺滑。
