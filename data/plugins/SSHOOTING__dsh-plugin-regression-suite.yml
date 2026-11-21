@@ -1,0 +1,6 @@
+url: https://github.com/SSHOOTING/dsh-plugin-regression-suite
+name: SSHOOTING/dsh-plugin-regression-suite
+category: dev
+description:
+  en: 'Compares task runs across versions by calls, tokens and errors to detect regressions.'
+  zh: '按调用数、token 与错误跨版本对比任务运行，发现回归。'
