@@ -4437,6 +4437,7 @@ dsh plugin --profile web add dshmarket
 - [zhukunpenglinyutong/dsh-ccgui](https://github.com/zhukunpenglinyutong/dsh-ccgui) — 在 DeepSeek Harness 会话里通过 ACP 使用 Claude Code、Kimi CLI、Codex CLI、PI CLI、OMP CLI、OpenCode 和 CodeBuddy CLI（CodeBuddy 默认关闭、未验证），Web/Desktop 界面提供 CLI 与模型菜单、git 变更面板和 Worktree。需要各 CLI 已安装并登录（OMP、OpenCode、CodeBuddy 须先自行安装）。CLI 在 DSH 沙箱之外运行、自己决定何时询问：只有 Claude Code 手动模式和配置为询问的 OpenCode 会弹 DSH 审批卡片，Codex、PI、OMP 直接执行。
 - [zhz8888/dsh-radeon-cloud-patcher](https://github.com/zhz8888/dsh-radeon-cloud-patcher) — 把 AMD Radeon Cloud 接入 DeepSeek Harness 的模型选择器，思考档位按模型逐个声明。provider 定义随插件自带的补丁层交付，而不是写进 profile。
 - [Zn-Dk/dsh-zhipu-toolkit](https://github.com/Zn-Dk/dsh-zhipu-toolkit) — 智谱 BigModel GLM 双端点模型目录（Coding Plan 与普通 API），支持实时模型发现与实测校准的思考档位映射，提供凭据、端点与默认推理档的可视化设置卡片。
+- [znshmily/dsh-model-value](https://github.com/znshmily/dsh-model-value) — 按单价与 Artificial Analysis 智力分给当前接入的每个模型排名，同时列出尚未接入的市面模型，并在输入框模型菜单里推荐性价比最高的几个、支持一键切换。
 - [zpis666/dsh-context-budget](https://github.com/zpis666/dsh-context-budget) — 在模型设置页为每个 pi-ai 路由新增上下文窗口与压缩阈值字段，并在输入框右下角按厂商提供思考强度选择器，写入 llm-pi-ai 容量、reasoningEfforts 与 compaction-basic 补丁行。
 - [zrxparley/dsh-jev-harness](https://github.com/zrxparley/dsh-jev-harness) — 一个开关决定 DSH 会话由谁干活：关 = 插件让位、走 DSH 自身模型网关；开 = 每条指令先交给 JEV 判定器，再由它自动分流。默认走 DSH 自己的模型网关（ctx.llm）：只需要 JEV 判定器的 key，策略模型与执行模型从这台机器 DSH 真正有的 provider/model 里选（面板下拉或自动挑）；也可以切到直连模式改用本插件自己的 OpenAI 兼容网关。含左侧栏设置页、输入框开关、悬停决策浮层（看这次到底是谁回答的）、流量看板，以及技能路由：同一个判定器会从 mattpocock/skills 的 39 个技能里挑出最合适的一个挂进调用。工具：harness_call/harness_classify/harness_review/harness_probe/harness_skill/harness_dsh。不向用户暴露分层选择。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [ZSQS88/dsh-model-switcher-pro](https://github.com/ZSQS88/dsh-model-switcher-pro) — 对话输入区的模型选择器：可搜索服务商、分组模糊搜索模型，旁置推理强度滑条（命名档位、磁吸刻度、阻尼滑行、每档配色、暗/亮主题）；宿主输入框重绘可选、默认关闭。
@@ -4916,6 +4917,7 @@ dsh plugin --profile web add dshmarket
 - [hgognav233-netizen/agent-workflow-viewer](https://github.com/hgognav233-netizen/agent-workflow-viewer) — DeepSeek Harness 会话画布：把每个会话用到的能力（文件、终端、网页、MCP、技能、子任务）和它们碰过的对象画成图，高亮执行中和失败的路径；详情栏显示错误原因、估算花费和可筛选的时间线；从左侧导航或对话输入框旁打开。
 - [hhuapen/dsh-per-session-folder](https://github.com/hhuapen/dsh-per-session-folder) — 为默认工作区中的每个新会话创建独立文件夹，并根据会话标题重命名。
 - [HildebrandYu/dsh-session-chains](https://github.com/HildebrandYu/dsh-session-chains) — 把互相交接的對話自動聚成一條鏈：從交接提示詞自動判定、場次編號、就地改名、搜尋、拖拉／多選歸鏈、把鏈置頂、把鏈封存進面板裡的封存庫（側欄不再顯示，有新場次也留在封存庫）、本場上下文與請求數讀數，以及可調的交接門檻（達到可自動交接：寫提示詞→開新對話→貼上→切換）。
+- [hiyced/dsh-quote-reply](https://github.com/hiyced/dsh-quote-reply) — 划选会话文字后可在选区旁回复，同一条回复可以引用多段原文，并可在聊天框里逐条删除引用回复。
 - [Hjdd14/dsh-toolong-warning](https://github.com/Hjdd14/dsh-toolong-warning) — 统计每段对话成功完成的压缩次数并常驻悬浮窗，只有反复压缩过、且此后又烧掉大量 token 或上下文占用过高时才提醒；三个阈值都可在设置页调整。
 - [hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — DSH 会话与工作区管理——工作区：归档与显示。会话：跨工作区移动、预设迁移、删除；收藏、待回看、优先级、标签、备注。批量操作。
 - [hoist-wen/dsh-trajectory-tool-insight](https://github.com/hoist-wen/dsh-trajectory-tool-insight) — 在 DSH 会话轨迹栏边新增「解读」标签：调用模型分轮次解读工具调用情况；允许自定义提示词。
@@ -8684,6 +8686,7 @@ dsh plugin --profile web add dshmarket
 - [hesheng01/dsh-pele#plugin](https://github.com/hesheng01/dsh-pele/tree/main/plugin) — 通过 pele_draw 工具在 DSH 会话中绘制 Mermaid 图表，以内联 SVG 卡片渲染，支持缩放/拖动与 SVG/PNG 下载，跟随明暗主题。
 - [hexiaobai2012/gongwen-writer](https://github.com/hexiaobai2012/gongwen-writer) — 面向 DeepSeek Harness 的中文公文写作助手：首轮检索并给出三个框架候选，按 GB/T 9704 生成 Word，实时《题目_打磨版.docx》，逐段逐句推敲，官方来源事实核查、官方微信公众号与项目记忆。
 - [Hieupt1904/dsh-tvkt-vi](https://github.com/Hieupt1904/dsh-tvkt-vi) — 给每个 agent 套上越南语技术写作规范：一段对所有模式生效的提示词、含 30 条写作规则和 70 个术语的技能、带起草/评审/重写纪律的 agent 模式，以及自带的 L001-L007 检查器。
+- [Hieupt1904/project-flow-explainer#dsh-plugin](https://github.com/Hieupt1904/project-flow-explainer/tree/main/dsh-plugin) — Explains a codebase flow as a self-contained offline HTML diagram with file:line evidence, and gives the agent seven code-intelligence tools (index, search, context pack, impact, verify, refresh, flow) plus a /project-flow-explainer slash command. Static analysis only: it never runs the target repository and makes no network calls.
 - [HiSeax/dsh-agent-outputs-reader](https://github.com/HiSeax/dsh-agent-outputs-reader) — agent 产出文件的浮层阅读器：Markdown 渲染、PDF 面板预览、DOCX/XLSX/PPTX 文本提取与回复末尾文件 chips，支持搜索、大纲与位置记忆。
 - [huangfuren/dsh-outline](https://github.com/huangfuren/dsh-outline) — 在 DSH 对话中搜索、读取并安全读写用户自己的 Outline 知识库文档，写操作受白名单保护与审批约束。
 - [huangxicheng1/blog-manage](https://github.com/huangxicheng1/blog-manage) — 在 DSH 面板里管理 GitHub Pages 博客：按标签分组浏览 Markdown 文章，用表单填 front matter 并在分屏编辑器里修改，再通过 GitHub REST API 把改动作为一次 commit 发布。
