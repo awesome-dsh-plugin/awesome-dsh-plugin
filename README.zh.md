@@ -1096,6 +1096,7 @@ dsh plugin --profile web add dshmarket
 - [ingeb0rga/dsh-sidebar-hover](https://github.com/ingeb0rga/dsh-sidebar-hover) — 仿 Claude Code 的侧栏（macOS 桌面版）：悬停在折叠的侧栏按钮上即可将侧栏浮层展开，选择会话后自动收起，点击按钮固定；另有会话历史前进/后退箭头（⌘\[ / ⌘]）。
 - [Inoue-Cyrene/dsh-ctrl-wheel-zoom](https://github.com/Inoue-Cyrene/dsh-ctrl-wheel-zoom) — 按住 Ctrl 滚动鼠标滚轮即可缩放整个 Harness 网页界面，以指针位置为锚点、50%–200% 每档 10%；另支持 Ctrl 加减号与 Ctrl+0 快捷键；右下角缩放胶囊与「设置 → 通用」里的页面缩放行显示当前档位并可一键复位；档位保存在 localStorage。
 - [InsaneGenji/dsh-safe-restart](https://github.com/InsaneGenji/dsh-safe-restart) — 给 DeepSeek Harness 桌面端托盘加一项「重启 DeepSeek Harness」。有正在运行的任务时先弹 Electron 原生确认框，标题与按钮都是「重启」，说明沿用官方那句「当前正在运行的任务将会中断」；判断条件与托盘「退出」同源（同一个 inspectQuit 与 resolveDesktopQuitPrompt）。客户端升级替换 main.js 后，插件会在下次启动自动重打补丁。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [intelfabs/dsh-file-library](https://github.com/intelfabs/dsh-file-library) — DSH 侧栏文件库：按工作区或全机检索所有发过的文件，可就地打开或预览、一键归档进会话工作区，并以 @library 在对话中复用；同时向 agent 提供 library_list / library_read / library_use 三个工具。
 - [iqingyoung/search2chart-mcp#dsh](https://github.com/iqingyoung/search2chart-mcp/tree/main/dsh) — 原生 DSH 插件：把结构化数据渲染成对话流内联图表，零运行时依赖。
 - [isdou/dsh-asset-library](https://github.com/isdou/dsh-asset-library) — 专为多模态 UI 开发打造的跨项目本地图库，在对话框输入 @关键词 即可快速检索并追加设计参考图附件。
 - [Isilsolme/dsh-splash-launcher](https://github.com/Isilsolme/dsh-splash-launcher) — Windows 一键启动器：无边框 WPF 启动动画（HARNESS 逐笔描边），后台拉起 dsh web 并在 GUI 就绪后淡入，附 desktop_launch 工具。
@@ -3935,7 +3936,7 @@ dsh plugin --profile web add dshmarket
 - [devhang/dsh-llm-sampling-params](https://github.com/devhang/dsh-llm-sampling-params) — 把按模型的採樣參數注入發往 OpenAI 相容閘道的 chat-completions 請求：在 transport 層包裹 fetch，用請求 body 的 model 別名查詢設定好的 models 表，對網址含 /v1/chat/completions 的請求設定 temperature、top_p、top_k、min_p、repeat_penalty、presence_penalty 與 frequency_penalty，並額外送 repetition_penalty 給 SGLang 與 vLLM。
 - [devzer0o0/dsh-max-reasoning-effort](https://github.com/devzer0o0/dsh-max-reasoning-effort) — 把每个模型的推理档位钉在它支持的最高档，并且对插件加载后新建的 agent 继续生效。
 - [DeZhou123/dsh-model-orchestrator](https://github.com/DeZhou123/dsh-model-orchestrator) — 两级模型调度：先在模型层选最优模型组，再在该模型的渠道层选最佳渠道；失败时先换同模型的其它渠道，整个模型不可用才换模型。偏好模式把单个模型锁在它的各条渠道上，输入框下方的状态条实时显示当前模型、渠道健康与今日 token 用量，并可从测速/智力报告导入路由先验；另提供 model_orchestrator 工具与 /route 命令。
-- [DHLlib/online_model_discovery](https://github.com/DHLlib/online_model_discovery) — 为第三方 pi-ai 提供商提供在线模型列表发现与逐模型思考强度编辑。
+- [DHLlib/online_model_discovery](https://github.com/DHLlib/online_model_discovery) — 为第三方 pi-ai 提供商提供在线模型发现与逐模型思考强度编辑，并自动补全内置目录未收录模型的 compat 开关，修复端点不支持 developer 角色导致的 400 错误。
 - [dingminhua/dsh-connect-qoder](https://github.com/dingminhua/dsh-connect-qoder) — 通过 PAT 将 Qoder（通义灵码国内版 / 国际版）模型接入 DSH，支持按区域的多账号池、每日签到、自动换号与只读积分展示。
 - [dingminhua/dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) — 将本机登录的 Trae 中国区模型接入 DSH，支持由 DSH 执行工具调用、账号切换，以及 Work/通用积分展示。
 - [dingminhua/dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) — 将本机登录的 WorkBuddy 模型（国内版与国际版）接入 DSH，每次刷新按上游目录读取每个模型的积分倍率，支持逐模型图片输入开关、带自动换号的账号池、手动每日签到，以及卡片与输入框里的只读积分胶囊读数。
