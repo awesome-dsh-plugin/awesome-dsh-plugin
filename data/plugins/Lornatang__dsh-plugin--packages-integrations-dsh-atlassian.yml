@@ -1,5 +1,5 @@
-url: https://github.com/Lornatang/dsh-atlassian
-name: Lornatang/dsh-atlassian
+url: https://github.com/Lornatang/dsh-plugin/tree/main/packages/integrations/dsh-atlassian
+name: Lornatang/dsh-plugin#dsh-atlassian
 category: tools
 description:
   en: 'Connect Atlassian Cloud and self-hosted Jira and Confluence to DeepSeek Harness, with tools and a Jira issue board.'
