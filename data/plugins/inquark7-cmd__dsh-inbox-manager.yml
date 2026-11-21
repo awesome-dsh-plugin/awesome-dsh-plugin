@@ -1,5 +1,5 @@
 url: https://github.com/inquark7-cmd/dsh-inbox-manager
-name: inquark/dsh-inbox-manager
+name: inquark7-cmd/dsh-inbox-manager
 category: tools
 description:
   en: Model tools to list, reorder, and remove the session's pending message queue, and to save, edit, list, and send persistent drafts.
