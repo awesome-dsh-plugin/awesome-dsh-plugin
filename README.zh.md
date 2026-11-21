@@ -3034,6 +3034,7 @@ dsh plugin --profile web add dshmarket
 - [LZ-jun/dsh-balance-usage](https://github.com/LZ-jun/dsh-balance-usage) — 在侧边栏显示 DeepSeek 账户余额与当前峰谷时段，并按官方高峰/空闲价估算每个会话与每一轮的花费。
 - [Lzh3070/dsh-model-visibility](https://github.com/Lzh3070/dsh-model-visibility) — DSH 模型可见性管理：在独立的设置分区页里按渠道/模型隐藏或显示模型选择菜单中的条目。逐模型开关、实时搜索、渠道级批量隐藏/显示、一键恢复全部。零侵入——只写插件自己的隐藏列表，不改 Provider 配置，隐藏正在使用的模型不会中断会话。
 - [Lzh3070/dsh-session-cost](https://github.com/Lzh3070/dsh-session-cost) — 输入框右侧会话成本芯片：按官方价表（含 2026-08-17 峰谷价）逐消息计价当前会话的 DeepSeek API 花费，悬停查看计价明细、今日(DSH) 消耗与账户余额；仅 DeepSeek 模型计价，其他模型不计价不显示。
+- [LZM-P/dsh-plugin-rack](https://github.com/LZM-P/dsh-plugin-rack) — DSH 插件管理台：所有已装插件一屏看完，每行一个开关；「手动/自动」标记决定一键批量操作的作用范围；有新版时行内标出并可单独更新。装完热替换，新版本当场生效、不用重启 DSH。能识别 npm、GitHub、压缩包、软链四种装法。另有一页列出、预览并开关技能，只读技能文件，不做任何修改。
 - [m1khal3v/dsh-llm-key-rotation](https://github.com/m1khal3v/dsh-llm-key-rotation) — 在配额、速率限制或身份验证失败后轮换已配置的 LLM API 密钥。
 - [Make0209/dsh-usage-stats](https://github.com/Make0209/dsh-usage-stats) — GitHub 风格用量热力图看板：按工作区统计使用次数与 Token 花费（含缓存命中率）、DeepSeek 账户余额查询、工作区别名管理。
 - [mako-o-o/dsh-opendesign-limit](https://github.com/mako-o-o/dsh-opendesign-limit) — OpenDesign（AMR）额度读数：输入框旁显示 Design Plan 的 5 小时与 7 天窗口、钱包余额与外推天数，走本机 controlKey 或浏览器会话两条通道。本机来源会读取 ~/.amr/config.json 里的 controlKey；浏览器来源会打开一个临时 Chrome 窗口，你登录后通过 CDP 收集会话 cookie 存进 DSH 的凭据库。
@@ -9138,7 +9139,7 @@ dsh plugin --profile web add dshmarket
 - [tongqing1130-png/dsh-skill-zh](https://github.com/tongqing1130-png/dsh-skill-zh) — 把 DSH 技能菜单里的英文说明翻成简体中文并压成一句话，新装的插件也会自动跟着变。自带预翻译缓存，手工短句优先于规则压缩。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [trevtravtrev/dsh-i-have-adhd](https://github.com/trevtravtrev/dsh-i-have-adhd) — 为 ADHD 读者组织回复：下一步操作放最前、步骤编号、状态复述、成果可见。/i-have-adhd 按需开启，/adhd on 全程开启。
 - [triagmas/dsh-project-evolution](https://github.com/triagmas/dsh-project-evolution) — 把已验证的项目工作保存为脱敏证据和可审核的技能提案；接受的技能会成为原生项目技能，并带有版本历史、差异、回滚和可选的全局发布。
-- [tshui1/dsh-skill-autoload](https://github.com/tshui1/dsh-skill-autoload) — 根据每条消息自动加载匹配的已装技能，无需触发词，并可在右侧栏勾选允许自动加载的技能。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [tshui1/dsh-skill-autoload](https://github.com/tshui1/dsh-skill-autoload) — 按每条消息自动加载匹配的已装技能，并可在右侧栏面板勾选允许自动加载的技能。
 - [tuoLuoSuan/dsh-skill-center](https://github.com/tuoLuoSuan/dsh-skill-center) — 在 DSH Web GUI 里浏览、预览并安装公开的 Agent Skills，聚合五个来源（claudeskills.info、skillsmp.com、awesome-claude-skills 仓库坐标表、Anthropic 官方仓库、已装 DSH 插件自带的技能包）。安装按 commit 而不是分支名钉住，预览到的就是落地的；面板给出每个技能的来路、按整棵树比对的更新检查，删除是移进回收站而不是抹掉。落地之前先按 harness 实际执行的规则体检技能名与 frontmatter（名字不合法会被 harness 静默跳过），列出 SKILL.md 引用但没取回的文件，标出只取到一部分的情况，同名时给出覆盖、改名、跳过三个选项。
 - [turambarr/subagent-orchestrator-dsh](https://github.com/turambarr/subagent-orchestrator-dsh) — 实验编排 SOP 技能：顶层模型起草分解计划（子任务、每个的模型、带容差的验收基准、依赖顺序），经用户确认后才派工；每个子任务以自包含 prompt 交给轻量子智能体执行，回报限定为测量事实与基准差值，判读与裁决留在顶层。附一份分解计划模板、五类任务模板（采集/执行/一致性校验/只读审查/机械转换）、任务层与实验层两级验收门，以及三条防止把内部一致性证据说成独立或外部验证的规则。
 - [tw93/Mole#mole](https://github.com/tw93/Mole/tree/main/plugins/mole) — 开源磁盘清理工具 Mole CLI（mo，支持 macOS 和 Windows）的官方 skill：按 Mole 的 JSON 输出查看磁盘占用、预览并执行清理、查看已安装应用、读取系统健康状态和清理记录。清理前先用 --dry-run 预览并征得同意，卸载应用和需要管理员权限的步骤留给用户在自己的终端里执行。插件只带 skill，CLI 需另外安装。
