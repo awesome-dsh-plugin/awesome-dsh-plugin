@@ -1,0 +1,6 @@
+url: https://github.com/femnn/dsh-markdown-docs
+name: femnn/dsh-markdown-docs
+category: docs
+description:
+  en: 'Markdown workbench in the right sidebar: lists the Markdown files of the session workspace, previews and edits them with a version-checked save, opens a file or folder dropped on the page (a skill directory included), and links the documents a file references so they open in the same panel.'
+  zh: '右侧栏里的 Markdown 工作台：列出会话工作区里的 Markdown 文件，预览并编辑、保存时校验文件版本，可以把文件或文件夹（含技能目录）拖到页面上打开，文档里引用的其他文档点一下就在同一面板里打开。'
