@@ -1,0 +1,6 @@
+url: https://github.com/xiaoxi-kobo/dsh-proxy-identity
+name: xiaoxi-kobo/dsh-proxy-identity
+category: identity
+description:
+  en: 'Adds fixed identity headers to model requests so a shared gateway or memory proxy recognizes the client instead of asking it to choose a team and an agent every session.'
+  zh: '给模型请求补上固定身份头，让共享网关或记忆代理直接认得这个客户端，不用每个会话都选一次团队和 agent。'
