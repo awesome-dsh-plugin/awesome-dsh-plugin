@@ -1,0 +1,7 @@
+url: https://github.com/AyanamReiIV/dsh-plugin-wallpaper-machine
+name: AyanamReiIV/dsh-plugin-wallpaper-machine
+category: theme
+description:
+  en: Use your local WallpaperMachine library as the DeepSeek Harness background on macOS, with live Scene wallpapers rendered by WebWallGL and Video or Image wallpapers played directly behind the chat.
+  zh: 把 macOS 上 WallpaperMachine 的壁纸库接入 DeepSeek Harness：场景壁纸由 WebWallGL 实时渲染，视频与图片直接作为聊天背景播放。
+icon: https://raw.githubusercontent.com/AyanamReiIV/dsh-plugin-wallpaper-machine/main/assets/icon-180.png
