@@ -1,0 +1,6 @@
+url: https://github.com/vicfei/dsh-compaction-semantic
+name: vicfei/dsh-compaction-semantic
+category: tool
+description:
+  en: 'Semantic context compaction for DSH - a pre-flight judge scores over-budget tool results at span granularity, keeps relevant text verbatim (scattered, not head/tail amputation), and commits through the official replay-safe protocol. Fail-closed to stock behavior: judge off/timeout/error leaves the deterministic pruner untouched. One batched request per step, keep-on-doubt.'
+  zh: 'DSH 语义化上下文压缩：起飞前判官对超预算工具结果做 span 级评分，相关文字逐字保留（散布取舍而非砍头尾），经官方回放安全协议落盘。全程 fail-closed：判官关闭/超时/出错即回到原厂行为。每步一次批量请求，疑罪从留。'
