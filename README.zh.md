@@ -12463,7 +12463,7 @@ dsh plugin --profile web add dshmarket
 - [lucky8197/dsh-devquest](https://github.com/lucky8197/dsh-devquest) — 把开发变成 RPG：回合/工具/todo 积累 XP、27+ 成就徽章、等级与赛季。事件流驱动、纯函数计分——你的工作就是游戏。
 - [lukeAyin/dsh-whalebook#dsh-whalebook](https://github.com/lukeAyin/dsh-whalebook/tree/main/dsh-whalebook) — 住在 DeepSeek Harness 里的蓝发桌宠「鲸事本」：点一下弹出待办面板，可点击编辑、到期渐进提醒；开启「待办建议」后，提醒还会按概率追加一句 AI 生成的简短下一步建议。基于 PC2005-cloud/dsh-pet（MIT），素材沿用其非商用条款。请替代 PC2005-cloud/dsh-pet 安装，不要与它同时安装。
 - [luo173176/dsh-simple-live](https://github.com/luo173176/dsh-simple-live) — DSH 聚合直播插件：在左侧栏面板聚合哔哩哔哩、斗鱼、虎牙、抖音、快手五平台直播，支持弹幕与模型工具。
-- [Luoqiaocong/dsh-dialect](https://github.com/Luoqiaocong/dsh-dialect) — 给 DeepSeek Harness 的回答偶尔掺一点方言口气（东北话、天津话、北京话、粤语），五档频率（关闭到约 50%）、三档强度，输入框旁可按会话单独切换。
+- [Luoqiaocong/dsh-dialect](https://github.com/Luoqiaocong/dsh-dialect) — 给 DeepSeek Harness 的回答偶尔掺一点方言口气（东北话、天津话、北京话、粤语、客家话·梅州兴宁，试验中），五档频率（关闭到约 50%）、三档强度，输入框旁可按会话单独切换。
 - [luumod/dsh-achievements](https://github.com/luumod/dsh-achievements) — 成就与游戏化插件：按回合、工具调用、会话、连续天数与编码行为（编辑/读取/测试）解锁徽章，带徽章墙、解锁 toast 与 ctx.achievements SDK。
 - [luweiyabo/dsh-whale-pet](https://github.com/luweiyabo/dsh-whale-pet) — DeepSeek Harness Web UI 的精致悬浮鲸鱼桌宠，拥有 95 个分类透明动画、状态感知事件回应、可自定义动作与触发规则，并支持点击互动、拖拽和屏幕漫游。
 - [lyhtakeashot/dsh-lucky-block](https://github.com/lyhtakeashot/dsh-lucky-block) — 给 DeepSeek Harness 网页界面加一个可拖拽的幸运方块按钮：单击放零成本小表演（弹窗、假蓝屏、今日抽签、冷知识、冷笑话、音乐和一组视觉小演出），长按 1.4 秒挖穿后开新会话随机写论文、读新闻、发明东西或编短篇小说。它还会给模型的问答题选项末尾加一个「幸运方块」随机替你决定，不满意说「回滚」即可撤销。方块外观与事件权重都能在设置里改。
