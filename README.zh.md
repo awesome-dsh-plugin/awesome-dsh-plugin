@@ -738,6 +738,7 @@ dsh plugin --profile web add dshmarket
 - [dongsheng123132/dsh-workspace-plugins#dsh-workspace-move-top](https://github.com/dongsheng123132/dsh-workspace-plugins/tree/main/plugins/dsh-workspace-move-top) — 在工作区的「…」菜单里加一项「移到最上面」，只调整一次顺序，不做收藏、星标或自动重排。
 - [dongwenxiu83-web/dsh-friendly-steps](https://github.com/dongwenxiu83-web/dsh-friendly-steps) — 把 Think / 工具调用等过程行折叠成右下角摘要浮条，失败步骤红色计数，面向文字工作者的干净对话视图。
 - [donyue7/dsh-aoci-panel](https://github.com/donyue7/dsh-aoci-panel) — DSH 的 AOCI 认知面板：多工作区总览、单仓库索引与治理视图、MCP 绑定诊断，以及引导式/批量初始化。治理、校验与引导式/批量初始化需宿主机装有 aoci CLI；仅浏览索引不需要。
+- [doomedwkk/dsh-cyberpunk-boot](https://github.com/doomedwkk/dsh-cyberpunk-boot) — 赛博朋克风格的 DSH 启动动画，Web 客户端与桌面版都能用。窗口首次加载时铺满整窗显示模板字 DSH 标志、六行启动日志和抖动的进度条，随后以分层故障效果过渡露出界面；声音在页面内合成，不含音频文件、不联网，提供三种可切换音色：C 大调铃声、短促的金属提示音、以及「开始游戏」电影感冲击。任意键或点击可跳过，Ctrl+Alt+B 重播，Ctrl+Alt+M 静音，Ctrl+Alt+S 切换音色。
 - [doubility/dsh-open-with-control](https://github.com/doubility/dsh-open-with-control) — 把会话头部的「打开方式」分裂按钮换成可配置版本：可移除条目、调整顺序、设定默认应用，并把本机已安装的应用加入菜单（带真实图标）。偏好保存在主机上；应用探测覆盖 macOS 与 Windows，暂不支持 Linux。
 - [DQS-PUBLIC/dsh-price-chip](https://github.com/DQS-PUBLIC/dsh-price-chip) — 侧边栏价格小挂件：显示当前 DeepSeek 时段（高峰或空闲）、所选模型每百万 token 的缓存命中、未命中与输出价格，以及账户余额和今日消费。
 - [dream-office/dsh-note-wall](https://github.com/dream-office/dsh-note-wall) — DSH 侧栏便签墙：随手记录灵感，用颜色和分类整理，支持链接与图片，数据只存本机。
@@ -7721,6 +7722,7 @@ dsh plugin --profile web add dshmarket
 - [WODE25500/dsh-lan-share](https://github.com/WODE25500/dsh-lan-share) — 通过浏览器把 DSH 工作区分享到局域网：手机、平板、其它电脑可浏览、下载、上传文件，无需 DSH 登录。带令牌门卫、路径边界、只读模式与速率限制，零依赖(node:http)。
 - [WODE25500/dsh-public-apis](https://github.com/WODE25500/dsh-public-apis) — 把 public-apis 目录接入 DeepSeek Harness：按关键词、分类、auth、https、cors 搜索 1716 个免费公共 API 并直接调用。
 - [wodongx123/dsh-language-control](https://github.com/wodongx123/dsh-language-control) — 让 Agent 的思考过程也自动使用中文。在每步推理前向 System Prompt 最顶部注入语言约束，强制思维链、规划、工具调用推理全部使用中文，防止工具返回英文内容后发生语言漂移。支持在设置面板中实时编辑约束文本。
+- [woodtong/dsh-ghostscreen-mcp](https://github.com/woodtong/dsh-ghostscreen-mcp) — 通过官方 MCP 客户端桥接层把 GhostScreen 服务器接入 DSH，暴露 25 个 mcp__ghostscreen__* 工具：屏幕外窗口捕获（PrintWindow）、不抢焦点的窗口消息/UIA 输入、基于 CDP 的无头 Edge 网页自动化，UIA 动作经人工同意门。插件不带二进制：每次 DSH 启动检查最新 GhostScreen Release，后台静默下载、下次启动启用并清理旧版本；插件页显示进度与失败原因，开发时可用 config.exePath 或 GHOSTSCREEN_MCP_EXE 固定本地构建。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [wqx1999/dsh-litman](https://github.com/wqx1999/dsh-litman) — 把 litman（用 `lit` 命令管理的本地文献库）接入 DSH：侧栏入口列出你的 litman 文献库，点一下就在新会话里把它作为工作区打开；自带的 skill 在征得你同意后，用官方安装命令装好 litman，并接入 litman 自己的 skill。
 - [wsk114514/dsh-ark-wiki](https://github.com/wsk114514/dsh-ark-wiki) — 查询 PRTS Wiki 的《明日方舟》干员、物品、关卡、剧情与泰拉大典世界观条目，并基于剧情卡司统计与卡池历史预测未实装角色、异格与卡池排期。
 - [wsy320/dsh-embedded-workbench](https://github.com/wsy320/dsh-embedded-workbench) — 串口终端与 ZLG／CXCAN 的 CAN/UDS 工作台：实时收发、CSV 录制，并以只读方式把状态交给 agent。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
