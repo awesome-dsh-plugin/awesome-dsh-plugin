@@ -1,0 +1,7 @@
+url: https://github.com/Lee2277-t/dsh-aigc-label
+name: Lee2277-t/dsh-aigc-label
+category: security
+description:
+  en: Write and check the AIGC implicit label that Chinese rules require on AI-generated content - the named AIGC property inside an Office file's docProps/custom.xml, carrying Label, ContentProducer and ProduceID. `aigc_label_write` stamps docx, xlsx and pptx and reads the property back to confirm it landed; `aigc_label_check` reports what a file currently carries. The producer code is never built in, because stamping a file with someone else's code misattributes where it came from - without one the write tool refuses rather than writing a half label.
+  zh: 给 docx/xlsx/pptx 写入与查验 AIGC 隐式标识，即 Office 文件 docProps/custom.xml 里那条名为 AIGC 的属性，含 Label、ContentProducer、ProduceID。`aigc_label_write` 负责写入并回读确认，`aigc_label_check` 报出文件现在带了什么。服务提供者编码不内置——把别人的编码写进文件等于把这份内容的来源指向了别的主体，所以没有配置时它宁可拒绝写入，也不写一条残缺的标识。
+icon: https://raw.githubusercontent.com/Lee2277-t/dsh-aigc-label/main/assets/icon-180.png
