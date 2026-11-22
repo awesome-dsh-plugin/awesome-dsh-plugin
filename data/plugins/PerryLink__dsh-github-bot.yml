@@ -3,3 +3,4 @@ name: PerryLink/dsh-github-bot
 category: tools
 description:
   en: "GitHub PRs, reviews, issues and CI for DeepSeek Harness, with approval-gated writes."
+  zh: 'DeepSeek Harness 的 GitHub 集成：PR、评审、Issue 与 CI，写操作需审批。'
