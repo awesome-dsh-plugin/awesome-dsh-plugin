@@ -1,0 +1,6 @@
+url: https://github.com/whatif146/dsh-memelens
+name: whatif146/dsh-memelens
+category: fun
+description:
+  en: 'Explains Chinese internet memes to an agent: registers a meme_explain tool that returns the meaning, tone, origin and lifecycle of a sticker, which memes can and cannot be combined, occasions to avoid, and both a meme-version and a plain-version reply. Answers come from a local memory store with spacing-effect decay, falling back to a user-configured OpenAI-compatible vision endpoint (BYOK).'
+  zh: '给 agent 装一双看懂梗的眼睛：注册 meme_explain 工具，返回表情包的意思、语气、出处与生命周期、能一起用与不能混用的梗、该避开的场合，并给出玩梗版与不玩梗版两种回复。结论来自带间隔效应衰减的本地记忆库，未命中时调用用户自配的 OpenAI 兼容视觉端点（BYOK）。'

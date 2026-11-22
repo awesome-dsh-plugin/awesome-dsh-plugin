@@ -1,0 +1,6 @@
+url: https://github.com/AlseFum/dsh-pluginlet
+name: AlseFum/dsh-pluginlet
+category: ui
+description:
+  en: "Turns every .pluginlet file under a repo's .dsh/pluginlets/ (directories configurable) into its own sandboxed Conversation View tab, gated by a capability grant bound to the file content hash."
+  zh: "把仓库 .dsh/pluginlets/（目录可配置）下的每个 .pluginlet 文件变成独立的沙箱会话视图标签页，权限按内容哈希绑定。"

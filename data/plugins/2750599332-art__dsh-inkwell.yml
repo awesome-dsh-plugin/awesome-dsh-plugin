@@ -1,0 +1,6 @@
+url: https://github.com/2750599332-art/dsh-inkwell
+name: 2750599332-art/dsh-inkwell
+category: ui
+description:
+  en: 'Composer-toolbar button that rewrites the draft prompt into a clearer, more complete version through the Harness LLM route, with a revert control that restores the pre-enhancement text; a settings page holds style keywords and an independent model choice.'
+  zh: '输入框工具栏按钮：通过 Harness 的 LLM 路由把草稿提示词改写为更清晰、更完整的版本，并提供撤回控件恢复改写前的原文；设置页可填写风格关键词，并可单独指定优化所用的模型。'

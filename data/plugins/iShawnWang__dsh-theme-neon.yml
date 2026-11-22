@@ -1,0 +1,7 @@
+url: https://github.com/iShawnWang/dsh-theme-neon
+name: iShawnWang/dsh-theme-neon
+category: theme
+description:
+  en: 'Three neon palettes for DeepSeek Harness — cyan, pink and yellow — picked from a Theme colors row of three swatches under Appearance in Settings → General, each palette carrying its own light and dark token set; the built-in Appearance switch still owns dark and light.'
+  zh: '给 DeepSeek Harness 的三套霓虹配色——青、粉、黄，在「设置 → 通用设置」的「外观」下面一行三个色块里点选切换，每套配色各自带明暗两套 token；深浅仍由内置的「外观」开关决定。'
+icon: https://raw.githubusercontent.com/iShawnWang/dsh-theme-neon/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/Aliboder/dsh-music-panel
+name: Aliboder/dsh-music-panel
+category: voice
+description:
+  en: 'A local + online music player for DeepSeek Harness: multi-root library, NetEase / QQ Music / KuGou / Bodian / Qishui / Navidrome, 14 Folia lyric stages, playlist and lyric translation, audio cache, EBU R128 leveling, 10-band EQ with AutoEQ, smart crossfade, in-list search, and tag / cover editing. Credentials and playback data stay on your machine. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的本地与在线音乐播放器：多目录曲库、网易云 / QQ / 酷狗 / 波点 / 汽水 / Navidrome、14 种 Folia 歌词舞台、歌单与歌词翻译、音频缓存、音量均衡、10 段均衡器与 AutoEQ、智能过渡、列表内搜索、标签与封面编辑。登录凭据与播放数据只保存在本机。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Aliboder/dsh-music-panel/3cdcfe4/docs/screenshots/icon-256.png

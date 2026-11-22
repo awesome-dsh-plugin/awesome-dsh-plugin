@@ -1,0 +1,6 @@
+url: https://github.com/fubai-fenzhi/dsh-procedures
+name: fubai-fenzhi/dsh-procedures
+category: memory
+description:
+  en: 'File-based experience cards for DSH and other agents: a matching tool error injects a one-line pointer to a local card instead of the whole card, with hit stats, rarity, cross-machine sync, a community library and a portable kit.'
+  zh: '给 DSH 和其他 agent 用的文件化经验卡：工具报错命中时只注入一行指向本地卡的提示、不注入整卡，含命中统计、稀有度、跨机同步、社区卡库与非 DSH agent 的通用版。'

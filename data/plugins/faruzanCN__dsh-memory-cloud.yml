@@ -1,0 +1,6 @@
+url: https://github.com/faruzanCN/dsh-memory-cloud
+name: faruzanCN/dsh-memory-cloud
+category: memory
+description:
+  en: Visualizes all DSH session memories as an interactive 3D nebula, with a neuron-signal skin, memory-scaled clusters, zoom-driven detail levels and a live write/read activity stream over SSE.
+  zh: 把 DSH 全部会话记忆可视化为可交互的 3D 星云，提供神经元信号皮肤、按记忆量缩放的星云团、缩放分级细节，以及基于 SSE 的实时存取活动流。

@@ -1,0 +1,7 @@
+url: https://github.com/Ruacha00/dsh-popnotify
+name: Ruacha00/dsh-popnotify
+category: notify
+description:
+  en: 'Session-completion reminders for DeepSeek Harness: a sidebar bell with an unread dot, plus system notification, in-app toast and a two-tone chime, each switchable. The toast can be dragged anywhere, subagent sessions can be muted, and the last 24 completions stay one click away.'
+  zh: '为 DeepSeek Harness 提供会话完成提醒：侧栏铃铛带未读圆点，系统通知、应用内浮层与双音提示音可分别开关；浮层位置可拖动，可忽略子代理会话，最近 24 条完成记录可一键回到对应会话。'
+icon: https://raw.githubusercontent.com/Ruacha00/dsh-popnotify/main/assets/icon.png

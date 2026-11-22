@@ -1,0 +1,8 @@
+url: https://github.com/jiongboy/dsh-table-copy
+name: jiongboy/dsh-table-copy
+category: ui
+description:
+  en: 'Adds a hover toolbar to every Markdown table in DSH Web: one button copies the table as Markdown, the other copies a 2x PNG of it taken with the current theme background.'
+  zh: '给 DSH Web 里每张 Markdown 表格加一条悬停工具条：一个按钮把表格复制成 Markdown，另一个按钮把它按当前主题背景截成 2 倍图 PNG。'
+icon: https://raw.githubusercontent.com/jiongboy/dsh-table-copy/main/assets/icon-180.png
+tarball: https://github.com/jiongboy/dsh-table-copy/releases/latest/download/dsh-table-copy.tgz

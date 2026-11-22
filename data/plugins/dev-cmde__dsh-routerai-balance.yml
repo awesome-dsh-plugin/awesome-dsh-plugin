@@ -1,0 +1,6 @@
+url: https://github.com/dev-cmde/dsh-routerai-balance
+name: dev-cmde/dsh-routerai-balance
+category: usage
+description:
+  en: 'Shows the RouterAI credit balance in rubles and the spend since the session started in the sidebar footer (Web and Desktop, Russian-language labels). Requires a RouterAI API key stored in the harness credentials as ROUTERAI_API_KEY; without it the footer shows a "key not set" message instead of the balance.'
+  zh: '在侧栏底部显示 RouterAI 的额度余额（卢布）和本次会话开始以来的花费（仅 Web / Desktop，界面文字为俄语）。需要把 RouterAI API key 以 ROUTERAI_API_KEY 存入 harness 凭据；缺了底部显示「未设置密钥」提示而不是余额。'

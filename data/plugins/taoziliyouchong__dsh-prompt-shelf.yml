@@ -1,0 +1,6 @@
+url: https://github.com/taoziliyouchong/dsh-prompt-shelf
+name: taoziliyouchong/dsh-prompt-shelf
+category: ui
+description:
+  en: Keeps frequently used prompts in the DSH composer, with insert, replace, variables and a trash.
+  zh: 把常用提示词存进 DSH 输入框工具行：可插入、可整框替换，带变量与回收站。

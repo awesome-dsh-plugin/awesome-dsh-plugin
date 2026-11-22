@@ -1,0 +1,6 @@
+url: https://github.com/SkylerFee/dsh-sidebar-rail
+name: SkylerFee/dsh-sidebar-rail
+category: ui
+description:
+  en: 'Adds an auto-hiding icon rail to the collapsed macOS Desktop sidebar, with workspace pinning and flyouts for recent sessions, scheduled tasks, user-installed plugins and account information.'
+  zh: '为 macOS Desktop 折叠侧栏添加自动隐藏的图标轨，支持工作区置顶，以及最近会话、定时任务、用户安装插件和账号信息浮层。'

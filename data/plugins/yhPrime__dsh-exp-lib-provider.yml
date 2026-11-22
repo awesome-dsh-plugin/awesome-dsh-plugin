@@ -1,0 +1,6 @@
+url: https://github.com/yhPrime/dsh-exp-lib-provider
+name: yhPrime/dsh-exp-lib-provider
+category: memory
+description:
+  en: Requires dsh-mnemon. Experience-library memory-space provider for dsh-mnemon, with exp_recall / exp_record / exp_feedback / exp_type tools.
+  zh: 需先安装 dsh-mnemon。经验库记忆空间 Provider（dsh-mnemon），同时注册 exp_recall / exp_record / exp_feedback / exp_type 工具。

@@ -1,0 +1,6 @@
+url: https://github.com/peijiping/dsh-plugin-litsearch
+name: peijiping/dsh-plugin-litsearch
+category: tools
+description:
+  en: 'Model-driven, multi-round literature search in chat: the sidebar visualizes results, rounds and full-text availability, across ten free sources — PubMed, Europe PMC, OpenAlex, Crossref, Semantic Scholar, arXiv, PubTator, DOAJ, OpenReview and OpenAIRE — with PDF download, citation export and Zotero from either side.'
+  zh: '大模型对话主导的多轮文献检索：右侧栏可视化展示结果、轮次与全文可用性；覆盖 PubMed、Europe PMC、OpenAlex、Crossref、Semantic Scholar、arXiv、PubTator、DOAJ、OpenReview、OpenAIRE 十家免费源，可下载 PDF、导出引文、存 Zotero。'

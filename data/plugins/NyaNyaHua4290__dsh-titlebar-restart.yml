@@ -1,0 +1,6 @@
+url: https://github.com/NyaNyaHua4290/dsh-titlebar-restart
+name: NyaNyaHua4290/dsh-titlebar-restart
+category: dev
+description:
+  en: Windows Desktop only. Adds a 重启 item to the DSH window caption menubar next to 应用 and 编辑; the second click stops the app and starts the same executable again through a WMI-spawned PowerShell helper.
+  zh: 仅 Windows 桌面版。在 DSH 窗口标题栏菜单（应用 / 编辑）后加一个「重启」项，连点两次即由 WMI 拉起的 PowerShell 脚本结束应用并重新启动同一个可执行文件。

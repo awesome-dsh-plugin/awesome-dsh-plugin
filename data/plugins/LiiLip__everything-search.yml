@@ -1,0 +1,7 @@
+url: https://github.com/LiiLip/everything-search
+name: LiiLip/everything-search
+category: tools
+icon: https://raw.githubusercontent.com/LiiLip/everything-search/main/assets/icon-180.png
+description:
+  en: 'Global file search in DeepSeek Harness backed by the local Everything (voidtools) index through a bundled es.exe CLI: three entry points (sidebar panel, session header bar and a full-panel overlay), custom relevance scoring, a 50-entry collapsible history and 9 loopback-only HTTP routes. Degrades to an empty soft result, not an error, when Everything, es.exe or the host web server is missing. Windows only.'
+  zh: '基于本机 Everything（voidtools）索引、经随附 es.exe CLI 的全盘文件搜索：三处入口（侧边栏面板、会话标题栏、全屏浮层）、自研相关度打分、50 条可折叠历史与 9 条仅回环监听的 HTTP 路由。Everything、es.exe 或宿主 web 服务缺失时降级为空结果而非报错。仅支持 Windows。'

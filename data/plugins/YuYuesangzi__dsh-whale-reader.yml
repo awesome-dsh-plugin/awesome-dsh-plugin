@@ -1,0 +1,6 @@
+url: https://github.com/YuYuesangzi/dsh-whale-reader
+name: YuYuesangzi/dsh-whale-reader
+category: tools
+description:
+  en: 'Local-file reader for DSH that gives the agent tools to list, search, read by section and save progress, plus a native settings panel with chapters and search. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 本地文件书库插件：agent 可查书、检索、按章读取并记录进度，设置内提供原生阅读面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,7 @@
+url: https://github.com/ChineseRyan/dsh-plugin-workspace-archive
+name: ChineseRyan/dsh-plugin-workspace-archive
+category: ui
+description:
+  en: 'Adds an Archive workspace item to the workspace row menu: archives the sessions under that workspace through the official command, leaving the one you are currently viewing open, and refusing the batch while any session is still running. The host hides archived sessions but keeps the emptied workspace row in the sidebar; this plugin hides that row too, and restores the whole group from a footer panel backed by a ledger under $DSH_HOME/storages written behind a cross-process lock. Its count badge can be set to always, on-new-only, or never.'
+  zh: '在工作区行菜单里加一项「归档工作区」：对该工作区下每个会话调用官方归档命令，当前正在查看的那条保持打开；组内有会话仍在运行时整批拒绝。官方会隐藏已归档的会话，却把清空后的工作区行留在侧栏——本插件把这一行也一并收起，并从底部面板按 $DSH_HOME/storages 里带跨进程锁写入的账本整组恢复。数量角标可设为常驻、仅新归档时、或隐藏。'
+icon: https://raw.githubusercontent.com/ChineseRyan/dsh-plugin-workspace-archive/main/assets/icon-180.png

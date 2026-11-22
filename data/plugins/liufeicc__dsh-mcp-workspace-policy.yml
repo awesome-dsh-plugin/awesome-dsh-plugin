@@ -1,0 +1,6 @@
+url: https://github.com/liufeicc/dsh-mcp-workspace-policy
+name: liufeicc/dsh-mcp-workspace-policy
+category: tools
+description:
+  en: "Decides which MCP server tools each workspace can see, keyed by the session working directory; workspaces without a policy see none."
+  zh: "按工作区（会话 cwd）决定哪些 MCP 服务器的工具可见；未配置的工作区默认一个都不显示。"

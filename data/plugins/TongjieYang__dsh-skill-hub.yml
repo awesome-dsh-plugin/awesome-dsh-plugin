@@ -1,0 +1,6 @@
+url: https://github.com/TongjieYang/dsh-skill-hub
+name: TongjieYang/dsh-skill-hub
+category: skill
+description:
+  en: 'Skill hub for local agent skills: list and classify what you already have, compose skills into teams with roles and stages, insert a skill prompt into the composer in one click, and keep third-party API keys in the OS keychain so the agent never sees them. Ships no skills of its own.'
+  zh: '技能中枢：把你已经装好的 skill 列清、分类、编成有角色有阶段的专家团，一键把 skill 提示词插进输入框；第三方 API Key 收进系统钥匙串，agent 全程接触不到。本身不自带任何 skill。'

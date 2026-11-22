@@ -1,0 +1,6 @@
+url: https://github.com/xuxue04403/dsh-tool-gate
+name: xuxue04403/dsh-tool-gate
+category: tools
+description:
+  en: 'Per-project tool gating for the harness: before each step, the session looks for `.dsh/tool-gate.json` in its working directory and up to 32 parents, then filters the tool set handed to the model — allow or deny lists with `prefix*` wildcards, `off` when no rule file is found. A single `tool_gate_status` tool reports the active mode, rule file, and which tools were hidden.'
+  zh: '按项目控制工具可见性：每一步装配前，会话从工作目录向上最多 32 层查找 `.dsh/tool-gate.json`，据此裁剪交给模型的工具集 —— 支持 allow / deny 名单与 `prefix*` 通配，找不到规则文件时为 off；另有 `tool_gate_status` 工具报告当前模式、规则文件来源与被隐藏的工具。'

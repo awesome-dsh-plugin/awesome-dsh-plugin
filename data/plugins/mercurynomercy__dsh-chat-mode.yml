@@ -1,0 +1,6 @@
+url: https://github.com/mercurynomercy/dsh-chat-mode
+name: mercurynomercy/dsh-chat-mode
+category: ui
+description:
+  en: 'Adds a Chat entry to the DSH sidebar for project-free chats that use DSH''s own sign-in and models, limited to web search, images and files dragged into the chat. Built for the DSH desktop app 0.2.2-rc.1 and tested on macOS only; do not enable it together with Starp1ume/dsh-chat-mode.'
+  zh: '在 DSH 侧栏加一个「聊天」入口，不用选项目，直接用 DSH 自己的登录和模型聊天，模型只能联网搜索、看图和读拖进来的附件。面向 DSH 桌面版 0.2.2-rc.1，仅在 macOS 上测过；不要与 Starp1ume/dsh-chat-mode 同时启用。'

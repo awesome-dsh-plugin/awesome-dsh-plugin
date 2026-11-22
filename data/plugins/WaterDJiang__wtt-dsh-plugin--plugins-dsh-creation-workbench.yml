@@ -1,0 +1,7 @@
+url: https://github.com/WaterDJiang/wtt-dsh-plugin/tree/main/plugins/dsh-creation-workbench
+name: WaterDJiang/wtt-dsh-plugin#dsh-creation-workbench
+category: workflow
+icon: https://raw.githubusercontent.com/WaterDJiang/wtt-dsh-plugin/36fc1bcaf2f16635a8b354378335ce44f89c6b31/plugins/dsh-creation-workbench/src/assets/wattter-agent.png
+description:
+  en: 'The Super Agent project assistant plans, delegates, reviews, and revises work across canvases with DSH models or approved Codex CLI text steps, and the QR-paired WeChat bot lets you switch projects or canvases, approve plans, and check progress.'
+  zh: 'Super Agent 项目助手在无限画布上拆解目标、派发任务、验收和修订成果，可按步骤选用 DSH 模型或授权 Codex CLI 处理文本任务，扫码连接微信 Bot 后可切换项目和画布、确认计划并查进度。'

@@ -1,0 +1,6 @@
+url: https://github.com/lfys/dsh-wsl-overlay
+name: lfys/dsh-wsl-overlay
+category: remote
+description:
+  en: 'Transparent WSL takeover for DSH — when a session workspace is a \\wsl.localhost path, the agent''s bash, file and search tools run inside the distro under the same tool names, with a sidebar panel for workspace registration. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 的 WSL 透明接管——会话工作区位于 WSL 时，bash、文件与搜索工具以原有工具名直接运行在发行版内，侧栏面板可注册 WSL 工作区。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

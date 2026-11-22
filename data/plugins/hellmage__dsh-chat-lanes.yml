@@ -1,0 +1,6 @@
+url: https://github.com/hellmage/dsh-chat-lanes
+name: hellmage/dsh-chat-lanes
+category: ui
+description:
+  en: 'Splits the DSH chat window into two columns: your messages pinned in a clickable left rail and the model replies flowing on the right, with Enter-to-search across the conversation.'
+  zh: 把 DSH 对话窗口切成两列：我说的常驻左栏、可点击跳转，模型的话在右侧流动，并带回车触发的会话内搜索。

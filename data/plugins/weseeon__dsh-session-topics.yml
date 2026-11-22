@@ -1,0 +1,6 @@
+url: https://github.com/weseeon/dsh-session-topics
+name: weseeon/dsh-session-topics
+category: session
+description:
+  en: 'LLM-organized topic navigation for a conversation: a capsule tick rail docked to the conversation pane shows one segment per topic and expands on hover with titles, timestamps and jump targets; return to the latest turn, keep talking from an older thread, and search topics across sessions by keyword or meaning. Ships as a sidebar tab plus an inline-dock rail, each behind its own switch in Settings, where the summary model is chosen too.'
+  zh: '把会话整理成可导航的主题列表：右侧常驻胶囊刻度条按主题分段，悬停展开显示主题名、时间戳与跳转目标；可一键回到最新、从旧话题继续讨论，并跨会话按关键词或语意搜索主题。以侧栏标签页与常驻刻度条两种形态提供，各自在设置中独立开关，总结模型同样在设置里选择。'

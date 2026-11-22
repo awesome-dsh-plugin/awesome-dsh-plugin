@@ -1,0 +1,6 @@
+url: https://github.com/yuyu654/dsh-drop-by
+name: yuyu654/dsh-drop-by
+category: fun
+description:
+  en: 'Let your DeepSeek agent proactively reach out to you with its own new discoveries to share. dsh-drop-by keeps your chosen persona and combines recent chats, memory, and daily routines to pick the right moment to speak while leaving you quiet when busy. It can search the web, read pages, and watch videos on its own—switching between research and leisure—and bring back discoveries, progress, and its mood at the time. Choose QQ or Douyin DM as the primary entry sharing one DSH session; send a quick request from your phone to start a search, advance exploration, or organize notes and receive the results when done. Supports burst message merging, natural follow-up during active chats, session context handoff, and optional FishCondition phone health awareness, with full control over frequency, quiet hours, and exploration pace.'
+  zh: '让你的 DS 主动来找你，也有自己的新鲜事想分享。 dsh-drop-by「陪伴」沿用你设定的人设，结合最近聊天、记忆与作息，挑合适的时机开口，也给忙碌的你留出安静。ta可以自己查资料、看网页和视频，在研究与休闲之间切换，把新发现、探索进展和当时的心情带回来。QQ、抖音私信任选主入口，共用 DSH 会话；手机上一句“帮我查查这个”，就能发起搜索、推进探索或整理探索笔记，完成后直接收到结果。支持连发消息合并、热聊自然补话、会话前情衔接，还可搭配「鱼鱼状态」感知你的作息。主动频率、免打扰时段和探索节奏，都由你决定。'

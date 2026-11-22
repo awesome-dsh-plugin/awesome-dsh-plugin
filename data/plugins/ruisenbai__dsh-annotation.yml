@@ -2,6 +2,6 @@ url: https://github.com/ruisenbai/dsh-annotation
 name: ruisenbai/dsh-annotation
 category: session
 description:
-  en: 'Annotate text in replies, diffs, or files and send notes with a message for ordered replies and source navigation; combines quoting and annotation in the Host selection toolbar.'
-  zh: '选中正文、Diff 或文件文字后批注并随消息发送，回复按批注逐条对照并支持定位；引用与批注共用宿主的选中文字工具栏。'
+  zh: '在原文旁批注聊天内容、文件和代码差异，汇总发送多条注解，也可在侧栏沿用主会话上下文单独讨论。'
+  en: 'Annotate chats, files and diffs in place, send several notes together, and open a separate sidebar chat with the main chat’s context.'
 tarball: https://github.com/ruisenbai/dsh-annotation/releases/latest/download/dsh-annotation.tgz

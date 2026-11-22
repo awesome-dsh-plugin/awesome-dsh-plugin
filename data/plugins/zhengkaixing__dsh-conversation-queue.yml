@@ -1,0 +1,7 @@
+url: https://github.com/zhengkaixing/dsh-conversation-queue
+name: zhengkaixing/dsh-conversation-queue
+category: session
+description:
+  en: Caps how many DeepSeek Harness conversations run at once, so extra conversations wait in a FIFO queue instead of piling up model requests. On Windows a bottom status strip shows physical memory, commit memory and disk usage; on other platforms only the queue and physical memory are reported. A plugins-page card changes the limit.
+  zh: 限制 DeepSeek Harness 同时运行的对话数量，超出的对话按先进先出排队，不再堆叠请求；Windows 下底部状态条显示物理内存、提交内存与磁盘占用（其它平台只有队列与物理内存），插件页卡片可随时修改上限。
+icon: https://raw.githubusercontent.com/zhengkaixing/dsh-conversation-queue/main/assets/icon-180.png

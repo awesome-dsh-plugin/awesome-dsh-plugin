@@ -1,0 +1,6 @@
+url: https://github.com/zhuwencong/xianyu-smart-monitor/tree/main/plugins/dsh
+name: zhuwencong/xianyu-smart-monitor#dsh
+category: tools
+description:
+  en: "Bridge to a locally running Xianyu (second-hand marketplace) monitor: ten xianyu_* tools read candidates, tasks, run logs and issues from 127.0.0.1:8000 and can start, stop or create tasks."
+  zh: "把本机运行的闲鱼监控服务接入 DSH：十个 xianyu_* 工具通过 127.0.0.1:8000 读取候选商品、任务、运行记录与待处理问题，并可启动、停止或新建任务。"

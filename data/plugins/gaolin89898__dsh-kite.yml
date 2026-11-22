@@ -1,0 +1,7 @@
+url: https://github.com/gaolin89898/dsh-kite
+name: gaolin89898/dsh-kite
+category: remote
+description:
+  en: 'P2P, end-to-end encrypted remote access to DeepSeek Harness, CodeX, Claude Code, Pi and other agent workspaces from web and mobile clients. Remote connections are coordinated through a hosted server (remote.gaolin.ink by default; you can point it at your own) and you sign in with an account there. It installs under the package name ds-harness-remote, the same as liguobao/ds-harness-remote, so install only one of them.'
+  zh: '基于 P2P 网络与端到端加密，从手机、浏览器和电脑远程访问 DeepSeek Harness、CodeX、Claude Code、Pi 等工作区。远程连接经由托管服务器协调（默认 remote.gaolin.ink，可改成自建的），需要在那里登录账号。它以 ds-harness-remote 的包名安装，与 liguobao/ds-harness-remote 同名，只能装其中一个。'
+icon: https://raw.githubusercontent.com/gaolin89898/dsh-kite/main/icon.png

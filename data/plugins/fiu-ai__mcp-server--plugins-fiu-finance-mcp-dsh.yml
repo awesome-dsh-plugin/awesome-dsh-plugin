@@ -1,0 +1,6 @@
+url: https://github.com/fiu-ai/mcp-server/tree/main/plugins/fiu-finance-mcp-dsh
+name: fiu-ai/mcp-server#plugins-fiu-finance-mcp-dsh
+category: tools
+description:
+  en: 'Mounts the hosted FIU Finance MCP service (Hong Kong, US, A-share, Japan, IPO and bond market data) through an MCP stdio bundle; needs your own FIU API key in FIU_API_KEY (apply at ai.szfiu.com) and Node.js with npx.'
+  zh: '通过 MCP stdio Bundle 接入托管的 FIU Finance MCP 服务（港股、美股、A 股、日本、IPO 与债券行情数据）；需自备 FIU API Key（环境变量 FIU_API_KEY，到 ai.szfiu.com 申请）并安装 Node.js（npx）。'

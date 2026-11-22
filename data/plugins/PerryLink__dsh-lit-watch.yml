@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-lit-watch
+name: PerryLink/dsh-lit-watch
+category: tools
+description:
+  en: "Literature watch for DeepSeek Harness: save named Crossref bibliographic queries with time windows, run them against Crossref with a bounded client, keep a seen-DOI store so repeated runs return only genuinely new items, and render a Markdown digest plus SARIF. A watch reports new DOIs in a search window, not relevance or quality."
+  zh: 'DeepSeek Harness 的文献监视：保存带时间窗的 Crossref 书目查询，用有界客户端运行，靠已见 DOI 库让重复运行只返回真正的新条目，并生成 Markdown 摘要与 SARIF。监视只报告时间窗内的新 DOI，不判断相关性或质量。'

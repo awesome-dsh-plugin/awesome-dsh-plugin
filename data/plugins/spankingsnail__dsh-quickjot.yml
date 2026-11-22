@@ -1,0 +1,7 @@
+url: https://github.com/spankingsnail/dsh-quickjot
+name: spankingsnail/dsh-quickjot
+category: notify
+tarball: https://github.com/spankingsnail/dsh-quickjot/releases/download/v3.3.0/dsh-quickjot-3.3.0.tgz
+description:
+  en: '随手记 lets AI turn a sentence into a note, a to-do or a dated event. No need to choose a type, fill out a form or pick a date first: give your instructions in a conversation or open 随口记, and AI organizes the item from what you say, asking for clarification when information is unclear. When plans change, keep talking: “move it to tomorrow at ten”, “mark it complete” or “add the work tag”, without finding the item again and editing each field. Items stay on your machine and are shared across conversations, with in-app reminders and WeChat notifications through DSH-IM.'
+  zh: '随手记，让 AI 帮你把一句话变成便签、待办或日程。不用先选类型、填表、点日期：在对话里直接交代，或打开「随口记」，AI 根据你的表达整理事项，信息不清楚时再向你确认。计划变了，接着说“改到明天十点”“标记完成”“加上工作标签”，不必重新查找、逐项编辑。事项保存在本机，跨对话共用，支持应用内提醒和通过 DSH-IM 推送微信。'

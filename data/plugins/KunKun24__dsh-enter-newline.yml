@@ -1,0 +1,8 @@
+url: https://github.com/KunKun24/dsh-enter-newline
+name: KunKun24/dsh-enter-newline
+category: ui
+description:
+  en: Enter inserts a newline instead of sending in the DeepSeek Harness composer.
+  zh: 按 Enter 只换行、不发送：长提示词写到一半不会飞出去。
+icon: https://raw.githubusercontent.com/KunKun24/dsh-enter-newline/main/assets/icon-180.png
+tarball: https://github.com/KunKun24/dsh-enter-newline/releases/download/v1.1.0/dsh-enter-newline-1.1.0.tgz

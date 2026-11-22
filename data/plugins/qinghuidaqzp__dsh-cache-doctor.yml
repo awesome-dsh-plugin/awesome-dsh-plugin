@@ -1,0 +1,6 @@
+url: https://github.com/qinghuidaqzp/dsh-cache-doctor
+name: qinghuidaqzp/dsh-cache-doctor
+category: usage
+description:
+  en: 'Explains DeepSeek prompt cache misses in a right-sidebar tab. It observes system-prompt/assemble and llm/stream, compares each request with the previous one in the same session, and names the first part that changed: a system prompt section (shown before and after, with the changed characters marked), the tool list, rewritten history, an expired cache or compaction. Shows today''s hit rate, money the cache saved, avoidable extra cost at DeepSeek''s peak and off-peak list prices, the last requests and seven days of totals.'
+  zh: '在右侧栏解释 DeepSeek 提示词缓存为什么没命中：旁观 system-prompt/assemble 和 llm/stream，把每次请求和同一会话的上一次逐段比较，指出第一个变化的地方：系统提示词的哪一段（前后内容并排，标出变了的字）、工具列表、被改写的历史、缓存过期或上下文压缩。显示今日命中率、缓存省下的钱、按 DeepSeek 峰谷价算出的可避免花费、最近的请求和近 7 天统计。'

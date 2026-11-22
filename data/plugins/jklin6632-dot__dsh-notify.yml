@@ -1,0 +1,7 @@
+url: https://github.com/jklin6632-dot/dsh-notify
+name: jklin6632-dot/dsh-notify
+category: notify
+description:
+  en: 'Windows corner card that pops when a turn finishes or a tool needs approval - click it to jump back to DSH.'
+  zh: '回合跑完或工具等你批准时，桌面角落弹一张卡片，点一下就跳回 DSH。'
+icon: https://raw.githubusercontent.com/jklin6632-dot/dsh-notify/main/assets/icon.png

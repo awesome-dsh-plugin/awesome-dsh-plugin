@@ -1,0 +1,7 @@
+url: https://github.com/jungenius-stack/dsh-zcode-ui
+name: jungenius-stack/dsh-zcode-ui
+category: theme
+description:
+  en: "A ZCode-styled skin for DSH Web: Zai light/dark themes, sidebar workspace session tree, global search, turn navigation with hover wave, and approval-card / message-keycap styling aligned to ZCode — every visual value guarded by contract assertions. A fork of MichengAI/dsh-codex-ui; do not install it alongside the upstream plugin — both repaint the same sidebar and conversation surfaces."
+  zh: "把 DSH Web 界面换成 ZCode 视觉语言的皮肤：Zai 明暗主题、侧栏工作区会话树、全局搜索、带悬停波的轮次导航、对齐 ZCode 的审批卡与消息键帽样式，每个视觉值都有契约断言守护。本项目是 MichengAI/dsh-codex-ui 的分支，请勿与上游同装——两者都会重绘同一套侧栏与会话界面。"
+icon: https://raw.githubusercontent.com/jungenius-stack/dsh-zcode-ui/main/assets/icon.png

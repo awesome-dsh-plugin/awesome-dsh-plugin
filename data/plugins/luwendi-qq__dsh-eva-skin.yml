@@ -1,0 +1,6 @@
+url: https://github.com/luwendi-qq/dsh-eva-skin
+name: luwendi-qq/dsh-eva-skin
+category: theme
+description:
+  en: "EVA cel-shade skin for the Harness Web UI. Overrides the --dsw-* design tokens to give panels square corners, ink outlines, hard offset shadows and CRT scanlines, adds a three-state session rail (running, done, waiting on you), recolours the turn-navigator ticks, and can embed an optional dark backdrop image."
+  zh: "EVA 赛璐璐风格皮肤。只覆盖 --dsw-* 设计令牌，把面板改成方角、墨线描边、无模糊硬投影和 CRT 扫描线，并加入会话三态状态轨（运行中、已完成、等你回复）、重绘右侧跳转条刻度，可选用一张压暗的底图。"

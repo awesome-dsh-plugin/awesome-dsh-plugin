@@ -1,0 +1,6 @@
+url: https://github.com/gaor0605-kq/dsh-workspace-explorer
+name: gaor0605-kq/dsh-workspace-explorer
+category: ui
+description:
+  en: 'Adds a Chats/Files switch to the left-sidebar Workspace header that swaps the session list for a lazily loaded tree of the current session''s workspace. Files and folders can be dragged into the composer as @path references; clicking a file opens the built-in preview; the right-click menu reveals a file in the system file manager or copies its path; entries carry VS Code-style Git status (modified, untracked, added, deleted, conflict, ignored) relative to the last commit.'
+  zh: '在左侧栏「工作区」标题旁加入「对话 | 文件」切换，把会话列表换成当前会话工作区的按需加载文件树。文件和文件夹可拖进输入框作为 @路径 引用；单击文件打开自带预览；右键可在系统文件管理器中打开所在文件夹或复制路径；条目按 VS Code 的方式显示相对最近一次提交的 Git 状态（修改、未跟踪、新增、删除、冲突、忽略）。'

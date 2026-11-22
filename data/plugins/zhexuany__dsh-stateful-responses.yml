@@ -1,0 +1,6 @@
+url: https://github.com/zhexuany/dsh-stateful-responses
+name: zhexuany/dsh-stateful-responses
+category: model
+description:
+  en: 'Makes DSH''s OpenAI Responses calls stateful: after the upstream confirms it stored a response, each turn sends only the newly added input items plus previous_response_id, and a stateless upstream is detected on the first response so every later request falls back to the full history.'
+  zh: '让 DSH 的 OpenAI Responses 调用走上有状态续接：上游确认保存响应后，每轮只发送新增的 input item 加 previous_response_id；首个响应即可判定上游是否存储，不存储时后续请求自动回退到全量历史。'

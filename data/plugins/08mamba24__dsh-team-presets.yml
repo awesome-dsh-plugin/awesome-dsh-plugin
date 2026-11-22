@@ -1,0 +1,7 @@
+url: https://github.com/08mamba24/dsh-team-presets
+name: 08mamba24/dsh-team-presets
+category: workflow
+description:
+  en: 'Configure implementer and reviewer roles with per-role models, effort, prompts and work tools, then launch them in the current Harness session.'
+  zh: '在当前 Harness 会话中配置并启动实现与复核两角色，支持分别设置模型、推理强度、提示词与工作工具集。'
+tarball: https://github.com/08mamba24/dsh-team-presets/releases/download/v0.5.0-rc.7/dsh-subagent-live-rc2-local-0.5.0-rc.7.tgz

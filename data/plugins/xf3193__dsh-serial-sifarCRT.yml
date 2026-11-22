@@ -1,0 +1,7 @@
+url: https://github.com/xf3193/dsh-serial-sifarCRT
+name: xf3193/dsh-serial-sifarCRT
+category: tools
+description:
+  en: 'Windows serial debug console in the DSH right sidebar: port settings, ANSI color logs, an in-log Linux command line, editable command buttons, keyword log search, multi-port tabs and log export.'
+  zh: 'DSH 右侧栏的 Windows 串口调试台：串口设置、ANSI 彩色日志、日志内 Linux 命令行、可编辑命令按钮、日志关键字搜索、多串口标签页与日志导出。'
+icon: https://raw.githubusercontent.com/xf3193/dsh-serial-sifarCRT/main/assets/icon-180.png

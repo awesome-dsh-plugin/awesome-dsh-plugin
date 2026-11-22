@@ -1,0 +1,8 @@
+url: https://github.com/xiaobin118/dsh-quiz-tutorial
+name: xiaobin118/dsh-quiz-tutorial
+category: ui
+icon: https://raw.githubusercontent.com/xiaobin118/dsh-quiz-tutorial/main/icon.png
+tarball: https://github.com/xiaobin118/dsh-quiz-tutorial/releases/latest/download/dsh-quiz-tutorial.tgz
+description:
+  en: 'A study surface for exam prep: decks generated from review context, each question with a hand-worked solution, an automatic mistake log with redo/review, `/skill` deck generation, and delete/hide for decks. 15 bundled CNN and ML concept questions.'
+  zh: '刷题场：把复习内容变成题集，题目旁给逐步手算解析，答错自动进错题本并支持重练；支持 `/skill` 出题与删除/隐藏题集。内置 15 道 CNN 与机器学习概念题。'

@@ -1,0 +1,6 @@
+url: https://github.com/liangzz1998/dsh-thinking-language
+name: liangzz1998/dsh-thinking-language
+category: agi
+description:
+  en: Injects one system-prompt section that makes the agent reason and answer in a chosen language (Simplified Chinese by default), with separate thinking and answer settings, a custom extra line, and support for standard, PTC and custom presets; the minimal preset is not affected.
+  zh: 通过注入一条系统提示词让 agent 用指定语言思考与回复（默认简体中文），思考与回复语言可分别配置，支持追加自定义要求，兼容标准、PTC 与自定义预设，极简模式不生效。

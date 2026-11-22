@@ -1,0 +1,6 @@
+url: https://github.com/bingomu/dsh-usage-printer
+name: 小票机用量卡（dsh-usage-printer）
+category: usage
+description:
+  en: Sidebar receipt printer for DeepSeek balance — a dot-matrix screen shows the remaining balance amount, with a lit dot field tracking the balance level and a peak/off-peak price band, and a receipt slides out on hover with balance, spend and per-token prices.
+  zh: 侧栏小票机：点阵屏显示余额金额，点阵底纹按余额水位亮起并带峰谷价格带，鼠标悬停时从槽口送出一张明细小票（余额、已充值、今日/本月花费、单价）。

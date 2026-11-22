@@ -1,0 +1,7 @@
+url: https://github.com/shinerain1/dsh-evidence-lineage
+name: shinerain1/dsh-evidence-lineage
+category: workflow
+description:
+  en: 'Track source lineage for web excerpts and structured Agent reports, fold repeated text with recorded provenance, and export auditable evidence through DSH tools.'
+  zh: '通过 DSH 工具追踪网页摘录与结构化 Agent 汇报的来源关系，折叠有同源记录的重复正文，并导出可追溯证据。'
+tarball: https://github.com/shinerain1/dsh-evidence-lineage/releases/download/v0.2.0/dsh-evidence-lineage-0.2.0.tgz

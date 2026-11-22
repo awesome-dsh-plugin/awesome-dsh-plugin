@@ -1,0 +1,7 @@
+url: https://github.com/aa-zza1/dsh-badge
+name: aa-zza1/dsh-badge
+category: notify
+description:
+  en: 'Windows status badge for a desktop agent: an always-on-top card that shows the current action, a step counter and a tone colour, click-through by default and hidden from screenshots, with an optional cancel button that writes a marker file the agent can poll. Ships four tools: badge_show, badge_update, badge_cancelled and badge_hide.'
+  zh: '桌面 agent 的 Windows 状态角标：置顶卡片显示当前动作、步骤计数与状态色，默认点击穿透且不进截图，可开取消按钮（点了会写一个标记文件供 agent 轮询）。提供 badge_show、badge_update、badge_cancelled、badge_hide 四个工具。'
+icon: https://raw.githubusercontent.com/aa-zza1/dsh-badge/main/assets/icon-180.png

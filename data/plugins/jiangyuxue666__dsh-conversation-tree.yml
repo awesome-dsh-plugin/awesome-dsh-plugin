@@ -1,0 +1,6 @@
+url: https://github.com/jiangyuxue666/dsh-conversation-tree
+name: jiangyuxue666/dsh-conversation-tree
+category: session
+description:
+  en: "Workspace-wide conversation tree for DeepSeek Harness: every conversation and branch on one canvas with its source turn, own token usage and notes; compare two branches, bring a summary back, export a Markdown outline, archive (undoable through DSH's native archive), and delete a whole subtree (macOS and Windows only; deletion runs immediately and is permanent)."
+  zh: "工作区级对话树：所有对话与分支画在同一块画布上，节点显示来源轮次、各自用量与备注；可并排对比两条分支、把来源会话压缩成摘要带回、导出 Markdown 提纲、归档（走 DSH 原生归档，可撤销），并可删除整棵子树（仅 macOS 与 Windows；删除确认后立即生效且不可撤销）。"

@@ -1,0 +1,7 @@
+url: https://github.com/GT-610/dsh-workspace-organize
+name: GT-610/dsh-workspace-organize
+category: ui
+description:
+  en: "Grouped workspace browser for the DSH sidebar: named groups over group > workspace > session, group-level archive and delete that show the affected count, a three-way archived-session filter, and a group document the Host half writes to $DSH_HOME/storages. Drawn with the shell's own --dsw-* tokens and official components, so rows, menus and theme switching match the native sidebar."
+  zh: 'DSH 侧栏的分组工作区浏览器：自定义分组按 分组 → 工作区 → 会话 展开，组级归档与删除会显示影响数量，归档会话可三档筛选，分组文档由 Host 半边写入 $DSH_HOME/storages。行、菜单与折叠均用外壳自己的 --dsw-* 令牌和官方组件绘制，主题切换与原生侧栏一致。'
+icon: https://raw.githubusercontent.com/GT-610/dsh-workspace-organize/main/assets/icon-180.png

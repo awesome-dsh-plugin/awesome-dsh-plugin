@@ -1,0 +1,8 @@
+url: https://github.com/64511982lin-hash/dsh-swap-enter
+name: 64511982lin-hash/dsh-swap-enter
+category: ui
+icon: https://raw.githubusercontent.com/64511982lin-hash/dsh-swap-enter/main/assets/icon-180.png
+description:
+  en: 'Swap Enter and Shift+Enter in the chat composer: Enter inserts a line break and Shift+Enter sends. Works with no configuration; menu-open, IME composing, read-only and modifier-key presses are left to the app.'
+  zh: '交换聊天输入框的 Enter 与 Shift+Enter：Enter 换行，Shift+Enter 发送。无需任何配置；菜单打开、输入法组合中、只读状态以及带修饰键的按键仍交给系统原有处理。'
+tarball: https://github.com/64511982lin-hash/dsh-swap-enter/releases/download/v1.0.0/dsh-swap-enter.tgz

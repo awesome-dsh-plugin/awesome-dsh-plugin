@@ -1,0 +1,7 @@
+url: https://github.com/pawsey0319/dsh-project-journal
+name: pawsey0319/dsh-project-journal
+category: session
+description:
+  en: 'Project progress for DSH: summarizes every session in a workspace into a phase chain with summaries, problems quoted from the user, resolutions and next steps; a phase can be redone in a forked session that inherits the conversation up to that point, sessions can move between workspaces, and deleted phases go to a trash that prunes their artifacts. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '项目进展：把 DSH 一个项目下所有会话归纳成阶段链（阶段总结、带用户原话的问题与处理、下一步）；可在某阶段开分支，用分叉会话继承该阶段之前的对话重做；会话可在项目间迁移；删除阶段进回收站并裁剪其产物。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/pawsey0319/dsh-project-journal/releases/download/v0.5.3/dsh-project-journal-0.5.3.tgz

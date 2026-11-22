@@ -1,0 +1,6 @@
+url: https://github.com/liuchenljc/quick-continue-plugin
+name: liuchenljc/quick-continue-plugin
+category: ui
+description:
+  en: 'Editable one-click reply buttons under the composer. A click queues its text as the next message through the same Client API the official composer uses, so the draft you are typing is never overwritten; the gear on the row renames, retitles, adds, removes and reorders buttons in place, persisted in localStorage. A host-side system-prompt section makes every model end its reply with one short A/B/C option line, so the buttons and the reply always agree; 你来定 tells the agent to pick the option itself and continue instead of asking again. Send failures raise a short inline notice.'
+  zh: '在输入框下方加一排可自定义的一键回复按钮。点一下按消息队列投递文字（与官方输入框同一条 Client API），不会覆盖你正在写的草稿；按钮行末尾的齿轮可就地改名、改发送内容、增删与调序，存在 localStorage。Host 侧注入一段系统提示词，让所有模型的回复结尾带一行简短的 A/B/C 选项，按钮与选项始终对得上；「你来定」表示由 agent 自行选择并继续执行，不再反问。发送失败时那一行会给出简短提示。'

@@ -1,27 +1,7 @@
-# Submission for awesome-dsh-plugin
-#
-# Target path:
-#   data/plugins/Wahwayhale__dsh-connect-doubao.yml
-#
-# Rules this file satisfies (see MARKET-SUBMISSION.md §2.2):
-#   R1  `url` must match the repository URL EXACTLY (no `.git` suffix here)
-#   R2  `dsh.bundle` manifest is declared in package.json + repo root has cordis.patch.yml  [done]
-#   R11 official @deepseek-ai/* packages use peerDependencies                            [done]
-#   *   only `description.en` is required; `zh` is optional
-#   *   `description.en` must end with a period
-#   *   any value containing ": " MUST be quoted, or the YAML parser fails
-#
-# Validate locally before opening the PR:
-#   node scripts/validate-submission.mjs
-#
-# This copy is the source of truth for the upstream entry: it was submitted as
-# PR #12157 against awesome-dsh-plugin, and editing the file upstream without
-# editing this one makes the two drift. Keep them identical.
-
 url: "https://github.com/Wahwayhale/dsh-connect-doubao"
 name: "Wahwayhale/dsh-connect-doubao"
 category: model
 description:
-  en: 'Reuses the sign-in already held by the local Doubao desktop app as a DeepSeek Harness model provider — chat, Seedream image generation, and a live quota panel covering the 5-hour, weekly and activity-grant windows, showing what is LEFT rather than what is used. Windows x64 only, since the credential is decrypted with DPAPI.'
-  zh: '复用本机豆包桌面客户端已有的登录态，作为 DeepSeek Harness 的模型 provider：对话、Seedream 生图，以及一块实时额度看板，涵盖 5 小时、周与活动赠送额度，显示「还剩多少」而不是「已用多少」。仅 Windows x64：凭据解密依赖 DPAPI。'
+  en: 'Connects a Doubao account to DeepSeek Harness as a model provider after a single browser QR sign-in — live model discovery from Doubao web and desktop menus with inline composer billing multipliers and per-model thinking ladders, 「工作任务」 task-mode models spending paid quota that now drive DSH workspace tools, chain-of-thought reasoning streaming, Seedream image generation preferring original uncropped assets over watermarked variants, native DSH token usage and session stats tracking, and a live quota panel that sums the available credits and breaks them down into package points and activity grants, showing what is LEFT rather than what is used. Windows x64 only, since the session is sealed with DPAPI.'
+  zh: '浏览器扫码登录一次即可把豆包账号接入 DeepSeek Harness：实时读取豆包菜单与在线清单、在对话框模型选择器直接显示计费倍率并可对比、支持思考链（CoT）推理透传与逐模型思考档位、「工作任务」模型（走会员付费额度，已接入 DSH 工作区工具）、Seedream 生图（优先取无水印原图）、完整接入 DSH 原生 Token 用量与会话统计（含 TTFT、速率与上下文缓存），外加实时额度看板：汇总可用额度并拆分套餐积分（豆包 2026-11 改版后的唯一主额度）与活动赠送额度，显示「还剩多少」而不是「已用多少」。仅 Windows x64：会话用 DPAPI 密封在本机。'
 icon: https://raw.githubusercontent.com/Wahwayhale/dsh-connect-doubao/main/docs/assets/dsh-connect-doubao-icon.png

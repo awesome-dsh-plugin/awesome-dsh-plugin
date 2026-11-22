@@ -1,0 +1,6 @@
+url: https://github.com/jiahui-huang1/dsh-latex-formula-editor
+name: jiahui-huang1/dsh-latex-formula-editor
+category: ui
+description:
+  en: "Free LaTeX formula editor in the DSH sidebar with offline MathJax/PDF.js rendering: ten symbol tiles with hover palettes, ten template groups, live preview, colour/font/size/environment controls, favourites with titles and search, and nine export formats (SVG/PNG/JPG, LaTeX/AsciiMath/Typst/HTML/MathML/OMML) with escaping and share links. Image and PDF OCR need a vision-capable model in DSH or your own OpenAI-compatible vision endpoint; everything else runs offline."
+  zh: "免费的 DSH 侧栏 LaTeX 公式编辑器，MathJax/PDF.js 渲染全部离线：10 个符号磁贴悬停展开分类面板、10 组公式模板、实时预览、颜色/字体/字号/环境控制、带标题与搜索的收藏夹，以及九种导出格式（SVG/PNG/JPG、LaTeX/AsciiMath/Typst/HTML/MathML/OMML）与转义和分享链接。图片与 PDF 识别需要 DSH 中可用的视觉模型，或你自己配置的 OpenAI 兼容视觉端点；其余功能全部离线运行。"

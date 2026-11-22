@@ -1,0 +1,6 @@
+url: https://github.com/lcx19970714/dsh-git-panel
+name: lcx19970714/dsh-git-panel
+category: git
+description:
+  en: 'Git panel for viewing diffs, editing files, staging and committing changes, and generating commit messages using models configured in DSH.'
+  zh: 'Git 面板，支持查看差异、编辑文件、暂存与提交，并使用 DSH 中配置的模型生成提交说明。'

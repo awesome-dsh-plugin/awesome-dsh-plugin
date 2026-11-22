@@ -1,0 +1,7 @@
+url: https://github.com/feichai0017/dsh-fish-ui
+name: feichai0017/dsh-fish-ui
+category: theme
+description:
+  en: Adds six animated conversation backgrounds, selectable accent colors, and outline or duotone icons to DeepSeek Harness.
+  zh: 为 DeepSeek Harness 提供六种动态会话背景，可自选强调色并切换线描或双色图标。
+icon: https://raw.githubusercontent.com/feichai0017/dsh-fish-ui/v0.6.1/icon.png

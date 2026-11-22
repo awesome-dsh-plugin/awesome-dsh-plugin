@@ -1,0 +1,6 @@
+url: https://github.com/LingQi-07-std/dsh-client-ui-git
+name: LingQi-07-std/dsh-client-ui-git
+category: git
+description:
+  en: Git panel for the DSH web GUI with a commit graph, branch filters, working-tree status, per-commit diffs, stash, merge-conflict handling, remote sync and repository settings.
+  zh: DSH Web GUI 的 Git 面板：提交图与分支筛选、工作区状态、单提交 diff、暂存、合并冲突处理、远程同步与仓库设置。

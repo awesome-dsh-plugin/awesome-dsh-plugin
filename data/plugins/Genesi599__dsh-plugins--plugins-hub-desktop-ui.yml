@@ -1,0 +1,7 @@
+url: https://github.com/Genesi599/dsh-plugins/tree/main/plugins/hub-desktop-ui
+name: Genesi599/dsh-plugins#hub-desktop-ui
+category: ui
+description:
+  en: 'Reworks the DSH shell into a compact layout: a denser session sidebar, a status card at the bottom of the sidebar, and a project and task-line view that groups sessions by what they are working on.'
+  zh: '把 DSH 外壳改成紧凑形态：更密的会话侧栏、侧栏底部状态卡，以及按「在做什么」给会话分组的项目与任务线视图。'
+icon: https://raw.githubusercontent.com/Genesi599/dsh-plugins/main/plugins/hub-desktop-ui/assets/icon-180.png

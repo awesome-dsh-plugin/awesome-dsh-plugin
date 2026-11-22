@@ -1,0 +1,7 @@
+url: https://github.com/llifco/dsh-plugin-reverse-proxy
+name: llifco/dsh-plugin-reverse-proxy
+category: remote
+description:
+  en: "LAN access for DSH Web UI: reverse proxy + token-free login; a phone on the same Wi-Fi opens it directly. Editable port, IP blacklist, reset. QQ 1065464637."
+  zh: "DSH Web 局域网访问插件：内置反向代理 + 免 Token 登录，手机同 Wi-Fi 直接打开后台；端口可改，带访问 IP 列表与黑名单（一键拉黑、403 拦截、防把自己锁在门外）和重置命令。交流群 QQ 1065464637，喜欢请点个 Star。"
+icon: https://raw.githubusercontent.com/llifco/dsh-plugin-reverse-proxy/main/assets/logo.jpg

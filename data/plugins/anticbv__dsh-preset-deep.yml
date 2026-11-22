@@ -1,0 +1,7 @@
+url: https://github.com/anticbv/dsh-preset-deep
+name: anticbv/dsh-preset-deep
+category: agi
+description:
+  en: "A fifth DeepSeek Harness work mode that requires a falsification design (at least two pieces of evidence that could disprove the plan) in every plan and tags each factual claim with its source ([文件]/[检索]/[记忆]) or [未知]; evidence grading follows the project's AGENTS.md."
+  zh: "给 DeepSeek Harness 增加第五个工作模式：每个计划必须含「证伪设计」（至少两条能推翻方案的证据），每条事实须标来源（[文件]/[检索]/[记忆]）或 [未知]；取证分级按项目 AGENTS.md 执行。"
+icon: https://raw.githubusercontent.com/anticbv/dsh-preset-deep/main/assets/icon.png

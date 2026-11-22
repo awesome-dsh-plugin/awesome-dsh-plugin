@@ -1,0 +1,7 @@
+url: https://github.com/AIpRoBuilder/FlowX/tree/main/plugins/deepseek-harness-flowx
+name: AIpRoBuilder/FlowX#deepseek-harness-flowx
+category: ui
+description:
+  en: 'View FlowX workflow graphs and artifacts in DeepSeek Harness. Web only; needs Python 3.10 or newer with the FlowX SDK installed separately.'
+  zh: '在 DeepSeek Harness 中查看 FlowX 工作流图和构建产物。仅限 Web 端；需要另外安装 Python 3.10 及以上版本和 FlowX SDK。'
+icon: https://raw.githubusercontent.com/AIpRoBuilder/FlowX/main/assets/flowx_log.png

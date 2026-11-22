@@ -1,0 +1,6 @@
+url: https://github.com/wangtheme-coder/dsh-stellar-effort
+name: wangtheme-coder/dsh-stellar-effort
+category: ui
+description:
+  en: 'Adds a reasoning-effort rail above the DSH composer: drag or use the keyboard to preview and submit the levels the current model exposes (Off through Max), while a procedurally rendered micro-universe contracts and collapses into a black hole as effort rises. Levels go through the DSH model-selection interface, so the rail shows the level DSH confirms, and the plugin writes only to $DSH_HOME/stellar-effort/.'
+  zh: '在输入框上方加一条推理强度滑轨：拖动或用键盘预览并提交当前模型支持的档位（Off 到 Max），滑轨背后由程序实时渲染的微缩宇宙随档位收缩、坍缩成黑洞。档位通过 DSH 自身的模型选择接口提交，显示的是 DSH 确认后的等级；插件只写入 $DSH_HOME/stellar-effort/。'

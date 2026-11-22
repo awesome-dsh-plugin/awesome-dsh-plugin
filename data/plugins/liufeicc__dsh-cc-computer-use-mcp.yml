@@ -1,0 +1,6 @@
+url: https://github.com/liufeicc/dsh-cc-computer-use-mcp
+name: liufeicc/dsh-cc-computer-use-mcp
+category: tools
+description:
+  en: "Wires the local cc-computer-use MCP server into DSH with one process per root session, giving each session its own Xephyr sandbox screen and private AT-SPI bus (requires the cc-computer-use MCP server)."
+  zh: "把本地 cc-computer-use MCP server 接入 DSH：每个根会话各起一个进程，各自拥有独立的 Xephyr 沙箱屏与私有 AT-SPI 总线（需已安装 cc-computer-use MCP server）。"

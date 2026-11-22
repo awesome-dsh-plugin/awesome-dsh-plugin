@@ -1,0 +1,6 @@
+url: https://github.com/sanmumu-325/dsh-qwenwork-models
+name: sanmumu-325/dsh-qwenwork-models
+category: model
+description:
+  en: 'Exposes the chat models of a locally signed-in QwenWork desktop app as a Harness provider, with a multi-account pool, session affinity and failover, pre-expiry credential renewal, a health watchdog, per-model enable/context-window/input-type settings, and account status with credit balance. Unofficial local integration that reuses your own signed-in client credential; your own account only. Windows only: needs the QwenWork desktop app signed in, and keeps its account pool in a DPAPI-protected file under %LOCALAPPDATA%. The author warns that reusing the client credential may conflict with the vendor''s terms.'
+  zh: '把本机已登录的千问办公（QwenWork）桌面端对话模型接入 Harness 模型列表：多账号池、会话粘性与故障切换、凭证到期前自动续签、看护式保活、按模型独立开关/上下文窗口/输入类型，并展示账号状态与积分余额。非官方本地集成，复用使用者本人已登录客户端凭证，仅限本人账号自用。仅支持 Windows：需要千问办公桌面端已登录，账号池保存在 %LOCALAPPDATA% 下由 DPAPI 保护的文件里。作者提醒，复用客户端凭证可能违反厂商的服务条款。'

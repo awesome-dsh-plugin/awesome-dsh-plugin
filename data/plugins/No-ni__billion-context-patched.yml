@@ -1,0 +1,6 @@
+url: https://github.com/No-ni/billion-context-patched
+name: No-ni/billion-context-patched
+category: session
+description:
+  en: 'A patched build of ranxianglei/billion-context (MIT) with the author''s model-request accelerator folded in: verified snapshot reuse, parent-session inheritance for forks, outbound request-body compression, and image folding after the first send.'
+  zh: 'ranxianglei/billion-context（MIT）的补丁构建，并内置作者的模型请求加速器：快照复用校验、fork 继承父会话、出站请求体压缩、图片看过一次即折叠。'

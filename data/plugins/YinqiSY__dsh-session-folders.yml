@@ -1,0 +1,6 @@
+url: https://github.com/YinqiSY/dsh-session-folders
+name: YinqiSY/dsh-session-folders
+category: ui
+description:
+  en: Groups sidebar conversations into collapsible folders that reorder by drag, decorating the shipped session list instead of replacing it.
+  zh: 将侧边栏工作区里的会话进行会话分类并可折叠，便于会话的分类收纳。把侧边栏对话收进可折叠、可拖动排序的文件夹，只装饰官方会话列表而不替换它。

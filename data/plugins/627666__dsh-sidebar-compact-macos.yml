@@ -1,0 +1,7 @@
+url: https://github.com/627666/dsh-sidebar-compact-macos
+name: 627666/dsh-sidebar-compact-macos
+category: ui
+description:
+  en: For the macOS desktop app - keeps the DeepSeek Harness brand mark in the title-bar strip, puts New session, Plugins, Scheduled tasks and More on one row of four equal buttons, and tightens the workspace list so more conversations fit; browser and Windows layouts are untouched.
+  zh: macOS 桌面版专用——把 DeepSeek Harness 标志放回标题栏红绿灯右侧，把「新会话、插件、自动化任务、更多」收成一行四个等宽按钮，并收紧工作区列表，让侧边栏容纳更多对话；浏览器与 Windows 布局不受影响。
+icon: https://raw.githubusercontent.com/627666/dsh-sidebar-compact-macos/main/assets/icon.png

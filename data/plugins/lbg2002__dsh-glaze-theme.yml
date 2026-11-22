@@ -1,0 +1,8 @@
+url: https://github.com/lbg2002/dsh-glaze-theme
+name: lbg2002/dsh-glaze-theme
+category: theme
+description:
+  en: 'Chinese porcelain and Morandi theme with 16 OKLCH palettes, 6 presets, configurable sidebar tones, static SVG canvas patterns, thinking/composer/bubble styles, 0-100% composer opacity, artistic fonts, and brand/hero customization persisted to ~/.dsh/glaze-theme.json without idle animations or blur. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '东方瓷釉与莫兰迪主题：含 16 套 OKLCH 色板与 6 套中式全案预设，支持侧栏基调（含左右无界通透）、静态国风底纹、思考框/输入框造型与 0–100% 透明度、气泡样式、艺术字体及品牌欢迎语定制，配置持久化至 ~/.dsh/glaze-theme.json，默认零模糊、无常驻动画。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/lbg2002/dsh-glaze-theme/main/assets/icon-180.png
+tarball: https://github.com/lbg2002/dsh-glaze-theme/releases/download/v0.3.1/dsh-glaze-theme-0.3.1.tgz

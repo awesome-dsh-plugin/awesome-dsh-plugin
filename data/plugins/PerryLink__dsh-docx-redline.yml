@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-docx-redline
+name: PerryLink/dsh-docx-redline
+category: tools
+description:
+  en: "DOCX structure inspection, byte-exact roundtrip and limited exact-run text replacement for DeepSeek Harness (repository marked FROZEN 2026-10-31)."
+  zh: "面向 DeepSeek Harness 的 DOCX 结构检查、字节级往返与有限范围的精确文本替换（仓库标记 FROZEN 2026-10-31）。"

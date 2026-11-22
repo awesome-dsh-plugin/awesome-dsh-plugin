@@ -1,0 +1,6 @@
+url: https://github.com/xinming-chenniang/dsh-open-at-last-input
+name: xinming-chenniang/dsh-open-at-last-input
+category: ui
+description:
+  en: 'Lands the chat viewport on your most recent own message when you open a finished session, instead of the bottom of the conversation; running sessions still follow the bottom. Client-only: it reads the viewport and never touches files, credentials, subprocesses, or the network.'
+  zh: '打开已结束的会话时，聊天视口落在你最近一条本人发言处而不是页面底部；正在运行的会话仍跟到底。纯客户端：不碰文件、凭据、子进程与网络。'

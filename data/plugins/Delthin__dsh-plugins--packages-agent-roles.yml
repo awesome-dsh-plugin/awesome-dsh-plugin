@@ -1,0 +1,6 @@
+url: https://github.com/Delthin/dsh-plugins/tree/main/packages/agent-roles
+name: Delthin/dsh-plugins#agent-roles
+category: workflow
+description:
+  en: "Manages reusable agent role templates (job prompt, model and reasoning effort, tool allowlist, skills) and starts role members through the native Agent Team interface to delegate and continue tasks."
+  zh: "管理可复用的智能体角色模板（职责提示词、模型与思考强度、工具白名单、Skills），并通过原生 Agent Team 接口按角色启动成员来分发任务和继续对话。"

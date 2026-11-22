@@ -1,0 +1,7 @@
+url: https://github.com/jetruan/dsh-tailtransit
+name: jetruan/dsh-tailtransit
+category: dev
+description:
+  en: 'Runs a userspace tailscaled for Harness so web fetch, shell, plugin and LLM traffic can each use a Tailscale exit node, leaving routes and DNS untouched. Needs Tailscale''s tailscaled installed separately; it starts a second per-user daemon, routes the selected traffic through a loopback proxy and looks up the exit IP through ifconfig.me. An auth key, if you set one, is kept in the plugin config.'
+  zh: '为 Harness 单独运行一个用户态 tailscaled：网页抓取、命令行、其他插件、大模型四类流量各自选择是否走 Tailscale 出口节点，系统路由与 DNS 不变。需要另行安装 Tailscale 的 tailscaled；它会再启动一个用户级守护进程，把所选流量经本机回环代理转发，并通过 ifconfig.me 查询出口 IP。若设置了 auth key，会保存在插件配置里。'
+icon: https://raw.githubusercontent.com/jetruan/dsh-tailtransit/main/assets/icon-180.png

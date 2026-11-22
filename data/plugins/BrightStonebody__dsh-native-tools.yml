@@ -1,0 +1,8 @@
+url: https://github.com/BrightStonebody/dsh-native-tools
+name: BrightStonebody/dsh-native-tools
+category: tools
+description:
+  en: Four native macOS tools in one plugin — drag-to-screenshot with annotation and OCR, clipboard history, select-to-translate, and a menu bar system monitor (network up/down, CPU and memory, each clickable for per-process rankings). All four features share a single AppKit helper process, are toggled independently, and apply setting changes without restarting the plugin or the process.
+  zh: 截图、剪贴板历史、划词翻译、系统监控（菜单栏网络上下行 / CPU / 内存三个控件，点开看该指标占用最高的进程）四合一原生插件；四个功能共用一个 AppKit 进程，各自独立开关，改设置即时生效，不重启插件也不重拉进程。
+icon: https://raw.githubusercontent.com/BrightStonebody/dsh-native-tools/main/design/icon-1024.png
+tarball: https://github.com/BrightStonebody/dsh-native-tools/releases/latest/download/dsh-native-tools.tgz

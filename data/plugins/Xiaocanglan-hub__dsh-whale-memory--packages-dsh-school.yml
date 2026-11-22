@@ -1,0 +1,6 @@
+url: https://github.com/Xiaocanglan-hub/dsh-whale-memory/tree/main/packages/dsh-school
+name: Xiaocanglan-hub/dsh-whale-memory#dsh-school
+category: memory
+description:
+  en: 'She keeps the questions your chats left unanswered, then goes and looks them up later. A line she asked you that ended in "?" and never got an answer is stored as a hanging question; on a schedule inside a daily window (08:00–23:00, five a day by default; an optional mouse/keyboard-idle gate is off by default) she picks the oldest one, searches the web and Bilibili, reads what is actually readable, distils it into two or three sentences and leaves a note on her desk. Questions about its own plugins are skipped and left for you. Read-only on her events: nothing is written to her memory, her growth is untouched, and dsh-fish needs no patching. Requires the @ssamurias/dsh-fish persona plugin for her event stream and a local Ollama model; a search API key is optional.'
+  zh: '让她自己补上那些你没答、她也没懂的问题。聊天里她问出口、以问号结尾、又没等到回答的话，被记成一条「悬着的问」；到点（默认 08:00–23:00、每天最多 5 条，可选的键鼠空闲闸默认关闭）她挑最久的那条自己去查——搜网页与 B 站，只读真正读得进来的页面，提炼成两三句，在你桌上留一张纸条。问的是我们自家插件的事就跳过，留给你答。全程只读她的经历：不写她的记忆、不动她的成长，也不需要改 dsh-fish 一行代码。需已装大肥鱼人格插件 @ssamurias/dsh-fish 提供经历，并配本地 ollama 模型；搜索 API 可选。'

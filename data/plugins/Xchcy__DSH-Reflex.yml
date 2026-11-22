@@ -1,0 +1,7 @@
+url: https://github.com/Xchcy/DSH-Reflex
+name: Xchcy/DSH-Reflex
+category: ui
+tarball: https://github.com/Xchcy/DSH-Reflex/releases/latest/download/dsh-link-menu.tgz
+description:
+  en: "Right-click menu for links and file references in DSH messages: open with the default app or a chosen app, reveal in the file manager, copy the path, name or text content, or save a copy."
+  zh: "在 DSH 消息里右键链接或文件引用，弹出类似 ChatGPT 的菜单：默认打开方式、打开方式…、在文件管理器中打开、复制文件地址、复制文件名、复制文件内容、另存为…"

@@ -1,0 +1,8 @@
+url: https://github.com/zuoyunlai/dsh-chronicle
+name: zuoyunlai/dsh-chronicle
+category: memory
+description:
+  en: 'Daily chronicle for DeepSeek Harness: collects session events, closes the previous calendar day after midnight into a Markdown week file (LLM scoring adds a daily summary; rule scoring does not), and extracts durable facts — decisions, conventions, pitfalls — that merge across days and can be superseded. 10 tools, a read-only sidebar panel, rule export, and a standalone Obsidian vault; zero third-party dependencies.'
+  zh: 'DeepSeek Harness 的每日编年史：采集会话事件，跨过午夜后把上一自然日收口进 Markdown 周文件（LLM 打分才产日结，规则档不产），并提炼跨天合并、可被推翻的持久事实（决策 / 约定 / 坑）。10 个工具、只读侧栏面板、规则导出；产物是独立的 Obsidian vault，零第三方依赖。'
+icon: https://raw.githubusercontent.com/zuoyunlai/dsh-chronicle/main/docs/brand/icon-180.png
+tarball: https://github.com/zuoyunlai/dsh-chronicle/releases/download/v2.1.1/dsh-chronicle-2.1.1.tgz

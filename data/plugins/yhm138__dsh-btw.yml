@@ -1,0 +1,7 @@
+url: https://github.com/yhm138/dsh-btw
+name: yhm138/dsh-btw
+category: ui
+description:
+  en: 'Antigravity-style /btw side questions for DSH: during a task, one question starts a disposable forked child agent with the full tool set, answers in Markdown inside its own right-Sidebar tab (with tool calls and follow-ups), and leaves the main conversation and its model context untouched. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 的 Antigravity 风格 /btw 侧问：任务进行中问一句，由一个临时 fork 的子 agent 带着完整工具去查证，答案以 Markdown 呈现在右侧栏自己的页签里（可追问、可查看工具调用），主对话与模型上下文完全不受影响。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yhm138/dsh-btw/main/assets/icon-180.png

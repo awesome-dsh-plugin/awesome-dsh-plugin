@@ -1,0 +1,6 @@
+url: https://github.com/7ygys/dsh-fishchat
+name: 7ygys/dsh-fishchat
+category: ui
+description:
+  en: 'Group chat for DeepSeek Harness: one sidebar row and a WeChat-style panel where you and several agent sessions talk in the same room. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '让多个会话像微信群一样同屏聊天、讨论的 DSH 插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

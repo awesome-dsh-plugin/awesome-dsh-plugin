@@ -1,0 +1,7 @@
+url: https://github.com/adengou/dsh-kbar
+name: adengou/dsh-kbar
+category: ui
+description:
+  en: 'Command palette for the DSH web UI: one shortcut searches sessions, slash commands, skills, models and installed bundles, and runs registered shortcut commands. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 命令面板：一个快捷键搜索会话、斜杠命令、技能、模型与已装插件，并执行已注册的快捷键命令。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/adengou/dsh-kbar/main/docs/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/zmengle/dsh-plugin-artifacts
+name: zmengle/dsh-plugin-artifacts
+category: session
+description:
+  en: 'Workspace artifact manager that sorts files into artifact, process, memory and material roles, with extra workspace roots, 12 file types, a year/month/day timeline, preview, rename, trash, zip archive and optional COS sync.'
+  zh: '工作区产物管理器：按「产物 / 过程 / 记忆 / 素材」分层，可添加多个工作区、12 类文件类型、按年/月/日分组的时间轴，预览、重命名、回收站、zip 归档与可选的 COS 同步。'

@@ -1,0 +1,7 @@
+url: https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-kit-ai-gateway
+name: 474885697-alt/dsh-kit#dsh-kit-ai-gateway
+category: model
+tarball: https://github.com/474885697-alt/dsh-kit/releases/download/v0.1.0/dsh-kit-ai-gateway-0.1.0.tgz
+description:
+  zh: "本机 AI 密钥池：密钥只存一处，通过仅限本机的接口按用量轮询借出，统计调用次数但不转发请求。"
+  en: "Stores provider API keys in one local pool and hands out the least-used enabled key over a loopback-only endpoint, tracking usage counters without proxying requests."

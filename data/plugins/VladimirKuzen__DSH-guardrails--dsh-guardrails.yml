@@ -1,0 +1,6 @@
+url: https://github.com/VladimirKuzen/DSH-guardrails/tree/main/dsh-guardrails
+name: VladimirKuzen/DSH-guardrails#dsh-guardrails
+category: security
+description:
+  en: Prompts or refuses risky tool calls before DeepSeek Harness runs them, and keeps a local hash-chained audit trail; Windows-only, zero runtime dependencies.
+  zh: 在 DeepSeek Harness 执行工具调用前先询问或拒绝，并在本地留下哈希链审计记录；仅支持 Windows，零运行时依赖。

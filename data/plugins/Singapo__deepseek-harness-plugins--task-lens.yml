@@ -1,0 +1,6 @@
+url: https://github.com/Singapo/deepseek-harness-plugins/tree/main/task-lens
+name: Singapo/deepseek-harness-plugins#task-lens
+category: workflow
+description:
+  en: Summarizes first-pass outcomes, human corrections and final delivery from annotated agent tasks.
+  zh: 再改一版从带证据的任务标注中统计首次交付、人工纠正与最终完成情况。

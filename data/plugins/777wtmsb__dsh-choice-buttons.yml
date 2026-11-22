@@ -1,0 +1,7 @@
+url: https://github.com/777wtmsb/dsh-choice-buttons
+name: 777wtmsb/dsh-choice-buttons
+category: ui
+icon: https://raw.githubusercontent.com/777wtmsb/dsh-choice-buttons/main/assets/icon.png
+description:
+  en: Turns the A–H or 1–99 option list at the end of an answer into clickable pills under the reply; clicking one sends that option line back as your message. Pure client plugin, no model round-trip.
+  zh: 把回答末尾的 A–H 或 1–99 选项行渲染成回复下方的可点胶囊，点一下就把那行作为你的消息发出。纯客户端插件，不额外消耗模型调用。

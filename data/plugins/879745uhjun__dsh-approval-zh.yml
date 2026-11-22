@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-approval-zh
+name: 879745uhjun/dsh-approval-zh
+category: ui
+description:
+  en: 'Translates the English text of DSH approval prompts and ask_user_question cards into Chinese for display only: approval outcomes, option labels, tool names and JSON arguments stay unchanged, and approval audit records keep the original English. The text is sent to Microsoft''s Edge translation endpoint (edge.microsoft.com) to be translated, so the content of approval prompts and questions, including command text, leaves your machine.'
+  zh: '把 DSH 审批提示和 ask_user_question 卡片里的英文说明翻成中文显示；审批结果、选项标签、工具名和 JSON 参数保持不变，审批审计记录里仍是英文原文。文本会发送到微软 Edge 翻译接口（edge.microsoft.com）翻译，所以审批提示和问题的内容（包括命令文本）会离开本机。'

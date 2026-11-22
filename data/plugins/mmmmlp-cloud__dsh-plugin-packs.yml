@@ -1,0 +1,6 @@
+url: https://github.com/mmmmlp-cloud/dsh-plugin-packs
+name: mmmmlp-cloud/dsh-plugin-packs
+category: market
+description:
+  en: 'Two columns for the dsh Plugins page, Minecraft resource-pack style: the left column holds the packs running together, the right holds packs that are installed but switched off, with arrow or drag moves between them, custom tags, search, scope filters, batch toggling and undo. Tags and display names live in a hand-editable packs.json under DSH_HOME instead of browser storage, so they survive a new browser or cleared site data.'
+  zh: '在 dsh 插件页加「插件包」标签：左栏是正在一起用的包、右栏是装好但未启用的，支持箭头或拖拽在两栏间搬包、自定义标签、搜索、范围筛选、批量启停与撤销。标签与中文名存在 DSH_HOME 下的 packs.json 里而不是浏览器存储，换浏览器或清站点数据都不丢。'

@@ -1,0 +1,6 @@
+url: https://github.com/1997liuyh-boop/dsh-studio-library/tree/main/packages/runtime
+name: 1997liuyh-boop/dsh-studio-library#runtime
+category: dev
+description:
+  en: "Shared studio runtime serving plugin pages and connecting locally configured applications to DSH sessions."
+  zh: "工作室共享运行时，提供插件页面资源及本地应用与 DSH 会话的连接。"

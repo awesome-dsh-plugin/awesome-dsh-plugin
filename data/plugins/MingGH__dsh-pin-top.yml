@@ -1,0 +1,8 @@
+url: https://github.com/MingGH/dsh-pin-top
+name: MingGH/dsh-pin-top
+category: ui
+description:
+  en: Gathers DSH's pinned sessions into their own sidebar section with macOS-style colour labels, and adds locate, collapse-all and expand-all buttons to the workspace header.
+  zh: 把 DSH 的置顶会话收进侧边栏独立分区并支持 macOS 式颜色标签，同时给工作区标题栏加上定位、全部收起、全部展开三个按钮。
+icon: https://raw.githubusercontent.com/MingGH/dsh-pin-top/main/docs/icon-180.png
+tarball: https://github.com/MingGH/dsh-pin-top/releases/download/v2.2.0/dsh-pin-top-2.2.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/KirinKylin-1/dsh-annotated-browser
+name: KirinKylin-1/dsh-annotated-browser
+category: browser
+description:
+  en: 'An annotated browser tab: pages render in headless Chromium on the host and are served same-origin, so you can click an element or drag a region, write what should change, and send the notes into the conversation with selectors, visible text and rectangles. Requires a Chromium-based browser on the host (auto-detected, or set CHROME_PATH / browserExecutable). By default it provides the `browser` tab type itself; set `takeover: false` to keep the stock browser and use a hand-off button instead. Picking continues until you press Esc.'
+  zh: '带标注的浏览器标签：页面在宿主用 headless Chromium 渲染并以同源方式提供，可以点选元素或框选区域，写下要改什么，把批注连同选择器、可见文本和位置一并发进对话。需主机装有 Chromium 系浏览器（自动探测，或用 CHROME_PATH / browserExecutable 指定）。默认由本插件提供 `browser` 标签类型；设 `takeover: false` 则保留内置浏览器、改用接力按钮。点选可连续进行，按 Esc 才退出。'
+icon: https://raw.githubusercontent.com/KirinKylin-1/dsh-annotated-browser/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-policy-brief-draft
+name: PerryLink/dsh-policy-brief-draft
+category: tools
+description:
+  en: "Policy brief check for DeepSeek Harness: check policy briefs against the Regulations on the Handling of Official Documents of Party and Government Organs. Flags discrepancies only and makes no conclusive judgment."
+  zh: "政策简报核对：依据《党政机关公文处理工作条例》。仅提示差异，不作出定性结论。"

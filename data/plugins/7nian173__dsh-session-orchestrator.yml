@@ -1,0 +1,6 @@
+url: https://github.com/7nian173/dsh-session-orchestrator
+name: 7nian173/dsh-session-orchestrator
+category: session
+description:
+  en: 'Create and hand off sessions, jump between them, and exchange letters through a workspace mailbox with delivery, read and acknowledgement tracked separately. Letters survive restarts, urgent ones jump the queue, and everything is configurable from a settings page.'
+  zh: '建会话、交棒、在会话之间跳转，并用工作区信箱来回通信——送达、已读、已回执三段分开记录。信件重启后不丢，加急件优先投递，配置都在设置页里。'

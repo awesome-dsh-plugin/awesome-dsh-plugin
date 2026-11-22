@@ -1,0 +1,7 @@
+url: https://github.com/gjhhjfgh/mirror-dsh-adapter
+name: gjhhjfgh/mirror-dsh-adapter
+category: memory
+description:
+  en: 'Local-first memory governance: distills conversations into categorized memories, surfaces conflicts for human arbitration, and previews what gets injected next turn.'
+  zh: '本地优先的记忆治理：把对话蒸馏成分类记忆，冲突交由人裁决，并预览下一轮会注入什么。'
+tarball: https://github.com/gjhhjfgh/mirror-dsh-adapter/releases/download/v2.3.0/mirror-dsh-adapter-2.3.0.tgz

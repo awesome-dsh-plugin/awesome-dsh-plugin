@@ -1,0 +1,7 @@
+url: https://github.com/TwinsEarth/dsh-fang
+name: TwinsEarth/dsh-fang
+category: dev
+tarball: https://github.com/TwinsEarth/dsh-fang/releases/download/v3.7.6/dsh-fang-3.7.6.tgz
+description:
+  en: 'Host-side control plane for DeepSeek Harness: a read-only mother, workspace essences, disposable forked dsh-Web children on stock or accelerated cores, a global fork write red line, curated Vault export/import, a decision inbox, restart guard and audit ledger. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的宿主控制面：只读母体、元主、可丢弃的官方核/加速核分身，所有分身的全局写入红线，Vault 分类导出/导入，共享决策收件箱、重启守卫与审计账本。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

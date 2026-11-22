@@ -1,0 +1,8 @@
+url: https://github.com/LoveStudyXin/dsh-sticky-notes
+name: LoveStudyXin/dsh-sticky-notes
+category: ui
+description:
+  en: 'Sticky-note wall in the sidebar: six paper colors, pin and search, up to six images per note, local backups, and an agent tool that lets a session or an IM bot add a note without opening the browser.'
+  zh: '侧栏便利贴墙：六种纸色、置顶与搜索、单条最多六张图片、本地备份，并提供模型工具，会话或 IM 机器人无需打开浏览器就能贴一条。'
+icon: https://raw.githubusercontent.com/LoveStudyXin/dsh-sticky-notes/main/assets/icon-180.png
+tarball: https://github.com/LoveStudyXin/dsh-sticky-notes/releases/latest/download/dsh-sticky-notes.tgz

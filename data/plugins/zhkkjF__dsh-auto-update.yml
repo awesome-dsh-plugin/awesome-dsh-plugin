@@ -1,0 +1,7 @@
+url: https://github.com/zhkkjF/dsh-auto-update
+name: zhkkjF/dsh-auto-update
+category: dev
+icon: https://raw.githubusercontent.com/zhkkjF/dsh-auto-update/main/assets/icon-180.png
+description:
+  en: 'Windows-only auto-updater for DSH Desktop: checks the official update feed, downloads and SHA-512 verifies the installer, then force-closes the app via a one-shot Task Scheduler job and installs silently (automatically by default), and after restart reinstalls profile plugins and restores their pre-update settings from a snapshot.'
+  zh: '仅限 Windows 的 DSH Desktop 自动更新：检查官方更新源，下载并校验 SHA-512 安装包，由一次性计划任务强制关闭应用后静默安装（默认自动），重启后按更新前快照重装插件、恢复设置。'

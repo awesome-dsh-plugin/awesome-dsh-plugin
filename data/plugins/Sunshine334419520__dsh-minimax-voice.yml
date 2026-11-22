@@ -1,0 +1,7 @@
+url: https://github.com/Sunshine334419520/dsh-minimax-voice
+name: Sunshine334419520/dsh-minimax-voice
+category: voice
+description:
+  en: 'MiniMax voice studio for DeepSeek Harness: clone a voice from an audio sample, preview it from the audio returned by the clone request itself (no extra synthesis call, so the per-voice fee stays uncharged), synthesize text to local mp3 files, transcribe audio to text with asr-1.0, and manage the voice library, API key and these actions from a settings panel; four agent tools and a local HTTP API.'
+  zh: 'DeepSeek Harness 的 MiniMax 音色工作台：用音频样本复刻音色，复刻后用接口返回的试听音频直接试听（不额外合成，因此不触发按音色计费），把文本合成为本地 mp3，用 asr-1.0 转写音频，并在设置面板里管理音色库、API Key 与这些操作；提供 4 个 agent 工具与本地 HTTP 接口。'
+icon: https://raw.githubusercontent.com/Sunshine334419520/dsh-minimax-voice/main/assets/icon-180.png

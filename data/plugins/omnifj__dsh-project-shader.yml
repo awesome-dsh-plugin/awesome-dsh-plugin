@@ -1,0 +1,7 @@
+url: https://github.com/omnifj/dsh-project-shader
+name: omnifj/dsh-project-shader
+category: ui
+description:
+  en: 'Colors each project in the workspace sidebar and its session rows, drawing a vertical bar and a left-to-right gradient wash over the folder icon, with a lighter tint for each session; a project takes a palette color, a custom hex value, automatic hash-based assignment, or no color, and a bilingual settings panel adjusts gradient on/off, intensity, reach, bar width, folder-glyph tinting and archived-row coloring.'
+  zh: '为工作区侧边栏中的每个项目及其下的会话着色：项目行带竖向色条和覆盖文件夹图标的渐变，会话行铺同色浅渐变；每个项目可选调色板颜色、自定义 hex、自动哈希配色或不着色，中英双语设置面板可调整渐变开关、浓度、范围、竖线宽度、文件夹图标着色与归档行着色。'
+icon: https://raw.githubusercontent.com/omnifj/dsh-project-shader/main/assets/icon-180.png

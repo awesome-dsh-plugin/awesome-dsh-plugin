@@ -1,0 +1,6 @@
+url: https://github.com/yz-china/dsh-sidebar-view-density
+name: yz-china/dsh-sidebar-view-density
+category: ui
+description:
+  en: 'Changes how the DSH sidebar, panel column and plugin page are laid out: a detail list, a single column, two columns, or a custom grid with sliders for column count, row height and gaps.'
+  zh: '调整 DSH 侧边栏、面板列与插件页的排布：详细列表、单列、双列，或用滑块自定义列数、行高与间距的网格。'

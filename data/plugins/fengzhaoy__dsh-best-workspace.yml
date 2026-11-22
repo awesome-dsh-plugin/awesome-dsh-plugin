@@ -1,0 +1,6 @@
+url: https://github.com/fengzhaoy/dsh-best-workspace
+name: fengzhaoy/dsh-best-workspace
+category: ui
+description:
+  en: "Codex-style left sidebar for the dsh web client: a project/session tree with grouping, pinning, drag reordering, unread and archive state, context menus for both project and session rows, and up/down arrow keys in the composer to recall previously sent messages."
+  zh: "dsh Web 客户端的 Codex 风格左侧边栏：项目/会话树，支持分组、置顶、拖拽排序、未读与归档状态，项目行与会话行都有右键菜单；输入框按上下方向键可召回之前发送过的消息。"

@@ -1,0 +1,6 @@
+url: https://github.com/ciskonc/dsh-scp-ops
+name: ciskonc/dsh-scp-ops
+category: remote
+description:
+  en: SCP upload and download over the legacy wire protocol on an ssh2 exec channel — works against servers and network devices without an SFTP subsystem, with named auth profiles, recursive trees and remote glob-batch downloads.
+  zh: 通过 ssh2 exec 通道实现传统 SCP 协议的文件上传与下载，适用于未开启 SFTP 子系统的服务器与网络设备；支持命名认证配置、递归目录与远端通配符批量下载。

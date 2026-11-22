@@ -1,0 +1,7 @@
+url: https://github.com/xiaoBai8512/dsh-ai-radar
+name: xiaoBai8512/dsh-ai-radar
+category: ui
+tarball: https://github.com/xiaoBai8512/dsh-ai-radar/releases/download/v0.2.0/dsh-ai-radar-0.2.0.tgz
+description:
+  en: 'Sidebar industry digest: pulls posts from X and Hacker News, scores them on engagement, novelty and discussion, keeps the ones a model editor judges worth opening, and lists the questions that repeat in their public replies. The industry, keywords and source accounts are editable in the panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧栏行业日报：抓 X 与 Hacker News 的候选帖，按热度、新颖度与讨论度打分，由模型编辑挑出值得点开的条目，并整理公开回复里反复出现的问题。行业、关键词与信源账号可在面板里改。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

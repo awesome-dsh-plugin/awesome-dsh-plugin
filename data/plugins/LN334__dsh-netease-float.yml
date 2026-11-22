@@ -1,0 +1,6 @@
+url: https://github.com/LN334/dsh-netease-float
+name: LN334/dsh-netease-float
+category: ui
+description:
+  en: 'Full-page NetEase Cloud Music player for DSH, reworked from stardream-1/dsh-netease-float (it reuses that package name, so the two cannot be installed side by side): now playing, full-screen lyrics, playlists, search and account sign-in.'
+  zh: 'DSH 的网易云音乐整页播放器，改造自 stardream-1/dsh-netease-float（沿用同名包，不能与上游同时安装）：正在播放、全屏歌词、歌单、搜索与账号登录。'

@@ -1,0 +1,6 @@
+url: https://github.com/kentzjh-cmd/tmem
+name: kentzjh-cmd/tmem
+category: memory
+description:
+  en: 'Repository-scoped deterministic execution memory and compaction slicer with zero-LLM Turn-level SQLite inverted indexing, tmem_search/tmem_expand progressive disclosure tools, L2 error repair injection, co-change hints, and AST signature guards.'
+  zh: '仓库级确定性工程记忆与压缩切片插件，提供零 LLM 的 Turn 级 SQLite 倒排索引、tmem_search/tmem_expand 渐进式披露工具、L2 报错修复注入、共变提醒与 AST 签名守卫。'

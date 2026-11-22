@@ -1,0 +1,7 @@
+url: https://github.com/malabananclauss-rgb/qing-self
+name: malabananclauss-rgb/qing-self
+category: memory
+tarball: https://github.com/malabananclauss-rgb/qing-self/releases/download/v0.4.0/qing-self-0.4.0.tar.gz
+description:
+  zh: "为 DSH agent 的延续搭建结构脚手架：分层记忆（hot/index/judgments）、判断卡、接续包（handoff，含紧凑模式）、压缩审查。零依赖、纯文件、可迁移——换模型后靠文件重建\"我\"。不是记忆引擎，是自我延续的骨架。"
+  en: "Structural scaffolding for DSH agent continuity: layered memory (hot/index/judgments), judgment cards, handoff packs (compact mode), compaction review. Zero-dependency, pure files, portable — rebuild the 'self' across model changes. Not a memory engine; the skeleton of continuity."

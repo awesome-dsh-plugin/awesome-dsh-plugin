@@ -1,0 +1,6 @@
+url: https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-cross-memory
+name: CooperZhuang/dsh-plugins-cooper-custom#dsh-cross-memory
+category: memory
+description:
+  en: 'Cross-session memory for DeepSeek Harness: extracts durable facts from sessions in the background, recalls relevant memories on demand, and keeps a layered summary, a persona snapshot and a commitment ledger; data stays local unless you point it at your own private Git repository.'
+  zh: 'DeepSeek Harness 的跨会话记忆：后台从会话中抽取耐久事实，按需召回相关记忆，维护分层摘要、persona 快照与承诺台账；数据默认留在本机，可选同步到自己的私有 Git 仓库。'

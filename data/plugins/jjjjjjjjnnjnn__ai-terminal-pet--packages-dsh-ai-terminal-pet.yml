@@ -1,0 +1,9 @@
+# One entry per file; the generated READMEs are not edited by hand.
+url: https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/tree/main/packages/dsh-ai-terminal-pet
+name: jjjjjjjjnnjnn/ai-terminal-pet#dsh-ai-terminal-pet
+category: notify
+tarball: https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/releases/download/dsh-plugin-v1.2.37/dsh-ai-terminal-pet-1.2.37.tgz
+icon: https://raw.githubusercontent.com/jjjjjjjjnnjnn/ai-terminal-pet/main/packages/dsh-ai-terminal-pet/icon.png
+description:
+  en: 'A floating always-on-top overlay for Windows that shows which of your terminals is waiting: it aggregates DeepSeek Harness, Claude Code, OpenCode and Antigravity session states (working, waiting for approval, failed, finished) over a named pipe, rings only on real events, and a click jumps to that terminal or copies its project path. Harness sessions appear on install; the other three need their own reporter from the repository, and approvals still happen in DSH.'
+  zh: 'Windows 上的置顶浮窗，汇总 DeepSeek Harness、Claude Code、OpenCode 和 Antigravity 的会话状态（进行中、等待确认、出错、完成）到一条命名管道，只在真事件上响铃，点一下跳到对应终端或复制项目路径。装上即接上 Harness 的会话；另外三个终端要先各自装好仓库里的上报端，授权仍在 DSH 里完成。'

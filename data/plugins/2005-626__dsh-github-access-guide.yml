@@ -1,0 +1,8 @@
+url: https://github.com/2005-626/dsh-github-access-guide
+name: 2005-626/dsh-github-access-guide
+category: tools
+description:
+  en: 'Sidebar panel that repairs GitHub access on restricted networks — a local racing proxy that reversibly takes over the Windows system proxy, a git accelerator rewrite verified against the native address, live channel status and a URL converter. It says plainly what it cannot fix: links that are intermittent, not addresses that are blocked outright. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧栏面板，用来修复受限网络下的 GitHub 访问：本机竞速代理可逆接管 Windows 系统代理、以原生地址验证的 git 加速重写、实时通道状态与地址转换器。也如实写明修不了什么——能修时通时断的链路，修不了整段被封的地址。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/2005-626/dsh-github-access-guide/main/icon.png
+tarball: https://github.com/2005-626/dsh-github-access-guide/releases/latest/download/dsh-github-access-guide.tgz

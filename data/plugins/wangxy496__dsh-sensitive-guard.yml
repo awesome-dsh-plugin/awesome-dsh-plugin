@@ -1,0 +1,7 @@
+url: https://github.com/wangxy496/dsh-sensitive-guard
+name: wangxy496/dsh-sensitive-guard
+category: security
+description:
+  en: 'Redacts secrets, API keys, tokens and passwords before they reach model context: 221 gitleaks rules, .env/JSON detection, AES-256-GCM vault, click to reveal. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '敏感信息脱敏：密钥、令牌、密码、API Key 在进入模型上下文前换成占位符；内置 221 条 gitleaks 规则与 .env/JSON 字段识别，明文 AES-256-GCM 加密存本机保管库，点小锁看真值，可导出给命令用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/wangxy496/dsh-sensitive-guard/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/xsxElricor/dsh-notion-toolkit
+name: xsxElricor/dsh-notion-toolkit
+category: notify
+description:
+  en: 'Read and edit a Notion workspace from the agent: 10 tools over pages and databases, content handled as Notion-flavored Markdown, and writes guarded by a content-hash version check, a preview diff and one-step undo, so an edit made by hand in Notion is never silently overwritten. Installs with dsh plugin add; no build step. Requires a Notion integration token (or a personal access token) and sharing each target page or database with the integration.'
+  zh: '在 DSH 里读写 Notion：10 个工具覆盖页面与数据库，正文按 Notion 风味 Markdown 读写；写入带内容哈希版本校验、diff 预览和一键撤销，你在 Notion 里手改的内容不会被静默覆盖。dsh plugin add 即可安装，无需构建。需自备 Notion 集成令牌（或个人访问令牌），并把要读写的页面/数据库共享给该集成。'

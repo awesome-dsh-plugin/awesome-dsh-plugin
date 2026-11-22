@@ -1,0 +1,6 @@
+url: https://github.com/Roilkl/dsh-daicat-pet
+name: Roilkl/dsh-daicat-pet
+category: ui
+description:
+  en: "An animated cat companion for the DSH chat UI. It reacts to session states, shows editable click-to-read lines and per-turn token counts, and supports dragging with a squish effect, left/right flipping and Ctrl+wheel resizing."
+  zh: "在 DSH 对话界面显示呆猫桌宠：跟随会话状态切换动画，点击展示可编辑台词，每轮结束显示 token 用量；支持拖动压扁回弹、左右翻转及 Ctrl+滚轮缩放。"

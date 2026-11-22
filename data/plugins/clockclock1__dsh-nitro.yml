@@ -1,0 +1,8 @@
+url: https://github.com/clockclock1/dsh-nitro
+name: clockclock1/dsh-nitro
+category: tools
+tarball: https://github.com/clockclock1/dsh-nitro/releases/download/v1.0.6/dsh-nitro-1.0.6.tgz
+icon: https://raw.githubusercontent.com/clockclock1/dsh-nitro/master/icon.png
+description:
+  en: "Per-session fast-delivery mode from the composer. New conversations start enabled; switching is refused while that conversation is running, and a read-only session-header badge shows on/off during a run. One switch drives three subsystems: a circuit breaker that short-circuits test and build commands instead of running them, an apply_patch tool that writes SEARCH/REPLACE hunks atomically (all anchors must match or nothing is written), and a dehydrator that trims terminal output to a pass line or the last 15 error lines."
+  zh: "按会话独立的极速交付模式，从输入框切换。新对话默认开启；对话运行期间拒绝切换，并在会话头部显示只读开/关徽标。一个开关驱动三个子系统：测试与构建命令断路器（不真正执行，直接返回成功回执）、按 SEARCH/REPLACE 冲突块原子写入的 apply_patch 工具（任一锚点未命中则整次回滚）、以及把终端输出脱水成一句通过或最后 15 行错误的脱水器。"

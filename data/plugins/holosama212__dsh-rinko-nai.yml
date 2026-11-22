@@ -1,0 +1,7 @@
+url: https://github.com/holosama212/dsh-rinko-nai
+name: holosama212/dsh-rinko-nai
+category: tools
+description:
+  en: 'Generate and edit images in DeepSeek Harness through YesNAI (nai.rinko.ai / ynai.rinko.ai) or any YesNAI-compatible or OpenAI-compatible site. Ships native tools rinko_nai_image (text-to-image and free quote), rinko_nai_img2img (reference-image edit, gated by a per-site toggle), rinko_nai_parallel (multi-key parallel), rinko_nai_status, and a batch-task tool for /api/ynai/batches that stays disabled until the site enables it. Multi-key and single-key parallelism, a settings panel (login, balance, activities, image packs, gallery, ledger, prompt-parameter presets, no-charge quote), and inline same-origin image display.'
+  zh: '在 DeepSeek Harness 里通过 YesNAI（公益站 nai.rinko.ai / 主站 ynai.rinko.ai）或任意 YesNAI 兼容 / OpenAI 兼容站点出图与改图。原生工具：rinko_nai_image（文生图 / 免费询价）、rinko_nai_img2img（参考图改图，按站点开关）、rinko_nai_parallel（多 Key 并行）、rinko_nai_status，以及批次任务工具（/api/ynai/batches，站点未开放时默认禁用）。支持多 Key 与单 Key 并行、设置页（登录/余额/活动/图包/画廊/流水/参数预设/免费预估）、对话内同源内联显示。'
+icon: https://raw.githubusercontent.com/holosama212/dsh-rinko-nai/main/assets/sticker.webp

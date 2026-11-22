@@ -1,0 +1,7 @@
+url: https://github.com/FrontierMindLab/dsh-quick-compact/tree/main/plugins/dsh-quick-compact
+name: FrontierMindLab/dsh-quick-compact#dsh-quick-compact
+category: ui
+description:
+  en: 'Context ring gauge in the DSH composer toolbar: view usage, open a breakdown panel, and run /compact from the panel, with a fireworks animation.'
+  zh: 'DSH 输入框工具栏的上下文小环：查看用量，打开面板查看构成并执行 /compact，带烟花动画。'
+icon: https://raw.githubusercontent.com/FrontierMindLab/dsh-quick-compact/main/plugins/dsh-quick-compact/docs/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/liuming-dev/dsh-plugins/tree/main/cliproxyapi-plus
+name: liuming-dev/dsh-plugins#cliproxyapi-plus
+category: model
+description:
+  en: Native DeepSeek Harness panel for local CLIProxyAPIPlus with Qoder and Codex authentication, quota views, automatic provider and model catalog sync, YAML editing, service control, request trends, and runtime logs.
+  zh: 在 DeepSeek Harness 中管理本地 CLIProxyAPIPlus，支持 Qoder、Codex 认证与额度查询，自动同步模型供应商及模型列表，并提供 YAML 编辑、服务启停、请求趋势和运行日志。

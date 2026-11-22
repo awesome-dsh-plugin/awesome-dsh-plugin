@@ -1,0 +1,6 @@
+url: https://github.com/cnhenaihui/dsh-theme-wallpaper
+name: cnhenaihui/dsh-theme-wallpaper
+category: theme
+description:
+  en: 'Colour-theme and wallpaper plugin: 62 colour themes (37 built-in, derived from OpenCode palettes, plus 25 IP presets), each shipping its own Markdown and syntax-highlight palette, a layer that pushes sub-4.5:1 semantic colours back to readable contrast, and local background images with fill or tile, blur, scrim and rotation. Replaces the earlier cnhenaihui/dsh-ios-theme.'
+  zh: '配色主题与壁纸插件：62 套配色主题（37 套内置、源自 OpenCode 调色板，另有 25 套 IP 预设），每套自带 Markdown 与语法高亮配色，另有一层把低于 4.5:1 的语义色推回可读对比度，并支持本地背景图（铺满或平铺、模糊、遮罩、轮换）。取代此前的 cnhenaihui/dsh-ios-theme。'

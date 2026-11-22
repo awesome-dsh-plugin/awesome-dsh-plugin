@@ -1,0 +1,8 @@
+url: https://github.com/TZUKWAN/METIS_ACADEMIC
+name: TZUKWAN/METIS_ACADEMIC
+category: workflow
+description:
+  en: 'AI-assisted research workbench with editable step workflows, on-demand skill binding, a live execution graph and in-project document review (needs a local Python with python-docx, python-pptx, openpyxl and PyMuPDF), while keeping existing projects on their original configurations. Requires DSH 0.2.2 or later.'
+  zh: '在 DSH 中与 AI 共建研究流程，按步骤绑定技能，查看实际执行网络并审阅项目文档（文档审阅需本机 Python 及 python-docx、python-pptx、openpyxl、PyMuPDF），已有项目保留原配置。需要 DSH 0.2.2 或更高版本。'
+icon: https://raw.githubusercontent.com/TZUKWAN/METIS_ACADEMIC/main/assets/icon.png
+tarball: https://github.com/TZUKWAN/METIS_ACADEMIC/releases/download/v1.6.2/metis-academic-preset.tgz

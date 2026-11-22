@@ -1,0 +1,6 @@
+url: https://github.com/lzlrt/dsh-auto-wake
+name: lzlrt/dsh-auto-wake
+category: workflow
+description:
+  en: 'Attaches a wake rule to any session: the host polls whether its latest turn ended cleanly (LLM error, max-tokens truncation, unclosed turn, prolonged silence) and genuinely wakes it through sessionController.prompt, with a Beijing-time window, an idle-delay gate and three guards (cooldown, hourly/daily quota, no-progress circuit breaker). Includes five agent tools and a settings page. Its HTTP routes go through the host connection trust check.'
+  zh: '给任意会话挂一条唤醒规则：宿主轮询其最新一轮是否「结束得不像结束」（报错、被 max-tokens 截断、轮次未闭合、长时间静默），命中条件就通过 sessionController.prompt 真正把它叫醒。支持北京时间段、静置时长门槛，以及冷却/小时与每日额度/连续无进展熔断三层护栏。含五个工具与设置页。它的 HTTP 路由经过宿主的 connection 信任检查。'

@@ -1,0 +1,7 @@
+url: https://github.com/nexscope-ai/dsh-nexscope-plugin
+name: nexscope-ai/dsh-nexscope-plugin
+category: tools
+description:
+  en: 'Ecommerce research for DeepSeek Harness: OAuth into the Nexscope MCP server, marketplace data across Amazon, TikTok Shop, Walmart, Shopee, Temu and 1688, plus a bundled nexscope skill.'
+  zh: '面向 DeepSeek Harness 的电商研究插件：OAuth 接入 Nexscope MCP，覆盖亚马逊、TikTok Shop、沃尔玛、Shopee、Temu 与 1688 等市场数据，并捆绑 nexscope 技能。'
+icon: https://raw.githubusercontent.com/nexscope-ai/dsh-nexscope-plugin/main/assets/icon.png

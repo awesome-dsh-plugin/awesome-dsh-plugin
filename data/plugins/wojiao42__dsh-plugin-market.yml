@@ -1,0 +1,6 @@
+url: https://github.com/wojiao42/dsh-plugin-market
+name: wojiao42/dsh-plugin-market
+category: market
+description:
+  en: 'A plugin-market panel in the sidebar and in settings: browse the dsh-plugin.org directory, filter and sort it, and install / enable / disable / remove bundles into the current profile through the official plugin manager. The curated catalog and the full sitemap index are merged, so plugins missing from the catalog are still discoverable.'
+  zh: 侧栏与设置里的插件市场面板：浏览 dsh-plugin.org 目录、按分类与 Star/更新时间筛选排序，经 Harness 官方插件管理器安装、启停、卸载到当前 profile。精选目录与 sitemap 全量索引合并显示，目录里被漏掉的插件也能搜到。

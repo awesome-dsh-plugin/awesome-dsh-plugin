@@ -1,0 +1,6 @@
+url: https://github.com/Heart3-XDUGT2/dsh-memory-agent
+name: Heart3-XDUGT2/dsh-memory-agent
+category: memory
+description:
+  en: Local DSH companion plugin with long-term memory, graph-assisted retrieval, emotional state, reflection, group context, and audit views. Targets Windows with Node 24 and Python 3.14 (the basic engine uses the Python standard library, no pip; without Python it falls back to the JS retrieval path).
+  zh: 面向 DSH 的本地陪伴插件，提供长期记忆、图谱辅助检索、情绪状态、反思、群聊上下文和审计视图。目标平台为 Windows，需要 Node 24 与 Python 3.14（基础引擎只用 Python 标准库，无需 pip；没有 Python 时退回 JS 检索路径）。

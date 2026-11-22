@@ -1,0 +1,7 @@
+url: https://github.com/lizzkkafei/my-projects/tree/main/zhizhen-cardgame
+name: lizzkkafei/my-projects#zhizhen-cardgame
+category: fun
+icon: https://raw.githubusercontent.com/lizzkkafei/my-projects/main/zhizhen-cardgame/assets/icon-180.png
+description:
+  en: "A 3D poker roguelike opened from a DSH session: pick 1–5 cards to score chips × mult, with 20 jokers, 6 antes of small/big/boss blinds and a shop between rounds."
+  zh: "从 DSH 会话打开的 3D 扑克 Roguelike：每手选 1–5 张牌按筹码 × 倍率计分，20 种小丑牌、6 层底注与小/大/BOSS 盲注，过关后进商店。"

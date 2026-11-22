@@ -1,0 +1,6 @@
+url: https://github.com/devzer0o0/dsh-max-reasoning-effort
+name: devzer0o0/dsh-max-reasoning-effort
+category: model
+description:
+  en: 'Pins reasoning effort to the highest level every model offers, and keeps it pinned for agents created after the plugin loads.'
+  zh: '把每个模型的推理档位钉在它支持的最高档，并且对插件加载后新建的 agent 继续生效。'

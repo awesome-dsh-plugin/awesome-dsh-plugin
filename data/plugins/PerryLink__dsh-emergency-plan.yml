@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-emergency-plan
+name: PerryLink/dsh-emergency-plan
+category: tools
+description:
+  en: "Emergency response plan check for DeepSeek Harness: check plans against the Guidelines for the Preparation of Emergency Response Plans for Production Safety Accidents of Production and Business Units and the Measures for the Administration of Emergency Response Plans for Production Safety Accidents (GB/T 29639-2020; State Administration of Work Safety Order No. 88). Flags discrepancies only and makes no legal conclusion."
+  zh: "应急预案核对：依据《生产经营单位生产安全事故应急预案编制导则》《生产安全事故应急预案管理办法》（GB/T 29639-2020、国家安全生产监督管理总局令第88号）。仅提示差异，不作出定性结论。"

@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-invoice-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-invoice-check'
+category: 'tools'
+description:
+  en: 'Invoice field checks for Chinese e-invoices: credit-code format, amount relationships (net + tax = total), uppercase/digit amount agreement, invoice number shapes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '中文电子发票的字段检查：统一社会信用代码字符集、不含税+税额=价税合计的勾稽、大小写金额一致、发票号码位数。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

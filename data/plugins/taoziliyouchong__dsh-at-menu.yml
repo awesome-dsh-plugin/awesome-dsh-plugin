@@ -1,0 +1,6 @@
+url: https://github.com/taoziliyouchong/dsh-at-menu
+name: taoziliyouchong/dsh-at-menu
+category: ui
+description:
+  en: Adds a row of category tabs on top of the @ reference menu so candidates can be filtered by kind.
+  zh: 在 @ 引用菜单顶部加一排类别标签，点标签只看该类候选。

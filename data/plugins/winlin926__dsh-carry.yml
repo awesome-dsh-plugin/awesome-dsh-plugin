@@ -1,0 +1,7 @@
+url: https://github.com/winlin926/dsh-carry
+name: winlin926/dsh-carry
+category: remote
+description:
+  en: "Remote control of DeepSeek Harness from a phone browser: scan a QR code, confirm the device on the computer, then chat, answer tool approvals and preview workspace files in the host's own web interface. Connects over the same Wi-Fi (with an optional https domain) or through a self-hosted public relay node."
+  zh: '用手机浏览器远程控制电脑上的 DeepSeek Harness：扫码并在电脑上确认设备后，在宿主自己的网页界面里对话、处理工具审批、预览工作区文件；支持同一局域网（可配域名 HTTPS）或经自托管公网中转节点接入。'
+icon: https://raw.githubusercontent.com/winlin926/dsh-carry/main/assets/logo.png

@@ -1,0 +1,6 @@
+url: https://github.com/Yzm889/TianZheng-ai-plugin
+name: Yzm889/TianZheng-ai-plugin
+category: tools
+description:
+  en: 'Drives real T20/T30 Tianzheng and AutoCAD drafting over MCP: walls, doors, windows, stairs, rooms, dimensions, symbols, title blocks and sheet layout, each verified by an entity count delta.'
+  zh: '通过 MCP 驱动真实的天正建筑与 AutoCAD 绘图：墙体、门窗、楼梯、房间、尺寸、符号、图框与排版，每项能力都用实体计数增量验证。'

@@ -1,0 +1,6 @@
+url: https://github.com/Hyfish-oO/dsh-pushpin
+name: Hyfish-oO/dsh-pushpin
+category: ui
+description:
+  en: 'Pins the DSH window above other windows from a pushpin in the title bar. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '标题栏右上角一颗钉子，把整个 DSH 窗口钉在其他窗口上面。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

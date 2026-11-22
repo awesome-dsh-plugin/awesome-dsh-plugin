@@ -1,0 +1,7 @@
+url: https://github.com/littleyellowbicycle/dsh-atc
+name: littleyellowbicycle/dsh-atc
+category: session
+description:
+  en: 'One sidebar panel listing every local coding agent''s sessions (DSH, codex, opencode, WorkBuddy, Gemini, ZCode, MiniMax) with real titles and turn-based status, read from local stores only. Click a card to go back to that session: the host switches for DSH, other tools get their own window raised. A running card says what it is doing, and a drawer shows its recent tool calls. Its HTTP routes go through DSH''s admission check, so a page open in your browser cannot call them.'
+  zh: '左侧栏一个面板看全本机 coding agent 的会话（DSH/codex/opencode/WorkBuddy/Gemini/ZCode/MiniMax），标题和状态取自各自的本地记录，只读本地、零 token。点卡片回到那条会话：DSH 在宿主内切换，其它工具把它的窗口提到前台；在跑的卡会写它当前在做什么，详情抽屉能看到最近几次工具调用。HTTP 路由走 DSH 自己的准入检查，浏览器里打开的网页调不到它。'
+icon: https://raw.githubusercontent.com/littleyellowbicycle/dsh-atc/main/assets/icon-256.png

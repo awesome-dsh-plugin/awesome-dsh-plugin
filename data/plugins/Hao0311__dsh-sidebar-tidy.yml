@@ -1,0 +1,6 @@
+url: https://github.com/Hao0311/dsh-sidebar-tidy
+name: Hao0311/dsh-sidebar-tidy
+category: ui
+description:
+  en: 'Tidy the DSH Web GUI sidebar: the global panel rows collapse into a single More menu, so only Plugins / Automations / More stay in the list; whitelisted rows stay put and new panels land in More automatically.'
+  zh: 'DSH Web GUI 侧边栏精简：全局面板行收进「更多」菜单，侧栏只留「插件 / 自动化任务 / 更多」；白名单内保留，新面板自动进「更多」。'

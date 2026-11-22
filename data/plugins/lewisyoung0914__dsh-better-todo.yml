@@ -1,0 +1,7 @@
+url: https://github.com/lewisyoung0914/dsh-better-todo
+name: lewisyoung0914/dsh-better-todo
+category: ui
+icon: https://raw.githubusercontent.com/lewisyoung0914/dsh-better-todo/main/assets/icon-180.png
+description:
+  en: Floating todo panel in the DSH Web UI — a draggable window that snaps to any screen edge, today/more grouping in the home tab, a separate all-items tab with uncompleted/completed filters and incremental loading, items that open read-only with an edit toggle in the corner, image attachments that zoom in place and other files that download, a pomodoro timer (15/30/45/60 or custom, with configurable rounds and break interval) that sends a Windows notification and waits for confirmation before the next phase, and five agent tools plus a /todo slash command for reading and editing the list.
+  zh: DSH Web UI 的浮动待办面板——窗口可拖动并吸附屏幕四边，首页按「今天/更多」分组，另有全部事项标签页（未完成/已完成筛选、增量加载），条目默认只读查看、点右上角「编辑」才可修改，图片附件点击放大、其它附件点击下载，内置番茄钟（15/30/45/60 或自定义，可设轮数与休息间隔）到点推送 Windows 通知并在进入下一阶段前等待确认，另提供 5 个 agent 工具与 /todo 斜杠命令读写任务。

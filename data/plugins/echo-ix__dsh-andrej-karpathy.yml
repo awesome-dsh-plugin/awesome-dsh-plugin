@@ -1,0 +1,6 @@
+url: https://github.com/echo-ix/dsh-andrej-karpathy
+name: echo-ix/dsh-andrej-karpathy
+category: skill
+description:
+  en: Adds an on-demand coding-guidelines skill covering assumptions and tradeoffs, simplicity, surgical changes, and verifiable goals, adapted from Andrej Karpathy's notes on LLM coding pitfalls.
+  zh: 提供按需加载的编码准则技能：先想再写、保持简单、外科手术式修改、以可验证目标推进，源自 Andrej Karpathy 对 LLM 编码陷阱的观察。

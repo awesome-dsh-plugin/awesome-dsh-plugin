@@ -1,5 +1,5 @@
 url: https://github.com/bingomu/readable-diagrams
-name: bingomu/readable-diagrams
+name: 可读图表（readable-diagrams）
 category: skill
 description:
   en: 'Diagrams a reader understands on first look: nine types from one JSON spec, with a checked title, reading path, legend, contrast and connectors. Requires Python 3.9+ for the render and check scripts.'

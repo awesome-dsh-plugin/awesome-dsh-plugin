@@ -1,0 +1,6 @@
+url: https://github.com/doomedwkk/dsh-cyberpunk-boot
+name: doomedwkk/dsh-cyberpunk-boot
+category: ui
+description:
+  en: 'A Cyberpunk-style boot sequence for the DSH web client and its desktop build. The first load of a window shows a full-window stencil DSH wordmark, six boot-log rows and a stuttering progress bar, then a sliced glitch-out onto the interface. The soundtrack is synthesized in the page with no audio file and no network request, in three switchable takes: a C-major ring bell, a short metallic alert chime, and a cinematic start-game impact. Any key or a click skips it, Ctrl+Alt+B replays it, Ctrl+Alt+M mutes the sound and Ctrl+Alt+S switches the take.'
+  zh: '赛博朋克风格的 DSH 启动动画，Web 客户端与桌面版都能用。窗口首次加载时铺满整窗显示模板字 DSH 标志、六行启动日志和抖动的进度条，随后以分层故障效果过渡露出界面；声音在页面内合成，不含音频文件、不联网，提供三种可切换音色：C 大调铃声、短促的金属提示音、以及「开始游戏」电影感冲击。任意键或点击可跳过，Ctrl+Alt+B 重播，Ctrl+Alt+M 静音，Ctrl+Alt+S 切换音色。'

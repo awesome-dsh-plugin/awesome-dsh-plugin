@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-daily-digest
+name: Daphne999/dsh-daily-digest
+category: workflow
+description:
+  en: "A fact layer for daily heartbeat turns: diffs the curated plugin market for newly published entries and the Chinese education SRC calendars (EDUSRC rounds, Beijing education SRC seasons, the standing vulnerability-hunting exercise) for new items. Reports deltas only — the first call seeds a baseline and stays quiet."
+  zh: '给每日巡检回合提供事实层：对比插件市场注册表报新增条目，对比教育行业 SRC 页面（EDUSRC 众测、北京教育 SRC 赛季、常态化演习）报新一期活动。只报变化，首次调用只建基线、不报新增。'

@@ -1,0 +1,7 @@
+url: https://github.com/132465798978/dsh-text-highlight
+name: 132465798978/dsh-text-highlight
+category: ui
+description:
+  en: "Highlights keywords and key sentences in DSH messages with the CSS Custom Highlight API (no DOM rewrite, survives streaming), and swaps the UI / message font in one click. Config lives in a small floating panel; code blocks and KaTeX are left alone."
+  zh: "用 CSS Highlight API 给 DSH 消息里的关键词和关键句上色（不重写 DOM，流式输出也不掉），再一键换掉界面/正文字体；配置在小浮窗里，代码块和公式不受影响。"
+tarball: https://github.com/132465798978/dsh-text-highlight/releases/download/v0.1.0/dsh-text-highlight-0.1.0.tgz

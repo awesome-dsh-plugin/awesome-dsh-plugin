@@ -1,0 +1,8 @@
+url: https://github.com/Intelli-Jungle/dsh-agentroom
+name: Intelli-Jungle/dsh-agentroom
+category: workflow
+description:
+  en: Slack-style shared rooms with independent native DSH sessions, parallel member mentions, bounded agent handoffs, text attachments and conversation export.
+  zh: Slack 风格共享聊天室，支持独立 DSH 原生会话、并行提及、有次数限制的 Agent 接力、文本附件和会话导出。
+icon: https://raw.githubusercontent.com/Intelli-Jungle/dsh-agentroom/main/assets/icon.png
+tarball: https://github.com/Intelli-Jungle/dsh-agentroom/releases/latest/download/dsh-agentroom.tgz

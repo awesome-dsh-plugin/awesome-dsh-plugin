@@ -1,0 +1,7 @@
+url: https://github.com/LINGTIAN303/dsh-model-tabs
+name: LINGTIAN303/dsh-model-tabs
+category: model
+description:
+  en: Adds two-level tabs (provider and model family) to the composer model picker for large catalogs, with configurable family rules.
+  zh: 给 composer 模型选择器加两级 Tab（提供商 + 模型系列），大目录时减少滚动翻找；族规则可在设置页配置。
+tarball: https://github.com/LINGTIAN303/dsh-model-tabs/releases/download/v0.1.1/dsh-model-tabs-0.1.1.tgz

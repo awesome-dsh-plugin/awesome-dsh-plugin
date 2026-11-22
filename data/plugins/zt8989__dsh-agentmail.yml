@@ -1,0 +1,6 @@
+url: https://github.com/zt8989/dsh-agentmail
+name: zt8989/dsh-agentmail
+category: tools
+description:
+  en: Send and receive QQ Agent Mail through an OAuth-authorized agently-cli account — six tools (send, list, read, search, reply, poll) that embed a session/thread marker in the subject, a background poller that routes inbound replies into the owning DSH Session and wakes it, and incoming HTML bodies rendered to clean markdown.
+  zh: 通过已授权的 agently-cli 账号收发 QQ Agent Mail 邮件：发送、列表、阅读、搜索、回复、轮询共六个工具，主题自动嵌入会话/线程标记，后台轮询把回信路由回所属 DSH 会话并唤醒它，HTML 正文渲染为简洁的 Markdown。

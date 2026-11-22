@@ -1,0 +1,6 @@
+url: https://github.com/QIC-9821/dsh-pc-bridge
+name: QIC-9821/dsh-pc-bridge
+category: remote
+description:
+  en: "Loopback HTTP bridge that lets a peer machine ping this PC and run shell commands, with an optional ssh reverse-tunnel supervisor."
+  zh: "本机回环 HTTP 桥：让对端机器 ping 并执行 shell 命令，可选 ssh 反向隧道看守。"

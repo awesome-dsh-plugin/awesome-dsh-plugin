@@ -1,0 +1,6 @@
+url: https://github.com/liufeicc/dsh-web-search-tavily
+name: liufeicc/dsh-web-search-tavily
+category: tools
+description:
+  en: "Adds a Tavily search provider to the DSH web search seam, keyless by default so it works without an account or API key."
+  zh: "给 DSH 的网页搜索接缝接上 Tavily，默认免注册、免 API key。"

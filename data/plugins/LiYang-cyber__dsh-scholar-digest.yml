@@ -1,0 +1,6 @@
+url: https://github.com/LiYang-cyber/dsh-scholar-digest
+name: LiYang-cyber/dsh-scholar-digest
+category: skill
+description:
+  en: 'Closes the gap in batch-searching CNKI (知网) literature with an agent: the academic research preset reads CNKI Space metadata, maps each link to the openable kns.cnki.net record page server-side (no login state and no browser redirect script; full text depends on institutional access), and adds arXiv, PubMed / Europe PMC and Semantic Scholar for English literature; the download-paper skill turns the results into one topic directory with an offline HTML index, XLSX table, BibTeX, RIS and an arXiv batch-download script. Requires DSH 0.2.2-rc.1+, uv and Node.js. Requires DSH 0.2.x, uv (the CNKI, arXiv and Semantic Scholar MCP servers start through it) and Node.js (PubMed starts via npx).'
+  zh: '补齐「用 Agent 批量检索知网文献」这一环：学术研究 preset 从知网空间取题录，在服务端把每条链接换算成可打开的 kns.cnki.net 主站文献页（不需要登录态与浏览器跳转脚本，全文能否打开取决于机构权限），并用 arXiv、PubMed / Europe PMC、Semantic Scholar 覆盖英文文献；download-paper 技能把结果整理成同一专题目录下的离线 HTML 索引、XLSX 总表、BibTeX、RIS 与 arXiv 批量下载脚本。需要 DSH 0.2.2-rc.1+、uv 与 Node.js。需要 DSH 0.2.x、uv（CNKI、arXiv、Semantic Scholar 的 MCP 服务通过它启动）和 Node.js（PubMed 通过 npx 启动）。'

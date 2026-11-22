@@ -1,0 +1,8 @@
+url: https://github.com/StarWind97/dsh-fatfish-notes
+name: StarWind97/dsh-fatfish-notes
+category: docs
+description:
+  en: 'Save conversations and files as Markdown notes, read and reference notes beside chats, customize reading, export, and sync through your private GitHub repository. Verified on Windows only; setup requires your own GitHub account, Git and the GitHub CLI. Sync needs your own GitHub account (Git or the GitHub CLI).'
+  zh: '转存会话与文件，在会话侧栏阅读和引用笔记，自定义阅读排版、导出图文，通过自己的 GitHub 私有仓库同步。仅在 Windows 验证；首次设置需要自己的 GitHub 账号、Git 和 GitHub CLI。同步需要你自己的 GitHub 账号（Git 或 GitHub CLI）。'
+icon: https://raw.githubusercontent.com/StarWind97/dsh-fatfish-notes/main/assets/icon-180.png
+tarball: https://github.com/StarWind97/dsh-fatfish-notes/releases/latest/download/dsh-fatfish-notes.tgz

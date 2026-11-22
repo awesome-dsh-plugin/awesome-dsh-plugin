@@ -1,0 +1,8 @@
+url: https://github.com/ll4514dvdvdb/dsh-clash-proxy
+name: ll4514dvdvdb/dsh-clash-proxy
+category: remote
+description:
+  en: "On-demand proxy for DeepSeek Harness that leaves the system proxy, WinHTTP and TUN alone: its own Clash-style engine parses vmess, vless, ss, trojan, socks5 and http subscriptions and runs a rule engine (DOMAIN, DOMAIN-SUFFIX, DOMAIN-KEYWORD, IP-CIDR, IP-CIDR6, GEOIP with DIRECT/PROXY/REJECT) so only the requests that are slow when dialled directly take the proxy on the web, search, scripts and browser channels, with per-node latency and bandwidth tests, spoofing options and a loopback panel behind a per-instance token."
+  zh: "不接管系统代理、WinHTTP 与 TUN 的按需代理：自带 Clash 风格引擎解析 vmess、vless、ss、trojan、socks5、http 订阅，规则引擎支持 DOMAIN、DOMAIN-SUFFIX、DOMAIN-KEYWORD、IP-CIDR、IP-CIDR6、GEOIP 与 DIRECT/PROXY/REJECT，只有直连偏慢时才让网页抓取、搜索、脚本与浏览器四条通道的请求走代理，并提供节点延迟与带宽测速、伪装选项和带每实例令牌的本地 Web 面板。"
+icon: https://raw.githubusercontent.com/ll4514dvdvdb/dsh-clash-proxy/main/docs/icon.png
+tarball: https://github.com/ll4514dvdvdb/dsh-clash-proxy/releases/latest/download/dsh-clash-proxy.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/jyz48prsbr-netizen/dsh-sidebar-entry-toggle
+name: jyz48prsbr-netizen/dsh-sidebar-entry-toggle
+category: ui
+description:
+  en: 'Adds a Settings section that automatically lists every left-sidebar entry, including newly installed plugins, with switches to show or hide each and drag-to-reorder; uses stable slot ids so saved choices survive language changes and full restarts, and display-only changes never unload plugins.'
+  zh: '在设置中增加分区，自动列出左侧栏所有入口（含新安装的插件，无需手动白名单），用开关控制显示/隐藏并拖动排序；用稳定 slot id 保证语言切换后选择不丢失，v1.2.1 起拖动排序在完全重启后依然保留，调整只影响显示、不卸载插件。'

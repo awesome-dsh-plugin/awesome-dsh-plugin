@@ -1,0 +1,7 @@
+url: https://github.com/xiaobbl/dsh-mworks-ai       
+name: xiaobbl/dsh-mworks-ai                        
+category: tools                              
+description:
+  en: 'MWORKS AI for DeepSeek Harness: Syslab and Sysplorer MCP servers owned by the MCP manager, official MWORKS skills and working rules, and a Runtime environment section on the plugin page. '
+  zh: 'DeepSeek Harness 的 MWORKS AI：由 MCP 管理器托管的 Syslab 与 Sysplorer MCP 服务、官方 MWORKS 技能与工作规则，并在插件页提供运行环境设置。'
+icon: https://raw.githubusercontent.com/xiaobbl/dsh-mworks-ai/refs/heads/main/icon.png

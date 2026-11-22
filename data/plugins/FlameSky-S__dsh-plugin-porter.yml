@@ -1,0 +1,6 @@
+url: https://github.com/FlameSky-S/dsh-plugin-porter
+name: FlameSky-S/dsh-plugin-porter
+category: market
+description:
+  en: 'Export installed DSH plugins with their dependency closure and docs to removable media, then scan and install or update them offline in an isolated intranet.'
+  zh: '将已安装的 DSH 插件连同依赖闭包与文档导出到移动介质，在隔离内网中扫描目录并离线安装或更新插件。'

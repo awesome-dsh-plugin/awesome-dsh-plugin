@@ -1,0 +1,8 @@
+url: https://github.com/stmcw1/DACW
+name: stmcw1/DACW
+category: workflow
+tarball: https://github.com/stmcw1/DACW/releases/download/v1.1.1/v1.1.1.tgz
+description:
+  en: 'A defensive agentic coding workflow for DSH 0.2.2-rc.1+ featuring deterministic machine testing, an independent reviewer and a human merge gate.'
+  zh: '面向 DSH 0.2.2-rc.1+ 的防御性智能体编程工作流：包含确定性机器测试、独立审查者与人类终审闸门。'
+icon: https://raw.githubusercontent.com/stmcw1/DACW/main/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/AmazarashiEnduerRain/dsh-unread
+name: AmazarashiEnduerRain/dsh-unread
+category: notify
+icon: https://raw.githubusercontent.com/AmazarashiEnduerRain/dsh-unread/main/assets/market-icon.png
+description:
+  en: 'Shows a Codex-style unread badge: a black circle with a white count on the Windows taskbar icon when a session run completes or an approval is pending, with mark-as-read / mark-as-unread and an unread dot in the session sidebar.'
+  zh: 'Codex 风格未读提醒：会话任务运行完成或审批待处理时，在 Windows 任务栏图标上显示黑底白字数字角标，并在会话侧栏提供未读圆点与标记已读/未读。'

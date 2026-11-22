@@ -1,0 +1,6 @@
+url: https://github.com/startime-ltk/dsh-mimavault
+name: startime-ltk/dsh-mimavault
+category: security
+description:
+  en: 'Bridges DSH to the local MimaVault password manager with seven tools for metadata search, entry lookup, clipboard copy, TOTP codes, password generation, domain-restricted API calls and user-confirmed vault clearing. By default it talks to the MimaVault desktop app, which must be installed separately; the optional built-in mode stores entries in plaintext.'
+  zh: '把本机 MimaVault 密码库接入 DSH，提供 7 个工具用于元数据检索、条目读取、剪贴板复制、动态验证码、口令生成、域名受限的 API 调用与需人工确认的清空请求。默认对接 MimaVault 桌面应用（需另行安装）；可选的内置模式以明文保存条目。'

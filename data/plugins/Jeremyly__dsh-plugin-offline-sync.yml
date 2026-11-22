@@ -1,0 +1,6 @@
+url: https://github.com/Jeremyly/dsh-plugin-offline-sync
+name: Jeremyly/dsh-plugin-offline-sync
+category: tools
+description:
+  en: 'Package local DSH plugins into a portable ZIP, and install them offline on other machines with version detection and incremental packing. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '将本地 DSH 插件打包为可便携的 ZIP，在其他机器上离线安装，支持版本检测与增量打包。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

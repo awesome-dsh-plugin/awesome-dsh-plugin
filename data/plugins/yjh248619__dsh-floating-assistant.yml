@@ -1,0 +1,7 @@
+url: https://github.com/yjh248619/dsh-floating-assistant
+name: yjh248619/dsh-floating-assistant
+category: ui
+description:
+  en: 'Floating Assistant: select text in any Windows app to explain, summarize or translate it, or ask follow-up questions about it; answers stream into a native always-on-top card (drag, eight-way resize, fold, minimize to the taskbar, several cards at once), a deep mode also sends the text of the window the selection sits in plus one file you pick as read-only material, and screenshots or scans can be read with Windows OCR; the source line states what that round actually read. Translation defaults to Bing (Google optional) and falls back to the AI model, and each answer reports the tokens and model that produced it. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '悬浮助手：在 Windows 应用里选中文字即可解释、总结或翻译，也可以就这段文字连续追问；答案流式落在原生置顶卡里（可拖动、八向缩放、折叠、最小化到任务栏，多卡并存），深度模式还会带上选区所在窗口的文本与你选定的一个文件（只读材料），截图/图片/扫描件可用 Windows OCR 取词，卡片出处行会写出这一轮实际读了什么。翻译默认 Bing 机译（可选 Google），失败/超时/含公式时自动回退 AI 模型，每轮还会报出用量与产出它的模型。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yjh248619/dsh-floating-assistant/main/assets/icon-180.png

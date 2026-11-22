@@ -1,0 +1,7 @@
+url: https://github.com/minggemofashi/dsh-pdf-workbench
+name: minggemofashi/dsh-pdf-workbench
+category: docs
+description:
+  en: 'A PDF reading workbench for DSH: book and chapter libraries, a built-in pdf.js reader, ink and shape annotations, bilingual translation overlays, a right-side preview, and ask-as-you-read conversations. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '面向 PDF 阅读的 DSH 工作台：书库与章节、内置 pdf.js 阅读器、手写与形状标注、双语翻译覆盖、右栏预览，以及随读随问的会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/minggemofashi/dsh-pdf-workbench/releases/download/v1.3.0/dsh-pdf-workbench-1.3.0.tgz

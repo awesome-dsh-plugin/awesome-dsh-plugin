@@ -1,0 +1,6 @@
+url: https://github.com/lloydzhou/dsh-feishu-oauth
+name: lloydzhou/dsh-feishu-oauth
+category: identity
+description:
+  en: 'Feishu OAuth login reduces the need to distribute the DSH owner token while retaining token login; authorized users receive native owner session cookies with shared owner privileges, without per-user isolation.'
+  zh: '通过飞书 OAuth 登录减少分发 DSH owner token 的需要，同时保留 token 登录；获准用户使用原生 owner 会话 Cookie，共享 owner 权限，不提供逐用户隔离。'

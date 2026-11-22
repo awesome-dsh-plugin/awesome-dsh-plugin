@@ -1,0 +1,7 @@
+url: https://github.com/glk1220/dsh-session-git
+name: glk1220/dsh-session-git
+category: session
+description:
+  en: "Merges the work done in a forked session back into the session it came from: /merge turns the branch's session log into a digest without a model call (each turn's prompt and reply, files changed, commands run, choices you made, to-dos and the final answer) and delivers it with your next message, or at once with --wake; merging the same branch again brings only the turns added since. Also adds /branches, a right-sidebar branch map with merge state, a reminder above the composer for branches with unmerged turns, and session_branches / session_branch_merge tools for the agent."
+  zh: "把分叉会话里做完的工作合并回原会话：/merge 直接从分支的会话记录整理出摘要、不调用模型（每轮的提问与回复、改动的文件、执行的命令、你做的选择、待办和最终结论），随你的下一条消息交给 agent，或用 --wake 立即处理；同一分支再次合并只带新增的轮次。另有 /branches、带合并状态的右侧栏分支地图、输入框上方的未合并提醒，以及供 agent 使用的 session_branches / session_branch_merge 工具。"
+icon: https://raw.githubusercontent.com/glk1220/dsh-session-git/main/assets/icon-256.png

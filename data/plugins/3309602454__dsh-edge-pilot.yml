@@ -1,0 +1,6 @@
+url: https://github.com/3309602454/dsh-edge-pilot
+name: 3309602454/dsh-edge-pilot
+category: browser
+description:
+  en: 'Drives the Microsoft Edge already installed on Windows through playwright-core, with no bundled Chromium. Pages are compiled into a numbered ref list (e1, e2 ...) so the model answers with one ref instead of writing CSS selectors; clicks scroll into view, probe for overlapping elements, and then verify the effect by comparing URL and page text. Also replays saved skill files (step lists in JSON with {{param}} substitution, no refs) so a fixed flow runs in one call, and keeps the browser from accumulating tabs by purging session-restore files, capping tab count, sweeping on idle and closing tabs on exit. Ships ChatGPT web tools (ask, image, GIF) on a separate profile. Windows only.'
+  zh: '用 playwright-core 直接驱动 Windows 上已装好的 Microsoft Edge，不下载 Chromium。插件把页面编译成带编号的 ref 清单（e1、e2……），模型只需回一个 ref 而不必写 CSS 选择器；点击会先滚入视口、检测遮挡，点完再比对地址与正文确认是否真的生效。还能重放保存好的技能文件（JSON 步骤表 + {{参数}} 替换，不含 ref），固化流程一次调用跑完；并防止标签页越攒越多——启动前清理会话还原文件、限制标签数量、空闲自动回收、退出前统一关闭。另附 ChatGPT 网页版工具（问答、生图、GIF），走独立 profile。仅限 Windows。'

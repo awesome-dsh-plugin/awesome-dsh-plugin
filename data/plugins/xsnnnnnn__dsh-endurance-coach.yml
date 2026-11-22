@@ -1,0 +1,7 @@
+url: https://github.com/xsnnnnnn/dsh-endurance-coach
+name: xsnnnnnn/dsh-endurance-coach
+category: skill
+description:
+  en: 'Intervals.icu-only endurance-coaching skill bundle that turns Intervals.icu training data (activities, intervals, streams, training load CTL/ATL/TSB/rampRate, HRV, resting heart rate, sleep in-bed hours, eFTP, power curves) into concrete training decisions: readiness gating, VDOT pace and heart-rate zones, periodized weekly plans written back to the Intervals.icu calendar as events after confirmation, session reviews, race-day pacing and fueling, and weather-adjusted workouts. The bundle registers the endurance-coach skill in the profile, ships deterministic helper scripts, reads an athlete profile created by its init script, and requires the agent to state when data is unavailable instead of inventing it. It needs a separately installed Intervals.icu MCP server for training data and Python 3.10+ for its bundled scripts; with neither it works only from numbers you type in.'
+  zh: '只依赖 Intervals.icu 的耐力训练决策技能包：把 ICU 训练数据（活动、分圈、秒流、综合负荷 CTL/ATL/TSB/rampRate、HRV、静息心率、睡眠在床时长、eFTP、功率曲线）变成可执行决策——恢复闸门、VDOT 配速与心率区间、周期化周计划（确认后写成 ICU 日历事件）、单次复盘、赛前配速与补给、按天气修正训练。插件在 profile 里注册 endurance-coach 技能，内置确定性计算脚本，读取初始化脚本生成的运动员档案，并强制「取不到数据就如实说明、不得编造」。需要另行安装 Intervals.icu MCP server；内置脚本需 Python 3.10+；两者都没有时只能用手工输入的数字。'
+icon: https://raw.githubusercontent.com/xsnnnnnn/dsh-endurance-coach/main/assets/icon.png

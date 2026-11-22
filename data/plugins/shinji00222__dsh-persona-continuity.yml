@@ -1,0 +1,6 @@
+url: https://github.com/shinji00222/dsh-persona-continuity
+name: shinji00222/dsh-persona-continuity
+category: session
+description:
+  en: Per-persona cross-session memory for DSH with SQLite persistence, history lookup, and a survey simulation & calibration workbench.
+  zh: 为每个 DSH 人格提供独立的跨会话长期记忆（SQLite 持久化、旧对话检索与导入），内置问卷模拟与真人数据校准工作台。

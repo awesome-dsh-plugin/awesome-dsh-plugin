@@ -1,0 +1,6 @@
+url: https://github.com/CHNAQW/dsh-app-row-brand
+name: CHNAQW/dsh-app-row-brand
+category: ui
+description:
+  en: Custom text and image in the Windows desktop title bar, with multi-item rotation, per-item fonts, colors, alignment and shimmer, and a Settings page. Renders nothing outside the Windows desktop shell.
+  zh: 在 Windows 桌面端窗口标题栏显示自定义文字与图片，支持多条目轮播、每条独立字体/颜色/对齐/流光，并可在设置里编辑；非 Windows 桌面端不渲染。

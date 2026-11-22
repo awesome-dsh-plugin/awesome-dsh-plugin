@@ -1,0 +1,7 @@
+url: https://github.com/Xxihagalife/dsh-lock-screen
+name: Xxihagalife/dsh-lock-screen
+category: ui
+description:
+  en: A password lock screen for DeepSeek Harness so passers-by cannot see a running session while you step away.
+  zh: 给 DSH 加一道密码锁屏，离开工位时旁人就看不到正在跑的会话。
+icon: https://raw.githubusercontent.com/Xxihagalife/dsh-lock-screen/main/assets/icon-180.png

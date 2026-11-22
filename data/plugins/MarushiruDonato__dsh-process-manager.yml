@@ -1,0 +1,6 @@
+url: https://github.com/MarushiruDonato/dsh-process-manager
+name: MarushiruDonato/dsh-process-manager
+category: tools
+description:
+  en: 'Windows-only (Windows 10/11 with PowerShell/WMI) process manager for DeepSeek Harness: monitor child process trees, detect lingering orphan services, diagnose plugin/command attribution, and kill process trees to release file and port locks; DSH core processes are protected.'
+  zh: '仅支持 Windows 10/11（依赖 PowerShell/WMI）的 DeepSeek Harness 进程管理：监控子进程树与残留孤儿服务，诊断插件/命令归属，终止进程树以释放文件与端口占用；DSH 核心进程受保护。'

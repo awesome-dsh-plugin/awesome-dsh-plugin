@@ -1,0 +1,7 @@
+url: https://github.com/1020252969/dsh-dev-runner
+name: 1020252969/dsh-dev-runner
+category: dev
+description:
+  en: "Starts a whole dev stack from one place: it scans a directory for projects, matches each one's start command, starts them in dependency order once their ports answer, and shows their colourised logs in the sidebar."
+  zh: "一个地方管起整套开发环境：扫描目录发现项目并匹配各自的启动命令，按依赖顺序启动、以端口探测确认就绪，日志带彩色显示在侧栏。"
+icon: https://raw.githubusercontent.com/1020252969/dsh-dev-runner/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/IFFCheckPass/dsh-connect-modelscope
+name: IFFCheckPass/dsh-connect-modelscope
+category: model
+description:
+  en: 'ModelScope connector: OpenAI-compatible chat models, a Models-page provider entry, and a composer magicube balance while a ModelScope model is selected.'
+  zh: '魔搭社区连接器：接入 OpenAI 兼容对话模型，「模型」设置页出现 ModelScope 条目，选中魔搭模型时在对话栏显示魔粒余额。'
+icon: https://raw.githubusercontent.com/IFFCheckPass/dsh-connect-modelscope/main/assets/icon-512.png

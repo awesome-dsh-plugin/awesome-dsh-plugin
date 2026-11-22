@@ -1,0 +1,6 @@
+url: https://github.com/HCQM/dsh-session-merge
+name: HCQM/dsh-session-merge
+category: session
+description:
+  en: "Merges, appends, and repairs DSH session logs: eleven modes for copying events between sessions, computing compaction cut points, clearing a broken parent link, and validating the result against DSH's own loader."
+  zh: "合并、追加与修复 DSH 会话：十一个模式，覆盖会话之间复制事件、计算压缩切点、断开损坏的父子链，并按 DSH 加载器校验结果。"

@@ -1,0 +1,7 @@
+url: https://github.com/momoqiqi-qwq/dsh-session-top-new-plus
+name: momoqiqi-qwq/dsh-session-top-new-plus
+category: session
+description:
+  en: Session overview dock plus a sidebar activity bell for the DSH Web GUI — recent activity grouped by day in one panel, unread counted on the bell badge, reveal-in-sidebar jump, panel themes, do-not-disturb switches, and right-click bookmarks. A community edition of cuijiajun/dsh-session-top-new.
+  zh: DSH Web GUI 的会话总览：悬浮条 + 侧栏活动铃铛，最近活动按天分组、铃铛角标数着未读、跳转后侧栏自动定位、面板主题与免打扰开关、右键加书签。基于 cuijiajun/dsh-session-top-new 的社区中文增强版。
+icon: https://raw.githubusercontent.com/momoqiqi-qwq/dsh-session-top-new-plus/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/Dippppper/dsh-hero-motto
+name: Dippppper/dsh-hero-motto
+category: ui
+icon: https://raw.githubusercontent.com/Dippppper/dsh-hero-motto/main/icon.png
+description:
+  en: 'Custom main-screen headline: replaces the new-session headline with a rotating pool of custom text; plus an independently switchable composer border marquee with glow, band speed, brightness, width, breathing, per-view scope and a focus-only mode in Settings.'
+  zh: '主界面标语自定义：把新会话页的标语换成一组自定义文本按时轮换；另含可独立开关的输入框边框跑马灯，色带沿边缘流动、外圈带辉光，速度、亮度、宽度、呼吸、生效范围与仅聚焦可在设置中调节。'

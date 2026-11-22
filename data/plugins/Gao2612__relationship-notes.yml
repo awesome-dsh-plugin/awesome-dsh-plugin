@@ -1,0 +1,6 @@
+url: https://github.com/Gao2612/relationship-notes
+name: Gao2612/relationship-notes
+category: memory
+description:
+  zh: "私人关系手记：按消息级证据为每天的聊天打分，并跟踪一段关系的进展。聊天、档案与草稿只存在浏览器本机 IndexedDB，插件自身不运行服务器；但使用模型回复、资料整理或历史自动分析时，相应聊天上下文会交给 DSH 配置的模型服务。"
+  en: "Private relationship notebook: scores each day of chat from message-level evidence and tracks how the relationship develops over time. Chats, profiles and drafts stay in your browser's local IndexedDB and the plugin runs no server of its own, but using model replies, profiling or automatic analysis sends the relevant chat context to the model service configured in DSH."

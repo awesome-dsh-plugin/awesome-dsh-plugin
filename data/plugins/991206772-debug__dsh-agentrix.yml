@@ -1,0 +1,8 @@
+url: https://github.com/991206772-debug/dsh-agentrix
+name: 991206772-debug/dsh-agentrix
+category: workflow
+description:
+  en: 'DSH Agentrix delegates all tool work in strict mode, with coordinator management, configured workers, independent review and evidence-based acceptance. Version 1.8.4 retains auto/fixed/off policies, DSH 0.2.2-rc.1/rc.3 compatibility and tabbed progress. Verified on Windows with PowerShell 7 (pwsh) and Git; other systems are untested. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH Agentrix 在严格模式下一律委派工具任务，主控负责沟通、管理和验收，支持配置执行模型、独立审查与证据验收。1.8.4 保留 auto/fixed/off 规则、DSH 0.2.2-rc.1/rc.3 兼容和进度页签。仅在 Windows + PowerShell 7（pwsh）+ Git 环境验证，其他系统未验证。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/991206772-debug/dsh-agentrix/main/assets/icon.png
+tarball: https://github.com/991206772-debug/dsh-agentrix/releases/download/v1.8.4/dsh-agentrix.tgz

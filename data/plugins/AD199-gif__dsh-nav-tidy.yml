@@ -1,0 +1,8 @@
+url: https://github.com/AD199-gif/dsh-nav-tidy
+name: AD199-gif/dsh-nav-tidy
+category: ui
+description:
+  en: Hide chosen sidebar panel entries without disabling the plugins behind them.
+  zh: 隐藏选定的侧栏面板入口，但不卸载它们背后的插件。
+icon: https://raw.githubusercontent.com/AD199-gif/dsh-nav-tidy/main/assets/icon-180.png
+tarball: https://github.com/AD199-gif/dsh-nav-tidy/releases/latest/download/dsh-nav-tidy.tgz

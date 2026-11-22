@@ -1,0 +1,8 @@
+url: https://github.com/Dreamaniax/dsh-syn-config
+name: Dreamaniax/dsh-syn-config
+category: workflow
+tarball: https://github.com/Dreamaniax/dsh-syn-config/releases/latest/download/dsh-syn-config.tgz
+description:
+  en: 'Syncs DSH skills, profile settings and AGENTS.md with a private git repository: status chip, six-section health check, pull, secret redaction, and a snapshot-then-push flow. Dry-run by default, never rebases or force-pushes.'
+  zh: '把 DSH 技能、profile 设置与 AGENTS.md 与私有 git 仓库对齐：状态灯、六节体检、拉取、密钥脱敏、快照后推送。默认演练，永不 rebase 或强推。'
+icon: https://raw.githubusercontent.com/Dreamaniax/dsh-syn-config/main/assets/icon-180.png

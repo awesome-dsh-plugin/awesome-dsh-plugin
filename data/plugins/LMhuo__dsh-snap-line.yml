@@ -1,0 +1,7 @@
+url: https://github.com/LMhuo/dsh-snap-line
+name: LMhuo/dsh-snap-line
+category: ui
+description:
+  en: 'Hangs a clothesline of polaroid photos under the DeepSeek Harness message composer, on the session page and the new-session home screen; photos from a local folder refresh within seconds and clicking one opens a lightbox preview.'
+  zh: '在 DeepSeek Harness 消息输入框下方挂一条拍立得照片晾衣绳（会话页与新会话首页都会出现）；可换成自己文件夹里的照片，几秒内自动刷新，点击照片打开灯箱预览。'
+icon: https://raw.githubusercontent.com/LMhuo/dsh-snap-line/master/docs/icon.png

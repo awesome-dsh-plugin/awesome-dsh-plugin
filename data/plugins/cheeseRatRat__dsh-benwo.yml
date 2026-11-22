@@ -1,0 +1,6 @@
+url: https://github.com/cheeseRatRat/dsh-benwo
+name: cheeseRatRat/dsh-benwo
+category: memory
+description:
+  en: 'Local-first persona & memory for DSH: layered persona, eight memory types with decay, keyword recall, and a rolling short-term window. Your data never leaves your disk.'
+  zh: '本我回响之核 —— 给 DSH 的本地优先「人格与记忆」插件。数据永不离开你的磁盘。'

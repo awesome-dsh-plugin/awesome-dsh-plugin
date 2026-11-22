@@ -1,0 +1,6 @@
+url: https://github.com/zx310610/dsh-plugin-thesis-format/tree/main/packages/dsh-plugin
+name: zx310610/dsh-plugin-thesis-format#dsh-plugin
+category: docs
+description:
+  en: Checks thesis formatting in .docx and .doc files against a YAML spec, covering fonts, line spacing, margins, heading numbering, captions and references. Includes one built-in spec for Bengbu College of Technology and Business, and custom specs are supported.
+  zh: 按 YAML 规范检查 .docx 和 .doc 毕业论文的格式，包括字体、行距、页边距、标题编号、图表题注和参考文献。内置蚌埠工商学院的一份规范，也可使用自定义规范。

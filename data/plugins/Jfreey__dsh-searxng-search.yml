@@ -1,0 +1,7 @@
+url: https://github.com/Jfreey/dsh-searxng-search
+name: Jfreey/dsh-searxng-search
+category: tools
+description:
+  en: 'Self-hosted SearXNG search provider: the bundled installer sets up and supervises a local instance on macOS/Linux/WSL (needs git and Python 3.11+), key-less and tracking-free; it probes the engines your network can reach and applies the recommended set in one click.'
+  zh: '自建 SearXNG 搜索源：随包脚本在 macOS/Linux/WSL 上安装并守护本地实例（需 git 与 Python 3.11+），免 API Key、无追踪；实测本机各引擎的可达性与延迟后，一键应用推荐集。'
+icon: https://raw.githubusercontent.com/Jfreey/dsh-searxng-search/main/assets/icon-180.png

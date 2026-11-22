@@ -1,0 +1,6 @@
+url: https://github.com/moldkey/dsh-deepseekbase
+name: moldkey/dsh-deepseekbase
+category: market
+description:
+  en: 'Brings the third-party deepseekbase.com index into DSH: eight tools and five DSHIO standard skills (from the @liangjiehappy/dsh-dshio dependency). Search 8,400 plugins with real sandbox install verdicts and risk levels (including red-line warnings where credential access meets network), submit a plugin for a four-stage sandbox test from the conversation, read the verdict, check the remaining free quota, and run a clause-by-clause DSHIO/T 10 conformance check. The skill text is fetched from dshio.org at startup and replaces the bundled copy, so updates need no reinstall. Network: HTTPS to deepseekbase.com and dshio.org, plus an npm registry lookup before a test is submitted; no file reads or writes, no credential access, no shell.'
+  zh: '把第三方 deepseekbase.com 的数据接进 DSH，八个工具加五个 DSHIO 标准技能（来自依赖包 @liangjiehappy/dsh-dshio）。能搜 8,400 个插件并附沙箱安装判定与风险等级（含红线警告：读凭证＋网络＝可能泄露 API Key）、在对话里提交插件做四阶段沙箱测试、查判定、查剩余免费额度，以及按 DSHIO/T 10 标准逐条检查插件是否合规。技能正文在启动时从 dshio.org 拉取并替换内置副本，更新不需重装。网络请求只发往 deepseekbase.com 与 dshio.org（提交测试前另查一次 npm registry）；不读写文件、不读凭证、不执行 shell。'

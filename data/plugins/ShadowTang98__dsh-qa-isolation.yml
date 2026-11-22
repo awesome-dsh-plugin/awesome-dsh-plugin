@@ -1,0 +1,6 @@
+url: https://github.com/ShadowTang98/dsh-qa-isolation
+name: ShadowTang98/dsh-qa-isolation
+category: session
+description:
+  en: 'Adds a Q&A agent preset that answers each new question from a clean context: earlier exchanges leave the model input via a surface replacement, with no extra model call and no summary residue. A /qa follow command and a composer toggle switch to follow-up mode, and /clear archives the session and opens a fresh one under the same preset.'
+  zh: '问答预设：每个新问题都从干净上下文开始作答，旧问答经 surface 替换移出模型输入，零额外模型调用、无摘要残留。/qa follow 与 composer 开关可切到连续追问，/clear 归档当前会话并以同一预设开新会话。'

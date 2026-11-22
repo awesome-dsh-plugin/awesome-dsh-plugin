@@ -1,0 +1,6 @@
+url: https://github.com/NingYuanLee/dsh-minimax-byapi
+name: NingYuanLee/dsh-minimax-byapi
+category: model
+description:
+  en: 'Native MiniMax provider for DeepSeek Harness: chat over the official MiniMax API, plus image, video, speech, music and transcription tools.'
+  zh: '为 DeepSeek Harness 接入原生 MiniMax：通过官方 MiniMax API 对话，并提供生图、视频、语音、音乐与语音转写工具。'

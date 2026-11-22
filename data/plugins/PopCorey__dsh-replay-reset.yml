@@ -1,0 +1,6 @@
+url: https://github.com/PopCorey/dsh-replay-reset
+name: PopCorey/dsh-replay-reset
+category: session
+description:
+  en: 'Manually resets old AgentRouter Responses replay state for chats blocked by upstream resource-binding errors while preserving history; supports DSH 0.2.2-rc.1.'
+  zh: '手动重置 AgentRouter Responses 旧回放状态，处理旧会话续聊时的上游资源绑定报错，保留聊天历史；支持 DSH 0.2.2-rc.1。'

@@ -1,0 +1,8 @@
+# Copy this file into a fork of awesome-dsh-plugin at data/plugins/ and open a PR.
+url: https://github.com/CIBUDAYI3906/dsh-prompt-trove
+name: CIBUDAYI3906/dsh-prompt-trove
+category: ui
+description:
+  en: 'Composer prompt library: reusable global and per-project prompts are stored as Markdown files, appended to the draft on click or @ mention, and can live in git with the project. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '输入框常用提示词库：全局与项目两层 Markdown 文件，点一下或 @ 追加进草稿，不覆盖已写内容，项目库可随仓库进 git。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/CIBUDAYI3906/dsh-prompt-trove/main/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-protest-deadline
+name: PerryLink/dsh-protest-deadline
+category: tools
+description:
+  en: "Challenge and complaint deadline ledger check for DeepSeek Harness: check deadline ledgers against the Measures for Handling Challenges and Complaints in Government Procurement (Ministry of Finance Order No. 94). Flags discrepancies only and makes no conclusive judgment."
+  zh: "质疑与投诉期限台账核对：依据《政府采购质疑和投诉办法》（财政部令第94号）。仅提示差异，不作出定性结论。"

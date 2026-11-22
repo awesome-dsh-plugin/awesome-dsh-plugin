@@ -1,0 +1,8 @@
+url: https://github.com/xinjiguaike/dsh-session-location
+name: xinjiguaike/dsh-session-location
+category: ui
+description:
+  en: Adds the owning workspace and current Git branch under each session row in the flat session list.
+  zh: 在单列表的每个会话行标题下方显示所属工作区与当前 Git 分支。
+icon: https://raw.githubusercontent.com/xinjiguaike/dsh-session-location/main/assets/icon-180.png
+tarball: https://github.com/xinjiguaike/dsh-session-location/releases/latest/download/dsh-session-location.tgz

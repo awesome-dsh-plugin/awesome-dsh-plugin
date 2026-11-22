@@ -1,0 +1,7 @@
+url: https://github.com/hemu996/smart-ppt-designer/tree/main/smart-ppt-studio
+name: hemu996/smart-ppt-designer#国赛PPT设计台
+category: ui
+description:
+  en: 'Competition-grade PPT design console for DeepSeek Harness, paired with the smart-ppt-designer skill: 19 visual systems to retrieve by content, 29 hard red lines that failing designs must be rebuilt against, a 13-step workflow, 32 ready commands, 15 animation recipes and 95 templates, plus inline template thumbnails and local .pptx import that extracts a cover preview in the browser. Copies the assembled generation brief to the clipboard for the skill to execute.'
+  zh: '国赛/创赛级 PPT 设计台，配合 smart-ppt-designer 技能使用：19 套视觉系统按内容检索、29 条硬红线（违反即返工）、13 步工作流、32 条现成命令、15 条动效配方、95 份模板；模板内联缩略图预览，导入本地 .pptx 在浏览器内自动抽取封面；一键把组装好的生成指令复制到剪贴板，交给技能执行。'
+icon: https://raw.githubusercontent.com/hemu996/smart-ppt-designer/main/smart-ppt-studio/icon-180.png

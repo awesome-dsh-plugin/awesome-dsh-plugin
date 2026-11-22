@@ -1,0 +1,7 @@
+url: https://github.com/liren1120/dsh-export-center
+name: liren1120/dsh-export-center
+category: session
+description:
+  en: Batch-export DeepSeek Harness Sessions as restorable archives with attachments and subagents, and move a plugin inventory between machines.
+  zh: 把 DeepSeek Harness 会话批量导出为可还原归档（含附件与子会话），并在机器之间搬迁插件清单。
+icon: https://raw.githubusercontent.com/liren1120/dsh-export-center/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/805808786/dsh-plugin-model-news-radar
+name: 805808786/dsh-plugin-model-news-radar
+category: workflow
+description:
+  en: 'Scheduled model-news radar: collects official release announcements from LLM vendors through RSS, Hugging Face and GitHub organisation APIs and changelog pages (a 6-vendor sample list is bundled, a user-maintained list is read from ~/.dsh/model-news-radar/sources.json), deduplicates them into daily, weekly or monthly Markdown reports and opens a DSH session that writes the summary. Read-only, no logins, no third-party dependencies.'
+  zh: '模型资讯雷达：按厂商官方来源清单（RSS、Hugging Face 与 GitHub 组织接口、变更页；自带 6 家示例清单，完整清单读 ~/.dsh/model-news-radar/sources.json）定时采集大模型发布资讯，去重后写成日报 / 周报 / 月报，并起一个 DSH 会话写摘要。只读，不登录任何平台，无第三方依赖。'

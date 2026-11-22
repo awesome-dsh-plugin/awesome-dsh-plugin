@@ -1,0 +1,6 @@
+url: https://github.com/kechao-sgp/dsh-impeccable-skill
+name: kechao-sgp/dsh-impeccable-skill
+category: skill
+description:
+  en: 'DeepSeek Harness port of the Impeccable frontend-design skill: 24 design playbooks covering shaping, critique, audit, polish, layout, typography, motion, accessibility and design-system documentation, driven by the reference files shipped in the skill plus PRODUCT.md / DESIGN.md in the project instead of a downloaded engine binary. Registers the impeccable skill; reads project files and writes design artifacts under .impeccable/. The binary-only features (live browser bridge, pixel measurement, font matching) fall back to static variants, screenshots and explicitly declared manual estimates. Ported from pbakaus/impeccable (Apache-2.0).'
+  zh: '为 DeepSeek Harness 打造的 Impeccable 前端设计技能：24 个设计剧本覆盖界面塑造、评审、审查、打磨、布局、排版、动效、无障碍与设计系统文档，靠技能自带的参考文件加项目里的 PRODUCT.md / DESIGN.md 驱动，不下载任何引擎二进制。注册 impeccable 技能；读取项目文件并在 .impeccable/ 下产出设计产物。依赖二进制的环节（实浏览器桥、像素测量、字体匹配）降级为静态变体、截图与显式声明的人工估算。改编自 pbakaus/impeccable（Apache-2.0）。'

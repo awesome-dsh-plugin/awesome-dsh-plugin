@@ -1,0 +1,6 @@
+url: https://github.com/Elycheng/dsh-article-annotator
+name: Elycheng/dsh-article-annotator
+category: ui
+description:
+  en: 'Article Review page in DSH''s native right sidebar: turns Markdown, Word, PowerPoint and PDF articles into sentence-addressable text, lets you comment on any sentence, and hands the open review to the agent as a composer draft. Six agent tools let the model read every comment, revise the article (in place for Markdown, as a sibling <name>.revised.md for binary formats), resolve the comments, and record recurring wording preferences into a long-term writing-style memory injected into later prompts. Extraction includes a dependency-free DOCX/PPTX reader; PDF text extraction runs locally through the host''s Python + pypdf (or poppler''s pdftotext) and is unavailable without one of them. No network calls, no telemetry.'
+  zh: '在 DSH 原生右侧栏做逐句文稿批注：把 Markdown、Word、PowerPoint、PDF 变成可按句点选的文本，给任意一句写意见，并把待处理批注作为草稿交给 Agent。6 个 Agent 工具让模型读取每条意见、改稿（Markdown 直接改原文件，二进制格式写同名 .revised.md）、勾销批注，并把反复出现的表达偏好记入长期写作风格记忆、注入之后的提示。DOCX/PPTX 为零依赖解析；PDF 文本提取在本机走宿主 Python + pypdf（或 poppler 的 pdftotext），两者都没有时 PDF 不可用。不联网、无遥测。'

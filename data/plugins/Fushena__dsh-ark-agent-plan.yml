@@ -1,0 +1,6 @@
+url: https://github.com/Fushena/dsh-ark-agent-plan
+name: Fushena/dsh-ark-agent-plan
+category: model
+description:
+  en: 'Unofficial Volcengine Ark Agent Plan provider: registers an `ark-agent-plan` route with a model catalog fetched from the gateway, per-model thinking-effort control, server-side harness tools, and a quota badge with a panel showing remaining plan capacity.'
+  zh: 非官方火山方舟 Agent Plan 模型接入插件：注册 `ark-agent-plan` 路由，从网关拉取模型目录，提供按模型的思考强度控制与服务端 harness 工具，并以徽标和面板展示套餐剩余额度。

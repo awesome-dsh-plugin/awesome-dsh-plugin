@@ -1,0 +1,7 @@
+url: https://github.com/cenglin123/ocsr
+name: cenglin123/ocsr
+category: skill
+description:
+  en: 'Adds an `ocsr` skill and an `ocsr_dispatch` tool that run headless `opencode run` as fresh-context, cross-vendor worker backends, with a Python driver for watchdog timeouts and per-worker output files. Windows only (Windows PowerShell): requires the OpenCode CLI, Python 3 and a model allowlist at `~/.ocsr/allowed-models.json`.'
+  zh: '提供 `ocsr` 技能与 `ocsr_dispatch` 工具，把 headless `opencode run` 当作 fresh-context、跨厂商的 worker 后端；超时看门狗与每 worker 产物文件由 Python driver 负责。仅支持 Windows（需 Windows PowerShell）；需本机安装 OpenCode CLI、Python 3，并在 `~/.ocsr/allowed-models.json` 配置模型白名单。'
+icon: https://raw.githubusercontent.com/cenglin123/ocsr/main/assets/icon-180.png

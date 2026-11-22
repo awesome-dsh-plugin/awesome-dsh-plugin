@@ -1,0 +1,6 @@
+url: https://github.com/xingyeai23/dsh-comfyui-studio
+name: xingyeai23/dsh-comfyui-studio
+category: ui
+description:
+  en: 'ComfyUI studio in a DSH sidebar panel: connects to a local or LAN ComfyUI server, picks saved image workflows, cleans and rewrites prompts, edits LoRAs and nodes, generates images, and previews results with copyable seeds.'
+  zh: 'DSH 侧栏里的 ComfyUI 工作室：连接本机或局域网 ComfyUI，选择已保存的图片工作流，清理/改写提示词、编辑 LoRA 与节点、生成图片并预览结果，可复制种子。'

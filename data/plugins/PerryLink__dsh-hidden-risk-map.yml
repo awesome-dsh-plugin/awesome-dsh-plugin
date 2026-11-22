@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-hidden-risk-map
+name: PerryLink/dsh-hidden-risk-map
+category: tools
+description:
+  en: "Hazard and risk map check for DeepSeek Harness: check hazard/risk maps against the Criteria for Identifying Major Accident Hazards in Industrial and Trade Enterprises (Order No. 10 of the Ministry of Emergency Management). Flags discrepancies only and makes no legal conclusion."
+  zh: "隐患风险图谱核对：依据《工贸企业重大事故隐患判定标准》（应急管理部令第10号）。仅提示差异，不作出定性结论。"

@@ -1,0 +1,10 @@
+# Submitted at: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# File name: data/plugins/shegan1__dsh-session-search.yml
+
+url: https://github.com/shegan1/dsh-session-search
+name: shegan1/dsh-session-search
+category: tools
+description:
+  en: 'Command-palette search for the current DSH conversation: Ctrl+F or a header button opens an instant-hit panel with role filters and highlighted snippets, deep search pages back through older history in the background, and Enter jumps to the message with a keyword flash.'
+  zh: 'DSH 会话的命令面板式搜索：Ctrl+F 或标题栏按钮打开即时命中面板，支持角色过滤与高亮片段，深度搜索后台逐页加载更早历史，Enter 跳转到对应消息并闪烁关键词。'
+icon: https://raw.githubusercontent.com/shegan1/dsh-session-search/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/wth373737/dsh-plugin-chat-export
+name: wth373737/dsh-plugin-chat-export
+category: tools
+description:
+  en: 'Reads instant-message chats through an allowlist and turns them into local files and digests: Telegram fetched from the server, WhatsApp from official export files or WhatsApp Web. The agent can only file an approval request; a per-chat policy store gates every read, and the digest keeps quotes verified verbatim against the source apart from model-written summaries. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '按白名单读取即时消息并落成本地文件与摘要：Telegram 从服务器拉取，WhatsApp 走官方导出文件或 WhatsApp Web。批准只能由人做，Agent 只能登记请求；每个会话过策略库才放行，摘要把「原文照抄（逐句回查）」与「模型生成」分开写。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

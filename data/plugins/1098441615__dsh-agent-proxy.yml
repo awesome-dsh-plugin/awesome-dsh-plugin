@@ -1,0 +1,7 @@
+url: https://github.com/1098441615/dsh-agent-proxy
+name: 1098441615/dsh-agent-proxy
+category: git
+description:
+  en: 'One switch that routes the git, npm and pip commands DSH runs through a local HTTP proxy, restoring every previous setting when turned off.'
+  zh: '一个开关，让 DSH 运行的 git、npm、pip 命令走本机代理，关闭时逐项还原原有设置。'
+icon: https://raw.githubusercontent.com/1098441615/dsh-agent-proxy/main/assets/icon-180.png

@@ -1,0 +1,8 @@
+url: https://github.com/milestone-17/dsh-git-branch-switcher
+name: milestone-17/dsh-git-branch-switcher
+category: ui
+tarball: https://github.com/milestone-17/dsh-git-branch-switcher/releases/latest/download/dsh-git-branch-switcher.tgz
+description:
+  en: 'Keep your git workflow inside DeepSeek Harness. A composer chip shows the current branch at a glance; the TRAE-style popup lets you switch or create branches, fetch remotes, commit & push a subset of changes, merge with a clear source -> target flow, and stash / restore partial changes — all without leaving the chat. Popovers dock above the composer so your draft stays visible; the change list is prefetched when the menu opens; and the plugin confirms before touching a dirty tree.'
+  zh: '让 git 操作不离开 DSH 聊天窗口。输入框工具行的胶囊实时显示当前分支；TRAE 风格弹层一键切换/新建分支、同步远端、勾选改动提交推送、按来源 -> 目标流向合并分支、暂存与恢复部分改动。所有面板停靠在输入框上方，不遮挡草稿；菜单打开时预取改动列表；工作区不干净时先确认再操作。非 git 目录自动隐藏。'
+icon: https://raw.githubusercontent.com/milestone-17/dsh-git-branch-switcher/master/assets/icon-180.png

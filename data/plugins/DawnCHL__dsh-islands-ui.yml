@@ -1,0 +1,7 @@
+url: https://github.com/DawnCHL/dsh-islands-ui
+name: DawnCHL/dsh-islands-ui
+category: theme
+description:
+  en: 'Modern floating-island theme and skin for DeepSeek Harness with full dark mode: an editor-style workbench layout in the spirit of VSCode and Codex, with rounded panels, hairline gaps and a whole-UI visual enhancement pass. A persistent left rail (sidebar) offers drag reorder and hover labels, alongside a collapsible pinned-session shelf, a smooth caret and an adjustable accent color. Redraws the interface only — sessions, settings and plugin data stay untouched. It automatically detects the DSH version and window environment it runs in, and degrades gracefully instead of breaking — a compatibility check keeps it from loading on an unsupported DSH version, a changed layout switches it off with a notice, and the window chrome follows the platform (native title bar on Windows, native decorations on Linux). One toggle restores the stock look at any time.'
+  zh: 'Islands UI：现代感十足的浮岛式界面主题皮肤，借鉴 VSCode、Codex 这类编辑器与开发工具的工作台分区风格，用圆角岛屿、发丝线间隙与完整的深色模式 / 暗色模式做整屏界面美化与视觉增强；常驻左侧边栏可拖动排序、悬停显示名称，置顶会话聚合可折叠，另有平滑输入光标与可调强调色。它只重绘界面，不改会话、设置与插件数据，并会自动检测运行环境——版本兼容性不满足时不会加载，界面结构变了则自动停用并给出提示，把界面交还原生外观，优雅降级而不是留下一个坏掉的界面；窗口装饰按平台适配（Windows 用原生标题栏、Linux 跟随原生装饰），任何时候都能一键切回默认主题。'
+icon: https://raw.githubusercontent.com/DawnCHL/dsh-islands-ui/main/assets/icon-180.png

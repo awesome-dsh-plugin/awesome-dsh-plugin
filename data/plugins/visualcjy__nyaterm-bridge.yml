@@ -1,0 +1,14 @@
+# Submission entry for the curated list github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# Copy this file to data/plugins/visualcjy__nyaterm-bridge.yml in a fork of that repo.
+# Only description.en is required; zh is provided so maintainers do not have to write it.
+url: https://github.com/visualcjy/nyaterm-bridge
+name: visualcjy/nyaterm-bridge
+category: tools
+description:
+  en: Run AI commands in real NyaTerm terminal sessions — long tasks as pollable jobs, remote files over SFTP — reusing saved groups, jump hosts and local terminals, under a per-workspace allowlist, with every call visible and auditable in NyaTerm.
+  zh: 在 NyaTerm 的真实终端会话里执行 AI 命令：长任务可轮询、远端文件可 SFTP 读写，复用已配置的分组、跳板机和本地终端，并按工作区限制可用范围；每次调用都留在 NyaTerm 中，便于查看和审计。
+# GitHub-hosted raster image (png/jpg/jpeg/webp). SVG is rejected by the list.
+icon: https://raw.githubusercontent.com/visualcjy/nyaterm-bridge/main/assets/icon-180.png
+# Prebuilt release asset. The asset name stays version-free so the latest/download
+# URL keeps working after the next release.
+tarball: https://github.com/visualcjy/nyaterm-bridge/releases/latest/download/nyaterm-bridge.tgz

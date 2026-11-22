@@ -1,0 +1,6 @@
+url: https://github.com/liangzz1998/dsh-web-devtools
+name: liangzz1998/dsh-web-devtools
+category: browser
+description:
+  en: Exposes Chrome DevTools Protocol to the agent through 17 tools for page summaries, element locators, activity timelines, console, network, storage and downloads, reading either a browser the plugin launches on its own or the tab the user is currently browsing through a small browser extension.
+  zh: 通过 17 个工具把 Chrome DevTools Protocol 接给 agent，提供页面概览、元素定位、操作时间线、控制台、网络、登录态与下载，读取对象可以是插件自带的专用浏览器，也可以经浏览器扩展读取你当前正在浏览的标签页。

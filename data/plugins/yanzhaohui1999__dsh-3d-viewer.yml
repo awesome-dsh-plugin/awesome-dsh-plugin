@@ -1,0 +1,6 @@
+url: https://github.com/yanzhaohui1999/dsh-3d-viewer
+name: yanzhaohui1999/dsh-3d-viewer
+category: ui
+description:
+  en: 'Opens STEP/STP/STL/GLB/GLTF models in a sidebar 3D viewer: STEP is tessellated in the browser with OpenCASCADE WASM; the toolbar offers fit/front/top/side/iso orthographic views and a PNG screenshot; inputs are capped at 64 MiB and .gltf files that reference external buffers or textures are rejected.'
+  zh: '在侧栏直接打开 STEP/STP/STL/GLB/GLTF 模型：STEP 用浏览器内的 OpenCASCADE WASM 转网格；工具条提供适配/前/顶/侧/等轴正交视图与 PNG 截图；输入上限 64 MiB，引用外部 buffer 或贴图的 .gltf 会被拒绝。'

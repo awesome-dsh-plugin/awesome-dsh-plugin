@@ -1,0 +1,7 @@
+url: https://github.com/wqx1999/dsh-litman
+name: wqx1999/dsh-litman
+category: tools
+description:
+  en: 'Connects litman, a local literature manager driven by the `lit` command, to DSH: a sidebar entry lists your litman libraries and opens one as a workspace in a new session, and a bundled skill, after asking you, installs litman with its official installer and connects litman''s own skills.'
+  zh: '把 litman（用 `lit` 命令管理的本地文献库）接入 DSH：侧栏入口列出你的 litman 文献库，点一下就在新会话里把它作为工作区打开；自带的 skill 在征得你同意后，用官方安装命令装好 litman，并接入 litman 自己的 skill。'
+icon: https://raw.githubusercontent.com/wqx1999/dsh-litman/main/assets/icon.png

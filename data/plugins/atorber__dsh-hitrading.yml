@@ -1,0 +1,7 @@
+url: https://github.com/atorber/dsh-hitrading
+name: atorber/dsh-hitrading
+category: tools
+description:
+  en: 'A-share research assistant with 13 agent tools and a 15-tab console covering quotes, market turnover and breadth, strong stocks, limit-up ladders, watchlists with sectors and T-n returns, a paper portfolio with cash account and trade log, screening, backtesting, news, Weibo and alerts. Analysis only - never places real orders.'
+  zh: 'A股投资助手：13 个 Agent 工具 + 15 个 Tab 控制台——行情自选、量能与涨跌家数、强势股、涨停连板梯队、龙虎榜、快讯公告微博、带现金账户与成交流水的模拟仓、选股、回测与价格预警。纯分析不接券商、不下真实订单，结果仅供参考。'
+icon: https://raw.githubusercontent.com/atorber/dsh-hitrading/main/assets/icon-180.png

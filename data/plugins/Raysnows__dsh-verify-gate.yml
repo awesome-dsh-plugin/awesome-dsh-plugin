@@ -1,0 +1,7 @@
+url: https://github.com/Raysnows/dsh-verify-gate
+name: Raysnows/dsh-verify-gate
+category: dev
+icon: https://raw.githubusercontent.com/Raysnows/dsh-verify-gate/main/assets/icon-180.png
+description:
+  en: "Completion gate for CodeBuddy: when a turn changed code files but ran no test, type check or syntax check, one reminder reaches the model at its next step — run something, or call verify_exemption with a concrete reason. Warns without blocking, ignores docs-only edits, counts a failing check as verified, and keeps one conservative ledger because agent/pre-step carries no agent identity."
+  zh: "完成闸门：一个 turn 里改过代码文件、却一次测试/类型检查/语法检查都没跑时，它在模型下一步的上下文里塞一条提醒 —— 去跑一下，或者用具体理由申报豁免。只提醒不阻断，文档改动不算，测试跑挂了也算验证过；agent/pre-step 不带 agent 身份，所以如实使用单账本，不假装按 agent 隔离。"

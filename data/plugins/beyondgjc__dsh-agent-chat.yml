@@ -1,0 +1,6 @@
+url: https://github.com/beyondgjc/dsh-agent-chat
+name: beyondgjc/dsh-agent-chat
+category: workflow
+description:
+  en: 'Multi-agent group chat and structured discussion inside DSH: a sidebar panel reusing the local workbench UI, five zero-lifecycle agent tools, and an auto-started local engine (bundled or first-run download).'
+  zh: '把多 Agent 群聊与结构化讨论接入 DSH：侧栏板面整体复用本地工作台 UI，5 个零生命周期 agent 工具，本地引擎自动拉起（捆绑或首启下载）。'

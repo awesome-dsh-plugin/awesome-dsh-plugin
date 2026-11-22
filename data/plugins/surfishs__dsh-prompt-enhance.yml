@@ -1,0 +1,6 @@
+url: https://github.com/surfishs/dsh-prompt-enhance
+name: surfishs/dsh-prompt-enhance
+category: ui
+description:
+  en: 'Prompt enhancement in the composer: fills a draft out into a complete, ready-to-use prompt — goal, constraints, steps, output format and acceptance criteria — then lets you fill it back, copy, regenerate or undo. Intent is preserved, and missing details are marked as placeholders rather than invented.'
+  zh: '输入框提示词增强：把草稿补成一份完整、可直接交给模型的提示词——目标、约束、步骤、输出格式与验收标准都会补齐，改写后可回填、复制、重新生成或撤销。不改变原意，缺的细节用占位标出，不编造需求。'

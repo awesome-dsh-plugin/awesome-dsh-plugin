@@ -1,0 +1,6 @@
+url: https://github.com/kulebbb/dsh-git-tree
+name: kulebbb/dsh-git-tree
+category: git
+description:
+  en: Shows the current workspace's Git commit graph in the DSH desktop right sidebar.
+  zh: 在 DSH 桌面端右侧栏显示当前工作区的 Git 提交图。

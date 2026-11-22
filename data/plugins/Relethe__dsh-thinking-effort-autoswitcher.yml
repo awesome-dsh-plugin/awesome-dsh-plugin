@@ -1,0 +1,6 @@
+url: https://github.com/Relethe/dsh-thinking-effort-autoswitcher
+name: Relethe/dsh-thinking-effort-autoswitcher
+category: model
+description:
+  en: 'Replaces the composer model picker with a model + thinking-effort picker: arrow keys left/right cycle the effort level and arrow keys up/down switch model; an Auto level scores each turn by how far the conversation has drifted from the main objective and by repeated failures (one extra small judge call per turn), picks the effort from that score, and labels every finished turn with the effort it sent.'
+  zh: '用「模型 + 思考强度」选择器替换输入框的模型选择器：← → 切换思考档位，↑ ↓ 切换模型；Auto 档依照对话偏离主要目的的程度和重复失败次数给每轮打分（每轮多一次小模型判分调用），据此选择思考强度，并在每轮结束后标出该轮发送的档位。'

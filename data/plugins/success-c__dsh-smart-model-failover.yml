@@ -1,0 +1,6 @@
+url: https://github.com/success-c/dsh-smart-model-failover
+name: success-c/dsh-smart-model-failover
+category: model
+description:
+  en: 'Discovers the models of every configured and externally connected provider at runtime, switches to the next one when a request fails, and asks the agent to continue the interrupted work. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '运行时发现所有已配置及外部接入厂商的可用模型，请求失败时自动切到下一个，并让 agent 继续被中断的工作。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,7 @@
+url: https://github.com/Lumos-789/make-it-a-bit-better
+name: Lumos-789/make-it-a-bit-better
+category: skill
+icon: https://raw.githubusercontent.com/Lumos-789/make-it-a-bit-better/main/assets/make-it-a-bit-better/icon.png
+description:
+  en: 'Autonomous product-polish loop skill: every round opens a fresh brainstorm from 3 forced perspectives, picks one small angle capped at ≤3 files and ≈100 lines, implements it, verifies with the repo''s own tests, build or lint, and commits it as a single round commit; the round is logged to a per-project ledger, and ideas too big for one round go to an icebox. A red check ships nothing — the round commit is reverted immediately so the failed diff stays in history. Non-git targets are rejected before any work starts. Pure skill bundle: no MCP server, no runtime dependencies. Requires DSH 0.2.1-rc.2 or newer, below 0.3.0.'
+  zh: '自主产品打磨循环技能：每轮强制开一轮全新三视角头脑风暴，选一个 ≤3 文件 / ≈100 行的小角度实现，用仓库自身的测试、构建或 lint 验证后以单个 commit 提交；轮次记入项目内 ledger，一轮装不下的好想法进 icebox。检查红灯不发版——先提交再立即 revert，失败 diff 留在历史。非 git 目标开工前即拒绝。纯技能包：无 MCP 服务、无运行时依赖。要求 DSH 0.2.1-rc.2 或更新、低于 0.3.0。'

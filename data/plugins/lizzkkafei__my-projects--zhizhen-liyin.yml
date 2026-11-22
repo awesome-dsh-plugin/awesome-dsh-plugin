@@ -1,0 +1,7 @@
+url: https://github.com/lizzkkafei/my-projects/tree/main/zhizhen-liyin
+name: lizzkkafei/my-projects#zhizhen-liyin
+category: tools
+description:
+  en: 'A music production workbench opened from a DSH session: multitrack MIDI and audio arrangement, piano roll, 16-step drum sequencer, grand staff score with chord symbols, stereo recording with weighted multi-take mixing, a mixer with volume/pan/reverb/delay automation curves, and master, stem, vocal or backing export normalized to -14, -16 or -9 LUFS. Instruments are synthesized with Web Audio; the bundled 68-bar example project plays on open.'
+  zh: '从 DSH 会话进入的音乐创作工作台：多轨 MIDI 与音频编排、钢琴卷帘、16 步鼓机、带和弦符号的大谱表五线谱、立体声录音与加权多 take 合成、含音量/声像/混响/延迟自动化曲线的混音台，以及归一化到 -14 / -16 / -9 LUFS 的母带、分轨、干声或伴奏导出。音色由 Web Audio 合成；自带 68 小节示例工程，打开即可播放。'
+icon: https://raw.githubusercontent.com/lizzkkafei/my-projects/main/zhizhen-liyin/docs/icon-180.png

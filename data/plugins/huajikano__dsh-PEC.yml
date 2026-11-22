@@ -1,0 +1,8 @@
+url: https://github.com/huajikano/dsh-PEC
+name: huajikano/dsh-PEC
+category: remote
+description:
+  en: 'Control a DeepSeek Harness session from an Android phone: pair over Wi-Fi or Tailscale, follow the live transcript, send prompts, switch model, mode and permission, browse workspace files, run a terminal and change settings.'
+  zh: '用安卓手机操控电脑上的 DeepSeek Harness：经 Wi-Fi 或 Tailscale 配对，实时跟随对话、发送指令、切换模型／模式／权限，浏览工作区文件、运行终端、修改设置。'
+icon: https://raw.githubusercontent.com/huajikano/dsh-PEC/main/assets/icon-180.png
+tarball: https://github.com/huajikano/dsh-PEC/releases/latest/download/cc-dsh.tgz

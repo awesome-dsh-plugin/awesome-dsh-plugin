@@ -1,0 +1,7 @@
+url: https://github.com/1924225725-collab/dsh-DKN-Workbench
+name: 1924225725-collab/dsh-DKN-Workbench
+category: workflow
+description:
+  en: 'Integrates OrcaTerm text models, TRAE CN personal desktop models, CodeBuddy, Codex CLI, Qoder ACP, ZCode and an optional Antigravity ACP route, with native Codex projects, unified API export, opt-in background/check-in, quotas, project collaboration and selectable minimal and illustrated UI.'
+  zh: '接入 OrcaTerm 文字模型、TRAE CN 国内个人版、CodeBuddy、Codex CLI、Qoder ACP、ZCode 及可选 Antigravity ACP，提供原生 Codex 项目、统一 API、可选后台常驻与自动签到、额度、项目协作及可切换的简洁与插画界面。'
+tarball: https://github.com/1924225725-collab/dsh-DKN-Workbench/releases/download/v2.3.9/dsh-dkn-agent-2.3.9.tgz

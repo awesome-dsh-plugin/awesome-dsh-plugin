@@ -1,0 +1,7 @@
+url: https://github.com/wangxiaocuo/dsh-composer-prefill
+name: wangxiaocuo/dsh-composer-prefill
+category: ui
+description:
+  en: 'Predicts the next message you would send once an assistant turn finishes and shows it as a one-line suggestion above the composer; Tab or a click fills the draft without sending. The prediction follows the session model unless a provider and model are pinned, and the Settings page has an on/off switch.'
+  zh: '助手回复结束后预测你下一句会发的消息，以一行建议显示在输入框上方；按 Tab 或点击填入草稿，不会自动发送。预测默认跟随当前会话的模型，也可以在配置里另选模型服务商与模型；设置页有总开关。'
+icon: https://raw.githubusercontent.com/wangxiaocuo/dsh-composer-prefill/main/assets/icon-512.png

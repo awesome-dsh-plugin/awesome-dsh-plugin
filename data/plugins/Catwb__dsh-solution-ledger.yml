@@ -1,0 +1,7 @@
+url: https://github.com/Catwb/dsh-solution-ledger
+name: Catwb/dsh-solution-ledger
+category: memory
+icon: https://raw.githubusercontent.com/Catwb/dsh-solution-ledger/main/assets/icon-180.png
+description:
+  en: 'Keeps a global ledger of troubleshooting fixes and design decisions, and surfaces a matching confirmed entry when a tool call fails. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把踩过的坑和做过的取舍记进全局账本，工具调用失败时自动带出已确认的相关条目。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

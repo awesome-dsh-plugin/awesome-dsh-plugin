@@ -1,0 +1,7 @@
+url: https://github.com/tedcriss/dsh-matlab
+name: tedcriss/dsh-matlab
+category: tools
+tarball: https://github.com/tedcriss/dsh-matlab/releases/latest/download/dsh-plugin-matlab.tgz
+description:
+  en: 'Connector for MathWorks'' official MATLAB Agentic Toolkit skills and the MATLAB MCP Server. Requires a local MATLAB R2021a or later. Skill groups can be enabled individually on the settings page. The toolkit is provided by MathWorks'' official repository https://github.com/matlab/matlab-agentic-toolkit; the trigger rate for MATLAB-related operations is over 90%, and it calls the native MCP server, so your AI works in a fully standardized way. Its HTTP routes have no DSH access check, so a web page open in your browser could call them. By default (autoProvision) it downloads the MathWorks MCP Server binary and the newest Agentic Toolkit release on first use; MathWorks telemetry is disabled by default.'
+  zh: 'MathWorks 官方 MATLAB Agentic Toolkit 技能包 + MATLAB MCP Server 连接器。要求本机版本为 MATLAB R2021a 及以上。支持在设置页自定义开启技能组。该技能包由 MathWorks 官方仓库 https://github.com/matlab/matlab-agentic-toolkit 提供，MATLAB 相关操作触发率达到 90% 以上，可以调用原生 MCP 服务器，让你的 AI 完全规范化工作。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。默认（autoProvision）会在首次使用时下载 MathWorks MCP Server 二进制和最新的 Agentic Toolkit；MathWorks 遥测默认关闭。'

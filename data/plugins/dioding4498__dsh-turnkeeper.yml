@@ -1,0 +1,6 @@
+url: https://github.com/dioding4498/dsh-turnkeeper
+name: dioding4498/dsh-turnkeeper
+category: usage
+description:
+  en: Per-turn cost meter and tool-loop guard for the DSH web GUI. It records model, tool and idle time for every turn, blocks runaway tool calls with a dynamic step gate, a retry breaker and a slow-command block, and renders the breakdown as a card under each reply plus a ledger view.
+  zh: DSH 网页版的每轮成本计与工具循环护栏。记录每轮模型、工具与空转耗时，用动态步数闸门、重试熔断和慢命令拦截限制失控的工具调用，并把拆分显示为每条回复下的卡片与账本视图。

@@ -1,0 +1,7 @@
+url: https://github.com/0-0-user/dsh-plan-note
+name: 0-0-user/dsh-plan-note
+category: workflow
+description:
+  en: 'Inline annotations for DSH plan review: select plan text, comment on any passage, and send one structured review back to the agent.'
+  zh: '给 DSH 计划评审加选区批注：选中计划原文、逐条写意见，一次性把结构化反馈发回给 agent。'
+icon: https://raw.githubusercontent.com/0-0-user/dsh-plan-note/main/docs/mark.png

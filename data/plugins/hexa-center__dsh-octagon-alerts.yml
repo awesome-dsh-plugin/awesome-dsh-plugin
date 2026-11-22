@@ -1,0 +1,7 @@
+url: https://github.com/hexa-center/dsh-octagon-alerts
+name: hexa-center/dsh-octagon-alerts
+category: notify
+description:
+  en: 'Plays a synthesized chime when a Session needs a choice, needs approval, or finishes while you are away, with a pickable chime and a volume slider for each moment.'
+  zh: '会话需要你选择、需要你授权，或你不在看时任务完成，就播放合成提示音；三种时机可各选一种音效并调整音量。'
+tarball: https://github.com/hexa-center/dsh-octagon-alerts/releases/latest/download/dsh-octagon-alerts.tgz

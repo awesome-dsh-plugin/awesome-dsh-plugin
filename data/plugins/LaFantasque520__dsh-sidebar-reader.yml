@@ -1,0 +1,6 @@
+url: https://github.com/LaFantasque520/dsh-sidebar-reader
+name: LaFantasque520/dsh-sidebar-reader
+category: tools
+description:
+  en: 'Let the model read the current session''s sidebar: the active tab, open tabs, terminal screens and browser page text (page text is desktop only; the terminal channel needs DSH >= 0.2.1-rc.2).'
+  zh: '让模型按需读取当前会话的侧边栏：当前选中标签、打开的标签、终端屏幕与浏览器网页正文（网页正文仅桌面端；终端通道需 DSH >= 0.2.1-rc.2）。'

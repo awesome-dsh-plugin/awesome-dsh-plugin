@@ -1,0 +1,6 @@
+url: https://github.com/hanhan9999999999999999999/dsh-macro-memory
+name: hanhan9999999999999999999/dsh-macro-memory
+category: memory
+description:
+  en: "Eight memory_* tools and one 1235-character prompt block over meow-memory's seven-layer SQLite: 0.977 hit@1 on a 146-entry corpus with 106 distractors, 3.3 ms per query at 1,200 entries, 8 tool schemas in 4,714 B of raw parameters."
+  zh: "8 个 memory_* 工具 + 一段 1235 字符常驻注入，主库是 meow 的七层 SQLite：146 条宽池（含 106 条干扰）照抄 hit@1 0.977、1200 条库单次检索 3.3ms、8 个工具参数共 4714 B。"

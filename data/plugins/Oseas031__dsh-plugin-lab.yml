@@ -1,0 +1,6 @@
+url: https://github.com/Oseas031/dsh-plugin-lab
+name: Oseas031/dsh-plugin-lab
+category: dev
+description:
+  en: 'Zero-restart acceptance lab for DSH plugins: boots a real cordis Loader and ToolsService in a subprocess, drives the mounted plugin through scenario scripts, and reports PASS/FAIL per check with an overall verdict.'
+  zh: 'DSH 插件的零重启验收实验室：在子进程里启动真实 cordis Loader 与 ToolsService，用场景脚本驱动挂载的插件，逐项给出 PASS/FAIL 与总体判定。'

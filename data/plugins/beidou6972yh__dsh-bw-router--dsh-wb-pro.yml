@@ -1,0 +1,8 @@
+url: https://github.com/beidou6972yh/dsh-bw-router/tree/main/dsh-wb-pro
+name: beidou6972yh/dsh-bw-router#dsh-wb-pro
+category: model
+icon: https://raw.githubusercontent.com/beidou6972yh/dsh-bw-router/main/docs-open/WB-Router-Icon.png
+tarball: https://github.com/beidou6972yh/dsh-bw-router/releases/download/v1.0.3.3/dsh-wb-pro-0.2.1.tgz
+description:
+  en: 'DSH Pro plugin that plans a task into stages and switches models between stages using DSH native planning, without requiring the WB router gateway. Costs are recorded per stage; unpriced models are marked unavailable rather than guessed.'
+  zh: 'WB 路由的 DSH Pro 插件：用 DSH 原生规划把任务拆段并按段切换模型，不依赖网关；按段记账，未配价模型明示不可用、不猜数。'

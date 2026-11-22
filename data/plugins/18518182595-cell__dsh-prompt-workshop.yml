@@ -1,0 +1,6 @@
+url: https://github.com/18518182595-cell/dsh-prompt-workshop
+name: 18518182595-cell/dsh-prompt-workshop
+category: tools
+description:
+  en: Turn rough ideas into precise prompts for 19 image/video generation, writing, code and text models, with multi-model enhancement, prompt scoring, image-to-prompt and a periodic self-updating knowledge base.
+  zh: 把粗糙想法变成精准提示词：内置 19 个目标模型规范（含豆包 Seedream/Seedance 等）、多模型增强、提示词评分诊断、图片反推，并周期联网自更新本地知识库。

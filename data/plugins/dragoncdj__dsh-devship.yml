@@ -1,0 +1,6 @@
+url: https://github.com/dragoncdj/dsh-devship
+name: dragoncdj/dsh-devship
+category: dev
+description:
+  en: 'Right-sidebar console for the current workspace: detects Maven modules with a Spring Boot main class and Vite frontends, starts and stops them (batch; the "survive DSH exit" detached mode is on by default and Windows only), packages with Maven or pnpm, uploads artifacts over SSH/SFTP to named deploy environments with progress and per-environment remote dirs, restarts the docker container and checks its status; protected environments require a second click. Needs Maven, a JDK and pnpm on the machine; SSH passwords are stored in plain text in deploy.json.'
+  zh: '右栏控制台：识别工作区里带 Spring Boot 启动类的 Maven 模块与 Vite 前端，一键启动 / 停止（支持批量；「关 DSH 不停止」脱离模式默认开启，仅 Windows 可用）、Maven 或 pnpm 打包、经 SSH/SFTP 上传到可命名的多个发布环境（带进度条、每台独立远端目录）、重启对应 docker 容器并校验状态；受保护环境需二次确认。需本机装有 Maven、JDK 与 pnpm；SSH 密码以明文保存在 deploy.json。'

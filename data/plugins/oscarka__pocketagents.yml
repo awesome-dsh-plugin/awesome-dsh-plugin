@@ -1,0 +1,8 @@
+url: https://github.com/oscarka/pocketagents
+name: oscarka/pocketagents
+category: remote
+icon: https://raw.githubusercontent.com/oscarka/pocketagents/main/hub/public/icon-192.png
+tarball: https://github.com/oscarka/pocketagents/releases/download/v0.9.1/pocketagents-0.9.1.tgz
+description:
+  en: 'PocketAgents (formerly deepseekharness-remotecontrol): self-hosted mobile Web PWA and Feishu remote control hub for DeepSeek Harness plus local adapters for Antigravity IDE, Codex, Claude Code, WorkBuddy and Doubao, with swipe-triage approvals, multiple-choice popup replies, hold-to-talk voice steering, TTS reply playback, HLS/WebRTC media preview, multi-host pinning, Web Push notifications, and 5-second terminal QR pairing.'
+  zh: 'PocketAgents（原 deepseekharness-remotecontrol）：DeepSeek Harness 的开源自托管手机端 Web PWA 与飞书远程总控台（同时支持本机 Antigravity IDE、Codex、Claude Code、WorkBuddy 与豆包），支持滑卡批阅审批、多选弹窗交互回复、微信式按住说话插话、回复语音播报、HLS/WebRTC 文件视频流预览、多主机置顶同步、锁屏 Web Push 推送与 5 秒终端二维码免密配对。'

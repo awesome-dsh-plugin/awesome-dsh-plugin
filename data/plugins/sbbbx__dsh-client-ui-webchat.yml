@@ -1,0 +1,6 @@
+url: https://github.com/sbbbx/dsh-client-ui-webchat
+name: sbbbx/dsh-client-ui-webchat
+category: ui
+description:
+  en: 'Embeds chat.deepseek.com in a DSH desktop panel and moves text both ways round by round: pick any round of the web conversation and copy it, or send it as a user message into a session of a chosen workspace; and fill any answer of the current agent session back into the web input box without sending it. The embed reuses the web session, so it spends no API quota, and asks for a web login once per app start.'
+  zh: '把 chat.deepseek.com 嵌进 DSH 桌面端面板，并在两个方向上按「轮」搬运：可选网页对话里的任意一轮，复制它，或把它作为一条用户消息发进指定工作区的指定会话；也可把当前 agent 会话里任意一轮回答填回网页输入框而不自动发送。内嵌页面复用网页会话，不消耗 API 额度，每次启动应用需登录一次网页。'

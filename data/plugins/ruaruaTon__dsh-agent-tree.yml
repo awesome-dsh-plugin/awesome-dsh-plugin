@@ -1,0 +1,6 @@
+url: https://github.com/ruaruaTon/dsh-agent-tree
+name: ruaruaTon/dsh-agent-tree
+category: workflow
+description:
+      en: 'Agent lineage tree panel for DeepSeek Harness: renders the Lead-to-member-to-grandchild agent hierarchy as a live org-chart tree, with team focus, real-time status dots, and a model routing center (hot-reload default model config and actual per-session routes). The model routing center needs the optional dsh-plugin-subagent-director plugin; the rest of the panel works without it.'
+      zh: '代际树面板：把 Lead→成员→孙代理 的多层代理关系画成实时组织树，含团队焦点、真状态点、模型路由中心。模型路由中心需另装可选的 dsh-plugin-subagent-director 插件，其余功能不装也能用。'

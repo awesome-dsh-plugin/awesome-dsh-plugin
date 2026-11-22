@@ -1,0 +1,6 @@
+url: https://github.com/ru-data-analysis/ru-corpus/tree/main/packages/dsh-ru-corpus
+name: ru-data-analysis/ru-corpus#dsh-ru-corpus
+category: docs
+description:
+  en: 'Search and number checking over a local Russian-language document corpus (PDF, scans via OCR, Excel, Word, wide landscape PDF tables): seven corpus_* tools for search, page text, table cells, document card, number check, column totals and exact calculation; needs the ru-corpus-kit Python package.'
+  zh: '本地俄语文档语料库（PDF、OCR 扫描件、Excel、Word、横向宽表格）的检索与数字核验：七个 corpus_* 工具，用于检索、页面文本、表格单元格、文档卡片、数字核验、列合计与精确计算；需要 Python 包 ru-corpus-kit。'

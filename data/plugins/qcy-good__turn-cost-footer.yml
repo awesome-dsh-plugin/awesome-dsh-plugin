@@ -1,0 +1,6 @@
+url: https://github.com/qcy-good/turn-cost-footer
+name: qcy-good/turn-cost-footer
+category: usage
+description:
+  en: "Adds the real CNY cost of each assistant turn, plus today's running total, after the timestamp in DeepSeek Harness's completed-turn footer. Amounts are folded from the session log's usage with a local price table - no billing API, no network call, no extra tokens."
+  zh: "在 DeepSeek Harness 每条助手回复的页脚、时间之后显示本轮真实花费与今日累计：按会话日志里的用量和本地价目表折算，不调计费接口、不联网、也不额外消耗 token。"

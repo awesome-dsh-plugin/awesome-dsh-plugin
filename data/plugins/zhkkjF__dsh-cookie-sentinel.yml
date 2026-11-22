@@ -1,0 +1,7 @@
+url: https://github.com/zhkkjF/dsh-cookie-sentinel
+name: zhkkjF/dsh-cookie-sentinel
+category: security
+description:
+  en: "Raises the local Host's HTTP header budget to 128 KiB and prunes stale dsh-auth cookies only on the launch-token response that mints the replacement, so an already-locked-out desktop profile recovers and later random-port launches stay at one cookie."
+  zh: "把本地 Host 的 HTTP 请求头上限提高到 128 KiB，并且只在真正签发新 dsh-auth cookie 的令牌交换响应里清理旧 Cookie；已经卡在 431 的桌面 profile 能恢复，之后随机端口启动只保留一条。"
+icon: https://raw.githubusercontent.com/zhkkjF/dsh-cookie-sentinel/main/assets/icon-180.png
