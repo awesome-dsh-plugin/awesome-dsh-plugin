@@ -1,0 +1,5 @@
+url: https://github.com/PerryLink/dsh-notebook-capture
+name: PerryLink/dsh-notebook-capture
+category: tools
+description:
+  en: "Notebook reproducibility capture for DeepSeek Harness: reads .ipynb JSON without executing it, reports kernel/language, code vs markdown cells, execution order (out-of-order and never-run cells), imports, runtime installs, seeds, absolute paths and output state; hashes the notebook and environment declarations; writes REP evidence and a record; renders a Markdown capture card and SARIF."
