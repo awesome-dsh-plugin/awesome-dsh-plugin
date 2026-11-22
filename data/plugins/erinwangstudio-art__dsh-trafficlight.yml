@@ -1,0 +1,7 @@
+url: https://github.com/erinwangstudio-art/dsh-trafficlight
+name: erinwangstudio-art/dsh-trafficlight
+category: ui
+description:
+  en: 'Tracks subscribed DSH sessions with red, yellow, and green status lights in a macOS floating overlay or docked sidebar, with clickable rows that open the matching conversation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为订阅的 DSH 会话显示红黄绿状态灯，支持 macOS 悬浮窗和侧栏，点击会话行可打开对应对话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/erinwangstudio-art/dsh-trafficlight/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/SUZUNAMI/plot3d-surface
+name: SUZUNAMI/plot3d-surface
+category: tools
+description:
+  en: Interactive 3D surface plotting tool card for the DSH chat, with drag-rotate, wheel-zoom and live-editable expression, range and mesh.
+  zh: DSH 聊天里的交互式 3D 曲面工具卡片，支持拖拽旋转、滚轮缩放与表达式、范围、网格的实时编辑。

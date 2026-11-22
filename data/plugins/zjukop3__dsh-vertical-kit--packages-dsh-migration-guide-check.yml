@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-migration-guide-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-migration-guide-check'
+category: 'docs'
+description:
+  en: 'Migration-guide hygiene: the version span the guide covers (or a migration target in the title, as in "Migrating to v5"), breaking changes as an enumerable list — a section, a labelled list, or at least three sections that read as changes, and numbered steps. Guides that do have numbered steps are additionally asked how to verify the upgrade, how to roll back, and whether to back up first; guides that only enumerate changes are not, because there is nothing to roll back. A bare version with no migration word is neither a span nor a target, a prose mention of incompatibility is not a list, and bullet lists are not steps — order is what makes a migration finishable. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '迁移指南的检查：覆盖哪一段版本跨度（或标题里写明迁移目标，如「Migrating to v5」）、破坏性变更是不是可逐条对照的清单（一节、带标签的清单，或至少三节讲变更的小节）、编号步骤。有编号步骤的流程型指南还会被问怎么验证、怎么回滚、动手前要不要备份；只列变更的指南不问这些——没有可回滚的对象。只有版本号没有迁移字样既不算跨度也不算目标，散文里提一句"不兼容"不算清单，项目符号不算步骤——迁移能做完靠的是顺序。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

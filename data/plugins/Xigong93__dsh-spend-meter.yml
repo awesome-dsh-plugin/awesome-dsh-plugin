@@ -1,0 +1,7 @@
+url: https://github.com/Xigong93/dsh-spend-meter
+name: Xigong93/dsh-spend-meter
+category: usage
+description:
+  en: "Sidebar card and details dialog for DeepSeek spend: account balance, today's tokens and estimated cost, peak and off-peak pricing, a per-session breakdown, and an optional daily budget that pauses DeepSeek model steps once reached."
+  zh: "侧栏常驻显示 DeepSeek 余额、今日 token 与估算花费、峰谷时段，点开可按会话看消耗；可设每日预算，到顶后暂停 DeepSeek 模型调用。"
+icon: https://raw.githubusercontent.com/Xigong93/dsh-spend-meter/main/docs/icon-180.png

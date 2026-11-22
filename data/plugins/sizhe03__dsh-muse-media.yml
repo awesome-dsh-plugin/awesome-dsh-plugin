@@ -1,0 +1,7 @@
+url: https://github.com/sizhe03/dsh-muse-media
+name: sizhe03/dsh-muse-media
+category: tools
+description:
+  en: 'Generates images and video from chat using your own Muse account''s free weekly allowance, with no API key: it drives the Chrome you are already signed in to, and shows the remaining quota beside the composer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在对话里用你自己 Muse 账号的每周免费额度生成图片和视频，不需要 API key：驱动你已登录的 Chrome，并在输入框旁显示剩余额度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/sizhe03/dsh-muse-media/main/assets/icon-180.png

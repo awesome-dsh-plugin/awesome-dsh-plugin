@@ -1,0 +1,7 @@
+url: https://github.com/happyde2b/dsh-win-notify
+name: happyde2b/dsh-win-notify
+category: notify
+description:
+  en: Windows toast notifications for DeepSeek Harness when a turn completes or errors, the model asks a question, or a tool approval is waiting. Unanswered approvals are re-notified every 5 minutes until handled, and clicking a toast focuses the desktop window, starting it if it is not running.
+  zh: 回合完成或出错、模型提问、工具审批待处理时弹出 Windows 通知。未处理的审批每 5 分钟重复提醒，点击通知聚焦桌面端窗口（未运行时自动启动）。
+tarball: https://github.com/happyde2b/dsh-win-notify/releases/latest/download/dsh-win-notify.tgz

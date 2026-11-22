@@ -1,0 +1,7 @@
+url: https://github.com/DeepLifeStudio/dsh-lark-studio
+name: DeepLifeStudio/dsh-lark-studio
+category: tools
+icon: https://raw.githubusercontent.com/DeepLifeStudio/dsh-lark-studio/main/assets/icon-256.png
+description:
+  en: 'A Feishu/Lark workbench for DeepSeek Harness: build a Base from one sentence and operate calendar, tasks, chat, mail, and contacts from the sidebar. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '飞书智能工作台：一句话生成多维表格，并在侧栏处理日程、待办、群聊、邮件与通讯录。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

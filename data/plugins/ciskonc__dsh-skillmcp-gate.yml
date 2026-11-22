@@ -1,0 +1,6 @@
+url: https://github.com/ciskonc/dsh-skillmcp-gate
+name: ciskonc/dsh-skillmcp-gate
+category: tools
+description:
+  en: Per-session and global exposure gate for skills and MCP tools — checkbox toggles in a sidebar panel and a settings page; denied items are removed from the model's tool/skill catalog on the next message, with batch apply, draft diff preview and per-session persistence. Needs DSH 0.2.0+.
+  zh: 按会话与全局管控 skill 与 MCP 工具的暴露集——在侧栏面板与设置页勾选，停用项在下一条消息从模型目录移除；支持批量应用、草稿差异预览与会话级持久化。需 DSH 0.2.0+。

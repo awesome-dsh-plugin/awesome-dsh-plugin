@@ -2,5 +2,6 @@ url: https://github.com/Ruiming-cn/dsh-better-at
 name: Ruiming-cn/dsh-better-at
 category: ui
 description:
-  en: 'Fast `@` file/session reference caching for the DSH Web GUI: preloaded indexes, browser-local keystroke filtering and native mention serialization.'
-  zh: DSH Web 输入框 `@` 文件/会话引用加速：预加载索引、浏览器本地按键过滤、保留原生 mention 序列化。
+  en: 'Custom `@` search scope for the DSH Web composer: keeps archived, stale and unrelated-subagent sessions out of the `@` menu, switches file paths between flat and tree, and puts every rule in Settings.'
+  zh: DSH Web 输入框的 `@` 搜索范围：把已归档、长期未动、不属于当前对话的子智能体会话挡在 `@` 菜单外，文件路径可平铺或树形展示，规则都在设置页里。
+tarball: https://github.com/Ruiming-cn/dsh-better-at/releases/download/v0.3.0/dsh-better-at-0.3.0.tgz

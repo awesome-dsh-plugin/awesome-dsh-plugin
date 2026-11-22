@@ -1,0 +1,6 @@
+url: https://github.com/Luoqiaocong/dsh-dialect
+name: Luoqiaocong/dsh-dialect
+category: fun
+description:
+  en: 'Seasons DeepSeek Harness replies with a light dialect flavor — Northeast, Tianjin, Beijing or Cantonese — behind a five-step frequency ladder (off to about 50%), three intensity levels, and a per-session switch beside the composer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DeepSeek Harness 的回答偶尔掺一点方言口气（东北话、天津话、北京话、粤语），五档频率（关闭到约 50%）、三档强度，输入框旁可按会话单独切换。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

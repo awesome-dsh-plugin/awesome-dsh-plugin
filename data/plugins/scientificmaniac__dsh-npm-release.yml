@@ -1,0 +1,6 @@
+url: https://github.com/scientificmaniac/dsh-npm-release
+name: scientificmaniac/dsh-npm-release
+category: dev
+description:
+  en: Check, pack, publish and verify an npm package from one tool, with ten pre-publish checks and success confirmed from the registry's versions rather than the publish command's exit code.
+  zh: 在一个工具里检查、打包、发布并校验 npm 包，含十项发布前检查，并以 registry 的 versions 确认发布结果，而不是发布命令的退出码。

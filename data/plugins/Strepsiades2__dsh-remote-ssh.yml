@@ -1,0 +1,6 @@
+url: https://github.com/Strepsiades2/dsh-remote-ssh
+name: Strepsiades2/dsh-remote-ssh
+category: remote
+description:
+  en: 'SSH remote hosts for DeepSeek Harness: pick a host from ~/.ssh/config, keep a local forward alive, and open its DSH web UI in the browser.'
+  zh: '从 ~/.ssh/config 选择主机，保持 SSH 本地转发，在浏览器打开远端 DSH Web 界面。'

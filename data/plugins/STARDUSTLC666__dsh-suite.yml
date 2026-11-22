@@ -1,6 +1,7 @@
 url: https://github.com/STARDUSTLC666/dsh-suite
 name: STARDUSTLC666/dsh-suite
 category: workflow
+icon: https://raw.githubusercontent.com/STARDUSTLC666/dsh-suite/master/assets/plugin-icon.webp
 description:
-  en: 'All-in-one combo patch for STARDUSTLC''s 18 DSH plugins: one command injects shared default configs across office, media, DevOps and notification presets; each component installs directly via a one-line add command (flat design, no git subdependencies).'
-  zh: STARDUSTLC 插件全家桶·组合补丁：与 18 个组件插件配套，一条命令统一注入默认配置（办公流/媒体工坊/DevOps/通知/预设）；组件经一行 add 命令直装（扁平化设计，无 git 子依赖）。
+  en: 'Plugin bundle (@stardustlc/dsh-suite) that composes shared Cordis and Minimal-PTC configuration patches across 18 pinned plugins, with 10 native workbenches, 5 switchable workbench themes, lifecycle cleanup and inline bundle update/rollback controls; components remain independently installable, while Review and Computer Use ship separately.'
+  zh: '组合补丁包（@stardustlc/dsh-suite）：统一注入 Cordis 与极简 PTC 默认配置并固定加载 18 个插件，含 10 个原生工作台、5 套工作台主题、生命周期清理及内联整包更新/回滚控件；组件仍可独立安装，Review 与 Computer Use 另行分发。'

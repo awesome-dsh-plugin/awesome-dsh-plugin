@@ -1,0 +1,6 @@
+url: https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-cove-task
+name: kp-z/dsh-plugins#dsh-cove-task
+category: notify
+description:
+  en: 'Brings Feishu (Lark) tasks and documents into DSH: syncs tasks and listening documents into a local snapshot on a schedule, opens a synced task directly as a DSH session, and writes progress, delivery expectations and collaboration results back to the tasklist and task comments. Write-back only happens on explicit actions; requires the dsh-better-sidebar plugin and a Feishu CLI backend. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把飞书任务和文档接进 DSH：按间隔同步任务与监听文档、生成本地快照，同步来的任务可直接开成 DSH 会话，进展、交付预期与协作结果写回任务清单和任务评论。写回只在明确操作时发生；依赖 dsh-better-sidebar 插件与飞书 CLI 后端。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

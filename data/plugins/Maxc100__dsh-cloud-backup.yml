@@ -1,0 +1,8 @@
+url: https://github.com/Maxc100/dsh-cloud-backup
+name: Maxc100/dsh-cloud-backup
+category: tools
+tarball: https://github.com/Maxc100/dsh-cloud-backup/releases/download/v0.1.141/dsh-cloud-backup-0.1.141.tgz
+description:
+  en: 'Automatic backup of your sessions, configs, agent files and plugin data to your Aliyun Drive. Overwritten files keep an old copy automatically, and workspace names you edited are never replaced. Sign in with a QR scan, and bring the whole environment and its plugins back on a new machine. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '自动备份，会话、配置、Agent 文件、插件数据，到你的阿里云盘。被覆盖的文件自动留一份旧版，你改过的工作区名字不会被冲掉。扫码即可登录，换台电脑也能把整套环境和插件装回来。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Maxc100/dsh-cloud-backup/main/assets/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/ziui1008/dsh-chat-pro
+name: ziui1008/dsh-chat-pro
+category: ui
+description:
+  en: 'Hosts the official DeepSeek web chat in a DSH side panel and switches between DSH providers, models and reasoning effort.'
+  zh: '在 DSH 侧边面板里托管 DeepSeek 官方网页版对话，并可切换 DSH 里的供应商、模型与思考档位。'

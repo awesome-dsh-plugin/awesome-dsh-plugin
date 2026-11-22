@@ -1,0 +1,6 @@
+url: https://github.com/soffits/dsh-oidc
+name: soffits/dsh-oidc
+category: identity
+description:
+  en: 'OpenID Connect sign-in for the DSH Web UI with any provider, either behind a reverse proxy (forward auth in Caddy, nginx or Traefik) or as its own gateway in front of DSH. Admits several people by subject, verified email, group or claim, lists and revokes signed-in sessions in Settings, and can keep sessions across restarts. Maintained fork of Senti100/dsh-oidc.'
+  zh: '为 DSH 网页端提供 OpenID Connect 登录，可接任意身份提供方，既能放在反向代理后（Caddy、nginx、Traefik 的 forward auth），也能作为 DSH 前面的独立网关。可按 subject、已验证邮箱、分组或声明放行多人，在设置里查看并撤销已登录会话，并可在重启后保留会话。是 Senti100/dsh-oidc 的维护分支。'

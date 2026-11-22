@@ -1,0 +1,7 @@
+url: https://github.com/gongfpp/dsh-man-report
+name: gongfpp/dsh-man-report
+category: usage
+description:
+  en: 'Shows a Kobe iced-tea side popup and reports per-turn costs or token counts with bundled offline audio. The voice switches between four emotion tiers by amount, and the ten most common amounts in both CNY and USD play as whole-sentence takes (400 takes in total). Uses dsh-cost-meter when present, otherwise estimates each request from native usage and public prices, labeled as an estimate. Includes twenty cost phrases, four token phrases, CNY/USD, two-decimal ceiling rounding and custom previews; no runtime TTS service or API key. The code is MIT-licensed; the bundled Kobe portrait, icons and pre-made voice clips are not redistributed under that MIT grant and are for personal, non-commercial use with this plugin only. When it has to estimate a cost itself it fetches a public price table from raw.githubusercontent.com (Han-1413141/dsh-cost-meter) and the USD/CNY rate from open.er-api.com, at most once a day, and sends no session data.'
+  zh: '每轮结束弹出科比冰红茶人物，离线播报本轮费用或 Token 用量；按金额切换四档情绪语音，人民币与美元各十档常用金额用整句录音播报（共 400 条）。装了 dsh-cost-meter 时优先用它的结果，否则按各请求原生用量与公开单价估算并标明是估算。含二十句金额台词、四句 Token 台词，支持人民币/美元、两位小数向上取整及自定义试听；无需在线语音服务或 API Key。代码按 MIT 授权；随包的科比人物图、图标与预制语音不随 MIT 授权再分发，仅限随插件个人非商业使用。需要自己估算费用时，它最多每天一次从 raw.githubusercontent.com（Han-1413141/dsh-cost-meter）取公开价格表、从 open.er-api.com 取美元兑人民币汇率，不发送会话数据。'
+icon: https://raw.githubusercontent.com/gongfpp/dsh-man-report/main/icon.png

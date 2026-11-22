@@ -1,0 +1,6 @@
+url: https://github.com/chiyan11/dsh-ptforge/tree/main/packages/dsh-ptforge
+name: chiyan11/dsh-ptforge#dsh-ptforge
+category: tools
+description:
+  en: 'Cisco Packet Tracer automation for DeepSeek Harness: builds, patches and asserts on .pkt lab files, and ships 18 pt_* tools for offline editing plus live console checks on a Windows Packet Tracer.'
+  zh: 'DeepSeek Harness 的 Cisco Packet Tracer 自动化：生成、修改并断言 .pkt 实验文件，提供 18 个 pt_* 工具，覆盖离线编辑与 Windows 上真机终端校验。'

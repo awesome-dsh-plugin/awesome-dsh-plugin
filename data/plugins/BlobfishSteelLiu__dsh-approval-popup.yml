@@ -1,0 +1,6 @@
+url: https://github.com/BlobfishSteelLiu/dsh-approval-popup
+name: BlobfishSteelLiu/dsh-approval-popup
+category: security
+description:
+  en: 'Windows-only approval popups for DeepSeek Harness: a global in-app modal plus a native WinForms dialog, semantic high-risk detection with per-category switches, and four selectable accent colors. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Windows 专用的 DSH 权限审批弹窗：应用内全局模态框 + 原生 WinForms 系统窗口，语义级高危识别、按类别开关和四种可选颜色。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

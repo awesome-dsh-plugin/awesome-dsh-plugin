@@ -1,0 +1,6 @@
+url: https://github.com/Maybe-Zero-not-one/dsh-ai-credits
+name: Maybe-Zero-not-one/dsh-ai-credits
+category: usage
+description:
+  en: 'One page for AI cost tracking: where to claim free credits (each entry link probed daily, plus a web-search pass for new offers), an API price table covering 18 providers, subscription tiers split into general token plans and coding-tool plans, which providers this machine is wired to and whether each key is set, and a usage tab that prices local session logs per model at peak/off-peak and cache-hit rates, dedups forked sessions, and reconciles against exported official usage CSV.'
+  zh: '把 AI 花费相关的东西放在一页：能领免费额度/积分的地方（入口每天真请求一遍，再联网搜一轮新活动）、18 家厂商的 API 价目表、订阅档位（通用 token plan 与编程工具订阅分列）、这台机器接了哪几家线路且密钥配没配，以及用量页——按模型把本地会话日志按峰谷分时价与缓存命中价折算成金额，fork 会话自动去重，可导入官方用量 CSV 对账。'
