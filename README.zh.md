@@ -2006,6 +2006,7 @@ dsh plugin --profile web add dshmarket
 - [skyzzq/dsh-file-view](https://github.com/skyzzq/dsh-file-view) — 对话文件路径高亮与交互插件，支持侧边栏秒级预览、外部编辑器跳转与资源管理器定位，支持强调色自定义。
 - [skyzzq/dsh-think-timestamp](https://github.com/skyzzq/dsh-think-timestamp) — 纯前端交互的 DSH 思考输出东八区时间戳与耗时引擎，脱离提示词且思考完成后完整保留耗时。
 - [sleep123937/dsh-assist-chat](https://github.com/sleep123937/dsh-assist-chat) — 右侧栏辅助对话：把当前会话分支成独立 Session，追问不打断主线。直接复用产品自带的对话界面，流式输出、工具调用、Stop 与 composer 与主对话完全一致。
+- [sleeping112/dsh-sideask](https://github.com/sleeping112/dsh-sideask) — 在当前对话旁提供悬浮轻对话窗口：只读当前上下文提问、在独立线程中带引用回答，只在用户点击写回按钮时才写入主对话输入框。
 - [sljdxde/dsh-clipchat](https://github.com/sljdxde/dsh-clipchat) — 在 DSH 回复里划词就地提问，答案留在原文旁并可连续追问；高亮与记录随会话持久化，支持跨会话搜索与一键定位回原文。
 - [SLZ2025/dsh-open-code-workspace](https://github.com/SLZ2025/dsh-open-code-workspace) — 在「工作区」标题旁加一个按钮：选择 .code-workspace 文件后，把其中的目录链接成一个多根工作区并在其中新开会话（Windows 用 junction，其他平台用软链接，聚合目录位于 $DSH_HOME/multiroot）。Host 只读取你选中的文件，两条 HTTP 路由都要求 DSH 浏览器会话已认证。
 - [SmailPang/dsh-effort-slider](https://github.com/SmailPang/dsh-effort-slider) — 在原位置将 DSH 原生推理等级选项替换为可拖动的 Off、Low、High、Max 滑块，并保留官方模型选择流程。
@@ -3463,6 +3464,7 @@ dsh plugin --profile web add dshmarket
 - [buddha68/dsh-msg-resize](https://github.com/buddha68/dsh-msg-resize) — 拖动两个把手调整 DSH 对话区的大小与位置，把整块对话变成可任意摆放的浮窗；位置与尺寸自动记住，移动范围限制在对话窗格内，不会跑出屏幕。
 - [caoyiwei850/dsh-client-ui-skins](https://github.com/caoyiwei850/dsh-client-ui-skins) — DSH Web 换肤插件：4 套内置皮肤 + 自定义图片皮肤，图片作为全界面背景，配色自动跟随图片主色调。
 - [caprimoon/dsh-live-wallpaper](https://github.com/caprimoon/dsh-live-wallpaper) — 动态壁纸 + 六区毛玻璃皮肤。Host 侧图库聚合五家在线视频源（Mixkit、MoeWalls、MotionBgs、WallpaperWaifu、LiveWallpapers4Free），支持分类筛选、英文关键词搜索、分页与收藏；本地 MP4/WebM/GIF/图片上限 256 MB，分片上传、不转码，另有三款离线 Canvas 场景。左侧栏、内容区、输入框、用量栏、指令菜单与你发送的气泡各自拥有底色、0–100% 遮罩和最高 30px 的毛玻璃模糊。窗口不可见或系统要求减少动态效果时暂停播放，也可在模型执行任务期间暂停——该信号由 Host 通过 SSE 下发，不靠轮询 DOM。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [carreyda/dsh-kairosoft-theme](https://github.com/carreyda/dsh-kairosoft-theme) — 六套开罗游戏配色（温泉、搬家、王国、水上乐园、百货、滑雪场），每套自带宣传图作整窗背景并压一层半透明薄纱，每套 166 条主题令牌，右下角灯笼面板可调主题、明暗、面板与侧栏不透明度、背景开关，一键可回到 DSH 默认主题且不留残留。
 - [CC-play/dsh-theme-cooldark](https://github.com/CC-play/dsh-theme-cooldark) — 低对比度深色主题，重映射 DSH 的 alias token，并自带聊天气泡、代码块语言条与 markdown 标题配色。
 - [Cci-65/dsh-ui-plugin](https://github.com/Cci-65/dsh-ui-plugin) — 为 DeepSeek Harness 欢迎区和输入栏换肤，并提供工作区、模式与技能快捷入口。
 - [Cenuon/dsh-opencode-ui](https://github.com/Cenuon/dsh-opencode-ui) — 把 DSH Web UI 换成 opencode console 的视觉风格：通过 CSS 重绘主题 token、侧栏、对话区 Markdown、表格、输入框与提问弹窗，并在输入框下方显示当前工作区的 git 分支；同时会隐藏侧栏品牌行与「新会话」按钮。
@@ -7318,6 +7320,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) — DeepSeek Harness 的 Claude Code /rewind 等价能力：每次变更型工具执行前捕获 git 优先的工作区文件快照，轮次边界 fork 会话，一条 /rewind 命令恢复文件并把会话回退到检查点。
 - [PerryLink/dsh-click](https://github.com/PerryLink/dsh-click) — Windows 桌面电脑操作工具（点击、输入、按键、截屏）：每次动作都带新鲜度校验、审批门、进程身份核验与脱敏审计。
 - [PerryLink/dsh-construction-doc-check](https://github.com/PerryLink/dsh-construction-doc-check) — 按项目资料归档要求检查缺失的必需资料类型、过期版本与空文件；只读文件夹与文件名，不读文档内容。
+- [PerryLink/dsh-contract-stance](https://github.com/PerryLink/dsh-contract-stance) — 合同条款立场核对：依据《中华人民共和国民法典》。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-customs-doc-check](https://github.com/PerryLink/dsh-customs-doc-check) — 报关单证一致性检查：按规则 ID 输出字段级发现。
 - [PerryLink/dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) — DeepSeek Harness 的数据质量检查：数据画像、清洗与验证流水线，产出结构化报告。
 - [PerryLink/dsh-demurrage-ledger](https://github.com/PerryLink/dsh-demurrage-ledger) — 滞期费台账核对：依据《表示货币的代码》（承运人运价本与运输合同（无国家标准））。仅提示差异，不作出定性结论。
@@ -7352,10 +7355,14 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-payroll-audit](https://github.com/PerryLink/dsh-payroll-audit) — 按公开的社保、公积金与个人所得税参数核对工资表，结果分为 pass、pass_with_gaps、review、fail 四档；参数本身带复核日期。
 - [PerryLink/dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) — 本地非生成式决策层：phocinae_ask 与 phocinae_gate 由小型决策模型返回带校准置信度的类型化裁决，并对无法回答的情况 fail-closed 升级。需在本机 8155 端口运行 phocinae-server（pip 安装）并加载 Phocinae-Largha-150M-v1 模型。
 - [PerryLink/dsh-pim-lint](https://github.com/PerryLink/dsh-pim-lint) — 面向 DeepSeek Harness 的 PIM 商品目录 lint：必填字段、SKU 重复、GTIN 校验位与价格（仓库标记 FROZEN 2026-10-31）。
+- [PerryLink/dsh-pleading-draft](https://github.com/PerryLink/dsh-pleading-draft) — 起诉状核对：依据《中华人民共和国民事诉讼法》。仅提示差异，不作出定性结论。
+- [PerryLink/dsh-policy-brief-draft](https://github.com/PerryLink/dsh-policy-brief-draft) — 政策简报核对：依据《党政机关公文处理工作条例》。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-policy-ledger](https://github.com/PerryLink/dsh-policy-ledger) — 面向 DeepSeek Harness 的只读安装体检：能力快照、tarball 断言与安装诊断；dsh-plugin-doctor 的仅安装版配套。
+- [PerryLink/dsh-power-loss-split](https://github.com/PerryLink/dsh-power-loss-split) — 线损分摊记录核对：依据《电力网电能损耗计算导则》（DL/T 686-2018、GB/T 8170-2008）。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-power-ticket-check](https://github.com/PerryLink/dsh-power-ticket-check) — 依据现行电力安全工作规程，核对电力工作票应载明的要素，以及签发与许可的先后顺序。只报告发现的差异，不判定作业是否安全、许可是否有效。
 - [PerryLink/dsh-ppap-check](https://github.com/PerryLink/dsh-ppap-check) — PPAP 提交等级与资料要素核对。
 - [PerryLink/dsh-primer](https://github.com/PerryLink/dsh-primer) — 构建 DeepSeek Harness 插件的实用入门指南。
+- [PerryLink/dsh-protest-deadline](https://github.com/PerryLink/dsh-protest-deadline) — 质疑与投诉期限台账核对：依据《政府采购质疑和投诉办法》（财政部令第94号）。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-qms-capa](https://github.com/PerryLink/dsh-qms-capa) — QMS 不合格品、CAPA 与 8D 闭环跟踪。
 - [PerryLink/dsh-railway-window](https://github.com/PerryLink/dsh-railway-window) — 铁路运单与时效核对：依据《铁路营业线施工安全管理办法》。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-repair-order-qc](https://github.com/PerryLink/dsh-repair-order-qc) — 维修工单项目金额、工时配件与结算总额核对。
@@ -7364,6 +7371,9 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-research-suite](https://github.com/PerryLink/dsh-research-suite) — 面向 DeepSeek Harness 的一键科研套件包与 research_doctor。
 - [PerryLink/dsh-response-letter](https://github.com/PerryLink/dsh-response-letter) — 面向 DeepSeek Harness 的审稿回复工作流：解析审稿意见并定位，按回复编号检查逐条覆盖（缺失、过短、多余、重复），导出带覆盖表的 Markdown 回复信；解析后的意见成为 REP 证据。
 - [PerryLink/dsh-retraction-watch](https://github.com/PerryLink/dsh-retraction-watch) — 面向 DeepSeek Harness 的撤稿与更正监测：Crossref 作品记录与经核验的 filter=updates 查询、逐 DOI 状态（retracted/concern/corrected/notice/clear/unknown）、带变更检测的仅追加时间线、REP v1 证据快照与 SARIF 输出。clear 仅表示无登记通告，不证明有效性。
+- [PerryLink/dsh-review-reply-check](https://github.com/PerryLink/dsh-review-reply-check) — 评审意见回复核对：依据《中国高校科技期刊编排规范》。仅提示差异，不作出定性结论。
+- [PerryLink/dsh-rulefile-check](https://github.com/PerryLink/dsh-rulefile-check) — 规则库自身核对：依据本插件家族的条款引用纪律（自定纪律，非国家标准）、本插件家族的检查引擎契约（自定纪律，非国家标准）。仅提示差异，不作出定性结论。
+- [PerryLink/dsh-safety-brief-check](https://github.com/PerryLink/dsh-safety-brief-check) — 安全交底记录核对：依据《建筑施工安全技术统一规范》《建设工程安全生产管理条例》（GB 50870-2013、JGJ 59-2011）。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-safety-ledger-check](https://github.com/PerryLink/dsh-safety-ledger-check) — 核对施工安全资格台账的培训学时、四个记录要素，以及特种作业证书有效期与作业时间的匹配。
 - [PerryLink/dsh-site-log-check](https://github.com/PerryLink/dsh-site-log-check) — 依据 GB/T 50319-2013 等公开文件，核对监理日志的跨日连续性，以及旁站监理的覆盖情况。列出缺漏与覆盖差异供人复核。
 - [PerryLink/dsh-soe-decision-check](https://github.com/PerryLink/dsh-soe-decision-check) — 三重一大决策记录核对：依据《关于进一步推进国有企业贯彻落实"三重一大"决策制度的意见》（中办发〔2010〕17号）。仅提示差异，不作出定性结论。
@@ -7373,6 +7383,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-spc-gbt-adapter](https://github.com/PerryLink/dsh-spc-gbt-adapter) — 按现行 GB/T 17989.2—2020 控制图常数表核对 SPC 控制图控制限与 CPK。
 - [PerryLink/dsh-sr-ledger](https://github.com/PerryLink/dsh-sr-ledger) — 面向 DeepSeek Harness 的系统综述台账：PRISMA 2020 方案修订、导入记录、双人筛选中显式冲突裁决、RoB 2/ROBINS-I/GRADE 评估、带完整性问题的 PRISMA 计数，以及由哈希链仅追加日志支撑的导出包。
 - [PerryLink/dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) — 把 .docx、.xlsx、.xlsm、.csv、.tsv 中的表格转换成规则核查器可读的 table JSON；识别不了时明确报告，不做猜测。
+- [PerryLink/dsh-tender-extract](https://github.com/PerryLink/dsh-tender-extract) — 招标文件实质性要求核对：依据《中华人民共和国招标投标法》（1999年8月30日通过，2017年12月27日修正）。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-tender-matrix](https://github.com/PerryLink/dsh-tender-matrix) — 核对评标因素评分矩阵的内部算术自洽性：各因素分值上限、所记分值与合计之间是否互相一致。只报告发现的差异，不评价评标本身是否正确或公正。
 - [PerryLink/dsh-tender-requirements](https://github.com/PerryLink/dsh-tender-requirements) — 从招标文件提取截止时间、保证金、有效期、最高限价、投标文件组成与正副本份数；未找到的项也逐条报告，不省略。
 - [PerryLink/dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) — TickTick（滴答清单）任务桥：会话页头部任务面板与精选代理工具，走官方 TickTick MCP 端点。
