@@ -1,0 +1,7 @@
+url: https://github.com/UNIEPOpep/dsh-attempt-recover
+name: UNIEPOpep/dsh-attempt-recover
+category: ui
+description:
+  en: 'Renders the text a failed or interrupted turn had already generated as a collapsible block beside that turn in the chat, with a button per section that appends that text back into the conversation context.'
+  zh: '把失败或中断的回合里已经生成、却没有进入对话历史的文本，以可折叠块画在该回合下方，并可一键把这段内容加回对话上下文。'
+icon: https://raw.githubusercontent.com/UNIEPOpep/dsh-attempt-recover/main/docs/assets/icon.png
