@@ -2,5 +2,5 @@ url: https://github.com/jediliu005/dsh-fairy-maintenance
 name: jediliu005/dsh-fairy-maintenance
 category: tools
 description:
-  en: 'Keeps the unattended jobs of a DSH profile in one place: scratch cleanup, Ollama keep-alive, local and diary backups, memory sync, QQbot watchdog and memory collection. Every path is set in the sidebar panel instead of being hardcoded; an empty field simply skips that job.'
-  zh: '把 DSH 的无人值守任务集中到一处：临时文件清理、Ollama 保活、本地与日记备份、记忆同步、QQbot 看护、记忆采集与素材归档。所有路径都在侧边栏面板里配置，不写死；哪一项留空就跳过那项任务。'
+  en: 'Scheduler hub for DSH: it discovers per-task module folders, schedules them, and renders each module config and status in the sidebar. The published package is only the manager; tasks live in a local modules folder and can be added or removed as separate folders. It also injects a system-prompt section so agents register timers here instead of Windows scheduled tasks or standalone daemons.'
+  zh: 'DSH 的定时任务总控：发现并调度本机模块目录里的任务文件夹，在侧边栏按分组显示各自的配置与运行状态。发布包只是管理器，任务以独立文件夹放在本机模块目录，可随时增删；同时向系统提示词注入约定，让智能体新增定时任务时登记到这里，而不是 Windows 计划任务或常驻进程。'
