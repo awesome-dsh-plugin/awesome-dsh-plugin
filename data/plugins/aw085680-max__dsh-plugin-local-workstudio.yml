@@ -1,0 +1,7 @@
+url: https://github.com/aw085680-max/dsh-plugin-local-workstudio
+name: aw085680-max/dsh-plugin-local-workstudio
+category: workflow
+description:
+  en: Local Agent Studio supports group task assignment, bot-to-bot handoffs, file delivery, and an optional always-on-top task window on Windows.
+  zh: 同机工作室支持在群聊里给本地 Bot 派单、接力和交付文件，Windows 用户还可置顶任务窗口。
+tarball: https://github.com/aw085680-max/dsh-plugin-local-workstudio/releases/download/v1.0.0/dsh-plugin-local-workstudio-1.0.0.tgz
