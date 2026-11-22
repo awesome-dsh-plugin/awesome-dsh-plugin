@@ -1,0 +1,8 @@
+url: https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/仓库插件管理器/1.1.2
+name: ccl4-56-23-5/DSH-Plugins#repo-manager
+category: market
+description:
+  en: "Browse, install, and update plugins from DSH-Plugins with a cached catalog, runtime status, and installation diagnostics."
+  zh: "浏览、安装和更新 DSH-Plugins 仓库中的插件，查看缓存目录、运行状态与安装诊断。"
+icon: https://raw.githubusercontent.com/ccl4-56-23-5/DSH-Plugins/main/仓库插件管理器/1.1.2/lib/assets/icon.png
+tarball: https://github.com/ccl4-56-23-5/DSH-Plugins/releases/download/repo-manager-v1.1.2/dsh-repo-manager-1.1.2.tgz
