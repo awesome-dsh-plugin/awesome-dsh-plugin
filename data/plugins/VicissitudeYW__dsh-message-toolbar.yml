@@ -1,0 +1,6 @@
+url: https://github.com/VicissitudeYW/dsh-message-toolbar
+name: VicissitudeYW/dsh-message-toolbar
+category: ui
+description:
+  en: 'Adds a chat toolbar for in-session regeneration with the same or a different model, continuing from a chosen answer, message editing and deletion, and bilingual translation.'
+  zh: '为对话添加消息工具栏，支持在当前会话内使用原模型或其他模型重答、选择历史回答继续对话、编辑或删除消息，以及双语翻译。'
