@@ -1,0 +1,6 @@
+url: https://github.com/zyi07/dsh-model-capability-sync
+name: zyi07/dsh-model-capability-sync
+category: model
+description:
+  en: Fills context window, output cap, image support and reasoning efforts for already-configured models from models.dev, then tidies the list itself - every display name gets a 【vendor】 prefix so the same model served by different gateways stops looking identical, and the list can be reordered by vendor. Context, output and image can also be typed by hand, including for models the catalog lacks. Sends no inference requests, registers no LLM routes, and only ever writes the name field, never the model id.
+  zh: 从 models.dev 补全已配置模型的上下文窗口、输出上限、图片支持与推理档位，并整理列表本身：给每个显示名称加【供应商】前缀，让不同网关的同名模型不再长得一样，并可按供应商重排。上下文、输出、图片三项可直接在表格里手填，目录查不到的模型也可以。不发推理请求，不注册 LLM 路由，只写 name 字段，模型 ID 始终不变。
