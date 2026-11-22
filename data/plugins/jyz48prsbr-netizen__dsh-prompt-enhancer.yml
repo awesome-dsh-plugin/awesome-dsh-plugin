@@ -1,0 +1,6 @@
+url: https://github.com/jyz48prsbr-netizen/dsh-prompt-enhancer
+name: jyz48prsbr-netizen/dsh-prompt-enhancer
+category: ui
+description:
+  en: 'Adds an Enhance Prompt button beside the composer model picker. Prompts are verbatim from WorkBuddy and interactions follow proven DSH plugins, with one-click restore of the original draft.'
+  zh: '在输入框模型选择器旁增加增强提示词按钮，提示词逐字取自 WorkBuddy，交互整合自成熟 DSH 插件，支持一键恢复原文。'
