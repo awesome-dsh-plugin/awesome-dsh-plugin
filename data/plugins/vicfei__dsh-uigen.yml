@@ -1,0 +1,6 @@
+url: https://github.com/vicfei/dsh-uigen
+name: vicfei/dsh-uigen
+category: ui
+description:
+  en: 'Generate-and-render inline UI for DSH - the agent composes a dsh-ui component tree, the ui_compose tool lints it against the genui 0.16.0 whitelist (59 types; hard limits like carousel<=24, map<=50; discipline caps like one hero per answer) with teach-first repair diagnostics, and only lint-clean blocks get emitted for inline rendering. Local LLM, no cloud generation API.'
+  zh: 'DSH 回复内组件生成+渲染：agent 组合 dsh-ui 组件树，ui_compose 工具按 genui 0.16.0 白名单（59 型；carousel<=24、map<=50 等硬限；每答案一个 hero 等纪律帽）做带修复诊断的起飞前 lint，只有干净块才被发出渲染。本地 LLM，无云端生成 API。'
