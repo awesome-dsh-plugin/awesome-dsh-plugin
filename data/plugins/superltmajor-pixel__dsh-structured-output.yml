@@ -1,5 +1,5 @@
 url: https://github.com/superltmajor-pixel/dsh-structured-output
-name: 结构化输出
+name: superltmajor-pixel/dsh-structured-output
 category: identity
 description:
   en: 'Adds response guidelines for concise answers to simple questions and structured answers to complex tasks, with extra hints for explicit requests at the start of a message for JSON, a comparison table, or a detailed explanation.'

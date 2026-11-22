@@ -1,5 +1,5 @@
 url: https://github.com/XuezuoYS/dsh-prompt-inject
-name: xuezuoys/dsh-prompt-inject
+name: XuezuoYS/dsh-prompt-inject
 category: tools
 description:
   en: "This plugin provides grouped, per-model access to System and context prompts through on GUI. The grouping design allows multiple prompts with different effects to be combined and assigned to different models quickly and effectively at the same time."

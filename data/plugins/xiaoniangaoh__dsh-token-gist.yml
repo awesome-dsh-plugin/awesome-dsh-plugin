@@ -1,5 +1,5 @@
 url: https://github.com/xiaoniangaoh/dsh-token-gist
-name: token用量统计
+name: xiaoniangaoh/dsh-token-gist
 category: usage
 description:
   en: 'Tracks cumulative input, output, cache-read and cache-write token totals independently of conversation deletion, with a sidebar card, daily breakdown, /token-usage command, and optional Gist backup.'
