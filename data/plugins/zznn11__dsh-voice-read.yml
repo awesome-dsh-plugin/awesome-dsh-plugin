@@ -1,0 +1,7 @@
+url: https://github.com/zznn11/dsh-voice-read
+name: zznn11/dsh-voice-read
+category: voice
+description:
+  en: Play button on finished assistant replies that reads them aloud through the official DeepSeek TTS API (tide or stella voice).
+  zh: 给每条已完成的助手回复加一个播放按钮，点了用 DeepSeek 官方 TTS 念出来（tide 男声 / stella 女声）。
+icon: https://raw.githubusercontent.com/zznn11/dsh-voice-read/main/assets/icon-180.png
