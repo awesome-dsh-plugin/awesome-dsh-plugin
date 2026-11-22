@@ -7417,6 +7417,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-source-cnki](https://github.com/PerryLink/dsh-source-cnki) — 面向 DeepSeek Harness 的中文文献工具（不爬取）：导入 RIS/EndNote 或带标签（题名：/作者：/来源：）的导出为稳定记录，按 GB/T 7714-2015（顺序编码制）或 APA 7 生成引用（不臆造字段），并做结构化元数据校验（缺字段、年份不合理、DOI 格式错误、重复）。不登录知网、不爬取。
 - [PerryLink/dsh-spc-gbt-adapter](https://github.com/PerryLink/dsh-spc-gbt-adapter) — 按现行 GB/T 17989.2—2020 控制图常数表核对 SPC 控制图控制限与 CPK。
 - [PerryLink/dsh-sr-ledger](https://github.com/PerryLink/dsh-sr-ledger) — 面向 DeepSeek Harness 的系统综述台账：PRISMA 2020 方案修订、导入记录、双人筛选中显式冲突裁决、RoB 2/ROBINS-I/GRADE 评估、带完整性问题的 PRISMA 计数，以及由哈希链仅追加日志支撑的导出包。
+- [PerryLink/dsh-statcheck](https://github.com/PerryLink/dsh-statcheck) — 为 DeepSeek Harness 重算论文中报告的统计量并标记自相矛盾的 p 值：解析 APA 风格 t/F/卡方/r/z，计算双尾与上尾 p 值，检查 CI 与 p 值一致性并给出精确字符定位。
 - [PerryLink/dsh-store-replenish](https://github.com/PerryLink/dsh-store-replenish) — 把门店-商品销售库存表变成按 SKU 的补货建议与按门店汇总的补货单，按起订量向上取整；纯本地计算。
 - [PerryLink/dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) — 把 .docx、.xlsx、.xlsm、.csv、.tsv 中的表格转换成规则核查器可读的 table JSON；识别不了时明确报告，不做猜测。
 - [PerryLink/dsh-tender-extract](https://github.com/PerryLink/dsh-tender-extract) — 招标文件实质性要求核对：依据《中华人民共和国招标投标法》（1999年8月30日通过，2017年12月27日修正）。仅提示差异，不作出定性结论。
@@ -7425,6 +7426,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) — TickTick（滴答清单）任务桥：会话页头部任务面板与精选代理工具，走官方 TickTick MCP 端点。
 - [PerryLink/dsh-translate](https://github.com/PerryLink/dsh-translate) — DeepSeek Harness 的工具输出修复层：JSON Schema 校验、参数映射与 JSON 修复。
 - [PerryLink/dsh-warranty-calc](https://github.com/PerryLink/dsh-warranty-calc) — 家用汽车三包台账核对：依据《家用汽车产品修理更换退货责任规定》（市场监管总局令第43号）。仅提示差异，不作出定性结论。
+- [PerryLink/dsh-zotero-bridge](https://github.com/PerryLink/dsh-zotero-bridge) — 面向 DeepSeek Harness 的只读 Zotero 桥接（本地 API 与 sqlite 副本）。
 - [person-clouds/dsh-context-guard](https://github.com/person-clouds/dsh-context-guard) — 控制 DSH 工具输出上下文预算：完整输出落盘、重复结果去重、只返回有界增量摘要、风险命令执行前确认，并提供只读固定调查脚本。
 - [pg527322814/dsh-bayes-predict](https://github.com/pg527322814/dsh-bayes-predict) — 贝叶斯个股预测插件：多指标信号融合的上涨概率估计、趋势状态识别与持仓风险度量（A 股 + 美股）。
 - [philmingdao/anno#dsh-native](https://github.com/philmingdao/anno/tree/main/adapters/dsh-native) — 面向编码代理的本地优先 HTML 审阅与标注工作区：在浏览器编辑器中打开文件的隔离副本，收集文本修改、格式调整与元素/区域评注，并把持久的交接（handoff）交还给代理认领和落实。
@@ -8965,6 +8967,7 @@ dsh plugin --profile web add dshmarket
 - [Pasumao/dsh-plugin-dev-kb](https://github.com/Pasumao/dsh-plugin-dev-kb) — 以 dsh-plugin-dev-kb 技能内置 DeepSeek Harness 官方文档离线镜像：站点中英 168 页 + 仓库补充文档 52 篇，带主题导航与全文检索，编写插件时随时查阅。
 - [pawpress/office-ppt](https://github.com/pawpress/office-ppt) — 通过 UNO 驱动本机安装的 LibreOffice 做 PPT，而不是用 JavaScript 写 OOXML：`lo_build` 用结构化幻灯片真开一份 Impress 文档，再由 LibreOffice 导出可编辑的 PPTX/ODP、PDF 与逐页 PNG；`lo_render` 重新渲染已有的 PPTX/PPT/ODP；`lo_convert` 做 Office 格式互转；`lo_probe` 报告探测到的 soffice 路径、版本与 UNO 桥状态；`lo_config` 修改已保存的配置。需要本机安装 LibreOffice（已在 26.8.1.1 验证），使用其自带 Python，无需系统 Python，并会在两次调用之间保留一个 soffice 热进程。仅在 Windows 上做过完整验证；Linux 上会退回系统 python3，需要 python3-uno。
 - [PerryLink/dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) — 面向 DeepSeek Harness 的确定性行业研究报告：公司与行业研究流程基于分阶段证据产出结构化、可核验的报告。
+- [PerryLink/dsh-lit-harvest](https://github.com/PerryLink/dsh-lit-harvest) — 面向 DeepSeek Harness 的确定性多源文献采集。
 - [PhysicalAI-0/dsh-paperforge](https://github.com/PhysicalAI-0/dsh-paperforge) — 论文阅读工作台：论文库、PDF 与 Markdown 笔记并排、每篇论文一个专属 AI 会话。高亮与框选截图自动写入笔记；划词 Ask AI 附带页码与选段；笔记可原地编辑、自动保存；多个会话可汇总成 Summary。
 - [piaomiaozhilei/dsh-sacc-translator#dsh-sacc-translator-cpu](https://github.com/piaomiaozhilei/dsh-sacc-translator/tree/main/packages/cpu) — 翻译 CPU：Windows x64 专属翻译界面，侧栏独立入口，支持工作台／聊天切换、原文与译文双栏、尽量保留原格式的文档翻译、屏幕框选翻译及最近记录，复用宿主模型、语音输入与预览。使用 CPU OCR，无需 NVIDIA 运行库。不要同时启用 CPU 与 CUDA 两个版本。
 - [piaomiaozhilei/dsh-sacc-translator#dsh-sacc-translator-cuda](https://github.com/piaomiaozhilei/dsh-sacc-translator/tree/main/packages/cuda) — 翻译 CUDA：Windows x64 专属翻译界面，侧栏独立入口，支持工作台／聊天切换、原文与译文双栏、尽量保留原格式的文档翻译、屏幕框选翻译及最近记录，复用宿主模型、语音输入与预览。文档 OCR 支持 CUDA 加速，无兼容 GPU 时回退 CPU；屏幕 OCR 使用 CPU。不要同时启用 CPU 与 CUDA 两个版本。
@@ -10005,6 +10008,7 @@ dsh plugin --profile web add dshmarket
 - [patrickb46-hub/dsh-workflows](https://github.com/patrickb46-hub/dsh-workflows) — 按会话切换工作流预设：一次切换决定每个磁盘技能在模型目录里的档位（完整 / 只留首句 / 隐藏）、隐藏哪些全局工具、追加的人格段落、切换时套用的权限预设，并可把该预设的提示词模板填进输入框。右侧小窗负责切换预设与改写草稿提示词，改写结果不会写回预设。
 - [PensiveFei/deep-read-summarize](https://github.com/PensiveFei/deep-read-summarize) — DSH 精读与摘要：书籍/论文/视频/网页经可插拔解析器转成结构化 Obsidian 笔记，MapReduce 并行精读子代理、JSON Schema 输出与幂等缓存。
 - [PerryLink/dsh-ap-three-way](https://github.com/PerryLink/dsh-ap-three-way) — 应付三单匹配：导入发票、采购订单与收货单，按容差策略匹配并导出异常底稿——4 个 `ap.*` 工具。
+- [PerryLink/dsh-ar-aging](https://github.com/PerryLink/dsh-ar-aging) — 把应收明细 CSV 变成账龄表：分桶、客户汇总、逾期占比、Top 逾期客户，再导出 CSV。
 - [PerryLink/dsh-ar-collection](https://github.com/PerryLink/dsh-ar-collection) — 把应收明细变成按优先级排好的催收计划、催收函草稿和催收清单 CSV，全程本地计算。
 - [PerryLink/dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) — 官方子代理接缝上的持久化后台子代理：任意会话中启动，Web 侧边栏看进度、随时留言与打断，支持按子代理限定工具、人格与委托深度。
 - [PerryLink/dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) — 银行对账单核对：导入 CAMT.053 与 MT940，与账簿条目匹配并导出工作底稿——6 个 `bankrec.*` 工具。
