@@ -1,0 +1,6 @@
+url: https://github.com/inaflash123/dsh-auto-group
+name: inaflash123/dsh-auto-group
+category: market
+description:
+  en: Files newly installed plugins into plugin-market groups by matching name tokens against a weighted capability table, leaves groups you arranged by hand untouched, and sends unrecognised plugins to an uncategorised group.
+  zh: 按包名词元与加权能力表把新装的插件自动归进插件市场的分组，你手工调过的分组不受影响，认不出用途的放进「未分类」。
