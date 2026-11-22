@@ -1,0 +1,6 @@
+url: https://github.com/Fireqtian/dsh-official-file-parse
+name: Fireqtian/dsh-official-file-parse
+category: docs
+description:
+  en: 'Parses PDF, Word, and PowerPoint files through the official DeepSeek Files API, keeping figures and layout when asked, then answers questions about them.'
+  zh: '通过官方 DeepSeek Files API 解析 PDF、Word、PowerPoint（可按需保留图表与版面），并回答关于文档的问题。'
