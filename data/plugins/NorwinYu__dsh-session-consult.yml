@@ -1,0 +1,6 @@
+url: https://github.com/NorwinYu/dsh-session-consult
+name: NorwinYu/dsh-session-consult
+category: session
+description:
+  en: 'Lets one session consult another: it reads the target history into a bounded digest, has a read-only child agent answer from it, and returns provenance with every answer.'
+  zh: '让一个会话去咨询另一个会话：把目标历史读成有界摘要，交给只读子会话作答，并在每次回答后附上出处（来源、截到第几条、丢弃了多少）。'
