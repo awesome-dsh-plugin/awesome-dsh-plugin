@@ -1,0 +1,5 @@
+url: https://github.com/PerryLink/dsh-eval-pack
+name: PerryLink/dsh-eval-pack
+category: tools
+description:
+  en: "Public/synthetic eval-pack lint and deterministic JSON grader; not a validated benchmark."
