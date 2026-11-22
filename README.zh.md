@@ -994,7 +994,7 @@ dsh plugin --profile web add dshmarket
 - [hellofuture2068/dsh-simple-view](https://github.com/hellofuture2068/dsh-simple-view) — 简化 DSH 聊天界面：隐藏执行日志、收紧间距与字号、把消息做成气泡，并注入可编辑的“简洁回复”系统指令。
 - [helloworld010234/dsh-fluid-chat-width](https://github.com/helloworld010234/dsh-fluid-chat-width) — 让 DeepSeek Harness 网页界面的对话列自适应宽度：随窗口取「列宽 − 64px」，上限 1560px、下限 640px，内置拖拽把手仍然优先。
 - [HelmsmanOfDesire/dsh-countdown](https://github.com/HelmsmanOfDesire/dsh-countdown) — 常驻 DSH 任意页面的下班倒计时沙漏。沙量按当前时段已过去的比例变化；工作时段可自由增删改，支持跨零点；当前时间不在任何时段内时面板显示未配置，而不是继续倒数。
-- [hemu996/smart-ppt-designer#smart-ppt-studio](https://github.com/hemu996/smart-ppt-designer/tree/main/smart-ppt-studio) — DeepSeek Harness 侧边栏设计台：检索视觉风格与红线、速查工作流、内联缩略图预览模板，导入本地 .pptx 自动抽取封面作预览。
+- [hemu996/smart-ppt-designer#国赛PPT设计台](https://github.com/hemu996/smart-ppt-designer/tree/main/smart-ppt-studio) — 国赛/创赛级 PPT 设计台，配合 smart-ppt-designer 技能使用：19 套视觉系统按内容检索、29 条硬红线（违反即返工）、13 步工作流、32 条现成命令、15 条动效配方、95 份模板；模板内联缩略图预览，导入本地 .pptx 在浏览器内自动抽取封面；一键把组装好的生成指令复制到剪贴板，交给技能执行。
 - [逐段翻译 · dsh-bilingual](https://github.com/Hemuchuan/dsh-bilingual) — 给 DeepSeek Harness 桌面端的助手回复加逐段翻译与中英双语对照：中文段落下补英文、英文段落下补中文，会话头部有开关；代码块、公式不翻译，表格会生成一张完整的译文表附在下方。译文由 DeepSeek API 生成（插件复用 DSH 已保存的 DEEPSEEK_API_KEY，也可在设置里粘贴 Key），需要联网，每段未命中缓存的文本都会产生一次计费请求。
 - [HengryLiang/dsh-plugin-ai-drama](https://github.com/HengryLiang/dsh-plugin-ai-drama) — 面向 DeepSeek Harness 的 AI 短剧工作区：独立的「短剧模式」Agent 预设、35 个 Agent 工具与 10 个随包技能，覆盖立项、总纲、人物、剧本、分镜与导出。
 - [henry1996-yl/dsh-reply-timer](https://github.com/henry1996-yl/dsh-reply-timer) — 在输入框下方显示回复计时：首字 / 工具 / 生成三段账本，并按本机同类历史回合给出参考用时区间。计时只跟随当前会话，样本不足时不会编造倒计时。
@@ -1206,7 +1206,7 @@ dsh plugin --profile web add dshmarket
 - [jxhsjxhs/dsh-coin-ticker](https://github.com/jxhsjxhs/dsh-coin-ticker) — DSH 侧边栏左下角的加密货币行情卡片，位于余额与设置上方，显示 BTC、ETH、SOL 的价格、24 小时涨跌幅与 24 点迷你走势图，数据源按 OKX → Binance → CoinGecko 自动降级（CoinGecko 无历史走势）；点一下表头就能把整张卡片收成一枚小按钮，收起状态会被记住。fork 自 18569663yz-web/dsh-plugin-crypto-ticker，不能与其同装。
 - [jy007/dsh-calendar-board](https://github.com/jy007/dsh-calendar-board) — DSH 主栏里的月视图日历面板：可直接在日期格里写/改当天事项，叠加定时任务（只显示今天和明天，按运行状态配色），并合并 iCalendar 订阅与本机「日历」里已同步的日历；同一个 calendar_board 工具把事项开放给任意 Agent 会话。
 - [jyz48prsbr-netizen/dsh-prompt-enhancer](https://github.com/jyz48prsbr-netizen/dsh-prompt-enhancer) — 在输入框模型选择器旁增加增强提示词按钮，提示词逐字取自 WorkBuddy，交互整合自成熟 DSH 插件，支持一键恢复原文。
-- [jyz48prsbr-netizen/dsh-sidebar-entry-toggle](https://github.com/jyz48prsbr-netizen/dsh-sidebar-entry-toggle) — 在设置中增加分区，自动列出左侧栏所有入口（含新安装的插件，无需手动白名单），用开关控制显示/隐藏并拖动排序；用稳定 slot id 保证语言切换后选择不丢失，调整只影响显示、不卸载插件。
+- [jyz48prsbr-netizen/dsh-sidebar-entry-toggle](https://github.com/jyz48prsbr-netizen/dsh-sidebar-entry-toggle) — 在设置中增加分区，自动列出左侧栏所有入口（含新安装的插件，无需手动白名单），用开关控制显示/隐藏并拖动排序；用稳定 slot id 保证语言切换后选择不丢失，v1.2.1 起拖动排序在完全重启后依然保留，调整只影响显示、不卸载插件。
 - [jyz48prsbr-netizen/dsh-sidebar-refresh](https://github.com/jyz48prsbr-netizen/dsh-sidebar-refresh) — 在侧栏品牌标识右侧增加一个金边小方块刷新按钮，点击刷新 DSH 页面。
 - [k-ying/dsh-vsceditor](https://github.com/k-ying/dsh-vsceditor) — 在 GUI 页签内嵌真实的 VSCode 编辑器（code-server，或通过自带 bridge 扩展连接本机桌面 VS Code）：Agent 的文件改动弹出按对话轮次累计的红绿 diff，关标签、刷新页面都不丢，写入期间文件自动锁定，看门狗托管进程、崩溃升级不留孤儿。
 - [k623615746/dsh-chat-split](https://github.com/k623615746/dsh-chat-split) — 对话区分屏：左侧栏入口最多开四屏（1 屏铺满 / 2 屏左右并排 / 3–4 屏两列两行），从侧栏把会话拖进对话区即自动分屏，拖一屏的信息头到另一屏可换位，点一下把某屏铺满整个区域；网格是宿主正文区里的真子节点，宿主标题栏、页签行与左侧栏原样保留，每屏自带序号/工作区/标题信息头，屏数加减与关闭挂在宿主顶栏页签行右侧。
@@ -2207,6 +2207,7 @@ dsh plugin --profile web add dshmarket
 - [VFVrPQ/dsh-preview-image](https://github.com/VFVrPQ/dsh-preview-image) — 给 DSH 的图片预览补上缩放、拖动、旋转与全屏：右侧栏文档预览和对话图片灯箱共用一套查看器。
 - [Vhow123/dsh-drawcraft](https://github.com/Vhow123/dsh-drawcraft) — 绘语 Drawcraft——侧边栏面板里的生图工作室，分成三个页签，共用同一份结果。提示词页：选好目标方言、视觉风格与画幅，写一句人话，对话模型输出 11 字段的画面拆解，插件再拼成该方言真正认的语法——六种方言（自然英文、自然中文、GPT-Image、Midjourney、Stable Diffusion、nano-banana）、18 种风格预设、负向提示词、废词清理与本地历史；也能拖一张图反推出同一套字段，或写一句「光线换成黄昏」只重写被点名的字段。生图页：文生图与图生图，经本机已装的生图插件出图，也能经你在面板里自填的 OpenAI 兼容端点出图，密钥落盘保存、不回传给浏览器；带主体图时走 /images/edits 并最多附带四张参考图。画布页：一块无限画布，图片、提示词与结果节点可拖动、改尺寸、手动连线或按出图自动连线，支持撤销重做、框选、复制粘贴、小地图、以指针为中心的滚轮缩放与 JSON 导出导入；从节点出图会沿连线把整条上游链都收进来，不丢参考，也可以把某个节点钉成主体；参考库能直接在画布里打开。另有 4,345 条中文标注的参考库——1,439 条姿势（配同源深度图）、1,407 套服装、1,499 位人像——可按姿势体系、角度、分类、季节、发长与发型分面检索，每次翻 24 条，选中的条目会作为硬约束注入提示词。出预览图时可选出图渠道与模型、八个比例或跟随画幅、清晰度 1K/2K/4K；点开大图支持以指针为中心的滚轮缩放（20%–800%）、拖动平移、双击复位与一键保存。提示词功能与参考库同时以 optimize_image_prompt、patch_image_prompt 与 search_reference_gallery 三个智能体工具提供。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [vibeinging/dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) — 对话轮次导航。
+- [VicissitudeYW/dsh-message-toolbar](https://github.com/VicissitudeYW/dsh-message-toolbar) — 为对话添加消息工具栏，支持在当前会话内使用原模型或其他模型重答、选择历史回答继续对话、编辑或删除消息，以及双语翻译。
 - [victormshan/dsh-web-relay](https://github.com/victormshan/dsh-web-relay) — dsh 三方协作协议插件：Step List 状态机、五级审核链（含本地 Claude Code 混合审）、alternatives 裁决、无介入续跑与能力持久化体系。
 - [vicyangworld/dsh-music#bundle](https://github.com/vicyangworld/dsh-music/tree/main/bundle) — DeepSeek Harness 音乐插件：扫描本地曲库、从 YouTube Music 在线试听（约 128 kbps AAC，喜欢才入库）、基于收听历史与口味偏好推荐、歌手页（维基简介与封面）、收听统计，并为新用户提供欢迎引导与公有领域 starter 曲库。收听历史与缓存仅存本地。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [ViewWay/dsh-prompt-optimizer#bundle](https://github.com/ViewWay/dsh-prompt-optimizer/tree/main/packages/bundle) — DSH 输入框提示词优化器。一键对草稿执行「改写 → 自审」多轮优化，逐轮差异预览，被拒绝的结果作为上一次尝试进入下一轮；五个固定重跑方向（更精简／更详尽／更技术／结构化／强化验收）；包内自带 164 个角色的角色库，可按草稿推荐或显式指定；命中的已安装技能以精确名称约束并入元提示词；结果可存入提示词库（浏览、插入、再优化、两步删除）；机械验收准则附带可执行的检查命令模板；输出语言跟随 Agent 界面语言。
@@ -3739,6 +3740,7 @@ dsh plugin --profile web add dshmarket
 - [sjnole/dsh-whale-dream](https://github.com/sjnole/dsh-whale-dream) — 鲸梦是一款 DeepSeek Harness 主题插件：用深海配色替换应用配色，在对话背后绘制字符鲸鱼背景，并在启动时播放一段跃鲸开场动画。包含浅色与深色两套皮肤，跟随应用自身的外观设置切换。Windows 与 Apple 芯片 Mac 桌面版还可以开启一个置顶的实况小窗，显示最近回复、余额与用量。
 - [skymecode/dsh-deep-diving](https://github.com/skymecode/dsh-deep-diving) — 为“Deep diving...”状态行添加可选动态皮肤，并支持调整尺寸和可选状态文案替换。
 - [SkyWingDN/dsh-fairy-zzz](https://github.com/SkyWingDN/dsh-fairy-zzz) — 起点是 AssassinVIX/fairy-zzz-plugin。眼徽的美术与动效几何来自 Chengzhibense/Fairy-DSH。本插件在此基础上进行改动和开发。对性能方面做出了极大的优化。重绘DSH Web 界面，新增常驻电费坞，npm 安装后可一键自更新，保留 H.D.D 开机动画与语音问候、可停靠眼徽与用量气泡、可选本地 GPT-SoVITS 朗读，标题使用随包内置的 Anton 字体等等
+- [sleeping112/dsh-spend-wallpaper](https://github.com/sleeping112/dsh-spend-wallpaper) — 按最近 1 小时消耗的 DeepSeek 余额为 DSH Web 界面切换壁纸，每档可上传自定义图片或视频，并通过可拖动按钮打开快捷设置面板。
 - [SLin-code/dsh-custom-skin](https://github.com/SLin-code/dsh-custom-skin) — DSH Web 的浏览器本地壁纸与半透明面板插件，支持多图切换、填充与位置选择、遮罩、模糊和面板透明度调节。
 - [Small-tailqwq/dsh-deep-whale#maid-atelier](https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/maid-atelier) — DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。
 - [Smith-yue/harness-plugin](https://github.com/Smith-yue/harness-plugin) — 为 DeepSeek Harness Web 与桌面端提供两套可切换主题、内置及本地文件夹背景轮播和逐会话 Token 用量明细。
@@ -4510,6 +4512,7 @@ dsh plugin --profile web add dshmarket
 - [zuojinxin/dsh-provider-switch](https://github.com/zuojinxin/dsh-provider-switch) — 供应商启停开关、模型选择器关键字搜索、供应商显示名内联重命名。
 - [dsh-model-providers](https://github.com/zxbingoo/dsh-model-providers) — 通过本机 Codex CLI 为 DeepSeek Harness 提供动态模型发现、图片输入、Harness 工具调用及 ChatGPT 套餐与额度只读展示。
 - [zxzc114514/dsh-startup-model](https://github.com/zxzc114514/dsh-startup-model) — 自动记忆退出前选择的模型，并在下次启动时恢复为默认模型。
+- [zyi07/dsh-model-capability-sync](https://github.com/zyi07/dsh-model-capability-sync) — 从 models.dev 补全已配置模型的上下文窗口、输出上限、图片支持与推理档位，并整理列表本身：给每个显示名称加【供应商】前缀，让不同网关的同名模型不再长得一样，并可按供应商重排。上下文、输出、图片三项可直接在表格里手填，目录查不到的模型也可以。不发推理请求，不注册 LLM 路由，只写 name 字段，模型 ID 始终不变。
 
 ### 🆔 身份与通信
 
@@ -7324,8 +7327,10 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-customs-doc-check](https://github.com/PerryLink/dsh-customs-doc-check) — 报关单证一致性检查：按规则 ID 输出字段级发现。
 - [PerryLink/dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) — DeepSeek Harness 的数据质量检查：数据画像、清洗与验证流水线，产出结构化报告。
 - [PerryLink/dsh-demurrage-ledger](https://github.com/PerryLink/dsh-demurrage-ledger) — 滞期费台账核对：依据《表示货币的代码》（承运人运价本与运输合同（无国家标准））。仅提示差异，不作出定性结论。
+- [PerryLink/dsh-dida](https://github.com/PerryLink/dsh-dida) — TickTick / Dida365 task bridge for DeepSeek Harness: Session-header task panel, agent tools and settings card.
 - [PerryLink/dsh-docx-redline](https://github.com/PerryLink/dsh-docx-redline) — 面向 DeepSeek Harness 的 DOCX 结构检查、字节级往返与有限范围的精确文本替换（仓库标记 FROZEN 2026-10-31）。
 - [PerryLink/dsh-eia-guide-check](https://github.com/PerryLink/dsh-eia-guide-check) — 环评导则适用性与执行标准核对。
+- [PerryLink/dsh-essay-rubric-check](https://github.com/PerryLink/dsh-essay-rubric-check) — 作文评分表核对：依据《普通高中语文课程标准》《普通高等学校招生全国统一考试评卷工作规定》。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-evidence-check](https://github.com/PerryLink/dsh-evidence-check) — 证据清单齐备性核对：把待证事实映射到证据并输出缺口与规则 ID。
 - [PerryLink/dsh-excel-reconcile](https://github.com/PerryLink/dsh-excel-reconcile) — 按声明的主键连接两张表，按声明字段与容差比对，输出 Markdown 报告、JSON 结果与差异工作簿。只报告差异，不裁决对错。
 - [PerryLink/dsh-fmea-table-check](https://github.com/PerryLink/dsh-fmea-table-check) — 参照公开的 FMEA 方法标准，核对 FMEA 分析表的要素齐备性，以及严重度、发生度、探测度与风险顺序数之间的算术一致性。只报告不一致之处，不评价各项评分数值是否恰当。
@@ -7342,17 +7347,23 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-icd-rule-check](https://github.com/PerryLink/dsh-icd-rule-check) — 依据 GB/T 14396-2016 与公开的 ICD 使用说明，提示需要编码员关注的 ICD 编码配对——剑号与星号组合、合并编码。只报告发现的配对，不代为判定，编码结论仍由编码员作出。
 - [PerryLink/dsh-ifc-qto](https://github.com/PerryLink/dsh-ifc-qto) — IFC 模型工程量提取与 CSV 导出核对。
 - [PerryLink/dsh-invoice-ledger](https://github.com/PerryLink/dsh-invoice-ledger) — 核对发票台账：按代码与号码识别重复、核对算式一致性、付款方不一致、日期异常与模板占位符，输出异常清单与工作簿。
+- [PerryLink/dsh-irb](https://github.com/PerryLink/dsh-irb) — Ethics-application checklist for DeepSeek Harness: 18-item keyword checklist (title, PI, purpose, design, participants, recruitment, consent, assent, risks, benefits, confidentiality, vulnerable groups, compensation, conflicts, retention, dissemination, animal ethics, biosafety), an advisory risk level with required safeguards from structured flags, Markdown/SARIF export and REP evidence. Not an IRB decision and not legal advice.
 - [PerryLink/dsh-lawcite-adapter](https://github.com/PerryLink/dsh-lawcite-adapter) — 法条引用名称、条号、原文与效力状态核对。
 - [PerryLink/dsh-laya](https://github.com/PerryLink/dsh-laya) — 把 Laya 的有类型决策（`noul` 是/否、`choice`、`score`）接成一等 Cordis 服务（`ctx.laya`）与两个模型可见工具 `laya_ask`、`laya_plan`。插件自身不安装也不下载任何东西：它是你自己启动的 `laya-mcp serve` 边车的客户端，边车未运行时会明确报出，而不是在首次工具调用时隐晦失败。
 - [PerryLink/dsh-lc-doc-check](https://github.com/PerryLink/dsh-lc-doc-check) — 信用证单据与 UCP600 不符点核对。
+- [PerryLink/dsh-learning-gap-check](https://github.com/PerryLink/dsh-learning-gap-check) — 学情差距分析核对：依据《质量管理 能力管理和人员发展指南》。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-locator](https://github.com/PerryLink/dsh-locator) — 为 DSH 提供自建跨平台索引的全盘文件名搜索，带 agent 工具和 Web 面板，不依赖 Everything。默认索引你的主目录；第一次内容搜索时还会在本机建全文索引（SQLite，放在系统缓存目录），范围是主目录下按扩展名认定的文本和源码文件（每个最大 1 MB、最多 20 万个）以及你最近的 DSH 会话消息；locator_export 会把索引的 SQLite 副本写到给定的任意绝对路径，overwrite 为 true 时会替换已有文件。引擎是随包提供的预编译 Go 程序（六个平台，源码在 engine/ 里），插件不发任何网络请求。
 - [PerryLink/dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) — DSH 的 LSP 动作面：诊断、格式化、补全、代码动作、符号、签名提示、inlay 提示与重命名，全部由真实语言服务器驱动。
+- [PerryLink/dsh-manuscript-check](https://github.com/PerryLink/dsh-manuscript-check) — Pre-submission checklist for DeepSeek Harness: manuscript structure and declaration statements, keyword-based coverage of starter CONSORT/STROBE/PRISMA items with locators and advice, and a submission-pack scan (manuscript, cover letter, numbered figures with gap detection, tables, supplements, declarations) with JSON/Markdown reports. A checklist, not a compliance verdict.
 - [PerryLink/dsh-medrec-qc](https://github.com/PerryLink/dsh-medrec-qc) — 依据国卫办医发〔2016〕24号等公开文件，核对病案首页各字段的齐备性与字段间的逻辑矛盾。列出缺失或不一致之处供人复核，不评价临床正确性。
 - [PerryLink/dsh-meta-analysis](https://github.com/PerryLink/dsh-meta-analysis) — 面向 DeepSeek Harness 的 meta 分析算术：效应量换算（OR/RR/d/r/SMD、由 CI 求 SE）与具名公式、固定效应与 DerSimonian-Laird 随机效应合并、Q/df/p、I2、tau2、森林图数据与 Markdown/SARIF 报告；本地、无依赖、可由输入复现。
+- [PerryLink/dsh-notebook-capture](https://github.com/PerryLink/dsh-notebook-capture) — Notebook reproducibility capture for DeepSeek Harness: reads .ipynb JSON without executing it, reports kernel/language, code vs markdown cells, execution order (out-of-order and never-run cells), imports, runtime installs, seeds, absolute paths and output state; hashes the notebook and environment declarations; writes REP evidence and a record; renders a Markdown capture card and SARIF.
 - [PerryLink/dsh-nsfc-form-check](https://github.com/PerryLink/dsh-nsfc-form-check) — 国自然申请书形式审查与匿名化核对。
 - [PerryLink/dsh-nurse-record-check](https://github.com/PerryLink/dsh-nurse-record-check) — 依据《病历书写基本规范》等公开文件，核对护理记录的书写时限、签名，以及评估表的完整性。列出缺失或次序不符之处供人复核。
+- [PerryLink/dsh-origin-rvc-check](https://github.com/PerryLink/dsh-origin-rvc-check) — 原产地区域价值成分台账核对：依据各自由贸易协定原产地规则（协定文本，本次未取得）。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-paper-doc-adapter](https://github.com/PerryLink/dsh-paper-doc-adapter) — 试卷结构核对：按题型、答案、分值与标识核对试卷结构自洽，仅提示差异，不作出定性结论。
 - [PerryLink/dsh-payroll-audit](https://github.com/PerryLink/dsh-payroll-audit) — 按公开的社保、公积金与个人所得税参数核对工资表，结果分为 pass、pass_with_gaps、review、fail 四档；参数本身带复核日期。
+- [PerryLink/dsh-permit-report-check](https://github.com/PerryLink/dsh-permit-report-check) — 许可申请报告核对：依据《中华人民共和国行政许可法》。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) — 本地非生成式决策层：phocinae_ask 与 phocinae_gate 由小型决策模型返回带校准置信度的类型化裁决，并对无法回答的情况 fail-closed 升级。需在本机 8155 端口运行 phocinae-server（pip 安装）并加载 Phocinae-Largha-150M-v1 模型。
 - [PerryLink/dsh-pim-lint](https://github.com/PerryLink/dsh-pim-lint) — 面向 DeepSeek Harness 的 PIM 商品目录 lint：必填字段、SKU 重复、GTIN 校验位与价格（仓库标记 FROZEN 2026-10-31）。
 - [PerryLink/dsh-pleading-draft](https://github.com/PerryLink/dsh-pleading-draft) — 起诉状核对：依据《中华人民共和国民事诉讼法》。仅提示差异，不作出定性结论。
@@ -7366,6 +7377,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-qms-capa](https://github.com/PerryLink/dsh-qms-capa) — QMS 不合格品、CAPA 与 8D 闭环跟踪。
 - [PerryLink/dsh-railway-window](https://github.com/PerryLink/dsh-railway-window) — 铁路运单与时效核对：依据《铁路营业线施工安全管理办法》。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-repair-order-qc](https://github.com/PerryLink/dsh-repair-order-qc) — 维修工单项目金额、工时配件与结算总额核对。
+- [PerryLink/dsh-repro-audit](https://github.com/PerryLink/dsh-repro-audit) — Reproducibility evidence for DeepSeek Harness: a bounded read-only scan records the git commit and dirty state, dependency lockfiles, environment pins, input-data hashes, figures, notebooks, explicit seeds and runnable commands, derives gap severities and a reproducible/partial/not_reproducible level, compares a recorded manifest against the current tree for drift, and renders a report card with Markdown and SARIF.
 - [PerryLink/dsh-research-core](https://github.com/PerryLink/dsh-research-core) — REP v1——面向 DeepSeek Harness 科研插件共享的研究证据协议：sources/snapshots/anchors/evidence/claims/checks/artifacts/audit events/sealed report manifests 的 JSON Schema 与 TypeScript 类型，以及零依赖内容寻址证据库、规范哈希、SARIF 导出与独立校验 CLI。
 - [PerryLink/dsh-research-skills](https://github.com/PerryLink/dsh-research-skills) — 面向 DeepSeek Harness 的七个科研 SOP 技能：文献综述、引文审计、论断/证据审计、稿件预检、审稿回复、可复现性审计与数据管理计划。
 - [PerryLink/dsh-research-suite](https://github.com/PerryLink/dsh-research-suite) — 面向 DeepSeek Harness 的一键科研套件包与 research_doctor。
@@ -9496,7 +9508,7 @@ dsh plugin --profile web add dshmarket
 - [1225Sakura/oh-my-deepseekharness](https://github.com/1225Sakura/oh-my-deepseekharness) — DeepSeek Harness 的多智能体编排层——autopilot/ralph/team 三种执行模式、19 张角色卡、40 个双语技能与内置 MCP 状态服务，移植自 oh-my-claudecode。
 - [1264459640/dsh-trellis](https://github.com/1264459640/dsh-trellis) — 为 DeepSeek Harness 打造的 Trellis 风格工作流：基于 agent/pre-step 的每轮速记注入、内置技能提供方，以及带 git 清洁度护栏的 DSH 原生任务与相位状态管理。
 - [1344738825/ai-look-up](https://github.com/1344738825/ai-look-up) — AI 抬头：检测空跑（重复命令 / 连续失败 / 久跑零产出）并在运行中途注入自我审查提醒，同时定期注入真实本地时间，校准 AI 的时间感。
-- [1924225725-collab/dsh-DKN-Workbench](https://github.com/1924225725-collab/dsh-DKN-Workbench) — 接入 TRAE CN 国内个人版、CodeBuddy、Codex CLI、Qoder ACP、ZCode 及可选 Antigravity ACP，提供原生 Codex 项目、统一 API、可选后台常驻与自动签到、额度、项目协作及可切换的简洁与插画界面。
+- [1924225725-collab/dsh-DKN-Workbench](https://github.com/1924225725-collab/dsh-DKN-Workbench) — 接入 OrcaTerm 文字模型、TRAE CN 国内个人版、CodeBuddy、Codex CLI、Qoder ACP、ZCode 及可选 Antigravity ACP，提供原生 Codex 项目、统一 API、可选后台常驻与自动签到、额度、项目协作及可切换的简洁与插画界面。
 - [1997liuyh-boop/dsh-studio-knowledge](https://github.com/1997liuyh-boop/dsh-studio-knowledge) — 学习计划追踪：本机进度、笔记与 JSON 进度备份，附带一条原创六节点示例路线；添加自己的路线需编辑 roadmaps.ts 并重新构建插件。需先安装 1997liuyh-boop/dsh-studio-library 的 dsh-studio-projects 运行时与 dsh-worktable 容器。
 - [219zhou/dsh-kickstart](https://github.com/219zhou/dsh-kickstart) — 引导式起步：先用开放问题了解你，把你说的和它推断的分两栏让你改，再给两三个一小时能做出雏形的小项目，选定后立刻陪你动手；中途退出后再回来会从上次停下的地方继续。
 - [240xu/verdict-engine#dsh-tech-lead](https://github.com/240xu/verdict-engine/tree/main/packages/dsh-tech-lead) — 单包 21 个只读生命周期治理工具：任务分级、状态/计划/证据校验、Gate 预检与聚合、发布与安装审计、上下文与推进分析、关键路径、续跑对账，以及始终拒绝执行的变更预览。npm 包名 @240xu/dsh-tech-lead。
@@ -12049,7 +12061,7 @@ dsh plugin --profile web add dshmarket
 - [kinderao/dsh-pocket-relay](https://github.com/kinderao/dsh-pocket-relay) — 手机与远程访问 DSH Web 界面：局域网扫码即用，或用自建 relay 中继服务端（替代 cloudflared 隧道）随时随地连回电脑；每台设备独立凭据，可配对、查看与单独撤销；多台电脑共用一个中继并自动热备。
 - [KKUCODES/dshm-plugin](https://github.com/KKUCODES/dshm-plugin) — 将 DSHM 安卓客户端连接到电脑上的 DeepSeek Harness 会话，支持远程续聊、模型切换、审批、设备配对与撤销。
 - [KyoMio/dsh-zen-remote](https://github.com/KyoMio/dsh-zen-remote) — 集三种角色于一体的 DSH 远程访问与多机虚拟组网插件：节点端（peer）通过 zr-net:// 邀请加入自建中继网关，跨 NAT 双向发现并挂载共享会话（局域网直连、双 UDP STUN 打洞与 X25519 + AES-256-GCM 盲转发兜底，Ed25519 TOFU 身份校验），同时保留手机 PWA 与 Web Push 推送；主服务端（host）支持内置 Caddy、Cloudflare Tunnel、反代与局域网接入；桌面客户端（client）可在原生侧边栏同时接入最多 8 台主机，支持远程终端、0.2.2+ Forge 面板、Plugin Bridge（兼容 dsh-better-sidebar）与无头 CLI 向导。
-- [lambsouls/dsh-ssh-ops](https://github.com/lambsouls/dsh-ssh-ops) — 服务器运维台：加密保管 Linux 服务器凭证，按对话指令走 SSH 执行命令、管理服务，每台机器一份专属档案，并提供只读总览与实时彩色终端。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [lambsouls/dsh-ssh-ops](https://github.com/lambsouls/dsh-ssh-ops) — 服务器运维台：加密保管 Linux 服务器凭证，按对话指令走 SSH 执行命令、管理服务，每台机器一份专属档案，并提供只读总览与实时彩色终端。
 - [dsh-remote-dock](https://github.com/Lee-Eee-Eee/dsh-remote-dock) — 将 SSH 主机与 WSL 发行版接入远程 DSH 工作区，支持环境安装、模型配置移植与本地内嵌远程界面。
 - [Leon0555/dsh-lan-access](https://github.com/Leon0555/dsh-lan-access) — 局域网访问：Web GUI 绑定 0.0.0.0 + crypto.randomUUID polyfill（修复非安全上下文下 RPC 崩溃）。
 - [lfys/dsh-wsl-overlay](https://github.com/lfys/dsh-wsl-overlay) — DSH 的 WSL 透明接管——会话工作区位于 WSL 时，bash、文件与搜索工具以原有工具名直接运行在发行版内，侧栏面板可注册 WSL 工作区。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
