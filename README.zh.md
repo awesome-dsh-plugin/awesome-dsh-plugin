@@ -2482,6 +2482,7 @@ dsh plugin --profile web add dshmarket
 - [yangyanlu06/dsh-douyin-wallpaper](https://github.com/yangyanlu06/dsh-douyin-wallpaper) — 抖音壁纸：粘贴一条抖音链接，DSH 的极简界面就变成它的播放背景，视频铺满窗口，界面各层变成半透明浮在上面。支持视频、图文与多视频轮播链接，媒体下载到本机，外观设置保存在本地。
 - [yangzhenyu0817/dsh-session-color](https://github.com/yangzhenyu0817/dsh-session-color) — 给 DeepSeek Harness 侧栏会话行加右键标色：默认红色、十色色板与自定义取色，颜色本地持久化。
 - [yangzhenyu0817/dsh-settings-drag](https://github.com/yangzhenyu0817/dsh-settings-drag) — 让 DeepSeek Harness 的设置面板可以自由拖动与缩放，位置与尺寸按浏览器记忆。
+- [yanli-nyan/dsh-open-in-app-dock](https://github.com/yanli-nyan/dsh-open-in-app-dock) — 把会话头「更多 → 在应用中打开」里的应用列表做成单击即用的按钮：单击用上次用过的应用打开当前工作区，右键或悬浮角标更换应用；按钮位置（右上角／底栏／隐藏）与「切换时是否顺带启动」都在设置里。
 - [yanli-nyan/dsh-open-in-app-fix](https://github.com/yanli-nyan/dsh-open-in-app-fix) — 修复桌面端「用其它应用打开」启动编辑器与终端失败（HTTP 502 launch-failed）：从 open-in-app 包交给被启动程序的环境里去掉继承来的 ELECTRON_RUN_AS_NODE 变量，不改动 app.asar。
 - [yanli-nyan/dsh-sidebar-entry-manager](https://github.com/yanli-nyan/dsh-sidebar-entry-manager) — 给 DeepSeek Harness 左侧栏的面板入口行加显示开关：关掉的入口从面板列表里隐藏，选择存在 localStorage 里，刷新和重启都保留，随时可在管理面板里拨回来。
 - [yannicksong0106/dsh-550c-boot](https://github.com/yannicksong0106/dsh-550c-boot) — 给 DSH 加一段 550C 全屏开机片头：简易档 4 秒、完整档 16 秒覆写流程，点击或按 Esc 跳过，四套磷光配色。首帧由宿主半边在文档解析阶段注入，DSH 自带的 Loading 卡片不会露脸；桌面窗口右上角那条原生按钮条带在片头期间透明化，按钮像浮在动画上。
@@ -7404,6 +7405,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-rulefile-check](https://github.com/PerryLink/dsh-rulefile-check) — 规则库自身核对：依据本插件家族的条款引用纪律（自定纪律，非国家标准）、本插件家族的检查引擎契约（自定纪律，非国家标准）。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-safety-brief-check](https://github.com/PerryLink/dsh-safety-brief-check) — 安全交底记录核对：依据《建筑施工安全技术统一规范》《建设工程安全生产管理条例》（GB 50870-2013、JGJ 59-2011）。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-safety-ledger-check](https://github.com/PerryLink/dsh-safety-ledger-check) — 核对施工安全资格台账的培训学时、四个记录要素，以及特种作业证书有效期与作业时间的匹配。
+- [PerryLink/dsh-settlement-docs](https://github.com/PerryLink/dsh-settlement-docs) — 按资料清单核对竣工结算资料齐套性：缺件、份数不足、未签字或未盖章项，导出核对表 CSV。
 - [PerryLink/dsh-site-log-check](https://github.com/PerryLink/dsh-site-log-check) — 依据 GB/T 50319-2013 等公开文件，核对监理日志的跨日连续性，以及旁站监理的覆盖情况。列出缺漏与覆盖差异供人复核。
 - [PerryLink/dsh-soe-decision-check](https://github.com/PerryLink/dsh-soe-decision-check) — 三重一大决策记录核对：依据《关于进一步推进国有企业贯彻落实"三重一大"决策制度的意见》（中办发〔2010〕17号）。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-soilwater-check](https://github.com/PerryLink/dsh-soilwater-check) — 土壤与地下水调查记录核对：依据《建设用地土壤污染状况调查技术导则》《地下水环境监测技术规范》。仅提示差异，不作出定性结论。
@@ -7411,6 +7413,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-source-cnki](https://github.com/PerryLink/dsh-source-cnki) — 面向 DeepSeek Harness 的中文文献工具（不爬取）：导入 RIS/EndNote 或带标签（题名：/作者：/来源：）的导出为稳定记录，按 GB/T 7714-2015（顺序编码制）或 APA 7 生成引用（不臆造字段），并做结构化元数据校验（缺字段、年份不合理、DOI 格式错误、重复）。不登录知网、不爬取。
 - [PerryLink/dsh-spc-gbt-adapter](https://github.com/PerryLink/dsh-spc-gbt-adapter) — 按现行 GB/T 17989.2—2020 控制图常数表核对 SPC 控制图控制限与 CPK。
 - [PerryLink/dsh-sr-ledger](https://github.com/PerryLink/dsh-sr-ledger) — 面向 DeepSeek Harness 的系统综述台账：PRISMA 2020 方案修订、导入记录、双人筛选中显式冲突裁决、RoB 2/ROBINS-I/GRADE 评估、带完整性问题的 PRISMA 计数，以及由哈希链仅追加日志支撑的导出包。
+- [PerryLink/dsh-store-replenish](https://github.com/PerryLink/dsh-store-replenish) — 把门店-商品销售库存表变成按 SKU 的补货建议与按门店汇总的补货单，按起订量向上取整；纯本地计算。
 - [PerryLink/dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) — 把 .docx、.xlsx、.xlsm、.csv、.tsv 中的表格转换成规则核查器可读的 table JSON；识别不了时明确报告，不做猜测。
 - [PerryLink/dsh-tender-extract](https://github.com/PerryLink/dsh-tender-extract) — 招标文件实质性要求核对：依据《中华人民共和国招标投标法》（1999年8月30日通过，2017年12月27日修正）。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-tender-matrix](https://github.com/PerryLink/dsh-tender-matrix) — 核对评标因素评分矩阵的内部算术自洽性：各因素分值上限、所记分值与合计之间是否互相一致。只报告发现的差异，不评价评标本身是否正确或公正。
