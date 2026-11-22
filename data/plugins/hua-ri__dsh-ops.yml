@@ -1,0 +1,7 @@
+url: https://github.com/hua-ri/dsh-ops
+name: hua-ri/dsh-ops
+category: remote
+npm: "@hua-ri/dsh-ops"
+description:
+  en: All-in-one ops plugin for SSH, Kubernetes, Helm, ArgoCD and Argo Workflows.
+  zh: "一体化运维插件：SSH 远程运维 / K8s 集群管理 / Helm Chart 管理 / ArgoCD / Argo Workflows。"
