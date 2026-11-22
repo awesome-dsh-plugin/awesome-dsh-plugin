@@ -1,0 +1,6 @@
+url: https://github.com/KILLSTARSX/dsh-bili-gate
+name: KILLSTARSX/dsh-bili-gate
+category: notify
+description:
+  en: 'In-process gate for QiuYeDx/dsh-bili-eyes. It tells the companion plugin whether a DSH session belongs to the owner, rejecting sessions whose agent preset or working directory is on its untrusted list and never reading owner messages from those, then routes Bilibili inbox text into one dedicated session, creating it when missing. Notifications are deduplicated, message length and prompt count are capped, a busy session falls back from steer to queue, and the actual DM reply still comes from dsh-bili-eyes.'
+  zh: '给 QiuYeDx/dsh-bili-eyes 用的进程内门卫。它先判断某个 DSH 会话是不是主人本人：预设或工作目录命中不可信名单的会话一律拒绝，也不读这些会话里的主人消息；然后把 B站收件箱正文送进一个专用会话，没有就新建。通知会去重，正文长度和会话轮数有上限，会话忙时从 steer 降级到 queue；真正的私信回复仍由 dsh-bili-eyes 完成。'
