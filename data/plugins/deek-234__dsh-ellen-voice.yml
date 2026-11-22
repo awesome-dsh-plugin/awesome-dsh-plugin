@@ -1,0 +1,7 @@
+url: https://github.com/deek-234/dsh-ellen-voice
+name: deek-234/dsh-ellen-voice
+category: voice
+description:
+  en: Speaks a short piece of text through a local TTS HTTP endpoint, caches the audio, and plays it on this machine's speakers.
+  zh: 把一小段文字交给本机的 TTS 接口合成，缓存音频，再从这台电脑的扬声器念出来。
+icon: https://raw.githubusercontent.com/deek-234/dsh-ellen-voice/main/assets/icon-256.png

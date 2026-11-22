@@ -1,0 +1,10 @@
+url: https://github.com/flying-ovaltine/chronic-care-workbench
+name: flying-ovaltine/chronic-care-workbench
+category: skill
+
+description:
+  en: 'Patient-facing chronic care workbench. Blood pressure, glucose, weight, waist, uric acid and eGFR are recorded with an A/B/C reliability grade; a medication timeline separates doctor-ordered from self-adjusted doses; self-contained SVG trend charts draw medication events as vertical lines (self-adjusted in red dashes). Red-flag symptoms pin a red banner and collapse the rest, women pass a pregnancy gate first, and the physician-guidance sentence is always pinned. Rules ship as the skill chronic-care-team.'
+  zh: '面向患者本人的慢病照护面板：血压、血糖、体重、腰围、尿酸、eGFR 逐条记录并标 A/B/C 可信度；用药时间轴区分医嘱与自行调整；自包含 SVG 趋势图把用药事件画成竖线（自调药为红色虚线）。命中中风、心梗、低血糖昏迷等红线时置顶变红、其余收起；女性先过妊娠闸门；「必须在医师指导下调整治疗方案」固定显示。规则以技能 chronic-care-team 随包分发。'
+
+icon: https://raw.githubusercontent.com/flying-ovaltine/chronic-care-workbench/main/assets/icon-180.png
+tarball: https://github.com/flying-ovaltine/chronic-care-workbench/releases/latest/download/dsh-chronic-care-team.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/liubaibuliuyan/dsh-session-delete
+name: liubaibuliuyan/dsh-session-delete
+category: session
+description:
+  en: 'Delete a conversation in DeepSeek Harness in one step: its log goes to a restorable trash while the projection cache, workspace bookkeeping and sidebar list are cleaned in the same call, and deletion is refused only while a turn is actually running.'
+  zh: '一步删掉 DSH 里的对话：日志进可还原的回收站，投影缓存、工作区记账与侧边栏列表同步清理；只有真的有一轮在跑时才拒绝。'
+icon: https://raw.githubusercontent.com/liubaibuliuyan/dsh-session-delete/main/assets/icon-180.png

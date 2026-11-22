@@ -1,0 +1,6 @@
+url: https://github.com/SSHOOTING/dsh-plugin-safe-route
+name: SSHOOTING/dsh-plugin-safe-route
+category: security
+description:
+  en: 'Read-only DSH command that audits which model routes a session used and flags calls outside a configurable allowlist.'
+  zh: '只读 DSH 命令，审计会话使用过的模型路由，并标记白名单之外的调用。'

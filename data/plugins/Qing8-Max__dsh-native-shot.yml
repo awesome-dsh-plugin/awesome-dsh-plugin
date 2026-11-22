@@ -1,0 +1,6 @@
+url: https://github.com/Qing8-Max/dsh-native-shot
+name: Qing8-Max/dsh-native-shot
+category: ui
+description:
+  en: 'Screenshot button in the DSH composer (Windows): drag a region that snaps to other windows, annotate or crop it, and insert the result into the prompt. Captures the screen in-process and leaves no file on disk. Both HTTP routes require host authentication through ctx.connection.requestRejection.'
+  zh: 'DSH 输入框上的截图按钮（Windows）：拖出可吸附其它窗口边缘的选区，画笔/裁剪后直接插入对话；进程内抓屏，不落盘。两个 HTTP 路由都通过 ctx.connection.requestRejection 接入宿主认证。'

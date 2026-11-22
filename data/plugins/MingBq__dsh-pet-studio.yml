@@ -1,0 +1,7 @@
+url: https://github.com/MingBq/dsh-pet-studio
+name: MingBq/dsh-pet-studio
+category: ui
+description:
+  en: 'Turn a photo into a Q-style DSH pet: local cutout, a dsh-pet pack, and a seven-clip animation set, with built-in pets untouched. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把照片做成 Q 版桌宠：本地抠图、生成 dsh-pet 宠物包，并用程序化动作补齐全套动作，内置宠物不受影响。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/MingBq/dsh-pet-studio/main/assets/icon-180.png

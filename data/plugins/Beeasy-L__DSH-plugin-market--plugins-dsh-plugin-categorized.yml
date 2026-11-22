@@ -1,0 +1,7 @@
+url: https://github.com/Beeasy-L/DSH-plugin-market/tree/main/plugins/dsh-plugin-categorized
+name: Beeasy-L/DSH-plugin-market#dsh-plugin-categorized
+category: ui
+description:
+  en: 'Adds a Categories tab to the Plugins page that groups installed plugins by purpose, and backfills Chinese titles and descriptions for newly installed plugins using the default model.'
+  zh: '给插件页加一个「分类」标签，把已安装的插件按用途自动分组；并用默认模型为新装插件自动补中文标题与说明。'
+icon: https://raw.githubusercontent.com/Beeasy-L/DSH-plugin-market/main/plugins/dsh-plugin-categorized/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/hello2fun/dsh-session-reaper
+name: hello2fun/dsh-session-reaper
+category: session
+description:
+  en: 'Recoverable session deletion for DeepSeek Harness: a sidebar manager that moves sessions to a trash, restores or purges them, and reclaims the image attachments only those sessions referenced. Owner-only routes; attachment collection is skipped entirely when any remaining session log cannot be read.'
+  zh: '给 DSH 补上可恢复的会话删除：左侧栏管理面板把会话移入回收站、恢复或彻底清除，并回收只有这些会话引用的图片附件。路由仅 owner 可用；只要有一个剩余会话日志读不出来，就整体放弃附件清理。'

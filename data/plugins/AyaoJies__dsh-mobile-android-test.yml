@@ -1,0 +1,7 @@
+url: https://github.com/AyaoJies/dsh-mobile-android-test
+name: AyaoJies/dsh-mobile-android-test
+category: remote
+description:
+  en: 'Run an APK in a managed Android emulator inside DeepSeek Harness: upload it, mirror the screen, drive it with mouse and keyboard, and inspect decrypted HTTPS requests like DevTools. Needs Windows with hardware virtualization, JDK 17+, Python 3.10+, and about 5 GB for the first Android SDK install. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 页面里托管安卓模拟器运行 APK：上传安装、实时投屏、用鼠标和电脑键盘操作，并像 DevTools 一样查看解密后的 HTTPS 请求。需要 Windows + 硬件虚拟化、JDK 17+、Python 3.10+，首次安装 Android SDK 约 5GB。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/AyaoJies/dsh-mobile-android-test/main/assets/icon-180.png

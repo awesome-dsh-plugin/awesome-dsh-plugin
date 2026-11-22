@@ -1,0 +1,6 @@
+url: https://github.com/wsl1602291891-stack/dsh-zhilian-api
+name: wsl1602291891-stack/dsh-zhilian-api
+category: model
+description:
+  en: 'One-click NewAPI access for DeepSeek Harness: browser authorization against your own NewAPI site, one scoped key per group (reused by name and updated in place), and provider routes picked by model family — GPT through Responses, Claude through Messages, everything else through Chat — with account balance, per-key usage and site shortcuts on the same settings page.'
+  zh: '在 DeepSeek Harness 中一键接入 NewAPI 站点：浏览器授权本站账号，按分组创建/复用专用 Key（同名复用、模型范围原地更新），并按模型家族自动选择协议——GPT 走 Responses、Claude 走 Messages、其余走 Chat——账户余额、每把 Key 的用量和站点入口都集中在同一个设置页。'

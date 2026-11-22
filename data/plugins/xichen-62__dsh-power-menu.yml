@@ -1,0 +1,7 @@
+url: https://github.com/xichen-62/dsh-power-menu
+name: xichen-62/dsh-power-menu
+category: ui
+description:
+  en: 'Adds a power menu to the top-right corner of the DeepSeek Harness desktop conversation header: reload the page, shut down, and restart. Shutdown and restart ask the window to end its session so the application finishes its own quit chain instead of being force-killed, then wait for the Host to exit and clear processes left over from the same executable. While an agent or a background job is still running, both show a confirmation card naming the sessions and jobs they would interrupt. Restart replays the original launch arguments. Windows desktop only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DeepSeek Harness 桌面版会话标题栏右上角加一个电源菜单：刷新页面、关闭、重启。关闭和重启请窗口走自己的会话结束流程，由应用完成关停而不是被强杀，随后等 Host 退出并清理同一可执行文件留下的进程。有 agent 或后台任务在跑时，两者都会先弹出确认卡片，列出会被打断的会话与任务。重启会回放原来的启动参数。仅 Windows 桌面版可用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/xichen-62/dsh-power-menu/releases/download/v0.1.22/dsh-power-menu-0.1.22.tgz

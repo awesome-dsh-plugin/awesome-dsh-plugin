@@ -1,0 +1,7 @@
+url: https://github.com/supperzl/dsh-sim
+name: supperzl/dsh-sim
+category: dev
+description:
+  en: 'iOS Simulator and Android device panel in the right sidebar: a per-conversation tab that streams H.264 video with tap and drag control, backed by 19 agent tools for installing APKs, launching apps, screenshots, Android UI dumps and logcat. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '右侧栏里的 iOS 模拟器 / Android 设备面板：按会话隔离的 tab，H.264 实时画面支持点按拖动，并配有 19 个 agent 工具——安装 APK、启动应用、截图、导出 Android UI 树、读取 logcat。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/supperzl/dsh-sim/releases/download/v0.1.9/dsh-sim-0.1.9.tgz

@@ -1,0 +1,8 @@
+url: https://github.com/QqiqiQ/dsh-text-count
+name: QqiqiQ/dsh-text-count
+category: tools
+description:
+  en: "Deterministic text counting for CJK and Latin writing: Word-style wordCount, graphemes versus code points, punctuation split by script, UTF-8 bytes, and min/max pass-fail checks so length limits get verified instead of guessed."
+  zh: "确定性的字数统计工具：中文按字、西文按词，另给标点／字符／字素／行数与 UTF-8 字节，并可用 min／max 区间直接判定是否达标。"
+icon: https://raw.githubusercontent.com/QqiqiQ/dsh-text-count/main/icon.png
+tarball: https://github.com/QqiqiQ/dsh-text-count/releases/latest/download/dsh-text-count.tgz

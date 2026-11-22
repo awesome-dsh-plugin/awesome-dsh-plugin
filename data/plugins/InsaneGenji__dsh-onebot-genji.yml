@@ -1,0 +1,7 @@
+url: https://github.com/InsaneGenji/dsh-onebot-genji
+name: InsaneGenji/dsh-onebot-genji
+category: notify
+description:
+  en: Bridges QQ (OneBot 11) into DeepSeek Harness with in-chat tools and rich media, and ships its own speech-to-text bridge so voice messages transcribe without a whisper CLI.
+  zh: 把 QQ（OneBot 11）接进 DeepSeek Harness，带群聊工具与富媒体发送，并自带语音转写桥——没装 whisper CLI 也能把收进来的语音转成文字。
+tarball: https://github.com/InsaneGenji/dsh-onebot-genji/releases/download/v0.15.2/dsh-onebot-genji-0.15.2.tgz

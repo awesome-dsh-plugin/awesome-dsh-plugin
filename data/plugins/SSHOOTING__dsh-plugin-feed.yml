@@ -1,0 +1,6 @@
+url: https://github.com/SSHOOTING/dsh-plugin-feed
+name: SSHOOTING/dsh-plugin-feed
+category: market
+description:
+  en: 'Ranks catalog plugins from local DSH session history using category, keyword and failure signals without LLM calls. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '根据本机 DSH 会话历史，用类别、关键词和失败信号重排插件目录，不调用 LLM。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,10 @@
+url: https://github.com/flying-ovaltine/dsh-taxscale
+name: flying-ovaltine/dsh-taxscale
+category: skill
+
+description:
+  en: 'TaxScale for DeepSeek Harness, a thirty-year tax director as three bundled skills for Chinese enterprise and individual tax: statement forensics and compliance diagnosis, voucher-level review of whether an expense can be booked, credited or deducted, and tax computation plus filing with form-by-form guidance. Ships 12 reference documents and 7 working templates.'
+  zh: '税衡 · 税务总监：三个技能覆盖中国企业/个人所得税的三条主线——报表穿透与合规检测、单据凭证能否入账抵扣税前扣除的逐张审核、各税种测算与申报表填报；随包 12 份专题底稿与 7 份作业模板。'
+
+icon: https://raw.githubusercontent.com/flying-ovaltine/dsh-taxscale/main/assets/icon-180.png
+tarball: https://github.com/flying-ovaltine/dsh-taxscale/releases/latest/download/dsh-taxscale.tgz

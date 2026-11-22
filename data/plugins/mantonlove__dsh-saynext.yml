@@ -1,0 +1,6 @@
+url: https://github.com/mantonlove/dsh-saynext
+name: mantonlove/dsh-saynext
+category: ui
+description:
+  en: 'Next-line suggestions inside the DSH composer: after each completed turn the host makes one model call and drafts the single sentence you are most likely to say next. While the input is empty it appears as a grey line at the placeholder position — inside the input box, adding no height and never colliding with the goal bar or todo panel. The first Enter moves it into the draft without sending; the second Enter sends. It hides while a turn is streaming or while the input already has text, and each session keeps its own suggestion. (input prediction / prompt suggestion / ghost text)'
+  zh: '在 DSH 输入框里给你写下「下一句」：每轮回答正常结束后，宿主拿这段对话调一次模型，猜出你接下来最可能说的那句话。输入框为空时，它显示在输入框内部、原占位符的位置上，一行灰字，不额外占高度，也不会和目标条、待办面板打架；按第一次 Enter 只把它填进草稿、不发送，按第二次 Enter 才发出去。回答流式输出中或输入框里已有文字时自动隐藏，多条会话各存各的，互不串台。（输入预测 / 提示词建议 / 下一句 / 灰字补全）'

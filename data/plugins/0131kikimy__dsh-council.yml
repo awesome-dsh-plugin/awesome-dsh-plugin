@@ -1,0 +1,6 @@
+url: https://github.com/0131kikimy/dsh-council
+name: 0131kikimy/dsh-council
+category: workflow
+description:
+  en: 'Run verifiable work through a leader, an executor and a verifier with separate contexts, using six council_* tools so completion is decided by checking stated criteria instead of the agent grading its own work.'
+  zh: '用六个 council_* 工具把可检验的活交给 Leader、执行者与检验者三份独立上下文，完成与否由检验者按既定标准判定，而不是 agent 自评。'

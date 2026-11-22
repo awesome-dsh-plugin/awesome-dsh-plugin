@@ -1,0 +1,7 @@
+url: https://github.com/Lylgj/dsh-remote-suite
+name: Lylgj/dsh-remote-suite
+category: remote
+description:
+  en: "Local, WSL, SSH and Docker workspaces in one list, with the right sidebar's file and terminal panes served by this plugin, plus one remote tool for every target."
+  zh: "本机、WSL、SSH、Docker 工作区统一到一个列表，右侧栏的文件与终端面板由本插件接管，并提供统一的 remote 工具。"
+icon: https://raw.githubusercontent.com/Lylgj/dsh-remote-suite/main/docs/assets/icon.png

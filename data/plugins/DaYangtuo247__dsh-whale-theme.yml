@@ -1,0 +1,7 @@
+url: https://github.com/DaYangtuo247/dsh-whale-theme
+name: DaYangtuo247/dsh-whale-theme
+category: theme
+description:
+  en: 'DeepSeek-website skin for DeepSeek Harness — a WebGL whale background with three switchable engines, see-through shell panels, one liquid-glass material for raised surfaces, and a theme settings page with interface, reply and code font rows.'
+  zh: 'DeepSeek 官网风格皮肤：三套可切换的 WebGL 鲸鱼底纹、穿透式外壳面板、统一的液态玻璃材质，以及带界面 / 回复 / 代码字体设置的「主题」设置页。'
+icon: https://raw.githubusercontent.com/DaYangtuo247/dsh-whale-theme/main/assets/icon-180.png

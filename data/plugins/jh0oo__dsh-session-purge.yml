@@ -1,0 +1,7 @@
+url: https://github.com/jh0oo/dsh-session-purge
+name: jh0oo/dsh-session-purge
+category: session
+description:
+  en: 'Adds a Delete-sessions entry above the workspace list: workspace sessions are listed in sidebar order with their titles and relative times, a click selects a row and a second click deselects it, select-all sits at the top right, and deleting moves them into a recycle bin that restores them byte-for-byte. A second confirmation in the bin clears the log directory, the projection cache, the policy record, the workspace and archive/pin registration, the cost rows, the dsh-context entry and the attachments nothing else references; running or currently open sessions and paths outside the DSH data directory are refused, every destructive call needs confirm:true, and it registers no tool and no command.'
+  zh: '在工作区列表上方新增「删除会话」入口：按侧栏顺序列出会话的标题与相对时间，单击选中、再次单击取消，右上角一键全选，删除后先进可逐字节还原的回收站。只有在回收站里二次确认才会清空日志目录、投影缓存、策略记录、工作区与归档/置顶登记、成本记账行、dsh-context 条目与无人再引用的附件；拒绝运行中或当前打开的会话以及 DSH 数据目录以外的路径，每个破坏性请求都要 confirm:true，插件不注册 tool 也不注册 command。'
+icon: https://raw.githubusercontent.com/jh0oo/dsh-session-purge/main/docs/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/TuringCorp-net/dsh-session-slim
+name: TuringCorp-net/dsh-session-slim
+category: session
+description:
+  en: 'On open, rewrites a session stored log down to the visible conversation and archives the original, so a 68.6 MB session resumes from 90 KB instead of loading about 1.2 GB into memory (one migration of roughly 10 s, then instant). The last permission preset and model choice of the session are carried over, the original stays under archive/ for a one-command rollback, and a session another process owns is left untouched.'
+  zh: '打开会话时把存储日志改写成当前可见的对话、原件归档，68.6 MB 的会话恢复时只读 90 KB，而不是把约 1.2 GB 读进内存（一次性迁移约 10 秒，之后秒开）。会话最后使用的权限预设与模型选择会一并保留，原件留在 archive/ 里可一条命令回滚，被其他进程占用的会话不会被动。'
+tarball: https://github.com/TuringCorp-net/dsh-session-slim/releases/latest/download/dsh-session-slim.tgz

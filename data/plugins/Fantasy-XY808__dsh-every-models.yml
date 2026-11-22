@@ -1,0 +1,7 @@
+url: https://github.com/Fantasy-XY808/dsh-every-models
+name: Fantasy-XY808/dsh-every-models
+category: model
+tarball: https://github.com/Fantasy-XY808/dsh-every-models/releases/latest/download/dsh-every-models.tgz
+description:
+  en: 'A catalog of 1,692 public models across 75 vendors in the model picker and Models settings — every entry is fake and answers locally with a canned self-introduction, so nothing is sent to a provider and nothing is billed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在模型选择器和设置页加入 75 家厂商、1692 条公开模型（2013 至 2026），全是假模型——不管问什么都会一本正经自报代号，由插件本地合成回复，不发推理请求、不扣真实余额，支持厂商分组、80 条分页、推理档位与全目录搜索。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

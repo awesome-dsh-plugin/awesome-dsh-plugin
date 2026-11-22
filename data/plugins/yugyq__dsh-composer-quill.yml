@@ -1,0 +1,7 @@
+url: https://github.com/yugyq/dsh-composer-quill
+name: yugyq/dsh-composer-quill
+category: ui
+description:
+  en: Suggests your next message after each turn and finishes the half-typed sentence inside the DSH composer, tidying typos and punctuation as it goes.
+  zh: 回合结束后给出下一句，打字时补完后半句，顺手修好错字和标点。
+icon: https://raw.githubusercontent.com/yugyq/dsh-composer-quill/main/assets/icon-180.png

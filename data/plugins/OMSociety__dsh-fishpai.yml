@@ -2,5 +2,5 @@ url: https://github.com/OMSociety/dsh-fishpai
 name: OMSociety/dsh-fishpai
 category: docs
 description:
-  en: 'WeChat Official Account typesetting workbench: renders Markdown into inline-styled HTML you paste straight into the WeChat editor, with a sidebar panel, 11 themes and five model tools for block-level revision.'
-  zh: '微信公众号排版工作台：把 Markdown 渲染成带内联样式的 HTML，粘进公众号编辑器即成排版；配右侧栏面板、11 套主题与五个模型工具做块级改稿。'
+  en: 'FishPai: a Markdown editor and WeChat Official Account typesetting tool with themes, interactive components, collaborative editing, and clipboard-ready HTML. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '鱼排：公众号排版与 Markdown 编辑器，支持微信 HTML、主题、交互组件、协同改稿与一键复制。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

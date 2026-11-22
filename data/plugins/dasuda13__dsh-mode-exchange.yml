@@ -1,0 +1,7 @@
+url: https://github.com/dasuda13/dsh-mode-exchange
+name: dasuda13/dsh-mode-exchange
+category: session
+description:
+  en: Switches the Agent mode of an existing DSH session in place, or rebuilds the session under a target mode by re-importing its native event sequence, with an idempotent migration ledger that can be resumed and a per-run report.
+  zh: 在已存在的 DSH 会话中就地切换 Agent 模式，或按目标模式重建会话并真导入原生事件序列；迁移有幂等台账、可续跑，并生成每次迁移的报告。
+icon: https://raw.githubusercontent.com/dasuda13/dsh-mode-exchange/main/assets/icon.png

@@ -1,0 +1,8 @@
+url: https://github.com/JupiterWalker/dsh-prewalk
+name: JupiterWalker/dsh-prewalk
+category: model
+tarball: https://github.com/JupiterWalker/dsh-prewalk/releases/latest/download/dsh-prewalk.tgz
+icon: https://raw.githubusercontent.com/JupiterWalker/dsh-prewalk/main/assets/icon-180.png
+description:
+  en: 'An agent preset that runs the first step of every turn on a strong model to reason and lay down the plan, then continues the following steps on a weak model; both sides are picked from the model catalog in Settings, and Prewalk sessions also get compact strong/weak dropdowns beside the composer.'
+  zh: '新增一个 agent preset：每个 turn 的第一步用强模型做推理并把计划立起来，之后的步骤交给弱模型执行；两个模型可在设置页从模型目录里挑，Prewalk 会话的输入区还会多出「强 / 弱」两个紧凑下拉。'

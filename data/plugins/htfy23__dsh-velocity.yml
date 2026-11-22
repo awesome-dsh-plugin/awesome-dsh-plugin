@@ -1,0 +1,8 @@
+url: https://github.com/htfy23/dsh-velocity
+name: htfy23/dsh-velocity
+category: session
+description:
+  en: 'Audits DSH session transcripts for reclaimable wait time — a background job started then blocked on, blind sleeps, independent commands split across turns, serially launched subagents, and slow commands run to timeout — sums those into one figure, and A/Bs a new conversation against an old one to report the speedup in percent.'
+  zh: '审计 DSH 会话转录里的可回收等待——起了后台又阻塞等、盲等 sleep、可合并却被拆成多轮的分命令、分步启动的 subagent、慢命令前台跑到超时——汇总成一个可净省的时长，并用新对话对比旧对话报出加速百分比。'
+icon: https://raw.githubusercontent.com/htfy23/dsh-velocity/main/assets/icon-180.png
+tarball: https://github.com/htfy23/dsh-velocity/releases/latest/download/dsh-velocity.tgz
