@@ -1,0 +1,6 @@
+url: https://github.com/Magicqy/dsh-statusline
+name: Magicqy/dsh-statusline
+category: ui
+tarball: https://github.com/Magicqy/dsh-statusline/releases/latest/download/dsh-statusline.tgz
+description:
+  en: A single row at the bottom of the DSH Web GUI with the active session's Git branch (the short commit when detached), worktree, working directory, modified / added / untracked / deleted path counts and ahead/behind, refreshed every 3 s with read-only git commands.
