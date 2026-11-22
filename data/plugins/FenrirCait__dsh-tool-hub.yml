@@ -3,5 +3,5 @@ name: FenrirCait/dsh-tool-hub
 category: tools
 tarball: https://github.com/FenrirCait/dsh-tool-hub/releases/latest/download/dsh-tool-hub.tgz
 description:
-  en: "Puts the plugins, skills and MCP servers a DSH installation runs into one panel: per-row switches, add, edit and test dialogs for MCP servers, per-tool masking, lazy servers with an on-demand tool catalog, group and collection bulk enable or disable, saved switch presets, dshmarket group import, together with per-session tool overlays and saved whole-environment scenes, and rule-based automatic grouping into official, MCP, general and downloaded buckets."
-  zh: "把这套 DSH 安装里的插件、技能与 MCP 服务收进一个面板：逐行开关、MCP 服务器的新增/编辑/测试连接、工具级屏蔽与懒启动（按需加载工具目录）、分组与分组群的整组启停、可保存与一键应用的开关预设、导入 dshmarket 分组、按会话的工具覆盖层与可保存的整环境场景，以及按官方 / MCP / 通用 / 用户下载四类自动分组。"
+  en: "Puts the plugins, skills and MCP servers a DSH installation runs into one panel: per-row switches, group and preset management, MCP server add/edit/test, per-tool masking, lazy MCP tools with an on-demand catalog, per-session overlays and saved scenes, plus a manager for official compatibility packs with checksum-verified install, update and uninstall behind explicit confirmations."
+  zh: "把这套 DSH 安装里的插件、技能与 MCP 服务收进一个面板：逐行开关、分组与预设管理、MCP 服务器新增/编辑/测试、工具级屏蔽、带按需目录的 MCP 懒加载、按会话的工具覆盖与可保存场景；同时从远端目录管理官方兼容包，安装、更新和卸载均先校验并在确认后执行。"
