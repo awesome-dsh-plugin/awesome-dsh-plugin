@@ -1,0 +1,6 @@
+url: https://github.com/jediliu005/dsh-fairy-maintenance
+name: jediliu005/dsh-fairy-maintenance
+category: tools
+description:
+  en: 'Keeps the unattended jobs of a DSH profile in one place: scratch cleanup, Ollama keep-alive, local and diary backups, memory sync, QQbot watchdog and memory collection. Every path is set in the sidebar panel instead of being hardcoded; an empty field simply skips that job.'
+  zh: '把 DSH 的无人值守任务集中到一处：临时文件清理、Ollama 保活、本地与日记备份、记忆同步、QQbot 看护、记忆采集与素材归档。所有路径都在侧边栏面板里配置，不写死；哪一项留空就跳过那项任务。'
