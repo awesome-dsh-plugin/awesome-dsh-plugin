@@ -1,0 +1,6 @@
+url: https://github.com/KILLSTARSX/dsh-web-search-rss
+name: KILLSTARSX/dsh-web-search-rss
+category: browser
+description:
+  en: 'Web search provider with two switchable back ends: free scraping of cn.bing, bing or google result pages with sponsored-placement filtering and an offline official-domain library that flags or drops untrusted result domains, or API channels that by default borrow DSH''s registered search provider and can also call Brave, Tavily, Serper or a custom JSON endpoint. Ships a settings page for engine order, ad blocking, domain vetting and per-channel credentials.'
+  zh: 'DSH 联网搜索提供方，两种可切换模式：免费抓取 cn.bing / bing / google 的结果页，过滤赞助广告位，并用本地官网域名库标记或丢弃不可信结果域名；API 模式默认借 DSH 已注册的搜索提供方，也可接 Brave、Tavily、Serper 或自定义 JSON 接口。带设置页，可调引擎顺序、广告屏蔽、域名鉴别和各频道凭证。'
