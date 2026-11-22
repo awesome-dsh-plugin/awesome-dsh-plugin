@@ -7337,6 +7337,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-contract-stance](https://github.com/PerryLink/dsh-contract-stance) — 合同条款立场核对：依据《中华人民共和国民法典》。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-customs-doc-check](https://github.com/PerryLink/dsh-customs-doc-check) — 报关单证一致性检查：按规则 ID 输出字段级发现。
 - [PerryLink/dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) — DeepSeek Harness 的数据质量检查：数据画像、清洗与验证流水线，产出结构化报告。
+- [PerryLink/dsh-dataset-card](https://github.com/PerryLink/dsh-dataset-card) — 面向 DeepSeek Harness 的数据集文档：对 CSV/TSV/JSON/JSONL 做有界画像（类型、缺失、基数），按列名与值模式检测并脱敏 PII，生成带缺节提示的 Datasheet 式卡片。
 - [PerryLink/dsh-demurrage-ledger](https://github.com/PerryLink/dsh-demurrage-ledger) — 滞期费台账核对：依据《表示货币的代码》（承运人运价本与运输合同（无国家标准））。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-dida](https://github.com/PerryLink/dsh-dida) — TickTick / Dida365 task bridge for DeepSeek Harness: Session-header task panel, agent tools and settings card.
 - [PerryLink/dsh-docx-redline](https://github.com/PerryLink/dsh-docx-redline) — 面向 DeepSeek Harness 的 DOCX 结构检查、字节级往返与有限范围的精确文本替换（仓库标记 FROZEN 2026-10-31）。
@@ -8966,6 +8967,8 @@ dsh plugin --profile web add dshmarket
 - [passenfall/dsh-deliver-studio](https://github.com/passenfall/dsh-deliver-studio) — 文件预览里的 HTML 交付物工作台：桌面、笔记本、平板、手机、A4 视口预设；点选元素就地批注，批注与 QA 收在可停靠任一边或浮动的面板里，批注可整理成一条消息发给 Agent；交付 QA 按类别分组（图表编号与引用、孤字、截断、溢出、页面留白、WCAG 对比度、图片、页内死链、禁用字样）；用本机 Chromium 内核浏览器导出 PDF；可导出自包含的带批注 HTML，审阅者在浏览器里打开即可回答；另提供 `deliver_qa`、`deliver_export_pdf` 工具与 `/deliver` 命令。
 - [Pasumao/dsh-plugin-dev-kb](https://github.com/Pasumao/dsh-plugin-dev-kb) — 以 dsh-plugin-dev-kb 技能内置 DeepSeek Harness 官方文档离线镜像：站点中英 168 页 + 仓库补充文档 52 篇，带主题导航与全文检索，编写插件时随时查阅。
 - [pawpress/office-ppt](https://github.com/pawpress/office-ppt) — 通过 UNO 驱动本机安装的 LibreOffice 做 PPT，而不是用 JavaScript 写 OOXML：`lo_build` 用结构化幻灯片真开一份 Impress 文档，再由 LibreOffice 导出可编辑的 PPTX/ODP、PDF 与逐页 PNG；`lo_render` 重新渲染已有的 PPTX/PPT/ODP；`lo_convert` 做 Office 格式互转；`lo_probe` 报告探测到的 soffice 路径、版本与 UNO 桥状态；`lo_config` 修改已保存的配置。需要本机安装 LibreOffice（已在 26.8.1.1 验证），使用其自带 Python，无需系统 Python，并会在两次调用之间保留一个 soffice 热进程。仅在 Windows 上做过完整验证；Linux 上会退回系统 python3，需要 python3-uno。
+- [PerryLink/dsh-cite-verify](https://github.com/PerryLink/dsh-cite-verify) — 为 DeepSeek Harness 核对引文是否存在、元数据是否正确：经 Crossref、PubMed、arXiv 解析 DOI、PMID、arXiv 与 BibTeX，逐字段比较元数据，并生成 REP v1 证据记录。
+- [PerryLink/dsh-doc-anchor](https://github.com/PerryLink/dsh-doc-anchor) — 把 PDF/HTML/LaTeX/Markdown 文档变成可定位的证据面：内容寻址快照、页/节/段/字符锚点、表格网格与 REP v1 证据记录。
 - [PerryLink/dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) — 面向 DeepSeek Harness 的确定性行业研究报告：公司与行业研究流程基于分阶段证据产出结构化、可核验的报告。
 - [PerryLink/dsh-lit-harvest](https://github.com/PerryLink/dsh-lit-harvest) — 面向 DeepSeek Harness 的确定性多源文献采集。
 - [PhysicalAI-0/dsh-paperforge](https://github.com/PhysicalAI-0/dsh-paperforge) — 论文阅读工作台：论文库、PDF 与 Markdown 笔记并排、每篇论文一个专属 AI 会话。高亮与框选截图自动写入笔记；划词 Ask AI 附带页码与选段；笔记可原地编辑、自动保存；多个会话可汇总成 Summary。
@@ -11368,6 +11371,7 @@ dsh plugin --profile web add dshmarket
 - [patrick1099/dsh-claude-plugin-loader](https://github.com/patrick1099/dsh-claude-plugin-loader) — 把 Claude 风格的插件加载进 DeepSeek Harness（dsh）：扫描 Claude 插件目录，接入 skills、commands 与可选的 SessionStart hooks，支持命令热更新与卸载清理。
 - [pavangupta352/stalegreen#dsh-plugin-stalegreen](https://github.com/pavangupta352/stalegreen/tree/main/dsh-plugin-stalegreen) — 为智能体的测试、类型检查、lint 与构建结论提供新鲜度检查：每次验证运行在 tools/post-execute 上记录为凭据，文件修改被跟踪；在 agent/turn-stopping 时，若结论对应的最新凭据已过期、失败或没有可读结果，则引导再走一步，并指出凭据与其后被修改的文件。
 - [PerryLink/dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) — 基于 DSH 插件认证登记的只读 MCP 服务，对外提供插件的认证等级、其快照以及支撑它的五维证据。
+- [PerryLink/dsh-codemod](https://github.com/PerryLink/dsh-codemod) — DeepSeek Harness 插件 API 的迁移 codemod。
 - [PerryLink/dsh-fast](https://github.com/PerryLink/dsh-fast) — DeepSeek Harness 的性能剖析与 LLM 缓存诊断：上下文工程、延迟剖析与缓存行为报告。
 - [PerryLink/dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) — 官方 MCP 客户端（dsh-mcp-client）的只读运行时管理面板：/mcp 命令与设置页 MCP 页签展示连接状态、已注册工具、错误与重连计数，脱敏展示并提供启停 patch 建议。
 - [PerryLink/dsh-observe](https://github.com/PerryLink/dsh-observe) — 将会话事件流导出为 OpenTelemetry OTLP 与 Langfuse 的脱敏、缓冲 traces 与指标，默认关闭。
