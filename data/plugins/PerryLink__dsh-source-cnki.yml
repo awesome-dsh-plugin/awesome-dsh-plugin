@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-source-cnki
+name: PerryLink/dsh-source-cnki
+category: tools
+description:
+  en: "Chinese-literature tooling for DeepSeek Harness without scraping: import RIS/EndNote-style or labeled exports into stable records, format GB/T 7714-2015 or APA 7 citations without inventing fields, and run structural metadata validation (missing fields, implausible year, malformed DOI, duplicates). No CNKI login, no scraping."
+  zh: "面向 DeepSeek Harness 的中文文献工具（不爬取）：导入 RIS/EndNote 或带标签（题名：/作者：/来源：）的导出为稳定记录，按 GB/T 7714-2015（顺序编码制）或 APA 7 生成引用（不臆造字段），并做结构化元数据校验（缺字段、年份不合理、DOI 格式错误、重复）。不登录知网、不爬取。"
