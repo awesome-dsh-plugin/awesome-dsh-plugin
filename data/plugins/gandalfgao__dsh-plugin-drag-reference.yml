@@ -1,0 +1,6 @@
+url: https://github.com/GandalfGao/dsh-plugin-drag-reference
+name: GandalfGao/dsh-plugin-drag-reference
+category: ui
+description:
+  en: "Drag a file or folder row from the Files panel into the composer, or right-click the row, to insert an @path reference chip. Falls back to plain text when the chip channel refuses insertion; drags that end outside the composer do nothing."
+  zh: "把右侧文件树里的文件/文件夹行拖进对话框，或右键该行，插入一个 @路径 引用芯片；芯片通道被拒绝时退化为纯文本。松手位置不在对话框上时不做任何事。"
