@@ -7365,6 +7365,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-ifc-qto](https://github.com/PerryLink/dsh-ifc-qto) — IFC 模型工程量提取与 CSV 导出核对。
 - [PerryLink/dsh-invoice-ledger](https://github.com/PerryLink/dsh-invoice-ledger) — 核对发票台账：按代码与号码识别重复、核对算式一致性、付款方不一致、日期异常与模板占位符，输出异常清单与工作簿。
 - [PerryLink/dsh-irb](https://github.com/PerryLink/dsh-irb) — Ethics-application checklist for DeepSeek Harness: 18-item keyword checklist (title, PI, purpose, design, participants, recruitment, consent, assent, risks, benefits, confidentiality, vulnerable groups, compensation, conflicts, retention, dissemination, animal ethics, biosafety), an advisory risk level with required safeguards from structured flags, Markdown/SARIF export and REP evidence. Not an IRB decision and not legal advice.
+- [PerryLink/dsh-labor-contract](https://github.com/PerryLink/dsh-labor-contract) — 把劳动合同正文与员工合同 CSV 核对成问题清单：九项必备条款、试用期上限、试用期工资 80% 下限、批量到期与竞业限制，导出带 sha256 的复核 CSV。
 - [PerryLink/dsh-lawcite-adapter](https://github.com/PerryLink/dsh-lawcite-adapter) — 法条引用名称、条号、原文与效力状态核对。
 - [PerryLink/dsh-laya](https://github.com/PerryLink/dsh-laya) — 把 Laya 的有类型决策（`noul` 是/否、`choice`、`score`）接成一等 Cordis 服务（`ctx.laya`）与两个模型可见工具 `laya_ask`、`laya_plan`。插件自身不安装也不下载任何东西：它是你自己启动的 `laya-mcp serve` 边车的客户端，边车未运行时会明确报出，而不是在首次工具调用时隐晦失败。
 - [PerryLink/dsh-lc-doc-check](https://github.com/PerryLink/dsh-lc-doc-check) — 信用证单据与 UCP600 不符点核对。
@@ -10009,7 +10010,9 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — 法务需求收件：从 EML 读取需求、按线程去重并导出收件台账——2 个 `legal.*` 工具。
 - [PerryLink/dsh-ota-review-check](https://github.com/PerryLink/dsh-ota-review-check) — OTA 点评回复台账核对：点评内容与评分、回复时限、回复人、问题分类与编号重复。
 - [PerryLink/dsh-pipeline-check](https://github.com/PerryLink/dsh-pipeline-check) — 项目全流程文件链条核对：环节顺序、文件齐备与金额可解析。
+- [PerryLink/dsh-progress-payment](https://github.com/PerryLink/dsh-progress-payment) — 按合同基准确认本期进度款：整数分金额、累计比例、超量/单价/重复项问题清单，导出审核底稿 CSV。
 - [PerryLink/dsh-research-report](https://github.com/PerryLink/dsh-research-report) — DeepSeek Harness 的可核查研究报告引擎：通过内容寻址的证据台账和版本化封存报告使每条结论携带核查结论，由 manifest 哈希封存目录，检索编排复用 ctx.web 与 ctx.jobs 接口。
+- [PerryLink/dsh-rfq-compare](https://github.com/PerryLink/dsh-rfq-compare) — 把多家供应商对同一批物料的报价压进一张表：最低价、次低价、价差与交期，标出低于成本线、超预算或已过期的报价，导出 CSV。
 - [PerryLink/dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) — 持久化、跨会话的多 Agent 团队房间：成员、消息总线、共享任务板与共享时间线，重启后仍然保留。
 - [PerryLink/dsh-travel-recon](https://github.com/PerryLink/dsh-travel-recon) — 差旅费用核对：导入订单、发票与卡流水，去重、三单匹配与只读政策校验后导出——5 个 `travel.*` 工具。
 - [person-clouds/dsh-workflow-shortcuts](https://github.com/person-clouds/dsh-workflow-shortcuts) — 为 DSH Web 增加 /D 与 /G 快捷命令：先讨论并落成计划文档，再从该计划新建实施会话。
