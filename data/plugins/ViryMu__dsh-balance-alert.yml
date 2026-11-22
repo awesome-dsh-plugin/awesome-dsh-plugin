@@ -1,0 +1,6 @@
+url: https://github.com/ViryMu/dsh-balance-alert
+name: ViryMu/dsh-balance-alert
+category: usage
+description:
+  en: 'Shows your DeepSeek account balance and bonus credit above the composer, refreshes on its own, and warns at two levels as the balance runs low.'
+  zh: '在输入框上方常驻显示 DeepSeek 账号余额与赠金，自动刷新；余额预警分 ¥2 与 ¥0.10 两级。'
