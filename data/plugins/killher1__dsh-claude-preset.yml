@@ -1,0 +1,7 @@
+url: https://github.com/killher1/dsh-claude-preset
+name: killher1/dsh-claude-preset
+category: identity
+description:
+  en: Claude Code agent preset adapting the system prompt, 13 tool descriptions, Plan Mode, and 9-section compaction for DSH.
+  zh: 适配 Claude Code 行为系统提示词、13 项工具描述、Plan Mode 与 9 段式压缩的智能体预设。
+icon: https://raw.githubusercontent.com/killher1/dsh-claude-preset/main/assets/icon-180.png
