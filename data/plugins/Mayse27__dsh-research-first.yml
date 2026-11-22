@@ -1,0 +1,6 @@
+url: https://github.com/Mayse27/dsh-research-first
+name: Mayse27/dsh-research-first
+category: workflow
+description:
+  en: 'Nudges the agent to investigate before editing; generation tasks (Stable Diffusion, ComfyUI, Qwen Image, video, audio, 3D) get GitHub-first domain-aware search and surface found resources for the user to confirm before download.'
+  zh: '软引导 agent 先调研再改动；生成类任务（SD/ComfyUI/Qwen-Image/视频/音频/3D）做 GitHub 优先的领域感知搜索，把找到的资源呈现给用户确认后再下载。'
