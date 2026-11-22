@@ -1,0 +1,7 @@
+url: https://github.com/qinziang/dsh-session-folders
+name: qinziang/dsh-session-folders
+category: session
+description:
+  en: 'Gives each new chat its own workspace folder, renames it with the chat title, hides it on archive, and cleans up empty or deleted chat folders.'
+  zh: '为每个新对话创建独立工作文件夹，随标题重命名，归档时隐藏，并清理空文件夹或删除会话产生的文件夹。'
+icon: https://raw.githubusercontent.com/qinziang/dsh-session-folders/main/docs/icon.png
