@@ -1,0 +1,5 @@
+url: https://github.com/PerryLink/dsh-claim-check
+name: PerryLink/dsh-claim-check
+category: tools
+description:
+  en: "Deterministic claim support checking for DeepSeek Harness: verbatim quote spans, number matching, labelled-value contradiction, negation and hedging polarity against the cited sentence, REP v1 evidence/claim/verdict records and SARIF output. A paraphrase is reported as insufficient, never as supported."
