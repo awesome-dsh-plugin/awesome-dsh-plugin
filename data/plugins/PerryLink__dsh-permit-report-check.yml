@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-permit-report-check
+name: PerryLink/dsh-permit-report-check
+category: tools
+description:
+  en: "Administrative-permit application report check for DeepSeek Harness: check permit application reports against the Administrative Licensing Law of the PRC. Flags discrepancies only and makes no conclusive judgment."
+  zh: "许可申请报告核对：依据《中华人民共和国行政许可法》。仅提示差异，不作出定性结论。"
