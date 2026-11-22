@@ -1,0 +1,6 @@
+url: https://github.com/AsakuraAOI/dsh-session-md-export
+name: AsakuraAOI/dsh-session-md-export
+category: session
+description:
+  en: Download the current DSH session as Markdown from the session header, with optional reasoning, system messages, and metadata.
+  zh: 从会话标题栏导出当前 DSH 会话为 Markdown，可选包含思考过程、系统消息和元信息。
