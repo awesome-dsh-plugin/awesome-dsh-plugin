@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-soe-decision-check
+name: PerryLink/dsh-soe-decision-check
+category: tools
+description:
+  en: "SOE three-major-one-large decision-record check for DeepSeek Harness: check decision records against the Opinions on Further Advancing the Implementation of the Three Major and One Large Decision-Making System in State-Owned Enterprises (Zhongbanfa [2010] No. 17). Flags discrepancies only and makes no conclusive judgment."
+  zh: "三重一大决策记录核对：依据《关于进一步推进国有企业贯彻落实\"三重一大\"决策制度的意见》（中办发〔2010〕17号）。仅提示差异，不作出定性结论。"
