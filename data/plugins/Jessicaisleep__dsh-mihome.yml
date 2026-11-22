@@ -1,0 +1,6 @@
+url: https://github.com/Jessicaisleep/dsh-mihome
+name: Jessicaisleep/dsh-mihome
+category: tools
+description:
+  en: 'Controls Mi Home (米家) devices through mijiaAPI. Registers six agent tools for login, device list, device spec, property read and write, scenes and sensors, and adds a sidebar workbench whose device tiles, device detail pages, scene list and consumable gauges follow the Mi Home app layout. Needs Python 3.10 or newer; the plugin creates its own virtualenv and installs mijiaAPI into it. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过 mijiaAPI 控制米家设备。注册六个 agent 工具，覆盖登录、设备列表、设备规格、属性读写、场景与传感器；并在侧栏提供工作台，设备磁贴、设备详情页、场景列表与耗材余量按米家 App 的布局呈现。需要 Python 3.10 及以上，插件会自建虚拟环境并安装 mijiaAPI。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

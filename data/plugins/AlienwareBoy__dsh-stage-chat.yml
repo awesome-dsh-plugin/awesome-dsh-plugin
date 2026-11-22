@@ -1,0 +1,6 @@
+url: https://github.com/AlienwareBoy/dsh-stage-chat
+name: AlienwareBoy/dsh-stage-chat
+category: ui
+description:
+  en: Stage-based chat view that organizes each reply into execution, result, and items awaiting confirmation.
+  zh: 阶段式对话视图，把一轮回复组织为执行过程、执行结果和待确认事项。

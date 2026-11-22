@@ -1,0 +1,6 @@
+url: https://github.com/xiongking/dsh-reverse-proxy-gateway
+name: xiongking/dsh-reverse-proxy-gateway
+category: remote
+description:
+  en: 'Exposes the local DSH web UI through a fixed-port gateway with Basic Auth, optional passwordless links and a settings card, forwarding to the host loopback port with a freshly signed session cookie so no trustedHosts or cookie-lifetime setup is needed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过固定端口网关把 DSH 本地 Web 界面暴露出去：Basic Auth、可选免密链接、插件面板内的设置卡片；转发时即时签发宿主会话 cookie，无需配置 trustedHosts、也无需调整宿主 cookie 寿命。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

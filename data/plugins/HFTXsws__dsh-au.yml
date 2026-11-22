@@ -2,5 +2,5 @@ url: https://github.com/HFTXsws/dsh-au
 name: HFTXsws/dsh-au
 category: remote
 description:
-  en: 'Multi-machine workspace plugin for DSH with cross-device todo, model shortcuts, mobile drawer, and local service/cloud plugin sync. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: 'DSH 多机工作区插件，内置跨设备待办、模型快捷切换、移动端抽屉及本地服务与云插件同步。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: Multi-machine workspace plugin for DSH with cross-device todo, model shortcuts, mobile drawer, and local service/cloud plugin sync.
+  zh: DSH 多机工作区插件，内置跨设备待办、模型快捷切换、移动端抽屉及本地服务与云插件同步。

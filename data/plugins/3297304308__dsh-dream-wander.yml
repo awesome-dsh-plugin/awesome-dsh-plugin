@@ -1,0 +1,6 @@
+url: https://github.com/3297304308/dsh-dream-wander
+name: 3297304308/dsh-dream-wander
+category: identity
+description:
+  en: 'Mind-wandering and dreaming for DSH agents - solo reverie, sleep judging, dream play-out with pixelated residue, and waking memory of the dream. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DSH 角色加上走神与做梦：独处联想、睡眠判定、梦境演出、打码残留与衰减副本。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/MBSF-Yifan/mbsf-compaction
+name: MBSF-Yifan/mbsf-compaction
+category: session
+description:
+  en: Local context compaction for DSH desktop app — strips redundant history without calling an LLM, in milliseconds. Web version not supported.
+  zh: 本地上下文压缩，清冗余，免模型，毫秒级。仅适配 DSH 桌面版（app），web 版不支持。

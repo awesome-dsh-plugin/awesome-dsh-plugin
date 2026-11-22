@@ -1,0 +1,6 @@
+url: https://github.com/Wasabi2575/dsh-workflow-canvas
+name: Wasabi2575/dsh-workflow-canvas
+category: workflow
+description:
+  en: 'Visual subagent-workflow canvas for DeepSeek Harness: wire prompt/JSON/session links, run in an event-driven parallel pool, pause at Lead gates, select per-node memory, or sketch graphs from chat.'
+  zh: 'DeepSeek Harness 可视化子代理工作流画布：拖拽节点与三种语义连线、动态并发执行、Lead 节点暂停拍板、节点记忆选择，也支持在对话里一句话搭图与改图。'
