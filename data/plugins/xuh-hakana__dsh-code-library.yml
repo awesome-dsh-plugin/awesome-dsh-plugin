@@ -4,8 +4,8 @@ url: https://github.com/xuh-hakana/dsh-code-library
 name: xuh-hakana/dsh-code-library
 category: tools
 description:
-  en: "Token-saving reusable code library for DSH agents: catalog-first lookup, structured problem/scenario/solution notes, and self-directed code reuse."
-  zh: "给 DSH agent 用的省 Token 可复用代码库：清单先行、结构化记录问题/场合/解法，自主复用与沉淀。"
+  en: "Token-saving reusable code library + error library for DSH agents: catalog-first lookup, errors grouped by dsh/general/thirdparty/local, and two-way error-code links."
+  zh: "给 DSH agent 用的省 Token 可复用代码库 + 错误库：清单先行，错误按 dsh/通用/第三方/本机归档，错误与代码双向关联。"
 icon: https://raw.githubusercontent.com/xuh-hakana/dsh-code-library/main/assets/icon-180.png
 
-tarball: https://github.com/xuh-hakana/dsh-code-library/releases/download/v0.2.0/dsh-code-library-0.2.0.tgz
+tarball: https://github.com/xuh-hakana/dsh-code-library/releases/download/v0.3.0/dsh-code-library-0.3.0.tgz
