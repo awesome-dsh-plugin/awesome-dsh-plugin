@@ -1,0 +1,6 @@
+url: https://github.com/wssdll/dsh-chat-preset
+name: wssdll/dsh-chat-preset
+category: identity
+description:
+  en: A minimal chat agent preset with only web search, web fetch and attachment reading; keeps the context tiny and the reasoning chain in Chinese.
+  zh: 纯净聊天模式预设，只保留联网搜索、打开网页和读取附件，极小上下文，中文思维链。

@@ -1,0 +1,6 @@
+url: https://github.com/lambsouls/dsh-ssh-ops
+name: lambsouls/dsh-ssh-ops
+category: remote
+description:
+  en: 'Server ops console: keeps Linux credentials encrypted, runs SSH commands and service actions, keeps a per-host profile, and shows a read-only inventory plus a live ANSI terminal. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '服务器运维台：加密保管 Linux 服务器凭证，按对话指令走 SSH 执行命令、管理服务，每台机器一份专属档案，并提供只读总览与实时彩色终端。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

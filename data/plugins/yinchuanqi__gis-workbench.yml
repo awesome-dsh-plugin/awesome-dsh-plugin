@@ -1,0 +1,6 @@
+url: https://github.com/yinchuanqi/gis-workbench
+name: yinchuanqi/gis-workbench
+category: ui
+description:
+  en: 'MapLibre GIS workbench for DSH: a shared map canvas with layer management (visibility, ordering, removal), raster and vector import (SHP, GeoJSON, GeoPackage, ZIP), semantic styling and building labels, and a chat-callable gis_add_layer tool. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 的 MapLibre GIS 工作台：共享地图画布，支持图层管理（可见性、排序、移除）、栅格与矢量导入（SHP、GeoJSON、GeoPackage、ZIP）、语义化样式与建筑注记，以及可在对话中调用的 gis_add_layer 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

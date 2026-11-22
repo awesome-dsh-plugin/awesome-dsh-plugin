@@ -1,0 +1,7 @@
+url: https://github.com/X1aoM1ngTX/dsh-lan-remote
+name: X1aoM1ngTX/dsh-lan-remote
+category: remote
+description:
+  en: Share a DSH over the LAN and open other computers' DSH from one settings page.
+  zh: 把本机 DSH 共享到局域网，并在设置页里保存、测试和打开其他电脑的 DSH。
+icon: https://raw.githubusercontent.com/X1aoM1ngTX/dsh-lan-remote/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/barnetshen/dsh-yingma-canvas
+name: barnetshen/dsh-yingma-canvas
+category: ui
+description:
+  en: 'Opens the Xiaoyingma AI video canvas in a DSH sidebar and dock tab; agents read and edit canvas nodes through the bundled yingma CLI and MCP tools. Needs a Xiaoyingma account. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 侧栏和右侧停靠栏打开小影马 AI 视频无限画布；Agent 通过随包的 yingma CLI 与 MCP 工具读写画布节点。需要小影马账号。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/barnetshen/dsh-yingma-canvas/main/screenshots/icon.png

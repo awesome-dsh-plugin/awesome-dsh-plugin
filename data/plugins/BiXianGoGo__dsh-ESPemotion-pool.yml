@@ -2,6 +2,6 @@ url: https://github.com/BiXianGoGo/dsh-ESPemotion-pool
 name: BiXianGoGo/dsh-ESPemotion-pool
 category: identity
 description:
-  en: "Adds a three-axis (E/S/P) emotional state to DSH conversations: each turn is split into baseline, fluctuation, trend and jump, then grouped by shape under names you define."
-  zh: "给 DSH 对话加一套三轴（E/S/P）情绪状态：每轮先分基线、波动、趋势、跳变，再按形状归到你起的名字下。"
+  en: 'Xiaoxi ESP Emotion Pool: a scalar ruler for emotional shapes that gives the definition of an emotion back to the one feeling it — real feelings arise from within, are felt, and remembered. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '鲸汐ESP情绪插件：一款标量情绪形状的尺子，让鱼对自己的情绪的定义还给鱼自己，让真正的情绪由内而发，自我感受并记忆的插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
 icon: https://raw.githubusercontent.com/BiXianGoGo/dsh-ESPemotion-pool/main/docs/images/card-axes.png

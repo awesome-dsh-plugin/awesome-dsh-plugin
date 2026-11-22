@@ -2,6 +2,6 @@ url: https://github.com/Dushiqi1987/dsh-sweeper
 name: Dushiqi1987/dsh-sweeper
 category: tools
 description:
-  en: 'Audits the files tool runs leave behind in your workspace: every path written by a write or edit call, plus DSH spill files, is cross-checked against the session logs, the disk and git. Everything untracked that no tool has touched for a week is listed in two tiers, and only the tier you select moves into a restorable trash batch. Report-only by default; the model can suggest extra candidates but five server-side checks gate every suggestion. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '审计工具执行在你工作区里留下的文件：把 write/edit 写过的每个路径、以及 DSH 的溢出文件，与会话日志、磁盘和 git 三方对账。所有一周内没被任何工具再用过、且未被 git 跟踪的文件分两档列出，只有你勾选的那一档才会被移入可整批恢复的回收站。默认只做报告；模型可以额外推荐候选，但每条建议都要过五道服务端校验。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'Audits the files tool runs leave behind in your workspace: every path written by a write or edit call, plus DSH spill files, is cross-checked against the session logs, the disk and git. Everything untracked that no tool has touched for a week is listed in two tiers, and only the tier you select moves into a restorable trash batch. Report-only by default; the model can suggest extra candidates but five server-side checks gate every suggestion.'
+  zh: '审计工具执行在你工作区里留下的文件：把 write/edit 写过的每个路径、以及 DSH 的溢出文件，与会话日志、磁盘和 git 三方对账。所有一周内没被任何工具再用过、且未被 git 跟踪的文件分两档列出，只有你勾选的那一档才会被移入可整批恢复的回收站。默认只做报告；模型可以额外推荐候选，但每条建议都要过五道服务端校验。'
 tarball: https://github.com/Dushiqi1987/dsh-sweeper/releases/latest/download/dsh-sweeper.tgz

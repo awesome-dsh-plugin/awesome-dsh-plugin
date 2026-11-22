@@ -1,0 +1,7 @@
+url: https://github.com/Jestions-dev/dsh-think-skin
+name: Jestions-dev/dsh-think-skin
+category: ui
+description:
+  en: 'Reskins the DSH thinking row: pick an image, give that image its own line pool, and the row types the line out one character at a time with a highlight sweep, over a 2-4 colour gradient you control. Three packs ship in the box (39 images, 41 lines, 184 verbs). Everything is edited in Settings -> Thinking and lands on the next line, no restart, and packs import or export as .zip. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DSH 的「思考状态」行换皮肤：一张图配自己的文案池，文字逐字打出、高光扫过，2–4 色渐变可调。内置三套（39 图 / 41 句 / 184 个动词）。在 设置 → 思考状态 里配，改完下一句话就生效，不用重启；套组可导入导出 .zip。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Jestions-dev/dsh-think-skin/main/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/Zjb0702/dsh-artifact-vault
+name: Zjb0702/dsh-artifact-vault
+category: session
+description:
+  en: 'Attributes workspace files to the session that wrote them by replaying session logs, groups same-named files into v1..vN, gives each session its own tools/ and artifacts/ workspace folder, and reclaims disk through a same-drive recycle bin plus a C-drive cleanup planner. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过回放会话日志把工作区文件归属到写它的会话，同名文件自动排成 v1..vN，为每个会话建立独立的 tools/ 与 artifacts/ 工作区，并用同盘回收站与 C 盘清理计划回收磁盘空间。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Zjb0702/dsh-artifact-vault/main/assets/icon-180.png
