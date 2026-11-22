@@ -1,0 +1,5 @@
+url: https://github.com/PerryLink/dsh-manuscript-check
+name: PerryLink/dsh-manuscript-check
+category: tools
+description:
+  en: "Pre-submission checklist for DeepSeek Harness: manuscript structure and declaration statements, keyword-based coverage of starter CONSORT/STROBE/PRISMA items with locators and advice, and a submission-pack scan (manuscript, cover letter, numbered figures with gap detection, tables, supplements, declarations) with JSON/Markdown reports. A checklist, not a compliance verdict."
