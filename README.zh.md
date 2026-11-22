@@ -4384,6 +4384,7 @@ dsh plugin --profile web add dshmarket
 - [titor-jz/dsh-dumate-gateway](https://github.com/titor-jz/dsh-dumate-gateway) — 把本机 DuMate 接入 DSH：模型选择器里可筛选的实时模型表、带思考内容的流式对话、Off/On 思考开关、图片输入与工具调用；可选 headless 模式只启动 DuMate 的两个后台二进制；另提供只绑回环的 OpenAI/Anthropic 兼容网关，以及显示状态、本地用量与延迟的右侧栏面板。
 - [tkaiz0406/dsh-subagent-route-pin](https://github.com/tkaiz0406/dsh-subagent-route-pin) — 注册一个包装 provider，让被委派的子代理走自己的 LLM 路由——单发子代理经 provider.start，Agent Teams 成员经 startActivation 上的钩子——主 agent 仍用自己的模型。附带设置页选择路由、按专家覆盖的配置文件、报告钩子挂在哪条缝上的能力标志，以及挂载时写下的就绪记录。
 - [TLEWA/dsh-opencode-go-router](https://github.com/TLEWA/dsh-opencode-go-router) — 为 OpenCode Go 的 DeepSeek 会话保持提示缓存命中：在请求发出前预测其缓存命中率，当该请求预计变冷且近期请求偏慢时轮换 x-opencode-session 路由 id，并把空闲的暖 id 放入池中供新会话复用。
+- [tlsneo/dsh-gpt-fastmode](https://github.com/tlsneo/dsh-gpt-fastmode) — 在 DSH Web 输入栏为 GPT 模型添加 Fast 和 Ultrafast 档位选项，可仅应用于当前会话，也可应用于使用同一模型 ID 的所有会话。
 - [tonylee2022/dsh-xai-oauth](https://github.com/tonylee2022/dsh-xai-oauth) — 用设备码 OAuth 登录 xAI Grok 订阅，自动刷新访问令牌，并作为 xai 路由凭据使用，无需 API key。
 - [TonyWu2333/dsh-mercury-diffusion](https://github.com/TonyWu2333/dsh-mercury-diffusion) — 在 dsh Web UI 的回答气泡里实时播放 Inception Mercury 的扩散（去噪）过程：对支持的路由以 `diffusing: true` 重发请求，按真实帧从噪声播放到最终文本，会话日志只写入收敛后的答案。按 provider/model 用一个在生成前就被拒绝的探测请求判断是否支持，右侧浮动按钮按模型开关；带附件、辅助调用或不支持的路由一律回退原适配器。启用期间会接管所有模型的助手消息渲染。
 - [trmquang93/dsh-claude-code-account](https://github.com/trmquang93/dsh-claude-code-account) — 用 Claude Code（Claude Pro/Max）登录作为 DSH 的 anthropic 模型提供方，让 DSH 的 pi-ai 凭据记录与 Claude Code 钥匙串共用同一条轮换中的 OAuth 凭据链。
@@ -5430,6 +5431,7 @@ dsh plugin --profile web add dshmarket
 - [svgop/dsh-rich-indexing](https://github.com/svgop/dsh-rich-indexing) — 分级压缩中枢：把单一的 80% 压缩阈值换成可配置的阶梯（默认 30/50/70/90），逐级加强压缩力度；每次检查点都折叠入确定性关键词索引，让事实跨周期累积；摘要走模型链——主模型加最多 3 个回退，各自独立推理档位。附带 Compaction 模块子标签页与设置卡片；关闭插件始终恢复原版压缩。
 - [SZMY-haruhi/dsh-session-plus](https://github.com/SZMY-haruhi/dsh-session-plus) — DSH Web 侧栏归档目录：将会话恢复到原工作区槽位、删除会话日志，或从用户消息修改并分支为新会话。
 - [T-splines/dsh-compaction-policy-engine](https://github.com/T-splines/dsh-compaction-policy-engine) — 为 DeepSeek Harness 提供分层、热加载的上下文压缩策略：按 provider/model 的规则、比例或 token 预算、摘要模型回退与设置面板。
+- [TacKana/DSH-No-Workspace](https://github.com/TacKana/DSH-No-Workspace) — 让 DSH 摆脱工作区的限制，为每次新建对话自动分配独立目录。
 - [takboo/dsh-session-bin](https://github.com/takboo/dsh-session-bin) — 按工作区管理原生归档，支持搜索、取消归档、单项和固定范围批量永久删除。
 - [tanxiaolong/dsh-redo-live](https://github.com/tanxiaolong/dsh-redo-live) — 生成中也能编辑已发送的消息：点「编辑重发」或「重新生成」时，如果这一轮还在跑，先通过官方 Session.cancel 停掉并等会话空闲（上限 8 秒），再按上游 dsh-redo 的方式原地撤回并重发。命令为 /relive，可与 dsh-redo 同时安装。
 - [taoziliyouchong/dsh-session-autarchive](https://github.com/taoziliyouchong/dsh-session-autarchive) — 把长期没动过的会话自动归档（默认 5 天），单个会话可以标成不归档。
@@ -7342,18 +7344,30 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-medrec-qc](https://github.com/PerryLink/dsh-medrec-qc) — 依据国卫办医发〔2016〕24号等公开文件，核对病案首页各字段的齐备性与字段间的逻辑矛盾。列出缺失或不一致之处供人复核，不评价临床正确性。
 - [PerryLink/dsh-nsfc-form-check](https://github.com/PerryLink/dsh-nsfc-form-check) — 国自然申请书形式审查与匿名化核对。
 - [PerryLink/dsh-nurse-record-check](https://github.com/PerryLink/dsh-nurse-record-check) — 依据《病历书写基本规范》等公开文件，核对护理记录的书写时限、签名，以及评估表的完整性。列出缺失或次序不符之处供人复核。
+- [PerryLink/dsh-paper-doc-adapter](https://github.com/PerryLink/dsh-paper-doc-adapter) — 试卷结构核对：按题型、答案、分值与标识核对试卷结构自洽，仅提示差异，不作出定性结论。
 - [PerryLink/dsh-payroll-audit](https://github.com/PerryLink/dsh-payroll-audit) — 按公开的社保、公积金与个人所得税参数核对工资表，结果分为 pass、pass_with_gaps、review、fail 四档；参数本身带复核日期。
 - [PerryLink/dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) — 本地非生成式决策层：phocinae_ask 与 phocinae_gate 由小型决策模型返回带校准置信度的类型化裁决，并对无法回答的情况 fail-closed 升级。需在本机 8155 端口运行 phocinae-server（pip 安装）并加载 Phocinae-Largha-150M-v1 模型。
 - [PerryLink/dsh-pim-lint](https://github.com/PerryLink/dsh-pim-lint) — 面向 DeepSeek Harness 的 PIM 商品目录 lint：必填字段、SKU 重复、GTIN 校验位与价格（仓库标记 FROZEN 2026-10-31）。
+- [PerryLink/dsh-policy-ledger](https://github.com/PerryLink/dsh-policy-ledger) — 面向 DeepSeek Harness 的只读安装体检：能力快照、tarball 断言与安装诊断；dsh-plugin-doctor 的仅安装版配套。
 - [PerryLink/dsh-power-ticket-check](https://github.com/PerryLink/dsh-power-ticket-check) — 依据现行电力安全工作规程，核对电力工作票应载明的要素，以及签发与许可的先后顺序。只报告发现的差异，不判定作业是否安全、许可是否有效。
 - [PerryLink/dsh-ppap-check](https://github.com/PerryLink/dsh-ppap-check) — PPAP 提交等级与资料要素核对。
+- [PerryLink/dsh-primer](https://github.com/PerryLink/dsh-primer) — 构建 DeepSeek Harness 插件的实用入门指南。
 - [PerryLink/dsh-qms-capa](https://github.com/PerryLink/dsh-qms-capa) — QMS 不合格品、CAPA 与 8D 闭环跟踪。
 - [PerryLink/dsh-railway-window](https://github.com/PerryLink/dsh-railway-window) — 铁路运单与时效核对：依据《铁路营业线施工安全管理办法》。仅提示差异，不作出定性结论。
 - [PerryLink/dsh-repair-order-qc](https://github.com/PerryLink/dsh-repair-order-qc) — 维修工单项目金额、工时配件与结算总额核对。
+- [PerryLink/dsh-research-core](https://github.com/PerryLink/dsh-research-core) — REP v1——面向 DeepSeek Harness 科研插件共享的研究证据协议：sources/snapshots/anchors/evidence/claims/checks/artifacts/audit events/sealed report manifests 的 JSON Schema 与 TypeScript 类型，以及零依赖内容寻址证据库、规范哈希、SARIF 导出与独立校验 CLI。
+- [PerryLink/dsh-research-skills](https://github.com/PerryLink/dsh-research-skills) — 面向 DeepSeek Harness 的七个科研 SOP 技能：文献综述、引文审计、论断/证据审计、稿件预检、审稿回复、可复现性审计与数据管理计划。
+- [PerryLink/dsh-research-suite](https://github.com/PerryLink/dsh-research-suite) — 面向 DeepSeek Harness 的一键科研套件包与 research_doctor。
+- [PerryLink/dsh-response-letter](https://github.com/PerryLink/dsh-response-letter) — 面向 DeepSeek Harness 的审稿回复工作流：解析审稿意见并定位，按回复编号检查逐条覆盖（缺失、过短、多余、重复），导出带覆盖表的 Markdown 回复信；解析后的意见成为 REP 证据。
 - [PerryLink/dsh-retraction-watch](https://github.com/PerryLink/dsh-retraction-watch) — 面向 DeepSeek Harness 的撤稿与更正监测：Crossref 作品记录与经核验的 filter=updates 查询、逐 DOI 状态（retracted/concern/corrected/notice/clear/unknown）、带变更检测的仅追加时间线、REP v1 证据快照与 SARIF 输出。clear 仅表示无登记通告，不证明有效性。
 - [PerryLink/dsh-safety-ledger-check](https://github.com/PerryLink/dsh-safety-ledger-check) — 核对施工安全资格台账的培训学时、四个记录要素，以及特种作业证书有效期与作业时间的匹配。
 - [PerryLink/dsh-site-log-check](https://github.com/PerryLink/dsh-site-log-check) — 依据 GB/T 50319-2013 等公开文件，核对监理日志的跨日连续性，以及旁站监理的覆盖情况。列出缺漏与覆盖差异供人复核。
+- [PerryLink/dsh-soe-decision-check](https://github.com/PerryLink/dsh-soe-decision-check) — 三重一大决策记录核对：依据《关于进一步推进国有企业贯彻落实"三重一大"决策制度的意见》（中办发〔2010〕17号）。仅提示差异，不作出定性结论。
+- [PerryLink/dsh-soilwater-check](https://github.com/PerryLink/dsh-soilwater-check) — 土壤与地下水调查记录核对：依据《建设用地土壤污染状况调查技术导则》《地下水环境监测技术规范》。仅提示差异，不作出定性结论。
+- [PerryLink/dsh-sop-sync-check](https://github.com/PerryLink/dsh-sop-sync-check) — 作业规程（SOP）核对：依据 IATF 16949／汽车行业核心工具手册。仅提示差异，不作出定性结论。
+- [PerryLink/dsh-source-cnki](https://github.com/PerryLink/dsh-source-cnki) — 面向 DeepSeek Harness 的中文文献工具（不爬取）：导入 RIS/EndNote 或带标签（题名：/作者：/来源：）的导出为稳定记录，按 GB/T 7714-2015（顺序编码制）或 APA 7 生成引用（不臆造字段），并做结构化元数据校验（缺字段、年份不合理、DOI 格式错误、重复）。不登录知网、不爬取。
 - [PerryLink/dsh-spc-gbt-adapter](https://github.com/PerryLink/dsh-spc-gbt-adapter) — 按现行 GB/T 17989.2—2020 控制图常数表核对 SPC 控制图控制限与 CPK。
+- [PerryLink/dsh-sr-ledger](https://github.com/PerryLink/dsh-sr-ledger) — 面向 DeepSeek Harness 的系统综述台账：PRISMA 2020 方案修订、导入记录、双人筛选中显式冲突裁决、RoB 2/ROBINS-I/GRADE 评估、带完整性问题的 PRISMA 计数，以及由哈希链仅追加日志支撑的导出包。
 - [PerryLink/dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) — 把 .docx、.xlsx、.xlsm、.csv、.tsv 中的表格转换成规则核查器可读的 table JSON；识别不了时明确报告，不做猜测。
 - [PerryLink/dsh-tender-matrix](https://github.com/PerryLink/dsh-tender-matrix) — 核对评标因素评分矩阵的内部算术自洽性：各因素分值上限、所记分值与合计之间是否互相一致。只报告发现的差异，不评价评标本身是否正确或公正。
 - [PerryLink/dsh-tender-requirements](https://github.com/PerryLink/dsh-tender-requirements) — 从招标文件提取截止时间、保证金、有效期、最高限价、投标文件组成与正副本份数；未找到的项也逐条报告，不省略。
@@ -7771,6 +7785,7 @@ dsh plugin --profile web add dshmarket
 - [xiao-hans/dsh-rtk](https://github.com/xiao-hans/dsh-rtk) — 在 tools/pre-execute 阶段经 `rtk rewrite` 改写 DSH 的 shell 工具命令，提供 `rtk` 与 `rtk_stats` 工具，并用 `rtk pipe` 压缩结果。
 - [xiaobbl/dsh-mworks-ai](https://github.com/xiaobbl/dsh-mworks-ai) — DeepSeek Harness 的 MWORKS AI：由 MCP 管理器托管的 Syslab 与 Sysplorer MCP 服务、官方 MWORKS 技能与工作规则，并在插件页提供运行环境设置。
 - [xiaomao361/dsh-capability-gateway](https://github.com/xiaomao361/dsh-capability-gateway) — 通过一个按需网关搜索、查看和使用选定的第三方技能与 MCP 工具。目录精简取决于宿主和工具模式。本地日志记录使用元数据。
+- [xiaomoL444/ugc-asset-search-dsh-plugin](https://github.com/xiaomoL444/ugc-asset-search-dsh-plugin) — 搜索千星奇域素材，在 DeepSeek Harness 对话中用卡片试听音效、预览特效和打开音乐链接。
 - [xiaoshi7915/dsh-kb-manager](https://github.com/xiaoshi7915/dsh-kb-manager) — 本地知识库管理：多格式导入、CJK 感知分块、sqlite-vec 向量 + BM25 混合检索与 bge-reranker-base 重排序、快照恢复、kbpack 导入导出与跨库检索，提供 22 个 agent 工具与 Web 面板。
 - [xiaoxiao150/vram-switcher](https://github.com/xiaoxiao150/vram-switcher) — 面向本地 AI 陪伴的 AstrBot/DSH 原生显存协调：LLM、IndexTTS、ComfyUI 轮流用卡，不加代理。
 - [xiaoyuink/dsh-image-create](https://github.com/xiaoyuink/dsh-image-create) — 在 DSH 内直接文生图/图生图：对接 OpenAI 兼容图像接口，提供 Agent 生图工具、多供应商自动降级，以及带生成历史的侧栏工作台。
