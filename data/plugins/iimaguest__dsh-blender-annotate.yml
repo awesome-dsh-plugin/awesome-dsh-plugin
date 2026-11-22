@@ -1,0 +1,8 @@
+url: https://github.com/iimaguest/dsh-blender-annotate
+name: iimaguest/dsh-blender-annotate
+category: ui
+description:
+  en: 'Previews .blend files with a local headless Blender and adds surface annotations to the chat composer with object, face, edge, vertex, UV and revision-bound point references.'
+  zh: '用本机无头 Blender 预览 .blend，并把表面标注连同对象、面、边、顶点、UV 以及绑定导出版本的点引用加入对话输入框。'
+tarball: https://github.com/iimaguest/dsh-blender-annotate/releases/latest/download/dsh-blender-annotate.tgz
+icon: https://raw.githubusercontent.com/iimaguest/dsh-blender-annotate/main/assets/icon.png
