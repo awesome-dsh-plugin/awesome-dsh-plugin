@@ -1,0 +1,6 @@
+url: https://github.com/onup-1/dsh-mod-build-auto-approve
+name: onup-1/dsh-mod-build-auto-approve
+category: dev
+description:
+  en: Auto-approves sandbox escalations that clearly belong to a Minecraft mod build, learns keywords from every human approval, and reports how often approvals fire.
+  zh: 只自动放行明显属于 Minecraft 模组构建的沙箱提权，从每次人工批准里学习关键词，并统计审批触发频次。
