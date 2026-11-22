@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-statcheck
+name: PerryLink/dsh-statcheck
+category: tools
+description:
+  en: "Recompute the statistics reported in a manuscript and flag self-inconsistent p values for DeepSeek Harness: APA-style t/F/chi-square/r/z parsing, two-tailed and upper-tail p values, CI-versus-p checks and exact character locators."
+  zh: "为 DeepSeek Harness 重算论文中报告的统计量并标记自相矛盾的 p 值：解析 APA 风格 t/F/卡方/r/z，计算双尾与上尾 p 值，检查 CI 与 p 值一致性并给出精确字符定位。"
