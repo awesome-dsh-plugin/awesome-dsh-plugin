@@ -1,0 +1,7 @@
+url: https://github.com/saulgoodman174/dsh-python-tools
+name: saulgoodman174/dsh-python-tools
+category: tools
+description:
+  en: 'Run trusted Python scripts in the workspace, read text from searchable PDFs, and export DOCX to PDF through Microsoft Word on Windows.'
+  zh: '在工作区运行受信任的 Python 脚本、读取可搜索 PDF 的文本，并在 Windows 上通过 Microsoft Word 把 DOCX 导出为 PDF。'
+icon: https://raw.githubusercontent.com/saulgoodman174/dsh-python-tools/main/assets/icon-180.png
