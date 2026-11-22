@@ -1,6 +1,7 @@
 url: https://github.com/beidou6972yh/dsh-bw-router
 name: beidou6972yh/dsh-bw-router
 category: model
+icon: https://raw.githubusercontent.com/beidou6972yh/dsh-bw-router/main/docs-open/WB-Router-Icon.png
 tarball: https://github.com/beidou6972yh/dsh-bw-router/releases/download/v0.2.0/dsh-bw-router-0.2.0.tgz
 description:
   en: 'B&W v0.2.0 — plan a task into stages, assign the right model per stage, and switch models inside one session without losing context; costs are either stated or explicitly unavailable, never guessed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
