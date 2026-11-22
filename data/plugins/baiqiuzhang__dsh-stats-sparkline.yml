@@ -1,0 +1,6 @@
+url: https://github.com/baiqiuzhang/dsh-stats-sparkline
+name: baiqiuzhang/dsh-stats-sparkline
+category: usage
+description:
+  en: Cache-hit ratio sparkline, token throughput and composer stats for DeepSeek Harness, sampled from the built-in tokenUsage and sessionStats projections.
+  zh: 缓存命中折线、token 吞吐与输入区统计，采样自内置 tokenUsage 与 sessionStats 投影。
