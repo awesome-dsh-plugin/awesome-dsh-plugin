@@ -5,4 +5,4 @@ description:
   en: Sorts GitHub stars into GitHub Lists from a panel — keyword rules suggest a list for each unlisted repository, changes are staged locally in batches, then written back to GitHub Lists with background concurrent sync and a progress bar, and a per-snapshot diff reports new stars, releases, commits, archived repositories, star-count moves and unstarred repositories.
   zh: 在面板里把 GitHub star 归进 GitHub Lists——关键词规则为每个未归类仓库给出列表建议，改动先本地批量暂存，再用后台并发同步和进度条写回 GitHub Lists；每次快照比对还会报告新收藏、新版本、新提交、归档、Star 涨跌与取消收藏。
 icon: https://raw.githubusercontent.com/whiplashf/dsh-stars/main/assets/icon-180.png
-tarball: https://github.com/whiplashf/dsh-stars/releases/download/v0.1.0/dsh-stars-0.1.0.tgz
+tarball: https://github.com/whiplashf/dsh-stars/releases/latest/download/dsh-stars.tgz
