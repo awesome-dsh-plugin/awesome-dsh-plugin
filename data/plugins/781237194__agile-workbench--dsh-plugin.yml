@@ -1,6 +1,7 @@
 url: https://github.com/781237194/agile-workbench/tree/main/dsh-plugin
-name: 781237194/agile-workbench#dsh-plugin
+name: 781237194/agile-workbench#dsh-agile-workbench
 category: workflow
 description:
-  en: 'PM Workbench: multi-role project workbench inside DSH — role cards, dispatch/receipts, requirement & bug ledger, gates, Owner review board; Windows launcher installs the local Electron workbench (npm: dsh-agile-workbench).'
-  zh: 'PM 工作台：在 DSH 里跑多角色项目工作台——角色卡、派单与回执、需求/缺陷台账、门禁与 Owner 评审看板；Windows 下由启动器安装本地 Electron 工作台（npm: dsh-agile-workbench）。'
+  en: "PM Workbench bundle for DSH: installs and opens a local Electron agile workbench (multi-role PM workflow, role cards, dispatch and receipts, requirement and defect pools, gates, Owner review board, session queue) from a DSH tool, and bundles the memory, browser, search and vision plugins it needs. Windows only; the first load bootstraps Node, Electron and the app through a PowerShell installer."
+  zh: "PM工作台 DSH 套装：从 DSH 工具里安装并打开本地 Electron 敏捷工作台（多角色 PM 流程、角色卡、派单与回执、需求池/缺陷池、门禁、Owner 评审看板、会话排队），并携带其依赖的记忆、浏览器、搜索、视觉插件。仅支持 Windows——首次加载会通过 PowerShell 安装器准备 Node、Electron 和应用本体。"
+icon: https://raw.githubusercontent.com/781237194/agile-workbench/main/assets/pm-workbench.png
