@@ -1,0 +1,6 @@
+url: https://github.com/lonelycrab888/dsh-plaud
+name: lonelycrab888/dsh-plaud
+category: voice
+description:
+  en: 'Connects Plaud to DeepSeek Harness through the official Plaud MCP, so agents can find recordings, read transcripts with speaker labels and timestamps, retrieve existing summaries, and draft Markdown meeting notes.'
+  zh: '通过 Plaud 官方 MCP 将录音接入 DeepSeek Harness，让 Agent 在对话中查找录音、读取带说话人和时间戳的转录、查看已有摘要，并整理成 Markdown 会议纪要。'
