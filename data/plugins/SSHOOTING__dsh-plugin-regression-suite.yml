@@ -1,5 +1,6 @@
 url: https://github.com/SSHOOTING/dsh-plugin-regression-suite
 name: SSHOOTING/dsh-plugin-regression-suite
+tarball: https://github.com/SSHOOTING/dsh-plugin-regression-suite/releases/download/v0.1.0/0.1.0.tgz
 category: dev
 description:
   en: 'Compares task runs across versions by calls, tokens and errors to detect regressions.'
