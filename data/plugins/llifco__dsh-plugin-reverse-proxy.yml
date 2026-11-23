@@ -2,6 +2,6 @@ url: https://github.com/llifco/dsh-plugin-reverse-proxy
 name: llifco/dsh-plugin-reverse-proxy
 category: remote
 description:
-  en: "LAN/public access for DSH Web UI: reverse proxy + token-free login; open from a phone, or the internet with a key. Port, IPv6, blocklist, reset. See GitHub."
-  zh: "DSH Web 局域网/公网访问插件：内置反向代理 + 免 Token 登录，手机同 Wi-Fi 或带密钥从公网直接打开后台；端口可改，可开 IPv6 监听，带访问 IP 黑名单与重置命令。更多说明请到 GitHub 查看。"
+  en: "LAN/public access for DSH Web UI: reverse proxy + token-free login; open from a phone on the same Wi-Fi, or publicly with a key. Editable port, optional IPv6. See GitHub for details."
+  zh: "DSH Web 局域网/公网访问插件：内置反向代理 + 免 Token 登录，手机同 Wi-Fi 或带密钥从公网直接打开后台；端口可改，可开 IPv6 监听。更多说明请到 GitHub 查看。"
 icon: https://raw.githubusercontent.com/llifco/dsh-plugin-reverse-proxy/main/assets/logo.jpg
