@@ -1,0 +1,8 @@
+url: https://github.com/Meng-XinXue/bettergui
+name: Meng-XinXue/bettergui
+category: ui
+icon: https://raw.githubusercontent.com/Meng-XinXue/bettergui/main/assets/icon-180.png
+description:
+  en: "Starts with the sidebar collapsed, hides the Windows title-bar menu strip, the sidebar New Session button and the More menu's Browse other plugins row, and moves three side panels into the More menu. Each tweak has its own switch on the plugin's page."
+  zh: 启动时收起侧边栏，隐藏 Windows 标题栏菜单条、侧边栏「新会话」按钮与「更多」里的「浏览更多插件」行，并把「自动化任务」「上下文洞察」「技能中心」收进「更多」；每项都有独立开关。
+tarball: https://github.com/Meng-XinXue/bettergui/releases/download/v1.3.0/dsh-bettergui-1.3.0.tgz
