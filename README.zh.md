@@ -578,6 +578,7 @@ dsh plugin --profile web add dshmarket
 - [ChengX0721/dsh-client-ui-skin-alice-greyrat](https://github.com/ChengX0721/dsh-client-ui-skin-alice-greyrat) — 《无职转生》艾莉丝主题皮肤：淡绯金配色与魔法阵纹章，对话区铺魔法大陆场景与两幅全身立绘，侧栏立幼年艾莉丝立牌并重绘图标，自带设置面板。
 - [chengzhi43/dsh-file](https://github.com/chengzhi43/dsh-file) — VS Code 风格文件管理器：侧边栏文件树浏览当前对话工作区，中间列用 Monaco 编辑文件，支持主题导入导出与 Markdown 预览。
 - [chengzhicao/llm-capture](https://github.com/chengzhicao/llm-capture) — 用于捕获和查看原始 LLM 请求、流式响应、Token 用量和工具调用的 Web 界面。
+- [CHENJIAMIAN/dsh-editable-send](https://github.com/CHENJIAMIAN/dsh-editable-send) — 在输入框右边加一个文本可编辑的发送按钮，点一下就把它的文本直接发出去，默认「继续」。
 - [chenxiachan/thoughtdag#dsh](https://github.com/chenxiachan/thoughtdag/tree/main/dsh) — 在 DeepSeek Harness 中嵌入可编辑对话画布，通过连线选择画布请求的上下文，支持分支、合并与本地 Agent 会话导入。
 - [ChenYichener/dsh-nce](https://github.com/ChenYichener/dsh-nce) — 新概念英语第一册学习面板：144 课在一页内读完课文、带音标的词汇、语法和配套视频，配 Anki 式间隔重复、错题本，以及由你自己的模型批改的可填写练习卷。
 - [ChenYiming-aaa/dsh-ui-ux-pro-max](https://github.com/ChenYiming-aaa/dsh-ui-ux-pro-max) — 为 DeepSeek Harness 提供离线可用的 UI/UX 设计智能库：内置 84 种设计风格、192 个配色、74 组字体、99 条 UX 规范、25 种图表与 22 个技术栈，提供 design_recommend / design_review / design_search 三个工具，中文优先、零运行依赖。
@@ -1549,6 +1550,7 @@ dsh plugin --profile web add dshmarket
 - [meiyuxuan2007/dsh-sidebar-more](https://github.com/meiyuxuan2007/dsh-sidebar-more) — 把左侧栏的面板入口按需收进「更多」菜单，给下方工作区与会话列表腾出高度；入口可从菜单打开、一键全部还原，选择跨刷新保留。首次安装不预设折叠；之后新出现的入口默认收进「更多」（可关）。
 - [melt502/DSH-Session-Reference-UX-Patch](https://github.com/melt502/DSH-Session-Reference-UX-Patch) — 可回滚的 DSH Desktop 会话引用体验补丁安装器——@ 菜单当前工作区优先、标题优先展示、两行布局，以及侧边栏拖拽会话到输入区形成引用。
 - [MEMZ-JZY/DSH-Claude-Style-Reasoning-Slider](https://github.com/MEMZ-JZY/DSH-Claude-Style-Reasoning-Slider) — Claude 风格动画推理等级滑块与模型选择器，替换原生模型选择器。
+- [Meng-XinXue/bettergui](https://github.com/Meng-XinXue/bettergui) — 启动时收起侧边栏，隐藏 Windows 标题栏菜单条、侧边栏「新会话」按钮与「更多」里的「浏览更多插件」行，并把「自动化任务」「上下文洞察」「技能中心」收进「更多」；每项都有独立开关。
 - [MengLs1620/dsh-deepseek-status](https://github.com/MengLs1620/dsh-deepseek-status) — 在 DSH 会话头部显示 DeepSeek 官方服务状态，包括总体状态、各组件状态、可用率，以及进行中或最近的事件。这是 KekuKase/dsh-deepseek-status 的维护分支（0.1.6 起以 @mengls1620/dsh-deepseek-status 发布）；不要与原版 dsh-deepseek-status 同时安装——两者会注册同一个 /deepseek-status 路由与同一条插件行 id。
 - [mengqinlol/dsh-mobile-shell](https://github.com/mengqinlol/dsh-mobile-shell) — 为 DSH Web 界面提供移动端适配，并增加支持预览和下载的工作区文件浏览器。
 - [mengyun233/dsh-codex-pet](https://github.com/mengyun233/dsh-codex-pet) — 把 Codex 桌宠皮肤自动迁移到 DSH：右下角动画桌宠随 agent 状态实时变化（思考/工具/等待批准/出错/完成），多会话毛玻璃对话框 + 完整设置面板。
@@ -8785,6 +8787,7 @@ dsh plugin --profile web add dshmarket
 - [LIU118117/dsh-voice](https://github.com/LIU118117/dsh-voice) — 给 AI 加上声音：带情绪的语音合成（有 ChatTTS 用 ChatTTS，否则回退 edge-tts）和唱歌模式，生成 mp3 并可用 ffplay 本机播放。需本机安装 Python 3.10+ 与 edge-tts（ChatTTS 及其模型缓存可选）、ffmpeg/ffplay，并把 cordis.patch.yml 里的 pythonPath/ffmpegPath/ffplayPath 改成你自己的安装路径。
 - [ljz970803/dsh-voice-wake](https://github.com/ljz970803/dsh-voice-wake) — DSH 本地语音唤醒。先说唤醒词，听到提示音后说内容，自动发进 DSH 会话；默认本地识别，音频不落盘。需要 DSH 语音输入服务（speechToText）可用。
 - [lol9706262-source/dsh-cover](https://github.com/lol9706262-source/dsh-cover) — 一句话翻唱：取源或直接用本地文件、分轨、自动定调、经 Applio 跑 RVC 换声、对齐人声、混出三档、过闸门再导出——九个阶段、三个工具、零 npm 依赖；需要本机装好 Applio（含 Python、ffmpeg、yt-dlp）、一个音色模型和一块 CUDA 显卡。
+- [lonelycrab888/dsh-plaud](https://github.com/lonelycrab888/dsh-plaud) — 通过 Plaud 官方 MCP 将录音接入 DeepSeek Harness，让 Agent 在对话中查找录音、读取带说话人和时间戳的转录、查看已有摘要，并整理成 Markdown 会议纪要。
 - [loveandbeepbrother/dsh-tts-service](https://github.com/loveandbeepbrother/dsh-tts-service) — 多平台语音合成服务：豆包语音 2.0、阿里云百炼和 OpenAI 兼容接口，音色由用户选；助手用 tts_service_say 说话，可按语气分段、每段带一句语气描述，其他插件可复用 ctx.ttsService。
 - [loyalchiiina/dsh-voice-alert](https://github.com/loyalchiiina/dsh-voice-alert) — 每个 turn 结束播报完成、出错时播失败提示，用户中断默认不播，子代理默认跳过。三种方式：语音（火山 TTS，支持克隆与预设音色，指纹复用不重复合成）、音效（内置 20 个，可分配给完成/失败/审批并单独试听，零配置；审批槽没有自动触发源，只能手动播放）、关闭。走 winmm 播放，不改系统音量。仅 Windows。适配 DSH 内核 0.2.2-rc.1。
 - [lucagiftzek/dsh-voice](https://github.com/lucagiftzek/dsh-voice) — 为 DSH Web UI 提供朗读与听写：23 种 TTS 与 STT 提供商类型可并排配置，支持按语言路由、文内语言标记、逐句语言检测、逐词高亮，以及 TTS Reader 侧边栏标签页（该标签页需安装 dsh-better-sidebar，其余功能不装也可用）。
