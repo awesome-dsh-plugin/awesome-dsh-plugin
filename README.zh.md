@@ -1149,6 +1149,7 @@ dsh plugin --profile web add dshmarket
 - [JackieJam/dsh-iridescent-model-selector](https://github.com/JackieJam/dsh-iridescent-model-selector) — 用一个面板替换输入框的模型按钮：按服务商分组的模型列表与搜索、置顶的收藏模型，以及按模型声明档位分级的思考程度滑杆，其极光渐变与光晕随档位增强；切回某个模型时恢复上次用过的档位，内置选择器仍作为备用保持注册。
 - [jackma5477001/dsh-system-monitor](https://github.com/jackma5477001/dsh-system-monitor) — 在 DSH Web 界面右上角实时显示运行 DSH 服务端机器的 CPU 与内存使用情况。
 - [JackWoods-code/dsh-bot-toggle](https://github.com/JackWoods-code/dsh-bot-toggle) — 悬浮在 DSH 界面上的 Bot / ADE 切换开关：一键在 ds-bot 的 Bot 界面与经典 DSH Agent 界面之间切换，ds-bot 保持加载、数据不受影响。
+- [JacobYixi/ladybug-yoyo-pomodoro](https://github.com/JacobYixi/ladybug-yoyo-pomodoro) — 粉丝制作的瓢虫少女悠悠球番茄钟：输入框下方是 25 分钟计时器，展开为可拖动、可缩放的圆形毛玻璃悠悠球小组件。非官方出品。
 - [jaikensai888/dsh-drawio](https://github.com/jaikensai888/dsh-drawio) — 把 draw.io 编辑器接进 DSH 侧边栏的 .drawio 文件预览器：图纸就是工作区里的普通文件（新建默认落在 docs/diagrams/），改动自动保存，文件被编辑器以外的东西改过时会拒绝覆盖并弹出冲突条；编辑器首次使用时从固定上游版本下载并校验 SHA-256，之后完全离线运行。
 - [jakehemmerle/dsh-mermaid](https://github.com/jakehemmerle/dsh-mermaid) — 在 DSH Web 对话里把 mermaid 代码块渲染成图：每个代码块头部有切换按钮，可在图与源码之间切换；仍在流式输出的块保持源码，等消息结束后再渲染；首次显示图时才懒加载 mermaid；终端 UI 不受影响。
 - [jameswatt139240-crypto/dsh-ATLAS](https://github.com/jameswatt139240-crypto/dsh-ATLAS) — 在 DSH 内置 @ 引用之上扩展：精确到行的行区间（@src/a.ts:12-40）、Skill、插件与任意 git 仓库，并在发送前显示每条引用的 token 成本。
@@ -3347,6 +3348,7 @@ dsh plugin --profile web add dshmarket
 - [vibeinging/dsh-agent-budget](https://github.com/vibeinging/dsh-agent-budget) — agent 树 token 预算管理。
 - [vinyumao/dsh-opencode-usage](https://github.com/vinyumao/dsh-opencode-usage) — OpenCode Go 套餐用量显示：输入框下方常驻徽章显示滚动 / 每周 / 每月用量百分比与重置倒计时，点击展开进度卡片；Agent 可经 `opencode_go_usage` 工具随时查询余额。
 - [ViolaTan55/dsh-year-report](https://github.com/ViolaTan55/dsh-year-report) — DSH 侧栏里的年度回顾，数据全部来自本机会话日志（经 ctx.sessionQuery 读取）。九页依次是相遇日期、会话与轮次、你说了多少字、一天 24 小时分布、工具调用、token 与缓存命中率及按 DeepSeek 官方价估算的错峰节省、按 11 条用法规则选出的人格标签；最后一页生成 1080×1440 的分享图，可保存或复制为 PNG。鲸鱼插画全部用代码画成 SVG，13 种人格各有造型。只读、全程本地，不发外部请求，不写任何文件。界面文案目前只有中文。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [ViryMu/dsh-balance-alert](https://github.com/ViryMu/dsh-balance-alert) — 在输入框上方常驻显示 DeepSeek 账号余额与赠金，自动刷新；余额预警分 ¥2 与 ¥0.10 两级。
 - [vrvtvy/dsh-cache-hit-precision](https://github.com/vrvtvy/dsh-cache-hit-precision) — 把内置缓存命中率在 composer 统计行与 Token 用量弹窗中原位精化为三位小数。
 - [wai549077/dsh-aliyun-balance](https://github.com/wai549077/dsh-aliyun-balance) — 界面悬浮一行显示「还能花的钱」= 阿里云代金券余额 + 账户余额；悬停看券面值、已用与最早失效时间。只读 BSS 存量，不做消费统计。
 - [wawo77/dsh-opencode-go-usage](https://github.com/wawo77/dsh-opencode-go-usage) — DSH 网页界面的桌宠用量小窗：悬浮的骨骼动画角色用气泡报出套餐用量，按 DSH 里配置的 provider 自动匹配（OpenCode Go / Command Code / DeepSeek 官方），套餐制显示百分比、按量计费显示余额，取不到官方数字时降级为本地 token 统计；可拖动、滚轮缩放（90–260px），音效现场合成，HTTP 路由只开 loopback。
@@ -5362,6 +5364,7 @@ dsh plugin --profile web add dshmarket
 - [Noob-stupid/dsh-connection-card-host](https://github.com/Noob-stupid/dsh-connection-card-host) — 把两个 DSH 会话之间的「连接」做成一等对象：从输入框锚点或会话行拖拽建连，两个方向各自设权限，并可在连接上装载卡片。两端各获得五个宿主工具，用于按指定紧急度传话、读取对端工作状态、共用公约盒；感知为拉取式，空闲连接不占上下文。
 - [NOOBnoob163/dsh-self-restart](https://github.com/NOOBnoob163/dsh-self-restart) — 把「重启宿主」变成一次中断、多个会话共用：若干会话可以排进同一次重启（默认上限 8 个、可配置，任意时刻都能加入，等待途中也行），宿主只关一次、只拉起一次，随后按名单逐个唤醒，每个会话拿回自己写下的理由并各自开工，互不等待。每个会话独立决定要不要续接，某一条投递失败不影响其余，某个会话也能只摘掉自己而不作废别人的重启。仅支持 Windows 桌面版。
 - [NoProblUm/dsh-codexlike-projectless](https://github.com/NoProblUm/dsh-codexlike-projectless) — 提供类似 Codex 的无项目草稿、各项目草稿切换及首次发送时按日期和主题创建目录的功能；支持 Windows DSH Desktop 0.2.1-rc.2，无需归档补丁或外部安装器。
+- [NorwinYu/dsh-session-consult](https://github.com/NorwinYu/dsh-session-consult) — 让一个会话去咨询另一个会话：把目标历史读成有界摘要，交给只读子会话作答，并在每次回答后附上出处（来源、截到第几条、丢弃了多少）。
 - [Nothree-code/review-quote-sh](https://github.com/Nothree-code/review-quote-sh) — 对话消息审查与引用：多模型并行互审（代码/回复审查、严重度分级、综合汇总）、引用问答胶囊、评审历史与偏好记忆。
 - [nuet9/dsh-session-categories](https://github.com/nuet9/dsh-session-categories) — 工作区内会话分类，支持拖拽排序、分组折叠、任务状态提示及路径添加工作区。
 - [Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — 把 13 家 coding agent（Claude Code、Codex、ChatGPT、Cursor、Gemini、opencode 等）的完整对话历史导入为可续聊的 DeepSeek Harness 会话，并支持反向导出回 Claude Code。
@@ -8119,6 +8122,8 @@ dsh plugin --profile web add dshmarket
 - [Zhizhi-2986/dsh-plugins-enhanced#workspace-files](https://github.com/Zhizhi-2986/dsh-plugins-enhanced/tree/main/plugins/workspace-files) — 为 DSH Desktop 提供工作区文件搜索、编辑、创建和替换功能。
 - [Zhizhi-2986/leek-fund#dsh-plugin](https://github.com/Zhizhi-2986/leek-fund/tree/dsh-plugin/dsh-plugin) — 为 DSH 提供 A 股行情、自选股、股票分组和价格提醒。
 - [zhizhuodemao/ai-reverse-resources#reverse-plugin](https://github.com/zhizhuodemao/ai-reverse-resources/tree/main/dsh/reverse-plugin) — DeepSeek Harness 的逆向工程预设：各领域技能装在同一个「逆向模式」里，由模型按目标类型（Web/JS、安卓、iOS）自行路由。当前 JS 领域包含三个技能（AST 解混淆、iv8 受控执行、JSVMP 恢复），并把 js-reverse-mcp 浏览器取证服务挂载为 mcp__js-reverse__* 工具。
+- [zhouhb0321/dsh-box](https://github.com/zhouhb0321/dsh-box) — 教会 Agent 正确使用 Simular box 云桌面：带登录态的浏览器自动化、GUI 操作、Shell 与文件、快照、实时观看与人工接管登录和二次验证、自动休眠唤醒流程。不新增工具、不接触密钥；需先装官方 box 插件并连接设备。
+- [zhouhb0321/dsh-modal](https://github.com/zhouhb0321/dsh-modal) — 教会 Agent 何时以及如何使用 Modal 无服务器算力：GPU、大内存任务、并行批处理与长时容器，配套安全的 CLI 与卷操作流程、结果产物校验、成本规则。不新增工具、不接触密钥；需本机安装 Modal CLI 并由用户自行登录。
 - [zhounian6688-like/dsh-postman-desktop](https://github.com/zhounian6688-like/dsh-postman-desktop) — 长在 Harness Web GUI 里的 Postman 式 HTTP 调试台：集合与环境变量（{{变量}} 替换）、请求构建器（方法/参数/请求头/正文/认证）、响应查看器、cURL 导入导出，以及 CDN 源站探测——同一个 URL 抓两次，用来区分「文件真没了」和「边缘缓存骗你」。另提供 http_request_desktop agent 工具，与面板共用同一条发送链路，面板里调通的请求 agent 可以直接复现。零运行时依赖，数据落在 $DSH_HOME/postman-desktop/store.json。
 - [zhp282515-wq/dsh-plugin-agnes-image](https://github.com/zhp282515-wq/dsh-plugin-agnes-image) — 提供 agnes_image 工具，调用 Agnes Image Flash 系列模型（2.5 / 2.1 / 2.0）完成文生图、图生图与多图合成，并带一个设置页控制台管理当前模型、默认档位与画幅、输出目录、API Key 与生成历史。
 - [zhtx2024/dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) — 设置面板皮肤管理器：自动扫描已安装的 Web UI 皮肤并一键切换，profile 补丁自动维护。
@@ -10459,6 +10464,7 @@ dsh plugin --profile web add dshmarket
 - [ztl34245881-commits/dsh-task-planner](https://github.com/ztl34245881-commits/dsh-task-planner) — 带经验肌肉记忆的任务规划：条件反射检索历史方案 + LLM 能力匹配 + 经验自动沉淀。
 - [zuiyouli/dsh-workflow-ui](https://github.com/zuiyouli/dsh-workflow-ui) — 对话内工作流运行时间线：横向轨道 + 阶段站 + 子代理药丸 + 循环弧线 + 并行带，替换官方 workflow 工具卡与 workflow-run 聊天节点。客户端脚本扫描让计划站在开跑前全部渲染；状态点与图标对齐 DSH 官方 primitives。
 - [zuosus/dsh-decision-engine](https://github.com/zuosus/dsh-decision-engine) — 给 DeepSeek Harness 的 System-1 决策守卫：在每次工具调用前问模型四个问题 （风险、可逆性、任务相关性、注入嫌疑），据此放行、询问或拦截。
+- [ZYX121212/dsh-bot](https://github.com/ZYX121212/dsh-bot) — 面向 DSH 0.2.2-rc.1 的 AI 同事工作台预览版，提供持续原生会话、显式记忆和群组路由。
 - [zzd1990/dsh-parallel-dev](https://github.com/zzd1990/dsh-parallel-dev) — 默认拦截缺少「验收通过」独立记录、或验收提交与 worktree HEAD 不一致的团队任务完成操作，并提供依赖 DAG 看板与设置页。
 - [zzhzz/dsh-ask-peer](https://github.com/zzhzz/dsh-ask-peer) — 面向 DSH 的点对点同事 Agent 咨询：可向单个或多个已配置 Peer 提问、异步排队问题、通过签名 Friend Card 推荐发现 Peer，并在 Web UI 审批入站请求。
 
