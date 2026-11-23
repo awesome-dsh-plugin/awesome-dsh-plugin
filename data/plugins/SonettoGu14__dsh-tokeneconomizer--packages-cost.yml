@@ -1,6 +1,6 @@
 # Entry for the awesome-dsh-plugin catalog (data/plugins/ in that repository).
-# One of three sibling entries of this monorepo; the bundle (dsh-te) is a pure
-# meta-package and is not listable on its own by that catalog's rules.
+# One of four entries for this monorepo: the three components plus the bundle,
+# which ships /te and therefore qualifies as a plugin, not a bare meta-package.
 url: https://github.com/SonettoGu14/dsh-tokeneconomizer/tree/master/packages/cost
 name: SonettoGu14/dsh-tokeneconomizer#packages/cost
 category: usage
