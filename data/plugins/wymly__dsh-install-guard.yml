@@ -1,0 +1,6 @@
+url: https://github.com/WYMLY/dsh-install-guard
+name: WYMLY/dsh-install-guard
+category: security
+description:
+  en: Read-only pre-install checks on Windows - hash, Authenticode signature, installer format and embedded URLs of a downloaded file, a startup-entry baseline plus before/after diff around an install, and a hash sweep for known-bad payloads.
+  zh: Windows 上安装前的只读体检——查下载文件的哈希、签名、安装器格式与内嵌地址，装前装后对自启项拍快照再比对，还能按哈希全盘扫已知坏样本。
