@@ -1,0 +1,6 @@
+url: https://github.com/vlln/evo-engineering
+name: vlln/evo-engineering
+category: workflow
+description:
+  en: 'Improve any artifact in rounds: define the standard, iterate, review independently — with /evo and evo_* tools, and a rollback for every round.'
+  zh: '让 agent 把任意产物一轮轮改得更好：先定标准、再自动改进与独立评审，人类随时能看、能喊停、能回滚。'
