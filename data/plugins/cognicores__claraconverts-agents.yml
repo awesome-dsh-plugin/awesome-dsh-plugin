@@ -1,0 +1,5 @@
+url: https://github.com/cognicores/claraconverts-agents
+name: cognicores/claraconverts-agents
+category: skill
+description:
+  en: 'Skill and MCP server for adding the ClaraConverts website chat agent (voice and text) to a site: creates a trial account, returns the embed snippet, loads the site content, and changes settings and integrations.'
