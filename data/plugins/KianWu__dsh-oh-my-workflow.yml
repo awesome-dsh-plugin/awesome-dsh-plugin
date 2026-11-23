@@ -1,0 +1,6 @@
+url: https://github.com/KianWu/dsh-oh-my-workflow
+name: KianWu/dsh-oh-my-workflow
+category: workflow
+description:
+  en: 'A DeepSeek Harness agent preset that runs a software-delivery workflow: it sizes each task into quick, standard or deep, bundles 22 skills for requirement questioning, spec writing, ticket breakdown, implementation, review, verification and handoff, and adds a turn guard that requires real verification evidence and stops a repeated fix after two failed attempts.'
+  zh: '一个 DeepSeek Harness 代理预设：把任务分为快速、标准、深入三档，内置 22 个技能覆盖需求追问、写规格、拆工单、实现、评审、验证与交接，并带轮次守卫——改完必须给出真实验证证据，同一修法失败两次就停下重新核对前提。'
