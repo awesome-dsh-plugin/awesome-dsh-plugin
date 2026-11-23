@@ -1,0 +1,6 @@
+url: https://github.com/vlln/dsh-share-link
+name: vlln/dsh-share-link
+category: tools
+description:
+  en: 'Publish a conversation or an artifact as a read-only public link: conversation snapshots and HTML / Markdown artifacts, themeable and revocable.'
+  zh: '把对话或产物发布成只读公网链接：对话快照、HTML / Markdown 产物，可换风格、可撤销。'

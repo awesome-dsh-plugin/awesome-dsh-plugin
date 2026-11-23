@@ -1,0 +1,6 @@
+url: https://github.com/vlln/dsh-motion
+name: vlln/dsh-motion
+category: tools
+description:
+  en: 'Make animations with the agent: scenes are written as editable code, with timeline preview and annotation beside the chat and frame-accurate MP4 export.'
+  zh: '和 Agent 一起做动画：场景写成可改的代码，对话旁预览时间轴、框选批注，导出逐帧精确的 MP4。'
