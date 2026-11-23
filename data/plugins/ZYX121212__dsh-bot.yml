@@ -1,0 +1,8 @@
+url: https://github.com/ZYX121212/dsh-bot
+name: ZYX121212/dsh-bot
+category: workflow
+description:
+  en: 'Preview AI teammate workspace with persistent native sessions, explicit memories, and routed group chats for DSH 0.2.2-rc.1.'
+  zh: '面向 DSH 0.2.2-rc.1 的 AI 同事工作台预览版，提供持续原生会话、显式记忆和群组路由。'
+icon: https://raw.githubusercontent.com/ZYX121212/dsh-bot/v0.5.1/icon.png
+tarball: https://github.com/ZYX121212/dsh-bot/releases/download/v0.5.1/dsh-bot-0.5.1.tgz
