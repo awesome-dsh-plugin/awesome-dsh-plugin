@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-plan-preview
+name: SSHOOTING/dsh-plugin-plan-preview
+tarball: https://github.com/SSHOOTING/dsh-plugin-plan-preview/releases/download/v0.1.0/0.1.0.tgz
+category: dev
+description:
+  en: 'Pre-execution preview of planned steps, dependencies, likely tools and danger points.'
+  zh: '执行前预览计划步骤、依赖、可能的工具与危险点。'
