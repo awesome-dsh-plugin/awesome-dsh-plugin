@@ -1,0 +1,6 @@
+url: https://github.com/meowdan/dsh-mastodon-toot
+name: meowdan/dsh-mastodon-toot
+category: notify
+description:
+  en: 'Mastodon bot for DeepSeek Harness: writes and replies on its own from a four-layer character card, keeps a notebook of the people it talks to, and spaces queued posts with a hard gap.'
+  zh: '部署在 Mastodon 的大肥鱼 bot：按四层角色卡自己发嘟、自己回嘟文，小本本记下聊过的人和答应过的事，队列按间隔错峰发送。'
