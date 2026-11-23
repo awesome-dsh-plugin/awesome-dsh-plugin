@@ -1,0 +1,7 @@
+url: https://github.com/peakSoar/dsh-annimation
+name: peakSoar/dsh-annimation
+category: ui
+description:
+  en: Opens a floating Hongguo Shorts window while DeepSeek Harness runs a turn, stows it once every session is idle, and floats a completion notice.
+  zh: 在 DSH 跑任务时自动打开红果短剧浮窗，所有会话空闲后自动收起并飘出完成提示。
+icon: https://raw.githubusercontent.com/peakSoar/dsh-annimation/main/assets/icon-180.png
