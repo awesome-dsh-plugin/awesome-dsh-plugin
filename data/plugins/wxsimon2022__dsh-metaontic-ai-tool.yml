@@ -2,5 +2,5 @@ url: https://github.com/wxsimon2022/dsh-metaontic-ai-tool
 name: wxsimon2022/dsh-metaontic-ai-tool
 category: usage
 description:
-  en: 'MetaOntic AI account dashboard for DeepSeek Harness: sign in with an access token, open the registration page when you do not have one, restore the saved login locally, and view balance, usage, request count and platform status.'
-  zh: '在 DeepSeek Harness 侧边栏使用访问令牌登录 MetaOntic AI，没有令牌时可直接进入注册页，并自动恢复本机登录、查看余额、用量、请求次数和平台状态。'
+  en: 'MetaOntic AI is a multi-model aggregation platform offering stable, reliable model services. This DeepSeek Harness plugin supports access-token sign-in, opens the registration page when no token is available, restores the saved login locally, and shows balance, usage, request count and platform status.'
+  zh: 'MetaOntic AI 是多模型聚合平台，提供稳定可靠的模型服务。本插件在 DeepSeek Harness 侧边栏支持访问令牌登录、无令牌时进入注册页，并自动恢复本机登录、查看余额、用量、请求次数和平台状态。'
