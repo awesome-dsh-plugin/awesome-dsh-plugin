@@ -1,0 +1,6 @@
+url: https://github.com/aiawar/dsh-find-in-session
+name: aiawar/dsh-find-in-session
+category: session
+description:
+  en: 'Ctrl+F find bar over a DSH conversation transcript: hits are highlighted in place through the CSS Custom Highlight API without touching the transcript DOM, stepping jumps to the nearest match first and holds the scroll position against the automatic tail follow, changing the session clears the query and the hits, and message text stays natively selectable for Ctrl+C.'
+  zh: 'DSH 会话内的 Ctrl+F 查找条：命中通过 CSS Custom Highlight API 原位高亮、不改写会话 DOM，逐个跳转时按距离最近优先并顶住自动跟底，切换会话即清空查询与命中，正文保持可原生选中复制。'
