@@ -5201,6 +5201,7 @@ dsh plugin --profile web add dshmarket
 - [kittimzhe/dsh-session-recall](https://github.com/kittimzhe/dsh-session-recall) — 确定性跨会话转录检索：`recall` 工具全文搜索历史会话日志，带 cwd 授权边界、CJK 子串回退与降级直扫；每条命中携带 sessionId 与最新导出报告路径，与 export、eval 插件闭环。
 - [kkkkk-tubu/dsh-deep-purge](https://github.com/kkkkk-tubu/dsh-deep-purge) — 真正删除 DSH 会话，而不是只归档（仅限 Windows）。一次清掉六处本地存储：会话日志、标题缓存、billion-context SQLite 索引（含 VACUUM）、侧栏注册表、成本台账、桥接日志。带预演、自动备份、逐字节回滚，以及「退出→删除→重启」全自动流程。
 - [kkwalking/dsh-stall-guard](https://github.com/kkwalking/dsh-stall-guard) — 监测你所选模型每一轮的收尾，交给另一个模型判断这一轮是否真的结束了：如果助手说完话却没有工具调用就停了，会记录 continue / finished / uncertain 三态判定并展示在侧边栏面板。suggest 模式只报告，auto-continue 模式在本轮真正 idle 后调用 agent.followup() 发送续跑消息，且受每轮次数上限约束。单步收尾始终复查，监测模型支持精确多选与不区分大小写的正则匹配，续跑文案可自定义。
+- [KouzakiUmi/dsh-compact-tool](https://github.com/KouzakiUmi/dsh-compact-tool) — 为 DSH 内置的上下文压缩提供设置页：全局与按模型的触发、预留和保留参数，以及预算条；输入框页脚的上下文用量环标出压缩触发点，点开可实时调整当前模型的策略。改动对新会话生效。
 - [kumiiwaka/dsh-intercom](https://github.com/kumiiwaka/dsh-intercom) — 给已经开着的窗口装内线电话，不建团队、不生新会话，只让平级窗口互相递话（带跳数上限防环）。
 - [KunKun24/dsh-fold-delete](https://github.com/KunKun24/dsh-fold-delete) — 长对话只显示最近的消息，不需要的会话可以彻底删除。
 - [kxx-python/dsh-chat-migrate](https://github.com/kxx-python/dsh-chat-migrate) — 把 chat.deepseek.com 的历史会话导入成 DSH 真会话，或导出为 Markdown 与 JSON 文件。
@@ -10862,6 +10863,7 @@ dsh plugin --profile web add dshmarket
 - [Lloydly007/dsh-bark-notify](https://github.com/Lloydly007/dsh-bark-notify) — 面向 DeepSeek Harness 的 Bark 推送：回合结束、等待选择/批准，以及可选的后台任务卡片；设备和卡片参数在设置里实时生效，每次推送按 Bark 服务器返回的设备结果逐台核对，瞬时失败会自动重试。
 - [lolipop-1x1/dsh-you-should-know](https://github.com/lolipop-1x1/dsh-you-should-know) — 根据当前任务上下文提醒重要事实和方案取舍，支持展开解释并带入主会话讨论。
 - [LoserFox/telegram](https://github.com/LoserFox/telegram) — Telegram Bot API 桥接：长轮询、per-chat 会话、HTML 格式化。
+- [LouieKeung-13/dsh-task-toast](https://github.com/LouieKeung-13/dsh-task-toast) — 任务完成通知，支持结果摘要、来源会话回跳、通知历史和可选提示音。
 - [lsq-dsh-plugins/dsh-windows-notifications](https://github.com/lsq-dsh-plugins/dsh-windows-notifications) — 为任务事件提供 Windows 桌面通知、可选提示音和 DSH 风格的页面通知。
 - [ltl0312/my-dsh-plugins#tlnotify](https://github.com/ltl0312/my-dsh-plugins/tree/main/packages/tlnotify) — 把 DSH 会话事件推到手机 IM，并允许在那条消息下直接回复回注到正确会话。覆盖九类事件：任务完成、执行错误、执行被阻塞、手动中止、Token 达到上限、异常中断、等待我回答、权限请求、等待计划确认；通道支持 QQ 单聊机器人与飞书自建应用，两者均走 WebSocket 长连接，无需公网 IP、域名或内网穿透。可同时配置多台机器人，各自订阅自己关心的会话。审批与提问以可点按钮下发，回复按「按钮 → 引用回复 → 显式短 id 前缀」三层路由归位，兜底发给最近一条需人介入的通知并回显投递目标。
 - [luzhengyangtx/dsh-telegram-duty](https://github.com/luzhengyangtx/dsh-telegram-duty) — Telegram 值班网关：手机消息任务闭环（专属值班会话）、值守模式全局审批转发（内联同意/拒绝按钮）、telegram_ask 选项提问、值守/本地切换与网页横幅、中英双语消息、空闲零 token。
