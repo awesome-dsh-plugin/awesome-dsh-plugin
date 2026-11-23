@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-handoff-pack
+name: SSHOOTING/dsh-plugin-handoff-pack
+tarball: https://github.com/SSHOOTING/dsh-plugin-handoff-pack/releases/download/v0.1.0/0.1.0.tgz
+category: session
+description:
+  en: 'Handoff and migration pack: task brief, artifacts, decisions and a redacted trace.'
+  zh: '交接与迁移包：任务简报、工件、决策与脱敏轨迹。'
