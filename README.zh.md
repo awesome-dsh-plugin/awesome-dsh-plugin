@@ -203,6 +203,7 @@ dsh plugin --profile web add dshmarket
 - [132465798978/dsh-text-highlight](https://github.com/132465798978/dsh-text-highlight) — 用 CSS Highlight API 给 DSH 消息里的关键词和关键句上色（不重写 DOM，流式输出也不掉），再一键换掉界面/正文字体；配置在小浮窗里，代码块和公式不受影响。
 - [13520rygvv/dsh-restart-button](https://github.com/13520rygvv/dsh-restart-button) — 从三处重启 DeepSeek Harness 桌面端：设置里的按钮、账号菜单「退出登录」上方的一项、以及可自定义的快捷键；有运行中的任务时会先确认；若新版本更新已下载并等待安装，重启时会先静默安装更新。仅支持 Windows 桌面版。
 - [1420079678-ctrl/agent-body#dsh-anatomy-panel](https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-anatomy-panel) — Agent-Body 器官的解剖面板：在 harness 内部的 /anatomy 提供实时体征看板——器官、心跳、自愈账本、自训练计数与真实脉冲流，数据直接读自运行时文件而非誊写。仅 host 端，无客户端 bundle、无构建步骤。
+- [1473447954-cloud/dsh-model-drag](https://github.com/1473447954-cloud/dsh-model-drag) — 在 DSH 模型选择菜单里拖拽排序：按住模型行在组内换位、按住分组标题整组移动，顺序跨会话与重渲染保持，打开菜单自动定位到当前选中的模型。
 - [1497105876/dsh-text-inject](https://github.com/1497105876/dsh-text-inject) — 在 DSH 设置页左侧栏新增「文字注入」分区：独立 Markdown 文件中的文字块可注入系统提示词（每轮生效）或会话上下文（关键词门控、去重），支持热加载与自动历史备份。
 - [1499501762/dsh-sidebar-manager](https://github.com/1499501762/dsh-sidebar-manager) — DSH Web 的侧边栏与对话顶栏菜单编辑器：排序、分组、隐藏、逐条换图标（支持拖拽、分组浮层、SVG 或上传图标），为工作区树保留可配置的保底高度，并暴露 window.__dshSidebarManager 供 Agent 调用。
 - [1502074527-svg/dsh-agent-manager](https://github.com/1502074527-svg/dsh-agent-manager) — 左侧栏常驻的「智能体」面板：用 Markdown 在用户级或项目级目录里定义可复用的智能体角色，含画廊式首页、只读详情页、五步编辑器（角色/能力/模型/图标/高级）、按五个领域归组的 12 份起步模板、30 款可选图标、可从粘贴文本或网址提炼的知识卡、按项目保存在本机的启停策略，以及就地弹层编辑的风格库；保存时比对文件修改时间，两个窗口不会静默互相覆盖。
@@ -2432,6 +2433,7 @@ dsh plugin --profile web add dshmarket
 - [xiaoyaoguhuaxian/dsh-highlight-plugin](https://github.com/xiaoyaoguhuaxian/dsh-highlight-plugin) — 在 DSH 会话界面划选任意语句即可标为高亮色块（黄/绿/蓝）。色块画在独立覆盖层上， 框架重渲染冲不掉；按引文上下文锚定，按会话分文件持久保存、跨重启保留，可单独删除。
 - [xiaoyi-xx/dsh-peak-status](https://github.com/xiaoyi-xx/dsh-peak-status) — DSH Web GUI 会话头部高峰指示灯，实时显示当前北京时间是否处于 DeepSeek API 高峰时段，附实时时钟与下一转折倒计时。
 - [xiaoyuer3921/dsh-showreel](https://github.com/xiaoyuer3921/dsh-showreel) — 把最近一次已完成的 DSH 任务生成为可分享的竖屏战报视频：五幕可编辑故事板、Host 侧脱敏、可选 AI 润色与配音，导出 MP4/WebM 和 PNG 封面。
+- [Xiashano1/dsh-workspace-switcher](https://github.com/Xiashano1/dsh-workspace-switcher) — 在 DSH 侧栏只显示当前工作区的会话，提供弹窗切换、搜索、键盘导航、拖拽排序与重命名/删除。
 - [xichen-62/dsh-power-menu](https://github.com/xichen-62/dsh-power-menu) — 在 DeepSeek Harness 桌面版会话标题栏右上角加一个电源菜单：刷新页面、关闭、重启。关闭和重启请窗口走自己的会话结束流程，由应用完成关停而不是被强杀，随后等 Host 退出并清理同一可执行文件留下的进程。有 agent 或后台任务在跑时，两者都会先弹出确认卡片，列出会被打断的会话与任务。重启会回放原来的启动参数。仅 Windows 桌面版可用。每个 HTTP 路由都会先向 connection 服务请求一次判定，用的是官方 host 路由那套 Host/Origin 围栏和浏览器认证 cookie。
 - [xiex16070-jpg/dsh-prompt-enhance](https://github.com/xiex16070-jpg/dsh-prompt-enhance) — 在输入框动作行的模型选择器左侧加一颗增强芯片：用当前会话已选的模型就地改写草稿，五种风格，可一键撤销，另有 /enhance 斜杠命令。
 - [xiezouqu12/agent-trees](https://github.com/xiezouqu12/agent-trees) — 在 DeepSeek Harness 的对话页和右侧边栏中以多叉树展示当前会话的智能体工作流，每个卡片显示状态、计划进度、Token、费用（需挂载 dsh-cost-meter）和运行时间。
@@ -2645,6 +2647,7 @@ dsh plugin --profile web add dshmarket
 - [z1223473749/dsh-QiuYaTools](https://github.com/z1223473749/dsh-QiuYaTools) — AI 智能动效主题、电脑操控、独立窗口、附件预览、Git 管理、会话分窗与批注、跨应用文件拖拽、AI 提示词。电脑操控需在设置里开启；macOS 上需授予屏幕录制、辅助功能与输入监控权限，Windows 独立窗口需 Edge WebView2 运行时；提示词建议与 AI 主题会额外消耗模型用量。
 - [z460440448/dsh-web-updater-tab](https://github.com/z460440448/dsh-web-updater-tab) — 贴在 Web 页面左右边缘的竖直标签，悬停展开、点击查看详情；检查 @deepseek-ai/dsh 新版本，确认后更新 profile（备份、版本与配置校验、失败回滚）；设置页可开关标签显示、配置定时更新时段与配色。
 - [Zai-G/dsh-preset-workshop](https://github.com/Zai-G/dsh-preset-workshop) — 预设工作台：逐方案编辑人设、系统提示词段和工具描述，选择工具与技能，预览请求组成，并通过 JSON / YAML 导入导出配置。
+- [zakeluo/dsh-review-desk](https://github.com/zakeluo/dsh-review-desk) — 输入知识点生成复习卡：联网检索后调用宿主默认模型给出概念、定义、易混概念与 3-5 道自测题，答题即时判分并累计错题。公式与 mhchem 反应式由内置转换器渲染，不加载外部字体或 CDN。
 - [zayyehtut/dsh-github-panel](https://github.com/zayyehtut/dsh-github-panel) — DeepSeek Harness 的 GitHub 面板：连接状态、仓库概览、个人资料检查与安全元数据编辑，集中在一页。
 - [zba0326/dsh-fold-panel-list](https://github.com/zba0326/dsh-fold-panel-list) — 在侧栏面板列表顶部固定一行开关，收起时这一行仍然留着，所以「插件 … 更多」整列（含末尾的「更多」）塌成一行、工作区随之上移；⌥⌘P（Windows/Linux 为 Ctrl+Alt+P）同样能切换，状态存 localStorage，重开保持。
 - [zbh13782-lang/dsh-pin-bookmarks](https://github.com/zbh13782-lang/dsh-pin-bookmarks) — 把助手回复收藏进右侧栏标签页并以 Markdown 渲染（代码块带语法着色），卡片顶部显示这条消息的写入时间，「跳转」在消息未加载时会沿着更早的历史逐页上翻直到落回那条消息；选中其中一段即可作为引用带回主聊天输入框继续提问。回复下方的星星只收藏、不展开侧栏，再点一次取消收藏；被收藏的轮次在右侧轮次导航上显示为更长更亮的横线，导航本身可在设置里管理。
@@ -10068,6 +10071,7 @@ dsh plugin --profile web add dshmarket
 - [matata2017/dsh-codex-hooks](https://github.com/matata2017/dsh-codex-hooks) — 把 Codex 的钩子管理移植到 dsh：从配置、插件与项目三处发现 hooks.json，每条钩子钉在 sha256 指纹上、批准后才运行；输入框里的审查弹窗、`/hooks` 浏览器、逐条运行统计，以及在 设置 → 钩子 里管信任、启用与试跑。配置文件用 dsh 自己的格式与事件名。
 - [maximehu97/dsh-meeting](https://github.com/maximehu97/dsh-meeting) — 局域网多智能体会议协商：每人一个助理，助理通过 mDNS 互相发现，用 A2A 报文协商排会、周末团建和奶茶投票。对外只给忙闲不说原因，占用本人保护的时段前先问本人。DSH 侧栏自带手机样式页面和 13 人示例公司。无鉴权，仅限可信局域网。
 - [Meltllsy/dsh-todo-reminder](https://github.com/Meltllsy/dsh-todo-reminder) — 全局个人待办（与任何会话无关）：侧边栏面板 + 贴边待办条（悬停探出、快到点自动弹开），到期桌面通知与自定义音效。
+- [meng-lx/dsh-blueprint-tree](https://github.com/meng-lx/dsh-blueprint-tree) — 图形化工作流蓝图：单元分开始、结束、软、硬、选择、子蓝图，每个蓝图一份由插件生成、上游契约变化时自动重写的 TypeScript 方法文件，运行按六状态（正常、提醒、报错、废弃、失效、断联）跳过不该跑的格子，另有单元、蓝图、项目三种测试。
 - [mengzhongjie/dsh-superagent-local](https://github.com/mengzhongjie/dsh-superagent-local) — dsh-superagent 的本地版：每个侧栏工作区各有一个主会话，把需求转成工单，并由 Worker 会话在该工作区目录内执行。不能与上游 dsh-superagent 同时安装：两者包名同为 dsh-superagent，挂载的插件 id 也相同。
 - [mhzdsb/dsh-tripipelines#dsh-tripipelines](https://github.com/mhzdsb/dsh-tripipelines/tree/main/plugins/dsh-tripipelines) — 三级模型协作流水线：你选的模型负责规划与验收，长活二级写模块代码，便宜的三级干碎活；严格相邻、逐任务质量门（真跑断言）、预算护栏、GUI 看板。
 - [Miaotofu01/Study-Mate](https://github.com/Miaotofu01/Study-Mate) — 你的AI学习搭档：定计划、讲知识、做项目，学透一门科目。
