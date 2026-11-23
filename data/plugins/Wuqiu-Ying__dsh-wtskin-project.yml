@@ -1,6 +1,7 @@
 url: https://github.com/Wuqiu-Ying/dsh-wtskin-project
 name: Wuqiu-Ying/dsh-wtskin-project
 category: tools
+tarball: https://github.com/Wuqiu-Ying/dsh-wtskin-project/releases/download/v3.0.9/dsh-wtskin-project-3.0.9.tgz
 description:
-  en: 'War Thunder user-skin studio: 4-point UV quad picker, quad-clipped art layers, and PNG/DDS/.blk export.'
-  zh: '战争雷霆自定义涂装插件：四点 UV 取点器、按四边形裁切的艺术图层，导出 PNG/DDS/.blk。'
+  en: 'War Thunder user-skin studio: 4-point UV quad picker, whole-airframe theme recolour and art layers, PNG/DDS/.blk export, and WT Live reference skins.'
+  zh: '战争雷霆自定义涂装插件：四点 UV 取点、整机主题换色与艺术图层，导出 PNG/DDS/.blk，并可从 WT Live 下载参考皮肤。'
