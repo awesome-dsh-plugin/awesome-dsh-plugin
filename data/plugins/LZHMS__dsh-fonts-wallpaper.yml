@@ -1,0 +1,6 @@
+url: https://github.com/LZHMS/dsh-fonts-wallpaper
+name: LZHMS/dsh-fonts-wallpaper
+category: theme
+description:
+  en: 'Custom fonts and a global wallpaper for DSH: separate UI, chat and code fonts, CJK/Latin split, a picker over locally installed fonts, and wallpapers (local or URL) with adjustable opacity.'
+  zh: 'DSH 自定义字体与全局壁纸：界面、对话、代码分别设置字体，中西文分开，可选本机已安装字体；壁纸支持本地图片与网络地址，可调不透明度。'
