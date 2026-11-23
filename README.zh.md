@@ -4423,6 +4423,7 @@ dsh plugin --profile web add dshmarket
 - [songrui111/dsh-fine-tune](https://github.com/songrui111/dsh-fine-tune) — 面板里的本地 LoRA / QLoRA 微调：导入 JSONL、开始前先看显存估算、评测并导出适配器。一键创建 Python 虚拟环境，但需自备 Python 3.10+ 与 NVIDIA 显卡（6 GB 显存起）。已在 Windows 11 + RTX 3060 6 GB 上完整跑通；安装器会直接拒绝非 Windows 平台，Linux、macOS 与其他显卡暂不支持。
 - [songzhiyin/dsh-local-model](https://github.com/songzhiyin/dsh-local-model) — 注册一个本地 LLM provider，把模型请求转发到 OpenAI 兼容端点或 Ollama 原生 API，并在「设置 → 模型」页提供连接测试卡片，无需登录账号。
 - [SoulZhou/dsh-context-windows](https://github.com/SoulZhou/dsh-context-windows) — 为 WorkBuddy 和 Trae 的每个已接入模型提供可视化上下文窗口调节设置页，并通过宿主设置服务写入覆盖值。
+- [SpaceRelay/dsh-subagent-control#subagent-route](https://github.com/SpaceRelay/dsh-subagent-control/tree/main/subagent-route) — 新增 `subagent_route` 工具：每次派活时点名渠道与模型，任何对话都能用——包括插件装上之前就开着的对话。子代理启动前先向渠道核对这条路由。官方工具原样不动。
 - [spdw666/dsh-credit-hub](https://github.com/spdw666/dsh-credit-hub) — 原生多平台账号与模型路由管理，支持错峰签到、事件通知与额度预测。九个桌面平台适配器提供工具调用与原生思考档位；五阶段模型审计分别核验普通对话、流式、长文、工具与结果回传。已按 40 个官方宿主 tag（0.1.0-rc.7 至 0.2.2-rc.5）逐版审计。后台 worker 需独立 Node ≥22.23.3（node:sqlite，已由 engines.node 约束）；千问办公的编码能力另需 Python（cryptography、wasmtime）。
 - [SpookySandwich/dsh-plugin-rollout-scout](https://github.com/SpookySandwich/dsh-plugin-rollout-scout) — 检测账号当前被分配到哪个对话模型：并发发起一次性探测会话，按段落开头的写法为流式思维链打分，读起来像旧模型的在数秒内中止。附带离线自检，用同一分类器回放 13 条人工标注的思维链。
 - [SSHOOTING/dsh-plugin-free-model-advisor](https://github.com/SSHOOTING/dsh-plugin-free-model-advisor) — 只读 DSH 命令，列出配置中明确标记免费的模型并推荐安全默认值。
