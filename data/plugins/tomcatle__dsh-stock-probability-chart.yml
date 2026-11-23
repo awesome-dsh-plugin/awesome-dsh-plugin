@@ -1,0 +1,6 @@
+url: https://github.com/tomcatle/dsh-stock-probability-chart
+name: tomcatle/dsh-stock-probability-chart
+category: skill
+description:
+  en: 'Registers a skill for estimating short-term (1 week to 1 month) up/down scenario probabilities of a single stock and renders a four-scenario probability distribution chart with the A-share red-up/green-down convention; output is a structured subjective estimate based on weighted signals, not a statistical backtest.'
+  zh: '注册一个技能，评估单只股票未来短周期（1周至1个月）的涨跌情景概率，并按 A 股红涨绿跌惯例输出四情景概率分布图；结果是基于信号加权的结构化主观估计，非统计回测。'
