@@ -8565,7 +8565,7 @@ dsh plugin --profile web add dshmarket
 - [ankye/dsh-client-vision#tool-vision](https://github.com/ankye/dsh-client-vision/tree/main/packages/tool-vision) — 屏幕截图与外部视觉识别：take_screenshot、list_windows、analyze_image、view_image 四个工具，可配置 GPT 视觉通道（gpt-5.5 / gpt-5.6-sol / gpt-5.6-terra），API Key 经凭据服务存储，带设置卡片；view_image 在 Web 对话中显示截图，模型上下文只保留文字。
 - [ankye/dsh-image-generation#tool-image-generation](https://github.com/ankye/dsh-image-generation/tree/main/packages/tool-image-generation) — 面向模型的图像生成工具，提供可配置通道和标准化图像参数。
 - [AtropinolTT/dsh-guide-dog](https://github.com/AtropinolTT/dsh-guide-dog) — 基于 MiniMax 的多模态插件：实时语音通话模式（流式对话、悬浮胶囊 UI）、语音模式与麦克风语音输入，并提供图像/视频/音乐/语音生成与视觉检查工具。
-- [dsh-gesture-control](https://github.com/AXTUT/dsh-gesture-control) — 用单手手势操作 DSH 会话的实验插件；需 Windows Desktop 0.12.1 媒体权限补丁和 Harness 0.2.1-rc.2。
+- [dsh-gesture-control](https://github.com/AXTUT/dsh-gesture-control) — 用单手手势操作会话；范围限 DSH 0.2.1-rc.2 起的 0.2.1 和 0.2.2-rc.1 起的 0.2.2。需桌面摄像头/麦克风权限，版本矩阵及旧版补丁见仓库。
 - [azwosile/dsh-highres-vision](https://github.com/azwosile/dsh-highres-vision) — 为 DeepSeek Harness 原生视觉模型 deepseek-v4-flash-vision-exp 提供高清识图：将图片准入上限提升至 32 MiB / 8192 px / 600 张，并新增 highres_read 工具，将大图切为整图与 800x800 分块后经宿主 read_image 注入模型。
 - [baibaiyi/dsh-shot-ocr](https://github.com/baibaiyi/dsh-shot-ocr) — 全局快捷键截取桌面选区，用 Windows OCR 识别文字填入输入框，或直接把截图插入对话。
 - [balue8246-maker/dseyesopen](https://github.com/balue8246-maker/dseyesopen) — 视觉桥：纯文本 DeepSeek 也能收图（单独发、图文混发均可），快速小识图模型后台描述，对话框里图还在、模型只见文字；纯插件，卸载即复原。
@@ -11886,6 +11886,7 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-plugins#dsh-secret-redactor](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-secret-redactor) — 工具结果敏感信息自动脱敏：模型看到前掩码 API key / token / JWT / 私钥与配置密钥。
 - [Daphne999/dsh-warden](https://github.com/Daphne999/dsh-warden) — 装插件前的安全体检：读 package.json、安装期脚本、原生依赖与源码，扫外联域名、危险 API、凭据路径，再交叉核对市场的能力声明与红线，给出 100 分制评级与逐条发现。只读，不执行被审计代码。
 - [Darren-Tang/dsh-provenance](https://github.com/Darren-Tang/dsh-provenance) — 为 DeepSeek Harness 插件做安装前供应链校验：在代码运行前核对即将安装的包是否与你读到的源码一致。
+- [deepestevan/dsh-delete-guard](https://github.com/deepestevan/dsh-delete-guard) — 拦截 agent 的删除命令，改为经 file_trash 工具移入 Windows 回收站；拒绝“读改写同一文件”，共享删除先复制到本地 NTFS 卷、校验并回收副本后再删原件。
 - [deepsleepAquarium/dsh-whale-post#verify](https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/verify) — 校验其他 agent 写来的信：规范字段顺序、摘要与 HMAC 校验。默认关闭；开启后，缺字段或未登记字段不放行，任何一项不过就拒收。
 - [devil233-ui/dsh-auto-review-default](https://github.com/devil233-ui/dsh-auto-review-default) — 让会话进入内置的 Auto review 权限预设：新建会话在创建时进入，已有的根会话在重新打开时切过去。
 - [DevilSpiderX/dsh-workspace-only-plugin](https://github.com/DevilSpiderX/dsh-workspace-only-plugin) — 把任何沙箱模式（read-only / workspace-write / danger-full-access / auto）下代理的文件访问限制在会话工作区内，越界访问一律请用户裁决；每个会话还能用 composer 旁的档位选择框把越界门禁放宽为「工作区外只读」或「完全放开」。
@@ -12728,6 +12729,7 @@ dsh plugin --profile web add dshmarket
 - [bubbleptr/dsh-holdem](https://github.com/bubbleptr/dsh-holdem) — 六人无限注德州扑克：1 名玩家对 5 位只能看到自己底牌的 LLM 智能体。在 Web GUI 中提供独立 Tab 与会话区可拖拽悬浮小窗，支持按浏览器隔离的牌局与 CSRF 防护、按底池倍数给出的加注尺度、每人 3 次买入后出局，以及摊牌亮牌与公共牌翻牌动效。
 - [buzhidaojiaoshenmehao/dsh-cat-pet](https://github.com/buzhidaojiaoshenmehao/dsh-cat-pet) — 随 Harness 任务变化的 macOS 和 Windows 桌宠，显示 DeepSeek 余额、Token 用量、预估费用和峰谷倒计时。
 - [camik86/dsh-tarot-page](https://github.com/camik86/dsh-tarot-page) — DSH Web GUI 的塔罗牌整页：78 张公版 Rider-Waite-Smith 牌面、四种牌阵（单张、三张、关系、凯尔特十字）、洗牌与翻牌动画、本地历史记录，以及只存在于页面内的 AI 解读（走用户 DSH 配置的模型）。不注册任何面向模型的工具、skill、slash 命令或系统提示。
+- [Camus2001/dsh-pet-see-live](https://github.com/Camus2001/dsh-pet-see-live) — 让 dsh-pet 实时看屏幕、听同期声音，并通过气泡和语音点评；采集与拼图复用 dsh-see-now。
 - [CELLOPOI/moyuban](https://github.com/CELLOPOI/moyuban) — 在 DSH 工作区读小红书推荐、浏览百度贴吧帖子和楼中楼，也可以在 NGA 引用楼层回帖。
 - [Cerbur/clutch-dsh#clutch-dsh-fireworks](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-fireworks) — 通过 `happy_fireworks` Agent 工具为 DSH Web UI 增加庆祝礼花覆盖层。
 - [chen731215-dev/dsh-tavern-v2](https://github.com/chen731215-dev/dsh-tavern-v2) — 酒馆管理面板：多角色卡、多世界书、多预设与会话级隔离，记忆总结、角色关系网、剧情选项一键发送，另有 NSFW 模式。完整效果需同时安装伴生插件 dsh-muv-engine 与 dsh-muv-table，用于渲染状态栏、剧情选项与变量表格。角色卡自带的状态栏 / 变量折叠 / 选项卡片在沙盒 iframe 中渲染，卡内样式不再外溢到宿主界面。
