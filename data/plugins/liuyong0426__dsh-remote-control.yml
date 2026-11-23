@@ -1,0 +1,6 @@
+url: https://github.com/liuyong0426/dsh-remote-control
+name: liuyong0426/dsh-remote-control
+category: remote
+description:
+  en: 'Remote control for DSH: pair a phone by QR code over the same Wi-Fi or a Cloudflare tunnel, then continue that computer''s sessions, approvals, files and settings from the phone browser.'
+  zh: 'DSH 远程控制：手机扫码配对（同一 Wi-Fi 或 Cloudflare 隧道），然后在手机浏览器里继续那台电脑上的会话、审批、文件与设置。'
