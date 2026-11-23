@@ -1,5 +1,6 @@
 url: https://github.com/Uneadlight/fatfish-lab/tree/main/09-plugins/dsh-env-doctor
 name: "Uneadlight/fatfish-lab#dsh-env-doctor"
+tarball: https://github.com/Uneadlight/fatfish-lab/releases/download/plugins-0.6.24/un10086-dsh-env-doctor-0.6.24.tgz
 category: tools
 description:
   en: "DSH environment doctor: one command checks workspace, per-plugin load health, scheduled tasks, automation coverage and toolchain versions, with a periodic background audit."
