@@ -1,0 +1,6 @@
+url: https://github.com/onup-1/dsh-permission-plan
+name: onup-1/dsh-permission-plan
+category: security
+description:
+  en: 'One approval dialog for a whole task, plus keyword memory so approved work stops prompting. Destructive wording and plugin_manager never auto-approve.'
+  zh: '开工前一次性申请整件事需要的权限，之后按关键词自动放行；删除类措辞与 plugin_manager 永不自动放行。'

@@ -1,0 +1,6 @@
+url: https://github.com/onup-1/dsh-message-edit-0.3.0
+name: onup-1/dsh-message-edit-0.3.0
+category: session
+description:
+  en: 'Branch-based message editing for DSH conversations: edit or reroll any turn, keep the old branch intact, and switch between versions without losing later turns.'
+  zh: '对话分支式编辑：改任意一轮的提问或回答、重生成、重试，旧分支完整保留，可来回切换版本而不丢后面的内容。'

@@ -1,0 +1,6 @@
+url: https://github.com/onup-1/dsh-github-guard
+name: onup-1/dsh-github-guard
+category: remote
+description:
+  en: 'Keeps github.com reachable from DSH by probing the rotating GitHub edge IPs and pinning a working one in the hosts file, only while GitHub traffic is present.'
+  zh: '让 DSH 里的 github.com 连得上：自动探测轮换的 GitHub 边缘 IP、把可用的写进 hosts，只在检测到 GitHub 流量时才扫。'
