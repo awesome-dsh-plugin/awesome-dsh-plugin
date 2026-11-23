@@ -1,0 +1,7 @@
+url: https://github.com/person-clouds/dsh-workbench-panel
+name: person-clouds/dsh-workbench-panel
+category: ui
+description:
+  en: 'A read-only DSH Web workbench: one sidebar panel for workspaces and sessions, repository file trees and blobs, and Markdown document indexes, with explicit session archiving.'
+  zh: 'DSH Web 只读工作台：一个侧栏面板查看工作区/会话、仓库文件树与 blob、Markdown 文档索引，并显式归档会话。'
+icon: https://raw.githubusercontent.com/person-clouds/dsh-workbench-panel/main/icon.png
