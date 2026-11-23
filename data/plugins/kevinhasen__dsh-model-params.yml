@@ -1,0 +1,6 @@
+url: https://github.com/kevinhasen/dsh-model-params
+name: kevinhasen/dsh-model-params
+category: model
+description:
+  en: 'Per-model parameter flyout in the DSH model list: context presets, thinking toggle and reasoning levels, with automatic Bailian compatibility and uninstall rollback of config writes.'
+  zh: '模型列表内逐模型参数面板：上下文预设、思考开关与强度档位，百炼端点自动兼容，卸载自动回滚配置写入。'
