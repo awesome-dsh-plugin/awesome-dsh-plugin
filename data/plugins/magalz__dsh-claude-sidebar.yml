@@ -1,0 +1,6 @@
+url: https://github.com/magalz/dsh-claude-sidebar
+name: magalz/dsh-claude-sidebar
+category: ui
+description:
+  en: 'Adds a Claude-style right sidebar to DeepSeek Harness with an icon rail and Environment, Git, Jobs and Subagents tabs for the open session, a Run button on shell code blocks in chat, automatic pane sizes and an open_in_browser tool for the agent; each feature is its own row in Plugins.'
+tarball: https://github.com/magalz/dsh-claude-sidebar/releases/download/v0.1.0/dsh-claude-sidebar-0.1.0.tgz
