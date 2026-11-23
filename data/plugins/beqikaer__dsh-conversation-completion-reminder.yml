@@ -1,0 +1,7 @@
+url: https://github.com/beqikaer/dsh-conversation-completion-reminder
+name: beqikaer/dsh-conversation-completion-reminder
+category: notify
+description:
+  en: Push a Feishu or WeChat card with the task title, the final answer and the artifact paths when a DSH conversation turn finishes.
+  zh: 对话结束时，把任务标题、最终回答和产物路径推成一张飞书或微信卡片。
+icon: https://raw.githubusercontent.com/beqikaer/dsh-conversation-completion-reminder/main/assets/icon-180.png
