@@ -1,0 +1,6 @@
+url: https://github.com/zycskylove520/dsh-engineering-craft
+name: zycskylove520/dsh-engineering-craft
+category: workflow
+description:
+  en: DeepSeek Harness plugin suite with stage gates, handoff artifacts, project memory and a strict six-role subagent pipeline.
+  zh: DeepSeek Harness 工程流程插件套件：阶段门、交接物、工程记忆，以及顺序严格的六岗位 subagent 流水线。
