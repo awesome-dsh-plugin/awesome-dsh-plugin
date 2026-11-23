@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-skill-distiller
+name: SSHOOTING/dsh-plugin-skill-distiller
+tarball: https://github.com/SSHOOTING/dsh-plugin-skill-distiller/releases/download/v0.1.0/0.1.0.tgz
+category: workflow
+description:
+  en: 'Drafts reusable skills from successful tasks with applicable conditions and a minimal test.'
+  zh: '从成功任务提炼可复用技能草稿，附适用条件与最小测试。'
