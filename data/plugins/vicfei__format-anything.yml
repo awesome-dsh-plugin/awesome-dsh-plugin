@@ -1,0 +1,6 @@
+url: https://github.com/vicfei/format-anything
+name: vicfei/format-anything
+category: tool
+description:
+  en: 'Reverse engineer any file format, verified by roundtrip - an agent studies the observe report (entropy/magic/strings/strides) of an unknown binary, drafts an executable schema, and the deterministic gate proves it: decode the sample, re-encode, compare byte-for-byte. Verdicts never lie (byte-equal / semantic-equal with declared tolerances / hypothesis); FORMAT.md is the open knowledge-document format.'
+  zh: '任意文件格式逆向，往返校验为证：agent 只看未知二进制的观察报告（熵/魔数/字符串/步长）起草可执行 schema，确定性关卡验证——解码样本、重编码、逐字节比对。判级永不撒谎（字节等/容差声明的语义等/假设）；FORMAT.md 是开放的知识文档格式。'
