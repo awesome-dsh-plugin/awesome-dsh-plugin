@@ -1,0 +1,6 @@
+url: https://github.com/CHENJIAMIAN/dsh-session-switch
+name: CHENJIAMIAN/dsh-session-switch
+category: session
+description:
+  en: 'Bounces between the current session and the previous one with Ctrl+Tab on DSH Desktop, stopping at those two instead of walking further back.'
+  zh: '桌面版按 Ctrl+Tab 在「当前会话」和「上一个会话」之间来回切，只在这两个之间打转，不会一路翻回更早的会话。'
