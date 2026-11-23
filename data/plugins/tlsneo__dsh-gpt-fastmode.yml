@@ -1,0 +1,6 @@
+url: https://github.com/tlsneo/dsh-gpt-fastmode
+name: tlsneo/dsh-gpt-fastmode
+category: model
+description:
+  en: 'Adds controls to the DSH Web composer to request Fast or Ultrafast for GPT models, scoped to one conversation or all conversations using the same model ID.'
+  zh: '在 DSH Web 输入栏为 GPT 模型添加 Fast 和 Ultrafast 档位选项，可仅应用于当前会话，也可应用于使用同一模型 ID 的所有会话。'

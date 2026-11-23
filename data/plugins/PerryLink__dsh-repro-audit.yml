@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-repro-audit
+name: PerryLink/dsh-repro-audit
+category: tools
+description:
+  en: "Reproducibility evidence for DeepSeek Harness: a bounded read-only scan records the git commit and dirty state, dependency lockfiles, environment pins, input-data hashes, figures, notebooks, explicit seeds and runnable commands, derives gap severities and a reproducible/partial/not_reproducible level, compares a recorded manifest against the current tree for drift, and renders a report card with Markdown and SARIF."
+  zh: 'DeepSeek Harness 的可复现性证据：有界只读扫描，记录 git 提交与脏状态、依赖锁文件、环境固定、输入数据哈希、图、notebook、显式随机种子与可运行命令，推导缺口严重度与 reproducible/partial/not_reproducible 等级，对比已记录清单与当前目录树的漂移，并渲染报告卡。'

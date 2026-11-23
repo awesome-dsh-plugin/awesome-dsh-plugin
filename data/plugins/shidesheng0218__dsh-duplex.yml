@@ -1,0 +1,7 @@
+url: https://github.com/shidesheng0218/dsh-duplex
+name: shidesheng0218/dsh-duplex
+category: voice
+description:
+  en: 'Voice mode for DSH: read replies aloud, dictate through browser speech recognition, and answer approvals by voice; high-risk tools require a second spoken confirmation.'
+  zh: 'DSH 语音双工：朗读回复、语音输入，并可用口头决定审批；bash 等高风险操作需要二次口头确认。'
+tarball: https://github.com/shidesheng0218/dsh-duplex/releases/latest/download/dsh-duplex.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-sr-ledger
+name: PerryLink/dsh-sr-ledger
+category: tools
+description:
+  en: "Systematic-review ledger for DeepSeek Harness: PRISMA 2020 protocol revisions, imported records, dual screening with explicit conflict adjudication, RoB 2 / ROBINS-I / GRADE assessments, derived PRISMA counts with integrity issues, and an export bundle backed by a hash-chained append-only journal."
+  zh: "面向 DeepSeek Harness 的系统综述台账：PRISMA 2020 方案修订、导入记录、双人筛选中显式冲突裁决、RoB 2/ROBINS-I/GRADE 评估、带完整性问题的 PRISMA 计数，以及由哈希链仅追加日志支撑的导出包。"

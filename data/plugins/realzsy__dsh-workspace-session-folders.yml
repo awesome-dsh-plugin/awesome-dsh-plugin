@@ -1,0 +1,7 @@
+url: https://github.com/realzsy/dsh-workspace-session-folders
+name: realzsy/dsh-workspace-session-folders
+category: session
+description:
+  en: Auto-creates a dated per-session folder in the workspace and switches the conversation's working directory into it, with process/ and output/ subfolders for intermediates and deliverables.
+  zh: 新会话自动在工作区生成以日期与会话 ID 命名的专属文件夹并切换工作目录，内含 process/ 与 output/ 子目录分别存放过程文件和最终产物。
+icon: https://raw.githubusercontent.com/realzsy/dsh-workspace-session-folders/main/assets/icon-180.png

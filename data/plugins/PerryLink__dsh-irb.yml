@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-irb
+name: PerryLink/dsh-irb
+category: tools
+description:
+  en: "Ethics-application checklist for DeepSeek Harness: 18-item keyword checklist (title, PI, purpose, design, participants, recruitment, consent, assent, risks, benefits, confidentiality, vulnerable groups, compensation, conflicts, retention, dissemination, animal ethics, biosafety), an advisory risk level with required safeguards from structured flags, Markdown/SARIF export and REP evidence. Not an IRB decision and not legal advice."
+  zh: 'DeepSeek Harness 的伦理申请清单：18 项关键词清单（标题、负责人、目的、设计、受试者、招募、知情同意、风险、获益、保密、弱势群体、补偿、利益冲突、保存期限、传播、动物伦理、生物安全），按结构化标志给出建议性风险等级与必要保障措施，可导出 Markdown/SARIF 与 REP 证据。'

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-ghg
+name: PerryLink/dsh-ghg
+category: tools
+description:
+  en: "Electricity activity ingest, location-based GHG calculation, row verification and export for DeepSeek Harness (repository marked FROZEN 2026-10-31)."
+  zh: "面向 DeepSeek Harness 的用电活动数据导入、基于位置法的温室气体核算、逐行核验与导出（仓库标记 FROZEN 2026-10-31）。"

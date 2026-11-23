@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-policy-ledger
+name: PerryLink/dsh-policy-ledger
+category: tools
+description:
+  en: "Read-only install doctor for DeepSeek Harness: capability snapshot, tarball assertion and install diagnosis; install-only companion to dsh-plugin-doctor."
+  zh: "面向 DeepSeek Harness 的只读安装体检：能力快照、tarball 断言与安装诊断；dsh-plugin-doctor 的仅安装版配套。"

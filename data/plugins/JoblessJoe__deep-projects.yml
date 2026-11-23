@@ -1,0 +1,7 @@
+url: https://github.com/JoblessJoe/deep-projects
+name: JoblessJoe/deep-projects
+category: memory
+description:
+  en: 'Project rooms for the web GUI: each project is a plain folder with a goal, a memory list, AGENTS.md instructions and knowledge files, shown on a Projects page and pinnable in the sidebar; chats started from a project run in its folder, so dsh loads the goal and memory from AGENTS.local.md natively, and 8 agent tools (projects_*) let agents read and maintain projects.'
+  zh: '为 Web 界面提供项目空间：每个项目是一个普通文件夹，包含目标、记忆列表、AGENTS.md 指令和知识文件，在「项目」页面展示并可固定到侧边栏；从项目发起的对话在其文件夹中运行，dsh 原生从 AGENTS.local.md 加载目标与记忆，另有 8 个智能体工具（projects_*）供智能体读取和维护项目。'
+icon: https://raw.githubusercontent.com/JoblessJoe/deep-projects/main/.github/assets/icon-256.png

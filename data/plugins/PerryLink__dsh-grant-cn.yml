@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-grant-cn
+name: PerryLink/dsh-grant-cn
+category: tools
+description:
+  en: "Chinese grant application check for DeepSeek Harness: a 19-item starter checklist (title, abstract, scientific-question category A-D, rationale, goals, content, method, technical route, innovation, feasibility, basis, conditions, team, budget, budget notes, ethics, data sharing, limits, references), budget arithmetic and structure checks, application-package scanning, and JSON/Markdown output with REP evidence. A keyword checklist, not a review verdict."
+  zh: "中文基金申请书检查：19 项起步清单（项目名称/摘要/科学问题属性/立项依据/目标/内容/方案/技术路线/创新/可行性/基础/条件/团队/预算/预算说明/伦理/数据共享/限项/参考文献），预算算术与结构校验、申请材料包扫描，输出 JSON/Markdown 与 REP 证据。关键词清单，不是评审结论。"

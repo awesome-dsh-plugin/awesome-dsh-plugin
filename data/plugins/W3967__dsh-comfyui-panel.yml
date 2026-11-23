@@ -1,0 +1,9 @@
+url: https://github.com/W3967/dsh-comfyui-panel
+name: W3967/dsh-comfyui-panel
+category: tools
+description:
+  en: 'Import any ComfyUI API-format workflow and get a parameter form generated from its graph; ships Krea 2 presets, queue and history views, and an agent tool. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '导入任意 ComfyUI API 格式工作流并自动生成参数表单；内置 Krea 2 预设、队列与历史视图，以及供模型调用的 agent 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/W3967/dsh-comfyui-panel/main/assets/icon-180.png
+# Trigger PR checks re-run
+# Trigger PR checks re-run (age gate cleared 2026-11-22)
