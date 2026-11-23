@@ -9594,7 +9594,7 @@ dsh plugin --profile web add dshmarket
 - [11111353535/dsh-folderwatch](https://github.com/11111353535/dsh-folderwatch) — 监视目录，在文件树安静后投递批量合并、去重的变更清单，并过滤掉本会话自己的写入；投递方式按监视器选择，可起新回合或排队到下一步。
 - [121212165/dsh-plugin-ide-hub](https://github.com/121212165/dsh-plugin-ide-hub) — 一个入口管住所有编码 IDE（dsh/Claude Code/Codex/ZCode/Qoder/CatPaw/Trae/OpenCode）：零 API 读各自磁盘状态，出会话盘点、按 IDE 用量与缓存命中率、一键恢复命令，并用指针文件把一份规则本体接入全部 8 个工具。国产 IDE 适配位从本机安装的二进制里逐一逆向核实，补齐海外工具的空缺。
 - [121212165/dsh-plugin-task-forge](https://github.com/121212165/dsh-plugin-task-forge) — 把大白话编译成开源标准任务书（目标/约束/验收/决策/缺口全编号），再无损交接给任意窗口的 AI：接收方必须通过回读握手——复述理解、列出缺口、声明 READY——才被允许开工；缺口答案回填自动升版本，台账记录哪个窗口持有哪个版本。
-- [1225Sakura/oh-my-deepseekharness](https://github.com/1225Sakura/oh-my-deepseekharness) — DeepSeek Harness 的多智能体编排层——autopilot/ralph/team 三种执行模式、19 张角色卡、40 个双语技能与内置 MCP 状态服务，移植自 oh-my-claudecode。
+- [1225Sakura/oh-my-deepseekharness](https://github.com/1225Sakura/oh-my-deepseekharness) — 多智能体编排层（omd）：48 个双语技能、33 张角色卡与 34 个进程内工具——模式状态走宿主 storageDomain 域，leaf-guard 经 tools.restrict 机械强制，cwd/sessionId 从会话锚自动派生，autopilot/ralph/team 由宿主原生 goals/agentTeams 承载并附加五阶段交接纪律；含 HUD 侧边栏面板。零子进程。
 - [1264459640/dsh-trellis](https://github.com/1264459640/dsh-trellis) — 为 DeepSeek Harness 打造的 Trellis 风格工作流：基于 agent/pre-step 的每轮速记注入、内置技能提供方，以及带 git 清洁度护栏的 DSH 原生任务与相位状态管理。
 - [1344738825/ai-look-up](https://github.com/1344738825/ai-look-up) — AI 抬头：检测空跑（重复命令 / 连续失败 / 久跑零产出）并在运行中途注入自我审查提醒，同时定期注入真实本地时间，校准 AI 的时间感。
 - [1924225725-collab/dsh-DKN-Workbench](https://github.com/1924225725-collab/dsh-DKN-Workbench) — 接入 OrcaTerm 文字模型、TRAE CN 国内个人版、CodeBuddy、Codex CLI、Qoder ACP、ZCode 及可选 Antigravity ACP，提供原生 Codex 项目、统一 API、可选后台常驻与自动签到、额度、项目协作及可切换的简洁与插画界面。
