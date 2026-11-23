@@ -1,5 +1,6 @@
 url: https://github.com/SSHOOTING/dsh-plugin-context-map
 name: SSHOOTING/dsh-plugin-context-map
+tarball: https://github.com/SSHOOTING/dsh-plugin-context-map/releases/download/v0.1.0/0.1.0.tgz
 category: dev
 description:
   en: 'Read-only map of what is in the current context: source families, token hints and compaction candidates.'
