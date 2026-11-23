@@ -2,5 +2,5 @@ url: https://github.com/dptech-corp/bohrium-skills/tree/main/dsh/bohr-cli
 name: dptech-corp/bohrium-skills#dsh/bohr-cli
 category: tools
 description:
-  en: Installs one Bohrium CLI binary for the current host and points the agent at the guides that binary carries.
-  zh: 为本机安装一个 Bohrium CLI 二进制，并指引模型读取该二进制自带的指南。
+  en: Installs the Bohrium CLI in DeepSeek Harness and uses its built-in guides.
+  zh: 在 DeepSeek Harness 中安装 Bohrium CLI，并使用 CLI 内置指南。
