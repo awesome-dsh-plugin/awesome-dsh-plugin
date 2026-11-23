@@ -1,0 +1,6 @@
+url: https://github.com/vicfei/dsh-Vibe-Trading
+name: vicfei/dsh-Vibe-Trading
+category: tools
+description:
+  en: 'Interactive trading research workbench for DSH - ask a market question and an orchestrated plan-data-compute-interpret loop answers with numbers produced only by a deterministic layer (the LLM interprets and cites computed fields, never invents figures). Fields that cannot be computed render as unavailable-with-reason instead of 0, every dataset carries its source/adjustment/coverage metadata, and the SMA20/60 mini backtest reports in-sample vs out-of-sample segments with frozen a-priori params. Includes deterministic screener boards (momentum/volatility/volume/correlation, zero LLM calls), MACD/RSI indicators, multi-question chat sessions on cached data, versioned append-only research artifacts with revision diff (research that outlives the chat, in open files you own), zero-dependency SVG chart cards, and typed host tools (vibe_research/vibe_scan). Not investment advice.'
+  zh: 'DSH 原生交互式投研工作台：提一个行情问题，编排式"规划→取数→计算→解读"循环作答——数字只出自确定性计算层（LLM 只解读并引用计算字段，不产数）。算不出的字段如实渲染为"不可用+原因"而非 0，每个数据集自带来源/复权/覆盖元数据，SMA20/60 迷你回测按冻结先验参数分样本内/外报告。内置确定性榜单（动量/波动/量能/相关性，零 LLM 调用）、MACD/RSI 指标、缓存数据多问会话、append-only 版本化研究工件与修订 diff（活在聊天之外的研究，文件归你所有）、零依赖 SVG 图卡与 typed 宿主工具（vibe_research/vibe_scan）。非投资建议。'
