@@ -1,0 +1,6 @@
+url: https://github.com/Tazio7/dsh-mermaid-pele
+name: Tazio7/dsh-mermaid-pele
+category: docs
+description:
+  en: "Renders mermaid code fences in DeepSeek Harness chat as inline SVG using a vendored Pele engine, with theme-token color bridging; streaming, oversized, or unparseable sources stay as plain code blocks."
+  zh: "使用内置 Pele 引擎将聊天中的 mermaid 代码围栏渲染为内联 SVG，配色桥接主题令牌；流式、超长或无法解析的源码保持普通代码块。"
