@@ -1,0 +1,6 @@
+url: https://github.com/nbcxsm/dsh-session-purge
+name: nbcxsm/dsh-session-purge
+category: session
+description:
+  en: Permanently delete a DSH session from its context menu, or purge every archived session's log, projection cache and workspace record in one click.
+  zh: 在会话右键菜单里彻底删除会话，或一次清掉全部已归档会话的日志、投影缓存与工作区记录。
