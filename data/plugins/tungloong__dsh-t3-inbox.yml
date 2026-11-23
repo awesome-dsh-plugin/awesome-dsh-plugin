@@ -1,0 +1,7 @@
+url: https://github.com/tungloong/dsh-t3-inbox
+name: tungloong/dsh-t3-inbox
+category: ui
+icon: https://raw.githubusercontent.com/tungloong/dsh-t3-inbox/main/docs/images/icon.png
+description:
+  en: Attention-first, T3 Code-inspired inbox sidebar for DeepSeek Harness with Pinned, Active, Working, Snoozed, and Settled shelves, customizable snooze presets and calendar, ranked search, multi-select project filter, vertical sweep with 5-second undo, auto theme detection, 8-language UI, and one-click switch back to the native Workspaces sidebar.
+  zh: 面向 DeepSeek Harness 的 T3 Code 风格注意力收件箱侧边栏，支持置顶/待处理/运行中/已暂缓/已收尾分区、可编辑暂缓快捷选项与日历弹窗、高相关搜索、多选项目筛选、竖向扫选与 5 秒撤销、自动皮肤适配、8 语言界面，以及一键切回原生工作区视图。
