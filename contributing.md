@@ -143,6 +143,10 @@ Recommended for a better install experience / 推荐（更好的安装体验）�
   "peerDependencies": { "@deepseek-ai/dsh-tools": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0" }
   ```
 
+**A brand-new package name is published in two steps.** The first `npm publish` of a name nobody has used yet creates only a `0.0.0-stage` placeholder: `dist-tags.latest` points at it and the real tarball answers `{"error":"Not found"}`. Publishing the same version a second time attaches it and the tarball becomes available a few minutes later. The rule of thumb is the one this repository applies to entries: judge by the artifact, not by the message — `npm publish` printing `+ name@version` is not proof that anything is installable. Check `registry.npmjs.org/<name>` shows `dist-tags.latest` equal to your version and that `dist.tarball` downloads, and bump the version or re-publish as needed *before* submitting, because an entry whose package is not installable yet will be checked against the registry by a reviewer.
+
+**一个全新的包名要发两次。** 对一个没人用过的名字，第一次 `npm publish` 只会建一个 `0.0.0-stage` 占位包：`dist-tags.latest` 指向它，真正的 tarball 返回 `{"error":"Not found"}`。把同一个版本再发一次，它才挂上去，tarball 过几分钟可取。判断标准和本仓库对条目的标准是同一条：看产物，不看提示——`npm publish` 打印 `+ name@version` 不等于有东西装得上。请确认 `registry.npmjs.org/<name>` 里 `dist-tags.latest` 等于你的版本、且 `dist.tarball` 能下载，该 bump 就 bump、该重发就重发，**在提交条目之前**做完，因为评审会拿 registry 核对。
+
 The website rebuilds automatically after merge — no need to touch anything else. / 合并后网站自动重建，无需改动其他文件。
 
 ### One PR, at most 3 entries / 一个 PR 最多 3 条
