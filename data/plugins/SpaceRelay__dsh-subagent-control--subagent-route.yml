@@ -1,0 +1,7 @@
+url: https://github.com/SpaceRelay/dsh-subagent-control/tree/main/subagent-route
+name: SpaceRelay/dsh-subagent-control#subagent-route
+category: model
+description:
+  en: "Adds subagent_route and list_routes: a subagent is sent to a provider and model named per call, in any conversation — including one opened before the plugin existed, where the stock subagent tool keeps children on the parent route. The route is checked with the provider before the child starts, so a misspelled provider or a reasoning level the model does not offer fails immediately instead of leaving a child that cannot answer. The official tools are left untouched."
+  zh: 新增 subagent_route 与 list_routes：每次派活时点名渠道与模型，任何对话都能用——包括插件装上之前就开着的对话，那里官方 subagent 工具只让子代理跟着主对话的模型走。子代理启动前先向渠道核对这条路由，渠道名写错、或模型不支持所要求的效果档都会当场失败，而不是留下一个答不了话的子代理。官方工具原样不动。
+icon: https://raw.githubusercontent.com/SpaceRelay/dsh-subagent-control/main/subagent-route/assets/icon-256.png
