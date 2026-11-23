@@ -1,0 +1,7 @@
+url: https://github.com/JoblessJoe/dsh-connectors
+name: JoblessJoe/dsh-connectors
+category: tools
+description:
+  en: 'Claude-style connectors: add any MCP server (Streamable HTTP with SSE fallback, or a local stdio command) from a Connectors page in the sidebar, sign in once with OAuth 2.1 + PKCE, discovery and dynamic client registration (callback returns to whatever dsh address you use, so it works on headless servers), or a bearer token; tokens live in the dsh credential store and refresh on their own, dropped connections reconnect with backoff, single tools can be switched off, and mcpServers blocks from Claude Desktop, Cursor or VS Code can be pasted in. Tools appear as mcp__<id>__<tool>.'
+  zh: '类似 Claude 的连接器：在侧边栏的「Connectors」页面添加任意 MCP 服务器（Streamable HTTP，可回退到 SSE，或本地 stdio 命令），通过 OAuth 2.1 + PKCE、服务发现和动态客户端注册登录一次（回调会回到你当前使用的 dsh 地址，因此无界面服务器也可用），或使用 Bearer 令牌；令牌保存在 dsh 凭据存储中并自动刷新，断开的连接会退避重连，可单独关闭某个工具，并可粘贴 Claude Desktop、Cursor 或 VS Code 的 mcpServers 配置导入。工具名为 mcp__<id>__<tool>。'
+icon: https://raw.githubusercontent.com/JoblessJoe/dsh-connectors/main/.github/assets/icon-180.png
