@@ -1,0 +1,6 @@
+url: https://github.com/x-cores/dsh-recent-sessions
+name: x-cores/dsh-recent-sessions
+category: session
+description:
+  en: A main-panel browser for every session across workspaces, sorted by last update, with search, pagination, archive badges, click-to-jump and a workspace blocklist.
+  zh: 主面板会话总览：跨工作区列出全部会话，按更新时间倒序，支持搜索、分页、归档标识、点击直达与工作区过滤列表。
