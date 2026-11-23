@@ -2,5 +2,5 @@ url: https://github.com/OMSociety/dsh-ppt-maker
 name: OMSociety/dsh-ppt-maker
 category: docs
 description:
-  en: 'PPT workbench: eleven ppt_* tools create, edit, reverse-engineer, QA-check and export slides from a plain-text PPTD project; five design-system families, themes, animations, posters and infographics.'
-  zh: 'PPT 制作插件：十一个 ppt_* 工具创建、编辑、逆向、质检与导出演示文稿，内置五族设计系统与主题模板，支持幻灯片动画、海报与信息图。'
+  en: 'AI PowerPoint (PPT/PPTX) maker: twelve ppt_* tools create, redesign, edit, quality-check and export presentation slides as editable .pptx or PDF, import and patch existing decks, with 30 design systems and a right-sidebar visual workbench.'
+  zh: 'PPT 制作插件（PowerPoint / 幻灯片 / 演示文稿）：十二个 ppt_* 工具创建、美化改稿、质检并导出可编辑的 .pptx 与 PDF，可导入或修改已有 PPT，内置 30 套设计系统与右侧栏可视化工作台，用于汇报、答辩、路演与课件。'
