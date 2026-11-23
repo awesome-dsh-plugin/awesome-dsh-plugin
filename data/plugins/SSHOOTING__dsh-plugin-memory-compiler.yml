@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-memory-compiler
+name: SSHOOTING/dsh-plugin-memory-compiler
+tarball: https://github.com/SSHOOTING/dsh-plugin-memory-compiler/releases/download/v0.1.0/0.1.0.tgz
+category: memory
+description:
+  en: 'Compiles a session into sourced memory entries: decisions, constraints and open questions.'
+  zh: '把会话编译成带来源的记忆条目：决策、约束与未决问题。'
