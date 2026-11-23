@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-dataset-card
+name: PerryLink/dsh-dataset-card
+category: tools
+description:
+  en: "Dataset documentation for DeepSeek Harness: bounded CSV/TSV/JSON/JSONL profiling (types, missingness, cardinality), redacted PII detection by column name and value pattern, and a Datasheet-style card with missing-section warnings."
+  zh: "面向 DeepSeek Harness 的数据集文档：对 CSV/TSV/JSON/JSONL 做有界画像（类型、缺失、基数），按列名与值模式检测并脱敏 PII，生成带缺节提示的 Datasheet 式卡片。"

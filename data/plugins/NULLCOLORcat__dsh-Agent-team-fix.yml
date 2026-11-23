@@ -1,0 +1,6 @@
+url: https://github.com/NULLCOLORcat/dsh-Agent-team-fix
+name: NULLCOLORcat/dsh-Agent-team-fix
+category: model
+description:
+  en: Routes DSH Agent Team members to configured models for routine or difficult tasks.
+  zh: 为 DSH Agent Team 成员按日常任务和困难任务配置不同的模型。

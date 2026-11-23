@@ -1,0 +1,8 @@
+url: https://github.com/zbh13782-lang/dsh-pin-bookmarks
+name: zbh13782-lang/dsh-pin-bookmarks
+category: ui
+icon: https://raw.githubusercontent.com/zbh13782-lang/dsh-pin-bookmarks/main/assets/icon-180.png
+tarball: https://github.com/zbh13782-lang/dsh-pin-bookmarks/releases/latest/download/dsh-pin-bookmarks.tgz
+description:
+  en: Pins an assistant reply into a right-sidebar tab rendered as Markdown with syntax-coloured code, stamps each pin with the time its message was written, and jumps back to that message by paging through older history when it is not loaded. A selected passage goes back to the composer as a quote for follow-up questions, a star action pins without opening the column and unpins on a second click, pinned turns get a longer brighter tick on the turn navigator, and the navigator is managed from Settings.
+  zh: 把助手回复收藏进右侧栏标签页并以 Markdown 渲染（代码块带语法着色），卡片顶部显示这条消息的写入时间，「跳转」在消息未加载时会沿着更早的历史逐页上翻直到落回那条消息；选中其中一段即可作为引用带回主聊天输入框继续提问。回复下方的星星只收藏、不展开侧栏，再点一次取消收藏；被收藏的轮次在右侧轮次导航上显示为更长更亮的横线，导航本身可在设置里管理。

@@ -1,0 +1,7 @@
+url: https://github.com/qqq111QQQ-11/dsh-bilibili
+name: qqq111QQQ-11/dsh-bilibili
+category: fun
+description:
+  en: 'Bilibili inside DeepSeek Harness: home feed, hot lists, rankings and search; QR or SMS sign-in, then like, coin, favorite, follow and comment without leaving the app. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DeepSeek Harness 里逛 B 站：首页推荐、热门、榜单、搜索与看视频；支持扫码／短信登录，登录后可点赞、投币、收藏、关注与评论。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/qqq111QQQ-11/dsh-bilibili/main/assets/icon-180.png

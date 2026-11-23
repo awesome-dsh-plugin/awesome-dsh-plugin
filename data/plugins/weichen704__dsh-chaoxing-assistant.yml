@@ -1,0 +1,7 @@
+url: https://github.com/weichen704/dsh-chaoxing-assistant
+name: weichen704/dsh-chaoxing-assistant
+category: tools
+description:
+  en: Drives Chaoxing (Xuexitong) course tasks inside a real Edge window with five tools — video and document progress, chapter quizzes, homework — plus a sidebar panel.
+  zh: 用真实 Edge 浏览器托管学习通课程任务——视频与文档进度、章节测验、作业，提供侧边栏面板与 5 个工具。
+tarball: https://github.com/weichen704/dsh-chaoxing-assistant/releases/latest/download/dsh-chaoxing-assistant.tgz

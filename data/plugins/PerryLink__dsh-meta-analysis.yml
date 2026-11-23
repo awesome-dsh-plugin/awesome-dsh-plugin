@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-meta-analysis
+name: PerryLink/dsh-meta-analysis
+category: tools
+description:
+  en: "Meta-analysis arithmetic for DeepSeek Harness: effect-size conversions (OR/RR/d/r/SMD, SE from CI) with named formulas, fixed-effect and DerSimonian-Laird random-effects pooling, Q/df/p, I2, tau2, forest-plot data and Markdown/SARIF reports. Local, dependency-free and reproducible from the inputs."
+  zh: "面向 DeepSeek Harness 的 meta 分析算术：效应量换算（OR/RR/d/r/SMD、由 CI 求 SE）与具名公式、固定效应与 DerSimonian-Laird 随机效应合并、Q/df/p、I2、tau2、森林图数据与 Markdown/SARIF 报告；本地、无依赖、可由输入复现。"

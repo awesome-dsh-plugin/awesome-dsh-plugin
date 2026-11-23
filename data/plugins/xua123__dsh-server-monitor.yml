@@ -1,0 +1,7 @@
+url: https://github.com/xua123/dsh-server-monitor
+name: xua123/dsh-server-monitor
+category: dev
+description:
+  en: 'Server resource dashboard for DeepSeek Harness: CPU, memory, disk, network, GPU/NPU/DCU, processes and Docker for the local host and SSH servers, with a global panel and a per-session tab. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness ????????:????? SSH ???? CPU??????????GPU/NPU/DCU???? Docker ??,????????????它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/xua123/dsh-server-monitor/releases/download/v0.2.1/dsh-server-monitor-0.2.1.tgz

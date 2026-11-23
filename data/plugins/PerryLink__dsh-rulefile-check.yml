@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-rulefile-check
+name: PerryLink/dsh-rulefile-check
+category: tools
+description:
+  en: "Self-check of the rule library for DeepSeek Harness: check rule files against this plugin family's clause-citation discipline and check-engine contract (both self-defined, not national standards). Flags discrepancies only and makes no conclusive judgment."
+  zh: "规则库自身核对：依据本插件家族的条款引用纪律（自定纪律，非国家标准）、本插件家族的检查引擎契约（自定纪律，非国家标准）。仅提示差异，不作出定性结论。"

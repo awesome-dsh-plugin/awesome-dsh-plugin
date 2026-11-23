@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-archive-check
+name: PerryLink/dsh-archive-check
+category: tools
+description:
+  en: "Archive registration checklist for DeepSeek Harness: check archive registration entries against the Rules for the Arrangement of Archived Documents and the Provisions on the Scope of Archiving and Retention Periods for Agency Documents (DA/T 22-2015; State Council Order No. 772). Flags discrepancies only and makes no legal conclusion."
+  zh: "归档登记表核对：依据《归档文件整理规则》《机关文件材料归档范围和文书档案保管期限规定》（DA/T 22—2015、国务院令第772号）。仅提示差异，不作出定性结论。"

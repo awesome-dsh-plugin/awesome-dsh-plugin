@@ -1,0 +1,8 @@
+url: https://github.com/sleeping112/dsh-sideask
+name: sleeping112/dsh-sideask
+category: ui
+description:
+  en: 'Adds a floating side-chat window that reads the current conversation read-only, answers with citations in its own thread, and writes back to the main composer only when the user clicks a write-back action. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在当前对话旁提供悬浮轻对话窗口：只读当前上下文提问、在独立线程中带引用回答，只在用户点击写回按钮时才写入主对话输入框。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/sleeping112/dsh-sideask/master/assets/icon-180.png
+tarball: https://github.com/sleeping112/dsh-sideask/releases/latest/download/dsh-sideask.tgz

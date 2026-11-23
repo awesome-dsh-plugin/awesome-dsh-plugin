@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-sop-sync-check
+name: PerryLink/dsh-sop-sync-check
+category: tools
+description:
+  en: "Standard operating procedure (SOP) check for DeepSeek Harness: check SOPs against IATF 16949 and the automotive core-tools manuals. Flags discrepancies only and makes no conclusive judgment."
+  zh: "作业规程（SOP）核对：依据 IATF 16949／汽车行业核心工具手册。仅提示差异，不作出定性结论。"

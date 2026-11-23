@@ -1,0 +1,6 @@
+url: https://github.com/TacKana/DSH-No-Workspace
+name: TacKana/DSH-No-Workspace
+category: session
+description:
+  en: Free DSH from workspace constraints by giving each new chat its own directory.
+  zh: 让 DSH 摆脱工作区的限制，为每次新建对话自动分配独立目录。

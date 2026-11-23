@@ -1,0 +1,8 @@
+url: https://github.com/kasshuang/dsh-plugin-balance-usage
+name: kasshuang/dsh-plugin-balance-usage
+category: usage
+description:
+  en: 'A sidebar entry showing your DeepSeek balance and token usage, with a 14-day chart, per-model grouping, a pinned primary model, and the official usage page opened inside the app. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧栏底部显示账户余额与 Token 用量，面板含近 14 天走势、按运营商/模型分组与主线设置，官方用量页可在应用内直接打开。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/kasshuang/dsh-plugin-balance-usage/main/assets/icon-180.png
+tarball: https://github.com/kasshuang/dsh-plugin-balance-usage/releases/download/v1.0.1/dsh-plugin-balance-usage-1.0.1.tgz

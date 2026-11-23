@@ -1,0 +1,7 @@
+url: https://github.com/jklin6632-dot/dsh-approval-enter
+name: jklin6632-dot/dsh-approval-enter
+category: ui
+description:
+  en: 'Press Enter to approve a pending approval request without the mouse - normal typing still sends.'
+  zh: '按一下回车就批准待确认的操作，不用再点鼠标；正常打字仍照旧发送。'
+icon: https://raw.githubusercontent.com/jklin6632-dot/dsh-approval-enter/main/assets/icon.png

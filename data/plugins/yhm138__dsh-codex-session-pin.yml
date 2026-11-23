@@ -1,0 +1,7 @@
+url: "https://github.com/yhm138/dsh-codex-session-pin"
+name: "yhm138/dsh-codex-session-pin"
+category: session
+description:
+  en: 'Pin and unpin Sessions from the Session header or from a sidebar row, and order pinned Sessions first inside their project. Reads and writes the official workspace pinnedSessionIds, so it keeps no index of its own, and it restores the pin action when a third-party sidebar such as @michengai/dsh-codex-ui replaces the shipped one. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在会话标题栏或侧栏会话行里置顶 / 取消置顶，并让置顶会话排在所属项目最前面。置顶读写官方工作区的 pinnedSessionIds，本插件不另存索引；当 @michengai/dsh-codex-ui 这类第三方侧栏替换官方侧栏时，它把置顶入口补回来。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: "https://raw.githubusercontent.com/yhm138/dsh-codex-session-pin/master/assets/icon-180.png"

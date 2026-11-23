@@ -1,0 +1,7 @@
+url: https://github.com/naturalth2012/middle-earth-atlas
+name: naturalth2012/middle-earth-atlas
+category: fun
+description:
+  en: 'An explorable atlas of The Hobbit, The Lord of the Rings and The Silmarillion: 68 characters with 236 curated relationships, a 46-event timeline across the Ages, 33 places, 14 artifacts, 40 quotes and a force-directed relationship graph with centrality analysis. Includes reading-progress views, three-sided thematic dialectics, book-vs-screen differences, and 17 playable avatar journeys with spoiler-gated choices. Unofficial study guide; not affiliated with any rights holder. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '《霍比特人》《魔戒》《精灵宝钻》可探索图鉴：68 位人物与 236 条关系、46 个纪元事件、33 个地点、14 件宝物、40 句名句，以及带中心性分析的关系图谱。含阅读进度视图、三方主题辩证、原著与改编差异，以及 17 位可扮演角色的剧情旅程。非官方导读工具，与任何权利方无关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/naturalth2012/middle-earth-atlas/main/assets/icon-180.png

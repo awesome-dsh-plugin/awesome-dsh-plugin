@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-os/tree/main/packages/allow
+name: PerryLink/dsh-os#allow
+category: security
+description:
+  en: 'Revocable, expiring capability grants with scope and a local audit trail for DSH plugins and out-of-turn authorization checks. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '可撤销、可过期的能力授权，带范围和本地审计记录，供 DSH 插件与回合外操作做授权检查。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,7 @@
+url: https://github.com/coldrainthreeautumnleaves/dsh-concierge
+name: coldrainthreeautumnleaves/dsh-concierge
+category: dev
+description:
+  en: 'Maintenance center for DeepSeek Harness: checks app and plugin updates, updates and rolls back plugins, watches GitHub sources, and keeps long chats smooth, with an optional glass skin.'
+  zh: 'DSH 维护中心：检测应用与插件更新、更新与回退插件、监控 GitHub 来源，让长对话保持流畅，并提供可选的玻璃皮肤。'
+icon: https://raw.githubusercontent.com/coldrainthreeautumnleaves/dsh-concierge/main/assets/icon-180.png

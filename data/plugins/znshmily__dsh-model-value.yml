@@ -1,0 +1,7 @@
+url: https://github.com/znshmily/dsh-model-value
+name: znshmily/dsh-model-value
+category: model
+description:
+  en: 'Ranks the models connected to DeepSeek Harness by unit price and Artificial Analysis intelligence, lists priced market models that are not connected yet, and recommends the best-value picks in the composer model menu with one-click switching. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '按单价与 Artificial Analysis 智力分给当前接入的每个模型排名，同时列出尚未接入的市面模型，并在输入框模型菜单里推荐性价比最高的几个、支持一键切换。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/znshmily/dsh-model-value/main/assets/icon-180.png

@@ -1,0 +1,8 @@
+url: https://github.com/gch3212/DSH-library
+name: gch3212/DSH-library
+category: tools
+description:
+  en: 'Local file library with folders, per-file notes and full-text search, reachable from the sidebar, plus recent-access and session-generated file views. Its HTTP routes check DSH access (connection.requestRejection), so a web page open in your browser cannot call them.'
+  zh: '本地资料库：侧边栏直接进入，支持文件夹分类、文件与文件夹备注、全文检索，并能查看最近访问与会话生成的文件。它的 HTTP 路由会做 DSH 访问检查（connection.requestRejection），浏览器里打开的网页无法调用它们。'
+icon: https://raw.githubusercontent.com/gch3212/DSH-library/main/assets/icon-180.png
+tarball: https://github.com/gch3212/DSH-library/releases/latest/download/DSH-library.tgz

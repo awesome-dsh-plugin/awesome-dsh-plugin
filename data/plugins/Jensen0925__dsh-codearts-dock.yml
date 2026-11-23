@@ -1,0 +1,7 @@
+url: https://github.com/Jensen0925/dsh-codearts-dock
+name: Jensen0925/dsh-codearts-dock
+category: model
+description:
+  en: 'Connects Huawei Cloud CodeArts models to DeepSeek Harness with manual account switching, credit alerts, model presets, local request metadata and password-encrypted configuration backups. Registers the codearts provider; enable only one CodeArts connector at a time. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '将华为云码道模型接入 DeepSeek Harness，提供手动账号切换、积分提醒、模型预设、本机请求记录和密码加密配置备份。注册 codearts provider，同一时间仅启用一个码道接入插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Jensen0925/dsh-codearts-dock/d13780fef1bea8b5eb9592d08fc889764de6a4d0/icons/dsh-connect-codearts-128.png

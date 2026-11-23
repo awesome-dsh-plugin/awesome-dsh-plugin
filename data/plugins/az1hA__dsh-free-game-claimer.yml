@@ -1,0 +1,6 @@
+url: https://github.com/az1hA/dsh-free-game-claimer
+name: az1hA/dsh-free-game-claimer
+category: fun
+description:
+  en: 'Checks Epic Games, GOG and Steam for limited-time free games, attempts to claim them with saved browser logins, and marks owned or manual games separately. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '检查 Epic Games、GOG、Steam 的限时免费游戏，使用已保存的浏览器登录尝试入库，并单独标记已在库中或需要手动确认的游戏。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

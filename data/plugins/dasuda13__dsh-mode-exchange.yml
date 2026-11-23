@@ -1,0 +1,7 @@
+url: https://github.com/dasuda13/dsh-mode-exchange
+name: dasuda13/dsh-mode-exchange
+category: session
+description:
+  en: 'Performs a mode exchange (mode switch, switch mode) on an existing DSH session: the Agent mode is swapped in place, so the system prompt and toolset change at runtime and no new session is created. Also runs a mode migration (session migration), rebuilding the session under a target mode and re-importing its native event sequence, with an idempotent ledger, resumable runs and a per-run report.'
+  zh: '模式交换（也叫模式切换、切换模式）：在已存在的 DSH 会话中就地换掉 Agent 模式，不新建会话，系统提示词与工具集在运行时替换。也可做模式迁移（会话迁移）：按目标模式重建会话并真导入原生事件序列，迁移有幂等台账、可续跑，并生成每次迁移的报告。'
+icon: https://raw.githubusercontent.com/dasuda13/dsh-mode-exchange/main/assets/icon.png

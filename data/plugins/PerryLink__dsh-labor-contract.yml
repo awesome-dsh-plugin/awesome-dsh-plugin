@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-labor-contract
+name: PerryLink/dsh-labor-contract
+category: tools
+description:
+  en: "Check a labor-contract text and an employee-contract CSV for nine required clauses, probation limits, the 80% probation-wage floor and batch expiry, then export a review CSV."
+  zh: "把劳动合同正文与员工合同 CSV 核对成问题清单：九项必备条款、试用期上限、试用期工资 80% 下限、批量到期与竞业限制，导出带 sha256 的复核 CSV。"

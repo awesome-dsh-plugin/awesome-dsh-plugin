@@ -1,0 +1,7 @@
+url: https://github.com/13691032917-creator/dsh-work-out
+name: 13691032917-creator/dsh-work-out
+category: session
+description:
+  en: 'A left-sidebar timeline of every file produced across all conversations, newest first, with files changed or deleted after delivery marked in colour. One conversation action jumps to the conversation, scrolls the line that mentions the file into view, and opens it in the right sidebar preview.'
+  zh: '左侧栏把所有对话产出的文件按时间汇总成一条时间线，交付后被更改或已删除的文件用颜色标出。点击对话按钮会跳到该对话、滚到提到这个文件的那一行，并在右侧栏预览中打开文件。'
+icon: https://raw.githubusercontent.com/13691032917-creator/dsh-work-out/main/assets/icon-180.png

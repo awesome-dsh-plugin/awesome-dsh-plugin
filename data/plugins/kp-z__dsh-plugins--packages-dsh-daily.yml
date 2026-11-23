@@ -1,0 +1,7 @@
+url: https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-daily
+name: kp-z/dsh-plugins#dsh-daily
+tarball: https://github.com/kp-z/dsh-plugins/releases/download/dsh-daily-v0.10.4/kpeace-dsh-daily-0.10.4.tgz
+category: tools
+description:
+  en: 'Daily news digest in the right sidebar: recommends proactively, is tunable in natural language, indexes both articles and videos (YouTube / Bilibili), and renders as a real web page you click through. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '右侧栏的每日日报：主动推荐、可用自然语言调偏好，文章与视频（YouTube / 哔哩哔哩）一起索引，呈现为可点击的真实网页。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

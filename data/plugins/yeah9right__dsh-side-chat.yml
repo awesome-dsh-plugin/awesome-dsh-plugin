@@ -1,0 +1,7 @@
+url: https://github.com/yeah9right/dsh-side-chat
+name: yeah9right/dsh-side-chat
+category: ui
+description:
+  en: 'Temporary side chats in the right sidebar: fork the current conversation as read-only background, ask in parallel with its own native composer, open several at once, and release everything when the tab closes. The side chat lives in memory only — no JSONL, no session list, no search hits. Adapted from Lone-Jade/dsh-side-chat (MIT) for DSH 0.2.2.'
+  zh: '右侧栏的临时侧聊：把当前对话分叉成只读背景，用原生输入框并行提问，可同时开多个，关掉标签即释放。侧聊只存在内存里——不产生 JSONL，不进会话列表，不出现在搜索结果。基于 Lone-Jade/dsh-side-chat（MIT）适配 DSH 0.2.2。'
+tarball: https://github.com/yeah9right/dsh-side-chat/releases/latest/download/dsh-side-chat.tgz

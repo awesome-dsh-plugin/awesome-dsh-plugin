@@ -1,0 +1,6 @@
+url: https://github.com/bwtymdb/kimi-quota-status
+name: bwtymdb/kimi-quota-status
+category: usage
+description:
+  en: 'Shows used 5-hour, weekly and monthly Kimi coding-plan quotas beside the composer stats. API-provided monthly data takes priority; when absent, a browser supplement reads the signed-in Kimi subscription page through the local web-access CDP Proxy, with manual login and no Cookie or page-token storage.'
+  zh: '在输入框状态项旁显示 Kimi 编程套餐的 5 小时、每周与月度已用百分比。API 月度数据优先；未提供时才通过本机 web-access CDP Proxy 读取 Kimi 订阅页补数，提供手动登录路径，不保存 Cookie、页面令牌或完整正文。'

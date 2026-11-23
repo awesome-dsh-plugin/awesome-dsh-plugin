@@ -1,0 +1,6 @@
+url: https://github.com/Joe-Miller-1314/dsh-companion-heartbeat
+name: Joe-Miller-1314/dsh-companion-heartbeat
+category: identity
+description:
+  en: 'Decision-based heartbeat for AI companions: three needs drift while nobody talks and drop on a reply, deciding per chat whether the persona speaks first — delivered through a JSON file, WeChatAgent, or dsh-im.'
+  zh: '给陪伴型人格装一颗心跳：三条需求在没人说话时累积、被回话后回落，据此决定每个聊天里此刻该不该主动开口；决定交给 JSON 文件、WeChatAgent 或 dsh-im。'

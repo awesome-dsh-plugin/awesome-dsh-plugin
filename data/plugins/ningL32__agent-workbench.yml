@@ -1,0 +1,6 @@
+url: https://github.com/ningL32/agent-workbench
+name: ningL32/agent-workbench
+category: workflow
+description:
+  en: 'Local-first workbench plugin that turns the AI coding agents already running on your machine (ZCode, Claude Code, Codex, OpenCode, DSH, WorkBuddy) into an observable, accountable team — six-source read-only session observation with a transcript reader and dispatch prompts, commit/session-to-task attribution via branch or marker conventions, a kanban with evidence timelines, daily/weekly reports, plus MCP server, webhook and IM integrations. Zero third-party runtime dependencies and credentials read from git config at runtime, never written to disk. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '本机优先的工作台插件，把已经跑在你机器上的 AI 编码智能体（ZCode、Claude Code、Codex、OpenCode、DSH、WorkBuddy）变成一支可观测、可问责的团队——六源只读会话观测（全文阅读器 + 派工词）、按分支/标记约定将提交与会话自动归因到任务、带证据时间轴的看板、日报/周报，另有 MCP Server、Webhook 与 IM 通知集成。零第三方运行时依赖，凭据运行时从 git config 读取、永不落盘。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

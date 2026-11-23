@@ -1,0 +1,6 @@
+url: https://github.com/DynasturnStudio/dsh-date-model
+name: DynasturnStudio/dsh-date-model
+category: fun
+description:
+  en: A playful composer widget that builds a fake model name from two unbounded number wheels, a weather tier and a calendar date, injects it into the system prompt, and hides the real model seat behind an eye toggle.
+  zh: 输入框里的趣味「按日期选模型」：两个无限数字滚轮 + 七种天气 + 月历拼出假模型名，写进系统提示词，并可用小眼睛显隐真实模型选择器。

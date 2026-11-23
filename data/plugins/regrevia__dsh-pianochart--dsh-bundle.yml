@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-pianochart/tree/main/dsh-bundle
+name: regrevia/dsh-pianochart#dsh-bundle
+category: tools
+description:
+  en: 'Adds piano_score, which takes one audio link and writes a piano score: staff PNGs, numbered notation, MusicXML, MIDI. It transcribes the background music and drops the vocal; drums and non-melodic parts are folded into the left hand. Three tiers share one arrangement and differ only in key signature, so easy has the fewest black keys and playback restores the original pitch. Long audio can be previewed with seconds.'
+  zh: '带一个 piano_score 工具：给一条音频链接，产出钢琴谱，含五线谱 PNG、简谱、MusicXML、MIDI。只转录背景音乐、去掉人声；鼓组和非旋律声部并入左手。三档共享一套编配，只差调号，所以 easy 黑键最少，回放恢复原调。长音频可以用 seconds 先出一段预览。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-pianochart/main/dsh-bundle/icon.png

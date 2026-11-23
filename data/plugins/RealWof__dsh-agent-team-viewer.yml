@@ -1,0 +1,7 @@
+url: https://github.com/RealWof/dsh-agent-team-viewer
+name: RealWof/dsh-agent-team-viewer
+category: ui
+description:
+  en: 'A read-only Agent Team board viewer for DeepSeek Harness: kanban columns in the right sidebar follow task status, a task dialog shows the timeline, dependencies and write scopes, the subagent tree is grouped by status with run time, tokens, agent-hours and cost, and each agent''s background processes are listed in its dialog.'
+  zh: 'DeepSeek Harness 的 Agent Team 只读看板：右侧边栏按任务状态显示列，任务对话框展示时间线、依赖与写入范围，代理树按状态分组并显示运行时长、Token、Agent 小时与费用，代理对话框中列出该代理启动的后台进程。'
+icon: https://raw.githubusercontent.com/RealWof/dsh-agent-team-viewer/main/assets/icon-180.png

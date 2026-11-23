@@ -1,0 +1,6 @@
+url: https://github.com/BioAIEvolu/dsh-token-tally
+name: BioAIEvolu/dsh-token-tally
+category: tools
+description:
+  en: 'Token & cost dashboard: model-by-time stacked bars (absolute / 100% share), per-model trend lines, donut charts, rankings, a model comparison table (tok/s speed, price per M tokens, cache hit rate, P50/P95 latency) and a 53-week heatmap — aggregated locally, zero third-party runtime deps. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Token 用量与费用看板：模型×时间堆叠柱（绝对值 / 100% 占比切换）、每模型趋势折线、环形分布、调用排行、多模型对比表（输出速度 / 每百万 Token 单价 / 缓存命中率 / P50·P95 响应时长）与 53 周热力图，全部本地聚合，零第三方运行时依赖。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

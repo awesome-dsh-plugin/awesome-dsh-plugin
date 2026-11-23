@@ -1,0 +1,6 @@
+url: https://github.com/GuyeQiuchen/dsh-fish-memory
+name: GuyeQiuchen/dsh-fish-memory
+category: memory
+description:
+  en: 'Compact long-term memory for DeepSeek Harness: a short boot block, details retrieved on demand, writes through tools. House rules get their own budget, and after compaction it checks which constraints were lost and warns at the start of the next turn. Mood and tidy reminders plus a self-wake mechanism, all modular and removable.'
+  zh: '给 DeepSeek Harness 的紧凑长期记忆：开机只注入一小段，细节按需检索，写回走工具。家规有独立预算；压缩后回头核对哪些约束被压丢了，丢了在下一轮开头报警。另含心情与整理提醒、主动唤醒，全部模块化可删。'

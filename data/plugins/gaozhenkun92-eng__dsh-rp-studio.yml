@@ -1,0 +1,6 @@
+url: https://github.com/gaozhenkun92-eng/dsh-rp-studio
+name: gaozhenkun92-eng/dsh-rp-studio
+category: fun
+description:
+  en: 'Roleplay console for DeepSeek Harness: character cards (PNG/JSON/CHARX-style), worldbook collections with per-entry switches, a three-source image gallery, and per-agent tool permissions — plus a global persona layer so any session stays in character. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的角色扮演后台：角色卡（PNG/JSON/纯文字导入导出）、带集合与开关的世界书、三来源图库、按 agent 生效的工具权限，人格由部署层提示段全局注入，任何会话都保持角色。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

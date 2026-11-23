@@ -1,0 +1,7 @@
+url: https://github.com/harveyzhang/dsh-appearance-media
+name: harveyzhang/dsh-appearance-media
+category: theme
+description:
+  en: 'One place for the window background, the intro clip and the screensaver, with a shared material library. Its HTTP routes go through the Host access check, so only the application itself can call them.'
+  zh: '把窗口背景、开机片头和屏保收在一处管，共用一份素材库。它的 HTTP 路由都过了宿主的访问检查，只有应用本身能调用它们。'
+icon: https://raw.githubusercontent.com/harveyzhang/dsh-appearance-media/main/icon-180.png

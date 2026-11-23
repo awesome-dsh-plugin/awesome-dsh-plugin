@@ -1,0 +1,7 @@
+url: https://github.com/Sunshine334419520/dsh-trackpad-zoom
+name: Sunshine334419520/dsh-trackpad-zoom
+category: ui
+description:
+  en: 'Browser-style trackpad pinch zoom for the DSH conversation column and Markdown previews: keeps line breaks, anchors at the pointer, pans horizontally above 100%, and remembers one factor per surface.'
+  zh: '为 DSH 对话区与 Markdown 预览加上浏览器式触摸板捏合缩放：保持换行、以指针为中心、超过 100% 可横向平移，两个区域各自记忆比例。'
+icon: https://raw.githubusercontent.com/Sunshine334419520/dsh-trackpad-zoom/main/assets/icon-180.png

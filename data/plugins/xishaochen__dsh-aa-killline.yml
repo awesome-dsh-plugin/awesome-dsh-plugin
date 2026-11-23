@@ -1,0 +1,6 @@
+url: https://github.com/xishaochen/dsh-aa-killline
+name: xishaochen/dsh-aa-killline
+category: skill
+description:
+  en: 'Model kill-line charts for DSH. Reads Artificial Analysis model data and OpenRouter cache prices, then renders two self-contained HTML charts (global and China) plotting the AI intelligence index against effective price with the Pareto frontier drawn on top; each chart switches between the official 3-to-1 blended price and an agent-shaped price (50-to-1 input/output ratio, 90 percent cache hit rate, per-model real cache-read prices). A companion table lists each vendor''s strongest AA-measured model and checks whether an OpenAI-compatible gateway already lists it. Offline mode recomputes from the local cache without spending API quota; python3 standard library only, no pip install.'
+  zh: '模型斩杀线图：读取 Artificial Analysis 模型数据与 OpenRouter 缓存价，渲染全球与国产两张自包含 HTML 图，横轴为价格、纵轴为智能指数，并画出帕累托前沿（即斩杀线）；可在官方 3:1 混合价与 Agent 口径（输入输出 50:1、缓存命中 90%、按模型真实缓存读价）之间切换。另附一张表，列出每家厂商 AA 实测最强模型，并核对某个 OpenAI 兼容网关是否已上架。支持离线模式：用本地缓存重算，不消耗 API 额度；纯 python3 标准库，无需 pip 安装。'

@@ -1,0 +1,6 @@
+url: https://github.com/wahhheee/stash/tree/main/packages/plugin
+name: wahhheee/stash#dsh-stash
+category: memory
+description:
+  en: Shares rules and notes across chats in a workspace, lets forked sessions keep their own notes, and retrieves original conversation turns by reference.
+  zh: 让同一工作区的聊天共享规则和笔记，支持分叉会话独立编辑笔记，并可按引用读取原始对话轮次。

@@ -1,0 +1,6 @@
+url: https://github.com/MangoTechKSP/dsh-prompt-optimization/tree/main/packages/dsh-optimized-persona
+name: MangoTechKSP/dsh-prompt-optimization#dsh-optimized-persona
+category: identity
+description:
+  en: Swaps the harness deployment prose for a short, precedence-aware working-style prompt, and leaves every other section in the system prompt alone.
+  zh: 把部署文案换成一份精简、带优先级的工作风格提示词，系统提示词里的其他分区保持原样。
