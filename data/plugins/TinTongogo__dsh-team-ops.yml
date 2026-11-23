@@ -1,0 +1,7 @@
+url: https://github.com/TinTongogo/dsh-team-ops
+name: TinTongogo/dsh-team-ops
+category: workflow
+description:
+  en: 'Deliver a named role team into DeepSeek Harness: 19 role definitions, tools to spawn, message and list members, the native shared task board, handoff and checkpoint files, and a team-status panel plus a role button in the conversation page.'
+  zh: '把一支具名角色团队交付进 DeepSeek Harness：19 个角色定义、派生/发消息/查名册的工具、原生共享任务板、交接与检查点落盘，以及对话页的「团队状态」面板与输入框那枚「角色」按钮。'
+icon: https://raw.githubusercontent.com/TinTongogo/dsh-team-ops/main/assets/icon-180.png
