@@ -2,6 +2,6 @@ url: https://github.com/songrui111/paper-review-revision
 name: songrui111/paper-review-revision
 category: skill
 description:
-  en: 'Adds a four-round review of an engineering or applied-mathematics paper to a DeepSeek Harness session: academic review, line-by-line verification of the maths and theorem proofs, English editing that returns both the original and the revised sentence, and a final pass over the revision against the baseline. Reads multi-file LaTeX projects, DOCX and PDF; every finding keeps a stable ID with its severity, evidence and handling status, and the rounds can run alone or as the full sequence.'
-  zh: '在 DeepSeek Harness 会话里对工程与应用数学论文做四轮审查：学术审查、逐式复核数学推导与定理证明、逐句英文编辑并同时给出原句与改句、以及对照基准稿的修订稿终审。可读多文件 LaTeX 工程、DOCX 与 PDF；每条问题保留稳定编号，并记录严重程度、证据与处理状态；四轮可以单独执行，也可以走完整流程。'
+  en: 'Runs a fixed four-stage review-and-revision loop over an engineering or applied-mathematics paper with two delegated agents: a reviewer writes each round report, a reviser applies that report to a working copy, and the next round reviews that copy. The stages are academic review, verification of the maths and theorem proofs, sentence-level English editing, and a final pass over the revision. A Node script shipped in the skill records draft versions, per-round reports and the handoff state on disk, so an interrupted run can be resumed from that state; the skill reads multi-file LaTeX projects, DOCX and PDF, and any single stage can be run on its own.'
+  zh: '用两个受派的智能体对工程或应用数学论文跑固定的四阶段审修循环：审稿智能体逐轮出报告，修订智能体把报告落到工作副本，下一轮再审这份新稿。四个阶段依次是学术审查、逐式复核数学推导与定理证明、英文逐句编辑、修订稿终审。技能内附 Node 脚本，把稿件版本、逐轮报告和交接状态记录在磁盘上，中断后可按状态继续；可读多文件 LaTeX 工程、DOCX 与 PDF，也可以只跑指定的单个阶段。'
 icon: https://raw.githubusercontent.com/songrui111/paper-review-revision/main/assets/icon.png
