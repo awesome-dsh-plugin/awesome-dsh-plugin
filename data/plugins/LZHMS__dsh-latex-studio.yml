@@ -1,0 +1,6 @@
+url: https://github.com/LZHMS/dsh-latex-studio
+name: LZHMS/dsh-latex-studio
+category: docs
+description:
+  en: 'LaTeX workbench in the sidebar: syntax-highlighted .tex editing, one-click pdflatex/xelatex/lualatex compile, live pdf.js PDF preview and bidirectional SyncTeX sync jumps.'
+  zh: 'LaTeX 工作台：侧边栏语法高亮编辑 .tex、一键编译三种引擎、pdf.js 实时 PDF 预览与 SyncTeX 双向同步跳转。'
