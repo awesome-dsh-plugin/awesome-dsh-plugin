@@ -1,0 +1,7 @@
+url: https://github.com/XWIDE/DSH_X-Wide-Color-Tags
+name: XWIDE/DSH_X-Wide-Color-Tags
+category: session
+tarball: https://github.com/XWIDE/DSH_X-Wide-Color-Tags/releases/download/v0.1.2/dsh-xwide-color-tags-0.1.2.tgz
+description:
+  en: 'Colour-tag every session in the sidebar: pick one of four presets or a self-drawn HSV picker from the session context menu, or click the dot on a coloured row to open the same palette; right-clicking a preset cancels the colour, right-clicking a custom swatch deletes it, and one button clears all custom colours. Stores only under xwcolor.* keys in localStorage.'
+  zh: '给侧栏每个会话打颜色标签：会话右键菜单里选 4 个预设色，或打开自绘 HSV 取色面板；已上色的会话行左端有小圆点，点开同一排色板。弹板里按右键＝取消该会话颜色，自定义色块按右键＝删除这一个自定义色，「恢复默认」一键清空我的颜色。只写 localStorage 的 xwcolor.* 键。'
