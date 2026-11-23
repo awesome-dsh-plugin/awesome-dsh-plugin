@@ -1,0 +1,7 @@
+url: https://github.com/peipei345/hifly-dsh-plugin
+name: peipei345/hifly-dsh-plugin
+category: tools
+description:
+  en: 'Connect HiFly MCP with browser OAuth to query avatars and voices, generate speech and avatar videos, and check task results.'
+  zh: '飞影 HiFly：通过浏览器授权连接 MCP，查询数字人和声音、生成配音与数字人视频、查询任务结果。'
+tarball: https://github.com/peipei345/hifly-dsh-plugin/releases/download/v0.1.0/dsh-hifly-0.1.0.tgz
