@@ -1,0 +1,7 @@
+url: https://github.com/wuguanggan/dsh-session-move-delete
+name: wuguanggan/dsh-session-move-delete
+category: session
+description:
+  en: Moves a session that is not open in DSH to another workspace project, or permanently deletes it from the session context menu.
+  zh: 在会话右键菜单中把未在 DSH 中打开的会话移动到其他项目，或永久删除本地会话记录。
+icon: https://raw.githubusercontent.com/wuguanggan/dsh-session-move-delete/main/assets/icon-512.png
