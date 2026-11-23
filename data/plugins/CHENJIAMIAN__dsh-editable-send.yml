@@ -1,5 +1,5 @@
-url: https://github.com/CHENJIAMIAN/dsh-continue-button
-name: CHENJIAMIAN/dsh-continue-button
+url: https://github.com/CHENJIAMIAN/dsh-editable-send
+name: CHENJIAMIAN/dsh-editable-send
 category: ui
 description:
   en: 'Adds a send button beside the composer whose text you can edit, defaulting to "继续", so one click sends that text as your message.'
