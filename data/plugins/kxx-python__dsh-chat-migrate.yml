@@ -1,0 +1,6 @@
+url: https://github.com/kxx-python/dsh-chat-migrate
+name: kxx-python/dsh-chat-migrate
+category: session
+description:
+  en: Import chat.deepseek.com history into DSH as real sessions, or export it as Markdown and JSON.
+  zh: 把 chat.deepseek.com 的历史会话导入成 DSH 真会话，或导出为 Markdown 与 JSON 文件。
