@@ -1,0 +1,7 @@
+url: https://github.com/kuoci/dsh-bat-think
+name: kuoci/dsh-bat-think
+category: fun
+description:
+  en: A draggable Batman desktop pet that switches to a mouse-in-hand pose with a thought bubble while the agent runs, rolls a dice for stickers, and opens a token-usage card when you click its laptop.
+  zh: 一只可拖动的蝙蝠侠桌宠：Agent 跑动时换成拿鼠标的姿态并冒出思考气泡，骰子随机戴贴纸，点电脑会弹出 token 用量面板。
+icon: https://raw.githubusercontent.com/kuoci/dsh-bat-think/main/icon-180.png
