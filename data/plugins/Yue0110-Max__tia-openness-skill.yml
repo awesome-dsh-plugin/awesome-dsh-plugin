@@ -1,0 +1,6 @@
+url: https://github.com/Yue0110-Max/tia-openness-skill
+name: Yue0110-Max/tia-openness-skill
+category: skill
+description:
+  en: 'Registers the tia-openness skill, which drives TIA Portal (V15.1 to V20, S7-1200/1500) through the Openness API without opening the GUI: dump a project, export and re-import blocks and PLC tag tables as XML, compile to verify, and save the result. Also registers tia_openness_status, a read-only tool that reports the installed Openness versions, whether the helper executable is built, and whether it matches the source shipped in this package.'
+  zh: '注册 tia-openness skill，通过 TIA Portal Openness 接口在不打开界面的情况下读写博途工程（V15.1 至 V20，S7-1200/1500）：列出工程与块、导出与回导块和 PLC 变量表的 XML、编译核验并保存。另注册只读工具 tia_openness_status，报告本机已装的 Openness 版本、辅助程序是否已编译，以及它是否与包内随附的源码一致。'
