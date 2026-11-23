@@ -1,0 +1,6 @@
+url: https://github.com/Oreo0614/dsh-realtime-subtitles
+name: Oreo0614/dsh-realtime-subtitles
+category: voice
+description:
+  en: 'Live Chinese subtitles while playing Japanese or English videos locally: captures system audio (WASAPI loopback), transcribes with local faster-whisper tiny/base models, translates through the Harness translator, and shows a sidebar panel plus a click-through desktop overlay. Windows only, CPU inference.'
+  zh: '本地播放日语或英语视频时实时生成中文字幕：捕获系统音频（WASAPI 回环），用本地 faster-whisper tiny/base 模型识别，经 Harness 翻译服务译成中文，同时在侧栏面板和可穿透点击的桌面悬浮层显示。仅支持 Windows，CPU 推理。'
