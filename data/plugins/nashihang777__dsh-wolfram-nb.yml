@@ -1,0 +1,7 @@
+url: https://github.com/nashihang777/dsh-wolfram-nb
+name: nashihang777/dsh-wolfram-nb
+category: tools
+description:
+  en: 'Wolfram Language as an agent tool, plus a live notebook panel that renders formulas and graphics beside the conversation; requires a licensed local Mathematica installation.'
+  zh: '把 Wolfram Language 接成 agent 工具，并在对话旁实时渲染公式与图形的笔记本面板；需要本机已安装的 Mathematica。'
+icon: https://raw.githubusercontent.com/nashihang777/dsh-wolfram-nb/main/icon.png

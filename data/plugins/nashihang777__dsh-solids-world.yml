@@ -1,0 +1,7 @@
+url: https://github.com/nashihang777/dsh-solids-world
+name: nashihang777/dsh-solids-world
+category: tools
+description:
+  en: 'An interactive 3D atlas of solid-state and atomic physics: 53 bilingual entries across crystal structures, Bravais lattices, atoms and orbitals, symmetry and lattice dynamics, with stepped lessons, quizzes, per-entry notes and local CIF import.'
+  zh: '固体物理与原子物理的交互式 3D 图鉴：53 条中英双语条目，覆盖晶体结构、布拉维格子、原子与轨道、对称与晶格动力学，配分步讲解、测验、逐条笔记与本地 CIF 导入。'
+icon: https://raw.githubusercontent.com/nashihang777/dsh-solids-world/main/icon.png
