@@ -1,0 +1,7 @@
+url: https://github.com/jjjhrl/dsh-session-trash
+name: jjjhrl/dsh-session-trash
+category: session
+description:
+  en: 'Moves a stored Session into a recoverable trash directory instead of deleting it outright: the sidebar session menu sends it to the trash, Settings › Session trash restores it byte-identically or deletes it permanently, and a session_trash tool exposes the same list, delete, restore and purge actions to the agent. A Session still loaded in the running Host is refused instead of moved.'
+  zh: '把已落盘的会话移入可恢复的回收站，而不是直接删除：会话行的「⋯」菜单删除后进入回收站，设置 › 会话回收站 可把它逐字节恢复回原位或彻底删除，同样的 list / delete / restore / purge 也通过 session_trash 工具提供给 Agent。仍被当前 Host 加载的会话会被拒绝移动。'
+icon: https://raw.githubusercontent.com/jjjhrl/dsh-session-trash/main/assets/icon-180.png
