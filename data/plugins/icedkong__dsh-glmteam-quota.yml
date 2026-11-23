@@ -1,0 +1,7 @@
+url: https://github.com/icedkong/dsh-glmteam-quota
+name: icedkong/dsh-glmteam-quota
+category: usage
+description:
+  en: "Quota dashboard forked from DSH Quota+ (WXYS1209/dsh-quota-cordis) with one addition, GLM Team Plan quota: the official Coding Plan monitor queried with type=2 plus organization/project scope headers. Keeps the upstream adapters for DeepSeek, GLM, MiniMax, OpenCode, Codex and OpenAI organization spend; the composer shows a 5-hour energy ring and a remaining-quota card with a personal/team switch. Upstream's Models tab is removed in favour of DSH's official page."
+  zh: "从 DSH Quota+（WXYS1209/dsh-quota-cordis）分叉的额度面板，新增 GLM 团队版套餐额度：以 type=2 加组织/项目范围头查询官方 Coding Plan 接口。保留上游的 DeepSeek、GLM、MiniMax、OpenCode、Codex 与 OpenAI 组织支出适配；输入框显示 5 小时能量环，弹窗为可切换个人版/团队版的剩余额度卡片。上游的「模型」标签已移除，交由 DSH 官方页面。"
+icon: https://raw.githubusercontent.com/icedkong/dsh-glmteam-quota/main/icon.png
