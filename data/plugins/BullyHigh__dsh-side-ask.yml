@@ -1,0 +1,8 @@
+url: https://github.com/BullyHigh/dsh-side-ask
+name: BullyHigh/dsh-side-ask
+category: session
+description:
+  en: 'Opens a read-only side question for the current conversation from the header, the text-selection menu or the right Sidebar add menu: it forks at the latest durable event, puts the selection or the unsent draft into the side composer, and archives the side session when the tab closes.'
+  zh: '从对话头部、划词菜单或右侧栏「+」菜单打开只读的侧边提问：在最新持久事件处 fork，把选中的文字或未发送的草稿放进侧栏输入框，关闭标签即静默归档。'
+icon: https://raw.githubusercontent.com/BullyHigh/dsh-side-ask/main/assets/icon-180.png
+tarball: https://github.com/BullyHigh/dsh-side-ask/releases/download/v1.2.1/dsh-side-ask-1.2.1.tgz

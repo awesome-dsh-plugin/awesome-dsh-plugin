@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/danmaku
+name: ityyq777/dsh-workbench#danmaku
+category: ui
+description:
+  en: 'Danmaku for DSH: play your own bullet comments across the whole interface, or layer them over the desktop itself, with a local library, per-item styles and weighted rotation.'
+  zh: 'DSH 弹幕：把自建弹幕轮播在整个界面，也可叠加到整个桌面，含弹幕库、逐条样式与权重轮播。'

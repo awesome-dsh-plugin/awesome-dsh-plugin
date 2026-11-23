@@ -1,0 +1,6 @@
+url: https://github.com/z-axk/dsh-clipboard-history
+name: z-axk/dsh-clipboard-history
+category: ui
+description:
+  en: 'Clipboard history beside Settings: records text copied in the DSH Web app and, on Windows, text copied in other applications while DSH runs; search the list, re-copy, pin, delete entries, or pause recording, with history kept in the browser (200 entries). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '设置旁的剪贴板历史：记录在 DSH 网页中复制的文字，Windows 上还会收录 DSH 运行期间其他应用复制的文本；可搜索、再次复制、固定、删除条目或暂停记录，历史保存在浏览器中（最多 200 条）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

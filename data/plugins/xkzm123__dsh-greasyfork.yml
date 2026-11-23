@@ -1,0 +1,8 @@
+url: https://github.com/xkzm123/dsh-greasyfork
+name: xkzm123/dsh-greasyfork
+category: dev
+description:
+  en: 'Push userscripts to GreasyFork the way you push code — read your scripts and version history, publish new scripts and updates, edit descriptions, search the site, and check account info, with credentials pasted by hand and no browser automation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '像 git push 一样把用户脚本推到 GreasyFork：读自己的脚本与版本、发布新脚本、发新版本、改简介、站内搜索、查账号信息；凭证手动录入，不驱动浏览器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/xkzm123/dsh-greasyfork/main/assets/icon-180.png
+tarball: https://github.com/xkzm123/dsh-greasyfork/releases/download/v2.0.1/dsh-greasyfork-2.0.1.tgz

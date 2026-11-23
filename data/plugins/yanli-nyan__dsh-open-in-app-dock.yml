@@ -1,0 +1,7 @@
+url: https://github.com/yanli-nyan/dsh-open-in-app-dock
+name: yanli-nyan/dsh-open-in-app-dock
+category: ui
+description:
+  en: 'Turns the session header''s "More → Open in app" list into a one-click button: click it to open the current workspace with the last-used app, right-click or the hover badge to pick another, and both where the button sits (header / composer / hidden) and "launch on switch" live in Settings.'
+  zh: '把会话头「更多 → 在应用中打开」里的应用列表做成单击即用的按钮：单击用上次用过的应用打开当前工作区，右键或悬浮角标更换应用；按钮位置（右上角／底栏／隐藏）与「切换时是否顺带启动」都在设置里。'
+icon: https://raw.githubusercontent.com/yanli-nyan/dsh-open-in-app-dock/main/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/XS-dev/dsh-tokscale-usage
+name: XS-dev/dsh-tokscale-usage
+category: usage
+tarball: https://github.com/XS-dev/dsh-tokscale-usage/releases/download/v1.0.1/dsh-tokscale-usage-1.0.1.tgz
+description:
+  en: 'Local multi-agent token usage studio powered by tokscale and dsh-context: calibrated light/dark cool-mineral themes, configurable harness scope, unified Antigravity/Codex/DSH trends & real output throughput, concentric-ring workspace & session cards, plus /tokscale and tokscale_usage.'
+  zh: '基于 tokscale 与 dsh-context 的本机多 Agent 精密遥测用量面板：适配浅色/深色冷调矿物双主题、自定义常用 Harness 范围、Antigravity/Codex/DSH 统一趋势与真实生成吞吐、多维同心环项目与会话卡片，并提供 /tokscale 命令与 tokscale_usage 工具。'

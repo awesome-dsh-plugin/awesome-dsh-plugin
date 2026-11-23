@@ -1,0 +1,6 @@
+url: https://github.com/ASER-ho/Loji-skill
+name: ASER-ho/Loji-skill
+category: skill
+description:
+  en: Registers the Loji-skill Agent Skill for the Loji character from The Fire Rises, so DSH can load the role knowledge base, lore, style and safety references on demand.
+  zh: 把《The Fire Rises》角色「逻辑/征酱」的 Loji-skill 注册为 DSH Agent Skill，按需加载角色知识库、世界观、表达风格与安全边界参考。

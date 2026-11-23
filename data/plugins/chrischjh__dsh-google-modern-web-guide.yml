@@ -1,0 +1,8 @@
+# Entry file for the awesome-dsh-plugin catalog.
+# Submit as: data/plugins/chrischjh__dsh-google-modern-web-guide.yml (one file, one PR).
+url: https://github.com/chrischjh/dsh-google-modern-web-guide
+name: chrischjh/dsh-google-modern-web-guide
+category: usage
+description:
+  en: 'Offline GoogleChrome modern-web-guidance for DSH: project `.mwgrc` Baseline policy plus three tools (mwg_search, mwg_retrieve, mwg_legacy_scan) and the modern-web-guidance skill. Under a `limited` target guides skip fallback strategies.'
+  zh: '为 DSH 提供离线的 GoogleChrome modern-web-guidance：项目级 .mwgrc Baseline 策略，三个工具（mwg_search、mwg_retrieve、mwg_legacy_scan）与 modern-web-guidance 技能；limited 目标下指南跳过 fallback 段。'

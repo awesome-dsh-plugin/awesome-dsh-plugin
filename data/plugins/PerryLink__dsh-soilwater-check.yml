@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-soilwater-check
+name: PerryLink/dsh-soilwater-check
+category: tools
+description:
+  en: "Soil and groundwater investigation record check for DeepSeek Harness: check investigation records against the Technical Guidelines for Soil Pollution Investigation of Construction Land and the Technical Specifications for Groundwater Environmental Monitoring. Flags discrepancies only and makes no conclusive judgment."
+  zh: "土壤与地下水调查记录核对：依据《建设用地土壤污染状况调查技术导则》《地下水环境监测技术规范》。仅提示差异，不作出定性结论。"

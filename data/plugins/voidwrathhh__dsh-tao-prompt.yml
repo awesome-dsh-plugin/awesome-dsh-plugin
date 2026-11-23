@@ -1,0 +1,7 @@
+url: https://github.com/voidwrathhh/dsh-tao-prompt
+name: voidwrathhh/dsh-tao-prompt
+category: ui
+description:
+  en: 'A prompt library in the composer tool row: tag each prompt, insert one at the caret with a click, and let an agent grow the library by editing a JSON file. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '对话输入框工具行里的提示词库：每段提示词一个标签，点一下插入到光标处，库本身是一个 AI 可以直接改写的 JSON 文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/voidwrathhh/dsh-tao-prompt/main/assets/icon-180.png

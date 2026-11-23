@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-warranty-calc
+name: PerryLink/dsh-warranty-calc
+category: tools
+description:
+  en: "Vehicle warranty ledger check for DeepSeek Harness: check warranty ledgers against the Provisions on the Responsibility for Repair, Replacement and Return of Household Automotive Products (SAMR Order No. 43). Flags discrepancies only and makes no conclusive judgment."
+  zh: "家用汽车三包台账核对：依据《家用汽车产品修理更换退货责任规定》（市场监管总局令第43号）。仅提示差异，不作出定性结论。"

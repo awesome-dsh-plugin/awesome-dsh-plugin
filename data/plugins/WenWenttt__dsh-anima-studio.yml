@@ -1,0 +1,7 @@
+url: https://github.com/WenWenttt/dsh-anima-studio
+name: WenWenttt/dsh-anima-studio
+category: vision
+tarball: https://github.com/WenWenttt/dsh-anima-studio/releases/latest/download/dsh-anima-studio.tgz
+description:
+  en: 'Local image workbench for ComfyUI: Chinese prompts converted to danbooru tags offline, txt2img / img2img / inpaint / ControlNet modes, LoRA stacking, scene and artist presets, a job gallery, and four chat tools. Needs a local ComfyUI with Animagine XL 4.0 weights. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '本地 ComfyUI 生图工作台：中文提示词离线转 danbooru 标签，支持文生图 / 图生图 / 蒙版重绘 / ControlNet、LoRA 叠加、场景与画师预设、图库，以及四个对话工具。需要本机 ComfyUI 与 Animagine XL 4.0 权重。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

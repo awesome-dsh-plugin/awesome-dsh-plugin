@@ -1,0 +1,6 @@
+url: https://github.com/NEVSTOP-LAB/dsh-nevstop-lab-flavor
+name: NEVSTOP-LAB/dsh-nevstop-lab-flavor
+category: ui
+description:
+  en: 'A set of NEVSTOP-LAB interface customizations for DSH, each behind its own switch: provider prefixes on model names, composer key mapping, icon-only sidebar panels, a recent-sessions area with a multi-session dashboard, a fixed default model for new sessions, a balance ring, a machine badge, and an expanded queue dock. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '一组 NEVSTOP-LAB 的 DSH 界面定制，每项都能单独开关：模型名标注供应商、编写器键位映射、侧边栏图标化面板、活跃会话区与多会话 Dashboard、新会话固定默认模型、余额圆环、本机标识、排队消息默认展开。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

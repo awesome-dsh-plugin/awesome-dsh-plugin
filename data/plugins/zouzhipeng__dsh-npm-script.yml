@@ -1,0 +1,6 @@
+url: https://github.com/zouzhipeng/dsh-npm-script
+name: zouzhipeng/dsh-npm-script
+category: dev
+description:
+  en: 'Floating button in the Web UI that lists every package.json script in the workspace, grouped per project, and runs them with per-command running/stopped status and a stop control for long-lived ones such as a dev server. Captured stdout and stderr are readable after the run; printed http(s) addresses are clickable and open in a new tab, and are also collected into a row of shortcuts above the log. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Web 界面的悬浮按钮，按项目分组列出工作区里所有 package.json 脚本，并显示每个命令的执行中/已停止状态；常驻命令（如 dev server）可随时停止。运行后可查看捕获的 stdout 与 stderr；输出中的 http(s) 地址可点击并在新标签页打开，同时在日志上方汇总成一行快捷入口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

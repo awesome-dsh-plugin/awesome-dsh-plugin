@@ -1,0 +1,7 @@
+url: https://github.com/KouzakiUmi/dsh-opendesign-corouter
+name: KouzakiUmi/dsh-opendesign-corouter
+category: model
+description:
+  en: 'OpenDesign CoRouter providers for DeepSeek Harness: separate Design Plan and paid model pools with per-model coverage preflight, layered quota windows and balances, desktop-session and device login, public website price tiers, per-model context, reasoning and image controls with a chat-side context capsule, and scoped empty-turn monitoring for deepseek-v4.1-flash.'
+  zh: '为 DeepSeek Harness 提供 OpenDesign CoRouter 双 Provider：套餐赠送与付费模型池逐模型核实附赠权益，分层额度窗口与余额、桌面登录态与设备授权登录、官网公开价格档、每模型上下文/思考/图片控制与聊天侧上下文胶囊，并对 deepseek-v4.1-flash 做限定范围的空轮监控与恢复。'
+tarball: https://github.com/KouzakiUmi/dsh-opendesign-corouter/releases/latest/download/dsh-opendesign-corouter.tgz
