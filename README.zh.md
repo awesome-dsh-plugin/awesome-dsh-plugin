@@ -6353,7 +6353,7 @@ dsh plugin --profile web add dshmarket
 - [58catmiao/dsh-sciwork](https://github.com/58catmiao/dsh-sciwork) — 给 DSH 的科研库面板与技能组：课题目录、带溯源的图表登记、草稿、文献、数据表、期刊档案、投稿台账，以及面向科研智能体的写作、引用与 Origin 出图纪律（出图需另装 dsh-origin-plugin）。
 - [60studay/dsh-serial-whalesong](https://github.com/60studay/dsh-serial-whalesong) — DSH 的串口工具箱：9 个工具 + 网页版，人与 AI 共用一根串口线；自动匹配端口、文字/十六进制、逐帧时间戳、定时发送、规则自动处置、外观主题，已真机验证 CH340 与 HC-05。串口内核是 Python 3.8+，默认用 DSH 自带的解释器，找不到时用 PATH 上的 python / py -3。
 - [643048695/dsh-mt-download](https://github.com/643048695/dsh-mt-download) — 新增 download_file 工具，用 16 路 aria2c 并发下载，失败自动退回单线程流式下载。超时不再让宿主崩溃，临时文件成功后才替换目标，连接数按实测回报，并自动加载证书。需自行安装 aria2c。
-- [6starlong/dsh-starlong#dsh-disk-cleanup](https://github.com/6starlong/dsh-starlong/tree/main/packages/dsh-disk-cleanup) — 将 Shell 临时文件移出工作区，并补齐对临时目录的写入权限，通过系统提示词说明临时文件落点，再按保留天数清理过期的临时文件和无主附件。
+- [6starlong/dsh-starlong#dsh-disk-cleanup](https://github.com/6starlong/dsh-starlong/tree/main/packages/dsh-disk-cleanup) — 将 Shell 临时文件移出工作区，并补齐对临时目录的写入权限，通过系统提示词说明临时文件落点，再按保留天数清理过期的临时文件和无主附件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [781237194/agile-workbench#dsh-pm-workbench](https://github.com/781237194/agile-workbench/tree/main/plugins/dsh-pm-workbench) — 从 DSH 安装并打开 PM工作台（本地 Electron 多角色项目工作台）。仅支持 Windows——首次加载会通过 PowerShell 安装器准备 Node、Electron 和应用本体；不把工作台 UI 嵌入 DSH。
 - [dsh-douyin-publish](https://github.com/7gzgn/dsh-douyin-publish) — 把本地视频送到抖音投稿页的「待发布」状态：打开投稿页、真实点上传、递文件（回读校验）、填标题、设可见性，然后默认停手——可见性默认仅自己可见、不点发布。
 - [dsh-file-handover](https://github.com/7gzgn/dsh-file-handover) — 把本地文件交给任何程序的「打开文件」对话框：等对话框出现、走剪贴板填路径、读回来逐字核对、再点确认。目标必须显式给，每一步都留证据——文件上传、微信发文件、PS 打开都能用它代劳。仅 Windows（依赖 EnumWindows / UI Automation）。
@@ -8566,7 +8566,7 @@ dsh plugin --profile web add dshmarket
 - [ankye/dsh-client-vision#tool-vision](https://github.com/ankye/dsh-client-vision/tree/main/packages/tool-vision) — 屏幕截图与外部视觉识别：take_screenshot、list_windows、analyze_image、view_image 四个工具，可配置 GPT 视觉通道（gpt-5.5 / gpt-5.6-sol / gpt-5.6-terra），API Key 经凭据服务存储，带设置卡片；view_image 在 Web 对话中显示截图，模型上下文只保留文字。
 - [ankye/dsh-image-generation#tool-image-generation](https://github.com/ankye/dsh-image-generation/tree/main/packages/tool-image-generation) — 面向模型的图像生成工具，提供可配置通道和标准化图像参数。
 - [AtropinolTT/dsh-guide-dog](https://github.com/AtropinolTT/dsh-guide-dog) — 基于 MiniMax 的多模态插件：实时语音通话模式（流式对话、悬浮胶囊 UI）、语音模式与麦克风语音输入，并提供图像/视频/音乐/语音生成与视觉检查工具。
-- [dsh-gesture-control](https://github.com/AXTUT/dsh-gesture-control) — 用单手手势操作会话；范围限 DSH 0.2.1-rc.2 起的 0.2.1 和 0.2.2-rc.1 起的 0.2.2。需桌面摄像头/麦克风权限，版本矩阵及旧版补丁见仓库。
+- [AXTUT/dsh-gesture-control](https://github.com/AXTUT/dsh-gesture-control) — 用单手手势操作会话；范围限 DSH 0.2.1-rc.2 起的 0.2.1 和 0.2.2-rc.1 起的 0.2.2。需桌面摄像头/麦克风权限，版本矩阵及旧版补丁见仓库。
 - [azwosile/dsh-highres-vision](https://github.com/azwosile/dsh-highres-vision) — 为 DeepSeek Harness 原生视觉模型 deepseek-v4-flash-vision-exp 提供高清识图：将图片准入上限提升至 32 MiB / 8192 px / 600 张，并新增 highres_read 工具，将大图切为整图与 800x800 分块后经宿主 read_image 注入模型。
 - [baibaiyi/dsh-shot-ocr](https://github.com/baibaiyi/dsh-shot-ocr) — 全局快捷键截取桌面选区，用 Windows OCR 识别文字填入输入框，或直接把截图插入对话。
 - [balue8246-maker/dseyesopen](https://github.com/balue8246-maker/dseyesopen) — 视觉桥：纯文本 DeepSeek 也能收图（单独发、图文混发均可），快速小识图模型后台描述，对话框里图还在、模型只见文字；纯插件，卸载即复原。
@@ -9291,7 +9291,7 @@ dsh plugin --profile web add dshmarket
 - [clair0314/dsh-bilibili-viral](https://github.com/clair0314/dsh-bilibili-viral) — B站爆款雷达技能：按关键词抓取热门视频，拆解字幕与封面，生成每周复刻选题、脚本和封面规格。
 - [clair0314/dsh-qq-radar](https://github.com/clair0314/dsh-qq-radar) — 把关注的 QQ 群聊总结成中文日报。经本机 NapCat/OneBot 11 拉取历史消息存入 SQLite，逐群摘要，生成带「机会雷达」的 HTML/Markdown 报告（从抱怨、求工具、求助里找产品机会），并可按计划推送到飞书。
 - [cnhenaihui/dsh-skill-manager](https://github.com/cnhenaihui/dsh-skill-manager) — 带内容寻址版本历史的技能管理器：快照、逐文件与行级差异、回滚、zip 导入导出、按技能停用或启用。
-- [cognicores/claraconverts-agents](https://github.com/cognicores/claraconverts-agents) — Skill and MCP server for adding the ClaraConverts website chat agent (voice and text) to a site: creates a trial account, returns the embed snippet, loads the site content, and changes settings and integrations.
+- [cognicores/claraconverts-agents](https://github.com/cognicores/claraconverts-agents) — 给网站加上 ClaraConverts 网站聊天智能体（语音和文字）的技能与 MCP 服务：创建试用账号、返回嵌入代码、加载网站内容，并修改设置与集成。
 - [Crayonnan/dsh-math-modeling-skills-Gatecraft-](https://github.com/Crayonnan/dsh-math-modeling-skills-Gatecraft-) — 面向 DeepSeek Harness 的门控式数学建模 skill 套件：五阶段流水线、阶段门、国奖写作范式、灵敏度分析、统计诊断与竞赛预设。
 - [creght-dev/skills](https://github.com/creght-dev/skills) — Creght 平台建站技能包：CLI 拉取/推送同步、页面与组件规范、CMS、表单、Auth、SEO、发布与版本回滚。
 - [d0ublecl1ck/dsh-skill-dollar](https://github.com/d0ublecl1ck/dsh-skill-dollar) — 用 $name 手势调用 DSH skill（与 / 命令不冲突），带输入框候选菜单，并让 $name 获得与 /name 相同的蓝色文本引用高亮。
@@ -12732,7 +12732,7 @@ dsh plugin --profile web add dshmarket
 - [bubbleptr/dsh-holdem](https://github.com/bubbleptr/dsh-holdem) — 六人无限注德州扑克：1 名玩家对 5 位只能看到自己底牌的 LLM 智能体。在 Web GUI 中提供独立 Tab 与会话区可拖拽悬浮小窗，支持按浏览器隔离的牌局与 CSRF 防护、按底池倍数给出的加注尺度、每人 3 次买入后出局，以及摊牌亮牌与公共牌翻牌动效。
 - [buzhidaojiaoshenmehao/dsh-cat-pet](https://github.com/buzhidaojiaoshenmehao/dsh-cat-pet) — 随 Harness 任务变化的 macOS 和 Windows 桌宠，显示 DeepSeek 余额、Token 用量、预估费用和峰谷倒计时。
 - [camik86/dsh-tarot-page](https://github.com/camik86/dsh-tarot-page) — DSH Web GUI 的塔罗牌整页：78 张公版 Rider-Waite-Smith 牌面、四种牌阵（单张、三张、关系、凯尔特十字）、洗牌与翻牌动画、本地历史记录，以及只存在于页面内的 AI 解读（走用户 DSH 配置的模型）。不注册任何面向模型的工具、skill、slash 命令或系统提示。
-- [Camus2001/dsh-pet-see-live](https://github.com/Camus2001/dsh-pet-see-live) — 让 dsh-pet 实时看屏幕、听同期声音，并通过气泡和语音点评；采集与拼图复用 dsh-see-now。
+- [Camus2001/dsh-pet-see-live](https://github.com/Camus2001/dsh-pet-see-live) — 让 dsh-pet 实时看屏幕、听同期声音，并通过气泡和语音点评；采集与拼图复用 dsh-see-now。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [CELLOPOI/moyuban](https://github.com/CELLOPOI/moyuban) — 在 DSH 工作区读小红书推荐、浏览百度贴吧帖子和楼中楼，也可以在 NGA 引用楼层回帖。
 - [Cerbur/clutch-dsh#clutch-dsh-fireworks](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-fireworks) — 通过 `happy_fireworks` Agent 工具为 DSH Web UI 增加庆祝礼花覆盖层。
 - [chen731215-dev/dsh-tavern-v2](https://github.com/chen731215-dev/dsh-tavern-v2) — 酒馆管理面板：多角色卡、多世界书、多预设与会话级隔离，记忆总结、角色关系网、剧情选项一键发送，另有 NSFW 模式。完整效果需同时安装伴生插件 dsh-muv-engine 与 dsh-muv-table，用于渲染状态栏、剧情选项与变量表格。角色卡自带的状态栏 / 变量折叠 / 选项卡片在沙盒 iframe 中渲染，卡内样式不再外溢到宿主界面。
