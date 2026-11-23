@@ -1489,6 +1489,7 @@ dsh plugin --profile web add dshmarket
 - [lunasi27/dsh-daily-todo](https://github.com/lunasi27/dsh-daily-todo) — 主面板里的每日待办：一天一份清单，分「工作 / 生活」两段，打勾即划掉；本机零点自动归档当天清单，未完成项带进新的一天。
 - [Luoqiaocong/dsh-answer-style](https://github.com/Luoqiaocong/dsh-answer-style) — 只给 DSH 的模型回答换字体、调正文与标题字重、给加粗片段上色，随时一键恢复默认。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [luoshuizhiwei/dsh-desktop-restart](https://github.com/luoshuizhiwei/dsh-desktop-restart) — 在桌面版六个位置加重启入口：侧栏上下、会话标题栏、账号菜单、/restart-desktop 与设置行。只结束 Electron 主进程，让宿主优雅退出、会话照常落盘；有任务在跑先问你，重启后报停机时长。仅适用于桌面版。
+- [LuosuQWQ/dsh-ui-appearance](https://github.com/LuosuQWQ/dsh-ui-appearance) — 壁纸与指针视差、毛玻璃面板、输入框与侧边栏样式，以及侧边栏自动隐藏。
 - [Lushdawn/dsh-effort-dial](https://github.com/Lushdawn/dsh-effort-dial) — 输入框里的 Codex 风格推理强度卡片：接管模型选择器，显示当前档位、模型行，以及覆盖模型适配器所报全部档位的分段滑块；另带模型列表、重置，以及最高档时的紫色极光与闪烁粒子。
 - [LusJourney/dsh-limitup-widget](https://github.com/LusJourney/dsh-limitup-widget) — DSH 浮层里的 A 股涨停直播卡片：显示涨停/炸板/跌停数、炸板率、连板高度、昨日涨停溢价、热门题材与 localStorage 自选股；可关闭且浮层无残留（从侧边栏底部恢复）。数据来自仓库 dashboard/ 下需单独运行的 Python 看板后端（需 Python 3.9+ 与 akshare，不随安装包分发），同源代理可探活，配置 script 后可自动拉起。
 - [LUX09947-CMYK/dsh-re](https://github.com/LUX09947-CMYK/dsh-re) — 在 DeepSeek Harness 桌面端顶部标题栏「编辑」右边加一个「刷新」按钮，只重载界面、不重启应用。
@@ -2141,6 +2142,7 @@ dsh plugin --profile web add dshmarket
 - [Tansukii/dsh-screenshot](https://github.com/Tansukii/dsh-screenshot) — 区域截图工具，支持标注、放大器取色与剪贴板输出，并跟随 DSH 界面语言。仅限 Windows。
 - [tanxiaolong/dsh-i-hao-hai-pa](https://github.com/tanxiaolong/dsh-i-hao-hai-pa) — 骂 DSH 一句，左侧栏、编辑区和会话区会像地震一样塌成一地瓦砾，一直瘫着，直到 DSH 开口回答才从下往上长回来。
 - [tao1020/dsh-global-pins](https://github.com/tao1020/dsh-global-pins) — 会话散落在不同工作区，重要内容不好找？全局置顶把你选中的会话集中到侧边栏顶部，支持拖拽排序和清晰的插入位置提示，也可按最近更新时间自动排序。会话完成后小绿点提醒。还有 Codex 同款行内操作：运行中的会话右侧持续转圈显示进度，支持归档/恢复、点开就全选标题的重命名，右键菜单可 Fork 和上下移动。侧边栏「全局置顶」旁的放大镜打开搜索浮层：先按会话标题和工作区名匹配，再查消息正文索引（部署开启内容索引时可用），结果按「会话」「内容」小标题分组，内容命中带摘要。右侧准星按钮可跨折叠工作区跳到当前打开的会话，每个分组标题带半透明灰底，会话行更紧凑，能放下更多条目。v1.0.6 新增「最近会话」：当天用过且未置顶的会话会从各个工作区集中到置顶下方，按时间从近到远排列，第二天自动回到原工作区；分组标题可折叠，折叠时视图不会跳到顶部。
+- [TaoLe-si/dsh-perf-guard](https://github.com/TaoLe-si/dsh-perf-guard) — 减少 DSH 长会话的渲染开销，保留原生滚动，并提供有上限的重试和本地诊断。
 - [TaoruiLiu19/DSH-LLSA#hud](https://github.com/TaoruiLiu19/DSH-LLSA/tree/main/packages/hud) — DeepSeek Harness 会话上的只读状态浮层：中心一行状态词，外圈按固定位置显示终端、代码、检索、文档、网页与其它六类活动，多 Agent 时显示内圈子 Agent。
 - [taotao7/dsh-pretty-cool](https://github.com/taotao7/dsh-pretty-cool) — 紧凑界面：无边框消息、轻量队列、输入区控制，以及可调圆角。仅适配 DSH 0.2.1-rc.2；启用期间会替换官方侧栏模块，移除后恢复原样。
 - [taoziliyouchong/dsh-at-menu](https://github.com/taoziliyouchong/dsh-at-menu) — 在 @ 引用菜单顶部加一排类别标签，点标签只看该类候选。
@@ -8630,6 +8632,8 @@ dsh plugin --profile web add dshmarket
 - [lliu56/minicut-skills#dsh-plugin](https://github.com/lliu56/minicut-skills/tree/main/dsh-plugin) — MiniCut 工具：通过 MiniCut CLI 制作多镜头 AI 短片，提供状态、下一步与执行，任何付费任务前先显示价格并需用户确认。
 - [LR611415/visionforge](https://github.com/LR611415/visionforge) — 为 DeepSeek Harness 提供读图与生图/编辑能力（Qwen/OpenAI/Anthropic/Gemini 读图，Qwen-Image 生图与编辑）。基于 liustack/modlens（MIT）改造；请先卸载 @liustack/modlens——两者会注册同一批 vision provider 与图片拦截钩子，并存会导致读图失灵。
 - [lsjspl/dsh-plugin-grok2api-media-tool](https://github.com/lsjspl/dsh-plugin-grok2api-media-tool) — 让 dsh 通过 grok2api 的 API 获得生成图片与视频能力。
+- [LuosuQWQ/dsh-diagram](https://github.com/LuosuQWQ/dsh-diagram) — 四个模型可调用的工具：HTML 渲染为 PNG、网页或元素截图、给已有图片画框与箭头、读取样式指南，直接使用本机 Chrome 或 Edge。
+- [LuosuQWQ/dsh-drawing-tools](https://github.com/LuosuQWQ/dsh-drawing-tools) — 把本机 ComfyUI 变成绘画 agent：12 个工具、分族提示词指南、PNG 配方反解、缺失模型搜索安装，以及「极简绘画」预设。
 - [mafeis/dsh-image-guard](https://github.com/mafeis/dsh-image-guard) — 发送前把请求中的历史图片裁剪至保留张数，并从上游 400 错误解析单次图片上限、按更少张数降级重试，保证含图会话不被图片数量限制打断。
 - [Max-Null/dsh-capture](https://github.com/Max-Null/dsh-capture) — DSH 双引擎截图：思灵桌面壳内，全局快捷键/托盘打开全屏框选浮层（多显示器、逐屏像素级抓帧），选区定格后工具条就地画红框，一次确认送进输入框；纯 DSH（浏览器）下由输入框相机按钮经 getDisplayMedia 捕获屏幕，复用同一套单阶段框选+标注遮罩。均走官方附件通道。
 - [mengxiaoxian/lookover#dsh-look](https://github.com/mengxiaoxian/lookover/tree/main/dsh-look) — macOS 场景感知探针：拉模型零轮询的 look 工具，读取最前非自身窗口（应用信息、AX 标题/选中文本、按需本地 OCR），支持召唤热键按下瞬间抓取快照注入对话。
