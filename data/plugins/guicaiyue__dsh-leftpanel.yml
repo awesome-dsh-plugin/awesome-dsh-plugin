@@ -1,0 +1,12 @@
+url: https://github.com/guicaiyue/dsh-leftpanel
+name: guicaiyue/dsh-leftpanel
+category: ui
+description:
+  en: 'Folds every left-sidebar panel entry into a single "Collection" row, and keeps the per-entry hide/show switches. Hovering the row slides out a 448px two-column card: the panel entries come first, then the shell''s own overflow entries (browse plugins, create a plugin), dealt row by row into the same grid — no divider, no extra group, no nested popup. The first click never navigates: with nothing selected the row only reveals the card. Picking an entry selects it and opens that panel exactly like its own row would; the row then reads "Collection / [icon] name" and clicking it goes straight there, while hovering still lets you switch. Keyboard: arrows walk the visual order, left/right move within a row, Enter opens, Esc closes and returns focus. Collapsing the sidebar to a 36px rail leaves only the collection glyph plus a dot when something is selected. A switch in Settings → Left menu turns the whole thing off and restores the plain row list; the user''s own hidden set is never rewritten.'
+  zh: '把左侧菜单的每个面板入口收进一行「集合」，同时保留逐项的隐藏/显示开关。悬浮这一行会从右侧滑出一张 448px 双列卡片：面板入口在前，外壳自己的溢出条目（浏览更多插件、创建你的插件）在后，一起逐行铺进同一个网格——没有分隔线、没有额外分组、没有第二层弹窗。首次点击不会跳转：还没选过任何入口时，这一行只把卡片打开。选中某一项既记下选择、也像点原来那一行一样打开该面板；行文字随即变成「集合 / 图标 名称」，再点它就直接过去，悬浮仍然可以换。键盘：方向键按视觉顺序走，左右在同一行里挪，Enter 打开，Esc 关闭并把焦点还给行。侧栏折叠成 36px 图标轨时只留集合图标，有选中项时点一个小圆点。设置 → 左栏菜单里的开关可以整体关掉、恢复原来的一行一个；用户自己的隐藏集合不会被改写。'
+# 注意：这里**不要**手写 npm: 字段 —— awesome-dsh-plugin 的校验会直接拒绝，
+# npm 映射由 nightly 的 scripts/probe-npm.mjs 自动采集（读仓库 package.json 的
+# name，再要求 registry 里该包的 repository 指回同一个 GitHub 仓库）。
+# 稳定别名：每次发版都指向最新 Release，条目不用跟着改版本号
+tarball: https://github.com/guicaiyue/dsh-leftpanel/releases/latest/download/dsh-leftpanel.tgz
+icon: https://raw.githubusercontent.com/guicaiyue/dsh-leftpanel/main/assets/icon-180.png
