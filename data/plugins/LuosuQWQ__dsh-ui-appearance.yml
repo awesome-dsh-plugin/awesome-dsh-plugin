@@ -2,5 +2,5 @@ url: https://github.com/LuosuQWQ/dsh-ui-appearance
 name: LuosuQWQ/dsh-ui-appearance
 category: ui
 description:
-  en: 'Wallpapers with pointer parallax, frosted-glass panels, composer and sidebar styling, and sidebar auto-hide for the DeepSeek Harness web UI. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '壁纸与指针视差、毛玻璃面板、输入框与侧边栏样式，以及侧边栏自动隐藏。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'Wallpapers with pointer parallax, frosted-glass panels, composer and sidebar styling, and sidebar auto-hide for the DeepSeek Harness web UI.'
+  zh: '壁纸与指针视差、毛玻璃面板、输入框与侧边栏样式，以及侧边栏自动隐藏。'
