@@ -38941,20 +38941,6 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/vlln/plugin-registry/tree/main/packages/plugin/console": {
-    "version": "0.1.0",
-    "spec": "github:vlln/plugin-registry",
-    "capabilities": [
-      "shell",
-      "fs-write",
-      "fs-read",
-      "network",
-      "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/vlln/whale-girl": {
     "version": "0.1.0",
     "spec": "github:vlln/whale-girl",

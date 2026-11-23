@@ -421,7 +421,6 @@
  "https://github.com/songoao25/dsh-bottom-info-bar/tree/main/plugin": "2026-08-16",
  "https://github.com/taxueseek/argo/tree/main/packages/dsh-plugin": "2026-08-14",
  "https://github.com/v587d/capital-generation/tree/master/dsh-plugin": "2026-08-16",
- "https://github.com/vlln/plugin-registry/tree/main/packages/plugin/console": "2026-08-14",
  "https://github.com/wulun811/LiuHe/tree/master/malong/dsh/bundle": "2026-08-16",
  "https://github.com/ywgATustcbbs/dsh-human-task/tree/main/packages/dsh-human-task": "2026-08-15",
  "https://github.com/zhaoolee/notes/tree/main/dsh-plugin": "2026-08-14",
@@ -632,5 +631,10 @@
  "https://github.com/sayzwx/dsh-custom-model": "2026-10-22",
  "https://github.com/xiaoxiaolelang-ai/dsh-next-move": "2026-11-09",
  "https://github.com/zbh13782-lang/dsh-pin-bookmarks": "2026-11-19",
- "https://github.com/WenWenttt/dsh-anima-studio": "2026-11-23"
+ "https://github.com/WenWenttt/dsh-anima-studio": "2026-11-23",
+ "https://github.com/TwinsEarth/fang-dsh-plugin": "2026-11-18",
+ "https://github.com/yakumioto/dsh-workspace-settings": "2026-11-20",
+ "https://github.com/W3967/dsh-workflow-form": "2026-11-23",
+ "https://github.com/329604421/dsh-tiny-fish": "2026-11-23",
+ "https://github.com/regrevia/everything2chart/tree/main/dsh-bundle": "2026-11-22"
 }

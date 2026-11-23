@@ -1,5 +1,5 @@
 url: https://github.com/light-cheng/DSH-Slate/tree/main/plugin
-name: light-cheng/DSH-Slate
+name: light-cheng/DSH-Slate#plugin
 category: workflow
 description:
   en: "Workspace-isolated project progress panel in the DSH right sidebar: automatic session progress sync via systemPrompt, shell-verified checks separating completion from acceptance, zero-token Git and expandable historical session hints, bounded Quick Init, manual override protection with one-click restore, and native monochrome UI."
