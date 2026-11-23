@@ -1,0 +1,8 @@
+url: https://github.com/harryzhz/dsh-external-agents
+name: harryzhz/dsh-external-agents
+category: model
+description:
+  en: 'Pluggable external CLI agent runtimes for DeepSeek Harness (Desktop and Web), adding Codex, Antigravity, Claude Code, TRAE CLI, and custom ACP or codex-app-server CLIs as selectable presets while keeping built-in presets intact. Supports streaming reasoning, tool calls, approvals, per-preset model filtering, reasoning effort controls, and session resume across restarts.'
+  zh: '为 DeepSeek Harness（Desktop 与 Web）提供可插拔外部 CLI Agent 运行时，在保留原生预设的同时扩展 Codex、Antigravity、Claude Code、TRAE CLI 及自定义 ACP / codex-app-server CLI 预设；支持流式推理、工具调用、审批确认、按预设过滤模型、推理强度调节与跨重启会话续接。'
+tarball: https://github.com/harryzhz/dsh-external-agents/releases/latest/download/dsh-external-agents.tgz
+icon: https://raw.githubusercontent.com/harryzhz/dsh-external-agents/main/assets/icon-180.png
