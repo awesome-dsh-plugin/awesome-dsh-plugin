@@ -1,0 +1,7 @@
+url: https://github.com/IKEASven69/AnyFind
+name: IKEASven69/AnyFind
+category: tools
+description:
+  en: 'Instant full-disk retrieval unifying filenames, document contents and six AI-harness session transcripts under 50ms keystroke latency, with a file workbench (tree, tabs, rich previews, recycle-bin ops) and an MCP retrieval substrate for any MCP client.'
+  zh: 全盘即时检索，一个索引统一文件名、文档内容与六家 AI harness 会话原文（击键→结果 <50ms）；自带文件工作台（目录树、多标签、富预览、回收站写操作）与 MCP 检索底座，任意 MCP 客户端可直接接入。
+icon: https://raw.githubusercontent.com/IKEASven69/AnyFind/main/apps/desktop/src-tauri/icons/icon.png
