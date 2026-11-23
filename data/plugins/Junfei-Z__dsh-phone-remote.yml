@@ -1,0 +1,6 @@
+url: https://github.com/Junfei-Z/dsh-phone-remote
+name: Junfei-Z/dsh-phone-remote
+category: remote
+description:
+  en: Phone access to the DSH Web GUI over a password-gated Cloudflare quick tunnel; the phone uses a browser, with no app and no VPN. Installs either as this plugin or as a launchd/systemd service, so the gate and its tunnel URL stay up across DSH restarts. Attaches to the running desktop app on its random loopback port by minting the browser-session cookie DSH would mint, leaving DSH unmodified, or proxies a fixed dsh web. Adds a login page, a signed cookie (180 days by default) and per-IP login throttling.
+  zh: 在手机上访问 DSH Web GUI，通过带密码网关的 Cloudflare 快速隧道；手机只用浏览器，免 App 免 VPN。可作为插件安装，也可作为 launchd/systemd 常驻服务安装，让网关和隧道网址在 DSH 重启后依然有效。可连接正在运行的桌面版——按 DSH 的方式现签 browser-session cookie 以适配其随机回环端口，DSH 本体零改动——也可反代固定的 dsh web。提供登录页、签名 cookie（默认 180 天）和按 IP 的登录限流。

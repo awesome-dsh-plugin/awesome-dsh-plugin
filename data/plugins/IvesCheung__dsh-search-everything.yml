@@ -1,0 +1,6 @@
+url: https://github.com/IvesCheung/dsh-search-everything
+name: IvesCheung/dsh-search-everything
+category: session
+description:
+  en: 'Ctrl K palette that searches every message of every session, optionally limited to one workspace, then opens the session, scrolls to the matched message and outlines it. Indexes the session logs in the host process, persists the index to disk, and rescans only the changed files when the palette opens. Not on npm yet: install with dsh plugin --profile web add github:IvesCheung/dsh-search-everything.'
+  zh: 'Ctrl K 全局搜索面板：检索所有会话里的每条消息，可限定在单个工作区内，打开结果即切到对应会话、滚到命中的消息并高亮。会话日志在宿主进程内建索引并落盘，打开面板时只重扫变化的文件。尚未发布到 npm：用 dsh plugin --profile web add github:IvesCheung/dsh-search-everything 安装。'

@@ -1,0 +1,7 @@
+url: https://github.com/wuyakun23/dsh-screenshot
+name: wuyakun23/dsh-screenshot
+category: ui
+description:
+  en: 'Adds a screenshot button to the DeepSeek Harness composer that opens a full-screen region picker for the whole desktop, with rectangle, line and pen annotations and copy or download; Windows only.'
+  zh: '在 DeepSeek Harness 输入框旁加截图按钮，打开覆盖整个桌面的框选界面，支持矩形、直线、画笔标注并可复制或下载；仅支持 Windows。'
+icon: https://raw.githubusercontent.com/wuyakun23/dsh-screenshot/main/assets/icon-180.png

@@ -1,0 +1,8 @@
+url: https://github.com/whiplashf/dsh-stars
+name: whiplashf/dsh-stars
+category: git
+description:
+  en: Sorts GitHub stars into GitHub Lists from a panel — keyword rules suggest a list for each unlisted repo, changes are staged locally, then written back with background concurrent sync and a progress bar; an optional AI organize step asks the model configured in the host for a grouping proposal; a snapshot diff keeps your own operations apart from remote updates of the repositories you choose to watch; sorting, chip filters, search and pagination handle accounts with thousands of stars.
+  zh: 在面板里把 GitHub star 归进 GitHub Lists——关键词规则为未归类仓库给出列表建议，改动先本地暂存，再用后台并发同步和进度条写回；可选「AI 整理」会调用宿主里配置的模型出一套分类方案；快照比对把你自己的操作与被跟踪仓库的远端更新分开；排序、chip 筛选、搜索与分页能撑住几千个 star 的账号。
+icon: https://raw.githubusercontent.com/whiplashf/dsh-stars/main/assets/icon-180.png
+tarball: https://github.com/whiplashf/dsh-stars/releases/latest/download/dsh-stars.tgz

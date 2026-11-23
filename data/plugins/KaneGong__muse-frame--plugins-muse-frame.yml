@@ -1,0 +1,7 @@
+url: https://github.com/KaneGong/muse-frame/tree/main/plugins/muse-frame
+name: KaneGong/muse-frame#shot-planner
+category: skill
+description:
+  en: Plan portrait shoots in DSH and import the ordered shot list into Muse Frame to review framing, lighting and wardrobe continuity.
+  zh: 在 DSH 中编排人像拍摄计划，逐镜确定取景、光线与服装连续性，再将镜头清单导入 Muse Frame 工作台。
+tarball: https://github.com/KaneGong/muse-frame/releases/download/v0.6.1/muse-frame-shot-planner-0.6.0.tgz

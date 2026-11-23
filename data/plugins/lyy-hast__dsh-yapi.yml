@@ -1,0 +1,6 @@
+url: https://github.com/lyy-hast/dsh-yapi
+name: lyy-hast/dsh-yapi
+category: docs
+description:
+  en: 'YAPI connector for DeepSeek Harness: generate interface documentation through agent conversation and sync approved entries to a remote YAPI service, with a review card gating every write.'
+  zh: '为 DeepSeek Harness 连接 YAPI 服务：通过 agent 对话自动生成接口文档，经审查卡片审批后同步至远程 YAPI 文档服务。'

@@ -1,0 +1,7 @@
+url: https://github.com/Yamashigure/dsh-listen-together
+name: Yamashigure/dsh-listen-together
+category: voice
+tarball: https://github.com/Yamashigure/dsh-listen-together/releases/download/v0.1.0-beta.1/local-listen-together-0.1.0-beta.1.tgz
+description:
+  en: 'Windows only. Reads the system loopback audio, names the playing track from the active browser window title, and hands it to the session through the listen_now, listen_feel and listen_control tools. Ships a native topmost overlay for pause and volume, and local SenseVoice dictation as a rough lyrics reference.'
+  zh: '仅 Windows。读取系统回环音频，按当前浏览器窗口标题认出正在放什么，通过 listen_now、listen_feel、listen_control 三个工具交给会话。另带一个原生置顶悬浮窗管暂停和音量，本地 SenseVoice 听写作为粗略的歌词参考。'

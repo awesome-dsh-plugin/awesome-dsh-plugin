@@ -1,0 +1,6 @@
+url: https://github.com/sxwpskd/dsh-veneer
+name: sxwpskd/dsh-veneer
+category: security
+description:
+  en: "Sandbox materialization check and repair for DSH workspaces on Windows. Finds existing directories missing the three sandbox items — capability ACE, deny-delete-child, low integrity label; a first-message dialog and the plugin page each list the missing items, and only the entries you select are repaired after one UAC prompt. The plugin never changes ACLs on its own."
+  zh: "DSH 工作区的沙箱物化体检与修复（Windows）。检查既有目录是否缺了沙箱所需的三项——能力 ACE、拒绝删除子项、低完整性标签；会话首条消息弹窗与插件配置页两条路径各自列出缺项，用户确认并过 UAC 后只补勾选项，插件从不自动改 ACL。"

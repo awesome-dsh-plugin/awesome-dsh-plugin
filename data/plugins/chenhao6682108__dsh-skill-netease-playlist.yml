@@ -1,0 +1,7 @@
+url: https://github.com/chenhao6682108/dsh-skill-netease-playlist
+name: chenhao6682108/dsh-skill-netease-playlist
+category: skill
+icon: https://raw.githubusercontent.com/chenhao6682108/dsh-skill-netease-playlist/main/assets/icon-180.png
+description:
+  en: 'NetEase Cloud Music playlist toolkit: reuse the desktop client login state to search tracks, create and edit playlists, download playlist audio as mp3, and bulk-import MusicBee .mbp playlists into the cloud. Windows and a logged-in desktop client required.'
+  zh: '网易云歌单工具：复用客户端登录态搜索曲目、建/改/删歌单、下载歌曲 mp3、把 MusicBee 的 .mbp 歌单批量搬上云端；需 Windows 且客户端已登录。'
