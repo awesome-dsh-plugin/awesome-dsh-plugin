@@ -1,0 +1,6 @@
+url: https://github.com/CHENJIAMIAN/dsh-editable-send
+name: CHENJIAMIAN/dsh-editable-send
+category: ui
+description:
+  en: 'Adds a send button beside the composer whose text you can edit, defaulting to "继续", so one click sends that text as your message.'
+  zh: 在输入框右边加一个文本可编辑的发送按钮，点一下就把它的文本直接发出去，默认「继续」。
