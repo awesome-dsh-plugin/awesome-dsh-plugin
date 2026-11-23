@@ -2,5 +2,5 @@ url: https://github.com/cailiann/dsh-market-recommender
 name: cailiann/dsh-market-recommender
 category: market
 description:
-  en: Recommends an existing plugin before a new one is written. One sentence in the Plugins page searches your configured indexes, the community catalog and the built-in plugins, then installs or enables the match you pick.
-  zh: '写新插件之前先查市场：在插件页输入一句需求，搜索已配置的索引、社区目录与 DSH 内置插件，选中后直接安装或启用。'
+  en: 'Recommends an existing plugin before a new one is written. A Recommend tab in the Plugins page turns one sentence into ranked candidates drawn from the indexes this profile has actually configured (read through the host pluginMarket service, so any index the user adds is searched, not an embedded snapshot), from the community dshmarket catalog, and from the optional plugins already present on disk in this DSH installation; picking one hands it to the page's own install or enable dialog. A candidate counts only with evidence in name, title or keywords, or across half the need's words, so two incidental words in a description are not reported as a match, and when nothing qualifies it says to write a small new plugin instead. The same search is exposed to agents as the recommend_plugin tool, which reports status and install spec and changes nothing.'
+  zh: '写新插件之前先查市场：插件页里的「推荐」页签把一句需求变成带排序的候选，来源是本 profile 真正配置的索引（走宿主 pluginMarket 服务，用户新加的索引同样会被搜到，而不是内嵌快照）、社区 dshmarket 目录，以及本安装磁盘上已有的可选插件；选中后交给页面自己的安装或启用流程。命中需要名称、标题或关键词级证据，或覆盖需求一半以上的词，描述里偶然出现的两个词不算；都不达标时直说「建议另写一个小插件」。同一套搜索也以 recommend_plugin 工具提供给助手，只报状态与安装来源，不改动任何东西。'
