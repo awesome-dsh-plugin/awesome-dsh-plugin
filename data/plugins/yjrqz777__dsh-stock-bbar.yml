@@ -1,0 +1,6 @@
+url: https://github.com/yjrqz777/dsh-stock-bbar
+name: yjrqz777/dsh-stock-bbar
+category: ui
+description:
+  en: Live prices for a comma-separated list of A-share, Beijing, Hong Kong, or index codes under the DSH message composer, with red-up green-down colouring and session percentages.
+  zh: 在输入框下方用一行显示 A 股、北交所、港股或指数代码的实时价格，涨红跌绿并显示涨跌幅，多个代码可在右键菜单里配置并轮换。
