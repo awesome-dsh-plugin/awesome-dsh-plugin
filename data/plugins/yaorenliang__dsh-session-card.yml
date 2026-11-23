@@ -1,0 +1,6 @@
+url: https://github.com/yaorenliang/dsh-session-card
+name: yaorenliang/dsh-session-card
+category: session
+description:
+  en: 'Turns each sidebar session row into a three-line card: the official title, the prompt you last typed from the turnOutline projection, and the agent preset id drawn with DSH own agent-preset glyph followed by the running subagent and background-job counts. Badges stay while idle so the row height never changes, it falls back to the official one-line row when the structure is not recognized or the session is archived, and the preset costs no request because the sidebar snapshot already carries it.'
+  zh: '把侧边栏每个会话行补成三行卡片：官方标题、你最后问的那句话（取自官方 turnOutline 投影）、agent 预设 id（用 DSH 自己的 agent-preset 图标）加运行中的子智能体与后台任务计数。徽标常驻、行高恒定，不认识的 DOM 结构与归档会话都退回官方单行；预设读的是侧边栏本就拿着的快照，不额外发请求。'
