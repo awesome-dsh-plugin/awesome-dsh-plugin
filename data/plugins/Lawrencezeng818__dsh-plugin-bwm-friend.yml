@@ -1,0 +1,6 @@
+url: https://github.com/Lawrencezeng818/dsh-plugin-bwm-friend
+name: Lawrencezeng818/dsh-plugin-bwm-friend
+category: ui
+description:
+  en: 'Digital-human workbench skin for the DSH web UI: an idle avatar video loops beside an embedded, unchanged native DSH conversation view, with an optional voice mode.'
+  zh: 'DSH Web UI 的数字人工作台外壳：空闲数字人视频在会话旁循环播放，嵌入式复用原生 DSH 视图不改动业务流，语音为可选。'
