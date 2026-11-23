@@ -1,0 +1,6 @@
+url: https://github.com/Lornatang/dsh-plugin/tree/main/packages/integrations/dsh-github
+name: Lornatang/dsh-plugin#dsh-github
+category: git
+description:
+  en: Connects DeepSeek Harness to GitHub MCP tools for repositories, issues, pull requests, and Actions.
+  zh: 将 DeepSeek Harness 连接到 GitHub MCP，提供仓库、Issue、Pull Request 和 Actions 工具。

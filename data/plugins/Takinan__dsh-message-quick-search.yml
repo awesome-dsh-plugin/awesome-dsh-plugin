@@ -1,0 +1,6 @@
+url: https://github.com/Takinan/dsh-message-quick-search
+name: Takinan/dsh-message-quick-search
+category: session
+description:
+  en: 'Search local DSH message history from the sidebar or the session header: full-text search across every stored session, plus a search_history tool for the agent.'
+  zh: '在 DSH 侧栏和会话标题栏搜索本机历史消息：跨所有已存会话全文检索，另带一个给 agent 用的 search_history 工具。'

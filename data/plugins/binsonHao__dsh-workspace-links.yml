@@ -1,0 +1,6 @@
+url: https://github.com/binsonHao/dsh-workspace-links
+name: binsonHao/dsh-workspace-links
+category: workflow
+description:
+  en: 'Visual settings page for linking related projects and automatically giving agents their paths, roles, and notes.'
+  zh: '在设置页中可视化关联相关项目，并自动向 AI 提供各项目的路径、角色和备注。'

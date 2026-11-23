@@ -1,0 +1,6 @@
+url: https://github.com/ymf2317-tech/dsh-header-dock
+name: ymf2317-tech/dsh-header-dock
+category: ui
+description:
+  en: 'Overflow drawer for the DSH Web session header: tucks overflowing buttons into a collapsible menu with per-item visibility (auto/always/dock/hidden), group reordering, and sidebar panel toggles. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH Web 会话顶栏收纳器：窄屏自动将溢出按钮收进「»」抽屉，支持逐项设自动/常显/收起/隐藏、同组排序与左栏面板逐行开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

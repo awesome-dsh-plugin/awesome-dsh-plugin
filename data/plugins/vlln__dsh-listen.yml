@@ -1,0 +1,6 @@
+url: https://github.com/vlln/dsh-listen
+name: vlln/dsh-listen
+category: voice
+description:
+  en: 'Give a text-only agent ears: the listen tool returns a transcript plus spectrogram, level, spectrum, pitch and rhythm evidence instead of a black-box answer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给纯文本 Agent 装上耳朵：listen 工具返回逐字稿、声谱图、电平、频谱、音高和节奏证据，而不是黑盒答案。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

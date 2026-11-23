@@ -1,0 +1,7 @@
+url: https://github.com/xypshot/dsh-screenshot
+name: xypshot/dsh-screenshot
+category: tools
+description:
+  en: 'Snip a region on any monitor from a scissors button below the chat composer or the Alt+A global hotkey, then paste it wherever you want.'
+  zh: '点选截图，然后粘贴到你想要的位置：对话框下方的剪刀按钮或全局快捷键 Alt+A 触发，支持跨显示器框选，截图直入剪贴板。'
+icon: https://raw.githubusercontent.com/xypshot/dsh-screenshot/main/assets/icon.png

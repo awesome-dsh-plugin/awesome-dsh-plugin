@@ -1,0 +1,8 @@
+url: https://github.com/why774/dsh-context-kb
+name: why774/dsh-context-kb
+category: memory
+description:
+  en: Turn long conversations into a searchable per-project memory of raw text, conclusion indexes pinned to exact lines, and pitfalls, so a model that lost its context can still find the original decision and code.
+  zh: 把对话原文、结论索引和踩坑记录存成项目里的一份可检索记忆，跨对话累积，让长对话被压缩后模型依然找得回当初的结论和代码。
+icon: https://raw.githubusercontent.com/why774/dsh-context-kb/main/icon-180.png
+tarball: https://github.com/why774/dsh-context-kb/releases/latest/download/dsh-context-kb.tgz

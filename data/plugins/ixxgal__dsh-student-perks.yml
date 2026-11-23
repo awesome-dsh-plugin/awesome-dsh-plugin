@@ -1,0 +1,7 @@
+url: https://github.com/ixxgal/dsh-student-perks
+name: ixxgal/dsh-student-perks
+category: usage
+icon: https://raw.githubusercontent.com/ixxgal/dsh-plugins/main/docs/icons/dsh-student-perks.png
+description:
+  en: 'Two pills in the bottom bar show the Aliyun student cash coupon (unclaimed, N days left, or expired) and the DeepSeek API balance; the panel adds voucher and cash balance, the peak/off-peak pricing phase, and a refresh button. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '状态栏左下角两枚胶囊：阿里云学生 300 元券状态（未领取 / 剩 N 天 / 已过期）与 DeepSeek API 余额；面板里另有赠金与现金余额、峰谷时段和刷新按钮。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

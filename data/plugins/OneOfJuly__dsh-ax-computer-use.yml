@@ -1,0 +1,6 @@
+url: https://github.com/OneOfJuly/dsh-ax-computer-use
+name: OneOfJuly/dsh-ax-computer-use
+category: tools
+description:
+  en: "AX-first Mac computer use for DSH: six tools (windows, accessibility tree, batched verified actions, JPEG screenshot, element read, Electron relaunch) drive native apps, Chrome pages and Electron apps through the accessibility tree instead of screenshot-click vision loops. Batched actions return per-step confirmed / unverified / suspected_noop verdicts with focus and window diffs, screenshots ship as ~100 KB JPEGs, and a relaunch with --force-renderer-accessibility exposes Electron web content, so web pages work in 4-6 round-trips instead of 20+ screenshot cycles."
+  zh: "AX 优先的 macOS 电脑操作插件：六个工具（窗口、无障碍树、批量带验证动作、JPEG 截图、元素读取、Electron 带参重启）通过无障碍树驱动原生应用、Chrome 网页和 Electron 应用，取代截图点击的视觉循环。批量动作每步返回 confirmed / unverified / suspected_noop 结论并附焦点与窗口变化，截图压缩到约 100 KB 的 JPEG，支持带 --force-renderer-accessibility 重启 Electron 暴露网页内容，网页操作从 20+ 轮截图点击降到 4-6 轮。"

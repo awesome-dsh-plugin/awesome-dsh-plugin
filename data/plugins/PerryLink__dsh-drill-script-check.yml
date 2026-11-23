@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-drill-script-check
+name: PerryLink/dsh-drill-script-check
+category: tools
+description:
+  en: "Emergency drill script check for DeepSeek Harness: check drill scripts against the Basic Specification for Emergency Drills of Production Safety Accidents. Flags discrepancies only and makes no legal conclusion."
+  zh: "应急演练脚本核对：依据《生产安全事故应急演练基本规范》。仅提示差异，不作出定性结论。"

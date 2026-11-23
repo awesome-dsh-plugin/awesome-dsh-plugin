@@ -1,0 +1,7 @@
+url: https://github.com/Zjb0702/dsh-model-picker
+name: Zjb0702/dsh-model-picker
+category: model
+description:
+  en: Replaces the chat composer's model seat with a two-level picker - a provider rail, a hover-switched model list, and a reasoning-effort slider that writes the choice back to the session.
+  zh: 将输入框的模型选择座位替换为两级选择器：左侧供应商栏、悬停即切换的模型列表与思考强度滑条，选中后回填会话。
+icon: https://raw.githubusercontent.com/Zjb0702/dsh-model-picker/main/assets/icon-180.png

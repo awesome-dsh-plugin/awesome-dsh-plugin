@@ -1,0 +1,6 @@
+url: https://github.com/wuRDmemory/dsh_vim
+name: wuRDmemory/dsh_vim
+category: ui
+description:
+  en: Vim-style modal editing and keyboard navigation for DeepSeek Harness conversations, sidebars, and panes.
+  zh: 为 DeepSeek Harness 的对话输入、侧栏和面板提供 Vim 模态编辑与键盘导航。

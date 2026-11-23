@@ -1,0 +1,6 @@
+url: https://github.com/Luciferhhha/dsh-msg-retract
+name: Luciferhhha/dsh-msg-retract
+category: session
+description:
+  en: 'Retracts a user message together with the reply it produced: the turn collapses to a stub in the transcript, an answer still being generated is stopped exactly as the stop button would stop it, and a retracted message can be restored afterwards. Steering messages passed to a running answer can be collapsed the same way without interrupting it.'
+  zh: '撤回一条用户消息及其回答：该轮在对话里折叠成占位，正在生成的回答会像按「停止」按钮一样中断，撤回后还能恢复；传入进行中回答的插话消息也能折叠，且不会打断回答。'

@@ -2,5 +2,5 @@ url: https://github.com/Fahaoxi/dsh-tdx-tools
 name: Fahaoxi/dsh-tdx-tools
 category: tools
 description:
-  en: 'Registers the Tongdaxin MCP service as four DSH tools — option chain, contract months, K-line and real-time quotes — and re-initializes the MCP session automatically when the server expires it.'
-  zh: '把通达信 MCP 行情服务注册为四个 DSH 工具：期权链、可交易合约月份、K 线与实时行情；服务端回收 MCP 会话时自动重新握手并重放请求。'
+  en: 'Registers the Tongdaxin (通达信) MCP market-data service as 13 native DSH tools covering real-time quotes, K-line, option chains, stock screening, F10 financials, news, filings, research reports and macro data, with a shared session that re-initializes automatically when the server expires it.'
+  zh: '把通达信 MCP 行情服务注册为 13 个 DSH 原生工具，覆盖实时行情、K 线、期权链、条件选股、F10 财务、新闻公告、研报与宏观数据；共用常驻会话，服务端回收时自动重新握手。'

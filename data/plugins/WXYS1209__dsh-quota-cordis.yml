@@ -1,0 +1,7 @@
+url: https://github.com/WXYS1209/dsh-quota-cordis
+name: WXYS1209/dsh-quota-cordis
+category: usage
+icon: https://raw.githubusercontent.com/WXYS1209/dsh-quota-cordis/main/icon.png
+description:
+  en: 'Multi-provider quota and usage dashboard for DSH: DeepSeek balances, GLM, MiniMax, OpenCode and Codex subscription windows, and OpenAI organization spend, plus a Models tab that edits providers, model catalogs and reasoning-effort settings on top of the official DSH model settings. Registers the provider_quota, quota_color_settings and provider_company_rules agent tools.'
+  zh: 'DSH 的多供应商配额与用量面板：DeepSeek 余额，GLM、MiniMax、OpenCode 与 Codex 的订阅窗口，以及 OpenAI 组织消费；「模型」页签在 DSH 官方模型设置之上编辑供应商、模型目录与推理强度。注册 provider_quota、quota_color_settings、provider_company_rules 三个 Agent 工具。'

@@ -1,0 +1,7 @@
+url: https://github.com/1473447954-cloud/dsh-model-drag
+name: 1473447954-cloud/dsh-model-drag
+category: ui
+description:
+  en: 'Drag to reorder models and provider groups in the DSH model picker; the custom order persists across sessions and re-renders, with open-menu positioning to the selected model.'
+  zh: '在 DSH 模型选择菜单里拖拽排序：按住模型行在组内换位、按住分组标题整组移动，顺序跨会话与重渲染保持，打开菜单自动定位到当前选中的模型。'
+icon: https://raw.githubusercontent.com/1473447954-cloud/dsh-model-drag/main/icon-180.png

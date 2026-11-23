@@ -1,0 +1,8 @@
+url: https://github.com/tangyixiao/dsh-sylvan-appearance
+name: tangyixiao/dsh-sylvan-appearance
+category: theme
+description:
+  en: "Native appearance settings for DeepSeek Harness with the Sylvan theme, a live theme editor and JSON import/export. Verified on DSH Web 0.2.2-rc.3 and the Desktop 0.2.2-rc.5 bundled host."
+  zh: "在 DSH 设置中切换、编辑和分享主题。内置 Sylvan · 松雨，支持实时预览和 JSON 导入导出。已验证 Web 0.2.2-rc.3 和 Desktop 0.2.2-rc.5 随包宿主。"
+tarball: https://github.com/tangyixiao/dsh-sylvan-appearance/releases/download/v0.1.0/dsh-sylvan-appearance-0.1.0.tgz
+icon: https://raw.githubusercontent.com/tangyixiao/dsh-sylvan-appearance/v0.1.0/icon.png
