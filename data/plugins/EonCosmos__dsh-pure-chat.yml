@@ -1,0 +1,6 @@
+url: https://github.com/EonCosmos/dsh-pure-chat
+name: EonCosmos/dsh-pure-chat
+category: agi
+description:
+  en: 'Agent preset for plain chat: an empty system prompt with only web search and fetch, masking every other tool the host registers.'
+  zh: '纯对话 agent 预设：空系统提示词，只挂载联网搜索与网页抓取，屏蔽宿主注册的其他工具。'
