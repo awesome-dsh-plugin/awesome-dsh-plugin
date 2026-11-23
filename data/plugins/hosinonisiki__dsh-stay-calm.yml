@@ -1,0 +1,7 @@
+url: https://github.com/hosinonisiki/dsh-stay-calm
+name: hosinonisiki/dsh-stay-calm
+category: fun
+icon: https://raw.githubusercontent.com/hosinonisiki/dsh-stay-calm/main/icon.png
+description:
+  en: 'A floating whale girl for the DSH Web UI. Every N user turns she makes one extra model call to rate how frustrated the conversation sounds on a 0-3 scale and, when it is high, floats a short reminder to pause or start a new chat without touching the conversation. She can be petted, fed and dragged, has six motion modes, twelve interactions, a mini dialog box that calls the model on send, and local idle chatter that does not. Mood checks (default every 3 turns; 0 disables) and dialog replies are real model calls and consume tokens.'
+  zh: 'DSH Web 界面角落里的一只鲸鱼娘：每 N 个用户轮次额外调用一次模型，把对话里的烦躁程度按 0–3 级判一次；级别高时只浮一句「先歇会儿或开个新对话」的提醒，不碰会话内容。可以摸头、喂饭、拖动，有 6 种运动模式、12 个互动动作、一个发送时才调用模型的迷你对话框，以及不调用模型的本地自动闲聊。情绪检查默认每 3 轮一次，设为 0 可关闭；检查和对话框回复都是真实模型调用，会消耗 token。'
