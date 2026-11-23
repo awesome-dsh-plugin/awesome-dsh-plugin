@@ -1,5 +1,6 @@
 url: https://github.com/SSHOOTING/dsh-plugin-compat-lab
 name: SSHOOTING/dsh-plugin-compat-lab
+tarball: https://github.com/SSHOOTING/dsh-plugin-compat-lab/releases/download/v0.1.0/0.1.0.tgz
 category: dev
 description:
   en: 'Compatibility view: install/load/uninstall signals, scenario count and version matrix.'
