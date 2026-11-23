@@ -1,0 +1,8 @@
+url: https://github.com/JoeyRedfield/dsh-obsidian-wikilinks
+name: JoeyRedfield/dsh-obsidian-wikilinks
+category: session
+description:
+  en: 'Linkifies Obsidian wiki targets and space-containing Markdown link paths in chat transcripts: resolves the note in the session workspace, opens it in the sidebar Markdown preview, or in the default app with Cmd-click.'
+  zh: '把会话正文里的 Obsidian 双链、以及路径带空格因而解析失败的 Markdown 链接，变成可点链接：按会话工作区解析笔记位置，点击在右侧栏预览打开，⌘ 点击交给默认应用。'
+icon: https://raw.githubusercontent.com/JoeyRedfield/dsh-obsidian-wikilinks/main/assets/icon-180.png
+tarball: https://github.com/JoeyRedfield/dsh-obsidian-wikilinks/releases/download/v0.2.0/dsh-obsidian-wikilinks-0.2.0.tgz
