@@ -1,0 +1,7 @@
+url: https://github.com/lucas-sys/dsh-learning-studio
+name: lucas-sys/dsh-learning-studio
+category: ui
+description:
+  en: Study workspace in the sidebar. For one concept it lists six to nine aspects to choose from and writes a section-by-section guide; you highlight a sentence in the guide to ask about it, answers stay anchored to that sentence and ordered by article position, related questions link into a knowledge network, five Feynman questions test your restatement, and Markdown notes export once every one passes.
+  zh: 侧边栏里的学习工作区：输入一个概念，先列出 6–9 个可学方面供勾选，再按方面逐节生成讲解；在正文里划一句话就能就它提问，回答始终锚定该句、并按文章位置排序；提问之间自动连成知识网络；学完用 5 道费曼问题复述自测，全部通过后导出 Markdown 笔记。
+icon: https://raw.githubusercontent.com/lucas-sys/dsh-learning-studio/main/docs/icon.png
