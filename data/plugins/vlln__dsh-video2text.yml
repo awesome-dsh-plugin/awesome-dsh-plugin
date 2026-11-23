@@ -1,0 +1,6 @@
+url: https://github.com/vlln/dsh-video2text
+name: vlln/dsh-video2text
+category: docs
+description:
+  en: 'Video link to script: a sidebar workbench with player, transcript and publish-ready export; bundles the video2text skill.'
+  zh: '视频链接转文案的侧栏工作台：播放器 + 逐字稿 + 发布导出，自带 video2text skill。'
