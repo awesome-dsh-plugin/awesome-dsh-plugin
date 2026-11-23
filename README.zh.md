@@ -2187,6 +2187,7 @@ dsh plugin --profile web add dshmarket
 - [ttmouse/dsh-model-picker](https://github.com/ttmouse/dsh-model-picker) — 顶替 DSH Web 编辑器模型座位的模型选择器：检索优先的弹层，左栏是供应商索引、点击滚动右侧分组列表，收藏组固定在首位，用图片图标区分原生与桥接的视觉输入，点触发器右区单独打开推理档位面板。
 - [ttmouse/dsh-recent](https://github.com/ttmouse/dsh-recent) — 在 DSH Web 侧边栏的工作区列表下面加一个「最近」区块，把所有工作区的最新会话平铺成一条时间线，行与悬停卡片复用外壳自己渲染的会话行，滚到底继续加载更早的会话；同时把工作区列表本身折叠为最近有记录的 5 个文件夹。需要 DSH ^0.2.0-rc.1。
 - [tumi-huakai/dsh-plugin-meow-speech](https://github.com/tumi-huakai/dsh-plugin-meow-speech) — 显示层文本替换：自定义消息中任意文本的界面显示而不改动真实对话，支持逐条整词匹配、长词优先与代码块保护。
+- [tungloong/dsh-t3-inbox](https://github.com/tungloong/dsh-t3-inbox) — 面向 DeepSeek Harness 的 T3 Code 风格注意力收件箱侧边栏，支持置顶/待处理/运行中/已暂缓/已收尾分区、可编辑暂缓快捷选项与日历弹窗、高相关搜索、多选项目筛选、竖向扫选与 5 秒撤销、自动皮肤适配、8 语言界面，以及一键切回原生工作区视图。
 - [tuogusa/dsh-word-complete](https://github.com/tuogusa/dsh-word-complete) — 输入框词自动补全：按前缀匹配与接近程度排序弹出当前会话词建议，↑/↓ 选择、回车确认。
 - [tuoLuoSuan/dsh-peak](https://github.com/tuoLuoSuan/dsh-peak) — 输入框工具行左端的小胶囊：点一下就知道此刻 DeepSeek 按高峰价还是空闲价计费。点开是当前状态与计费方式、下次切换时间与倒计时，以及此刻为什么是这个状态：周末、具名的法定节假日、调休上班日，或者只是不在高峰时段内。判定用北京时间并显式写死 UTC 偏移，不看本机时钟；内置 2026 年中国法定节假日表（33 天节假日、6 个调休上班日），表外的年份直接说不知道，不猜。
 - [TussalZeus18028/dsh-open-folder](https://github.com/TussalZeus18028/dsh-open-folder) — 在工作区侧边栏的会话行 ⋯ 菜单中增加「打开文件夹」项，用系统文件管理器打开该会话所属工作区的文件夹。
@@ -6826,6 +6827,7 @@ dsh plugin --profile web add dshmarket
 - [intsig-textin/dsh-plugin-xparse](https://github.com/intsig-textin/dsh-plugin-xparse) — 为 DeepSeek Harness 提供结构化的 TextIn xParse 工具与文档解析 Skill，支持文档解析、缓存内容导航和持久化多文档任务，并集成 AppKey 或 Device OAuth 认证、付费操作审批及跨平台内嵌 CLI。
 - [iqingyoung/429-throttle-mcp#dsh-throttle](https://github.com/iqingyoung/429-throttle-mcp/tree/main/packages/dsh-throttle) — DeepSeek Harness 限流插件：长程任务自动控速避免 429，支持任务复盘。
 - [IRwDONE/dsh-tool-call-leak-fix](https://github.com/IRwDONE/dsh-tool-call-leak-fix) — 拦截参数边界损坏的工具调用；某一步静默失败、turn 即将关闭时保持其打开，让模型重新发起调用；fork 之后把模型可见面上损坏的输出替换为说明。零依赖。
+- [IsaacHuo/dsh-ops-pro](https://github.com/IsaacHuo/dsh-ops-pro) — dsh-ops 的分叉：为 Windows 上的 DSH 提供 bash、PowerShell 7 与 Rust 文件/搜索工具，并以 OPS-PTC 批量调用减少 token 消耗。
 - [Isanti2016/dsh-console](https://github.com/Isanti2016/dsh-console) — dsh 控制台命令：/web 启动/停止/重启/状态、/tunnel SSH 隧道管理、/ask 一次性问答、/console 启动控制台 TUI。
 - [isheng-eqi/dsh-educoder](https://github.com/isheng-eqi/dsh-educoder) — 走头歌（EduCoder）平台 JSON API 完成作业，无浏览器自动化。educoder_sweep 扫描所有课程中仍有未通过关卡的作业——已完成的作业直接跳过、一个关卡都不读，因此全量扫描不消耗模型 token——并可一次做完；选择题同样零 token，因为平台会在任意一次提交的响应里回吐标准答案；代码题由模型生成，以 evaluate:0 上传后每关只触发一次评测，再按平台返回的报错重试。三个工具：educoder_sweep、educoder_homework、educoder_account。
 - [ising-tech/isingq-toolkit#dsh-plugin](https://github.com/ising-tech/isingq-toolkit/tree/main/packages/dsh-plugin) — IsingQ 原生插件：引导式 QUBO 建模与本地校验，用户确认后提交远端求解。
