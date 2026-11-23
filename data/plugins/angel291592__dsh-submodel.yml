@@ -1,0 +1,6 @@
+url: https://github.com/angel291592/dsh-submodel
+name: angel291592/dsh-submodel
+category: workflow
+description:
+  en: 'Two-way cross-model delegation for the official subagent: a strong main model hands verifiable execution down to a cheaper executor route, while a cheap main model keeps routine work and escalates only complex code or logic questions to strong expert routes. You pick the provider/model behind each route (e.g. DeepSeek Flash for execution, Claude for architecture-level work), so routine token spend stays on the cheap model and hard problems still get a strong one. Adds a delegate_task entry point and a first-run setup tool.'
+  zh: '官方 subagent 的双向跨模型派活策略：强主脑把可验证的执行块下沉给便宜的执行路由；便宜主脑日常自己干，只把复杂代码或逻辑判断升级到强专家路由。每条路由背后用哪个 provider/model 由你配置（例如执行交给 DeepSeek Flash、架构交给 Claude）——常规 token 留在便宜模型上，难题仍由强模型处理。另附 delegate_task 统一入口与首次配置向导。'
