@@ -1,0 +1,6 @@
+url: https://github.com/zhing99-hash/oss-workbench
+name: zhing99-hash/oss-workbench
+category: git
+description:
+  en: 'Local-first workbench for maintaining your own GitHub open-source projects from DSH: syncs the repositories the token can see into local SQLite, scans issues, pull requests and failing CI into a priority-ordered todo list, and performs comment, label, assign, close and PR-review actions only after a preview the user confirms, with every prepared, executed, failed and cancelled action kept in a local audit log; the panel renders inside the conversation where the host supports MCP Apps and otherwise opens as a browser workbench on 127.0.0.1:3789.'
+  zh: '本地优先的 GitHub 开源项目维护工作台：把 token 可见的仓库同步进本机 SQLite，扫描 Issue、PR 与失败的 CI，汇总成按优先级排序的待办，评论 / 打标签 / 指派 / 关闭 / 提交 PR 审查等动作都要先出预览、由用户确认才执行，每次准备、执行、失败与取消都写进本机审计日志；宿主支持 MCP Apps 时面板渲染在对话里，否则打开 127.0.0.1:3789 的浏览器工作台。'
