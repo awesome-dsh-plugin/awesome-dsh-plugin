@@ -1,0 +1,6 @@
+url: https://github.com/ifyr/dsh-daily-fortune
+name: ifyr/dsh-daily-fortune
+category: fun
+description:
+  zh: '把 DSH 空首页换成一张「今日」卡片：农历与干支日、建除与值神，十项可勾选的五星运程（健康、事业、夫妻、子女、出行、财运、父母、贵人、学业、桃花），由本命四柱与当日干支规则算出；底栏一行灰字最多显示四个所选字段（今日吉时、开运方向、开运颜色、开运数字、开运食物、开运宝石、今日不宜）。生辰只存本机，每天只算一次并缓存，历法引擎随包以客户端分块加载，不联网。'
+  en: 'Turns the empty DSH home screen into a today card: lunar date with the sexagenary day, the day officer (建除) and the day deity, plus ten optional five-star daily readings — health, career, marriage, children, travel, wealth, parents, benefactors, study and romance — scored from the saved four pillars against the day''s sexagenary rules. One grey line carries up to four of seven chosen fields (auspicious hours, direction, colour, number, food, gemstone, what to avoid). Birth data stays in local storage, each day is computed once and cached, and the almanac engine ships as a client chunk with no network access.'
