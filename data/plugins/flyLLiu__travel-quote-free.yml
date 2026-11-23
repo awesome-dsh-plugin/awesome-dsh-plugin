@@ -1,0 +1,7 @@
+url: https://github.com/flyLLiu/travel-quote-free
+name: flyLLiu/travel-quote-free
+category: ui
+description:
+  en: Adds a local travel quotation app to the DSH sidebar for itinerary paste, group codes, vehicle, hotel, ticket and meal costs, per-person totals and JSON backup. Data stays in the browser.
+  zh: 在 DSH 侧边栏打开本地旅游报价应用，支持行程粘贴识别、团号、车辆、住宿、门票与餐食费用、人均总价和 JSON 备份，数据保存在浏览器本地。
+icon: https://raw.githubusercontent.com/flyLLiu/travel-quote-free/main/assets/icon-180.png
