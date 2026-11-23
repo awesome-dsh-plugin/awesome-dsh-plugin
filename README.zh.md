@@ -1518,7 +1518,7 @@ dsh plugin --profile web add dshmarket
 - [M0rningBreeze/dsh-selection-followup](https://github.com/M0rningBreeze/dsh-selection-followup) — 在对话里选中一段文字，右键就在它旁边浮出追问卡片；答案只留在卡片里，不写进主对话，上下文深浅一点即切。
 - [m724523/dsh-deepseek-live-status](https://github.com/m724523/dsh-deepseek-live-status) — 左侧栏底部的一行状态挂件：绿点加本机四项探针（API、网页、文档、状态页）的实时延迟，点开弹出卡片看官方组件状态。刷新间隔 15 秒到 2 分钟可选。
 - [mackwan84/dsh-ui-mockup#ui-mockup](https://github.com/mackwan84/dsh-ui-mockup/tree/main/bundle/ui-mockup) — 在 DeepSeek Harness 中使用可切换的阿里云百炼与火山方舟图像服务生成 UI 线框图和高保真设计稿。
-- [magalz/dsh-claude-sidebar](https://github.com/magalz/dsh-claude-sidebar) — 给 DeepSeek Harness 加一个 Claude 风格的右侧栏：图标栏，以及针对当前会话的环境、Git、任务和子代理标签页，聊天里 shell 代码块的运行按钮、自动面板尺寸，以及供智能体使用的 open_in_browser 工具；每项功能在插件页里都是独立的一行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [magalz/dsh-claude-sidebar](https://github.com/magalz/dsh-claude-sidebar) — 给 DeepSeek Harness 加一个 Claude 风格的右侧栏：图标栏，以及针对当前会话的环境、Git、任务和子代理标签页，聊天里 shell 代码块的运行按钮、自动面板尺寸，以及供智能体使用的 open_in_browser 工具；每项功能在插件页里都是独立的一行。
 - [magalz/dsh-subagent-panel-plus](https://github.com/magalz/dsh-subagent-panel-plus) — 替换会话顶栏的子代理列表：显示模型与推理强度，按状态排序，加状态点、token 数、工作时长与开始时间，并支持归档与两次点击的永久删除子代理会话。
 - [magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) — DSH 网页 UI 综合增强：中文补全、统计单行显示、思考自动展开、对话宽度、会话归档与删除，并可选的提示词注入（默认关闭）。
 - [magic-tab-01/dsh-notes](https://github.com/magic-tab-01/dsh-notes) — 富文本笔记：支持图片、链接、符号、分类、背景、标题折叠与导出。
