@@ -1,0 +1,6 @@
+url: https://github.com/rezon-aki/dsh-context-relay
+name: rezon-aki/dsh-context-relay
+category: workflow
+description:
+  en: 'Keeps long DSH tasks inside their efficient context window with a phase protocol, budget sentinels, controlled compaction, and bounded handoffs that carry unfinished work into a fresh session.'
+  zh: '让 DSH 长任务始终待在高效上下文区间：阶段协议、预算哨兵、受控压缩，以及把未完成工作带进新会话的有界交接。'
