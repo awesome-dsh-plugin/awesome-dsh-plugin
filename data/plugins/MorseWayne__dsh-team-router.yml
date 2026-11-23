@@ -1,0 +1,6 @@
+url: https://github.com/MorseWayne/dsh-team-router
+name: MorseWayne/dsh-team-router
+category: model
+description:
+  en: Routes native DSH team delegations to authorized models using seven configurable task categories.
+  zh: 为 DSH 原生团队委派提供七种可配置的任务类别，按类别为新队友选择已授权的模型。
