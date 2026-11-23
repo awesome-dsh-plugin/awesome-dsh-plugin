@@ -1,0 +1,7 @@
+url: https://github.com/kenLiaowj/dsh-earnings-clock
+name: kenLiaowj/dsh-earnings-clock
+category: ui
+description:
+  en: Shows today's earnings so far above the composer, computed from preset work hours and a daily wage, in Chinese and English and following the active theme.
+  zh: 在输入框上方实时显示今天已赚到的金额——按预设的上下班时间与日薪计算，支持中英双语并跟随深浅色主题。
+icon: https://raw.githubusercontent.com/kenLiaowj/dsh-earnings-clock/main/assets/icon-180.png
