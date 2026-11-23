@@ -1,0 +1,6 @@
+url: https://github.com/yakumioto/dsh-workspace-settings
+name: yakumioto/dsh-workspace-settings
+category: model
+description:
+  en: 'Per-workspace settings for DeepSeek Harness: each workspace can set the default model its new sessions start from, and workspaces without one keep the deployment default.'
+  zh: '给每个工作区保存各自的设置，目前提供默认模型：新会话按工作区设置启动，没设置的工作区沿用全局默认模型。'
