@@ -1159,6 +1159,7 @@ dsh plugin --profile web add dshmarket
 - [jhuanxx44/dsh-paste-path](https://github.com/jhuanxx44/dsh-paste-path) — macOS Finder 剪贴板粘贴：在 Finder 里 Cmd+C 复制文件或文件夹，回到 DSH 按 Ctrl+V 把绝对路径插入输入框；普通文本粘贴的 Cmd+V 不受影响。
 - [jiahui-huang1/dsh-latex-formula-editor](https://github.com/jiahui-huang1/dsh-latex-formula-editor) — 免费的 DSH 侧栏 LaTeX 公式编辑器，MathJax/PDF.js 渲染全部离线：10 个符号磁贴悬停展开分类面板、10 组公式模板、实时预览、颜色/字体/字号/环境控制、带标题与搜索的收藏夹，以及九种导出格式（SVG/PNG/JPG、LaTeX/AsciiMath/Typst/HTML/MathML/OMML）与转义和分享链接。图片与 PDF 识别需要 DSH 中可用的视觉模型，或你自己配置的 OpenAI 兼容视觉端点；其余功能全部离线运行。
 - [jiangnanquan/dsh-uxexo](https://github.com/jiangnanquan/dsh-uxexo) — DSH Web 界面增强插件，提供独立「界面增强」实时开关设置页：25 套《终端美学》配色主题（适配 0.2.x 玻璃菜单）、浅色三档文字墨色、中文优先 0.5 窄体等宽字体方案与实时字体探测、紧凑布局、思考/工具链折叠胶囊、官方余额/本轮成本与 30 天用量图表、峰谷计费徽标（自动拉取年度法定节假日），以及宿主侧 settings.json 持久化。
+- [jiangsuyuan/dsh-feiq-im](https://github.com/jiangsuyuan/dsh-feiq-im) — DSH 里的局域网聊天：零配置自动发现飞秋/IPMsg 对端，可拖动气泡显示未读角标， 逐条送达/已读回执，支持文字、图片、文件收发与闪屏震动，插件对端之间可共享头像。
 - [JianGuo396/dsh-control-bar](https://github.com/JianGuo396/dsh-control-bar) — 模型跑一次回合时，屏幕顶部常驻一条进度栏（百分比按工具调用次数递增估算，回合结束才补到 100%），并标出当前是 DeepSeek 峰时还是谷时——大额 token 的操作只在峰时先问你一句。进度栏是独立 Electron 进程，找不到 Electron 二进制时会跳过。
 - [jiangyinluwei/dsh-plugInOne](https://github.com/jiangyinluwei/dsh-plugInOne) — 在设置弹窗中增加「插件设置」导航，将各插件的设置页与卡片统一收纳到可拖拽排序的顶部标签页中。
 - [JianhangLy/dsh-prompt-boost](https://github.com/JianhangLy/dsh-prompt-boost) — DSH Web GUI 输入框旁的提示词增强插件：生成前可选仅优化逻辑、结构化重写或精简压缩，也可在设置页自定义或清空系统提示词；点 ✨ 或在输入框内按 Shift+Tab，把当前草稿交给宿主模型重写，结果流式显示在原文/增强的对比预览里并显示思考计时，一键回填并保留撤销条，设置页可调模型路由、温度、长度上限、上下文感知、撤销条行为与快捷键。
@@ -4553,6 +4554,7 @@ dsh plugin --profile web add dshmarket
 - [3297304308/dsh-dream-wander](https://github.com/3297304308/dsh-dream-wander) — 给 DSH 角色加上走神与做梦：独处联想、睡眠判定、梦境演出、打码残留与衰减副本。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [379385796-sys/dsh-prompt-inject](https://github.com/379385796-sys/dsh-prompt-inject) — 基于 H1a3x 原作的 MIT 提示词模板管理维护版，支持默认与工作区继承、逐 Agent 预设指定模板或不注入、本地化设置及修订号保护的自动保存。已验证 Windows Desktop RC5 与 0.2.2-rc.1/0.2.2-rc.3/0.2.2-rc.5；不能与上游 H1a3x/dsh-prompt-inject 同装。
 - [58fly/dsh-language-guard](https://github.com/58fly/dsh-language-guard) — 把模型的思考过程、回复与工具调用描述锁定为指定语言（默认简体中文）：在 system prompt 首、中、尾注入约束段落，提供基础、强化、周期三档强度，可跟随 DSH 界面语言自动选择，设置页显示当前生效语言，并带侧栏快速切换。
+- [5923Cx/dsh-persona-self-review](https://github.com/5923Cx/dsh-persona-self-review) — 为 DeepSeek Harness 提供角色卡的创建、编辑、切换与备份。每张卡是一份纯文本，按会话注入；定期的自我审视会话可以在通过校验后小幅修改角色设定，延迟生效并保留每一版存档。可配合其他记忆插件使用，也可以在无记忆插件时单独使用；自我审视只在 GUI 打开时进行。
 - [dsh-affect](https://github.com/7gzgn/dsh-affect) — 把 AI 的情绪搬到模型外面：几条情绪轴各 0-100，按你说的话加减、随时间自己漂移，每轮把「现在处在哪一档 + 可用标签」注入系统提示。数值由插件维护：模型从注入的提示里读到当前值，只能通过插件自带的情绪工具调整，不能凭一句自报心情改数。默认空配置，一个轴都不替你定。
 - [dsh-profile-stylist](https://github.com/7gzgn/dsh-profile-stylist) — 你说想要什么样的人设，它把文案写出来并把资料页填好：昵称/简介/标语/链接由宿主模型生成，头像取本地素材库（或你给的路径），再由站点自己的上传控件完成头像入库。**默认 dry-run**，只写资料字段 —— 不碰密码、邮箱、安全设置。
 - [aa1355721445-lgtm/dsh-daily-schedule](https://github.com/aa1355721445-lgtm/dsh-daily-schedule) — 每晚用 DSH 已配置的模型，按人设（默认读 AGENT.md）和按权重抽到的日程类型（上班、休息、外出、宅家、加班、摸鱼，也可自定义）生成陪伴角色第二天的全天日程；把日期、时间、此刻在做什么、接下来做什么注入系统提示，并附一段说话方式，避免角色念时间表；提供 schedule_view、schedule_adjust 工具和按会话开关注入的 /life 指令。装了生图工作室（aa1355721445-lgtm/dsh-image-studio）时，每段日程会配上素材库里的穿搭、场景和物品。设置页可查看今天和明天的时间线、编辑日程类型。
@@ -7783,7 +7785,7 @@ dsh plugin --profile web add dshmarket
 - [Void-LifeStream/dsh-phone-butler](https://github.com/Void-LifeStream/dsh-phone-butler) — 用 adb 查看并打理一台真实的 Android 手机：存储体检、未 root 也能读到的逐应用数据大小（来自 dumpsys diskstats）、只清缓存不动数据的清理、目录统计与截图——共五个工具；读取永不改动任何东西，写入必须显式确认。
 - [volcengine/ark-cli#ark-managed-agents](https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-managed-agents) — 新增 Managed Agents 设置页，并通过 MCP 工具向方舟云端 Managed Agents 派发长任务、取回轨迹与产物。
 - [Voyager77Twt/dsh-folder-search](https://github.com/Voyager77Twt/dsh-folder-search) — 在本地 Word、PDF、PPT、Excel 文件夹中检索试题，并把选中的题目导出为 Word 试卷。
-- [W3967/dsh-comfyui-panel](https://github.com/W3967/dsh-comfyui-panel) — 导入任意 ComfyUI API 格式工作流并自动生成参数表单；内置 Krea 2 预设、队列与历史视图，以及供模型调用的 agent 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [W3967/dsh-workflow-form](https://github.com/W3967/dsh-workflow-form) — 导入任意 ComfyUI API 格式工作流并自动生成参数表单；内置 Krea 2 预设、队列与历史视图，以及供模型调用的 agent 工具。
 - [w4xxx/dsh-xia-plugins#packages/global-proxy](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/global-proxy) — 把 Host 进程的 undici 请求统一路由到本地 HTTP(S) 代理，同时保持 localhost 与国内可达 API 直连。
 - [w756568942/dsh-ptc-router](https://github.com/w756568942/dsh-ptc-router) — 按任务自动选择 PTC 或标准工具呈现，并支持模型或用户在任务中随时切换。
 - [wackyju2-beep/dsh-better](https://github.com/wackyju2-beep/dsh-better) — 归档会话管理、任务完成桌面通知、更新检查、模型路由（关键词规则 + 白名单门控 model_route）、多任务定时触发（心跳与定点任务），以及 DeepSeek 风格的消息滚动导航。
@@ -9754,6 +9756,7 @@ dsh plugin --profile web add dshmarket
 - [eightHundreds/dsh-plannotator](https://github.com/eightHundreds/dsh-plannotator) — 打开官方 Plannotator 应用（plannotator.ai）审代理写好的计划：批注、批准，或打回重写。
 - [elfgzp/dsh-agent-team-playbook](https://github.com/elfgzp/dsh-agent-team-playbook) — 通过一条有序的 system-prompt 段落把 Agent Teams 的隐性操作规则注入 Lead 会话：先规划名额再派员、名额不可回收、写入范围只是约定、没有同伴在跑时 wait_agent 会立刻返回。
 - [elias-didoo/dsh-agent-pipeline](https://github.com/elias-didoo/dsh-agent-pipeline) — 给工作区配固定评审流程：agent 做完上一步就自动发出下一步，只在你指定的地方停下来等你。
+- [emo3o/dsh-plugin2preset](https://github.com/emo3o/dsh-plugin2preset) — 把插件装成同名模式（preset），工具只在选择该模式的会话里加载；支持把一类插件工具归入同一模式，其它会话零上下文占用。
 - [EmptyVessel-000/dsh-prompt-shelf](https://github.com/EmptyVessel-000/dsh-prompt-shelf) — DSH 右侧栏快捷指令库：把常用提示词存成卡片，点一下追加到下一条消息；打开「每轮注入」后按会话在每一轮自动附带；已发出的用户消息也能一键存回。开关按会话保存，数据以原子写入存在 ~/.dsh 下的 JSON 文件中。
 - [ericddm/dsh-ToDoList](https://github.com/ericddm/dsh-ToDoList) — 侧栏项目看板：同源路由托管的单文件 HTML 看板与甘特图，卡片可拖拽换列、按截止日期排时间轴，支持 JSON 导入导出，数据只存本机。
 - [ESROAMER/codex-dsh-collab](https://github.com/ESROAMER/codex-dsh-collab) — 通过本机桥接插件与配套 Codex 技能，让 Codex 向 DeepSeek Harness 工作区派发任务、跟踪执行、回读结果并继续协作。
