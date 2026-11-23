@@ -1,0 +1,7 @@
+url: https://github.com/lzxsusy/mathtranslate/tree/main/plugins/dsh-kb
+name: lzxsusy/mathtranslate#dsh-kb
+category: docs
+description:
+  en: 'Math-literature knowledge base for agents: 1,250 structured cards from 45 translated mathematics works, each carrying its source page, a source grade and a caveat. The cards ship inside the package, so search works the moment it is installed — pure JS, zero config, no network calls. kb_search, kb_card, kb_brief and kb_stats return leads with provenance instead of unsourced answers.'
+  zh: '数译知识库：随包自带 1,250 张结构化资料卡（45 部已译数学文献），每条都带原文页码、来源等级与 caveat，装好即查；纯 JS 检索、零配置、不联网。提供 kb_search / kb_card / kb_brief / kb_stats 四个工具，给的是带出处的线索，不是没有来源的结论。'
+icon: https://raw.githubusercontent.com/lzxsusy/mathtranslate/main/plugins/dsh-kb/assets/icon-180.png
