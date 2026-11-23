@@ -1,0 +1,6 @@
+url: https://github.com/2806577488/fastsh-dsh
+name: 2806577488/fastsh-dsh
+category: tools
+description:
+  en: 'Fast, encoding-safe Windows command runner for DSH: cmd.exe plus a native PowerShell subset, PowerShell-level permissions, and background jobs with a bounded ring buffer.'
+  zh: '给 DSH 的快速、编码安全的 Windows 命令执行器：cmd.exe 加原生 PowerShell 子集，拥有 PowerShell 级权限，后台任务带环形缓冲。'
