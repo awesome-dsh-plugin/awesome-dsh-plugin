@@ -1,0 +1,7 @@
+url: https://github.com/forkgo430/dsh-clash
+name: forkgo430/dsh-clash
+category: tools
+description:
+  en: 'Lets the AI operate the local Clash (mihomo) kernel through its REST API instead of the GUI: list policy groups with their selected node, switch nodes, test latency for one node or a whole group, switch rule/global/direct mode, search the routing rules and temporarily disable one, and read live connections with traffic or drop them so a new configuration takes effect immediately. Requires enable_external_controller to be turned on in Clash Verge, which ships it disabled and otherwise exposes the API only over a named pipe. It neither owns the kernel process nor touches the system proxy switch, so every failure is a request error rather than a broken machine network.'
+  zh: '让 AI 通过 mihomo 的 REST API 操作本机 Clash 内核，不用点 GUI：列出策略组及各自选中的节点、切换节点、测单个或整组延迟、切换 rule/global/direct 模式、搜索分流规则并临时禁用某一条、查看实时连接与流量并断开它们让新配置立刻生效。需要先在 Clash Verge 里打开 enable_external_controller —— 它出厂是关闭的，只把 API 挂在命名管道上。插件不接管内核进程、不碰系统代理开关，所以失败都只是请求出错，不会把整机网络搞挂。'
+icon: https://raw.githubusercontent.com/forkgo430/dsh-clash/main/icon.svg
