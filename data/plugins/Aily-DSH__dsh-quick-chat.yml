@@ -1,0 +1,6 @@
+url: https://github.com/Aily-DSH/dsh-quick-chat
+name: Aily-DSH/dsh-quick-chat
+category: ui
+description:
+  en: 'Adds a row of quick-send chips to the DSH composer: one click sends a saved phrase, with up to ten editable presets stored locally.'
+  zh: '在 DSH 输入框里加一排快捷语胶囊：点一下立即发送，最多 10 条可编辑快捷语并保存在本地。'

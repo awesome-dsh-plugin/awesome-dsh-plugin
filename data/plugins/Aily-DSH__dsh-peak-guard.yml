@@ -1,0 +1,6 @@
+url: https://github.com/Aily-DSH/dsh-peak-guard
+name: Aily-DSH/dsh-peak-guard
+category: usage
+description:
+  en: 'Stops and resumes the sessions you select around DeepSeek peak/off-peak pricing windows, with advance reminders and holiday or make-up workday handling.'
+  zh: '按 DeepSeek 峰谷计价时段自动停止与恢复你勾选的会话，支持提前提醒、节假日与调休。'
