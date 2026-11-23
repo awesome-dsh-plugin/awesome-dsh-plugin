@@ -1,0 +1,6 @@
+url: https://github.com/wzz618/dsh-claude-workspace
+name: wzz618/dsh-claude-workspace
+category: session
+description:
+  en: 'Claude Code workspaces for DeepSeek Harness: run local or SSH-hosted Claude Code sessions over ACP, keep their directories per workspace, and record every permission decision in an audit trail.'
+  zh: 给 DSH 用的 Claude Code 工作区：在本机或 SSH 主机上通过 ACP 运行 Claude Code 会话，按工作区管理目录，并把每次权限决定写入审计。
