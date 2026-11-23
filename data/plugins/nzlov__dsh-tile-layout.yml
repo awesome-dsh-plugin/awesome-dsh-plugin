@@ -1,0 +1,7 @@
+url: https://github.com/nzlov/dsh-tile-layout
+name: nzlov/dsh-tile-layout
+category: ui
+description:
+  en: Tiles full native DSH Web conversations side by side, preserving each session's plugins and right sidebar, with saved pane widths and order and swipe navigation on mobile.
+  zh: 在 DSH Web 中并排平铺完整原生会话，保留各自的插件与右侧栏，可独立调宽、记住宽度与顺序，并在手机上滑动切换。
+icon: https://raw.githubusercontent.com/nzlov/dsh-tile-layout/main/icon.png
