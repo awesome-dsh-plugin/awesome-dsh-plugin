@@ -1,0 +1,6 @@
+url: https://github.com/CHENJIAMIAN/dsh-thinking-toggle
+name: CHENJIAMIAN/dsh-thinking-toggle
+category: ui
+description:
+  en: 'Adds one button to the composer toolbar that turns the model thinking on or off on each click, cycling between off and the last reasoning level it used.'
+  zh: '在输入框工具行加一个按钮：点一下关闭模型思考，再点一下回到上次的思考档位，如此循环。'
