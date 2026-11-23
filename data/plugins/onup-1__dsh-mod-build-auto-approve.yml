@@ -1,0 +1,6 @@
+url: https://github.com/onup-1/dsh-mod-build-auto-approve
+name: onup-1/dsh-mod-build-auto-approve
+category: security
+description:
+  en: 'Auto-approves Minecraft mod-build sandbox escalations (Gradle, Forge, Fabric) and remembers the keywords, so repeated build work stops asking. Destructive wording and plugin_manager never auto-approve.'
+  zh: 'Minecraft 模组构建类提权（Gradle / Forge / Fabric 等）自动放行并记住关键词，重复构建不再反复弹窗；删除类措辞与 plugin_manager 永不自动放行。'
