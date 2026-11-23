@@ -1,0 +1,7 @@
+url: https://github.com/literaf/dsh-fulltext
+name: literaf/dsh-fulltext
+category: tools
+description:
+  en: Indexed full-text excerpt search through AI4Scholar with a dedicated reading workspace, source-type filters and saved offline HTML/CSV reports; optional AI synthesis preserves original passages and source metadata.
+  zh: 通过 AI4Scholar 检索已索引的全文片段，提供独立阅读工作台、来源类型筛选与本地 HTML/CSV 报告；可用 AI 整理已有报告，同时保留原文与来源信息。
+icon: https://raw.githubusercontent.com/literaf/dsh-fulltext/main/assets/icon.png
