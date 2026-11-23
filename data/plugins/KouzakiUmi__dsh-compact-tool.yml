@@ -1,0 +1,6 @@
+url: https://github.com/KouzakiUmi/dsh-compact-tool
+name: KouzakiUmi/dsh-compact-tool
+category: session
+description:
+  en: 'Settings page for the built-in context compaction with global and per-model trigger, headroom and retain settings and a budget bar, plus a context usage ring in the composer footer that marks the compaction trigger point and opens a live panel to adjust the current model. Changes apply to new sessions.'
+  zh: '为 DSH 内置的上下文压缩提供设置页：全局与按模型的触发、预留和保留参数，以及预算条；输入框页脚的上下文用量环标出压缩触发点，点开可实时调整当前模型的策略。改动对新会话生效。'
