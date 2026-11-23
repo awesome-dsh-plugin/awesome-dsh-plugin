@@ -2,5 +2,5 @@ url: https://github.com/liuyong0426/dsh-voice-polish
 name: liuyong0426/dsh-voice-polish
 category: voice
 description:
-  en: Tidies dictated drafts in the DSH composer into coherent prose, with optional prompt enhancement, auto-tidy after a dictation insert, and paste-safe detection.
-  zh: 把 DSH 输入框里的语音口述草稿整理成连贯文字，可切换为提示词增强，支持口述后自动整理并跳过粘贴内容。
+  en: 'Tidies dictated drafts in the DSH composer into coherent prose, with optional prompt enhancement, auto-tidy after a dictation insert, and paste-safe detection.'
+  zh: '把 DSH 输入框里的语音口述草稿整理成连贯文字，可切换为提示词增强，支持口述后自动整理并跳过粘贴内容。'
