@@ -1,6 +1,7 @@
 url: https://github.com/flyLLiu/travel-quote-free
 name: flyLLiu/travel-quote-free
-category: tools
+category: ui
 description:
-  en: Local-first travel quotation tool for DSH with offline quotes, customer export, and local usage reporting.
-  zh: 本地优先的 DSH 旅游报价工具，支持离线报价、客户版导出和本地使用报告。
+  en: Adds a local travel quotation app to the DSH sidebar for itinerary paste, group codes, vehicle, hotel, ticket and meal costs, per-person totals and JSON backup. Data stays in the browser.
+  zh: 在 DSH 侧边栏打开本地旅游报价应用，支持行程粘贴识别、团号、车辆、住宿、门票与餐食费用、人均总价和 JSON 备份，数据保存在浏览器本地。
+icon: https://raw.githubusercontent.com/flyLLiu/travel-quote-free/main/assets/icon-180.png
