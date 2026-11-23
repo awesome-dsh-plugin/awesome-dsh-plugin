@@ -1,0 +1,7 @@
+url: https://github.com/LMY1723/theme-basic/tree/main/packages/dsh-plan-access-mode
+name: LMY1723/theme-basic#dsh-plan-access-mode
+category: ui
+description:
+  en: Adds a read-only Plan mode to the DeepSeek Harness access-mode dropdown, with plan approval before edits.
+  zh: 在 DeepSeek Harness 的访问模式下拉中加入计划模式：计划期间只读，计划审核通过后恢复原权限并开始修改。
+icon: https://raw.githubusercontent.com/LMY1723/theme-basic/main/packages/dsh-plan-access-mode/assets/icon.png
