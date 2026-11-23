@@ -3257,6 +3257,7 @@ dsh plugin --profile web add dshmarket
 - [savasana168/dsh-token-usage-heatmap](https://github.com/savasana168/dsh-token-usage-heatmap) — 在 DeepSeek Harness 的网页界面上查看 Token 用量：顶栏小标记点开一块面板，含 26 周每日用量热力图（按当日峰值的四档蓝色）、逐模型的柱状图，以及全部 / 30 天 / 7 天三个区间的 token、会话、调用、活跃天数、高峰时段与最常用模型；全部读本地会话日志，不联网。
 - [SavaStone/dsh-provider-limits](https://github.com/SavaStone/dsh-provider-limits) — 在 DSH 侧栏底部显示供应商额度：OpenRouter 剩余余额，以及 OpenCode Go 滚动 5 小时、每周和每月的配额窗口，以进度条或百分比展示，可切换「剩余 / 已用」；当前供应商不受支持时，还会提供 Creator 模式请求。
 - [SayrenLin/dsh-usage-dock](https://github.com/SayrenLin/dsh-usage-dock) — DeepSeek Harness 侧栏的用量与余额悬浮卡：今日花费配北京时间峰谷计价带、今日用量与缓存命中率，以及一行余额入口。面板里有余额账户明细、近八周活跃热力图（可点选任意一天），以及当天的用量、命中率、峰谷费用和按会话拆分的明细（每个会话带自己的成分条）。用量只读本机会话日志；唯一的对外请求是用 DSH 里已配置的供应商 base URL 查询余额。基于 Aisland-SJL/dsh-usage 大幅改写的分支，使用相同的插件 id（usage），两者只能安装其一。
+- [sayzwx/dsh-monitor](https://github.com/sayzwx/dsh-monitor) — 在侧边栏加入「监控台」面板，读取本地会话日志，按模型和任务统计调用次数、token、缓存命中率与预估花费，并提供模型占比、每日趋势图表；官方 DeepSeek 模型按官方高峰/空闲价自动计价，第三方模型可在面板里填写单价。
 - [scientificmaniac/dsh-faremeter](https://github.com/scientificmaniac/dsh-faremeter) — 按 DeepSeek 官方价目显示每轮、每会话与每工作区的对话费用人民币金额，支持峰谷分时与 Search/Fetch 按次计费。
 - [sdiwenchen-lang/DeepSeek-Usage](https://github.com/sdiwenchen-lang/DeepSeek-Usage) — DSH 里的 DeepSeek 用量面板：官方账户余额与账单、每日用量日历，以及按可编辑的逐模型费率估算全部 Provider 的本地会话日志用量。
 - [SenmuuuuW/dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report) — 深迹 DeepTrace — 从会话日志生成日报/周报/月报/年报/自定义区间报告：成本与 Token 拆解、8 条确定性洞察、协作复盘、实时模型余额、PDF/PNG/HTML 导出；只读，绝不改写历史。
