@@ -1,0 +1,7 @@
+url: https://github.com/literaf/dsh-plotfig
+name: literaf/dsh-plotfig
+category: vision
+description:
+  en: Create scientific illustrations through AI4Scholar, edit images and recognized text on conversation or standalone canvases, split layers, and export PNG, PDF or layered PSD, with SVG export for text-and-shape boards.
+  zh: 通过 AI4Scholar 生成科研插图，在对话画布或独立画布中编辑图片与识别出的文字、拆分图层，导出 PNG、PDF 或分层 PSD，纯文字与图形画板支持 SVG。
+icon: https://raw.githubusercontent.com/literaf/dsh-plotfig/main/assets/icon.png
