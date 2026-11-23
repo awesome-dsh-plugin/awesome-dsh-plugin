@@ -1,0 +1,6 @@
+url: https://github.com/avego/dsh-api-monitor
+name: avego/dsh-api-monitor
+category: dev
+description:
+  en: "Inspects the Host's outbound API calls in a right-sidebar tab — URL, method, every request header, JSON body and response — assembling streamed replies into readable text and highlighting search across each view."
+icon: https://raw.githubusercontent.com/avego/dsh-api-monitor/main/icon.png
