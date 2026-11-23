@@ -1,5 +1,5 @@
-url: https://github.com/yikart/aitoearn-dsh-plugin/tree/master/packages/dsh-plugin-aitoearn-oauth
-name: yikart/aitoearn-dsh-plugin#packages/dsh-plugin-aitoearn-oauth
+url: https://github.com/yikart/aitoearn-dsh-plugin/tree/master/packages/dsh-plugin-aitoearn
+name: yikart/aitoearn-dsh-plugin#packages/dsh-plugin-aitoearn
 category: tools
 description:
   en: 'Aitoearn: OAuth 2.1 + PKCE login with auto token refresh, connecting AiToEarn MCP tools for copy, image and video creation, and one-click publishing to Douyin, Kuaishou, Xiaohongshu, WeChat Official, Bilibili, Facebook, TikTok and more.'
