@@ -8,4 +8,4 @@ description:
     and file transfer, screen knock, and avatars shared between plugin peers.
   zh: >-
     DSH 里的局域网聊天：零配置自动发现飞秋/IPMsg 对端，可拖动气泡显示未读角标，
-    逐条送达/已读回执，支持文字、图片、文件收发与闪屏震动，插件对端之间可共享头像。
+    逐条送达/已读回执，支持文字、图片、文件收发与闪屏震动，插件对端之间可共享头像。icon: https://raw.githubusercontent.com/jiangsuyuan/dsh-feiq-im/main/assets/icon-180.png
