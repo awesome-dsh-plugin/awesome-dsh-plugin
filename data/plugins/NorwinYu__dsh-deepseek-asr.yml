@@ -1,0 +1,6 @@
+url: https://github.com/NorwinYu/dsh-deepseek-asr
+name: NorwinYu/dsh-deepseek-asr
+category: voice
+description:
+  en: 'DeepSeek ASR recognizer for the built-in Voice input bundle: the microphone records 16 kHz mono WAV and transcribes it through the paid /v1/tools/asr endpoint, so no model is downloaded and the transcript lands in the composer as an editable draft.'
+  zh: '为内置 Voice input bundle 提供的 DeepSeek ASR 识别器：麦克风录制 16 kHz 单声道 WAV，经付费的 /v1/tools/asr 接口转写，无需下载本地模型，转写结果作为可编辑草稿插入输入框。'
