@@ -1,0 +1,6 @@
+url: https://github.com/meng-lx/dsh-blueprint-tree
+name: meng-lx/dsh-blueprint-tree
+category: workflow
+description:
+  en: 'Blueprint-shaped workflows for DSH: a graph of units (start, end, soft, hard, choice, sub-blueprint), one TypeScript method file per blueprint that the plugin generates and rewrites when an upstream contract changes, a six-state runtime (normal, reminder, error, retired, stale, disconnected) that skips units it must not run, and unit, blueprint and project test modes.'
+  zh: '图形化工作流蓝图：单元分开始、结束、软、硬、选择、子蓝图，每个蓝图一份由插件生成、上游契约变化时自动重写的 TypeScript 方法文件，运行按六状态（正常、提醒、报错、废弃、失效、断联）跳过不该跑的格子，另有单元、蓝图、项目三种测试。'
