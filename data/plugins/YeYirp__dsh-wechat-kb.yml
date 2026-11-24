@@ -1,0 +1,6 @@
+url: https://github.com/YeYirp/dsh-wechat-kb
+name: YeYirp/dsh-wechat-kb
+category: notify
+description:
+  en: 'WeChat customer-service plugin for DSH with a local knowledge base, text-only replies, and optional offline OCR for images embedded in PDF and Office files.'
+  zh: 'DSH 微信知识库客服插件：私聊必答、群聊只认真 @，答案只来自本地知识库；支持 PDF/Office 内嵌图离线 OCR，微信回复永远只发文字。'
