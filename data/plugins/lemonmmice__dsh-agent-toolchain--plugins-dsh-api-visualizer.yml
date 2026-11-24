@@ -1,0 +1,7 @@
+url: https://github.com/lemonmmice/dsh-agent-toolchain/tree/main/plugins/dsh-api-visualizer
+name: lemonmmice/dsh-agent-toolchain#dsh-api-visualizer
+category: dev
+tarball: https://github.com/lemonmmice/dsh-agent-toolchain/releases/download/dsh-api-visualizer-v0.3.1/dsh-api-visualizer-0.3.1.tgz
+description:
+  en: 'Fiddler-style API capture panel for the dsh web GUI: live-tails the client process''s System.Net trace log into a searchable record store (method, url, status, duration, headers, bodies), with an optional local MITM proxy doing per-domain HTTPS decryption, hosts-based transparent interception for clients that bypass the proxy, AutoResponder-style mock/delay/timeout/reset rules, weak-network simulation, and eight api_capture_* agent tools for capture, query, mocking, interception and throttling. Windows x64; ships a prebuilt Rust capture store. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'dsh 网页版 GUI 的 Fiddler 式接口捕获面板：实时 tail 客户端进程的 System.Net 跟踪日志并入库（方法/URL/状态/耗时/请求头/响应体），可选本地 MITM 代理按域解密 HTTPS、对绕过代理的客户端做 hosts 透明拦截，AutoResponder 式 mock/延时/超时/断开规则与弱网模拟，并提供 8 个 api_capture_* agent 工具（捕获/查询/mock/拦截/弱网）。Windows x64；自带预编译 Rust 捕获存储。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

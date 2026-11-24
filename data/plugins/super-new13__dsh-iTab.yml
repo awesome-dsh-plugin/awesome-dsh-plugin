@@ -1,0 +1,7 @@
+url: https://github.com/super-new13/dsh-iTab
+name: super-new13/dsh-iTab
+category: ui
+description:
+  en: 'Browser-style session tab strip for the DSH web header: one tab per open session, close others / close right / close all from the tab context menu, a reopen-closed history of the last 50 tabs, middle-click close, running and completed status dots aligned with the sidebar, drag reorder, hover bubbles showing project and git branch, and a settings page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 网页端顶部的浏览器式会话标签条：每个打开的会话一个标签，右键菜单可关闭其他/右侧/全部标签页，可重新打开最近关闭的 50 个标签，支持中键关闭、与侧边栏一致的运行/完成状态圆点、拖拽排序，悬停气泡显示所属项目与 git 分支，附配置页。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/super-new13/dsh-iTab/main/assets/icon-180.png

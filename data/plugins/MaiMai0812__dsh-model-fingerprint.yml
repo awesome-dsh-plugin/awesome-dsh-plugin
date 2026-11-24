@@ -1,0 +1,6 @@
+url: https://github.com/MaiMai0812/dsh-model-fingerprint
+name: MaiMai0812/dsh-model-fingerprint
+category: model
+description:
+  en: 'Sidebar port of the lm.ikale.io model fingerprint page: it asks a model already connected to DSH, through the host llm service, for 292 to 332 integers from 1 to 355, compares the reply with the reference library served by that site, and ranks the candidate models, adding a calibrated probability once three samples are collected. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 lm.ikale.io 的模型指纹检测页做成侧边栏面板：经宿主 llm 服务让已接入的模型凭第一反应写下 292 到 332 个 1 到 355 的整数，与站点提供的参考库比对后给出候选模型排名，收满三条样本时给出校准概率。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

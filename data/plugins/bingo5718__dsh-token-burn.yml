@@ -1,0 +1,7 @@
+url: https://github.com/bingo5718/dsh-token-burn
+name: bingo5718/dsh-token-burn
+category: usage
+description:
+  en: 'Token usage panel: a sidebar card and a full dashboard with per-model input/output/cache bars, a 7-day total, and per-call billing that charges local models nothing and platform APIs at their official rates. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Token 消耗面板：侧边栏小卡与完整面板，按模型展示输入、输出、缓存的堆叠条与近 7 天总量，并按官方价逐次计费（本地模型 $0，未定价模型显式标注）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/bingo5718/dsh-token-burn/main/docs/icon-180.png

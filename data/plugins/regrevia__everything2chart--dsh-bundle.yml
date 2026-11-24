@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/everything2chart/tree/main/dsh-bundle
+name: regrevia/everything2chart#dsh-bundle
+category: tools
+description:
+  en: 'Adds piano_score, which takes one audio link and writes a playable score: staff PNGs, numbered notation, MusicXML, MIDI. It transcribes the background music and drops the vocal; drums and non-melodic parts are folded into the left hand. The three tiers are one arrangement in three keys and differ only in the key it is written in, ranked on the black keys the hand actually presses, so easy is the one with the fewest; playback restores the original pitch. Long audio can be previewed with seconds. The project is called everything2chart; this catalog entry keeps the name dsh-pianochart, which only says which host it plugs into.'
+  zh: '带一个 piano_score 工具：给一条音频链接，产出一份能弹的谱，含五线谱 PNG、简谱、MusicXML、MIDI。只转录背景音乐、去掉人声；鼓组和非旋律声部并入左手。三档是同一套编配的三种调，只差写成的调，按手上真正按到的黑键数排，所以 easy 最少；回放恢复原调。长音频可以用 seconds 先出一段预览。项目叫 everything2chart，这个目录条目保留 dsh-pianochart 这个名字，它只说明插进哪个宿主。'
+icon: https://raw.githubusercontent.com/regrevia/everything2chart/main/dsh-bundle/icon.png

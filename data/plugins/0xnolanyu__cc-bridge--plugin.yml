@@ -1,0 +1,6 @@
+url: https://github.com/0xnolanyu/cc-bridge/tree/main/plugin
+name: 0xnolanyu/cc-bridge#plugin
+category: session
+description:
+  en: "Bridge DSH sessions to Claude Code as native cross-session peers via MCP tools (cc_who/cc_send/cc_recv/cc_status), zero install on the CC side."
+  zh: "把 DSH 会话桥接为 Claude Code 的原生跨会话 peer（cc_who/cc_send/cc_recv/cc_status 四个 MCP 工具），CC 侧零安装。"

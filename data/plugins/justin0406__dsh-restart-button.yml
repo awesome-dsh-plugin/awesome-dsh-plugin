@@ -1,0 +1,6 @@
+url: https://github.com/justin0406/dsh-restart-button
+name: justin0406/dsh-restart-button
+category: ui
+description:
+  en: 'Adds a restart button to the sidebar footer. It asks the desktop app to quit, waits until the old instance is really gone, relaunches it with a clean environment and only reports success once the new instance stays alive; failed launches retry, and the helper log records every phase. Also restarts dsh web in place. macOS and Windows. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在侧栏底部加一枚重启按钮：请求桌面应用退出，等旧实例彻底消失后用干净环境重新拉起，并要求新实例稳定存活才算成功；启动失败会重试，助手日志记录每个阶段。同时支持就地重启 dsh web。macOS 与 Windows。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

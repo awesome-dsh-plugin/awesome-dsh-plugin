@@ -1,0 +1,8 @@
+url: https://github.com/harryzhz/dsh-lark-bridge
+name: harryzhz/dsh-lark-bridge
+category: notify
+description:
+  en: 'Multi-agent Lark (Feishu) bridge over official WebSocket connections (no public URL required), with a Web/Desktop console for bot management, per-group workspace/runtime/role inheritance, selective proactive group listeners, scheduled task notifications, one-shot follow-up reminders, nightly Dreaming memory consolidation, isolated Git worktree creation, and an auto-installed lark-bridge CLI. Non-commercial license: commercial use requires the author''s permission.'
+  zh: '基于飞书官方 WebSocket 长连接的 DeepSeek Harness 多智能体桥接插件（无需公网域名），提供 Web/Desktop 控制台，支持多应用托管、群级工作区/运行时/角色继承配置、精细化主动监听、定时任务群通知、一次性跟进提醒、夜间 Dreaming 离线记忆整理、隔离 Git worktree 创建与自动装配的 lark-bridge CLI。非商业许可：商业用途需经作者授权。'
+tarball: https://github.com/harryzhz/dsh-lark-bridge/releases/latest/download/dsh-lark-bridge.tgz
+icon: https://raw.githubusercontent.com/harryzhz/dsh-lark-bridge/main/docs/assets/icon-180.png
