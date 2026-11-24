@@ -4653,6 +4653,7 @@ dsh plugin --profile web add dshmarket
 - [Anarrogantcat/dsh-identity](https://github.com/Anarrogantcat/dsh-identity) — DSH 身份系统：可编辑内核、证据制 traits、按需召回的记忆、心情、关系、精力控频、自主提议与共情；QQ 只是一个可选通道。
 - [Applepinea/dsh-qq-access](https://github.com/Applepinea/dsh-qq-access) — 把 dsh 接到个人 QQ：NapCat 托管与扫码登录、私聊/群聊 AI 回复（含图片理解）与批量节流、本地归档与轮询补漏、群内 @ 与撤回自己刚发的消息、QQ 空间留言，并带左侧栏管理面板。默认任何 QQ 用户私聊该账号（或在群里 @ 它）都会得到 AI 回复；把 access.privateMode / groupMode 设为 allowlist 才限制。主人专属命令仍只对主人生效。
 - [ArthurZhu1992/dsh-zh-yayan](https://github.com/ArthurZhu1992/dsh-zh-yayan) — 所思所言，皆成中文。DSH 起笔即中文，一线到底——主 agent、子智能体、团队与后台任务的推理与思考一律简体中文；说得出，就查得到。
+- [ASER-ho/Loji-skill](https://github.com/ASER-ho/Loji-skill) — 安装 loji-dsh 插件：注册《The Fire Rises》角色「逻辑/征酱」的 loji-skill 技能，并写入「长征机/逻辑」Agent Preset，按需加载角色知识库、世界观、表达风格与安全边界参考。
 - [AshenSeeker/dsh-mind](https://github.com/AshenSeeker/dsh-mind) — 给 DeepSeek Harness 加一套心情系统：33 种心情，每 3~6 小时一次周期判定，并随消息小幅增减；另有跨会话记忆、审美品味库、加密日记。心情、记忆、品味、日记四个工具都可由模型调用，五个模块各有独立开关。心情底分全为 0，平静的日子就显示平静，不会永远挂着某个心情在跑。日记只由模型自己写，不生成系统总结模板。本插件是 JMX-4869/dsh-mood 的精简 fork：二者注册同名的心情 / 日记 / 品味 / 记忆工具，不能同时安装，只能二选一。
 - [aureth-labs/dsh-aurabot-qq](https://github.com/aureth-labs/dsh-aurabot-qq) — 通过 SnowLuma（OneBot v11）让 agent 以人设角色住进 QQ：私聊与群聊、语音条、表情包、QQ 空间日记、刷 B 站、翻唱、生图、长期记忆与心情。每项本事都是模块，可关闭、替换或在本地扩展——热重载的扩展模块还能改写群聊回不回、提示词、最终发出的消息和每个聊天用的模型。默认安全（总开关关、试运行开）。
 - [Awoodwhale/dsh-agent-persona](https://github.com/Awoodwhale/dsh-agent-persona) — 按工作区路径或会话 ID 分发 system prompt 人设（完全一致 / 前缀 / 包含 / 正则），可指定一条默认人设兜底；会话页有「人设」页签，能看到实际发出去的提示词；人设列表可导入导出；另有一个开关拒绝工具写入人设存储。
@@ -5066,6 +5067,7 @@ dsh plugin --profile web add dshmarket
 - [Feahter/dsh-plugins#archive-rsi](https://github.com/Feahter/dsh-plugins/tree/main/plugins/archive-rsi) — 会话归档：标签、备注与会话指标；对归档语料跑 Plan-Do-Check-Act，产出 prompt 与 AGENTS.md 规则，采纳后在后续会话上重新度量。纯本地运行，不调用模型。
 - [feiertu/dsh-input-rewriter](https://github.com/feiertu/dsh-input-rewriter) — 你只管正常打字，停下约两秒，它就把你刚写的话改写成更清晰、以第一人称表达的版本，更容易得到好答案；贴进来的代码、网址、长文原样不动，缺的信息用占位符标出而不乱猜，一次问几件事也一件不漏、排好顺序。
 - [feigo313/dsh-structured](https://github.com/feigo313/dsh-structured) — DSH 人格模式 + 结构化输出：身份头 / 三卡 / 收尾由插件渲染，模型只交 persona 内容块；人格默认开启、可显式关闭，结构化按会话开关。
+- [FelixRaySun/dsh-session-cleanup](https://github.com/FelixRaySun/dsh-session-cleanup) — 真正删除会话且可还原——通过官方 API 解绑注册表，把日志原子移动到保留 7 天的回收站，并清理孤儿日志目录与孤儿投影缓存。
 - [fengxiforcy/dsh-surrogate-guard](https://github.com/fengxiforcy/dsh-surrogate-guard) — 在工具输出写入会话日志前中和落单的 UTF-16 代理字符，避免会话永久 400 无法继续。
 - [FenrirCait/dsh-session-leftover-purge](https://github.com/FenrirCait/dsh-session-leftover-purge) — 在 DeepSeek Harness 中删除会话后，清理 billion-context 快照；cost-meter 账本记录的清理默认关闭，可在设置里打开。
 - [Fioraen/My-code-warehouse#dsh-withdraw](https://github.com/Fioraen/My-code-warehouse/tree/main/packages/dsh-withdraw) — 右键已发出的消息即可修改或撤回：先停住正在生成的回答，再把这条消息及其之后的内容替换掉——撤回只留下一条「已撤回」标记并就此停下，修改则按新正文重新提问。
@@ -5297,7 +5299,7 @@ dsh plugin --profile web add dshmarket
 - [LINJJ749/dsh-one-click-session-delete](https://github.com/LINJJ749/dsh-one-click-session-delete) — 为 DeepSeek Harness 工作区侧栏增加会话一键永久删除：行悬停垃圾桶按钮、菜单项、确认框、运行中保护、派生会话级联，并清理会话日志目录、投影缓存与工作区记账。
 - [Linusteller/dsh-session-delete](https://github.com/Linusteller/dsh-session-delete) — 在侧栏会话菜单的「归档会话」下方新增红色「删除会话」项，配自定义确认对话框，实现真正的会话删除——停止会话进行中的工作、摘除工作区/归档/置顶记账、删除投影缓存与日志目录，然后广播移除事件让该行立即消失，而不是只能归档。会话删除会把对话从磁盘彻底移除且无法恢复；删除会话与会话删除是同一种操作的两种叫法，搜其中任意一种都可以找到本插件。
 - [LIQiang-IT/dsh-session-delete](https://github.com/LIQiang-IT/dsh-session-delete) — 在「归档会话」之后新增「删除会话」：彻底删除该会话的日志目录、回退快照与投影缓存条目、工作区/归档/置顶登记、绑定它的定时任务，以及聊天索引与用量账本中的对应行；删除前先列出全部目标，同一操作也以 session_delete 工具（支持 dryRun）提供给 Agent。
-- [liren1120/dsh-export-center](https://github.com/liren1120/dsh-export-center) — 批量搬迁 DeepSeek Harness 会话与插件：一次导出多条会话（含附件、子会话与原始时间），预检后在另一台机器恢复，并在同一个归档里搬迁插件清单。
+- [liren1120/dsh-export-center](https://github.com/liren1120/dsh-export-center) — 导出中心：批量导出并搬迁 DeepSeek Harness 会话与插件——一次导出多条会话（含附件、子会话与原始时间），预检后在另一台机器恢复，同时搬迁插件清单。
 - [listky/dsh-queue-message-merge](https://github.com/listky/dsh-queue-message-merge) — 将当前 DSH 会话普通队列中的纯文本消息用英文分号（;）合并为一条排队消息，不会提交发送。
 - [LittleGreyy/dsh-session-archaeology](https://github.com/LittleGreyy/dsh-session-archaeology) — 把一段历史会话离线蒸馏成可复用的 Skill：提取跑通的步骤、改过的文件、失败与修正、验证命令，并标注各自的会话事件序号。
 - [littleyellowbicycle/dsh-atc](https://github.com/littleyellowbicycle/dsh-atc) — 左侧栏一个面板看全本机 coding agent 的会话（DSH/codex/opencode/WorkBuddy/Gemini/ZCode/MiniMax），标题和状态取自各自的本地记录，只读本地、零 token。点卡片回到那条会话：DSH 在宿主内切换，其它工具把它的窗口提到前台；在跑的卡会写它当前在做什么，详情抽屉能看到最近几次工具调用。HTTP 路由走 DSH 自己的准入检查，浏览器里打开的网页调不到它。
@@ -8559,7 +8561,7 @@ dsh plugin --profile web add dshmarket
 - [robin421/dsh-html-inspector](https://github.com/robin421/dsh-html-inspector) — HTML 选区模式：点选本机 demo 页面中的任意元素，定位信息（选择器、文本、HTML 片段）自动写入对话输入框，供 AI 精准修改。
 - [rogerdigital/dsh-searxng](https://github.com/rogerdigital/dsh-searxng) — 基于 SearXNG 的 web_search provider：通过自建实例的 JSON API 实现免费、免密钥的元搜索，附仅绑定回环地址的 docker-compose 示例。
 - [ROY32172310/dsh-ego-webqa](https://github.com/ROY32172310/dsh-ego-webqa) — 把 ego-webqa 的 MCP 审计服务接入 DSH，在移动端视口矩阵中检查已部署页面并返回结构化修复证据；前置需要在同一台机器上装好 uv/uvx 与 Playwright Chromium 无头运行时。
-- [Ruak/dsh-native-shared-browser](https://github.com/Ruak/dsh-native-shared-browser) — 为 DeepSeek Harness 提供右侧栏原生浏览器标签，用户和 agent 通过本地命令队列操作同一个 Electron webview 实时页面。
+- [Ruak/dsh-native-shared-browser](https://github.com/Ruak/dsh-native-shared-browser) — 为 DeepSeek Harness 提供右侧栏原生浏览器标签，用户和 agent 通过本地命令队列操作同一个 Electron webview 实时页面；标签属于打开它的会话，显示在该会话自己的右侧栏面板中。
 - [RunhuaChen/dsh-exa-parallel-mcp](https://github.com/RunhuaChen/dsh-exa-parallel-mcp) — 通过内置的 @deepseek-ai/dsh-mcp-client 桥接同时接入 Exa 与 Parallel 两个托管搜索 MCP 端点（mcp.exa.ai 与 mcp.parallel.ai），提供 Exa 的搜索与抓取工具，以及 Parallel 的搜索、抓取与垂直数据工具。两个端点均匿名可用，无需 API key。
 - [SciF-Lin/dsh-browsercontrol-mcp](https://github.com/SciF-Lin/dsh-browsercontrol-mcp) — 通过官方 dsh-mcp-client 挂载微软的 Playwright MCP，把浏览器工具以 stdio 接入智能体；一次性的 CDP 授权由提示注入、调用拦截与 /bw-setup 命令引导完成。
 - [Shad0wwa1ker/dsh-browser-mode](https://github.com/Shad0wwa1ker/dsh-browser-mode) — 新增「浏览器操作」Agent 预设（基于 Playwright MCP 工具集的导航、填表、点击与截图规程），并加门禁：其他预设里的浏览器工具调用一律拒绝，直到用户通过内置的 browser_access 工具授权该会话。插件自带 Playwright MCP provider，插件页的设置页与 browser_source 工具都能在运行时把浏览器来源切换为 Microsoft Edge（默认）、Playwright 内置 Chromium 或 CDP 地址。需在 profile 里保留共享的 browser-use 注册表行（一个进程只能有一个 provider）。
@@ -9346,7 +9348,6 @@ dsh plugin --profile web add dshmarket
 - [appthin/dsh-skills-manager-plus](https://github.com/appthin/dsh-skills-manager-plus) — 在 DSH 设置中管理技能与命令：跨全局与项目作用域查看、启用/停用、编辑、删除与添加技能，并把常用提示词保存为斜杠命令。
 - [Apq/dsh-skill-author](https://github.com/Apq/dsh-skill-author) — 模型侧的 skill_manage 工具，可在用户级或项目级保存、替换、删除 Harness 技能，并常驻一段系统提示督促模型在收尾时评估技能沉淀。
 - [arch3rPro/Skills-Space#dsh-skills-space](https://github.com/arch3rPro/Skills-Space/tree/main/packages/dsh-skills-space) — 在 DeepSeek Harness 中浏览、安装并管理全局和项目技能。
-- [ASER-ho/Loji-skill](https://github.com/ASER-ho/Loji-skill) — 把《The Fire Rises》角色「逻辑/征酱」的 Loji-skill 注册为 DSH Agent Skill，按需加载角色知识库、世界观、表达风格与安全边界参考。
 - [AshenSeeker/dsh-group-meeting-slides](https://github.com/AshenSeeker/dsh-group-meeting-slides) — 把英文论文 PDF 做成中文组会汇报 PPT，图表用原文真实像素。
 - [AshenSeeker/lit-report-ppt](https://github.com/AshenSeeker/lit-report-ppt) — 把一篇期刊论文默认做成三份产物 —— 中文组会文献汇报 PPT（南阳师范学院物理模板）、配套 Word 讲稿、双色答辩预测问答 HTML（十题左右，答案简短直接）。需本机 Python 3 及 python-pptx、python-docx、Pillow、pymupdf（pypdf 兜底）依赖，可用 pip install -r requirements.txt 安装。
 - [Awoodwhale/dsh-skill-mcp-manager](https://github.com/Awoodwhale/dsh-skill-mcp-manager) — 在全局、项目、会话三级管理 skill 与 MCP 服务器：读取 15 个来源的技能目录（DSH、通用 .agents 目录，以及 Claude Code、Codex、Cursor 等 13 个编程 agent），可按整个来源或单个技能启停、添加额外的技能目录、新建编辑删除技能、连接本地进程或 HTTP 的 MCP 服务器，并能在输入框里为某一次发送单独选择带上哪些技能与服务器。
