@@ -7208,6 +7208,7 @@ dsh plugin --profile web add dshmarket
 - [lijieyu233/dsh-codex-account-tools](https://github.com/lijieyu233/dsh-codex-account-tools) — 为 Codex 订阅插件提供账号 JSON 导入、预览与导出，支持重复识别和完整备份确认。需先安装 dsh-codex-subscription 3.2.6 或更高版本。
 - [lijiusa/dsh-workbuddy-daily-credits](https://github.com/lijiusa/dsh-workbuddy-daily-credits) — 输入框工具行卡片与 agent 工具一键领取 WorkBuddy 每日签到积分与福利积分；走官方网页 OAuth 登录，无需桌面客户端或第三方插件。若本机其他 WorkBuddy 插件已在 ~/.dsh/workbuddy-vault 里保存了登录态，会直接复用，不再让你重新授权。
 - [lilixinsniper/dsh-intent-recognition](https://github.com/lilixinsniper/dsh-intent-recognition) — 五层意图识别流水线（规则、pgvector 向量检索、Jev 概率精判、微调仲裁、LLM 兜底），带场景管理界面、PostgreSQL 存储与可分发 API 服务。
+- [limowan/dsh-reading-desk](https://github.com/limowan/dsh-reading-desk) — 微信读书阅读台：月度书单与日历、按 FSRS 排期的划线回顾、带 AI 摘要的笔记、月度阅读展与阅读统计。
 - [LIN-F1SH/dsh-prompt-lint](https://github.com/LIN-F1SH/dsh-prompt-lint) — 读你的历史会话，找出反复踩的提问坑（缺路径与版本、没定输出格式、漏说前置条件导致工具失败），每条给一段可直接粘贴的改写；输入框右侧一键把草稿改成更短的带约束版本。
 - [linfeicxy/dsh-idea-box](https://github.com/linfeicxy/dsh-idea-box) — 界面里一颗灯泡：写一句话或拖一张截图，回车就存成工作区里的 Markdown 文件。
 - [LINGTIAN303/dsh-agents-visualization](https://github.com/LINGTIAN303/dsh-agents-visualization) — 在 DSH 设置页查看、创建与编辑 AGENTS.md 等 AI 规则文件：项目级跟随工作区从项目根到 cwd 的目录链，全局级覆盖 ~/.dsh 与 ~/.agents，另含 25 个第三方 AI 工具的用户级规则文件。预览以渲染态展示并自动剥离 .mdc 的 frontmatter，就地编辑并带冲突检测，内容完全相同的跨工具文件会互相标注，内置清单之外的工具按目录特征自动发现。零运行时依赖。
@@ -9135,6 +9136,7 @@ dsh plugin --profile web add dshmarket
 - [Edsenpai/page-between](https://github.com/Edsenpai/page-between) — 贴一个链接，把文章读成结构导图、加粗要点、逐段精读与读后评论；任意一句可收成拍立得便签（可拖动、缩放、改字），全文可一键复制成 Notion 版，简/繁/英三种语言可随时切换。导图图片依赖本机 Edge/Chrome，Windows、macOS、Linux 都会自动识别（装在别处可设环境变量 DSH_MINDMAP_BROWSER），不影响其余功能。
 - [elegant01/dsh-wb-desk](https://github.com/elegant01/dsh-wb-desk) — Agent 产物资料库：新建文件自动落位、修改已有文件先进「待确认」队列、读取时固定版本；附带从会话日志汇总的本地产物索引、带文档内搜索的文本与代码预览，以及可选的腾讯云 COS / S3 兼容存储 / WebDAV 双向镜像与 COS 预签名分享链接。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [EliasRookie66/dsh-inspiration](https://github.com/EliasRookie66/dsh-inspiration) — 中长篇小说写作工作台，支持章节与设定卡管理、AI 起草和由作者确认的行内修改。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [EndWithHyphen/dsh-learning-quirky-stuff](https://github.com/EndWithHyphen/dsh-learning-quirky-stuff) — 在画布上记录手写笔记和截图，生成 AI 图文总结与可编辑信息图，用间隔复习巩固知识，并通过配套 Chrome 扩展收集网页笔记。
 - [Evantianyn123/docsuite](https://github.com/Evantianyn123/docsuite) — 文档工坊：把设备说明书与历史报告变成技术方案、调研报告和投标文件，支持导出 Markdown / Word / HTML / PDF / PPTX。Word / PPTX 导出与文档解析需要 Python 3 及 pypdf、python-docx、python-pptx（在设置页初始化），PDF 导出需要标准 Windows 路径下的 Chrome 或 Edge。
 - [fangchenghao/latex-look](https://github.com/fangchenghao/latex-look) — 让 Agent 真正看见编译后的页面：把任意一页渲染成图片，用 SyncTeX 把页面坐标或文字锚点解析成源码 file:line（并指出某条横线是宏包画的而不是正文画的——这正是朴素定位最容易出错的地方），把这一页与上一次构建做像素对比，逐页审计本次修改新引入的空洞，并检查图表编号是否仍然顺序正确。
 - [feifandiv/dsh-md-live-edit](https://github.com/feifandiv/dsh-md-live-edit) — 在右侧边栏的 Markdown 预览里直接编辑：点文本块就地改，⌘/Ctrl+Enter 保存写回文件；随时可切回内置只读渲染。
@@ -9269,6 +9271,7 @@ dsh plugin --profile web add dshmarket
 - [Sanshui258/dsh-hwp-translate](https://github.com/Sanshui258/dsh-hwp-translate) — 把 .hwp/.hwpx（한글）与 .docx 文档翻成会话模型能写的语言（中文最常见，韩转英、英转韩同理），保留表格、项目符号、缩进与字号，译文写在原文件旁（原名_zh）。hwp_extract 返回文档段落 JSON（默认每页 50 段、上限 200，用 next_offset 分页）；hwp_apply 按 {段落 id: 译文} 写回，返回输出路径与 applied/missing。插件不访问任何 API、也不接受 API Key；随包的 10 MB 翻译器只在本地读写文件。仅 Windows：.hwpx 与 .docx 纯 Python 解析，旧版 .hwp 通过 COM 驱动本机 한글，需要 allow_hangul。
 - [scccy/dsh-notes-board](https://github.com/scccy/dsh-notes-board) — 像 DSH 记录自己的决定那样记录工程决策：每次非平凡改动在 .agents/notes/<lifecycle>/<class>/ 下留一篇 Markdown，写清问题、决定、被否决的备选与后果，进 git、可以像代码一样 review。插件提供这套流程：note_search、note_read、note_write、note_verify、note_skip 五个工具，回合末钩子（改过代码的轮次要写笔记或记录一次显式跳过），树、格式、归档三项校验，以及随包分发、由插件挂载的 write-notes-like-deepseek 技能。另附把这些笔记渲染成四个视图（架构基线、演进时间线、避坑智库、决策清单）的侧边栏看板；笔记本体仍是普通 Markdown。
 - [scientificmaniac/dsh-code-highlight](https://github.com/scientificmaniac/dsh-code-highlight) — 报告代码高亮：一个 highlight_code 工具，68 种语言、15 套主题、11 种输出（内联 HTML、Word 可插 SVG/PNG、LaTeX 等），含 codeinword.com 同款 SyntaxHighlighter 经典主题。PNG 输出需 Python 3 与 Pillow，其他格式无额外依赖。
+- [scottzhb-hue/dsh-ai-translation](https://github.com/scottzhb-hue/dsh-ai-translation) — DeepSeek Harness 中的 CAT 翻译工作台：翻译记忆、术语库、句段编辑、AI 译文建议，支持 TXT、Markdown、DOCX、XLSX、PPTX、EPUB、SDLXLIFF、TMX 导入导出并保留原版式。CAIT 的持续维护分支，新增句段合并与拆分、选中原文与译文即建术语、未确认译文草稿恢复、Token 用量与费用统计。
 - [sd0426301x-dotcom/dsh-knowledge-base](https://github.com/sd0426301x-dotcom/dsh-knowledge-base) — 本地优先的 DSH 工作区侧边栏知识库：索引项目、文档和插件，自动归类，支持搜索、文件预览和可编辑笔记；数据保存在工作区。
 - [sharework-ai/dsh-docwright](https://github.com/sharework-ai/dsh-docwright) — 面向 DeepSeek Harness 的文档生成插件：以 JSON 为核心输出物，结构化管理文档内容输出；统一规范文档生成过程中的参数定义与继承、素材提取、校验结果检查及评分机制，使文档生成紧扣要求，快速且节约 Token；内置 COSMIC 文档生成场景包作为范例，并内置编写场景包的指南。
 - [shshjjj456/dsh-mp4](https://github.com/shshjjj456/dsh-mp4) — 用原生播放器在 DSH 右栏播放 MP4 / M4V / MOV，替掉「此文件类型不支持预览」的占位提示。
@@ -9365,6 +9368,7 @@ dsh plugin --profile web add dshmarket
 - [aawef/dsh-skill-manager-tags](https://github.com/aawef/dsh-skill-manager-tags) — 按标签筛选技能：给 DSH 技能打标签，再用布尔表达式为每个工作区或对话选出下发给模型的子集（例如 `pdf + docx` 或 `aegis * plugin`）。命中以外的技能会被 deny-shadow 真正从模型目录里移走，而不只是在设置页隐藏；表达式之外的技能可手动添加或强制禁用，另附带 `tagging-skills` 教 agent 从本机技能清单自建标签体系。
 - [addie-ace/dsh-mattpocock-skills](https://github.com/addie-ace/dsh-mattpocock-skills) — 技能包插件：把 mattpocock/skills 的 25 个 promoted 技能（工程与效率）全文汉化，注册为 DSH 捆绑技能 provider，经技能系统发现与调用。
 - [adithyanraj03/dsh-skills-pack](https://github.com/adithyanraj03/dsh-skills-pack) — 把 36 个内置 agent 技能（科研写作、LaTeX、实验、设计评审、办公文档、动画、Windows shell 与 dsh 插件规范）注册为一个纯宿主侧的技能提供者：没有界面、没有网络请求，也没有自己的遥测；技能脚本以用户的权限运行。
+- [afterpartyai/ss33-skill-store-for-agents#dsh](https://github.com/afterpartyai/ss33-skill-store-for-agents/tree/main/adapters/dsh) — Searches the ss33 Skill Store with a summary of your project's stack and installs picked skills as native SKILL.md files pinned in ss33.lock, with opt-in prompt matching.
 - [AhaCrazy/action-hub#dsh-action-hub](https://github.com/AhaCrazy/action-hub/tree/main/packages/dsh) — 面向 DSH 的标准 Agent Skill 库：同一份 SKILL.md 可作为模型可见的 Skill 或仅由用户调用的 Command，支持分组、项目范围、导入导出和原生 Alt+A 面板。
 - [Aliboder/dsh-expert-hub](https://github.com/Aliboder/dsh-expert-hub) — 专家中心：浏览并导入 WorkBuddy 专家，用 AI 创建专家、编辑 role.md 与技能，并按会话切换专家。
 - [AlLHHH/dsh-skill-palette](https://github.com/AlLHHH/dsh-skill-palette) — 输入框右下方有一个「技能」按钮，点开就能搜技能、按分类浏览、收藏常用的，选中后直接插进输入框；回答下方还会列出这一轮真正调用过的技能。
