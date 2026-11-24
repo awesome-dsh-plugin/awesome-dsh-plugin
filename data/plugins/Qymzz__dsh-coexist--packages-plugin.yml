@@ -2,5 +2,5 @@ url: https://github.com/Qymzz/dsh-coexist/tree/main/packages/plugin
 name: Qymzz/dsh-coexist#packages-plugin
 category: dev
 description:
-  en: 'Keep plugins that claim the same tool, command, provider or service; duplicate tools become name__coexistN aliases and conflicts can be scanned and repaired from Settings.'
-  zh: '让抢同一个工具、命令、provider 或 service 的插件共存；同名工具自动变成 name__coexistN 别名，并可在设置页检查和修复冲突。'
+  en: 'Keep DSH plugins working together: when two plugins want the same tool or command, neither has to be removed; the later one gets a suffix and both keep working, while Settings shows dependencies and conflicts, can fix common conflicts, roll back changes, and limit which agent can call which tool.'
+  zh: '让 DSH 插件一起工作：两个插件抢同一个工具或命令时，不用卸载其中一个，后装的那个自动加后缀，两个都能用；设置页能看依赖和冲突、修复常见冲突、回滚，并限制哪个 Agent 能调用哪个工具。'
