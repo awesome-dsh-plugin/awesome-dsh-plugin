@@ -1,0 +1,6 @@
+url: https://github.com/YYfather/dsh-mimo-plugin
+name: YYfather/dsh-mimo-plugin
+category: model
+description:
+  en: MiMo (Xiaomi) toolkit for DeepSeek Harness: web search, image/audio/video understanding, ASR, TTS, voice design and voice cloning, with a first-run API-key card and a settings page.
+  zh: 小米 MiMo 工具集：联网搜索、图像/音频/视频理解、语音转写、TTS、音色设计与音色克隆，首次使用有 API Key 引导卡与设置页。
