@@ -1,0 +1,7 @@
+url: https://github.com/wphhyan/dsh-approval-notify
+name: wphhyan/dsh-approval-notify
+category: notify
+description:
+  en: 'Raises a macOS Notification Center banner at four moments when a DSH agent waits on you — tool approval, ask_user_question, a finished turn, and a session error — each with its own switch and alert tone; finish reminders stay quiet while DSH is frontmost, error reminders are capped at one per five minutes, and a settings page offers a test notice and a self-check.'
+  zh: 'DSH 的 Agent 停下来等你时，弹一条 macOS 通知中心横幅：需要授权的工具调用、ask_user_question 提问、会话跑完一轮、会话出错四个时刻，各有开关与提示音；DSH 在前台时跳过完成提醒，出错提醒 5 分钟内最多一条，设置页提供测试通知与自检。'
+icon: https://raw.githubusercontent.com/wphhyan/dsh-approval-notify/main/assets/icon-180.png
