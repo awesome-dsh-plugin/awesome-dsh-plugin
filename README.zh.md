@@ -1282,7 +1282,7 @@ dsh plugin --profile web add dshmarket
 - [kkhsu/dsh-conversation-icons](https://github.com/kkhsu/dsh-conversation-icons) — 为每个会话设置双色 SVG 图标和颜色，可通过侧边栏菜单或模型工具操作，并支持浏览器本地持久化与跨标签页更新。
 - [kkisok0123/dsh-sidechat](https://github.com/kkisok0123/dsh-sidechat) — 从主会话分叉独立侧聊，支持原生会话渲染、划选注释和结论回流。
 - [klaus-2/dsh-nextsteps](https://github.com/klaus-2/dsh-nextsteps) — 在 DeepSeek Harness 聊天的每个已完成的智能体回合下方，都会给出可一键继续的下一步建议：模型在回合结尾提出若干后续提示，它们以可点击的卡片渲染在该回合下，点击即原样作为你的下一条消息发送。每张卡片始终归属于产生它的回合，重载与重启后依然对应；生成语言可在 15 种语言中选择或跟随对话；dsh 设置内还有设置页（语言、每个回合的建议数量、标题显示与内置更新检查）。需要 DeepSeek Harness 0.2.x（web profile）与 Node.js 20+。
-- [kleinklein0824/dsh-deepseek-atlas](https://github.com/kleinklein0824/dsh-deepseek-atlas) — DSH 的 DeepSeek 模型档案：长按或右键输入框模型控件，浏览模型家族与 31 天发布月历、对比模型，并查看从 api-docs.deepseek.com 同步的定价。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [kleinklein0824/dsh-deepseek-atlas](https://github.com/kleinklein0824/dsh-deepseek-atlas) — DSH 的 DeepSeek 模型档案：长按或右键输入框模型控件，浏览模型家族与 31 天发布月历、对比模型，并查看从 api-docs.deepseek.com 同步的定价。
 - [KNGLOKIKO/dsh-plugin-approval-zh](https://github.com/KNGLOKIKO/dsh-plugin-approval-zh) — 在 Web 客户端把 DeepSeek Harness 的权限审批面板本地化为中文：授权原因优先走内置词表翻译，词表未收录的由宿主侧模型路由兜底。
 - [Knight-Zjy/dsh-workspace-categories](https://github.com/Knight-Zjy/dsh-workspace-categories) — DSH 侧边栏工作区浏览器的分类树：工作区与其会话挂到自建分类下（折叠状态记忆），行可在分类间拖拽，新建工作区可直接落进某个分类（走系统目录选择器），分类可原地重命名与删除，会话行可归档 / 取消归档（运行中的会话走官方同款「停止并归档」确认）并配隐藏 / 含归档 / 仅归档三态筛选，行内按钮悬停有应用自带样式的提示，底栏开关可把面板切回原生列表。
 - [kongbai-shike/dsh-novel-wallpaper](https://github.com/kongbai-shike/dsh-novel-wallpaper) — 把 TXT 小说渲染成 DSH 聊天背后的淡色文字层，配一个可拖动的悬浮控件，用于目录、翻章、自动滚动与阅读设置。
