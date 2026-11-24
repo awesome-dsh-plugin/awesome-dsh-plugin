@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-failure-lab
+name: SSHOOTING/dsh-plugin-failure-lab
+tarball: https://github.com/SSHOOTING/dsh-plugin-failure-lab/releases/download/v0.1.0/0.1.0.tgz
+category: dev
+description:
+  en: 'Turns failed turns into reproducible experiment cards with recovery strategies.'
+  zh: '把失败回合变成可复现实验卡，附恢复策略。'

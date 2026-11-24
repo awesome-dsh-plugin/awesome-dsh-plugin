@@ -1,0 +1,6 @@
+url: https://github.com/NEVSTOP-LAB/dsh-net-opt
+name: NEVSTOP-LAB/dsh-net-opt
+category: dev
+description:
+  en: 'Raises Node''s Happy Eyeballs per-address attempt window for the host process (250 ms by default, configurable), so slow IPv4 handshakes are not abandoned and provider requests stop failing with Connection error (TRANSPORT) on slow links.'
+  zh: '调宽宿主进程里 Node Happy Eyeballs 的单地址建连窗口（默认 250 ms，可配置），慢链路上还没建好的 IPv4 握手不会被放弃，provider 请求不再以 Connection error（TRANSPORT）失败。'

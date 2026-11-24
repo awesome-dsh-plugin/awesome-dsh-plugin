@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-plugin-pack
+name: 879745uhjun/dsh-plugin-pack
+category: market
+description:
+  en: 'Bundles a set of DSH plugins together with their configs and version locks into one portable .dshpack, then scans, inspects and installs it on another machine with preflight checks, atomic install and rollback when something fails. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把一组 DSH 插件连同配置与版本锁定打包成一个可离线安装的 .dshpack，在另一台机器上扫描、预检、原子安装，出错时回滚。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

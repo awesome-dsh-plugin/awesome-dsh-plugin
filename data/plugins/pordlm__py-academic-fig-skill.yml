@@ -1,0 +1,7 @@
+url: https://github.com/pordlm/py-academic-fig-skill
+name: pordlm/py-academic-fig-skill
+category: skill
+icon: https://raw.githubusercontent.com/pordlm/py-academic-fig-skill/main/assets/icon-180.png
+description:
+  en: DSH skill and Python toolkit for plotting academic figures and diagrams with Matplotlib, including PNG/PDF export and figure QA.
+  zh: 用于通过 Matplotlib 绘制学术图表与示意图的 DSH Skill 和 Python 工具包，支持 PNG/PDF 导出与图形质量检查。

@@ -1,0 +1,7 @@
+url: https://github.com/wxddegithub/dsh-connect-deveco
+name: wxddegithub/dsh-connect-deveco
+category: model
+description:
+  en: 'DSH bundle that auto-registers the DevEco Code GLM provider and manages the local opencode-deveco proxy — status chip, start/stop/restart, Huawei login/logout and a watchdog. Unofficial; personal study use only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '自动注册 DevEco Code GLM provider 并管理本地 opencode-deveco 代理的 DSH 插件，提供状态胶囊、启停/重启、华为登录登出与看门狗。非官方插件，仅供个人学习研究。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/wxddegithub/dsh-connect-deveco/main/assets/icon-180.png

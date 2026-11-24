@@ -1,0 +1,7 @@
+url: https://github.com/jiangsuyuan/dsh-feiq-im
+name: jiangsuyuan/dsh-feiq-im
+category: ui
+description:
+  en: 'LAN chat inside DSH that finds FeiQ/IPMsg peers automatically: a draggable unread-count bubble, per-message delivery and read receipts, text, image and file transfer, screen knock, and avatars shared between plugin peers. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 里的局域网聊天：零配置自动发现飞秋/IPMsg 对端，可拖动气泡显示未读角标， 逐条送达/已读回执，支持文字、图片、文件收发与闪屏震动，插件对端之间可共享头像。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/jiangsuyuan/dsh-feiq-im/main/assets/icon-180.png

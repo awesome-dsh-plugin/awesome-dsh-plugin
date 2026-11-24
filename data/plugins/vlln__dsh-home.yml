@@ -1,0 +1,6 @@
+url: https://github.com/vlln/dsh-home
+name: vlln/dsh-home
+category: ui
+description:
+  en: 'Turn the blank home page into an arrangeable workbench: recent sessions across workspaces, session states, composable widgets and time statistics. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把空白首页换成可编排的工作台：跨工作目录的最近会话、会话状态、可编排小组件与时间统计。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

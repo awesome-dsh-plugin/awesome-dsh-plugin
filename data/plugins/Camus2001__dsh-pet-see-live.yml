@@ -1,0 +1,7 @@
+url: https://github.com/Camus2001/dsh-pet-see-live
+name: Camus2001/dsh-pet-see-live
+category: fun
+description:
+  en: 'Lets dsh-pet watch screen activity and live audio, then comment through its chat bubble and voice using dsh-see-now''s capture pipeline. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '让 dsh-pet 实时看屏幕、听同期声音，并通过气泡和语音点评；采集与拼图复用 dsh-see-now。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/Camus2001/dsh-pet-see-live/releases/download/v0.4.2/dsh-pet-see-live-0.4.2.tgz

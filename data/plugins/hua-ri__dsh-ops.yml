@@ -1,0 +1,6 @@
+url: https://github.com/hua-ri/dsh-ops
+name: hua-ri/dsh-ops
+category: remote
+description:
+  en: 'All-in-one ops plugin for SSH, Kubernetes, Helm, ArgoCD and Argo Workflows. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '一体化运维插件：SSH 远程运维 / K8s 集群管理 / Helm Chart 管理 / ArgoCD / Argo Workflows。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

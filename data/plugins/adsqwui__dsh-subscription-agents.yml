@@ -1,0 +1,7 @@
+url: https://github.com/adsqwui/dsh-subscription-agents
+name: adsqwui/dsh-subscription-agents
+category: model
+description:
+  en: "Runs the official Codex and Claude Code CLIs on your own subscription logins: each enabled, tested account becomes a model provider listing the models its CLI reports, and a subscription_agent tool starts continuable child agents nested under their parent chat. A panel signs in, tests and enables each account in its own CLI profile and shows limit windows refreshed every minute; turns accept images and report the CLI's token counts to DSH. Works only in Full access sessions, where the CLI gets full access too."
+  zh: "用你自己的订阅登录运行官方 Codex 与 Claude Code CLI：每个已启用并通过测试的账号都会成为一个模型提供方，列出其 CLI 报告的模型；subscription_agent 工具可启动可续接的子智能体，子会话嵌套在父会话下。面板可为每个账号（各自使用独立的 CLI 配置目录）登录、测试和启用，并显示每分钟刷新的额度窗口；对话支持图片输入，并把 CLI 报告的 token 用量交给 DSH。仅在完全访问权限的会话中工作，此时 CLI 同样拥有完全访问权限。"
+icon: https://raw.githubusercontent.com/adsqwui/dsh-subscription-agents/main/docs/icon-180.png

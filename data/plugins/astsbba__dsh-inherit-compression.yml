@@ -1,0 +1,6 @@
+url: https://github.com/astsbba/dsh-inherit-compression
+name: astsbba/dsh-inherit-compression
+category: memory
+description:
+  en: 'Anchors a message, compresses the conversation after it into one memory block when the context crosses a threshold, and withdraws the original span in place, so a long session can continue with its persona and memory intact. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在任意消息上立锚点，上下文到线后把锚点之后的对话压成一块记忆并原地撤回原文，让长会话继续时人设和记忆都还在。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

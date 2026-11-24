@@ -2,5 +2,6 @@ url: https://github.com/gezi-wen/sage-mem
 name: gezi-wen/sage-mem
 category: memory
 description:
-  en: 'File-based cross-session memory: plain Markdown memory files with automatic retrieval injection, format-compatible with Claude Code''s CLAUDE.md and memory files, so migrating is a manual file copy.'
-  zh: 基于文件的跨会话记忆：纯 Markdown 记忆文件，检索结果自动注入；格式与 Claude Code 的 CLAUDE.md 及记忆文件兼容，迁移即手工复制文件。
+  en: 'Stable, engineering-grade automated memory. Passive memory + active recall + automatic dreaming: matching passages are retrieved and injected, and stale sections are trimmed into the archive instead of deleted. White box and editable — every memory is a local Markdown file, zero extra services; typed memories (user / feedback / project / reference) with custom tags, up to 20 per file.'
+  zh: '稳定的工程级自动化记忆系统。被动记忆 + 主动回忆 + 自动做梦：自动选取并注入命中的记忆段落，过时的一节裁去归档。白盒可见可修改 —— 记忆是本机 md 文件，零额外服务；类型化记忆（用户 / 反馈 / 项目 / 参考）+ 自定义 tags，每份最多 20 个。'
+icon: https://raw.githubusercontent.com/gezi-wen/sage-mem/main/icon.png

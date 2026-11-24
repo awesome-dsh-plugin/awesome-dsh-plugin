@@ -1,0 +1,6 @@
+url: https://github.com/DogEgg-alR/dsh-scan-to-pdf
+name: DogEgg-alR/dsh-scan-to-pdf
+category: docs
+description:
+  en: 'Turn photos and scans of written pages into a typeset PDF from a tab in the Plugins page. Drop in images, a ZIP, Word or PDF files (each page of a PDF is rendered to an image, so scans inside them work the same way), and every page is first cleaned like a scan: composited onto white, contrast stretched, resized. A vision model transcribes each page to Markdown, and for the figures it sees it writes a placeholder plus a 0..1 bounding box; the plugin crops that region out of the page, cleans it the same way, and puts it back at that spot in the PDF. Layout is real Word layout converted by LibreOffice: A4, alternating page numbers, tables with horizontal rules only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在插件页的一个标签里，把拍照 / 扫描的页面抄成排版好的 PDF。图片、ZIP、Word、PDF 都能拖进来（PDF 逐页渲成图片，所以里面的扫描件一样能抄），每页先按扫描件处理：白底合成、拉对比、统一尺寸。视觉模型把每页抄成 Markdown，看到插图时留下占位符和一个 0~1 的包围框，插件按框从页面上裁出这幅图、做同样的清理、再放回正文里的那个位置。版式是真正的 Word 排版再经 LibreOffice 转换：A4、奇偶页页码分居左右、表格只留横线。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

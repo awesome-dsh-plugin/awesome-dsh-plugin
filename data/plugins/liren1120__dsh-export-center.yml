@@ -1,0 +1,8 @@
+url: https://github.com/liren1120/dsh-export-center
+name: liren1120/dsh-export-center
+category: session
+description:
+  en: 'Batch-migrate DeepSeek Harness Sessions and plugins: export many Sessions at once with attachments, subagents and original times, preview and restore them on another machine, and carry the plugin inventory in the same archive.'
+  zh: '批量搬迁 DeepSeek Harness 会话与插件：一次导出多条会话（含附件、子会话与原始时间），预检后在另一台机器恢复，并在同一个归档里搬迁插件清单。'
+tarball: https://github.com/liren1120/dsh-export-center/releases/latest/download/dsh-export-center-plugin.tgz
+icon: https://raw.githubusercontent.com/liren1120/dsh-export-center/main/assets/icon-180.png

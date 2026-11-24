@@ -1,0 +1,7 @@
+url: https://github.com/Lee2277-t/dsh-skill-index
+name: Lee2277-t/dsh-skill-index
+category: skill
+description:
+  en: Search a local agent-skill library from inside the Harness. Five tools - skill_search ranks SKILL.md files with CJK bigrams, IDF weighting and a bilingual glossary, labelling each hit's context cost and skill family; skill_read returns a digest of about 300 tokens first and the full text only when the agent means to follow it; skill_active and skill_drop keep a per-session ledger; skill_catalog lists everything by category; and one line of hint is offered at the start of a turn when a skill matches strongly. It scans the usual home-level skill folders out of the box, so a fresh install has something to search before any configuration. Block-scalar frontmatter is parsed correctly instead of collapsing to a lone quote character.
+  zh: 在 Harness 里检索本机技能库，共五个工具 —— skill_search 用中文二元组、IDF 加权和双语词表给 SKILL.md 排序，并标出每条的上下文成本与所属技能族；skill_read 先返回约 300 token 的摘要，确定要照做才读全文；skill_active 和 skill_drop 维护会话台账；skill_catalog 按分类列出全部；任务开头命中强时会附一行提示。默认会扫描常见的用户级技能目录（Claude、Codex 等客户端的家目录），装上就能检索，不必先配置。能正确解析块标量写法的描述，不会退化成只取到一个引号字符。
+icon: https://raw.githubusercontent.com/Lee2277-t/dsh-skill-index/main/assets/icon-180.png

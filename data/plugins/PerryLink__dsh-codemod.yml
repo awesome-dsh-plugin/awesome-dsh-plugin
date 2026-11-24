@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-codemod
+name: PerryLink/dsh-codemod
+category: dev
+description:
+  en: "Migration codemods for DeepSeek Harness plugin APIs."
+  zh: "DeepSeek Harness 插件 API 的迁移 codemod。"
