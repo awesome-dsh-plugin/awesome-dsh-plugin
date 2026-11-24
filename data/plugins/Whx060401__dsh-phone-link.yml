@@ -1,0 +1,6 @@
+url: https://github.com/Whx060401/dsh-phone-link
+name: Whx060401/dsh-phone-link
+category: remote
+description:
+  en: 'Phone control for DeepSeek Harness: a scannable QR panel under the composer, an automatic Cloudflare tunnel so the phone can be on any network, and phone messages that continue the most recently used session. Windows downloads the tunnel binary on first use (about 55 MB), and the public address changes on restart.'
+  zh: '手机控制 DeepSeek Harness：输入框下方显示可扫描的二维码，自动启动 Cloudflare 隧道让手机在任何网络都能使用，手机消息会接到最近使用的会话。Windows 首次启用会自动下载隧道程序（约 55 MB），公网地址每次重启会变。'
