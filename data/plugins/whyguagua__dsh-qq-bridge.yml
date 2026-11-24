@@ -1,0 +1,6 @@
+url: https://github.com/whyguagua/dsh-qq-bridge
+name: whyguagua/dsh-qq-bridge
+category: notify
+description:
+  en: 'Personal QQ account bridge for DeepSeek Harness via NapCat / OneBot 11: private and group chats, persona and per-chat memory, image generation and sending, host-side web fetching, and a local settings panel with a first-run wizard.'
+  zh: '把个人 QQ 号通过 NapCat / OneBot 11 接进 DeepSeek Harness：私聊与群聊、人格与按群/按人记忆、生图与发图、联网抓取，以及带首次使用向导的本地设置面板。'
