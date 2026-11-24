@@ -1,0 +1,7 @@
+url: https://github.com/liubaibuliuyan/dsh-turn-rail-left
+name: liubaibuliuyan/dsh-turn-rail-left
+category: ui
+description:
+  en: 'Relocate the DeepSeek Harness conversation turn rail from the right gutter to the left gutter by restyling the built-in rail itself, so ticks, hover previews, click-to-jump and history paging stay unchanged and no second rail is added.'
+  zh: '把 DSH 对话里的轮次导航轨道从右侧留白搬到左侧留白：改的是内置轨道本身的样式，刻度、悬停预览、点击跳转与未加载轮次的分页都不变，也不会多出一条轨道。'
+icon: https://raw.githubusercontent.com/liubaibuliuyan/dsh-turn-rail-left/main/assets/icon-180.png

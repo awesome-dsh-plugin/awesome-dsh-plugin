@@ -1,0 +1,8 @@
+url: https://github.com/luonianxin/dsh-mcp-studio
+name: luonianxin/dsh-mcp-studio
+category: tools
+description:
+  en: 'Manage MCP connections, inspect and debug tools, browse resources, set per-tool Agent permissions, and view native MCP sources in DSH Settings.'
+  zh: '在 DSH 设置中管理 MCP 连接、查看与调试工具、浏览资源、配置逐工具 Agent 权限，并只读浏览原生 MCP 来源。'
+icon: https://raw.githubusercontent.com/luonianxin/dsh-mcp-studio/main/assets/icon-180.png
+tarball: https://github.com/luonianxin/dsh-mcp-studio/releases/download/v0.2.5/local-dsh-mcp-studio-0.2.5.tgz

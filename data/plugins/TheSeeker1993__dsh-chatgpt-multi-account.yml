@@ -1,0 +1,7 @@
+url: https://github.com/TheSeeker1993/dsh-chatgpt-multi-account
+name: TheSeeker1993/dsh-chatgpt-multi-account
+category: model
+description:
+  en: Assign ChatGPT accounts to individual DeepSeek Harness sessions and view subscription quotas.
+  zh: '给 DeepSeek Harness 的各个会话分配 ChatGPT 账号，并查看订阅额度。'
+tarball: https://github.com/TheSeeker1993/dsh-chatgpt-multi-account/releases/latest/download/dsh-chatgpt-multi-account.tgz

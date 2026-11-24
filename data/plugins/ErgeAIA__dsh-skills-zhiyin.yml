@@ -1,0 +1,7 @@
+url: https://github.com/ErgeAIA/dsh-skills-zhiyin
+name: ErgeAIA/dsh-skills-zhiyin
+category: skill
+description:
+  en: 'Controls which installed DSH skills the model actually sees. Group them into packs, toggle each skill, and check the catalog character cost; also installs, archives and restores skills. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '控制模型此刻真正看得见哪些已安装技能。把技能编成包、逐个启停，并算出目录占用的字符成本；同时支持安装、归档与恢复。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/ErgeAIA/dsh-skills-zhiyin/main/assets/icon-180.png

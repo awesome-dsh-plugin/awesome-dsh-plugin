@@ -1,0 +1,6 @@
+url: https://github.com/zhouhb0321/dsh-box
+name: zhouhb0321/dsh-box
+category: tools
+description:
+  en: 'Teaches the agent how to drive the Simular box cloud desktop correctly: browser automation with login state, GUI control, shell and files, snapshots, live view with human hand-off for sign-in and 2FA, and the automatic sleep/wake flow. Adds no tools and handles no credentials; requires the official box plugin and a connected box.'
+  zh: '教会 Agent 正确使用 Simular box 云桌面：带登录态的浏览器自动化、GUI 操作、Shell 与文件、快照、实时观看与人工接管登录和二次验证、自动休眠唤醒流程。不新增工具、不接触密钥；需先装官方 box 插件并连接设备。'

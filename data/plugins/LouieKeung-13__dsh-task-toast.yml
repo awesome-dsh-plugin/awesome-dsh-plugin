@@ -1,0 +1,6 @@
+url: https://github.com/LouieKeung-13/dsh-task-toast
+name: LouieKeung-13/dsh-task-toast
+category: notify
+description:
+  en: 'Task-completion notifications with result previews, links to source sessions, local notification history, and optional sounds. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '任务完成通知，支持结果摘要、来源会话回跳、通知历史和可选提示音。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

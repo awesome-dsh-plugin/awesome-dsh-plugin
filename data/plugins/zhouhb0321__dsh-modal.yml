@@ -1,0 +1,6 @@
+url: https://github.com/zhouhb0321/dsh-modal
+name: zhouhb0321/dsh-modal
+category: tools
+description:
+  en: 'Teaches the agent when and how to use Modal serverless compute: GPUs, large-memory jobs, parallel batches and long containers, with a safe CLI-and-volumes workflow, artifact verification before trusting results, and cost rules. Adds no tools and handles no credentials; requires the Modal CLI installed and the user logged in.'
+  zh: '教会 Agent 何时以及如何使用 Modal 无服务器算力：GPU、大内存任务、并行批处理与长时容器，配套安全的 CLI 与卷操作流程、结果产物校验、成本规则。不新增工具、不接触密钥；需本机安装 Modal CLI 并由用户自行登录。'

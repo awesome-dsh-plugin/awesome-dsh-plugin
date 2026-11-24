@@ -1,0 +1,6 @@
+url: https://github.com/jsnancy/dsh-impeccable
+name: jsnancy/dsh-impeccable
+category: ui
+description:
+  en: 'Design review desk in the sidebar. The impeccable skill ships inside the plugin, so it works out of the box: scan a project path or URL with 62 deterministic rules (no model calls, no API key), see the findings grouped by rule and where they are, and turn each of the 24 skill commands into a one-click prompt that copies itself or starts a new conversation. The detection engine (about 21 MB) is downloaded once in the background on first load; until then the panel says what is happening instead of offering a scan that cannot run. Every command and rule is translated, so the panel reads as one language instead of half English, and the whole thing is set like a magazine page rather than a settings form. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧栏里的设计审校台。impeccable 技能随插件自带，装上就能用：填项目路径或网址，跑 62 条确定性规则（不调模型、不用 API key），按规则分组列出问题位置；24 条技能命令变成点一下就复制、或直接开新对话的提示词。检测引擎（约 21 MB）首次加载时在后台下载一次，没下完前面板会说明状态，而不是给一个跑不起来的扫描框。24 条命令、62 条规则、6 个分类全部有中文名称与说明，界面是整块中文而不是半中半英，整页按刊物排版，不是一堆设置表单。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

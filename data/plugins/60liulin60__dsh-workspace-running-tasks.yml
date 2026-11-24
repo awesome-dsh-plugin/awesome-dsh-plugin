@@ -1,0 +1,6 @@
+url: https://github.com/60liulin60/dsh-workspace-running-tasks
+name: 60liulin60/dsh-workspace-running-tasks
+category: ui
+description:
+  en: 'Marks workspace rows with their live state — a spinner while any of the workspace sessions is running, a warning dot while one waits for approval, an answer or plan review — and raises workspaces with running tasks to the front of the sidebar list, keeping that order once they finish.'
+  zh: '在工作区行内标出实时状态：有任务运行时行首文件夹图标换成旋转环，等待权限审核、提问或计划确认时换成警示点；有任务运行的工作区自动排到「工作区」列表最前，任务全部结束后保留当前顺序。'

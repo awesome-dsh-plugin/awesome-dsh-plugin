@@ -1,0 +1,7 @@
+url: https://github.com/marchinlab/dsh-quiet-whale-girl
+name: marchinlab/dsh-quiet-whale-girl
+category: fun
+description:
+  en: 'A quiet 2.5D animated desktop pet for the DSH Web UI, built on LivLiv Player with the community Kujira whale-girl character. Drag to move, gaze follows the cursor, idle blink and smile, click to interact, and switch between Kujira and Kujira Q. Runs fully locally with no telemetry.'
+  zh: '基于 LivLiv Player 与鲸鱼娘（Kujira）社区角色的 2.5D 动画桌宠：可拖动、视线跟随鼠标、待机眨眼浅笑、点击互动，可切换 Kujira / Kujira Q 两只角色。纯本地运行，不联网、不上传数据。角色素材为 CC BY-NC-SA 4.0 非商用，署名详见仓库 CREDITS。'
+icon: https://raw.githubusercontent.com/marchinlab/dsh-quiet-whale-girl/main/icon.webp

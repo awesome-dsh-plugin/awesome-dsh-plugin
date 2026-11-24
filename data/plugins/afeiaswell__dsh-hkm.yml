@@ -1,0 +1,7 @@
+url: https://github.com/afeiaswell/dsh-hkm
+name: afeiaswell/dsh-hkm
+category: ui
+description:
+  en: 'Adds a Hotkey manager sidebar panel that shows the live DeepSeek Harness shortcut catalog alongside combinations owned by Windows, browsers and third-party applications, lets Harness commands be re-recorded, cleared or reset, and probes 252 combinations by simulating them to reveal hotkeys Windows does not report. On Windows it also minimizes the DSH window to the notification area, toggled by a global shortcut (Ctrl+Shift+Space by default). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧栏「热键管理」面板：在实时 DeepSeek Harness 快捷键目录旁列出 Windows、浏览器与第三方应用占用的组合，可重录、清除或恢复 Harness 命令的绑定，并能依次模拟 252 组组合，找出 Windows 未报告的占用。Windows 上还可把 DSH 窗口最小化到通知区域，默认用全局 Ctrl+Shift+Space 切换。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/afeiaswell/dsh-hkm/main/assets/icon-180.png

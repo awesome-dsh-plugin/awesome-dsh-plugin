@@ -1,0 +1,7 @@
+url: https://github.com/5923Cx/dsh-persona-self-review
+name: 5923Cx/dsh-persona-self-review
+category: identity
+description:
+  en: 'Create, edit, switch, and back up persona cards for DeepSeek Harness. Each card is a plain text file injected per session; a periodic self-review session can propose small, validated changes that are applied after a delay and archived. Works with or without a separate memory plugin; reviews only run while the GUI is open. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 DeepSeek Harness 提供角色卡的创建、编辑、切换与备份。每张卡是一份纯文本，按会话注入；定期的自我审视会话可以在通过校验后小幅修改角色设定，延迟生效并保留每一版存档。可配合其他记忆插件使用，也可以在无记忆插件时单独使用；自我审视只在 GUI 打开时进行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/5923Cx/dsh-persona-self-review/releases/latest/download/dsh-persona-self-review.tgz

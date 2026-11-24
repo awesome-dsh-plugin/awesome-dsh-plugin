@@ -1,0 +1,7 @@
+url: https://github.com/1502074527-svg/dsh-agent-manager
+name: 1502074527-svg/dsh-agent-manager
+category: ui
+description:
+  en: 'A persistent Agents panel in the sidebar: define reusable agent roles as Markdown files under the user-level or project-level agents directory, with a gallery home, a read-only detail page, a five-step editor (role, tools, model, icon, advanced), 12 bundled starter templates grouped into five domains, 30 selectable transparent icons, per-agent knowledge cards you can ingest from pasted text or URLs, enable/disable policy stored locally per project, and a style library edited in a modal layer; saves are guarded by file mtime so two windows cannot silently overwrite each other. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '左侧栏常驻的「智能体」面板：用 Markdown 在用户级或项目级目录里定义可复用的智能体角色，含画廊式首页、只读详情页、五步编辑器（角色/能力/模型/图标/高级）、按五个领域归组的 12 份起步模板、30 款可选图标、可从粘贴文本或网址提炼的知识卡、按项目保存在本机的启停策略，以及就地弹层编辑的风格库；保存时比对文件修改时间，两个窗口不会静默互相覆盖。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/1502074527-svg/dsh-agent-manager/main/assets/icon-180.png
