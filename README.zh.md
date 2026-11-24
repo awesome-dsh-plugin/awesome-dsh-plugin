@@ -1224,7 +1224,7 @@ dsh plugin --profile web add dshmarket
 - [joythatway/dsh-screenshot](https://github.com/joythatway/dsh-screenshot) — 输入框截图菜单，三种模式：框选（自动让开 DSH 窗口）、窗口列表（悬停实时预览）、整屏；截图可入草稿或存到磁盘（默认桌面），预览支持滚轮缩放，设置页可改快捷键、保存位置与自动隐藏。
 - [Js2Hou/dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) — DSH 网页 MCP 可视化管理插件：在「设置 → MCP」中查看/新增/删除/启停 MCP 服务器，实时显示连接状态与工具数。
 - [jsdvjx/dsh-strata](https://github.com/jsdvjx/dsh-strata) — 滚动条槽位里的会话缩略图：按事件类型着色的等比色块、用户与失败锚点、滚到顶自动补载历史、悬停线索墙铺开全部发言，附近/中/全三档地图尺度切换。
-- [jsnancy/dsh-impeccable](https://github.com/jsnancy/dsh-impeccable) — 侧栏里的设计审校台。impeccable 技能随插件自带，装上就能用：填项目路径或网址，跑 62 条确定性规则（不调模型、不用 API key），按规则分组列出问题位置；24 条技能命令变成点一下就复制、或直接开新对话的提示词。检测引擎（约 21 MB）首次加载时在后台下载一次，没下完前面板会说明状态，而不是给一个跑不起来的扫描框。24 条命令、62 条规则、6 个分类全部有中文名称与说明，界面是整块中文而不是半中半英，整页按刊物排版，不是一堆设置表单。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [jsnancy/dsh-impeccable](https://github.com/jsnancy/dsh-impeccable) — 侧栏里的设计审校台。impeccable 技能随插件自带，装上就能用：填项目路径或网址，跑 62 条确定性规则（不调模型、不用 API key），按规则分组列出问题位置；24 条技能命令变成点一下就复制、或直接开新对话的提示词。检测引擎（约 21 MB）首次加载时在后台下载一次，没下完前面板会说明状态，而不是给一个跑不起来的扫描框。24 条命令、62 条规则、6 个分类全部有中文名称与说明，界面是整块中文而不是半中半英，版式是左栏导航加右栏内容，不是一堆设置表单。
 - [jue5hen/dsh-window-size](https://github.com/jue5hen/dsh-window-size) — 在设置页设置 DeepSeek Harness 桌面版启动时的窗口大小，内置 4:3、16:9、16:10 比例预设，支持保存最多 12 个自定义预设。
 - [juliankang4/dsh-locale-ko](https://github.com/juliankang4/dsh-locale-ko) — 给 DeepSeek Harness 的「设置 - 通用设置 - 语言」加入韩语（한국어），翻译 dsh 0.2.0-rc.2 与 0.2.1-alpha.2 Web UI 的全部 2,775 条文案，包括实验功能。dsh web 与桌面应用均可使用。
 - [juliankang4/dsh-ui-scale](https://github.com/juliankang4/dsh-ui-scale) — 将 DeepSeek Harness 整个界面（包括菜单和弹窗）缩放到 50% 至 200%，在「设置 - 通用设置」中用滑块、百分比输入或预设调整。dsh web 与桌面应用均可使用，桌面应用本身没有缩放功能。
@@ -4823,6 +4823,7 @@ dsh plugin --profile web add dshmarket
 - [879745uhjun/dsh-running-sessions](https://github.com/879745uhjun/dsh-running-sessions) — 在 DSH 首页列出当前正在工作的会话：实时状态、所属工作区、正在等待什么，并可一键进入。
 - [879745uhjun/dsh-session-boxes](https://github.com/879745uhjun/dsh-session-boxes) — 把 DSH 工作区侧栏里的会话归入自定义命名与配色的盒子，不改变所属工作区：一个会话可属于多个盒子并显示镜像行，支持折叠、拖拽或菜单归类，以及工作区标题栏的盒子管理器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [879745uhjun/dsh-session-broadcast](https://github.com/879745uhjun/dsh-session-broadcast) — 用输入框工具栏上的喇叭按钮把同一条消息一次发给多个 DSH 会话：按标题、工作区、运行状态或盒子挑选目标，可选择排队或打断投递，并逐个显示结果、对失败项重试。
+- [879745uhjun/dsh-session-hub](https://github.com/879745uhjun/dsh-session-hub) — 把各小插件各自保存的会话元数据（星标、待办、盒子、结束提醒）只读聚合到同一个 GET /session-meta，供工作区界面和其他插件一次读全，替代四条路由、四次读取。
 - [879745uhjun/dsh-session-resume](https://github.com/879745uhjun/dsh-session-resume) — DSH 上次关闭时还没跑完的会话，重新打开时会提示「继续上次的工作」：从会话日志里识别被打断的那一轮，并给出续跑入口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [879745uhjun/dsh-session-stars](https://github.com/879745uhjun/dsh-session-stars) — 给 DSH 会话加 1-5 星收藏：鼠标移到会话行上即可评级，行内常驻重要度徽标，评级持久保存在宿主 JSON 文件里，并提供 session_stars 工具支持读取、设置和清除。
 - [879745uhjun/dsh-session-todos](https://github.com/879745uhjun/dsh-session-todos) — 给侧边栏每个会话行加一个待办方格，并提供整页待办面板，按正在做、将要做、已做完分组，支持重要度、截止时间与备注。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -7755,6 +7756,7 @@ dsh plugin --profile web add dshmarket
 - [SpringRinbowCat/dsh-algorithm-tools](https://github.com/SpringRinbowCat/dsh-algorithm-tools) — 算法训练台：同步 Codeforces/AtCoder 刷题记录，分析弱项标签，每天生成三档训练题，支持比赛复盘与日历打卡。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [SPYQWER1/dsh-codex-tools](https://github.com/SPYQWER1/dsh-codex-tools) — 基于 Codex 的 `web_search`、`image_gen` 与 `image_vision` 工具，复用 ChatGPT OAuth 登录态为 DeepSeek Harness 提供网页搜索、生图与识图能力。
 - [sryimnoob123/dsh-tool-pwsh-safe](https://github.com/sryimnoob123/dsh-tool-pwsh-safe) — 把 PowerShell 脚本 base64 编码后执行，引号、$、反斜杠、中文全部原样传递，免去转义地狱。走与内置 pwsh 工具相同的沙箱通道。
+- [SSHOOTING/dsh-plugin-lifecycle](https://github.com/SSHOOTING/dsh-plugin-lifecycle) — 基于贝叶斯使用推断自动停用闲置的 DSH 插件，并在需要时立即恢复。
 - [stallenlu/dsh-disk-cleaner](https://github.com/stallenlu/dsh-disk-cleaner) — 面向 DeepSeek Harness 的 Windows 磁盘清理插件，扫描已知的安全缓存目录、显示占用大小，在 Web 面板中回收空间，并对无法自动清理的部分提供只读审计。
 - [stallenlu/dsh-research-desk](https://github.com/stallenlu/dsh-research-desk) — 在 DSH 内提供科研工作台：免密钥检索 arXiv、Europe PMC 与 OpenAlex，保存文献库与全文，提问时逐条比对原文校验引用，再生成选题假设与草稿，按五个视角产出多视角综述，在受限工作目录内运行用户提供的 Python 或 Node 脚本做验证计算，并把文献库导出为 Markdown、BibTeX 或 JSON。
 - [stallenlu/dsh-scihub](https://github.com/stallenlu/dsh-scihub) — 为 DSH 注册五个工具：scihub_pdf / scihub_batch 按 DOI 或文章 URL 经 Sci-Hub 镜像下载论文并逐条如实返回状态；libgen_search / libgen_download 用关键词检索 Library Genesis 并按 MD5 下载，保留 pdf / epub / djvu 等真实扩展名。文件按引用元数据经可配置的 fileNameTemplate 生成人类可读名，原子写入、同名不覆盖。所有请求支持 HTTP/HTTPS CONNECT 代理（config.proxy 或环境变量，尊重 NO_PROXY）。批量有界并发、跳过死镜像，并拒绝截断文件与人机验证页；scihub_refresh_mirrors 可重测候选镜像并写回可用项实现自愈。
