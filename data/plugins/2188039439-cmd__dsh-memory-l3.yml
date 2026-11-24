@@ -1,0 +1,6 @@
+url: https://github.com/2188039439-cmd/dsh-memory-l3
+name: 2188039439-cmd/dsh-memory-l3
+category: memory
+description:
+  en: 'Layered cross-session memory for DSH. The hot layer injects the most relevant facts into the system prompt under a hard character budget, the warm layer picks facts by keyword for the current message, the cold layer keeps everything in a local JSON file. Chat filler is dropped after two turns and comfort talk after two days, so only durable detail survives.'
+  zh: 'DSH 的分层跨会话记忆。热层在字符预算内把最相关的事实注入系统提示，温层按你这句话的关键词挑事实，冷层把全部内容存在本地 JSON。闲聊两轮后自动消失、安慰话两天后清掉，只留能长期用的细节。'
