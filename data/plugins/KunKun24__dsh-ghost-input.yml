@@ -5,4 +5,4 @@ description:
   en: "Inline ghost-text continuation in the composer: pause after half a sentence and the session's own model finishes it in faint grey behind a small Tab key cap; Tab accepts, Escape or further typing dismisses."
   zh: 输入框行内续写：写完半句停一下，当前会话所用的模型就在光标后用淡灰字补完，灰字后跟一个很淡的 Tab 键帽提示收下；Esc 或继续打字即丢弃。
 icon: https://raw.githubusercontent.com/KunKun24/dsh-ghost-input/main/assets/icon-180.png
-tarball: https://github.com/KunKun24/dsh-ghost-input/releases/download/v0.2.2/dsh-ghost-input-0.2.2.tgz
+tarball: https://github.com/KunKun24/dsh-ghost-input/releases/download/v0.2.3/dsh-ghost-input-0.2.3.tgz
