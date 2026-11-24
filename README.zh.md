@@ -445,6 +445,7 @@ dsh plugin --profile web add dshmarket
 - [atrestandbed-bot/dsh-agents-viewer](https://github.com/atrestandbed-bot/dsh-agents-viewer) — 在右侧栏原生 tab 里查看并编辑 AGENTS.md / CLAUDE.md 指令链：全局、共享，以及从项目根到会话工作目录的每一层；就地保存，文件不存在时直接创建；另有聊天头部按钮，以及界面不可用时也能用的 /agents 命令。
 - [aug-245/dsh-plugin-market-entry](https://github.com/aug-245/dsh-plugin-market-entry) — 在左侧栏添加插件市场入口按钮，点击后在主面板打开已安装的插件市场。
 - [AumiSatori/dsh-ui-beautify](https://github.com/AumiSatori/dsh-ui-beautify) — 自定义 DSH 玻璃材质与独立明暗主题，支持图片、视频与 HTML 背景、粒子、自定义问候与开屏、覆盖侧栏、任务与 Artifact 卡片、消息气泡、回答逐字渐显，以及配置导入导出。
+- [automagik-si/automagik#locale-pt-br-dsh](https://github.com/automagik-si/automagik/tree/dev/apps/locale-pt-br-dsh) — 为 Bot 团队插件（automagik-si/automagik#bots-dsh）提供巴西葡萄牙语界面文案，注册在 DSH 自带的 Português 语言条目下，因此在 设置 › 通用 › 语言 中仍只有一个葡萄牙语选项；本语言包旧版本保存的 pt-BR 选择会迁移到 DSH 的 pt。
 - [AvenYQ/dsh-clipforge](https://github.com/AvenYQ/dsh-clipforge) — 视频工作台：贴链接解析并下载、转写文案、截取拼接片段、按目标体积导出 GIF。需自备 ffmpeg/ffprobe 与 yt-dlp；无字幕视频的本地转写另需 whisper.cpp 与模型（可选）。
 - [AvenYQ/dsh-quiet](https://github.com/AvenYQ/dsh-quiet) — 整个窗口背后是一片灰色字符海洋：鲸群在侧栏与聊天区之间连续游动，能从一栏游进另一栏。开始对话后，生物各自向上、下、右或左侧边缘游走，海面缓缓平静，侧栏留一整片跟随内容高度的磨砂面，鲸鱼经过时只在文字背后留下模糊的影子；回到空白会话时，生物再从边缘游入。流式回复从模糊到清晰逐字浮现，开启减少动态效果时改用静态画面与原生渲染。只用中性墨色，日夜两套配色。
 - [AvenYQ/dsh-rigui](https://github.com/AvenYQ/dsh-rigui) — 侧边栏里的个人生活工作台：睡眠、饮食、运动、花销、体重、日程和待办放在同一页卡片上，彼此联动；在顶部说一句话，DSH 里配好的模型把它拆成结构化记录。记录与卡片版式只保存在本机浏览器存储里。
@@ -1030,6 +1031,8 @@ dsh plugin --profile web add dshmarket
 - [hffek/dsh-steer-note](https://github.com/hffek/dsh-steer-note) — 在输入框上方增加独立插话栏，支持文字、图片和普通文件，显示读取状态并可在未读取时取消，任务结束时救援未发送草稿。
 - [hg1048596-pixel/dsh-ppt-canvas](https://github.com/hg1048596-pixel/dsh-ppt-canvas) — DeepSeek Harness 的 PPT 工作台：拖入 PPTX，跨页批注对象或区域，在原画布检查 AI 修改，整批确认保存，支持撤销与重做。
 - [hg1048596-pixel/dsh-recall-unread](https://github.com/hg1048596-pixel/dsh-recall-unread) — 在输入框上方列出已发送但模型尚未读取的插话消息，可在模型读取前逐条或一次性撤回。
+- [hh5631/dsh-code-studio](https://github.com/hh5631/dsh-code-studio) — 在 DSH 原生文件区里编辑代码和 Markdown：文件树位于编辑器旁，输入后自动保存，每个文件复用同一个 Monaco 实例；Git 面板按需查看变更文件的 patch，Markdown 预览一键切换。源自 Lenonss/DSH_VsCodeMode 的 code-studio 包，围绕原生文件区重做并移除 Agent 差异审查体系；图片、PDF 与 Office 文件仍由 DSH 原生预览处理。
+- [hh5631/dsh-layout-swap](https://github.com/hh5631/dsh-layout-swap) — 交换 DSH Web 的三列布局：工作区文件和内嵌浏览器放到中间，聊天移到右侧；分隔线可拖动、聚焦后可用方向键微调，布局与宽度保存在浏览器中。右侧面板关闭、进入全局页面或窗口过窄时自动回到原生布局。
 - [hhz-or/dsh-hold-on](https://github.com/hhz-or/dsh-hold-on) — 让输入框的发送与停止需要长按确认：按住 Enter 或动作按钮时进度条/进度环走满才执行，点一下不会发送；长按时长与指示样式可在设置的插件页里配置。
 - [HighToward/dsh-plugins-sidebar-manager](https://github.com/HighToward/dsh-plugins-sidebar-manager) — 把 DSH 侧栏的面板入口按一级或二级分类归位，为每个分类在侧栏画出可折叠的标题行，并能逐个显示或隐藏；都在设置的「插件侧栏管理」里调整，布局同时写入 $DSH_HOME/plugins-sidebar-manager.json。
 - [hiJoeLee/dsh-suggest-actions](https://github.com/hiJoeLee/dsh-suggest-actions) — 每条回复末尾最多 5 条可点的下一步：点一条直接发出，或填入输入框改完再发。建议由本轮主模型在收尾时给出，不额外调用模型。
@@ -4034,6 +4037,7 @@ dsh plugin --profile web add dshmarket
 - [AshenSeeker/dsh-subagent-switch](https://github.com/AshenSeeker/dsh-subagent-switch) — 未由调用方指定模型时，按任务类型从本机模型目录为每个子代理挑一个模型。免费与额度档合并后按逐模型能力标签排序；只有当便宜档里没有任何模型声明擅长这类工作时，才升到更贵的档。只有余额可读或账号接入的 provider 进候选池，其余仍列出但不参与路由。面板提供盖过自动顺序的逐模型手动优先级，以及放行/收回开关。
 - [Atlantis-LA/dsh-laci-engine](https://github.com/Atlantis-LA/dsh-laci-engine) — 面向 DSH 的本地模型调度插件（仅 Windows 10/11，需 DSH Desktop 0.2.x），内置控制台，支持引擎/模型导入、显存预估、加载关闭和 OpenAI 兼容网关。
 - [atlasmarkz/dsh-effort-pilot](https://github.com/atlasmarkz/dsh-effort-pilot) — 为 DeepSeek Harness 提供逐步思考强度驾驶：简单工具轮保持低档、失败与重活自动升一档，Agent 还能通过 set_effort 工具在不切换模型的情况下调整自身思考深度。
+- [automagik-si/automagik#acp-dsh](https://github.com/automagik-si/automagik/tree/dev/apps/acp-dsh) — 通过 Agent Client Protocol（ACP）把 Claude Code、Codex、Hermes、Antigravity 和 omp 接入为 DSH 模型，使用各自在本机已安装并已登录的 CLI，模型与推理等级以 Agent 上报的为准。Agent 的工具调用显示为 DSH 工具卡片，权限请求走 DSH 的审批框；默认情况下 Claude Code 不用自带工具，而是通过每个会话独立的 MCP 桥使用 DSH 自己的工具，每次调用都按该会话的权限级别由 DSH 审批。Hermes、Antigravity 和 omp 默认关闭，需在设置中开启；Claude Code 与 Codex 的 ACP 适配器会在后台从 npm 安装。
 - [Ayelsh/reasoning-setup](https://github.com/Ayelsh/reasoning-setup) — 为未声明思考档位的模型编辑推理强度档位与思考格式。
 - [Ayowait/dsh-official-reasoning-effort](https://github.com/Ayowait/dsh-official-reasoning-effort) — 输入框里的官方同款「模型 / 推理等级」控制。直接复用官方组件，即使网关模型（如 deepseek-v4.1-flash）未声明思考强度，也始终提供与官方一致的 Off/Low/High/Max 四档；上游未原生支持时，在面板底部显示一行小字提示。
 - [Ayowait/dsh-reasoning-effort-new](https://github.com/Ayowait/dsh-reasoning-effort-new) — dsh-reasoning-effort 的分支：输入框里的两级模型选择器（Provider 列表 + 右侧滑出的模型栏）、搜索与紧凑行，并保留推理强度滑块与最高档特效。
@@ -6915,6 +6919,7 @@ dsh plugin --profile web add dshmarket
 - [hestudio-community/dsh-plugin-onenote](https://github.com/hestudio-community/dsh-plugin-onenote) — 只读取你允许的 Microsoft OneNote 笔记本：设备码登录、设置页的笔记本白名单，以及状态、页面列表、搜索、页面内容四个只读工具。
 - [heswy/dsh-video-editor](https://github.com/heswy/dsh-video-editor) — 在 DeepSeek Harness 内通过对话生成与续改视频，支持多轨剪辑、音频波形和 MP4 导出。需要 Node 22、FFmpeg 与 Chrome；音频生成只有在你填入 API key 后才会调用千问 MaaS 接口。
 - [hezhongtang/dsh-capability-optimizer](https://github.com/hezhongtang/dsh-capability-optimizer) — 以 advisor / reviewer / designer 角色无头调用 Claude Code，回复作为参考答案。
+- [hh5631/dsh-connector-hub](https://github.com/hh5631/dsh-connector-hub) — DSH 的 MCP 连接控制台，从 dsh-mcp-connector 完整 fork，可与原插件同时安装：新增深度健康探测，在握手成功后调用一个只读工具，把「握手通过」与「凭据可用」区分成 verified / credential-invalid / unknown 三态；支持失效凭据一键修复与按连接的工具有限治理。
 - [hhuangpanda/dsh-tool-deny](https://github.com/hhuangpanda/dsh-tool-deny) — 为自定义的一组智能体预设隐藏或禁用特定工具，例如其他插件添加到所有预设的工具。隐藏的工具会从工具列表中移除，不占用 token；拒绝的工具调用会被拒绝。还可以清空其他插件添加的系统提示词。通过 YAML 配置。安装后需在 YAML 里加一行配置才会生效。
 - [Hieupt1904/project-flow-explainer#dsh-plugin](https://github.com/Hieupt1904/project-flow-explainer/tree/main/dsh-plugin) — 把代码库的流程讲解成自包含的离线 HTML 图示，并附 file:line 证据。
 - [HildebrandYu/dsh-open-with](https://github.com/HildebrandYu/dsh-open-with) — 讓 DSH 擁有自己的「副檔名 → 開啟 app」規則：卡片、側邊預覽與變更審查用你指定的 app 開啟， 而 macOS 的 Finder 雙擊預設不受影響。規則在設定頁編輯、存於 ~/.dsh/open-with.json； 「顯示文件位置」仍走 Finder。
@@ -9853,6 +9858,7 @@ dsh plugin --profile web add dshmarket
 - [ArtlexYoung/dsh-super-code](https://github.com/ArtlexYoung/dsh-super-code) — 提供一个更快、更节省、更准确的编码 Agent 预设。在按多维难度规则筛选的 SWE-bench Pro 高难度 100 题评测中，平均耗时减少 36%，平均每题输入 token 减少 17%，正确率提高 5 个百分点。
 - [Asif2BD/JARVIS-Mission-Control-DeepSeek#dsh-plugin-mission-control](https://github.com/Asif2BD/JARVIS-Mission-Control-DeepSeek/tree/main/integrations/deepseek-harness/dsh-plugin-mission-control) — 把 DeepSeek Harness 的会话、消息、工具活动与每轮结果实时推送到 JARVIS Mission Control 看板，附任务状态与人工复核。
 - [Asuta/dsh-cdx-plus#suite](https://github.com/Asuta/dsh-cdx-plus/tree/main/packages/suite) — 把 Codex 的交互方式搬进 DSH：选中引用、侧边对话、Git 工作树环境、代码审查、会话整理等 18 项增强，可独立启停，一次装齐。
+- [automagik-si/automagik#bots-dsh](https://github.com/automagik-si/automagik/tree/dev/apps/bots-dsh) — 一支长期存在的 Bot 团队，每个 Bot 都是一个 DSH 会话，有自己的名字、指令、模型和权限预设：Bot 之间可以互发消息，也能在群聊里用 @ 提及交流；以 Markdown 分别为每个 Bot、每个群聊和整个团队保存记忆；每个 Bot 在本机已安装的 Chrome、Edge、Chromium 或 Brave 中操控自己的浏览器配置文件，发帖、上传、下载或删除前会先征求你的同意。团队首次打开时会创建第一个主 Bot，名为 Omni。基于 DS Bot（Fei2411/DS-Bot）开发。
 - [aw085680-max/dsh-plugin-local-workstudio](https://github.com/aw085680-max/dsh-plugin-local-workstudio) — 同机工作室支持在群聊里给本地 Bot 派单、接力和交付文件，Windows 用户还可置顶任务窗口。
 - [ayf-master/dsh-worklog](https://github.com/ayf-master/dsh-worklog) — 把 DSH 的会话日志还原成 Markdown 工作台账：日报、周报（ISO 周）或月报，按工作目录分组。每个会话列出需求、改动文件、工具用量与中断次数，末尾附「产物」清单：改动最多的文件、新生成的文档、关键命令。提供 /worklog 命令、worklog_generate 工具，以及一个设置页，用来调整存放目录、跨天合流、产物清单与每周定时生成。
 - [azwosile/dsh-tripo-studio#plugin](https://github.com/azwosile/dsh-tripo-studio/tree/main/plugin) — 用于参考图生成、裁剪、分件 Tripo 3D 建模与本地资产预览的可视化工作台，收费操作须逐次确认。
