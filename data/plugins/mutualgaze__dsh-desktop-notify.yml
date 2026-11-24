@@ -2,5 +2,6 @@ url: https://github.com/mutualgaze/dsh-desktop-notify
 name: mutualgaze/dsh-desktop-notify
 category: notify
 description:
-  en: 'Pops a Windows toast and lights a taskbar badge when DSH needs an approval, finishes a turn, or hits an error. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: 'DSH 需要你确认、跑完一轮或报错时，弹 Windows 通知并在任务栏图标上点亮徽标。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: Windows toast notifications you can act on. Approvals and questions arrive as clickable toasts with real buttons — allow, allow for the session, deny, or jump back to the matching session — and the in-app card closes itself once you answer from the toast. Adds a taskbar badge and turn-completion alerts. No admin rights: the toast identity registers itself on first use and uninstall.ps1 removes every key it wrote.
+  zh: 能在通知里直接处理的 Windows 气泡。审批与提问变成带真按钮的 toast——允许、本次会话允许、拒绝、去回复；在气泡上作答后，应用内同一张卡片会自动收起。另有任务栏数字徽标与完成提醒。免管理员：首次使用自动注册，uninstall.ps1 把写入的键清干净。
+icon: https://raw.githubusercontent.com/mutualgaze/dsh-desktop-notify/main/actionable/icon-v2.png
