@@ -1,5 +1,5 @@
-url: https://github.com/yikart/aitoearn-dsh-plugin/tree/master/packages/dsh-plugin-aitoearn
-name: yikart/aitoearn-dsh-plugin#packages/dsh-plugin-aitoearn
+url: https://github.com/yikart/AiToEarn/tree/main/skills/dsh-plugin-aitoearn
+name: yikart/AiToEarn#dsh-plugin-aitoearn
 category: tools
 description:
   en: 'Generate copy, images and short videos, and publish with one click to Douyin, Kuaishou, Xiaohongshu, WeChat Official, Bilibili, Facebook, TikTok and more, covering the full content lifecycle from creation to publishing and monetization.'
