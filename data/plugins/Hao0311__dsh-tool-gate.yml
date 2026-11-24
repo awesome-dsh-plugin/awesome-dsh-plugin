@@ -1,0 +1,6 @@
+url: https://github.com/Hao0311/dsh-tool-gate
+name: Hao0311/dsh-tool-gate
+category: tools
+description:
+  en: 'Reports how much context each tool group costs and folds the groups you do not use, so long tool definition lists stop crowding out the conversation. Sizes are measured on the host; folds apply to the current session only; groups you keep using can be remembered as habits.'
+  zh: '统计每个工具分组占了多少上下文，把不用的分组折起来，避免一长串工具定义挤占对话；大小由宿主侧统计，折叠只作用于当前会话，常留的分组会记为习惯。'
