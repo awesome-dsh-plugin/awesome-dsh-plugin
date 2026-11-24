@@ -1,7 +1,7 @@
 url: https://github.com/thus-zhou/dsh-chapter-whale
 name: thus-zhou/dsh-chapter-whale
 category: workflow
-tarball: https://github.com/thus-zhou/dsh-chapter-whale/releases/download/v0.7.0/dsh-chapter-whale-0.7.0.tgz
+tarball: https://github.com/thus-zhou/dsh-chapter-whale/releases/download/v0.7.1/dsh-chapter-whale-0.7.1.tgz
 description:
-  en: 'Windows x64 DSH workbench for scheduled, unattended novel writing and Fanqie publishing, with Liquid Glass UI, schedule buffer, continuity/style precheck, reader feedback, and optional free-quota models. First start downloads a pinned Python and browser runtime (about 274 MB) from GitHub into %LOCALAPPDATA%\ChapterWhale; publishing signs in to your Fanqie writer account.'
-  zh: '码章鲸：Windows x64 无人值守小说写作与番茄发布工作台，含液态玻璃界面、排期缓冲、连续性与风格预检、读者反馈及部分免费模型渠道。首次启动会从 GitHub 下载固定版本的 Python 与浏览器运行时（约 274 MB）到 %LOCALAPPDATA%\ChapterWhale；发布需要登录你的番茄作家账号。'
+  en: 'Windows x64 & macOS (Apple Silicon / Intel) DSH workbench for scheduled, unattended novel writing and Fanqie publishing, with Liquid Glass UI, schedule buffer, continuity/style precheck, reader feedback, and optional free-quota models. Windows downloads a pinned Python and browser runtime into %LOCALAPPDATA%\ChapterWhale; macOS auto-provisions an isolated Python 3.11+ venv in ~/Library/Application Support/ChapterWhale.'
+  zh: '码章鲸：Windows x64 与 macOS（Apple Silicon / Intel）无人值守小说写作与番茄发布工作台，含液态玻璃界面、排期缓冲、连续性与风格预检、读者反馈及多种模型渠道。Windows 首次启动自动准备固定 Python 与浏览器运行环境；macOS 自动基于 Python 3.11+ 建立隔离 .venv 工作区。'
