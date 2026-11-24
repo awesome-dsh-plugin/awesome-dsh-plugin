@@ -1,0 +1,7 @@
+url: https://github.com/wxsimon2022/dsh-metaontic-newapi-lite
+name: wxsimon2022/dsh-metaontic-newapi-lite
+category: usage
+description:
+  en: 'New API account panel with a searchable model plaza, grouped API key management and copying, subscriptions, top-ups, balance and usage queries.'
+  zh: 'New API 账户管理面板，支持模型广场搜索、API Key 分组管理与复制、订阅、充值、余额和用量查询。'
+tarball: https://github.com/wxsimon2022/dsh-metaontic-newapi-lite/releases/download/v0.0.3/dsh-metaontic-newapi-lite-0.0.3.tgz
