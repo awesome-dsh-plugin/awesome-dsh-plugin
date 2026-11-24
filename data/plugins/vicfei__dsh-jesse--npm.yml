@@ -1,0 +1,6 @@
+url: https://github.com/vicfei/dsh-jesse
+name: vicfei/dsh-jesse
+category: tools
+description:
+  en: 'Strategy parameter optimization for DSH — the zero-dependency auditable lightweight of the Jesse discipline. Grid and walk-forward sweeps with fee-aware backtests where the overfit gap, multiple-testing discount and test-only-once rule are stated IN the output; a stdlib significance engine (random-entry bootstrap verdicts + dual-mode Monte Carlo light with disagreement reported as-is); and the family objective bridge — consume dsh-Kronos scenario artifacts as fitness, ranking parameter sets by worst-of-bracket across P10/P50/P90. For the heavy full platform (Optuna-grade tuning, live trading) it points users to upstream jesse as the complement. Not investment advice.'
+  zh: 'DSH 的策略参数优化：Jesse 纪律的零依赖可审计轻量版。网格与 walk-forward 扫参（费感知回测），过拟合缺口、多重检验折减与 test-only-once 规则直接写在输出里；内置 stdlib 显著性引擎（随机入场 bootstrap 判词+双模式 Monte Carlo 轻量版，分歧如实报告）；以及家族 objective 桥——消费 dsh-Kronos 情景工件作适应度，按 P10/P50/P90 最差括号排名。重栈全平台（Optuna 级调参/实盘）指引用户用上游 jesse（互补位）。非投资建议。'
