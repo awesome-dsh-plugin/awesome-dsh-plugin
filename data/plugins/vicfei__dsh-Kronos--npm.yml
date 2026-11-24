@@ -1,0 +1,6 @@
+url: https://github.com/vicfei/dsh-Kronos
+name: vicfei/dsh-Kronos
+category: tools
+description:
+  en: 'K-line scenario forecasting for DSH — a seeded, reproducible scenario fan from real history (stationary block bootstrap, zero dependencies), with the reproducibility envelope (method/seed/paths/window) riding on every payload and the disclosure that it is a statistical baseline, not a learned model. Ships a rolling OOS self-evaluation harness (quantile coverage, CRPS), an honest head-to-head layer where any backend — including the optional upstream Kronos HF weights via --via kronos — must significantly beat bootstrap to count, joint multi-symbol scenarios preserving realized co-movement, and vol-regime conditioning with the pool disclosed. Not predictions; not investment advice.'
+  zh: 'DSH 的 K 线情景预测：从真实历史生成种子可复现的情景扇（平稳块 bootstrap，零依赖），可复现信封（方法/种子/路径/窗口）随每个载荷输出，并披露这是统计基线而非学习式模型。内置滚动 OOS 自评 harness（分位数覆盖率/CRPS）、诚实对拍层（任何后端——含可选的上游 Kronos HF 权重 --via kronos——须显著赢过 bootstrap 才算数）、保联动多标的联合情景、池披露的波动 regime 条件化。情景非预测；非投资建议。'
