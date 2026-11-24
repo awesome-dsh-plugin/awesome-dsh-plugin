@@ -1,0 +1,7 @@
+url: https://github.com/chenxyzcyxpp/dsh-invest-skill
+name: chenxyzcyxpp/dsh-invest-skill
+category: skill
+description:
+  en: 'Adds an A-share research agent preset with 15 bundled skills for policy interpretation, market hotspots, industry chains, stock diagnosis, market review and quantitative picking.'
+  zh: '新增一个 A 股投研专家预设，内置 15 个技能，覆盖政策解读、市场热点、产业链拆解、个股诊断、行情复盘与量化选股。'
+icon: https://raw.githubusercontent.com/chenxyzcyxpp/dsh-invest-skill/main/icon.jpg
