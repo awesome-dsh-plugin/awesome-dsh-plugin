@@ -1,0 +1,7 @@
+url: https://github.com/Dongze502/preflight-eta-chime
+name: Dongze502/preflight-eta-chime
+category: ui
+icon: https://raw.githubusercontent.com/Dongze502/preflight-eta-chime/main/assets/icon-512.png
+description.en: "Pre-send estimate even before the first token: an on-demand read-only subagent judges the task, the composer pill counts the turn down, and a chime marks completion. The estimate self-calibrates from finished turns."
+description.zh: "发送前就问一句要多久：按需起一个只读子代理判断本轮复杂度与耗时区间，输入框药丸倒计时，结束时响铃提醒；估算会从已完成的回合里自我校准。"
+tarball: https://github.com/Dongze502/preflight-eta-chime/releases/latest/download/preflight-eta-chime.tgz
