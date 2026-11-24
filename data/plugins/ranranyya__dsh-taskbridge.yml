@@ -1,0 +1,6 @@
+url: https://github.com/ranranyya/dsh-taskbridge
+name: ranranyya/dsh-taskbridge
+category: workflow
+description:
+  en: 'Delegate coding tasks from Codex and Antigravity to DSH over 11 bounded MCP tools: one-click host integration, isolated Git worktrees with cross-subtask reuse, silent long waits, per-call permission approval, and structured delivery review.'
+  zh: '通过 11 个有界 MCP 工具将 Codex 与 Antigravity 的编码任务委派给 DSH 执行：支持一键宿主集成、隔离 Git 工作树与跨子包复用、静默长等、按参数指纹单次权限审批及结构化交付验收。'
