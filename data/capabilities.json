@@ -34313,18 +34313,6 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/ShenpingDD/wooden-fish-dsh": {
-    "version": "1.1.0",
-    "spec": "github:ShenpingDD/wooden-fish-dsh",
-    "capabilities": [
-      "fs-write",
-      "fs-read",
-      "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/SherUnlocked-4869/dsh-plugin-msg-nav": {
     "version": "0.2.2",
     "spec": "github:SherUnlocked-4869/dsh-plugin-msg-nav",
