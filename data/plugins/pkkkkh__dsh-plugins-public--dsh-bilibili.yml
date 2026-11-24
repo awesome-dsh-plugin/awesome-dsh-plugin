@@ -1,0 +1,6 @@
+url: https://github.com/pkkkkh/dsh-plugins-public/tree/main/dsh-bilibili
+name: pkkkkh/dsh-plugins-public#dsh-bilibili
+category: tools
+description:
+  en: Bilibili video analysis for DSH. Reads the transcript first, then captures only the keyframes the model asks for; adds danmaku and comment sampling, optional local ASR, a contact-sheet view and a subtitle-duration mismatch guard.
+  zh: DSH 的 B 站视频分析。先读文稿、再按模型点名的时刻定向抓帧；带弹幕与评论采样、可配本地 ASR、九宫格看帧，并有字幕时长错配守卫。

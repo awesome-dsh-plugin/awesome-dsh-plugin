@@ -1,0 +1,6 @@
+url: https://github.com/pkkkkh/dsh-plugins-public/tree/main/im-session-archive
+name: pkkkkh/dsh-plugins-public#im-session-archive
+category: session
+description:
+  en: Keeps IM-channel session lists tidy: archives older sessions per channel (archives only, never deletes) and maintains one cross-session LONGTERM.md so a fresh conversation starts with the previous context already loaded.
+  zh: 让 IM 通道的会话列表保持整洁：按通道归档旧会话（只归档、绝不删除），并维护一份跨会话的 LONGTERM.md，新对话开局就带上之前的上下文。

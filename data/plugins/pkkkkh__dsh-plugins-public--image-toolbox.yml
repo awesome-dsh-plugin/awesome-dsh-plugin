@@ -1,0 +1,6 @@
+url: https://github.com/pkkkkh/dsh-plugins-public/tree/main/image-toolbox
+name: pkkkkh/dsh-plugins-public#image-toolbox
+category: tools
+description:
+  en: Server-side image generation for DSH. One image_generate tool calls Volcengine Ark (Doubao Seedream) directly and writes the PNG/JPEG to disk, with no client UI; without an API key it returns a clear error instead of charging anything.
+  zh: DSH 服务端生图。一个 image_generate 工具直连火山方舟（豆包 Seedream）出图并落盘，没有客户端 UI；没配置 Key 时明确报错、不产生费用。
