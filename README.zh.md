@@ -7209,7 +7209,7 @@ dsh plugin --profile web add dshmarket
 - [lijieyu233/dsh-codex-account-tools](https://github.com/lijieyu233/dsh-codex-account-tools) — 为 Codex 订阅插件提供账号 JSON 导入、预览与导出，支持重复识别和完整备份确认。需先安装 dsh-codex-subscription 3.2.6 或更高版本。
 - [lijiusa/dsh-workbuddy-daily-credits](https://github.com/lijiusa/dsh-workbuddy-daily-credits) — 输入框工具行卡片与 agent 工具一键领取 WorkBuddy 每日签到积分与福利积分；走官方网页 OAuth 登录，无需桌面客户端或第三方插件。若本机其他 WorkBuddy 插件已在 ~/.dsh/workbuddy-vault 里保存了登录态，会直接复用，不再让你重新授权。
 - [lilixinsniper/dsh-intent-recognition](https://github.com/lilixinsniper/dsh-intent-recognition) — 五层意图识别流水线（规则、pgvector 向量检索、Jev 概率精判、微调仲裁、LLM 兜底），带场景管理界面、PostgreSQL 存储与可分发 API 服务。
-- [limowan/dsh-reading-desk](https://github.com/limowan/dsh-reading-desk) — 微信读书阅读台：月度书单与日历、按 FSRS 排期的划线回顾、带 AI 摘要的笔记、月度阅读展与阅读统计。
+- [limowan/dsh-reading-desk](https://github.com/limowan/dsh-reading-desk) — 微信读书阅读台：月度书单与日历、按 FSRS 排期的划线回顾、带 AI 摘要的笔记、月度阅读展与阅读统计。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [LIN-F1SH/dsh-prompt-lint](https://github.com/LIN-F1SH/dsh-prompt-lint) — 读你的历史会话，找出反复踩的提问坑（缺路径与版本、没定输出格式、漏说前置条件导致工具失败），每条给一段可直接粘贴的改写；输入框右侧一键把草稿改成更短的带约束版本。
 - [linfeicxy/dsh-idea-box](https://github.com/linfeicxy/dsh-idea-box) — 界面里一颗灯泡：写一句话或拖一张截图，回车就存成工作区里的 Markdown 文件。
 - [LINGTIAN303/dsh-agents-visualization](https://github.com/LINGTIAN303/dsh-agents-visualization) — 在 DSH 设置页查看、创建与编辑 AGENTS.md 等 AI 规则文件：项目级跟随工作区从项目根到 cwd 的目录链，全局级覆盖 ~/.dsh 与 ~/.agents，另含 25 个第三方 AI 工具的用户级规则文件。预览以渲染态展示并自动剥离 .mdc 的 frontmatter，就地编辑并带冲突检测，内容完全相同的跨工具文件会互相标注，内置清单之外的工具按目录特征自动发现。零运行时依赖。
@@ -9369,7 +9369,7 @@ dsh plugin --profile web add dshmarket
 - [aawef/dsh-skill-manager-tags](https://github.com/aawef/dsh-skill-manager-tags) — 按标签筛选技能：给 DSH 技能打标签，再用布尔表达式为每个工作区或对话选出下发给模型的子集（例如 `pdf + docx` 或 `aegis * plugin`）。命中以外的技能会被 deny-shadow 真正从模型目录里移走，而不只是在设置页隐藏；表达式之外的技能可手动添加或强制禁用，另附带 `tagging-skills` 教 agent 从本机技能清单自建标签体系。
 - [addie-ace/dsh-mattpocock-skills](https://github.com/addie-ace/dsh-mattpocock-skills) — 技能包插件：把 mattpocock/skills 的 25 个 promoted 技能（工程与效率）全文汉化，注册为 DSH 捆绑技能 provider，经技能系统发现与调用。
 - [adithyanraj03/dsh-skills-pack](https://github.com/adithyanraj03/dsh-skills-pack) — 把 36 个内置 agent 技能（科研写作、LaTeX、实验、设计评审、办公文档、动画、Windows shell 与 dsh 插件规范）注册为一个纯宿主侧的技能提供者：没有界面、没有网络请求，也没有自己的遥测；技能脚本以用户的权限运行。
-- [afterpartyai/ss33-skill-store-for-agents#dsh](https://github.com/afterpartyai/ss33-skill-store-for-agents/tree/main/adapters/dsh) — Searches the ss33 Skill Store with a summary of your project's stack and installs picked skills as native SKILL.md files pinned in ss33.lock, with opt-in prompt matching.
+- [afterpartyai/ss33-skill-store-for-agents#dsh](https://github.com/afterpartyai/ss33-skill-store-for-agents/tree/main/adapters/dsh) — 根据项目技术栈摘要检索 ss33 Skill Store，将选中的技能作为原生 SKILL.md 安装并钉入 ss33.lock，支持按需开启提示词匹配。
 - [AhaCrazy/action-hub#dsh-action-hub](https://github.com/AhaCrazy/action-hub/tree/main/packages/dsh) — 面向 DSH 的标准 Agent Skill 库：同一份 SKILL.md 可作为模型可见的 Skill 或仅由用户调用的 Command，支持分组、项目范围、导入导出和原生 Alt+A 面板。
 - [Aliboder/dsh-expert-hub](https://github.com/Aliboder/dsh-expert-hub) — 专家中心：浏览并导入 WorkBuddy 专家，用 AI 创建专家、编辑 role.md 与技能，并按会话切换专家。
 - [AlLHHH/dsh-skill-palette](https://github.com/AlLHHH/dsh-skill-palette) — 输入框右下方有一个「技能」按钮，点开就能搜技能、按分类浏览、收藏常用的，选中后直接插进输入框；回答下方还会列出这一轮真正调用过的技能。
