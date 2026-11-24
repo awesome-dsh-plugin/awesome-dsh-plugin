@@ -1,0 +1,6 @@
+url: https://github.com/running-syh/dsh-agy-link
+name: running-syh/dsh-agy-link
+category: model
+description:
+  en: 'Fork of dsh-agy-link that ticks which Antigravity models the model picker shows, and lists every model the signed-in account can run even when the agy CLI is not installed.'
+  zh: 'dsh-agy-link 的分叉版：在设置里勾选模型选择器显示哪些 Antigravity 模型；即使没装 agy CLI 也能列出登录账号实际可用的全部模型。'
