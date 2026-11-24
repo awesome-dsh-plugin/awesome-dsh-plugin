@@ -1,0 +1,6 @@
+url: https://github.com/zuoyunlai/dsh-zhuoer-theme
+name: zuoyunlai/dsh-zhuoer-theme
+category: theme
+description:
+  en: 'Eleven built-in color themes and a custom theme editor (eight color anchors, style presets, pick colors from a screenshot) that applies design tokens locally through the host theme API.'
+  zh: 11 套内置配色，以及带八个颜色锚点、风格预设和截图取色的自定义主题编辑器；通过宿主主题 API 在本地注入设计 token。
