@@ -1,0 +1,6 @@
+url: https://github.com/Hao0311/dsh-timebox
+name: Hao0311/dsh-timebox
+category: workflow
+description:
+  en: 'Timeboxed delivery: set a budget in the composer (for example 20 minutes) and the model sees the remaining time on every step, has to ship a usable result at the deadline, adjusts its plan and delegation to the time left, and reports blockers early. An optional keep-polishing mode runs until a chosen moment.'
+  zh: '定时交付：在输入框下方设一个预算（例如 20 分钟），模型每一步都能看到剩余时间，到点必须交出能用的产物，按剩余时间调整方案与委派，并提前报告阻塞；可选「持续打磨」模式跑到指定时刻。'
