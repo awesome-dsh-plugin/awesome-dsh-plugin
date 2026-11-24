@@ -3312,7 +3312,7 @@ dsh plugin --profile web add dshmarket
 - [SonettoGu14/dsh-tokeneconomizer#packages/bundle](https://github.com/SonettoGu14/dsh-tokeneconomizer/tree/master/packages/bundle) — 一次装齐成本记账、仓库事实与工具隐藏三个组件，并注册 /te：一条命令报出三者是否在运行、各自测到了什么、要关掉某一个该动哪一行。三个组件仍可单独安装，这里只是一次装齐的入口。
 - [SonettoGu14/dsh-tokeneconomizer#packages/cost](https://github.com/SonettoGu14/dsh-tokeneconomizer/tree/master/packages/cost) — 缓存加权成本记账：把每个 DSH 会话折算成等效全价输入 token，按会话留历史、按仓库累计，用 /te-cost 打印。属于 dsh-te 套件的三个组件之一，安装 dsh-te 即装齐三个，每个也能单独关掉。
 - [songrui111/dsh-readprune](https://github.com/songrui111/dsh-readprune) — 为 DeepSeek Harness 会话节省 token：按行号或符号定位读取文件而不是整份读，并对过大的工具结果设上限且保留取回路径。修剪发生在源头，而不是内容进入上下文之后。在建模的 30 步会话上实测 prompt tokens 减少 43.9%。
-- [spartawhy117/dsh-token-dash](https://github.com/spartawhy117/dsh-token-dash) — DSH Token 与费用看板：8 家供应商开箱即用，含 GLM / Kimi / OpenCode Go / Command Code 的订阅配额、各账户余额与预算；填第三方 API Key 的自建 / 中转 / 本地 OpenAI 兼容服务同样能记账，未定价模型不按 0 元计，可导出 / 导入本地 JSON 备份。
+- [spartawhy117/dsh-token-dash](https://github.com/spartawhy117/dsh-token-dash) — DSH Token 与费用看板：8 家供应商开箱即用，按供应商查看预算、订阅配额（GLM / Kimi / OpenCode Go / Command Code）与账户余额；Pill、浮层、整页三处呈现费用与真实 Tokens、缓存命中率与用量趋势，成本趋势双轴对比；填第三方 API Key 的自建 / 中转 / 本地 OpenAI 兼容服务同样能记账，未定价模型不按 0 元计，可导出 / 导入本地 JSON 备份。
 - [SSHOOTING/dsh-billing-stats](https://github.com/SSHOOTING/dsh-billing-stats) — 只读 DSH 计费统计：逐请求、逐轮与会话金额，公开 API 等价价格、可选账单校准，当前支持 DeepSeek 系列模型。
 - [SSHOOTING/dsh-event-fix](https://github.com/SSHOOTING/dsh-event-fix) — 只读分析 DeepSeek Harness 会话中每一步的报错与无效动作：统计工具与命令失败、模型重试、重复调用、轮次中断和空转步，并归因对应浪费的 token 与耗时。
 - [SSHOOTING/dsh-plugin-token-budget](https://github.com/SSHOOTING/dsh-plugin-token-budget) — 只读 DSH 命令，按可配置预算为会话 token 用量评分。
