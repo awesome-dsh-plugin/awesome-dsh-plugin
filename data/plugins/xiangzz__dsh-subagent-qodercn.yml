@@ -1,0 +1,8 @@
+url: https://github.com/xiangzz/dsh-subagent-qodercn
+name: xiangzz/dsh-subagent-qodercn
+category: tools
+icon: https://raw.githubusercontent.com/xiangzz/dsh-subagent-qodercn/main/assets/icon-304.png
+tarball: https://github.com/xiangzz/dsh-subagent-qodercn/releases/download/v0.1.0/dsh-subagent-qodercn-0.1.0.tgz
+description:
+  en: 'Runs the local Qoder CLI CN (`qoderclicn --acp`) as a DSH subagent through a subagent_qodercn tool: each call starts a fresh ACP stdio process in the task working directory and returns only its final answer or a safe failure diagnostic. Requires Qoder CLI CN installed and signed in.'
+  zh: '把本机 Qoder CLI CN（`qoderclicn --acp`）当作 DSH 子代理运行：每次调用通过 subagent_qodercn 工具，在任务工作目录里新起一个 ACP stdio 进程，只把最终答案或安全的失败诊断交回父会话。需先安装并登录 Qoder CLI CN。'
