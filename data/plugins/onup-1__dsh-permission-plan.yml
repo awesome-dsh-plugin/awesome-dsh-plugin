@@ -1,0 +1,6 @@
+url: https://github.com/onup-1/dsh-permission-plan
+name: onup-1/dsh-permission-plan
+category: security
+description:
+  en: Collects everything a task will need into one approval dialog, then remembers the approved keywords so similar commands stop prompting.
+  zh: 把一个任务需要的提权一次性问完，之后记住已批准的关键词，同类命令不再逐条询问。
