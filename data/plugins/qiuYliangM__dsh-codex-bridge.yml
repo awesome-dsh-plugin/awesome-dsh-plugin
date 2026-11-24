@@ -1,0 +1,7 @@
+url: https://github.com/qiuYliangM/dsh-codex-bridge
+name: qiuYliangM/dsh-codex-bridge
+category: workflow
+description:
+  en: Local bidirectional messaging and explicit project and session management between DSH and Codex through a single DSH bundle.
+  zh: 仅在 DSH 安装，提供与本机 Codex 的双向消息及显式工程、会话管理。
+tarball: https://github.com/qiuYliangM/dsh-codex-bridge/releases/download/v0.5.2/peerbridge-dsh-plugin-0.5.2.tgz
