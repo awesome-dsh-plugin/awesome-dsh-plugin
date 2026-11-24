@@ -1,0 +1,7 @@
+url: https://github.com/HanX90/turn-model-badge
+name: HanX90/turn-model-badge
+category: ui
+description:
+  en: 'Shows the model that actually served each completed conversation turn...'
+  zh: '在每轮已完成的回复下方用小标签显示该轮实际使用的模型...'
+icon: https://raw.githubusercontent.com/HanX90/turn-model-badge/main/icon.svg
