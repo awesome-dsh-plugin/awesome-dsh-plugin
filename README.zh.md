@@ -10821,6 +10821,7 @@ dsh plugin --profile web add dshmarket
 - [HMYDK/dsh-notify](https://github.com/HMYDK/dsh-notify) — 会话完成一轮任务或需要你审批时，弹出系统桌面通知。
 - [HonestShine/dsh-desktop-notify](https://github.com/HonestShine/dsh-desktop-notify) — DSH 的原生桌面通知。仅支持 Windows / macOS 桌面端（DSH Web 不在支持范围）。窗口在后台时权限确认直接出现在系统通知里；平台支持通知按钮时，点「拒绝 / 允许一次」即把结果交回宿主审批流程，切回窗口或超时则退回应用内审批面板。权限确认与提问还会播放独立于窗口焦点的交互提示音；任务完成、提问、错误提醒、通知铃声与提示音都在「通知提醒」设置页配置。
 - [HOPE-LGNF/dsh-state-notifier](https://github.com/HOPE-LGNF/dsh-state-notifier) — 为 DeepSeek Harness 提供五类任务状态提醒（完成、审批、提问、受阻、出错）：四种浏览器合成音方案、可在通知中显示提问正文、可选的原生 Windows/WSL 通知通道（可越过专注助手），没有就绪浏览器时降级为终端 BEL。
+- [HowardXue7790/dsh-approval-notify](https://github.com/HowardXue7790/dsh-approval-notify) — DSH 请求审批时弹 Windows 通知，正文由模型改写成一句大白话，通知上带允许和拒绝按钮；点通知正文会把 DSH 抬到前台并交回网页卡片。
 - [hoyin-law/dsh-feishu-cli](https://github.com/hoyin-law/dsh-feishu-cli) — 通过飞书官方 lark-cli 接入 DeepSeek Harness：侧边栏面板完成应用初始化与扫码登录，内置命令控制台，并提供 Agent 工具执行任意 lark-cli 命令，覆盖 18 大业务域、200+ 高层命令与全量 OpenAPI；首次使用时自动下载对应平台的官方 CLI（Windows / macOS / Linux）。
 - [hsiu1214/dsh-a2a-notify](https://github.com/hsiu1214/dsh-a2a-notify) — 会话生命周期事件（新建 / 运行中 / 完成 / 出错）的 Windows 气泡通知，覆盖所有工作区；还会监听会话存储，捕捉事件从不经过宿主总线的无头与 A2A 派发会话。仅支持 Windows。
 - [HughPython/dsh-tc-mail](https://github.com/HughPython/dsh-tc-mail) — 腾讯智能体邮箱（Agent Mail）客户端：侧边栏面板浏览收件箱与发件箱，HTML 正文在沙箱内渲染并默认拦截外链图片，支持写信、回复、转发、附件收发、搜索与永久删除，可调字体与界面透明度；另注册 5 个工具（mail_health、mail_list、mail_read、mail_search、mail_send），发信走已授权的 agently-cli 账号。需腾讯账号（设备码授权），面板可一键安装 agently-cli；仅在 Windows 上实测。
