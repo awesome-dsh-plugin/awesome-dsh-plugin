@@ -2820,7 +2820,7 @@ dsh plugin --profile web add dshmarket
 - [9963KK/workbuddy-monitor](https://github.com/9963KK/workbuddy-monitor) — 实时监控 WorkBuddy 积分用量与免费用户的 24h 窗口额度（本机估算）：输入框徽标 + 设置面板，支持多账号轮换与免费/付费识别。
 - [a1113622001/dsh-session-stats-panel](https://github.com/a1113622001/dsh-session-stats-panel) — 右侧会话统计面板，展示平均缓存命中率、会话成本、运行时长、请求数、累计 token 与账户余额。
 - [a961282799-crypto/dsh-timeband](https://github.com/a961282799-crypto/dsh-timeband) — 在 DSH 桌面端头像旁显示 DeepSeek API 峰谷时段、切换倒计时与迷你时间轴，点击查看北京时间 24 小时时间轴；节假日日历从 holiday-cn 自动更新，可选在峰时段开始前 5 分钟提醒。
-- [AAMMNNZZ/dsh-opencode-usage-sidebar](https://github.com/AAMMNNZZ/dsh-opencode-usage-sidebar) — 在 DSH 侧栏底部显示 OpenCode Go 订阅的 5 小时、本周、本月用量，并倒计时到 5 小时窗口重置。需先在「设置 → 模型」或 ~/.dsh/.credentials.yaml 的 refs 中配置 OPENCODE_GO_API_KEY，否则卡片不显示。
+- [AAMMNNZZ/dsh-opencode-usage-sidebar](https://github.com/AAMMNNZZ/dsh-opencode-usage-sidebar) — 在 DSH 侧栏底部显示 OpenCode Go 订阅的 5 小时、本周、本月用量，并实时倒计时到本月窗口重置。需先在「设置 → 模型」或 ~/.dsh/.credentials.yaml 的 refs 中配置 OPENCODE_GO_API_KEY，否则卡片不显示。
 - [AAxium/dsh-usage](https://github.com/AAxium/dsh-usage) — 模型额度与账户余额表盘，支持额度分组和自定义用量阈值。基于 dougen/dsh-deepseek-usage 的分支，沿用上游的插件行 id 与 /api/deepseek-usage 路由，不能与上游同装。
 - [abdelrhmanwaelbishr/dsh-all-over-chinese-to-english](https://github.com/abdelrhmanwaelbishr/dsh-all-over-chinese-to-english) — 把 DSH 界面中的中文实时翻译成英文——插件卡片、设置页、下拉菜单、插件视图标签、同源 iframe 面板，以及智能体在对话中自己写的中文（回复正文与思考标题）。用户自己写的消息、工具输出、输入框、Trajectory 表格与 Context 仪表盘不改动，因此用户内容不会被发送到翻译后端。使用内置翻译服务（Bing 或 Google，无需密钥），不可用时回退到默认模型。
 - [adithyanraj03/dsh-balance-plugin](https://github.com/adithyanraj03/dsh-balance-plugin) — 输入框下方按供应商显示账户余额的芯片：支持 DeepSeek、OpenRouter、Moonshot/Kimi、智谱/GLM、MiniMax 和阿里云 Token Plan，并带高峰/低谷与夜间折扣倒计时。
@@ -9655,6 +9655,7 @@ dsh plugin --profile web add dshmarket
 - [Wangxiaolu0716/ctf-solve-teach](https://github.com/Wangxiaolu0716/ctf-solve-teach) — 教学式 CTF 解题技能：每步讲清套路、工具选型与底层原理，收尾在 solves/<题目名>/ 生成可复现 Writeup，并用九章质量门校验。
 - [wangyanan520/dsh-skill-workbench](https://github.com/wangyanan520/dsh-skill-workbench) — 给 DSH 技能加中文显示层：`/` 菜单按中文分类显示中文名与简介，调用仍是英文 `/name`，不改任何 SKILL.md。还能从安装来源补简介，卸载个人技能时移入回收站。
 - [WangZW928/Career-PPTagent](https://github.com/WangZW928/Career-PPTagent) — 可编辑 PowerPoint 制作工作流（基于 icip-cas/PPTAgent 的 Skill 版本改造），包含简洁中文商业风格、HTML 幻灯片渲染与 PPTX 导出复查。仅 Linux/WSL 或 macOS（仅 Apple Silicon）；首次使用需先装 LibreOffice、中文字体、Node.js 22+ 与 uv，再执行一次 setup——它会用 uv 建 Python 3.12 环境并安装 Playwright Chromium。
+- [WangZW928/dsh-writing-style](https://github.com/WangZW928/dsh-writing-style) — 基于作者提炼规则的分文体写作技能，支持起草、润色、复核与待确认的规则反馈；安装包不含原始写作材料。
 - [WangZW928/HPC_Style_For_AI](https://github.com/WangZW928/HPC_Style_For_AI) — 按需加载的 HPC 设计与评审技能，涵盖数值契约、成本模型、数据运动、绑定时机、并发依赖与工程取舍，源码案例独立于通用原则。
 - [warm-flame-core/new-project-init](https://github.com/warm-flame-core/new-project-init) — 项目文档体系初始化 skill：提问驱动落实文档规范、固化 AI 协作工作流，跨 DSH / Reasonix / Claude Code / Codex 可用。
 - [wasteoneslife/scenes-skill-creator](https://github.com/wasteoneslife/scenes-skill-creator) — Web 界面上的技能创建面板：拉取官方 creator 技能，把需求交给华为云 / 通用 / REST API 三个 creator 之一执行创建，随后按 10 分制评测产物，未达 8.5 分就把逐项扣分交回 creator 修改直到通过。
@@ -10887,7 +10888,7 @@ dsh plugin --profile web add dshmarket
 - [hoyin-law/dsh-feishu-cli](https://github.com/hoyin-law/dsh-feishu-cli) — 通过飞书官方 lark-cli 接入 DeepSeek Harness：侧边栏面板完成应用初始化与扫码登录，内置命令控制台，并提供 Agent 工具执行任意 lark-cli 命令，覆盖 18 大业务域、200+ 高层命令与全量 OpenAPI；首次使用时自动下载对应平台的官方 CLI（Windows / macOS / Linux）。
 - [hsiu1214/dsh-a2a-notify](https://github.com/hsiu1214/dsh-a2a-notify) — 会话生命周期事件（新建 / 运行中 / 完成 / 出错）的 Windows 气泡通知，覆盖所有工作区；还会监听会话存储，捕捉事件从不经过宿主总线的无头与 A2A 派发会话。仅支持 Windows。
 - [HughPython/dsh-tc-mail](https://github.com/HughPython/dsh-tc-mail) — 腾讯智能体邮箱（Agent Mail）客户端：侧边栏面板浏览收件箱与发件箱，HTML 正文在沙箱内渲染并默认拦截外链图片，支持写信、回复、转发、附件收发、搜索与永久删除，可调字体与界面透明度；另注册 5 个工具（mail_health、mail_list、mail_read、mail_search、mail_send），发信走已授权的 agently-cli 账号。需腾讯账号（设备码授权），面板可一键安装 agently-cli；仅在 Windows 上实测。
-- [HUHUhim/dsh-taskbar-badge](https://github.com/HUHUhim/dsh-taskbar-badge) — 在 Windows 任务栏图标上显示 DSH 未读会话数，并恢复上次关闭时的窗口大小和位置。
+- [HUHUhim/dsh-taskbar-badge](https://github.com/HUHUhim/dsh-taskbar-badge) — 在 Windows 任务栏图标上显示 DSH 未读会话数。
 - [huhui-tech/dsh-host-notify](https://github.com/huhui-tech/dsh-host-notify) — 宿主侧 macOS 系统通知：提问/审批/回复完成即时送达，免疫渲染层隐藏丢通知，带图标、提示音与点击抬窗。
 - [HuiHui-Small/dsh-outlook-bridge](https://github.com/HuiHui-Small/dsh-outlook-bridge) — 在 DeepSeek 助理中接入 Outlook 邮箱和日历，支持未读角标与 AI 邮件草稿。新授权需要在设置中填写自己的 Microsoft Entra 应用客户端 ID，微软登录页在 DeepSeek Harness 内置浏览器中打开。申请的权限包括邮件读写与发信、日历和 To Do 读写。AI 功能会把邮件内容交给你配置的模型；欢迎页天气会请求 Open-Meteo，使用当前位置时还会请求 BigDataCloud。
 - [huihui3488/dsh-native-toast](https://github.com/huihui3488/dsh-native-toast) — 任务完成、需要你选择或批准时，在 Windows 通知中心弹出原生通知；点击通知会把 DeepSeek Harness 带回前台，并滚动到刚结束的一轮或定位到待回答的提问。文字、徽标、提示音与各类开关都可配置。
