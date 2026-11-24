@@ -1,0 +1,7 @@
+url: "https://github.com/riko0712/dsh-research-material-library"
+name: "riko0712/dsh-research-material-library"
+category: "tools"
+description:
+  en: "Workspace-scoped research material library for papers, web pages, datasets, code and discussions. Six tools cover capture, full-text search, status updates, gaps and audits."
+  zh: "按工作区隔离的科研素材库：收录论文、网页、数据集、代码和讨论，提供全文检索、状态更新、缺口记录和库体检。"
+icon: "https://raw.githubusercontent.com/riko0712/dsh-research-material-library/main/assets/icon-180.png"
