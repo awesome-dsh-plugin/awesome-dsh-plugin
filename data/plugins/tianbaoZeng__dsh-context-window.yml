@@ -1,0 +1,6 @@
+url: https://github.com/tianbaoZeng/dsh-context-window
+name: tianbaoZeng/dsh-context-window
+category: memory
+description:
+  en: 'Context-window optimizer: real-time token meter, threshold-triggered auto-summarisation, /pin /unpin file pinning with git-diff injection, and /snapshot /restore session snapshots.'
+  zh: '上下文窗口优化器：实时 token 计量条，达到阈值自动摘要压缩历史；/pin /unpin 锁定关键文件并注入 git diff 增量；/snapshot /restore 保存与恢复会话快照。'
