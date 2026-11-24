@@ -1,0 +1,7 @@
+url: https://github.com/DongKaiqiang1992/dsh-zsxq-digest
+name: DongKaiqiang1992/dsh-zsxq-digest
+category: workflow
+description:
+  en: Cloud Knowledge summarizes posts from selected Zsxq groups and looks for attachments in the user’s Tencent IMA libraries before downloading them from Zsxq.
+  zh: 云知识按时段汇总所选知识星球的帖子，优先从用户选择的腾讯 IMA 知识库读取附件，缺失时再从星球补充。
+tarball: https://github.com/DongKaiqiang1992/dsh-zsxq-digest/releases/download/v0.3.2/dsh-zsxq-digest-0.3.2.tgz
