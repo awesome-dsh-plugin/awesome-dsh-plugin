@@ -1,0 +1,7 @@
+url: https://github.com/hh5631/dsh-connector-hub
+name: hh5631/dsh-connector-hub
+category: tools
+description:
+  en: 'MCP connector console for DeepSeek Harness, forked from dsh-mcp-connector and installable alongside it: adds a deep health probe that separates a passing MCP handshake from a working credential by calling one read-only tool, three health states (verified, credential-invalid, unknown), one-click credential repair, and per-connection tool governance.'
+  zh: 'DSH 的 MCP 连接控制台，从 dsh-mcp-connector 完整 fork，可与原插件同时安装：新增深度健康探测，在握手成功后调用一个只读工具，把「握手通过」与「凭据可用」区分成 verified / credential-invalid / unknown 三态；支持失效凭据一键修复与按连接的工具有限治理。'
+tarball: https://github.com/hh5631/dsh-connector-hub/releases/latest/download/dsh-connector-hub.tgz
