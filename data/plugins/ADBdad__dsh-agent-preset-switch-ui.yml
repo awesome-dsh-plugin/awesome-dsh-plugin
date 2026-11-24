@@ -1,0 +1,6 @@
+url: https://github.com/ADBdad/dsh-agent-preset-switch-ui
+name: ADBdad/dsh-agent-preset-switch-ui
+category: ui
+description:
+  en: "Adds a clickable agent-preset switcher to the DSH session header; switching takes effect for the current session immediately, with its own engine and no dependency on other plugins."
+  zh: 在 DSH 会话标题栏加一个可点击的 Agent 预设切换器，切换对当前会话立即生效；自带切换引擎，不依赖其它插件。
