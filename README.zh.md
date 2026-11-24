@@ -587,6 +587,7 @@ dsh plugin --profile web add dshmarket
 - [chengzhi43/dsh-file](https://github.com/chengzhi43/dsh-file) — VS Code 风格文件管理器：侧边栏文件树浏览当前对话工作区，中间列用 Monaco 编辑文件，支持主题导入导出与 Markdown 预览。
 - [chengzhicao/llm-capture](https://github.com/chengzhicao/llm-capture) — 用于捕获和查看原始 LLM 请求、流式响应、Token 用量和工具调用的 Web 界面。
 - [CHENJIAMIAN/dsh-editable-send](https://github.com/CHENJIAMIAN/dsh-editable-send) — 在输入框右边加一个文本可编辑的发送按钮，点一下就把它的文本直接发出去，默认「继续」。
+- [CHENJIAMIAN/dsh-thinking-toggle](https://github.com/CHENJIAMIAN/dsh-thinking-toggle) — 在输入框工具行加一个按钮：点一下关闭模型思考，再点一下回到上次的思考档位，如此循环。
 - [chenxiachan/thoughtdag#dsh](https://github.com/chenxiachan/thoughtdag/tree/main/dsh) — 在 DeepSeek Harness 中嵌入可编辑对话画布，通过连线选择画布请求的上下文，支持分支、合并与本地 Agent 会话导入。
 - [ChenYichener/dsh-nce](https://github.com/ChenYichener/dsh-nce) — 新概念英语第一册学习面板：144 课在一页内读完课文、带音标的词汇、语法和配套视频，配 Anki 式间隔重复、错题本，以及由你自己的模型批改的可填写练习卷。
 - [ChenYiming-aaa/dsh-ui-ux-pro-max](https://github.com/ChenYiming-aaa/dsh-ui-ux-pro-max) — 为 DeepSeek Harness 提供离线可用的 UI/UX 设计智能库：内置 84 种设计风格、192 个配色、74 组字体、99 条 UX 规范、25 种图表与 22 个技术栈，提供 design_recommend / design_review / design_search 三个工具，中文优先、零运行依赖。
@@ -6025,7 +6026,7 @@ dsh plugin --profile web add dshmarket
 - [kialajin-l/DSH_Plus#dsh-nexus-memory](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-nexus-memory) — 基于本地 SQLite 的长期记忆：新会话自动注入项目相关记忆（噪声过滤），支持轻量规则或模型辅助提取，写入去重与反馈加权排序。Python 桥默认使用 $NEXUS_PYTHON 或 <DSH home>/dsh-runtimes/dsh-primary-runtime/dependencies/python/ 下的解释器（需 3.8+）。
 - [kianajunjie/dsh-hippocampus](https://github.com/kianajunjie/dsh-hippocampus) — 给长期陪伴型机器人的记忆层：事件编码、情绪加权遗忘、召回分三档确定度、改口即失效、按人隔离，另有关系、事实、章节、技能、缺口五张表。包含命令行、HTTP 接口和 DSH 插件三件套。
 - [kiefeng/dsh-lan-memory](https://github.com/kiefeng/dsh-lan-memory) — 澜·轻量本地记忆与人格系统：四层文件记忆（pinned / memory / facts / experience）、可编辑 SOUL/MOOD 人格、零 LLM 捕获、BM25 检索与状态池卡片；无独立管理面板，不依赖 Python 服务、向量库或 API Key。
-- [Kingzhoudk/dsh-memory-switch](https://github.com/Kingzhoudk/dsh-memory-switch) — 按会话切断跨会话记忆通道的开关：关闭后跨会话历史搜索与追溯工具及共享的研究缓存被拒绝，跨会话 @ 引用与团队转交消息被过滤，安装 OpenViking 时其回忆、捕获与提交也被拦截；子代理继承状态，刷新、恢复与分叉都会从会话日志还原，默认开启。
+- [Kingzhoudk/dsh-memory-switch](https://github.com/Kingzhoudk/dsh-memory-switch) — 输入框工具行里的按会话记忆开关，另提供 `/memory on|off|toggle|status`，Web、终端、ACP/SDK 与 IM 会话都能用。关闭后该对话停止与其他对话交换信息：跨会话历史搜索与追溯工具、共享的研究缓存被拒绝；跨会话 @ 引用、团队中继与 Agent Teams 邮箱消息在请求里被过滤；IM 群归档与外部 agent 桥被拒绝；安装 OpenViking 时其回忆、捕获与提交也被拦截。闸门是双向的：`searchSessions` 结果用同一份持久状态过滤，关闭的会话不会被别的会话搜到（`hideFromSearch`）。状态从会话日志折叠得出，刷新、恢复与分叉都会还原，子代理继承该状态，`defaultEnabled: false` 可让整个 profile 默认关闭，插件本身默认开启。
 - [kipozannaki/DSH-Headroom-Plugin#plugin](https://github.com/kipozannaki/DSH-Headroom-Plugin/tree/main/plugin) — 在 DeepSeek Harness 内以 MCP 方式运行上游 Headroom 压缩工具集（headroom-ai，Apache-2.0）：headroom_compress、headroom_retrieve、headroom_stats 以 mcp__headroom__* 工具暴露，后端是上游服务端、由 uvx 按需安装。压缩有损但可逆——原文按哈希从本地 CCR 存储取回。另附一个注册器，把 DeepSeek Harness 加入 Headroom 自身的 MCP 注册表，并修复上游代理的模型请求头。
 - [KKL08/dsh-plastic-memory](https://github.com/KKL08/dsh-plastic-memory) — dsh 长期记忆插件。除了常规的记忆写入和检索，还带一套记忆治理与维护机制，会给记忆内容做体检，找出重复冗长、矛盾冲突、过时陈旧的记忆并给出处理建议，关键改动经你确认才会执行。日常的写入、检索和体检都在后台进行，不打断对话，需要你处理的事项会按优先级排好。此外，场景和记忆类型可以自由组合，各类记忆的注入方式、检索溯源策略、健康提醒灵敏度和注入预算等，都能在 GUI 设置页里快捷调整，记什么、怎么记由你决定和塑造。
 - [kkwings/dsh-super-memory](https://github.com/kkwings/dsh-super-memory) — 跨压缩记忆：压缩时把被压掉的内容存到本机，提问时只注入相关的那几段（没有就一点不注入），让模型重新想起你早先定过的事。
