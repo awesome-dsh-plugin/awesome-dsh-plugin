@@ -1,0 +1,7 @@
+url: https://github.com/yubudong/dsh-ai-reading-room
+name: yubudong/dsh-ai-reading-room
+category: docs
+description:
+  en: 'AI reading workspace for DSH with a local EPUB/PDF/TXT/Markdown library, dated notes and source-linked annotations, native Book Spirit conversations, question-led reading, teach-back, perspective debate, a bilingual interface, Markdown export and ZIP backups.'
+  zh: 'AI 书房：本地 EPUB、PDF、TXT、Markdown 书库，带日期与原文关联的笔记和批注，通过 DSH 原生会话与书灵讨论，提供狩猎法、费曼法和辩论法，支持中英文界面、Markdown 导出与 ZIP 备份。'
+tarball: https://github.com/yubudong/dsh-ai-reading-room/releases/download/v0.1.0/dsh-ai-reading-room-0.1.0.tgz
