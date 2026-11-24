@@ -5048,6 +5048,7 @@ dsh plugin --profile web add dshmarket
 - [elegant01/dsh-scalpel](https://github.com/elegant01/dsh-scalpel) — 在同一会话里对比两三次回答，并从之后每次模型请求中剔除指定的轮次。
 - [elfgzp/dsh-session-bridge](https://github.com/elfgzp/dsh-session-bridge) — 给 agent 一组工具：打开前台会话、以排队或插队方式发提示词、读回转录、取消回合，以及拿到本机 Web 应用带认证的地址。
 - [elk-9527/dsh-auto-archive](https://github.com/elk-9527/dsh-auto-archive) — 按可配置天数自动归档闲置的 DSH 会话，并清理已归档会话的投影缓存，不删除会话记录或附件。
+- [Elysian1knight/Elysian-repository](https://github.com/Elysian1knight/Elysian-repository) — 侧栏聊天室：把已经存在的会话叫进同一个屋里说话。
 - [EmptyVessel-000/dsh-file-history](https://github.com/EmptyVessel-000/dsh-file-history) — 按轮次给整个工作区留检查点：每轮结束存一份快照，本轮改了哪些文件直接列在聊天里那一条下方，任意一轮都能还原——只还原文件、只还原对话，或者全部还原。捕获靠扫描整棵树，而不是挂钩 write/edit 工具，所以 shell 命令、外部编辑器、git 操作改出来的东西同样留痕。还原对话是从那一轮分叉出新会话，不切断原来的会话；还原本身也能撤销。历史存放在 DSH_HOME 里的影子 git 仓库中，不碰项目的 .git。需 Git >= 2.20 与 Node.js >= 20。
 - [EndlessPoem/dsh-session-delete](https://github.com/EndlessPoem/dsh-session-delete) — 在会话菜单加一行两次点击确认的「删除会话」：停止工作、归档、解除工作区归属、取消置顶，再删除日志与投影缓存；日志仍被占用时回滚前面每一步，不留半删除状态。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Endorphin1203/dsh-side-chat](https://github.com/Endorphin1203/dsh-side-chat) — 把多次选中的文字攒进草稿区（计数、悬停预览、一键清除），再在只读的临时侧边聊天里追问：只放行 read/glob/grep/read_image，可单独选择模型与推理强度，关闭标签即归档。
@@ -7084,6 +7085,7 @@ dsh plugin --profile web add dshmarket
 - [jxhsjxhs/dsh-job-lasso](https://github.com/jxhsjxhs/dsh-job-lasso) — 每天从 BOSS直聘、猎聘、LinkedIn 等招聘站抓取远程岗位，按求职画像打分并显示在 Harness 面板里。需本机安装 Chrome/Chromium（插件使用独立浏览器配置），BOSS直聘结果需登录 BOSS 账号。
 - [jyz48prsbr-netizen/dsh-screen-control](https://github.com/jyz48prsbr-netizen/dsh-screen-control) — 在 DSH 任务运行期间控制 Mac 屏幕状态，绝不挂起进程：常亮模式保持屏幕不熄；黑屏保活模式允许屏幕熄灭，但系统与所有进程继续运行。通过绑定到宿主进程的 caffeinate 唤醒锁实现，最后一个任务结束后按可配置宽限期释放，仅 macOS 可用，通过 /screen 指令或 screen_control 工具操作。
 - [k0ndrateff/dsh-plugins#atlassian](https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/atlassian) — 把 Jira 与 Confluence 接进 DeepSeek Harness：提供 Atlassian 远程 MCP 服务器的工具、问题与页面的结果卡片，以及问题面板。
+- [kaecho/dsh-nezha](https://github.com/kaecho/dsh-nezha) — 把哪吒监控内置的 MCP 服务接入 DeepSeek Harness，新增服务器状态、一次性命令执行、远程文件读写/删除和大文件传输链接等工具，并提供管理面板地址与 PAT 的设置页。
 - [Kagurazaka135/dsh-web-search-free](https://github.com/Kagurazaka135/dsh-web-search-free) — 多后端自动降级的 WebSearchProvider：依次尝试 Exa、Bing HTML、DuckDuckGo HTML，都失败后才动用有额度的 SerpAPI，日常搜索由免费档承担。
 - [kaiwangleo/xiwen#dsh-xiwen](https://github.com/kaiwangleo/xiwen/tree/master/plugins/dsh-xiwen) — 基于人工维护的表、字段和指标语义元数据，结合 Qdrant 与 Elasticsearch 召回，通过析问服务生成、校验并执行 MySQL 分析查询。
 - [kaixinguo360/dsh-script-manager](https://github.com/kaixinguo360/dsh-script-manager) — DSH 自定义操作脚本管理器，将验证过的操作流程固化为可复用的脚本，用 /script 直接运行或注册为 Agent 工具，支持参数化脚本、执行预期声明、执行历史记录。
