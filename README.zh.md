@@ -1526,6 +1526,7 @@ dsh plugin --profile web add dshmarket
 - [LyaxZ/dsh-goodies](https://github.com/LyaxZ/dsh-goodies) — 模型菜单里的思考强度滑块、运行状态旁的实时速度与本轮用量、每条回答的输入/输出/缓存成绩单，以及每轮结束的完成通知；各自独立开关，只作用于界面。
 - [LyaxZ/dsh-quick-toc](https://github.com/LyaxZ/dsh-quick-toc) — DeepSeek Harness 对话大纲：按回合整理整段会话的 Markdown 标题，侧边面板与全屏「幕布」两种视图；悬停预览可钉住对照，书签留住常回看的几处，右键即可跳转到某一节或复制标题及其下面所有层级。支持六种主题色与半透明材质、标题/提问/全文/跨会话搜索、阅读位置跟随与中英双语界面。
 - [lyhue1991/dsh-soup](https://github.com/lyhue1991/dsh-soup) — DSH 右侧 details 列项目资源管理器（多选、拖拽移动、上传、下载、重命名、废纸篓、系统打开），会话内只读预览 Markdown/HTML/JSON/CSV/Notebook/PDF 与代码高亮，附带模型实时吞吐徽标与多行 GoalBar。
+- [Lyla-e/dsh-aliyun-coupon](https://github.com/Lyla-e/dsh-aliyun-coupon) — 在侧栏页面显示阿里云每张代金券的剩余余额、已抵扣金额与到期时间，数据经只读 BSS OpenAPI 获取。
 - [lyonleeeee/dsh-steer](https://github.com/lyonleeeee/dsh-steer) — 在会话头显示实时状态徽标，并在不打断当前回合的前提下投递运行中新增的指导。
 - [lysforge/dsh-lamplit](https://github.com/lysforge/dsh-lamplit) — 把微信读书、GitHub 书库和自己的 EPUB/PDF/Markdown 收进一个书架，沉浸阅读并让 AI 解释划词。
 - [lyx0717/dsh-washer](https://github.com/lyx0717/dsh-washer) — 常驻桌面的桌宠（桌面宠物）：一台滚筒洗衣机，把会话状态渲染成洗衣动作，四套皮肤（精密家电 / 复古奶油 / 工笔重彩 / 太空舱）可切换，多会话计数、洗完 / 卡住 / 等你确认主动提醒；macOS 与 Windows 均可运行，详情面板可看最近几轮与耗时。
@@ -2167,7 +2168,6 @@ dsh plugin --profile web add dshmarket
 - [tangolee/dsh-sidebar-tuner](https://github.com/tangolee/dsh-sidebar-tuner) — DSH 桌面端的侧栏与对话区排版：两栏式设置面板配可搜索的字体选择器；中英文字体分开设并检测本机是否安装，统一字号、整列缩放、行高、行距与字距，可排成图标列 + 会话列两栏、折叠时保留图标栏、图标悬停显示名称；对话区、代码与终端字体可单独设，排除列表里的控件（如计费卡）不跟随缩放。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [tangu2023/dsh-menu](https://github.com/tangu2023/dsh-menu) — 为侧边栏「工作区文件」树添加自定义右键菜单：新建文件夹、重命名、在文件管理器中显示、浏览器打开、VS Code 打开、复制路径、流式 ZIP 下载、删除。
 - [Tansukii/dsh-screenshot](https://github.com/Tansukii/dsh-screenshot) — 区域截图工具，支持标注、放大器取色与剪贴板输出，并跟随 DSH 界面语言。仅限 Windows。
-- [tanxiaolong/dsh-i-hao-hai-pa](https://github.com/tanxiaolong/dsh-i-hao-hai-pa) — 骂 DSH 一句，左侧栏、编辑区和会话区会像地震一样塌成一地瓦砾，一直瘫着，直到 DSH 开口回答才从下往上长回来。
 - [tao1020/dsh-global-pins](https://github.com/tao1020/dsh-global-pins) — 会话散落在不同工作区，重要内容不好找？全局置顶把你选中的会话集中到侧边栏顶部，支持拖拽排序和清晰的插入位置提示，也可按最近更新时间自动排序。会话完成后小绿点提醒。还有 Codex 同款行内操作：运行中的会话右侧持续转圈显示进度，支持归档/恢复、点开就全选标题的重命名，右键菜单可 Fork 和上下移动。侧边栏「全局置顶」旁的放大镜打开搜索浮层：先按会话标题和工作区名匹配，再查消息正文索引（部署开启内容索引时可用），结果按「会话」「内容」小标题分组，内容命中带摘要。右侧准星按钮可跨折叠工作区跳到当前打开的会话，每个分组标题带半透明灰底，会话行更紧凑，能放下更多条目。v1.0.6 新增「最近会话」：当天用过且未置顶的会话会从各个工作区集中到置顶下方，按时间从近到远排列，第二天自动回到原工作区；分组标题可折叠，折叠时视图不会跳到顶部。
 - [TaoLe-si/dsh-perf-guard](https://github.com/TaoLe-si/dsh-perf-guard) — 减少 DSH 长会话的渲染开销，保留原生滚动，并提供有上限的重试和本地诊断。
 - [TaoruiLiu19/DSH-LLSA#hud](https://github.com/TaoruiLiu19/DSH-LLSA/tree/main/packages/hud) — DeepSeek Harness 会话上的只读状态浮层：中心一行状态词，外圈按固定位置显示终端、代码、检索、文档、网页与其它六类活动，多 Agent 时显示内圈子 Agent。
@@ -4311,6 +4311,7 @@ dsh plugin --profile web add dshmarket
 - [liaoyuqing/model-failover-manager](https://github.com/liaoyuqing/model-failover-manager) — 模型选择弹窗＋路由分组：模型失败后自动换到组内下一个可用模型并继续本轮；另含数据看板与免费渠道页签。页签一键安装六个渠道插件 —— Our Free Model（唯一不登录、不填 API Key 也能用的）、CodeArts、WorkBuddy、Trae、Qoder、Providers Hub，覆盖 23 个平台：华为云 CodeArts、腾讯 CodeBuddy、WorkBuddy、有道 LobsterAI、Qoder、TRAE、Cline、讯飞 Loomy、商汤 Raccoon、MiniMax、智谱 ZCode、Gemini Code Assist、阿里 Accio、讯飞 AStudio、OpenCode、OfficeAce、AutoClaw、魔搭 ModelScope、七牛云 Qiniu、Codely、MonkeyCode、百智云、超级麦吉 MagiCrew 等平台。
 - [libre-webui/dsh-native-provider](https://github.com/libre-webui/dsh-native-provider) — 在 [Libre WebUI](https://github.com/libre-webui/libre-webui) 中使用 DSH 模型进行聊天、沙箱 Work 任务和用量统计，提供商凭据保留在 DSH 中。需要 Libre WebUI 0.37.0 或更高版本。
 - [LightingHa/dsh-cc-switch](https://github.com/LightingHa/dsh-cc-switch) — 把 cc-switch 里配好的模型供应商接进 DeepSeek Harness：读取 cc-switch 数据库，将 Claude / Codex / OpenClaw / MCode / Pi 等条目转成 llm-pi-ai 路由并写入 API Key，还提供实测首字节耗时与流能否正常收尾的体检。
+- [LingMowen/dsh-magpie-hub](https://github.com/LingMowen/dsh-magpie-hub) — 在 DSH 进程内直接运行 magpie 的供应商插件：继承 ~/.config/magpie 里已装的插件与已登录的账号，把每个供应商注册成一条模型路由，提供双端面板——桌面是 magpie 原版 Web UI，手机（DSH Go）是原生插件面板（平台卡片、额度窗口、用量统计、插件商店一键安装），另有输入框上方的额度条与每回合的消耗脚注。84 条测试。
 - [LINGTIAN303/dsh-model-tabs](https://github.com/LINGTIAN303/dsh-model-tabs) — 给 composer 模型选择器加两级 Tab（提供商 + 模型系列），大目录时减少滚动翻找；族规则可在设置页配置。
 - [liqiaohuia/dsh-proxy-routes](https://github.com/liqiaohuia/dsh-proxy-routes) — 按提供商（账号）分流的 SOCKS5/HTTP 代理池。基于 API 密钥识别账号实现精准分流，支持绝对直连（无视 DSH 全局代理）与内置联网工具代理热装。配置在 DSH 设置页图形化管理，保存即热生效。
 - [liubaicai/dsh-codebuddy-link](https://github.com/liubaicai/dsh-codebuddy-link) — 通过 ACP 将腾讯 CodeBuddy CLI 接入 DeepSeek Harness，支持 CLI 原生工具执行、多账户管理和 codebuddy_ask 独立问答。
@@ -13132,6 +13133,7 @@ dsh plugin --profile web add dshmarket
 - [swaylq/dsh-digipet](https://github.com/swaylq/dsh-digipet) — 数码宝贝式养成：孵一颗吃真实工作长大的蛋（回合、工具调用、报错都是营养），按你的工作方式走四条进化分支；零 token，模型完全看不见。
 - [swaylq/dsh-wildmon](https://github.com/swaylq/dsh-wildmon) — 宝可梦式捕捉收集：真实工作就是草丛 —— 回合、工具调用、报错刷出野外遭遇；投球捕捉、集 28 格图鉴、带 6 只队伍。零 token，模型完全看不见。
 - [takboo/dsh-coopanion](https://github.com/takboo/dsh-coopanion) — 为 DeepSeek Harness 添加动画桌面伙伴，支持任务提醒、会话聊天、角色包和原生设置。
+- [tanxiaolong/dsh-i-hao-hai-pa](https://github.com/tanxiaolong/dsh-i-hao-hai-pa) — 骂 DSH 一句，左侧栏、编辑区和会话区会像地震一样塌成一地瓦砾，一直瘫着，直到 DSH 开口回答才从下往上长回来。
 - [Teloi/dsh-pindou](https://github.com/Teloi/dsh-pindou) — 在 DSH Web 右侧边栏拼小拼豆的轻量小游戏，等模型回复的空档拼一张：12 个带引导豆的内置图案、16 色在 12/16/24 格板上自由拼、一句话让模型生成图纸、照片在本机转成图纸（不上传）、拼完熨烫存入最多 60 件的作品墙，并可导出 PNG。
 - [theskywilldawn/dsh-stamina-pet](https://github.com/theskywilldawn/dsh-stamina-pet) — 给 DSH 每个会话加一只体力条桌宠：会话头部显示上下文与清醒度两条，点一下就能把她放到桌面上，可以拖动、戳、摸头、换装。
 - [THEWOLFWALKER/dsh-coyote](https://github.com/THEWOLFWALKER/dsh-coyote) — Agent 与网页 GUI 双面控制的 DG-LAB 郊狼（Coyote）电击/电刺激插件：八个 `coyote_*` 工具 + DSH 网页面板，共用同一安全边界（软上限、非对称升速限流、会话冷却、播放硬上限、断连即停）；v0.2 起可选自动电击层，把 agent 事件（工具调用/报错/回合结束）映射为有界脉冲；官方 V3 socket 协议 + 二维码配对、可编程波形。仅限成年人。
