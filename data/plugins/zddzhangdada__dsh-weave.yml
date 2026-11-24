@@ -1,7 +1,0 @@
-url: https://github.com/zddzhangdada/dsh-weave
-name: zddzhangdada/dsh-weave
-category: remote
-tarball: https://github.com/zddzhangdada/dsh-weave/releases/latest/download/dsh-weave.tgz
-description:
-  en: 'Pair DSH hosts over Iroh, send a task to a session on another machine, and read its progress back; when no target session is given, the peer opens a new session by default.'
-  zh: '两台 DSH 主机通过 Iroh 配对，把任务发到另一台的会话并读回进度；未指定会话时，默认在对端新开会话。'
