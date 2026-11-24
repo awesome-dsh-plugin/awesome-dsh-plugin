@@ -2434,7 +2434,6 @@ dsh plugin --profile web add dshmarket
 - [xiao-xiao-bai-ya/dsh-cn-menu-kit](https://github.com/xiao-xiao-bai-ya/dsh-cn-menu-kit) — 技能与命令的中文增强：菜单中的技能显示中文标题、支持中文搜索与悬浮详情，命令与技能的顺序可自由拖拽。
 - [xiaobaga281/dsh-effort-mosaic](https://github.com/xiaobaga281/dsh-effort-mosaic) — 把 DSH 模型菜单的「推理等级」一行换成连续滑轨。两种风格可选：贴近滑块处密实、向左逐渐脱离网格漂散的像素马赛克粒子墙，以及最高档用蓝盖板擦出蓝到紫渐变、带火星与漂移粒子的霓虹胶囊轨道。滑块形状、尺寸、填充、强调色、最高档点亮与光晕动画、粒子越界效果均可在插件设置中调整。
 - [xiaoBai8512/dsh-ai-radar](https://github.com/xiaoBai8512/dsh-ai-radar) — 侧栏行业日报：抓 X 与 Hacker News 的候选帖，按热度、新颖度与讨论度打分，由模型编辑挑出值得点开的条目，并整理公开回复里反复出现的问题。行业、关键词与信源账号可在面板里改。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
-- [xiaobin118/dsh-quiz-tutorial](https://github.com/xiaobin118/dsh-quiz-tutorial) — 刷题场：把复习内容变成题集，题目旁给逐步手算解析，答错自动进错题本并支持重练；支持 `/skill` 出题与删除/隐藏题集。内置 15 道 CNN 与机器学习概念题。
 - [Xiaofei-fei/dsh-prompt-history](https://github.com/Xiaofei-fei/dsh-prompt-history) — 为 DSH Web 输入框提供终端式体验：↑/↓ 历史（前缀搜索、Ctrl+R）、Codex 风格的历史补全与下一句预测（Tab/→ 接受）、选中工具栏（复制/引用/侧聊追问）、右键直接粘贴、可拖动会话目录，以及能在右栏并行跑第二条 agent 线程的侧聊（fork 全上下文、浮动/分屏、双向桥接、并发写提醒）。
 - [xiaokaizhou/dsh-media-preview](https://github.com/xiaokaizhou/dsh-media-preview) — 在 DSH 聊天记录中自动将本地音视频路径渲染为可播放预览：将路径替换为同源 /api/media-preview/* 路由支持的 <audio>/<video> 播放器，并返回明确的错误状态码。
 - [xiaoluoli45/dsh-code-explainer](https://github.com/xiaoluoli45/dsh-code-explainer) — 在 DSH 工具卡的代码块上给每一行加中文行尾注释：输入侧是灰色「//」，输出侧的代码用蓝色箭头，规则能判的行即时给出、判不出的行用当前会话的模型补一版；顶部「注释：开/关」可关回纯代码，内容在发给模型与落盘前先做凭据掩码。
@@ -2625,7 +2624,7 @@ dsh plugin --profile web add dshmarket
 - [YuboCoco/dsh-english-lit-reader](https://github.com/YuboCoco/dsh-english-lit-reader) — 装在 DeepSeek Harness 里的英文文献阅读器：拖入 PDF，选中句子即可在页面旁的功能卡片里得到译文，点「翻译」才调用模型。按「论文概览 / 研究问题与已有方法 / 技术方案 / 实验设置与结果 / 局限与适用范围 / 复现与可借鉴之处」六段生成中文分析，模型上下文装得下时一次读完全文，装不下就先完整分段记笔记再汇总。参考文献分三步：先立刻显示切好的原文条目，再补中文标题，最后逐条查地址（原文印了 DOI / arXiv 号就直接给链，「查不到」就写未找到而不猜链接，被限流的单独标为暂时失败并可一键重试）。能结合图注解释框选的插图（需要支持图像输入的模型）、用 KaTeX 排版并解释公式、结合所在句与论文原文解释选中术语并收进术语表、把高亮与批注记成两条互不覆盖的独立记录，并支持文内搜索。九套界面配色（四浅五深）与七种页面配色叠在画布之上做 darken 混合，只改白纸，文字、图片与表格保持原色。功能卡片可改顺序、拖出浮动、拖动边缘改大小；单页 / 双页 / 三页布局、Ctrl+滚轮缩放、双向拖动、全屏，以及按论文保存在 IndexedDB 的近期阅读列表。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Yue-Lyu123/dsh-as-macOS](https://github.com/Yue-Lyu123/dsh-as-macOS) — 把 DSH 的 Web 界面变成 macOS 风格桌面，并把对话藏到桌面后面：Sonoma 壁纸、菜单栏、可放大的程序坞、F4 启动台、⌘Space 聚焦搜索、控制中心、时钟/日历小组件、F3 调度中心，以及一颗能把原生对话浮出来的桌面悬浮球。访达、终端（/bin/bash 会话）、设置随插件自带；浏览器、代码、Office、笔记四个窗口由另装的配套插件解锁（dsh-ego-browser、dsh-code-workbench、dsh-univer-office、dsh-obsidian-notes），未安装时显示占位窗口；浏览器窗口另会以无头方式启动本机 Chromium（默认在 /usr/bin 下查找，或设置 DSH_MACOS_CHROME）。agent 可通过 /api/macos-desktop/* 路由与页面内 window.__macos 操作整个桌面。
 - [Yuer6327/NoLetMe](https://github.com/Yuer6327/NoLetMe) — 实时追踪 DeepSeek Harness 网页对话中模型流式推理轨迹关键词统计的 UI 面板。
-- [yugyq/dsh-composer-quill](https://github.com/yugyq/dsh-composer-quill) — 回合结束后给出下一句，打字时补完后半句，顺手修好错字和标点。
+- [yugyq/dsh-composer-quill](https://github.com/yugyq/dsh-composer-quill) — DSH 输入框的补全：回合结束后给几条「下一句」，打字停顿就接上后半句，草稿有错字或断句乱时给一整段整理过的版本，也能从你自己的历史输入里补全（不花模型调用）。
 - [Yujm888/dsh-turn-rail](https://github.com/Yujm888/dsh-turn-rail) — Codex 风格自动隐藏右缘轮次导航：靠边浮现、单轮 tooltip、会话内搜索、长会话 30 轮滚动窗口。
 - [Yuki-cutesnow/dsh-session-groups](https://github.com/Yuki-cutesnow/dsh-session-groups) — 在 DeepSeek Harness 侧栏新增一个纯展示的会话分组分区：支持自定义多层嵌套分组、把会话拖进分组、调整分区高度；不修改 Host 的工作区归属与会话所有权。
 - [YukimuraSol/dsh-ui-block](https://github.com/YukimuraSol/dsh-ui-block) — 把 ::dsh-ui <name> \[res=WxH]:: 指向的 ui-blocks 文件渲染到沙箱画布，并把元素标记变成输入框 chip，回写时原样还原为标记。
@@ -8018,6 +8017,7 @@ dsh plugin --profile web add dshmarket
 - [xianyuyijinban/boardwise#dsh-plugin](https://github.com/xianyuyijinban/boardwise/tree/main/dsh-plugin) — 立创 EDA Pro（EasyEDA Pro）原理图离线审查，给 dsh 加四个工具——一次性 checkup 报告、架构骨架、本机安装体检，以及只读优先的在线编辑器桥，全部由本机 boardwise CLI 驱动。
 - [xiao-hans/dsh-rtk](https://github.com/xiao-hans/dsh-rtk) — 在 tools/pre-execute 阶段经 `rtk rewrite` 改写 DSH 的 shell 工具命令，提供 `rtk` 与 `rtk_stats` 工具，并用 `rtk pipe` 压缩结果。
 - [xiaobbl/dsh-mworks-ai](https://github.com/xiaobbl/dsh-mworks-ai) — DeepSeek Harness 的 MWORKS AI：由 MCP 管理器托管的 Syslab 与 Sysplorer MCP 服务、官方 MWORKS 技能与工作规则，并在插件页提供运行环境设置。
+- [xiaobin118/dsh-quiz-tutorial](https://github.com/xiaobin118/dsh-quiz-tutorial) — 刷题场：根据会话，把复习内容变成 15–20 道题集，每道题配逐步手算解析，支持单选与多选，答错进错题本；用 `/dsh-quiz` 出题，支持题集删除。你的复习老师。
 - [xiaomao361/dsh-capability-gateway](https://github.com/xiaomao361/dsh-capability-gateway) — 通过一个按需网关搜索、查看和使用选定的第三方技能与 MCP 工具。目录精简取决于宿主和工具模式。本地日志记录使用元数据。
 - [xiaomoL444/ugc-asset-search-dsh-plugin](https://github.com/xiaomoL444/ugc-asset-search-dsh-plugin) — 搜索千星奇域素材，在 DeepSeek Harness 对话中用卡片试听音效、预览特效和打开音乐链接。
 - [xiaoshi7915/dsh-kb-manager](https://github.com/xiaoshi7915/dsh-kb-manager) — 本地知识库管理：多格式导入、CJK 感知分块、sqlite-vec 向量 + BM25 混合检索与 bge-reranker-base 重排序、快照恢复、kbpack 导入导出与跨库检索，提供 22 个 agent 工具与 Web 面板。
@@ -9663,7 +9663,7 @@ dsh plugin --profile web add dshmarket
 - [wangyanan520/dsh-skill-workbench](https://github.com/wangyanan520/dsh-skill-workbench) — 给 DSH 技能加中文显示层：`/` 菜单按中文分类显示中文名与简介，调用仍是英文 `/name`，不改任何 SKILL.md。还能从安装来源补简介，卸载个人技能时移入回收站。
 - [WangZW928/Career-PPTagent](https://github.com/WangZW928/Career-PPTagent) — 可编辑 PowerPoint 制作工作流（基于 icip-cas/PPTAgent 的 Skill 版本改造），包含简洁中文商业风格、HTML 幻灯片渲染与 PPTX 导出复查。仅 Linux/WSL 或 macOS（仅 Apple Silicon）；首次使用需先装 LibreOffice、中文字体、Node.js 22+ 与 uv，再执行一次 setup——它会用 uv 建 Python 3.12 环境并安装 Playwright Chromium。
 - [WangZW928/dsh-writing-style](https://github.com/WangZW928/dsh-writing-style) — 基于作者提炼规则的分文体写作技能，支持起草、润色、复核与待确认的规则反馈；安装包不含原始写作材料。
-- [WangZW928/HPC_Style_For_AI](https://github.com/WangZW928/HPC_Style_For_AI) — 按需加载的 HPC 设计与评审技能，涵盖数值契约、成本模型、数据运动、绑定时机、并发依赖与工程取舍，源码案例独立于通用原则。
+- [WangZW928/HPC_Style_For_AI](https://github.com/WangZW928/HPC_Style_For_AI) — 按需加载的 HPC 设计与评审技能，涵盖数值契约、成本模型、数据独立性与一致性、工作映射、绑定时机及完成语义，源码案例独立于通用原则。
 - [warm-flame-core/new-project-init](https://github.com/warm-flame-core/new-project-init) — 项目文档体系初始化 skill：提问驱动落实文档规范、固化 AI 协作工作流，跨 DSH / Reasonix / Claude Code / Codex 可用。
 - [wasteoneslife/scenes-skill-creator](https://github.com/wasteoneslife/scenes-skill-creator) — Web 界面上的技能创建面板：拉取官方 creator 技能，把需求交给华为云 / 通用 / REST API 三个 creator 之一执行创建，随后按 10 分制评测产物，未达 8.5 分就把逐项扣分交回 creator 修改直到通过。
 - [Wattson-Law/Xiaobai-Reasearch](https://github.com/Wattson-Law/Xiaobai-Reasearch) — 中文行业与技术调研报告生成技能，内置离线 Word (.docx) 编译流水线（build_docx.py）。规范九章总分总结构、2.1 节白话演进时间线、五维技术瓶颈判据与自研成本/外部采购成对博弈论证，提供双主线启发式自检工具（check_research_report_threads）与带原生三级自动目录的 DOCX 构建工具（build_research_report_docx）。需要 Python 3.9+ 及 lxml。
@@ -11011,6 +11011,7 @@ dsh plugin --profile web add dshmarket
 - [nolighter/dsh-im-bubble](https://github.com/nolighter/dsh-im-bubble) — 注册 im_say 工具，调用一次就通过 dsh-im 的主动投递服务发出一条独立 IM 消息，让一条回复拆成多个气泡而不是一整块；另有 im_targets 与 im_target_add 查看和新建投递目标。
 - [NOOBnoob163/dsh-open-obsidian](https://github.com/NOOBnoob163/dsh-open-obsidian) — 会话的第一条真人消息到达时，自动打开该会话工作目录所在的 Obsidian 库——这样你装的同步插件（坚果云同步、Obsidian Sync、Obsidian Git 等）就会开始工作，AI 在库里改的东西才能真正同步出去。已开着的库直接跳过；新开的窗口压到当前窗口后面而不抢焦点。同时保证同一个库同一时刻只有一个对话在写——第二个对话的写入会在执行前被拦下并排队，等前一个写完才放行，避免同步客户端把两个对话的改动拼在一起。仅支持 Windows。
 - [norths7ar/dsh-task-notifications](https://github.com/norths7ar/dsh-task-notifications) — 任务完成、失败或需要操作时接收系统通知，点击返回对应会话。
+- [nuclearmilk/dsh-hud](https://github.com/nuclearmilk/dsh-hud) — 桌面端屏幕贴边毛玻璃任务通知流 HUD，实时展示会话进度与运行计时，并在需要审批、填写执行方向或确认计划时弹出常驻强提醒。
 - [oldtommmy/notifyhub#dsh](https://github.com/oldtommmy/notifyhub/tree/main/integrations/dsh) — 将 DeepSeek Harness 完成结果发到飞书，并可按需在飞书续聊 dsh 或 Codex 桌面会话。
 - [Oliver-314/dsh-meow-notifier](https://github.com/Oliver-314/dsh-meow-notifier) — 通过 MeoW 推送服务把 DeepSeek Harness 的任务完成、待确认与待回答提醒发到手机，支持按事件开关和三种消息格式。
 - [Oliveryfaso/dsh-pet-company](https://github.com/Oliveryfaso/dsh-pet-company) — 用三套内置 Q 版角色提供久坐、喝水、连续工作与深夜关怀，带云朵气泡和轻回弹；页面内显示无需额外下载，可选 macOS 桌面窗口使用单独下载的 Electron 组件。
