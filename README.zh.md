@@ -3893,7 +3893,7 @@ dsh plugin --profile web add dshmarket
 - [tsdfy/dsh-skin-switcher](https://github.com/tsdfy/dsh-skin-switcher) — 皮肤切换器：右上角一键切换主题，自动发现社区皮肤。
 - [tsuixl/dsh-stylebook](https://github.com/tsuixl/dsh-stylebook) — 为 DeepSeek Harness 提供界面和代码字体、三色主题及命名外观方案；已在 Windows 桌面版 0.2.1-rc.5 验证。
 - [tszmzz1026/dsh-epindel-boot-animation#dsh-glass-aurum](https://github.com/tszmzz1026/dsh-epindel-boot-animation/tree/main/packages/dsh-glass-aurum) — 原创 CSS 金紫主题，支持本地头像上传与裁切、助手命名和阅读排版，不附带游戏素材。包名已从 dsh-glass-theme 改为 dsh-glass-aurum——旧名被另一位作者的无关插件占用；安装前请先停用旧包。
-- [tuibe/dsh-deepseek-theme-studio](https://github.com/tuibe/dsh-deepseek-theme-studio) — DSH Web GUI 客户端主题插件：流体背景、毛玻璃面板与量子化着色器效果，100 项参数可调并持久化到 JSON 文件。
+- [tuibe/dsh-deepseek-theme-studio](https://github.com/tuibe/dsh-deepseek-theme-studio) — DSH Web GUI 客户端主题插件：流体 WebGL 背景、毛玻璃面板、量子化粒子图形与背景星尘层，以及按钮与输入卡的 iOS 式按下回弹动画；116 项参数可在设置里调整并持久化到 JSON 文件。
 - [tuogusa/dsh-whale-background](https://github.com/tuogusa/dsh-whale-background) — Web UI 鲸鱼娘壁纸背景，应用表面半透明磨砂；支持在设置页自定义图片、透明度与 contain/cover 铺放方式，远程图片自动预检并 no-referrer 加载。
 - [TyrusLabs-IO/dsh-panel-theme](https://github.com/TyrusLabs-IO/dsh-panel-theme) — DeepSeek Harness 侧边栏背景样式插件：可调基础色与不透明度、渐变、光晕、可读性蒙层，支持内置/自定义预设与 JSON 备份恢复；设置保存在浏览器本地。
 - [Ultroncn/dsh-liquid-glass](https://github.com/Ultroncn/dsh-liquid-glass) — 主题背景：官方风格折叠设置、通透界面与本地图片/视频背景。
@@ -10933,6 +10933,7 @@ dsh plugin --profile web add dshmarket
 - [FlashPoint007/dsh-wecom-soul-bot](https://github.com/FlashPoint007/dsh-wecom-soul-bot) — 企业微信智能机器人官方长连接接入（Bot ID + Secret，无需公网回调）：人设、发送者身份标记、带遗忘曲线的三层记忆、提醒、可选主动搭话、由 tools.guard 拦截的仅主人工作模式、运行中自动插话、图片输入和 wecomSoulBot 宿主服务；群聊 @ 时回复。
 - [Forget1672/dsh-serverchan-bot](https://github.com/Forget1672/dsh-serverchan-bot) — 与 Server酱³ Bot 的双向通道（不是 SendKey 单向推送）：在 App 里发消息即可驱动 DSH 会话，问题与批准卡片可在手机或网页任一端作答，Agent 与定时任务的输出再推回聊天。配对采用首次信任：allowChatIds 为空时，第一个给机器人发消息的聊天会被信任，请设置 allowChatIds 把它限定在你自己的聊天上。
 - [Funny1Potato/dsh-onebot-hub](https://github.com/Funny1Potato/dsh-onebot-hub) — OneBot v11 枢纽：夹在上游 OneBot 实现（LLOneBot 等）与下游 bot 实现之间，逐字转发事件与动作；给 agent 一条按会话的时间线、动作账本、分层记忆（进行中的话题与任务、长期事件、人物与群档案）以及一组 onebot_* 工具（回复、媒体、成员、原始 API 调用）。
+- [G-duo/dsh-win-notifier](https://github.com/G-duo/dsh-win-notifier) — 待确认、待回答或任务结束时，在屏幕右下角弹出置顶提醒卡片，仅支持 Windows。
 - [game25011/dsh-notify-lite](https://github.com/game25011/dsh-notify-lite) — 为 DSH 打造的轻量任务完成通知插件（dsh-notify-lite）。在 agent 结束工作时，通过 Windows 原生 Toast 弹窗即时提醒，正文取最后一条回复的首段（默认 40 字）。支持任务栏未读角标、提示音与可配置提醒；不常驻托盘或后台服务，聚焦不打扰。MIT 开源，持续跟进 DSH 兼容。
 - [gaolvsuan/dsh-badge](https://github.com/gaolvsuan/dsh-badge) — 回合结束时在浏览器标签页图标和 Windows 任务栏图标上显示未读数，并播放提示音。
 - [gcggcg/dsh-plugin-dingtalk-bridge](https://github.com/gcggcg/dsh-plugin-dingtalk-bridge) — 通过 dws CLI 实时接收钉钉私信与群 @ 消息，按发送人或群记录消息来源，用 DSH 当前选中的模型生成建议回复，置信度达到设定阈值时自动回复；每个来源各自维护滑动上下文窗口，模型支持视觉时会分析图片，群回复会 @ 回发送人；缺少 dws 时可一键自动安装。
