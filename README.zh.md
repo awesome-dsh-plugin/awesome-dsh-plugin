@@ -5822,7 +5822,7 @@ dsh plugin --profile web add dshmarket
 - [a574676848/dsh-compaction-sticky-window](https://github.com/a574676848/dsh-compaction-sticky-window) — 用模型自写的交接便签替代摘要式上下文压缩：换窗后只保留系统提示、便签与当前 turn，并提供预算感知与归档回查。
 - [adithyanraj03/dsh-memory-recall](https://github.com/adithyanraj03/dsh-memory-recall) — Hermes Agent 风格的 dsh 持久记忆：一个 memory 工具维护用户档案与模型自己的笔记，并在每段对话的开头、记忆变更后、压缩之后各投递一条带记录的消息；session_search 工具只在用户同意后才会读取更早的会话；另有 Memory 面板可查看和编辑已保存的内容。
 - [adoresever/graph-memory](https://github.com/adoresever/graph-memory) — DeepSeek Harness 的可追溯、可检索跨会话记忆：把对话知识沉淀为带类型的图节点（任务/技能/事件）与关系边。
-- [adrianzeng/dsh-plugin-scratchpad](https://github.com/adrianzeng/dsh-plugin-scratchpad) — DSH 左侧栏便签：记一句话，自动识别中文提醒时间（明天十点、下周三、30分钟后）；便签存在宿主 SQLite 里，重启不丢，三个模型工具让任意 DSH 会话读写同一份便签。可选把某一条人工投递成 Markdown 想法卡。不联网、无第三方依赖。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [adrianzeng/dsh-plugin-scratchpad](https://github.com/adrianzeng/dsh-plugin-scratchpad) — DSH 左侧栏便签：记一句话，自动识别中文提醒时间（明天十点、下周三、30分钟后）；便签存在宿主 SQLite 里，重启不丢，三个模型工具让任意 DSH 会话读写同一份便签。可选把某一条人工投递成 Markdown 想法卡。不联网、无第三方依赖。
 - [agentscope-ai/ReMe#dsh](https://github.com/agentscope-ai/ReMe/tree/main/integrations/dsh) — 将 DeepSeek Harness 接入 ReMe 本地优先、自进化的个人知识库：自动把已完成的主 Agent 对话沉淀为用户掌控的 Markdown 记忆，通过 reme_search 结合 BM25、可选向量检索和 wikilink 展开搜索对话与资料，并按日整理长期记忆。
 - [ai-fu-cn/dsh-plugin-memos-code-retrospect](https://github.com/ai-fu-cn/dsh-plugin-memos-code-retrospect) — 编码任务复盘记忆：每轮对话后用本地 LLM 蒸馏被否决方案/踩坑/工程约束，按 type:rejected_solution 写入 MemOS，编码任务时对这类记忆加权召回。
 - [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — 主动联想记忆 + Astra 式上下文管理：自动唤回（固定边界注入，前缀缓存友好）/自动沉淀/技能固化/交接账本与 PLAN 白板跨窗口续命/水位感知（窗口自动适配当前模型）。本地 Markdown 存储，模型无关，零依赖；词法 0GB 兜底，可选语义档。
@@ -9133,7 +9133,7 @@ dsh plugin --profile web add dshmarket
 - [Lucky020/dsh-delivery-kit](https://github.com/Lucky020/dsh-delivery-kit) — 把代码仓库与运行中的系统变成验收材料：数据库设计、概要设计、详细设计、带截图的使用说明书，以及测试报告、上线报告、验收报告。章节按 GB/T 8567-88 组织，无法核实的字段与结论一律留空，不编造。需 Python 3 与 python-docx 生成 .docx，自动截图需 Google Chrome。
 - [LuoShanHui/dsh-doc-ledger](https://github.com/LuoShanHui/dsh-doc-ledger) — 在 DSH 右侧栏按会话查看文档台账（仅 Windows，界面仅中文）：用过哪些文档、创建/修改了哪些，带时间排序、类型分组、搜索与两种预览。
 - [lvxianchao/dsh-video-preview](https://github.com/lvxianchao/dsh-video-preview) — DSH 侧边栏里的流式视频预览：mp4、webm、mov 就地播放，走带鉴权的字节范围路由（206 响应），拖动秒开、没有大小上限、无构建步骤。
-- [lyy-hast/dsh-yapi](https://github.com/lyy-hast/dsh-yapi) — 为 DeepSeek Harness 连接 YAPI 服务：通过 agent 对话自动生成接口文档，经审查卡片审批后同步至远程 YAPI 文档服务。
+- [lyy-hast/dsh-yapi](https://github.com/lyy-hast/dsh-yapi) — 为 DeepSeek Harness 连接 YAPI 服务：通过 agent 对话自动生成接口文档，按接口对应类的 Javadoc 注释归入 YAPI 文件夹，经审查卡片审批后同步至远程 YAPI 文档服务。
 - [lzxsusy/mathtranslate#dsh-kb](https://github.com/lzxsusy/mathtranslate/tree/main/plugins/dsh-kb) — 数译知识库：随包自带 1,250 张结构化资料卡（45 部已译数学文献），每条都带原文页码、来源等级与 caveat，装好即查；纯 JS 检索、零配置、不联网。提供 kb_search / kb_card / kb_brief / kb_stats 四个工具，给的是带出处的线索，不是没有来源的结论。
 - [Mach1ne333/dsh-latex-delimiter-fixer](https://github.com/Mach1ne333/dsh-latex-delimiter-fixer) — 把 ChatGPT 风格的公式定界符（\(...\)、\[...\]）就地改成 Obsidian 能渲染的 $...$、$$...$$，并跳过代码块与正则示例。
 - [magicbaobaoli/dsh-getnote](https://github.com/magicbaobaoli/dsh-getnote) — 本地优先的得到大脑 / Get笔记 Markdown 面板：目录树、标签云、全文搜索，渲染表格、时间轴、Obsidian 双链与图片附件；录音笔记带可拖动进度条的播放器和按时间戳分条的逐字稿。笔记是磁盘上的纯 .md 文件，同步下来的库离线也能读；云端同步可选，删除的笔记进可恢复的回收站。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -12968,7 +12968,7 @@ dsh plugin --profile web add dshmarket
 - [MagicSandBag/xiaofeiyu-academy](https://github.com/MagicSandBag/xiaofeiyu-academy) — 小学 1-6 年级海底学习舱：分年级数语英闯关、教材 PDF 上架与目录导入、拍照收错题与变式掌握度追踪、可投喂的小肥鱼养成（饱食度、贝壳、装扮、成就）、多孩子学习档案与学情报告。
 - [Mailemailezhu/dsh-mine-sweeper](https://github.com/Mailemailezhu/dsh-mine-sweeper) — 在会话区左侧叠一块可折叠、可拖动的扫雷盘，行列与雷数都可调，第一次点击保证不踩雷。
 - [Makesupper/dsh-plugin-muyu](https://github.com/Makesupper/dsh-plugin-muyu) — 可被 Agent 调用的电子木鱼：6 个工具、8 部经文逐敲推进一句、三种敲击音色、粤语/普通话诵经语音，功德记在同一份账本里，并按会话 Token 消耗累计。
-- [marchinlab/dsh-quiet-whale-girl](https://github.com/marchinlab/dsh-quiet-whale-girl) — 基于 LivLiv Player 与鲸鱼娘（Kujira）社区角色的 2.5D 动画桌宠：可拖动、视线跟随鼠标、待机眨眼浅笑、点击互动，可切换 Kujira / Kujira Q 两只角色。纯本地运行，不联网、不上传数据。角色素材为 CC BY-NC-SA 4.0 非商用，署名详见仓库 CREDITS。
+- [marchinlab/dsh-quiet-whale-girl](https://github.com/marchinlab/dsh-quiet-whale-girl) — 安静的鲸鱼娘 —— 基于 LivLiv Player 与鲸鱼娘（Kujira）社区角色的 2.5D 动画桌宠：可拖动、视线跟随鼠标、待机眨眼浅笑、点击互动，可切换 Kujira / Kujira Q 两只角色。纯本地运行，不联网、不上传数据。角色素材为 CC BY-NC-SA 4.0 非商用，署名详见仓库 CREDITS。
 - [MarkGaster/dafiyu-dream](https://github.com/MarkGaster/dafiyu-dream) — 将近期中文 Markdown 对话导出文件中的片段发送给 DeepSeek API（需 API key），生成一场梦境并保存为本地 Markdown 文件。
 - [marvin9551/dynamic-schulte-dsh](https://github.com/marvin9551/dynamic-schulte-dsh) — 动态舒尔特方格等待小游戏：模型思考时，在静态网格或旋转轮盘上按顺序点击 1..N，边玩边等。
 - [marx-otto/dafeiyu-dsh-plugins#dafeiyu-pet-menu](https://github.com/marx-otto/dafeiyu-dsh-plugins/tree/main/dafeiyu-pet-menu) — 在 dsh-pet 桌宠的右键菜单里增加「识屏模式」子菜单（开启、关闭、识别间隔 15、30、60、120 秒），把选择转发给 dafeiyu-screensense。dsh-pet 没有菜单扩展接口，因此本插件在其 renderer.js 末尾追加一段带标记的补丁，首次修改前备份为 renderer.js.dafeiyu.bak；补丁幂等，dsh-pet 重装后会自动补回。
