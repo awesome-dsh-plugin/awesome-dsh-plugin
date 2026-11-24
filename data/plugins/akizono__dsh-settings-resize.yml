@@ -1,0 +1,7 @@
+url: https://github.com/akizono/dsh-settings-resize
+name: akizono/dsh-settings-resize
+category: ui
+description:
+  en: "Make the DeepSeek Harness Settings dialog resizable: drag its edges or corners, reset it to the default 800 x 800, or fill the window. The panel remembers its size."
+  zh: "让 DeepSeek Harness 设置对话框可以缩放：拖动边缘或四角调整宽高，一键回到默认的 800 x 800 或铺满窗口，并记住上次的尺寸。"
+tarball: https://github.com/akizono/dsh-settings-resize/releases/download/v0.2.1/dsh-settings-resize-0.2.1.tgz
