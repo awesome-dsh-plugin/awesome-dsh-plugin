@@ -4310,6 +4310,7 @@ dsh plugin --profile web add dshmarket
 - [minutiae3/dsh-tier-brain](https://github.com/minutiae3/dsh-tier-brain) — 发送前判断问题难度，在输入框上方提示够用的模型与推理等级，避免用错档位多花钱。
 - [Missher12/Missher-DSH-Reasoning-Effort](https://github.com/Missher12/Missher-DSH-Reasoning-Effort) — 按模型声明的能力提供思考深度滑块、配置指引与可选模型行设置。
 - [mo-n/dsh-provider-qoder](https://github.com/mo-n/dsh-provider-qoder) — 将 Qoder 订阅接入 DeepSeek Harness，支持国际版与中国区、多模态与工具调用。
+- [modelgo/dsh-modelgo-provider](https://github.com/modelgo/dsh-modelgo-provider) — 把 ModelGo（modelgo.ai）作为模型提供方：用你的 key 从 /v1/models 读取模型列表，每个模型按各自协议（Chat Completions、Anthropic Messages 或 Responses）调用；key 在插件页或「设置 → 模型」里填写，存入凭据服务。
 - [Modellix/dsh-modellix](https://github.com/Modellix/dsh-modellix) — 将 Modellix 接入 DSH：使用一个 API Key 在分栏 Design 工作区中提供基于 Schema 的图片、视频与音频生成、实时 LLM 模型目录，以及原生网页搜索与抓取 Provider。
 - [MoJIeAIGC/dsh-mojie-model-provider](https://github.com/MoJIeAIGC/dsh-mojie-model-provider) — 把 Mojie（mojieaigc.com）接入 DSH 的模型提供商，模型出现在模型下拉里，并注册原生图片工具与 /image 命令，用于生成与编辑图片。
 - [MoonlitDropOfBlood/dsh-model-prompt-injector](https://github.com/MoonlitDropOfBlood/dsh-model-prompt-injector) — DSH 按模型注入系统提示词：为本地已配置的模型把自定义提示词追加到系统提示词末尾，支持 provider/model 精确匹配与 provider/* 服务商级通配（两者按序叠加）。设置页自动列出每个已配置服务商及其模型，逐行编辑、即时生效；规则持久化保存、重启不丢；对主会话、subagent 与 workflow 子代理同样生效。

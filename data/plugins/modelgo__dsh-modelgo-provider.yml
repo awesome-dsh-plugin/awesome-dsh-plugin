@@ -1,0 +1,7 @@
+url: https://github.com/modelgo/dsh-modelgo-provider
+name: modelgo/dsh-modelgo-provider
+category: model
+description:
+  en: 'ModelGo (modelgo.ai) as a model provider: the model list is read from /v1/models with your key, each model uses its own protocol (Chat Completions, Anthropic Messages or Responses), and the key is entered on the plugin page or in Settings → Models and stored in the credentials service.'
+  zh: '把 ModelGo（modelgo.ai）作为模型提供方：用你的 key 从 /v1/models 读取模型列表，每个模型按各自协议（Chat Completions、Anthropic Messages 或 Responses）调用；key 在插件页或「设置 → 模型」里填写，存入凭据服务。'
+icon: https://raw.githubusercontent.com/modelgo/dsh-modelgo-provider/main/icon.png
