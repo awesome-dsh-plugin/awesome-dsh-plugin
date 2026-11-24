@@ -1,0 +1,6 @@
+url: https://github.com/taxueseek/dsh-suggestion-chips
+name: taxueseek/dsh-suggestion-chips
+category: ui
+description:
+  en: 'Clickable suggestion chips under every reply: suggest_actions tool with stance sorting, Level 0 deterministic fallback, high-risk draft gate, adoption indicator, and opensNewSession handoff.'
+  zh: '每条回复下方显示可点击建议按钮：suggest_actions 工具与立场排序、L0 确定性文本兜底、高危操作草稿门禁、已采纳标记与新会话交接。'
