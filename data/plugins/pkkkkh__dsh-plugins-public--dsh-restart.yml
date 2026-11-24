@@ -1,0 +1,6 @@
+url: https://github.com/pkkkkh/dsh-plugins-public/tree/main/dsh-restart
+name: pkkkkh/dsh-plugins-public#dsh-restart
+category: dev
+description:
+  en: Safe self-restart for DeepSeek Harness. Arms a scheduled kill/start pair through vetted PowerShell scripts (start task first, rollback on partial registration), then announces itself back over the IM channel that asked for the restart.
+  zh: DSH 安全自重启。用受控的 PowerShell 脚本排一对 kill/start 计划任务（先排 start、排失败自动回滚），重启完成后按原 IM 渠道投一句播报回来。

@@ -1,0 +1,6 @@
+url: https://github.com/pkkkkh/dsh-plugins-public/tree/main/video-toolbox
+name: pkkkkh/dsh-plugins-public#video-toolbox
+category: tools
+description:
+  en: One video entry point for DSH. A single video_toolbox tool routes to ffmpeg work (probe, cut, concat, encode, frames, gif, subtitles, storyboard), format conversion and audio transcription, so the agent sees one tool instead of five plugins.
+  zh: DSH 的统一视频入口。一个 video_toolbox 工具按 action 路由到 ffmpeg 系列（探针、裁剪、拼接、编码、抽帧、GIF、字幕、故事板）、格式转换和音频转写，模型只看到一件工具而不是五个插件。

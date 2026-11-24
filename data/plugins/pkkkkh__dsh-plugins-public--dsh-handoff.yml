@@ -1,0 +1,6 @@
+url: https://github.com/pkkkkh/dsh-plugins-public/tree/main/dsh-handoff
+name: pkkkkh/dsh-plugins-public#dsh-handoff
+category: docs
+description:
+  en: Turns the current session into a handoff markdown brief for the next conversation (task, what is done, what is next, which traps to avoid), and can generate one automatically on compaction or every N turns.
+  zh: 把当前会话整理成给下一段对话的交接 markdown（任务、已完成、下一步、要避开的坑），可以在 compaction 或每 N 回合时自动生成一份。
