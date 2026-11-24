@@ -1,0 +1,6 @@
+url: https://github.com/Asthestarsfalll/dsh-answer-card
+name: Asthestarsfalll/dsh-answer-card
+category: notify
+description:
+  en: 'macOS floating card for DeepSeek Harness: a tool asking for approval, a question waiting for an answer, or a finished turn shows up on screen, and clicking an option resolves it in DSH. Positions, width, font scale and accent are configurable, including next to the pointer.'
+  zh: 'macOS 悬浮卡片：审批、提问、回合结束三种时刻弹卡，点选项即等于在 DSH 里作答；完成卡可跨桌面、跨 workspace 回到会话，并把光标和鼠标指针放回输入框。'

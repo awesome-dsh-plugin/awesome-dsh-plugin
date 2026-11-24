@@ -1,0 +1,7 @@
+url: https://github.com/zhoushoujianwork/easyeda-agent
+name: zhoushoujianwork/easyeda-agent
+category: tools
+description:
+  en: 'EasyEDA Pro (JLC EDA) automation for DSH: an MCP bridge with 12 tools plus an agent skill that drives the local easyeda CLI through typed schematic, PCB, project and system actions - inspect before mutate, save/reload/check gates and native DRC. Requires the easyeda CLI and the EDA connector extension.'
+  zh: '给 DSH 的嘉立创 EDA 专业版（EasyEDA Pro）自动化：12 个工具的 MCP 桥接加一份 agent skill，经本地 easyeda CLI 执行类型化的原理图、PCB、工程与系统动作，先查后改，带保存/重载/检查门禁与原生 DRC。需先安装 easyeda CLI 与 EDA 连接器扩展。'
+tarball: https://github.com/zhoushoujianwork/easyeda-agent/releases/download/v1.20.0/easyeda-agent-dsh.tgz

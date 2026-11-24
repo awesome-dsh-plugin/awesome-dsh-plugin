@@ -1,0 +1,7 @@
+url: https://github.com/compilink/dsh-apply-updates-plugin
+name: compilink/dsh-apply-updates-plugin
+category: ui
+description:
+  en: 'Adds a loopback Web settings button for supervised DSH deployments that checks for active work, requests a service restart, and refreshes the browser when the new process is ready. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为使用进程管理器的 DSH 部署添加本机 Web 设置按钮，检查正在处理的任务后请求重启，并在新进程就绪时刷新页面。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/compilink/dsh-apply-updates-plugin/releases/latest/download/dsh-bundle-apply-updates.tgz

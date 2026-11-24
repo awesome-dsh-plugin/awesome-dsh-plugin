@@ -1,0 +1,6 @@
+url: https://github.com/zlun-yan/dsh-python-manager
+name: zlun-yan/dsh-python-manager
+category: dev
+description:
+  en: Binds one Miniconda environment to each workspace and skill, and creates or deletes conda environments or installs and removes pip packages from a sidebar page.
+  zh: 为每个工作区和技能绑定一个 Miniconda 环境，并可在侧边栏页面创建或删除 conda 环境、安装或卸载 pip 包。

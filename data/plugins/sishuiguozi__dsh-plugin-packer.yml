@@ -1,0 +1,6 @@
+url: https://github.com/sishuiguozi/dsh-plugin-packer
+name: sishuiguozi/dsh-plugin-packer
+category: dev
+description:
+  en: 'Exports a DSH plugin with its dependency closure as an importable zip, and imports such packs back into a profile. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把插件连同依赖闭包导出为可导入的 zip，并能把这类包导回 profile。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

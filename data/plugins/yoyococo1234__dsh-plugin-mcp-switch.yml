@@ -1,0 +1,6 @@
+url: https://github.com/yoyococo1234/dsh-plugin-mcp-switch
+name: yoyococo1234/dsh-plugin-mcp-switch
+category: tools
+description:
+  en: 'On-demand MCP with per-session isolation: every MCP starts disconnected so tool schemas cost no context; the agent opens one with mcp_switch_on inside a chat and only that chat (plus its child agents) can see the tools, so other in-progress conversations are unaffected. Closing is symmetric - one chat turning an MCP off does not drop another chat connection; the last owner closing it disconnects for real. Ownership persists across restarts, expensive servers (>100k tokens) require confirmation, and a Settings panel shows connection state, context cost, per-server session visibility, isolation/bridge health, startup policy and group presets. Includes 24 automated tests. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '按需开关 MCP，按会话隔离：MCP 默认全部断开，工具 schema 不占上下文；agent 在对话里用 mcp_switch_on 打开后，只有该会话（及其子智能体）看得见工具，其他进行中的对话不受影响。关闭同样对称——一个对话关掉不会断掉别人在用的连接，最后一个拥有者关闭才真正断开。归属跨重启保留，超重服务器（>10 万 tokens）需二次确认，设置面板展示连接状态、上下文成本、每个服务器的会话可见范围、隔离与桥健康度、启动策略和分组预设。含 24 项自动化测试。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

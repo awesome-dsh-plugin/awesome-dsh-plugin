@@ -1,0 +1,7 @@
+url: https://github.com/shinji00222/dsh-persona-continuity-bot
+name: shinji00222/dsh-persona-continuity-bot
+category: memory
+tarball: https://github.com/shinji00222/dsh-persona-continuity-bot/releases/download/v0.2.0-preview.17/dsh-persona-continuity-0.2.0-preview.17.tgz
+description:
+  en: 'Per-persona cross-session local Markdown memory (no Git required) with automatic distillation, credential filtering, workspace history recall, and an optional Tobs Bot bundle adding DM work-process timeline and multi-persona group chat.'
+  zh: '为 DeepSeek Harness 的每个人格提供独立本地 Markdown 跨会话记忆（无需 Git），支持自动提炼、凭据脱敏、工作区旧对话召回与人格工作台，并可选合并 Tobs Bot 模式（私聊工作过程时间轴、多人格群聊与全体工作区授权）。'

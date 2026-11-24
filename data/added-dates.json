@@ -515,7 +515,6 @@
  "https://github.com/wangcangxing/ai-eight-honors-eight-shames": "2026-09-23",
  "https://github.com/itchenshi/dsh-gateway-models": "2026-09-23",
  "https://github.com/yunxiiQwQ/dsh-maid-whale-UI/tree/main/maid-whale-webui": "2026-08-15",
- "https://github.com/pgmi-builds/better-dsh/tree/main/better-dsh": "2026-08-29",
  "https://github.com/inclusionAI/Avernet/tree/dev/apps/bcs/crates/plugins/deepseek-harness-channel-bcn": "2026-09-03",
  "https://github.com/BOWLUNA/dsh-custom-mode": "2026-09-18",
  "https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-codex-auth-plugin": "2026-09-02",
@@ -636,5 +635,13 @@
  "https://github.com/yakumioto/dsh-workspace-settings": "2026-11-20",
  "https://github.com/W3967/dsh-workflow-form": "2026-11-23",
  "https://github.com/329604421/dsh-tiny-fish": "2026-11-23",
- "https://github.com/regrevia/everything2chart/tree/main/dsh-bundle": "2026-11-22"
+ "https://github.com/regrevia/everything2chart/tree/main/dsh-bundle": "2026-11-22",
+ "https://github.com/wzvx/dsh-github-trending-masonry": "2026-11-11",
+ "https://github.com/wzvx/dsh-market-dog": "2026-11-16",
+ "https://github.com/wzvx/dsh-one-pack": "2026-11-13",
+ "https://github.com/Jasper-Alaric/dsh-hybrid-memory": "2026-11-15",
+ "https://github.com/1502074527-svg/dsh-custom-subagents": "2026-11-23",
+ "https://github.com/pgmi-builds/super-dsh/tree/master/better-dsh": "2026-08-29",
+ "https://github.com/pgmi-builds/super-dsh/tree/master/super-dsh": "2026-11-14",
+ "https://github.com/ShenpingDD/dsh-wooden-fish": "2026-10-22"
 }
