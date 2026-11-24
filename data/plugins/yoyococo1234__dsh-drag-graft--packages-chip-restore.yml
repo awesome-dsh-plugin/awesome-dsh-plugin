@@ -1,0 +1,7 @@
+url: https://github.com/yoyococo1234/dsh-drag-graft/tree/main/packages/chip-restore
+name: yoyococo1234/dsh-drag-graft#chip-restore
+category: session
+description:
+  en: 'Companion to dsh-drag-graft that fixes a rewind side effect: after dsh-rewind refills the composer with plain text, a session reference serialized as @[title](dsh-session:...) used to render as grey text instead of the native blue chip. This client-only plugin detects those tokens, decodes the session id, strips the token text and re-inserts a real session-reference node through the host composer API. Self-references and undecodable tokens are left untouched; when host APIs are missing or insertion is rejected the draft is left as-is. Installable alongside the original dsh-drag-graft: both are in the same repository and neither changes the other. Ships with 16 logic tests; browser rendering of the restored chip is not verified in CI and is called out in the README.'
+  zh: 'dsh-drag-graft 的配套插件，修一个撤回副作用：dsh-rewind 用纯文本回填输入框后，会话引用 @[标题](dsh-session:...) 会显示成灰底文本而不是原生蓝色 chip。这个纯 client 插件检测这种 token，解出 session id、去掉 token 文本，再通过宿主输入框 API 插回真正的会话引用节点。自引用和解不出的 token 保持原样；拿不到宿主 API 或插入被拒时草稿原封不动。可和原版 dsh-drag-graft 同时安装：两者同仓库、互不改动。含 16 项逻辑测试；还原后 chip 的浏览器渲染未在 CI 中验证，README 已明确说明。'
+icon: https://raw.githubusercontent.com/yoyococo1234/dsh-drag-graft/main/packages/chip-restore/icon.svg
