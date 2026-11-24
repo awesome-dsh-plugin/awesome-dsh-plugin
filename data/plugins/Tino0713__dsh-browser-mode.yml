@@ -1,0 +1,6 @@
+url: https://github.com/Tino0713/dsh-browser-mode
+name: Tino0713/dsh-browser-mode
+category: browser
+description:
+  en: 'Adds a "Browser mode" button beside Restart in the Windows desktop titlebar that signs the browser in — reusing the session cookie it already holds, or minting a fresh one and installing it through a one-time link — and opens the DeepSeek Harness web GUI in your default browser. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 Windows 桌面端标题栏「重启」旁加一个「浏览器模式」按钮：浏览器已持有有效会话 Cookie 时直接打开网页界面，否则现场签发一个新的 Cookie 并通过一次性链接装进浏览器，再打开 DeepSeek Harness 网页界面。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

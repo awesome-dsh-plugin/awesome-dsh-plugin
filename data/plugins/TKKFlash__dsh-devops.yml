@@ -1,0 +1,6 @@
+url: https://github.com/TKKFlash/dsh-devops
+name: TKKFlash/dsh-devops
+category: dev
+description:
+  en: 'Visually compose DevOps pipelines, run them locally or over SSH, and follow live logs while they execute. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '可视化编排 DevOps 流水线，在本地或经 SSH 远端执行，并实时跟踪运行日志。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

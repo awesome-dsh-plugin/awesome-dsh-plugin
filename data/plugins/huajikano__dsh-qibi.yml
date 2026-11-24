@@ -2,7 +2,7 @@ url: https://github.com/huajikano/dsh-qibi
 name: huajikano/dsh-qibi
 category: tools
 description:
-  en: 'QiBi writing desk: a native sidebar panel and 12 qibi_* tools for a local SQLite manuscript library, with optimistic-lock saves, pre-write revision backups, BM25 search, whole-book export, and model-assisted prose, character extraction and continuity notes.'
-  zh: '起笔写作台：原生侧栏面板与 12 个 qibi_* 工具读写本地 SQLite 书稿库，支持乐观锁保存、写前版本备份、BM25 检索与整本导出，并由当前模型辅助写作、提取人物和整理连续性资料。'
+  en: 'QiBi writing desk: a native sidebar panel and 13 qibi_* tools over a local SQLite manuscript library, with optimistic-lock saves, pre-write revision backups, one-call writing context, BM25 search, whole-book export, and model-assisted prose, characters and continuity notes.'
+  zh: '起笔写作台：原生侧栏面板与 13 个 qibi_* 工具读写本地 SQLite 书稿库，支持乐观锁保存、写前版本备份、一次取全写作上下文、BM25 检索与整本导出，并由当前模型辅助写作、提取人物和整理连续性资料。'
 icon: https://raw.githubusercontent.com/huajikano/dsh-qibi/main/assets/icon-180.png
 tarball: https://github.com/huajikano/dsh-qibi/releases/download/v1.4.0/dsh-qibi-1.4.0.tgz

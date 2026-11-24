@@ -1,0 +1,6 @@
+url: https://github.com/FYZB2020/dsh-fy-code-animation
+name: FYZB2020/dsh-fy-code-animation
+category: tools
+description:
+  en: 'Code animation. Turns a Chinese script into an HTML/Canvas scene, renders it frame by frame in a real headless browser and muxes the frames with FFmpeg into an MP4. Ships 341 style prompts, every one with a still-frame preview and 2 skills; the 6 tools cover style lookup, project creation, dependency setup and rendering. 1080p30 costs roughly 6 to 8 seconds of machine time per second of video.'
+  zh: '代码动画。把中文文案拆成 HTML/Canvas 场景，用真浏览器逐帧渲染、FFmpeg 合成 MP4。内置 341 条画风提示词（每条都有静帧预览）与 2 个技能；6 个工具负责查画风、建项目、装依赖与渲染。1080p30 约 6–8 秒机时换 1 秒成片。'

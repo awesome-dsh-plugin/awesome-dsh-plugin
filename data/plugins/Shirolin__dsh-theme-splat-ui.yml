@@ -1,0 +1,8 @@
+url: https://github.com/Shirolin/dsh-theme-splat-ui
+name: Shirolin/dsh-theme-splat-ui
+category: theme
+icon: https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/main/assets/icon-256.png
+tarball: https://github.com/Shirolin/dsh-theme-splat-ui/releases/latest/download/dsh-theme-splat-ui.tgz
+description:
+  en: 'Splatoon 2 inspired theme with tri-band ink canvas, 118 ThemeRuntime tokens, Special Gauge boot loader, and day/night palettes.'
+  zh: '斯普拉遁 2 风格墨街主题：三色涂地画布、覆盖 118 项 ThemeRuntime token、24 格大招启动槽、应用内外观设置与日夜双配色。'

@@ -1,0 +1,7 @@
+url: https://github.com/oldtommmy/notifyhub/tree/main/integrations/dsh
+name: oldtommmy/notifyhub#dsh
+category: notify
+tarball: https://github.com/oldtommmy/notifyhub/releases/latest/download/dsh-notifyhub.tgz
+description:
+  en: Sends DeepSeek Harness completion notifications to Feishu and optionally continues dsh or Codex desktop conversations from Feishu.
+  zh: 将 DeepSeek Harness 完成结果发到飞书，并可按需在飞书续聊 dsh 或 Codex 桌面会话。

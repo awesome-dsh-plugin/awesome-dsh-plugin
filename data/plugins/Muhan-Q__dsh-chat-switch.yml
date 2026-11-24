@@ -1,0 +1,6 @@
+url: https://github.com/Muhan-Q/dsh-chat-switch
+name: Muhan-Q/dsh-chat-switch
+category: ui
+description:
+  en: 'Adds a Chat / Harness switch to the DSH sidebar that swaps the workspace browser for a chat.deepseek.com conversation panel, and switches back to Harness when a new session is started. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 侧栏加入 Chat / Harness 切换器，把工作区替换成 chat.deepseek.com 对话面板，并在新建会话时自动切回 Harness。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

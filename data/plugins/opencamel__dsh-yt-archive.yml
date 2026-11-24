@@ -1,0 +1,7 @@
+url: https://github.com/opencamel/dsh-yt-archive
+name: opencamel/dsh-yt-archive
+category: tools
+tarball: https://github.com/opencamel/dsh-yt-archive/releases/download/v0.1.1/dsh-yt-archive-0.1.1.tgz
+description:
+  en: 'A yt_archive tool that turns a YouTube video link into a full caption archive via the 2100laike archive service: every available caption track (manual and auto-generated) is fetched into a per-language, timestamped Markdown snapshot that survives video deletion or going private; already-archived videos return the latest snapshot without spending quota, and terminal fetch failures (no captions / unavailable video) are reported early instead of timing out. Needs the third-party 2100laike service; anonymous use is limited to 8 archives per day per plugin instance and a registered PAT raises that to 100 per day.'
+  zh: 'yt_archive 工具：把 YouTube 视频链接经 2100laike 存档服务转成字幕全文存档——全部语言字幕轨道（人工+自动生成）抓成按语言分节、带时间戳的 Markdown 快照，视频删除或转私密后仍可读；已存档的视频去重秒回不耗额度，终态失败（无字幕/视频不可用）提前报告而不是等到超时。依赖第三方 2100laike 存档服务；匿名使用每个插件实例每天限 8 次，注册后配置 PAT 可提升到每天 100 次。'

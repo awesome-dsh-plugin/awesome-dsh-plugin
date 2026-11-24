@@ -1,0 +1,8 @@
+url: https://github.com/cccccccccccccy/dsh-session-reminder
+name: cccccccccccccy/dsh-session-reminder
+category: ui
+description:
+  en: 'Adds a left-sidebar bell with separate counts for running sessions and finished-but-unread sessions, plus one page that lists both groups and opens a session on click.'
+  zh: '在左侧栏增加一个铃铛，分别显示进行中与已完成待查看的会话数量，并提供一个页面列出两组会话、点击打开。'
+icon: https://raw.githubusercontent.com/cccccccccccccy/dsh-session-reminder/main/assets/icon-180.png
+tarball: https://github.com/cccccccccccccy/dsh-session-reminder/releases/download/v1.0.0/dsh-session-reminder-1.0.0.tgz

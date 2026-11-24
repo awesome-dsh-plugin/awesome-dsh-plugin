@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-task-console
+name: SSHOOTING/dsh-plugin-task-console
+tarball: https://github.com/SSHOOTING/dsh-plugin-task-console/releases/download/v0.1.0/0.1.0.tgz
+category: dev
+description:
+  en: 'Live task timeline: steps, errors, token spend and control hints (pause/inject/retry/terminate).'
+  zh: '实时任务时间线：步骤、错误、token 花费与控制提示（暂停/插入/重试/终止）。'

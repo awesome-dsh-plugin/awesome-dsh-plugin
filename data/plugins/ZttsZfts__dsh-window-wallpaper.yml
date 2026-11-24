@@ -1,0 +1,7 @@
+url: https://github.com/ZttsZfts/dsh-window-wallpaper
+name: ZttsZfts/dsh-window-wallpaper
+category: theme
+description:
+  en: Full-window background image for the DeepSeek Harness Web GUI, with adjustable scrim, panel opacity, and blur in Settings > General.
+  zh: 为 DeepSeek Harness Web GUI 铺满整窗的背景图片，可在“设置 > 通用”中调整遮罩、面板浓度与模糊。
+icon: https://raw.githubusercontent.com/ZttsZfts/dsh-window-wallpaper/main/assets/icon-180.png

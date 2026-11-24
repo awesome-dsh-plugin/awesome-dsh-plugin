@@ -2,6 +2,6 @@ url: https://github.com/JERRY-hub26/dsh-claude-pet
 name: JERRY-hub26/dsh-claude-pet
 category: fun
 description:
-  en: 'Adds a small companion to the DSH web UI that blinks, reacts to session activity, and can stay on the desktop while the window is minimised. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '在 DSH 网页界面里放一只桌宠，会眨眼、会碎碎念，最小化后还能留在桌面。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'Adds a small companion to the DSH web UI that blinks, reacts to session activity, and can stay on the desktop while the window is minimised.'
+  zh: '在 DSH 网页界面里放一只桌宠，会眨眼、会碎碎念，最小化后还能留在桌面。'
 icon: https://raw.githubusercontent.com/JERRY-hub26/dsh-claude-pet/main/icon.png

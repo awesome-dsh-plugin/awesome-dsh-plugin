@@ -1,0 +1,8 @@
+url: https://github.com/mindmuxai/mindmux-plugin/tree/main/packages/dsh
+name: mindmuxai/mindmux-plugin#dsh
+category: memory
+description:
+  en: Connects DSH to MindMux Cloud Brain to discover Workspaces and Projects and read or update knowledge through OAuth-authenticated MCP.
+  zh: 通过 OAuth 鉴权的 MCP 将 DSH 连接到 MindMux Cloud Brain，发现工作区和项目并读写知识。
+icon: https://raw.githubusercontent.com/mindmuxai/mindmux-plugin/main/packages/dsh/icon.png
+tarball: https://github.com/mindmuxai/mindmux-plugin/releases/download/dsh-v1.0.1/mindmux-dsh-mindmux-1.0.1.tgz

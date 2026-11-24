@@ -1,0 +1,8 @@
+url: https://github.com/allensrj/paper-reader-hub
+name: allensrj/paper-reader-hub
+category: docs
+description:
+  en: 'Sidebar paper-reading board: import PDFs into a searchable tagged library, open several papers in tabs on the original pdf.js layout, highlight in four colours, comment on a sentence and keep whole-paper notes. Words, selections, pages or the full document translate with the model your DSH already runs, falling back to Google, Youdao, MyMemory and finally a local dictionary; translation is cached per paper so a second pass is instant. Adds a sortable overview with CSV/JSON export. Papers, notes and translation archives stay in the browser (localStorage + IndexedDB), and AI translation spends your own tokens. Its translate route goes through the host''s own admission check (ctx.connection.requestRejection).'
+  zh: '侧栏论文精读看板：PDF 入库为可搜索、可打标签的论文库，按原版 pdf.js 版式多标签阅读，四色划线、句级批注、整篇笔记。单词、选段、整页或全文都用你 DSH 已经在用的模型翻译，不可用时依次退回 Google、有道、MyMemory 与本地词典；整篇译文按论文缓存，第二次打开即秒出。另有可排序总览与 CSV/JSON 导出。论文、笔记与译文存档都留在浏览器本地（localStorage + IndexedDB），AI 翻译消耗你自己的额度。翻译接口先过宿主自己的准入检查（ctx.connection.requestRejection）。'
+tarball: https://github.com/allensrj/paper-reader-hub/releases/latest/download/dsh-paper-board.tgz
+icon: https://raw.githubusercontent.com/allensrj/paper-reader-hub/main/docs/icon.png

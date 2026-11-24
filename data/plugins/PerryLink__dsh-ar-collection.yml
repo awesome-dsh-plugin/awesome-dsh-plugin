@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-ar-collection
+name: PerryLink/dsh-ar-collection
+category: workflow
+description:
+  en: "Turn accounts-receivable detail into a prioritized collection plan, reminder-letter drafts and a collection CSV, computed locally."
+  zh: "把应收明细变成按优先级排好的催收计划、催收函草稿和催收清单 CSV，全程本地计算。"

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-manuscript-check
+name: PerryLink/dsh-manuscript-check
+category: tools
+description:
+  en: "Pre-submission checklist for DeepSeek Harness: manuscript structure and declaration statements, keyword-based coverage of starter CONSORT/STROBE/PRISMA items with locators and advice, and a submission-pack scan (manuscript, cover letter, numbered figures with gap detection, tables, supplements, declarations) with JSON/Markdown reports. A checklist, not a compliance verdict."
+  zh: 'DeepSeek Harness 的投稿前检查清单：稿件结构与声明语句、基于关键词的 CONSORT/STROBE/PRISMA 起步条目覆盖（含位置与建议）、投稿包扫描（稿件、投稿信、编号图、表、补充材料、声明，并检测缺号），输出 JSON/Markdown 报告。只是检查清单，不是合规结论。'

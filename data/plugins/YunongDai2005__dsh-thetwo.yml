@@ -1,0 +1,6 @@
+url: https://github.com/YunongDai2005/dsh-thetwo
+name: YunongDai2005/dsh-thetwo
+category: session
+description:
+  en: 'Syncs conversations and attachments between paired computers on a LAN. The model sees each device’s hardware and can hand a task to another device after user confirmation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在已配对的局域网电脑之间同步会话和附件。模型能看到各设备的硬件配置，用户确认后可交给另一台电脑接着处理。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,7 @@
+url: https://github.com/AR-26710-1/dsh-plugin-scu-urp
+name: AR-26710-1/dsh-plugin-scu-urp
+category: tools
+description:
+  en: 'All-in-one assistant for Sichuan University URP & microservices: SSO auto-login, timetable calendar sync, GPA simulation, exams, course todos, card bookkeeping & dorm electricity.'
+  zh: '四川大学教务系统与微服务全能助手：免密自动登录、高颜值课表、手机日历同步、培养方案大纲与保研GPA测算、考试倒计时与自习室查询、一卡通记账与宿舍电费监控。'
+icon: https://raw.githubusercontent.com/AR-26710-1/dsh-plugin-scu-urp/main/icon.png

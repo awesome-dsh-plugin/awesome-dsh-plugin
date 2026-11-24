@@ -1,0 +1,7 @@
+url: https://github.com/Catwb/dsh-solution-ledger
+name: Catwb/dsh-solution-ledger
+category: memory
+icon: https://raw.githubusercontent.com/Catwb/dsh-solution-ledger/main/assets/icon-180.png
+description:
+  en: 'Keeps a global ledger of troubleshooting fixes and design decisions, and surfaces a matching confirmed entry when a tool call fails. '
+  zh: '把踩过的坑和做过的取舍记进全局账本，工具调用失败时自动带出已确认的相关条目。'

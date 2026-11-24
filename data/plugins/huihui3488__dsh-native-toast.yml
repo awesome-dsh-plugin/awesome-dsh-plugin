@@ -1,0 +1,7 @@
+url: https://github.com/huihui3488/dsh-native-toast
+name: huihui3488/dsh-native-toast
+category: notify
+description:
+  en: 'Windows notification-center toasts when a DeepSeek Harness turn finishes or the agent waits for your choice or approval; clicking one brings the app forward and scrolls to the finished turn or focuses the pending question. Text, logo, sound and per-event switches are configurable.'
+  zh: '任务完成、需要你选择或批准时，在 Windows 通知中心弹出原生通知；点击通知会把 DeepSeek Harness 带回前台，并滚动到刚结束的一轮或定位到待回答的提问。文字、徽标、提示音与各类开关都可配置。'
+icon: https://raw.githubusercontent.com/huihui3488/dsh-native-toast/main/assets/dsh-logo.png

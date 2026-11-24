@@ -1,0 +1,7 @@
+url: https://github.com/liaty8/dsh-muteki-preset/tree/main/plugins/muteki-preset
+name: liaty8/dsh-muteki-preset#muteki-preset
+category: security
+description:
+  en: 'Full preset bundle of the Muteki CTF swarm mode (same repo): an evidence-gated blackboard workflow (facts must cite captured tool-output artifacts, dead ends are logged), programmatic dispatch tools (muteki_run/tick/dispatch/review/cli) with per-challenge token-bucket and cost quotas, first-solve hard cancel of every live worker (attended; bulk records each flag to the banner without a global cancel), dispatch defaulting to the session workspace and echoing cwd/challenge, sentinel arming logged to subagents.jsonl (watch-arm), and tool-evidence capture. Installing the bundle registers the preset and bootstraps the muteki-board skill plus ~/.dsh-muteki/config.json on first start (existing config is never overwritten); the right-sidebar console is the separate muteki-workbench entry. Requires DSH 0.2.2-rc.3+ and Python 3.'
+  zh: 'Muteki CTF 蜂群模式的预设本体 bundle（同仓库）：证据门黑板流程（fact 必须引用捕获的工具输出证据、死路记账）、程序化派单工具（muteki_run/tick/dispatch/review/cli）+ 按题独立的令牌桶与成本额度、首解硬收束全部在跑 worker（attended；bulk 仍把每面旗落账横幅但不做全局收束）、派单默认会话工作目录并回显 cwd/challenge、哨兵武装记 subagents.jsonl（watch-arm）、工具证据捕获。安装即注册预设，首启自动铺设 muteki-board 技能与 ~/.dsh-muteki/config.json（已有配置绝不覆盖）；右侧栏控制台是另外的 muteki-workbench 条目。需 DSH 0.2.2-rc.3+ 与 Python 3。'
+icon: https://raw.githubusercontent.com/liaty8/dsh-muteki-preset/main/assets/icon.png

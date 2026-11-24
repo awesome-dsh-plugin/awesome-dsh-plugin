@@ -1,0 +1,8 @@
+url: https://github.com/Liang-HZ/dsh-acp-hub
+name: Liang-HZ/dsh-acp-hub
+category: workflow
+icon: https://raw.githubusercontent.com/Liang-HZ/dsh-acp-hub/main/assets/icon-180.png
+tarball: https://github.com/Liang-HZ/dsh-acp-hub/releases/download/v0.6.1/dsh-acp-hub-0.6.1.tgz
+description:
+  en: 'Async ACP subagent delegation hub for DeepSeek Harness: presets for MiniMax Code, OpenCode, CodeBuddy, Codex, Claude Code, Qoder, Gemini CLI, ZCode, and custom CLIs; streams into native DSH child sessions with per-step usage/context dock, optional continuation, and per-session MCP injection.'
+  zh: 'DeepSeek Harness 异步 ACP 子智能体委派中枢：内置 MiniMax Code、OpenCode、CodeBuddy、Codex、Claude Code、Qoder、Gemini CLI、ZCode 预设及自定义 CLI，流式镜像至原生 DSH 子会话，支持逐轮用量与上下文状态栏、可选续接及会话级 MCP 注入。'

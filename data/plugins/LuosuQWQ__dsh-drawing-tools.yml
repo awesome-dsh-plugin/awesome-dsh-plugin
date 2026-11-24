@@ -1,0 +1,6 @@
+url: https://github.com/LuosuQWQ/dsh-drawing-tools
+name: LuosuQWQ/dsh-drawing-tools
+category: vision
+description:
+  en: 'Turns a local ComfyUI into a drawing agent with twelve tools, per-family prompt guides, PNG recipe recovery, missing-model search and installation, and the Minimal drawing preset.'
+  zh: '把本机 ComfyUI 变成绘画 agent：12 个工具、分族提示词指南、PNG 配方反解、缺失模型搜索安装，以及「极简绘画」预设。'

@@ -1,0 +1,6 @@
+url: https://github.com/Archerkattri/dsh-qwen4-effort
+name: Archerkattri/dsh-qwen4-effort
+category: model
+description:
+  en: Fills the official Qwen4 effort levels (low/medium/xhigh for Max Preview, low/high/xhigh for Max) into Qwen4 models on existing Qwen Token Plan routes, preserving other providers and existing declarations.
+  zh: 为已有 Qwen Token Plan 路由上的 Qwen4 模型补齐官方推理等级（Max Preview 为 low/medium/xhigh，Max 为 low/high/xhigh），并保留其他提供商与已有声明。

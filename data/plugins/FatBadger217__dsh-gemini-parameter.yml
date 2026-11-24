@@ -1,0 +1,6 @@
+url: https://github.com/FatBadger217/dsh-gemini-parameter
+name: FatBadger217/dsh-gemini-parameter
+category: model
+description:
+  en: 'Google-official parameter passthrough for Gemini requests on DSH''s native google route: safety thresholds, X-Server-Timeout, serviceTier and a whitelisted generationConfig, editable from a panel on the plugin''s detail page.'
+  zh: '为 DSH 上使用的 Google Gemini 添加 Google 官方支持的自定义参数透传（Gemini 请求体修复），可用于调整官方安全参数、延长超时时长以增强长周期任务稳定性等。'

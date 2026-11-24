@@ -1,0 +1,6 @@
+url: https://github.com/vlln/dsh-autofork
+name: vlln/dsh-autofork
+category: session
+description:
+  en: 'When the agent is busy, fork the session: the new instruction runs immediately in a forked session while the old turn finishes in the background and reports back. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Agent 忙时自动分叉会话：新指令立刻在新会话里得到响应，旧会话留在后台跑完并把结果回注。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-freight-audit
+name: PerryLink/dsh-freight-audit
+category: tools
+description:
+  en: "Freight ratecard versioning, carrier bill audit, recovery summary and variance export for DeepSeek Harness (repository marked FROZEN 2026-10-31)."
+  zh: "面向 DeepSeek Harness 的运价卡版本管理、承运商账单稽核、追回汇总与差异导出（仓库标记 FROZEN 2026-10-31）。"

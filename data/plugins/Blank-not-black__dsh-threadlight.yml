@@ -1,0 +1,7 @@
+url: https://github.com/Blank-not-black/dsh-threadlight
+name: Blank-not-black/dsh-threadlight
+category: docs
+description:
+  en: 'DSH plugin and CLI that turn a Git project into a browsable feature-flow graph with source evidence, annotations, flow drafts and implementation reports. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 Git 项目整理成可浏览的功能线路图，带源码证据、批注、流程草稿和实现报告。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Blank-not-black/dsh-threadlight/main/docs/assets/icon-512.png
