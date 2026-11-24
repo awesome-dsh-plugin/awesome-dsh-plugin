@@ -1,0 +1,6 @@
+url: https://github.com/DestinyGeng/dsh-confirm-first
+name: DestinyGeng/dsh-confirm-first
+category: agent
+description:
+  en: "Restate intent before acting: the assistant echoes its understanding, lists ambiguities, and waits for confirmation."
+  zh: "执行前先复述理解并确认：让 AI 更懂你。"
