@@ -1,0 +1,6 @@
+url: https://github.com/Maybe-Zero-not-one/dsh-ai-credits
+name: Maybe-Zero-not-one/dsh-ai-credits
+category: session
+description:
+  en: 'One page for free AI credit offers, API list prices, subscription tiers, which model routes this machine has wired up, and how many tokens those routes used and what they cost. Prices track the vendor page, cost uses each vendor''s peak/off-peak and cache-hit rates, and any route expands into a per-session token timeline.'
+  zh: '把能领 AI 免费额度的地方、各家 API 标价、订阅档位、本机接入了哪几家模型，以及这些线路用了多少 token、折多少钱放在同一页。价格实时跟官网，金额按分时价与缓存命中分别计价，点开任一渠道能看按会话分段的 token 时间轴。'
