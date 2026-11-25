@@ -1,0 +1,7 @@
+url: https://github.com/mota-developer/dsh-mota-executor
+name: mota-developer/dsh-mota-executor
+category: workflow
+description:
+  en: 'Runs several bound Pull Agents for MoTA Creator inside DeepSeek Harness, with per-Agent queue and concurrency, token and cost statistics, and filterable Agent logs. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DeepSeek Harness 里同时运行多个 MoTA Creator 绑定式 Pull Agent：每个 Agent 独立队列与并发，带 Token/费用统计和可筛选日志。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/mota-developer/dsh-mota-executor/releases/download/v0.2.0/dsh-mota-executor.tgz

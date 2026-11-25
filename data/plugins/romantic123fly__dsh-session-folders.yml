@@ -1,0 +1,6 @@
+url: https://github.com/romantic123fly/dsh-session-folders
+name: romantic123fly/dsh-session-folders
+category: session
+description:
+  en: 'Gives every new conversation its own folder inside the workspace directory, names the folder after the conversation title, moves the agent working directory into it, and adds a session-menu delete action that asks before removing a folder that still contains files. It uses the same npm package name as DieJob/dsh-session-folders and does a similar job, so enable only one of the two; its HTTP routes have no DSH access check.'
+  zh: '为工作区里的每个新对话在对应目录下创建以对话标题命名的文件夹，把该对话的工作目录切到其中；侧边栏会话菜单新增删除入口，文件夹内仍有文件时会先询问是否一并删除。它与 DieJob/dsh-session-folders 使用同一个 npm 包名、功能相近，两者只启用一个；它的 HTTP 路由没有 DSH 的访问检查。'

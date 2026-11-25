@@ -2,6 +2,6 @@ url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-cron-board
 name: mzzsfy/dsh-plugin#dsh-cron-board
 category: workflow
 description:
-  en: 'Cron job board: schedules local scripts or dsh session tasks (fresh or pinned sessions) by cron expression, with centralized environment-variable management, run logs, and concurrency and timeout control.'
-  zh: '定时任务看板：cron 调度本地脚本或 dsh 会话任务（每次新建/固定会话），环境变量集中管理，执行日志与并发/超时控制。'
+  en: 'Cron job board: schedules local scripts or dsh session tasks (fresh or pinned sessions) by cron expression, with inline timezone suffixes (T±N), per-task model and agent-preset selection for session tasks, centralized environment-variable management, run logs, per-task concurrency limits and a per-task timeout for script runs.'
+  zh: '定时任务看板:cron 调度本地脚本或 dsh 会话任务(每次新建/固定会话),表达式支持内联时区后缀 T±N,会话任务可选模型与 Agent Preset,环境变量集中管理,执行日志、任务级并发上限与脚本任务超时控制。'
 icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-cron-board.png

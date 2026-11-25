@@ -1,0 +1,7 @@
+url: https://github.com/amzingluo/dsh-py-runner
+name: amzingluo/dsh-py-runner
+category: dev
+icon: https://raw.githubusercontent.com/amzingluo/dsh-py-runner/main/assets/icon.png
+description:
+  en: 'VSCode-style Python console in the DSH sidebar: it opens .py files in an editor with line numbers and Python syntax highlighting, lets you pick the interpreter, and runs the file with Run / Debug / Stop while stdout, stderr and the exit code stream into a panel below. Debugging drives a real DAP session through debugpy: click the gutter to set breakpoints, then step, pause, inspect the call stack, expand variables and evaluate watch expressions; a missing debugpy can be installed from the panel in one click. Ctrl+Enter runs, Ctrl+Shift+Enter starts debugging. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 侧边栏里的 VSCode 风格 Python 控制台：打开 .py 文件就是一个带行号和 Python 语法高亮的编辑器，选好解释器后点「运行」「调试」「停止」，stdout、stderr 和退出码实时流进下方面板。调试走 debugpy 的真 DAP 会话：点行号槽设断点，命中后可单步、暂停、看调用栈、展开变量、求值监视表达式；解释器缺 debugpy 时面板里一键安装。Ctrl+Enter 运行，Ctrl+Shift+Enter 调试。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

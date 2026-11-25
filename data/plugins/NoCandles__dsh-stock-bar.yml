@@ -2,5 +2,5 @@ url: https://github.com/NoCandles/dsh-stock-bar
 name: NoCandles/dsh-stock-bar
 category: ui
 description:
-  en: 'Always-on quotes strip pinned to the top of the DSH window: watchlist, holdings with share counts and cost price, P&L, candlestick and intraday charts, 5-level order book, trade ledger, price alerts, and streamed AI review of the selected symbol.'
-  zh: '钉在 DSH 窗口顶部的常驻行情条：自选股、带股数与成本价的持仓、盈亏、K 线与分时图、五档盘口、交易流水、价格预警，以及用 DSH 已配置模型流式生成的 AI 复盘。'
+  en: 'Always-on quotes strip pinned to the top of the DSH window (folds into a titlebar capsule and queues with other top-bar plugins): watchlist and holdings with shares, cost and per-currency P&L, candlestick and intraday charts with MA, volume and crosshair, 5-level order book, trade ledger with realized P&L, and price alerts. AI review streams over selectable data packs (daily candles, intraday, multi-day money flow, ETF constituents, share creation and redemption), adds a verdict card with auto-set alerts, supports follow-up questions on a selected passage, and can run on a schedule. With dsh-better-sidebar installed the same dashboard also opens as a right-sidebar tab. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '钉在 DSH 窗口顶部的常驻行情条（可折叠成标题栏胶囊，与其它顶栏插件自动排队）：自选与持仓（股数、成本、按币种分开的盈亏）、K 线与分时图（MA、成交量、十字光标、成本线）、五档盘口与委比、交易流水与已实现盈亏、价格预警。AI 复盘可选数据包（日K、分时、多日资金流、ETF 成分股、份额申赎），流式输出并附结论卡片、自动按关键价位设预警，可就选中段落追问，也能按时间点自动跟踪；装了 dsh-better-sidebar 时，同一套面板还能作为右侧栏「股票」页打开。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

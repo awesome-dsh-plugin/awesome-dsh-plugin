@@ -1,0 +1,7 @@
+url: https://github.com/Hjay1101/dsh-launcher
+name: Hjay1101/dsh-launcher
+category: ui
+icon: https://raw.githubusercontent.com/Hjay1101/dsh-launcher/main/assets/AppIcon-1024.png
+description:
+  en: 'Native macOS launcher for DeepSeek Harness Web that boots the UI in a chosen workspace and opens the browser once the server responds; ships a CLI, a double-click .command file and a ~200 KB Cocoa app, and adds a Settings section with copy-paste install commands and release links.'
+  zh: 'DeepSeek Harness Web 的原生 macOS 启动器：在指定工作区启动 Web UI、HTTP 就绪后自动打开浏览器；提供 CLI、双击 .command 与约 200KB 原生 Cocoa 应用三种形态，并在 Settings 中新增分区收录安装命令与下载链接。'

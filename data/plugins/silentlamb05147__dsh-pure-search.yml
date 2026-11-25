@@ -1,0 +1,6 @@
+url: https://github.com/silentlamb05147/dsh-pure-search
+name: silentlamb05147/dsh-pure-search
+category: docs
+description:
+  en: 'Local document search for DSH: eight kb_* tools that ingest Markdown, TXT, PDF, DOCX, HTML and JSON into workspace- and session-scoped indexes, returning matching passages with path, chapter and line-range citations; BM25 by default with optional dense retrieval, fully offline and host-only.'
+  zh: '面向 DSH 的本地文档检索：八个 kb_* 工具把 Markdown、TXT、PDF、DOCX、HTML、JSON 建成工作区/会话分层索引，返回带路径、章节与行号的原文片段；默认 BM25，可选稠密检索，全程离线、仅宿主侧。'

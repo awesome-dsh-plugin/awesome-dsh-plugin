@@ -1,0 +1,6 @@
+url: https://github.com/guohwa/dsh-plugin-image-workbench
+name: guohwa/dsh-plugin-image-workbench
+category: vision
+description:
+  en: DSH sidebar image-generation workbench with illustration and photography pipelines, a built-in local account pool, and any OpenAI-compatible endpoint.
+  zh: DSH 侧栏 AI 生图工作台，涵盖图文与摄影两类流程，内置本地账号池，亦支持任意 OpenAI 兼容接口。

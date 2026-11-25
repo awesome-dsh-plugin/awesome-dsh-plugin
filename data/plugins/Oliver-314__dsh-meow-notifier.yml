@@ -1,0 +1,6 @@
+url: https://github.com/Oliver-314/dsh-meow-notifier
+name: Oliver-314/dsh-meow-notifier
+category: notify
+description:
+  en: Sends DeepSeek Harness turn-completion, pending-approval and pending-question alerts to a phone through the MeoW push service, with per-event toggles and three message formats.
+  zh: 通过 MeoW 推送服务把 DeepSeek Harness 的任务完成、待确认与待回答提醒发到手机，支持按事件开关和三种消息格式。

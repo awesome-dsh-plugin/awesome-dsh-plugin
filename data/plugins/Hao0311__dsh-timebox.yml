@@ -1,0 +1,6 @@
+url: https://github.com/Hao0311/dsh-timebox
+name: Hao0311/dsh-timebox
+category: workflow
+description:
+  en: Delivery budget for the composer — set 20 minutes and the model sees an exact remaining time before every step, ships a rough-but-usable version by the halfway point, and at the deadline stops starting new work and hands over what it has with the gaps written out. Adds a per-session timebox tool (status / request_more / deliver / stop) and a countdown pill under the input.
+  zh: 输入框下方设一个交付预算——每一步模型都能看到精确剩余时间，过半先出粗糙但可用的版本，到点停止开新工并交出产物与缺口说明；带按会话的 timebox 工具（status / request_more / deliver / stop）与输入框下方的倒计时胶囊。

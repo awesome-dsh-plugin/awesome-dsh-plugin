@@ -1,0 +1,6 @@
+url: https://github.com/kleinklein0824/dsh-deepseek-atlas
+name: kleinklein0824/dsh-deepseek-atlas
+category: ui
+description:
+  en: 'DeepSeek model almanac for DSH: long-press or right-click the composer model control to browse model families and a 31-day release calendar, compare models, and view pricing synced from api-docs.deepseek.com.'
+  zh: 'DSH 的 DeepSeek 模型档案：长按或右键输入框模型控件，浏览模型家族与 31 天发布月历、对比模型，并查看从 api-docs.deepseek.com 同步的定价。'

@@ -1,0 +1,8 @@
+url: https://github.com/LIQiang-IT/dsh-session-delete
+name: LIQiang-IT/dsh-session-delete
+category: session
+icon: https://raw.githubusercontent.com/LIQiang-IT/dsh-session-delete/main/assets/icon-180.png
+description:
+  en: 'Adds a "Delete session" action after "Archive session" that permanently removes one session: its log directory, rewind snapshots and projection-cache entry, its workspace/archive/pin registrations, schedules bound to it, and its rows in the chat-index and usage databases. A preview lists every target before anything is deleted; the same operation is exposed to agents as the session_delete tool with a dryRun option.'
+  zh: '在「归档会话」之后新增「删除会话」：彻底删除该会话的日志目录、回退快照与投影缓存条目、工作区/归档/置顶登记、绑定它的定时任务，以及聊天索引与用量账本中的对应行；删除前先列出全部目标，同一操作也以 session_delete 工具（支持 dryRun）提供给 Agent。'
+tarball: https://github.com/LIQiang-IT/dsh-session-delete/releases/download/v1.2.2/dsh-session-delete-1.2.2.tgz

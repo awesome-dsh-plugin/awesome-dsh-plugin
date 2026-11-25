@@ -1,0 +1,7 @@
+url: https://github.com/RDYRD/dsh-session-files
+name: RDYRD/dsh-session-files
+category: session
+description:
+  en: 'Sidebar tab with every file this conversation produced — preview images, PDF, Markdown, CSV and code in place, and jump back to the turn that made it.'
+  zh: '侧边栏列出本会话产出的每个文件：就地预览图片、PDF、Markdown、CSV 与代码，并可跳回产出它的那一轮对话。'
+icon: https://raw.githubusercontent.com/RDYRD/dsh-session-files/main/assets/icon.png

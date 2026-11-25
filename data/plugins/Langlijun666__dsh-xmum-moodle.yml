@@ -1,0 +1,6 @@
+url: https://github.com/Langlijun666/dsh-xmum-moodle
+name: Langlijun666/dsh-xmum-moodle
+category: tools
+description:
+  en: 'XMUM Moodle in the sidebar: courses grouped by term, a schedule merged from the calendar, assignment and quiz deadlines and dated announcements, and batch downloads filed by term, course and material type. It signs in to the school Moodle (l.xmu.edu.my by default) with your campus ID and password, keeps only the resulting Moodle token in the DSH credential store, and its HTTP routes have no DSH access check.'
+  zh: '把 XMUM 的 Moodle 搬进侧边栏：课程按学期分组，日程合并日历、作业与测验截止时间以及带日期的公告，批量下载按学期、课程和资料类型归档。它用你的校园账号密码登录学校 Moodle（默认 l.xmu.edu.my），只把换到的 Moodle 令牌存进 DSH 凭据库；它的 HTTP 路由没有 DSH 的访问检查。'

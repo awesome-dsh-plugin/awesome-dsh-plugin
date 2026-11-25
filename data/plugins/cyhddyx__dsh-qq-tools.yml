@@ -1,0 +1,7 @@
+url: https://github.com/cyhddyx/dsh-qq-tools
+name: cyhddyx/dsh-qq-tools
+category: tools
+description:
+  en: 'QQ tools for DSH with group and private messaging, chat history, favorite stickers, pokes, friend management, and Qzone integration. Requires SnowLuma.'
+  zh: '为 DSH 提供 QQ 群聊与私聊收发、聊天记录、收藏表情、戳一戳、好友管理和 QQ 空间功能，仅支持 SnowLuma。'
+tarball: https://github.com/cyhddyx/dsh-qq-tools/releases/download/v0.10.5/dsh-qq-tools-0.10.5.tgz

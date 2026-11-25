@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Automate Huawei eNSP labs: generate .topo files, start and stop devices, and push configuration one command at a time with per-command error reporting. On Windows it drives the eNSP window with simulated mouse clicks and window screenshots used to locate buttons (administrator rights needed), sends commands to the device consoles over local TCP, and may force-kill running eNSP clients when it has to relaunch.'
   zh: '面向华为 eNSP 的自动化工具：生成 .topo 拓扑、启停设备、逐条下发配置并在每条命令后核对结果。在 Windows 上用模拟鼠标点击和用来定位按钮的 eNSP 窗口截图来驱动 eNSP 窗口（需要管理员权限），通过本机 TCP 向设备控制台下发命令，重新启动时可能强制结束正在运行的 eNSP 客户端。'
+icon: https://raw.githubusercontent.com/lizi600jin/dsh-ensp/HEAD/assets/icon-180.webp

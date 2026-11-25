@@ -1,0 +1,7 @@
+url: https://github.com/zhouxnsz/dsh-rolegroup
+name: zhouxnsz/dsh-rolegroup
+category: model
+description:
+  en: 'Defines named roles that each pair a persona with a bound model and fallback chain, and exposes one delegation tool per role, so subagents are dispatched by role name instead of a provider/model string.'
+  zh: '把角色定义成 persona、绑定模型与备用链三部分，每个角色暴露一个委派工具；派发子代理时用角色名即可，不必每次手写 provider/model。'
+icon: https://raw.githubusercontent.com/zhouxnsz/dsh-rolegroup/main/assets/icon.png

@@ -1,0 +1,10 @@
+url: https://github.com/zuosus/dsh-model-flatmap        # must match the repo exactly / 必须与仓库完全一致
+name: zuosus/dsh-model-flatmap                          # link text shown in the list / 列表中显示的链接文字
+category: ui                              # see the category list below / 见下方分类列表
+description:
+  en: It replaces the composer's conversation.input.model seat with a single flat panel rendered in the Web GUI.
+  zh: 它把会话输入框中的 conversation.input.model 控件替换成一个平铺面板，渲染在 Web GUI 内。
+# optional — GitHub-hosted raster image used as the storefront tile;
+# falls back to the owner's avatar when omitted
+# 可选——用 GitHub 托管的位图作为市场卡片图标；不写则回退到作者头像
+# icon: https://raw.githubusercontent.com/owner/repo/main/assets/icon-180.png

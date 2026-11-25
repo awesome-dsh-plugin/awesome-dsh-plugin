@@ -1,0 +1,7 @@
+url: https://github.com/thebtf/dsh-cliproxyapi-provider
+name: thebtf/dsh-cliproxyapi-provider
+category: model
+description:
+  en: 'Connects one CLIProxyAPI gateway to DeepSeek Harness, speaks OpenAI Responses, Chat Completions, Anthropic Messages or Google Generative AI natively, and imports the gateway model catalog into a settings page where each model can be selected.'
+  zh: '把一个 CLIProxyAPI 网关接入 DeepSeek Harness，原生支持 OpenAI Responses、Chat Completions、Anthropic Messages 和 Google Generative AI 四种协议，并把网关的模型目录导入设置页，逐个选择启用哪些模型。'
+icon: https://raw.githubusercontent.com/thebtf/dsh-cliproxyapi-provider/main/market/icon-180.png

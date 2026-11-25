@@ -1,0 +1,7 @@
+url: https://github.com/wyk4447/dsh-diff-review
+name: wyk4447/dsh-diff-review
+category: security
+icon: https://raw.githubusercontent.com/wyk4447/dsh-diff-review/main/assets/icon-256.png
+description:
+  en: 'Pre-execution review gate for file writes, edits and deletions: the tool call is held before it runs, a right-sidebar panel shows the diff (unified, or source versus result side by side), and nothing is written until Accept is clicked. Deletion and rename are always asked; "Allow all" is a manual global switch that resets when the host restarts. Covers multi-file commands, binary and formatting summaries, per-turn history with byte-exact restore, and argument-based gating for tools without an adapter. Zero runtime dependencies.'
+  zh: '写入前的审查闸门：write、edit、pwsh 在真正执行前被挂起，右侧栏面板显示 diff（统一视图，或原文与新文左右对照），点「接受」才落盘。删除与改名永远照问；「全部允许」是手动全局开关，宿主重启即恢复。覆盖多文件命令、二进制与纯格式变化的摘要、按轮次分组的改动历史与字节级还原，以及对没有专用适配器的工具按参数判定。零运行时依赖。'

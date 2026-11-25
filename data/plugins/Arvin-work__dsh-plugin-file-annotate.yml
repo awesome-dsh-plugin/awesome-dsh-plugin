@@ -2,6 +2,6 @@ url: https://github.com/Arvin-work/dsh-plugin-file-annotate
 name: Arvin-work/dsh-plugin-file-annotate
 category: ui
 description:
-  en: Annotatable file editor for the DSH right sidebar with a lazy file tree, inline annotations, cross-file annotation navigation, Markdown preview, and composer-draft handoff.
-  zh: DSH 右侧栏可批注文件编辑器，提供懒加载文件树、行内批注、跨文件批注导航、Markdown 预览，以及批注加入对话草稿。
-tarball: https://github.com/Arvin-work/dsh-plugin-file-annotate/releases/download/v0.1.1/local-dsh-plugin-file-annotate-0.1.1.tgz
+  en: 'Annotatable file editor for the DSH right sidebar with a lazy file tree, inline annotations, cross-file annotation navigation, Markdown preview, and composer-draft handoff. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 右侧栏可批注文件编辑器，提供懒加载文件树、行内批注、跨文件批注导航、Markdown 预览，以及批注加入对话草稿。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/Arvin-work/dsh-plugin-file-annotate/releases/download/v0.1.2/local-dsh-plugin-file-annotate-0.1.2.tgz

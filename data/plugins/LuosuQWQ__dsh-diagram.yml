@@ -1,0 +1,6 @@
+url: https://github.com/LuosuQWQ/dsh-diagram
+name: LuosuQWQ/dsh-diagram
+category: vision
+description:
+  en: 'Four model-callable tools that render HTML to PNG, screenshot a page or element, annotate an existing image, and return a style guide, using the installed Chrome or Edge.'
+  zh: '四个模型可调用的工具：HTML 渲染为 PNG、网页或元素截图、给已有图片画框与箭头、读取样式指南，直接使用本机 Chrome 或 Edge。'

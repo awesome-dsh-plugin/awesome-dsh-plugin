@@ -1,0 +1,7 @@
+url: https://github.com/Ztqing4Agents/dsh-skill-panel
+name: Ztqing4Agents/dsh-skill-panel
+category: skill
+description:
+  en: 'Native-style skill manager for DSH web GUI: manage built-in, local, and market skills in one list with lossless toggles, local/GitHub import, and a built-in SkillHub marketplace. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH Web GUI 原生风格技能管理面板：统一管理内置、本地与市场技能，支持无损启停开关、本机/GitHub 仓库导入，以及内置 SkillHub 镜像技能市场。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Ztqing4Agents/dsh-skill-panel/main/assets/icon-180.png

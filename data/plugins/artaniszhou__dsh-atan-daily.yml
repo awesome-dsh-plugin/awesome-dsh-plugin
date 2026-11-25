@@ -1,0 +1,6 @@
+url: https://github.com/artaniszhou/dsh-atan-daily
+name: artaniszhou/dsh-atan-daily
+category: workflow
+description:
+  en: 'Scheduled DSH tasks: each topic keeps its own folder and task-detail file, runs by cron or manually, and renders a timestamped PNG or PDF report that can be pushed to Lark.'
+  zh: 'DSH 定时任务：每个选题一个目录与任务细节文件，按 cron 或手动执行，渲染带时间戳的 PNG / PDF 报告，并可推送到飞书。'

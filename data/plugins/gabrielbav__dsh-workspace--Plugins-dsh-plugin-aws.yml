@@ -1,0 +1,6 @@
+url: https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-plugin-aws
+name: gabrielbav/dsh-workspace#dsh-plugin-aws
+category: tools
+description:
+  en: 'Gives every DSH session AWS''s official MCP servers: 59 servers in 14 groups (documentation, IaC, EKS and ECS, Lambda, DynamoDB and Aurora, CloudWatch, cost and billing, Bedrock and more), switched on from a Settings page by group or one at a time. Versions are pinned, servers start read-only where they support it, and secrets stay in the DSH credential store.'
+  zh: '为每个 DSH 会话提供 AWS 官方 MCP 服务器：14 个分组共 59 个服务器（文档、IaC、EKS 与 ECS、Lambda、DynamoDB 与 Aurora、CloudWatch、成本与账单、Bedrock 等），可在设置页面中按组或逐个开启。版本固定，支持只读模式的服务器默认以只读方式启动，密钥保存在 DSH 凭据存储中。'

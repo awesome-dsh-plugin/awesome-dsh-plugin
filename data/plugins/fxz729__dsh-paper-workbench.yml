@@ -1,0 +1,7 @@
+url: https://github.com/fxz729/dsh-paper-workbench
+name: fxz729/dsh-paper-workbench
+category: tools
+description:
+  en: 'Paper libraries and literature management tools with nested collections, PDF imports, local metadata, reading, translation queues and optional ink annotations. An extension of GGboya/dsh-paper-reader 1.6.1 that reuses its default data directory (~/.dsh-paper-reader/data), so back up the library before migrating and enable only one of the two in a profile, because tool names and routes clash. Needs Harness 0.2.2-rc.1 and Node 24.9 or later; the ink annotations use tldraw, which needs a tldraw license key that you obtain and enter yourself.'
+  zh: '嵌套文献库与文献管理工具，支持 PDF 导入、本地元数据、论文阅读、翻译队列和可选手写批注。是 GGboya/dsh-paper-reader 1.6.1 的扩展，沿用其默认数据目录（~/.dsh-paper-reader/data），迁移前请先备份文献库，同一个 profile 里只能启用两者之一（工具名与路由会冲突）。需要 Harness 0.2.2-rc.1 和 Node 24.9 及以上；手写批注使用 tldraw，需要自行获取并填入 tldraw 许可 key。'
+tarball: https://github.com/fxz729/dsh-paper-workbench/releases/download/v1.0.0/fxz729-dsh-paper-workbench-1.0.0.tgz

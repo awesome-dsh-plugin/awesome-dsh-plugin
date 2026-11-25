@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-outline-lint'
+name: 'zjukop3/dsh-verify-kit#dsh-outline-lint'
+category: 'tools'
+description:
+  en: 'Shape check for delivered documents: no title, more than one level-1 heading, a lost heading level, no conclusion up front, and nothing a reader can run to reproduce the result. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '交付文档的结构检查：没有标题、多个一级标题、标题跳级、开头没有结论、没有任何读者能跑的复现命令。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-verify-kit/main/assets/icon-180.png'

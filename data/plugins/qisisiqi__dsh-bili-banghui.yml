@@ -1,0 +1,6 @@
+url: https://github.com/qisisiqi/dsh-bili-banghui
+name: qisisiqi/dsh-bili-banghui
+category: session
+description:
+  en: 'Tired of the daft replies on Bilibili? This plugin answers them for you: it groups the replies you got by person and thread into conversations, lines up the original comment, their reply and yours on one screen, and when you tap the AI reply button it first reads whether the other person is agreeing, chatting or picking a fight (it will not argue back at someone friendly), then offers three options you can edit into your own voice. Nothing goes out until you confirm, and every send is logged. Sign-in, persona and the model API key live under the avatar menu in the top-right corner; credentials stay in your local data folder. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '还在为回B站的傻福消息而苦恼吗？这个插件AI帮你回消息，把「回复我的」按人与楼层聚合成会话，右侧把 主楼 → 他 → 你 拉成一条线，不用再翻评论区找上下文；点「AI帮回」，它先看对方是夸你、跟你聊还是在挑刺（赞同/友善就不跟你抬杠），再给三条候选，你挑一条改成自己的口气，确认了才发出去，发完自动记一笔。登录、人设、API Key 都在面板右上角的头像菜单里，凭证只存在本地 data 目录。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

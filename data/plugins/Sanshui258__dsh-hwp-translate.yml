@@ -1,0 +1,7 @@
+url: https://github.com/Sanshui258/dsh-hwp-translate
+name: Sanshui258/dsh-hwp-translate
+category: docs
+description:
+  en: 'Translates .hwp/.hwpx (Hangul) and .docx documents into the language the session model writes - Chinese is the common case, but Korean to English or English to Korean works the same way - keeping tables, bullets, indentation and font size, and writes the result beside the original as *_zh. hwp_extract returns the document segments as JSON (50 per page by default, 200 max, next_offset for pagination); hwp_apply takes {segment id: translation} and returns the output path with applied and missing counts. The plugin never calls an API and accepts no API key; its bundled 10 MB translator only reads and writes the file locally. Windows only: .hwpx and .docx are parsed in pure Python, while legacy .hwp drives the installed Hangul over COM and requires allow_hangul.'
+  zh: '把 .hwp/.hwpx（한글）与 .docx 文档翻成会话模型能写的语言（中文最常见，韩转英、英转韩同理），保留表格、项目符号、缩进与字号，译文写在原文件旁（原名_zh）。hwp_extract 返回文档段落 JSON（默认每页 50 段、上限 200，用 next_offset 分页）；hwp_apply 按 {段落 id: 译文} 写回，返回输出路径与 applied/missing。插件不访问任何 API、也不接受 API Key；随包的 10 MB 翻译器只在本地读写文件。仅 Windows：.hwpx 与 .docx 纯 Python 解析，旧版 .hwp 通过 COM 驱动本机 한글，需要 allow_hangul。'
+icon: https://raw.githubusercontent.com/Sanshui258/dsh-hwp-translate/main/icon.png

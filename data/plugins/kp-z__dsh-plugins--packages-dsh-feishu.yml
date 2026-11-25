@@ -1,0 +1,7 @@
+url: https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-feishu
+name: kp-z/dsh-plugins#dsh-feishu
+category: workflow
+tarball: https://github.com/kp-z/dsh-plugins/releases/download/dsh-feishu-v0.20.1/dsh-feishu-0.20.1.tgz
+description:
+  en: 'Feishu/Lark task bridge for DSH: syncs a managed Feishu task list and watched documents into a local snapshot, binds a task to a DSH session so progress, ETA, dependencies and completion write back to Feishu, and schedules work through DSH automation. Adds a Feishu tab in the right sidebar (requires dsh-better-sidebar) and a host-page Tasks panel with run bubbles, insight charts and a dependency canvas.'
+  zh: DSH 的飞书任务桥：把受管飞书任务清单与监听文档同步成本地快照，把任务绑定到 DSH 会话，让进展、预期、依赖与完成状态写回飞书，并通过 DSH 自动化排期。右侧栏新增「飞书」页签（需 dsh-better-sidebar），宿主页面新增「任务」面板，含运行气泡、洞察图表与依赖画布。

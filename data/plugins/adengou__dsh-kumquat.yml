@@ -1,0 +1,6 @@
+url: https://github.com/adengou/dsh-kumquat
+name: adengou/dsh-kumquat
+category: tools
+description:
+  en: 'Media conversion panel for DSH: video and audio format conversion, clip trimming, and video-to-GIF, with every output checked for resolution, codec, framerate, duration, channels and sample rate.'
+  zh: 'DSH 的媒体转换面板：视频/音频格式互转、裁剪片段、取段做 GIF，每件产物核对分辨率、编码、帧率、时长、声道与采样率。'

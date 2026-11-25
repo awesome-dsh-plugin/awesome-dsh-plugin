@@ -1,0 +1,7 @@
+url: https://github.com/chicochol/dsh-holopet/tree/main/plugin/dsh-pet-holocubic
+name: chicochol/dsh-holopet#dsh-pet-holocubic
+category: fun
+description:
+  en: 'Desktop pet for HoloCubic: mirrors your DeepSeek Harness agent state over LAN SSE, with 114 animations, two screens and an on-device skin editor.'
+  zh: 'HoloCubic 桌搭屏的桌面宠物：通过局域网 SSE 同步 DeepSeek Harness 的 agent 状态，含 114 个动作、两个界面和设备端皮肤编辑器。'
+icon: https://raw.githubusercontent.com/chicochol/dsh-holopet/main/docs/icon.png

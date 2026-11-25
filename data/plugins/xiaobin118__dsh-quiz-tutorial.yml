@@ -1,0 +1,8 @@
+url: https://github.com/xiaobin118/dsh-quiz-tutorial
+name: xiaobin118/dsh-quiz-tutorial
+category: tools
+icon: https://raw.githubusercontent.com/xiaobin118/dsh-quiz-tutorial/main/icon.png
+tarball: https://github.com/xiaobin118/dsh-quiz-tutorial/releases/latest/download/dsh-quiz-tutorial.tgz
+description:
+  en: 'A study surface for exam prep: 15–20-question decks generated from review context, each question with a hand-worked solution, true multi-select with exact-set grading, an automatic mistake log, `/dsh-quiz` generation, and deck deletion. Ships no bundled decks.'
+  zh: '刷题场：根据会话，把复习内容变成 15–20 道题集，每道题配逐步手算解析，支持单选与多选，答错进错题本；用 `/dsh-quiz` 出题，支持题集删除。你的复习老师。'

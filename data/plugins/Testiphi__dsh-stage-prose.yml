@@ -1,0 +1,6 @@
+url: https://github.com/Testiphi/dsh-stage-prose
+name: Testiphi/dsh-stage-prose
+category: ui
+description:
+  en: 'Brings Codex-style progress updates to long DSH tasks and keeps them visible when turns collapse in Standard view.'
+  zh: '借鉴 Codex 的进度播报方式，让 DSH 在长任务中简短说明进展，并在「标准」视图折叠回合后保留这些正文。'

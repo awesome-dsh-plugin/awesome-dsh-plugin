@@ -1,0 +1,6 @@
+url: https://github.com/WilShi/dsh-plugin-inspiration-workbench
+name: WilShi/dsh-plugin-inspiration-workbench
+category: workflow
+description:
+  en: Coordinate multiple live DSH sessions on a canvas with task planning, file cards, pipelines, and node-level progress.
+  zh: 在画布上编排多个真实 DSH 会话，支持任务规划、文件卡片、自动流水线和节点级进度。

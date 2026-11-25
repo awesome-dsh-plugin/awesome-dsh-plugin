@@ -1,0 +1,6 @@
+url: https://github.com/Liatos233/dsh-dl-progress
+name: Liatos233/dsh-dl-progress
+category: tools
+description:
+  en: 'Download task panel for the DSH Web UI: a bundled download_file tool streams the file itself and reports exact byte counts, shell downloads (curl -o, Invoke-WebRequest -OutFile, pip install, git clone) are recognised from host job events, and every task shows its name, real percentage, transfer rate and remaining ETA in the bottom-right corner.'
+  zh: 'DSH Web UI 的下载任务面板：插件自带 download_file 工具直接流式下载并统计真实字节数，同时从 host job 事件识别 shell 下载（curl -o、Invoke-WebRequest -OutFile、pip install、git clone）；每个任务在右下角显示名称、真实百分比、下载速率与剩余时间。'

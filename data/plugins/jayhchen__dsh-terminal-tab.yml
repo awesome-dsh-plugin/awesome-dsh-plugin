@@ -1,0 +1,7 @@
+url: https://github.com/jayhchen/dsh-terminal-tab
+name: jayhchen/dsh-terminal-tab
+category: ui
+description:
+  en: 'Interactive terminal tab in the Conversation view row: one persistent shell per session opened straight in its working directory, reload reconnects with the screen intact, and an explicit close stays closed across refreshes. Shares its shells and default-shell setting with the sidebar terminal.'
+  zh: '对话视图栏的可交互终端 tab：每个会话一个持久 shell、直接进入会话工作目录、刷新后自动重连且屏幕保留、显式关闭跨刷新保持。与侧栏终端共用同一套 shell 和默认 Shell 设置。'
+icon: https://raw.githubusercontent.com/jayhchen/dsh-terminal-tab/main/assets/icon-180.png

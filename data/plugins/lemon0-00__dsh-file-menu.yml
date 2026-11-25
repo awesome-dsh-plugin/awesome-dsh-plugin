@@ -1,0 +1,6 @@
+url: https://github.com/lemon0-00/dsh-file-menu
+name: lemon0-00/dsh-file-menu
+category: ui
+description:
+  en: 'Adds a right-click context menu to delivered file cards, the changed-files card, inline file references and http(s) links in DSH chat. Actions are open with the default app, open with the system chooser, reveal in the file manager, copy the file itself, copy its path, save a copy to a chosen folder, download, and open a link in the browser. Delivery cards are addressed by Session coordinates the Host re-derives from the session log; inline references and the changed-files card are addressed by an absolute path the Host re-verifies.'
+  zh: '给 DSH 聊天里的交付文件卡片、改动卡片、行内文件引用与 http(s) 链接加上右键菜单。动作包括用默认程序打开、用系统「打开方式」对话框打开、在文件管理器中定位、复制文件本体、复制文件路径、另存到指定文件夹、下载，以及用浏览器打开链接。交付卡片走宿主从会话日志反查的会话坐标；行内引用与改动卡片走宿主要求复核的绝对路径。'

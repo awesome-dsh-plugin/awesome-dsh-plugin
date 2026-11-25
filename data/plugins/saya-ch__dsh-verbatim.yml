@@ -1,0 +1,6 @@
+url: https://github.com/saya-ch/dsh-verbatim
+name: saya-ch/dsh-verbatim
+category: memory
+description:
+  en: 'Companion-first verbatim long-term memory plugin with SQLite, FTS5, and hybrid vector search. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '面向 AI 陪伴场景的逐字长期记忆插件，支持 SQLite 原文留存与混合检索。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/markmuteki/dsh-session-prompt-optimizer
+name: markmuteki/dsh-session-prompt-optimizer
+category: ui
+description:
+  en: "A composer button that rewrites the draft into a clearer prompt (Shift for a structured brief, Alt to compress it), reading a bounded excerpt of the current session, and showing the result beside the draft until you accept it."
+  zh: "在输入框里加一个按钮，借助当前会话的一小段上下文把草稿改写成更清楚的提示词（Shift 改成结构化任务书，Alt 压缩），结果先并排显示在草稿旁，确认后才替换。"

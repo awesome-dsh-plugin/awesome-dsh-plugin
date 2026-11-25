@@ -1,0 +1,7 @@
+url: https://github.com/jiaxusummer/dsh-window-mem
+name: jiaxusummer/dsh-window-mem
+category: ui
+description:
+  en: 'Remembers the DeepSeek Harness desktop window’s position, size and maximized state, and restores it on the next launch. Windows only; three switches on the settings page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '记住 DeepSeek Harness 桌面版主窗口的位置、尺寸与最大化状态，下次启动时还原。仅支持 Windows；设置页有三个开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/jiaxusummer/dsh-window-mem/main/icon-512.png

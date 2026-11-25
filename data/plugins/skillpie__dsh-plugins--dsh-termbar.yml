@@ -1,0 +1,6 @@
+url: https://github.com/skillpie/dsh-plugins/tree/main/dsh-termbar
+name: skillpie/dsh-plugins#dsh-termbar
+category: ui
+description:
+  en: 'Terminal panel toggle for the DSH web GUI: a header button that opens and closes a bottom terminal panel backed by a PTY engine over the subprocess service, with a same-origin control API, WebSocket I/O, session list and scrollback.'
+  zh: '终端栏：在 Web GUI 右上角工具区添加终端开关按钮，点按打开/关闭底部终端面板；PTY 引擎跑在 subprocess 服务上，同源控制 API + WebSocket I/O，支持会话列表与回滚缓冲。'

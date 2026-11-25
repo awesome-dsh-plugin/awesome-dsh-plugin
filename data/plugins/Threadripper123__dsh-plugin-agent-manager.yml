@@ -1,0 +1,6 @@
+url: https://github.com/Threadripper123/dsh-plugin-agent-manager
+name: Threadripper123/dsh-plugin-agent-manager
+category: tools
+description:
+  en: "Manage DeepSeek Harness agents and agent teams: list, enable, disable, uninstall, and install custom agents."
+  zh: "DSH 专家管理：查看、启停、卸载与安装自定义专家与专家团。"

@@ -1,0 +1,8 @@
+url: https://github.com/gluztm/dsh-chief
+name: gluztm/dsh-chief
+category: workflow
+description:
+  en: "A quiet sidekick beside DeepSeek Harness: stays out of the way in plain chats, chimes in with tips and safety checks while you're here, and takes over when you step away."
+  zh: '蹲在 DeepSeek Harness 旁的小助手：平时歇着不打扰，你在电脑前提建议、防手滑，离开后帮你包办到底。'
+icon: https://raw.githubusercontent.com/gluztm/dsh-chief/main/assets/icon-256.png
+tarball: https://github.com/gluztm/dsh-chief/releases/download/v1.7.1/dsh-chief-1.7.1.tgz

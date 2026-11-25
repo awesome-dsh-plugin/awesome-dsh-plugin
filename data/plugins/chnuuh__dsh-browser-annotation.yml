@@ -1,0 +1,8 @@
+url: https://github.com/chnuuh/dsh-browser-annotation
+name: chnuuh/dsh-browser-annotation
+category: browser
+description:
+  en: 'Quick and batch webpage annotations added to chat drafts in DSH Desktop.'
+  zh: '在 DSH Desktop 内嵌网页上快速引用元素、批量添加备注，并汇总到聊天草稿。'
+tarball: https://github.com/chnuuh/dsh-browser-annotation/releases/download/v0.1.3/dsh-browser-annotation-0.1.3.tgz
+icon: https://raw.githubusercontent.com/chnuuh/dsh-browser-annotation/b328b5a1fe396aaf3d3d2e8435abeceffa3f2e0b/docs/images/icon.png

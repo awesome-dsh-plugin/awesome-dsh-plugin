@@ -1,0 +1,7 @@
+url: https://github.com/Chen-en-run/dsh-whale-cursor
+name: Chen-en-run/dsh-whale-cursor
+category: theme
+description:
+  en: 'Cursor skins with a whale-girl white arrow and a maid-girl pointer, applied inside the Harness UI instantly or written into Windows system cursors with one-click restore. Its /state route is mounted with webServer.register without DSH Host/Origin admission, so a web page open in your browser can change the cursor settings.'
+  zh: '鼠标指针皮肤：鲸鱼娘白羽箭头与蓝发女仆立绘指针，打开开关即在 Harness 界面内生效，也可一键写进 Windows 系统光标并随时还原。它的 /state 路由通过 webServer.register 挂载，没有 DSH 的 Host/Origin 准入检查，所以浏览器里打开的任意网页都能改动光标设置。'
+icon: https://raw.githubusercontent.com/Chen-en-run/dsh-whale-cursor/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/SLZ2025/dsh-open-code-workspace
+name: SLZ2025/dsh-open-code-workspace
+category: ui
+description:
+  en: 'Adds a button beside the workspace header that opens a VS Code .code-workspace file as one multi-root Workspace and starts a new Session in it. Folders are linked under $DSH_HOME/multiroot (junction on Windows, symlink elsewhere); only the chosen file is read, and both Host routes require the DSH browser session to be authenticated.'
+  zh: '在「工作区」标题旁加一个按钮：选择 .code-workspace 文件后，把其中的目录链接成一个多根工作区并在其中新开会话（Windows 用 junction，其他平台用软链接，聚合目录位于 $DSH_HOME/multiroot）。Host 只读取你选中的文件，两条 HTTP 路由都要求 DSH 浏览器会话已认证。'

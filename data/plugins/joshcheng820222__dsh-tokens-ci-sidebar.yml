@@ -1,0 +1,6 @@
+url: https://github.com/joshcheng820222/dsh-tokens-ci-sidebar
+name: joshcheng820222/dsh-tokens-ci-sidebar
+category: usage
+description:
+  en: 'Embed your tokens.ci usage graph in the DSH left sidebar footer: paste official HTML embed code or username, switch between compact hover-zoom popover, direct fit, and horizontal scroll.'
+  zh: '在 DSH 左侧边栏底部嵌入 tokens.ci 用量热力图：支持直接粘贴官方 HTML embed 代码或填写用户名，提供悬停高清放大浮层、等比缩放与横向滚动三种模式。'

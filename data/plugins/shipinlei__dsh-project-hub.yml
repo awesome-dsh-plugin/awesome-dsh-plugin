@@ -1,0 +1,7 @@
+url: https://github.com/shipinlei/dsh-project-hub
+name: shipinlei/dsh-project-hub
+category: session
+description:
+  en: 'Project workbench for DSH: groups sessions by project (workspace) in a panel with project cards and session lists, applies a project''s default preset, model and reasoning effort to new sessions, scopes memory per project on request, previews AGENTS.md/CLAUDE.md read-only, and groups the sidebar by project at startup.'
+  zh: 'DSH 项目工作台：按项目（工作区）组织会话，提供项目卡片与会话列表；新建会话自动套用该项目的默认 preset、模型与推理强度；可按项目隔离记忆；只读预览 AGENTS.md/CLAUDE.md；启动时把侧栏切为按项目分组。'
+icon: https://raw.githubusercontent.com/shipinlei/dsh-project-hub/main/assets/icon-180.png

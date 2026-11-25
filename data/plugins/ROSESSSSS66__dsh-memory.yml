@@ -1,0 +1,8 @@
+url: https://github.com/ROSESSSSS66/dsh-memory
+name: ROSESSSSS66/dsh-memory
+category: memory
+description:
+  en: 'Local long-term memory for DSH: extracts preferences and project facts from sessions, recalls relevant items before each turn via SQLite FTS5, a per-workspace vector matrix, and entity graphs, exposes 4 model tools plus a read-only sidebar panel, and supersedes outdated facts. Requires Node 24+; optional offline distillation and remote embeddings use an OpenAI-compatible endpoint with explicit consent.'
+  zh: 'DSH 本地长期记忆：从会话中提取偏好与项目事实，每轮提问前通过 SQLite FTS5、按工作区内存向量矩阵与实体图谱检索注入相关记忆，提供 4 个模型工具与只读侧栏面板，并取代过时事实。需要 Node 24+；可选离线蒸馏与远程 Embedding 需显式授权并配置 OpenAI 兼容接口。'
+icon: https://raw.githubusercontent.com/ROSESSSSS66/dsh-memory/main/assets/icon.png
+tarball: https://github.com/ROSESSSSS66/dsh-memory/releases/download/v0.11.1/dsh-memory-0.11.1.tgz

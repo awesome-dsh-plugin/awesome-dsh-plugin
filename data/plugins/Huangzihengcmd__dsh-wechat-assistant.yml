@@ -1,0 +1,7 @@
+url: https://github.com/Huangzihengcmd/dsh-wechat-assistant
+name: Huangzihengcmd/dsh-wechat-assistant
+category: remote
+description:
+  en: 'Drive DeepSeek Harness from WeChat: scan a QR code to sign in, send instructions in WeChat, and the agent reply lands back in the same chat window. Several agents can share one WeChat account, each with its own model, preset and context, switched from the chat with /use. Only the configured owner WeChat account can drive the agent; other senders are rejected by default and require explicit approval.'
+  zh: '在微信里指挥 DeepSeek Harness：扫码登录后在微信里发指令，Agent 的回复实时回到同一个聊天窗口。一个微信可同时驱动多个 Agent，各自拥有独立的模型、preset 与上下文，用 /use 在聊天里切换。只有配置的主人微信账号能驱动 Agent；其他发送者默认拒绝，需显式审批。'
+icon: https://raw.githubusercontent.com/Huangzihengcmd/dsh-wechat-assistant/main/assets/icon-180.png

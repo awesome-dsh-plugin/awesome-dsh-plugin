@@ -1,0 +1,6 @@
+url: https://github.com/JOJO-Adam/dsh-godot
+name: JOJO-Adam/dsh-godot
+category: dev
+description:
+  en: "Godot 4 production pack: a runnable 2D platformer template, a deterministic scene/script validator (broken res:// paths, signal targets, undeclared input actions, missing main scene), and one-command Web export with the template presets already filled in. Zero external assets, so a scaffolded project runs immediately."
+  zh: "Godot 4 生产包：可直接运行的 2D 平台跳跃模板 + 确定性场景/脚本校验器（坏 res:// 引用、信号目标不存在、输入动作未声明、主场景缺失）+ 一键 Web 导出（导出预设已给全）。模板零外部资源，复制即可跑。"

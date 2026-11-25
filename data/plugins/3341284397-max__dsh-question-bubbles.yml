@@ -1,0 +1,6 @@
+url: https://github.com/3341284397-max/dsh-question-bubbles
+name: 3341284397-max/dsh-question-bubbles
+category: ui
+description:
+  en: Surfaces the questions a model almost asks but never voices — bubbles above the whale widget pick them up from the reasoning stream in real time, and you can answer one in place so it is folded into the next step without interrupting the run. Supports a prompt-marker protocol that lets the model mark its own doubts, five languages, DSH light and dark themes, and depends on dsh-whale-widget for placement.
+  zh: 把模型「没问出口的疑问」实时显示出来：气泡浮在鲸鱼挂件上方，从思考流里捕捉问句，你可以当场作答、温和并入下一步，而不打断任务。支持提示词标记协议（让模型自己标出疑问）、五种语言、跟随 DSH 深浅主题；气泡定位依赖 dsh-whale-widget。

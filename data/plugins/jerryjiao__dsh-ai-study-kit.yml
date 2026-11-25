@@ -1,0 +1,7 @@
+url: https://github.com/jerryjiao/dsh-ai-study-kit
+name: jerryjiao/dsh-ai-study-kit
+category: skill
+description:
+  en: "Registers five user-invocable study-coach skills for DeepSeek Harness: ask-coach (learning-state probe plus the F1-F13 flows: bootstrap, new theme, daily study, wrong-answer recap, podcast, lesson authoring, content edit, verify, deploy, coaching, exam sprint, knowledge-graph projection, upgrade), study-coach, study-doctor, study-recap and study-podcast. Ships a copyable quiz-site template (kit/ snapshot, v0.28.0) that the bootstrap flow copies to ~/study-kit; every skill is slash-command only and does not participate in model auto-invocation."
+  zh: "为 DeepSeek Harness 注册五个可用户调用的学习教练 skill：ask-coach（学习状态探测 + F1–F13 全流程：初始化、开新主题、每日学习、错题串讲、播客、产课、改内容、校验发布、部署、陪练、考前冲刺、知识图谱投影、升级）、study-coach、study-doctor、study-recap、study-podcast；并随包提供可复制的答题站模板（kit/ 快照，v0.28.0），由初始化流程复制为 ~/study-kit。所有 skill 仅支持斜杠命令调用，不参与模型自动调用。"
+icon: https://raw.githubusercontent.com/jerryjiao/dsh-ai-study-kit/main/icon.png

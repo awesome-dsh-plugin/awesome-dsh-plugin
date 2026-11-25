@@ -1,0 +1,6 @@
+url: https://github.com/kandsome1/dsh-image-blur
+name: kandsome1/dsh-image-blur
+category: ui
+description:
+  en: 'Blurs every image in the conversation body until you click the Show button in its corner, leaving side panels, plugin pages and icons untouched.'
+  zh: '对话正文里的图片默认模糊，点图片右上角的「显示」才看清；侧栏、面板与图标不受影响。'

@@ -1,0 +1,7 @@
+url: https://github.com/shilaoban666/dsh-imperial-court
+name: shilaoban666/dsh-imperial-court
+category: workflow
+description:
+  en: 'Implements DeepSeek Harness''s super-agent (router–worker) design on your own machine: a resident router, the Chancellor''s Office, splits a request into tasks, triages and queues them by fixed rules without model calls, and starts each one as an isolated worker on its own git worktree and branch, surfacing only what needs your decision; an unattended mode repairs failed audits and archives passed ones. Inside each task the coding CLIs run as a Tang-dynasty court: one tool drafts a plan, a second reviews or vetoes it, six ministries work in parallel by dependency, an inspector checks each output and a final audit runs before you approve, and nothing is merged until then. Supports Claude Code, Codex, Gemini CLI, Cursor CLI, OpenCode, Qwen Code, WorkBuddy and DSH itself via dsh headless, with a tool catalog that shows install commands, per-call token and cost accounting with budgets, and an English Roman Senate mode.'
+  zh: '在你自己的电脑上实现 DeepSeek Harness 的 super-agent（Router–Worker）设计：常驻的「丞相府」充当总管，把一段需求拆成几道旨，按固定规则分拣、排队、放行（不调模型），每道旨作为隔离的执行者在自己的 git worktree 与分支里办，只把需要你拍板的事报上来；无人值守模式下复核不过自动补救，通过即归档。每道旨内部，本机的 AI 编程命令行排成三省六部：一家拟方案，另一家审议或封驳，六部按依赖并行办差，御史逐件巡查，门下复核后由你批红，批红才合并。支持 Claude Code、Codex、Gemini CLI、Cursor CLI、OpenCode、Qwen Code、WorkBuddy 以及经 dsh headless 的 DSH 本体，内置列出安装命令的工具目录、逐次调用的 token 与花销记账和预算，以及古罗马元老院英文版。'
+icon: https://raw.githubusercontent.com/shilaoban666/dsh-imperial-court/master/docs/brand/icon.png

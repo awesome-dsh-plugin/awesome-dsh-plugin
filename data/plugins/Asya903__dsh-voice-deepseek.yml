@@ -1,0 +1,7 @@
+url: https://github.com/Asya903/dsh-voice-deepseek
+name: Asya903/dsh-voice-deepseek
+category: voice
+icon: https://raw.githubusercontent.com/Asya903/dsh-voice-deepseek/main/docs/icon-180.png
+description:
+  en: 'Reads assistant replies aloud with DeepSeek official TTS: one speaker button in every reply action bar, stella (female) by default, tide (male) optional. Audio is cached per identical text, so replaying the same sentence costs nothing. Requires a DeepSeek API key - about CNY 1.5 per 10k characters at the current 50% discount.'
+  zh: '每条助手回复的操作条里加一个朗读按钮，点击用 DeepSeek 官方 TTS 念出来；默认女声 stella，可切男声 tide。同一句重复播放走本地缓存、不重复计费。需要自备 DeepSeek API key，按现价五折约 1.5 元/万字符。'

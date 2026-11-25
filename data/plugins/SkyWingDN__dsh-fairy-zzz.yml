@@ -1,0 +1,7 @@
+url: https://github.com/SkyWingDN/dsh-fairy-zzz
+name: SkyWingDN/dsh-fairy-zzz
+category: theme
+description:
+  en: 'Started from AssassinVIX/fairy-zzz-plugin. The eye badge artwork and motion geometry come from Chengzhibense/Fairy-DSH. This plugin builds on that base with further changes and development, and delivers major performance optimizations. It repaints the DSH Web UI, adds an always-on fee dock, and supports one-click self-update after npm installation. It retains the H.D.D boot animation and voiced greeting, the dockable eye badge and usage bubble, optional local GPT-SoVITS narration, and titles using the bundled Anton font, among other features.'
+  zh: '起点是 AssassinVIX/fairy-zzz-plugin。眼徽的美术与动效几何来自 Chengzhibense/Fairy-DSH。本插件在此基础上进行改动和开发。对性能方面做出了极大的优化。重绘DSH Web 界面，新增常驻电费坞，npm 安装后可一键自更新，保留 H.D.D 开机动画与语音问候、可停靠眼徽与用量气泡、可选本地 GPT-SoVITS 朗读，标题使用随包内置的 Anton 字体等等'
+icon: https://raw.githubusercontent.com/SkyWingDN/dsh-fairy-zzz/main/assets/icon-180.png

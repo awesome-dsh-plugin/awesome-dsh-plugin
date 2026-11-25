@@ -2,8 +2,8 @@ url: https://github.com/379385796-sys/dsh-environment-packer
 name: 379385796-sys/dsh-environment-packer
 category: tools
 description:
-  en: Private Windows DSH cold archives and guarded fresh-environment recovery. v0.7.2 preserves unrecognized Home folders as inert pending-review data instead of only recording them, keeps the coverage flag consistent with the reported gaps, recognizes home-relative, environment-variable and relative config paths, and diagnoses unsupported backup target volumes before writing. Strict dependency, transaction and verify/commit gates remain. Verified ZIP integrity does not certify private business recovery.
-  zh: Windows DSH 私人冷备份与受门禁保护的新环境恢复。v0.7.2 将未识别的 Home 目录作为惰性待复核数据保全，而非只记录不采集；修正覆盖标志与实际缺口的一致性；识别家目录相对路径、环境变量与相对配置路径；写入前诊断不支持的目标卷。保留严格依赖、事务及 verify/commit 门禁。ZIP 完整性不代表私人业务恢复认证。
-tarball: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.7.2/dsh-environment-packer-0.7.2.tgz
-# TGZ SHA-256: 1d484ecdbe9a8cbe52281890304217f1a97bcb52b59b1dbbdd35d553f99c4a67
-# Checksums: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.7.2/SHA256SUMS.txt
+  en: Private Windows DSH cold archives and guarded fresh-environment recovery. v0.7.5 closes four leftovers — storage domains are identified from their documented media shape (a plugin cache is no longer mistaken for a `cost-meter` domain), each critical medium is validated before boot and a domain without a live owner is read through the target's own backend and recorded as archived-only instead of raising `STORAGE_OWNER_UNAVAILABLE`; the regression manifest registers six existing tests and audits itself; the light primary button reaches 4.86:1; and both standalone assistants no longer crash on the first `EnvironmentVariables` read under Windows PowerShell 5.1. Strict dependency, transaction and verify/commit gates remain; truly missing or damaged storage still blocks. Verified ZIP integrity does not certify private business recovery.
+  zh: Windows DSH 私人冷备份与受门禁保护的新环境恢复。v0.7.5 收口四组遗留问题：按文档化的介质形态识别存储域（插件缓存不再被误当成 `cost-meter` 域），启动前先验证每个关键介质，没有活跃属主的域由目标自己的存储后端读取并记为 archived-only，不再误报 `STORAGE_OWNER_UNAVAILABLE`；回归清单补登记 6 个既有测试并自检；浅色主按钮对比度达到 4.86:1；两个独立助手修复 Windows PowerShell 5.1 首次读取 `EnvironmentVariables` 的启动崩溃。严格依赖、事务及 verify/commit 门禁保持；真正缺失或损坏的存储仍会阻断。ZIP 完整性不代表私人业务恢复认证。
+tarball: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.7.5/dsh-environment-packer-0.7.5.tgz
+# TGZ SHA-256: fd391b0bf5df7ccd607924567438ac10b6d4c1d0035d67cd8c01487987ad2307
+# Checksums: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.7.5/SHA256SUMS.txt

@@ -1,0 +1,6 @@
+url: https://github.com/xianglifei/dsh-lark-minutes-dashboard
+name: xianglifei/dsh-lark-minutes-dashboard
+category: notify
+description:
+  en: 'Watches Feishu/Lark Minutes, writes a full meeting note and a title for each recording into Feishu Docs, and keeps one index document that maps minutes to notes.'
+  zh: '自动发现飞书妙记，为每条录音生成完整会议纪要与标题并写入飞书文档，并用一篇索引文档维护妙记与纪要的对应关系。'

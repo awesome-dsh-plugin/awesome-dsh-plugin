@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-research-core
+name: PerryLink/dsh-research-core
+category: tools
+description:
+  en: "REP v1 — the shared Research Evidence Protocol for DeepSeek Harness research plugins: JSON Schema and TypeScript types for sources, snapshots, anchors, evidence, claims, checks, artifacts, audit events and sealed report manifests, plus a zero-dependency content-addressed evidence store, canonical hashing, SARIF export and a verifier CLI."
+  zh: "REP v1——面向 DeepSeek Harness 科研插件共享的研究证据协议：sources/snapshots/anchors/evidence/claims/checks/artifacts/audit events/sealed report manifests 的 JSON Schema 与 TypeScript 类型，以及零依赖内容寻址证据库、规范哈希、SARIF 导出与独立校验 CLI。"

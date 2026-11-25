@@ -1,0 +1,6 @@
+url: https://github.com/yishan/dsh-burn
+name: yishan/dsh-burn
+category: usage
+description:
+  en: 'Per-session token spend on reply hover, cumulative spend and DeepSeek account balance in the conversation header, and configurable peak/off-peak model pricing. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在回复操作栏显示单次 token 费用、会话顶部显示累计消费与 DeepSeek 账号余额，并支持可自定义的峰谷分时模型计价设置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

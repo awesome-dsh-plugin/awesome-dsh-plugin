@@ -1,0 +1,6 @@
+url: https://github.com/lanechenhku/dsh-claude-project-ui
+name: lanechenhku/dsh-claude-project-ui
+category: ui
+description:
+  en: 'Claude-style project UI for DeepSeek Harness on top of dsh-threads: one board gathering every project with its open threads and tasks, extra folders mounted per project via the native folder chooser, a bilingual zh/en panel with in-app settings, and thread reports rolled into tasks.'
+  zh: 给 DeepSeek Harness 的 Claude 风格项目界面（基于 dsh-threads）：项目看板把每个项目、进行中的讨论串和任务汇总成一屏；每个项目可再挂多个辅助文件夹（走系统原生选择器）；面板中英双语、设置就在面板里；讨论串回报自动汇总成任务。

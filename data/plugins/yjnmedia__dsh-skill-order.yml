@@ -1,0 +1,6 @@
+url: https://github.com/yjnmedia/dsh-skill-order
+name: yjnmedia/dsh-skill-order
+category: skill
+description:
+  en: 'Skill control for DSH (also called Skill Keeper): grouped by source — user skills and custom directories share one numbered list, built-ins are read-only, plugin-provided skills are visible but not sortable. Drag to reorder, rename inline, pin a row to position 1, or import skills from a local directory or a zip (one-level SKILL.md, frontmatter validated, no overwrite, 64KB per skill / 4MB per archive). Applying rewrites directory names and the name field in SKILL.md, clears the host skill cache and notifies every session, so the slash menu follows at once without restarting DSH. Local-only and offline. Its HTTP routes have no DSH access check, so a page open in your browser could trigger a rename or reorder of your skill folders.'
+  zh: 'DSH 技能控制（别名技能管家）：按来源分组看全貌——用户技能与自定义目录合成一张清单、统一编号，系统内置只读、插件提供可见但不可排序。拖动排序、行内改名、一键置顶；新增「导入技能」，可从本地目录或 zip 导入（只认一层 SKILL.md，校验 frontmatter，同名不覆盖，单技能 64KB / 归档 4MB）。应用后同步改写目录名与 SKILL.md 的 name，清掉宿主技能缓存并通知每个会话，斜杠菜单当场跟着变。纯本地离线运行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以触发对你技能目录的重命名或重排。'

@@ -1,0 +1,6 @@
+url: https://github.com/Libraqg/dsh-memories
+name: Libraqg/dsh-memories
+category: memory
+description:
+  en: 'Long-term memory ported from the OpenAI Codex memory pipeline: sessions idle for 6 hours are extracted in the background by a chosen model, then merged by a hidden agent into a Markdown memory folder at most every 6 hours; new agents get the memory summary in the system prompt plus four tools to list, read and search memory and save corrections. Models are chosen on a settings page or with /memories; an optional filter keeps a notes folder out of memory.'
+  zh: '移植自 OpenAI Codex 记忆流水线的长期记忆：闲置 6 小时的会话由所选模型在后台提取，再由一个隐藏的 agent 合并进 Markdown 记忆文件夹，最多每 6 小时一次；新 agent 在系统提示里获得记忆摘要，并有四个工具用来列出、阅读、搜索记忆和保存纠正。模型可在设置页或用 /memories 选择；可选的过滤器能把笔记文件夹挡在记忆之外。'

@@ -1,0 +1,7 @@
+url: https://github.com/nanyinbeixun-boop/dsh-ai-team-console
+name: nanyinbeixun-boop/dsh-ai-team-console
+category: workflow
+description:
+  en: 'Run an agent team from the DSH sidebar: declare a work item from any project folder, let the console detect an ability-domain gap, auto-hire the missing role, dispatch tasks through a nine-step pipeline, and distill the repeatable parts into a reusable skill. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 侧边栏直接开团队干活：选任意项目文件夹声明工作项，面板探测能力域缺口并自动招人，九步流水线派发任务、交接结果，最后把跑通的流程蒸馏成可复用技能。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/nanyinbeixun-boop/dsh-ai-team-console/main/assets/icon-A-256.png

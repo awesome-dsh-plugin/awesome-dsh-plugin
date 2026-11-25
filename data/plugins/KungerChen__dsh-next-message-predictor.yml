@@ -1,0 +1,7 @@
+url: https://github.com/KungerChen/dsh-next-message-predictor
+name: KungerChen/dsh-next-message-predictor
+category: ui
+description:
+  en: 'Predicts your next message after each completed turn and shows it as grey ghost text in the empty composer: Tab or → fills it in without sending, Esc hides it, and a rebindable shortcut (Alt+\ by default) predicts on demand or steps through several candidates. Off until enabled in its settings page, which has three one-click modes (balanced, saver, quality), an optional left-sidebar entry, daily request and token limits, masking of keys, tokens and e-mail addresses before sending, and a 7-day usage summary; short messages repeated in the session and a list of pinned phrases come after the model suggestion when stepping through candidates, without a model call, and the interface is available in nine languages.'
+  zh: '每轮回答结束后预测你的下一条消息，以灰色文字显示在空输入框里：Tab 或 → 填入但不发送，Esc 隐藏，可改的快捷键（默认 Alt+\）立即预测或在多条候选间切换。默认关闭，在设置页启用；设置页提供均衡、省流、高质量三种一键模式，可选的左侧栏入口，每日请求与 token 上限，发送前遮蔽密钥、令牌和邮箱，以及近 7 天用量统计；会话中重复发过的短句和自己固定的短语排在模型建议之后，切换候选时出现，不调用模型；界面支持九种语言。'
+icon: https://raw.githubusercontent.com/KungerChen/dsh-next-message-predictor/main/docs/images/icon-180.png

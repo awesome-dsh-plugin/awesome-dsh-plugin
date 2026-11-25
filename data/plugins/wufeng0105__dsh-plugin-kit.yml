@@ -1,0 +1,6 @@
+url: https://github.com/wufeng0105/dsh-plugin-kit
+name: wufeng0105/dsh-plugin-kit
+category: dev
+description:
+  en: 'Development kit for DSH plugins: a skill stating the contract lookup order (runtime inspect, then the bundled dsh-doc copy, then a working plugin source) and two check scripts — preflight verifies a plugin project against four install-failure families before packing, recheck re-tests declared host touchpoints after a DSH upgrade.'
+  zh: 'DSH 插件开发工具包：一个 skill 给出宿主契约的查证顺序（运行时 inspect → 包内 dsh-doc 副本 → 已发布的同类插件源码），以及两个核查脚本——preflight 在打包前按四大装败家族逐项检查插件项目，recheck 在 DSH 升级后复检项目声明的宿主触点。'

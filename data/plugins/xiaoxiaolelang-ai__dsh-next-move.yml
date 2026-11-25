@@ -1,0 +1,7 @@
+url: https://github.com/xiaoxiaolelang-ai/dsh-next-move
+name: xiaoxiaolelang-ai/dsh-next-move
+category: ui
+description:
+  en: "Per-turn next-step suggestions under each reply: a 2x2 grid of up to four clickable actions, each tagged with a stance (cautious / standard / bold / alternative / stop), projected from that turn's own tool result instead of a shared per-session store. Renamed from dsh-next-steps to stay distinguishable in the crowded next-step namespace."
+  zh: "在每轮回复下方按 2×2 给出最多四条可点的下一步建议，每条带一个立场标签（稳健 / 标准 / 激进 / 另一条路 / 停），按轮次投影，不会把上一轮的建议带到下一轮。原名 dsh-next-steps，为避免与市面上大量同类插件混淆而改名。"
+tarball: https://github.com/xiaoxiaolelang-ai/dsh-next-move/releases/download/v0.1.21/dsh-next-move-0.1.21.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/storage
+name: ityyq777/dsh-workbench#storage
+category: tools
+description:
+  en: 'Storage records for DSH: names, brands, locations, units, stock text and tags with local SQLite and optional metadata sync.'
+  zh: 'DSH 储物：记录名称、品牌、位置、单位、库存文本与标签，本地 SQLite 保存，可选元数据同步。'

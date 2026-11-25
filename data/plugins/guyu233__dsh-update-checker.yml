@@ -1,0 +1,6 @@
+url: https://github.com/guyu233/dsh-update-checker
+name: guyu233/dsh-update-checker
+category: ui
+description:
+  en: Adds a Check for updates row under Settings, General when the desktop development channel is selected, and reports the newest upstream installer without applying staged rollout.
+  zh: 在桌面端选择开发版时，于设置的通用页、更新渠道下方增加检查更新，并在不应用灰度比例的情况下报告上游最新安装包。

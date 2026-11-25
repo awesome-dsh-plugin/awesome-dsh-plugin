@@ -1,0 +1,7 @@
+url: https://github.com/Novajin0826/dsh-xiaochajian-shizhong
+name: Novajin0826/dsh-xiaochajian-shizhong
+category: ui
+description:
+  en: 'Adds a Skills group to the composer + menu with enable/disable filtering, and a manager panel that searches, toggles, deletes and batch-manages installed skills. Choosing a skill inserts its slash command into the draft without sending. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在输入框 + 菜单顶部增加技能分组，仅显示已启用技能，并提供管理页搜索、启用/停用、删除与批量管理；选中技能后把斜杠命令插入草稿，不自动发送。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Novajin0826/dsh-xiaochajian-shizhong/main/assets/icon-180.png

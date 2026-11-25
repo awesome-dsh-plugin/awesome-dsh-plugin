@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-bid-qual-check
+name: PerryLink/dsh-bid-qual-check
+category: tools
+description:
+  en: "Bidder qualification checklist for DeepSeek Harness: check bidder qualification items against the PRC Bidding Law and its Implementing Regulations (adopted 1999-08-30; amended 2017-12-27; State Council Order No. 613). Flags discrepancies only and makes no legal conclusion."
+  zh: "投标人资格条件核对表：依据《中华人民共和国招标投标法》《中华人民共和国招标投标法实施条例》（1999年8月30日通过，2017年12月27日修正、国务院令第613号）。仅提示差异，不作出定性结论。"

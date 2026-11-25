@@ -1,0 +1,6 @@
+url: https://github.com/Tirpitz-39/dsh-selftest
+name: Tirpitz-39/dsh-selftest
+category: tools
+description:
+  en: 'Derived self-check for changed files: parses PowerShell, JavaScript and JSON with the matching tool, runs the tests that own each changed plugin or project, and fails a plugin source change that ships no tests. Unrecognized extensions are recorded as skipped instead of silently passed.'
+  zh: '按「本次改了什么」自动推导检查：用对应工具解析 PowerShell、JavaScript 和 JSON，运行改动文件所属插件或项目的测试，插件源码有改动却没有任何测试时直接判失败；不认识的扩展名记为跳过而不是静默通过。'

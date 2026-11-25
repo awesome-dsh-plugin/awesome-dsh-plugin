@@ -1,0 +1,8 @@
+url: https://github.com/Calliope-Nicles/technical-english-companion
+name: Calliope-Nicles/technical-english-companion
+category: identity
+description:
+  en: 'Helps students and programming beginners learn technical English while working in Chinese, Spanish, Japanese, or Korean. Each reply gives terms a brief meaning in the reply language, then reuses the English name. On macOS, supports Codex and DSH 0.2.2-rc.1 or 0.2.2-rc.3. Verified with Flash/High: four languages via the dedicated entry on 0.2.2-rc.1; one Chinese reply via the default entry on 0.2.2-rc.3.'
+  zh: '帮助学生和编程初学者边做项目，边学习专业英语。支持中文、西班牙语、日语和韩语；每条回答首次附当前语言释义，后续统一英文。支持 macOS 上的 Codex 和 DSH 0.2.2-rc.1、0.2.2-rc.3。Flash／High 实测范围：rc.1 专用入口四语，rc.3 默认入口一条中文问答。'
+icon: https://raw.githubusercontent.com/Calliope-Nicles/technical-english-companion/v2.0.2/assets/pitaya-icon.png
+tarball: https://github.com/Calliope-Nicles/technical-english-companion/releases/download/v3.0.1/dsh-plugin-technical-english-companion-3.0.1.tgz

@@ -1,0 +1,7 @@
+url: "https://github.com/Codenestra/deepseek-harness-plugins/tree/main/plugins/dsh-plugin-devkit"
+name: "Codenestra/deepseek-harness-plugins#dsh-plugin-devkit"
+category: dev
+description:
+  en: "Plugin scaffolding, runtime exploration, local installation management, and declaration validation."
+  zh: "插件脚手架生成、运行时探索、本地安装管理与声明校验。"
+tarball: "https://github.com/Codenestra/deepseek-harness-plugins/releases/download/dsh-plugin-devkit-v0.1.0/local-dsh-plugin-devkit-0.1.0.tgz"

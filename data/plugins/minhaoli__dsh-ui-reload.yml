@@ -1,0 +1,6 @@
+url: https://github.com/minhaoli/dsh-ui-reload
+name: minhaoli/dsh-ui-reload
+category: ui
+description:
+  en: 'Reload the whole frontend from a button in the conversation session header. A press first reads the next document and waits until its bundle addresses resolve, so it does not boot into a failed graph after a client bundle is rebuilt.'
+  zh: '在会话头部一键重载整个前端。点击后先读取下一个文档并等待其 bundle 地址可解析，避免客户端 bundle 重建后重载进入无法启动的图。'

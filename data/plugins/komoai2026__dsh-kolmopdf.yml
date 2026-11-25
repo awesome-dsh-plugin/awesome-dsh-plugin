@@ -1,0 +1,7 @@
+url: https://github.com/komoai2026/dsh-kolmopdf
+name: komoai2026/dsh-kolmopdf
+category: docs
+description:
+  en: 'Official KolmoPDF plugin for DeepSeek Harness: six tools for PDF-to-Markdown/OCR with formulas and tables, layout-preserving PDF translation, Markdown export to DOCX/PDF/HTML/LaTeX, cost estimation, and a Settings → KolmoPDF key and live-credits panel. PDFs and Markdown you process are uploaded to the KolmoPDF cloud service (www.kolmopdf.com) with your API key, and conversions use your KolmoPDF credits.'
+  zh: 'KolmoPDF 官方 DeepSeek Harness 插件：提供 6 个工具用于 PDF 转 Markdown/OCR（保留公式与表格）、保留版式 PDF 翻译、Markdown 导出为 DOCX/PDF/HTML/LaTeX 与费用预估，并附带 Settings → KolmoPDF 密钥与实时积分面板。处理的 PDF 和 Markdown 会用你的 API 密钥上传到 KolmoPDF 云服务（www.kolmopdf.com），转换会消耗你的 KolmoPDF 额度。'
+icon: https://raw.githubusercontent.com/komoai2026/dsh-kolmopdf/main/assets/icon.png

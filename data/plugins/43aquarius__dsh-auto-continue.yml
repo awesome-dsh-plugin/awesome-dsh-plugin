@@ -1,0 +1,6 @@
+url: https://github.com/43aquarius/dsh-auto-continue
+name: 43aquarius/dsh-auto-continue
+category: model
+description:
+  en: 'Resumes a session interrupted by a model failure by switching to the next healthy entry of a user-configured model chain, then continues the task automatically. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '模型请求失败时，按用户配置的模型链切到下一条可用的备选模型，并自动续接被打断的任务。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

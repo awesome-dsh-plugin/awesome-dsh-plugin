@@ -1,0 +1,7 @@
+url: https://github.com/steelunicorn/dsh-db-tool-ru
+name: steelunicorn/dsh-db-tool-ru
+category: tools
+description:
+  en: 'A fork of mengqi1436/dsh-db-tool with a Russian interface and English server messages, per-grant database allowlists that open only the databases you tick, and export_to_file / execute_file actions that move query results and statements between the project folder and the database byte for byte. Replaces the original plugin; the tool name and the shared data directory (Documents/DSH/db-tool) are the same, so do not install both together.'
+  zh: '基于 mengqi1436/dsh-db-tool 的分支：界面为俄语、服务端消息为英文；授权内可收窄到具体库，且只放行显式勾选的库；新增 export_to_file / execute_file，在项目目录与数据库之间逐字节搬运查询结果与语句。作为原版替代使用——工具名与共用数据目录（Documents/DSH/db-tool）相同，请勿与原版同时安装。'
+tarball: https://github.com/steelunicorn/dsh-db-tool-ru/releases/latest/download/dsh-db-tool-ru.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/AwenJackson/dsh-volc-balance-card
+name: AwenJackson/dsh-volc-balance-card
+category: usage
+description:
+  en: Persistent sidebar card for your Volcengine recharge balance and Ark Coding/Agent plan windows, with in-card AK/SK setup and per-provider toggles.
+  zh: 侧边栏常驻卡片，显示火山引擎账户充值余额与方舟 Coding/Agent 套餐窗口，内置 AK/SK 配置与逐项显示开关。
+tarball: https://github.com/AwenJackson/dsh-volc-balance-card/releases/latest/download/dsh-volc-balance-card.tgz

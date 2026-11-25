@@ -1,0 +1,6 @@
+url: https://github.com/weiaisuyan/dsh-sidebar-entry-manager
+name: weiaisuyan/dsh-sidebar-entry-manager
+category: ui
+description:
+  en: 'Hide or show individual DeepSeek Harness sidebar entries from a settings page without disabling the plugin; includes in-plugin update.'
+  zh: '在设置页逐个隐藏或显示 DSH 左侧边栏的插件入口，无需停用插件；带插件内更新。'

@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-cost-preflight
+name: liuhange789/dsh-cost-preflight
+category: usage
+description:
+  en: "Heuristic cost preflight for a draft message before it is sent. Message length over 500 characters, multi-step keywords, more than three referenced file paths, and test/verify/deploy words each add one tier (0-1 low, 2 medium, 3+ high), scaled by loose/standard/aggressive thresholds. Shows a 500ms-debounced tier badge beside the send button, a one-line high-cost hint above the input, an enable switch, a settings card, and exposes a cost_preflight tool. No token counting and no model calls."
+  zh: "发送前的启发式成本预检：草稿超过 500 字、含循环/遍历/逐个/所有/批量/接着/然后/之后等多步关键词、引用文件路径超过 3 个、含测试/验证/部署各加一档（0–1 低、2 中、3+ 高），宽松/标准/激进三档只移动切线；发送按钮旁显示 500ms 防抖的档位标签，高成本时在输入框上方给一行提示，另有启用开关、设置卡片与 cost_preflight 工具。不做 token 精确计费，不调用模型。"

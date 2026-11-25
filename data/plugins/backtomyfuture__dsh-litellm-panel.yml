@@ -1,0 +1,7 @@
+url: https://github.com/backtomyfuture/dsh-litellm-panel
+name: backtomyfuture/dsh-litellm-panel
+category: model
+tarball: https://github.com/backtomyfuture/dsh-litellm-panel/releases/download/v0.2.0/dsh-litellm-panel-0.2.0.tgz
+description:
+  en: DeepSeek Harness sidebar for LiteLLM models, MCP servers, skills, and spend.
+  zh: DeepSeek Harness 侧边栏面板，用于 LiteLLM 虚拟钥匙、动态模型注入、MCP 转发与花费统计。

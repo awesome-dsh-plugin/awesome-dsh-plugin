@@ -1,0 +1,6 @@
+url: https://github.com/Gladess1102/dsh-ace-music
+name: Gladess1102/dsh-ace-music
+category: voice
+description:
+  en: 'ACE Music MCP server for DSH: sign in once with your own account over OAuth, then write full songs, continue a melody from a MusicXML or ABC score, upload audio for transcription, and inspect or download tracks as native acemusic_* tools. Ships a dependency-free MusicXML-to-ABC converter and ACE Music''s published writing guides for offline use.'
+  zh: '把 ACE Music 的 MCP 服务器接进 DSH：用自己账号走 OAuth 登录一次，之后写完整的歌、按 MusicXML 或 ABC 谱续写旋律、上传音频自动转写、查曲库与下载成品都成为原生 acemusic_* 工具。内置零依赖的 MusicXML→ABC 转换器，以及 ACE Music 官方写作规范的离线副本。'

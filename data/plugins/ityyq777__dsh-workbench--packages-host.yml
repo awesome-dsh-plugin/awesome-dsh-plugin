@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/host
+name: ityyq777/dsh-workbench#host
+category: ui
+description:
+  en: 'Shared runtime for the Personal Workbench: local SQLite, domain registration, agent tool, HTTP/SSE and opt-in cloud sync for the Tasks, Tags, Sites and Storage plugins.'
+  zh: '个人工作台共享宿主：本地 SQLite、业务域注册、agent 工具、HTTP/SSE，以及任务/标签/站点/物品插件的可选云端同步。'

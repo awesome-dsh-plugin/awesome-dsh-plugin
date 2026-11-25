@@ -1,0 +1,6 @@
+url: https://github.com/nohappiness/dsh-rightbar-max-keep-rail
+name: nohappiness/dsh-rightbar-max-keep-rail
+category: ui
+description:
+  en: 'Changes the right sidebar panel-fullscreen mode to cover the conversation only: the panel starts at the left rail right edge instead of spanning the whole window, so the session list stays visible while the panel is maximized, and it keeps following the rail as you widen, collapse or drawer it.'
+  zh: '把右侧边栏的「面板全屏」改成只覆盖会话区：全屏面板从左侧会话列表栏的右缘开始铺到窗口右缘，最大化时会话列表依然可见，并跟随左栏的拖宽、折叠与窄屏抽屉实时变化。'

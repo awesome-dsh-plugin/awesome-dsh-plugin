@@ -1,0 +1,6 @@
+url: https://github.com/maliang/dsh-auto-team
+name: maliang/dsh-auto-team
+category: workflow
+description:
+  en: 'Turns the current session into a team lead: splits a goal into a dependency graph of tasks, assembles a team from 11 built-in roles (each optionally bound to its own provider, model and reasoning effort), and dispatches ready tasks concurrently into their own sub-sessions. A task is done only after its acceptance command runs through a receipt that records the exit code and output tail; a live panel reports duration and token totals per run, task and member.'
+  zh: '把当前会话变成领队：把目标拆成带依赖的任务图，从 11 个内置角色自动组队（每个角色可绑定自己的 provider、模型与推理强度），把就绪任务并发派发到各自子会话。任务只有验收命令经回执跑过、并记录退出码与输出尾部才算完成；实时面板按 run / 任务 / 成员统计用时与 token。'

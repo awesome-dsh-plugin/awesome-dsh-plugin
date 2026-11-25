@@ -1,0 +1,6 @@
+url: https://github.com/yutouaa/dsh-butler
+name: yutouaa/dsh-butler
+category: session
+description:
+  en: 'One dedicated butler session per workspace. A workspace-menu item enables it, creating (or reusing) a session titled "管家" in that workspace. From that session, four tools list what the other sessions in the workspace are doing, digest their memory and skills in one call, name sessions by role, and dispatch a task to a session by role name, unique title or id. Dispatch uses the host in-process delivery with the scheduled-task service as the fallback. Other sessions in the workspace are refused. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '每个工作区一个专门的管家会话：侧栏工作区菜单里启用后，会在该工作区新建（或复用）一个名为「管家」的会话；在这个会话里，四个工具可以查看同工作区其它会话在做什么、一次汇总记忆与技能、给会话起岗位名、按岗位名/唯一标题/id 把任务派给某个会话；派活走宿主进程内投递，定时任务服务作回退；同工作区的其它会话会被拒绝。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

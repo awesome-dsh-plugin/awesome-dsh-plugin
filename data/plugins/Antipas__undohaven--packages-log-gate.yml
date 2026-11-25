@@ -1,0 +1,6 @@
+url: https://github.com/Antipas/undohaven/tree/main/packages/log-gate
+name: Antipas/undohaven#dsh-log-gate
+category: security
+description:
+  en: 'Registers an exclusion with the built-in session-log plugin so chosen sessions skip session-log upload, either every live session or those whose cwd matches a project name, directory or glob; includes a local status endpoint and an audit command. Does not patch dsh or hook the network. Unofficial.'
+  zh: '向内置会话日志插件注册排除规则，让选定会话跳过会话日志上传：可以拦住全部实时会话，也可以只拦 cwd 匹配项目名、目录或 glob 的会话；附带本机状态接口和 audit 体检命令。不改 dsh，不拦网络。第三方插件。'

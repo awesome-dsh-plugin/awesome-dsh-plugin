@@ -1,0 +1,6 @@
+url: https://github.com/sblzc/dsh-dafeiyu-zh-thinking
+name: sblzc/dsh-dafeiyu-zh-thinking
+category: model
+description:
+  en: 'Appends a one-line Chinese-reasoning reminder to the tail of every prepared request, because a long session drifts back to English when its own earlier reasoning outvotes the system prompt.'
+  zh: '在每次请求的末尾追加一句中文推理提醒；长会话会漂回英文，因为它自己早先的推理压过了系统提示。'

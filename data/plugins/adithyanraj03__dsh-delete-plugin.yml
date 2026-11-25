@@ -1,0 +1,7 @@
+url: https://github.com/adithyanraj03/dsh-delete-plugin
+name: adithyanraj03/dsh-delete-plugin
+category: session
+description:
+  en: 'Sidebar session deletion and workspace pinning for DeepSeek Harness: a Delete action behind a consent dialog permanently removes a session''s log, workspace accounting and live state (refusing running turns), and Pin keeps workspaces on top; no network calls or telemetry of its own, deletion only on confirmation, uninstall removes both actions.'
+  zh: '为 DeepSeek Harness 提供侧边栏会话删除与工作区置顶：删除操作经确认对话框后永久移除会话日志、工作区归属记录与运行时状态（拒绝正在运行的回合），置顶让工作区保持在最前；自身不发起网络调用、不收集遥测，删除仅在确认后执行，卸载即移除这两项操作。'
+tarball: https://github.com/adithyanraj03/dsh-delete-plugin/releases/latest/download/plugin.tgz

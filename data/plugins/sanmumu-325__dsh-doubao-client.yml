@@ -1,0 +1,6 @@
+url: https://github.com/sanmumu-325/dsh-doubao-client
+name: sanmumu-325/dsh-doubao-client
+category: model
+description:
+  en: 'Unofficial Windows integration that exposes a signed-in local Doubao desktop client as a DSH model provider in ordinary chat mode, with image input on verified routes, subscription quota queries, a count-only usage ledger, strict-JSON tool-call emulation and bounded cross-session concurrency; no native Doubao task execution. Doubao must be started with a local remote-debugging port (127.0.0.1) that you enable yourself; its HTTP routes sit behind DSH''s access check.'
+  zh: '非官方 Windows 集成：将本人已登录的本机豆包客户端以普通对话模式接入 DSH，提供已验证入口的图片输入、订阅额度查询、仅计数用量台账、严格 JSON 工具调用适配及有界跨会话并发，不启用豆包原生任务执行。需要你自己让豆包以本机远程调试端口（127.0.0.1）启动；它的 HTTP 路由走 DSH 的访问检查。'

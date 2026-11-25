@@ -1,0 +1,8 @@
+url: https://github.com/DASHAN-0079/dsh-ppt-master
+name: DASHAN-0079/dsh-ppt-master
+category: skill
+icon: https://raw.githubusercontent.com/DASHAN-0079/dsh-ppt-master/999fed4ec1c2604476df3b565bb321df1e4a0c9d/assets/icon-180.png
+tarball: https://github.com/DASHAN-0079/dsh-ppt-master/releases/latest/download/dsh-ppt-master.tgz
+description:
+  en: Ships the PPT Master skill (upstream v6.8.0, MIT) byte for byte as a DeepSeek Harness bundle and registers it with ctx.skills as ppt-master. Adds a cross-platform CLI (doctor, install-deps, run) that handles Python discovery, UTF-8 stdio, a writable work copy and an isolated venv, so the skill turns PDF, DOCX, web pages or Markdown into natively editable .pptx decks.
+  zh: 把 PPT Master（上游 v6.8.0，MIT）整套 skill 原样封装成 DeepSeek Harness bundle，并通过 ctx.skills 注册为 ppt-master。附带跨平台 CLI（doctor、install-deps、run），负责 Python 探测、UTF-8 stdio、可写工作副本与隔离 venv，把 PDF、DOCX、网页或 Markdown 生成原生可编辑的 .pptx。

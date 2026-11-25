@@ -1,0 +1,6 @@
+url: https://github.com/T-splines/dsh-llm-resilience
+name: T-splines/dsh-llm-resilience
+category: model
+description:
+  en: "Per-target retries, streaming-safe fallback chains and a persistent circuit breaker for LLM routes in DeepSeek Harness, with live target status and a settings page."
+  zh: "为 DeepSeek Harness 的 LLM 路由提供按 target 重试、流式安全回退链与持久化熔断，并带实时 target 状态和设置页。"

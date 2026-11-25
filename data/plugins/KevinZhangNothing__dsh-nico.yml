@@ -1,0 +1,6 @@
+url: https://github.com/KevinZhangNothing/dsh-nico
+name: KevinZhangNothing/dsh-nico
+category: voice
+description:
+  en: Hold right-Cmd and talk — local SenseVoice STT, a fixed DSH session with voice-triggered rotation, and streaming CosyVoice2 TTS with emotion voices and an optional Live2D overlay.
+  zh: 按住右⌘说一句——本地 SenseVoice 识别、固定 DSH 会话（语音/按钮开新会话）、CosyVoice2 流式播报与情感音色，可选 Live2D 鲸鱼娘悬浮窗。

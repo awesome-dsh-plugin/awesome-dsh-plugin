@@ -1,0 +1,7 @@
+url: https://github.com/aik8s/cubesandbox-agent-adapter/tree/main/plugins/dsh
+name: aik8s/cubesandbox-agent-adapter#dsh
+category: tools
+description:
+  en: Adds tools for executing agent tasks in CubeSandbox through an Adapter.
+  zh: 通过 Adapter 添加在 CubeSandbox 中执行 Agent 任务的工具。
+tarball: https://github.com/aik8s/cubesandbox-agent-adapter/releases/download/dsh-plugin-v0.7.0/cubesandbox-agent-adapter-dsh-plugin-0.7.0.tgz

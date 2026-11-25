@@ -1,0 +1,6 @@
+url: https://github.com/TaoruiLiu19/DSH-LLSA/tree/main/packages/hud
+name: TaoruiLiu19/DSH-LLSA#hud
+category: ui
+description:
+  en: 'Read-only heads-up display over a DeepSeek Harness conversation: one state word in the centre, fixed seats around the ring for terminal, code, search, documents, web and a catch-all, and a sub-agent ring when more than one agent runs.'
+  zh: 'DeepSeek Harness 会话上的只读状态浮层：中心一行状态词，外圈按固定位置显示终端、代码、检索、文档、网页与其它六类活动，多 Agent 时显示内圈子 Agent。'

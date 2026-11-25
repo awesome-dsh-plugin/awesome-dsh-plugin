@@ -1,0 +1,7 @@
+url: https://github.com/LighghtEeloo/dsh-next-actions
+name: LighghtEeloo/dsh-next-actions
+category: ui
+description:
+  en: 'Adds up to 3 clickable next-action chips under a reply; clicking one fills the input draft and never sends.'
+  zh: '在回复下方给出至多 3 条可点击的下一步建议；点击只填入输入框，不会自动发送。'
+icon: https://raw.githubusercontent.com/LighghtEeloo/dsh-next-actions/main/assets/icon-180.png

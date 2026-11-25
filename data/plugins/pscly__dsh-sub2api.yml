@@ -1,0 +1,7 @@
+url: https://github.com/pscly/dsh-sub2api
+name: pscly/dsh-sub2api
+category: model
+description:
+  en: 'Sign in to a Sub2API gateway with an email and password instead of pasting a key: it creates its own API key, syncs the model catalogue, and keeps balance, usage and recharge in one panel. Ships a built-in deepseek-flash and sets it as the default model.'
+  zh: '在设置页用邮箱和密码登录 Sub2API 中转站，不用手动粘贴密钥：插件自动创建密钥、同步模型目录，并把余额、用量与充值放在同一个面板。自带 deepseek-flash 并设为默认模型。'
+icon: https://raw.githubusercontent.com/pscly/dsh-sub2api/main/assets/icon-180.png

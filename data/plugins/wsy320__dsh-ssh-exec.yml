@@ -1,0 +1,6 @@
+url: https://github.com/wsy320/dsh-ssh-exec
+name: wsy320/dsh-ssh-exec
+category: remote
+description:
+  en: 'Runs commands on remote hosts over SSH in-process, so password auth works without a terminal. Remote host passwords are read from a local hosts file in plain text (or from an environment variable named by passwordEnv).'
+  zh: '通过 SSH 在远程主机执行命令，支持密码认证，无需终端。远程主机的密码从本地 hosts 文件以明文读取（或从 passwordEnv 指定的环境变量读取）。'

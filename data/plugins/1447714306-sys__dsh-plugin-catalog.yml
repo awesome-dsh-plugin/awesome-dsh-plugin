@@ -1,0 +1,8 @@
+url: https://github.com/1447714306-sys/dsh-plugin-catalog
+name: 1447714306-sys/dsh-plugin-catalog
+category: usage
+description:
+  en: 'Lists every installed DSH plugin with its purpose, usage, mount points and tool-call usage stats, and lets you check for updates, update or roll back a version, enable or disable a plugin, uninstall it, and export the list to Word or PDF on the desktop. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把已安装的 DSH 插件列成清单：作用、怎么用、挂载项与被调用次数占比，并能在面板里检查更新、一键或选择性更新、回退旧版本、启用停用、卸载，以及一键导出到桌面的 Word/PDF。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/1447714306-sys/dsh-plugin-catalog/releases/latest/download/dsh-plugin-catalog.tgz
+icon: https://raw.githubusercontent.com/1447714306-sys/dsh-plugin-catalog/main/assets/icon.png

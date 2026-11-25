@@ -1,0 +1,6 @@
+url: https://github.com/guiyinrenshi/dsh-hermes-link/tree/main/packages/dsh-hermes-link
+name: guiyinrenshi/dsh-hermes-link#dsh-hermes-link
+category: tools
+description:
+  en: 'Compatibility fork of the Hermes ↔ DSH bridge, working on dsh 0.2.x: receives Hermes-dispatched tasks over JSON-RPC and SSE, exposes 16 DSH-side tools for importing, consulting and dispatching to Hermes, mirrors DSH sessions to Hermes with redaction, and adds a link doctor plus metrics endpoints. Its HTTP routes accept task dispatch without a token unless you set HERMES_LINK_TOKEN, and have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Hermes ↔ DSH 双向桥接插件的兼容性分支，可在 dsh 0.2.x 上运行：接收 Hermes 下发的任务（JSON-RPC 与 SSE），提供 16 个 DSH 侧工具用于导入会话、咨询 Hermes 与向 Hermes 派单，支持带脱敏的会话镜像，并附带链路诊断与指标接口。它的 HTTP 路由在你设置 HERMES_LINK_TOKEN 之前不要求令牌就能下发任务，也没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

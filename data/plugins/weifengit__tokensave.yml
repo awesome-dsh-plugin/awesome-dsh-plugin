@@ -1,0 +1,6 @@
+url: https://github.com/weifengit/tokensave
+name: weifengit/tokensave
+category: workflow
+description:
+  en: 'Adds a project center and a dockview workspace to the DSH web UI, arranging the main conversation, project preview, parallel free-model explorers and a shared board side by side, with sidebar notifications, notification sounds and auto-continue.'
+  zh: '给 DSH Web 界面加上「项目中心」与「工作台」：用 dockview 把主对话、项目预览、并行免费模型探索者与共享黑板同屏编排，并配齐侧边栏呼吸灯角标、提示音与自动继续。'

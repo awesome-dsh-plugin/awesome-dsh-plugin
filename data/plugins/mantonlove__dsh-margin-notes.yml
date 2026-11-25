@@ -1,0 +1,8 @@
+url: https://github.com/mantonlove/dsh-margin-notes
+name: mantonlove/dsh-margin-notes
+category: ui
+description:
+  en: 'Margin annotations for DSH: select text in a document preview or an assistant reply, queue a note on each passage, then drop the batch into the composer as one inline annotation chip that expands into a numbered block on send.'
+  zh: 'DSH 页边批注：在文档预览或助手回复里划词写批注，攒成一批后收进输入框里的一个内联批注块，发送时才展开成编号块，方便继续输入其他指令。'
+icon: https://raw.githubusercontent.com/mantonlove/dsh-margin-notes/main/assets/icon-180.png
+tarball: https://github.com/mantonlove/dsh-margin-notes/releases/download/v0.1.5/dsh-margin-notes.tgz

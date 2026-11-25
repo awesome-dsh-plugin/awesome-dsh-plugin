@@ -1,0 +1,7 @@
+url: https://github.com/Genesi599/dsh-plugins/tree/main/plugins/hub-callout
+name: Genesi599/dsh-plugins#hub-callout
+category: ui
+description:
+  en: 'Renders GitHub admonition syntax in messages as alert cards, matching the Hermes desktop look.'
+  zh: '把消息里的 GitHub admonition 语法渲染成 alert 卡片，视觉对齐 Hermes 桌面端。'
+icon: https://raw.githubusercontent.com/Genesi599/dsh-plugins/main/plugins/hub-callout/assets/icon-180.png

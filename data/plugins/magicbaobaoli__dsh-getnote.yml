@@ -1,0 +1,6 @@
+url: https://github.com/magicbaobaoli/dsh-getnote
+name: magicbaobaoli/dsh-getnote
+category: docs
+description:
+  en: 'A local-first Markdown panel for a 得到大脑 / Get笔记 vault: folder tree, tag cloud, full-text search, and a renderer for tables, timelines, Obsidian wikilinks and image attachments. Recording notes get an audio player with drag seeking and a timestamped transcript. Notes are plain .md files on disk, so a synced vault stays readable offline; cloud sync is optional, and deleted notes go to a restorable trash. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '本地优先的得到大脑 / Get笔记 Markdown 面板：目录树、标签云、全文搜索，渲染表格、时间轴、Obsidian 双链与图片附件；录音笔记带可拖动进度条的播放器和按时间戳分条的逐字稿。笔记是磁盘上的纯 .md 文件，同步下来的库离线也能读；云端同步可选，删除的笔记进可恢复的回收站。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

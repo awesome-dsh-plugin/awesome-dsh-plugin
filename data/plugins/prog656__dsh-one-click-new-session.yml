@@ -1,0 +1,6 @@
+url: https://github.com/prog656/dsh-one-click-new-session
+name: prog656/dsh-one-click-new-session
+category: ui
+description:
+  en: 'Adds a sidebar footer button that opens a blank, ready-to-type chat without asking you to pick a workspace; a dedicated scratch workspace is created automatically and an existing blank session is reused, so repeated clicks never pile up empty chats.'
+  zh: '侧边栏底部新增一键入口，直接打开可输入的空白对话，不需要选择工作区；专用工作区自动创建，已有空白会话自动复用，连点也不会堆出一串空对话。'

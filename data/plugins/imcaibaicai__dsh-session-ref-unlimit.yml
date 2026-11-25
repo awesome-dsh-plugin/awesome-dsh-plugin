@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-session-ref-unlimit
+name: imcaibaicai/dsh-session-ref-unlimit
+category: session
+description:
+  en: 'Lifts the built-in cap of three @ referenced sessions per message by rewriting the reference resolver''s config after it is instantiated, defaulting to 8 with an aggregate context budget guard; no app.asar changes.'
+  zh: '解除原生「一条消息最多 @ 引用 3 个会话」的上限：在解析器实例化之后改写其 config，默认放宽到 8，并按总上下文预算反算单条额度；不改 app.asar。'

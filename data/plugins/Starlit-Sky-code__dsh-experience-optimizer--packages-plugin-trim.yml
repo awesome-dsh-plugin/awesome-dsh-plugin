@@ -1,0 +1,8 @@
+url: https://github.com/Starlit-Sky-code/dsh-experience-optimizer/tree/main/packages/plugin-trim
+name: Starlit-Sky-code/dsh-experience-optimizer#plugin-trim
+category: dev
+description:
+  en: 'Four-check plugin checkup for DeepSeek Harness: load, compatibility, context, and a read-only compaction-stack audit; active compaction backends are protected, low-risk trims are reversible, and the next checkup measures the apply result.'
+  zh: 'DSH 插件四维体检：加载、兼容、上下文与只读压缩链路审计；活跃压缩后端受保护，低风险瘦身可回滚，下一次体检结算实测收益。'
+icon: https://raw.githubusercontent.com/Starlit-Sky-code/dsh-experience-optimizer/main/packages/plugin-trim/icon.png
+tarball: https://github.com/Starlit-Sky-code/dsh-experience-optimizer/releases/download/v0.5.9/dsh-plugin-trim-0.5.9.tgz

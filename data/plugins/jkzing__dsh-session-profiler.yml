@@ -1,0 +1,6 @@
+url: https://github.com/jkzing/dsh-session-profiler
+name: jkzing/dsh-session-profiler
+category: session
+description:
+  en: 'Adds an analysis tab to each session that draws it as a timeline: swim-lane tracks by category, a flame graph, and per-category and per-tool timing statistics for model calls, tool calls and background processes. Running sessions refresh live, and extra lanes can be defined with regex rules in the plugin config.'
+  zh: '给每个会话加一个「分析」标签页，把会话画成时间线：按类别分道的调用轨迹、火焰图，以及按类别、按工具的耗时统计，覆盖模型调用、工具调用与后台进程。运行中的会话自动刷新，可在插件配置里用正则规则自定义泳道。'

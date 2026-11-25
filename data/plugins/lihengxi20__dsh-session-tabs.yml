@@ -1,0 +1,6 @@
+url: https://github.com/lihengxi20/dsh-session-tabs
+name: lihengxi20/dsh-session-tabs
+category: ui
+description:
+  en: 'Adds a session tab bar under the DSH conversation header: open sessions appear in order with workspace/title labels and status dots; click to switch, use the hover × or the right-click menu to close, rename, close others or close all; the tab list persists in localStorage. Plugin only; it does not change DSH core or stop background work.'
+  zh: '在 DSH 会话头部下方增加会话标签栏：打开过的会话按顺序显示为标签（工作区/标题与状态圆点），点击切换，可用悬停 × 或右键菜单关闭、重命名、关闭其他/全部关闭；标签列表持久化在 localStorage。纯插件实现，不改 DSH 核心，也不停止后台任务。'

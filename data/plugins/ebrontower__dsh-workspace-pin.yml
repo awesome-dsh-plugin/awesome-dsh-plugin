@@ -1,0 +1,7 @@
+url: https://github.com/ebrontower/dsh-workspace-pin
+name: ebrontower/dsh-workspace-pin
+category: ui
+description:
+  en: Workspace pinning plugin with an effect close to the built-in session pin.
+  zh: 实现了接近官方会话置顶效果的工作区置顶插件。
+tarball: https://github.com/ebrontower/dsh-workspace-pin/releases/latest/download/dsh-workspace-pin.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/xianfeng1012/dsh-fleet-monitor
+name: xianfeng1012/dsh-fleet-monitor
+category: tools
+description:
+  en: 'Multi-host SSH monitoring in the sidebar: agentless metrics and hardware inventory over the SSH credentials you already have, plus HTTP/TCP/ICMP probes, alert rules with HTTP notifications, cron tasks, an interactive shell, SFTP file browsing and seven read-only agent tools.'
+  zh: '侧边栏里的多机 SSH 监控：复用已有 SSH 凭据做无 agent 采集（CPU、内存、磁盘、网络、负载，以及温度、GPU、监听端口、分区、网卡），外加 HTTP/TCP/ICMP 服务探针、告警规则与 HTTP 通知、定时任务、交互式终端、SFTP 文件浏览和七个只读 agent 工具。'
+icon: https://raw.githubusercontent.com/xianfeng1012/dsh-fleet-monitor/main/assets/icon-180.png

@@ -1,0 +1,8 @@
+url: https://github.com/airainal/dsh-edge-companion
+name: airainal/dsh-edge-companion
+category: browser
+tarball: https://github.com/airainal/dsh-edge-companion/releases/download/v1.4.4/dsh-edge-companion-1.4.4.tgz
+description:
+  en: 'Connects DeepSeek Harness to a logged-in Microsoft Edge through a local bridge and MV3 side panel, and exposes CDP actions on real tabs.'
+  zh: '通过本地桥接与 MV3 侧边栏把 DeepSeek Harness 接到已登录的 Edge，并在真实标签页上执行 CDP 操作。'
+icon: https://raw.githubusercontent.com/airainal/dsh-edge-companion/main/dsh-plugin/icon.png

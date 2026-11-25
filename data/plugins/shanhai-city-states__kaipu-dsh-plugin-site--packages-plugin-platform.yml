@@ -1,0 +1,7 @@
+url: https://github.com/shanhai-city-states/kaipu-dsh-plugin-site/tree/main/packages/plugin-platform
+name: shanhai-city-states/kaipu-dsh-plugin-site#plugin-platform
+category: workflow
+tarball: https://github.com/shanhai-city-states/kaipu-dsh-plugin-site/releases/latest/download/kaipu-platform.tgz
+description:
+  en: 'An audit workspace for DeepSeek Harness: a multi-agent consultation venue where each review seat is filled by an agent, every judgment is routed to a named review face, and the whole run is kept as a traceable record. Works out of the box: the service endpoint is built in, a workspace is provisioned automatically on first launch, and review scenes come with their seats and agents listed. The built-in service endpoint is the author''s hosted server (agent.ak2029.com/kai-pu): scenes, runs and review records are stored there unless you override baseUrl in the profile config.'
+  zh: '为 DeepSeek Harness 提供多人会商审校的「场地」——每个审核席位由一个 Agent 承担，判定逐面路由，全程留痕可回看。装上即用：内置服务端接入，首次打开自动开铺，场景、席位与审核 Agent 开箱在位。内置的服务端接入是作者托管的服务器（agent.ak2029.com/kai-pu）：场景、运行与审校记录都存在那里，除非在 profile 配置里覆盖 baseUrl。'

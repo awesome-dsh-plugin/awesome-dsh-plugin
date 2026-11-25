@@ -1,0 +1,7 @@
+url: https://github.com/chengrp/dsh-plugins/tree/main/packages/prompt-library
+name: chengrp/dsh-plugins#prompt-library
+category: tools
+description:
+  en: 'A local prompt library for DSH. Collect, tag, search and reuse prompts from the sidebar or composer; all data stays on your machine.'
+  zh: 'DSH 本地提示词收藏夹，在侧边栏或输入框收集、标签、搜索并一键复用常用提示词，数据仅保存在本机。'
+tarball: https://github.com/chengrp/dsh-plugins/releases/download/v0.3.1/chengrp-prompt-library-0.3.1.tgz

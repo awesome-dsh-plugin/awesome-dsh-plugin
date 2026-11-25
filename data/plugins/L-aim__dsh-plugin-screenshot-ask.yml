@@ -1,0 +1,6 @@
+url: https://github.com/L-aim/dsh-plugin-screenshot-ask
+name: L-aim/dsh-plugin-screenshot-ask
+category: ui
+description:
+  en: 'Windows screen-region picker for the composer: drag a box over any application, fine-tune it with eight handles, then confirm or copy it, and the crop appears in the input box as an attachment ready to send with a question.'
+  zh: 'Windows 端的圈选截图：在任意界面上拖框，用八个把手微调，确认或复制后图片直接进入输入框附件，补一句问题即可发送。'

@@ -1,0 +1,7 @@
+url: https://github.com/sumingwang233/dsh-provider-quota-rings
+name: sumingwang233/dsh-provider-quota-rings
+category: usage
+description:
+  en: Draws subscription quota rings for the providers you configured next to the session title, an inner ring for the short window and an outer one for the weekly window.
+  zh: 在会话标题旁为已配置的提供商画订阅额度圆环，内环是短周期，外环是周周期。
+tarball: https://github.com/sumingwang233/dsh-provider-quota-rings/releases/download/v0.1.16/dsh-provider-quota-rings-0.1.16.tgz

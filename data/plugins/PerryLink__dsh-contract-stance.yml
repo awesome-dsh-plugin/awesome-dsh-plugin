@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-contract-stance
+name: PerryLink/dsh-contract-stance
+category: tools
+description:
+  en: "Contract-clause stance check for DeepSeek Harness: check clause stances against the Civil Code of the PRC. Flags discrepancies only and makes no conclusive judgment."
+  zh: "合同条款立场核对：依据《中华人民共和国民法典》。仅提示差异，不作出定性结论。"

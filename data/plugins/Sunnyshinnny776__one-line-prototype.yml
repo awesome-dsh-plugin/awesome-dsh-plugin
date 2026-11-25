@@ -1,0 +1,6 @@
+url: https://github.com/Sunnyshinnny776/one-line-prototype
+name: Sunnyshinnny776/one-line-prototype
+category: skill
+description:
+  en: 'Agent skill: from a one-line requirement, asks one round of rule questions, then writes a concise PRD, one flow diagram per feature, an offline clickable prototype and a confirmation sheet listing what the agent filled in on its own. Output is in Chinese.'
+  zh: '一句话需求，先问一轮规则问题，再产出精简 PRD、每个功能一张流程图、可断网打开的可交互原型，以及列出 Agent 自行补全内容的确认单。产出为中文。'

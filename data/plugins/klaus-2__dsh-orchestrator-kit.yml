@@ -1,0 +1,6 @@
+url: https://github.com/klaus-2/dsh-orchestrator-kit
+name: klaus-2/dsh-orchestrator-kit
+category: model
+description:
+  en: "Settings panel for AI agent teams - route provider, model, reasoning effort and a per-role fallback retry route across a 20-role dev-flow pipeline, with fail-closed validation against the live provider catalog, and an Orchestrator preset that auto-installs the 20 craft role cards and the dev-flow skill."
+  zh: "把设置变成 AI 智能体团队的路由面板——按角色配置 provider、model、推理力度与后备重试路由（对实时 provider 目录做 fail-closed 校验），并随附 Orchestrator 预设，激活时自动安装 20 张 craft 角色卡与 dev-flow 技能。"

@@ -1,0 +1,6 @@
+url: https://github.com/puffdog-git/dsh-jukebox
+name: puffdog-git/dsh-jukebox
+category: voice
+description:
+  en: 'Music player and song source. Plays a local music folder, YT Music and bilibili directly; searches Spotify, KKBOX and Apple Music and reads their links, then either plays a matching version found in the local library or on YouTube, or has the official desktop player on the same computer play the song and relays its sound live. Registers itself as a music source for the dsh-discord-cyberfriend plugin. Controlling and relaying official players is Windows only and off by default.'
+  zh: '音乐播放器与点歌来源。可直接播放本地音乐文件夹、YT Music 与 bilibili；可搜索 Spotify、KKBOX、Apple Music 并读取它们的链接，然后改播本地音乐库或 YouTube 上的同一首，或让同一台电脑上的官方播放器播放并实时转送声音。会登记成 dsh-discord-cyberfriend 插件的点歌来源。控制与转送官方播放器仅限 Windows，默认关闭。'

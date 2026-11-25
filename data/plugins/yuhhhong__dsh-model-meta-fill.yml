@@ -1,0 +1,6 @@
+url: https://github.com/yuhhhong/dsh-model-meta-fill
+name: yuhhhong/dsh-model-meta-fill
+category: model
+description:
+  en: Matches configured models with metadata from models.dev and previews changes to context windows, output token limits, input types, and reasoning levels before applying them.
+  zh: 为 DSH 中已配置的模型匹配 models.dev 资料，预览并确认后填入上下文窗口、最大输出 token 数、输入类型和思考等级。

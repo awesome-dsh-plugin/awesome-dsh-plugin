@@ -1,0 +1,7 @@
+url: https://github.com/nacivageer/dsh-parchment-theme
+name: nacivageer/dsh-parchment-theme
+category: theme
+description:
+  en: Parchment-and-ink theme for the DeepSeek Harness Web UI, with a paper texture, Song serif type and a light parchment / dark ink-night pair. Type is scaled up a step for eye comfort and 4K screens (chat copy still follows the font-size setting), and it covers the sidebar, settings panel, right-rail navigation, session trajectory page and plugin market.
+  zh: 羊皮纸主题：旧纸墨褐的底色、纸纹与宋体排印，浅色「羊皮纸」与深色「墨夜」两套；为护眼与 4K 屏易读把界面字号整体调大一档（会话正文仍跟随设置里的字号），覆盖侧栏、设置面板、右侧栏导航、会话轨迹页与插件市场。
+icon: https://raw.githubusercontent.com/nacivageer/dsh-parchment-theme/master/assets/icon-256.png

@@ -1,0 +1,6 @@
+url: https://github.com/Solaris136/dsh-remote-go
+name: Solaris136/dsh-remote-go
+category: remote
+description:
+  en: 'Use a remote DSH over SSH in the full window of your local DSH, in the DSH desktop app or dsh web: the host bar switches between Local and each host without reloading the remote UI, the connect flow shows staged progress and a live log, and you can restart or stop the remote DSH and reconnect after a drop. The remote needs no preinstalled Node — the plugin brings its own Node and starts npx pinned to the local DSH version, keeping data in the remote ~/.dsh.'
+  zh: '通过 SSH 在本地 DSH 里整窗使用远端 DSH，DSH 桌面端与 dsh web 都支持：主机条在「本地」与各主机间切换、切回不重载，连接过程分阶段展示进度与实时日志，可重启/关闭远端并断线重连。远端无需预装 Node——插件自带 Node + npx 按本机版本启动，数据留在远端 ~/.dsh。'

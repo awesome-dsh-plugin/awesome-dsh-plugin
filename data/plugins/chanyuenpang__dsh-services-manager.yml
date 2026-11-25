@@ -1,0 +1,7 @@
+url: https://github.com/chanyuenpang/dsh-services-manager
+name: chanyuenpang/dsh-services-manager
+category: dev
+description:
+  en: 'Manage local web services in DSH Desktop/Web with persistent lifecycle policies, native agent tools, and a sidebar launcher for in-app or system-browser access.'
+  zh: '在 DSH Desktop/Web 中管理本地网页服务，支持持久启停策略、原生 Agent 工具，以及可在 DSH 内或系统浏览器打开服务的侧栏启动台。'
+tarball: https://github.com/chanyuenpang/dsh-services-manager/releases/download/v0.2.6/dsh-services-manager-0.2.6.tgz

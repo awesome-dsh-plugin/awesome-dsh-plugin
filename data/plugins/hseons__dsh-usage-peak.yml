@@ -1,0 +1,6 @@
+url: https://github.com/hseons/dsh-usage-peak
+name: hseons/dsh-usage-peak
+category: usage
+description:
+  en: "Peak and valley pricing dashboard for DeepSeek Harness: a sidebar pill with the current tariff and countdown, today's spend and tokens, project and model drilldown, an editable price list, configurable budget alerts, balance runway, CSV export, and holiday-aware billing on 7/14/30-day windows."
+  zh: "DeepSeek Harness 用量峰谷仪表盘：侧栏胶囊显示当前峰谷与倒计时、今日花费和 tokens，可下钻项目与模型、编辑价目表、配置预算预警、查看余额可撑天数、导出 CSV，并按节假日与调休在 7/14/30 天窗口内计价。"

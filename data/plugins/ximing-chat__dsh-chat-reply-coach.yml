@@ -1,0 +1,6 @@
+name: ximing-chat/dsh-chat-reply-coach
+url: https://github.com/ximing-chat/dsh-chat-reply-coach
+category: tools
+description:
+  en: A DSH plugin that generates high-EQ reply suggestions based on chat context, with reasoning and strategy.
+  zh: 输入聊天上下文，生成 3 条高情商回复候选，附带判断依据和策略方向。

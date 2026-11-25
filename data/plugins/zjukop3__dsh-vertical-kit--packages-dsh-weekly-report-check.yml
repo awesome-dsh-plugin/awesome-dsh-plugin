@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-weekly-report-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-weekly-report-check'
+category: 'tools'
+description:
+  en: 'Weekly-report hygiene from markdown: what was done separated from what is planned, risks and blockers named, and at least one quantified item so progress is tellable from motion. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '周报的结构检查：本周完成与下周计划分开写、风险与阻塞在场、至少一行带量化数字——让读者分得清进展和动作。空泛承诺按计划语句计数：在场可判定，空洞不可判定。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

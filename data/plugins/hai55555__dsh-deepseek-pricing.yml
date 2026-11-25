@@ -1,0 +1,7 @@
+url: https://github.com/hai55555/dsh-deepseek-pricing
+name: hai55555/dsh-deepseek-pricing
+category: usage
+description:
+  en: Shows the current DeepSeek billing window (peak or off-peak, Beijing time) as a composer badge and in settings, lists DeepSeek's per-model prices, and estimates the cost of each turn.
+  zh: 在输入框徽标与设置页显示当前 DeepSeek 计费时段（高峰或空闲，北京时间），列出 DeepSeek 各模型价格，并估算每一轮对话的花费。
+icon: https://raw.githubusercontent.com/hai55555/dsh-deepseek-pricing/main/assets/icon.png

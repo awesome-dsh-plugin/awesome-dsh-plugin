@@ -1,0 +1,6 @@
+url: https://github.com/GoGoZeppeli-towa/dsh-dsml-leak-guard
+name: GoGoZeppeli-towa/dsh-dsml-leak-guard
+category: session
+description:
+  en: Drops text blocks that carry nothing but leaked DSML tool-call tags, then rewrites the resulting empty turn into a retryable error so the host's built-in retry re-issues the request; prose that merely contains tags passes through untouched.
+  zh: 丢弃只含泄漏 DSML 工具调用标签的整段文本；若整轮没有产生任何可见内容，把结尾改写成可重试错误，交给宿主内置重试重新请求；正文夹带标签的输出原样放行。

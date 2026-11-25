@@ -1,0 +1,6 @@
+url: https://github.com/jszjdyt/singlecell-full-workflow
+name: jszjdyt/singlecell-full-workflow
+category: tools
+description:
+  en: 'Single-cell RNA-seq workbench usable from the Harness UI or from agent tools: imports h5ad, 10x, loom, Seurat RDS and archive files, runs QC, filtering, normalisation, highly variable genes, PCA, neighbour graph, clustering, UMAP/t-SNE, marker genes and cell-type annotation, offers resolution scans and saved marker panels, and exports h5ad, result tables and reports.'
+  zh: '单细胞 RNA-seq 分析工作台，界面按钮与 agent 工具共用同一套实现：导入 h5ad、10x、loom、Seurat RDS 与压缩包，跑质控、过滤、标准化、高变基因、PCA、邻居图、聚类、UMAP/t-SNE、标记基因与细胞类型注释，提供分辨率扫描与标记基因面板，并导出 h5ad、结果表与报告。'

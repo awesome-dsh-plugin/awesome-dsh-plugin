@@ -1,0 +1,6 @@
+url: https://github.com/ltzXiaoYanMo/dsh-auto-check
+name: ltzXiaoYanMo/dsh-auto-check
+category: tools
+description:
+  en: An enhanced version of DeepSeek Harness's built-in automatic review system.
+  zh: 对 DeepSeek Harness 内置自动审查机制进行修改和增强的插件。

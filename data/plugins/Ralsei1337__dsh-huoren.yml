@@ -1,0 +1,8 @@
+url: https://github.com/Ralsei1337/dsh-huoren
+name: Ralsei1337/dsh-huoren
+category: fun
+description:
+  en: 'Rewrites model output to read as if a person typed it on a phone: splits one reply into up to N short messages, releases them one at a time with a per-character typing delay (90 ms per CJK char, extra pauses on punctuation, jitter, a thinking pause before the first one), adds sentence-initial fillers and sentence-final particles, injects one controlled typo and sometimes a follow-up correction, and strips AI register ("as an AI assistant", "hope this helps", "in summary", "not X, but Y") while leaving code blocks, tables and lists intact. Four intensity levels plus a per-session energy/warmth state that decays toward a baseline and feeds back into the system prompt.'
+  zh: '把模型输出改成「人在手机上打字」的样子：一段回复最多拆成 N 条短消息，按字数逐条放出（中文 90ms/字、标点额外停顿、带抖动、首条先有一段思考停顿），句首加口头语、句尾换语气词，按概率造一个错别字并偶尔补一条「打错了，是X」，同时删掉 AI 腔（「作为 AI 助手」「希望对你有帮助」「总的来说」「不是A而是B」），代码块、表格与列表原样保留。四档强度，外加一套按会话存盘的精力/热度状态，每轮向基线回落并注入系统提示。'
+tarball: https://github.com/Ralsei1337/dsh-huoren/releases/latest/download/dsh-huoren.tgz
+icon: https://raw.githubusercontent.com/Ralsei1337/dsh-huoren/main/assets/icon-180.png

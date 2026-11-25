@@ -1,0 +1,6 @@
+url: https://github.com/yanxijian/dsh-model-provider-info
+name: yanxijian/dsh-model-provider-info
+category: model
+description:
+  en: 'Shows the provider name before the model name in the composer: DeepSeek''s own routes stay in the caption tone, third-party routes get an outlined chip whose colour is set per provider on the Models settings page, and the catalog model badge is kept.'
+  zh: '在输入框的模型名前面显示供应商名：DeepSeek 自有路由保持灰色文字，其他路由显示描边标签（颜色可在「设置 → 模型」里按供应商分别设置），并保留内建的模型角标。'

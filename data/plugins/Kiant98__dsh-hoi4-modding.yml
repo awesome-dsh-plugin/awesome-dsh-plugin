@@ -1,0 +1,7 @@
+url: https://github.com/Kiant98/dsh-hoi4-modding
+name: Kiant98/dsh-hoi4-modding
+category: skill
+description:
+  en: 'Hearts of Iron IV modding bundle for DeepSeek Harness: registers 15 skills covering focus trees, events, decisions, ideas, characters, technologies, localisation, GUI and error.log triage, and mounts 20 local MCP tools (a Python stdio server) to scaffold content, statically validate mods, build a SQLite FTS5 knowledge base from the vanilla game, and preview focus trees offline. Ships a 163-document reference library; requires DSH >=0.2.0 <0.3.0 and Python 3.9+ on PATH (standard library only, no game assets).'
+  zh: '面向《钢铁雄心4》Mod 开发的 DeepSeek Harness 组合包：注册 15 个技能（国策树、事件、决议、理念、角色、科技、本地化、GUI 与 error.log 分诊），并在本地挂载 20 个 MCP 工具（Python stdio 服务器），用于生成内容、静态校验 Mod、以原版游戏建 SQLite FTS5 知识库、离线预览国策树。附 163 篇参考库；要求 DSH >=0.2.0 <0.3.0 与 PATH 上有 Python 3.9+（仅标准库，不含游戏素材）。'
+icon: https://raw.githubusercontent.com/Kiant98/dsh-hoi4-modding/master/assets/icon-180.png

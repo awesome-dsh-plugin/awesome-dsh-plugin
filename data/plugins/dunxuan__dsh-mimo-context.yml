@@ -1,0 +1,6 @@
+url: https://github.com/dunxuan/dsh-mimo-context
+name: dunxuan/dsh-mimo-context
+category: memory
+description:
+  en: 'Port of MiMo Code''s infinite-context memory: as the window fills it asks the model in the background (the current provider route unless writerProvider/writerModel is set) to write a structured checkpoint and a project MEMORY.md, then, ahead of DSH''s native compaction, replaces the visible window with a rebuilt dump of tasks, checkpoint, recent user messages, memory and notes, falling back to a MiMo-style compaction. Memory files live under $DSH_HOME/mimo-context (per session, per project, plus a read-only global one); it adds mimo_* memory, history, checkpoint and rebuild tools and /mimo-* commands, with dream/distill off by default. Needs DSH 0.2.2-rc.1 or a later 0.2.x.'
+  zh: '移植自 MiMo Code 的无限上下文记忆：窗口逐渐填满时，在后台让模型（默认沿用当前模型路由，可用 writerProvider/writerModel 指定）写出结构化 checkpoint 和项目 MEMORY.md，并在 DSH 原生 compaction 之前，用任务、checkpoint、最近用户消息、记忆与笔记重建的内容替换当前可见窗口，没有可用 checkpoint 时回退到 MiMo 式压缩。记忆文件存在 $DSH_HOME/mimo-context（按会话、按项目，另有只读的全局记忆）；提供 mimo_* 记忆、历史、checkpoint、重建工具和 /mimo-* 命令，dream/distill 默认关闭。需要 DSH 0.2.2-rc.1 或之后的 0.2.x。'

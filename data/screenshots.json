@@ -1,4 +1,12 @@
 {
+  "https://github.com/Aliboder/dsh-music-panel": [
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-library-grid.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-online-recent.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-now-playing-lyrics.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-queue-compact.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-stats.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-settings.png"
+  ],
   "https://github.com/Lovenndme/dsh-profile-stats": [
     "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/preview.png"
   ],
@@ -1227,11 +1235,6 @@
     "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/test.png",
     "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/routes.png"
   ],
-  "https://github.com/Kenerlee/dsh-moments-aieo": [
-    "https://raw.githubusercontent.com/Kenerlee/dsh-moments-aieo/master/assets/screenshot-dashboard.png",
-    "https://raw.githubusercontent.com/Kenerlee/dsh-moments-aieo/master/assets/screenshot-diagnosis-report.png",
-    "https://raw.githubusercontent.com/Kenerlee/dsh-moments-aieo/master/assets/screenshot-dashboard-mobile.png"
-  ],
   "https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker": [
     "https://raw.githubusercontent.com/FeiZhuNiU-INFJA/dsh-stock-ticker/main/assets/screenshot.png"
   ],
@@ -1328,9 +1331,6 @@
     "https://raw.githubusercontent.com/enterhalf/dsh-session-colorful-unread-pin-jobs/main/assets/screenshot-1-overview.png",
     "https://raw.githubusercontent.com/enterhalf/dsh-session-colorful-unread-pin-jobs/main/assets/screenshot-2-menu.png",
     "https://raw.githubusercontent.com/enterhalf/dsh-session-colorful-unread-pin-jobs/main/assets/screenshot-3-settings.png"
-  ],
-  "https://github.com/ShenpingDD/wooden-fish-dsh": [
-    "https://raw.githubusercontent.com/ShenpingDD/wooden-fish-dsh/main/docs/screenshots/ui-design-preview.png"
   ],
   "https://github.com/webkubor/dsh-llm-hub": [
     "https://raw.githubusercontent.com/webkubor/dsh-llm-hub/main/docs/images/models-piai-cards.png",

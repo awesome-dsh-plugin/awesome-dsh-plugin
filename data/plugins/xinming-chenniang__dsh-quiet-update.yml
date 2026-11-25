@@ -1,0 +1,7 @@
+url: https://github.com/xinming-chenniang/dsh-quiet-update
+name: xinming-chenniang/dsh-quiet-update
+category: market
+description:
+  en: 'Silently updates installed third-party DSH plugins shortly after startup through the host plugin manager, exact-pinned versions included. Does nothing at all when nothing needs updating; when a notification plugin is present it shows one heads-up before installing and one restart reminder afterwards.'
+  zh: 'DSH 启动后在后台静默更新已装第三方插件，支持精确锁版的依赖；没有可装更新时完全不出声；装了通知插件时，只在开始安装前提醒一次、装完提醒重启。'
+icon: https://raw.githubusercontent.com/xinming-chenniang/dsh-quiet-update/main/assets/icon-180.png

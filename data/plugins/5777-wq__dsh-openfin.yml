@@ -1,0 +1,8 @@
+url: https://github.com/5777-wq/dsh-openfin
+name: 5777-wq/dsh-openfin
+category: ui
+description:
+  en: 'Native DeepSeek Harness surfaces for markets and finance: a full page with 11 live quotes (SSE, SZSE, ChiNext, Hang Seng, Nasdaq, S&P 500, Dow, COMEX gold, dollar index, BTC, ETH) and sparklines, a market-cap heatmap of up to 96 A-share industry boards with a constituent drawer, movers, an eastmoney news feed, 25 plain-language articles and a 293-term glossary; the complete OpenFinLens terminal (MIT, vendored, served by the Host) embedded as the default tab; and a floating quote card with a searchable instrument picker and a boss key that also hides the optional always-on-top desktop window. The Host fetches upstream server-side with a 30 s snapshot cache, per-part timeouts and stale fallback: no API key, no browser CORS workaround.'
+  zh: '给 DSH 的市场与金融教育原生界面：完整一页行情（11 个全球标的与 BTC/ETH、分时迷你图、最多 96 个 A 股行业板块市值热力图并可展开成分股、异动榜、东方财富快讯）、25 篇白话文章与 293 条词典；默认「终端」页签内嵌完整 OpenFinLens 应用（MIT，整包随插件分发、由 Host 提供）；另有一张可拖动悬浮行情卡（可搜索任意标的、防老板快捷键，含可选的桌面置顶小窗）。行情由 Host 半场请求公开接口，快照缓存 30 秒、单部分超时与过期兜底，不需要 API key，也没有浏览器 CORS 问题。'
+icon: https://raw.githubusercontent.com/5777-wq/dsh-openfin/main/docs/screenshots/icon-180.png
+tarball: https://github.com/5777-wq/dsh-openfin/releases/latest/download/dsh-openfin.tgz

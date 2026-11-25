@@ -1,0 +1,7 @@
+url: https://github.com/gznofeng/dsh-session-panel
+name: gznofeng/dsh-session-panel
+category: session
+description:
+  en: 'A session panel page reached from one sidebar row: every session as a card, grouped by owning workspace with per-section counts and directory, or flat as a recent list with a workspace tag per card. Four-tier ordering (pinned-and-busy > pinned > busy > idle, recency inside a tier), session pins reused from the Harness so nothing is stored twice, workspace pins kept in plugin-data keyed by folder path so a rename keeps them, archived sessions hidden by default behind a toggle, and "N more" folding for long workspaces. Reads only state the client already holds — no model call, no extra tokens; workspace pins go through three loopback-only routes with atomic writes that refuse to overwrite a damaged file.'
+  zh: '从侧栏一行进入的会话面板页：全部会话以卡片呈现——默认按所属工作区分组（各节带数量与目录），也可切成带工作区标签的全局最近列表。四级排序（置顶且忙碌 > 置顶 > 忙碌 > 空闲，同级按最近活跃）；会话置顶直接复用宿主数据不存第二份，工作区置顶存于 plugin-data 且按目录路径记忆（重命名不丢）；归档会话默认隐藏可开关，长工作区折叠为「N more」。只读客户端已有的 state，零模型调用、零额外 token；工作区置顶走三条 loopback-only 路由，原子写入，文件损坏时拒绝覆盖。'
+icon: https://raw.githubusercontent.com/gznofeng/dsh-session-panel/main/assets/icon-180.png

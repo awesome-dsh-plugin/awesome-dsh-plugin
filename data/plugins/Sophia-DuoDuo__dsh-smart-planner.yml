@@ -1,0 +1,7 @@
+url: https://github.com/Sophia-DuoDuo/dsh-smart-planner
+name: Sophia-DuoDuo/dsh-smart-planner
+category: workflow
+description:
+  en: 'Task planner for DeepSeek Harness: stages a project into daily tasks with buffer days, a capacity board, evening review, a pinned assistant chat, and a fish task popover in every conversation header.'
+  zh: '面向 DeepSeek Harness 的任务规划助手：把项目拆成每日任务，支持缓冲日、容量看板、晚间复盘、置顶助手会话，以及每个对话标题前的小鱼任务浮层。'
+icon: https://raw.githubusercontent.com/Sophia-DuoDuo/dsh-smart-planner/main/assets/icon-180.png

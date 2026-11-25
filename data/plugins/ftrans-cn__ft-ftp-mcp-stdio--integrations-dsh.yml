@@ -1,0 +1,6 @@
+url: https://github.com/ftrans-cn/ft-ftp-mcp-stdio/tree/main/integrations/dsh
+name: ftrans-cn/ft-ftp-mcp-stdio#dsh
+category: tools
+description:
+  en: 'Provides 14 FTP/SFTP file tools through a local MCP server. Requires the separately installed FT FTP MCP Python 3.12 runtime.'
+  zh: '通过本地 MCP 服务提供 14 个 FTP/SFTP 文件工具，需另行安装 FT FTP MCP 的 Python 3.12 产品运行时。'

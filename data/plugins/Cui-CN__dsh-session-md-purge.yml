@@ -1,0 +1,7 @@
+url: https://github.com/Cui-CN/dsh-session-md-purge
+name: Cui-CN/dsh-session-md-purge
+category: session
+description:
+  en: 'Adds a recoverable delete to the session context menu: the Host archives the session, detaches it from its project and moves the session directory plus the Markdown files that session wrote into $DSH_HOME/session-trash; a session with running work is refused.'
+  zh: '在会话右键菜单加入可恢复的“删除会话”：归档会话、解除项目归属，并把会话目录连同该会话写过的 Markdown 文件移入 $DSH_HOME/session-trash；有运行中任务的会话会被拒绝。'
+tarball: https://github.com/Cui-CN/dsh-session-md-purge/releases/latest/download/dsh-session-md-purge.tgz

@@ -1,0 +1,8 @@
+url: https://github.com/Little-Grebe-Inc/dsh-drillr
+name: Little-Grebe-Inc/dsh-drillr
+category: tools
+description:
+  en: 'Stock market and finance data for stocks listed in the US, Hong Kong, China A-share, Japan and Korea markets, for investment and equity research: financial statements and ratios, earnings reports and filings with full-text search (SEC and exchange filings), stock prices, news, analyst ratings, insider trades and earnings-call summaries; coverage varies by dataset. Ten drillr MCP tools (mcp__drillr__*) through the official @deepseek-ai/dsh-mcp-client, including read-only SQL over financial and alternative-data tables, plus a research skill that tells the agent which tool to use. A Settings → drillr page stores your drillr API key in the dsh credential store after a test call to the gateway accepts it; a drillr account is required.'
+  zh: '美股、港股、A 股、日股和韩股上市公司的股票与金融数据，用于投资研究：财务报表和财务指标、年报季报等财报与公告全文检索（SEC 文件、交易所公告）、股价行情、新闻、分析师评级、内部人交易和业绩电话会摘要，各数据集覆盖的市场不同。通过官方 @deepseek-ai/dsh-mcp-client 接入 drillr 托管的 MCP 服务，提供 10 个工具（mcp__drillr__*），包括财务表和另类数据表的只读 SQL，并附带一个告诉智能体该用哪个工具的研究 skill。「设置 → drillr」页面先用 key 试调一次 gateway，通过后才把 API key 存进 dsh 凭据库；需要 drillr 账号。'
+icon: https://raw.githubusercontent.com/Little-Grebe-Inc/dsh-drillr/main/assets/icon.png
+tarball: https://github.com/Little-Grebe-Inc/dsh-drillr/releases/latest/download/dsh-drillr.tgz

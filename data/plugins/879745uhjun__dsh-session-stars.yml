@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-session-stars
+name: 879745uhjun/dsh-session-stars
+category: session
+description:
+  en: 'Star-rating favorites for DSH sessions: hover a session row to rate it 1-5, the row keeps an importance badge, ratings persist in a Host JSON file, and a session_stars agent tool can list, set or clear them.'
+  zh: '给 DSH 会话加 1-5 星收藏：鼠标移到会话行上即可评级，行内常驻重要度徽标，评级持久保存在宿主 JSON 文件里，并提供 session_stars 工具支持读取、设置和清除。'

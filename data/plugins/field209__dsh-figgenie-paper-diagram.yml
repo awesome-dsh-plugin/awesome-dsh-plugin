@@ -1,0 +1,7 @@
+url: https://github.com/field209/dsh-figgenie-paper-diagram
+name: field209/dsh-figgenie-paper-diagram
+category: ui
+description:
+  en: 'Draw paper figures as SVG the way top venues draw them, lint them against layout rules, edit them on a sidebar canvas, and export vector PDF or editable draw.io. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把论文里的想法画成顶会风格的 SVG 插图，按排版规矩自动体检，在侧栏画布上直接改，最后导出矢量 PDF 与可编辑 draw.io。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/field209/dsh-figgenie-paper-diagram/main/assets/icon-180.png

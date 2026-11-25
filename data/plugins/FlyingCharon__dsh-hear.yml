@@ -1,0 +1,6 @@
+url: https://github.com/FlyingCharon/dsh-hear
+name: FlyingCharon/dsh-hear
+category: voice
+description:
+  en: 'Gives a text-only agent an ear: a local audio model says what was said and how it sounded, checked against measured pitch, energy and pauses, with optional QQ voice watching. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给纯文本 agent 一副耳朵：本地音频模型先说讲了什么、怎么说，再用基频、能量、停顿去核对；可选 QQ 语音监听。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

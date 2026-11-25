@@ -1,0 +1,6 @@
+url: https://github.com/Jasery/dsh-workbuddy-memory
+name: Jasery/dsh-workbuddy-memory
+category: memory
+description:
+  en: 'Shares one set of Markdown memory files between DSH and WorkBuddy: project memory, user memory and the user profile are injected into the session context, while daily notes stay out of the prompt and are read, appended and archived through the tools. Six tools (status, read, search, append, edit, prune) write back through a cross-process lock, revision check, backup and atomic write, and a panel in the left rail and the right sidebar edits entries, sections and whole files.'
+  zh: '让 DSH 与 WorkBuddy 共用一套 Markdown 记忆文件：项目记忆、用户记忆与用户画像会注入会话上下文，当日笔记不进提示词，只通过工具读取、追加与归档。六个工具（status、read、search、append、edit、prune）写回时统一经过跨进程锁、修订号校验、备份与原子写；左侧栏与右侧边栏的面板可编辑条目、整节与整份文件。'

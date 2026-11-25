@@ -1,0 +1,7 @@
+url: https://github.com/ruaibeite/dsh-context-garden
+name: ruaibeite/dsh-context-garden
+category: fun
+description:
+  en: 'Turn the context window into a zen garden: every message or tool result plants one of eleven plants (code = cactus, image = flower, error = weed, document = rice, web = dandelion), each context compaction harvests the field into seed currency, and as the session deepens ivy climbs the chat edges while dandelion seeds drift across it.'
+  zh: '把上下文窗口种成一座禅意花园：每条消息或工具结果种下十一种植物之一（代码=仙人掌、图片=花、报错=杂草、文书=稻穗、网络=蒲公英），每次上下文压缩就是收割季，植物化为种子货币；会话渐深时爬山虎会沿对话边缘攀爬，蒲公英的种子在对话间飘散。'
+icon: https://raw.githubusercontent.com/ruaibeite/dsh-context-garden/main/assets/icon-180.png

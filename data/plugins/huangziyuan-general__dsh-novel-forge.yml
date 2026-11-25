@@ -2,5 +2,5 @@ url: https://github.com/huangziyuan-general/dsh-novel-forge
 name: huangziyuan-general/dsh-novel-forge
 category: workflow
 description:
-  en: 'Novel-writing guardrails: 20 novel_* tools enforce fact-ledger consistency, phase and chapter gates, machine audit with deterministic metrics, and proposal-only revisions; a right-panel workbench covers reading, TTS playback, polish, proofread, continuity checks and batch drafting, and a bypass engine runs internal steps off the main conversation.'
-  zh: '小说写作护栏插件：20 个 novel_* 工具以代码强制事实账本一致性、阶段与落盘门禁、确定性机审与提案制修订；右侧栏工作台提供阅读/听书/润色/校对/全书体检/批量起草，旁路引擎让内部工序不占主对话。'
+  en: 'Novel-writing guardrails: 24 novel_* tools enforce fact-ledger consistency, outline and chapter gates, a deterministic machine audit with a zero-token AI-flavor scan, and proposal-only revisions; a right-panel workbench covers reading, TTS playback, whole-book checks and batch drafting with checkpoint resume.'
+  zh: '网文写作护栏：24 个 novel_* 工具把设定账本一致性、细纲与章节门禁、确定性机审（含零 token 的去 AI 味扫描）和仅提议式修订落到代码里；右侧工作台支持阅读、TTS 朗读、全书检查和带断点续跑的批量起草。'

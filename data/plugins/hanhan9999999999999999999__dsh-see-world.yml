@@ -1,0 +1,7 @@
+url: https://github.com/hanhan9999999999999999999/dsh-see-world
+name: hanhan9999999999999999999/dsh-see-world
+category: vision
+description:
+  en: 'Lets the model look through a webcam: multi-frame sheets with automatic exposure correction, a 30 fps MJPEG preview in a draggable panel, and optional timed replies with a frame attached into the bound conversation.'
+  zh: '让模型用摄像头看世界：多帧拼版并自动矫正曝光，可拖动面板里 30fps 的实时预览，以及可选定时把带帧的消息投进绑定的会话。'
+icon: https://raw.githubusercontent.com/hanhan9999999999999999999/dsh-see-world/main/assets/icon-180.png

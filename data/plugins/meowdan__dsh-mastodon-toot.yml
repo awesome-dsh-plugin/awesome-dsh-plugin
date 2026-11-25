@@ -1,0 +1,7 @@
+url: https://github.com/meowdan/dsh-mastodon-toot
+name: meowdan/dsh-mastodon-toot
+category: notify
+description:
+  en: 'A Mastodon bot for DeepSeek Harness: it posts and replies on its own, and keeps a little notebook of the people it talks to — per-group reply rules (owner, mutuals, others) and a date-seeded posting plan.'
+  zh: 部署在 Mastodon 的大肥鱼 bot：自己发 toot、自己回嘟文，带一个小本本，记下聊过的人和话。DeepSeek Harness 插件，按主人 / 好友 / 其他人分组回复（不掷骰子），按日期种子随机发帖。
+tarball: https://github.com/meowdan/dsh-mastodon-toot/releases/download/v0.3.13/dsh-mastodon-toot-0.3.13.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/kulebbb/dsh-context-optimize
+name: kulebbb/dsh-context-optimize
+category: skill
+icon: https://github.com/kulebbb/dsh-context-optimize/releases/download/v0.1.0/icon.png
+description:
+  en: 'Skill manager for the DeepSeek Harness sidebar: lists global and project-level skills with call counts, last-used dates and estimated context tokens, and archives or restores a skill by moving its directory into a reversible skills-archived next to the skills root.'
+  zh: DSH 左侧栏「Skill 管理」：列出全局与项目级 skill 的调用次数、最近使用时间与估算占用 tokens，支持把 skill 目录移入同级可逆的 skills-archived 归档、以及一键还原。

@@ -1,0 +1,6 @@
+url: https://github.com/MoRanYue/dsh-pocket
+name: MoRanYue/dsh-pocket
+category: remote
+description:
+  en: 'Fork of shaobeichen/dsh-pocket for remote phone access to the DSH Web UI: QR-code access over LAN or a cloudflared tunnel with live sync; mobile layout is left to DSH itself, the plugin adds safe-area and touch chrome, soft-keyboard Enter inserts a newline while hardware keyboards send on Enter, and install/update is left to the plugin manager. The command-line mode listens on 0.0.0.0 by default so a phone on the same Wi-Fi can scan the QR code; it generates an access password (embedded in the QR code) unless you pass --no-auth, and a cloudflared tunnel exposes the Web UI beyond your LAN.'
+  zh: 'shaobeichen/dsh-pocket 的 fork：手机扫码经局域网或 cloudflared 隧道远程访问 DSH Web 界面并实时同屏；移动端布局交还 DSH 官方，插件只补安全区与触控样式，软键盘回车换行、外接键盘回车发送，安装与更新交给插件管理器。命令行模式默认监听 0.0.0.0，好让同一 Wi-Fi 下的手机扫码；除非加 --no-auth，否则会生成访问密码（嵌在二维码里）；cloudflared 隧道会把 Web 界面暴露到局域网之外。'

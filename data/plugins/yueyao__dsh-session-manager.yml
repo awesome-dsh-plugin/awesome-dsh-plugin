@@ -1,0 +1,7 @@
+url: https://github.com/yueyao/dsh-session-manager
+name: yueyao/dsh-session-manager
+category: session
+description:
+  en: "Manage DeepSeek Harness history sessions from a sidebar panel: multi-select to archive (moved out of the list, reversible), delete (with confirmation), and restore archived sessions."
+  zh: "在侧边栏面板里批量管理历史会话：多选后归档（移出列表、可恢复）、删除（需二次确认并标红不可恢复）、恢复已归档会话。"
+icon: https://raw.githubusercontent.com/yueyao/dsh-session-manager/main/assets/icon-180.png

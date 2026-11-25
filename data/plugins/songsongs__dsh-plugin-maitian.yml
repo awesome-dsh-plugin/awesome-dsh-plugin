@@ -1,0 +1,6 @@
+url: https://github.com/songsongs/dsh-plugin-maitian
+name: songsongs/dsh-plugin-maitian
+category: workflow
+description:
+  en: 'Beishan New Media Operations Workbench: connect a running Maitian service to query creator metrics, inspect episodes and manage local publishing workflows with Harness approvals.'
+  zh: '北山新媒体运营工作台：连接本机麦田服务，查询创作者数据、查看单期详情，并通过 Harness 审批调用本机分发工作流。'

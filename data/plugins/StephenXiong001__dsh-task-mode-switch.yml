@@ -1,0 +1,7 @@
+url: https://github.com/StephenXiong001/dsh-task-mode-switch
+name: StephenXiong001/dsh-task-mode-switch
+category: ui
+description:
+  en: Switch a DSH task's Agent preset (mode) from the composer toolbar, including tasks that have already started. Features AUTO mode that selects a preset based on task content.
+  zh: 在 DeepSeek Harness 输入框工具栏切换任务的 Agent 模式（预设），包括已经进行中的旧任务；另有 AUTO 按任务内容自动选择。
+icon: https://raw.githubusercontent.com/StephenXiong001/dsh-task-mode-switch/main/assets/icon-192.png

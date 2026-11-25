@@ -2,5 +2,5 @@ url: https://github.com/alpacachen/dsh-kanban
 name: alpacachen/dsh-kanban
 category: workflow
 description:
-  en: A shared kanban board that lets people and DSH agents manage workspace tasks through a Board tab and kanban tools.
-  zh: 一个由用户与 DSH Agent 共同维护的工作区看板，通过看板标签页和 kanban 工具管理任务。
+  en: Human-led Kanban and AI-run workflows in one DSH plugin. Manage workspace tasks together with agents using draggable cards, search, priorities, labels, due dates, Markdown, images and comments. Create and edit reusable workflows through chat, configure stage models, and let AI execute each stage with DSH tools and permissions. Follow progress on a flowchart, inspect native stage conversations, approve results or send them back with feedback, and retry failed stages or terminate tasks. Preview files in each task's own artifact directory and use execution history and review feedback to improve workflows for future tasks.
+  zh: 一个插件，两种工作方式：面向人的看板与面向 AI 的工作流。看板支持与 Agent 共同管理工作区任务，提供拖拽卡片、搜索、优先级、标签、截止日期，以及 Markdown、图片和评论。工作流支持在对话中创建和修改可复用流程、配置阶段模型，由 AI 沿用 DSH 工具与授权逐阶段执行；通过流程图跟踪进度、查看原生阶段会话，在人工审核点通过或反馈打回，并支持失败重试与任务终止。每个任务拥有独立产物目录，可原地预览文件，还能结合执行历史和审核意见优化后续流程。

@@ -1,0 +1,6 @@
+url: https://github.com/maryhodges5070-art/dsh-llm-vertex
+name: maryhodges5070-art/dsh-llm-vertex
+category: model
+description:
+  en: 'Google Cloud Vertex AI (Gemini) provider: ADC or service-account credentials, project and region settings, thought-signature replay for tool calls, rate limiting, and a settings page with a live connectivity test.'
+  zh: '在 DeepSeek Harness 中接入 Google Cloud Vertex AI（Gemini）：支持 ADC 或服务账号凭证、项目与区域配置、工具调用的签名回传、限流，以及带连通性测试的设置页。'

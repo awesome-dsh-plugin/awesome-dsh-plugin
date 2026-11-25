@@ -1,0 +1,7 @@
+url: https://github.com/qianchuan-ai/dsh-vidstyle
+name: qianchuan-ai/dsh-vidstyle
+category: skill
+description:
+  en: 'AI video prompt style library with a Chinese aesthetic: 12 visual styles (6 original Chinese styles, 6 international rewrites) that turn a look into paste-ready Chinese prompts for Jimeng, Seedance, Kling and Tongyi Wanxiang.'
+  zh: '中式美学 AI 视频提示词风格库：12 个视觉风格（6 个国风原创、6 个国际风格重写），把题材翻成可直接粘贴进即梦 / Seedance / 可灵 / 通义万相的中文提示词；本库只产出提示词，不生成图片或视频。'
+icon: https://raw.githubusercontent.com/qianchuan-ai/dsh-vidstyle/main/assets/icon-180.png

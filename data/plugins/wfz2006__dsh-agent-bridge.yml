@@ -1,0 +1,7 @@
+url: https://github.com/wfz2006/dsh-agent-bridge
+name: wfz2006/dsh-agent-bridge
+category: session
+tarball: https://github.com/wfz2006/dsh-agent-bridge/releases/latest/download/dsh-agent-bridge.tgz
+description:
+  en: "Browse local AI agent projects in one DeepSeek Harness panel: filter and pin projects, pick memories, skills, and recent sessions, then continue in the original directory with an editable DSH handoff draft or export it as Markdown."
+  zh: "在 DeepSeek Harness 中浏览本机其他 AI Agent 的项目：筛选置顶、勾选记忆与 Skills、带上近期会话，然后在原工作目录用可编辑的交接草稿继续开发，或导出为 Markdown。"

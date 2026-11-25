@@ -1,0 +1,6 @@
+url: https://github.com/qq666-star/dsh-topic-split
+name: qq666-star/dsh-topic-split
+category: session
+description:
+  en: 'Split a long DSH conversation by topic or exact turns into independent, resumable sessions, with coverage checks and optional remove-and-archive. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把长 DSH 会话按主题或任意轮次拆成可继续的独立会话，支持覆盖率核对与导出后剪除归档。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-wechat-draft-gate
+name: dingchenhui0618-arch/dsh-wechat-draft-gate
+category: security
+description:
+  en: 'Two-stage approval gate for outbound WeChat replies in DeepSeek Harness: every reply is staged as an editable local draft that keeps the quoted original and its voice-transcription source/confidence; only a panel confirmation or /send <id> releases it through a configured bridge, and unconfirmed drafts expire with a recorded reason. Dry-run by default, JSONL audit, zero dependencies. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '微信出站两级审批闸门：Agent 的回复先落成本机可编辑草稿，保留引用原文与语音转写来源/置信度；只有面板「确认发送」或 /send <id> 才经配置的桥接真正发出，未确认草稿到期自动作废并记录原因。默认演练模式、JSONL 审计、零运行时依赖。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

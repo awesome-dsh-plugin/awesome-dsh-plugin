@@ -1,0 +1,7 @@
+url: https://github.com/Shiningstar521/dsh-chat-mode
+name: Shiningstar521/dsh-chat-mode
+category: session
+description:
+  en: 'Chat / work mode switch: chat conversations hide every tool, work mode reuses the conversation workspace.'
+  zh: '聊天 / 工作模式开关：聊天模式隐藏全部工具，工作模式沿用该对话的工作区。'
+icon: https://raw.githubusercontent.com/Shiningstar521/dsh-chat-mode/main/assets/icon-180.png

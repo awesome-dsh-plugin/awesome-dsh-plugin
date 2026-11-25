@@ -1,0 +1,7 @@
+url: https://github.com/isdou/dsh-journal
+name: isdou/dsh-journal
+category: session
+tarball: https://github.com/isdou/dsh-journal/releases/download/v0.1.3/isdou-dsh-journal-0.1.3.tgz
+description:
+  en: Generate structured work reports and summaries from DSH conversations and file changes, with local history and Markdown export.
+  zh: 从会话足迹与文件改动中一键提炼工作成果与待办项，生成结构化日报周报，支持本地留存与 Markdown 导出。

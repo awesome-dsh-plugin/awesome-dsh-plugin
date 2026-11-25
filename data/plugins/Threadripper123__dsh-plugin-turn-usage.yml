@@ -1,0 +1,6 @@
+url: https://github.com/Threadripper123/dsh-plugin-turn-usage
+name: Threadripper123/dsh-plugin-turn-usage
+category: usage
+description:
+  en: "A per-turn footer listing the tools, MCP servers, knowledge bases, and skills a turn used."
+  zh: "每轮对话末尾的「本轮调用」尾注：工具 / MCP / 知识库 / skill 一眼可见，点开看全部明细。"

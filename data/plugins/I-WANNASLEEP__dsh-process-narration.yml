@@ -1,0 +1,7 @@
+url: https://github.com/I-WANNASLEEP/dsh-process-narration
+name: I-WANNASLEEP/dsh-process-narration
+category: ui
+description:
+  en: 'Adds two system-prompt sections: process narration, so the agent states each step in plain words before running tools, and a guard warning that dsh-diff-stat, dsh-shell-card-plus and dsh-auto-collapse collide with dsh-human-steps.'
+  zh: '往系统提示里加两段：一段让 agent 动手前先用一句人话说清这一步要做什么、把工具说明写成人话；一段提醒 dsh-diff-stat、dsh-shell-card-plus、dsh-auto-collapse 与 dsh-human-steps 抢同一个排号，装了必坏一个。'
+icon: https://raw.githubusercontent.com/I-WANNASLEEP/dsh-process-narration/main/icon-180.png

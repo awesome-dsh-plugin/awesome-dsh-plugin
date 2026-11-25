@@ -1,0 +1,8 @@
+url: https://github.com/zhan1024/dsh-zentao-buglens
+name: zhan1024/dsh-zentao-buglens
+category: workflow
+description:
+  en: BugLens turns annotated screenshots and page evidence into guided bug reports, suggests frontend/backend triage and recent assignees, and creates ZenTao bugs with attached materials.
+  zh: 禅图 BugLens，根据截图圈选和页面证据，通过推荐问答补全故障材料，建议前后端排查分工和最近指派人，并附图提交禅道 Bug。
+tarball: https://github.com/zhan1024/dsh-zentao-buglens/releases/download/v0.1.0/dsh-zentao-buglens-0.1.0.tgz
+icon: https://raw.githubusercontent.com/zhan1024/dsh-zentao-buglens/main/docs/icon.png

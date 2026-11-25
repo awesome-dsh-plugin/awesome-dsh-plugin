@@ -1,0 +1,7 @@
+url: https://github.com/Ww-Cooooo/easy-ask-ai-dsh
+name: Ww-Cooooo/easy-ask-ai-dsh
+category: workflow
+description:
+  en: 'Adapts Easy Ask AI Skill''s Prompt Ready and Get Clear flows to Harness chats with a native sidebar; the original Skill can be installed in other compatible Agents.'
+  zh: '基于 Easy Ask AI Skill 改编，在 Harness 原聊天中问清需求与修改方向，并用原生侧栏跟踪；其他支持 Skill 的 Agent 可安装原版 Skill。'
+tarball: https://github.com/Ww-Cooooo/easy-ask-ai-dsh/releases/download/v0.4.10/eh3-dsh-easy-ask-ai-0.4.10.tgz

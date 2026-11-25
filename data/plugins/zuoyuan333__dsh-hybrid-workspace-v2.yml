@@ -1,0 +1,6 @@
+url: https://github.com/zuoyuan333/dsh-hybrid-workspace-v2
+name: zuoyuan333/dsh-hybrid-workspace-v2
+category: session
+description:
+  en: 'Single-chat multi-workspace context router for DSH: IDF routing, structured memory, budgeted context, per-workspace policies, migration, and an inspectable panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '单聊天框多工作区上下文路由：IDF 路由、结构化记忆、预算化上下文、每区策略、迁移与可解释面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

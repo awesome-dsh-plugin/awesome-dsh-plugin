@@ -1,0 +1,6 @@
+url: https://github.com/JiamingShi-JsPhys/chelate-shell
+name: JiamingShi-JsPhys/chelate-shell
+category: workflow
+description:
+  en: 'Chains twenty-five research and engineering skills as one pipeline in a fixed stage order. Each skill owns a stage, and when a stage fails its check the stages after it do not run, so the run stops where the problem is. The checks compute rather than ask a model for an opinion: atom conservation, units and CAS, DOI lookup against Crossref, dataset leakage. Nothing reaches results/ without a one-time approval token that a person issues.'
+  zh: '把 25 个科研与工程技能按固定阶段排成一条流水线。每个技能占一个阶段，上一阶段的检查不通过时，后面的阶段不会执行，失败的运行停在出问题的那一步。检查由代码计算，包括原子守恒、量纲与 CAS、Crossref DOI 核验和数据集泄漏检测，结论不来自模型自评。产物写入 results/ 之前还需要一次人工批准，令牌由人签发。'

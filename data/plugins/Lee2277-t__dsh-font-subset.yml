@@ -1,0 +1,7 @@
+url: https://github.com/Lee2277-t/dsh-font-subset
+name: Lee2277-t/dsh-font-subset
+category: tools
+description:
+  en: Cut a font down to the characters a page actually uses. `font_coverage` reports which characters a font is missing, before the cut turns them into tofu boxes; `font_subset` then emits a woff2 (or woff or ttf) containing only what the page needs. Measured on simhei.ttf - 9.3 MB to 3.5 KB for 24 distinct characters. Characters can be given directly, read from a file, or collected from an html/vue/js/ts/css tree.
+  zh: 按实际用到的字裁剪字体。`font_coverage` 先报出字体里缺哪些字——在裁剪把它们变成豆腐块之前；`font_subset` 再输出只含所需字符的 woff2（或 woff、ttf）。实测 simhei.ttf：24 个不同字，9.3 MB 裁到 3.5 KB。字符可以直接给、从文件读，或从 html/vue/js/ts/css 目录里收集。
+icon: https://raw.githubusercontent.com/Lee2277-t/dsh-font-subset/main/assets/icon-180.png

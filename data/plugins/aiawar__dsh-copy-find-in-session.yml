@@ -1,0 +1,7 @@
+url: https://github.com/aiawar/dsh-copy-find-in-session
+name: aiawar/dsh-copy-find-in-session
+category: session
+description:
+  en: 'Ctrl+F find bar over a DSH session transcript: every hit is highlighted in place with the CSS Custom Highlight API without touching the transcript DOM, stepping jumps to the nearest match and holds the scroll position against the tail follower, hits clear when the session changes, and message text stays natively selectable for Ctrl+C.'
+  zh: 'DSH 会话内的 Ctrl+F 查找与复制插件：命中通过 CSS Custom Highlight API 原地高亮、不改写会话 DOM，逐个跳转按离视野最近优先并顶住流式输出的自动跟底，切换会话即清空命中，消息正文保持原生可选中并可直接 Ctrl+C 复制。'
+tarball: https://github.com/aiawar/dsh-copy-find-in-session/releases/download/v1.0.0/dsh-copy-find-in-session-1.0.0.tgz

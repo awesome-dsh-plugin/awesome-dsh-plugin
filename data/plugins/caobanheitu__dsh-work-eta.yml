@@ -1,0 +1,9 @@
+# 收录条目：把本文件复制到
+# awesome-dsh-plugin/awesome-dsh-plugin 的 data/plugins/ 下，文件名保持不变。
+# 字段规范见该仓库 contributing.md：仅允许 url / name / category / description / tarball。
+url: https://github.com/caobanheitu/dsh-work-eta
+name: caobanheitu/dsh-work-eta
+category: workflow
+description:
+  en: 'A live "how much longer" reading below the composer while a turn runs. With a todo plan it prices the plan from per-item durations measured in this session and counts the plan elapsed time down continuously, so tool calls never freeze or restart the estimate; without a plan it uses the session finished-turn average, and with neither it shows elapsed time only. An "est." tag marks assumption-backed readings and the plugin says plainly when a turn has run past the estimate. Built on a session projection plus one composer dock slot; no timers on the host, no extra model requests, zero runtime dependencies, no build step.'
+  zh: '在输入框下方实时显示本回合还要多久。有 todo 计划时，按本会话实测的每项耗时给整份计划定价，并随计划已用时间持续倒计时——工具调用不会冻结或重启读数；没有计划时按本会话已完成回合的平均时长推算，两者都没有时只显示已用时间。假设态带「估」标记，超出预估时如实说明。基于会话投影与一个 composer dock 槽位实现；宿主机不开定时器、不发额外模型请求、零运行时依赖、无构建步骤。'

@@ -1,0 +1,7 @@
+url: https://github.com/Genesi599/dsh-plugins/tree/main/plugins/reminders
+name: Genesi599/dsh-plugins#reminders
+category: workflow
+description:
+  en: 'Runs allowlisted Python hook scripts on session events and injects the text they return into the next turn, so standing rules live in editable .py files instead of the prompt. Needs Python on PATH; it only runs scripts whose names are on its built-in allowlist.'
+  zh: '在会话事件上按白名单运行 Python hook 脚本，并把脚本返回的文本注入下一轮，让常驻规则写在可编辑的 .py 文件里而不是提示词里。需要 PATH 里有 Python；只运行名字在其内置白名单里的脚本。'
+icon: https://raw.githubusercontent.com/Genesi599/dsh-plugins/main/plugins/reminders/assets/icon-180.png
