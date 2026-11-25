@@ -1,0 +1,6 @@
+url: https://github.com/zhangxihuan666/dsh-calendar-board
+name: zhangxihuan666/dsh-calendar-board
+category: ui
+description:
+  en: 'A floating mini month calendar on the DeepSeek Harness main screen. Only today gets a red dot; festivals and milestones use yellow or green dots. Click through to month, week and day views where tasks and monthly outcomes are grouped by project, and start a chat with a task''s date, project, outcome and note already attached.'
+  zh: 在 DeepSeek Harness 主界面右下角放一张迷你月历：只有今天一个红点，节日/节点用黄点或绿点；点开是月/周/日视图，任务和本月产出按项目分组；点任务可把日期、项目、产出和备注一起带进新会话。
