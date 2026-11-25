@@ -1,0 +1,6 @@
+url: https://github.com/babycannotsay/dsh-json-tree-preview
+name: babycannotsay/dsh-json-tree-preview
+category: ui
+description:
+  en: 'Tree view for JSON files in the right-sidebar file preview: per-node expand and collapse, stepping through search matches, copying a path or a value, and virtual scrolling for large files.'
+  zh: '右侧栏文件预览里的 JSON 树视图：逐节点展开折叠、逐个跳转搜索命中、复制路径或值，超大文件用虚拟滚动保持流畅。'
