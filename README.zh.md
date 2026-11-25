@@ -1744,6 +1744,7 @@ dsh plugin --profile web add dshmarket
 - [NOirBRight/dsh-codex-sidebar](https://github.com/NOirBRight/dsh-codex-sidebar) — DSH 的 Codex 风格详情侧栏：提供 Files、Review、Browser 与 Terminal 面板、对话文件链接和 diff 统计、批注，以及 Host 管理的浏览器控制。
 - [NOirBRight/dsh-llm-assistant](https://github.com/NOirBRight/dsh-llm-assistant) — 常驻 Web 席位，背后是独立助理会话：对话、图片、提醒、值班心跳，以及按需只读引用当前任务。
 - [NOirBRight/dsh-llm-providers-ui](https://github.com/NOirBRight/dsh-llm-providers-ui) — LLM Providers 设置页的挂载 owner：provider 卡片、拖拽排序与 picker 排序。
+- [NomanLord/dsh-learning-todo](https://github.com/NomanLord/dsh-learning-todo) — 侧栏底部的学习待办卡片：新增任务、勾选完成，一键把勾完的任务归档进可折叠的已完成分组（带归档日期）；列表存在本机浏览器里，不上传。
 - [nomxy/dsh-workspace-resizer](https://github.com/nomxy/dsh-workspace-resizer) — 侧边栏「工作区」与导航之间的可拖动分隔条，上拖把高度让给会话列表，双击恢复默认。
 - [noname-nikke/dsh-model-picker-wide](https://github.com/noname-nikke/dsh-model-picker-wide) — 加宽 DSH 输入框的模型选择器，带 provider 后缀或本身很长的模型名不再被省略号截断：用一份样式表把模型按钮和下拉面板改为可配置宽度（默认 360 px / 480 px），并在 DSH 设置里新增「模型选择器宽度」一栏，两处宽度即时生效，超长名字还可以选择折行而不是被截断。同时适配 better-panel 浮层与官方模型选择界面，不替换其中任何一个，也不改动模型列表。
 - [NoneadChina/dsh-nonead-prompt-recall](https://github.com/NoneadChina/dsh-nonead-prompt-recall) — 在 DSH 输入框里提供 shell 风格的提示词历史：空输入框按 ↑ 取回上一条并继续向前翻，按 ↓ 向后回到空草稿；历史按工作区隔离、落盘并在重启后保留，且只记录人工输入，一旦手动输入或编辑草稿，↑/↓ 就恢复为正常的光标移动。另提供设置页可导出、导入和清空历史。
@@ -3077,6 +3078,7 @@ dsh plugin --profile web add dshmarket
 - [iamjager416/dsh-pixiv-autodownload](https://github.com/iamjager416/dsh-pixiv-autodownload) — 按你指定的画师增量下载 Pixiv 新作品，下过的自动跳过，每轮同步结果可推送到 QQ。
 - [iasiv5/dsh-quota-watch](https://github.com/iasiv5/dsh-quota-watch) — 在 DSH 中查看 GLM Coding Plan 与 GitHub Copilot 的服务商额度快照：可拖动悬浮胶囊与详情面板展示额度窗口、重置时间、分模型用量与 Copilot 额度，附默认隐藏的可选侧边栏卡片；凭据由 DSH 宿主解析，不保存额度历史。
 - [ibka512/dsh-ibka-balance](https://github.com/ibka512/dsh-ibka-balance) — 输入框下方常驻余额卡片：实时显示 DeepSeek API 账户余额，每 5 分钟自动刷新，支持手动刷新，余额过低自动变色提醒。
+- [icedkong/dsh-glmteam-quota](https://github.com/icedkong/dsh-glmteam-quota) — 从 DSH Quota+（WXYS1209/dsh-quota-cordis）分叉的额度面板，新增 GLM 团队版套餐额度：以 type=2 加组织/项目范围头查询官方 Coding Plan 接口。保留上游的 DeepSeek、GLM、MiniMax、OpenCode、Codex 与 OpenAI 组织支出适配；输入框显示 5 小时能量环，弹窗为可切换个人版/团队版的剩余额度卡片。上游的「模型」标签已移除，交由 DSH 官方页面。
 - [Iceseas/dsh-ds-whale](https://github.com/Iceseas/dsh-ds-whale) — 右下角小鲸鱼挂件：显示 DeepSeek 余额与官网口径的今日用量，每轮结束播报本轮花费，并提供峰谷定价倒计时；另有六种状态立绘、点击刷新、天气查询与中英双语界面。
 - [Icstick/dsh-usage-card](https://github.com/Icstick/dsh-usage-card) — 侧栏常驻卡片：按 DeepSeek 官方价目（含峰谷与缓存差价）把本会话 token 折算成人民币，并按来源拆开上下文占比；逐轮计价，另附 Markdown/CSV 历史报告。
 - [igormel81/dsh-chat-cost](https://github.com/igormel81/dsh-chat-cost) — 为 DSH Web UI 的每个对话实时计算 token 费用：本对话、其子代理与整棵会话树，价格来自内置的 models.dev 快照：七家供应商、139 个有价模型，缓存读写费率按供应商实际公布的取值，DeepSeek 则使用其官方峰谷价格表。每个完成的回答都会在对话中显示自身费用，未打开的对话则按日志计价而不是整行消失。费用按区间计价，依据写入项目目录的只追加 JSONL 账本，因此已记录的工作保留当时的费率。此外还提供：按金额预算排布的工作计划、展示值得接入哪些模型的路由方案比较、以英语/中文/俄语生成的计划文档，以及当费用未归入任何计划单元时的提醒。
@@ -5245,6 +5247,7 @@ dsh plugin --profile web add dshmarket
 - [JochenYang/dsh-rewind-plugin](https://github.com/JochenYang/dsh-rewind-plugin) — 撤回已发送的消息：会话日志只追加、不删除任何东西，被撤回的回合退出模型上下文并从对话界面消失、原文回到输入框，被这些回合改动的文件留在隔离区里——设置里独立一页，可查看可清理。
 - [jockerbear/dsh-workspace-migrate](https://github.com/jockerbear/dsh-workspace-migrate) — 按工作区迁移 DSH：把一个项目的会话、文件与附件打包，在新机器上还原到指定根目录并重写历史绝对路径，之后只增量同步改动的文件；旧机器上重新激活的会话再次导入时会快进追加，不再整条跳过。
 - [Joe-0202/dsh-archive-manager](https://github.com/Joe-0202/dsh-archive-manager) — 双 Tab 归档面板（已归档 / 活跃），每行的归档或取消归档与彻底删除并排；显示绑定的工作目录且可直接点击打开，删除后的归档记录进入待清理队列，避免已删会话重新出现在活跃列表。
+- [JoeyRedfield/dsh-obsidian-wikilinks](https://github.com/JoeyRedfield/dsh-obsidian-wikilinks) — 把会话正文里的 Obsidian 双链、以及路径带空格因而解析失败的 Markdown 链接，变成可点链接：按会话工作区解析笔记位置，点击在右侧栏预览打开，⌘ 点击交给默认应用。
 - [john-walks-slow/dsh-message-datetime](https://github.com/john-walks-slow/dsh-message-datetime) — 每轮对话开始向模型上下文注入单行时间戳读数（星期 / 日期 / 时间 / UTC 偏移 / IANA 时区），收尾再注入 Turn ended 关闭读数——模型始终知道现在几点、今天星期几、上一轮何时结束，日期运算与跨轮间隔不再靠猜；轻量时钟感知，每条约 30 token。
 - [john-walks-slow/dsh-session-prefix](https://github.com/john-walks-slow/dsh-session-prefix) — 基于 Jev 决策模型或 Agent 工具为会话自动分类，并将任务阶段直观展示为标题前缀 Emoji（进行中 🚧、阻塞 ⏸️、待验收 👀、已完成 ✅、规划 💡、排障 🐛）。支持生命周期状态自愈、可选 Jev 决策推断（需配置 Jev API Key）、Agent 自主标记与可视化设置面板。
 - [JohnshyCY/dsh-session-active-top](https://github.com/JohnshyCY/dsh-session-active-top) — 把正在运行的对话浮到所在工作区会话列表的最上方，运行结束后仍保留在该位置。
@@ -5704,6 +5707,7 @@ dsh plugin --profile web add dshmarket
 - [wx-yss/dsh-composer-enter](https://github.com/wx-yss/dsh-composer-enter) — 让 DSH 0.1.5 Web 输入框使用 Enter 换行，同时保留 Cmd/Ctrl+Enter 提交消息。
 - [wyewyewye/dsh-session-title-regen](https://github.com/wyewyewye/dsh-session-title-regen) — 根据会话最近 10 轮用户 prompt，用该会话最近一次使用的模型重新生成标题，预览确认后写回。
 - [wzn16/dsh-auto-archive](https://github.com/wzn16/dsh-auto-archive) — 按闲置天数自动归档冷会话（带运行中、驻留会话安全护栏），并提供归档会话管理面板：查看、释放、安全删除与内容预览。
+- [x-cores/dsh-recent-sessions](https://github.com/x-cores/dsh-recent-sessions) — 主面板会话总览：跨工作区列出全部会话，按更新时间倒序，支持搜索、分页、归档标识、点击直达与工作区过滤列表。
 - [xchannel1987/dsh-session-xc](https://github.com/xchannel1987/dsh-session-xc) — DSH 会话管理增强插件 - 工作区会话数展示、归档会话面板（支持恢复/删除）、拖拽移动会话到其他工作区。
 - [xCube007/dsh-message-rewind](https://github.com/xCube007/dsh-message-rewind) — 给自己的消息气泡加「编辑 / 删除」：编辑会截断其后的轮次并重发新内容，删除会移除这条消息及其后的轮次；两者都可选择同时回滚被移除轮次记录到的文件改动（文件之后又被改过则拒绝回滚）。侧边栏始终只保留一条会话。
 - [xfgil/dsh-session-clock](https://github.com/xfgil/dsh-session-clock) — 给指定会话授时，并给出「距上次对话过去多久」。补上宿主时间上下文只算「距上一条消息」、无法按会话开关的缺口。
@@ -7675,6 +7679,7 @@ dsh plugin --profile web add dshmarket
 - [po-et/dsh-sheet-diff](https://github.com/po-et/dsh-sheet-diff) — 按业务主键对齐 CSV/XLSX 改动，离线记录审阅结论与批注，核对源文件后生成反馈交接包。
 - [poplarity/dsh-science-workbench](https://github.com/poplarity/dsh-science-workbench) — 可复现科学分析工作台：agent 驱动的 cell、内联图形与反馈重画、manifest 溯源、环境快照与出版级出图技能（9 个 bio_* 工具 + 工作台界面）。
 - [Poy-Coder/dsh-repo-watch](https://github.com/Poy-Coder/dsh-repo-watch) — 仓库守望：后台盯着你的 GitHub 仓库，只在真的有人等你时才说一句——你提的 thread 有人回复、有人 @ 你、请你 review、或有人给你的仓库开 issue。推送是一句报数（「有 4 条需要你」）而不是刷屏；要明细时再展开谁说了什么，deep 摘要给出每条的类型、该谁动（已修复 / 在推进 / 等你补充）、优先级及其理由、以及相似的旧 thread。关闭的 issue/PR 会自动结案，标了「已完成」的条目不会被下一轮轮询覆盖。推送通过飞书或微信通道插件完成；没有通道时只能查询，不能推送。
+- [pravets/dsh-ai-wiki](https://github.com/pravets/dsh-ai-wiki) — 面向 ai-wiki-template 知识库的 ACL 感知只读 BM25 网关：六个工具分别用于检索、读取页面或小节、按分类筛选目录、查看链接与反向链接、索引状态和 frontmatter 校验；使用俄语 Snowball 词干与 SQLite FTS5，不写入知识库，也不需要 Python。
 - [pravets/dsh-edt-projects#dsh-edt-projects](https://github.com/pravets/dsh-edt-projects/tree/master/packages/dsh-edt-projects) — 面向 1C 开发的 MCP 枢纽：通过 EDT-MCP 保持 1C:EDT 连接，按需以工作区根目录启动 BSL Language Server，并提供逐项目设置、只读文档 wiki、模型规则以及 SonarQube/GitLab 技能。需安装 1C:EDT 2026.1/2026.2 并运行 EDT-MCP（默认 127.0.0.1:8765）。
 - [PriceDotWin/pricewin-dsh](https://github.com/PriceDotWin/pricewin-dsh) — 通过远程 PriceWin MCP 服务器（无需账号或 API key）实时比较 Booking.com、Agoda、Trip.com、Traveloka 等预订网站的酒店与机票价格，并附带旅行搜索 skill。在 Web 界面中结果以卡片呈现：酒店照片、评分、整段住宿总价及各网站带链接的价格；航班显示起降时间、经停与各网站票价。搜索条件会发送到 mcp.price.win。
 - [project-hy/dsh-claude-delegate](https://github.com/project-hy/dsh-claude-delegate) — 把自包含的编码子任务委派给本机 Claude Code（官方 Agent SDK 驱动），结果回传主会话：19 个参数可按次控制模型、思考强度、权限模式、允许工具、轮次与预算上限；后台作业立即返回 jobId 并支持增量读取；结果附会话句柄，传回 resume 即可在同一会话续跑；预计超过 20 秒的命令经内置 mcp__dsh__shell 通道逐行实时输出，不占用模型上下文；会话内附 Claude Code 监控面板（任务列表、结构化过程视图、实时输出块、一键取消）；委派规程以运行时技能注册，安装插件即安装技能。
@@ -8107,6 +8112,7 @@ dsh plugin --profile web add dshmarket
 - [xizhilang2012/dsh-claim-gate](https://github.com/xizhilang2012/dsh-claim-gate) — 公开发言前的自证闸门：断言必须给出可核对的出处（http(s) 链接 + 不少于 8 字原文），正文里的数字必须能在引文中找到，引文与正文词汇重叠低于 10% 判为无效引用；只有二手来源时不允许使用绝对化措辞。判定全部由确定性规则完成，不调用模型、不联网。guard 子命令在不过闸时不执行后续发布命令（fail-closed），被拦时给出解释与可选改法；同一话题第二次提交必须带 --ack 回执说明改了什么，三次不过即停止并交回人工。提供 check / explain / fix / guard 四个命令，30 个测试。
 - [XMoon/dsh-profile-settings](https://github.com/XMoon/dsh-profile-settings) — 为 DeepSeek Harness 提供按 profile 分层的设置覆盖：全局 settings.yaml 仍为基线，每个 profile 可用自己的 profiles/<name>/settings.patch.yml 覆盖任意设置命名空间——对象段递归合并，数组与标量整体替换，!unset 显式屏蔽继承值。覆盖层对现有插件透明（照常读 ctx.settings），写入只落在 profile 覆盖层；官方 schema 语义、revision、expectedRevision 冲突检测、watcher 与事件均不改动。附带 settings 命令族（get/set/unset/mask/unmask/promote/demote/migrate/diff/layers），并在 Web 设置面板经 loopback RPC 通道提供 Profile Settings 区块。
 - [xmutfyh/dsh-plugin-writing-guard](https://github.com/xmutfyh/dsh-plugin-writing-guard) — 论文写作守卫（中英双语）：去掉 AI 式防御性写作，润色时守住科学证据（数字/引用/主张强度/零结果/scope），并按目标期刊校准写作风格（Journal Profile + Journal Fit）。纯本地正则/统计，零网络零 LLM；提供 writing_rules / writing_audit / writing_style_profile / writing_journal_profile，论文写入后自动审计。
+- [xqe-bkflda/dshgo-vmbridge](https://github.com/xqe-bkflda/dshgo-vmbridge) — 通过 adb 驱动 AndVM 里的 Android 虚拟机，给 AI 提供读屏、点击输入、root shell、装 APK 和截图等工具。
 - [XRC111/dsh-apikeys](https://github.com/XRC111/dsh-apikeys) — 出站 API 调用的凭证代理：把 GitHub、Cloudflare、Vercel、npm、Docker Hub、Hugging Face 与自定义平台的 Key 存起来，并由 Host 侧发起调用，模型始终不持有 Key。apikey_call 的参数是路径而非 URL，主机由平台定义固定；apikey_platforms 列出账号但不返回值；apikey_key 读取、写入或清除单个 Key；apikey_upload 从白名单目录读取本地文件发 multipart。支持五种认证方式（Bearer、自定义头、x-api-key、Basic、查询串）。可选层默认关闭或不改变既有行为：用 scrypt 派生密钥、头部参与认证的 AES-256-GCM 加密保管库，只记录凭证操作、不记录任何 Key 值的 SHA-256 哈希链，针对本次实际所用 Key 的响应脱敏，以及按平台在 401/403/429 时故障转移。附带 CLI（list、verify、audit、call），无需 harness 即可读同一个保管库。默认（exposeKeys 开启）时 apikey_key 工具可以把已存密钥的值返回给模型，从而写进会话日志；关闭 exposeKeys 可让密钥只留在 Host 内。
 - [xsnnnnnn/dsh-coros](https://github.com/xsnnnnnn/dsh-coros) — 把高驰（COROS）官方 MCP 服务接入 DeepSeek Harness：自包含的本机 stdio↔HTTP 桥 + 本机 OAuth 登录，在当前端点上提供 34 个工具，覆盖睡眠、HRV、静息心率、恢复、训练负荷、活动与 FIT 文件，以及训练课程与训练计划的增删改查和排期。
 - [xtt-xt/dsh-custom-tool-studio](https://github.com/xtt-xt/dsh-custom-tool-studio) — 用 Python 在网页、对话或 dsh-go 手机 App 的原生面板里编写自定义工具，保存后免重启注册成 DSH 工具；危险工具每次执行都走内置审批，工具可分组成包，还可选「解锁模式」按对话逐步放出。需 PATH 中有 Python 3。
