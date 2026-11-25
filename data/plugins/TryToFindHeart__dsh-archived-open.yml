@@ -1,0 +1,6 @@
+url: https://github.com/TryToFindHeart/dsh-archived-open
+name: TryToFindHeart/dsh-archived-open
+category: session
+description:
+  en: "Double-click an archived session in the sidebar to unarchive and open it in one gesture, replacing DSH's native double-click-to-rename."
+  zh: "双击侧栏中的归档会话，自动取消归档并直接打开，同时替代 DSH 原生的双击重命名。"
