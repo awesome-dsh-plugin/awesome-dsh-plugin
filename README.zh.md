@@ -11627,6 +11627,7 @@ dsh plugin --profile web add dshmarket
 - [liuweibing7/dsh-plugin-inspector](https://github.com/liuweibing7/dsh-plugin-inspector) — 在插件详情页查看插件的声明式 patch 与安装后的代码文件。
 - [lixian292/dsh-plugcraft](https://github.com/lixian292/dsh-plugcraft) — 复用优先的插件创作工作台：先澄清需求，检索已装插件、市场目录与 GitHub 中可复用的实现，再解构剩余缺口，并在安装前校验生成的插件包。
 - [lizhijie429/dsh-root-temp-guard](https://github.com/lizhijie429/dsh-root-temp-guard) — 拦截在仓库根目录创建临时文件或目录的工具调用，在回合结束时把新增的根目录临时项移入 tmp/_quarantine，并提供图形化设置页。
+- [Liziyu352/dsh-desktop-web](https://github.com/Liziyu352/dsh-desktop-web) — 桌面端启动时顺带跑一个 `dsh web` 子进程，不必再手敲命令就能有网页版，并把该进程打印的带令牌地址写到 `$DSH_HOME/desktop-autoweb.url`。子进程从桌面宿主的 CLI 入口拉起、剥掉 profile 标记以免两层嵌套；设置页可调端口，还有一个实验性开关：通过目录联接让网页版直接跑在桌面端 Profile 上，并重写一份 overlay 把服务器绑回回环地址。
 - [ljc6413/yihe-packs-dsh](https://github.com/ljc6413/yihe-packs-dsh) — 面向 DeepSeek Harness 的 YiHe pkg-dev 知识包：52 个领域包与 90 个 RFB 经验文件，用于编程认知。
 - [LLL-lyh0/dsh-accelerator](https://github.com/LLL-lyh0/dsh-accelerator) — 在 Windows 上从 DSH 内部修复被 SNI 阻断的域名，不依赖任何自建服务器。
 - [LLL-lyh0/dsh-autostart](https://github.com/LLL-lyh0/dsh-autostart) — 写 HKCU\Software\Microsoft\Windows\CurrentVersion\Run 让 DSH 在 Windows 登录时启动，插件被关闭或卸载时精确移除那一条。84 行，没有守护进程、没有后台进程、不装服务；通过 execFileSync 写入，安装路径含空格时仍保留引号，登录时确实能拉起。
