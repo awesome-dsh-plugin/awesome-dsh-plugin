@@ -1,0 +1,7 @@
+url: https://github.com/likaileave/dsh-session-title-tuner
+name: likaileave/dsh-session-title-tuner
+category: session
+description:
+  en: 'Regenerate a session title on demand from recent human messages, and optionally keep it updated as the conversation progresses; the automatic turn window adapts to session length and message size.'
+  zh: '按需根据最近的用户消息重新生成会话标题，并可在对话进行中自动更新；自动参考的轮数会随会话长度与消息体积自适应。'
+tarball: https://github.com/likaileave/dsh-session-title-tuner/releases/latest/download/dsh-session-title-tuner.tgz
