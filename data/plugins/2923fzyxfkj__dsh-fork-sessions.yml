@@ -1,0 +1,8 @@
+url: https://github.com/2923fzyxfkj/dsh-fork-sessions
+name: 2923fzyxfkj/dsh-fork-sessions
+category: session
+description:
+  en: Forks the current conversation from a Branch action in the session header and opens the branch in the right sidebar instead of the main column; once a branch exists, a Branches tab in the same header lists every branch, with actions to reopen one in the sidebar, open it as the main conversation, or drop its record.
+  zh: 在会话头部右上角加一个「分支」动作，把当前对话分叉成继承其上下文的分支会话，并在右侧栏打开而不切换主对话；有分支后头部出现「分支会话」选项卡，列出全部分支，可重新在侧栏打开、作为主对话打开或移除记录。
+tarball: https://github.com/2923fzyxfkj/dsh-fork-sessions/releases/download/v1.0.0/dsh-fork-sessions.tgz
+icon: https://raw.githubusercontent.com/2923fzyxfkj/dsh-fork-sessions/main/assets/icon-180.png
