@@ -2755,6 +2755,7 @@ dsh plugin --profile web add dshmarket
 - [zheng-builds/dsh-turn-toast](https://github.com/zheng-builds/dsh-turn-toast) — 每轮任务结束时在屏幕右下角弹一张提示卡并播放提示音。卡片文字取该轮回复的第一句、按可配置字数截断；全屏应用在前台时跳过，也可以只在 DSH 窗口不在前台时提醒。
 - [zhengbo2/dsh-glance](https://github.com/zhengbo2/dsh-glance) — 在桌面置顶小条里显示 Agent 的实时状态——空闲时一颗球，干活时变成带工具名和用时的小条，点开可看最后一条消息。
 - [dsh-settings-nav-organizer](https://github.com/zhengjy01/dsh-settings-nav-organizer) — 设置面板导航整理：第三方插件入口折叠为可展开的分组行，支持书签式自定义分组、折叠开关与自动分类（市场标签 → 名称规则 → AI 模型三级兜底）。
+- [ZhengXianTai/dsh-mindmap](https://github.com/ZhengXianTai/dsh-mindmap) — DeepSeek Harness（DSH）插件：会话树就是主面板思维导图；在毛玻璃浮窗里发送第一条消息，会生成子话题节点。
 - [zhengzeyong9527-droid/ai-input-enhancer](https://github.com/zhengzeyong9527-droid/ai-input-enhancer) — 为 DeepSeek Harness 对话输入框提供提示词优化：优化过程中可取消，完成后可一键撤回。
 - [Zheqiu2023/dsh-skill-catalog-refresh](https://github.com/Zheqiu2023/dsh-skill-catalog-refresh) — 让已打开会话的斜杠技能菜单与磁盘上的技能实时同步，新装技能无需新开会话即可出现。
 - [zheshiyigehenchang/dsh-chat-typography](https://github.com/zheshiyigehenchang/dsh-chat-typography) — 设置DSH Harness对话流字体、字号行间距，以及对话文字到窗口边缘的留白。
@@ -3856,6 +3857,7 @@ dsh plugin --profile web add dshmarket
 - [renge1145141919810/dsh-p3r-theme](https://github.com/renge1145141919810/dsh-p3r-theme) — Persona 3 Reload 风格皮肤：午夜蓝配色、青色细线、斜切蓝色选中板、类游戏式对话框。
 - [RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) — 一键换肤插件：8 套原创主题、背景壁纸（透明度/模糊）、强调色、主题包导入/导出+分享链接、收藏与随机，纯原生 token 系统接入。
 - [RexCue/dsh-wallpaper](https://github.com/RexCue/dsh-wallpaper) — DSH Web 壁纸皮肤：图片背景，可调透明度、压暗遮罩与模糊。
+- [reygreen1/dsh-theme-phantom-blade-zero](https://github.com/reygreen1/dsh-theme-phantom-blade-zero) — 把 DSH Web GUI 换成水墨武侠观感的主题（取材自《影之刃零》）：素笺/墨夜两套配色、主视觉作为画布、飘落的枫叶、细雨，以及输入框上方的配色切换控件。
 - [rinDBeans/codex-ui](https://github.com/rinDBeans/codex-ui) — 为 DSH Web 界面复刻 Codex 外观：窗口边缘发丝线与阴影、侧栏配色与行对齐、带推理强度功率轨的模型选择器、输入区与右栏几何、设置模态框全页改造、轨迹视图退出出口，以及可调主题、强调色、背景、前景、字体、侧栏半透明与对比度的设置卡。
 - [RizenHNT/dsh-skin-digital-arcade](https://github.com/RizenHNT/dsh-skin-digital-arcade) — 可选的像素霓虹街机皮肤：Fusion Pixel 字体、鲸鱼娘像素图标、十字准星与可拖动详情窗口，保留浅色/深色/跟随系统。v0.3.2 支持本地自定义称呼并完善手机菜单；完整街机首页、转场与数值 HUD 另附可选源码集成补丁。
 - [ruegg114514/dsh-colorlab](https://github.com/ruegg114514/dsh-colorlab) — 对话界面配色引擎：内置 Mariana 配色作为默认预设，提供 18 个颜色槽位与 9 个 Markdown 正文角色色，最多可保存 12 套预设；LaTeX 代码块通过移植 Sublime 自身的语法来上色。
