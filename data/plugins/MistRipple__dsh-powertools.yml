@@ -1,0 +1,6 @@
+url: https://github.com/MistRipple/dsh-powertools
+name: MistRipple/dsh-powertools
+category: tools
+description:
+  en: 'Sidebar toolbox for sessions, MCP servers and skills: browse and archive sessions with their subagent trees, toggle MCP servers, import and edit skills, and rewrite composer drafts with undo.'
+  zh: '侧栏工具箱：浏览和归档会话及其子 Agent 树、一步启停 MCP 服务器、导入与编辑 Skill，并可在输入框里改写草稿且支持撤销。'
