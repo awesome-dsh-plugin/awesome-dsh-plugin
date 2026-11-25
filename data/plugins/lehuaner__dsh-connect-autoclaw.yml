@@ -1,0 +1,6 @@
+url: https://github.com/lehuaner/dsh-connect-autoclaw
+name: lehuaner/dsh-connect-autoclaw
+category: model
+description:
+  en: 'Brings the models behind Zhipu AutoClaw (codename zwork) into the DSH model picker: zai_auto, zai_auto-fast, zai_glm-x-preview, zaicoding_glm-5.3, zai_glm-5.3-flash and zai_glm-5.3-flashx-legal, with per-model credit cost factors. Reuses the login state of an AutoClaw desktop client already signed in on this machine (DPAPI-decrypted local credential store) and talks pure HTTP to the acceleration gateway, so no API key is needed and the client need not stay running. Documents and works around the gateway body validation that rejects requests without the exact AutoClaw system persona or containing a max_tokens field; tool calls, streaming reasoning and a credit-balance badge in the composer are supported.'
+  zh: '把智谱 AutoClaw（代号 zwork）背后的模型接进 DSH 模型选择器：zai_auto、zai_auto-fast、zai_glm-x-preview、zaicoding_glm-5.3、zai_glm-5.3-flash、zai_glm-5.3-flashx-legal，带每模型积分倍率。复用本机已登录 AutoClaw 桌面客户端的登录态（DPAPI 解密本地凭据库），纯 HTTP 直连加速网关，因此不用填 API Key，客户端也不必常驻。文档记录并绕过了网关的请求体校验——缺少逐字一致的 AutoClaw system persona 或出现 max_tokens 字段都会被判 406；支持工具调用、流式思考，以及输入框的积分余额角标。'
