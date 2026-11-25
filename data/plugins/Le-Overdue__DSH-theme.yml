@@ -1,0 +1,7 @@
+url: https://github.com/Le-Overdue/DSH-theme
+name: Le-Overdue/DSH-theme
+category: theme
+icon: https://raw.githubusercontent.com/Le-Overdue/DSH-theme/main/assets/icon-180.png
+description:
+  en: Repaints the dsh Web UI with a warm cream-and-charcoal palette in light and dark, applied as a theme token layer.
+  zh: 用 Overdue 暖色系（奶油底 + 墨黑主按钮 + 柔和紫，暖炭底 + 琥珀色）重绘 DSH 网页界面，作为变量图层套用，不新增主题条目。
