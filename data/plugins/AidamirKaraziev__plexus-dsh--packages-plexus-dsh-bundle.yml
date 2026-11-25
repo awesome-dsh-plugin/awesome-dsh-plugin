@@ -1,0 +1,5 @@
+url: https://github.com/AidamirKaraziev/plexus-dsh/tree/main/packages/plexus-dsh-bundle
+name: AidamirKaraziev/plexus-dsh#plexus-dsh-bundle
+category: usage
+description:
+  en: 'Token cost saving bundle of four plugins: a meter that shows dollars and percent of the rate-limit window after each turn, a warmer that keeps the prompt cache alive while you pause, a cap that truncates large read, grep and bash results, and a scout tool that does search and reading in a child session on a cheaper model.'
