@@ -1,0 +1,6 @@
+url: https://github.com/linseasea/dsh-mycat
+name: linseasea/dsh-mycat
+category: session
+description:
+  en: 'Session workbench that takes over the sidebar workspace area: a pinned-session area with four session states, eleven session management tools (create, seed, rename, stop, pin/unpin, archive/unarchive, delete, restore, find), a recoverable trash, session stats and number-ordered workspaces.'
+  zh: '接管侧栏工作区区域的会话工作台：置顶会话区支持四种会话状态，提供 11 个会话管理工具（新建/开场白/改名/停止/置顶/取消置顶/归档/取消归档/删除/恢复/查找），带可恢复回收站、会话统计与按编号排序的工作区。'
