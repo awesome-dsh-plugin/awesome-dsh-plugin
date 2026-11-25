@@ -1,1 +1,7 @@
 
+url: https://github.com/siyu0209/dsh-office-forge
+name: siyu0209/dsh-office-forge
+category: docs
+description:
+  en: 'Office document toolkit for DSH: Word/Excel/PowerPoint/PDF/HTML generation, editing, audit, preview, and pluggable PPT adapters.'
+  zh: 'DSH 办公文档工具包：Word/Excel/PowerPoint/PDF/HTML 生成、编辑、审计、预览与可插拔 PPT 适配器。'
