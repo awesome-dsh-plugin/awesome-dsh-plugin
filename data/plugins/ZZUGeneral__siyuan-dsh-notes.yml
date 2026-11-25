@@ -1,0 +1,6 @@
+url: https://github.com/ZZUGeneral/siyuan-dsh-notes
+name: ZZUGeneral/siyuan-dsh-notes
+category: docs
+description:
+  en: 'Read, search and write SiYuan Notes through 17 siyuan_* tools behind read/write/daily/danger switches, with a settings page for server, API token and default notebook, and a chat-side drawer that browses notebooks, runs full-text search and previews Markdown.'
+  zh: '用 17 个 siyuan_* 工具读写思源笔记，按读 / 写 / 日记 / 删除四组开关控制；自带设置页填写服务器地址、API Token 与默认笔记本，聊天侧抽屉可浏览笔记本、全文检索并预览 Markdown。'
