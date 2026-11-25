@@ -1208,6 +1208,7 @@ dsh plugin --profile web add dshmarket
 - [jianlong-ww/dsh-explorer-editor](https://github.com/jianlong-ww/dsh-explorer-editor) — 在 DSH 的文件预览面板内直接编辑工作区文本文件，基于 Monaco 提供语法高亮与工程类型补全。
 - [JianYiAG/dsh-prompt-enhancer#dsh-prompt-enhancer](https://github.com/JianYiAG/dsh-prompt-enhancer/tree/main/dsh-prompt-enhancer) — 输入框提示词一键增强：模型选择器旁的按钮把草稿经一次辅助模型调用改写后直接写回输入框，输入框撤销不受影响；/prompt-enhance 命令把改写结果以命令结果行显示、不改动草稿；可在 profile 补丁里为增强调用单独固定 provider 和模型；改写忠实原文，保留意图、语言与信息量，代码、命令与路径原样保留，不编造事实、不输出占位文字。
 - [jiaxusummer/dsh-icon-changer](https://github.com/jiaxusummer/dsh-icon-changer) — 更换 DeepSeek Harness 桌面版的应用图标（窗口、任务栏、托盘）：可以换用自己的图，也可以恢复官方那套。换图标时 DSH 会退出并重启一次。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [jiaxusummer/dsh-stardewvalley-panel](https://github.com/jiaxusummer/dsh-stardewvalley-panel) — 在 DSH 侧边栏看 AI 玩星露谷：游戏日、天气、钱、体力、地点、心情曲线，可以开始、叫醒、带存档检查关游戏、强制回家睡觉、定时开玩。需要正版游戏和 SMAPI；游戏里的模组是 Darian 的 Blind Whale Farmer。
 - [jiaxusummer/dsh-window-mem](https://github.com/jiaxusummer/dsh-window-mem) — 记住 DeepSeek Harness 桌面版主窗口的位置、尺寸与最大化状态，下次启动时还原。仅支持 Windows；设置页有三个开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [JiayuREN1127/dsh-file-drag](https://github.com/JiayuREN1127/dsh-file-drag) — 把右侧文件区的文件和文件夹拖进输入框：落下的文件变成句中内嵌的小卡片、附件卡片或 @ 路径，可在设置里切换。
 - [jide315/dsh-reasoning-language](https://github.com/jide315/dsh-reasoning-language) — 通过可配置的系统提示词章节要求模型使用指定语言推理（默认简体中文），并默认展开思考行，同时保留用户手动折叠的状态。
@@ -5009,7 +5010,7 @@ dsh plugin --profile web add dshmarket
 - [chenkui-luo/dsh-session-attachment-repair](https://github.com/chenkui-luo/dsh-session-attachment-repair) — 在设置页列出历史引用了本地附件库中已丢失对象的会话，先备份日志、再把悬空引用替换成文本占位，使这些会话能重新发送消息。修复脚本需要 Node 22.15 及以上；设置卡片目前仅在 Windows 上验证过。
 - [chenproton/dsh-history](https://github.com/chenproton/dsh-history) — 会话历史消息查看：列出当前会话全部你发送的消息，支持排序、搜索、一键复制与点击跳转定位（目标未加载时自动加载更早历史）。
 - [chenshanhan0711/dsh-session-grep](https://github.com/chenshanhan0711/dsh-session-grep) — 在对话页顶栏按字面文字搜索工作区内全部历史会话。内置索引按 unicode61 分词、只匹配整词，这个插件直接扫描本地会话日志，因此句中片段与两字中文词也能命中；默认只搜用户与助手正文（工具输出需手动开启），结果按会话轮转，避免单个长会话占满列表，点开后滚动定位并高亮命中。只读本地会话日志，零网络请求。
-- [chenxubin2016/dsh-workspace-curator](https://github.com/chenxubin2016/dsh-workspace-curator) — 在设置页集中整理工作区与会话：添加、重命名、排序、删除工作区，归档或永久删除会话，并拒绝打开中或仍有工作的会话。
+- [chenxubin2016/dsh-workspace-curator](https://github.com/chenxubin2016/dsh-workspace-curator) — 通过会话/工作区菜单和设置页整理工作区与会话：删除会话，级联删除工作区及其全部会话和文件夹，打开中的会话重启 DSH 后清理，并保护最后一个工作区。
 - [CHIANGANGSTER/dsh-session-window#dsh-session-window-client](https://github.com/CHIANGANGSTER/dsh-session-window/tree/main/plugin/dsh-session-window-client) — 配合仓库的原生 Desktop 壳补丁，为 DSH 会话菜单添加“在新窗口中打开”。
 - [chibslee/dsh-session-search](https://github.com/chibslee/dsh-session-search) — 侧栏搜索面板与会话页 ⌘F 查找条，全文检索本地会话记录，不调用模型；每条命中可直接打开会话并滚到那条消息。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [chichi233/dsh-delete-session](https://github.com/chichi233/dsh-delete-session) — 在侧栏会话菜单里加一条「删除会话」，一次请求就把会话记录目录移进 Windows 回收站（用不了时移进 ~/.dsh/plugin-data 下的插件回收站，两种都可还原），并删除其溢出文件和投影缓存，正在使用的会话会先被摘下来，子代理会话一并级联清理。设置里可以关掉「删除前再次确认」，关掉后点一下就删；其它插件注册的同名菜单项会被合并，只留一条。
