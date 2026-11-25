@@ -7803,6 +7803,7 @@ dsh plugin --profile web add dshmarket
 - [riverzhou/dsh-gitbash-new](https://github.com/riverzhou/dsh-gitbash-new) — DeepSeek Harness 的 Windows bash 工具：用 Git for Windows 或 MSYS2（UCRT64/MINGW64/CLANG64…）的 bash 替换预设里的 pwsh，保留官方终端契约（workdir、后台任务与超时转后台、结果标记、终端卡片），并提供一个可自动发现、校验 Git/MSYS2 安装的设置行。
 - [Rj-Cui/caprouter](https://github.com/Rj-Cui/caprouter) — 本机 AI 能力台账：把已安装的技能、插件与 MCP 服务编目、检索、探测并验证，再通过 MCP 总线提供给宿主使用。
 - [Roarpeng/GraphFlow](https://github.com/Roarpeng/GraphFlow) — 面向编程 Agent 的本地代码知识图谱：提供 10 个 MCP 工具，覆盖分层上下文压缩、DAG 规划、增量 AST 建图、跨会话技能飞轮、诊断与图谱产物导入导出。
+- [robeson1010/dsh-wow-bridge#dsh-web](https://github.com/robeson1010/dsh-wow-bridge/tree/main/dsh-web) — 在《魔兽世界：无限》聊天框里使用 DeepSeek Harness，支持提问、拍卖行行情、制作利润和 Auctionator 采购清单。
 - [robinfaraj/postel-mcp#dsh-postel](https://github.com/robinfaraj/postel-mcp/tree/main/plugins/dsh-postel) — 通过 MCP 把 DeepSeek Harness 连接到 Postel：按主题搜索走红的 X 帖子库，以用户保存的文风撰写帖子和 X 长串，并保存、定时或发布到 X、LinkedIn、Bluesky 和 Mastodon；附带 postel-writing 技能。调研功能无需 API Key。
 - [robiteame/dsh-session-tree-extension](https://github.com/robiteame/dsh-session-tree-extension) — Pi 风格的追加式多分支会话树:在任意历史节点开分支或跳转而不删除旧历史,可将分支克隆为新会话,并在 WebUI 树面板中浏览(明暗主题)。在原版 Harness 上优雅降级运行。
 - [RoderickWilliams/dsh-local-3d-studio](https://github.com/RoderickWilliams/dsh-local-3d-studio) — 本地三维工作室编排：每次调用都现场探测 Blender、COLMAP 与 ComfyUI 并按其支持情况选路线；另带 Three.js 兜底通道，可按图元描述生成模型、修改或缩放 GLB、生成离线预览页并在没有 Blender 时渲染多视角 PNG。
