@@ -1,0 +1,8 @@
+url: https://github.com/maxecho20/dsh-token-ocean
+name: maxecho20/dsh-token-ocean
+category: fun
+description:
+  en: 'Adds a Token Ocean panel to the DSH sidebar. On DSH Desktop it opens the ascii-ocean page in a webview for scooping fish and feeding the water; the web build shows an open-in-browser card.'
+  zh: '在 DSH 左侧栏加入 Token Ocean 面板。桌面版用 webview 打开 ascii-ocean，可以点鱼捞起、点水投喂；网页版没有 webview 载体，会显示在浏览器中打开的提示卡。'
+icon: https://raw.githubusercontent.com/maxecho20/dsh-token-ocean/main/assets/icon-180.png
+tarball: https://github.com/maxecho20/dsh-token-ocean/releases/download/v1.0.0/dsh-token-ocean-1.0.0.tgz
