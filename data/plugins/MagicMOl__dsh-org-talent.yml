@@ -1,7 +1,7 @@
-url: https://github.com/MagicMOl/dsh-org-talent
+﻿url: https://github.com/MagicMOl/dsh-org-talent
 name: MagicMOl/dsh-org-talent
 category: ui
 description:
   en: 'Organization-wide employee matching in the DSH sidebar: a project guide with searchable progress, stage outcomes, recent projects and blocker/difficulty/change alerts synced from project feedback; a requirement pool; a workspace that opens one DSH conversation per project and sends task details; a talent pool; an organization chart; team matching; capability advice; skill research and project feedback.'
   zh: 'DSH 左侧栏的组织人才匹配：项目导览包含可检索的项目进度、项目成果、近期项目，以及从项目反馈同步的卡点/难点/变更点预警；需求池复用需求；工作区按项目创建 DSH 对话并发送任务；另有组织架构、全组织团队匹配、员工培养建议、技能检索与项目反馈。'
-tarball: https://github.com/MagicMOl/dsh-org-talent/releases/download/v1.9.0/dsh-org-talent-1.9.0.tgz
+tarball: https://github.com/MagicMOl/dsh-org-talent/releases/download/v1.9.1/dsh-org-talent-1.9.1.tgz
