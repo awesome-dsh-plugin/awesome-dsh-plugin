@@ -276,6 +276,23 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
+      # A ~445 MB Pages artifact can take a few seconds to appear in the
+      # workflow-run artifacts API after upload finalizes; deploy-pages@v4
+      # queries once and fails immediately on "Found 0 artifact(s)" (#45656827345,
+      # #45688462038). Poll until visible (up to 60s) before deploying.
+      - name: Wait for github-pages artifact visibility
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 20); do
+            n=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?name=github-pages" --jq '.total_count' 2>/dev/null || echo 0)
+            if [ "${n:-0}" -ge 1 ]; then
+              echo "github-pages artifact visible after attempt $i"
+              exit 0
+            fi
+            sleep 3
+          done
+          echo "artifact still not listed after 60s; proceeding to deploy-pages"
       - id: deployment
         uses: actions/deploy-pages@v4
         # The concurrency split above means a push build and the nightly can now
