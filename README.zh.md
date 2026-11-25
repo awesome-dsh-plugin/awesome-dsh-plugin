@@ -6526,6 +6526,7 @@ dsh plugin --profile web add dshmarket
 - [AAAlenwow/dsh-weknora-archive](https://github.com/AAAlenwow/dsh-weknora-archive) — 把 DeepSeek Harness 会话归档进自建 WeKnora 知识库，含提取、总结与增量去重。
 - [aaarookie/dsh-bilibili_video-study_buddy#plugin](https://github.com/aaarookie/dsh-bilibili_video-study_buddy/tree/main/plugin) — B 站网课伴学：四个工具。study_frame 按时间点抽 1080P 帧，支持局部裁剪与磁盘缓存；study_scan 把一段区间抽成一张网格图用于定位；study_subs 取 AI 字幕并用覆盖度、术语命中、语速三个信号判定是否串台；study_asr 带上下文地局部转写。全程只读，数据留在本机。
 - [aaz111/dsh-nx](https://github.com/aaz111/dsh-nx) — 把 Siemens NX 接进 dsh（仅 Windows，需本机已装 Siemens NX，且只在 NX 2512 上验证；有限元工具另需 Simulation / Nastran 许可）：71 个工具覆盖实体建模、曲面闭环、同步建模、孔型与管路、Nastran 静力与模态、装配 BOM 与逐对间隙检查、A3 图纸与 GB 图框出 PDF，全部通过 JSON 命令驱动后台 NX 会话执行。
+- [aazh2026/dsh-specgate](https://github.com/aazh2026/dsh-specgate) — DSH 需求覆盖率：读取会话工作目录里规格文件中的验收标准，报告哪些还没有代码证据，给出覆盖率分数和缺口清单。确定性且纯本地——不调模型、不联网、不需要 API Key，也不会写入你的仓库。
 - [aba3345/dsh-bili-see](https://github.com/aba3345/dsh-bili-see) — 本地模型刷 B 站：由 Ollama 小模型按题材配额挑片，读字幕、热评与关键帧，判断要不要评论，再经五档安全闸写出并发布。节奏由 dsh-schedule 触发；未开启写权限时不注册写工具。v1.1 收紧写路径：撤权改为运行时状态（每次发送前检查）、发布原子化、风控错误会持久化为暂停、发前复核人设风格。需 Python 3.10+ 并装好仓库里的 requirements.txt。
 - [AbcdefgXW/dsh-toolbox-web](https://github.com/AbcdefgXW/dsh-toolbox-web) — Web 界面工具箱：会话/回收站/子目录/搜索/预设/配置管理、标签分组、长消息折叠，以及支持 IM 渠道推送的定时心跳。
 - [AbnerAI/dsh-monitor](https://github.com/AbnerAI/dsh-monitor) — 常驻后台监视器：文件收件箱（NDJSON）或命令输出增量一到就唤醒 agent，相当于 Claude Code Monitor 工具的 Harness 实现。
