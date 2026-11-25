@@ -1,0 +1,6 @@
+url: https://github.com/Hao0311/dsh-qqmail
+name: Hao0311/dsh-qqmail
+category: tools
+description:
+  en: 'QQ Mail tools: list recent mail and grab full bodies into dated archive folders (openable HTML, raw JSON, index.md, deduplicated by mail id). Two backends: IMAP with a QQ Mail authorization code (no browser needed; bodies are fetched with BODY.PEEK[] so mail is not marked read, and QQ''s virtual "ads" folder is not reachable), or the signed-in Edge session through kimi-webbridge (grabbing marks mail as read, and this backend can reach the ads folder).'
+  zh: 'QQ 邮箱工具：列出最近邮件并把正文抓取到按日期归档的目录（可直接打开的 HTML、原始 JSON、index.md，按 mailid 去重）。后端二选一：IMAP 直连（用 QQ 邮箱授权码，不需浏览器，BODY.PEEK[] 取信不改已读状态；但看不到 QQ 的「广告邮件」虚拟文件夹），或经 kimi-webbridge 复用 Edge 登录态（抓取会标已读，这个后端能看广告邮件）。'
