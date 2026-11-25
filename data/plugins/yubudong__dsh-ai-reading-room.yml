@@ -1,0 +1,8 @@
+url: https://github.com/yubudong/dsh-ai-reading-room
+name: yubudong/dsh-ai-reading-room
+category: docs
+description:
+  en: 'Local EPUB/PDF/TXT/Markdown reading workspace with source-linked notes, right-click highlights and undo/redo, native Bookworm conversations, editable reading methods, record filters, reading reviews, bilingual guides and ZIP backups.'
+  zh: 'AI 书房：本地 EPUB、PDF、TXT、Markdown 书库，支持原文关联笔记、右键标注与撤销重做、书虫原生会话、可编辑读书方法、记录筛选、阅读回顾、双语说明书和 ZIP 备份。'
+tarball: https://github.com/yubudong/dsh-ai-reading-room/releases/download/v0.5.3/dsh-ai-reading-room-0.5.3.tgz
+icon: https://raw.githubusercontent.com/yubudong/dsh-ai-reading-room/main/assets/bookworm.webp
