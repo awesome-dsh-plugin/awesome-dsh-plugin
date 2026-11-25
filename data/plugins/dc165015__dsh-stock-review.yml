@@ -1,0 +1,7 @@
+url: https://github.com/dc165015/dsh-stock-review
+name: dc165015/dsh-stock-review
+category: skill
+description:
+  en: A DeepSeek Harness skill that turns a six-digit A-share or HK stock code into a ten-section research review plus a single-file dark HTML report with charts.
+  zh: 输入六位 A 股/港股代码即可产出十段式个股深度股评与单文件深色 HTML 报告的 DeepSeek Harness 技能。
+icon: https://raw.githubusercontent.com/dc165015/dsh-stock-review/main/assets/icon-180.png
