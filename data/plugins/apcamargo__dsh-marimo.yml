@@ -1,0 +1,6 @@
+url: https://github.com/apcamargo/dsh-marimo
+name: apcamargo/dsh-marimo
+category: tools
+description:
+  en: 'Work with a coding agent in a live marimo notebook through DeepSeek Harness.'
+  zh: '通过 DeepSeek Harness，与编程代理在实时运行的 marimo 笔记本中协同工作。'
