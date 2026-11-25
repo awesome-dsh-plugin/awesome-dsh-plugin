@@ -1,0 +1,7 @@
+url: https://github.com/sysevol-ai/CodeNib/tree/main/plugins/dsh
+name: sysevol-ai/CodeNib#dsh
+category: dev
+description:
+  en: Source-linked code search and a compiler-indexed call graph for the checkout dsh runs in, over a local MCP server.
+  zh: 为 dsh 所在的仓库提供带源码出处的代码搜索和编译器级调用图，通过本地 MCP 服务器提供。
+icon: https://raw.githubusercontent.com/sysevol-ai/CodeNib/main/plugins/codenib/.claude-plugin/icon.png
