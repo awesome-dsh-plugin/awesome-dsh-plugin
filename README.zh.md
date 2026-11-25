@@ -4504,7 +4504,7 @@ dsh plugin --profile web add dshmarket
 - [songzhiyin/dsh-local-model](https://github.com/songzhiyin/dsh-local-model) — 注册一个本地 LLM provider，把模型请求转发到 OpenAI 兼容端点或 Ollama 原生 API，并在「设置 → 模型」页提供连接测试卡片，无需登录账号。
 - [SoulZhou/dsh-context-windows](https://github.com/SoulZhou/dsh-context-windows) — 为 WorkBuddy 和 Trae 的每个已接入模型提供可视化上下文窗口调节设置页，并通过宿主设置服务写入覆盖值。
 - [SpaceRelay/dsh-subagent-control#subagent-route](https://github.com/SpaceRelay/dsh-subagent-control/tree/main/subagent-route) — 新增 `subagent_route` 工具：每次派活时点名渠道与模型，任何对话都能用——包括插件装上之前就开着的对话。子代理启动前先向渠道核对这条路由。官方工具原样不动。
-- [spdw666/dsh-credit-hub](https://github.com/spdw666/dsh-credit-hub) — 原生多平台账号与模型路由管理，支持错峰签到、事件通知与额度预测。九个桌面平台适配器提供工具调用与原生思考档位；五阶段模型审计分别核验普通对话、流式、长文、工具与结果回传。已按 40 个官方宿主 tag（0.1.0-rc.7 至 0.2.2-rc.5）逐版审计。后台 worker 需独立 Node ≥22.23.3（node:sqlite，已由 engines.node 约束）；千问办公的编码能力另需 Python（cryptography、wasmtime）。
+- [spdw666/dsh-credit-hub](https://github.com/spdw666/dsh-credit-hub) — 原生多平台账号与模型路由管理，支持错峰签到、事件通知与额度预测。九个桌面平台适配器提供工具调用与原生思考档位；五阶段模型审计分别核验普通对话、流式、长文、工具与结果回传。已按 41 个官方宿主 tag（0.1.0-rc.7 至 0.2.3-alpha.2）逐版审计。后台 worker 需独立 Node ≥22.23.3（node:sqlite，已由 engines.node 约束）；千问办公的编码能力另需 Python（cryptography、wasmtime）。
 - [SpookySandwich/dsh-plugin-rollout-scout](https://github.com/SpookySandwich/dsh-plugin-rollout-scout) — 检测账号当前被分配到哪个对话模型：并发发起一次性探测会话，按段落开头的写法为流式思维链打分，读起来像旧模型的在数秒内中止。附带离线自检，用同一分类器回放 13 条人工标注的思维链。
 - [SSHOOTING/dsh-plugin-free-model-advisor](https://github.com/SSHOOTING/dsh-plugin-free-model-advisor) — 只读 DSH 命令，列出配置中明确标记免费的模型并推荐安全默认值。
 - [stallenlu/dsh-freellmapi](https://github.com/stallenlu/dsh-freellmapi) — 把 FreeLLMAPI 注册为 dsh 的模型 provider，路由本体随插件打包。插件用宿主二进制启动内置服务并暴露 freellmapi 路由；侧栏面板负责启停该进程、列出路由的模型目录、实测哪些自称可用的模型真能回答，并按路由自身计算的稳定、速度、智能评分排序。provider key、路由策略与用量仍在路由自带控制台，面板里给了入口。
@@ -5684,6 +5684,7 @@ dsh plugin --profile web add dshmarket
 - [vaniawang/dsh-side-conversation](https://github.com/vaniawang/dsh-side-conversation) — 把当前对话分叉成独立的原生侧边会话，注入父对话实时上下文，支持 Inline & Spill 链式召回、把请求或结论 relay 回主对话，并显示用量统计。
 - [Vast-Unhurried/dsh-toolkit#dsh-session-delete](https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-session-delete) — 增加删除会话的操作，永久移除会话日志、工作区条目与归档。
 - [Venshell/dsh-session-dm](https://github.com/Venshell/dsh-session-dm) — 跨会话投递：往同工作区的另一个会话发消息，并可新建顶层会话。
+- [vera-hlh/dsh-plugin-favorites](https://github.com/vera-hlh/dsh-plugin-favorites) — 收藏 DSH 会话中的回复、整轮对话、选中文字与文件，并一键跳回高亮位置。
 - [VergilYe/dsh-auto-continue](https://github.com/VergilYe/dsh-auto-continue) — 避免轮次停在「话没说完」或「只写了下一步计划」上关闭：把静默截断的流转成同一步内可重试的失败，并要求模型在每轮结束时声明收尾方式。
 - [VermilionPasvikin/dsh-pack-and-go](https://github.com/VermilionPasvikin/dsh-pack-and-go) — 把 DSH 的对话与工作区打包成单个 .dshpack 文件，换台电脑或换个平台继续用，并自动处理跨平台路径。
 - [Very12345/dsh-archive-delete](https://github.com/Very12345/dsh-archive-delete) — 归档会话管理，支持单条与批量删除、原生工作区登记同步，以及宿主持有会话资源时的延迟文件清理。
@@ -10630,7 +10631,7 @@ dsh plugin --profile web add dshmarket
 - [yitian951012/dsh-project-dev-flow](https://github.com/yitian951012/dsh-project-dev-flow) — 提供「项目开发流程」模式与五个技能：先适配目标仓库自己的命令与文档，再按需求、设计、实现、验证、交付、复盘推进，并含文档治理；结论带证据，签认留给人类。
 - [yixing233/dsh-crabtodo](https://github.com/yixing233/dsh-crabtodo) — DeepSeek Harness 的人机共享待办：你和 AI 通过侧边栏或待办工具管理同一份任务，支持项目级与全局待办，并可一键把任务引用进输入框。
 - [ypx01/dsh-auto-shutdown](https://github.com/ypx01/dsh-auto-shutdown) — 仅 Windows：会话标题栏上的「任务完成后自动关机」开关——所有开启它的会话都不再有进行中的回合、任务或子代理（默认还要求其他在线会话也空闲）时，开始两分钟倒计时，结束后关机；点倒计时即取消，没开这个开关的会话不会触发任何动作。
-- [yubudong/dsh-time-desk](https://github.com/yubudong/dsh-time-desk) — DSH 原生时间工作台：待办、带休息间隔的习惯、课程课时账本与专注计时，内置通用时间精灵助手。
+- [yubudong/dsh-time-desk](https://github.com/yubudong/dsh-time-desk) — DSH 原生时间工作台：生活、习惯与课程日周月视图、项目下一步、课时账本与专注计时，内置时间精灵助手。
 - [YukimuraSol/dsh-cursor-modes](https://github.com/YukimuraSol/dsh-cursor-modes) — 为 dsh 网页端提供类 Cursor 的模式切换：带委派闸门的计划模式、带工具调用配额的多任务模式，以及 create_plan / request_more_edits / list_running_agent 三个工具。另有带 Build 按钮的计划卡片，并把子代理下拉收成只显示运行中的行。
 - [yulong-me/ds-kanban](https://github.com/yulong-me/ds-kanban) — 人、DSH 会话与可选 DS Bot 共用的本地看板，提供角色权限、变更记录和明确的任务完成操作。
 - [yuna78/dsh-plugin-dev-workflow](https://github.com/yuna78/dsh-plugin-dev-workflow) — 面向 DSH 的研发交付工作流 preset：一段工作协议加七个工具，保留用户原话与验收条件、记录反馈决策、拆解带验收的任务、记录真实验证命令与退出码，并以项目隔离的 JSONL 记录完成总结。
