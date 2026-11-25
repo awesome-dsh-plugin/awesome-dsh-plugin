@@ -1,0 +1,8 @@
+url: https://github.com/ethanrise/dsh-cua-linux
+name: ethanrise/dsh-cua-linux
+category: tools
+description:
+  en: 'Linux (X11/XWayland) computer-use backend for DSH: enumerate windows, take screenshots, inject mouse and keyboard events through XTEST, and drive Chromium over the DevTools Protocol.'
+  zh: '给 DSH 补上 Linux（X11/XWayland）的 computer-use 后端：窗口枚举、截图、XTEST 键鼠注入，以及 Chromium 的 CDP 直控通道。'
+icon: https://raw.githubusercontent.com/ethanrise/dsh-cua-linux/main/assets/icon-180.png
+tarball: https://github.com/ethanrise/dsh-cua-linux/releases/latest/download/dsh-cua-linux.tgz
