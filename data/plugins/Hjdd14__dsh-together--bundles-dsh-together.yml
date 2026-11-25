@@ -1,0 +1,6 @@
+url: https://github.com/Hjdd14/dsh-together/tree/main/bundles/dsh-together
+name: Hjdd14/dsh-together#dsh-together
+category: fun
+description:
+  en: Hold every file-writing tool call until a mini-game is passed, with 194 built-in 2D and WebGL games and a no-repeat rotation that survives restarts.
+  zh: 文件写入前先玩一局小游戏，内置 194 个 2D 与 WebGL 小游戏，抽题按轮换池且重启后仍不连续重复。
