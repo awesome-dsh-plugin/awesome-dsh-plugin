@@ -1,0 +1,6 @@
+url: https://github.com/stallenlu/dsh-llmwiki
+name: stallenlu/dsh-llmwiki
+category: memory
+description:
+  en: 'Clean-room LLM Wiki knowledge base for DSH — vaults, ingest with SHA-256 dedupe, wikilinks and source traceability, four-signal graph, cited retrieval, review and export/import; adds self-maintaining quality/aging flags and optional dsh-mnemon RRF fusion. Non-official reimplementation inspired by nashsu/llm_wiki and iwtown/dsh-llm-wiki.'
+  zh: 'DSH 的干净室 LLM Wiki 知识库——知识库增删改查、SHA256 去重导入、双链与来源追溯、四信号图谱、带引用检索、体检与导出导入；新增质量/老化自维护标记和可选的 dsh-mnemon 融合检索。受 nashsu/llm_wiki 与 iwtown/dsh-llm-wiki 启发的非官方实现。'
