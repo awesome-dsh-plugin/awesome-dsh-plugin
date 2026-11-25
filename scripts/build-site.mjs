@@ -16,7 +16,7 @@ import { execSync } from 'node:child_process'
 import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
-import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
+import { CAT_IDS as ENTRY_CAT_IDS, readEntries, previousNpmMap } from './lib/entries.mjs'
 import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
 import { slugOf, slugHref, termOf } from './lib/terms.mjs'
@@ -180,6 +180,7 @@ const N = ordered.length
 // ever written back; git history is the ledger.
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
+const previousPackages = previousNpmMap(readEntries(), npmMap)
 
 // The plugin market index (format 1) that hosts read as a market source.
 // Built here rather than in a second pass so the page can tell whether THIS
@@ -1147,6 +1148,7 @@ const registry = {
       category: e.cat,
       description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
       npm: e.npm,
+      ...(previousPackages[e.url] === undefined ? {} : { previousNpm: previousPackages[e.url] }),
       // The author-declared release asset, when there is one. `install` folds
       // it into a display string, but a consumer that only reads `npm` sees
       // null and falls back to `github:owner/repo` — a different artifact from

@@ -232,6 +232,8 @@ jobs:
         run: node --test scripts/entries-path.test.mjs
       - name: Published npm identity tests
         run: node --test scripts/npm-name.test.mjs
+      - name: Previous npm package declarations
+        run: node --test scripts/npm-previous.test.mjs
       - name: Build (locale parity, date derivation, templates)
         # probes are skipped on purpose: the build tolerates missing probe
         # data, and this keeps the check token-free and fork-safe.

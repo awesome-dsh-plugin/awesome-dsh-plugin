@@ -249,6 +249,25 @@ Publishing your plugin to npm lets storefronts show and sort by download count. 
 - You do not need to tell us. The mapping is picked up automatically from the registry; there is no field to add to your entry, and a hand-written `npm:` key in your yml is rejected. / **不需要通知我们。** 映射会从 registry 自动采集，条目里没有任何字段需要填；在 yml 里手写 `npm:` 会被校验拒绝。
 - No npm package? Your entry works the same, just without a download figure. / 没有 npm 包也一样：条目照常工作，只是没有下载量数字。
 
+### npm renames / npm 包更名
+
+For a verified rename of the same plugin, declare the old package names in its current entry:
+
+同一插件更名后，可在当前条目声明经核实的旧包名：
+
+```yaml
+npm_previous:
+  - evo-subagent
+```
+
+This requires maintainer review: provide the rename PR/commit, evidence that the packages have the same npm maintainer and their repository fields identify the same project, and confirm the plugin's data and bundle identity compatibility. Do not claim unrelated packages or untested historical migrations. Package names must be unversioned, unique across entries, and must not be a current install target (including the entry's own). The current npm target remains auto-discovered; do not add an `npm:` field.
+
+此字段须由维护者审核：请提供更名 PR/提交、新旧包拥有相同 npm 维护者且 repository 指向同一项目的证据，并确认数据和 bundle 标识兼容。不应声明无关包或未经验证的历史迁移。只填写不带版本的包名；旧名不能被多个条目认领，也不能是任何条目（包括本条目）的当前安装目标。新包仍自动探测，不填写 `npm:`。
+
+**Published API contract:** `/plugins.json` emits `previousNpm: string[]` only when the entry has an auto-discovered current `npm` target. It omits the field otherwise. DSH Market 1.71.1+ consumes this metadata to offer an explicit migration; it does not itself move plugin-private data. The format-1 `/index.json` is unchanged. This declaration does not aggregate download counts or change their time window.
+
+**发布接口约定：** 有已探测当前 `npm` 目标时，`/plugins.json` 将源字段导出为 `previousNpm` 字符串数组，否则省略。DSH Market 1.71.1 及以上使用它展示需用户确认的迁移入口；市场不搬运插件私有数据。格式 1 的 `/index.json` 不变。此声明不会合并下载量或改变统计窗口。
+
 ### Themes & skins / 主题与皮肤
 
 Entries under the **Themes & Appearance / 主题与外观** category automatically appear in the [dsh-market](https://github.com/dsh-market/dsh-market) plugin's dedicated **Themes tab**, where users install, switch, and uninstall them with one click — so put your theme/skin there, not under UI Enhancements. Monorepo subpackages are supported: link the subdirectory directly, e.g. `https://github.com/owner/repo/tree/main/packages/my-theme`.

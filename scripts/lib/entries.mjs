@@ -163,12 +163,44 @@ export function tarballProblem(value) {
 // but a reader could not have known that, and neither could the reviewer
 // without going to look. Refusing the key is how the file stays honest about
 // what it does.
-const ENTRY_KEYS = new Set(['url', 'name', 'category', 'description', 'icon', 'tarball', 'file'])
+const ENTRY_KEYS = new Set(['url', 'name', 'category', 'description', 'icon', 'tarball', 'npm_previous', 'file'])
+
+/** Package names only: no versions, tags, URLs or install specifications. */
+export function previousNpmProblem(value) {
+  if (!Array.isArray(value) || value.length === 0) return 'must be a non-empty array of npm package names'
+  const names = new Set()
+  for (const name of value) {
+    if (typeof name !== 'string' || name.length > 214
+      || !/^(?:@[a-z0-9][a-z0-9._-]*\/)?[a-z0-9][a-z0-9._-]*$/.test(name)
+      || ['node_modules', 'favicon.ico'].includes(name)) return 'must contain only unversioned lowercase npm package names'
+    if (names.has(name)) return `contains duplicate package ${name}`
+    names.add(name)
+  }
+  return null
+}
+
+/** Validated declarations for the legacy plugins.json API, not index format 1. */
+export function previousNpmMap(entries, npmMap) {
+  const problems = validateEntries(entries)
+  if (problems.length) throw new Error(problems.join('\n'))
+  const current = new Map(entries.flatMap((e) => npmMap[e.url]?.npm ? [[npmMap[e.url].npm, e.url]] : []))
+  const result = {}
+  for (const e of entries) {
+    if (!e.npm_previous) continue
+    for (const name of e.npm_previous) {
+      if (current.has(name)) throw new Error(`${e.file ?? e.url}: previous npm package ${name} is a current install target for ${current.get(name)}`)
+    }
+    // No verified current npm mapping means no actionable migration target yet.
+    if (npmMap[e.url]?.npm) result[e.url] = [...e.npm_previous]
+  }
+  return result
+}
 
 /** Validate shape. Returns an array of human-readable problems (empty = ok). */
 export function validateEntries(entries) {
   const problems = []
   const seen = new Map()
+  const previousOwners = new Map()
   for (const e of entries) {
     const at = e.file ?? e.url ?? '(unknown)'
     const extra = Object.keys(e).filter((k) => !ENTRY_KEYS.has(k))
@@ -186,6 +218,15 @@ export function validateEntries(entries) {
     }
     if (seen.has(e.url)) problems.push(`${at}: duplicate url, already declared in ${seen.get(e.url)}`)
     seen.set(e.url, at)
+
+    if (e.npm_previous !== undefined) {
+      const bad = previousNpmProblem(e.npm_previous)
+      if (bad) problems.push(`${at}: "npm_previous" ${bad}`)
+      else for (const name of e.npm_previous) {
+        if (previousOwners.has(name)) problems.push(`${at}: previous npm package ${name} already declared in ${previousOwners.get(name)}`)
+        previousOwners.set(name, at)
+      }
+    }
 
     const want = slugFor(e.url)
     if (e.file && path.basename(e.file, '.yml') !== want) {
@@ -270,6 +311,7 @@ export function dumpEntry(e) {
   )
   const doc = { url: e.url, name: e.name, category: e.category, description }
   if (e.tarball) doc.tarball = e.tarball
+  if (e.npm_previous !== undefined) doc.npm_previous = e.npm_previous
   return yamlDump(doc, { lineWidth: -1, noRefs: true, quotingType: '"', forceQuotes: false })
 }
 
