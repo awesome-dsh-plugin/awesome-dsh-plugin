@@ -1,0 +1,6 @@
+url: https://github.com/Ginorva/memledger
+name: Ginorva/memledger
+category: memory
+description:
+  en: Gives AI a persistent memory of past decisions so it stops redoing finished work, reverting your fixes, and scanning the whole project every time.
+  zh: 给 AI 装上跨会话记忆，让它不再重复劳动、不再把改好的代码改回去、不再每次都全盘扫描项目。
