@@ -4,4 +4,4 @@ category: usage
 description:
   en: "Automatic usage-time tracking for DeepSeek Harness with daily/weekly/monthly totals, a year-long heatmap, hourly and weekday distributions, per-workspace attribution, daily goals, a Pomodoro timer, 12 achievement badges and shareable yearly report cards."
   zh: "DeepSeek Harness 使用时长自动统计：今日/本周/本月/累计、年度热力图、24 小时与周内分布、工作区归属、每日目标、番茄钟、12 枚成就徽章，以及可分享的年度总结卡片。"
-icon: https://raw.githubusercontent.com/01kalival/dsh-timekeeper/main/assets/logo-180.png
+icon: https://raw.githubusercontent.com/01kalival/dsh-timekeeper/main/assets/icon-180.png
