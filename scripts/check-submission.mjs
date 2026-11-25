@@ -229,11 +229,12 @@ const scanTree = (repo) => once(`scan:${repo}`, async () => {
 
   let sawClient = false
   let vendored = null
+  let unreadable = 0
   for (const p of pkgs) {
     const f = await api(`repos/${repo}/contents/${p}`)
-    if (f.status !== 200 || !f.body?.content) continue
+    if (f.status !== 200 || !f.body?.content) { unreadable++; continue }
     const pkg = parsePkg(f.body.content)
-    if (!pkg) continue
+    if (!pkg) { unreadable++; continue }
     const dsh = pkg.dsh ?? {}
     if (dsh.bundle) {
       // A repository that vendors DSH's own bundle packages satisfies this
@@ -249,6 +250,15 @@ const scanTree = (repo) => once(`scan:${repo}`, async () => {
     }
     if (dsh.client) sawClient = true
   }
+  // Absence is established only after every manifest was checked. A bundle
+  // may be in an unreadable file or beyond the cap, even when an earlier
+  // manifest declared only a client or belonged to the vendored harness.
+  if (found.length > pkgs.length) {
+    return { ok: null, why: `the repository has ${found.length} package.json files, more than the ${MAX_TREE_PKGS} this check reads` }
+  }
+  if (unreadable) {
+    return { ok: null, why: `${unreadable} of ${pkgs.length} package.json files could not be read or parsed` }
+  }
   if (vendored) {
     return {
       ok: false,
@@ -256,11 +266,6 @@ const scanTree = (repo) => once(`scan:${repo}`, async () => {
     }
   }
   if (sawClient) return { ok: false, why: 'declares only `dsh.client` — that alone is not installable' }
-  // Same reasoning as a truncated tree: with more manifests than the cap, the
-  // ones past it were never read, so absence here is not established.
-  if (found.length > pkgs.length) {
-    return { ok: null, why: `the repository has ${found.length} package.json files, more than the ${MAX_TREE_PKGS} this check reads` }
-  }
   return { ok: false, why: `no \`dsh.bundle\` in any of ${pkgs.length} package.json file(s)` }
 })
 
