@@ -1,0 +1,7 @@
+url: https://github.com/MaxBill/dsh-file-explorer
+name: MaxBill/dsh-file-explorer
+category: ui
+description:
+  en: 'File browser in the main column that also feeds the agent: icon and list views with draggable columns, in-panel previews for images, PDF, Markdown, HTML, CSV/TSV, XLSX workbooks and DOCX documents (the last two parsed by the plugin itself), rename/duplicate/move/trash with undo, and context-menu actions that add a folder as a DSH workspace, attach a file to the current conversation, or insert its path as an @ mention.'
+  zh: '主栏里的文件浏览面板，也负责把文件喂给 agent：图标/列表双视图（列宽可拖拽），面板内直接预览图片、PDF、Markdown、HTML、CSV/TSV、XLSX 工作簿与 DOCX 文档（后两者由插件自行解析 zip+XML），支持重命名/复制/移动/废纸篓与撤销；右键可把文件夹添加为 DSH 工作区、把文件加进当前对话，或把路径以 @ 引用插入输入框。'
+icon: https://raw.githubusercontent.com/MaxBill/dsh-file-explorer/main/assets/icon-180.png
