@@ -1,0 +1,8 @@
+url: https://github.com/easonandkhalil/dsh-moyu
+name: easonandkhalil/dsh-moyu
+category: fun
+description:
+  en: 'A build-log side panel whose worker-pool grid is a snake game. Eating a queued job increments the passed counter and raises the concurrency count.'
+  zh: '一块伪装成 CI 构建日志的侧边面板，中间的 worker pool 网格是贪吃蛇；吃掉排队任务会让「✓ N passed」加一，并发数随之提高。'
+icon: https://raw.githubusercontent.com/easonandkhalil/dsh-moyu/main/assets/icon-360.png
+tarball: https://github.com/easonandkhalil/dsh-moyu/releases/download/v0.1.0/dsh-moyu-0.1.0.tgz
