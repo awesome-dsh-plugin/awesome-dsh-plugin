@@ -3429,7 +3429,7 @@ dsh plugin --profile web add dshmarket
 - [WuWei-Peng/dsh-od-quota](https://github.com/WuWei-Peng/dsh-od-quota) — OpenDesign 订阅额度：左栏额度页看 5 小时 / 7 天剩余额度，顶栏自适应额度条一眼可见。
 - [wwu328763-netizen/dsh-billing-compass](https://github.com/wwu328763-netizen/dsh-billing-compass) — 输入框下方的计费面板：DeepSeek 账户余额、官网各模型用量与消费（含每亿 token 单价）、本次运行与整段对话的费用估算。点击弹出面板，面板与输入框同宽同位；余额走官方 /user/balance，用量与消费走 platform 的 usage 接口，整段用量由本地会话日志只读汇总。零依赖（node:https + node:zlib），不写任何文件。
 - [wxfiveopps1102/pixel-usage-desk](https://github.com/wxfiveopps1102/pixel-usage-desk) — 复古像素 CRT 的 DSH 浮层，实时显示 DeepSeek 账户余额与 Token 用量。
-- [wxsimon2022/dsh-metaontic-newapi-lite](https://github.com/wxsimon2022/dsh-metaontic-newapi-lite) — MetaOntic AI 统一 AI 接口网关的 DSH 管理插件，提供模型广场、API Key 分组与额度管理、复制、订阅充值和余额用量查询；平台聚合多家模型，兼容 OpenAI、Anthropic 与 Gemini 协议，支持分层额度、个人与团队配额隔离及集中调用记录。
+- [wxsimon2022/dsh-metaontic-newapi-lite](https://github.com/wxsimon2022/dsh-metaontic-newapi-lite) — MetaOntic AI 统一 AI 接口网关的 DSH 管理插件聚合多家模型，兼容 OpenAI、Anthropic 与 Gemini 协议，支持分层额度、个人与团队配额隔离及集中调用记录。
 - [WXYS1209/dsh-quota-cordis](https://github.com/WXYS1209/dsh-quota-cordis) — DSH 的多供应商配额与用量面板：DeepSeek 余额，GLM、MiniMax、OpenCode 与 Codex 的订阅窗口，以及 OpenAI 组织消费；「模型」页签在 DSH 官方模型设置之上编辑供应商、模型目录与推理强度。注册 provider_quota、quota_color_settings、provider_company_rules 三个 Agent 工具。
 - [X-Xyy/dsh-api-balance](https://github.com/X-Xyy/dsh-api-balance) — 在对话标题栏实时显示 DeepSeek API 余额与本会话 token 用量，详情面板展开余额拆分（充值／赠送）、请求次数、输入／输出／缓存命中 tokens 与上下文占用；API Key 每次查询现取，不缓存、不落盘、不返回浏览器。
 - [x2802490130-prog/dsh-balance-float](https://github.com/x2802490130-prog/dsh-balance-float) — Web UI 右上角悬浮窗：实时显示 DeepSeek 余额，支持手动刷新与一键优雅退出（Y/N 快捷键确认）。
@@ -9324,6 +9324,7 @@ dsh plugin --profile web add dshmarket
 - [SkanderBog/dsh-pdf-reader](https://github.com/SkanderBog/dsh-pdf-reader) — 读取和搜索本地 PDF 并提供页码引用，将页面渲染为图片，可用 Tesseract 对扫描页或混合页面进行 OCR；需要 Poppler。
 - [SongFengManZhu/dsh-deep-reading-wl](https://github.com/SongFengManZhu/dsh-deep-reading-wl) — 扫描版教材流水线：在本机 Python 3.10+ 环境（需 pymupdf、rapidocr、openvino、numpy）下，OCR 提速约 5 倍，先出骨架地图，再按章阅读。
 - [sonhoang23/dsh-mindmap](https://github.com/sonhoang23/dsh-mindmap) — 原生 Markdown 思维导图查看器，支持交互式导航、布局控制及 SVG/PNG 导出。
+- [sonhoang23/dsh-uml](https://github.com/sonhoang23/dsh-uml) — PlantUML 图表工作室，支持本地渲染、源码编辑、SVG/PNG 导出及智能体工具。
 - [stallenlu/dsh-docx2md](https://github.com/stallenlu/dsh-docx2md) — 把含公式的 Word 文档转成带 LaTeX 的 Markdown：OLE、Word 原生 OMML、图片公式三种载体都处理，保留公式编号与结构。需要 Python 3.9+（或 uv）；OLE 与图片公式由具备视觉能力的模型读渲染图转写，渲染需 Windows 或 LibreOffice。
 - [STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) — 演示文稿工作台与 13 个 ppt_* 工具：生成离线 HTML 放映及可编辑 PPTX，含 24 套主题、6 套母版骨架、20 套场景蓝图与 20 套内置标杆范本；支持导入 PPTX/Word/Excel/CSV、吸收参考版式、点选改字与撤销、排版及事实出处检查、Remotion 分镜导出；PDF/PNG 渲染需可选官方 LibreOffice 引擎。
 - [StarWind97/dsh-fatfish-notes](https://github.com/StarWind97/dsh-fatfish-notes) — 转存会话与文件，在会话侧栏阅读和引用笔记，自定义阅读排版、导出图文，通过自己的 GitHub 私有仓库同步。仅在 Windows 验证；首次设置需要自己的 GitHub 账号、Git 和 GitHub CLI。同步需要你自己的 GitHub 账号（Git 或 GitHub CLI）。
