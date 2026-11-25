@@ -1,0 +1,6 @@
+url: https://github.com/Miles22ui/dsh-prompt-hone
+name: Miles22ui/dsh-prompt-hone
+category: ui
+description:
+  en: "Composer prompt polisher: one click on the sparkle beside Send rewrites the current draft into a structured, executable prompt in place, with one-click undo. Polishes only the selected passage when text is selected, offers a light/medium/strong dial, cancels on a second click, refuses drafts that contain reference chips instead of dropping them, and shows the last call's token usage. It uses the Session's own model and sends nothing unless you send it."
+  zh: "输入框提示词打磨：点发送键旁的 ✨，把当前草稿原地改写成结构化、可执行的提示词，可一键撤销。选中文字时只打磨选区；提供轻/中/重三档强度；再次点击即取消；草稿含引用胶囊时拒绝替换而不是悄悄丢弃；悬停可看上次 token 用量。用会话自身的模型，你不发送就不会发给模型。"
