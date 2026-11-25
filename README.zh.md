@@ -8837,6 +8837,7 @@ dsh plugin --profile web add dshmarket
 - [Ssrs-Pro-Max/dsh-image-tiler](https://github.com/Ssrs-Pro-Max/dsh-image-tiler) — 让超大图片以可读分辨率进入模型视野，而不是被压成一张缩图：准入前按附件存储允许的上限把大图切成多张切片（8000x8000 的截图会变成 20 张 2000x1600），小字得以保留。以替换本地附件存储的方式实现，不新增任何配置项。
 - [stickerwu/stickerwu-imagegen](https://github.com/stickerwu/stickerwu-imagegen) — 可配置图片 API 的生图、参考图编辑与按需标注画布插件。需自备 OpenAI 兼容图片 API 地址与密钥。
 - [sunxin-ai/dsh-design-qa](https://github.com/sunxin-ai/dsh-design-qa) — 给纯文本模型的设计稿保真判定：`deepseek_vision` 工具从任意 OpenAI 兼容视觉路由借来一只眼，让模型判断实现与设计稿是否一致——并附上支撑该判定的基准（4 组夹具、23 处注入缺陷、逐格原始输出）与其依赖的提问纪律。
+- [SzLeaves/dsh-image-to-text](https://github.com/SzLeaves/dsh-image-to-text) — 让纯文本模型在会话中读图：通过 ask_image 工具把图片交给同实例内支持视觉的模型读取，并以文字返回结果。
 - [SZUold8/dsh-video-learning](https://github.com/SZUold8/dsh-video-learning) — 视频精读：获取 B 站单分P或 YouTube 视频，每 3 秒基础采样并补取变化帧，本地 faster-whisper 转写，分页读取分段图版，并可排版成 16:9 学习 PPT。仅 Windows；需要 DSH 的 pwsh 工具，以及 Python 3.12 x64 + Pillow、FFmpeg/FFprobe；获取视频另需 yt-dlp，转写需 faster-whisper 并自备本地模型文件，PPT 输出需 python-pptx。
 - [TaurusWood/dsh-plugin-appshot](https://github.com/TaurusWood/dsh-plugin-appshot) — DSH 版 Codex Appshots：全局快捷键精准捕获当前工作窗口，零摩擦挂载至 Composer 作为上下文向 Agent 提问。
 - [taxueseek/taxue-dsh-artisan](https://github.com/taxueseek/taxue-dsh-artisan) — DSH 一体化视觉创作工具链：提示词反推与审计优化，多供应商生图，支持异步后台出图。
