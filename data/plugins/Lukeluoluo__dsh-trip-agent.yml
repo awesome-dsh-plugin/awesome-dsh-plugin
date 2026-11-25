@@ -1,0 +1,8 @@
+url: https://github.com/Lukeluoluo/dsh-trip-agent
+name: Lukeluoluo/dsh-trip-agent
+category: tools
+description:
+  en: 'Travel planning for DSH: real POIs and reviews, real route times, live flight/hotel/ticket/train data. Asks for the essentials one at a time, gives a budget outline first, then a minute-level itinerary, and exports an offline HTML guide. Every API key is optional - AMap alone is enough to run it.'
+  zh: '给 DSH 的旅行规划插件：真实 POI 与差评、真实路网耗时、实时机票/酒店/门票/火车余票。逐个问清出发地、天数、人数、预算等必需信息，先出预算与每日区域框架，确认后再出分钟级时间轴，并导出可离线打开的 HTML 攻略。所有 Key 均为选填，只填高德即可跑通；手机端自动改为在对话窗口直接输出。'
+icon: https://raw.githubusercontent.com/Lukeluoluo/dsh-trip-agent/main/icon-180.png
+tarball: https://github.com/Lukeluoluo/dsh-trip-agent/releases/download/v1.0.0/dsh-trip-agent-1.0.0.tgz
