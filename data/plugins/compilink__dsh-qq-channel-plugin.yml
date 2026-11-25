@@ -1,0 +1,7 @@
+url: https://github.com/compilink/dsh-qq-channel-plugin
+name: compilink/dsh-qq-channel-plugin
+category: notify
+description:
+  en: Connects QQ group and private chats to DSH with supervised per-account gateways, separate persistent queues and file delivery, and on-demand progress reports.
+  zh: 将 QQ 群聊和私聊接入 DSH，每个机器人有独立网关进程、持久化队列和文件投递记录，并支持按需查询进度。
+tarball: https://github.com/compilink/dsh-qq-channel-plugin/releases/latest/download/dsh-bundle-qq-channel.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/jyz48prsbr-netizen/dsh-gilded-sidebar
+name: jyz48prsbr-netizen/dsh-gilded-sidebar
+category: theme
+description:
+  en: 'Gilded Sidebar — a black-gold DSH skin derived from black-gold-vip (MIT): keeps the metallic-gold brand card and colors all left-sidebar text (navigation, workspace title, session list, usage, etc.) in metallic gold. Pure CSS, no JavaScript, no token overrides or layout changes; adapts to light and dark themes.'
+  zh: '鎏金侧栏——基于 black-gold-vip（MIT）二次修改的黑金皮肤：保留金属金品牌卡，并把左侧栏全部文字（导航项、工作区标题、会话列表、用量等）染成金属金。纯 CSS、无 JavaScript，不改设计 token 与布局，双主题自适应。'
+tarball: https://github.com/jyz48prsbr-netizen/dsh-gilded-sidebar/releases/download/v1.0.0/dsh-gilded-sidebar-1.0.0.tgz

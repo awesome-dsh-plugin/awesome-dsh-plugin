@@ -1,0 +1,7 @@
+url: https://github.com/geniuspath/apipod-dsh-plugin
+name: geniuspath/apipod-dsh-plugin
+category: tools
+description:
+  en: 'Seven APIPod tools for the agent: list image, video and speech models, read one model request schema, quote a generation price, read the account balance, and start image or video jobs that are polled to completion; calls that spend balance ask for approval first.'
+  zh: '接入 APIPod 的 7 个工具：列出图片、视频与语音模型，读模型的请求参数，预估生成价格，查账户余额，提交图片或视频任务后轮询到完成；扣费调用默认先请用户确认。'
+icon: https://raw.githubusercontent.com/geniuspath/apipod-dsh-plugin/main/assets/icon.png

@@ -2,6 +2,6 @@ url: https://github.com/OldQin-Family/PortWrench/tree/main/packages/dsh-portwren
 name: OldQin-Family/PortWrench#dsh-portwrench
 category: tools
 description:
-  en: 'PortWrench panel for DSH: view listening ports, identify owning processes, and close process trees on Windows. Requires the PortWrench app to be installed and running. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '端口扳手的 DSH 面板：在 DSH 内查看监听端口、识别占用进程、关闭进程树；仅 Windows，需先安装并运行 PortWrench 本体。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'PortWrench panel for DSH: view listening ports, identify owning processes, and close process trees on Windows. Requires the PortWrench app to be installed and running.'
+  zh: '端口扳手的 DSH 面板：在 DSH 内查看监听端口、识别占用进程、关闭进程树；仅 Windows，需先安装并运行 PortWrench 本体。'
 icon: https://raw.githubusercontent.com/OldQin-Family/PortWrench/main/icon.png

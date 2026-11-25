@@ -1,0 +1,6 @@
+url: https://github.com/lwfjyjy/dsh-global-ai-translate
+name: lwfjyjy/dsh-global-ai-translate
+category: tools
+description:
+  en: 'Select text anywhere in DSH and a translate button appears; click it to translate with your default model in a separate one-off call, shown in place in the same floating panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 任意位置选中文字，右侧浮出翻译按钮；点击后用默认大模型新发一次独立调用翻译，并在同一悬浮面板里原地显示译文。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

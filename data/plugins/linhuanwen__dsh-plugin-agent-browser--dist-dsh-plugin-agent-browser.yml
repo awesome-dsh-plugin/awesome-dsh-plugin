@@ -1,0 +1,6 @@
+url: https://github.com/linhuanwen/dsh-plugin-agent-browser/tree/main/dist/dsh-plugin-agent-browser
+name: linhuanwen/dsh-plugin-agent-browser#dsh-plugin-agent-browser
+category: browser
+description:
+  en: 'Puts a real Electron webview browser in the DSH desktop right sidebar and gives the agent eleven browser_* tools to drive it — snapshot with element refs, click, type, scroll, hover, zoom, screenshot, download and eval — inside the user''s own logged-in session. The user can take over at any time, and verification walls are detected and handed to the human rather than bypassed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 桌面端右侧栏放一个真正的 Electron 浏览器，给 Agent 十一个 browser_* 工具去操作：带 ref 的快照、点击、输入、滚动、悬停、缩放、截图、下载与求值；跑在你已登录的会话里，你随时可以接管。检测到人机验证就停下交给你，不硬闯。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

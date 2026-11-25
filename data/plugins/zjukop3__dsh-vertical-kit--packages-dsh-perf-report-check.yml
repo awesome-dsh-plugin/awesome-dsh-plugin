@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-perf-report-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-perf-report-check'
+category: 'docs'
+description:
+  en: 'Performance-report hygiene for load tests and micro-benchmarks: the conditions it ran under (concurrency, rate, iterations, dataset size), a metric you can compare (percentiles, throughput, or medians over N runs), the environment, a baseline, a verdict section, and the command that reproduces the numbers. One number from one run is not a result — an average hides the tail, and the tail is what users feel. It also recognises the unit-test genre and points back to dsh-test-report-check, and that check recognises this one, because the same file names are used for both artifacts. Measured on six public reports: four pass clean, one keeps a single warning, one is a 906-byte note that genuinely has no load definition. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '压测与基准报告的检查：在什么条件下测的（并发、QPS、轮次、数据规模）、结果是不是可比较的量（分位、吞吐、N 次中位数）、环境、基线对照、结论段，以及复现命令。单次跑出来的一个数字不算结果——平均值会藏住尾部，而尾部才是用户感受到的那一段。它也能判出测试报告文体并指回 dsh-test-report-check，那个包同样认得这边，因为公开仓库里这两个名字常被用来写同一种文件。实测 6 份公开报告：4 份零发现，1 份只余一条 warn，1 份是 906 字节的便条（它确实没写条件）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

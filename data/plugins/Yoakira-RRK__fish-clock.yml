@@ -1,0 +1,7 @@
+url: https://github.com/Yoakira-RRK/fish-clock
+name: Yoakira-RRK/fish-clock
+category: notify
+description:
+  en: 'A schedule-driven timer that makes an AI agent speak up on a fixed timetable: fixed windows always fire, quiet hours and extra draws are configurable, plus an optional nightly self-review.'
+  zh: '按时刻表让 AI 主动开口的 DSH 插件：固定时段必触发、说不说由模型自己定，可配安静时段与额外抽签，另有可选的每日复盘。'
+icon: https://raw.githubusercontent.com/Yoakira-RRK/fish-clock/main/icon.png

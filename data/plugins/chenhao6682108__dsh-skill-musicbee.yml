@@ -1,0 +1,7 @@
+url: https://github.com/chenhao6682108/dsh-skill-musicbee
+name: chenhao6682108/dsh-skill-musicbee
+category: skill
+icon: https://raw.githubusercontent.com/chenhao6682108/dsh-skill-musicbee/main/assets/icon-180.png
+description:
+  en: 'MusicBee playlist and library toolkit: scan a music library into a JSON index, write ID3/Vorbis/MP4 tags, build validated dsh (3dj) party playlists, and rewrite .mbp playlist files. Windows and a local MusicBee install required.'
+  zh: 'MusicBee 歌单与曲库工具：扫曲库建 JSON 索引、写 ID3/Vorbis/MP4 标签、按整场规则排 3dj 舞会歌单、批量重写 .mbp 歌单；需 Windows 与本机 MusicBee。'

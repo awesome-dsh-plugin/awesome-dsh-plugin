@@ -1,0 +1,6 @@
+url: https://github.com/bubble-xd/dsh-connect-qoder
+name: bubble-xd/dsh-connect-qoder
+category: model
+description:
+  en: 'Connects signed-in Qoder CN and Qoder desktop accounts as DSH model providers on Windows, with credit balances and model controls. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '将 Windows 上已登录的 Qoder CN 和 Qoder 桌面账号接入 DSH 模型选择器，并提供积分查询与模型管理。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

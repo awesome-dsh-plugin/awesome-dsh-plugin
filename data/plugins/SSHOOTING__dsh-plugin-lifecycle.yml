@@ -1,0 +1,10 @@
+# PR file: data/plugins/SSHOOTING__dsh-plugin-lifecycle.yml
+# Repository: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# Open a PR adding ONLY this file (max 3 entries per PR).
+
+url: https://github.com/SSHOOTING/dsh-plugin-lifecycle
+name: SSHOOTING/dsh-plugin-lifecycle
+category: tools
+description:
+  en: Automatically disables unused DSH plugins using Bayesian usage inference and restores them instantly when needed.
+  zh: 基于贝叶斯使用推断自动停用闲置的 DSH 插件，并在需要时立即恢复。

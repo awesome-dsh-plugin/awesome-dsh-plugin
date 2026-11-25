@@ -1,0 +1,7 @@
+url: https://github.com/Jestions-dev/Desktop-MCP/tree/main/plugin
+name: Jestions-dev/Desktop-MCP#plugin
+category: tools
+description:
+  en: 'Windows desktop automation over MCP: screenshots, Win32 input, window control, and a UIA accessibility-tree path that clicks and types by control instead of by pixel. Also ships clipboard, monitor inventory and an optional app launcher. Usable from any MCP client; the bundle in plugin/ mounts it into DSH through the official MCP client bridge. Requires Windows, Python >= 3.10, and separately running pip install mss pillow uiautomation and pip install git+https://github.com/Jestions-dev/Desktop-MCP (mounts with failOnStartupError: false, so missing dependencies fail silently).'
+  zh: '通过 MCP 给 agent 一双 Windows 上的手：截屏、Win32 输入、窗口管理，外加一条 UIA 无障碍树的路 —— 按控件点击和输入，不用看图猜坐标；另有剪贴板、显示器枚举与可选的应用启动。任何 MCP 客户端都能直接用，plugin/ 目录里另附 DSH 插件壳，用官方 MCP 桥接层挂载。仅限 Windows，需本机已装 Python >= 3.10 并另行运行 pip install mss pillow uiautomation 与 pip install git+https://github.com/Jestions-dev/Desktop-MCP（默认 failOnStartupError: false，缺依赖时静默连不上）。'
+icon: https://raw.githubusercontent.com/Jestions-dev/Desktop-MCP/main/plugin/icon.png

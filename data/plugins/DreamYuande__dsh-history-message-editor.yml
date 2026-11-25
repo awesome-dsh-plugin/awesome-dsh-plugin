@@ -1,0 +1,6 @@
+url: https://github.com/DreamYuande/dsh-history-message-editor
+name: DreamYuande/dsh-history-message-editor
+category: session
+description:
+  en: Edit a sent user message in place and regenerate the reply from that point in the same DSH session and workspace.
+  zh: 原位编辑已发送的用户消息，从修改处重新生成回复，沿用当前 DSH 会话和工作目录。

@@ -5,3 +5,4 @@ description:
   en: 'Dreaming memory for DSH: idle passes replay session transcripts into quoted notes and a small always-injected brief, with panel, daily cadence and model selection.'
   zh: '为 DSH 提供做梦式记忆：空闲时回放会话记录，整理成带逐字引文的笔记和始终注入的简报；带面板、每日定时与模型选择。'
 icon: https://raw.githubusercontent.com/hehuifeng/dsh-dreams/main/assets/icon-180.png
+tarball: https://github.com/hehuifeng/dsh-dreams/releases/download/v1.1.0/dsh-dreams-1.1.0.tgz

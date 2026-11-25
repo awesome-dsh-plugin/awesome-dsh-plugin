@@ -1,0 +1,7 @@
+url: https://github.com/modelgo/dsh-modelgo-provider
+name: modelgo/dsh-modelgo-provider
+category: model
+description:
+  en: 'ModelGo is a stable, enterprise-grade AI model API platform: one API key calls the latest mainstream models such as Claude, GPT, Gemini and DeepSeek, compatible with the OpenAI and Anthropic protocols. Choose models flexibly for AI coding and agent workflows, with per-call cost records, a visual dashboard, and budget and spending-limit management.'
+  zh: 'ModelGo 是稳定的企业级 AI 大模型 API 平台，一个 API Key 即可调用 Claude、GPT、Gemini、DeepSeek 等最新主流模型，兼容 OpenAI 与 Anthropic 协议。为 AI 编程和 Agent 工作流灵活选择模型，调用费用逐笔可查，提供可视化看板，支持预算与消费上限管理。'
+icon: https://raw.githubusercontent.com/modelgo/dsh-modelgo-provider/main/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/chrischjh/dsh-stageshow
+name: chrischjh/dsh-stageshow
+category: skill
+description:
+  en: 'Ships the Stageshow skill (benjitaylor/skills v1.1.1) as a DSH skill — faux product UI illustrations, feature cards, cursor demos and bento grids built in React, vendored byte-identical with a hash-lock self-check tool.'
+  zh: '把 Stageshow 技能（benjitaylor/skills v1.1.1）作为 DSH 技能提供：用 React 制作以假乱真的产品 UI 插图、功能卡片、光标演示与 bento 网格，内嵌 kit 与全部示例，附哈希锁自检工具。'
+tarball: https://github.com/chrischjh/dsh-stageshow/releases/download/v0.1.0/dsh-stageshow-0.1.0.tgz

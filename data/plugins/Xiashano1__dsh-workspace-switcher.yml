@@ -1,0 +1,7 @@
+url: https://github.com/Xiashano1/dsh-workspace-switcher
+name: Xiashano1/dsh-workspace-switcher
+category: ui
+description:
+  en: Show only the current workspace's sessions in the DSH sidebar, with a popup switcher, search, keyboard navigation, drag-to-reorder, and rename/delete.
+  zh: 在 DSH 侧栏只显示当前工作区的会话，提供弹窗切换、搜索、键盘导航、拖拽排序与重命名/删除。
+tarball: https://github.com/Xiashano1/dsh-workspace-switcher/releases/latest/download/dsh-workspace-switcher.tgz

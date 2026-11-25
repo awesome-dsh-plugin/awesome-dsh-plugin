@@ -1,0 +1,6 @@
+url: https://github.com/onlyLT/wow-gongwen-writing
+name: onlyLT/wow-gongwen-writing
+category: skill
+description:
+  en: 'Registers one Chinese government official-document (公文) writing skill: the 15 statutory document types plus routine materials, document-type and addressee-direction checks, an outline-before-draft flow, GB/T 9704-2012 layout checks, and a JSON-to-.docx exporter.'
+  zh: '注册一份中文公文写作技能：覆盖 15 种法定公文与常见事务性材料，先判文种与行文方向、出大纲再逐段成稿，按 GB/T 9704-2012 核对版式，并可把成稿导出为 .docx。'

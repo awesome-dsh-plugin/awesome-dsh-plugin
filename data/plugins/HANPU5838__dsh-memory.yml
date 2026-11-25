@@ -1,0 +1,7 @@
+url: https://github.com/HANPU5838/dsh-memory
+name: HANPU5838/dsh-memory
+category: memory
+icon: https://raw.githubusercontent.com/HANPU5838/dsh-memory/main/icon.png
+description:
+  en: "Local long-term memory for DeepSeek Harness: 11 model tools, 4 recall channels (BM25, bge-m3 vectors, PPR graph expansion, PRF) fused with RRF, FSRS-style decay, semantic merge and conflict arbitration, core memory blocks, and a 7-page panel. JSONL storage stays on the machine; it works even without a vector backend."
+  zh: "DeepSeek Harness 的本地长期记忆：11 个模型工具、4 路召回（BM25、bge-m3 向量、PPR 图增强、PRF）经 RRF 融合，FSRS 式衰减、语义合并与冲突裁决、核心记忆块与 7 页面板。JSONL 存储留在本机；不配向量后端也能用。"

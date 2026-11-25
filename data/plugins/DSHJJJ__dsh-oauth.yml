@@ -1,0 +1,6 @@
+url: https://github.com/DSHJJJ/dsh-oauth
+name: DSHJJJ/dsh-oauth
+category: identity
+description:
+  en: 'OAuth/OIDC sign-in for DSH Web -- GitHub, Google, GitLab, Gitee, Microsoft Entra, Discord, Slack, Keycloak/OIDC and Feishu/Lark, all configured in Settings -> OAuth with per-account allowlists that apply on the next request.'
+  zh: 把登录墙搬进 DSH Web：GitHub、Google、GitLab、Gitee、Microsoft Entra、Discord、Slack、Keycloak·任意 OIDC、飞书·Lark 九种登录，全部在「设置 → OAuth」里配置，按账号白名单，改动下一个请求即生效。

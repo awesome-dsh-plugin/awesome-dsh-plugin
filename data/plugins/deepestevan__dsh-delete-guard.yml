@@ -1,0 +1,6 @@
+url: https://github.com/deepestevan/dsh-delete-guard
+name: deepestevan/dsh-delete-guard
+category: security
+description:
+  en: 'Denies agent-issued delete commands and redirects them to a file_trash tool that moves the target into the Windows Recycle Bin; refuses an in-place rewrite of a file from its own content, and stages a share delete onto a local NTFS volume before recycling the copy.'
+  zh: '拦截 agent 的删除命令，改为经 file_trash 工具移入 Windows 回收站；拒绝“读改写同一文件”，共享删除先复制到本地 NTFS 卷、校验并回收副本后再删原件。'

@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-evidence-gate
+name: SSHOOTING/dsh-plugin-evidence-gate
+tarball: https://github.com/SSHOOTING/dsh-plugin-evidence-gate/releases/download/v0.1.0/0.1.0.tgz
+category: dev
+description:
+  en: 'Acceptance gate that shows requirement-evidence-verdict and flags claim-only completions.'
+  zh: '验收门，逐条展示要求-证据-结论，并标记仅凭声称的完成。'

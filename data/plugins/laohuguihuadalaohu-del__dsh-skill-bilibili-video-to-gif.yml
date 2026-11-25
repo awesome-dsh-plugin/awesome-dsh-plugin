@@ -1,0 +1,6 @@
+url: https://github.com/laohuguihuadalaohu-del/dsh-skill-bilibili-video-to-gif
+name: laohuguihuadalaohu-del/dsh-skill-bilibili-video-to-gif
+category: skill
+description:
+  en: Turns Bilibili videos into GIF clips, bypassing the 412 anti-bot page and CDN 403.
+  zh: 把 B站视频截成 GIF 动图，绕开 412 风控与 CDN 403。

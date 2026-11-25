@@ -1,0 +1,6 @@
+url: https://github.com/jiaxinchayedan/dsh-bmad-method
+name: jiaxinchayedan/dsh-bmad-method
+category: skill
+description:
+  en: 'Installs BMad Method 6.12.4 into a project as a dsh plugin: 90 skills across 7 modules (planning, build, review, testing, game dev, creative, unattended loop), one _bmad/ per project, with per-module switches that hide a module''s skills without deleting anything. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 BMad Method 6.12.4 装进项目的 dsh 插件：7 个模块共 90 个 skill（规划、实施、评审、测试、游戏开发、创意、无人值守循环），每个项目各自一份 _bmad/，模块可逐个开关——只隐藏该模块的 skill，不删任何文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

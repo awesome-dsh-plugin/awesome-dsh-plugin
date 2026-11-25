@@ -1,0 +1,8 @@
+url: https://github.com/Lin-Liszt/dsh-aemeath-theme
+name: Lin-Liszt/dsh-aemeath-theme
+category: theme
+description:
+  en: 'A Wuthering Waves Aemeath theme for DSH with a pixel window frame, a holographic portrait card, a 4K splash, five video backdrops and a starlight pink and cyan skin. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '《鸣潮》爱弥斯主题：像素窗框、全息立绘卡、4K 开屏、五段视频背景与星辉粉紫皮肤。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Lin-Liszt/dsh-aemeath-theme/main/icon.png
+tarball: https://github.com/Lin-Liszt/dsh-aemeath-theme/releases/download/v1.9.3/dsh-aemeath-theme.tgz

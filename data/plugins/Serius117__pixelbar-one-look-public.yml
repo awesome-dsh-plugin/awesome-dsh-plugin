@@ -1,0 +1,6 @@
+url: https://github.com/Serius117/pixelbar-one-look-public
+name: Serius117/pixelbar-one-look-public
+category: notify
+description:
+  en: 'A DeepSeek Harness plugin that turns an Edifier Halo PixelBar into an ambient agent status light on its 256×32 LED display: breathing when idle, flowing light while working, a shadow effect with the session name when approval or a question awaits, a ripple with the session name on completion, and a red light on errors; multiple sessions are aggregated by priority.'
+  zh: '把漫步者 Halo PixelBar 变成 DeepSeek Harness 的环境状态灯：空闲呼吸、执行中流光、等待审批或选择时动态光影并显示会话名、完成时涟漪并显示会话名、出错时常亮红灯；多会话按优先级聚合。'

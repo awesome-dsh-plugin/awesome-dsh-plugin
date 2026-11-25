@@ -1,0 +1,7 @@
+url: https://github.com/zhang-1239/dsh-nitui
+name: zhang-1239/dsh-nitui
+category: tools
+description:
+  en: 'Premortem for decisions: assume the decision already failed six months from now, answer three questions, and get a ranked list of causes with one 30-minute check each. A local choice log resurfaces past trade-offs; records stay in ~/.nitui, with no upload and no telemetry.'
+  zh: '逆推：假设决定在六个月后已经失败，用三个问题反推出最可能的失败原因，每条原因配一个 30 分钟内能完成的检验动作；暗线会在同类取舍再次出现时提示你过去的选择。记录只写在本机 ~/.nitui，不上传、不遥测。'
+icon: https://raw.githubusercontent.com/zhang-1239/dsh-nitui/main/icon-512.png

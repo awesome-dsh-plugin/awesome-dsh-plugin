@@ -1,0 +1,7 @@
+url: https://github.com/81502063-dev/dsh-3min
+name: 81502063-dev/dsh-3min
+category: workflow
+description:
+  en: 'News briefing desk for the "3 minutes a day" column: fetches only from China''s official news-source whitelist, scores each story on interesting, useful and resonant, then drafts and exports a 20-item issue. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '按「每天3分钟」栏目形式做新闻简报：只从《互联网新闻信息稿源单位名单》内抓取，按有趣/有用/有共鸣打分，一键成稿并导出公众号 HTML。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/81502063-dev/dsh-3min/main/docs/screenshot.png
