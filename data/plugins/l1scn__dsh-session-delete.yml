@@ -1,0 +1,6 @@
+url: https://github.com/l1scn/dsh-session-delete
+name: l1scn/dsh-session-delete
+category: session
+description:
+  en: "Adds a Delete conversation action to the session menu that permanently removes the stored session log, the session's workspace membership and its archived/pinned references. The delete route passes through the host's own admission gate, so a web page opened in a browser cannot call it, and it can also remove a session whose log is corrupted - the case a delete that relies on the persistence API cannot find."
+  zh: "在会话菜单加入「删除对话」，永久删除会话日志、工作区归属与归档/置顶引用。删除路由走宿主自身的准入检查，浏览器里打开的网页无法调用；日志损坏的会话也能删掉——这类会话恰恰是依赖持久层 API 的删除方式找不到的。"
