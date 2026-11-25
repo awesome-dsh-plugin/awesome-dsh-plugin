@@ -1,6 +1,6 @@
 url: https://github.com/Jianli233/dsh-coserwiki-reminder
 name: Jianli233/dsh-coserwiki-reminder
-category: notify
+category: ui
 description:
   en: Bring coserwiki cosplay events into DSH — browse every event and filter by city. When a cosplayer you follow appears, the event gets a “Watched” badge and you get a popup one month and one week before it starts; reminders missed while DSH was closed are replayed next time. Edit the watchlist in Settings, changes apply immediately.
   zh: 把 coserwiki 的漫展活动接进 DSH——一屏浏览全部场次、按城市筛选。关注的 Coser 达人参演时会自动标「关注」，并在活动开始前 1 个月、1 周各弹窗提醒一次；关掉 DSH 期间错过的提醒下次打开会补弹。关注名单在插件设置里修改，保存即生效。
