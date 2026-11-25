@@ -4,3 +4,4 @@ category: remote
 description:
   en: Shows the free GPU count of the machine the current workspace belongs to — a local workspace probes this host, a remote workspace probes its dsh-remote host — with per-GPU utilization, memory, temperature and owning user in a right-sidebar panel, and a remote_gpu tool returning the same snapshot.
   zh: 按当前工作区所属主机显示空闲显卡数量：本地工作区看本机，远程工作区看对应 dsh-remote 主机，切换工作区即切换主机；右侧边栏展示每张卡的利用率、显存、温度与占用用户，并提供返回同一快照的 remote_gpu 工具。
+icon: https://raw.githubusercontent.com/Yezery/dsh-remote-gpu-switch/main/assets/icon-180.png
