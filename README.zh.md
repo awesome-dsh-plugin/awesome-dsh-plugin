@@ -994,6 +994,7 @@ dsh plugin --profile web add dshmarket
 - [Han-1413141/dsh-jev-thinkout](https://github.com/Han-1413141/dsh-jev-thinkout) — 通过 JeV 筛选并外显思考中的任务规划、进展和阶段小结，支持轻量摘要、DSH 原生翻译（需 JeV Key，会外部调用 Jev 服务并可能计费）及父子任务、串并行流程图。
 - [Han-1413141/dsh-sticky-disclosure](https://github.com/Han-1413141/dsh-sticky-disclosure) — 一键收起会话中所有展开的区块（Think、工具卡等），常驻计数按钮 + 自定义快捷键。
 - [Han-1413141/dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) — UI 管家：官方/插件 UI 分区折叠、逐条开关，拖拽移动/改大小，碰撞避让与一键自动排布。
+- [han0han0le0ni/dsh-comfyui-desk](https://github.com/han0han0le0ni/dsh-comfyui-desk) — DSH 右侧栏里的 ComfyUI 工作台：GPU/CPU/队列实时状态、提示词与采样参数、生成进度、图片库、AI 写提示词，以及可通过 ComfyUI 桥接扩展双向同步的工作流画布。
 - [han8421/dsh-desktop-ball](https://github.com/han8421/dsh-desktop-ball) — Windows 桌面悬浮球，内置中英文 WebView2 快捷聊天窗口，支持在窗口内回答提问和审批操作。
 - [HanaAyane/dsh-reasoning-effort](https://github.com/HanaAyane/dsh-reasoning-effort) — 为 DSH 原生模型选择器加入大肥鱼思考强度滑块，按模型声明的档位调节推理强度，拖动时奔跑动画随之加速。
 - [hanbernate/dsh-save-button](https://github.com/hanbernate/dsh-save-button) — 在 DSH Web GUI 交付卡片上增加下载按钮，present 交付的文件可直接从浏览器下载。
@@ -2775,6 +2776,7 @@ dsh plugin --profile web add dshmarket
 - [ZichengGurrr/dsh-window#kit](https://github.com/ZichengGurrr/dsh-window/tree/main/kit) — DSH 三件套全家桶：Windows 原生窗口（WebView2）+ DeepEye 视觉（GLM-4V-Flash）+ 语音输入（麦克风按钮），一条命令装齐。
 - [ZichengGurrr/dsh-window#plugin](https://github.com/ZichengGurrr/dsh-window/tree/main/plugin) — DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。
 - [zihangii/dsh-job-desk](https://github.com/zihangii/dsh-job-desk) — 把 DSH 所有会话的后台任务收进一页，同一批任务可按工作区、会话或脚本分组查看，并能看输出尾部、停止任务、跳到发起它的会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [zihangii/dsh-workspace-organizer](https://github.com/zihangii/dsh-workspace-organizer) — 哪个工作区刚收到新对话，就自动排到侧边栏最上方，走宿主持久的工作区顺序。空白会话与子代理会话不触发置顶，没有开关和界面。
 - [ZilongYang/dsh-multiline-input](https://github.com/ZilongYang/dsh-multiline-input) — DSH Web 输入框单行/多行切换：通过官方快捷键服务注册的可编辑快捷键（桌面版默认 Cmd/Ctrl+E，浏览器版默认 Cmd/Ctrl+Shift+E，Linux 浏览器默认未绑定） 在原生单行输入框与至少四行的多行输入框之间切换；输入框上沿的小 tab 常驻显示当前快捷键与目标模式；多行时 Enter 换行、Shift+Enter 发送，模式按设备记忆。
 - [zilta-amaze/dsh-pomodoro-dial](https://github.com/zilta-amaze/dsh-pomodoro-dial) — 常驻右下角的番茄钟圆盘：专注/短休/长休时长自定，长休可单独关闭，带轮次计数；闹铃为五种 Web Audio 实时合成的音效，支持试听、音量与响铃时长。无音频资源、无网络请求，计时状态刷新后继续。
 - [Zimeng-Luo/dsh-source-fold](https://github.com/Zimeng-Luo/dsh-source-fold) — 将输入框的模型选择器替换为紧凑面板，支持来源到模型的逐级选择和自适应思考强度滑块，保留 Default 档位，不支持调节的模型隐藏滑块。
@@ -4987,6 +4989,7 @@ dsh plugin --profile web add dshmarket
 - [chaquchi/dsh-branch-discussion](https://github.com/chaquchi/dsh-branch-discussion) — 把自包含的子问题软分支到子会话，只把一页以内的结构化摘要带回主上下文。
 - [Charles516z/dsh-autocompress](https://github.com/Charles516z/dsh-autocompress) — 在 DeepSeek Harness 上按固定时间压缩所有空闲会话的上下文：默认每天 08:30 自动执行，错过时间点在下次启动时补做，也可用 /compact-all 命令随时手动压缩，并逐会话报告结果。
 - [chen1pengvincent/dsh-archived-manager](https://github.com/chen1pengvincent/dsh-archived-manager) — 管理 DSH 归档会话：原生取消归档、可恢复隔离区、彻底删除、检索、单次最多 200 条的批量操作，以及 7/30/90 天或永不过期的隔离区保留策略，且不删除项目文件。
+- [ChengGuanjin666/dsh-find-in-sessions](https://github.com/ChengGuanjin666/dsh-find-in-sessions) — 跨会话检索 DSH 会话日志，本地 SQLite FTS5 索引：正文与工具输出分区入索引，中文按两字窗口切词，短词查询走索引而不是全表扫；命中可跳到那条消息，或开右侧预览。预览需前置插件 dsh-better-sidebar。
 - [CHENJIAMIAN/dsh-session-switch](https://github.com/CHENJIAMIAN/dsh-session-switch) — 桌面版按 Ctrl+Tab 在「当前会话」和「上一个会话」之间来回切，只在这两个之间打转，不会一路翻回更早的会话。
 - [chenkai2/dsh-team-admin](https://github.com/chenkai2/dsh-team-admin) — DSH Web GUI 的智能体团队管理：查看任意会话的成员，删除角色及其持久会话（目录移入回收站，可恢复），在 0.2.2-rc.1 之前的旧版团队上回收释放的成员名额，让已删除成员不再出现在子智能体选择器与团队面板，并在 0.2.2-rc.1+ 恢复会话页头的只读成员面板；新旧两版智能体团队实现都能用，不需要改 DSH 源码。
 - [chenkui-luo/dsh-session-attachment-repair](https://github.com/chenkui-luo/dsh-session-attachment-repair) — 在设置页列出历史引用了本地附件库中已丢失对象的会话，先备份日志、再把悬空引用替换成文本占位，使这些会话能重新发送消息。修复脚本需要 Node 22.15 及以上；设置卡片目前仅在 Windows 上验证过。
@@ -5595,7 +5598,7 @@ dsh plugin --profile web add dshmarket
 - [sirius2alpha/dsh-session-retitle](https://github.com/sirius2alpha/dsh-session-retitle) — 一键重新生成当前会话的标题：标题旁的按钮、会话头部菜单里的一行、/retitle 命令，以及 retitle_session 智能体工具，都调用当前组合的会话标题服务的显式刷新。
 - [SkanderBog/dsh-context-manager](https://github.com/SkanderBog/dsh-context-manager) — 预览会话上下文，按对话分组选择保留、摘要或省略，确认后通过 Harness 会话服务持久化压缩结果。
 - [Sky-lll27/DSH-chat-keeper](https://github.com/Sky-lll27/DSH-chat-keeper) — DSH 对话管家：跨工作区总表与批量归档、正文搜索，以及可恢复的回收站式删除。
-- [skysstst/dsh-independent-task](https://github.com/skysstst/dsh-independent-task) — 一键创建时间戳工作区文件夹并在其中开启会话，支持任务目录下拉选择、会话标题同步，并自动清理没有任何输入的空任务。
+- [skysstst/dsh-independent-task](https://github.com/skysstst/dsh-independent-task) — 一键创建时间戳工作区文件夹并在其中开启会话，支持任务目录下拉选择、会话标题同步、空任务自动清理，以及侧栏会话按活跃度分类收纳与 DS Bot 会话过滤。
 - [sleeepingbeee/dsh-workspace-cleaner](https://github.com/sleeepingbeee/dsh-workspace-cleaner) — 在设置页列出所有工作区及其对话，勾选后按勾选内容删除对话或整个工作区，并一并清理对应的会话日志、投影缓存与工作区注册。
 - [SLin-code/dsh-task-notice-board](https://github.com/SLin-code/dsh-task-notice-board) — 面向 DSH Web 的任务级 Workspace 到 Task 到 Session 协作控制台，提供 Session 看板、归档对话查看，以及在关联 Session 之间共享的有界长期记忆。
 - [sluminositys/dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) — 从任意层级的已完成回答持续创建隔离分支，主会话始终不受影响。
@@ -9117,6 +9120,7 @@ dsh plugin --profile web add dshmarket
 - [wzd-cpu/dsh-breeze-tts](https://github.com/wzd-cpu/dsh-breeze-tts) — 把 BreezeBlue 语音接入 DSH：三个工具、会话头开关自动朗读助手回复（自动剥离 Markdown 与代码块），并提供音频播放、合成与长轮询的本地 HTTP 接口。需配置 BreezeBlue API Key（BREEZE_API_KEY），合成按字符计费。
 - [XanthanL/dsh-plugin-uisfx](https://github.com/XanthanL/dsh-plugin-uisfx) — 基于 uisfx 的语义化 UI 音效：任务开始/成功/失败、不同按钮情景 cue，设置页即时试听，12 种音色包，Host 持久化，并提供 `ctx.uisfx` 服务给其他插件。
 - [xcw520/dsh-dania-voice](https://github.com/xcw520/dsh-dania-voice) — 用本地 GPT-SoVITS 把 DeepSeek Harness 的助手回复读出来，带可拖动的挂件开关与一键部署。需预装 Python 3.10–3.12（安装器只负责定位，不负责安装）；建议约 5 GB 磁盘与 GPU。
+- [xiaolai181/dsh_laivox_tts](https://github.com/xiaolai181/dsh_laivox_tts) — 把 TXT / EPUB 小说做成单人朗读或多角色有声书（Edge TTS），朗读对话里的回答，并为 AI 提供建书、导入和排队制作的工具。
 - [Yamashigure/dsh-listen-together](https://github.com/Yamashigure/dsh-listen-together) — 仅 Windows。读取系统回环音频，按当前浏览器窗口标题认出正在放什么，通过 listen_now、listen_feel、listen_control 三个工具交给会话。另带一个原生置顶悬浮窗管暂停和音量，本地 SenseVoice 听写作为粗略的歌词参考。
 - [yangjz98/dsh-voice-shortcut](https://github.com/yangjz98/dsh-voice-shortcut) — 给 DSH 内置的语音输入按钮加可自定义的键盘快捷键：按 Alt+V 开始录音、再按一次停止并识别；Esc 关闭已打开的语音行。
 - [yu-wenchao/dsh-tool-lipsync](https://github.com/yu-wenchao/dsh-tool-lipsync) — DSH 免费对口型口语视频生成插件，支持 3000+ 声音和 500+ 语言。
@@ -13099,6 +13103,7 @@ dsh plugin --profile web add dshmarket
 - [Kapozux/dsh-xiaobenben](https://github.com/Kapozux/dsh-xiaobenben) — 住在 DSH Web 右下角的鲸鱼娘桌宠：点她一下，她翻出一件你和 agent 一起干过的真事，带你的原话；台词默认来自本机模板，你同意后可以用自己配置的模型来写。另带一个 agent 年度回顾页。
 - [kendu76/dsh-music-player](https://github.com/kendu76/dsh-music-player) — DSH 音乐/小说播放器：在网页里听本地音乐（HTTP 流式）、用 AI 声音朗读本地小说（.txt/.epub）、播放在线 QQ/酷狗/网易云音乐与网络电台（支持 HLS 直播流）、定时播报每日新闻；可在面板操作，也可让 agent 通过 music_play 工具直接点播。
 - [Kevinwu901113/dsh-dot](https://github.com/Kevinwu901113/dsh-dot) — 住在自己手机上的角色：插件自动安装并运行她的 Android 手机，任何 App 的新通知都能叫醒她；她自己装 App，逛小黑盒、B 站等并点赞评论；有自己的 QQ（NapCat / SnowLuma，分条回复、发表情包）；记忆含人物卡、每天 23:30 的日记和叫醒前的自动召回（默认本机 embedding，可切 SiliconFlow / DashScope）；两次对话之间的生活（幕间，按 HDS-Interlude）；可选 microVM 电脑带审批闸门。右侧栏有手机画面、虚拟机画面和 dot 面板；个人设置集中在 ~/.dsh/dsh-dot.json，六个组件都能单独关闭。只有 `/qq owner` 指定的 QQ 号算你本人，别人的消息按不可信通知处理。
+- [keyszuns/dsh-pet-connector](https://github.com/keyszuns/dsh-pet-connector) — 把本机 dsh-pet 接入大肥鱼世界（需先安装 dsh-pet），支持配对、在线状态、中英文面板、唯一昵称和好友结伴。
 - [KhalilWong/dsh-plugin-touchline-football#plugin](https://github.com/KhalilWong/dsh-plugin-touchline-football/tree/main/plugin) — 为 DSH 提供足球比分小窗、事件推演球场和本地追踪回放。
 - [Kingoff8/dsh-pixel-whale-pet](https://github.com/Kingoff8/dsh-pixel-whale-pet) — DSH 网页聊天里的像素小鲸鱼挂件：在空白处游动、躲开消息文字和鼠标，跟随智能体的每个阶段切换独立动画，会喷水、打盹冒 Z，回合完成时放烟花。
 - [KOGGUA-EDIT/dsh-pet-sayaka](https://github.com/KOGGUA-EDIT/dsh-pet-sayaka) — 美树沙耶香桌宠：把会话状态映射成十二张立绘并啪地直接切换——一轮对话跑完会累倒、连点十下会气炸、闲着会擦剑吹口哨；同类状态连着来她会换话变脸，每种状态每碰 5~8 次播一次语音，台词还配了专属录音。
