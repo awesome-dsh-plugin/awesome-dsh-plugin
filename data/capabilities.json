@@ -14634,14 +14634,6 @@
     "scannedAt": "2026-09-24T17:41:52.360Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/haozheou/dsh-discipline-guard": {
-    "version": "1.1.0",
-    "spec": "github:haozheou/dsh-discipline-guard",
-    "capabilities": [],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/happpsee/dsh-desktop-app": {
     "version": "0.4.0",
     "spec": "github:happpsee/dsh-desktop-app",
@@ -18149,19 +18141,6 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/jiangyinluwei/dsh-plugInOne": {
-    "version": "0.1.0",
-    "spec": "github:jiangyinluwei/dsh-plugInOne",
-    "capabilities": [
-      "shell",
-      "fs-write",
-      "fs-read",
-      "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/jiangzhenguo/dsh-codegraph": {
     "version": "1.1.0",
     "spec": "github:jiangzhenguo/dsh-codegraph",
@@ -20279,34 +20258,6 @@
       "fs-write",
       "fs-read",
       "network"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
-  "https://github.com/kiligzzz/dsh-agent-dispatch": {
-    "version": "1.3.5",
-    "spec": "github:kiligzzz/dsh-agent-dispatch",
-    "capabilities": [
-      "fs-write",
-      "fs-read",
-      "network",
-      "env",
-      "subagent"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
-  "https://github.com/kiligzzz/dsh-session-archive": {
-    "version": "0.1.3",
-    "spec": "github:kiligzzz/dsh-session-archive",
-    "capabilities": [
-      "fs-write",
-      "fs-read",
-      "network",
-      "env",
-      "host-runtime"
     ],
     "redLines": [],
     "scannedAt": "2026-09-24T17:02:46.730Z",
@@ -34362,18 +34313,6 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/ShenpingDD/wooden-fish-dsh": {
-    "version": "1.1.0",
-    "spec": "github:ShenpingDD/wooden-fish-dsh",
-    "capabilities": [
-      "fs-write",
-      "fs-read",
-      "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/SherUnlocked-4869/dsh-plugin-msg-nav": {
     "version": "0.2.2",
     "spec": "github:SherUnlocked-4869/dsh-plugin-msg-nav",
@@ -37038,17 +36977,6 @@
       "fs-write",
       "fs-read",
       "network"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
-  "https://github.com/temotee2103/dsh-ci-co-pilot": {
-    "version": "unknown",
-    "spec": "github:temotee2103/dsh-ci-co-pilot",
-    "capabilities": [
-      "network",
-      "env"
     ],
     "redLines": [],
     "scannedAt": "2026-09-24T17:02:46.730Z",

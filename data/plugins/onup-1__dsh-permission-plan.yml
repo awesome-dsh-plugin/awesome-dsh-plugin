@@ -1,0 +1,6 @@
+url: https://github.com/onup-1/dsh-permission-plan
+name: onup-1/dsh-permission-plan
+category: security
+description:
+  en: 'Collects everything a task will need into one approval dialog, then remembers the approved keywords so similar commands stop prompting. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把一个任务需要的提权一次性问完，之后记住已批准的关键词，同类命令不再逐条询问。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

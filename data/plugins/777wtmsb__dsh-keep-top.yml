@@ -1,0 +1,16 @@
+url: https://github.com/777wtmsb/dsh-keep-top
+name: 777wtmsb/dsh-keep-top
+category: ui
+description:
+  en: >-
+    Stops the streaming auto-scroll at the top of the answer: the viewport follows
+    a new answer only until its first line reaches the top of the screen, then holds
+    there, so you can read back while output is still arriving. Official transcript
+    mode is left untouched; any scroll, touch, click or page key hands control back
+    for the rest of the turn. Client-side only, no model calls, no network, no files.
+  zh: >-
+    输出时视口只跟到「本条回答的第一行」贴住顶部就停住，不再继续往底部追，
+    想回看刚过去的那段时不用跟还在往下跑的输出较劲。官方展示档保持标准、不改动；
+    任何滚动、触摸、点击或翻页键都会立即交还控制权，本轮不再抢。
+    纯前端插件，不调用模型、不联网、不读写文件。
+icon: https://raw.githubusercontent.com/777wtmsb/dsh-keep-top/main/assets/icon.png

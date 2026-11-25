@@ -1,0 +1,9 @@
+url: https://github.com/zgbj0000zc/dsh-chat-demo
+name: zgbj0000zc/dsh-chat-demo
+category: ui
+description:
+  en: 'Opens a chat window built from the official chat-demo inside DSH, with its model calls relayed through your DSH account so no API key is needed: chat, deep thinking and web search, a per-reply token and estimated-cost label, and a right-edge launcher or Ctrl/Command+Shift+K.'
+  zh: '把修改自官方 chat-demo 的对话窗口嵌进 DSH：模型请求经宿主用当前 DSH 账号转发、不用填 API Key，含对话、深度思考与联网搜索，每轮回答下方显示 token 与估算费用，右侧常驻入口或 Ctrl/⌘+Shift+K 打开。'
+icon: https://raw.githubusercontent.com/zgbj0000zc/dsh-chat-demo/main/assets/icon-180.png
+# 可选：发布到 GitHub Release 后取消下面这行的注释（资产名不要带版本号，否则下次发版会 404）
+# tarball: https://github.com/zgbj0000zc/dsh-chat-demo/releases/latest/download/dsh-chat-demo.tgz

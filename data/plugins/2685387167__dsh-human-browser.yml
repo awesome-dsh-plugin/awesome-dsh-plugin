@@ -1,0 +1,15 @@
+# 提交到 awesome-dsh-plugin 的条目文件
+#
+# 用法：fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin，
+#       把这个文件放到 data/plugins/2685387167__dsh-human-browser.yml，
+#       然后提 PR（一个文件就是一个 PR，不用改 README）。
+#
+# 注意：description 里出现「冒号 + 空格」时必须整体加引号，否则 YAML 会当成嵌套键解析失败。
+
+url: https://github.com/2685387167/dsh-human-browser
+name: 2685387167/dsh-human-browser
+category: browser
+description:
+  en: "Drives the Chrome you are already using over native messaging and chrome.debugger: 15 browser tools that dispatch real CDP Input events, enable no CDP domains at all, and shape pointer motion and typing like a person. Windows only; on first use the MV3 extension is downloaded and unpacked from this repo's GitHub Releases, then loaded once by hand in chrome://extensions."
+  zh: "通过 native messaging 与 chrome.debugger 驱动你正在用的 Chrome：15 个浏览器工具，派发真实 CDP 输入事件、不启用任何 CDP 域、指针与打字都带人类化的节奏。仅 Windows，首次使用时扩展由插件从本仓库的 GitHub Releases 下载解压，需在 chrome://extensions 手动加载一次。"
+icon: https://raw.githubusercontent.com/2685387167/dsh-human-browser/main/extension/icons/icon128.png

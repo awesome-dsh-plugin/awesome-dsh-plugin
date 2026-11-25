@@ -1,0 +1,7 @@
+url: https://github.com/Lingliqeye/dsh-session-revenant
+name: Lingliqeye/dsh-session-revenant
+category: session
+description:
+  en: 'Adds a Delete session row to the sidebar session menu: the confirmation dialog shows how much space the session and its backup copy take, and the backup, when enabled, can be restored or deleted from the plugin page afterwards. Also adds sidebar buttons for reloading the page and restarting the app. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在侧栏会话菜单里加「删除会话」：确认弹窗会显示该会话与备份副本各占多大，勾选的备份之后可在插件页里恢复或删除。另在侧栏底部加了「重载页面」与「重启应用」两个按钮。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Lingliqeye/dsh-session-revenant/main/icon.png

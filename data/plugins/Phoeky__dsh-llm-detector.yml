@@ -1,0 +1,6 @@
+url: https://github.com/Phoeky/dsh-llm-detector
+name: Phoeky/dsh-llm-detector
+category: model
+description:
+  en: 'Fingerprint the model behind a DSH provider route: it writes about 300 integers from 1 to 355, ranked against a 76-model reference bank with calibrated confidence. Ships a sidebar panel with live sample progress, per-sample retry, reasoning-effort and outbound-proxy options, plus an llm_fingerprint chat tool. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '检测 DSH 渠道背后实际的模型：让模型写约 300 个 1–355 的整数，与 76 模型参考库比对并给出校准置信度；提供左侧边栏面板（实时采样进度、单样本重试、思考强度与出站代理）和 llm_fingerprint 对话工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

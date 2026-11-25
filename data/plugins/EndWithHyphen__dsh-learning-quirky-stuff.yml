@@ -1,0 +1,8 @@
+url: https://github.com/EndWithHyphen/dsh-learning-quirky-stuff
+name: EndWithHyphen/dsh-learning-quirky-stuff
+category: docs
+description:
+  en: A learning whiteboard for handwritten notes, screenshots, AI summaries, editable infographics, and spaced review, with a companion Chrome extension for taking notes while reading.
+  zh: 在画布上记录手写笔记和截图，生成 AI 图文总结与可编辑信息图，用间隔复习巩固知识，并通过配套 Chrome 扩展收集网页笔记。
+icon: https://raw.githubusercontent.com/EndWithHyphen/dsh-learning-quirky-stuff/main/chrome-extension/icons/icon-128.png
+tarball: https://github.com/EndWithHyphen/dsh-learning-quirky-stuff/releases/download/v4.6.0/dsh-learning-quirky-stuff-4.6.0.tgz
