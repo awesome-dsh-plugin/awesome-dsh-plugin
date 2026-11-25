@@ -1,0 +1,8 @@
+url: https://github.com/shenmingsolar-01/dsh-memory-hub
+name: shenmingsolar-01/dsh-memory-hub
+category: memory
+description:
+  en: 'Local memory hub for multi-channel DSH characters: per-source isolation, automatic snapshots, delete/restore API, plus inbox/outbox for cross-channel delivery.'
+  zh: '多端 DSH 角色的本地记忆中枢：按来源隔离、自动快照，并提供删除/恢复 API 和可配置的跨端 Inbox/Outbox。'
+icon: https://raw.githubusercontent.com/shenmingsolar-01/dsh-memory-hub/main/assets/icon-180.png
+tarball: https://github.com/shenmingsolar-01/dsh-memory-hub/releases/latest/download/dsh-memory-hub.tgz
