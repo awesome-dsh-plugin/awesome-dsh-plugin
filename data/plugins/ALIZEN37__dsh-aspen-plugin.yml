@@ -1,0 +1,6 @@
+url: https://github.com/ALIZEN37/dsh-aspen-plugin
+name: ALIZEN37/dsh-aspen-plugin
+category: tools
+description:
+  en: 'Open an Aspen Plus V14 case, run the simulation, read and write flowsheet tree nodes, list streams and blocks, and save the result. Contributes an MCP server with 8 tools (aspen_status, aspen_open_case, aspen_run, aspen_get, aspen_set, aspen_list, aspen_save, aspen_close) through ctx.mcpManager.register(). Windows only; needs a local Aspen Plus V14 install and its Sentinel license service.'
+  zh: '在 DeepSeek Harness 里驱动 Aspen Plus V14：打开 .bkp 案例、运行模拟、读写流程树节点、列出流股与模块、保存结果；通过 ctx.mcpManager.register() 注册 8 个 MCP 工具（aspen_status、aspen_open_case、aspen_run、aspen_get、aspen_set、aspen_list、aspen_save、aspen_close）。仅限 Windows，需要本机安装 Aspen Plus V14 与 Sentinel 许可服务。'
