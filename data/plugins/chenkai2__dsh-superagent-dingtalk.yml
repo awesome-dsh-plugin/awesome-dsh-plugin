@@ -1,0 +1,6 @@
+url: https://github.com/chenkai2/dsh-superagent-dingtalk
+name: chenkai2/dsh-superagent-dingtalk
+category: workflow
+description:
+  en: 'DingTalk source for dsh-superagent: reads the configured groups through the official dws CLI as the operator, receives the messages that address an application robot over the Stream connection, and posts every reply as a bot so the agent never speaks as its owner. A question the agent needs answered is sent as a "needs your decision" message, and the owner''s reply resumes the work.'
+  zh: 'dsh-superagent 的钉钉来源：用官方 dws CLI 以操作者身份读取配置的群，用 Stream 长连接接收 @ 应用机器人的消息，回复一律以机器人身份发出，agent 不会冒充本人发言。agent 需要拍板时发一条「需要你决定」，本人回一句即继续执行。'
