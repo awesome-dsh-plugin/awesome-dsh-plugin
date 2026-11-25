@@ -1,0 +1,6 @@
+url: https://github.com/dengwei84/dsh-session-digest
+name: dengwei84/dsh-session-digest
+category: tools
+description:
+  en: 'Cross-workspace session digest: search DSH sessions from every workspace, then read a compact, budgeted transcript of the one you pick. Read-only, it never modifies the referenced session.'
+  zh: '跨工作区会话摘要：搜索本机所有工作区的 DSH 会话，再按预算读取选中会话的对话摘要；只读，不改动被引用的会话。'
