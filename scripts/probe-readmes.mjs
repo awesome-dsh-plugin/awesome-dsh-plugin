@@ -13,9 +13,12 @@
  * committed data from a cold start.
  *
  * Usage: GITHUB_TOKEN=... node scripts/probe-readmes.mjs
+ *        GITHUB_TOKEN=... PROBE_TARGET_REPO=owner/repo node scripts/probe-readmes.mjs
+ *        GITHUB_TOKEN=... PROBE_TARGET_REPO=https://github.com/owner/repo/tree/main/packages/plugin node scripts/probe-readmes.mjs
  */
 import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
+import { listedProbeUrls, selectProbeUrls } from './lib/probe-target.mjs'
 
 const OUT_FILE = 'data/readmes.json'
 // Fetching costs no API quota (see `raw` below), but it is still thousands of
@@ -31,6 +34,10 @@ const PROBE_ALL = process.env.PROBE_ALL === '1'
 const CONCURRENCY = Number(process.env.PROBE_CONCURRENCY ?? (PROBE_ALL ? 10 : 8))
 const MAX_BYTES = 48 * 1024
 
+const readme = fs.readFileSync(LOCALES[0].readme, 'utf8')
+const { targeted, urls } = selectProbeUrls(listedProbeUrls(readme), process.env.PROBE_TARGET_REPO ?? '')
+if (targeted && !fs.existsSync(OUT_FILE)) throw new Error('targeted refresh requires the restored readmes.json cache')
+
 // The token is not needed to fetch anything any more — it stays required so a
 // run nobody meant to make (a local invocation, a misconfigured CI) leaves the
 // committed data alone instead of rewriting it from a cold start.
@@ -40,8 +47,6 @@ if (!process.env.GITHUB_TOKEN) {
 }
 
 const map = fs.existsSync(OUT_FILE) ? JSON.parse(fs.readFileSync(OUT_FILE, 'utf8')) : {}
-const readme = fs.readFileSync(LOCALES[0].readme, 'utf8')
-const urls = [...readme.matchAll(/^- \[.+?\]\((https:\/\/github\.com\/[^)]+)\) [—-] /gm)].map((m) => m[1])
 const today = new Date().toISOString().slice(0, 10)
 
 // crude language sniff: CJK-heavy → zh
@@ -234,7 +239,8 @@ async function probe(url, listing) {
 }
 
 const fresh = (entry) =>
-  !PROBE_ALL
+  !targeted
+  && !PROBE_ALL
   && entry !== undefined
   && entry.fetchedAt
   && (Date.now() - new Date(entry.fetchedAt).getTime()) / 86400000 <= RECHECK_DAYS
@@ -288,8 +294,10 @@ if (failed.length) {
 }
 
 // drop entries for URLs no longer listed
-const listed = new Set(urls)
-for (const k of Object.keys(map)) if (!listed.has(k)) delete map[k]
+if (!targeted) {
+  const listed = new Set(urls)
+  for (const k of Object.keys(map)) if (!listed.has(k)) delete map[k]
+}
 
 const sorted = Object.fromEntries(Object.entries(map).sort(([a], [b]) => a.localeCompare(b)))
 fs.writeFileSync(OUT_FILE, JSON.stringify(sorted) + '\n')
