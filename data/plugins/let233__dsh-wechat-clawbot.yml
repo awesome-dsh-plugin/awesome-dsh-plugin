@@ -1,0 +1,6 @@
+url: https://github.com/let233/dsh-wechat-clawbot
+name: let233/dsh-wechat-clawbot
+category: remote
+description:
+  en: 'WeChat ClawBot (Tencent iLink) channel for DeepSeekRuntime organised around a dedicated coordinator session: it can list every session in every workspace, open a per-target command session so WeChat messages never land inside your working sessions, and switch targets in plain language instead of slash-command numbers. Dispatched tasks are forwarded word for word, long replies are split under the WeChat text limit, and a Bark / WxPusher fallback carries a tappable weixin:// link when the bot cannot message first. Ships a built-in inbound tunnel (Cloudflare quick tunnel by default, named tunnel or your own frp server as alternatives) that exposes only a token-protected webhook, never the DSH UI.'
+  zh: '微信 ClawBot（腾讯 iLink）接入 DeepSeekRuntime，核心是一个专属协调器会话：能列出所有工作区的所有会话，为某个会话另开一个专属指挥会话（微信消息永远不落进你的工作会话），并支持「切到那个在改登录页的会话」这种大白话切换，不用记 /switch 序号。派发的任务逐字转发、长回复按微信长度限制自动分段，Bark / WxPusher 兜底推送带可点击的 weixin:// 链接。内置入站隧道（默认 Cloudflare 快速隧道，也支持命名隧道或自建 frp 服务），只对外暴露带 token 的 webhook，不暴露 DSH 界面。'
