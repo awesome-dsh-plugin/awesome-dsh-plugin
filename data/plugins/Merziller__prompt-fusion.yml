@@ -2,6 +2,6 @@ url: https://github.com/Merziller/prompt-fusion
 name: Merziller/prompt-fusion
 category: ui
 description:
-  en: 'Adds prompt-enhancement previews to the DSH composer with explicit apply and undo, an offline rule engine, optional model-assisted rule selection, and CLI, MCP and Agent Skills entry points.'
-  zh: '在 DSH 输入区提供提示词增强预览、确认应用与撤销，默认离线规则增强，可选模型辅助选规则，并提供 CLI、MCP 和 Agent Skills 入口。'
-tarball: https://github.com/Merziller/prompt-fusion/releases/download/v0.1.0/prompt-fusion-0.1.0.tgz
+  en: 'One inline Enhance button: automatic domain, deep guidance and faithful structured drafts, with stop/undo and stale-edit protection. Uses the selected model with offline fallback; also provides CLI, MCP and portable Agent Skills.'
+  zh: '一个增强按钮：自动场景、深度补充与保真结构编排，同按钮停止和撤销，保护用户编辑；使用当前模型并离线回退，另提供 CLI、MCP 与便携 Agent Skills。'
+tarball: https://github.com/Merziller/prompt-fusion/releases/download/v0.2.0/prompt-fusion-0.2.0.tgz
