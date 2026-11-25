@@ -1,8 +1,7 @@
 url: https://github.com/femnn/dsh-museum-guide
 name: femnn/dsh-museum-guide
-category: skill
-tarball: https://github.com/femnn/dsh-museum-guide/releases/download/v1.1.0/dsh-museum-guide-1.1.0.tgz
+category: ui
 description:
-  en: 'Museum tour-script workbench: eight agent tools record the official floor plan and visit order first, track research notes from the web and the Chinese social platforms, keep one read-aloud section per hall with per-hall video links, and audit the script deterministically against a 22,000-character target and a 20,000-character floor with an explicit shortfall; a sidebar panel lists the route stops, shows each hall text, reads it aloud with browser speech synthesis, and exports Markdown.'
-  zh: '博物馆讲解稿工作台：8 个 Agent 工具先记录官方平面图与参观顺序，登记网页与小红书/抖音/快手/视频号/B站的检索资料，按展厅逐厅写可直接照读的段落并给每厅挂讲解视频，再按 22000 字目标、20000 字下限做确定性字数审核并明确报出还差多少字；侧边栏面板列出路线站点、显示每厅文字、用浏览器语音朗读，并导出 Markdown。'
-icon: https://raw.githubusercontent.com/femnn/dsh-museum-guide/main/assets/icon-180.png
+  en: 'Museum tour-script writer: records the official floor map and visit route first, writes a 22,000-character hall-by-hall read-aloud script with per-hall videos, and audits the length.'
+  zh: '博物馆讲解稿写作：先记录官方导览图与参观路线，按展厅写出 2.2 万字可照读讲解稿，每厅挂视频，并用字数审核卡住下限。'
+tarball: https://github.com/femnn/dsh-museum-guide/releases/download/v1.2.0/dsh-museum-guide-1.2.0.tgz
