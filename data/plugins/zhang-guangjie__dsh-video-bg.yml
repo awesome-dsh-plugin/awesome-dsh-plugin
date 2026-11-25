@@ -2,6 +2,6 @@ url: https://github.com/zhang-guangjie/dsh-video-bg
 name: zhang-guangjie/dsh-video-bg
 category: ui
 description:
-  en: Play a local video behind the DeepSeek Harness chat UI, with play/pause, opacity, scrim and fit controls.
-  zh: 在 DeepSeek Harness 对话界面背后循环播放本地视频，支持播放/暂停、不透明度、遮罩与填充调节。
+  en: '真没想到你能做到这一步啊！领域展开——【无量空处】 Play a local video behind the DeepSeek Harness chat UI, with play/pause, opacity, scrim and fit controls.'
+  zh: '真没想到你能做到这一步啊！领域展开——【无量空处】在 DeepSeek Harness 对话界面背后循环播放本地视频，支持播放/暂停、不透明度、遮罩与填充调节。'
 tarball: https://github.com/zhang-guangjie/dsh-video-bg/releases/download/v0.4.0/dsh-video-bg-0.4.0.tgz
