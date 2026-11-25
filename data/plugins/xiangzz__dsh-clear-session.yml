@@ -1,0 +1,6 @@
+url: https://github.com/xiangzz/dsh-clear-session
+name: xiangzz/dsh-clear-session
+category: session
+description:
+  en: "Adds a /clear command that opens a new session in the current session's Workspace and switches to it, leaving the old session in the sidebar. It starts a new session rather than clearing context in place."
+  zh: "新增 /clear 命令：在当前会话所在的工作区新开一个会话并切换过去，原会话留在侧边栏。是新开会话，不是原地清空上下文。"

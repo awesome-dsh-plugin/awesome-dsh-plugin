@@ -1,0 +1,7 @@
+url: https://github.com/adrianzeng/dsh-plugin-scratchpad
+name: adrianzeng/dsh-plugin-scratchpad
+category: memory
+description:
+  en: 'Sidebar notepad: type one sentence and a Chinese reminder time (明天十点, 下周三, 30分钟后) is detected automatically. Notes live in the host SQLite database and survive restarts; three model tools let any DSH session read and write the same notes. Optional manual promote of one note into a Markdown idea card. No network access, no third-party dependencies.'
+  zh: 'DSH 左侧栏便签：记一句话，自动识别中文提醒时间（明天十点、下周三、30分钟后）；便签存在宿主 SQLite 里，重启不丢，三个模型工具让任意 DSH 会话读写同一份便签。可选把某一条人工投递成 Markdown 想法卡。不联网、无第三方依赖。'
+tarball: https://github.com/adrianzeng/dsh-plugin-scratchpad/releases/download/v2.0.1/dsh-plugin-scratchpad-2.0.1.tgz

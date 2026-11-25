@@ -1,0 +1,7 @@
+url: https://github.com/myth929/dsh-roles
+name: myth929/dsh-roles
+category: workflow
+description:
+  en: Role-layered subagent orchestration converging delegation into orchestrate_subagent with 5 roles (general-purpose, explore, plan, fork, dsh-code-guide), per-role context/tool isolation, Web UI model and OAR routing, step budgets, and write-scope/worktree guardrails.
+  zh: 面向 DeepSeek Harness 的子智能体角色编排插件：将委派收敛为 orchestrate_subagent 工具，提供 5 种预置角色（general-purpose、explore、plan、fork、dsh-code-guide）、角色级上下文与工具隔离、Web UI 模型与 OAR 运行时路由、步数预算及写入护栏。
+icon: https://raw.githubusercontent.com/myth929/dsh-roles/main/assets/icon-180.png

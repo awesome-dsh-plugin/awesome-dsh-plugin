@@ -1,0 +1,7 @@
+url: https://github.com/xkshct198570/dsh-whale-memory
+name: xkshct198570/dsh-whale-memory
+category: memory
+description:
+  en: 'Local long-term memory and rule source for DeepSeek Harness. SQLite recall injection, write auditing, six-tab panel, and rules kept in a local git Markdown repository with proposals, plan/apply, tombstone numbering and a health check. No external service or API key by default. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的本地长期记忆与规则真源：SQLite 召回注入、写入审计、六页签面板；规则以本地 git Markdown 仓为真源，带提案/plan/apply、墓碑编号与健康检查。默认不依赖外部服务或密钥。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/xkshct198570/dsh-whale-memory/releases/latest/download/dsh-whale-memory.tgz

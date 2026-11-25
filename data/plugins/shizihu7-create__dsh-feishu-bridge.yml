@@ -1,0 +1,6 @@
+url: https://github.com/shizihu7-create/dsh-feishu-bridge
+name: shizihu7-create/dsh-feishu-bridge
+category: remote
+description:
+  en: 'Feishu (Lark) bot bridge for DSH: chat from your phone, watch a throttled streaming card with a stop button, and answer tool approvals and ask_user_question from the phone. Images and files sent in chat enter the prompt or the session workspace; files the agent presents come back to the phone, and long answers arrive as a markdown file. Uses the official long connection, so no public endpoint is needed. The first person to message the bot becomes its admin, so pair it yourself before sharing the bot.'
+  zh: '飞书机器人桥：在群里 @机器人 或单聊发消息即可操作 DSH；手机上看节流刷新的流式卡片（可点停止）、在卡片上处理审批与选项提问。聊天里的图片进入模型上下文，文件落到会话工作区；代理声明的交付物会自动发回手机，超长回答自动转成 markdown 文件。走官方长连接，无需公网地址。第一个给机器人发消息的人会成为管理员，请在分享机器人之前先自己完成绑定。'
