@@ -1,0 +1,8 @@
+url: https://github.com/SnowfoxChan/dsh-chemdraw-toolkit
+name: SnowfoxChan/dsh-chemdraw-toolkit
+category: tools
+description:
+  en: 'Drives a local ChemDraw + Chem3D installation on Windows through eight agent tools: draw and clean up structures as PNG/SVG/CDX, predict 1H and 13C NMR spectra with ChemNMR, build MM2-minimised 3D models with Chem3D, convert chemical formats, and recognise a structure from an image. Needs ChemDraw Suite 23.x and Python 3.10 on the machine.'
+  zh: '把本机 ChemDraw / Chem3D 变成智能体能力，提供八个工具：绘制并美化结构（PNG/SVG/CDX）、用 ChemNMR 预测 1H/13C 核磁、用 Chem3D 生成 MM2 优化的三维结构、化学格式互转、从图片识别结构。需要机器上装有 ChemDraw Suite 23.x 与 Python 3.10。'
+icon: https://raw.githubusercontent.com/SnowfoxChan/dsh-chemdraw-toolkit/main/docs/icon-180.png
+tarball: https://github.com/SnowfoxChan/dsh-chemdraw-toolkit/releases/download/v0.2.0/dsh-chemdraw-toolkit-0.2.0.tgz
