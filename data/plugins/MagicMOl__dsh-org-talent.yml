@@ -2,6 +2,6 @@ url: https://github.com/MagicMOl/dsh-org-talent
 name: MagicMOl/dsh-org-talent
 category: ui
 description:
-  en: 'Organization-wide employee matching in the DSH sidebar: a project guide for the current need, recommended team and feedback; a searchable talent pool; an org chart; team recommendations scored from organization-wide candidates; capability advice for gaps and single points; a skill-center training planner with GitHub skill research; and a project-team feedback module.'
-  zh: 'DSH 左侧栏的组织人才匹配：在「项目导览」查看当前需求、推荐团队、已立项项目与最近匹配，在「人才库」整合员工与当前技能；按组织架构查看团队覆盖，以整个组织为单位评估团队组合，并针对单点风险与技能缺口给出培养建议；员工档案支持从技能中心导入技能、随机组合与垂直深耕检查，并可检索 GitHub 补充技能；匹配成功后还有项目团队模块记录成果与调整反馈。'
-tarball: https://github.com/MagicMOl/dsh-org-talent/releases/download/v1.5.0/dsh-org-talent-1.5.0.tgz
+  en: 'Organization-wide employee matching in the DSH sidebar: a project guide for the current need, recommended team and feedback; a workspace that turns a started project into assigned member tasks; a searchable talent pool; an org chart; team recommendations scored from organization-wide candidates; capability advice for gaps and single points; a skill-center training planner with GitHub skill research; and a project-team feedback module.'
+  zh: 'DSH 左侧栏的组织人才匹配：在「项目导览」查看当前需求、推荐团队、已立项项目与最近匹配，在「工作区」把项目拆成成员任务并跟踪进度，在「人才库」整合员工与当前技能；按组织架构查看团队覆盖，以整个组织为单位评估团队组合，并针对单点风险与技能缺口给出培养建议；员工档案支持从技能中心导入技能、随机组合与垂直深耕检查，并可检索 GitHub 补充技能；匹配成功后还有项目团队模块记录成果与调整反馈。'
+tarball: https://github.com/MagicMOl/dsh-org-talent/releases/download/v1.6.0/dsh-org-talent-1.6.0.tgz
