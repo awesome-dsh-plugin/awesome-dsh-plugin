@@ -1,0 +1,6 @@
+url: https://github.com/ghost-xx/dsh-baota-panel
+name: ghost-xx/dsh-baota-panel
+category: tools
+description:
+  en: 'Drives Baota (bt.cn) Linux panels with one API key: a sidebar panel for host status, sites, databases and services, and 13 agent tools covering sites, PHP versions, domains, SSL, backups, databases, FTP, cron, files and services. Supports several panels.'
+  zh: '用一个接口密钥接管宝塔（bt.cn）Linux 面板：侧边栏看板显示主机状态、网站、数据库与服务，另有 13 个智能体工具覆盖建站、PHP 版本、域名、SSL、备份、数据库、FTP、计划任务、文件与服务；支持多台面板。'

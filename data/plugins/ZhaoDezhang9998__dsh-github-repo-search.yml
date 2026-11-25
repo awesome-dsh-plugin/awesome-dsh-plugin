@@ -1,0 +1,6 @@
+url: https://github.com/ZhaoDezhang9998/dsh-github-repo-search
+name: ZhaoDezhang9998/dsh-github-repo-search
+category: tools
+description:
+  en: 'Read-only GitHub search for agents: repositories with a 1000-result paging window, code contents, issues and pull requests, and a derived trending query ranked by recent pushes and stars. Results collect in a right-sidebar panel split into repositories, code and issues, where cards expand to language mix, latest release and README, and can be starred across sessions, kept as a cross-session query history, or put two or three side by side for comparison. A token from the DSH credential store is sent only to github.com, api.github.com and hosts listed in trustedHosts.'
+  zh: '给智能体用的只读 GitHub 检索：仓库（可翻页到 1000 条）、代码内容、issue 与 PR，以及按「最近推送加星标」推导的近期热门。结果收进右侧栏面板，分仓库、代码、议题三类，卡片可展开语言构成、最新 Release 与 README，支持跨会话星标收藏、检索历史，以及 2–3 个候选并排对比。令牌从 DSH 密钥库读取，只发送给 github.com、api.github.com 和 trustedHosts 里列出的主机。'

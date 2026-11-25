@@ -1,0 +1,6 @@
+url: https://github.com/Qymzz/dsh-coexist/tree/main/packages/plugin
+name: Qymzz/dsh-coexist#packages-plugin
+category: dev
+description:
+  en: 'A control center for DSH plugins: keep plugins that claim the same tool or command installed, see dependencies and conflicts, fix common conflicts in one click, roll back, choose which implementation a tool or agent uses, limit which tools an agent can call, and view call counts and latency.'
+  zh: 'DSH 插件控制中心：抢同一个工具或命令的插件可以同时保留，一页看清依赖和冲突、一键修复常见问题、随时回滚；还能按 Agent 选择工具实现、限制 Agent 能调用哪些工具，并查看调用次数和延迟。'

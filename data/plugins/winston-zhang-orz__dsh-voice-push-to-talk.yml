@@ -1,0 +1,6 @@
+url: https://github.com/winston-zhang-orz/dsh-voice-push-to-talk
+name: winston-zhang-orz/dsh-voice-push-to-talk
+category: voice
+description:
+  en: 'Hold-to-talk hotkey for the voice input plugin: hold Right Option/Alt to record, release to stop and transcribe into the draft.'
+  zh: '为语音输入插件提供按键说话热键：按住右 Option/Alt 录音，松开停止并转写到消息草稿。'

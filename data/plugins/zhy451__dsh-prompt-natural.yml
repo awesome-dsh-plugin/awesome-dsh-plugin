@@ -1,0 +1,7 @@
+url: https://github.com/zhy451/dsh-prompt-natural
+name: zhy451/dsh-prompt-natural
+category: ui
+icon: https://raw.githubusercontent.com/zhy451/dsh-prompt-natural/main/assets/icon-180.png
+description:
+  en: 'Composer prompt enhancement that grows the draft you already typed instead of replacing it: keeps first person and tone, then adds inputs, scope, output shape, acceptance and taboos in one to three short paragraphs, with an optional seven-section task-brief style. Runs the bundled prompt-enhance skill CLI (Python 3 on PATH), keeps a five-step undo stack, and falls back to offline templates when no model key is set.'
+  zh: '输入框提示词增强：只把你自己写的那句话写清楚，不换掉它——保持第一人称与原语气，用一到三段补齐输入、范围、产出形态、验收与禁忌，另可切到七段式任务书。底层调用随包附带的 prompt-enhance 技能 CLI（需要 PATH 上有 Python 3），保留五步撤销，没有模型 key 时走离线模板兜底。'

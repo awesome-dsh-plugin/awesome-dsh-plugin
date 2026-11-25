@@ -1,0 +1,6 @@
+url: https://github.com/CyberPzy/dsh-prompt-smith
+name: CyberPzy/dsh-prompt-smith
+category: ui
+description:
+  en: 'Prompt enhancement for DeepSeek Harness: a sparkle button in the composer tool row rewrites the current draft into a structured prompt through one auxiliary call over the profile''s own LLM route, writes the result back into the input (Ctrl+Z restores the original), fences the draft against prompt injection, and never touches the session log; a settings page selects provider, model and reasoning effort from the host''s own model catalog with a test call that reports unsupported effort levels, edits the built-in system prompt (persisted through the host config editor), and tunes temperature, max tokens and max draft length. Zero dependencies, no build step. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 提示词增强插件：在输入框工具行加 ✨ 按钮，经本机模型路由做一次辅助调用，把草稿改写成结构化提示词并回填（Ctrl+Z 可还原），草稿带防注入围栏，不写会话日志；设置页从宿主自身的模型目录选择供应商、模型与思考强度，并提供验证组合是否可用的测试调用；内置提示词可编辑，经宿主配置编辑器持久化；可调温度、最大 token 与草稿长度上限。零依赖、无构建。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

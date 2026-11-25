@@ -1,0 +1,6 @@
+url: https://github.com/1gokd/dsh-rhino
+name: 1gokd/dsh-rhino
+category: tools
+description:
+  en: 'Drive a live Rhino 8 session from DeepSeek Harness: start Rhino, run IronPython modeling code on the Rhino UI thread, inspect document objects, and capture the viewport as PNG. Windows + Rhino 8 only.'
+  zh: '从 DeepSeek Harness 里直接驱动运行中的 Rhino 8：一键启动、在 Rhino UI 线程执行 IronPython 建模代码、查看文档对象、截取视口。仅限 Windows + Rhino 8。'

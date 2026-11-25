@@ -1,0 +1,6 @@
+url: https://github.com/wsl1602291891-stack/dsh-restart-center
+name: wsl1602291891-stack/dsh-restart-center
+category: ui
+description:
+  en: Adds a restart button beside the window's Application and Edit menus, with two-step confirmation, a warning when sessions are running or a plugin install is in progress or queued, then restarts the whole desktop app.
+  zh: 在窗口「应用 / 编辑」菜单旁加一个重启按钮：二次确认，有会话在跑、插件安装中或排队时给出警告，确认后重启整个桌面应用。

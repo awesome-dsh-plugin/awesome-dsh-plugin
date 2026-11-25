@@ -1,0 +1,7 @@
+url: https://github.com/food211/chubby-fish-studio
+name: food211/chubby-fish-studio
+category: fun
+description:
+  en: 'A pigment-mixing painting canvas in the right sidebar, where the agent sees the picture, paints on it stroke by stroke, and reads exact pixel colours.'
+  zh: '右侧栏里一张会混色的画布：agent 看得见画面、一笔一笔落笔，并能读出精确像素色值。'
+icon: https://raw.githubusercontent.com/food211/chubby-fish-studio/main/docs/gallery/icon-180.png

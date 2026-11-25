@@ -1,0 +1,7 @@
+url: https://github.com/tongqing1130-png/dsh-skill-zh
+name: tongqing1130-png/dsh-skill-zh
+category: skill
+tarball: https://github.com/tongqing1130-png/dsh-skill-zh/releases/download/v1.1.0/dsh-skill-zh-1.1.0.tgz
+description:
+  en: 'Translates every DSH skill description into Simplified Chinese and condenses it into one short line, so the skill menu reads the same after each new plugin is installed. Ships a pre-translated cache, with hand-written one-liners overriding the rule-based shortening. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 DSH 技能菜单里的英文说明翻成简体中文并压成一句话，新装的插件也会自动跟着变。自带预翻译缓存，手工短句优先于规则压缩。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

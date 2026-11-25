@@ -1,0 +1,7 @@
+url: https://github.com/Anzerwhite/dsh-local-codex
+name: Anzerwhite/dsh-local-codex
+category: dev
+description:
+  en: 'Per-session Codex mode: send a trigger word or /codex, and that one DSH session is handled by your local Codex CLI, with streamed replies plus command and file-change tool cards inline.'
+  zh: '按会话切换的本机 Codex 模式：发触发词或 /codex 把单个会话交给本机 Codex，回复流式显示，命令与文件改动以工具卡片同步展示在同一对话流。'
+tarball: https://github.com/Anzerwhite/dsh-local-codex/releases/download/v0.1.0/dsh-local-codex-0.1.0.tgz

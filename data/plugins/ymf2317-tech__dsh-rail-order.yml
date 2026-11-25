@@ -1,0 +1,6 @@
+url: https://github.com/ymf2317-tech/dsh-rail-order
+name: ymf2317-tech/dsh-rail-order
+category: ui
+description:
+  en: 'Left-rail ordering for DSH: drag panel icons (mouse or touch), workspaces, sessions, and conversation view tabs; pin active sessions; lift footer entries; sink archived sessions. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 左栏排序增强：鼠标/触屏拖放面板图标、工作区、会话与对话页签，置顶会话保活状态，提升底栏按钮并下沉归档会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/AuoraCounty/dsh-sci-compute/tree/main/dsh-sci-compute
+name: AuoraCounty/dsh-sci-compute#dsh-sci-compute
+category: tools
+description:
+  en: Exposes sci_catalog and sci_compute for 29 calculus, linear algebra, and physics-lab operations on a bundled numpy, scipy, and sympy runtime.
+  zh: 通过 sci_catalog 与 sci_compute 提供 29 项微积分、线性代数和物理实验运算，运行时自带 numpy、scipy 与 sympy。

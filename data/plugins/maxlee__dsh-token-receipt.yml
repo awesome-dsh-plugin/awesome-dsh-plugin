@@ -1,0 +1,7 @@
+url: https://github.com/maxlee/dsh-token-receipt
+name: maxlee/dsh-token-receipt
+category: usage
+description:
+  en: 'Print daily, weekly, monthly, 30-day, 90-day, and all-time token usage and estimated model costs as a receipt, with clipboard image copy and PNG export.'
+  zh: 'Token 账单：把日、周、月、近 30 天、近 90 天与全部周期的 Token 用量及预估模型费用打印成小票，支持复制图片与保存 PNG。'
+icon: https://raw.githubusercontent.com/maxlee/dsh-token-receipt/main/assets/icon-512.png

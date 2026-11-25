@@ -1,0 +1,7 @@
+url: https://github.com/KazeLiu/codex-dsh-dispatch
+name: KazeLiu/codex-dsh-dispatch
+category: workflow
+description:
+  en: Lets Codex dispatch tasks to DeepSeek Harness, wait for results, and follow up in the same DSH session.
+  zh: 让 Codex 向 DeepSeek Harness 派单、等待结果，并在原 DSH 对话中继续派单。
+tarball: https://github.com/KazeLiu/codex-dsh-dispatch/releases/latest/download/codex-dsh-dispatch.tgz

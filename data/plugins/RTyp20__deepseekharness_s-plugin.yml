@@ -1,0 +1,7 @@
+url: https://github.com/RTyp20/deepseekharness_s-plugin
+name: RTyp20/deepseekharness_s-plugin
+category: security
+
+description:
+  en: 'Password gate for DSH: once locked, the unlock screen asks for an identity name, identity number, permission level and password in that order, and opens only when all four match. Offers a confirmed sidebar lock button, three lock-timing modes (on launch, on every page load, manual only), a security question that restores any forgotten field, and it pauses a startup-animation plugin until after unlocking. A soft lock against casual access, not disk encryption.'
+  zh: 'DSH 四重身份门禁：锁定后按顺序验证身份名称、身份编号、权限等级与密码，四项全对才解锁；支持侧边栏手动锁定（先确认）、三档锁定时机（启动时 / 每次页面加载 / 仅手动）、密保问题恢复任一遗忘字段，并会在锁定期间拦下启动动画插件、解锁后重播。这是防随手操作的软锁，不是磁盘加密。'

@@ -1,0 +1,6 @@
+url: https://github.com/CGH999/dsh-spectrum
+name: CGH999/dsh-spectrum
+category: tools
+description:
+  en: 'Read fluorescence spectra with five offline tools: excitation wavelength, scan range, peak position, height, FWHM and area, plus wavelength-range queries and plots. Reads Gangdong .spw raw files directly; other brands must be exported to CSV/TXT first.'
+  zh: '用 5 个离线工具读荧光光谱：激发波长、扫描范围、峰位、峰高、半高宽和积分面积，支持区间取数与出图。只能直接读港东（天津港东）荧光分光光度计的 .spw 原始文件，其它品牌需先在仪器软件里导出为 CSV/TXT。'

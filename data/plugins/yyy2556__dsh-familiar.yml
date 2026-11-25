@@ -1,0 +1,7 @@
+url: https://github.com/yyy2556/dsh-familiar
+name: yyy2556/dsh-familiar
+category: memory
+description:
+  en: 'Cross-session memory over plain files: a character-capped always-on profile, a fact store that passes a merge pass (unrelated / repeats / changes / ends) before writing, and silent keyword recall that stays out of the way unless the request touches memory, plus a small reserved slot for corrections. Injection has a hard character cap and is filled in tiers; unhit facts lose ranking weight or get archived, never deleted by age. Six tools cover recall, expand, remember, list, forget and maintain, alongside a read-only sidebar panel. No database, no embedding model, no runtime dependencies, and no external service of its own (extraction uses the model already configured in the harness). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '纯文本文件的跨会话记忆：字符上限的常驻画像、写入前先过合并（unrelated / repeats / changes / ends）的事实库、只在请求触及记忆时才注入的静默关键词召回，另有少量纠错保底名额。注入有字符硬上限并按档位填充；未被命中的事实只降权或归档，从不按时间删除。六个工具覆盖检索、展开、写入、列出、删除与维护，另有只读侧栏面板。无数据库、无嵌入模型、无运行时依赖，也没有自己的外部服务（抽取用的是 harness 里已配置的模型）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yyy2556/dsh-familiar/main/assets/icon-180.png

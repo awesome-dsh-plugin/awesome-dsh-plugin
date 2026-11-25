@@ -1,0 +1,6 @@
+url: https://github.com/RunhuaChen/dsh-exa-parallel-mcp
+name: RunhuaChen/dsh-exa-parallel-mcp
+category: browser
+description:
+  en: 'Mounts the hosted Exa and Parallel search MCP endpoints (https://mcp.exa.ai/mcp and https://mcp.parallel.ai/mcp) through the in-box @deepseek-ai/dsh-mcp-client bridge, giving DSH Exa search and fetch tools plus Parallel search, fetch and vertical-data tools. Both endpoints are anonymous and need no API key.'
+  zh: '通过内置的 @deepseek-ai/dsh-mcp-client 桥接同时接入 Exa 与 Parallel 两个托管搜索 MCP 端点（mcp.exa.ai 与 mcp.parallel.ai），提供 Exa 的搜索与抓取工具，以及 Parallel 的搜索、抓取与垂直数据工具。两个端点均匿名可用，无需 API key。'

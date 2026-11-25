@@ -1,0 +1,7 @@
+url: https://github.com/weijiafu14/dsh-agy-native
+name: weijiafu14/dsh-agy-native
+category: model
+tarball: https://github.com/weijiafu14/dsh-agy-native/releases/download/v0.1.0/dsh-agy-native-0.1.0.tgz
+description:
+  en: 'Native LlmAdapter for Google AI Pro and Ultra subscriptions over official agy acp --stdio: loopback Streamable-HTTP eager MCP tool bridge with 25ms parallel micro-batching, sticky worker pool with isolated title slot, ReplayEnvelope context sync, image input, and dsh-agy-native doctor diagnostics.'
+  zh: '基于本机官方 agy acp --stdio 的 Google AI Pro/Ultra 订阅原生 LlmAdapter：回环 Streamable-HTTP 一级 MCP 工具桥（25ms 微批并行聚合）、带独立标题槽的粘性常驻会话池、ReplayEnvelope 上下文增量同步、原生图片输入及 dsh-agy-native doctor 环境诊断。'

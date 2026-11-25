@@ -1,0 +1,7 @@
+url: https://github.com/Awoodwhale/dsh-skill-mcp-manager
+name: Awoodwhale/dsh-skill-mcp-manager
+category: skill
+description:
+  en: 'Manages skills and MCP servers at global, project, and session scope: reads skill folders from 15 sources (DSH, the shared .agents folder, and 13 coding agents such as Claude Code, Codex, and Cursor), switches a whole source or a single skill on and off, adds extra skill folders, creates, edits, and deletes skills, connects stdio or HTTP MCP servers, and lets the composer pick which skills and servers one message carries.'
+  zh: 在全局、项目、会话三级管理 skill 与 MCP 服务器：读取 15 个来源的技能目录（DSH、通用 .agents 目录，以及 Claude Code、Codex、Cursor 等 13 个编程 agent），可按整个来源或单个技能启停、添加额外的技能目录、新建编辑删除技能、连接本地进程或 HTTP 的 MCP 服务器，并能在输入框里为某一次发送单独选择带上哪些技能与服务器。
+icon: https://raw.githubusercontent.com/Awoodwhale/dsh-skill-mcp-manager/main/assets/icon-256.png

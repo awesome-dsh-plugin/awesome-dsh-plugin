@@ -1,0 +1,6 @@
+url: https://github.com/AmahaHanasaki/dsh-ra2-mix
+name: AmahaHanasaki/dsh-ra2-mix
+category: tools
+description:
+  en: "Reads Red Alert 2 and Yuri's Revenge MIX archives, including the Blowfish-encrypted entry table, and extracts entries by file name, index or file ID."
+  zh: "读取红色警戒 2／尤里的复仇 MIX 归档（含 Blowfish 加密的条目表），按文件名、序号或文件 ID 提取条目。"

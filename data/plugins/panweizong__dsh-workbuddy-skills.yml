@@ -1,0 +1,6 @@
+url: https://github.com/panweizong/dsh-workbuddy-skills
+name: panweizong/dsh-workbuddy-skills
+category: skill
+description:
+  en: 'Skills importer for DSH: scans the WorkBuddy skills folder, normalizes and de-duplicates skill ids, then copies the skills you pick into the DSH skills directory from a Settings panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 WorkBuddy 技能目录导入 DSH：扫描技能文件夹、归一化并去重技能 id，在设置面板里勾选后复制到 DSH 技能目录。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

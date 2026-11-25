@@ -1,0 +1,7 @@
+url: https://github.com/Nimbus318/dsh-niuma-broker
+name: Nimbus318/dsh-niuma-broker
+category: workflow
+description:
+  en: Track job applications, compare skill demand across job postings, and manage résumé versions.
+  zh: 跟进求职进度、对比招聘市场的技能需求，并管理多个简历版本。
+tarball: https://github.com/Nimbus318/dsh-niuma-broker/releases/download/v0.1.3/dsh-niuma-broker-0.1.3.tgz

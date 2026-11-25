@@ -1,0 +1,7 @@
+url: https://github.com/xiafan68/dsh-message-hub
+name: xiafan68/dsh-message-hub
+category: notify
+description:
+  en: "Brings RSS feeds, web pages and GitHub releases into a three-pane panel and exposes them to the agent as hub_* tools; the bundled Python collector starts on demand and refreshes sources on a timer."
+  zh: "把 RSS、网页和 GitHub Releases 订阅收进三栏面板，并以 hub_* 工具交给模型；插件自带 Python 采集引擎，按需拉起并定时刷新订阅源。"
+icon: https://raw.githubusercontent.com/xiafan68/dsh-message-hub/main/assets/icon-180.png

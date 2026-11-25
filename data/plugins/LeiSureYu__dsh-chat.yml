@@ -1,0 +1,7 @@
+url: https://github.com/LeiSureYu/dsh-chat
+name: LeiSureYu/dsh-chat
+category: agi
+tarball: https://github.com/LeiSureYu/dsh-chat/releases/download/v0.2.0/dsh-chat-0.2.0.tgz
+description:
+  zh: "给 DeepSeek Harness 装一个纯对话模式：零编码工具的 chat preset（persona + time-context + 官方 tool-web，工具恰好只有 web_search / web_fetch / working_directory 三个），chat 会话由服务端自动归组到独立的 chat 工作区；对话界面、会话树、流式渲染全部由官方 UI 呈现，插件不渲染任何界面。显示文案与 persona 中英双语，回复跟随用户语言；切回标准/PTC/极简/创造走同一个官方选择器。"
+  en: "A pure-conversation mode for DeepSeek Harness: a zero-coding-tool chat preset (persona + time-context + official tool-web — exactly three tools: web_search, web_fetch, working_directory), with chat sessions auto-grouped into a dedicated chat workspace server-side. The conversation UI, session tree, and streaming are all the official harness UI — the plugin renders nothing itself. Bilingual display copy and persona; replies follow the user's language. Work modes stay on the same official selector."

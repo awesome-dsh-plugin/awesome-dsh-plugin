@@ -1,0 +1,6 @@
+url: https://github.com/lanechenhku/dsh-post-draft-auto
+name: lanechenhku/dsh-post-draft-auto
+category: workflow
+description:
+  en: 'Local draft desk for DeepSeek Harness: post_facts gathers facts that each carry a sourceUrl (bioRxiv/medRxiv DOI metadata, an npm package, a shipped version plus its release notes, or any page URL), then the model writes an English main post and a Chinese reply — each shown with its weighted 280-character count — plus a 1200x675 card (PNG through a local headless Chrome, SVG without it). A "出稿" tab in the right sidebar and a local workbench list the drafts, copy either post as plain text and mark one posted, which only appends to a local ledger; publishing stays manual, with no X API, no credential handling and no dependencies. post_save rejects a draft with no facts, and any number in the body that is not in the facts is reported as a blocker.'
+  zh: '本地出稿工作台（DSH 插件）：post_facts 先把带 sourceUrl 的事实抓回来（bioRxiv/medRxiv DOI 元数据、npm 包、线上版本与发行说明、任意网页），模型再写英文主推与中文回复（各自标 280 计权字数）并生成 1200×675 卡片（出 PNG 需本机 headless Chrome，没有只给 SVG）。右侧栏「出稿」页签与本地工作台可列出草稿、按纯文本复制两稿、标记已发；标记只追加本地台账，真正发到 X 仍由你手动完成——没有 X API、不碰凭据、零依赖。post_save 拒绝没有 facts 的稿子，正文里出现事实中查不到的数字会被记成 blocker。'

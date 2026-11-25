@@ -1,0 +1,6 @@
+url: https://github.com/xypshot/dsh-plugins/tree/main/plugins/llm-quota-board
+name: xypshot/dsh-plugins#llm-quota-board
+category: usage
+description:
+  en: 'Quota overview for every provider and model deployed in Settings -> Models: shows balances and remaining quotas in one panel, refreshed every 60 seconds.'
+  zh: '额度总览：查看设置 -> 模型中已部署的全部供应商和模型的余额与额度，面板每 60 秒自动刷新。'

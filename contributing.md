@@ -143,6 +143,14 @@ Recommended for a better install experience / 推荐（更好的安装体验）�
   "peerDependencies": { "@deepseek-ai/dsh-tools": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0" }
   ```
 
+**A brand-new package name is not installable the moment `npm publish` returns.** Two shapes were observed on npm 11.10.1: sometimes the first publish leaves only a `0.0.0-stage` placeholder (`dist-tags.latest` points at it, and publishing the same version a second time attaches the real one); sometimes the version is registered immediately while its tarball answers `{"error":"Not found"}` for a few minutes. Either way `npm publish` prints `+ name@version` and either way the package cannot be installed yet. Judge by the artifact, not by the message — check that `registry.npmjs.org/<name>` shows `dist-tags.latest` equal to your version **and** that `dist.tarball` downloads, before submitting, because a reviewer checks the entry against the registry.
+
+**包名是新的时，`npm publish` 返回那一刻还不一定装得上。** 在 npm 11.10.1 上观察到两种形态：有时第一次发布只留下一个 `0.0.0-stage` 占位包（`dist-tags.latest` 指向它，把同一版本再发一次才挂上真正的版本）；有时版本立刻登记成功，而它的 tarball 在几分钟内返回 `{"error":"Not found"}`。两种情况下 `npm publish` 都会打印 `+ name@version`，两种情况下此刻都装不上。判断标准看产物不看提示——确认 `registry.npmjs.org/<name>` 里 `dist-tags.latest` 等于你的版本，**并且** `dist.tarball` 能下载，再提交；因为评审会拿 registry 核对条目。
+
+**A registry mirror can keep serving the empty placeholder as `latest`.** Measured on 2026-11-23: `registry.npmmirror.com` still reported `dist-tags.latest = 0.0.0-stage` for a package whose upstream `latest` had been `0.1.0` for hours, and installing through it failed before any of the package code ran (`ERR_PNPM_TARBALL_EXTRACT … Invalid checksum for TAR header`). Readers in China get a mirror by default, so verify the install from a clean profile — `dsh plugin --profile <name> add <package>` — before saying the entry works. When a mirror's `latest` is a `-stage` placeholder, ask it to refetch (`curl -X PUT https://registry.npmmirror.com/<name>/sync`) and wait: the sync usually lands within minutes, and it does not update instantly.
+
+**镜像可能一直把那个空壳占位包当作 `latest`。** 2026-11-23 实测：某个包在上游 `latest` 已经是 `0.1.0` 好几个小时之后，`registry.npmmirror.com` 仍报 `dist-tags.latest = 0.0.0-stage`，照它安装会在包代码跑起来之前就失败（`ERR_PNPM_TARBALL_EXTRACT … Invalid checksum for TAR header`）。国内读者默认走镜像，所以在说条目可用之前，先在一个干净 profile 里真的装一遍：`dsh plugin --profile <name> add <package>`。如果镜像的 `latest` 是个 `-stage` 占位版，让它重新抓取（`curl -X PUT https://registry.npmmirror.com/<name>/sync`）然后等——通常几分钟内跟上，但不是立刻。
+
 The website rebuilds automatically after merge — no need to touch anything else. / 合并后网站自动重建，无需改动其他文件。
 
 ### One PR, at most 3 entries / 一个 PR 最多 3 条

@@ -1,0 +1,7 @@
+url: https://github.com/pokereva/dsh-session-history-ui
+name: pokereva/dsh-session-history-ui
+category: session
+description:
+  en: 'Right-sidebar turn list for the current conversation with click-to-jump and user-message filters, plus a branch tree of all conversations with panel-local pinning, drag reordering and archived-session display.'
+  zh: '当前会话轮次列表（点击跳转、按用户发言过滤），并用分支树展示所有会话及其分支关系，支持面板内置顶、拖动排序与归档会话展示。'
+icon: https://raw.githubusercontent.com/pokereva/dsh-session-history-ui/main/assets/icon-180.png

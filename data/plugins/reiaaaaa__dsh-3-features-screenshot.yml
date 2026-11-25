@@ -1,0 +1,7 @@
+url: https://github.com/reiaaaaa/dsh-3-features-screenshot
+name: reiaaaaa/dsh-3-features-screenshot
+category: vision
+description:
+  en: 'Screenshot tool for the composer: drag a rectangle on any monitor (a borderless PowerShell layer on Windows, so nothing is frozen) and the PNG is attached as a normal image, waiting to be sent. The card above the composer offers three prompt buttons — read the text, translate it, or describe the image — and binds Ctrl+Shift+S by default, rebindable under Settings → Shortcuts.'
+  zh: '输入框截图工具：在任意显示器上拖选一块区域（Windows 用一层无边框 PowerShell 窗口，截图过程中屏幕不冻结），PNG 作为普通图片附件进入输入框、等你发送。输入框上方的卡片提供「识别文字 / 翻译 / 描述内容」三个提示词按钮，默认快捷键 Ctrl+Shift+S，可在「设置 → 快捷键」里改。'
+icon: https://raw.githubusercontent.com/reiaaaaa/dsh-3-features-screenshot/main/assets/icon-180.png

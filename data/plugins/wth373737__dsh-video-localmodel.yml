@@ -1,0 +1,6 @@
+url: https://github.com/wth373737/dsh-video-localmodel
+name: wth373737/dsh-video-localmodel
+category: vision
+description:
+  en: 'Local-first video screening: ffmpeg samples frames, local Qwen3-ASR writes timecoded subtitles, a local vision model captions and ranks sampled frames, and a local text model folds the transcript into chapters; the original candidate frames are then handed to the leading model. Every stage resumes from the workspace, and export writes SRT, a timeline and native-resolution key frames.'
+  zh: '本地优先的视频初筛：ffmpeg 抽帧，本地 Qwen3-ASR 出带时间码的字幕，本地视觉模型给抽样帧写描述并打分，本地文本模型把转写折成章节，最后把原始候选帧交给主模型判断。每一级都能从工作区断点续跑，导出 SRT、时间线与原生分辨率的候选帧。'

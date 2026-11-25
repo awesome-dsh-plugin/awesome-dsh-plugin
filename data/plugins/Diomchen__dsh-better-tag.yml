@@ -1,0 +1,7 @@
+url: https://github.com/Diomchen/dsh-better-tag
+name: Diomchen/dsh-better-tag
+category: ui
+icon: https://raw.githubusercontent.com/Diomchen/dsh-better-tag/main/assets/icon-180.png
+description:
+  en: 'Flat session tags with a persistent done stamp: tags in the sidebar row, the hover card and beside the title, plus a cross-workspace overview with status counts and tag filters.'
+  zh: '给会话贴扁平标签并落一枚持久的「完成」章：侧栏行尾、悬停卡片与标题旁都能看到标签，另有跨全部 workspace、按状态计数与标签筛选的会话总览。'

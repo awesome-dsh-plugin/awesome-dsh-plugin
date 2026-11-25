@@ -1,0 +1,7 @@
+url: https://github.com/maikaojai/dsh-plugin-reading-os
+name: maikaojai/dsh-plugin-reading-os
+category: ui
+description:
+  en: 'ReadingOS for DeepSeek Harness: access Apple Books highlights on macOS with a heatmap, theme-based passages, markdown export, and a bridge to chat directly with DeepSeek. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 专属 ReadingOS：读取 macOS 苹果图书划线与批注，提供年阅读足迹热力图、跨书主题对照、Markdown 导出以及一键直通 DeepSeek 展开研读探讨。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/maikaojai/dsh-plugin-reading-os/main/assets/apple-books-logo.png

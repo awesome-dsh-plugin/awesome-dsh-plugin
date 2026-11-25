@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-expense-claim-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-expense-claim-check'
+category: 'tools'
+description:
+  en: 'Expense-claim hygiene: claimant, period, line items that must sum to the stated total, duplicate invoice numbers, purpose and category, approver, and a single currency. The total is the point — a claim whose lines add to 1,513.50 but whose total says 1,600.00 looks entirely normal on the page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '报销单的检查：谁报销、哪个期间、明细行是否加得出合计、发票号有没有重复、事由与类别、有无审批人、币种是否单一。重点是合计那行——明细相加 1,513.50、合计写 1,600.00 的报销单在页面上看起来完全正常。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

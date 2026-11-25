@@ -1,0 +1,6 @@
+url: https://github.com/jyz48prsbr-netizen/dsh-web-link
+name: jyz48prsbr-netizen/dsh-web-link
+category: browser
+description:
+  en: 'Adds a left-sidebar entry that opens chat.deepseek.com inside DSH via an in-app Electron webview without spending Harness session tokens. Desktop only.'
+  zh: '在左侧栏加入口，用内嵌 Electron webview 打开 chat.deepseek.com，不消耗 Harness 会话 token，仅桌面版可用。'

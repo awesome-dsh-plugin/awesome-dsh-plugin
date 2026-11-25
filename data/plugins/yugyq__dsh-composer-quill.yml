@@ -1,0 +1,7 @@
+url: https://github.com/yugyq/dsh-composer-quill
+name: yugyq/dsh-composer-quill
+category: ui
+description:
+  en: 'Inline completion for the DSH composer — suggests several next messages once a turn settles, finishes the half-typed sentence when you pause, rewrites a draft whose typos or clauses have tangled, and completes from your own past messages without a model call. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 输入框的补全：回合结束后给几条「下一句」，打字停顿就接上后半句，草稿有错字或断句乱时给一整段整理过的版本，也能从你自己的历史输入里补全（不花模型调用）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yugyq/dsh-composer-quill/main/assets/icon-180.png

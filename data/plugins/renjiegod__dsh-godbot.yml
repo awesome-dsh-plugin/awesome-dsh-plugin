@@ -1,0 +1,8 @@
+url: https://github.com/renjiegod/dsh-godbot
+name: renjiegod/dsh-godbot
+category: workflow
+description:
+  en: Delegate tasks to Claude Code, Codex, Antigravity, and DSH Bots from one workbench, review what they deliver, and take over native agent sessions.
+  zh: 在同一个 DSH 工作台给 Claude Code、Codex、Antigravity 和 DSH Bot 分派任务、验收结果，按需接管原生会话。
+icon: https://raw.githubusercontent.com/renjiegod/dsh-godbot/v0.2.0/src/host/assets/godbot-icon-a4e5427b7eeb.png
+tarball: https://github.com/renjiegod/dsh-godbot/releases/download/v0.2.0/dsh-godbot-0.2.0.tgz
