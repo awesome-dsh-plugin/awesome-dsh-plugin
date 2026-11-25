@@ -1,0 +1,6 @@
+url: https://github.com/GzSakura1338/dsh-lite-session-window
+name: GzSakura1338/dsh-lite-session-window
+category: session
+description:
+  en: 'Keeps the first page of a session to its newest two Turns and fetches older Turns one page at a time when you scroll up, so opening a long session no longer loads its whole history at once and the current Turn always stays intact.'
+  zh: '打开会话时首屏只取最近两轮，更早的轮次在上翻时按页加载，长会话不必一次加载全部历史，当前这一轮始终完整保留。'
