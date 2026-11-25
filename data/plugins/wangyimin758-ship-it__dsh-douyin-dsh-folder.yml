@@ -1,0 +1,6 @@
+url: https://github.com/wangyimin758-ship-it/dsh-douyin-dsh-folder
+name: wangyimin758-ship-it/dsh-douyin-dsh-folder
+category: browser
+description:
+  en: 'First public release (v1.1.0) of a read-only DSH tool that learns from one configurable Douyin favorites folder, keeps a local ledger to skip learned videos, and only prepares manual archiving steps.'
+  zh: '第一版（v1.1.0）首发：DSH 抖音收藏夹只读学习插件，只学可配置的那一个收藏夹，用本地账本跳过已学视频，归档只生成人工步骤。'
