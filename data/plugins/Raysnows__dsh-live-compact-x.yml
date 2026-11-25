@@ -2,5 +2,6 @@ url: https://github.com/Raysnows/dsh-live-compact-x
 name: Raysnows/dsh-live-compact-x
 category: usage
 description:
-  en: "A compaction scheduler for DeepSeek Harness: it cuts the tail of a conversation before the official compaction threshold, and every cut has to clear measured net-gain and payback-turn gates, so the whole-conversation official summary is deferred to a configurable line. A per-session panel shows what each cut saved, how much cache had to be rebuilt, and when the next knife is due."
-  zh: "DeepSeek Harness 的压缩调度：在官方压缩阈值之前先切会话尾巴，每一刀都要过「净收益 + 回本轮数」两道门槛，把官方整段摘要推迟到一条可配置的启用线；会话里的「压缩」页签显示每一刀省了多少、缓存重算了多少、下一刀什么时候该出。"
+  en: "A compaction scheduler for DeepSeek Harness: cuts the tail of a conversation before official compaction, deferring the whole-conversation summary. The big cut can use the official model or a local script with zero model calls, and recall is zero-copy from the session log. The panel shows what each cut saved and has a readable whats-new view in the top-right corner."
+  zh: "DeepSeek Harness 的压缩调度：在官方压缩之前先切会话尾巴，把整段摘要往后推；大刀可选官方模型或本地脚本，零副本回读；面板显示每一刀省了多少、缓存重算了多少，右上角可看本版更新。"
+version: 1.3.32
