@@ -1,6 +1,6 @@
 url: https://github.com/Nimbus318/dsh-niuma-broker
-name: 牛马经纪人 · dsh-niuma-broker
+name: Nimbus318/dsh-niuma-broker
 category: workflow
 description:
-  zh: '牛马经纪人是帮你找工作、跳槽和做职业规划的 AI 求职助手，支持官网招聘订阅、社招和校招岗位匹配与 JD 解读，结合招聘需求和工作成果做简历优化，提供简历模板、PDF 导出和面试准备建议，并通过投递记录、面试日程和 Offer 跟进求职进度。 #求职 #求职规划 #找岗位 #校园招聘 #社会招聘 #岗位订阅 #岗位分析 #职位描述 #招聘信息 #市场洞察 #应届生 #AI简历 #写简历 #改简历 #简历定制 #简历编辑 #多版本简历 #简历对比 #简历导出 #投递跟踪 #面试排期 #面试提醒 #面试反问。'
-  en: Niuma Broker is a job search and career planning assistant that tracks company career sites, matches job openings, tailors resumes to job descriptions, and tracks applications, interviews, and offers.
+  en: 'Niuma Broker is a job search and career planning assistant that tracks company career sites, matches job openings, tailors resumes to job descriptions, and tracks applications, interviews, and offers.'
+  zh: '牛马经纪人是帮你找工作、跳槽和做职业规划的 AI 求职助手，支持官网招聘订阅、社招和校招岗位匹配与 JD 解读，结合招聘需求和工作成果做简历优化，提供简历模板、PDF 导出和面试准备建议，并通过投递记录、面试日程和 Offer 跟进求职进度。'
