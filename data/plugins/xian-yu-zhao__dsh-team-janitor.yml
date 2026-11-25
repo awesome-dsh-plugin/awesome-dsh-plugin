@@ -1,0 +1,6 @@
+url: https://github.com/xian-yu-zhao/dsh-team-janitor
+name: xian-yu-zhao/dsh-team-janitor
+category: tools
+description:
+  en: 'Closes subagents whose work is done — stops their running work, archives the session, and releases the activation slot — with a tree overview that marks closed members and a command that restores them.'
+  zh: '关闭已用完的子代理：停止其工作、归档会话并释放激活槽位，另提供带关闭标记的团队花名册与恢复命令。'

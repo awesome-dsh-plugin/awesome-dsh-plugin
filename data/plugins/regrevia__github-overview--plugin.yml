@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/github-overview/tree/main/plugin
+name: regrevia/github-overview#plugin
+category: dev
+description:
+  en: 'Adds github_overview, which reads the dashboard you run locally over its own HTTP API instead of estimating numbers. It returns browsed views and unique visitors, git clones, npm downloads, the 14-day funnel, per-repository rows with stored-day counts, external issue and pull counts, and star growth, plus the served origin and sync time so a stale read is visible. Unbound or offline yields a reason instead of zeros.'
+  zh: '带一个 github_overview 工具：从你自己在本机跑的看板 HTTP API 读数，不做估算。返回浏览与去重访客、git 克隆、npm 下载、14 天漏斗、每个仓库一行并标明已存天数、外部 issue 与 PR 计数、star 增量，同时给出数据来自哪个地址和同步时间，读到旧数据能看出来。没绑定或看板没运行会返回原因，不返回零。'
+icon: https://raw.githubusercontent.com/regrevia/github-overview/main/plugin/icon.png

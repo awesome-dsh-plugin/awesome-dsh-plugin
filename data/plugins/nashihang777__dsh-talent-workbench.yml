@@ -1,0 +1,7 @@
+url: https://github.com/nashihang777/dsh-talent-workbench
+name: nashihang777/dsh-talent-workbench
+category: workflow
+description:
+  en: 'Local-first talent-matching workbench: 19 versioned assessment dimensions, 13 role templates with adjustable weights, batch resume import with agent-extracted fields, a per-dimension derivation you can trace, and a local anonymous exchange ledger. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '本地优先的人才匹配工作台：19 个可版本化考察维度、13 个可调权重的岗位模板、智能体识别字段的批量简历导入、逐维可回溯的推导，以及本地匿名交换账本。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/nashihang777/dsh-talent-workbench/main/icon.png

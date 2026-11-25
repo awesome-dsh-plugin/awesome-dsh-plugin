@@ -1,0 +1,6 @@
+url: https://github.com/wangbulinxi/dsh-meta-theory
+name: wangbulinxi/dsh-meta-theory
+category: skill
+description:
+  en: 'Before the model starts working, resolves a plain request into the field''s established methods: one main theory (two only when both are indispensable and their relation is stated), up to two auxiliary theories each passing a gap / action / removal test, and an explicit combination chain - then grades the written tree against eight failure patterns. Ships the meta-theory-routing skill and can append the rule to AGENTS.md.'
+  zh: '在动手之前，把一句日常需求对到该领域的成熟方法上：定主理论（默认一条，两条须说明二者关系）、最多两条须过「缺口／动作／删除」三关的辅助理论，并给出组合链路；写完后按八条翻车模式逐项校验「是不是只报了名词」。随包投放 meta-theory-routing 技能，可把规则追加进 AGENTS.md。'

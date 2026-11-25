@@ -1,0 +1,7 @@
+url: https://github.com/hyyzero/dsh-deeptutor-study
+name: hyyzero/dsh-deeptutor-study
+category: tools
+tarball: https://github.com/hyyzero/dsh-deeptutor-study/releases/latest/download/dsh-deeptutor-study.tgz
+description:
+  en: 'Learning mode for DeepSeek Harness: a DeepTutor-backed study preset with explanation, quizzing, book and diagram generation, plus a wrong-answer notebook, knowledge-base management and session digests.'
+  zh: 为 DeepSeek Harness 提供学习模式：接 DeepTutor 的学习预设，支持讲解、出题、写书与画图，另带错题本、知识库管理与会话总结入库。

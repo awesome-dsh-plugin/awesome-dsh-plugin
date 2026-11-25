@@ -1,0 +1,6 @@
+url: https://github.com/ZR2331314/dsh-talk-with
+name: ZR2331314/dsh-talk-with
+category: identity
+description:
+  en: "Story-oriented multi-persona plugin for one DSH window: switch personas by how you address them, put several on stage in one turn with shared memory, and every message shows the speaker's avatar with the persona name under it. Avatars auto-switch per story stage (panel stage picker / stage-avatar upload, or {{stage:stageId}} marks in replies). Each persona is a folder (persona.json + prompt.md + avatar), so adding one touches no code."
+  zh: "剧情向多人格插件：同一窗口按称呼切换人格、一轮点几位同台接话（共用记忆、按点名顺序各说一段）；每条消息贴回说话者头像并在下方显示人格名，同台一条消息内按【名字】分节各贴各的头像；剧情阶段推进时头像自动替换（面板选阶段/传阶段图，或回复中输出 {{stage:阶段id}} 标记）。人格 = 一个文件夹（persona.json + prompt.md + avatar），增减不改代码。"

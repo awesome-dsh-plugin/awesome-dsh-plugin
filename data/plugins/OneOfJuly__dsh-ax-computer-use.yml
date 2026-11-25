@@ -1,0 +1,6 @@
+url: https://github.com/OneOfJuly/dsh-ax-computer-use
+name: OneOfJuly/dsh-ax-computer-use
+category: tools
+description:
+  en: "AX-first computer use for DSH on macOS, Windows and Linux: six tools (windows, accessibility tree, batched verified actions, JPEG screenshot, element read, Electron relaunch) drive native apps, Chrome pages and Electron apps through the platform accessibility tree (AX / UIA / AT-SPI2) instead of screenshot-click vision loops. Batched actions return per-step confirmed / unverified / suspected_noop verdicts, dropdown/search composite ops handle antd-style web forms, spatial layout cache remembers field coordinates across sessions, and OCR fallback covers self-drawn UIs — web pages work in 4-6 round-trips instead of 20+ screenshot cycles."
+  zh: "AX 优先的跨平台电脑操作插件（macOS / Windows / Linux）：六个工具（窗口、无障碍树、批量带验证动作、JPEG 截图、元素读取、Electron 带参重启）通过系统无障碍树（AX / UIA / AT-SPI2）驱动原生应用、Chrome 网页和 Electron 应用，取代截图点击的视觉循环。批量动作每步返回 confirmed / unverified / suspected_noop 结论，dropdown 搜索组合 op 直击 antd 式网页表单，空间坐标缓存跨会话记住字段位置，OCR 兜底覆盖自绘界面——网页操作从 20+ 轮截图点击降到 4-6 轮。"

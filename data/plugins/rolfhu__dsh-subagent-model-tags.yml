@@ -1,0 +1,7 @@
+url: https://github.com/rolfhu/dsh-subagent-model-tags
+name: rolfhu/dsh-subagent-model-tags
+category: ui
+description:
+  en: Shows each subagent's model name on its row's name line in the session-header subagent panels (root panel, sibling switcher, and children panel), and widens those panels to 460px. The name comes from each subagent session's recorded model selection; a subagent without one, and external subagents, show a dash.
+  zh: 在会话顶部的子代理面板（根面板、兄弟切换面板、子面板）中，于每个子代理的名称行显示其模型名，并把面板加宽到 460px。模型名取自各子代理会话记录的模型选择；没有记录的子代理和 external 子代理显示“—”。
+icon: https://raw.githubusercontent.com/rolfhu/dsh-subagent-model-tags/main/assets/icon-180.png

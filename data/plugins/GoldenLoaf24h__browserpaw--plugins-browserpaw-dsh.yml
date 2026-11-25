@@ -2,5 +2,5 @@ url: https://github.com/GoldenLoaf24h/browserpaw/tree/main/plugins/browserpaw-ds
 name: GoldenLoaf24h/browserpaw#browserpaw-dsh
 category: browser
 description:
-  en: 'Controls Chrome through the BrowserPaw CLI and Agent Skill, and keeps self-learned site workflows in ~/.browserpaw.'
-  zh: '通过 BrowserPaw CLI 与 Agent Skill 操控 Chrome，并在 ~/.browserpaw 中保存可自动路由的自学习站点工作流。'
+  en: 'Controls your existing Chrome session through the BrowserPaw CLI and Agent Skill, with built-in read-only workflows for X, GitHub, YouTube, and other sites. Keeps user-learned workflows in ~/.browserpaw.'
+  zh: '通过 BrowserPaw CLI 与 Agent Skill 操控现有 Chrome 会话，内置 X、GitHub、YouTube 等站点的只读工作流，并在 ~/.browserpaw 中保存用户学习的工作流。'

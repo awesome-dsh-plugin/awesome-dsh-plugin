@@ -1,0 +1,7 @@
+url: https://github.com/ZZR-rui-997/dsh-sidebar-quote
+name: ZZR-rui-997/dsh-sidebar-quote
+category: ui
+description:
+  en: 'Select text in a sidebar document preview to quote it into the composer with your comment on the same line; frame a picture in a Word, PowerPoint or PDF preview to ask for changes; drop a file on the sidebar to open it there; and rewrite the draft prompt by first finding what it is missing rather than paraphrasing it.'
+  zh: '在侧栏文档预览里选中原文即可引用进输入框、批注紧跟同一行；在 Word/PPT/PDF 预览里框选一张图提出修改意见；把文件拖进侧栏直接打开；改写提示词时先找出草稿缺什么，再据此补齐，而不是换个说法。'
+icon: https://raw.githubusercontent.com/ZZR-rui-997/dsh-sidebar-quote/main/icon.png

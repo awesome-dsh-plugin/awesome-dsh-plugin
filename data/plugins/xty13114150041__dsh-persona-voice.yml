@@ -1,0 +1,7 @@
+url: https://github.com/xty13114150041/dsh-persona-voice
+name: xty13114150041/dsh-persona-voice
+category: session
+description:
+  en: Rewrites each turn’s final reply with a separate persona model, lets readers view the original, and estimates relay-only token costs.
+  zh: 使用独立的转述模型按人设改写每轮最终回复，保留原文查看入口，并单独估算转述费用。
+tarball: https://github.com/xty13114150041/dsh-persona-voice/releases/download/v0.6.0/dsh-persona-voice.tgz
