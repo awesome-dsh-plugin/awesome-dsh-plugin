@@ -1,5 +1,5 @@
-url: https://github.com/Witherwithwinter/DSH-Codinput
-name: Witherwithwinter/DSH-Codinput
+url: https://github.com/0x2fovo/DSH-Codinput
+name: 0x2fovo/DSH-Codinput
 category: ui
 description:
   en: 'Replaces the chat composer with an editor-style input panel on CodeMirror 6: line numbers, edit + markdown-preview split, a floating window mode and a full-height sidebar tab — one input surface at a time. Drafts ride the official input machine; the official voice-input button is rendered when the host provides one, and the stats row and context meter read the same data as the official dock.'
