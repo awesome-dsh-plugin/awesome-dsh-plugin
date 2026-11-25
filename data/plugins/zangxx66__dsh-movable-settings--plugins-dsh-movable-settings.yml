@@ -1,0 +1,6 @@
+url: https://github.com/zangxx66/dsh-movable-settings/tree/main/plugins/dsh-movable-settings
+name: zangxx66/dsh-movable-settings#dsh-movable-settings
+category: tools
+description:
+  en: 'Make the DSH settings dialog movable, resizable and maximizable, remembering its geometry.'
+  zh: '把 DSH Web GUI 内置的「设置」弹窗从固定居中、不可调整，变成可拖动、可八向缩放、可双击最大化，并记住上次位置与尺寸的浮层。'
