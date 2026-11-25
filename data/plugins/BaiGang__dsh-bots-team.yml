@@ -2,7 +2,7 @@ url: https://github.com/BaiGang/dsh-bots-team
 name: BaiGang/dsh-bots-team
 category: ui
 description:
-  en: 'Bot roster in the left sidebar: each bot is a DSH session with its own folder and AGENTS.md persona, and the panel chats with it through session.prompt().'
-  zh: '左侧栏机器人名册：每个机器人是拥有独立文件夹与 AGENTS.md 人格的 DSH 会话，面板内的对话走 session.prompt()。'
+  en: 'Bot roster in the left sidebar: each bot is a DSH session with its own folder and AGENTS.md persona, and a chief of staff hands work to them — the panel confirms each assignment before it is sent.'
+  zh: '左侧栏机器人名册：每个 Bot 是拥有独立文件夹与 AGENTS.md 人格的 DSH 会话，由参谋长把活派给他们——每次派单都要在面板确认后才发出。'
 icon: https://raw.githubusercontent.com/BaiGang/dsh-bots-team/main/assets/icon-180.png
 tarball: https://github.com/BaiGang/dsh-bots-team/releases/latest/download/dsh-bots-team.tgz
