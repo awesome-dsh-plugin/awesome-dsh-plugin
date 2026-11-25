@@ -1,0 +1,7 @@
+url: https://github.com/GiftiaCoder/dsh-coupon
+name: GiftiaCoder/dsh-coupon
+category: usage
+description:
+  en: 'Markdown ticket types plus a single-account currency for DSH agents: five wallet tools (list, request, exchange, redeem, templates), approval-gated issuing, md5-bound one-shot tickets with a transaction ledger, and a Web panel in Settings or the right sidebar. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DSH agent 的票夹：md 模板即票种 + 单账户鲸圆券 + md5 绑定的一次性票据；5 个钱包工具（列模板、查票、要票、自主兑换、核销）+ 审批签发 + 流水账 + 设置页/右侧栏 Web 面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/GiftiaCoder/dsh-coupon/main/assets/note.jpg

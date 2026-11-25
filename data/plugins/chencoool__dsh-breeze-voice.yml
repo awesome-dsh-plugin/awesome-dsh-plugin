@@ -1,0 +1,6 @@
+url: https://github.com/chencoool/dsh-breeze-voice
+name: chencoool/dsh-breeze-voice
+category: voice
+description:
+  en: 'Turns local Breeze TTS 2 into a shared voice-output service for DSH: a settings panel, cloned-voice sync between the desktop and self-managed modes, and a delivery tone picked by keywords or by a model that can read a chat plugin’s recent messages. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把本机 Breeze TTS 2 接成 DSH 的通用语音输出：带设置面板，桌面模式与本机自管模式之间的克隆音色自动同步，语气可由关键词判断，也可交给模型并参考聊天插件最近的对话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

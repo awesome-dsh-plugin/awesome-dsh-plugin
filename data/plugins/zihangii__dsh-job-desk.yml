@@ -1,0 +1,8 @@
+url: https://github.com/zihangii/dsh-job-desk
+name: zihangii/dsh-job-desk
+category: ui
+tarball: https://github.com/zihangii/dsh-job-desk/releases/download/v1.0.1/dsh-job-desk-1.0.1.tgz
+description:
+  en: 'Collects the background tasks of every DSH session on one page, groups the same set by workspace, session, or script, and offers an output tail, stop controls, and a jump to the session that started a task. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 DSH 所有会话的后台任务收进一页，同一批任务可按工作区、会话或脚本分组查看，并能看输出尾部、停止任务、跳到发起它的会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/zihangii/dsh-job-desk/main/assets/icon-180.png

@@ -1,6 +1,0 @@
-url: https://github.com/zer0-lyz/dsh-workbench
-name: zer0-lyz/dsh-workbench
-category: usage
-description:
-  en: 'Personal workbench for appraisal workflows: project and timesheet tracking, exam reminders, watchlist quotes with buy/sell-point alerts, a floating assistant that queries Tianyuan via read-only MCP tools, and detail/declare table export with formula restore and print formatting.'
-  zh: '评估业务个人工作台：项目与工时管理、考证考试提醒、自选股行情与买卖点提醒、浮动助手（经只读 MCP 工具直查天源数据）、明细表/申报表导出（含公式恢复与打印格式设置）。'

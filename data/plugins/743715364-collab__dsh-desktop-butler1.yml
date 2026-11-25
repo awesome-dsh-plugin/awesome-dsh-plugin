@@ -1,0 +1,8 @@
+url: https://github.com/743715364-collab/dsh-desktop-butler1
+name: 743715364-collab/dsh-desktop-butler1
+category: fun
+description:
+  en: 'Windows desktop pet for DSH with voice chat, installed-app launching, music and volume commands, and DSH work-status animations. Uses the DSH default model and credentials automatically. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把桌面管家 Electron 桌宠接入 DSH：自动使用 DSH 默认模型和登录凭据，支持语音对话、打开已安装软件、音乐与音量控制，并随 DSH 思考、干活、完成状态做动作。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/743715364-collab/dsh-desktop-butler1/main/icon.png
+tarball: https://github.com/743715364-collab/dsh-desktop-butler1/releases/download/v1.18.4/dsh-desktop-butler-1.18.4.tgz

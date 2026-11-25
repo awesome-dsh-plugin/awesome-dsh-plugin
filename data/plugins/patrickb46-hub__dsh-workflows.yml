@@ -1,0 +1,8 @@
+url: https://github.com/patrickb46-hub/dsh-workflows
+name: patrickb46-hub/dsh-workflows
+category: workflow
+tarball: https://github.com/patrickb46-hub/dsh-workflows/releases/download/v1.0.0/dsh-workflow-presets-1.0.0.tgz
+icon: https://raw.githubusercontent.com/patrickb46-hub/dsh-workflows/main/assets/icon-180.png
+description:
+  en: 'Per-session workflow presets: switching one sets each disk skill to full, first-sentence or hidden in the model catalog, hides chosen global tools, adds a system-prompt persona section, applies a permission preset, and can insert the preset''s prompt template into the composer. A right-side panel switches presets and rewrites the draft prompt; a rewrite never writes back to a preset.'
+  zh: '按会话切换工作流预设：一次切换决定每个磁盘技能在模型目录里的档位（完整 / 只留首句 / 隐藏）、隐藏哪些全局工具、追加的人格段落、切换时套用的权限预设，并可把该预设的提示词模板填进输入框。右侧小窗负责切换预设与改写草稿提示词，改写结果不会写回预设。'

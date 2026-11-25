@@ -2,5 +2,5 @@ url: https://github.com/DHLlib/online_model_discovery
 name: DHLlib/online_model_discovery
 category: model
 description:
-  en: 'Adds live model discovery and per-model reasoning-effort editing for third-party pi-ai providers.'
-  zh: '为第三方 pi-ai 提供商提供在线模型列表发现与逐模型思考强度编辑。'
+  en: 'Adds live model discovery and per-model reasoning-effort editing for third-party pi-ai providers, and automatically fills compat switches for models missing from the bundled catalog, fixing 400 errors caused by an unsupported developer role.'
+  zh: '为第三方 pi-ai 提供商提供在线模型发现与逐模型思考强度编辑，并自动补全内置目录未收录模型的 compat 开关，修复端点不支持 developer 角色导致的 400 错误。'

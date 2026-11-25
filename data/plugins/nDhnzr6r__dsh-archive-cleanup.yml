@@ -1,0 +1,6 @@
+url: https://github.com/nDhnzr6r/dsh-archive-cleanup
+name: nDhnzr6r/dsh-archive-cleanup
+category: session
+description:
+  en: Deletes archived sessions once the configured retention period has passed since they were archived, 30 days by default; the retention period and the check interval are set on a Settings page, and a /archive-retention command reports the current state or runs a check immediately.
+  zh: 归档的会话自归档时起满保留期限后自动删除，默认 30 天；保留期限与检查间隔在设置页调整，另有 /archive-retention 命令用于查看当前状态或立即执行一次检查。

@@ -1,0 +1,8 @@
+# Copy this file into a fork of awesome-dsh-plugin at data/plugins/ and open a PR.
+url: https://github.com/CIBUDAYI3906/dsh-browser-annotate
+name: CIBUDAYI3906/dsh-browser-annotate
+category: ui
+description:
+  en: 'Annotate elements in the right-Sidebar browser (Desktop): click one element or drag a marquee to select a region, then send DOM paths and a change request to the agent. Includes an action that opens a local HTML preview in the browser for annotation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '圈选右侧浏览器里的页面元素发给 AI：单击选一个，按住拖框选一片（弹窗、卡片组、工具条），自动带上 DOM 路径、坐标和文本；HTML 预览可直接一键转到浏览器里标注。仅桌面端。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/CIBUDAYI3906/dsh-browser-annotate/main/icon.png

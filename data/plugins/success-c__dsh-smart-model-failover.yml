@@ -1,0 +1,6 @@
+url: https://github.com/success-c/dsh-smart-model-failover
+name: success-c/dsh-smart-model-failover
+category: model
+description:
+  en: 'Discovers the models of every configured and externally connected provider at runtime, switches to the next one when a request fails, and asks the agent to continue the interrupted work. Configure the master switch, model order and provider order in the settings panel under Plugins → dsh-smart-model-failover. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '运行时发现本 profile 所有已配置厂商及外部接入厂商的可用模型，请求失败时自动切到下一个，并让 agent 继续被中断的工作；可在「插件 → dsh-smart-model-failover」设置面板配置总开关、模型调用顺序与厂商优先顺序。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

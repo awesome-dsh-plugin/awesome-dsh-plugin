@@ -1,0 +1,7 @@
+url: https://github.com/compilink/dsh-codex-plugin
+name: compilink/dsh-codex-plugin
+category: model
+description:
+  en: 'Signs in through the existing DSH Codex provider and lets users preview the signed-in account’s model catalog and add selected models while retaining their configured models. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '复用 DSH 现有 Codex 登录，在独立页面预览当前账号的模型目录，保留已有模型配置并添加所选模型。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/compilink/dsh-codex-plugin/releases/latest/download/dsh-bundle-codex-tools.tgz

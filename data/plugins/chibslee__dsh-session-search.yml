@@ -1,0 +1,6 @@
+url: https://github.com/chibslee/dsh-session-search
+name: chibslee/dsh-session-search
+category: session
+description:
+  en: 'Sidebar panel and Cmd+F find bar that full-text search local session records without model calls; each hit opens the session and scrolls to that message. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧栏搜索面板与会话页 ⌘F 查找条，全文检索本地会话记录，不调用模型；每条命中可直接打开会话并滚到那条消息。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

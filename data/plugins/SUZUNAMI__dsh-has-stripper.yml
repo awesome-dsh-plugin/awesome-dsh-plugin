@@ -1,0 +1,6 @@
+url: https://github.com/SUZUNAMI/dsh-has-stripper
+name: SUZUNAMI/dsh-has-stripper
+category: ui
+description:
+  en: Removes :has() selector rules at runtime so style invalidation stays local on very large DSH transcripts.
+  zh: 运行时删除 :has() 选择器规则，让超大会话记录下的样式失效计算保持局部化。

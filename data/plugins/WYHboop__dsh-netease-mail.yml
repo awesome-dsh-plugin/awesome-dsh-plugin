@@ -1,0 +1,8 @@
+url: https://github.com/WYHboop/dsh-netease-mail
+name: WYHboop/dsh-netease-mail
+category: tools
+description:
+  en: 'DSH-EMAIL: NetEase enterprise mail (qiye.163.com) inside DeepSeek Harness — eight mail tools for listing, reading, searching, sending, saving attachments and changing flags, a three-pane sidebar inbox, and a bundled SKILL.md that teaches an assistant how to drive them safely. Hand-written IMAP/SMTP with no dependencies. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH-EMAIL：把网易企业邮（qiye.163.com）接进 DSH——八个邮件工具负责列信、读信、搜信、发信、存附件、改标记，一个三栏侧栏「邮箱」面板，外加一份随包 SKILL.md 教助手怎么安全地使唤它们；自写 IMAP/SMTP，零第三方依赖。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/WYHboop/dsh-netease-mail/main/assets/icon-180.png
+tarball: https://github.com/WYHboop/dsh-netease-mail/releases/latest/download/dsh-netease-mail.tgz

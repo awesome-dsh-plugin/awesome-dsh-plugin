@@ -1,0 +1,6 @@
+url: https://github.com/astsbba/dsh-inherit-compression
+name: astsbba/dsh-inherit-compression
+category: memory
+description:
+  en: 'A minimal context-compression plugin: an anchor is placed on a message, everything after it is compressed into a summary, and once the context reaches the limit you set the conversation falls back to the anchor and continues with that summary plus recent memory injected, keeping the character''s way of speaking and acting as close as possible.'
+  zh: '一款极简的上下文压缩插件，设立锚点压缩锚点后内容总结摘要，达到设定的上下文上限时回退至锚点处延续上文设定注入下文总结摘要和近期记忆，最大程度保持角色的说话和行事风格'

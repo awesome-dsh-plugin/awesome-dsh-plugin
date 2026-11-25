@@ -1,0 +1,8 @@
+url: https://github.com/Chygyo/dsh-comcode-quota
+name: Chygyo/dsh-comcode-quota
+category: usage
+description:
+  en: 'Command Code credit monitor for the sidebar: 5-hour, weekly and monthly windows with remaining credit, reset countdown and burn-rate projection, a 75-model price calculator, per-model usage breakdown, and this billing period''s token and request totals. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧边栏里的 Command Code 额度监控：5 小时 / 每周 / 每月三个窗口的剩余额度、重置倒计时与消耗速度预测，75 个模型的价目表，按模型的用量明细，以及本计费周期的 TOKEN 与请求总量。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Chygyo/dsh-comcode-quota/main/assets/icon-180.png
+tarball: https://github.com/Chygyo/dsh-comcode-quota/releases/download/v1.0.10/dsh-comcode-quota.tgz

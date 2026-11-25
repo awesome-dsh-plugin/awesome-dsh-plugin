@@ -1,0 +1,6 @@
+url: https://github.com/davidmengjie/dsh-workspace-context-helper
+name: davidmengjie/dsh-workspace-context-helper
+category: ui
+description:
+  en: Browse workspace files in a right sidebar tab and add files or selected code lines to the session from context menus, with a line-selectable code preview.
+  zh: 在右侧边栏浏览工作区文件，通过右键菜单把文件或选中的代码行加入会话，代码预览支持按行号选择引用。

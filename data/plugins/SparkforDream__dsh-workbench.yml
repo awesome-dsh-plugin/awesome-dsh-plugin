@@ -1,0 +1,6 @@
+url: https://github.com/SparkforDream/dsh-workbench
+name: SparkforDream/dsh-workbench
+category: ui
+description:
+  en: 'Session workbench: AI working time excluding approval and question waits, repeating confirmation alerts, in-conversation find, workspace explorer, and page reload.'
+  zh: '会话工作台：扣除审批与提问等待的 AI 实际工作时长、重复提醒音、会话内查找、打开工作区目录与刷新页面。'

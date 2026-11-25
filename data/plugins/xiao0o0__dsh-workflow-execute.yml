@@ -1,0 +1,6 @@
+url: https://github.com/xiao0o0/dsh-workflow-execute
+name: xiao0o0/dsh-workflow-execute
+category: workflow
+description:
+  en: 'Multi-phase agent workflow runner: a workflow is a YAML file of phases, links, gates and expected artifacts; a run takes one requirement input and works through the links in order, and the panel shows per-link progress, gate scores, rework counts and produced files. Registers workflow_list, workflow_get, workflow_validate and workflow_save so an agent can read, validate and save workflows.'
+  zh: '多阶段 agent 工作流：工作流是含阶段、环节、门禁与期望产物的 YAML 文件，运行时只输入一次需求并按环节依次推进；面板展示每环节进度、门禁得分、返工次数与产物文件，并提供 workflow_list、workflow_get、workflow_validate、workflow_save 四个工具，让 agent 读取、校验与保存工作流。'

@@ -1,0 +1,6 @@
+url: https://github.com/wljgp/dsh-find-job
+name: wljgp/dsh-find-job
+category: tools
+description:
+  en: "Find Job Assistant (dsh-find-job): analyze your abilities, batch-evaluate jobs, generate recruiter greetings, adjust your resume. Job hunting: identify which jobs are worth applying to in bulk — match reasons, greetings and resume rewrites in one pass. Employed but looking: see your gaps against target roles at a glance. Runs and stores everything locally."
+  zh: "求职助手（dsh-find-job）：剖析能力、批量分析职位、一键生成打招呼语、调整简历。帮正在找工作的你：批量识别值得投递的职位，匹配理由、打招呼语、简历改写一次到位。帮在职观望的你：批量看清与意向职位的差距，缺什么一目了然。全程本地运行、本地存储。"

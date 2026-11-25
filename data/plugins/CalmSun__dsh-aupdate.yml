@@ -1,0 +1,6 @@
+url: https://github.com/CalmSun/dsh-aupdate
+name: CalmSun/dsh-aupdate
+category: market
+description:
+  en: 'Scheduled npm updates for the plugins installed in a DSH profile: checks dist-tags on a timer, installs one package at a time and applies it without restarting, taking a snapshot before each install, with per-package rollback, failure suppression for a package version that failed, a cross-process lock, update notices, a bilingual settings page that saves instantly, and automatic retention cleanup of history and logs (3 days by default).'
+  zh: '定时检查 DSH 已装插件的 npm 新版本，逐个安装并就地生效，不用重启；每次安装前留快照，可按包回滚，某个版本失败后一段时间内不再重试，带跨进程锁和更新提醒；设置页中英双语、改动即存，并自动清理超过保留期的更新记录与运行日志（默认 3 天）。'

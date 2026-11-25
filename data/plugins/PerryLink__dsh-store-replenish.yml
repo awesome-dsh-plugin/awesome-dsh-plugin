@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-store-replenish
+name: PerryLink/dsh-store-replenish
+category: tools
+description:
+  en: "Turn store-SKU sales and inventory data into per-SKU replenishment suggestions and per-store replenishment orders, rounding up to the minimum order quantity; pure local computation."
+  zh: "把门店-商品销售库存表变成按 SKU 的补货建议与按门店汇总的补货单，按起订量向上取整；纯本地计算。"

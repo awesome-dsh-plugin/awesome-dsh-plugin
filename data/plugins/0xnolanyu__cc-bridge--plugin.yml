@@ -1,0 +1,6 @@
+url: https://github.com/0xnolanyu/cc-bridge/tree/main/plugin
+name: 0xnolanyu/cc-bridge#plugin
+category: session
+description:
+  en: 'Two-way messaging (cc-bridge) between DSH sessions and Claude Code sessions: the CC side needs zero setup (its built-in SendMessage reaches a named DSH session), the DSH side gets native cc_send / cc_who / cc_status tools, and incoming messages are pushed into the session within seconds.'
+  zh: 'cc-bridge：DSH 会话与 Claude Code 会话互发消息：CC 侧零配置（自带 SendMessage 按会话名直达），DSH 侧注册 cc_send / cc_who / cc_status 原生工具，来件秒级推入会话。'
