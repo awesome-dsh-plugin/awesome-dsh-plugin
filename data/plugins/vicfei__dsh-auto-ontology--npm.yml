@@ -1,0 +1,7 @@
+url: https://github.com/vicfei/dsh-auto-ontology/tree/main/npm
+name: vicfei/dsh-auto-ontology#npm
+category: tools
+description:
+  en: 'Auto ontology construction for DSH - feed documents or a WeKnora knowledge base, get a typed knowledge graph where every entity and relation carries its verbatim evidence quote; from a knowledge base every quote also names the chunk it was read from (a real-base round resolved 248/248 chunk ids by the WeKnora API and by SQL); type claims are judged at build time and ungrounded ones are flagged, never dropped (strict-judge precision 25% -> 67%, measured and published under eval/); the trajectory export lets dsh-EvoOntology evolve the ontology and folds judge-grounded re-typings back in; zero-infra stdlib CLI (no Docker, no database), outputs typed JSON, a zero-dep SVG cluster graph and a markdown digest.'
+  zh: '面向 DSH 的自动本体构建：喂文档或 WeKnora 知识库，得带类型的知识图谱——每条实体/关系带原文证据引文；从知识库构建时每条引文还带被读出的 chunk id（真实库全量轮 248/248 经 WeKnora API 与 SQL 双路验证）；类型断言构建期过判官，不接地的标记保留不丢弃（严格判官精度 25%->67%，实测公开于 eval/）；轨迹导出对接 dsh-EvoOntology 演化闭环、判官落地的改型可回写；零基建 stdlib CLI（免 Docker 免数据库），产出带证据的 JSON、零依赖 SVG 分簇图与 markdown 摘要。'
+icon: https://raw.githubusercontent.com/vicfei/dsh-auto-ontology/main/ontologies/20261118-1441.svg
