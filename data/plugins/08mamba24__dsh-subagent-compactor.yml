@@ -1,0 +1,6 @@
+url: https://github.com/08mamba24/dsh-subagent-compactor
+name: 08mamba24/dsh-subagent-compactor
+category: session
+description:
+  en: Manually compact direct subagent history, resuming settled continuable subagents before compaction.
+  zh: 手动压缩直接子智能体历史，支持恢复已结算的可续接子智能体后再压缩。

@@ -1,0 +1,6 @@
+url: https://github.com/zhouhb0321/dsh-modal
+name: zhouhb0321/dsh-modal
+category: tools
+description:
+  en: 'Gives your agent cloud-compute common sense before it spends your budget: when GPUs, large memory or parallel containers are worth it and when a local script is enough; read before writing, smoke-test before scaling, verify artifacts rather than trusting exit codes, and mount shared volumes read-only. A short guide that adds no tools and touches no credentials; needs the Modal CLI.'
+  zh: '在 AI 花掉你的算力预算之前，先给它云端算力常识：什么时候该用 GPU、大内存或并行容器，什么时候本地脚本就够了；先读后写、先冒烟再上量、校验产物而不是只看退出码、共享卷只读挂载。一段简短引导，不新增工具、不碰密钥；需本机装好 Modal CLI。'

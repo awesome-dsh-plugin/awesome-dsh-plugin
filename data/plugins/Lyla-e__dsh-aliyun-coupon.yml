@@ -1,0 +1,7 @@
+url: https://github.com/Lyla-e/dsh-aliyun-coupon
+name: Lyla-e/dsh-aliyun-coupon
+category: ui
+description:
+  en: 'Shows each Alibaba Cloud voucher''s remaining balance, used amount and expiry date in a sidebar page, read through the read-only BSS OpenAPI. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在侧栏页面显示阿里云每张代金券的剩余余额、已抵扣金额与到期时间，数据经只读 BSS OpenAPI 获取。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Lyla-e/dsh-aliyun-coupon/main/assets/icon-180.png

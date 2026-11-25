@@ -1,0 +1,6 @@
+url: https://github.com/Nicecn/dsh-desktop-skin
+name: Nicecn/dsh-desktop-skin
+category: theme
+description:
+  en: 'Wallpaper-aware glass skin for DeepSeek Harness: every surface - top bar, sidebar, message cards, composer, menus and code blocks - becomes translucent glass with the wallpaper showing through, and the accent color is sampled from the wallpaper itself, so swapping the wallpaper retints the whole UI. Also restyles the message cards, repairs several host quirks (turn-rail jumps, bottom white band, double-scroll cards) and ships a six-tab settings panel with JSON config export/import.'
+  zh: '壁纸感知的 DeepSeek Harness 玻璃皮肤：顶条、侧栏、消息卡片、输入框、菜单与代码块等所有表面都变成半透明玻璃，壁纸从后面均匀透出，主题色直接从壁纸取色——换壁纸即换整套配色。另外重排了消息卡片、修掉宿主几处老毛病（刻度跳转失灵、底部白带、卡片双轴滚动），并带一个六标签设置面板与 JSON 配置导出导入。'

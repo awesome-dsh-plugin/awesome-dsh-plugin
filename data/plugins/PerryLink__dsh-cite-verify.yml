@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-cite-verify
+name: PerryLink/dsh-cite-verify
+category: docs
+description:
+  en: "Verify that a citation exists and that its metadata is right for DeepSeek Harness: DOI/PMID/arXiv/BibTeX resolution through Crossref, PubMed and arXiv, field-by-field metadata comparison, and a REP v1 evidence record."
+  zh: "为 DeepSeek Harness 核对引文是否存在、元数据是否正确：经 Crossref、PubMed、arXiv 解析 DOI、PMID、arXiv 与 BibTeX，逐字段比较元数据，并生成 REP v1 证据记录。"

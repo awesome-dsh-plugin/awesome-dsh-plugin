@@ -1,0 +1,7 @@
+url: https://github.com/peakSoar/dsh-annimation
+name: peakSoar/dsh-annimation
+category: ui
+description:
+  en: Opens Douyin in a floating native browser panel while DeepSeek Harness runs a turn, keeps the Douyin login, closes the window once every session is idle, and floats a completion notice.
+  zh: 在 DSH 跑任务时用内置浏览器打开抖音并浮成面板（保留登录），所有会话空闲后自动关闭并飘出完成提示。
+icon: https://raw.githubusercontent.com/peakSoar/dsh-annimation/main/assets/icon-180.png

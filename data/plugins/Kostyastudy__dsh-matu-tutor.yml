@@ -1,0 +1,6 @@
+url: https://github.com/Kostyastudy/dsh-matu-tutor
+name: Kostyastudy/dsh-matu-tutor
+category: tools
+description:
+  en: 'UESTC APTAT (码图) C homework workbench: sync assignments, edit code with C highlighting, compile and run with local gcc, submit to APTAT for a real score, and review it with an AI tutor. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '电子科大码图（APTAT）C 语言作业工作台：同步作业、带 C 语法高亮的编辑器、用本机 gcc 编译运行、真实提交到码图拿评分，并由 AI 助教讲评。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

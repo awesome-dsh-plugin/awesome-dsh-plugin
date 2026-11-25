@@ -49,6 +49,8 @@ import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
 import { REPOS_PER_QUERY, buildQuery, rateLimitDelayMs, readEntries, repoOf } from './lib/probe-updates-graphql.mjs'
 import { leastRecentlyChecked } from './lib/probe-order.mjs'
+import { HISTORY_CACHE_KEY } from './lib/release-history.mjs'
+import { collectReleaseHistory } from './probe-release-history.mjs'
 
 const OUT_FILE = 'data/updates.json'
 // Release bodies are markdown written by authors for humans reading GitHub;
@@ -75,6 +77,8 @@ if (!token) {
 }
 
 const map = fs.existsSync(OUT_FILE) ? JSON.parse(fs.readFileSync(OUT_FILE, 'utf8')) : {}
+const cachedHistory = map[HISTORY_CACHE_KEY] ?? {}
+delete map[HISTORY_CACHE_KEY]
 const readme = fs.readFileSync(LOCALES[0].readme, 'utf8')
 const urls = [...readme.matchAll(/^- \[.+?\]\((https:\/\/github\.com\/[^)]+)\) [—-] /gm)].map((m) => m[1])
 const today = new Date().toISOString().slice(0, 10)
@@ -327,5 +331,13 @@ if (ok === 0 && pending.length) {
 }
 
 const sorted = Object.fromEntries(Object.entries(map).sort(([a], [b]) => a.localeCompare(b)))
-fs.writeFileSync(OUT_FILE, JSON.stringify(sorted, null, 1) + '\n')
-console.log(`updates.json written: ${Object.keys(sorted).length} repos (${ok} refreshed this run)`)
+try {
+  sorted[HISTORY_CACHE_KEY] = await collectReleaseHistory(sorted, cachedHistory, token)
+} catch (error) {
+  sorted[HISTORY_CACHE_KEY] = cachedHistory
+  console.warn(`release history unavailable: ${error.message}`)
+}
+const temporary = OUT_FILE + '.tmp'
+fs.writeFileSync(temporary, JSON.stringify(sorted) + '\n')
+fs.renameSync(temporary, OUT_FILE)
+console.log(`updates.json written: ${have} repos (${ok} refreshed this run)`)

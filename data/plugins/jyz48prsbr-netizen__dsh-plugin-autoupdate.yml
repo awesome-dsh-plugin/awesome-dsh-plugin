@@ -1,0 +1,6 @@
+url: https://github.com/jyz48prsbr-netizen/dsh-plugin-autoupdate
+name: jyz48prsbr-netizen/dsh-plugin-autoupdate
+category: dev
+description:
+  en: 'Scheduled in-place updates for installed profile plugins through the official pluginManager service, with a configurable interval and exclusion list; restart DSH to load new code.'
+  zh: '通过官方 pluginManager 服务定时原地更新已安装的 profile 插件，可配置间隔与排除列表，重启 DSH 后加载新代码。'

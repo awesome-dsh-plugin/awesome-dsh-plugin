@@ -1,0 +1,8 @@
+# Community directory entry: data/plugins/taole-si__dsh-perf-guard.yml
+url: https://github.com/TaoLe-si/dsh-perf-guard
+name: TaoLe-si/dsh-perf-guard
+category: ui
+description:
+  en: 'Reduces rendering work in long DSH conversations, preserves native scrolling, and adds bounded retries and local diagnostics.'
+  zh: '减少 DSH 长会话的渲染开销，保留原生滚动，并提供有上限的重试和本地诊断。'
+tarball: https://github.com/TaoLe-si/dsh-perf-guard/releases/download/v1.9.5/dsh-perf-guard-1.9.5.tgz

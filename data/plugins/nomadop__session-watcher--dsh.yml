@@ -1,0 +1,6 @@
+url: https://github.com/nomadop/session-watcher/tree/main/dsh
+name: nomadop/session-watcher#dsh
+category: session
+description:
+  en: Shows when carrying context costs more than restarting and supports in-place handoff with selected files and skills.
+  zh: 显示继续携带会话上下文何时比重启更贵，并支持只带选定的文件与技能原地交接。

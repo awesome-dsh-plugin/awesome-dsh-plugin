@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-response-letter
+name: PerryLink/dsh-response-letter
+category: tools
+description:
+  en: "Reviewer-response workflow for DeepSeek Harness: parse reviewer comments with locators, check point-by-point coverage by response number, and export a Markdown response letter with a coverage table; parsed reviews become REP evidence."
+  zh: "面向 DeepSeek Harness 的审稿回复工作流：解析审稿意见并定位，按回复编号检查逐条覆盖（缺失、过短、多余、重复），导出带覆盖表的 Markdown 回复信；解析后的意见成为 REP 证据。"

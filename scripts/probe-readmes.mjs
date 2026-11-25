@@ -51,7 +51,7 @@ const langOf = (md) => {
 }
 
 // counterpart filename candidates, tried only when the listing could not say
-const ZH_NAMES = ['README.zh.md', 'README.zh-CN.md', 'README_zh.md', 'README_zh-CN.md', 'README-zh.md', 'README.cn.md', 'README_CN.md', 'docs/README.zh.md', 'docs/i18n/README.zh-CN.md']
+const ZH_NAMES = ['README.zh.md', 'README.zh-CN.md', 'README_zh.md', 'README_zh-CN.md', 'README-zh.md', 'README.cn.md', 'README_CN.md', 'docs/README.zh.md', 'docs/README.zh-CN.md', 'docs/i18n/README.zh-CN.md']
 const EN_NAMES = ['README.en.md', 'README_EN.md', 'README-en.md', 'README.en-US.md', 'docs/README.en.md']
 
 /**

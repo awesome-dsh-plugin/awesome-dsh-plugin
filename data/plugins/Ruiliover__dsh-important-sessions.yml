@@ -1,0 +1,7 @@
+url: https://github.com/Ruiliover/dsh-important-sessions
+name: Ruiliover/dsh-important-sessions
+category: session
+description:
+  en: Collects DSH sessions into categorized favorites in a sidebar panel, with stars on the session header and every row, a default category, multi-select custom categories, and filtering by category.
+  zh: 把 DSH 会话分类型收藏到左侧「重要会话」面板，会话标题和每一行都有星标，收藏默认放进「默认收藏夹」，可多选自定义分类并按分类筛选。
+tarball: https://github.com/Ruiliover/dsh-important-sessions/releases/download/v0.3.2/dsh-important-sessions-0.3.2.tgz

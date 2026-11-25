@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-contract-renewal
+name: PerryLink/dsh-contract-renewal
+category: tools
+description:
+  en: "Register contracts and group them by expired, in renewal window or due within N days as of a given date, with CSV export."
+  zh: "登记合同并按指定日期分组查看已过期、落在续签窗口与 N 天内到期，导出 CSV。"

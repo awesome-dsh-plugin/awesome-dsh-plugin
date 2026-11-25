@@ -1,0 +1,6 @@
+url: https://github.com/cheny5100/dsh-account-balance-pill
+name: cheny5100/dsh-account-balance-pill
+category: usage
+description:
+  en: "Shows the signed-in account's top-up and bonus balance above the DSH sidebar account entry, refreshed every minute with a manual refresh button."
+  zh: "在 DSH 侧边栏底部账号入口上方显示当前登录账号的充值余额与赠金余额，每分钟自动刷新，并可手动刷新。"

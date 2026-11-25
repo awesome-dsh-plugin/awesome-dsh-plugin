@@ -1,0 +1,6 @@
+url: https://github.com/liudengxing/dsh-bailian-model-catalog
+name: liudengxing/dsh-bailian-model-catalog
+category: model
+description:
+  en: 'Declares the vision input modality for Alibaba Cloud Bailian (Model Studio) Token Plan routes in the pi-ai model catalog, so models the vendor documents as image-capable stop being rejected with "the current model does not support images".'
+  zh: 在 pi-ai 模型目录里为阿里百炼 Token Plan 路由声明视觉输入模态，官方标注支持图片的模型不再被「当前模型不支持图片」拦下。

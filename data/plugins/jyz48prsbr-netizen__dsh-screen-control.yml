@@ -1,0 +1,6 @@
+url: https://github.com/jyz48prsbr-netizen/dsh-screen-control
+name: jyz48prsbr-netizen/dsh-screen-control
+category: tools
+description:
+  en: 'Controls the Mac screen state while DSH tasks run, without ever suspending processes: keep-awake keeps the display on; display-off lets it go dark while the system and all processes keep running. Holds a caffeinate wake lock bound to the host pid, released after a configurable grace period when the last task ends; macOS-only, driven by /screen commands or the screen_control tool.'
+  zh: '在 DSH 任务运行期间控制 Mac 屏幕状态，绝不挂起进程：常亮模式保持屏幕不熄；黑屏保活模式允许屏幕熄灭，但系统与所有进程继续运行。通过绑定到宿主进程的 caffeinate 唤醒锁实现，最后一个任务结束后按可配置宽限期释放，仅 macOS 可用，通过 /screen 指令或 screen_control 工具操作。'

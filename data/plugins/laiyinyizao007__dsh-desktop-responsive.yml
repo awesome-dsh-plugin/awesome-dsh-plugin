@@ -1,0 +1,7 @@
+url: https://github.com/laiyinyizao007/dsh-desktop-responsive
+name: laiyinyizao007/dsh-desktop-responsive
+category: ui
+tarball: https://github.com/laiyinyizao007/dsh-desktop-responsive/releases/download/v0.2.0/dsh-desktop-responsive-0.2.0.tgz
+description:
+  en: 'Phone-width layout for the DeepSeek Harness web UI: the sidebar becomes a floating drawer, the composer follows the keyboard, the tables scroll sideways. It needs one marker from the host, data-dsh-sidebar-root: the DSH Desktop build carries it, the npm-published packages do not, and without it the plugin finds nothing to adapt and says so in the console. With the data-dsh-region markers as well - the patches/ in this repo add them to a from-source build - the header folds into one menu, the usage row opens as a sheet, the message bubbles fill the screen and the settings dialog becomes a full-screen tab page. The plugin never selects on a hashed class name, and puts everything back when it is unloaded.'
+  zh: 'DeepSeek Harness 网页界面的手机宽度布局：侧栏变成浮层抽屉，输入区跟随键盘，表格横向滚动，底部工作台占满整屏。插件需要宿主带一个标记 data-dsh-sidebar-root：DSH Desktop 的构建有，npm 上发布的包没有。没有它插件找不到可适配的东西，并在控制台说明。宿主若还带 data-dsh-region 标记（本仓库的 patches/ 会给从源码构建的宿主补上），表头会折进一个菜单、用量行展开成面板、消息气泡铺满屏幕、设置对话框变成全屏标签页。插件绝不按哈希类名选择，卸载时全部还原。'

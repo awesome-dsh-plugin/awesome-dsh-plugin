@@ -1,0 +1,6 @@
+url: https://github.com/emo3o/dsh-plugin2preset
+name: emo3o/dsh-plugin2preset
+category: workflow
+description:
+  en: 'Installs a plugin as a same-named agent mode (preset) so its tools load only in sessions that select that mode; groups several plugins into one mode per scenario. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把插件装成同名模式（preset），工具只在选择该模式的会话里加载；支持把一类插件工具归入同一模式，其它会话零上下文占用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

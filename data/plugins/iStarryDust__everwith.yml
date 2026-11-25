@@ -2,6 +2,6 @@ url: https://github.com/iStarryDust/everwith
 name: iStarryDust/everwith
 category: identity
 description:
-  en: 'Gives a chat persona a persistent inner state: 40 emotions with half-lives, nine drives, and memories that fade over days, re-rendered into the system prompt every turn. Replies can be split across several messages, spoken through DeepSeek TTS or Xiaomi MiMo, dictated by local speech recognition, and a background timer can glance at the screen. Exposes 4 tools. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '给对话角色一层持续的内在状态：40 种带半衰期的情绪、九个驱动、会随时间淡去的记忆，每轮重新渲染进系统提示词。回复能拆成几条发出，能念出声（DeepSeek TTS / 小米 MiMo），也能听人说话（本地识别），后台还会隔一阵看一眼屏幕。提供 4 个工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'A persistent inner life for the character in your chat — forty emotions that rise and fade on their own, memories that keep your accounts and habits, replies that arrive one line at a time, a voice that can speak and listen, and the occasional glance at your screen.'
+  zh: '给你对话框里的人：情绪、记忆、嗓子、眼睛。40 种情绪会涨会消，两层记忆记着账号和约定，说话一条一句像发消息，能出声也能听你说话，偶尔看一眼屏幕但只记在心里。'
 icon: https://raw.githubusercontent.com/iStarryDust/everwith/main/assets/icon-180.png

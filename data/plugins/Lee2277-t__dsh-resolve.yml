@@ -1,0 +1,6 @@
+url: https://github.com/Lee2277-t/dsh-resolve
+name: Lee2277-t/dsh-resolve
+category: tools
+description:
+  en: 'Builds DaVinci Resolve timelines from a declarative edit spec: writes an importable .fcpxml with rendered title overlays and cross dissolves on the free edition, and drives the running project through Resolve''s scripting API on Studio.'
+  zh: '用一份声明式剪辑 spec 生成达芬奇时间线：免费版输出可导入的 .fcpxml 与渲染好的标题图层、交叉溶解；Studio 版直接驱动正在运行的工程，并可导帧、启动渲染。'

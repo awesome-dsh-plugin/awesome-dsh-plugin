@@ -1,0 +1,6 @@
+url: https://github.com/8589526/dsh-capability-safety-guard
+name: 8589526/dsh-capability-safety-guard
+category: security
+description:
+  en: 'Auto safety checks after every capability change - GPU/VRAM, stuck jobs, plugin health, version channels, core chain, system resources, error fingerprints and guardian self-health - with safe auto-fixes and explained non-fixes, plus a safe_trial_run sandbox that rehearses new software before it touches the real machine.'
+  zh: '每次新增或升级能力后自动安全检查（显存、卡死任务、插件健康、版本通道、核心链、系统资源、错误指纹与卫士自健康），能安全修的自动修、不能修的解释原因；另带 safe_trial_run 试跑沙箱，新软件先在隔离环境跑几遍再上真机。'

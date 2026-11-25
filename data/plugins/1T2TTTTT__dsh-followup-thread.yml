@@ -1,0 +1,8 @@
+url: https://github.com/1T2TTTTT/dsh-followup-thread
+name: 1T2TTTTT/dsh-followup-thread
+category: ui
+description:
+  en: 'Adds an inline follow-up thread under any earlier answer: ask in place, read the answer there, and keep the previous answer from being pushed away. A thread is a real conversation — you can keep talking in it.'
+  zh: '在任意一条历史回答下就地追问，问题和回答一起留在那条回答之后，不新增左侧会话；一条追问里还能接着往下聊。'
+icon: https://raw.githubusercontent.com/1T2TTTTT/dsh-followup-thread/main/assets/icon-180.png
+tarball: https://github.com/1T2TTTTT/dsh-followup-thread/releases/download/v1.1.0/dsh-followup-thread-1.1.0.tgz

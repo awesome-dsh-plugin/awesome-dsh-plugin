@@ -1,0 +1,6 @@
+url: https://github.com/PHANTOM-NINE/dsh-gloss
+name: PHANTOM-NINE/dsh-gloss
+category: ui
+description:
+  en: 'Select an English term in a DeepSeek Harness conversation to look it up instantly: shows IPA and a Chinese technical definition from a free online dictionary, with technical senses ranked first and an offline fallback. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DeepSeek Harness 会话中选中英文词即查：联网词典秒出音标与中文专业解读，技术义排最前，断网回退离线词库。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

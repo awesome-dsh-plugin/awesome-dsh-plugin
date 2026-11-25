@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-piliaurora-wall
+name: loyalchiiina/dsh-piliaurora-wall
+category: fun
+description:
+  en: 'Search Bilibili videos from the DSH sidebar, open several independent player windows tiled into a grid wall, and control sound, batch switching and autoplay from one panel. It self-checks the PiliAurora program, its service scripts and Python, can launch PiliAurora when it is not running, and lets you fix any of those paths in a settings tab. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 侧边栏搜索 B 站视频，并行打开多个独立播放窗口并自动网格排列，面板里可一键开关声音、切换下一批与自动连播。自带依赖自检（PiliAurora 程序、服务脚本、Python），PiliAurora 没在运行时可以一键拉起，路径都能在设置页手填。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

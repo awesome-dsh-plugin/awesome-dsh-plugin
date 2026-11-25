@@ -1,0 +1,6 @@
+url: https://github.com/cylb-7110/dsh-session-group-board
+name: cylb-7110/dsh-session-group-board
+category: ui
+description:
+  en: 'A separate session-group board opened from a sidebar row: custom groups with drag-and-drop cards, five cards by two rows per page with a pager, group-local pin ordering, group colour dots on session rows, the group name in the row hover card, and an Assign group action in the session menu. It adds seats beside the shipped sidebar instead of replacing it, and group membership is stored in this browser.'
+  zh: '侧栏新增「会话分组」看板：自定义分组、拖动卡片换组；每组 5 列 × 2 行分页，超出可翻页；置顶决定组内排序；会话行显示分组色点、悬停卡片显示分组名、右键菜单可「归入分组」。只往内置侧栏上加位置，不替换侧栏；分组数据存在浏览器本地。'

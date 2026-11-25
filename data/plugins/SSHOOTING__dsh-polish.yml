@@ -1,0 +1,6 @@
+url: https://github.com/SSHOOTING/dsh-polish
+name: SSHOOTING/dsh-polish
+category: ui
+description:
+  en: 'Adds a Polish button to the DSH composer that restructures a draft into a clearer, editable request without sending it or adding information.'
+  zh: '在 DSH 输入框中加入“润色”按钮，把草稿重组为更清晰、可继续编辑的请求，不自动发送，也不新增信息。'

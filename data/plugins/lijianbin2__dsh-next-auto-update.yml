@@ -1,0 +1,7 @@
+url: https://github.com/lijianbin2/dsh-next-auto-update
+name: lijianbin2/dsh-next-auto-update
+category: dev
+icon: https://raw.githubusercontent.com/lijianbin2/dsh-next-auto-update/main/assets/icon-180.png
+description:
+  en: "Left-sidebar page for DSH NEXT: when the app opens it updates every registry-installed plugin to its newest compatible version through the profile plugin manager, then updates DSH NEXT itself by driving the desktop shell updater — check, download the released installer, install and restart — instead of re-implementing main-program updates. Launch runs happen at most every six hours; four switches control the two halves, automatic installation and pre-release versions. Bundles the installation ships itself, and packages installed from a local path or a Git commit, are left alone."
+  zh: "DSH NEXT 的侧栏页面：打开应用时把每个从注册表安装的插件经 profile 插件管理器更新到最新兼容版本，再通过桌面端自带的更新器（检查、下载官方安装包、安装并重启）更新 DSH NEXT 自身，而不是自行实现主程序更新。启动运行最多每六小时一次；四个开关分别控制两部分、自动安装与预发布版本。随安装包自带的插件、以及本地路径或 Git 提交安装的包不会被改动。"
