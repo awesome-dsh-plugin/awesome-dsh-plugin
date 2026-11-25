@@ -2,6 +2,6 @@ url: https://github.com/MagicMOl/dsh-org-talent
 name: MagicMOl/dsh-org-talent
 category: ui
 description:
-  en: 'Organization-wide employee matching in the DSH sidebar: a project guide with the top requirement, multi-color project progress, stage outcomes and a blocker/difficulty/change alert bar; a workspace that turns a started project into assigned member tasks; a searchable talent pool; an org chart; team recommendations scored from organization-wide candidates; capability advice for gaps and single points; a skill-center training planner with GitHub skill research; and a project-team feedback module.'
-  zh: 'DSH 左侧栏的组织人才匹配：在「项目导览」查看最高优先级需求、项目进度、阶段成果、成员完成情况与卡点/难点/变更点预警，在「工作区」把项目拆成成员任务并跟踪进度，在「人才库」整合员工与当前技能；按组织架构查看团队覆盖，以整个组织为单位评估团队组合，并针对单点风险与技能缺口给出培养建议；员工档案支持从技能中心导入技能、随机组合与垂直深耕检查，并可检索 GitHub 补充技能；匹配成功后还有项目团队模块记录成果与调整反馈。'
-tarball: https://github.com/MagicMOl/dsh-org-talent/releases/download/v1.7.0/dsh-org-talent-1.7.0.tgz
+  en: 'Organization-wide employee matching in the DSH sidebar: a project guide with progress and blocker/difficulty/change alerts, a reusable requirement pool that feeds the current need or a project, a workspace that turns a project into member tasks and opens the project conversation in DSH, a searchable talent pool, an org chart, team recommendations, capability advice, skill research and project feedback.'
+  zh: 'DSH 左侧栏的组织人才匹配：在「项目导览」查看项目进度、阶段成果与卡点/难点/变更点预警；用「需求池」复用需求并引用到当前需求或项目；在「工作区」把项目拆成成员任务，点击任务在 DSH 左侧工作区创建或打开项目对话并发送任务信息；在「人才库」整合员工；另有组织架构、全组织团队匹配、能力培养建议、技能检索与项目反馈。'
+tarball: https://github.com/MagicMOl/dsh-org-talent/releases/download/v1.8.0/dsh-org-talent-1.8.0.tgz
