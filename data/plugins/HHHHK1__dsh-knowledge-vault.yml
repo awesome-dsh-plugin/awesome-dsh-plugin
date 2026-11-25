@@ -1,0 +1,7 @@
+url: https://github.com/HHHHK1/dsh-knowledge-vault
+name: HHHHK1/dsh-knowledge-vault
+category: memory
+description:
+  en: 'Distill discussed technical points into a plain Markdown knowledge base, with a read-only browser panel in the left sidebar.'
+  zh: '把对话里讨论出来的技术点手动归档成你自己的 Markdown 知识库，左侧边栏只读浏览与搜索。'
+icon: https://raw.githubusercontent.com/HHHHK1/dsh-knowledge-vault/main/assets/icon-180.png
