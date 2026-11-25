@@ -5289,6 +5289,7 @@ dsh plugin --profile web add dshmarket
 - [lacemou/dsh-session-ref](https://github.com/lacemou/dsh-session-ref) — 跨会话引用插件：在任意会话（含其他工作区）粘贴 @[label](dsh-session:…) 引用，宿主注入被引用会话的快照供模型阅读，并提供一键复制引用按钮。
 - [lamost423/dsh-maze](https://github.com/lamost423/dsh-maze) — 执行迷宫：把智能体真实的执行过程——主干推进、失败或扑空的支路、折返、请求重试与子代理分支——画在同一根墙钟时间轴上；泳道下方是与它共用时间轴的三条数据轨道（工具调用密度、Token 脉冲、上下文压力），再下方是确定性的执行分析面板（工具结果矩阵、失败恢复链、耗时分布）；可在会话页签里实时生长，也可上传最多 5 个 session log 做同轴对比。
 - [lanscer/dsh-workspace-drag](https://github.com/lanscer/dsh-workspace-drag) — 把侧边栏中的对话拖到任意工作区分组，即可在 DSH 工作区之间迁移该对话，同步更新其 cwd、磁盘位置与工作区注册表归属。
+- [lanxiake/dsh-vyra-plugins#wechat-local](https://github.com/lanxiake/dsh-vyra-plugins/tree/master/plugins/vyra-wechat-local) — 让 Agent 只读访问本机 PC 微信数据库：会话、聊天记录、图片、未读数、关键词检索与导出，也能以本人身份发送。数据只在本机，不外传。
 - [LaoYueHanNi/dsh-session-tools](https://github.com/LaoYueHanNi/dsh-session-tools) — DSH 跨会话工具：session_list 按标题、id 或工作目录定位会话；session_send 单向投递一条消息（reply: true 请对方回报）；session_read 仅在你明确要求时读取近期消息；session_create 新建会话并交办首条消息；session_models 在新建前列出可用模型路由。`/` 菜单新增「会话消息」一行，把会话 chip 插入输入框。
 - [Leawind/dsh-rice-on-a-stick](https://github.com/Leawind/dsh-rice-on-a-stick) — 白饭钓竿：把控制 DeepSeek Harness（dsh）的能力通过 MCP（Streamable HTTP）与 dsh 原生工具暴露出去， 可配置允许使用的模型清单。可通过带审计的通用桥调用宿主长尾端点。默认只监听 127.0.0.1，可选访问令牌。
 - [Leeminjing/dsh-messages-sanitizer](https://github.com/Leeminjing/dsh-messages-sanitizer) — 工具调度崩溃后自动修复 messages 数组（孤儿 tool_calls / tool 消息），防止 400 INVALID_REQUEST 会话卡死。
@@ -7176,6 +7177,8 @@ dsh plugin --profile web add dshmarket
 - [Lain-in-coding/dsh-grok-search](https://github.com/Lain-in-coding/dsh-grok-search) — 需至少配置一个搜索 API Key（Grok 或任一补充来源）。基于 grok-search-rs 的 DeepSeek Harness 搜索插件，提供可配置的来源回退、可视化设置、搜索日志回放和账户额度查询。
 - [lalalawang/dsh-quit-restart](https://github.com/lalalawang/dsh-quit-restart) — 在侧边栏加一行：一键退出 DeepSeek Harness Desktop 并重启。先结束 Electron 主进程和它拉起的宿主进程、等两个进程都消失后，再以无窗口方式重新启动应用，不会弹出控制台。接口只接受本机同源请求，且不从请求里读取进程号。仅支持 Windows。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Langlijun666/dsh-xmum-moodle](https://github.com/Langlijun666/dsh-xmum-moodle) — 把 XMUM 的 Moodle 搬进侧边栏：课程按学期分组，日程合并日历、作业与测验截止时间以及带日期的公告，批量下载按学期、课程和资料类型归档。它用你的校园账号密码登录学校 Moodle（默认 l.xmu.edu.my），只把换到的 Moodle 令牌存进 DSH 凭据库；它的 HTTP 路由没有 DSH 的访问检查。
+- [lanxiake/dsh-vyra-plugins#file-manager](https://github.com/lanxiake/dsh-vyra-plugins/tree/master/plugins/vyra-file-manager) — 右侧栏文件管理：浏览工作区全部文件类型，网格整体缩放，简洁 / 详细列表切换，面板内预览 PDF、Markdown、代码与 CSV，并支持重命名、复制、删除、打开所在位置及引用到输入框。
+- [lanxiake/dsh-vyra-plugins#screen-recorder](https://github.com/lanxiake/dsh-vyra-plugins/tree/master/plugins/vyra-screen-recorder) — 在 DSH 内录屏与截图：可选整个桌面、单块显示器、某个窗口或拖框区域，录系统声音与麦克风并输出 MP4 / WebM；截图带标注，还能先隐藏 DSH 窗口去截被挡住的应用。同一套能力也以 CLI 交给 Agent 调用。
 - [latte03/dsh-select-quote](https://github.com/latte03/dsh-select-quote) — 为 DSH 增加划词批注、引用、划词翻译、侧边子代理提问，链接用默认浏览器打开。选中的原文连同评论随下一条消息交给模型，正文保留高亮与序号角标、可跳回原文；菜单可划词浮出或从右键打开，翻译可单独指定模型。
 - [LAU-MARS/dsh-cad](https://github.com/LAU-MARS/dsh-cad) — 通过 cad_view/cad_info 与 OCCT 参数化建模工具查看和构建 CAD 模型（STL、OBJ、STEP、IGES、DXF、SVG），并在 Web UI 中提供交互式查看卡片与常驻 CAD 面板。
 - [LaynePeng/dsh-astock](https://github.com/LaynePeng/dsh-astock) — A 股助手：19 个行情/选股/舆情/回测工具，外加手工交易台账、右栏面板、每日存档与高风险邮件提醒；不接券商、不下单。
