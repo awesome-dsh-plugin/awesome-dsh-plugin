@@ -1,0 +1,6 @@
+url: https://github.com/znlgis/dsh-qwen-image-generate
+name: znlgis/dsh-qwen-image-generate
+category: vision
+description:
+  en: "Adds a qwen_image_generate tool that draws pictures with the Qwen Token Plan image models, saves them below the session working directory, and shows the picture in the conversation when the active model accepts image input."
+  zh: "提供 qwen_image_generate 工具，用千问 Token Plan 生图模型按提示词生成图片并保存到会话工作目录，当前模型支持图片输入时同时在对话中显示。"
