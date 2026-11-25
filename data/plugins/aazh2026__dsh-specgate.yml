@@ -1,0 +1,8 @@
+url: https://github.com/aazh2026/dsh-specgate
+name: aazh2026/dsh-specgate
+category: tools
+description:
+  en: 'Requirement coverage for DSH: reads the acceptance criteria from the spec file in the session working directory and reports which ones have no evidence in the code, with a coverage score and the gaps listed. Deterministic and local — no LLM call, no network, no API key, and it never writes to your repository.'
+  zh: 'DSH 需求覆盖率：读取会话工作目录里规格文件中的验收标准，报告哪些还没有代码证据，给出覆盖率分数和缺口清单。确定性且纯本地——不调模型、不联网、不需要 API Key，也不会写入你的仓库。'
+icon: https://raw.githubusercontent.com/aazh2026/dsh-specgate/main/assets/icon-180.png
+tarball: https://github.com/aazh2026/dsh-specgate/releases/latest/download/dsh-specgate-0.1.0.tgz
