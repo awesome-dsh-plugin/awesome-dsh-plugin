@@ -1,0 +1,7 @@
+url: https://github.com/femnn/dsh-museum-guide
+name: femnn/dsh-museum-guide
+category: ui
+description:
+  en: 'Museum tour-script writer: records the official floor map and visit route first, writes a 22,000-character hall-by-hall read-aloud script with per-hall videos, and audits the length.'
+  zh: '博物馆讲解稿写作：先记录官方导览图与参观路线，按展厅写出 2.2 万字可照读讲解稿，每厅挂视频，并用字数审核卡住下限。'
+tarball: https://github.com/femnn/dsh-museum-guide/releases/download/v1.2.1/dsh-museum-guide-1.2.1.tgz
