@@ -1,0 +1,6 @@
+url: https://github.com/benz-ai-x/dsh-research-graph
+name: benz-ai-x/dsh-research-graph
+category: session
+description:
+  en: "Research workbench for DeepSeek Harness that maps a workspace's sessions as a branch/merge graph, saves Knowledge Cards with exact turn-level sources and revision history, and reuses them in follow-up sessions; replaces the built-in sidebar to add workspace folders."
+  zh: "DeepSeek Harness 的研究工作台：把工作区内的会话画成分支与汇聚图谱，保存带精确轮次来源和修订历史的知识卡片，并带入后续会话复用；以自带侧栏替换内置侧栏以提供工作区文件夹。"
