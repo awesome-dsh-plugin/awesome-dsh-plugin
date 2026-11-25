@@ -1,0 +1,6 @@
+url: https://github.com/EternalSparks/dsh-image-search
+name: EternalSparks/dsh-image-search
+category: browser
+description:
+  en: 'Multi-engine reverse image search aggregator: Google Lens, Baidu, Yandex, TinEye, SauceNAO, IQDB, Ascii2d. Fix: upstream declared @deepseek-ai/dsh-tools as a hard dependency, so installing it overwrote the harness core package in the profile and made DSH fail to boot; this fork moves it to an optional peer dependency.'
+  zh: '多引擎反向识图聚合：Google Lens、百度、Yandex、TinEye、SauceNAO、IQDB、Ascii2d。修复：上游把 @deepseek-ai/dsh-tools 声明成硬依赖，安装时会覆盖 profile 里的宿主核心包、导致 DSH 无法启动；本分支改为可选 peer 依赖。'
