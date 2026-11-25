@@ -1,0 +1,6 @@
+url: https://github.com/IridensityGray/dsh-work-deleter
+name: IridensityGray/dsh-work-deleter
+category: session
+description:
+  en: 'Backup-first workspace deletion: removes the working directory, session logs and registration only after a full backup, and restores it later.'
+  zh: '备份优先的工作删除：先完整备份，再删工作目录、会话日志和登记，之后可从备份恢复。'
