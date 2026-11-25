@@ -1,0 +1,6 @@
+url: https://github.com/octormandelyonma/dsh-thesis-editor
+name: octormandelyonma/dsh-thesis-editor
+category: docs
+description:
+  en: Edit LaTeX projects, compile PDFs locally, and jump between the PDF preview and source.
+  zh: 在 DSH 中编辑 LaTeX 论文，在本机编译 PDF，并在 PDF 预览和源码之间跳转。
