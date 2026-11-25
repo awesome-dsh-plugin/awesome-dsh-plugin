@@ -1,0 +1,6 @@
+url: https://github.com/ikevss/dsh-tencent-meeting
+name: ikevss/dsh-tencent-meeting
+category: tools
+description:
+  en: Manage Tencent Meeting from DeepSeek Harness: browse and search meetings, read transcripts and smart minutes, create/update/cancel with a preview first, and turn a finished meeting into five documents with your own model.
+  zh: 在 DeepSeek Harness 里管理腾讯会议：看会、搜会、读逐字稿与智能纪要，建会改会取消先预览再确认，并用你自己的模型生成五份会后文档。
