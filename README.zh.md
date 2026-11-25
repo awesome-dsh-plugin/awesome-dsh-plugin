@@ -1549,6 +1549,7 @@ dsh plugin --profile web add dshmarket
 - [magic-tab-01/dsh-notes](https://github.com/magic-tab-01/dsh-notes) — 富文本笔记：支持图片、链接、符号、分类、背景、标题折叠与导出。
 - [magiccyclingz/dsh-design-leapavid](https://github.com/magiccyclingz/dsh-design-leapavid) — 侧栏设计风格库：集 84 套品牌设计语言，每套都按该品牌 DESIGN.md 的 token 现场渲染；挑一套并写清需求，就会把一份带完整 token 与交付规范的提示词发进当前会话，由对话模型按这套风格产出网页、五页幻灯片或信息图。还可把选中的风格导出为 CSS 变量、tokens.json 或 Tailwind 配置。
 - [magiccyclingz/dsh-diagram-leapavid](https://github.com/magiccyclingz/dsh-diagram-leapavid) — 侧栏图表工坊：50 种图表模板，填好内容后准备提示词并新建会话，生成单文件 HTML 图表。
+- [MagicMOl/dsh-org-talent](https://github.com/MagicMOl/dsh-org-talent) — DSH 左侧栏的组织人才匹配：项目导览包含可检索的项目进度、项目成果、近期项目与同步预警；每个项目有桌面备忘录并可直接记入反馈；项目进度可直接记录反馈；另有需求池、按项目创建的 DSH 对话工作区、人才库、组织架构、团队匹配与能力培养建议。
 - [magicOF2/dsh-autoload-history](https://github.com/magicOF2/dsh-autoload-history) — 打开会话时自动加载全部历史消息，免去反复点击「加载更早」。
 - [magicOF2/dsh-chat-width-customizer](https://github.com/magicOF2/dsh-chat-width-customizer) — 会话标题栏按钮循环切换对话宽度（748–1600px），消息区、输入框、用户气泡同步加宽。
 - [magicOF2/dsh-schedule](https://github.com/magicOF2/dsh-schedule) — 本地长期日程面板:顶栏「日程」文字按钮、今天/本周/历史月历统计视图、完成打勾(按天记录历史)、日程↔会话链接点击跳转、重复日程(每天/每周)、一次性日程可选未完成自动顺延,以及 dailytask_* agent 工具。
@@ -3901,6 +3902,7 @@ dsh plugin --profile web add dshmarket
 - [TyrusLabs-IO/dsh-panel-theme](https://github.com/TyrusLabs-IO/dsh-panel-theme) — DeepSeek Harness 侧边栏背景样式插件：可调基础色与不透明度、渐变、光晕、可读性蒙层，支持内置/自定义预设与 JSON 备份恢复；设置保存在浏览器本地。
 - [Ultroncn/dsh-liquid-glass](https://github.com/Ultroncn/dsh-liquid-glass) — 主题背景：官方风格折叠设置、通透界面与本地图片/视频背景。
 - [undefineken/dsh-theme-matrix-glass](https://github.com/undefineken/dsh-theme-matrix-glass) — 黑客帝国式二进制数字雨（字形只有 0 与 1）：仅任务运行时生成数字，任务停止后停止生成并让已有数字落出屏幕、画面归空；配磨砂玻璃 token 层，数字与面板透明度均可调。
+- [Uneadlight/fatfish-lab#dsh-chat-background](https://github.com/Uneadlight/fatfish-lab/tree/main/09-plugins/dsh-chat-background) — 给 DeepSeek Harness 聊天界面设置自定义背景：纯色或图片，浅色和深色各自独立；内置 Wallpaper Engine 壁纸库。
 - [Veagau/dsh-amadeus-skin](https://github.com/Veagau/dsh-amadeus-skin) — 添加 Amadeus 风格的浅色与深色配色及界面装饰。
 - [Vergil-long/dsh-custom-font](https://github.com/Vergil-long/dsh-custom-font) — 在设置页里像 Word 一样改界面字体、字号、加粗、颜色与版式，所见即所得、自动保存。自带两套开源字体（STIX2Text、Latin Modern Mono Light）与一套作者推荐排版，设置存在 ~/.dsh（换桌面外壳不丢）。
 - [vioeveann/dsh-rhine-lab-theme#dsh-rhine-lab-theme](https://github.com/vioeveann/dsh-rhine-lab-theme/tree/main/packages/dsh-rhine-lab-theme) — 《明日方舟》莱茵生命（Rhine Lab）同人主题：两套皮肤（奶油白/石墨黑与明色变体）、顶栏标志、去掉中央动态水印的纯网格背景、贴内容宽度的用户气泡。纯 CSS 与本地 SVG，运行时不联网。
@@ -7935,6 +7937,7 @@ dsh plugin --profile web add dshmarket
 - [Uesccda/dsh-plugin-snapshot](https://github.com/Uesccda/dsh-plugin-snapshot) — DSH 插件的升级助手。自动检查已装插件哪些有新版本，可一键全部升级或定时自动升级；每次升级前自动打快照，装失败自动回滚到升级前，不会把环境弄坏。也能体检：列出插件冲突、兼容性未声明、依赖缺失，并给出检查优先级。支持按补丁/次版本/主版本三档控制自动升级范围，可排除不想动的插件。所有操作都能回退到任意历史快照。
 - [ulasarslan6262-ui/speedbot-agent-plugin](https://github.com/ulasarslan6262-ui/speedbot-agent-plugin) — 通过 MCP 将 DeepSeek Harness 连接到 Speedbot.dev，查找智能体服务、数字产品、付费任务和协作者。它把工具调用发到第三方远程 MCP 服务 https://speedbot.dev/mcp/core，本机不运行任何代码。
 - [unclecode/toolshrink](https://github.com/unclecode/toolshrink) — 按内容语义压缩工具结果：13 个 reducer 在 tools/post-execute 阶段按含义裁剪超长输出（保留失败的测试、丢弃 diff 上下文、对 JSON 与 CSV 抽样、lint 问题按规则归类、依赖库的调用栈帧折叠、文件过多的目录只给计数），完整原文落盘保存并留一个定位符可取回。
+- [Uneadlight/fatfish-lab#dsh-env-doctor](https://github.com/Uneadlight/fatfish-lab/tree/main/09-plugins/dsh-env-doctor) — DSH 插件与环境大管家：一条命令查清工作区、插件加载健康、计划任务、自动化覆盖与工具链版本，并带后台巡检守护。
 - [unhurriedly/dsh-drone-planner](https://github.com/unhurriedly/dsh-drone-planner) — DeepSeek Harness 的无人机覆盖航线规划面板：绘制点、线、区域、斜面或圆柱体目标，设定航线预设（高度模式、速度、偏航模式、是否停留、结束动作、超视距裁切），生成弓字形扫描、沿路线布点或绕柱螺旋航线，并提供航点表、风险评估与逐点动作。
 - [universe-st/dsh-game-material-master](https://github.com/universe-st/dsh-game-material-master) — 基于 Seedream 生图与 MiniMax 图生视频，从参考图生成游戏素材，本地绿幕抠像后合成八方向精灵图、序列帧与骨骼动画。
 - [uos1231234/dsh-plugin-virtuoso-layout#dsh-plugin-virtuoso-layout](https://github.com/uos1231234/dsh-plugin-virtuoso-layout/tree/main/dsh-plugin-virtuoso-layout) — 从宿主机驱动 Cadence Virtuoso 画版图：虚拟机生命周期、经 bridge 执行 SKILL、窗口截图、Calibre DRC 解析，以及写入确认闸门，共 12 个宿主侧工具。
@@ -8849,6 +8852,7 @@ dsh plugin --profile web add dshmarket
 - [thanderming/dsh-auto-vision](https://github.com/thanderming/dsh-auto-vision) — 主模型不能识别图片时，自动改用同一 API 下可识别图片的模型读取图片，再把描述反馈给主模型。
 - [TLEWA/dsh-image-formats](https://github.com/TLEWA/dsh-image-formats) — 让 read_image 与输入框接受 AVIF、TIFF、SVG：宿主侧复用 DSH 自带的 Sharp、客户端复用浏览器解码器，先转成 PNG 再走原有附件链路，不新增运行时依赖。
 - [TZHR-invest/dsh-plugins#dsh-vision-tool](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-vision) — Agent 可调用的视觉工具：通过你配置的任意 OpenAI 兼容视觉端点描述本地图片，支持多模型交叉核对，不内置任何密钥。
+- [Uneadlight/fatfish-lab#dsh-vision](https://github.com/Uneadlight/fatfish-lab/tree/main/09-plugins/dsh-vision) — 看图理解：智谱 GLM-4V 优先（快、旗舰质量），本地 Ollama Qwen2.5-VL 兜底（离线）。
 - [vamyane/dsh-local-studio](https://github.com/vamyane/dsh-local-studio) — 本地创作工具箱：连接本机 ComfyUI 出图、连接本地 GPT-SoVITS 配音，检查服务是否在线，并把生成的文件保存到工作区。
 - [vitas/dsh-ocr-free](https://github.com/vitas/dsh-ocr-free) — 在 macOS 上使用 Apple Vision 的本地 OCR：从截图、照片和扫描件中读取文字，无需安装、无需联网、无需 API 密钥。
 - [wang-bool/visual-review](https://github.com/wang-bool/visual-review) — 在 DSH Web 聊天界面内联渲染粘贴/上传的图片，并让纯文本模型“看见”图片：visual_review 工具优先调用任意 OpenAI 兼容多模态 API，未配置时回退本机 Qwen3-VL。
@@ -13136,6 +13140,7 @@ dsh plugin --profile web add dshmarket
 - [piaobo123/dafeiyu-buchibaifan](https://github.com/piaobo123/dafeiyu-buchibaifan) — 桌面大肥鱼增强版桌宠：点击实时显示 DeepSeek 余额，浏览器外桌面问答，7 套专属动作，53 条玩梗。
 - [Player-MINEPIG/dsh-tavern](https://github.com/Player-MINEPIG/dsh-tavern) — 为 DSH 提供兼容 SillyTavern 的角色扮演，支持角色卡、预设、世界书及保留后续对话的 swipe 分支，并可切回原生会话视图。
 - [PM25000/dsh-ths-holdings](https://github.com/PM25000/dsh-ths-holdings) — 悬浮卡片，自动同步同花顺投资账本的真实持仓盈亏，显示今日盈亏、上证指数和当日走势图，无需手动添加股票。
+- [PNDSpnds/dsh-airplane-battle](https://github.com/PNDSpnds/dsh-airplane-battle) — 在对话区上覆盖一层字符飞机大战；关闭战场层后对话原样保留。
 - [PocketSWPU/dsh-serendipity](https://github.com/PocketSWPU/dsh-serendipity) — 把用户本人当作 RPG 主角：每轮对话结束后有几率触发随机「奇遇」，事件库 700+，覆盖科幻/玄幻/远古/动漫/小说/武侠/都市七大主题，增减力量/智力/敏捷/魅力/幸运/体魄六维属性，积累经验升级并随等级解锁更宏大的事件，含属性加权分支与设置页可视化配置。
 - [potoior/dsh-bull-bear](https://github.com/potoior/dsh-bull-bear) — DSH 的实时行情牛熊桌宠：由自选组合平均涨跌驱动，收益越接近 20% 跑得越猛；带自选面板可搜索添加股票，还有展示每只标的涨跌的实时赛跑。
 - [proletari/shenshen-dsh-companion](https://github.com/proletari/shenshen-dsh-companion) — DSH 桌宠「深深」：跟随任务状态切换待机/敲键盘/思考/庆祝/失败，支持点击挥手、拖动左右奔跑，并保留 API 余额、本机用量记账、角色、气泡与音效设置。二创自 MeteorNOX/DeepSeek-Balance-Whale-Widget（dsh-whale-widget 0.4.2）；请勿与上游同时安装，否则会出现双角色与重复请求。
