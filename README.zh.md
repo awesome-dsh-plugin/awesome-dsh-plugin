@@ -9272,6 +9272,7 @@ dsh plugin --profile web add dshmarket
 - [naliehu/outbreak-report-writing](https://github.com/naliehu/outbreak-report-writing) — 传染病现场流行病学调查报告（流调）生成：把不完整的事件 YAML 或个案 CSV 生成初次、进程、结案、结案申请单或单例报告，输出 Markdown、Word、PDF；缺项按 P0/P1/P2 标注并给时限，流行曲线按病种潜伏期自动分箱，一次同时产出未脱敏与脱敏两版。
 - [Nancy0-0/dsh-code-nav#symbol-links](https://github.com/Nancy0-0/dsh-code-nav/tree/main/packages/symbol-links) — 让聊天里行内代码中的标识符可点击：按定义、包装函数、顺序出现三级回退解析，在右侧预览打开文件并定位到对应行。
 - [NoneFire/drender#dsh-drender-plugin](https://github.com/NoneFire/drender/tree/main/plugins/hosts/dsh) — 为 DeepSeek Harness 提供 md-report/1 报告的校验与渲染工具：把 Markdown 与声明的 SQLite/CSV 数据集生成单个离线可交互 HTML 报告或仪表盘，图表默认用 AntV G2、复杂图表回退 ECharts，并提供图表/数据/SQL 与数据表/数据/SQL 视图。
+- [officesdk/officesdk-plugin-dsh#dsh-adapter](https://github.com/officesdk/officesdk-plugin-dsh/tree/main/packages/dsh-adapter) — 这款插件给 DeepSeek Harness 装上原生 Office 编辑器，你可以与 AI 共同编辑 Word 文稿、Excel 表格和 PowerPoint 幻灯片，并在原位置核对修改。
 - [omdsh-dev/dsh-tool-markdown](https://github.com/omdsh-dev/dsh-tool-markdown) — HTML↔Markdown 转换、GFM 表格规范化、目录生成。
 - [OMSociety/dsh-fishpai](https://github.com/OMSociety/dsh-fishpai) — 鱼排：公众号排版与改稿工具，支持专业画布、交互组件、人与模型协同与一键复制到微信。
 - [OMSociety/dsh-ppt-maker](https://github.com/OMSociety/dsh-ppt-maker) — PPT 制作插件（PowerPoint / 幻灯片 / 演示文稿）：十二个 ppt_* 工具创建、美化改稿、质检并导出可编辑的 .pptx 与 PDF，可导入或修改已有 PPT，内置 30 套设计系统与右侧栏可视化工作台，用于汇报、答辩、路演与课件。
