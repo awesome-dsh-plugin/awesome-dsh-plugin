@@ -1,0 +1,6 @@
+url: https://github.com/ECNU/EduWork/tree/main/packages/dsh-remote-access
+name: ECNU/EduWork#dsh-remote-access
+category: remote
+description:
+  en: 'Access a running DSH host from a phone or another browser through a self-hosted HTTPS/WebSocket relay, with end-to-end encryption, host-confirmed pairing and device revocation; includes the relay server and deployment guides.'
+  zh: '通过自托管 HTTPS/WebSocket 中继，在手机或其他浏览器中访问运行中的 DSH，支持端到端加密、本机确认配对和撤销设备；包含中继服务与部署指南。'
