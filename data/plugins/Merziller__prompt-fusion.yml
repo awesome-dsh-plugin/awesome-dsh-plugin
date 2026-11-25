@@ -4,4 +4,4 @@ category: ui
 description:
   en: 'One DSH button for original-preserving rule guidance, stop and undo. Shared CLI, portable Skills, MCP stdio/Streamable HTTP and REST/OpenAPI support capability-based integration; current core is not a semantic rewriter.'
   zh: '一个DSH按钮提供原文保留的规则指引、停止与撤销；共用CLI、便携Skill、MCP stdio/Streamable HTTP和REST/OpenAPI，按能力接入不同智能体。当前核心不是语义改写器。'
-tarball: https://github.com/Merziller/prompt-fusion/releases/download/v0.3.0/prompt-fusion-0.3.0.tgz
+tarball: https://github.com/Merziller/prompt-fusion/releases/download/v0.3.1/prompt-fusion-0.3.1.tgz
