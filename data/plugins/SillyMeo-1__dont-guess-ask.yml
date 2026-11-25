@@ -2,6 +2,6 @@ url: https://github.com/SillyMeo-1/dont-guess-ask
 name: SillyMeo-1/dont-guess-ask
 category: agi
 description:
-  en: When a requirement was never stated, the agent puts the 2-5 readings it inferred into the composer's choice card and waits for a pick instead of guessing and running ahead. Also adds a standing rule and a three-level how-often-to-ask setting.
-  zh: 需求没明说时，先把推断出的 2–5 种读法摆进输入区的选择框让你挑，再动手；另附一条常驻规则和三档「问多勤」设置。
+  en: When a requirement was never stated, puts the 2-5 readings it inferred into a choice card in the composer and waits for a pick instead of guessing. While that question waits outside the asking session, a light-red banner in a screen corner shows it, and clicking it jumps back to the session.
+  zh: 需求没明说时，先把推断出的 2–5 种读法摆进输入区的选择框等你挑，而不是自己猜着往下做；问题还没答、而你没看着那个会话时，屏幕角落会亮起浅红提示条，点它直接跳回提问的会话。
 icon: https://raw.githubusercontent.com/SillyMeo-1/dont-guess-ask/main/assets/icon-180.png
