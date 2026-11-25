@@ -6,4 +6,4 @@ description:
   zh: 改写你已经发出的一条消息，让模型改按改写后的内容作答——该条之后的对话通过 surface 重写被折叠掉，正在跑的回合会先取消，然后从新文本重新开一轮。
 # optional, GitHub-hosted raster only (png/jpg/jpeg/webp) — SVG is refused.
 # Omit it and the storefront falls back to your GitHub avatar.
-# icon: https://raw.githubusercontent.com/tzy-aiy/dsh-edit-last-turn/main/assets/icon-180.png
+icon: https://raw.githubusercontent.com/tzy-aiy/dsh-edit-last-turn/main/assets/icon-180.png
