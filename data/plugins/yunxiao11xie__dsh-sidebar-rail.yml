@@ -1,0 +1,8 @@
+url: https://github.com/yunxiao11xie/dsh-sidebar-rail
+name: yunxiao11xie/dsh-sidebar-rail
+category: ui
+description:
+  en: 'Codex-style sidebar for the DSH web UI: global panel entries become a left icon rail with hover labels, and the workspace session list keeps the content column. Client-side CSS only.'
+  zh: 'Codex 风格侧栏：全局面板入口收进左侧图标列、悬停显示名称，工作区会话列表占用内容列。纯客户端 CSS，无 Host 逻辑。'
+icon: https://raw.githubusercontent.com/yunxiao11xie/dsh-sidebar-rail/main/assets/icon-180.png
+tarball: https://github.com/yunxiao11xie/dsh-sidebar-rail/releases/latest/download/dsh-sidebar-rail.tgz
