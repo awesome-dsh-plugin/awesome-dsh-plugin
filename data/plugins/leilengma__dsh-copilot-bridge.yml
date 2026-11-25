@@ -1,0 +1,6 @@
+url: https://github.com/leilengma/dsh-copilot-bridge
+name: leilengma/dsh-copilot-bridge
+category: model
+description:
+  en: 'GitHub Copilot sign-in for the built-in github-copilot route, on github.com or a GitHub Enterprise host: a Settings page with a GitHub host field, OAuth device-flow login, and credentials kept in the Harness credential store.'
+  zh: '为内置 github-copilot 通道提供 GitHub Copilot 登录，支持 github.com 或 GitHub Enterprise 主机：设置页带 GitHub host 字段，OAuth 设备码登录，凭据存入 Harness 凭据库。'
