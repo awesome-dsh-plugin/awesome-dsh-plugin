@@ -1,0 +1,8 @@
+url: https://github.com/Wjc41164404/dsh-side-questions
+name: Wjc41164404/dsh-side-questions
+category: ui
+icon: https://raw.githubusercontent.com/Wjc41164404/dsh-side-questions/main/assets/icon-180.png
+tarball: https://github.com/Wjc41164404/dsh-side-questions/releases/download/v1.2.1/dsh-side-questions-1.2.1.tgz
+description:
+  en: 'Multi-window side conversations for DSH: selection-to-sidebar ask, live streaming context inheritance, tabs/split/floating views, per-chat model and thinking effort switching, and image attachments.'
+  zh: 'DSH 侧边多窗口临时对话插件：支持划选文本一键侧边栏提问、实时流式生成上下文继承、多标签/分屏/独立浮窗并排打开、模型与思考强度独立切换及粘贴图片提问。'
