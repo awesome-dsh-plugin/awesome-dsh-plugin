@@ -3,5 +3,5 @@ name: Vncntvx/dsh-zotero
 category: tools
 icon: https://raw.githubusercontent.com/Vncntvx/dsh-zotero/main/docs/images/icon.png
 description:
-  en: 'Zotero plugin for DeepSeek Harness: search and read papers in conversation, audit the literature trail, and browse the literature panel. It uses the same package name (dsh-zotero) as kuangdang123/dsh-zotero, so only one of the two can be installed per profile.'
-  zh: '面向 DeepSeek Harness 的 Zotero 插件：在对话中检索与阅读文献、在文献轨迹中核对记录，并在文献面板浏览文献库。包名与 kuangdang123/dsh-zotero 相同（dsh-zotero），同一个 profile 里只能装其中一个。'
+  en: 'DeepSeek Harness plugin for Zotero. Find and read papers with an AI agent, check sources in the Literature Trail, and browse and cite in the Literature Panel. It uses the same package name (dsh-zotero) as kuangdang123/dsh-zotero, so only one of the two can be installed per profile.'
+  zh: '连接本地 Zotero 文献库的 DeepSeek Harness 插件。在对话中让 Agent 检索和研读文献，在文献轨迹中核对原文出处，在文献面板中浏览文库和复制引用。与 kuangdang123/dsh-zotero 同名（dsh-zotero），同一 profile 只能二选一。'

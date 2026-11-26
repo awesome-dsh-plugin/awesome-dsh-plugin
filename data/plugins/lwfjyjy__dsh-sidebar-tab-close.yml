@@ -1,0 +1,6 @@
+url: https://github.com/lwfjyjy/dsh-sidebar-tab-close
+name: lwfjyjy/dsh-sidebar-tab-close
+category: ui
+description:
+  en: 'Adds Close Left, Close Right, Close Others and Close All to the right-click menu of sidebar tabs, acting on the current pane and keeping the Start guide tab.'
+  zh: '在右侧边栏 tab 的右键菜单里追加关闭左侧/关闭右侧/关闭其他/关闭全部，只作用于当前栏并保留「开始」页。'

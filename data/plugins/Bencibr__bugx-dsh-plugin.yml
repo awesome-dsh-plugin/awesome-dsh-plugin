@@ -1,0 +1,7 @@
+url: https://github.com/Bencibr/bugx-dsh-plugin
+name: Bencibr/bugx-dsh-plugin
+category: dev
+description:
+  en: 'Session-aware MCP bridge and sidebar UI for BugX autonomous code review and testing in DSH.'
+  zh: '在 DSH 中运行 BugX 自主代码审查与智能测试的会话级 MCP 桥接与侧边栏插件。'
+icon: https://raw.githubusercontent.com/Bencibr/bugx-dsh-plugin/main/assets/bugx-avatar-512.png

@@ -1,0 +1,8 @@
+url: https://github.com/baolongzhanshenNo1/workflow-kit/tree/main/plugins/dsh-plugin
+name: baolongzhanshenNo1/workflow-kit#dsh-plugin
+category: workflow
+description:
+  en: 'Issue-driven workflow discipline for coding agents: injects the wfk protocol (ledger cards, tiered gates, evidence-bound completion) into the system prompt and vendors the wfk.py CLI.'
+  zh: '给编码 agent 的 issue 驱动工作流纪律：向 system prompt 注入 wfk 协议（账本卡、分层门禁、证据绑定的完成判定），并随包内置 wfk.py 命令行工具。'
+icon: https://raw.githubusercontent.com/baolongzhanshenNo1/workflow-kit/main/plugins/dsh-plugin/assets/icon-180.png
+tarball: https://github.com/baolongzhanshenNo1/workflow-kit/releases/latest/download/dsh-wfk.tgz

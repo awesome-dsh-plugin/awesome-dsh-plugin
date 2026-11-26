@@ -1,0 +1,7 @@
+url: https://github.com/hhz-or/dsh-hold-on
+name: hhz-or/dsh-hold-on
+category: ui
+description:
+  en: 'Requires a hold-to-confirm gesture on the composer send and stop actions: a progress bar or ring fills while Enter or the action button is held, a tap sends nothing, and hold durations and indicator styles are configurable from the plugin page in Settings.'
+  zh: '让输入框的发送与停止需要长按确认：按住 Enter 或动作按钮时进度条/进度环走满才执行，点一下不会发送；长按时长与指示样式可在设置的插件页里配置。'
+tarball: https://github.com/hhz-or/dsh-hold-on/releases/latest/download/dsh-hold-on.tgz

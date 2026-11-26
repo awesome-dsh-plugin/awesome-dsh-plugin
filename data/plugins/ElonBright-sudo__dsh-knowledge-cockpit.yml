@@ -1,0 +1,7 @@
+url: https://github.com/ElonBright-sudo/dsh-knowledge-cockpit
+name: ElonBright-sudo/dsh-knowledge-cockpit
+category: ui
+description:
+  en: 'A sidebar dashboard for a local Markdown knowledge base: note and file totals, topic distribution, a six-month growth line, recently updated notes, structure coverage, and to-dos that can scaffold a missing index.md in one click.'
+  zh: '给本地 Markdown 知识库做的一页侧边栏仪表盘：资产总量、专题分布、六个月增长折线、最近更新、结构覆盖率，以及能一键补出缺失 index.md 的待办。'
+icon: https://raw.githubusercontent.com/ElonBright-sudo/dsh-knowledge-cockpit/main/assets/icon-180.png

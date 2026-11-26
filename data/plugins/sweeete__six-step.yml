@@ -1,0 +1,6 @@
+url: https://github.com/sweeete/six-step
+name: sweeete/six-step
+category: workflow
+description:
+  en: 'A DeepSeek Harness preset that enforces a six-step thinking workflow with per-step output and an audit loop.'
+  zh: '一个强制按六步思考流程运行的 DeepSeek Harness 预设，逐步输出思考结果，审计不通过时回环重做。'

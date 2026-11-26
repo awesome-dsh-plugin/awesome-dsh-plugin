@@ -1,0 +1,6 @@
+url: https://github.com/pawsey0319/dsh-agent-suite
+name: pawsey0319/dsh-agent-suite
+category: notify
+description:
+  en: 'Desktop task radar for DSH: a draggable always-on-top capsule showing running sessions, pending approvals and questions, with inline approve/answer and completion banners. Bundles agent-bridge (Codex / Claude / WorkBuddy), a delivery judge and office-artifact scanning. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 桌面任务雷达：可拖动的置顶小胶囊，显示运行中的会话、待批准与提问，支持就地批准或回答并弹出完成横幅；同时整合 Codex/Claude/WorkBuddy 外部任务、交付判别与办公产物扫描。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

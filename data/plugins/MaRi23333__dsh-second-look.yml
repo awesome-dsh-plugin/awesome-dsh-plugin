@@ -1,0 +1,6 @@
+url: https://github.com/MaRi23333/dsh-second-look
+name: MaRi23333/dsh-second-look
+category: security
+description:
+  en: 'Adds per-session routine and enhanced tool review for DeepSeek Harness, with routine review allowing common actions and sending changes such as whole-file overwrites to a separate model for review. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 DeepSeek Harness 提供按会话切换的日常与加强审查，日常审查按规则放行常规操作，并在覆盖整个文件等变更前交给独立模型审核。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

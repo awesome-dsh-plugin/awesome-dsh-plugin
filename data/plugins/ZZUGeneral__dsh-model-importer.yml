@@ -1,0 +1,6 @@
+url: https://github.com/ZZUGeneral/dsh-model-importer
+name: ZZUGeneral/dsh-model-importer
+category: model
+description:
+  en: 'Guided wizard in Settings → Models that connects third-party OpenAI-compatible providers (Alibaba Bailian, SiliconFlow, Tencent TokenHub, Volcano Ark), lists the models the key can use, and writes the provider plus the ones you tick into the current profile in one step.'
+  zh: '在设置 → 模型页加一个图形化向导：连接第三方 OpenAI 兼容平台（阿里百炼 / 硅基流动 / 腾讯云 TokenHub / 火山引擎方舟），拉取该 Key 可用的模型列表，勾选后把提供商与模型一次写入当前 profile。'

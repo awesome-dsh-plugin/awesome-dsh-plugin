@@ -1,0 +1,6 @@
+url: https://github.com/xxxiii/dsh-jump-top
+name: xxxiii/dsh-jump-top
+category: ui
+description:
+  en: 'Adds a header button that loads all earlier messages and jumps to the top of a DeepSeek Harness conversation in one click.'
+  zh: '在会话顶部栏加一个按钮，一键加载全部更早消息并回到会话最顶部。'

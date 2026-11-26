@@ -1,0 +1,7 @@
+url: https://github.com/nuclearmilk/dsh-hud
+name: nuclearmilk/dsh-hud
+category: notify
+tarball: https://github.com/nuclearmilk/dsh-hud/releases/latest/download/dsh-hud.tgz
+description:
+  en: Floating glassmorphism task notification HUD for desktop with live session progress, persistent running timer, and high-contrast alerts for approval, user input, and plan review requests.
+  zh: 桌面端屏幕贴边毛玻璃任务通知流 HUD，实时展示会话进度与运行计时，并在需要审批、填写执行方向或确认计划时弹出常驻强提醒。

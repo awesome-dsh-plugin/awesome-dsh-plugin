@@ -1,0 +1,6 @@
+url: https://github.com/lujyang007/dsh-bili-sessions
+name: lujyang007/dsh-bili-sessions
+category: session
+description:
+  en: 'Lists, deletes one-by-one and purges all billion-context session records from inside DSH, protecting sessions that are currently in use and masking API keys found in titles.'
+  zh: '在 DSH 内列出、逐条删除与一键清空 billion-context 的会话记录，保护正在使用的会话，并对标题中出现的 API key 打码。'

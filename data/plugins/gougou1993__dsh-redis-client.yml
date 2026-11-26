@@ -1,0 +1,7 @@
+url: https://github.com/gougou1993/dsh-redis-client
+name: gougou1993/dsh-redis-client
+category: dev
+description:
+  en: 'A Redis management plugin for DSH (DeepSeek Harness). It provides a left-sidebar entry for managing multiple Redis connections, browsing keys and values, and running commands. Redis interaction uses the pure-JavaScript ioredis client over the wire — no redis-cli install required, and it works the same on Windows, macOS and Linux.'
+  zh: '一款运行在 DSH（DeepSeek Harness）中的 Redis 管理插件。左侧栏提供入口，可管理多个 Redis 连接、浏览键值、执行命令。Redis 交互使用纯 JavaScript 的 ioredis 直连协议——不需要安装 redis-cli，在 Windows、macOS、Linux 上表现一致。'
+icon: https://raw.githubusercontent.com/gougou1993/dsh-redis-client/e8e6f464c1a061649314f012a6ab6a127c3e1334/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/femnn/dsh-plugin-remote-control
+name: femnn/dsh-plugin-remote-control
+category: remote
+tarball: https://github.com/femnn/dsh-plugin-remote-control/releases/download/v1.0.1/dsh-plugin-remote-control-1.0.1.tgz
+description:
+  en: 'Remote control for Android phones and TVs from the DeepSeek Harness sidebar: wireless ADB auto-discovery, a live screen you can tap, AI control that lets a multimodal model look at the screen and act on its own, computer-to-device casting, device-to-device relaying, file transfer, APK install, and a multi-device group chat. Its HTTP routes are local-only and reach the devices through the host adb binary.'
+  zh: '在 DeepSeek Harness 侧边栏远程操控安卓手机与电视：无线 ADB 自动发现、可点击的实时画面、由多模态模型看屏幕自行决策的 AI 操控、电脑投屏到设备、设备间转串流、文件传输、APK 安装与多设备群聊。它的 HTTP 路由仅限本机，并通过宿主上的 adb 二进制访问设备。'

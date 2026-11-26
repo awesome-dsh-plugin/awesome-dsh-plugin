@@ -1,7 +1,7 @@
 url: https://github.com/Faide-cyber/dsh-workbuddy
 name: Faide-cyber/dsh-workbuddy
 category: model
-tarball: https://github.com/Faide-cyber/dsh-workbuddy/releases/download/v1.0.24/dsh-workbuddy-1.0.24.tgz
+tarball: https://github.com/Faide-cyber/dsh-workbuddy/releases/download/v1.0.25/dsh-workbuddy-1.0.25.tgz
 description:
-  en: Bring WorkBuddy's free and paid models (domestic and international) into DSH — no WorkBuddy desktop app required.
-  zh: 把 WorkBuddy 国内版和国际版的免费/付费模型接进 DSH —— 无需下载 WorkBuddy 桌面端。
+  en: 'Bring WorkBuddy''s free and paid models (domestic and international) into DSH — no WorkBuddy desktop app required. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 WorkBuddy 国内版和国际版的免费/付费模型接进 DSH —— 无需下载 WorkBuddy 桌面端。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

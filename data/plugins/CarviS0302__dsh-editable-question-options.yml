@@ -1,0 +1,8 @@
+url: https://github.com/CarviS0302/dsh-editable-question-options
+name: CarviS0302/dsh-editable-question-options
+category: ui
+description:
+  en: 'Edits ask_user_question option cards before answering: select the closest option, adjust its label and details in place, and submit the original choice together with your revision.'
+  zh: '在 ask_user_question 的选择题卡片中选中接近的选项后，就地修改选项名称与细节，提交时保留原选项并把修改说明一起带给模型。'
+icon: https://raw.githubusercontent.com/CarviS0302/dsh-editable-question-options/main/assets/icon-180.png
+tarball: https://github.com/CarviS0302/dsh-editable-question-options/releases/download/v1.0.0/dsh-editable-question-options-1.0.0.tgz

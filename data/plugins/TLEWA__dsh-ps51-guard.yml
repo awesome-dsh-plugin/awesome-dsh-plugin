@@ -1,0 +1,6 @@
+url: https://github.com/TLEWA/dsh-ps51-guard
+name: TLEWA/dsh-ps51-guard
+category: dev
+description:
+  en: Guards Windows PowerShell 5.1 commands run through ops_bash by passing the script as UTF-16LE, restoring quoting that bash expansion destroyed, rewriting syntax and encoding switches 5.1 lacks, normalizing exit codes and output, and redirecting powershell to pwsh 7 by default.
+  zh: 为经 ops_bash 调用的 Windows PowerShell 5.1 提供护栏：以 UTF-16LE 传输脚本，还原被 bash 展开破坏的引号，改写 5.1 不支持的语法与编码开关，归一化退出码与输出，并默认把 powershell 重定向到 pwsh 7。

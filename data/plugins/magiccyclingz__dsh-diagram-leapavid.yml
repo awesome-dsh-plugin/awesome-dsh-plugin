@@ -1,0 +1,7 @@
+url: https://github.com/magiccyclingz/dsh-diagram-leapavid
+name: magiccyclingz/dsh-diagram-leapavid
+category: ui
+description:
+  en: 'Sidebar studio with 50 diagram templates that prepares a prompt and opens a new conversation to generate a single-file HTML diagram.'
+  zh: '侧栏图表工坊：50 种图表模板，填好内容后准备提示词并新建会话，生成单文件 HTML 图表。'
+icon: https://raw.githubusercontent.com/magiccyclingz/dsh-diagram-leapavid/main/icon.png

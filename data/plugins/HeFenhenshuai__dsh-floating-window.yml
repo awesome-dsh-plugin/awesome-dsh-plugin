@@ -1,0 +1,6 @@
+url: https://github.com/HeFenhenshuai/dsh-floating-window
+name: HeFenhenshuai/dsh-floating-window
+category: ui
+description:
+  en: 'Open DSH conversations in an always-on-top window on Windows, switch sessions, send and receive messages, and return to the main window in one click. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 Windows 置顶悬浮窗中打开 DSH 会话，切换会话、继续收发消息，并一键回到主窗口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

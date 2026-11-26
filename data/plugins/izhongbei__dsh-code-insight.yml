@@ -1,0 +1,6 @@
+url: https://github.com/izhongbei/dsh-code-insight
+name: izhongbei/dsh-code-insight
+category: tools
+description:
+  en: 'Persistent C/C++ symbol index for DeepSeek Harness: symbol search, go-to-definition, find-references, callers/callees, call graph and a right-sidebar panel, plus @ symbol completion in the composer.'
+  zh: '为 DeepSeek Harness 提供持久化 C/C++ 符号索引：符号搜索、跳转定义、引用、调用者/被调用者、调用关系图与右侧栏面板，以及输入框 @ 符号补全。'

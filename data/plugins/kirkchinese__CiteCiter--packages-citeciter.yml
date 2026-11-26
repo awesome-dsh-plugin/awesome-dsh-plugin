@@ -1,6 +1,7 @@
 url: https://github.com/kirkchinese/CiteCiter/tree/main/packages/citeciter
 name: kirkchinese/CiteCiter#citeciter
 category: session
+icon: https://raw.githubusercontent.com/kirkchinese/CiteCiter/main/packages/citeciter/assets/citeciter-mascot.png
 description:
-  en: 'Select text in a committed DSH response to open an independent, persistent, read-only multi-turn Topic bound to source-session evidence and project files while the source Agent keeps running.'
-  zh: '选中 DSH 已提交回复中的文字，开启独立、持久、只读的多轮 Topic；Topic 绑定来源会话证据与项目文件，来源 Agent 可继续运行。'
+  en: 'Select text in a DSH conversation, command card or document and ask about it in a separate read-only Topic that cites its source, with a blackboard for diagrams and animations and an optional teacher mode that offers points worth learning after each turn.'
+  zh: '在 DSH 的对话、命令卡片或文档中选中一段，在保留来源的独立只读 Topic 里追问；小黑板可画图和做动画，可选的教师模式在每轮结束后提示值得学习的点。'

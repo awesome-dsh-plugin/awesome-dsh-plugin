@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-session-resume
+name: 879745uhjun/dsh-session-resume
+category: session
+description:
+  en: 'Offers to pick up a conversation that was still running when DSH last closed: the interrupted turn is detected from the session log and shown as a resume prompt when DSH reopens. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 上次关闭时还没跑完的会话，重新打开时会提示「继续上次的工作」：从会话日志里识别被打断的那一轮，并给出续跑入口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

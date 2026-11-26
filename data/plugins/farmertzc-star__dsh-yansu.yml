@@ -1,0 +1,6 @@
+url: https://github.com/farmertzc-star/dsh-yansu
+name: farmertzc-star/dsh-yansu
+category: workflow
+description:
+  en: 'Yansu tracks requirements, designs, tasks, and review status from Git-backed Markdown in DeepSeek Harness and prepares handoff drafts in native sessions.'
+  zh: '研序在 DeepSeek Harness 中读取 Git 工作区内的 Markdown，展示需求、设计、任务和验收状态，并在原生会话中准备交接草稿。'
