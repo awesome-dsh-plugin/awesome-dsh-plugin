@@ -1,0 +1,6 @@
+url: https://github.com/NONON01/dsh-multithread-downloader
+name: NONON01/dsh-multithread-downloader
+category: tools
+description:
+  en: Multithreaded HTTP/HTTPS downloader with resume, mirror fallback, checksums, DoH and per-site throttling.
+  zh: 多线程分片下载器：断点续传、镜像回退、多算法校验、DoH 解析与站点风控降档。
