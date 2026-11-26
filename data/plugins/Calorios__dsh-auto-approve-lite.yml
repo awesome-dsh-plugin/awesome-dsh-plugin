@@ -1,0 +1,7 @@
+url: https://github.com/Calorios/dsh-auto-approve-lite
+name: Calorios/dsh-auto-approve-lite
+category: security
+description:
+  en: Three tiers of session-scoped tool auto-approval with custom rules and a local approval log.
+  zh: 提供会话级三档工具自动审批，支持自定义规则和本地审批记录。
+tarball: https://github.com/Calorios/dsh-auto-approve-lite/releases/download/v0.3.0/dsh-auto-approve-lite-0.3.0.tgz
