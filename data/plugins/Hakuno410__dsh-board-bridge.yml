@@ -1,0 +1,7 @@
+url: https://github.com/Hakuno410/dsh-board-bridge
+name: Hakuno410/dsh-board-bridge
+category: notify
+description:
+  en: A shared board several DSH sessions and one person write to; a new line is delivered into the target session as a user message, waking it without switching windows.
+  zh: 多个 DSH 会话与一个人共用的留言板；有人写新话就直接作为用户消息投进目标会话，不用切窗口喊人。
+tarball: https://github.com/Hakuno410/dsh-board-bridge/releases/download/v0.1.0/dsh-board-bridge.tgz
