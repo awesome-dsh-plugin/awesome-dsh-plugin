@@ -1,0 +1,7 @@
+url: https://github.com/1099800476/dsh-world-engine
+name: 1099800476/dsh-world-engine
+category: fun
+description:
+  en: 'A persistent local world for DSH role-play, managed from a DSH settings panel: world clock and calendar (date, weekday, part of day, season), a protagonist sheet, evolvable world rules (tick pace, event density, cooldowns), NPCs that act on their own schedules, per-location preset memories plus runtime memory search and export, approval of major events with an optional QQ private-chat receipt, and snapshot backup and rollback. The engine runs as its own local Node subprocess on 127.0.0.1:32100 that the plugin starts and supervises, and world saves are kept separate from code.'
+  zh: '给 DSH 角色扮演用的本地持久世界，在 DSH 设置面板里管理：世界时钟与日历（日期、星期、时段、季节）、主角状态、可演化的世界法则（推进节奏、事件密度、冷却天数）、按自己时间表行动的 NPC、按地点分开的预置回忆与运行时记忆检索/导出、重大节点审批（可选联动 QQ 私聊回执）、快照备份与回滚。引擎作为独立本地 Node 子进程运行在 127.0.0.1:32100，由插件拉起并看护，存档与代码分离。'
+tarball: https://github.com/1099800476/dsh-world-engine/releases/download/v0.1.1/dsh-world-engine-0.1.1.tgz
