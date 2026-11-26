@@ -2,5 +2,5 @@ url: https://github.com/HelloGUOSHIJUN/dsh-claude-theme
 name: HelloGUOSHIJUN/dsh-claude-theme
 category: theme
 description:
-  en: Claude-style theme for the DeepSeek Harness Web UI, overriding all 14 official theme tokens plus a component layer to reproduce the Claude desktop surface ladder, clay accents and a serif reading texture; light and dark, with every animation behind prefers-reduced-motion.
-  zh: 把 DeepSeek Harness 的 Web 界面换成 Claude 的视觉语言：覆盖全部 14 个官方主题令牌，再加一层组件规则还原 Claude 桌面端的表面阶梯、陶土橙点缀与衬线阅读质感；亮暗双模，所有动效都受 prefers-reduced-motion 控制。
+  en: Turns the DeepSeek Harness Web UI into Claude's desktop look: warm paper surfaces, clay accents, tighter corners and softer elevation, with 17px serif body text. Covers 268 DSH tokens across light and dark, with every animation behind prefers-reduced-motion.
+  zh: 把 DeepSeek Harness 的 Web 界面换成 Claude 桌面端的风格：暖白纸感底色、陶土橙点缀、更小的圆角与更柔和的投影，正文用 17px 衬线字体。覆盖 268 个 DSH 令牌，含亮暗两套；所有动效受 prefers-reduced-motion 控制。
