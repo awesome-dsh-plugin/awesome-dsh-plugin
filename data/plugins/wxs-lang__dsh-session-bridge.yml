@@ -1,0 +1,14 @@
+url: https://github.com/wxs-lang/dsh-session-bridge
+name: wxs-lang/dsh-session-bridge
+category: browser
+description:
+  en: >-
+    Turns the Chromium browser you are already signed into into DSH's browser_*
+    tools: clicks, typing, screenshots, tab groups and leases run in the
+    background without opening a second instance or stealing focus. A native
+    messaging host keeps the extension connected after its service worker
+    sleeps, and the local bridge rejects connections from web pages.
+  zh: >-
+    把你自己已经登录的 Chromium 浏览器变成 DSH 的 browser_* 工具：点击、输入、截图、标签分组与租约都在后台完成，不新开实例、不抢焦点。原生消息宿主让扩展在 Service Worker 休眠后仍能自动重连，本地桥会拒绝网页发起的连接。
+tarball: https://github.com/wxs-lang/dsh-session-bridge/releases/download/v2.3.2/dsh-session-bridge-2.3.2.tgz
+icon: https://raw.githubusercontent.com/wxs-lang/dsh-session-bridge/main/extension/icons/icon128.png

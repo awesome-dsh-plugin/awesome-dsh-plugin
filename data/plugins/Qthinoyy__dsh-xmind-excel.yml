@@ -1,0 +1,6 @@
+url: https://github.com/Qthinoyy/dsh-xmind-excel
+name: Qthinoyy/dsh-xmind-excel
+category: tools
+description:
+  en: Converts XMind mind maps into Excel workbooks with outline, test-case, checklist, QA-table (with a review sheet for the inferred precondition/step split) and merged-matrix views, all on the local machine.
+  zh: 把 XMind 思维导图转换成 Excel 工作簿，支持大纲、用例表、用例清单、QA 用例表（含前置/步骤判定核对表）与合并矩阵五种视图，全程在本机完成。

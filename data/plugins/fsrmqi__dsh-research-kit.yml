@@ -1,0 +1,6 @@
+url: https://github.com/fsrmqi/dsh-research-kit
+name: fsrmqi/dsh-research-kit
+category: workflow
+description:
+  en: 'Adds a research workbench to DSH with reusable workflows, literature screening, and links from answer findings to cited papers and figure or section references. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 DSH 提供科研工作台，支持复用研究流程、筛选文献，并从回答中的结论追溯到引用论文及其图表或小节。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

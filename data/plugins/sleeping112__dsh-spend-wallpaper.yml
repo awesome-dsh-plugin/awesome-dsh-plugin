@@ -1,0 +1,7 @@
+url: https://github.com/sleeping112/dsh-spend-wallpaper
+name: sleeping112/dsh-spend-wallpaper
+category: theme
+description:
+  en: 'Paints the DSH Web UI with a wallpaper chosen by the DeepSeek balance spent in the last rolling hour, with per-tier custom images or videos and a draggable button that opens a quick settings panel.'
+  zh: '按最近 1 小时消耗的 DeepSeek 余额为 DSH Web 界面切换壁纸，每档可上传自定义图片或视频，并通过可拖动按钮打开快捷设置面板。'
+icon: https://raw.githubusercontent.com/sleeping112/dsh-spend-wallpaper/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/lwfjyjy/dsh-workspace-enhancer
+name: lwfjyjy/dsh-workspace-enhancer
+category: ui
+description:
+  en: 'Desktop workspace sidebar enhancements: expand or collapse all groups at once, focus on the current workspace only, and show a pulsing dot beside a workspace that has a running conversation.'
+  zh: '桌面版工作区侧栏增强：一键全部展开/收起、只专注当前工作区、在有运行中对话的工作区旁显示闪烁圆点。'

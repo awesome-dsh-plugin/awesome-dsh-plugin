@@ -1,0 +1,7 @@
+url: https://github.com/InkiChang/dsh-usage-panel
+name: InkiChang/dsh-usage-panel
+category: usage
+description:
+  en: 'Sidebar panel for DeepSeek Harness that shows DeepSeek official account (or a pasted API key) and several new-api relay station balances with today''s spend, marks peak and off-peak pricing on the official site, and rotates between the sites you enable. Its HTTP routes accept same-origin requests only.'
+  zh: 'DSH 侧栏用量面板：显示 DeepSeek 官方账号（或手填 API key）与多个 new-api 中转站的余额与今日消耗，官方站点标注峰谷时段，按开关在站点间轮播。它的 HTTP 路由只接受同源请求。'
+icon: https://raw.githubusercontent.com/InkiChang/dsh-usage-panel/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/SAXEM1997/dsh-boost
+name: SAXEM1997/dsh-boost
+category: usage
+description:
+  en: 'Projects oversized tool receipts (read, grep, glob, bash, ssh) to a head/tail view with a spill locator for the full text, and can run read-only calls whose arguments are literally derivable from the previous receipt without a model round trip. Shadow-first by default — it records before it changes anything — with measured savings and stable degradation codes in `boost status`, a settings page for workspace scope and the shadow/projection switches, and optional receipt distillation that is off by default. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 read、grep、glob、bash、ssh 的超大工具回执投影成头尾视图并附全文的 spill 定位符；参数能从上一条回执逐字推导出来的只读调用，可以不再走一次模型往返。默认影子优先——先记账再改动——`boost status` 给出实测节省与稳定降级码，设置页管理作用域与影子/投影开关，回执蒸馏可选且默认关闭。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

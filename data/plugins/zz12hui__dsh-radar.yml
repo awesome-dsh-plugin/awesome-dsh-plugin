@@ -1,0 +1,6 @@
+url: https://github.com/zz12hui/dsh-radar
+name: zz12hui/dsh-radar
+category: market
+description:
+  en: 'Ranking navigator for DSH plugins and agent skills: ships the 6,245-entry catalog (plus 896 skill repos) inside the bundle, scans it locally on every open against configurable keyword groups and star/download/recency thresholds, and generates an install prompt you paste into a session instead of installing anything itself. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '插件与技能排行导航：把 6,245 条插件目录和 896 个技能仓库随包带上，每次打开按可调的词条分组与星标/下载/更新时间阈值在本地全量扫描，只生成安装提示词交给会话执行，自己不动你的机器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

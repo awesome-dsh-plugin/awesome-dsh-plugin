@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-demurrage-ledger
+name: PerryLink/dsh-demurrage-ledger
+category: tools
+description:
+  en: "Demurrage ledger check for DeepSeek Harness: check demurrage ledgers against the currency-code standard and the carrier's tariff and transport contract (no national standard). Flags discrepancies only and makes no conclusive judgment."
+  zh: "滞期费台账核对：依据《表示货币的代码》（承运人运价本与运输合同（无国家标准））。仅提示差异，不作出定性结论。"

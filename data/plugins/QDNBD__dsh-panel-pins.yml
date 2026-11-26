@@ -1,7 +1,12 @@
+# awesome-dsh-plugin 目录条目 — 提交方式见
+# https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+# 更新已有收录：PR 修改该仓库的 data/plugins/QDNBD__dsh-panel-pins.yml（fork 后编辑）
+# 每 PR 最多 3 条；description 含 ": " 必须加引号；不要手写 npm: 字段（自动采集）。
+# 2026-11-22 更新 5：v1.4.2 — 设置页桥接完备：启动器「设置页」分组与设置对话框行数/顺序/条目严格对齐（13/13，含宿主内置页与插件自身设置列）。
 url: https://github.com/QDNBD/dsh-panel-pins
 name: QDNBD/dsh-panel-pins
 category: ui
 icon: https://raw.githubusercontent.com/QDNBD/dsh-panel-pins/main/assets/icon-180.png
 description:
-  en: 'Keyboard-first sidebar panel launcher for DeepSeek Harness: a grouped Panels menu with in-menu search and hit highlighting, Alt+1..9 direct jumps and a Recent (MRU) group, mirrored by a Ctrl+K command palette — plus named layout presets, pin/top/hide/rename rows (floating editor that survives the sidebar''s constant re-renders), custom panel groups, icon-only mode, a compact footer and a full Settings page. v1.2.0 adds settings export/import via clipboard AND settings file. Display-layer only: no DOM surgery, clean uninstall, theme-token styling, widest host range (DSH >= 0.2.0-rc.1). Install: dsh plugin add dsh-panel-pins.'
-  zh: 'DeepSeek Harness 侧栏键盘效率型启动器：分组「面板」菜单带菜单内搜索与命中高亮、Alt+1..9 直达与最近使用（MRU），并镜像为 Ctrl+K 命令面板；支持具名布局预设一键切换、钉住/置顶/隐藏/重命名侧栏行（悬浮编辑器实时跟随滚动与折叠，不丢输入）、自定义分组、仅图标模式与紧凑底部区，设置页完整可调。v1.2.0 新增配置导出/导入（剪贴板与配置文件双通道）。只改显示层：不做 DOM 手术、卸载零残留、主题 token 化，兼容区间最宽（DSH >= 0.2.0-rc.1）。安装：dsh plugin add dsh-panel-pins。'
+  en: "Keyboard-first sidebar panel launcher for DeepSeek Harness — stop opening the sidebar at all. Ctrl+K anywhere, type two letters, Enter: panels, third-party plugin entries and EVERY settings page (core host pages, third-party sections, even the manager's own column — 13/13 parity with the settings dialog, same rows same order) live in one searchable grouped menu with hit highlighting, Alt+1..9 direct jumps and Recent/MRU. Also pin/top/hide/rename rows, drag-to-reorder with a live drop line, custom groups, named layout presets, icon-only mode, compact footer and a full Settings page with clipboard/file/drag-drop export. Display-layer only, no DOM surgery, clean uninstall, theme-token styling, widest host range (DSH >= 0.2.0-rc.1, Node >= 20). Install: dsh plugin add dsh-panel-pins."
+  zh: "DeepSeek Harness 侧栏面板的键盘启动器—不必再打开侧栏：任意界面 Ctrl+K，打两个字回车，面板、第三方插件入口、每一个设置页（宿主内置页、插件 section、甚至管理器自身设置列 — 与设置对话框 13/13 同行同序同条目）全在同一个可搜索分组菜单里（命中高亮、Alt+1..9 直达、最近使用）。还可钉住/置顶/隐藏/重命名侧栏行、拖动排序（蓝色插入线）、自建分组、具名布局预设、仅图标模式、紧凑底部区，以及剪切板/文件/拖放三通道导出导入的完整设置页。只改显示层，不做 DOM 手术，卸载零残留，主题 token 化，兼容区间最宽（DSH >= 0.2.0-rc.1 / Node >= 20）。安装：dsh plugin add dsh-panel-pins。"

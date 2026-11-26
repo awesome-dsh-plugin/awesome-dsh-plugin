@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-import-customs-check
+name: PerryLink/dsh-import-customs-check
+category: tools
+description:
+  en: "Cross-check invoice, packing list, bill of lading and customs declaration field by field, and list missing items among the declaration's 12 header elements."
+  zh: "把发票、装箱单、提单、报关单四份进口单证逐字段对照，并列出报关单 12 项表头要素的缺项。"

@@ -1,0 +1,8 @@
+url: https://github.com/sonhoang23/dsh-uml
+name: sonhoang23/dsh-uml
+category: docs
+description:
+  en: 'PlantUML diagram studio with local rendering, source editing, SVG/PNG export and agent tools.'
+  zh: 'PlantUML 图表工作室，支持本地渲染、源码编辑、SVG/PNG 导出及智能体工具。'
+icon: https://raw.githubusercontent.com/sonhoang23/dsh-uml/main/assets/icon-180.png
+tarball: https://github.com/sonhoang23/dsh-uml/releases/download/v0.1.0/dsh-uml-0.1.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/robeson1010/dsh-wow-bridge/tree/main/dsh-web
+name: 'robeson1010/dsh-wow-bridge#dsh-web'
+category: tools
+description:
+  en: 'Connects WoW Forever chat to DeepSeek Harness for in-game questions, Auction House prices, crafting profits, and Auctionator shopping lists.'
+  zh: '在《魔兽世界：无限》聊天框里使用 DeepSeek Harness，支持提问、拍卖行行情、制作利润和 Auctionator 采购清单。'

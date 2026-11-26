@@ -3,5 +3,5 @@ name: WaterDJiang/wtt-dsh-plugin#dsh-creation-workbench
 category: workflow
 icon: https://raw.githubusercontent.com/WaterDJiang/wtt-dsh-plugin/36fc1bcaf2f16635a8b354378335ce44f89c6b31/plugins/dsh-creation-workbench/src/assets/wattter-agent.png
 description:
-  en: 'Create presentations, images, or videos on an infinite canvas, return to a card to revise that step, and let the Agent delegate work to sub-agents using Skills from your library.'
-  zh: '在无限画布上做 PPT、图片或视频，想改哪一步就回到那张卡接着做，也能让 Agent 安排 Sub-agent 用你库里的 Skill 接力。'
+  en: 'Xiaowa plans and reviews work across canvases with DSH models or approved Codex CLI steps. Pair WeChat by QR to manage tasks. Media requests and WeChat messaging use credentials. See the plugin README for install warnings and ways to disconnect.'
+  zh: '小瓦 Super Agent 跨画布派发、验收和修订任务，每步可选 DSH 模型或授权 Codex CLI。扫码连接微信后可切换项目、确认计划。媒体请求和微信收发会使用对应凭据；各项安装提示和关闭方式见插件 README「安装时的权限提示」。'

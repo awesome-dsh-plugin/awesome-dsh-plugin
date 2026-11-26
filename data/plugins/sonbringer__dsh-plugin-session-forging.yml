@@ -1,0 +1,7 @@
+url: https://github.com/sonbringer/dsh-plugin-session-forging
+name: sonbringer/dsh-plugin-session-forging
+category: session
+description:
+  en: Create sessions from reusable templates for role instructions, per-session memory, tools and usage limits, with shared workspace documents and a leader role for dispatching tasks to selected sessions.
+  zh: 用火种模板为会话配置角色指令、独立记忆、工具和用量上限，按权限共享工作区文档，由领袖向指定锻造会话派工。
+tarball: https://github.com/sonbringer/dsh-plugin-session-forging/releases/latest/download/dsh-session-forging.tgz

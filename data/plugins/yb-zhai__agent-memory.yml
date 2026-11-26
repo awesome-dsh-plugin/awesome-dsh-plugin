@@ -1,0 +1,7 @@
+url: https://github.com/yb-zhai/agent-memory
+name: yb-zhai/agent-memory
+category: memory
+description:
+  en: 'Zero-dependency local memory for DSH: a JSONL recall engine with a visual star-map panel, plus optional Hindsight semantic overlay.'
+  zh: '零依赖的 DSH 本地记忆系统：JSONL 召回引擎配可视化星云面板，可选叠加 Hindsight 做语义增强。'
+icon: https://raw.githubusercontent.com/yb-zhai/agent-memory/main/assets/icon-180.png

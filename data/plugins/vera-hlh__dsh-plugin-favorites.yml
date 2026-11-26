@@ -1,0 +1,6 @@
+url: https://github.com/vera-hlh/dsh-plugin-favorites
+name: vera-hlh/dsh-plugin-favorites
+category: session
+description:
+  en: 'Bookmark replies, whole turns, selected text, and files in DSH sessions, then jump back to the highlighted spot. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '收藏 DSH 会话中的回复、整轮对话、选中文字与文件，并一键跳回高亮位置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
