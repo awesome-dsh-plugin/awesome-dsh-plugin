@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-task-contract
+name: SSHOOTING/dsh-plugin-task-contract
+tarball: https://github.com/SSHOOTING/dsh-plugin-task-contract/releases/download/v0.1.0/0.1.0.tgz
+category: dev
+description:
+  en: 'Turns a vague request into an editable 5-line contract (goal, non-goals, acceptance, budget, risks).'
+  zh: '把含糊请求变成可编辑的 5 行契约（目标、非目标、验收、预算、风险）。'

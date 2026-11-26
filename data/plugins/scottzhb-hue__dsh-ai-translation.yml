@@ -1,0 +1,8 @@
+url: https://github.com/scottzhb-hue/dsh-ai-translation
+name: scottzhb-hue/dsh-ai-translation
+category: docs
+description:
+  en: 'CAT translation workbench for DeepSeek Harness: translation memory, glossary, segment editor, AI translation suggestions, and import/export for TXT, Markdown, DOCX, XLSX, PPTX, EPUB, SDLXLIFF and TMX while keeping the original layout. A maintained fork of CAIT that adds merging and splitting of segments, defining a term from a selection, draft recovery for unconfirmed text, and token usage and cost statistics.'
+  zh: 'DeepSeek Harness 中的 CAT 翻译工作台：翻译记忆、术语库、句段编辑、AI 译文建议，支持 TXT、Markdown、DOCX、XLSX、PPTX、EPUB、SDLXLIFF、TMX 导入导出并保留原版式。CAIT 的持续维护分支，新增句段合并与拆分、选中原文与译文即建术语、未确认译文草稿恢复、Token 用量与费用统计。'
+icon: https://raw.githubusercontent.com/scottzhb-hue/dsh-ai-translation/main/assets/icon-180.png
+tarball: https://github.com/scottzhb-hue/dsh-ai-translation/releases/latest/download/dsh-ai-translation.tgz

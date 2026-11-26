@@ -1,0 +1,6 @@
+url: https://github.com/lwfjyjy/dsh-session-show-load
+name: lwfjyjy/dsh-session-show-load
+category: usage
+description:
+  en: 'Adds a Load tab at the top of the current conversation showing what was injected to the model (system prompt, instruction files, skills, tools, environment snapshot), with per-block AI translation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在当前对话顶部新增「加载」标签，展示本次注入给模型的系统提示词、指令文件、技能、工具与环境快照，并支持逐块 AI 翻译。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

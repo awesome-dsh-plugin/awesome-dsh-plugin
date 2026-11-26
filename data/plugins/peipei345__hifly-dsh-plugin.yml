@@ -1,0 +1,8 @@
+url: https://github.com/peipei345/hifly-dsh-plugin
+name: peipei345/hifly-dsh-plugin
+category: tools
+description:
+  en: 'Connect your HiFly account to query avatars and voices, generate voiceovers and avatar videos, and check task progress in chat.'
+  zh: '通过飞影账号授权，在对话中查询数字人与声音、生成配音和口播视频、查看任务进度。'
+icon: https://raw.githubusercontent.com/peipei345/hifly-dsh-plugin/main/assets/hifly-store-icon.png
+tarball: https://github.com/peipei345/hifly-dsh-plugin/releases/download/v0.1.1/dsh-hifly-0.1.1.tgz

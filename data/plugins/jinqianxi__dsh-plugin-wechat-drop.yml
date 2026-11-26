@@ -1,0 +1,7 @@
+url: https://github.com/jinqianxi/dsh-plugin-wechat-drop
+name: jinqianxi/dsh-plugin-wechat-drop
+category: ui
+description:
+  en: Drag macOS WeChat merged chat record ZIPs and other AppKit NSFilePromise files directly onto the composer as standard attachments.
+  zh: 在 macOS 上将微信合并聊天记录 ZIP 及其他 AppKit NSFilePromise 延迟交付文件直接拖入输入框并转为标准附件。
+icon: https://raw.githubusercontent.com/jinqianxi/dsh-plugin-wechat-drop/main/assets/icon-180.png

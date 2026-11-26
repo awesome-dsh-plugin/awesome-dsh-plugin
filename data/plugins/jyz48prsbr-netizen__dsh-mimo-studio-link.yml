@@ -1,0 +1,6 @@
+url: https://github.com/jyz48prsbr-netizen/dsh-mimo-studio-link
+name: jyz48prsbr-netizen/dsh-mimo-studio-link
+category: browser
+description:
+  en: 'Adds a left-sidebar entry that opens the native Xiaomi MiMo Studio web app (aistudio.xiaomimimo.com) inside DSH via an in-app Electron webview without spending Harness session tokens. Desktop only.'
+  zh: '在左侧栏加入口，用内嵌 Electron webview 打开小米 MiMo Studio 网页版（aistudio.xiaomimimo.com），不消耗 Harness 会话 token，仅桌面版可用。'

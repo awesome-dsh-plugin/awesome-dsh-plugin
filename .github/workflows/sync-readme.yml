@@ -47,7 +47,10 @@ concurrency:
 
 jobs:
   sync:
-    if: github.actor != 'github-actions[bot]'
+    # A fork mirrors the catalog but must not commit bot-generated READMEs, or
+    # its main drifts from upstream on a commit nobody reviewed. Skipped there
+    # to spare the fork owner's Actions quota; a manual dispatch still runs.
+    if: github.actor != 'github-actions[bot]' && (github.repository_owner == 'awesome-dsh-plugin' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
     steps:
       # main's tip, not the pushed commit. The concurrency group serialises

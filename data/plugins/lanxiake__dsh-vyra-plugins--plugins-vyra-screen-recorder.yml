@@ -1,0 +1,6 @@
+url: https://github.com/lanxiake/dsh-vyra-plugins/tree/master/plugins/vyra-screen-recorder
+name: lanxiake/dsh-vyra-plugins#screen-recorder
+category: tools
+description:
+  en: 'Desktop recording and annotated screenshots inside DSH: pick the whole desktop, one monitor, one window or a dragged region, record system audio and microphone into MP4 or WebM, annotate a capture and hide the DSH window so apps behind it can be captured. The agent gets a CLI for the same actions. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 内录屏与截图：可选整个桌面、单块显示器、某个窗口或拖框区域，录系统声音与麦克风并输出 MP4 / WebM；截图带标注，还能先隐藏 DSH 窗口去截被挡住的应用。同一套能力也以 CLI 交给 Agent 调用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

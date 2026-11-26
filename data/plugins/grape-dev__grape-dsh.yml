@@ -1,0 +1,6 @@
+url: https://github.com/grape-dev/grape-dsh
+name: grape-dev/grape-dsh
+category: dev
+description:
+  en: 'Grape DevOps pipeline tools for DeepSeek Harness: 33 tools in nine groups trigger and monitor pipelines, run the issue lifecycle from create to cancel, browse scenes, managed repositories, project templates, skills and knowledge, and read ops dashboards through the grape CLI.'
+  zh: 'Grape 的 DeepSeek Harness DevOps 工具集：九个工具组共 33 个工具，触发并跟踪流水线、走完从创建到取消的 issue 生命周期、浏览场景/托管仓库/项目模板/技能与知识库、读取运维概览，全部经由 grape CLI 调用。'

@@ -1,0 +1,6 @@
+url: https://github.com/forkgo430/dsh-gui-forkgo/tree/main/dsh-bundle
+name: forkgo430/dsh-gui-forkgo#dsh-bundle
+category: tools
+description:
+  en: 'Gives DeepSeek Harness eyes and hands on a Windows desktop: eight MCP tools cover screen capture, mouse and keyboard input, window and process control, files, the registry, PowerShell, the clipboard, virtual desktops and an isolated child session, plus a skill that teaches the model the order to call them in.'
+  zh: '给 DeepSeek Harness 装上 Windows 桌面的眼睛和手：8 个 MCP 工具覆盖截屏、鼠标键盘、窗口与进程、文件、注册表、PowerShell、剪贴板、虚拟桌面与独立子会话，另附一份教模型按什么顺序调用它们的技能。'

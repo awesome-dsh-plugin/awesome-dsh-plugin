@@ -1,0 +1,7 @@
+url: https://github.com/G-duo/dsh-win-notifier
+name: G-duo/dsh-win-notifier
+category: notify
+description:
+  en: 'Always-on-top reminder card in the bottom-right corner when an approval or question is pending, or a turn ends. Windows only.'
+  zh: 待确认、待回答或任务结束时，在屏幕右下角弹出置顶提醒卡片，仅支持 Windows。
+icon: https://raw.githubusercontent.com/G-duo/dsh-win-notifier/main/assets/icon-180.png

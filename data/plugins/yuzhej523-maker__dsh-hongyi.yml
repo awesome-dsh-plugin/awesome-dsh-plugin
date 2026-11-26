@@ -1,0 +1,7 @@
+url: https://github.com/yuzhej523-maker/dsh-hongyi
+name: yuzhej523-maker/dsh-hongyi
+category: remote
+description:
+  en: 'Relay DSH status, task progress, commands and files to your phone through your own mailbox (IMAP/SMTP) with a silent drafts-folder channel. Its /hongyi/* HTTP routes have no DSH access check, default deviceSecret is empty (accepts unsigned envelopes including download <url>), and the companion Android APK is distributed as a binary without Flutter source in the repository.'
+  zh: '通过你自己的邮箱（IMAP/SMTP）把 DSH 状态、任务进度、指令和文件中转到手机，草稿箱静默通道不弹提醒。它的 /hongyi/* HTTP 路由没有 DSH 的访问检查；默认 deviceSecret 为空（未配密钥时接受未签名信封并允许 download <url>）；配套安卓 APK 仅以二进制随 Release 分发，仓库不含 Flutter 源码。'
+icon: https://raw.githubusercontent.com/yuzhej523-maker/dsh-hongyi/main/assets/icon-180.png
