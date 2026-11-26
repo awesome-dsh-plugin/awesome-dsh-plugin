@@ -1,0 +1,6 @@
+url: https://github.com/lintaojlu/dsh-inplace-edit
+name: lintaojlu/dsh-inplace-edit
+category: session
+description:
+  en: Edit an earlier prompt with the pencil under a finished answer and send it again in the same session.
+  zh: 用回答下方的铅笔修改一条已发送的提示，并在当前会话里重新发送。
