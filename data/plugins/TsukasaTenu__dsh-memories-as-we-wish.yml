@@ -1,0 +1,6 @@
+url: https://github.com/TsukasaTenu/dsh-memories-as-we-wish
+name: TsukasaTenu/dsh-memories-as-we-wish
+category: memory
+description:
+  en: 'Gives AI characters long-term memory through LLM episode summaries, keyword and time-range recall, reasoning replay, and cue-triggered injection of original conversation text.'
+  zh: '给 AI 角色长期记忆：LLM 事件概括、关键词与时间范围召回、思考回读，以及线索触发的原文注入。'

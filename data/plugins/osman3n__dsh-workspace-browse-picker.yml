@@ -1,0 +1,7 @@
+url: https://github.com/osman3n/dsh-workspace-browse-picker
+name: osman3n/dsh-workspace-browse-picker
+category: ui
+description:
+  en: 'In-app workspace folder picker: every Workspace row gains a hover button beside its menu that opens the folder dialog already sitting in that Workspace own folder, the same row is on the menu, and all three shipped directory-flow holes render the dialog so Add workspace never falls back to the OS chooser. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '应用内工作区文件夹选择器：每个工作区行的菜单旁边多一个悬停按钮，点开就直接停在该工作区自己的文件夹里，菜单里也有同一行入口；内置的三个目录流插槽都渲染这个对话框，因此「添加工作区」不会再退回系统选择框。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/osman3n/dsh-workspace-browse-picker/main/assets/icon-180.png

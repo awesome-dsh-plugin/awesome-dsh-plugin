@@ -1,0 +1,7 @@
+url: https://github.com/Charlieeeo/dsh-next-reply-chips
+name: Charlieeeo/dsh-next-reply-chips
+category: ui
+icon: https://raw.githubusercontent.com/Charlieeeo/dsh-next-reply-chips/main/icon-180.png
+description:
+  en: 'Clickable next-reply chips under each assistant turn: the reply itself ends with up to three suggested follow-ups, so no auxiliary model call is made, and a click either sends one immediately or fills the composer for editing.'
+  zh: '每条回答下方显示可点击的下一步建议：建议由主回复自身给出，不额外调用模型；点击可立即发送，或只填入输入框待你修改。'

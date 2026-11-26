@@ -1,0 +1,7 @@
+url: https://github.com/WangZW928/HPC_Style_For_AI
+name: WangZW928/HPC_Style_For_AI
+category: skill
+description:
+  en: 'An on-demand HPC design and review skill covering numerical contracts, cost models, data independence and consistency, work mapping, binding time and completion, with source examples separate from general principles.'
+  zh: '按需加载的 HPC 设计与评审技能，涵盖数值契约、成本模型、数据独立性与一致性、工作映射、绑定时机及完成语义，源码案例独立于通用原则。'
+tarball: https://github.com/WangZW928/HPC_Style_For_AI/releases/download/v0.3.1/dsh-hpc-style-for-ai-0.3.1.tgz

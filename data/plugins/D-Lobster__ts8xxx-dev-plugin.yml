@@ -1,0 +1,6 @@
+url: https://github.com/D-Lobster/ts8xxx-dev-plugin
+name: D-Lobster/ts8xxx-dev-plugin
+category: workflow
+description:
+  en: DeepSeek Harness agent preset plus 24 TS8XXX-series firmware workflow skills (build, flash, log, OTA, review) for TS800X BLE development.
+  zh: TS8XXX 系列芯片固件开发插件：DSH 预设 + 构建/烧录/日志/OTA/审查等 24 个技能（当前支持 TS800X）。

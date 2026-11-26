@@ -1,0 +1,7 @@
+url: https://github.com/surunlang-creator/dsh-client-ui-skin-runlang
+name: surunlang-creator/dsh-client-ui-skin-runlang
+category: theme
+description:
+  en: 'Runlang: a courtyard-video skin for the DSH Web UI with smoked-glass panels, a wallpaper panel (upload, shader, Wallpaper Engine), a corner music player with repeat/shuffle and a draggable frame-accurate progress bar, a background-video sound control, and a mint cat companion. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Runlang：DSH Web UI 的古风庭院动态壁纸皮肤——烟熏玻璃面板、壁纸面板（上传/着色器/Wallpaper Engine）、右上角音乐播放器（单曲循环/随机/拖动进度条）、壁纸视频声音开关，附薄荷小猫桌宠。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/surunlang-creator/dsh-client-ui-skin-runlang/main/assets/icon-180.png

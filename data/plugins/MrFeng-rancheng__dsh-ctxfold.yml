@@ -2,6 +2,6 @@ url: https://github.com/MrFeng-rancheng/dsh-ctxfold
 name: MrFeng-rancheng/dsh-ctxfold
 category: tools
 description:
-  en: Assembles code context as guarded state so long coding sessions cost fewer input tokens, with doctor, ask and status tools and the CLI bundled in the package.
-  zh: 把代码上下文装配成带守卫的状态，让长会话少付输入 token；提供 doctor、ask、status 三个工具，命令行工具随包分发。
+  en: 'Stops the agent from re-reading the same code every turn: verified results are cached and reused, and only the affected part is recomputed when code changes.'
+  zh: '解决 AI 重复阅读上下文的问题：问过的结果记下来直接复用，代码改了只重算受影响的部分，省 token、提效率。'
 icon: https://raw.githubusercontent.com/MrFeng-rancheng/dsh-ctxfold/main/assets/icon-180.png

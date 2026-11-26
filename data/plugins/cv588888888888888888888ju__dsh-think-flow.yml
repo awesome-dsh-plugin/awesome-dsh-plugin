@@ -1,0 +1,7 @@
+url: https://github.com/cv588888888888888888888ju/dsh-think-flow
+name: cv588888888888888888888ju/dsh-think-flow
+category: ui
+tarball: https://github.com/cv588888888888888888888ju/dsh-think-flow/releases/download/v0.4.2/dsh-think-flow-zh-0.4.2.tgz
+description:
+  en: "Chinese add-on fork of the dsh-think-flow sidebar chain-of-thought panel: while upstream folds each session's live reasoning into turn → step groups, this fork sends each step to a separate, configurable model (titleProvider/titleModel) and shows an 8–18 character Chinese title plus a 20–60 character Chinese explanation under every step, and a one-line Chinese title per turn. The main model is untouched — no system-prompt injection, no extra tools, no context changes; the plug-in just makes its own request. autoTitlesOn arms title generation as soon as a panel connects, and batches over 10 steps are split so long turns (100+ steps) no longer come back empty; steps that only call a tool (no reasoning) are summarised from the call itself, and a failed segment is retried up to three times with backoff."
+  zh: "dsh-think-flow 侧栏思维链面板的中文增强 fork：上游把每个会话的实时思考折成 turn → step 分组；本 fork 再把每一步交给另一个可配置的模型（titleProvider/titleModel），在步骤行下面写一行 8~18 字中文标题与 20~60 字中文解释，整轮写一条中文标题。主模型完全不动——不注入系统提示词、不新增工具、不改上下文，插件只是自己多发一次请求。autoTitlesOn 让面板一连上就自动补标题；超过 10 步的批次会切段生成，100+ 步的长轮也不会整批返回空；只调工具、没有思考的步骤按工具调用本身给解读，某段失败会退避重试最多三次。"

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-essay-rubric-check
+name: PerryLink/dsh-essay-rubric-check
+category: tools
+description:
+  en: "Essay grading-rubric check for DeepSeek Harness: check essay scoring rubrics against the Chinese Senior High School Language Curriculum Standards and the national college-entrance examination scoring regulations. Flags discrepancies only and makes no conclusive judgment."
+  zh: "作文评分表核对：依据《普通高中语文课程标准》《普通高等学校招生全国统一考试评卷工作规定》。仅提示差异，不作出定性结论。"

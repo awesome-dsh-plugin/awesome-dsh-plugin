@@ -1,0 +1,8 @@
+# Shown in the list as shskyc/dsh-conversation-search.
+url: https://github.com/shskyc/dsh-conversation-search
+name: shskyc/dsh-conversation-search
+category: ui
+description:
+  en: 'Adds a Ctrl+F find panel to the conversation: lists matches with context, highlights every match in place, and jumps to the exact position via Previous, Next, or clicking a result.'
+  zh: '在会话中按 Ctrl+F 打开查找面板：列出匹配项及上下文，全部匹配原文高亮，上一处、下一处或点击结果精确跳转到对应位置。'
+icon: https://raw.githubusercontent.com/shskyc/dsh-conversation-search/main/assets/icon-180.png

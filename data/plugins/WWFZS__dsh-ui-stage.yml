@@ -1,0 +1,8 @@
+url: https://github.com/WWFZS/dsh-ui-stage
+name: WWFZS/dsh-ui-stage
+category: ui
+description:
+  en: 'Full-screen boot animation covering the loading page until the app UI is ready. The same library doubles as an appearance theme behind the interface, and desktop pets float over it on their own. Ships multiple built-in videos, wallpapers, voices and pets; upload your own files to customize. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '全屏开机动画，盖住加载页直到应用就绪再淡出。同一套素材还能当外观主题铺在界面后面，另有桌面宠物浮在屏幕上自己活动。插件内置多套视频、壁纸、语音与宠物，也支持上传自己的文件进行自定义。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/WWFZS/dsh-ui-stage/master/docs/avatar.png
+tarball: https://github.com/WWFZS/dsh-ui-stage/releases/latest/download/dsh-ui-stage.tgz

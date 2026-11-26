@@ -1,0 +1,6 @@
+url: https://github.com/mumu1001ai-jpg/dsh-mysql-data-recovery
+name: mumu1001ai-jpg/dsh-mysql-data-recovery
+category: tools
+description:
+  en: 'MySQL binlog recovery workspace for DSH: generate and preview rollback SQL from a local time range or target SQL, with scan progress and optional temporary-user SQL. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 的 MySQL binlog 恢复工作区：按本地时间窗口或执行过的 SQL 生成并预览回滚 SQL，显示扫描进度，并可生成临时恢复账号 SQL。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

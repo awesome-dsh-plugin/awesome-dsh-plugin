@@ -1,0 +1,6 @@
+url: https://github.com/jyz48prsbr-netizen/dsh-chatglm-link
+name: jyz48prsbr-netizen/dsh-chatglm-link
+category: browser
+description:
+  en: 'Adds a left-sidebar entry that opens the new Zhipu ChatGLM (AgentMore) web app at chatglm.cn inside DSH via an in-app Electron webview without spending Harness session tokens. Desktop only.'
+  zh: '在左侧栏加入口，用内嵌 Electron webview 打开新版智谱清言 AgentMore 网页版（chatglm.cn），不消耗 Harness 会话 token，仅桌面版可用。'

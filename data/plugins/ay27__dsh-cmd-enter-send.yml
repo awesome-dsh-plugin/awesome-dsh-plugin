@@ -1,0 +1,8 @@
+url: https://github.com/ay27/dsh-cmd-enter-send
+name: ay27/dsh-cmd-enter-send
+category: ui
+description:
+  en: 'Swaps the DSH composer keys: Cmd+Enter (Ctrl+Enter on Windows and Linux) sends the message and plain Enter inserts a newline.'
+  zh: '对调 DSH 输入框的发送键位：Cmd+Enter（Windows 与 Linux 上为 Ctrl+Enter）发送消息，单独按 Enter 换行。'
+icon: https://raw.githubusercontent.com/ay27/dsh-cmd-enter-send/main/assets/icon-180.png
+tarball: https://github.com/ay27/dsh-cmd-enter-send/releases/latest/download/dsh-cmd-enter-send.tgz

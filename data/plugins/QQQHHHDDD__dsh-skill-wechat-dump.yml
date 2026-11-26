@@ -1,0 +1,6 @@
+url: https://github.com/QQQHHHDDD/dsh-skill-wechat-dump
+name: QQQHHHDDD/dsh-skill-wechat-dump
+category: skill
+description:
+  en: 'Bundles a skill that turns local WeChat 4.x chat history into plaintext SQLite. It reads each database key out of the running WeChat process memory (the Config.Cipher path, no brute force and no third-party binary), verifies every key against the page HMAC, then decrypts page by page with the Windows CNG AES implementation, leaving SQLite files you can query with any tool. Key extraction and decryption are read-only and nothing leaves the machine; the skill also offers an optional export to JSONL and CSV that strips XML from message bodies and can exclude group chats. Requirements are Python 3 on Windows with the WeChat desktop client running and logged in, plus Node.js 22.15 or newer for the optional export.'
+  zh: '打包一个技能，把本地微信 4.x 聊天记录导出成明文 SQLite：从运行中的微信进程内存里按 Config.Cipher 路径取每个库的密钥（不暴力枚举、不依赖第三方二进制），用页尾 HMAC 校验密钥，再用 Windows CNG 的 AES 逐页解密，得到任何工具都能打开的 SQLite 文件。取密钥与解密全程只读，数据不出本机；技能还可选导出 JSONL 与 CSV，自动去掉消息体里的 XML 标签，并支持排除群聊。前提是 Windows 上装有 Python 3、微信客户端正在运行且已登录，可选导出另需 Node.js 22.15 及以上。'

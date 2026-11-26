@@ -1,0 +1,7 @@
+url: https://github.com/modenicheng/dsh-annotate/tree/main/packages/plugin
+name: modenicheng/dsh-annotate#plugin
+category: browser
+description:
+  en: 'Marks made in your own Firefox or Zen window, not DSH''s embedded browser, reach the session with a cropped screenshot, DOM selectors and page state, and six annotate_* tools read them; needs the dsh-marker browser extension from the same repository. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '批注产生在你自己的 Firefox / Zen 窗口里（不是 DSH 的内置浏览器）：划词、点元素或拖框，批注连同裁剪截图、DOM 选择器与页面状态进入会话，六个 annotate_* 工具读取它们；需另装同一仓库的 dsh-marker 浏览器扩展。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/modenicheng/dsh-annotate/main/packages/extension/icon/icon-128.png

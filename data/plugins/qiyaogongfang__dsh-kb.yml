@@ -1,0 +1,7 @@
+url: https://github.com/qiyaogongfang/dsh-kb
+name: qiyaogongfang/dsh-kb
+category: docs
+description:
+  en: 'Local-first knowledge base for DeepSeek Harness. Two-level topics, free tags and full-text search keep runbooks, conventions and gotchas in one kb.json; the prompt carries only an index and bodies are fetched on demand. Adds five tools (search, get, save, update, delete) and a sidebar panel, with zero runtime dependencies. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 的本机知识库：一级/二级主题加自由标签，全文检索操作流程、规范与踩坑；全部数据就是一个 kb.json，提示词里只带索引，正文按需取。带五个工具（搜索/读取/新建/修改/删除）和侧栏面板，零运行时依赖。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/qiyaogongfang/dsh-kb/main/assets/icon-512.png

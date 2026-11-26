@@ -1,0 +1,6 @@
+url: https://github.com/erek303/dsh-quick-translate
+name: erek303/dsh-quick-translate
+category: tools
+description:
+  en: Adds a Quick translate panel for English-Chinese translation that streams output from a text model already configured in DSH, with automatic direction detection, a swap button, searchable local history, two switchable looks (paper collage or a plain color-field layout), and an option to save the result as a share image.
+  zh: 新增一个快速翻译面板，用 DSH 中已配置的文字模型做中英互译并流式输出，支持自动判断方向、原文译文互换、可搜索的本地历史、两种可切换的界面风格（纸本拼贴或简洁色场），并可把结果生成分享图片。

@@ -1,0 +1,7 @@
+url: https://github.com/proteuscrypto/wapliss-for-deepseek
+name: proteuscrypto/wapliss-for-deepseek
+category: identity
+description:
+  en: 'Connects DSH to your own WhatsApp through the hosted Wapliss MCP server, authenticated with a personal API key; read and summarize chats and groups, see the latest messages and group members, and send text, media, location, contacts and polls only after you confirm. Bulk or unsolicited messaging is not allowed; not affiliated with Meta or WhatsApp.'
+  zh: '通过托管的 Wapliss MCP 服务把 DSH 连接到你自己的 WhatsApp（使用个人 API Key 鉴权）；可读取和总结私聊与群聊、查看最新消息和群成员，并在你确认后发送文字、媒体、位置、联系人与投票。禁止群发或骚扰消息；与 Meta 或 WhatsApp 无关联。'
+icon: https://raw.githubusercontent.com/proteuscrypto/wapliss-for-deepseek/main/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/angelomadara/dsh-plugin-jira
+name: angelomadara/dsh-plugin-jira
+category: tools
+description:
+  en: 'Jira integration for DSH: a Settings page stores the site, email and API token, /jira-do fetches the ticket and branches it for the agent, /jira-comment posts a comment or summarizes the branch changes, and the jira_ticket and jira_comment tools read and write issues.'
+  zh: 'DSH 的 Jira 集成：设置页保存站点、邮箱和 API token，/jira-do 拉取工单并为智能体建分支，/jira-comment 发表评论或总结分支改动，jira_ticket 与 jira_comment 工具可读写工单。'

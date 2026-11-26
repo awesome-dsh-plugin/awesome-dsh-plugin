@@ -1,0 +1,7 @@
+url: https://github.com/Refreshing-CZQ/dsh-mark-unread
+name: Refreshing-CZQ/dsh-mark-unread
+category: ui
+description:
+  en: 'Adds a Mark as unread row to every Session menu, with a green dot that clears itself once the Session is opened. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给会话「...」菜单加一行「标为未读」，并在会话行前显示一颗读后自动消失的绿点。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/Refreshing-CZQ/dsh-mark-unread/releases/download/v1.1.0/dsh-mark-unread-1.1.0.tgz

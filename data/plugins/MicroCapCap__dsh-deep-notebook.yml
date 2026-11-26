@@ -1,0 +1,7 @@
+url: https://github.com/MicroCapCap/dsh-deep-notebook
+name: MicroCapCap/dsh-deep-notebook
+category: ui
+tarball: https://github.com/MicroCapCap/dsh-deep-notebook/releases/download/v2.1.1/dsh-deep-notebook-2.1.1.tgz
+description:
+  en: 'A study notebook for DeepSeek Harness: each notebook is a workspace, and its lessons, quizzes, plans, and chats open as real Harness sessions with a preset first message. Learner memory is kept per notebook and globally, the course style is free text, and lesson completion is set by hand.'
+  zh: 'DeepSeek Harness 的学习笔记本：每本笔记本是一个工作区，课文、测验、学习计划与对话都以真实的 Harness 会话打开并带一句预设首条消息；学习者记忆分笔记本与全局两层，课程风格可自由填写，课时完成状态由学习者手动标记。'

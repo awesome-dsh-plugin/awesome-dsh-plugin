@@ -1,0 +1,6 @@
+url: https://github.com/wellsoren/dsh-atomcode
+name: wellsoren/dsh-atomcode
+category: model
+description:
+  en: 'Connects the models in the AtomGit AtomCode CodingPlan to DSH. Once installed, the model selector gains an AtomGit AtomCode provider and the chat window works as usual; a new AtomCode icon in the left rail shows login status, plan quota and 60-day usage. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 AtomGit AtomCode CodingPlan 里的模型接进 DSH。装好之后，模型选择器里多出一个 provider AtomGit AtomCode，聊天窗口照常用；左侧图标栏还会多一格 AtomCode，一眼看到登录状态、套餐额度和近 60 天用量。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

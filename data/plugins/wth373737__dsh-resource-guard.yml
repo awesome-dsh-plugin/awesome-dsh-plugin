@@ -1,0 +1,6 @@
+url: https://github.com/wth373737/dsh-resource-guard
+name: wth373737/dsh-resource-guard
+category: dev
+description:
+  en: 'Pre-flight resource gate for tool calls: estimates peak memory and VRAM from the command line, the scripts it references and per-binary costs, compares that with the machine live headroom and allows, asks or refuses; a budget block in the system prompt lets the model size concurrency, a runtime breaker warns when a call crosses the line, and measured peaks feed back into later estimates. Windows only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '工具调用的事前资源门禁：从命令行、它引用的脚本内容与按二进制的单价估算峰值内存与显存，与机器当前余量比较后放行、询问或拒绝；系统提示里注入实时预算让模型自己定并发，运行时熔断在越线时告警，实测峰值回填到后续估算。仅支持 Windows。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

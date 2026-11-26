@@ -1,0 +1,7 @@
+url: https://github.com/afterpartyai/ss33-skill-store-for-agents/tree/main/adapters/dsh
+name: afterpartyai/ss33-skill-store-for-agents#dsh
+category: skill
+description:
+  en: 'Searches the ss33 Skill Store with a summary of your project''s stack and installs picked skills as native SKILL.md files pinned in ss33.lock, with opt-in prompt matching.'
+  zh: '根据项目技术栈摘要检索 ss33 Skill Store，将选中的技能作为原生 SKILL.md 安装并钉入 ss33.lock，支持按需开启提示词匹配。'
+icon: https://raw.githubusercontent.com/afterpartyai/ss33-skill-store-for-agents/main/adapters/cursor/assets/icon.png

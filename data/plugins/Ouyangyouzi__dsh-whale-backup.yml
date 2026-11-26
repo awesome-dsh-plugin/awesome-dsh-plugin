@@ -1,0 +1,7 @@
+url: https://github.com/Ouyangyouzi/dsh-whale-backup
+name: Ouyangyouzi/dsh-whale-backup
+category: ui
+description:
+  en: 'Whale Girl Backup — one-click backup and restore for DSH: packs chat history, plugins, plugin data, settings and project files into a SHA-256-verified archive on local disk or WebDAV, with scheduled runs, optional SMTP notices and a whale-backup CLI.'
+  zh: '鲸鱼娘备份 — 一键备份与恢复：把聊天记录、插件、插件数据、设置和项目文件打包成带 SHA-256 校验的归档，可存到本机或 WebDAV；支持计划任务、恢复前安全备份与同名冲突策略，并提供 whale-backup 命令行。'
+icon: https://raw.githubusercontent.com/Ouyangyouzi/dsh-whale-backup/main/lib/assets/whale-girl.png

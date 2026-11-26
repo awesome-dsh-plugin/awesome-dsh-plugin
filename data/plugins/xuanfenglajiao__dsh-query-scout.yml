@@ -1,0 +1,6 @@
+url: https://github.com/xuanfenglajiao/dsh-query-scout
+name: xuanfenglajiao/dsh-query-scout
+category: tools
+description:
+  en: 'Read-only retrieval subagent plugin for DeepSeek Harness: delegates broad file and web lookups to a configured model list with ordered fallback, cooldown, and per-session concurrency queueing via a fixed query_scout tool without switching the main model or breaking its prompt cache.'
+  zh: 'DeepSeek Harness 的只读检索子代理插件：通过固定工具 query_scout 将大范围文件与网页检索委派给工具栏面板中独立配置的只读模型列表，支持多模型顺序切换、失败冷却与并发排队，不切换主模型、不破坏前缀缓存。'

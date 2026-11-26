@@ -1,0 +1,7 @@
+url: https://github.com/kaecho/dsh-nezha
+name: kaecho/dsh-nezha
+category: tools
+description:
+  en: Connects Nezha Monitoring's built-in MCP server to DeepSeek Harness, adding tools for server status, one-shot commands, remote file read/write/delete and large-file transfer links, with a settings page for the dashboard URL and PAT.
+  zh: 把哪吒监控内置的 MCP 服务接入 DeepSeek Harness，新增服务器状态、一次性命令执行、远程文件读写/删除和大文件传输链接等工具，并提供管理面板地址与 PAT 的设置页。
+icon: https://raw.githubusercontent.com/kaecho/dsh-nezha/main/assets/icon-180.png

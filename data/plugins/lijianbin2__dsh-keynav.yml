@@ -1,0 +1,7 @@
+url: https://github.com/lijianbin2/dsh-keynav
+name: lijianbin2/dsh-keynav
+category: ui
+description:
+  en: 'Keyboard navigation inside the DSH web UI: Ctrl+Up/Down cycles the sidebar plugin area (the Conversation first), Alt+Up/Down steps through the sessions of the current workspace, and Ctrl+J returns the caret to the message input. All five bindings are editable in Settings → General → Keyboard shortcuts; the plugin runs no Host service and makes no network requests.'
+  zh: 'DSH 网页端的键盘导航：Ctrl+↑/↓ 在左侧栏插件区里切换（会话排第一），Alt+↑/↓ 在当前工作区的会话间切换，Ctrl+J 把光标送回消息输入框。五条键位都能在「设置 → 通用 → 快捷键」里改；插件不占用 Host 服务，也不联网。'
+icon: https://raw.githubusercontent.com/lijianbin2/dsh-keynav/main/assets/icon-180.png

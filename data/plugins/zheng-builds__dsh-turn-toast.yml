@@ -1,0 +1,6 @@
+url: https://github.com/zheng-builds/dsh-turn-toast
+name: zheng-builds/dsh-turn-toast
+category: ui
+description:
+  en: Shows a desktop toast in the bottom-right corner with a short chime when a DSH turn finishes. The text is the first sentence of the reply, truncated to a configurable length; the card is skipped while a fullscreen app is active, and can also be limited to when the DSH window is not focused.
+  zh: 每轮任务结束时在屏幕右下角弹一张提示卡并播放提示音。卡片文字取该轮回复的第一句、按可配置字数截断；全屏应用在前台时跳过，也可以只在 DSH 窗口不在前台时提醒。

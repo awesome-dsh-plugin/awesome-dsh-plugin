@@ -1,0 +1,7 @@
+url: https://github.com/mount9527/paper-dual-reducer
+name: mount9527/paper-dual-reducer
+category: docs
+description:
+  en: 'Paper dual-reduction workbench for Chinese Word documents: reads a .doc/.docx in place without changing it, scores it with a local Chinese AIGC detector, runs a nine-dimension AI-trace diagnosis, and turns the result into batch rewrite prompts for any agent; the pasted-back edits are validated and applied through the paper-dual-reduce engine with tables, formulas, footnotes, TOC fields and citation marks left intact, then the frozen blocks are re-scored and the whole draft rolls back if its AI share rises. Adds a sidebar panel with a rewrite version chain of up to five passes, a three-column before/after comparison, downloadable per-version reports, and five paper_dual_* tools. The detector weights download on first run and are never bundled. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '论文双降工作台：对中文论文 .doc / .docx 就地只读诊断，用本地中文 AIGC 检测模型打分，跑九维 AI 痕迹诊断，再把结论写成批次改写提示词交给任意 agent；贴回的清单经校验后由 paper-dual-reduce 引擎回填，表格、公式、脚注、目录域与引用标记保持原样，随后对冻结块复检，正文 AI 疑似占比上升就整篇回退。带侧栏面板、最多五轮的改稿版本链、三栏前后对照、每个版本的可下载报告，以及 5 个 paper_dual_* 工具；检测模型权重首次运行时自行下载，不随包分发。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/mount9527/paper-dual-reducer/main/assets/icon-180.png

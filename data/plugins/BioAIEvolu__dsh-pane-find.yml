@@ -1,0 +1,6 @@
+url: https://github.com/BioAIEvolu/dsh-pane-find
+name: BioAIEvolu/dsh-pane-find
+category: tools
+description:
+  en: 'Find-in-page search for DeepSeek Harness: Ctrl+F locates visible text across conversation, sidebar and right panel with highlight navigation, literal Chinese/English matching, a draggable panel with position memory, adaptive width and theme-aware colors. Also recalls composer history, copies full messages and hovered images.'
+  zh: 'DeepSeek Harness 页内查找：Ctrl+F 定位对话、侧栏与右栏的可见文本，高亮导航，中英文字面匹配，面板可拖拽并记忆位置，宽度随输入自适应，颜色跟随主题。另支持输入框历史取回、复制整条消息与悬停复制图片。'
