@@ -1,0 +1,6 @@
+url: https://github.com/iiiigoblin/Game/tree/main/plugins/deepseek-harness-permission-converge
+name: "iiiigoblin/Game#deepseek-harness-permission-converge"
+category: security
+description:
+  en: "Adds a fourth permission preset with the full filesystem scope of danger-full-access while keeping approvals available like read-only and workspace-write."
+  zh: "新增第四档权限：全盘读写范围与「完全权限」相同，但像「仅可查看」和「工作区内修改」一样保留审批通道。"

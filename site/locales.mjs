@@ -30,8 +30,8 @@ export default [
     privacyBody: 'site/privacy.en.html',
     PRIVACY_TITLE: 'Privacy — Awesome DSH Plugin',
     PRIVACY_DESC: 'What this site collects and what it does not: no browser storage, cookie-less analytics, Google ads, and optional GitHub-hosted community comments.',
-    TITLE: 'Awesome DSH Plugin — Curated DeepSeek Harness (dsh) Plugin List',
-    DESC: 'A curated list of {N} DeepSeek Harness (dsh) plugins: UI, themes, sessions, memory, tools, workflow, notifications, models, development, and fun. Updated continuously.',
+    TITLE: 'Awesome DSH Plugin — Curated List of DSH Plugins for DeepSeek Harness',
+    DESC: 'A curated list of {N} DSH plugins for DeepSeek Harness (dsh): UI, themes, sessions, memory, tools, workflow, notifications, models, development, and fun. Updated continuously.',
     SEARCH_PH: 'Search plugins…',
     // Category and detail titles deliberately drop the "Awesome DSH Plugin"
     // suffix the home page carries. Brand queries are the home page's to win;

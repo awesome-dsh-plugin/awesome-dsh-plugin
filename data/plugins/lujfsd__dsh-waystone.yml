@@ -1,0 +1,7 @@
+url: https://github.com/lujfsd/dsh-waystone
+name: lujfsd/dsh-waystone
+category: memory
+description:
+  en: 'Working memory that survives compaction and session switches - it keeps where each piece of work stands and its next step, the user''s hard requirements, dead ends already tried, reusable step-by-step guides, environment facts and evidence-backed conclusions, and re-injects them as system-prompt sections every turn (handoff, rules, guide index, project profile, dead ends). An end-of-turn pass distils new records from the turn and a compactor merges the pool; waystone_write, waystone_recall and waystone_status let the model or the user read, correct and audit exactly what was injected. Append-only JSONL, global plus per-workspace scopes, configurable data root and a settings page; no third-party endpoints (the passes use the host''s own session model) and no runtime dependencies. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '工作记忆插件：只把「上下文一压缩或换窗口就找不回来」的部分留在盘上——每条线的位置与下一步、用户的硬规约、试过的死路、可复用步骤、环境事实与带依据的判断——每轮以系统提示段重新摆到模型眼前（交接、规约、指南索引、项目档案、死路）。回合末的判官从本轮提炼新记录、整理官合并存量；waystone_write / waystone_recall / waystone_status 三个工具供模型或用户读写，并逐字核对「本轮到底注入了什么」。append-only JSONL，全局与工作区两级作用域，数据根可配，带设置页；不接第三方端点（提炼走宿主的会话模型），无运行时依赖。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/lujfsd/dsh-waystone/main/assets/icon-180.png

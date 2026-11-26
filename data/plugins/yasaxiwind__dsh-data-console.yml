@@ -1,0 +1,6 @@
+url: https://github.com/yasaxiwind/dsh-data-console
+name: yasaxiwind/dsh-data-console
+category: tools
+description:
+  en: 'Local data console: open CSV/Excel/JSON, profile columns, sort and filter the table, run SQL with joins, draw six chart types and export CSV/XLSX/PNG, with five bounded agent tools.'
+  zh: '本地数据工作台：打开 CSV/Excel/JSON，查看列画像、排序筛选、SQL 多表查询、六种图表与 CSV/XLSX/PNG 导出，并向 agent 提供五个有界工具。'

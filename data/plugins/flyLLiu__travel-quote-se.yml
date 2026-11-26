@@ -1,0 +1,7 @@
+url: https://github.com/flyLLiu/travel-quote-se
+name: flyLLiu/travel-quote-se
+category: ui
+description:
+  en: 'Local-first travel quotation app for DeepSeek Harness with bilingual UI, itinerary parsing, cost and margin calculation, single-window protection, and Word, Excel or PDF customer quotes.'
+  zh: '面向 DSH 的本地旅游报价应用，支持中英文界面、行程识别、成本与利润率计算、单窗口保护，以及 Word、Excel、PDF 客户报价导出。'
+icon: https://raw.githubusercontent.com/flyLLiu/travel-quote-se/main/assets/icon-180.png

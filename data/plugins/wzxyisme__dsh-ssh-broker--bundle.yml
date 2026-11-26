@@ -1,0 +1,7 @@
+url: https://github.com/wzxyisme/dsh-ssh-broker/tree/main/bundle
+name: wzxyisme/dsh-ssh-broker#bundle
+category: remote
+description:
+  en: 'Grants DeepSeek Harness Web conversations access to SSH commands and opt-in SFTP operations, with an encrypted local credential vault.'
+  zh: '为 DeepSeek Harness Web 会话按需授权 SSH 命令和 SFTP 文件操作，凭据保存在本地加密库中。'
+tarball: https://github.com/wzxyisme/dsh-ssh-broker/releases/download/v0.7.3/dsh-ssh-broker-0.7.3.tgz

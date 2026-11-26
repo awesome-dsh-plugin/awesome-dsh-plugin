@@ -1,0 +1,6 @@
+url: https://github.com/Lornatang/dsh-plugin/tree/main/packages/workflow/dsh-superpowers
+name: Lornatang/dsh-plugin#dsh-superpowers
+category: skill
+description:
+  en: 'Brings all 15 obra/superpowers v7.0.2 skills to DeepSeek Harness, including session diagnostics, native skill loading, and controller-only workflow guidance.'
+  zh: '将 obra/superpowers v7.0.2 的 15 个技能接入 DeepSeek Harness，支持会话诊断、原生技能加载和仅面向主会话的工作流引导。'

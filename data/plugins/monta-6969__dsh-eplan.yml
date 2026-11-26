@@ -1,0 +1,7 @@
+url: https://github.com/monta-6969/dsh-eplan
+name: monta-6969/dsh-eplan
+category: tools
+icon: https://raw.githubusercontent.com/monta-6969/dsh-eplan/main/icon.png
+description:
+  en: 'Adds an EPLAN Electric P8 drawing mode to DeepSeek Harness in which run_code is the only direct tool: 12 mcp__eplan__* tools create pages, place symbols and graphics, draw and validate schematics, export previews, roll back operations and keep a lesson store, and a pasted screen recording is digested into staged full-page frames. Windows only, needs a local EPLAN Electric P8 2.9 with Remoting enabled plus one run of node setup.mjs, which compiles the EPLAN host DLL and bridge against your own assemblies.'
+  zh: '给 DeepSeek Harness 加一个 EPLAN Electric P8 绘图模式，唯一直接工具是 run_code：12 个 mcp__eplan__* 工具建页、放符号与图元、连线并校验、导出预览、回滚操作、沉淀经验；录屏发进对话会先被切成阶段并附整页截图。仅 Windows，需本机已装 EPLAN Electric P8 2.9 并开启 Remoting，且要跑一次 node setup.mjs（用你自己的 EPLAN 程序集在本机编译宿主 DLL 与桥接器）。'

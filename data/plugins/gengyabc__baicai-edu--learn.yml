@@ -1,0 +1,6 @@
+url: https://github.com/gengyabc/baicai-edu/tree/main/learn
+name: gengyabc/baicai-edu#learn
+category: skill
+description:
+  en: 'Learning entry for DSH: the /learn-start, /learn, /learn-feynman, /learn-profile, /learn-save, /learn-clean and /learn-feedback commands, plus student-data, error-handling and general-task teaching rules that keep teaching when no subject package is installed.'
+  zh: '学习入口：/learn-start、/learn、/learn-feynman、/learn-profile、/learn-save、/learn-clean、/learn-feedback 七个命令，配合学生数据、错误处理与通用任务教学规则；未安装学科包时也能继续教学。'
