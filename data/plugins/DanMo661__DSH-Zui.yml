@@ -1,0 +1,21 @@
+url: https://github.com/DanMo661/DSH-Zui
+name: DanMo661/DSH-Zui
+category: ui
+description:
+  en: >-
+    ZCode-style UI pack for DSH. Replaces the composer model picker with a two-pane
+    ZCode selector (provider column, model list with vision badges) plus the thought-effort
+    slider ported from ZCode's composer-thought-slider - oklch blue-green gradient fading in
+    at the max level, flowing bubbles, level stops and a white thumb, with a blue-purple
+    variant for GLM FlashX/Highspeed - and carries the agent-team switch in the same panel.
+    Also replaces the built-in todo dock above the composer with a status capsule row: a todo
+    capsule and an agent capsule with stacked subagent avatars; takes over subagent tool cards
+    in the timeline and turn-trigger badges with per-agent colored faces. Pure client UI; on
+    error it falls back to the built-in dock.
+  zh: >-
+    ZCode 风格的 DSH 界面增强包。把输入框的模型选择器换成 ZCode 双栏面板（provider 列 +
+    视觉徽标模型列），底部是按 ZCode composer-thought-slider 移植的思考强度滑杆——最高档
+    oklch 蓝→绿渐变淡入、气泡流动、档位圆点、白色滑块，GLM FlashX/Highspeed 走蓝→紫变体
+    ——面板底部同时提供「智能体团队协作」开关。同时把内置待办面板换成状态胶囊行：待办胶囊 +
+    智能体活动胶囊（头像堆叠、常驻名册），对话流的子智能体工具卡与回合触发标记也会带上九色
+    头像脸。纯前端实现，出错时回退内置面板。
