@@ -1,0 +1,8 @@
+url: https://github.com/weiwenhao/dudu/tree/main/host/dudu-plugin
+name: weiwenhao/dudu#dudu-plugin
+category: agi
+description:
+  en: Multi-agent collaboration workspace that runs Claude Code, Codex, Pi and other agent harnesses inside DSH, with an issue board, session management, a personal assistant, scheduled tasks and iPhone and Android apps.
+  zh: 多智能体协作工作区，在 DSH 里运行 Claude Code、Codex、Pi 等智能体，提供 Issue 看板、会话管理、个人助理、定时任务，以及 iPhone 和 Android 应用。
+icon: https://raw.githubusercontent.com/weiwenhao/dudu/main/host/dudu-plugin/icon.png
+tarball: https://github.com/weiwenhao/dudu/releases/download/v0.2.1/dsh-dudu-0.2.1.tgz
