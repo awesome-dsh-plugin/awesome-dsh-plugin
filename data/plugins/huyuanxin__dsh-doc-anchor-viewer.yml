@@ -1,6 +1,6 @@
 url: https://github.com/huyuanxin/dsh-doc-anchor-viewer
 name: huyuanxin/dsh-doc-anchor-viewer
-category: docs-rendering
+category: docs
 description:
   en: 'Renders .docx with Word''s own layout and turns the outline plus your own marks into jump targets, in a full-width panel and a right-sidebar tab that claims *.docx over the built-in office preview. A doc_viewer tool hands the agent the same anchors in 11 actions — open, get_digest, read_section, set_marks and more — so long documents are read section by section instead of pasted whole into context. Severity and category on a mark are free text colored by a hash, so one mechanism serves contract review, clinical notes and code review.'
   zh: '把 .docx 按 Word 版式渲染出来，并把大纲与自定义标记做成可跳转的锚点：主面板与右侧栏标签页两处入口，标签页认领 *.docx 并压过自带的 office 预览。doc_viewer 工具用 11 个 action 把同一套锚点交给 Agent（open / get_digest / read_section / set_marks 等），长文档按节读，不必整篇塞进上下文。标记的严重程度与分类是自由文本、颜色按词哈希生成，合同审阅、病历批注、代码评审共用一套机制。'
