@@ -2,5 +2,5 @@ url: https://github.com/DrizzleGig/dsh-novel-kit
 name: DrizzleGig/dsh-novel-kit
 category: workflow
 description:
-  en: 'An independent long-form novel workbench that keeps story decisions, long-range memory, style profiles, fanfic canon, media references, and a seven-page writing desk in one place. It runs without installing or modifying beat, fade, voice, fanfic, or conductor; their old data can be imported once in read-only form.'
-  zh: '面向长篇与同人作者的独立小说工作台，把剧情决策、长线记忆、文风档案、同人 canon、媒体参考和七页书桌放在一起。运行时不安装、不修改 beat / fade / voice / fanfic / conductor；旧数据可一次性只读导入。'
+  en: 'An independent seven-page novel workbench for long-form and fan fiction writers: story decisions, long-range memory, style profiles, original-work notes for fan fiction, reference material, and a writing desk in one place. No other writing plugin is required; old writing data can be imported once as a read-only copy.'
+  zh: '面向长篇与同人作者的独立七页小说工作台：剧情决策、长线记忆、文风档案、同人原著设定、参考资料和写作书桌都放在一处。不需要安装其他写作工具；旧写作数据可一次性只读导入。'
