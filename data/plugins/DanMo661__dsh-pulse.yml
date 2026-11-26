@@ -1,0 +1,8 @@
+url: https://github.com/DanMo661/dsh-pulse
+name: DanMo661/dsh-pulse
+category: ui
+description:
+  en: >-
+    Replaces the built-in todo dock above the composer with a ZCode-style status row: a todo capsule and an agent capsule with stacked subagent avatars and per-type usage counts. Clicking opens the todo list or a persistent roster of running and finished subagents and background jobs - open child sessions, stop agents and jobs, drill into subagent and workflow directories. Also takes over the subagent and subagent_fork tool cards in the conversation timeline with live avatars, status and timing. Pure client UI; on error it falls back to the built-in dock.
+  zh: >-
+    把输入框上方的内置待办面板换成 ZCode 风格状态行：待办胶囊（处理中 x/y）与智能体活动胶囊（子智能体头像堆叠、各类用量小结）。点开是常驻名册——运行中与已结束的子智能体、后台任务均可查看、打开子会话或停止，另有子智能体目录与工作流目录下钻；对话流中的 subagent / subagent_fork 工具卡也会替换为带实时头像与计时的卡片。纯前端实现，出错时回退内置面板。
