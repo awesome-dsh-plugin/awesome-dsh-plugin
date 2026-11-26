@@ -1,0 +1,5 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/provod-models
+name: maburykh-gif/dsh-plugins#provod-models
+category: model
+description:
+  en: "provod.ai routes in the model picker: the OpenAI-compatible gateway (https://api.provod.ai/v1) declared as five sections — text, architecture, design, images and video; the key is read from PROVOD_API_KEY in the credential store. A settings card edits each section's shortcode, creates user-defined sections as extra provider routes, and links to the key page (author referral link, disclosed)."
