@@ -1,0 +1,7 @@
+url: https://github.com/RonaWhite/dsh-gongwei
+name: RonaWhite/dsh-gongwei
+category: ui
+icon: https://raw.githubusercontent.com/RonaWhite/dsh-gongwei/main/assets/icon-180.png
+description:
+  en: 'Desk check-in, a daily learning journal and a weekly report for DeepSeek Harness: arrival time compared against a fixed baseline and your own last ten workdays, facts and reflections stored in separate channels, a pool of things you want to learn, and optionally a right-click menu and summary bubbles on the dsh-pet desktop pet.'
+  zh: '工位打卡、每日学习记录与周报：到达时间与固定基准线和自己近十个工作日平均对比，事实与感想分栏存放，另有一个「想学的」池子，并可在 dsh-pet 桌宠上弹出右键菜单与摘要气泡。'
