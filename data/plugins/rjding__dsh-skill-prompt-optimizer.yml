@@ -1,0 +1,6 @@
+url: https://github.com/rjding/dsh-skill-prompt-optimizer
+name: rjding/dsh-skill-prompt-optimizer
+category: skill
+description:
+  en: 'Turns a rough one-line instruction into a prompt a model can actually follow, delivered as one copyable code block. Output language follows your input, and it asks a 2-4 option picker before guessing style, usage or target model instead of choosing for you. The heavy diagnostic path stays behind an explicit request.'
+  zh: '一句话进，一个代码块出：把粗糙的一句话改写成模型能照着执行的提示词。输出语言跟随你的输入；缺风格、用途或目标模型时先弹 2-4 个可点选项，不替你做决定；只有你要诊断时才展开过程。'
