@@ -1,0 +1,6 @@
+url: https://github.com/KunWu1980/dsh-books-plugin
+name: KunWu1980/dsh-books-plugin
+category: docs
+description:
+  en: 'Adds a bookshelf panel to DSH for reading and organizing local TXT, EPUB, PDF, AZW3 and MOBI books, with chapter navigation, scanned-PDF page images and custom categories.'
+  zh: '在 DSH 中增加书架面板，可阅读和管理本地 TXT、EPUB、PDF、AZW3 与 MOBI 书籍，支持章节跳转、扫描版 PDF 逐页看图与自定义分类。'
