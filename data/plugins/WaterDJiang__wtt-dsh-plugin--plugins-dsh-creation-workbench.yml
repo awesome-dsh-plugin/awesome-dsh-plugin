@@ -3,5 +3,5 @@ name: WaterDJiang/wtt-dsh-plugin#dsh-creation-workbench
 category: workflow
 icon: https://raw.githubusercontent.com/WaterDJiang/wtt-dsh-plugin/36fc1bcaf2f16635a8b354378335ce44f89c6b31/plugins/dsh-creation-workbench/src/assets/wattter-agent.png
 description:
-  en: 'Xiaowa plans and reviews work across canvases with DSH models or approved Codex CLI steps. Pair WeChat by QR to manage tasks. Media requests and WeChat messaging use credentials. See the plugin README for install warnings and ways to disconnect.'
-  zh: '小瓦 Super Agent 跨画布派发、验收和修订任务，每步可选 DSH 模型或授权 Codex CLI。扫码连接微信后可切换项目、确认计划。媒体请求和微信收发会使用对应凭据；各项安装提示和关闭方式见插件 README「安装时的权限提示」。'
+  en: "An infinite canvas where you can connect cards to build your own workflow for making slide decks, producing videos, or writing copy. Choose an AI model for each card, or tell Xiaowa, the built-in super agent, what you want in a single sentence and it will create a series of connected cards to get it done."
+  zh: "一块神奇的无限画布，你能够在这上面通过卡片的方式连接任意的流程，包括制作 PPT、制作视频以及文案创作。每个卡片可以独立设置 AI 模型，还可以通过内置的 super agent 小瓦，一句话创建连续工作流卡片来完成任务。"
