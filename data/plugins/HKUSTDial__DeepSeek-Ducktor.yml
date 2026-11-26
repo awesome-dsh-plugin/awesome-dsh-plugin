@@ -1,0 +1,8 @@
+url: https://github.com/HKUSTDial/DeepSeek-Ducktor
+name: HKUSTDial/DeepSeek-Ducktor
+category: workflow
+description:
+  en: "Ducktor research mentor for graduate students: 14 commands (/duck and /duck-*) cover research steps such as survey, idea, outline, writing and review and explain the decisions behind the work, and a sidebar tab in the web UI lists the decisions and notes kept in .duck/."
+  zh: "面向研究生的 Ducktor 科研导师：14 条命令（/duck 和 /duck-*）覆盖调研、选题、提纲、写作、审稿等科研步骤，并讲清工作背后的判断；Web 界面的侧边栏页签列出 .duck/ 里记下的决定和笔记。"
+icon: https://raw.githubusercontent.com/HKUSTDial/DeepSeek-Ducktor/main/icon.png
+tarball: https://github.com/HKUSTDial/DeepSeek-Ducktor/releases/latest/download/deepseek-ducktor.tgz
