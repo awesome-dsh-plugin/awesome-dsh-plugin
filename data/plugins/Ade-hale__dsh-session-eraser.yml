@@ -1,0 +1,6 @@
+url: https://github.com/Ade-hale/dsh-session-eraser
+name: Ade-hale/dsh-session-eraser
+category: session
+description:
+  en: 'Restorable session delete for the DSH Web GUI: one red Delete session row after Archive moves the session directory into $DSH_HOME/session-delete-trash/ (no unlink, any number of clicks undoable from disk), then clears the projection cache and the workspace, pin and archive references through the durable registry, and broadcasts the official removed event so the row vanishes without a refresh. A running session is refused with 409 before anything is touched, ids resolve with or without the session- prefix, and the copy left in trash keeps its original workspace and directory name.'
+  zh: 'DSH Web 界面里的可恢复会话删除：在会话右键菜单的「归档」后面加一行红色「删除会话」，把会话目录整个移入 $DSH_HOME/session-delete-trash/ 而不是直接 unlink，点错多少次都能从磁盘恢复；随后清掉投影缓存，并经持久化工作区登记清除工作区归属与置顶、归档引用，再广播官方移除事件，列表当场消失、无需刷新。正在运行的会话在动手前就以 409 拒绝，会话 id 带不带 session- 前缀都能定位，回收站里的副本保留原工作区与目录名。'
