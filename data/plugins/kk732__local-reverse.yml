@@ -1,0 +1,6 @@
+url: https://github.com/kk732/local-reverse
+name: kk732/local-reverse
+category: security
+description:
+  en: "Static inspection of Android APKs: package info, signature, permissions, hardening and packer fingerprints, dex classes and strings, plus jadx/apktool export."
+  zh: 静态体检 Android APK：包信息、签名、权限、加固与打包器特征、dex 类与字符串，并能调用 jadx/apktool 导出源码。
