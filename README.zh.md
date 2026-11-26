@@ -11918,7 +11918,6 @@ dsh plugin --profile web add dshmarket
 - [shuaichewang/dsh-quit-idle-fix](https://github.com/shuaichewang/dsh-quit-idle-fix) — 清除四类被 DeepSeek Harness 误算为“有任务”的空闲系统通知（审批策略、工作目录、计划模式、插件变更），让没有任务运行时退出不再弹出“任务将会中断”的警告。
 - [simplifyOurLife/dsh-spring-boot-launcher](https://github.com/simplifyOurLife/dsh-spring-boot-launcher) — 在 Windows 上启动和管理本地 Maven Spring Boot 应用，并在 DSH Web 界面提供服务控制与日志搜索。
 - [Siom126/dsh-plugin-storage-inspector](https://github.com/Siom126/dsh-plugin-storage-inspector) — DSH Web UI 的存储与依赖检查器：按工作区、会话与文件类别统计磁盘占用，列出最大目录与文件，并可在路径白名单校验后删除你勾选的构建、依赖、已归档会话与缓存目录（清理候选还包括桌面上的一级文件夹）；只读的第二个页签跨工作区比对 package.json、.nvmrc、.node-version 与 npm 锁文件，标出版本与 Node 主版本漂移。
-- [SiriusWJ/dsh-updater-npm](https://github.com/SiriusWJ/dsh-updater-npm) — 设置页内的 DSH 更新器 + 官方文档同步器：一键以 npm 全局更新 @deepseek-ai/dsh 并带实时进度（npm 输出流、已运行计时、单调进度条），多副本保护只更新当前运行实例，源码树模式走 git pull；Windows 缺 PowerShell 7 时可一键安装；官方 docs/ 增量同步（按 blob sha 跳过未变文件）带进度条，并提供 dsh_docs_search / dsh_docs_read 模型工具。
 - [sishuiguozi/dsh-plugin-packer](https://github.com/sishuiguozi/dsh-plugin-packer) — 把插件连同依赖闭包导出为可导入的 zip，并能把这类包导回 profile。
 - [sjh9714/dsh-movein](https://github.com/sjh9714/dsh-movein) — 通过原生设置页或 CLI 将 Claude Code 配置迁入 DeepSeek Harness，可先预览技能、命令、代理、hooks、权限规则与 MCP 配置；Codex 和 OpenCode 作为次要来源继续支持，并提供目标冲突保护和迁移后检查。
 - [sjh9714/dsh-win32](https://github.com/sjh9714/dsh-win32) — 围绕官方持久 PowerShell 与 Workspace Write 方案检查和修复原生 Windows 上的 DeepSeek Harness，创建桌面快捷方式，并仅通过明确的 legacy 安装保留早期 Git Bash 与 BusyBox 预设，无需 WSL。
