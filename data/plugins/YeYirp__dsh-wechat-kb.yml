@@ -7,8 +7,7 @@ description:
     WeChat desktop on Windows to DSH: a Python side (bridge/wechat_bridge.py,
     dependencies installed into ~/.dsh/wechat-bridge-venv or a bundled runtime)
     drives the client through UI Automation, incoming chats are answered by the
-    agent and sent back as real messages with UIA @-mentions, each chat can be
-    bound to its own session while unbound chats use the default one, and it adds
+    agent and sent back as real messages with UIA @-mentions, each chat can be bound to its own session, inbound forwarding is fail-closed (with an empty allowlist nothing is forwarded until chats, wxids or the owner are added explicitly), and it adds
     per-chat diary files, group reply spacing and hourly caps, owner /
     whitelist / blocklist rules, image understanding through a vision model, and
     a queued outbox that waits for acknowledgement. The second is a local
@@ -26,7 +25,7 @@ description:
     一个插件里放两半，共用一个设置页。前一半把 Windows 上的微信桌面端接进 DSH：
     一段 Python 侧（bridge/wechat_bridge.py，依赖装进 ~/.dsh/wechat-bridge-venv 或
     自带的运行环境）通过 UI Automation 驱动客户端，来信交给 agent 回答并用 UIA 真 @
-    发回去；每个聊天可以绑到自己的会话，没绑的走默认会话；另有按聊天分文件的日记、
+    发回去；每个聊天可以绑到自己的会话，入站转发默认拒绝（白名单为空时一条都不转，必须显式加入聊天、wxid 或主人）；另有按聊天分文件的日记、
     群回复间隔与每小时上限、主人/白名单/屏蔽名单、走视觉模型的看图，以及等确认的
     待发队列。后一半是不用数据库、不用向量模型、不用填 Key 的本地知识库：正文存一个
     JSON 文件，可导入 PDF、Word、Excel、PowerPoint、图片和音频，PDF 里抽出的图会经
