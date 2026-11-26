@@ -1,0 +1,7 @@
+url: https://github.com/vmaoserver/dsh-html-host-panel
+name: vmaoserver/dsh-html-host-panel
+category: tools
+icon: https://raw.githubusercontent.com/vmaoserver/dsh-html-host-panel/main/icon.svg
+description:
+  en: 'Browses the HTML pages you have hosted on a pages.vmao.top instance from a left-sidebar panel — search, open, copy the short link — and publishes the .html file you are previewing straight from the preview header. An html_host_publish tool lets the agent publish pages as well. Needs an API key for that service; nothing is sent anywhere else.'
+  zh: '左侧面板浏览 pages.vmao.top 上已托管的 HTML 页面（搜索、打开、复制短链），并在预览 .html 文件时从预览头部一键发布上去；另提供 html_host_publish 工具让 AI 直接发布。需要该服务的 API Key，除此之外不上传任何内容。'
