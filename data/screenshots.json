@@ -1374,8 +1374,7 @@
     "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/main/docs/screenshots/panel-generate.png",
     "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/main/docs/screenshots/panel-works.png",
     "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/main/docs/screenshots/install-dialog.png"
-  ]
-,
+  ],
   "https://github.com/loyalchiiina/dsh-skill-browser": [
     "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-01.png",
     "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-02.png",
@@ -1385,5 +1384,10 @@
     "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-06.png",
     "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-07.png",
     "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-11.png"
+  ],
+  "https://github.com/shuxidemosheng/dsh-skill-doctor": [
+    "https://raw.githubusercontent.com/shuxidemosheng/dsh-skill-doctor/main/docs/images/checkup-report.png",
+    "https://raw.githubusercontent.com/shuxidemosheng/dsh-skill-doctor/main/docs/images/component-rows.png",
+    "https://raw.githubusercontent.com/shuxidemosheng/dsh-skill-doctor/main/docs/images/panel-modes.png"
   ]
 }
