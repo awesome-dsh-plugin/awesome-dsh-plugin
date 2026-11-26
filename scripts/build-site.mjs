@@ -20,6 +20,7 @@ import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
 import { slugOf, slugHref, termOf } from './lib/terms.mjs'
+import { versionShots } from './lib/screenshot-bust.mjs'
 import { releaseMetadataFor } from './lib/release-manifest.mjs'
 import { catalogRepo, HISTORY_CACHE_KEY, publishReleaseHistory } from './lib/release-history.mjs'
 
@@ -413,6 +414,11 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
 // `ok: false` — which the probe writes for 404/410 alone — removes an image.
 // An entry whose shots all die loses the field entirely rather than shipping an
 // empty array, which is the state every entry had before screenshots existed.
+//
+// Declared outside the block because publishing needs the same map: it carries
+// the ETag each image answered with, which becomes the URL's `v` parameter.
+const LIVE_FILE = 'data/screenshots-live.json'
+const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
 {
   // The author's own repository wins. probe-screenshots.mjs reads
   // `screenshots.json` from beside the plugin's package.json and resolves it to
@@ -433,8 +439,6 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
     console.log(`screenshots: ${Object.keys(declaredMap).length} entry/entries declare their own (${adopted} superseding ${SCREENSHOTS_FILE})`)
   }
 
-  const LIVE_FILE = 'data/screenshots-live.json'
-  const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
   let dropped = 0
   for (const [key, list] of Object.entries(shotsMap)) {
     if (!Array.isArray(list)) continue
@@ -1180,8 +1184,12 @@ const registry = {
       ...(iconMap[e.url] === undefined ? {} : { icon: iconMap[e.url] }),
       // Optional, author-maintained (data/screenshots.json); omitted when
       // absent so the payload stays lean. Storefronts fall back to their own
-      // README extraction (dsh-market #61).
-      screenshots: shotsMap[e.url],
+      // README extraction (dsh-market #61). Each URL carries a `v` parameter
+      // derived from the image's ETag so a replaced picture gets a new URL —
+      // without it the resize cache and the visitor's browser both keep serving
+      // the old bytes for a year, because the URL never moved. See
+      // lib/screenshot-bust.mjs.
+      screenshots: versionShots(shotsMap[e.url], verdicts),
     }
   }),
 }
