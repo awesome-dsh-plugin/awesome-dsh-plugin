@@ -1,0 +1,6 @@
+url: https://github.com/Congxiang1994/dsh-qa-mode
+name: Congxiang1994/dsh-qa-mode
+category: tools
+description:
+  en: 'Adds a Q&A agent preset that mounts only web search, page fetch and read-only file tools: no shell, file writes, subagents, workflows or skills.'
+  zh: '新增一个「问答模式」预设，只挂检索、网页抓取与只读文件工具：没有终端、写文件、子代理、工作流和技能。'
