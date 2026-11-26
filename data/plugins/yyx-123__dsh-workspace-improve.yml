@@ -1,0 +1,7 @@
+url: https://github.com/yyx-123/dsh-workspace-improve
+name: yyx-123/dsh-workspace-improve
+category: ui
+description:
+  en: Refines the DSH sidebar with workspace typography, configurable completed and running Session styles, an expand-all control, and persistent deferred Session markers.
+  zh: 优化 DSH 侧边栏：工作区字形层级、可配置的完成态与进行中样式、一键展开/收起全部工作区，以及持久化的「稍后处理」标记。
+icon: https://raw.githubusercontent.com/yyx-123/dsh-workspace-improve/main/assets/icon-512.png
