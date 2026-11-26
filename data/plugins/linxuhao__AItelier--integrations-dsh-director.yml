@@ -1,0 +1,6 @@
+url: https://github.com/linxuhao/AItelier/tree/main/integrations/dsh-director
+name: linxuhao/AItelier#dsh-director
+category: workflow
+description:
+  en: "A resident director for DSH: it records each task as a work item, freezes a plan from a reviewed template, hands it to a native DSH worker, checks the delivery with the plan's own commands, and sleeps when nothing is left; with rootRole steward it is a long-running assistant with git-backed memory. Linux, any OpenAI-compatible model with good tool calling."
+  zh: "DSH 常驻导演：把每个任务记成工作项，用审阅过的模板冻结成计划，交给 DSH 原生工作者执行，用计划自带的检查命令核对交付，没有工作时休眠；设 rootRole steward 即成为带 git 记忆的常驻管家。仅限 Linux，可用任何工具调用能力好的 OpenAI 兼容模型。"
