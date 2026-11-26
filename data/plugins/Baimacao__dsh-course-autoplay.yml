@@ -1,0 +1,7 @@
+url: https://github.com/Baimacao/dsh-course-autoplay
+name: Baimacao/dsh-course-autoplay
+category: browser
+icon: https://raw.githubusercontent.com/Baimacao/dsh-course-autoplay/main/assets/icon-180.png
+description:
+  en: 'Online-course autoplay: drives a logged-in browser through course videos, advances lesson by lesson, learns each site''s page structure into a replay-verified profile, and keeps a plan document plus a visual panel of per-site progress.'
+  zh: 'DSH 网课挂机：用已登录的浏览器自动播完课程并推进到下一节，站点页面结构靠嗅探加复探自适应并沉淀成可复用经验，附带计划文档与逐站进度的可视化面板。'
