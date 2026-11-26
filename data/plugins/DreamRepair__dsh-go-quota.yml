@@ -1,0 +1,6 @@
+url: https://github.com/DreamRepair/dsh-go-quota
+name: DreamRepair/dsh-go-quota
+category: usage
+description:
+  en: Adds an OpenCode Go quota pill beside the composer showing the used percentage of the rolling 5-hour, weekly and monthly windows, with a click-through panel listing each window and its reset time.
+  zh: 在 DSH Web 输入框旁加一颗 OpenCode Go 额度胶囊，显示 5 小时 / 本周 / 本月三档已用比例，点击展开各档的重置时间。
