@@ -1,0 +1,8 @@
+url: https://github.com/cai-png/dsh-retro-arcade
+name: cai-png/dsh-retro-arcade
+category: fun
+description:
+  en: Opens a CRT-styled arcade cabinet with four playable FC classics — Super Mario, Contra, Bomberman and Lode Runner.
+  zh: 在 DSH 里开一台 CRT 街机：超级马里奥、魂斗罗、炸弹人、淘金者四款 FC 经典共用一个画布。
+icon: https://raw.githubusercontent.com/cai-png/dsh-retro-arcade/main/assets/icon-180.png
+tarball: https://github.com/cai-png/dsh-retro-arcade/releases/download/v1.0.0/dsh-retro-arcade-1.0.0.tgz
