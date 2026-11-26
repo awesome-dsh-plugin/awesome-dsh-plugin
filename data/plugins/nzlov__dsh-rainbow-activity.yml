@@ -1,0 +1,7 @@
+url: https://github.com/nzlov/dsh-rainbow-activity
+name: nzlov/dsh-rainbow-activity
+category: ui
+description:
+  en: Adds ordered colour strips and step counts to native DSH Web activity summaries without changing messages or folding.
+  zh: 为 DSH Web 原生活动汇总添加按执行顺序排列的彩虹条和分类计数，不改变消息或折叠行为。
+icon: https://raw.githubusercontent.com/nzlov/dsh-rainbow-activity/main/docs/market-icon.png

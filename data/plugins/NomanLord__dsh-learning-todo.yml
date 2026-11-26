@@ -1,0 +1,6 @@
+url: https://github.com/NomanLord/dsh-learning-todo
+name: NomanLord/dsh-learning-todo
+category: ui
+description:
+  en: 'A checklist card at the sidebar foot: add a task, tick it off, and archive ticked tasks into a collapsible completed group that shows each archive day; the list is kept in the browser, not on the host.'
+  zh: '侧栏底部的学习待办卡片：新增任务、勾选完成，一键把勾完的任务归档进可折叠的已完成分组（带归档日期）；列表存在本机浏览器里，不上传。'

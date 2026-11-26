@@ -1,0 +1,7 @@
+url: https://github.com/xkshct198570/dsh-persona-hub
+name: xkshct198570/dsh-persona-hub
+category: identity
+description:
+  en: 'Routes one persona asset set to the DSH web client and to bot subjects by channel and target id. Panel editing, hot reload, optional identity hint to a memory hub, and a cross-process config mirror for gateways. Reads local text only; no network and no memory writes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把一套人设资产按主体/通道/目标号路由到 DSH 网页端与各机器人；带面板编辑、热重载、可选的记忆身份提示，以及供网关直读的跨进程配置镜像。只读本地文本，不联网、不写记忆库。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/xkshct198570/dsh-persona-hub/releases/latest/download/dsh-persona-hub.tgz

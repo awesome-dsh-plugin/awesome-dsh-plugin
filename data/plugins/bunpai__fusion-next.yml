@@ -1,0 +1,6 @@
+url: https://github.com/bunpai/fusion-next
+name: bunpai/fusion-next
+category: model
+description:
+  en: 'Per-session planner/executor pair: a frontier Lead reads, briefs and reviews; a cheaper Sidekick writes the code. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '每会话规划/执行配对：旗舰 Lead 读代码、写简报、做评审；便宜的 Sidekick 写代码。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/wzz618/dsh-memory-journal/tree/main/js-shell
+name: wzz618/dsh-memory-journal#js-shell
+category: memory
+description:
+  en: 'Journal-style long-term memory: persona, user profile, long-term notes and daily/weekly entries are injected into every conversation, and a settings page lets you browse and edit them. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '日记式长期记忆：人设、用户档案、长期记忆与日记/周记自动注入每次对话，设置页可直接浏览和编辑。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

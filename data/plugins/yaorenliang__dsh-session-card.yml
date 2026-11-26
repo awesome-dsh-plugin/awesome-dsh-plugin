@@ -1,0 +1,10 @@
+url: https://github.com/yaorenliang/dsh-session-card
+name: yaorenliang/dsh-session-card
+category: session
+# Prebuilt: the release carries the packed tarball under this version-free name,
+# which `latest` resolves at click time. A versioned filename under that prefix
+# would stop resolving as soon as the next release exists.
+tarball: https://github.com/yaorenliang/dsh-session-card/releases/latest/download/dsh-session-card.tgz
+description:
+  en: 'Three lines per session in the sidebar: the official title, the last question you typed, and a badge line with the agent preset plus whatever is running under that session. The preset rides the snapshot the sidebar already holds, so it costs no extra request, disk read or loop. A fifth settings switch pins the sessions you start from then on, writing DSH own pin set through the official pin call rather than painting a marker of its own; it is off by default, never reaches back over sessions already on screen, and skips delegated and archived ones. When there is nothing to show, the row folds back to the official single line.'
+  zh: '侧边栏里每个会话三行：官方标题、你最后问的那句话，以及一行徽标——这个会话用的 agent 预设，加上正在跑的子智能体和后台任务。预设取自侧边栏渲染时本就拿着的那份快照，不多发请求、不读磁盘、不新增循环。设置里的第五个开关能让之后新建的会话自动置顶，写的是 DSH 自己的置顶集合（走官方置顶调用），不是自绘标记；默认关闭，不追溯屏幕上已有的会话，子智能体与归档会话一律跳过。没有内容可显示时，整行退回官方的单行形态。'

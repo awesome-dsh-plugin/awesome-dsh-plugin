@@ -1,0 +1,8 @@
+# dsh-win-gui — a subpackage of a monorepo, so the entry points at its
+# subdirectory and the name uses the owner/repo#subname form.
+url: https://github.com/alotherss/DeepSeekHarness-plugin/tree/main/packages/dsh-win-gui
+name: alotherss/DeepSeekHarness-plugin#dsh-win-gui
+category: tools
+description:
+  en: 'Windows desktop GUI tools for the model: list windows with physical-pixel rects, activate one, screenshot a window, region, monitor or the whole desktop, then click, paste Unicode text and send key chords. Dependency-free PowerShell helper, per-monitor v2 DPI aware.'
+  zh: '给模型操作 Windows 桌面的六个工具：列窗口并给出物理像素矩形、激活窗口、截窗口/区域/整屏、按物理像素点击、剪贴板粘贴中文、发送组合键。纯 PowerShell 零依赖，per-monitor v2 DPI 感知，坐标一律物理像素。'

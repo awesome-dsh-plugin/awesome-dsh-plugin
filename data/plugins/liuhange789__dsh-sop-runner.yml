@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-sop-runner
+name: liuhange789/dsh-sop-runner
+category: workflow
+description:
+  en: 'Store SOP self-check for DSH: keep the SOP as a workspace checklist, ask what is due today, record pass/fail/photo per item (a failure needs a note), append every result to daily JSONL records, and produce a plain-text daily report with the completion rate, exception items and the change against the previous period. Adds a checklist bar above the composer; photos are archived, never analysed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '门店 SOP 执行自检：把 SOP 写成工作区清单，显示今天该查什么，逐项记录通过/不通过/拍照（不通过必须写备注），按天追加 JSONL 记录，并生成含完成率、异常项和与上一周期对比的纯文本日报。输入框上方带自检条；照片只存档，不做识别。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

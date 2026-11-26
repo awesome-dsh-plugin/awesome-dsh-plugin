@@ -1,0 +1,6 @@
+url: https://github.com/T-splines/dsh-web-fallback-chain
+name: T-splines/dsh-web-fallback-chain
+category: browser
+description:
+  en: "Ranked, cost-aware web search and fetch fallback chains for DeepSeek Harness: quality ordering, free-only mode, credentials and per-mode settings on one page."
+  zh: "为 DeepSeek Harness 提供按质量排序、成本感知的网页搜索与抓取回退链：实测排序、free-only、凭据与按模式配置集中在一个设置页。"

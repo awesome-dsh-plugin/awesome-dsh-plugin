@@ -1,0 +1,7 @@
+url: https://github.com/xuiyun/nqe
+name: xuiyun/nqe
+category: ui
+description:
+  en: 'Ask mode for DSH — the agent asks instead of ending the turn, confirms its understanding before acting, and answers can carry images, files and commands. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '提问模式：AI 该问就问、动手前先确认理解，回答可带图、文件和指令。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/xuiyun/nqe/main/icon.png

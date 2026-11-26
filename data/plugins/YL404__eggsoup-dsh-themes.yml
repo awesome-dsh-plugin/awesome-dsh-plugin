@@ -1,0 +1,6 @@
+url: https://github.com/YL404/eggsoup-dsh-themes
+name: YL404/eggsoup-dsh-themes
+category: theme
+description:
+  en: 'Theme manager for the DSH Web GUI: fifteen Nyx-series dark themes (Vitesse, Vitesse Emerald, Catppuccin Mocha, Lilac Soft, Visual Studio Dark, Neutral Slate, Inkstone Xuanmo, Inkstone Canghai, Misty Teal, Aurora, Verdant Soft, Fields of the Shire, Gruvbox, Flexoki Dark, OpenChamber) with preview cards on a dedicated Themes page in Settings; selection persists in localStorage. Web GUI only; requires DSH 0.2.1-rc.5 or later.'
+  zh: 'Web 界面主题管理器：内置 15 套 Nyx 系列深色主题（流光夜、翡翠夜、摩卡夜、丁香夜、视界夜、岩灰夜、玄墨夜、苍海夜、雾青夜、极光夜、青翠夜、牧野夜、复古夜、朱墨夜、暖阁夜），在设置中提供带效果预览的独立「主题」页面，选择结果保存在浏览器 localStorage。仅面向 Web GUI，需要 DSH 0.2.1-rc.5 及以上。'

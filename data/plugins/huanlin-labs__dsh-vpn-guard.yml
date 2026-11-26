@@ -1,0 +1,6 @@
+url: https://github.com/huanlin-labs/dsh-vpn-guard
+name: huanlin-labs/dsh-vpn-guard
+category: security
+description:
+  en: 'Provider-agnostic egress monitor. Reports exit IP, country, ASN and latency, plus a per-service view of how that IP looks to AI services; an optional Clash or Mihomo adapter adds node lists, switching and traffic, and it never reads subscription links or credentials.'
+  zh: '不限厂商的出口体检：出口 IP / 地区 / ASN / 延迟，外加按服务看这个 IP 在 AI 服务眼里的状态；可选 Clash 或 Mihomo 适配器提供节点列表、切换与流量，且从不读取订阅链接或凭据。'

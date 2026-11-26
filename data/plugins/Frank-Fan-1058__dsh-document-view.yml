@@ -1,0 +1,6 @@
+url: https://github.com/Frank-Fan-1058/dsh-document-view
+name: Frank-Fan-1058/dsh-document-view
+category: ui
+description:
+  en: A DeepSeek Harness bundle that shows an opened document in the center while the current conversation stays visible on the right, with a per-session toggle, a resizable divider, layout presets and a narrow-window Document/Chat switch. Only the window layout changes; editing, saving and preview continue to use the host's native document and Office viewers.
+  zh: '为 DeepSeek Harness 增加分栏文档视图：文档居中显示，当前会话保留在右侧，支持按会话保存的开关、可调分隔线、布局预设与窄窗口切换。仅调整布局，编辑与预览沿用宿主原生查看器。'

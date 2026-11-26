@@ -1,0 +1,6 @@
+url: https://github.com/LinkADSL/dsh-wechat-clawbot-access
+name: LinkADSL/dsh-wechat-clawbot-access
+category: remote
+description:
+  en: 'Pure-script WeChat ClawBot (iLink) bridge for DeepSeek Harness: configure SSH and port forwarding, then receive IPv6, SSH and token access info in WeChat and open the DSH Web UI on a phone. Includes QR login, owner approval and daily pushes, with no Agent or LLM tokens. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '纯脚本微信 ClawBot (iLink) 访问桥：配置 SSH 与端口转发后，通过微信获取 IPv6、SSH 与 token 访问信息，在手机浏览器打开 DSH Web；支持扫码登录、owner 确认和每日推送，不经过模型、不消耗 token。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

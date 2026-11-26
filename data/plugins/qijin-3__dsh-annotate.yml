@@ -1,0 +1,7 @@
+url: https://github.com/qijin-3/dsh-annotate
+name: qijin-3/dsh-annotate
+category: ui
+description:
+  en: Annotate elements in DSH Desktop's built-in browser and send the feedback into the current conversation.
+  zh: 在 DSH 桌面端的内置浏览器里标注页面元素，并把反馈直接发进当前对话。
+icon: https://raw.githubusercontent.com/qijin-3/dsh-annotate/main/assets/icon-180.png

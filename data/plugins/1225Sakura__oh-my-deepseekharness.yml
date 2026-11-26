@@ -2,5 +2,5 @@ url: https://github.com/1225Sakura/oh-my-deepseekharness
 name: 1225Sakura/oh-my-deepseekharness
 category: workflow
 description:
-  en: Multi-agent orchestration layer for DeepSeek Harness — autopilot/ralph/team execution modes, 19 role cards, 40 bilingual skills, and a bundled MCP state server, ported from oh-my-claudecode.
-  zh: DeepSeek Harness 的多智能体编排层——autopilot/ralph/team 三种执行模式、19 张角色卡、40 个双语技能与内置 MCP 状态服务，移植自 oh-my-claudecode。
+  en: 'Multi-agent orchestration layer (omd): 48 bilingual skills, 33 role cards and 34 in-process tools — mode state rides the host storageDomain, leaf-guard is mechanically enforced via tools.restrict, cwd/sessionId auto-derive from the session anchor, and autopilot/ralph/team ride host-native goals/agentTeams with five-stage handoff discipline; includes a HUD sidebar panel. Zero subprocesses. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '多智能体编排层（omd）：48 个双语技能、33 张角色卡与 34 个进程内工具——模式状态走宿主 storageDomain 域，leaf-guard 经 tools.restrict 机械强制，cwd/sessionId 从会话锚自动派生，autopilot/ralph/team 由宿主原生 goals/agentTeams 承载并附加五阶段交接纪律；含 HUD 侧边栏面板。零子进程。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

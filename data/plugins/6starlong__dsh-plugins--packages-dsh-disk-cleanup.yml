@@ -1,0 +1,6 @@
+url: https://github.com/6starlong/dsh-plugins/tree/main/packages/dsh-disk-cleanup
+name: 6starlong/dsh-plugins#dsh-disk-cleanup
+category: tools
+description:
+  en: 'Moves Shell temporary files out of the workspace, grants write access to the temp directory, explains where temporary files go via the system prompt, and cleans up expired temporary files and orphaned attachments on a schedule.'
+  zh: '将 Shell 临时文件移出工作区，并补齐对临时目录的写入权限，通过系统提示词说明临时文件落点，再按保留天数清理过期的临时文件和无主附件。'

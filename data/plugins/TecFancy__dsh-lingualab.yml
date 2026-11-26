@@ -1,0 +1,7 @@
+url: https://github.com/TecFancy/dsh-lingualab
+name: TecFancy/dsh-lingualab
+category: tools
+description:
+  en: 'Intensive-listening practice for media already in the workspace: sentence-by-sentence drills with speed, looping, shadowing and recording, kept sentences with three grades, and a notes.md per episode written back to disk. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把工作区里已有的音视频变成逐句精听练习：变速、循环、跟读与录音，收藏的句子按三档评级，每集写一份 notes.md 回磁盘。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/TecFancy/dsh-lingualab/main/assets/icon-512.png

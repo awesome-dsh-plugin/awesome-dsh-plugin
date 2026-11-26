@@ -1,0 +1,6 @@
+url: https://github.com/simin-yuan/dsh-plain-memory
+name: simin-yuan/dsh-plain-memory
+category: memory
+description:
+  en: "Plain-text memory for DeepSeek Harness: Markdown in your own Git repo, a self layer loaded into AGENTS.md at session start, cross-window recall, zero injection and zero model calls by default."
+  zh: "原味记忆：纯 Markdown 记忆放在你自己的 Git 仓库，自我层开局进 AGENTS.md，多窗口共享；默认零注入、零模型调用。"

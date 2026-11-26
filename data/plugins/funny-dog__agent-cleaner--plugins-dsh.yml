@@ -1,0 +1,7 @@
+url: https://github.com/funny-dog/agent-cleaner/tree/main/plugins/dsh
+name: funny-dog/agent-cleaner#dsh-agent-cleaner
+category: tools
+icon: https://raw.githubusercontent.com/funny-dog/agent-cleaner/main/apps/desktop/src-tauri/icons/128x128@2x.png
+description:
+  en: 'Audit and clean stale caches, orphan sessions, PPID=1 MCP processes, and broken configs across AI coding agents with reversible trash.'
+  zh: '扫描并清理 Claude Code、OpenCode、Codex、DSH 等 AI 编程工具的冗余缓存、孤儿会话、PPID=1 僵尸 MCP 进程与失效配置，支持可逆回收站还原。'

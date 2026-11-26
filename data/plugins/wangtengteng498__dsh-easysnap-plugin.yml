@@ -1,0 +1,6 @@
+url: https://github.com/wangtengteng498/dsh-easysnap-plugin
+name: wangtengteng498/dsh-easysnap-plugin
+category: ui
+description:
+  en: 'Puts a persistent capture frame on the desktop and inserts the framed region into the chat as an image attachment, without closing the frame between shots. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在桌面放一个常驻取景框，点一下就把框内画面作为图片附件插入对话，框不关闭可连续拍多张。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

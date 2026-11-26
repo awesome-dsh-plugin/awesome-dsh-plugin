@@ -1,0 +1,6 @@
+url: https://github.com/fatwang2/dsh-projects
+name: fatwang2/dsh-projects
+category: workflow
+description:
+  en: 'Project board for DeepSeek Harness: one goal per project, a coordinator that splits it into parallel worker tasks, per-task git worktree isolation, and a shared memory that archives itself. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的项目看板：每个项目一个目标，协调者把目标拆成并行任务，每任务独立 git worktree，共享记忆自动归档。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

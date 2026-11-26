@@ -1,0 +1,6 @@
+url: https://github.com/Astral-Yang/dsh-preset-editor
+name: Astral-Yang/dsh-preset-editor
+category: ui
+description:
+  en: "Visual editor for native DSH Agent presets, supporting persona customization, plugin composition, per-preset tool filtering, automatic backups, and rollback."
+  zh: "DSH 原生 Agent 预设可视化编辑器，支持人格自定义、插件组合管理、预设级工具过滤、自动备份与回滚。"

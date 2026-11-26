@@ -1,0 +1,7 @@
+url: https://github.com/biezhixiwodainiwanzhangba/dsh-webin
+name: biezhixiwodainiwanzhangba/dsh-webin
+category: model
+tarball: https://github.com/biezhixiwodainiwanzhangba/dsh-webin/releases/download/v0.3.0/dsh-webin-0.3.0.tgz
+description:
+  en: 'Fork of cv-superding/dsh-webin (v0.2.25), extended. Desktop-only plugin that drives a real browser to run the DeepSeek, Doubao, Qwen, ChatGLM, Hunyuan and Kimi web chats as DSH model providers - real typing into the site, replies read from the page DOM, and an optional JavaScript tool protocol. No request signing or API replay. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'cv-superding/dsh-webin（v0.2.25）的派生增强版。仅桌面版：用真实浏览器把 DeepSeek、豆包、通义千问、智谱清言、腾讯元宝、Kimi 的网页版当作 DSH 模型使用——向站点输入框真打字、从页面 DOM 读回复，并可选用 JavaScript 代码块工具协议；不做请求签名、不回放接口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

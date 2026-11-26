@@ -1,0 +1,6 @@
+url: https://github.com/Threadripper123/dsh-plugin-restart
+name: Threadripper123/dsh-plugin-restart
+category: session
+description:
+  en: "Checkpoint and restart DSH through an independent watchdog so interrupted sessions resume automatically."
+  zh: "DSH 断点重启：保存会话检查点后由独立看门狗重启桌面应用，中断的会话自动续跑。"

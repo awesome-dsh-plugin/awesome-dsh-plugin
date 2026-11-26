@@ -1,0 +1,7 @@
+url: https://github.com/uitTe/dsh-sidebar-restore
+name: uitTe/dsh-sidebar-restore
+category: ui
+description:
+  en: Restores the collapsed sidebar as a 56px icon rail on the Windows desktop client, keeping panels, New Session and the workspace entry clickable, with a hover flyout card for workspace sessions.
+  zh: 在 Windows 桌面端把收起的侧边栏还原成 56px 图标轨道，面板、新建会话与工作区入口保持可点，悬停时在轨道右侧浮出工作区会话卡片。
+icon: https://raw.githubusercontent.com/uitTe/dsh-sidebar-restore/main/assets/icon-180.png

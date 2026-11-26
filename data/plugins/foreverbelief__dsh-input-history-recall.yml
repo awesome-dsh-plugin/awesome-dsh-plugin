@@ -1,0 +1,6 @@
+url: https://github.com/foreverbelief/dsh-input-history-recall
+name: foreverbelief/dsh-input-history-recall
+category: ui
+description:
+  en: Double-press ArrowUp/ArrowDown in the DSH Web composer to recall this session's sent messages, and restore your draft when you move past the newest one.
+  zh: 在 DSH 输入框快速连按两次 ↑/↓ 回溯本会话已发送的消息，越过最新一条时恢复草稿。

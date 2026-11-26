@@ -1,0 +1,8 @@
+url: https://github.com/ytclaw01/dsh-plugin-sets
+name: ytclaw01/dsh-plugin-sets
+category: dev
+description:
+  en: 'Saves the Plugins page as named scenes of plugin bundles, MCP servers and skills, then applies a scene as a minimal diff with undo, a composer shortcut, and a refusal to switch while a chat is running.'
+  zh: '把官方「插件」页的启用状态连同 MCP 服务器与技能开关存成场景；应用时只改有差异的行并支持撤销，输入框旁可直接切换，有会话运行中则拒绝切换。'
+tarball: https://github.com/ytclaw01/dsh-plugin-sets/releases/latest/download/dsh-plugin-sets.tgz
+icon: https://raw.githubusercontent.com/ytclaw01/dsh-plugin-sets/main/assets/icon-180.png

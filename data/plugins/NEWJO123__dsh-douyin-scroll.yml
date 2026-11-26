@@ -1,0 +1,6 @@
+url: https://github.com/NEWJO123/dsh-douyin-scroll
+name: NEWJO123/dsh-douyin-scroll
+category: fun
+description:
+  en: 'A daily Douyin duty round: pull candidates from the recommendation feed, score them on text, tags, author, duration and engagement, write a daily report, and surface the worthwhile ones as a Windows toast, webhook or MCP tool call. Comments and notifications are read through signed read-only endpoints; direct messages, share cards and comment replies are sent through a headless Chrome driving Douyin''s own front end, and every send needs an explicit confirm flag.'
+  zh: '每天替你刷一轮抖音：从推荐流取候选，按文案、标签、作者、时长和互动数据打分，写一份日报，值得的用 Windows 通知、webhook 或 MCP 工具调用送到你眼前。评论与通知走签名只读接口；私信、分享卡片、评论回复由无头 Chrome 驱动抖音自己的前端发出，每次发送都要显式 confirm 才会真的发。'

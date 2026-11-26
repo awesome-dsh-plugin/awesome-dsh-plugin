@@ -1,0 +1,6 @@
+url: https://github.com/MiraculousGu/dsh-app-controls
+name: MiraculousGu/dsh-app-controls
+category: ui
+description:
+  en: Adds quit and check/update controls to the DeepSeek Harness Web GUI, plus an optional KDE tray, per-feature settings, remembered window size, and safe cache cleanup.
+  zh: 为 DeepSeek Harness Web 界面增加退出与检查/更新控件，并提供可选的 KDE 托盘、分项设置、记住窗口大小和安全缓存清理。

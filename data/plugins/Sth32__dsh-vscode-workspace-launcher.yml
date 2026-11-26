@@ -1,0 +1,7 @@
+url: https://github.com/Sth32/dsh-vscode-workspace-launcher
+name: Sth32/dsh-vscode-workspace-launcher
+category: dev
+description:
+  en: Opens the current session's working directory or a selected .code-workspace file in VS Code from the DeepSeek Harness session menu.
+  zh: 从 DeepSeek Harness 会话菜单在 VS Code 中打开当前工作目录或选中的 .code-workspace 文件。
+tarball: https://github.com/Sth32/dsh-vscode-workspace-launcher/releases/download/v0.1.4/dsh-vscode-workspace-launcher-0.1.4.tgz

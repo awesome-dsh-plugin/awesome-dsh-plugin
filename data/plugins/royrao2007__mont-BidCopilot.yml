@@ -1,0 +1,7 @@
+url: https://github.com/royrao2007/mont-BidCopilot
+name: royrao2007/mont-BidCopilot
+category: tools
+description:
+  en: 'Dual-mode tender and bid drafting engine: 32 mont_* tools with code-enforced compliance rules, a fact-source allowlist, three human gates with a tamper-evident audit chain, and pure-JS .docx export.'
+  zh: '招投标双模辅助编制引擎：32 个 mont_* 工具，含代码层合规校验、事实来源白名单、三道人工门禁与防篡改审计链、纯 JS 导出 .docx。'
+icon: https://raw.githubusercontent.com/royrao2007/mont-BidCopilot/master/assets/icon-180.png

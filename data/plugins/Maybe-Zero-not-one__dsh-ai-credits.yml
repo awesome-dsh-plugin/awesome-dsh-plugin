@@ -1,0 +1,6 @@
+url: https://github.com/Maybe-Zero-not-one/dsh-ai-credits
+name: Maybe-Zero-not-one/dsh-ai-credits
+category: usage
+description:
+  en: 'One page for free AI credit and point offers, API list prices, subscription tiers, the model routes your setup is wired to, and what those routes cost: vendor prices checked live, spend priced at peak/off-peak and cache-hit rates, forked sessions deduped, one-click official usage CSV import for reconciliation, a per-session token timeline per route, and per-image / per-token spend for cloud image and video generation. Everything stays on your machine and is never uploaded.'
+  zh: '把能领 AI 免费额度与积分的地方、各家 API 标价、订阅档位、当前接入的模型线路，以及这些线路花了多少钱放在一页：官方价实时核对，金额按峰谷分时价与缓存命中分别计价，fork 会话自动去重，可一键导入官方用量 CSV 对账，点开任一渠道能看按会话分段的 token 时间轴，并统计云端出图/生视频的按张、按 token 花费。数据只存在本地，不上传。'

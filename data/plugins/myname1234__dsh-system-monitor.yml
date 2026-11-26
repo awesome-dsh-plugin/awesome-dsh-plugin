@@ -1,0 +1,6 @@
+url: https://github.com/myname1234/dsh-system-monitor
+name: myname1234/dsh-system-monitor
+category: ui
+description:
+  en: 'Real-time total and per-core CPU, memory, and the top processes by CPU or memory, in a composer pill with a detail panel. Process data is sampled on demand on the host and labelled with its actual capture time. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在输入框胶囊与右下角详情面板中实时查看整体/单核 CPU、内存，以及按 CPU 或内存排序的进程列表；进程数据按需采样，并标注真实采样时间。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

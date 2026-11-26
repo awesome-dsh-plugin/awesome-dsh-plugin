@@ -1,0 +1,6 @@
+url: https://github.com/hgognav233-netizen/agent-workflow-viewer
+name: hgognav233-netizen/agent-workflow-viewer
+category: session
+description:
+  en: 'Session canvas for DeepSeek Harness: draws the capabilities each session uses (files, terminal, web, MCP, skills, child tasks) and the objects they touched, highlights running and failed paths, and opens a detail panel with error text, estimated spend and a filterable timeline; reachable from the left navigation or beside the conversation input.'
+  zh: 'DeepSeek Harness 会话画布：把每个会话用到的能力（文件、终端、网页、MCP、技能、子任务）和它们碰过的对象画成图，高亮执行中和失败的路径；详情栏显示错误原因、估算花费和可筛选的时间线；从左侧导航或对话输入框旁打开。'

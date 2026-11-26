@@ -1,0 +1,8 @@
+url: https://github.com/RuneYang123/dsh-smooth-model-picker
+name: RuneYang123/dsh-smooth-model-picker
+category: ui
+description:
+  en: 'Two-pane model and reasoning-effort picker replacing conversation.input.model with Pointer Events drag-to-reorder, an external sliding effort bar, custom folders with per-folder aliases, vendor color swatches, bilingual UI, and JSON backup/restore.'
+  zh: '接管 conversation.input.model 插槽的双栏模型与思考强度选择器：支持 Pointer Events 拖拽排序、外置划动思考强度条、自定义文件夹与专属模型别名、厂商圆点调色盘、中英切换及 JSON 备份恢复。'
+icon: https://raw.githubusercontent.com/RuneYang123/dsh-smooth-model-picker/main/assets/icon-180.png
+tarball: https://github.com/RuneYang123/dsh-smooth-model-picker/releases/download/v0.1.0/dsh-smooth-model-picker-0.1.0.tgz

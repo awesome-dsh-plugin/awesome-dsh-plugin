@@ -1,0 +1,6 @@
+url: https://github.com/Poy-Coder/dsh-repo-watch
+name: Poy-Coder/dsh-repo-watch
+category: tools
+description:
+  en: 'Repository watchtower for maintainers: watches your GitHub repositories in the background and speaks up only when someone is actually waiting on you — a reply to your thread, a mention, a review request, or an issue opened in your repo. One roll-call line instead of a stream ("4 things need you"); asking for the detail expands who said what, and the deep digest explains each item: kind, whose move it is (fixed / investigating / waiting on you), priority with its reasons, and similar past threads. Closures settle themselves, and acknowledgements are not overwritten by later polls. Delivers through a channel plugin (dsh-channel-feishu or dsh-channel-wechat-ilink); with no channel it can only be queried, never pushed.'
+  zh: '仓库守望：后台盯着你的 GitHub 仓库，只在真的有人等你时才说一句——你提的 thread 有人回复、有人 @ 你、请你 review、或有人给你的仓库开 issue。推送是一句报数（「有 4 条需要你」）而不是刷屏；要明细时再展开谁说了什么，deep 摘要给出每条的类型、该谁动（已修复 / 在推进 / 等你补充）、优先级及其理由、以及相似的旧 thread。关闭的 issue/PR 会自动结案，标了「已完成」的条目不会被下一轮轮询覆盖。推送通过飞书或微信通道插件完成；没有通道时只能查询，不能推送。'

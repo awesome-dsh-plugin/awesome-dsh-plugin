@@ -1,0 +1,7 @@
+url: https://github.com/keyblues/dsh-tool-exposure
+name: keyblues/dsh-tool-exposure
+category: tools
+description:
+  en: 'Controls tool visibility by DSH agent preset, with group and per-tool switches and a separate group for each registered global MCP server.'
+  zh: '按 DSH 角色管理工具可见性，支持整组开关和逐工具设置，并为每个已注册工具的全局 MCP 服务器单独分组。'
+icon: https://raw.githubusercontent.com/keyblues/dsh-tool-exposure/main/docs/images/tool-exposure-icon.png

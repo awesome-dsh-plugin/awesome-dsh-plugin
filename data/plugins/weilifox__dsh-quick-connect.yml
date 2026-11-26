@@ -1,0 +1,7 @@
+url: https://github.com/weilifox/dsh-quick-connect
+name: weilifox/dsh-quick-connect
+category: model
+description:
+  en: 'Registers Amazon Quick (AWS) as a DSH model provider with four agent modes billed against the Quick quota, and relays Quick''s device tool calls to a local outpost started from the Quick desktop app. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 Amazon Quick（AWS）注册成 DSH 的模型来源：四个消耗 Quick 配额的档位，并把 Quick 的设备工具调用转给由 Quick 桌面端拉起的本机 outpost 执行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/weilifox/dsh-quick-connect/main/assets/icon-180.png

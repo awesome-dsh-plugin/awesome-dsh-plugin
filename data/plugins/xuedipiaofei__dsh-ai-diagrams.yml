@@ -1,0 +1,7 @@
+url: https://github.com/xuedipiaofei/dsh-ai-diagrams
+name: xuedipiaofei/dsh-ai-diagrams
+category: tools
+description:
+  en: "Editorial diagrams in chat: the agent draws a self-contained HTML/SVG diagram (50 types, on the cathrynlavery/diagram-design skill), it renders inline with SVG/PNG export, redraws draw.io/Mermaid/Excalidraw sources and can match a site's brand. No Python, no Playwright."
+  zh: "聊天里的编辑设计风图表：模型画出自包含 HTML/SVG 图（50 种类型，基于 cathrynlavery/diagram-design skill），对话内直接预览并可导出 SVG/PNG，可重画 draw.io/Mermaid/Excalidraw，能按网站品牌配色。不需要 Python，不需要 Playwright。"
+icon: https://raw.githubusercontent.com/xuedipiaofei/dsh-ai-diagrams/main/docs/images/icon.png

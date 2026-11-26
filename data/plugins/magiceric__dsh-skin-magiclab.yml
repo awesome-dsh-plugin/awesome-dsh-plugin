@@ -1,0 +1,8 @@
+url: https://github.com/magiceric/dsh-skin-magiclab
+name: magiceric/dsh-skin-magiclab
+category: theme
+description:
+  en: 'Five switchable interface skins — including a Long March theme — each with its own animated boot sequence and synthesized sound design.'
+  zh: '五套可切换的界面皮肤（含长征主题），每套配专属开机动画与合成音效。'
+icon: https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/main/assets/icon-180.png
+tarball: https://github.com/magiceric/dsh-skin-magiclab/releases/download/v1.0.3/dsh-skin-magiclab-1.0.3.tgz

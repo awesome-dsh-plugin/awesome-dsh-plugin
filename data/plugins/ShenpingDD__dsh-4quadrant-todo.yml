@@ -1,0 +1,7 @@
+url: https://github.com/ShenpingDD/dsh-4quadrant-todo
+name: ShenpingDD/dsh-4quadrant-todo
+category: ui
+description:
+  en: 'Four-quadrant todo board for the desktop sidebar: drag between quadrants, due dates, reminders, per-workspace stats and optional Feishu sync.'
+  zh: '桌面侧栏的四象限待办看板：象限间拖拽、截止时间与提醒、按工作区统计，可选飞书同步。'
+icon: https://raw.githubusercontent.com/ShenpingDD/dsh-4quadrant-todo/main/assets/icon-180.png

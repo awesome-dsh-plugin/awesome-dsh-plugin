@@ -1,0 +1,7 @@
+url: https://github.com/chenjie151/dsh-software-manager
+name: chenjie151/dsh-software-manager
+category: tools
+description:
+  en: 'Reads DSH session logs, lists every package the agent installed with its resolved location and version, and uninstalls it in one click.'
+  zh: '读取 DSH 会话日志，列出 agent 装过的每个软件及其真实安装位置与版本，并支持一键卸载。'
+icon: https://raw.githubusercontent.com/chenjie151/dsh-software-manager/main/assets/icon-180.png

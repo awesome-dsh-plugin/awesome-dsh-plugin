@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/contacts
+name: ityyq777/dsh-workbench#contacts
+category: tools
+description:
+  en: 'Contacts for DSH: local address book with groups, multi-value fields, search and vCard import/export.'
+  zh: 'DSH 联系人：本地通讯录，支持分组、多值字段、搜索与 vCard 导入导出。'

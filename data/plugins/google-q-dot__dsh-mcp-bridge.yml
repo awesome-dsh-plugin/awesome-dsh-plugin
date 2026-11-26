@@ -1,0 +1,6 @@
+url: https://github.com/google-q-dot/dsh-mcp-bridge
+name: google-q-dot/dsh-mcp-bridge
+category: tools
+description:
+  en: 'MCP bridge for the running DeepSeek Harness desktop: 26 tools over a loopback MCP endpoint let Antigravity, Claude Code, Codex or Cursor drive the same live sessions, answer approvals and questions from the MCP side, keep per-session interaction modes, and use a reconnecting stdio proxy with a no-duplicate replay policy.'
+  zh: '在运行中的 DeepSeek Harness 桌面应用内提供回环 MCP 端点：26 个工具让 Antigravity、Claude Code、Codex、Cursor 驱动同一批实时会话，从 MCP 侧答复审批与提问，按会话保留交互模式，并提供断线重连、不重复执行的 stdio 代理。'

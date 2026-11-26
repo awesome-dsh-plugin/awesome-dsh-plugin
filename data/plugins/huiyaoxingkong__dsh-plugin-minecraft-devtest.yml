@@ -1,0 +1,7 @@
+url: https://github.com/huiyaoxingkong/dsh-plugin-minecraft-devtest
+name: huiyaoxingkong/dsh-plugin-minecraft-devtest
+category: dev
+description:
+  en: 'Client-free Minecraft mod and datapack test harness: 12 DSH tools for headless servers (official releases 1.7.10-26.3, 26.4 forward-compatible), RCON assertions, datapack deploy/reload, player bots and YAML test cards.'
+  zh: '免客户端测试 Minecraft 模组与数据包：12 个 DSH 工具，启动正式版 1.7.10–26.3（26.4 前瞻兼容）无头服务器、执行 RCON 断言、部署/重载数据包、驱动玩家机器人并运行 YAML 测试卡。'
+tarball: https://github.com/huiyaoxingkong/dsh-plugin-minecraft-devtest/releases/download/v0.4.0/dsh-plugin-minecraft-devtest-0.4.0.tgz

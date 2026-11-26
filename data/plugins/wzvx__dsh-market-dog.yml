@@ -1,0 +1,12 @@
+url: https://github.com/wzvx/dsh-market-dog
+name: wzvx/dsh-market-dog
+category: market
+description:
+  en: >-
+    Market Dog, the plugin bloodhound: locate the right plugin from a
+    one-sentence or keyword description with bilingual (Chinese/English)
+    semantic matching. Sort by relevance or downloads; filter by category,
+    update time and stars.
+  zh: >-
+    Market Dog（寻“plugin”猎犬）：根据一句话或关键词描述快速定位目标插件，
+    中英双语语义匹配，支持相关度、下载量排序及类别/更新时间/Star 筛选。

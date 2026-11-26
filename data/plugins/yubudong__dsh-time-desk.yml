@@ -1,0 +1,8 @@
+url: https://github.com/yubudong/dsh-time-desk
+name: yubudong/dsh-time-desk
+category: workflow
+description:
+  en: 'A local-first DSH time desk with daily, weekly and monthly life, habit and course views, project next steps, credit ledgers, focus timers and Time Spirit.'
+  zh: 'DSH 原生时间工作台：生活、习惯与课程日周月视图、项目下一步、课时账本与专注计时，内置时间精灵助手。'
+icon: https://raw.githubusercontent.com/yubudong/dsh-time-desk/54dd56779d5923c212219f51ccedfeb985b764c8/assets/time-spirit-a.png
+tarball: https://github.com/yubudong/dsh-time-desk/releases/download/v0.16.2/dsh-time-desk-0.16.2.tgz

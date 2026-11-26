@@ -1,0 +1,6 @@
+url: https://github.com/lkzc19/dsh-workspace-virtual-groups
+name: lkzc19/dsh-workspace-virtual-groups
+category: ui
+description:
+  en: Groups workspaces in the DSH sidebar into renameable groups with drag-and-drop ordering.
+  zh: 把 DSH 侧边栏的工作区整理成可重命名的分组，支持拖拽归组与排序。

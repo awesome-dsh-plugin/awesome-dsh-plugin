@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-dockerfile-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-dockerfile-check'
+category: 'tools'
+description:
+  en: 'Dockerfile hygiene: pinned base images, a non-root USER, no secrets baked into layers, COPY instead of ADD for plain copies, and package-manager cleanup. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Dockerfile 的判定：基础镜像是否固定、是否以 root 收尾、有无密钥写进层、普通复制是否误用 ADD、装包后是否清理索引。反斜杠续行按一条指令算。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

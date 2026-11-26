@@ -1,0 +1,6 @@
+url: https://github.com/menzi11/dsh-session-cost
+name: menzi11/dsh-session-cost
+category: usage
+description:
+  en: 'Prices each model request in the current session at the peak or off-peak unit price that applied when it settled, and shows the total, the per-bucket ledger, the peak/off-peak split, and the current price table in a flat card beside the conversation.'
+  zh: '把本会话每个模型请求按它结算时生效的峰谷单价计价，并在对话右侧的平面卡片里给出总额、逐项账目、峰谷构成和当前价目表。'

@@ -1,0 +1,7 @@
+url: https://github.com/DeepLifeStudio/dsh-lark-studio
+name: DeepLifeStudio/dsh-lark-studio
+category: tools
+icon: https://raw.githubusercontent.com/DeepLifeStudio/dsh-lark-studio/main/assets/icon-256.png
+description:
+  en: 'A Feishu/Lark workbench for DeepSeek Harness: build a Base from one sentence, or run calendar, tasks, chat, mail, and contacts from the sidebar.'
+  zh: '飞书智能工作台：一句话生成多维表格，并在侧栏处理日程、待办、群聊、邮件与通讯录。'

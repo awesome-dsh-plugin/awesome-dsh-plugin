@@ -2,5 +2,5 @@ url: https://github.com/JayYuen666/dsh-ocr-review
 name: JayYuen666/dsh-ocr-review
 category: git
 description:
-  en: 'Wraps the external `ocr` (open-code-review) CLI in five model tools — one-shot review, whole-tree scan, deterministic scope/rule scaffolding and session lookup — and reports what OCR found separately from whether the run actually covered the selected files.'
-  zh: '把外部 `ocr`（open-code-review）CLI 包成五个模型工具——单次评审、全树扫描、确定性的范围与规则脚手架、会话查询——并把「OCR 发现了什么」与「这次跑有没有覆盖完选中的文件」分成两套口径回报。'
+  en: 'Wraps the external `ocr` (open-code-review) CLI in seven model tools — review, whole-tree scan, deterministic file selection and rule scaffolding, session history with comment filtering, compare and export, rule diagnostics and read-only LLM catalogue queries — with its own shape, type and enum gates, and reports what OCR found separately from whether the run covered the selected files; its settings card selects a provider/model from the host settings catalogue, edits the CLI `mcp_servers` JSON, reports `ocr auth` status, switches the ChatGPT model and measures the installed CLI version. The external CLI must be installed separately; the plugin never installs or upgrades it.'
+  zh: '把外部 `ocr`（open-code-review）CLI 包成七个模型工具——单次评审、全树扫描、确定性的文件选择与规则脚手架、带评论筛选 / 比较 / 导出的会话历史、规则诊断与只读 LLM 目录查询——参数形状、类型与枚举由插件自己把关，并把「OCR 发现了什么」与「这次跑有没有覆盖完选中的文件」分成两套口径回报；设置卡从宿主设置目录选择 provider/model、编辑该 CLI 的 `mcp_servers` JSON、报告 `ocr auth` 状态、切换 ChatGPT 模型并测量已装 CLI 的版本。外部 CLI 需要单独安装，插件自己从不安装或升级它。'

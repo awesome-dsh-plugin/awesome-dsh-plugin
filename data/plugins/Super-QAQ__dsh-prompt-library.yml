@@ -1,0 +1,6 @@
+url: https://github.com/Super-QAQ/dsh-prompt-library
+name: Super-QAQ/dsh-prompt-library
+category: tools
+description:
+  en: 'Prompt library for the agent and the composer: save prompts, search and filter by tags, insert into the draft or copy, import prompts from a link with the default model, and track skill or plugin dependencies.'
+  zh: '提示词库：保存常用提示词，在输入框旁的面板里搜索、按标签筛选、插入草稿或复制；可从链接用默认模型提取提示词，并为条目记录技能/插件依赖；Agent 通过 prompt_* 工具读写同一份数据。'

@@ -1,0 +1,6 @@
+url: https://github.com/jqlong17/dsh-meeting-memo
+name: jqlong17/dsh-meeting-memo
+category: voice
+description:
+  en: Right-sidebar meeting minutes for DeepSeek Harness — local capture, on-device transcription, speaker labels, and structured minutes; audio never leaves the machine.
+  zh: 右侧栏会议纪要插件：本机录音、本地转写、声纹区分发言人，自动整理成背景、结论与待办，音频不出这台机器。

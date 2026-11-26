@@ -1,0 +1,7 @@
+url: https://github.com/kaveys/agent-user-profile
+name: kaveys/agent-user-profile
+category: memory
+description:
+  en: 'Keeps a persistent profile of who you are — ten categories from hard limits and taste to how you like answers — and reads it before every turn, so preferences do not have to be repeated. Facts are captured from the conversation as candidates and only enter the profile after you confirm them; injection passes a relevance gate that can be switched off for one turn. Near-duplicate entries merge on write, profile text exported from another AI assistant can be imported and split into entries, and a seven-tab panel, a `profile` CLI and 14 MCP tools cover review, editing, pinning, retiring, snapshots, restore and encrypted backup.'
+  zh: '把「你是谁」记成一份持久画像——从红线、口味到沟通习惯共十类，每轮任务前先读一遍，偏好不用反复交代。候选事实先进待审队列，确认后才进画像；注入前过相关性闸门，可以要求某一轮不读画像。写入时自动合并近义条目，别家 AI 导出的画像文本能整段搬进来并拆成条目；另带七页签面板、`profile` 命令行与 14 个 MCP 工具，覆盖审阅、修改、置顶、软失效、快照、恢复与加密备份。'
+icon: https://raw.githubusercontent.com/kaveys/agent-user-profile/main/assets/icon-180.png

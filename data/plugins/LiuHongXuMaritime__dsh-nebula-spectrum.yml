@@ -1,0 +1,8 @@
+url: https://github.com/LiuHongXuMaritime/dsh-nebula-spectrum
+name: LiuHongXuMaritime/dsh-nebula-spectrum
+category: theme
+description:
+  en: 'Aurora-canvas theme in eight editions — Indigo, Ember, Crimson and Neon (dark), Rainbow, Sunrise, Glacier and Rose (light) — that re-points the DSH design tokens so the canvas, glass sidebar, spectrum-rimmed composer, gradient send button and code blocks follow the palette, with a settings row to switch editions or follow the system appearance.'
+  zh: '极光画布主题，含八套版本——青蓝、余烬、朱红、霓虹（深色）与彩虹、暖阳、冰蓝、玫瑰（浅色）：重设 DSH 设计令牌，让画布、玻璃侧边栏、光谱描边的输入框、渐变发送按钮与代码块跟随配色，并提供设置行切换版本或跟随系统外观。'
+icon: https://raw.githubusercontent.com/LiuHongXuMaritime/dsh-nebula-spectrum/main/assets/icon-180.png
+tarball: https://github.com/LiuHongXuMaritime/dsh-nebula-spectrum/releases/latest/download/dsh-nebula-spectrum.tgz

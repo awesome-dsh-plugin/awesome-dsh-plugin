@@ -1,0 +1,7 @@
+url: https://github.com/ee1801446016/dsh-plugin-remover
+name: ee1801446016/dsh-plugin-remover
+category: session
+description:
+  en: 'Delete a conversation from its row menu together with the files it produced or read, its subagent conversations, and the attachments no other conversation references, behind a recycle bin that restores a whole group or one file at a time. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在会话行的菜单里删除一个对话，并带走它产出或读过的文件、它的子代理对话，以及没有其他对话引用的附件；删除先进回收站，可整组恢复或只恢复一个文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/ee1801446016/dsh-plugin-remover/main/assets/icon-180.png

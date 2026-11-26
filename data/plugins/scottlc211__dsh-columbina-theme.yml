@@ -1,0 +1,7 @@
+url: https://github.com/scottlc211/dsh-columbina-theme
+name: scottlc211/dsh-columbina-theme
+category: theme
+icon: https://raw.githubusercontent.com/scottlc211/dsh-columbina-theme/main/icon.png
+description:
+  en: 'Switchable colour palettes, WebGL liquid glass & Gaussian blur wallpapers, customizable boot animation (video or CSS fallback), and local Steam Wallpaper Engine integration for DSH. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 主题与皮肤插件：支持多套调色板、WebGL 液态玻璃与高斯模糊壁纸、可调时长的启动动画（支持提前跳过），以及本地 Steam Wallpaper Engine 壁纸联动。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

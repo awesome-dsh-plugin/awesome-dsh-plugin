@@ -1,0 +1,7 @@
+url: https://github.com/Rollstack/skills
+name: Rollstack/skills
+category: tools
+description:
+  en: Build polished presentations using AI, with advanced charts and data connections built in. Requires a Rollstack account and a Rollstack API key.
+  zh: '用 AI 制作精美的演示文稿，内置高级图表和数据连接。需要 Rollstack 账号和 API Key。'
+icon: https://raw.githubusercontent.com/Rollstack/skills/main/assets/icon.png

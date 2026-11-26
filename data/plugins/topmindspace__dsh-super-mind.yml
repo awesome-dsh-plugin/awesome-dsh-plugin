@@ -1,0 +1,7 @@
+url: https://github.com/topmindspace/dsh-super-mind
+name: topmindspace/dsh-super-mind
+category: tools
+description:
+  en: 'Local-first content & X creator studio for DeepSeek Harness: indexes multi-source Markdown materials with 6 statuses, 5 view modes, 10-style AI rewriting via DSH models, and the super-mind CLI. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '面向 DeepSeek Harness 的本地优先创作素材与 X 内容工作室：统一索引多来源 Markdown 素材，支持 6 种状态流转与 5 种视图展示，内置基于 DSH 预置模型的 10 种风格改稿及 super-mind CLI 接口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/topmindspace/dsh-super-mind/main/docs/icon.png

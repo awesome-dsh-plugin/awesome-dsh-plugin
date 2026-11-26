@@ -1,0 +1,6 @@
+url: https://github.com/Orabla/dsh-windows-notifications
+name: Orabla/dsh-windows-notifications
+category: notify
+description:
+  en: 'Adds six switches to the DSH settings page that send Windows notifications for approval waiting, questions, task completion, subtasks, errors and turn end. Each kind has an editable toast template and an optional detail line, such as the last reply of a finished turn or the tool an approval is about, and clicking a toast opens its session. DSH must stay running to deliver notifications.'
+  zh: '在 DSH 设置页提供六个开关，为审批等待、向你提问、任务完成、子任务完成、任务出错、轮次完成发送 Windows 通知；每一类都可以自定义横幅文案，并可选附带详情行（例如该轮最后一条回复、审批涉及的工具名），点击通知回到对应会话。接收通知需要 DSH 保持运行。'

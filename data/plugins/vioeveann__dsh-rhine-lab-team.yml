@@ -1,0 +1,7 @@
+url: https://github.com/vioeveann/dsh-rhine-lab-team
+name: vioeveann/dsh-rhine-lab-team
+category: workflow
+description:
+  en: 'A Bot team for DeepSeek Harness: each Bot keeps its own role prompt, project memory, avatar and id, and a sidebar roster shows who is idle, who is working, and who is waiting for your review. The lead dispatches a task to one Bot, which works in its own subagent session and returns a result the lead accepts or rejects with a grade that counts toward that Bot''s experience; rules taught to a Bot are written into its project memory, and a Bot accumulating experience gains levels and can be promoted. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DeepSeek Harness 配一支 Bot 团队：每只 Bot 有自己的职责提示、项目记忆、头像和 ID，侧边栏成员卡显示谁在待命、谁在干活、谁等你验收。领队把活派给某只 Bot，它在自己的子会话里干完回结果，领队按交付物验收并给评分，评分折算成它的经验；教给它的规矩写进它的项目记忆，经验攒够就升级、还能升阶。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/vioeveann/dsh-rhine-lab-team/main/assets/icon-512.png

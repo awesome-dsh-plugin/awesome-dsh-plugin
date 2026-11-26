@@ -1,0 +1,7 @@
+url: https://github.com/jrc521/dsh-sql-tuner
+name: jrc521/dsh-sql-tuner
+category: tools
+description:
+  en: Adds a panel that explains a SQL query against a pasted schema, ranks optimization advice, and produces index DDL, SQL rewrites and an execution plan checklist.
+  zh: 在左侧栏提供 SQL 分析与调优面板：按你粘贴的表结构解释查询、按风险排序给出优化建议，并生成建索引语句、SQL 改写与执行计划检查清单。
+icon: https://raw.githubusercontent.com/jrc521/dsh-sql-tuner/main/assets/icon-180.png

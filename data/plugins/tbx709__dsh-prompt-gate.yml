@@ -1,0 +1,6 @@
+url: https://github.com/tbx709/dsh-prompt-gate
+name: tbx709/dsh-prompt-gate
+category: workflow
+description:
+  en: 'You type one line and the agent guesses the rest; this plugin rewrites that line into a complete prompt with goal, scope and acceptance criteria and waits for your go-ahead before the agent touches anything, then lets you approve it, ask for a rewrite, send the original as-is, or walk away — in which case the original goes ahead after 15 minutes.'
+  zh: '你只打了一句话，剩下的全靠模型猜——这个插件先把这句话改写成一份完整提示词（目标、范围、验收标准），动手之前先交给你过目：你可以确认、提出修改、或直接按原话发送；如果 15 分钟不处理，它也会按原话继续。'

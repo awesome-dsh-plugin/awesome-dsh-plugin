@@ -1,0 +1,7 @@
+url: https://github.com/pengtang1024/dsh-quick-phrases
+name: pengtang1024/dsh-quick-phrases
+category: ui
+icon: https://raw.githubusercontent.com/pengtang1024/dsh-quick-phrases/main/assets/icon-180.png
+description:
+  en: 'Adds a row of quick-phrase chips beside the composer whose captions and sent text are edited separately: a click either sends the phrase or inserts it at the cursor, per a setting, and always inserts at the cursor when the composer already holds a draft; the row folds into one pill while a draft exists and can be switched off from settings so that nothing renders at all; single phrases can be hidden on their own; the row sits below the composer, above it, or in the tool row; and a settings page covers adding, renaming, drag-reordering, two-step delete and resetting to defaults. All behaviour is one renderer-side script with no dependencies and no network requests, storing phrases in plain text in localStorage.'
+  zh: '在输入框旁加一排快捷短语按钮：按钮名称与真正发送的内容分开编辑，点按行为可选「直接发送」或「插入光标处」，输入框里已有草稿时总是插到光标处；有草稿时整排缩成一个小胶囊，设置里关掉「显示短语行」后连胶囊都不渲染；单条短语也可单独隐藏；位置可选输入框下方、上方或工具行右侧；管理页支持新增、改名、拖动排序、两步确认删除与恢复默认。行为全部集中在一个渲染端脚本里，无依赖、不联网，短语以明文存在 localStorage。'

@@ -1,0 +1,6 @@
+url: https://github.com/zyi07/dsh-mobile-device-bridge
+name: zyi07/dsh-mobile-device-bridge
+category: remote
+description:
+  en: 'Connect Android and HarmonyOS phones to DSH from Settings → Mobile devices, over WebUSB in the browser page or through the local adb/hdc CLI: run shell commands, take screenshots, push and pull files, install and uninstall apps, and switch between several phones. On HarmonyOS it can also sign an unsigned HAP with your own Huawei ID — it shows the DevEco OAuth page as a QR code, obtains a debug certificate and a device-bound provisioning profile from AGC, signs locally with hap-sign-tool and installs the result, reading the bundle name from the HAP. Five native tools (devices / exec / screenshot / install / sign_install) let other agents drive a phone. Credentials stay on the local machine.'
+  zh: '在 DSH「设置 → 移动设备」里连接安卓与鸿蒙手机：可用浏览器页面的 WebUSB，也可用运行 DSH 那台机器上的 adb/hdc 命令行。执行 shell、截图、推拉文件、安装卸载应用，多台手机可同时连接并切换。鸿蒙侧还能用自己的华为账号给未签名 HAP 做 ID 自签：以二维码方式打开 DevEco 授权页，向 AGC 申请绑定本机 UDID 的调试证书与 Profile，本地 hap-sign-tool 签好后装机，包名从 HAP 自动读取。另注册了 5 个原生工具（devices / exec / screenshot / install / sign_install）供其他 agent 调用。凭证只保存在本机。'

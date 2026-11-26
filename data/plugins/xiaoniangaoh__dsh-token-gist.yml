@@ -1,0 +1,6 @@
+url: https://github.com/xiaoniangaoh/dsh-token-gist
+name: xiaoniangaoh/dsh-token-gist
+category: usage
+description:
+  en: 'Tracks cumulative input, output, cache-read and cache-write token totals independently of conversation deletion, with a sidebar card, daily breakdown, /token-usage command, and optional Gist backup.'
+  zh: '累计统计输入、输出、缓存读取与缓存写入 token 总用量，删除对话也不会丢失；支持 Gist 备份、按天明细、侧边栏卡片与 /token-usage 命令。'

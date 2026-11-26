@@ -1,0 +1,6 @@
+url: https://github.com/xiaopei-sd/dsh-rename-chats
+name: xiaopei-sd/dsh-rename-chats
+category: session
+description:
+  en: 'Local DSH host bridge and Skill for previewing and renaming session titles through the official session-title service. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '本地 DSH 宿主桥接与 Skill：通过官方 session-title 服务预览并批量重命名会话标题。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

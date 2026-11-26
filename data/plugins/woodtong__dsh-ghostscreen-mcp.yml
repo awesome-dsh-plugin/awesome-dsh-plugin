@@ -1,0 +1,7 @@
+url: https://github.com/woodtong/dsh-ghostscreen-mcp
+name: woodtong/dsh-ghostscreen-mcp
+category: tools
+tarball: https://github.com/woodtong/dsh-ghostscreen-mcp/releases/latest/download/dsh-ghostscreen-mcp.tgz
+description:
+  en: 'Mounts the GhostScreen MCP server into DSH through the official MCP client bridge, exposing 25 mcp__ghostscreen__* tools: off-screen window capture (PrintWindow), window-message/UIA input that does not steal focus, and headless-Edge web automation over CDP, with UIA actions gated on human consent. Ships no binary: on each DSH start it checks the newest GhostScreen release, downloads the package in the background, activates it on the next start and removes older versions; the plugin page reports progress and failures, and a local build can be pinned via config.exePath or GHOSTSCREEN_MCP_EXE. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过官方 MCP 客户端桥接层把 GhostScreen 服务器接入 DSH，暴露 25 个 mcp__ghostscreen__* 工具：屏幕外窗口捕获（PrintWindow）、不抢焦点的窗口消息/UIA 输入、基于 CDP 的无头 Edge 网页自动化，UIA 动作经人工同意门。插件不带二进制：每次 DSH 启动检查最新 GhostScreen Release，后台静默下载、下次启动启用并清理旧版本；插件页显示进度与失败原因，开发时可用 config.exePath 或 GHOSTSCREEN_MCP_EXE 固定本地构建。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

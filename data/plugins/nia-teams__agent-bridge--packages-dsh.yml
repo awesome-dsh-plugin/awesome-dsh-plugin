@@ -1,0 +1,6 @@
+url: https://github.com/nia-teams/agent-bridge/tree/main/packages/dsh
+name: nia-teams/agent-bridge#dsh
+category: notify
+description:
+  en: Connects DeepSeek Harness agents to Nia Teams group chats with two-way messages, per-chat sessions, and human approval cards.
+  zh: 将 DeepSeek Harness 智能体接入 Nia Teams 群聊，支持双向消息、独立群聊会话和人工审批卡片。

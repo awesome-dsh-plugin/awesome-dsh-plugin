@@ -1,0 +1,7 @@
+url: https://github.com/Zoanthamine/dsh-molecular-viewer
+name: Zoanthamine/dsh-molecular-viewer
+category: ui
+description:
+  en: Local molecular 3D viewer for XYZ, SDF, PDB and Gaussian/ORCA coordinates, with trajectory playback, measurements and agent integration.
+  zh: 本地分子三维查看器，支持XYZ、SDF、PDB及Gaussian/ORCA坐标、轨迹播放、测量和智能体联动。
+tarball: https://github.com/Zoanthamine/dsh-molecular-viewer/releases/download/v0.2.2/dsh-molecular-viewer-0.2.2.tgz

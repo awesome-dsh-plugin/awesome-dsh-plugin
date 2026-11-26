@@ -1,0 +1,8 @@
+url: https://github.com/yomisix37/dsh-cite-ask
+name: yomisix37/dsh-cite-ask
+category: ui
+description:
+  en: Ask about selected text in any chat message, quoting the passage into the composer with your own numbered question; annotate several passages in one message and get item-by-item answers instead of copy-pasting excerpts.
+  zh: 在任意消息里选中文字即可就地提问，把这段引文和自动编号的问题一起放进输入框；一条消息可批注多段，让回答逐条对应，不必再复制粘贴原文。
+icon: https://raw.githubusercontent.com/yomisix37/dsh-cite-ask/main/assets/icon-180.png
+tarball: https://github.com/yomisix37/dsh-cite-ask/releases/latest/download/dsh-cite-ask.tgz

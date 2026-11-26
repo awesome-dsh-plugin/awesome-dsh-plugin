@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-bug-report-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-bug-report-check'
+category: 'tools'
+description:
+  en: 'Bug-report hygiene from markdown: a one-line title, the environment, numbered reproduction steps, and the expected-vs-actual pair that makes a bug a bug. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '缺陷报告的书记检查：一行标题、环境信息、编号复现步骤、预期与实际的对照——没有编号步骤的散文不算复现步骤，散文无法重放。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

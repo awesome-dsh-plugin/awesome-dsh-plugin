@@ -1,0 +1,7 @@
+url: https://github.com/SillyMeo-1/dont-guess-ask
+name: SillyMeo-1/dont-guess-ask
+category: agi
+description:
+  en: 'When a requirement was never stated, puts the 2-5 readings it inferred into a choice card in the composer and waits for a pick instead of guessing. While that question waits outside the asking session, a light-red banner in a screen corner shows it, and clicking it jumps back to the session. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '需求没明说时，先把推断出的 2–5 种读法摆进输入区的选择框等你挑，而不是自己猜着往下做；问题还没答、而你没看着那个会话时，屏幕角落会亮起浅红提示条，点它直接跳回提问的会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/SillyMeo-1/dont-guess-ask/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/Darkhe55/dsh-plugin-models-fingerprint
+name: Darkhe55/dsh-plugin-models-fingerprint
+category: model
+description:
+  en: 'Monitors DSH model routes by comparing protocol fingerprints and behavior statistics across sessions, with per-turn cards, route equivalence, official baselines, and drift/quality signals. Fingerprints are evidence, not proof of model identity. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过对比 DSH 会话中的协议指纹与行为统计，监控模型路由变化，提供逐轮卡片、路由等价性、官方基线和漂移/质量信号；指纹是证据，不是模型身份证明。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

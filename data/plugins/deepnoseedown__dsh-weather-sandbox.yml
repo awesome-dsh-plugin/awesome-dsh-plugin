@@ -1,0 +1,6 @@
+url: https://github.com/deepnoseedown/dsh-weather-sandbox
+name: deepnoseedown/dsh-weather-sandbox
+category: theme
+description:
+  en: 'A sea that runs its own weather. Sun and moon rise and set, clouds drift and gather, wind comes from a real pressure grid, and the grass bends in travelling waves. Rain, snow, puddles and melt cycle on their own; a plump character on the grass walks at its own pace and reacts to what the sky does. Four view modes, no dependencies. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '一片自己会变天气的海。日月升落，云飘云散，风从真实的 16×16 气压网格吹来，整片草跟着一道道波伏下去。下雨、下雪、积水、融雪全自动循环；草地上还有一条自己走走停停、会对着天空变化做出反应的大肥鱼。四种看法，零依赖。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

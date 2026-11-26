@@ -1,0 +1,8 @@
+url: https://github.com/Kingzhoudk/dsh-memory-switch
+name: Kingzhoudk/dsh-memory-switch
+category: memory
+icon: https://raw.githubusercontent.com/Kingzhoudk/dsh-memory-switch/main/assets/icon-180.png
+tarball: https://github.com/Kingzhoudk/dsh-memory-switch/releases/latest/download/dsh-memory-switch.tgz
+description:
+  en: 'Per-conversation memory switch in the composer tool row, plus `/memory on|off|toggle|status` for Web, terminal, ACP/SDK and IM conversations. Turned off, that conversation stops exchanging information with other conversations: session search and trace tools and the shared research cache are denied, cross-conversation references, team relay and Agent Teams mailbox messages are filtered out of the request, IM group archives and external-agent bridges are denied, and OpenViking recall, capture and commits are gated when that plugin is installed. The gate works both ways: `searchSessions` results are filtered by the same durable state, so an off conversation is not found by other conversations (`hideFromSearch`). State is folded from the session log, so reload, resume and fork restore it, subagents inherit it, `defaultEnabled: false` starts a profile off, and the switch is on by default.'
+  zh: '输入框工具行里的按会话记忆开关，另提供 `/memory on|off|toggle|status`，Web、终端、ACP/SDK 与 IM 会话都能用。关闭后该对话停止与其他对话交换信息：跨会话历史搜索与追溯工具、共享的研究缓存被拒绝；跨会话 @ 引用、团队中继与 Agent Teams 邮箱消息在请求里被过滤；IM 群归档与外部 agent 桥被拒绝；安装 OpenViking 时其回忆、捕获与提交也被拦截。闸门是双向的：`searchSessions` 结果用同一份持久状态过滤，关闭的会话不会被别的会话搜到（`hideFromSearch`）。状态从会话日志折叠得出，刷新、恢复与分叉都会还原，子代理继承该状态，`defaultEnabled: false` 可让整个 profile 默认关闭，插件本身默认开启。'

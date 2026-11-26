@@ -1,0 +1,6 @@
+url: https://github.com/gengyabc/baicai-edu/tree/main/math-board
+name: gengyabc/baicai-edu#math-board
+category: ui
+description:
+  en: 'Math expression workspace opened from the DSH Web composer toolbar: a quantity board (shapes each carrying a value and a colour, groupable and mergeable), a geometry board (points, segments, polygons, circles, parallelograms, rectangles) and a teacher demo page, submitted as a read-only snapshot the student sends themselves.'
+  zh: '从 DSH Web 输入框工具栏打开的数学表达工作台：数量画板（图案各带数值与颜色，可圈组、可同形合并）、几何画板（点、线段、多边形、圆、平行四边形、矩形）与教师演示页；以只读快照提交，由学生自己发送。'

@@ -1,0 +1,6 @@
+url: https://github.com/at3623/dsh-vocab-review
+name: at3623/dsh-vocab-review
+category: tools
+description:
+  en: 'Vocabulary review for English exams: import the underlined words from a worksheet image (exam high-frequency words in the same image that are not underlined are added too) or the exam high-frequency words from a plain article image, then quiz one word at a time with three-tier grading, plugin-side verdict checks, spaced repetition with a per-word ease factor, daily quotas, due reminders, a weak-word book with CSV/JSON/Anki export, and an optional built-in QQ bot that accepts text and images.'
+  zh: '英语考试单词复习：上传划线单词表图片提取划线词（同图中未划线的考试高频词也会一起收录），或从无划线文章图片里挑出考试高频词，再逐词抽查；三档判定 + 插件复核、带难度因子的间隔复习、每日限额与到期提醒、可导出 CSV/JSON/Anki 的薄弱词本，以及可选的内置 QQ 机器人（QQ 里也能发文字和图片）。'

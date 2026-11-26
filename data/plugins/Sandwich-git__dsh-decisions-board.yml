@@ -1,0 +1,17 @@
+# 提交到 awesome-dsh-plugin 的条目文件。
+# 目标路径：data/plugins/<Sandwich-git>__dsh-decisions-board.yml（文件名必须与你的 GitHub 账号一致）
+# 每个 PR 只加这一个文件；两个 README 由脚本生成，不要手改。
+
+url: https://github.com/Sandwich-git/dsh-decisions-board
+name: Sandwich-git/dsh-decisions-board
+category: ui
+description:
+  en: 'Adds a pending-decision board to the session header: agents record a decision as they ask it, the board lists each entry with its options and their costs, clicking one fills the composer with a reply like "Q-2 选 B" without sending it, and a user message that answers an entry marks it decided. Each session keeps its own file, so boards never leak across sessions.'
+  zh: '在会话标题行加一个待拍板看板：agent 提问时顺手把决策记进去，看板列出每条决策的选项与各自代价，点选项只把「Q-2 选 B」这样的回复填进输入框而不发送，人回答后条目自动标记为已定。每个会话一份数据，看板之间互不可见。'
+
+# 市场卡片图标（GitHub 托管的位图）。assets/icon-180.png 已就绪，推上 main 后把 Sandwich-git 换成你的账号即可。
+icon: https://raw.githubusercontent.com/Sandwich-git/dsh-decisions-board/main/assets/icon-180.png
+
+# 可选：预构建 tarball。仓库能从源码装就不必填；填了则市场优先给下载链接。
+# 资产名不要带版本号，否则用 latest/download/ 提交当天有效、下次发版就 404。
+# tarball: https://github.com/Sandwich-git/dsh-decisions-board/releases/latest/download/dsh-decisions-board.tgz

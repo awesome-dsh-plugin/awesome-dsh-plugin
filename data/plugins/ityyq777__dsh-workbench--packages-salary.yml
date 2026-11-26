@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/salary
+name: ityyq777/dsh-workbench#salary
+category: tools
+description:
+  en: 'Salary records for DSH: track pay components, deductions and net pay by pay date, with monthly stats and a full-width records view.'
+  zh: 'DSH 工资记录：按发薪日期记录工资构成、社保与个税扣款、实发金额，支持年度统计与按月聚合。'

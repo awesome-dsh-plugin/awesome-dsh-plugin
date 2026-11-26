@@ -1,0 +1,6 @@
+url: https://github.com/lwfjyjy/dsh-sidebar-file-search
+name: lwfjyjy/dsh-sidebar-file-search
+category: tools
+description:
+  en: 'Adds a search button at the top-right of the sidebar that opens a Vite-style floating window to fuzzy-search workspace files and folders by path; selecting a file opens it in the right preview.'
+  zh: '在右侧栏右上角新增搜索按钮，打开 Vite 风格悬浮窗按路径模糊搜索工作区文件/文件夹，选中后在右侧预览打开。'

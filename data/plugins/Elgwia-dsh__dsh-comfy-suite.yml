@@ -1,0 +1,6 @@
+url: https://github.com/Elgwia-dsh/dsh-comfy-suite
+name: Elgwia-dsh/dsh-comfy-suite
+category: vision
+description:
+  en: 'Merges three MIT ComfyUI plugins into one bundle: workflow library, local image generation and editing (draw, inpaint, outpaint, character, upscale) through a local ComfyUI, plus a service launcher, gallery, style library and prompt wardrobe. Personal merge project, not the upstream version.'
+  zh: '把三个 MIT 许可的 ComfyUI 插件合并成一个 bundle：工作流库、经本机 ComfyUI 的本地出图与修图（出图、局部重绘、扩图、捏人、放大），外加服务启停、作品库、风格库与提示词衣柜。个人整合项目，非上游官方版本。'

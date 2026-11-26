@@ -1,0 +1,7 @@
+url: https://github.com/naofu233/dsh-panel-nav-fold
+name: naofu233/dsh-panel-nav-fold
+category: ui
+description:
+  en: 'Adds a collapsible "Panel Navigation" header row to the DSH sidebar: it folds the global panel rows and plugin sidebar entries, and expands them in place on click.'
+  zh: '在 DSH 左侧边栏加一个可折叠的「面板导航栏」标题行，收起全局面板行和插件侧边栏入口，点击原位展开。'
+icon: https://raw.githubusercontent.com/naofu233/dsh-panel-nav-fold/main/assets/icon-180.png

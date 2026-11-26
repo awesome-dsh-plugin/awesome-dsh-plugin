@@ -1,0 +1,8 @@
+url: https://github.com/easonandkhalil/dsh-poker-mind
+name: easonandkhalil/dsh-poker-mind
+category: fun
+description:
+  en: "A side-panel Texas Hold'em table with three fixed-style AI opponents and a live equity, odds and range coach. Runs locally; no network or account."
+  zh: "DSH 右侧浮动德州扑克牌桌，三位固定风格 AI 对手与实时胜率、赔率、范围教练。完全本地运行，无需联网或账号。"
+icon: https://raw.githubusercontent.com/easonandkhalil/dsh-poker-mind/main/assets/icon-180.png
+tarball: https://github.com/easonandkhalil/dsh-poker-mind/releases/download/v0.1.2/dsh-poker-mind-0.1.2.tgz
