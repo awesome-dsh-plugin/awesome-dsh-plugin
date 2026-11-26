@@ -1,0 +1,6 @@
+url: https://github.com/ECNU/EduWork/tree/main/packages/dsh-decision
+name: ECNU/EduWork#dsh-decision
+category: tools
+description:
+  en: 'Evaluate supplied material through a SystemOne-compatible service for label selection, condition probabilities and rubric scores, using a native DSH tool and companion skill; requires a user-configured endpoint, model and authentication.'
+  zh: '通过 SystemOne 兼容服务对给定材料进行标签分类、条件概率判断和量表评分，提供原生 DSH 工具与配套技能；需自行配置服务地址、模型和认证。'

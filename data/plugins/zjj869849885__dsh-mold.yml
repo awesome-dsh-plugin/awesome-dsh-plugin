@@ -1,0 +1,6 @@
+url: https://github.com/zjj869849885/dsh-mold
+name: zjj869849885/dsh-mold
+category: workflow
+description:
+  en: 'Local SQLite mold lifecycle management with inspection, maintenance, repair, usage, scrap, and inventory workflows. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '本地 SQLite 模具全生命周期管理，覆盖点检、保养、维修、领用归还、报废和盘点。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

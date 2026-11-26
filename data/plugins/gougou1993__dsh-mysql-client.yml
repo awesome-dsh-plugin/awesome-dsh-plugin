@@ -1,0 +1,7 @@
+url: https://github.com/gougou1993/dsh-mysql-client
+name: gougou1993/dsh-mysql-client
+category: dev
+description:
+  en: 'A MySQL client plugin for DeepSeek Harness (DSH). It adds a MySQL Client entry to the left sidebar: manage connections, open multiple query tabs, run and explain SQL, browse/edit table structures and indexes, and administer databases and users — all inside the Harness Web UI.'
+  zh: '一个面向 DeepSeek Harness（DSH）的 MySQL 客户端插件。它在左侧侧边栏添加「MySQL 客户端」入口，可以管理连接、打开多个查询标签、执行与解释 SQL、查看/编辑表结构与索引，以及管理数据库和用户——全部在 Harness Web UI 内完成。'
+icon: https://raw.githubusercontent.com/gougou1993/dsh-mysql-client/refs/heads/main/icon.png

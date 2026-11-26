@@ -1,0 +1,7 @@
+url: https://github.com/legendbone/dsh-prompt-enhancer
+name: legendbone/dsh-prompt-enhancer
+category: ui
+description:
+  en: 'Adds a sparkle button to the chat composer that rewrites a plain-text draft using the currently selected model and puts the result back in the input box.'
+  zh: '在聊天输入框添加星光按钮，使用当前选中的模型重写纯文本草稿，并把结果回填到输入框。'
+icon: https://raw.githubusercontent.com/legendbone/dsh-prompt-enhancer/main/assets/icon-180.png

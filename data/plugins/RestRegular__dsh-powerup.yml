@@ -1,0 +1,6 @@
+url: https://github.com/RestRegular/dsh-powerup
+name: RestRegular/dsh-powerup
+category: ui
+description:
+  en: 'Power-Up adds small, opt-in upgrades to DeepSeek Harness: a right-click action menu on Trajectory records to copy, quote, export, fork and copy a step reference, an optional stop reason for background jobs, an in-place version installer for third-party plugins, and a sidebar launcher that turns the panel list into a drag-sortable icon grid with folders plus tiles to return to the conversation, restart or close DSH. It also lets you switch between running sessions from the conversation title and locate the current session in the workspace list. Every feature can be toggled independently on the Power-Up page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Power-Up 为 DeepSeek Harness 提供一组可独立开关的小增强：在轨迹记录上右键即可复制、引用、导出、分叉并复制步骤引用；为后台任务手动停止时填写停止原因，原因会附在结束提示里；在插件页为第三方插件提供就地版本安装（读注册表版本、先卸后装、可一键安装）；把左侧边栏面板列表变成可拖拽排序、可分组的图标网格，并自带「返回会话」「重启」「关闭」磁贴；点击会话标题可在运行中的会话间切换，还能在工作区列表里定位当前会话。所有功能均可在 Power-Up 页面单独开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

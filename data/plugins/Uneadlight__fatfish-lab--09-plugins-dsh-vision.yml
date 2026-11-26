@@ -1,0 +1,7 @@
+url: https://github.com/Uneadlight/fatfish-lab/tree/main/09-plugins/dsh-vision
+name: "Uneadlight/fatfish-lab#dsh-vision"
+tarball: https://github.com/Uneadlight/fatfish-lab/releases/download/plugins-0.6.25/un10086-dsh-vision-0.2.3.tgz
+category: vision
+description:
+  en: "Image understanding: tries Zhipu GLM-4V first for fast flagship quality, falls back to local Ollama Qwen2.5-VL when offline."
+  zh: "看图理解：智谱 GLM-4V 优先（快、旗舰质量），本地 Ollama Qwen2.5-VL 兜底（离线）。"

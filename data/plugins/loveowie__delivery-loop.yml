@@ -1,0 +1,8 @@
+url: https://github.com/loveowie/delivery-loop
+name: loveowie/delivery-loop
+category: workflow
+description:
+  en: 'End-to-end delivery loop: an approved specification becomes a task graph that isolated DSH subagent workers implement, followed by verification, independent review and acceptance, with a cross-repository board that can pause, resume, cancel or raise a run budget.'
+  zh: '端到端交付闭环：把已批准的规格转成任务图，由隔离的 DSH 子代理 Worker 实现，再经过验证、独立评审与验收；跨仓库看板可暂停、恢复、取消运行或调整预算。'
+icon: https://raw.githubusercontent.com/loveowie/delivery-loop/main/assets/icon-180.png
+tarball: https://github.com/loveowie/delivery-loop/releases/download/v0.2.0/dsh-delivery-loop-0.2.0.tgz

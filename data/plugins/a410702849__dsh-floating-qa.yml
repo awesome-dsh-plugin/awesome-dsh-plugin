@@ -1,0 +1,6 @@
+url: https://github.com/a410702849/dsh-floating-qa
+name: a410702849/dsh-floating-qa
+category: ui
+description:
+  en: Pin any question/answer pair from a DSH conversation into a per-session floating quick-reference list, with draggable placement, one-line previews, a configurable limit, and a full-text overlay.
+  zh: 把 DSH 会话中的任意问答钉成按会话隔离的可拖拽悬浮速查列表，支持单行摘要、可配置上限与点击查看问答详情的遮罩。

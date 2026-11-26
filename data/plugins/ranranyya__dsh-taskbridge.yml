@@ -1,0 +1,6 @@
+url: https://github.com/ranranyya/dsh-taskbridge
+name: ranranyya/dsh-taskbridge
+category: workflow
+description:
+  en: 'Cross-host task delegation bridge for DSH: let your upper host focus on architecture planning and delivery review while offloading heavy coding and test loops to DSH over 11 bounded MCP tools, with one-click host integration, isolated Git worktrees and cross-subtask reuse, silent long waits, and per-call permission approval (supports Codex and Antigravity).'
+  zh: '跨宿主派工桥接插件：让上层宿主端专注架构规划与交付验收，将繁重编码与测试调测交给 DSH 黑盒执行；通过 11 个有界 MCP 工具提供一键宿主集成、隔离 Git 工作树与跨子包复用、静默长等、按参数指纹单次权限审批及结构化验收（已支持 Codex 与 Antigravity）。'

@@ -1,0 +1,8 @@
+url: https://github.com/Tanjintao2/dsh-version-history
+name: Tanjintao2/dsh-version-history
+category: git
+description:
+  en: 'Sidebar panel for local git repositories: tags as a version timeline with the files and commits each tag brought, a disk health and SMART column beside it, LAN git sharing over Smart HTTP, and a card that binds a repo to GitHub for one-click pushes. It renders snapshots produced by the user own PowerShell scripts and ships the routes that run them.'
+  zh: '本地 git 仓库的侧边栏面板：按标签列出每个版本的改动文件与提交，旁边一栏是磁盘健康与 SMART，能用局域网 Smart HTTP 分享裸仓库，还有一张把仓库绑定到 GitHub 一键推送的卡片。展示的数据来自用户自己 PowerShell 脚本生成的快照，插件提供面板与调用这些脚本的路由。'
+icon: https://raw.githubusercontent.com/Tanjintao2/dsh-version-history/main/docs/icon.png
+tarball: https://github.com/Tanjintao2/dsh-version-history/releases/download/v0.1.45/dsh-version-history-0.1.45.tgz

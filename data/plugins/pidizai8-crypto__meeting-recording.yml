@@ -1,0 +1,8 @@
+url: https://github.com/pidizai8-crypto/meeting-recording
+name: pidizai8-crypto/meeting-recording
+category: voice
+description:
+  en: Records the microphone or Windows system audio, transcribes locally with SenseVoice, groups turns by voice, and keeps a rich meeting notebook and history.
+  zh: 录制麦克风或 Windows 系统声音，用本机 SenseVoice 转写，按声音区分发言人，并保留富文本会议记事本与历史记录。
+icon: https://raw.githubusercontent.com/pidizai8-crypto/meeting-recording/main/assets/icon-180.png
+tarball: https://github.com/pidizai8-crypto/meeting-recording/releases/latest/download/dsh-meeting-recorder.tgz

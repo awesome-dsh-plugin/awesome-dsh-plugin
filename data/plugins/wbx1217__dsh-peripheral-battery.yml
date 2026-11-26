@@ -1,0 +1,6 @@
+url: https://github.com/wbx1217/dsh-peripheral-battery
+name: wbx1217/dsh-peripheral-battery
+category: tools
+description:
+  en: Windows-only battery levels for wireless peripherals in DSH, with a bottom bar, agent tools, low-battery notifications and an adapter market.
+  zh: 在 DSH 中读取 Windows 无线外设电量，提供底栏、agent 工具、低电量通知和适配器市场。

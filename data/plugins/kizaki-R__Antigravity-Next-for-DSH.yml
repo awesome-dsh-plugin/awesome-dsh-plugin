@@ -2,6 +2,6 @@ url: https://github.com/kizaki-R/Antigravity-Next-for-DSH
 name: kizaki-R/Antigravity-Next-for-DSH
 category: model
 description:
-  en: 'Antigravity provider for DeepSeek Harness: resolves the OAuth client from the locally installed official desktop app and supports multiple accounts with quota-based automatic switching.'
-  zh: 'DeepSeek Harness 的 Antigravity 模型供應商：從本機安裝的官方桌面應用程式解析 OAuth client，支援多帳號管理與額度自動切換。'
+  en: 'Antigravity ACP provider for DeepSeek Harness: installs and runs the official agy CLI with zero desktop app setup, live quota tracking, MCP tools, and image input. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的 Antigravity ACP 模型供應商：免預裝桌面版即可一鍵安裝官方 CLI、登入 Google 帳號、檢視即時額度，並支援 MCP 工具橋接與圖片輸入。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
 icon: https://raw.githubusercontent.com/kizaki-R/Antigravity-Next-for-DSH/main/assets/icon-512.png

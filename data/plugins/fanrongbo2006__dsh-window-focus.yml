@@ -1,0 +1,6 @@
+url: https://github.com/fanrongbo2006/dsh-window-focus
+name: fanrongbo2006/dsh-window-focus
+category: notify
+description:
+  en: 'Focuses the DeepSeek Harness desktop window when you click an existing desktop notification, such as an approval request or a question prompt. It relaunches the app so the single-instance handler restores and raises the window. Desktop app only; it does not create notifications itself. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '点击已有的桌面通知（如审批请求、提问提醒）时，把 DeepSeek Harness 桌面窗口恢复到前台：通过再次启动应用触发单实例聚焦。仅桌面端生效，不额外发送通知。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

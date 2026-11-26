@@ -1,0 +1,6 @@
+url: https://github.com/benz-ai-x/dsh-research-graph
+name: benz-ai-x/dsh-research-graph
+category: session
+description:
+  en: "Session graph for DeepSeek Harness: find a Session, branch from any completed turn, and merge 2–3 Sessions into one new Session; saves Knowledge Cards with exact turn-level sources for reuse in follow-up Sessions, and replaces the built-in sidebar to add Workspace folders."
+  zh: "DeepSeek Harness 的会话图谱：找回会话、从任意已完成的轮次分支、把 2–3 个会话汇合成一个新会话；保存带精确轮次来源的知识卡片并在后续会话中复用，并以自带侧栏替换内置侧栏来提供工作区文件夹。"

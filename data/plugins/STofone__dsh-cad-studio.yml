@@ -1,0 +1,8 @@
+url: https://github.com/STofone/dsh-cad-studio
+name: STofone/dsh-cad-studio
+category: tools
+description:
+  en: 'Parametric CAD for DSH with a FreeCAD kernel: a declarative feature list (sketches with constraints, extrude, revolve, loft, sweep, draft, standard holes), STEP-reference assemblies with joints and mates, section and sheet-metal unfold output, and a live 3D panel with tabs, picking, per-part appearance and an edit ledger that tells the agent what you changed by hand. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DSH 的参数化建模：FreeCAD 内核 + 声明式特征列表（带约束的草图、拉伸、旋转、放样、扫掠、拔模、标准孔）、引用 STEP 的装配与关节、截面与钣金展开，配套多页签实时 3D 面板（点选、单件外观）与改动账本——你手动改了什么，会话下次动手前会先看到。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/STofone/dsh-cad-studio/main/docs/preview.png
+# re-run: previous PR check hung on a runner

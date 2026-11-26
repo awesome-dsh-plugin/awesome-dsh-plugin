@@ -1,0 +1,7 @@
+url: https://github.com/PolarVag/dsh-quote-shot
+name: PolarVag/dsh-quote-shot
+category: ui
+description:
+  en: 'Quote selections and attach region screenshots as workspace file references in DSH Desktop.'
+  zh: '在 DSH Desktop 中引用选中文字，并把区域截图作为工作区文件引用附加到输入框。'
+tarball: https://github.com/PolarVag/dsh-quote-shot/releases/latest/download/dsh-quote-shot.tgz

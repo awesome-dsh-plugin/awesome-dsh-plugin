@@ -1,0 +1,6 @@
+url: https://github.com/vmaoserver/dsh-live-tps
+name: vmaoserver/dsh-live-tps
+category: ui
+description:
+  en: 'Live output speed (tok/s) in the composer: a resident reading that stays put through pauses and Turns, counting the stream the conversation already receives, so nothing extra is requested.'
+  zh: '输入框下方的实时输出速度（tok/s）：常驻读数，跨停顿与轮次都不会消失；只用会话已收到的流计数，不额外发请求。'
