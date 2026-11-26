@@ -2,6 +2,6 @@ url: https://github.com/Merziller/prompt-fusion
 name: Merziller/prompt-fusion
 category: ui
 description:
-  en: 'One DSH button for original-preserving rule guidance, stop and undo. Shared CLI, portable Skills, MCP stdio/Streamable HTTP and REST/OpenAPI support capability-based integration; current core is not a semantic rewriter.'
-  zh: '一个DSH按钮提供原文保留的规则指引、停止与撤销；共用CLI、便携Skill、MCP stdio/Streamable HTTP和REST/OpenAPI，按能力接入不同智能体。当前核心不是语义改写器。'
-tarball: https://github.com/Merziller/prompt-fusion/releases/download/v0.3.1/prompt-fusion-0.3.1.tgz
+  en: 'Prompt Fusion: one DSH button for semantic prompt enhancement, fidelity checks, stop and undo. Shared CLI, Skills, MCP and REST; produced by 禾杨智绘工作室 and developed by Merziller. Explicit model configuration outside DSH.'
+  zh: 'Prompt Fusion：单按钮语义增强、保真检查、停止与撤销；共用CLI、Skill、MCP与REST。禾杨智绘工作室出品，Merziller开发；DSH外显式配置模型。'
+tarball: https://github.com/Merziller/prompt-fusion/releases/download/v0.5.1/prompt-fusion-0.5.1.tgz
