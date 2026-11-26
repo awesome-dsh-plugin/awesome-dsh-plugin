@@ -1,0 +1,6 @@
+url: https://github.com/guhanfei-ai/dsh-workspace-cake
+name: guhanfei-ai/dsh-workspace-cake
+category: ui
+description:
+  en: 'Workspace-list power bundle: right-click shortcuts (file tree, terminal, copy path, Cursor/VS Code), workspace pinning, recency ordering, running/unread status marks, and a collapse-all button.'
+  zh: '工作区列表全家桶：右键快捷入口（文件树、终端、复制路径、Cursor/VS Code）、置顶工作区、最新发言自动上浮、运行中呼吸与未读标记、一键折叠全部工作区。'
