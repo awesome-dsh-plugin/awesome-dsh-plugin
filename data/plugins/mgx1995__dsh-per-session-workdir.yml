@@ -1,0 +1,6 @@
+url: https://github.com/mgx1995/dsh-per-session-workdir
+name: mgx1995/dsh-per-session-workdir
+category: session
+description:
+  en: 'Give every conversation its own creation-time-named working folder, keeping files from separate sessions isolated.'
+  zh: '为每个会话自动建立以创建时间命名的独立工作文件夹，让各会话的文件彼此隔离。'
