@@ -1,0 +1,6 @@
+url: https://github.com/gpboyer2/dsh-finish-line
+name: gpboyer2/dsh-finish-line
+category: workflow
+description:
+  en: When every session in one workspace has finished, runs two closing steps in series — moves shared functions from the diff into utility modules, then critically reviews the changes and commits and pushes them in batches.
+  zh: 本工作区所有会话结束后，自动串行跑两段收尾：把改动里的公共函数整理进 utils 模块，再批判式审一遍 diff 并分批提交推送。
