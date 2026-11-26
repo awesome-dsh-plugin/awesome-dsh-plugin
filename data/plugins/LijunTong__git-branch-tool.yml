@@ -1,0 +1,5 @@
+url: https://github.com/LijunTong/git-branch-tool
+name: LijunTong/git-branch-tool
+category: git
+description:
+  en: 'Switch and create Git branches from the DSH conversation, with repository init and a configurable chip position.'
