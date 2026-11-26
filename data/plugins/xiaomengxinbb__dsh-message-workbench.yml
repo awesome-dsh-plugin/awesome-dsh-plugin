@@ -1,0 +1,7 @@
+url: https://github.com/xiaomengxinbb/dsh-message-workbench
+name: xiaomengxinbb/dsh-message-workbench
+category: session
+description:
+  en: Stop a reply, edit and resend an earlier message with its attachments, and optionally roll back recorded file changes from that turn onward.
+  zh: 停止回复，编辑并重发带有原附件的历史消息，也可回退从该轮起记录的文件改动。
+tarball: https://github.com/xiaomengxinbb/dsh-message-workbench/releases/download/v0.2.4/dsh-message-workbench-0.2.4.tgz
