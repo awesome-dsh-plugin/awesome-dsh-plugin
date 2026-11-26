@@ -1,0 +1,7 @@
+url: https://github.com/sevenqcx/dsh-seven-inbox
+name: sevenqcx/dsh-seven-inbox
+category: ui
+description:
+  en: 'Attention-first session inbox sidebar that preserves native DSH chrome, with persistent multi-workspace filtering (invert and reset), elevated Working cards, and passive-context queue filtering.'
+  zh: '保留 DSH 原生侧栏框架的注意力会话收件箱，支持工作区多选筛选与记忆（含反选/重置）、运行中悬浮卡片，并过滤被动上下文队列避免误报运行中。'
+icon: https://raw.githubusercontent.com/sevenqcx/dsh-seven-inbox/main/assets/icon-180.png
