@@ -7568,6 +7568,7 @@ dsh plugin --profile web add dshmarket
 - [Minokun/dsh-serper-search](https://github.com/Minokun/dsh-serper-search) — 互补式网页搜索 provider：每次 web_search 由 DeepSeek 官方 Search API（主）与 serper.dev 的 Google 结果（补）按固定 2:1 交错合并。两路均为直连检索、无辅助模型调用；来源按 URL 去重，官方长摘要截断注入，单路超时自动降级到另一路。
 - [minyang-chen/dsh-stock-lookup](https://github.com/minyang-chen/dsh-stock-lookup) — 通过 SEC EDGAR 将公司名称或股票代码解析为已验证的股票代号，再从 yahoo-finance2 获取实时行情，包括价格、市盈率、每股收益、市值、52周区间和股息率。
 - [mirror9933/dsh-pixmart](https://github.com/mirror9933/dsh-pixmart) — DSH 电商商品图生成：24 个提示词模块覆盖主图、详情图与广告图，支持参考图风格复刻、批量生成，以及作品库实时预览。
+- [MistRipple/dsh-rea-gate](https://github.com/MistRipple/dsh-rea-gate) — 按会话门控 REA 的逆向工具：REA 在宿主里只安装、注册一次，新会话默认看不到 mcp__rea__* 工具，在输入框工具条的开关上打开才出现，关掉即撤走且无需重启 DSH；agent 也可通过 rea_gate 工具切换，侧栏面板负责安装/更新 REA 与引擎状态。
 - [miuzel/harness-reflex#dsh-reflex](https://github.com/miuzel/harness-reflex/tree/main/packages/dsh-reflex) — 面向 dsh 的 System One 决策运行时。提供不消耗生成 token 的快速工具（选择、评分、安全筛查、完成度核验），并在模型不调用任何工具的情况下自动干预：把超长工具输出逐段交给 System One 判定取舍后裁剪、在确认停滞时拒绝重复调用、用真实工具证据核验完成声明、对反复失败的重试给出纠正。npm 包为 dsh-harness-reflex（插件）与 harness-reflex（核心，同时是 stdio MCP server）。
 - [Miyamiz39/dsh-consensus](https://github.com/Miyamiz39/dsh-consensus) — Consensus 学术检索与研究 Agent，支持原生 OAuth 与会话富交互论文卡片。
 - [mjnhmd/dsh-zspace#dsh-plugin](https://github.com/mjnhmd/dsh-zspace/tree/master/dsh-plugin) — 极空间 NAS 一体化插件：90 个 MCP 工具 + 官方连接器 + 7 个 skill，覆盖文件查重与孤儿文件审计、笔记、标签、影视库归类与语义检索索引维护；鉴权复用极空间桌面客户端本地代理会话，不存密码也不需填 NAS 地址。
