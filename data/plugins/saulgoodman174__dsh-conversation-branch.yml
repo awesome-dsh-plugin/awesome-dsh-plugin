@@ -1,0 +1,8 @@
+url: https://github.com/saulgoodman174/dsh-conversation-branch
+name: saulgoodman174/dsh-conversation-branch
+category: session
+description:
+  en: 'Rewind to any earlier message by branching the conversation into a new session, edit the follow-up prompt before continuing, and export a selected range of messages as a new conversation.'
+  zh: '把对话回退到任意一条较早的消息并分支为新会话，继续前可编辑提示词，也可把选中的一段消息导出为新对话。'
+icon: https://raw.githubusercontent.com/saulgoodman174/dsh-conversation-branch/main/assets/icon-180.png
+tarball: https://github.com/saulgoodman174/dsh-conversation-branch/releases/latest/download/dsh-conversation-branch.tgz
