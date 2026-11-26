@@ -1,0 +1,7 @@
+url: https://github.com/swrabbit/dsh-keeper
+name: swrabbit/dsh-keeper
+category: session
+description:
+  en: 'DSH Keeper: browse sessions by workspace, archive, trash or permanently delete them, clean blank sessions, toggle sidebar entries of installed plugins, and configure task notifications.'
+  zh: 'DSH 管家：按工作区浏览会话，归档、移入回收站或永久删除，清理空会话；开关已装插件的侧栏入口，并设置任务通知。'
+icon: https://raw.githubusercontent.com/swrabbit/dsh-keeper/main/docs/screenshots/icon-512.png
