@@ -1,0 +1,7 @@
+url: https://github.com/TianYi666666/dsh-ego-browser
+name: TianYi666666/dsh-ego-browser
+category: browser
+icon: https://raw.githubusercontent.com/TianYi666666/dsh-ego-browser/main/assets/icon-180.png
+description:
+  en: 'Gives the agent four tools for the ego lite browser installed on the machine — run an ego-browser script in the real signed-in profile, open a URL and read its visible text and accessibility snapshot, list task spaces, and print the CLI usage guide — picking a CLI build that matches the running ego lite version.'
+  zh: '为本机的 ego lite 浏览器提供四个 agent 工具：在真实的已登录配置里执行 ego-browser 脚本、打开网址并读取可见正文与无障碍快照、列出任务空间、打印 CLI 用法指南；会自动挑出与正在运行的 ego lite 版本匹配的 CLI。'
