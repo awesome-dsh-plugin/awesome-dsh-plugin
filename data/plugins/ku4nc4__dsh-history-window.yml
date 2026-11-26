@@ -1,0 +1,6 @@
+url: https://github.com/ku4nc4/dsh-history-window
+name: ku4nc4/dsh-history-window
+category: ui
+description:
+  en: Shrinks the first session-history page so an old session's transcript paints sooner instead of rendering every turn at once.
+  zh: 缩小首次会话历史分页，打开旧会话时更快显示对话内容，而不是一次性渲染全部回合。
