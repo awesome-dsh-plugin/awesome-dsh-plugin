@@ -1,7 +1,7 @@
 url: https://github.com/JiuYue-sky/dsh-ww-auto-model-extractor
 name: JiuYue-sky/dsh-ww-auto-model-extractor
 category: tools
-tarball: https://github.com/JiuYue-sky/dsh-ww-auto-model-extractor/releases/download/v0.1.0-beta.2/dsh-ww-auto-model-extractor-0.1.0-beta.2.tgz
+tarball: https://github.com/JiuYue-sky/dsh-ww-auto-model-extractor/releases/download/v0.1.0/dsh-ww-auto-model-extractor-0.1.0.tgz
 icon: https://raw.githubusercontent.com/JiuYue-sky/dsh-ww-auto-model-extractor/main/icon.png
 description:
   en: 'Windows-only Wuthering Waves character extraction and Blender showcase pipeline with 5 dsh_ww_* tools and 1 bundled skill: extracts meshes, textures, and baked animations from a local game install via bundled CUE4Parse CLI (ww-extract.exe), builds an isolated Blender toon-shaded .blend without touching host preferences, and outputs a UE handoff manifest.'
