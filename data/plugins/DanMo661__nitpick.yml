@@ -1,0 +1,8 @@
+url: https://github.com/DanMo661/nitpick
+name: DanMo661/nitpick
+category: skill
+description:
+  en: >-
+    Adversarial fresh-user audit skill (SKILL.md): spawn an independent subagent to use your deliverable like a first-time stranger - clone, read docs, run every step, compare outputs - and nitpick it report-only; the main loop verifies each finding then fixes with a repro+verify command list; a second subagent regression-verifies every fix with hard evidence (watchers, md5, fault injection) and hunts new angles (idempotency, non-default CWD, env overrides, bad args, interrupts), looping until green or budget-out. Includes audit-only mode, RISK/BUG/DOC/UX/NIT severity taxonomy, secrets redaction rules, battle-tested lessons, fill-in prompt templates, and a sanitized sample report.
+  zh: >-
+    对抗式新用户实测验收技能（SKILL.md）：派独立子 agent 扮演第一次接触项目的用户，照文档完整走一遍（clone/安装/执行/对照数据）并挑刺（只报告不修复）；主循环逐条核实后带着复现+验证命令清单返修；第二轮子 agent 用硬证据（文件监听/md5/故障注入）逐条回归验证，并换角度猎杀新问题（幂等性/非默认 CWD/变量覆盖/非法参数/中断），循环到全绿或预算收尾。支持只挑刺模式、RISK/BUG/DOC/UX/NIT 五级分类、secrets 脱敏红线，附实战教训、填空式任务书模板与脱敏样例报告。
