@@ -2,5 +2,5 @@ url: https://github.com/drscrewdriver/dsh-manage-session
 name: drscrewdriver/dsh-manage-session
 category: session
 description:
-  en: 'DSH session console: archive management — search, restore and delete archived sessions by workspace. Supports session workspace move management, session deletion (tombstoned/hidden) and physical sweep; restores archived sessions; scans and repairs sessions whose standard jsonl files became unreadable because of a faulty plugin; and supports adjusting the display to 1–6 columns per row.'
-  zh: 'DSH 会话管理台：archive 管理——可按工作区搜索、恢复和删除已归档会话；支持会话工作区移动管理、会话删除（墓碑化隐藏）和物理扫出；具备恢复会话能力；支持因插件异常导致部分标准 jsonl 格式无法读取的扫描与修复；支持每行 1–6 列显示调整。'
+  en: 'DSH session console: archive management — search, restore and delete archived sessions by workspace. Supports session workspace move management, session deletion (tombstoned/hidden) and physical sweep; restores archived sessions; scans and repairs sessions whose standard jsonl files became unreadable because of a faulty plugin; and supports adjusting the display to 1–6 columns per row. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 会话管理台：archive 管理——可按工作区搜索、恢复和删除已归档会话；支持会话工作区移动管理、会话删除（墓碑化隐藏）和物理扫出；具备恢复会话能力；支持因插件异常导致部分标准 jsonl 格式无法读取的扫描与修复；支持每行 1–6 列显示调整。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
