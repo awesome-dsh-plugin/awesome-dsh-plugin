@@ -1,0 +1,6 @@
+url: https://github.com/architect321/dsh-hindsight-panel
+name: architect321/dsh-hindsight-panel
+category: memory
+description:
+  en: 'Hindsight memory viewer for coding agents: bank status, the five fixed memory pages with model-written Chinese summaries, paged memory facts and session documents, on-disk locations, a self-check that starts the local daemon, and an operations queue to retry, cancel or delete stuck async tasks.'
+  zh: '本机 Hindsight 记忆库查看器：记忆库状态、五张固定页面与模型生成的中文摘要、分页浏览的事实与会话文档、配置与日志在磁盘上的位置、服务不可用时自检并拉起守护进程，以及重试、取消或删除卡住的异步任务的「整理」页。'
