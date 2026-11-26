@@ -1,0 +1,8 @@
+url: https://github.com/huhu508/dsh-rundiag
+name: huhu508/dsh-rundiag
+category: ui
+description:
+  en: 'A right-sidebar training planner with date-based tasks, COROS activity and recovery sync, daily review, coach metrics and draggable energy balls.'
+  zh: '右侧栏训练规划插件：按日期安排任务，同步 COROS 活动与恢复数据，提供每日复盘、教练指标和可拖拽合并的能量球。'
+icon: https://raw.githubusercontent.com/huhu508/dsh-rundiag/main/assets/icon-180.png
+tarball: https://github.com/huhu508/dsh-rundiag/releases/download/v0.6.0/dsh-rundiag-0.6.0.tgz
