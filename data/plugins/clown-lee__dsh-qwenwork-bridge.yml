@@ -1,0 +1,7 @@
+url: https://github.com/clown-lee/dsh-qwenwork-bridge
+name: clown-lee/dsh-qwenwork-bridge
+category: model
+description:
+  en: 'Bring the QwenWork desktop app''s 14 built-in models into DeepSeek Harness — Qwen4-Max, GLM-5.x, Kimi-K3.1, DeepSeek-V4.1 — plus a credit badge under the composer that shows the remaining balance of the same account.'
+  zh: '把千问办公桌面端的 14 个内置模型接进 DeepSeek Harness（Qwen4-Max、GLM-5.x、Kimi-K3.1、DeepSeek-V4.1 等），并在输入框下方加一枚积分角标，显示同一账号的剩余额度。'
+icon: https://raw.githubusercontent.com/clown-lee/dsh-qwenwork-bridge/main/assets/icon-180.png
