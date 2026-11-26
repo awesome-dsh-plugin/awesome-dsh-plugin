@@ -28577,20 +28577,6 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/nonentity303/dsh-plugin-manager": {
-    "version": "0.8.2",
-    "spec": "github:nonentity303/dsh-plugin-manager",
-    "capabilities": [
-      "shell",
-      "fs-write",
-      "fs-read",
-      "network",
-      "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/nonewind/dsh-spend": {
     "version": "0.6.3",
     "spec": "github:nonewind/dsh-spend",
