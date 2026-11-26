@@ -1,0 +1,5 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/genapi-models
+name: maburykh-gif/dsh-plugins#genapi-models
+category: model
+description:
+  en: "GenAPI routes in the model picker: the OpenAI-compatible chat gateway (https://proxy.gen-api.ru/v1) as five sections — text, architecture, design, images and video; the key is read from GENAPI_API_KEY in the credential store. The image and video sections are catalogs only, because GenAPI generates media through its native task API. A settings card edits shortcodes, creates user-defined sections, and links to the key page (author referral link, disclosed)."

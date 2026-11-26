@@ -1,0 +1,5 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/rugpt-models
+name: maburykh-gif/dsh-plugins#rugpt-models
+category: model
+description:
+  en: "ruGPT routes in the model picker: the OpenAI-compatible gateway (https://rugpt.io/api/openai/v1) declared as three sections — text, architecture and design; the key is read from RUGPT_API_KEY in the credential store. A settings card edits each section's shortcode, creates user-defined sections as extra provider routes, and links to the service panel (author referral link, disclosed)."
