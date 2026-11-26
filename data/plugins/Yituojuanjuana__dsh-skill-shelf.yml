@@ -1,0 +1,6 @@
+url: https://github.com/Yituojuanjuana/dsh-skill-shelf
+name: Yituojuanjuana/dsh-skill-shelf
+category: skill
+description:
+  en: 'In-GUI skill hub for DeepSeek Harness that tracks per-skill call counts (day / week / total) and success rate from a local ledger, audits imported skill content at install time, detects local edits against synced source snapshots, organises skills into a restorable trash, and offers a flat project-workspace view; evolution proposals can be applied into a project workspace after manual review. This package uses the independent name dsh-skill-shelf and mount id skill-shelf, so it can be installed alongside other skill-hub plugins.'
+  zh: 'DSH Web GUI 技能中枢：基于本地账本记录每个技能的日/周/总调用量与成功率，导入时做内容安全审计，同步来源后检测本地改动，支持可恢复的回收站与项目工作区平铺视图；技能进化提案经人工审核后可落地到对应项目工作区。本包使用独立包名 dsh-skill-shelf 与挂载 id skill-shelf，可与其它 skill-hub 类插件并存。'
