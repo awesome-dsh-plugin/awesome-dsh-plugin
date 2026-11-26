@@ -1,0 +1,6 @@
+url: https://github.com/GavinMo1/dsh-session-mailbox
+name: GavinMo1/dsh-session-mailbox
+category: session
+description:
+  en: 'A shared mailbox for the top-level sessions of a DeepSeek Harness instance: seven tools that list nearby sessions and workspaces, deliver a message addressed by title, short name or full id (a full id also wakes a cold session), rename and create sessions, archive sessions, and unlist workspaces — refusing a delivery explicitly instead of reporting a fake success.'
+  zh: '给 DeepSeek Harness 的顶层会话之间加一个共用邮箱：七个工具，列出邻近的会话与工作区、按标题或短名或完整 id 投递消息（完整 id 还能唤醒冷会话）、改名与新建会话、归档会话、解除工作区注册；送不出去时明确拒绝，而不是假装送达。'
