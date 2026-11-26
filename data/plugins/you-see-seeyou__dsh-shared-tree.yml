@@ -1,0 +1,6 @@
+url: https://github.com/you-see-seeyou/dsh-shared-tree
+name: dsh-shared-tree
+category: tools
+description:
+  en: "Manage the cross-profile shared plugin tree at <DSH_HOME>/profiles/node_modules - install npm packages into the shared tree with hoisted builds and dependency closure, search it, verify package hashes, and toggle which shared bundles each profile loads."
+  zh: 管理 <DSH_HOME>/profiles/node_modules 跨 profile 共享插件树：hoisted 构建装包、依赖闭包合并、sha256 复核、按 profile 启停 bundle，并带只读侧边栏面板。
