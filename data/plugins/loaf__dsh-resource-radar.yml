@@ -1,0 +1,17 @@
+url: https://github.com/loaf/dsh-resource-radar
+name: loaf/dsh-resource-radar
+category: ui
+description:
+  en: >-
+    Resource Radar: a freebie, deal, open-source and news aggregation workbench
+    in the left navigation. Refreshing fetches RSS feeds through a CORS-free
+    host route, triages every item with the DSH default model (noise filtering,
+    six content kinds, 27 categories, obtain levels, 1-5 star quality, Chinese
+    translation) and routes them into channels with favorites, three-level
+    filters, a block-word firewall, per-source management and a durable store.
+  zh: >-
+    资源雷达：左侧导航中的福利、好价、开源与资讯聚合工作台。刷新时经宿主端无
+    CORS 路由抓取 RSS，用 DSH 默认模型对每条做筛选、形态分流、27 类分类、获取
+    方式与星级定级并翻译成中文，按频道展示；支持收藏、三级筛选、屏蔽词防火墙、
+    数据源管理与持久化存储。
+icon: https://raw.githubusercontent.com/loaf/dsh-resource-radar/main/assets/icon-180.png

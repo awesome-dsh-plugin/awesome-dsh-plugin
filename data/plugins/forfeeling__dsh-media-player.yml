@@ -1,0 +1,6 @@
+url: https://github.com/forfeeling/dsh-media-player
+name: forfeeling/dsh-media-player
+category: ui
+description:
+  en: 'Native inline media player for the dsh web chat: the media_show tool mints short-lived host-served URLs and the client renders playable cards for mp4, webm, gif and animated webp, so generated video plays inside the conversation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH Web 对话里的原生内联媒体播放器：media_show 工具签发短时效本地链接，客户端直接渲染可播放卡片，支持 mp4、webm、gif 与动图 webp，生成的视频在会话内播放。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

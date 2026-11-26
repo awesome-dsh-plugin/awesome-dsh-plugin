@@ -1,0 +1,9 @@
+url: https://github.com/Joshualover/dsh-github-search
+name: Joshualover/dsh-github-search
+category: ui
+description:
+  en: Search GitHub repositories from a left-sidebar panel and read the results as a list, with star counts, language, last-update time and description, filters by language and minimum stars, sorting by best match, stars, forks or recently updated, an expandable README with language breakdown, and copyable clone command or repository URL.
+  zh: 在左栏面板里搜索 GitHub 仓库并以列表呈现结果，显示星标数、语言、最近更新时间和简介，支持按语言与最低星标筛选、按最佳匹配／星标／fork／最近更新排序，可展开阅读 README 与语言构成，并复制 clone 命令或仓库地址。
+# optional — GitHub-hosted raster image used as the storefront tile;
+# falls back to the owner's avatar when omitted
+icon: https://raw.githubusercontent.com/Joshualover/dsh-github-search/main/assets/icon-180.png

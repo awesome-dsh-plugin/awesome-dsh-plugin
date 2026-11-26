@@ -1,0 +1,6 @@
+url: https://github.com/TLEWA/dsh-image-formats
+name: TLEWA/dsh-image-formats
+category: vision
+description:
+  en: Extends read_image and the composer to accept AVIF, TIFF and SVG by converting them to PNG first, reusing the Sharp build already shipped with DSH on the host and the browser decoder in the client, with no added runtime dependency.
+  zh: 让 read_image 与输入框接受 AVIF、TIFF、SVG：宿主侧复用 DSH 自带的 Sharp、客户端复用浏览器解码器，先转成 PNG 再走原有附件链路，不新增运行时依赖。

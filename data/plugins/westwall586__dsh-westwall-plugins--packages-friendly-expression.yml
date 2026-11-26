@@ -1,0 +1,7 @@
+url: https://github.com/westwall586/dsh-westwall-plugins/tree/main/packages/friendly-expression
+name: westwall586/dsh-westwall-plugins#friendly-expression
+category: docs
+icon: https://raw.githubusercontent.com/westwall586/dsh-westwall-plugins/main/packages/friendly-expression/icon-180.png
+description:
+  en: "Friendly Expression: agent replies that lead with the conclusion, skip the filler, and use lists where they belong; ASCII box-and-arrow sketches become zoomable Mermaid diagrams. The default expression contract turns Grice's cooperative principle into concrete actions, and wording, structure and tone are editable in one prompt; new sessions only."
+  zh: "友好表达：让 Agent 说人话、回复简洁——先给结论、少客套、该分点就分点；需要图示时不画 ASCII 方框箭头图，改用可缩放的 Mermaid 图表。默认的受控表达约束把格赖斯合作原则写成动作，措辞、结构与语气都能在这段表达提示词里改，只对新会话生效。"

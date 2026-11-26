@@ -1,0 +1,6 @@
+url: https://github.com/catodm/dsh-sendcomfy
+name: catodm/dsh-sendcomfy
+category: vision
+description:
+  en: 'Bridge ComfyUI into DeepSeek Harness: a sidebar panel lists the server workflows, models and run history, and 12 comfy_* tools let the chat model pick a workflow, send a prompt and override any parameter (steps, CFG, seed, resolution, checkpoint) before generating images, with server workflows loaded on demand instead of imported. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 ComfyUI 接进 DeepSeek Harness：侧边栏面板列出服务器上的工作流、模型与运行记录，12 个 comfy_* 工具让会话模型自己挑工作流、传提示词并覆盖任意参数（步数、CFG、随机种子、分辨率、模型）后出图；服务器工作流按需加载，无需导入。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/player462/dsh-pptx-animation
+name: player462/dsh-pptx-animation
+category: docs
+description:
+  en: 'Native PowerPoint animation studio: compile a declarative DSL into editable p:timing OOXML, with physical motion curves carrying real inertial overshoot (seven shapes, including acceleration from rest), cross-slide Morph transitions, p:sld element-order validation, and a verify mode that checks transitions in a real PowerPoint.'
+  zh: 'PowerPoint 原生动画工作台：把声明式 DSL 编译成可编辑的 p:timing OOXML，物理运动曲线带真实惯性过冲（七种形态，含从静止加速），支持跨页 Morph 平滑切换、p:sld 元素顺序校验，以及用真实 PowerPoint 核对切换是否生效的 verify 模式。'

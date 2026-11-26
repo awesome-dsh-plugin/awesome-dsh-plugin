@@ -1,0 +1,7 @@
+url: https://github.com/CII-Joint-Lab-BIGC/dsh-collaborator
+name: CII-Joint-Lab-BIGC/dsh-collaborator
+category: workflow
+description:
+  en: 'DSH Collaborator adds shared-understanding guidance, per-session task records, and collaboration reminders to DeepSeek Harness.'
+  zh: 'DSH 协作助手（协作导航）：为 DeepSeek Harness 添加共同理解引导、会话内任务记录和持续协作提醒。'
+tarball: https://github.com/CII-Joint-Lab-BIGC/dsh-collaborator/releases/download/v0.1.5/dsh-collaborator-0.1.5.tgz

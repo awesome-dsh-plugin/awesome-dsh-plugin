@@ -1,0 +1,8 @@
+url: https://github.com/zihangii/dsh-workspace-organizer
+name: zihangii/dsh-workspace-organizer
+category: ui
+tarball: https://github.com/zihangii/dsh-workspace-organizer/releases/download/v1.0.0/dsh-workspace-organizer-1.0.0.tgz
+description:
+  en: 'Floats the workspace that just got a new exchange to the top of the sidebar, moving it within the host''s durable workspace order. Blank sessions and subagent sessions never trigger a float; no switches and no UI.'
+  zh: '哪个工作区刚收到新对话，就自动排到侧边栏最上方，走宿主持久的工作区顺序。空白会话与子代理会话不触发置顶，没有开关和界面。'
+icon: https://raw.githubusercontent.com/zihangii/dsh-workspace-organizer/main/assets/icon-180.png

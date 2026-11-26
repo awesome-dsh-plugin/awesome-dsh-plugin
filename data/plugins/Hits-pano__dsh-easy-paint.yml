@@ -1,0 +1,8 @@
+url: https://github.com/Hits-pano/dsh-easy-paint
+name: Hits-pano/dsh-easy-paint
+category: tools
+description:
+  en: 'Generates images through a local ComfyUI instance with three switchable architectures — Qwen-Image, SDXL and Z-Image — covering text-to-image, instruction-based editing, LoRA chains up to five, parameter warnings when settings do not match the selected model, per-model sampler memory, and cache flushing after each render so consecutive generations stay stable on small GPUs. Its HTTP routes accept only local requests and reject cross-site browser requests. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过本机 ComfyUI 生成图片，可在 Qwen-Image、SDXL、Z-Image 三套架构间切换，支持文生图、指令式编辑、最多五个 LoRA 串联，参数与所选模型不匹配时给出预警，能记住每个模型上次使用的采样参数，每张出完会清理 ComfyUI 缓存，让小显存下连续出图更稳。它的 HTTP 路由只接受本机请求，并拒绝浏览器发起的跨站请求。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Hits-pano/dsh-easy-paint/main/assets/icon-180.png
+tarball: https://github.com/Hits-pano/dsh-easy-paint/releases/latest/download/dsh-easy-paint.tgz

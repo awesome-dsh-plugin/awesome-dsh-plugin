@@ -1,0 +1,6 @@
+url: https://github.com/whiplashf/dsh-voice-hotkey
+name: whiplashf/dsh-voice-hotkey
+category: voice
+description:
+  en: 'Push-to-talk remote for the official Voice Input bundle: a hotkey (default Alt+V) starts and stops its recorder — tap to toggle, or hold 0.5 s and release to stop like a walkie-talkie. An energy-based VAD ends the take after a configurable silence (0.5–10 s), and the caret is moved into the composer before recording so the transcript lands there and Enter sends it. Optional auto-send, a second hotkey that focuses the composer, a provider picker in the composer toolbar, and both hotkeys can be rebound or cleared. Recording, transcription and insertion stay in the official bundle; audio goes only to your own DSH server. Zero runtime dependencies.'
+  zh: '官方「语音输入」的按键遥控：热键（默认 Alt+V）开关它的录音，短按是开关、按住 0.5 秒松手即停；录音中自带的能量 VAD 在静音 N 秒（0.5–10 秒可调）后自动结束；开录前把光标放回输入框末尾，所以转写结果落在那里、回车即可发送。另有可选的「说完自动发送」、「聚焦输入框」热键、输入框工具条里的识别服务切换器，两个热键都能重录或清空。录音、转写、写回仍由官方插件完成，音频只发到你自己的 DSH 服务器；无运行时依赖。'

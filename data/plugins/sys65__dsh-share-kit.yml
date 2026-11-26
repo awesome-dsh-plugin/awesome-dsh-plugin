@@ -1,0 +1,7 @@
+url: https://github.com/sys65/dsh-share-kit
+name: sys65/dsh-share-kit
+category: usage
+description:
+  en: 'Adds one button to each answer that exports it without losing formatting: copy as Markdown (nested lists, tables, fenced code with language, KaTeX), copy as rich text with computed styles inlined for Word or Feishu, or download a self-contained .html with the page stylesheets and formula fonts embedded.'
+  zh: '在每条回答的动作条上加一个导出按钮：复制为 Markdown（嵌套列表、表格、带语言标签的代码块、KaTeX），复制为内联计算样式的富文本直接粘进 Word 或飞书，或下载样式表与公式字体都已内嵌的自包含 .html。'
+icon: https://raw.githubusercontent.com/sys65/dsh-share-kit/main/assets/icon-180.png

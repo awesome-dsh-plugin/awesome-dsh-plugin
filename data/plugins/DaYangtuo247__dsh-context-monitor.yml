@@ -1,0 +1,7 @@
+url: https://github.com/DaYangtuo247/dsh-context-monitor
+name: DaYangtuo247/dsh-context-monitor
+category: usage
+description:
+  en: 'Context usage for DeepSeek Harness — a usage ring in the composer status row whose popover splits the context by messages, tools, system prompt, skills and memory files, and a Context Lens tab listing every category, node and tool with a growth trend.'
+  zh: '上下文明细：输入框状态行的用量环，弹层按消息、工具、系统提示、技能与记忆文件拆分上下文；「上下文透视」页签列出每个类别、节点、工具与增长趋势。'
+icon: https://raw.githubusercontent.com/DaYangtuo247/dsh-context-monitor/main/assets/icon-180.png

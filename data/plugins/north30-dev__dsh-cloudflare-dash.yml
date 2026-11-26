@@ -1,0 +1,7 @@
+url: https://github.com/north30-dev/dsh-cloudflare-dash
+name: north30-dev/dsh-cloudflare-dash
+category: ui
+description:
+  en: Cloudflare Web Analytics dashboard in the sidebar showing visitors and page loads with period-over-period deltas, 24h/7d/30d ranges, top pages, referrers, countries, browsers, devices and operating systems, Core Web Vitals and page-load phase timings with sampling disclosure, CSV export, a bot include/exclude switch, and one read-only agent tool.
+  zh: 侧边栏里的 Cloudflare Web Analytics 看板：访问数与页面加载（含环比）、24h/7d/30d、热门页面/来源/国家/浏览器/设备/操作系统、Core Web Vitals 与加载性能分段（含采样标注）、CSV 导出、bot 口径开关，另附一个只读的 agent 工具。
+icon: https://raw.githubusercontent.com/north30-dev/dsh-cloudflare-dash/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/Azheyc/novaflow-dsh-plugin
+name: Azheyc/novaflow-dsh-plugin
+category: model
+description:
+  en: 'NovaFlow browser sign-in, native model configuration, personal and company balances, and image and video generation through a built-in MCP service.'
+  zh: '通过浏览器登录 NovaFlow，在原生模型页管理模型，查看个人及企业余额，并通过内置 MCP 服务生成图片和视频。'
+tarball: https://github.com/Azheyc/novaflow-dsh-plugin/releases/download/v2.6.0/local-novaflow-dsh-plugin-2.6.0.tgz

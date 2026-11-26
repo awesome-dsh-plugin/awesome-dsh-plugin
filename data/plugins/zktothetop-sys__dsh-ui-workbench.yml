@@ -1,0 +1,7 @@
+url: https://github.com/zktothetop-sys/dsh-ui-workbench
+name: zktothetop-sys/dsh-ui-workbench
+category: ui
+description:
+  en: 'Adds a six-icon rail, conversation title menus, contextual hover hints, progress indicators and compact sidebar tools to DSH.'
+  zh: '为 DSH 提供六图标侧栏、会话标题菜单、区域悬停提示、会话进度与紧凑工具栏。'
+tarball: https://github.com/zktothetop-sys/dsh-ui-workbench/releases/download/v1.0.0/dsh-ui-workbench-1.0.0.tgz

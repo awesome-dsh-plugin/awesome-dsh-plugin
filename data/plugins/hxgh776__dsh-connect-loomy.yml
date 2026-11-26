@@ -1,0 +1,7 @@
+url: https://github.com/hxgh776/dsh-connect-loomy
+name: hxgh776/dsh-connect-loomy
+category: model
+description:
+  en: 'Connects the locally signed-in Loomy (iFlytek) desktop account to DeepSeek Harness: chat models with reasoning and tool calls executed locally by DSH, plus a read-only credits dashboard (total balance, daily allowance, available balance). Reuses the Loomy app''s own session file without copying or storing credentials; doctor and probe CLIs included. Windows x64.'
+  zh: '将本机已登录的 Loomy（讯飞）桌面端账号接入 DeepSeek Harness：对话模型带思考链，结构化工具调用由 DSH 本地执行，附只读积分看板（总余额 / 每日额度 / 可用余额）。只读 Loomy 自身的登录态文件，不复制不存储凭据；含 doctor 与 probe 诊断命令。仅 Windows x64。'
+tarball: https://github.com/hxgh776/dsh-connect-loomy/releases/latest/download/dsh-connect-loomy.tgz

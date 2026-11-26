@@ -1,0 +1,7 @@
+url: https://github.com/1010231693/dsh-bat-runner
+name: 1010231693/dsh-bat-runner
+category: dev
+description:
+  en: 'A plugin that runs any .bat script inside DSH: the terminal log shows up right on the DSH main window. Start and stop it, style the log panel, and drag or resize the panel freely.'
+  zh: '一个可以在DSH中运行任何bat脚本的插件，终端日志直接显示在DSH主界面，可控制启停，可设置日志面板外观，可任意拖动/缩放。'
+icon: https://raw.githubusercontent.com/1010231693/dsh-bat-runner/master/assets/icon-180.png

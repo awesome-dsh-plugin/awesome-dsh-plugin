@@ -1,0 +1,8 @@
+url: https://github.com/Noeau-AI/dsh-history-search
+name: Noeau-AI/dsh-history-search
+category: session
+description:
+  en: 'Full-history full-text search across every DeepSeek Harness session archive: CJK-friendly substring queries, a sidebar panel, and an inline all-history section in the workspace search box. Clicking a hit opens that session and lands on the matched passage. Read-only and fully offline.'
+  zh: '跨全部会话归档的全文历史搜索：中文整段即可查，不用分词；有侧栏面板，也能在工作区放大镜里加一段全历史；点一条命中会打开对应会话并落到那段文字上。只读、全程离线。'
+icon: https://raw.githubusercontent.com/Noeau-AI/dsh-history-search/main/assets/icon-180.png
+tarball: https://github.com/Noeau-AI/dsh-history-search/releases/download/v0.1.6/dsh-history-search-0.1.6.tgz

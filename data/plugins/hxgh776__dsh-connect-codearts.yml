@@ -1,0 +1,7 @@
+url: https://github.com/hxgh776/dsh-connect-codearts
+name: hxgh776/dsh-connect-codearts
+category: model
+description:
+  en: 'Connects a locally signed-in Huawei Cloud CodeArts Agent account to DeepSeek Harness: chat models whose tool calls are executed locally by DSH, a read-only token-usage view, and an opt-in daily check-in engine that stays closed until a read-only welfare probe verifies. Reads the CodeArts CLI auth file only (never copies, refreshes or writes it); Windows x64; doctor and probe CLIs included. Registers the codearts provider, so do not install it alongside another CodeArts plugin.'
+  zh: '将本机已登录的华为云 CodeArts Agent 账号接入 DeepSeek Harness：对话模型的结构化工具调用由 DSH 本地执行，附只读额度视图，以及可选每日自动签到——签到在只读权益探测通过前保持关闭。只读取 CodeArts CLI 的 auth.json，不复制、不代刷新、不写回；仅 Windows x64，含 doctor 与 probe 诊断命令。注册 codearts provider，请勿与其他 CodeArts 插件同时安装。'
+tarball: https://github.com/hxgh776/dsh-connect-codearts/releases/latest/download/dsh-connect-codearts.tgz

@@ -1,0 +1,8 @@
+url: https://github.com/Agelei19/dsh-autostart
+name: Agelei19/dsh-autostart
+category: dev
+icon: https://raw.githubusercontent.com/Agelei19/dsh-autostart/main/docs/icon-180.png
+tarball: https://github.com/Agelei19/dsh-autostart/releases/download/v1.0.0/dsh-autostart-1.0.0.tgz
+description:
+  en: 'Starts DeepSeek Harness at Windows logon and sends that boot window straight to the system tray: a bundled 8 KB launcher runs the app, waits for its main window and closes it once, so the boot session keeps running while windows you open yourself stay visible. The Run entry is re-checked and repaired on every launch, a legacy DSHBoot value is cleaned up, and a settings panel exposes both switches plus a one-click hide test. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Windows 登录时启动 DeepSeek Harness，并把开机那一次的窗口直接收进系统托盘：随包附带 8 KB 原生启动器，拉起应用后等待主窗口出现并关闭它一次，开机实例继续在后台运行，而手动打开的窗口照常显示。每次启动都会核对并修复启动项，顺手清理旧的 DSHBoot 项；设置面板提供两个开关和一键测试隐藏。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

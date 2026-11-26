@@ -1,6 +1,7 @@
 url: https://github.com/STARDUSTLC666/dsh-code-security
 name: STARDUSTLC666/dsh-code-security
 category: security
+icon: https://raw.githubusercontent.com/STARDUSTLC666/dsh-code-security/master/assets/plugin-icon.webp
 description:
-  en: 'Deterministic code security review: 40+ rules, secret entropy detection, staged-diff review, SARIF export, baseline acceptance, SBOM-lite dependency inventory and health self-check. A step-by-step first-run guide (4 steps) now opens inside its settings panel.'
-  zh: 确定性代码安全审查：40+ 规则、密钥熵检测、staged diff 审查、SARIF 导出、基线接受、SBOM-lite 依赖清单与健康自检。面板内置 4 步首次使用引导，看一次后不再出现。
+  en: 'Code security workbench and 10 secure_* tools: scan files, directories or Git diffs with deterministic rules and secret entropy checks, audit dependency manifests offline or via OSV, inspect redacted evidence, re-verify fixes on the same scope, export Markdown/SARIF reports, and optionally connect Betterleaks, Semgrep CE or OSV-Scanner; 5 switchable workbench themes.'
+  zh: '代码安全工作台与 10 个 secure_* 工具：对文件、目录或 Git 改动执行确定性规则与密钥熵检查，支持依赖清单离线或 OSV 漏洞审计、脱敏证据查看、同范围修复复查与 Markdown/SARIF 报告导出，可选接入 Betterleaks / Semgrep CE / OSV-Scanner，内置 5 套工作台主题。'

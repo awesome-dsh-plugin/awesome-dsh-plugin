@@ -1,0 +1,6 @@
+url: https://github.com/mjnhmd/dsh-zspace/tree/master/dsh-plugin
+name: mjnhmd/dsh-zspace#dsh-plugin
+category: tools
+description:
+  en: 'ZSpace NAS integration: 90 MCP tools, the vendor connector and 7 skills covering file audits, notebooks, labels, movie-library tidy-ups and RAG index maintenance — authenticated by reusing the ZSpace desktop client local proxy session, so no password or NAS address is stored.'
+  zh: '极空间 NAS 一体化插件：90 个 MCP 工具 + 官方连接器 + 7 个 skill，覆盖文件查重与孤儿文件审计、笔记、标签、影视库归类与语义检索索引维护；鉴权复用极空间桌面客户端本地代理会话，不存密码也不需填 NAS 地址。'

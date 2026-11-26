@@ -1,0 +1,6 @@
+url: https://github.com/QiuYeDx/dsh-bili-eyes
+name: QiuYeDx/dsh-bili-eyes
+category: vision
+description:
+  en: 'Lets the model watch Bilibili videos as storyboard images with timed subtitles, top comments and danmaku keywords, and search, browse and read comments on Bilibili. Like, favorite, comment, reply, DM, post and follow tools are off by default, with per-audience permission levels and quotas. Includes a Settings page; ffmpeg is needed for frames and can be downloaded from Settings. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '让模型以分镜图加带时间的台词、热评和弹幕高频词的形式看 B站视频，并能在 B站搜索、浏览、读评论区。点赞、收藏、评论、回复、私信、发动态、关注默认关闭，可按对象分档并带额度。带设置页；抽帧需要 ffmpeg，可在设置页下载。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

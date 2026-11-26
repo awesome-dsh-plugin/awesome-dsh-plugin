@@ -1,0 +1,6 @@
+url: https://github.com/pfmiles/dsh-gsd
+name: pfmiles/dsh-gsd
+category: workflow
+description:
+  en: 'GSD for DeepSeek Harness: a spec-driven coding workflow that ships 72 gsd-* skills, the GSD engine, and lifecycle guard hooks as one plugin bundle.'
+  zh: '把 GSD 规格驱动编码工作流装进 DeepSeek Harness：72 个 gsd-* 技能、GSD 引擎与生命周期守卫钩子合为一个插件包。'

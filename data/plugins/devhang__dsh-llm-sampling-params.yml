@@ -1,0 +1,6 @@
+url: https://github.com/devhang/dsh-llm-sampling-params
+name: devhang/dsh-llm-sampling-params
+category: model
+description:
+  en: 'Injects per-model sampling parameters into chat-completions requests to OpenAI-compatible gateways: a fetch wrapper looks the request body''s model id up in a configured models table and sets temperature, top_p, top_k, min_p, repeat_penalty, presence_penalty and frequency_penalty on requests whose URL carries /v1/chat/completions, plus repetition_penalty for SGLang and vLLM.'
+  zh: '把按模型的採樣參數注入發往 OpenAI 相容閘道的 chat-completions 請求：在 transport 層包裹 fetch，用請求 body 的 model 別名查詢設定好的 models 表，對網址含 /v1/chat/completions 的請求設定 temperature、top_p、top_k、min_p、repeat_penalty、presence_penalty 與 frequency_penalty，並額外送 repetition_penalty 給 SGLang 與 vLLM。'

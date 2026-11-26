@@ -1,0 +1,7 @@
+url: https://github.com/MicroCapCap/intelligent-inspiration
+name: MicroCapCap/intelligent-inspiration
+category: docs
+tarball: https://github.com/MicroCapCap/intelligent-inspiration/releases/download/v2.2.1/intelligent-inspiration-2.2.1.tgz
+description:
+  en: 'Renders eight Markdown fence languages — cards, actions, inspiration, quiz, sort, softmax, match, and chart — as interactive blocks in DeepSeek Harness chat answers, so a model can lay out a quiz or a comparison instead of plain text.'
+  zh: '把八种 Markdown 围栏语言——cards、actions、inspiration、quiz、sort、softmax、match 与 chart——渲染成 DeepSeek Harness 回答里的交互块，模型可以直接排版测验或对比内容，而不必只写纯文本。'

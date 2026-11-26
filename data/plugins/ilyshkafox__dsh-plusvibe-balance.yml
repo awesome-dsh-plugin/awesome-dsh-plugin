@@ -1,0 +1,7 @@
+url: https://github.com/ilyshkafox/dsh-plusvibe-balance
+name: ilyshkafox/dsh-plusvibe-balance
+category: usage
+description:
+  en: 'Shows the PlusVibeAPI balance beside the composer, with today''s and this month''s spend, an estimate for the current chat, and a per-day spend chart; the API key stays in the Host process and only same-origin routes reach the page.'
+  zh: '在输入框旁显示 PlusVibeAPI 余额，附今日与本月花费、本次对话的估算花费和每日花费图表；API 密钥只留在 Host 进程，页面只访问同源路由。'
+icon: https://raw.githubusercontent.com/ilyshkafox/dsh-plusvibe-balance/main/assets/icon.png

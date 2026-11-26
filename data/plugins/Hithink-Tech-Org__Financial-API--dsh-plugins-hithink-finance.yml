@@ -1,0 +1,8 @@
+url: https://github.com/Hithink-Tech-Org/Financial-API/tree/main/dsh-plugins/hithink-finance
+name: 'Hithink-Tech-Org/Financial-API#hithink-finance'
+category: tools
+description:
+  en: Query Hithink Finance data in DeepSeek Harness, view charts in chat, and save refreshable dashboards.
+  zh: 在 DeepSeek Harness 中查询同花顺金融数据、在对话中查看图表，并保存可刷新的看板。
+icon: https://raw.githubusercontent.com/Hithink-Tech-Org/Financial-API/main/dsh-plugins/hithink-finance/assets/icon.png
+tarball: https://github.com/Hithink-Tech-Org/Financial-API/releases/download/v0.2.5/hithink-tech-dsh-finance-0.1.0.tgz

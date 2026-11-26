@@ -1,0 +1,6 @@
+url: https://github.com/GrounzerLiu/dsh-plan-steps
+name: GrounzerLiu/dsh-plan-steps
+category: workflow
+description:
+  en: 'Two-level plans with one sign-off path: plan_write records phases and sub-steps, complete_step closes one item at a time, wait_for_user declares a wait, abandon_plan drops the list, and unlock_plan releases the optional stale-plan lock with a written reason while a live panel shows the current item.'
+  zh: '两级计划与唯一签核路径：plan_write 记录阶段与子步骤，complete_step 逐项签核，wait_for_user 声明等待，abandon_plan 放弃列表，unlock_plan 写明理由解除可选的计划锁，面板实时显示当前项。'

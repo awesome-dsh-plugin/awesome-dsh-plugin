@@ -1,0 +1,6 @@
+url: https://github.com/GV-megumi/dsh-subagent-route-args
+name: GV-megumi/dsh-subagent-route-args
+category: tools
+description:
+  en: 'Treats empty-string or whitespace-only provider, model and reasoning_effort arguments on the subagent, subagent_fork and list_subagent_models tools as omitted, so DSH falls back to the parent route instead of rejecting the call.'
+  zh: '把 subagent、subagent_fork 与 list_subagent_models 工具的 provider、model、reasoning_effort 参数里的空字符串或纯空白视为未提供，让 DSH 回退到父路由，而不是直接拒绝这次调用。'

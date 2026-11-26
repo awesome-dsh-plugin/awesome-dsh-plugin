@@ -1,0 +1,6 @@
+url: https://github.com/i-curve/dsh-omega
+name: i-curve/dsh-omega
+category: tools
+description:
+  en: 'Zero Omega-style proxy profiles and rules with per-model-provider routing, rule-list subscriptions, and browser backup import and export. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '提供 Zero Omega 风格的代理配置与规则，支持按模型供应商路由、规则列表订阅及浏览器备份导入导出。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

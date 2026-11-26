@@ -2,6 +2,6 @@ url: https://github.com/hoyyang/dsh-project-manager
 name: hoyyang/dsh-project-manager
 category: workflow
 description:
-  en: 'Project board, task schedule (gantt) and project memory: sessions opened from a card auto-load the latest project STATE; persisting progress without losing facts needs python3 and is unavailable on Windows.'
-  zh: '项目看板 + 任务日程（甘特图）+ 项目记忆：从卡片打开的会话自动带上项目最新记忆；一句话落盘不丢事实需要 python3，Windows 上不可用。'
-tarball: https://github.com/hoyyang/dsh-project-manager/releases/download/v0.57.0/dsh-project-manager-0.57.0.tgz
+  en: 'Project board, task schedule (gantt) and project memory: sessions opened from a card auto-load the latest project STATE; interface in 中文 / English / Русский. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '项目看板 + 任务日程甘特图 + 项目记忆：从卡片开的会话自动加载落盘项目记忆，会话关联任务，过 00:00 自动记录执行；界面支持中文 / English / Русский。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/hoyyang/dsh-project-manager/releases/download/v0.80.0/dsh-project-manager-0.80.0.tgz

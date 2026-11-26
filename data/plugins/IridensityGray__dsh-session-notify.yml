@@ -1,0 +1,6 @@
+url: https://github.com/IridensityGray/dsh-session-notify
+name: IridensityGray/dsh-session-notify
+category: notify
+description:
+  en: Reminds you when a DSH conversation pauses or finishes with a Windows toast, a chime and clickable on-screen cards.
+  zh: 会话暂停或结束时提醒你：Windows 通知、提示音和可点击的屏幕卡片。

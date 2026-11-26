@@ -1,0 +1,6 @@
+url: https://github.com/tanxiaolong/dsh-shared-workspace-memory
+name: tanxiaolong/dsh-shared-workspace-memory
+category: memory
+description:
+  en: 'Shared memory across every DSH workspace: one knowledge base whose keyword index is injected into each session''s system prompt, searchable from the terminal with the kb command or inside a session with the kb_search/kb_read/kb_append tools. Zero dependencies, pure JS; initialization only creates missing files and never overwrites your notes, and the bundled kb CLI ships with a manifest plus three reversible cleanup paths. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '跨 workspace 共享记忆：一个知识库，关键词索引自动注入每个会话的系统提示，终端用 kb 命令、会话内用 kb_search/kb_read/kb_append 检索与沉淀。零依赖、纯 JS，初始化时只补缺失文件、绝不覆盖你已有的笔记；自带 CLI 安装清单与三条可回退的清理入口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,7 @@
+url: https://github.com/IVseIce/dsh-mini-notes
+name: IVseIce/dsh-mini-notes
+category: ui
+description:
+  en: 'A plain-text notepad opened from the session header, in the spirit of Windows Notepad: multiple pages with draggable tabs, whole-page zoom, a draggable and resizable panel that pins open, and a trash that restores or permanently deletes closed pages. Everything is stored locally in the browser.'
+  zh: '从会话标题栏展开的纯文本记事本（Windows 记事本风格）：多页便签、标签可拖拽排序、整体缩放，面板可拖动可拉伸并可钉住，被关闭的页面进入可恢复或彻底删除的回收站。全部内容只保存在本机浏览器里。'
+icon: https://raw.githubusercontent.com/IVseIce/dsh-mini-notes/main/assets/icon-180.png

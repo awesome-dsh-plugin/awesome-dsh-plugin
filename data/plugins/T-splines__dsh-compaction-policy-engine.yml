@@ -1,0 +1,6 @@
+url: https://github.com/T-splines/dsh-compaction-policy-engine
+name: T-splines/dsh-compaction-policy-engine
+category: session
+description:
+  en: "Layered, live-reloading context compaction policy for DeepSeek Harness: provider/model rules, ratio or token budgets, summarization-model fallback and a settings panel."
+  zh: "为 DeepSeek Harness 提供分层、热加载的上下文压缩策略：按 provider/model 的规则、比例或 token 预算、摘要模型回退与设置面板。"

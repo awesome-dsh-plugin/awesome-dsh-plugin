@@ -2,5 +2,5 @@ url: https://github.com/XWIDE/dsh-xwide-handoff
 name: XWIDE/dsh-xwide-handoff
 category: session
 description:
-  en: 'Generates a structured handoff card so a near-full conversation continues in a fresh zero-context session: /handoff writes the card with self-incrementing titles, pins it to the top of the sidebar and prepares the new session once the context nears its threshold.'
-  zh: '用 /handoff 生成交接卡，让快满的对话在全新零上下文会话里接着跑：标题自动递增编号、卡片在侧栏置顶，接近阈值时自动备好新会话。'
+  en: 'Structured /handoff cards keep a near-full chat running: card saved on disk, new chat auto-numbered per conversation line and pinned to the sidebar. v0.3 adds in-place handoff (compress the current chat and keep going - the context ring drops instantly via a zero-LLM millisecond flip), hands-free auto handoff at a configurable threshold (default 45%), a shared manual/auto cooldown gate that kills chained auto-cards, and an upload-backlog guard self-healing HTTP 413 brickups.'
+  zh: '结构化 /handoff 交接卡让快满的对话接着跑：卡片落盘存档、新会话按会话线自增编号并侧栏置顶。v0.3 新增：原地交接（在当前会话压摘要接着干，上下文占比经零 LLM 毫秒级翻篇当场下降）、免手打自动交接（阈值可配，默认 45%）、手动/自动共享 10 分钟冷却闸根治连环触发、上传积压守卫自愈网关 413。'

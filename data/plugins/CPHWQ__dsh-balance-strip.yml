@@ -1,0 +1,7 @@
+url: https://github.com/CPHWQ/dsh-balance-strip
+name: CPHWQ/dsh-balance-strip
+category: usage
+description:
+  en: 'A compact pill pinned to the right side of the DSH session tab bar that always shows the DeepSeek account balance, today''s spend estimated from balance drops, and whether peak or off-peak pricing is active — no click needed. It falls back to the DSH account service when no DEEPSEEK_API_KEY is configured. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '一枚常驻在 DSH 会话标签行右侧的胶囊，始终显示 DeepSeek 账户余额、按余额下降估算的今日已用，以及当前是峰时还是谷时定价，不需要点击；未配置 DEEPSEEK_API_KEY 时改走 DSH 账号服务读取余额。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/CPHWQ/dsh-balance-strip/main/icon.png

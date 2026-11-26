@@ -1,0 +1,6 @@
+url: https://github.com/Zsimeon/dsh-stocklab
+name: Zsimeon/dsh-stocklab
+category: tools
+description:
+  en: Stock analysis workspace for A-shares. Sidebar panel embeds the local stocklab web UI (quotes, LLM stock analysis, market review, hotspots) with a service status light and manual start button, plus a `stocklab` agent tool, FastAPI service supervision, and credential-safe API key injection via the DSH credential store.
+  zh: A股行情分析工作台。左侧栏面板内嵌本地 stocklab 网页工作台（行情、LLM 个股分析、大盘复盘、今日热点），带服务状态灯与一键启动；另含 stocklab 对话工具、FastAPI 服务守护，并通过 DSH 凭据服务安全注入 API Key。

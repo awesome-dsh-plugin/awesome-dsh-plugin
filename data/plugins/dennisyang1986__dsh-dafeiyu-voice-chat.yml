@@ -1,0 +1,7 @@
+url: https://github.com/dennisyang1986/dsh-dafeiyu-voice-chat
+name: dennisyang1986/dsh-dafeiyu-voice-chat
+category: voice
+description:
+  en: 'Voice chat inside DeepSeek Harness: a draggable fish launcher records from the microphone, transcribes with DeepSeek speech recognition, answers with deepseek-flash (images included), and speaks each sentence through DeepSeek speech synthesis as the answer streams. Two voices, a continuous-conversation switch, and the API key stays on the Host.'
+  zh: '在 DeepSeek Harness 里和一条小鱼语音聊天：可拖动的浮标按住说话，走 DeepSeek 语音识别转写，由 deepseek-flash 回答（支持看图），再按句用 DeepSeek 语音合成边生成边播放。两种音色、连续对话开关，API Key 只留在 Host 侧。'
+icon: https://raw.githubusercontent.com/dennisyang1986/dsh-dafeiyu-voice-chat/main/assets/icon-180.png

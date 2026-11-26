@@ -1,0 +1,7 @@
+url: https://github.com/Inspiring26/dsh-cost-display
+name: Inspiring26/dsh-cost-display
+category: usage
+description:
+  en: Appends DeepSeek peak/off-peak cost estimates to native usage displays and shows global today/month totals in the session dialog.
+  zh: 在原生用量显示后追加 DeepSeek 峰谷费用；整体用量弹窗还显示全局今天/本月费用。
+icon: https://raw.githubusercontent.com/Inspiring26/dsh-cost-display/main/assets/icon-180.png

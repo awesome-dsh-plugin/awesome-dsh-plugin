@@ -1,0 +1,7 @@
+url: https://github.com/xiao0o0/dsh-docs-manager
+name: xiao0o0/dsh-docs-manager
+category: docs
+description:
+  en: 'Markdown document manager panel: one card row per folder, rich-text editing saved as Markdown, search, pin, sort, and capture from chat. Its HTTP routes require DSH browser authentication, so other pages cannot call them.'
+  zh: 'Markdown 文档管理面板：一个目录一行卡片墙，富文本编辑并保存为 Markdown，支持搜索、置顶、排序与从会话一键记录。接口需通过 DSH 浏览器身份认证，其它网页无法调用。'
+icon: https://raw.githubusercontent.com/xiao0o0/dsh-docs-manager/main/assets/icon-180.png

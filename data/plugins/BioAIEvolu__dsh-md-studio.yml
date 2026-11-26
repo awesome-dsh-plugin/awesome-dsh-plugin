@@ -2,5 +2,5 @@ url: https://github.com/BioAIEvolu/dsh-md-studio
 name: BioAIEvolu/dsh-md-studio
 category: docs
 description:
-  en: 'Native right-sidebar Markdown preview with Mermaid diagrams, KaTeX math, GFM tables and syntax highlighting — rendering engine bundled, fully offline.'
-  zh: '在 DSH 原生右侧文件预览中渲染 Mermaid 图表、KaTeX 公式、GFM 表格与代码高亮，渲染引擎随包内置，完全离线。'
+  en: 'Complete Markdown renderer for file preview AND chat messages — Mermaid diagrams, hand-drawn SVG (mds-diagram), KaTeX math formulas, GFM tables, syntax highlighting. Rendering engine bundled, fully offline. Requires DSH 0.2.2-rc.5+. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '文档预览 + 对话消息双场景完整 Markdown 渲染 — Mermaid 流程图、手写 SVG 架构图（mds-diagram）、KaTeX 数学公式（行内与块级）、GFM 表格、代码高亮。渲染引擎内置，完全离线。需 DSH 0.2.2-rc.5+。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

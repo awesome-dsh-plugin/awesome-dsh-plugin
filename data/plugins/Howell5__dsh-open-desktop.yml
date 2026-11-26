@@ -1,0 +1,6 @@
+url: https://github.com/Howell5/dsh-open-desktop
+name: Howell5/dsh-open-desktop
+category: ui
+description:
+  en: 'Turns the DSH middle pane into a draggable board of live data cards, each backed by its own session and refresh schedule. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 DSH 中栏换成可拖拽的实时数据卡片墙，每张卡由自己的会话构建并自带刷新节奏。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

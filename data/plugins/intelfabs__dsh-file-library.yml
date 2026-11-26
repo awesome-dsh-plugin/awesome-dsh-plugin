@@ -1,0 +1,6 @@
+url: https://github.com/intelfabs/dsh-file-library
+name: intelfabs/dsh-file-library
+category: ui
+description:
+  en: 'Sidebar library of every file sent to DeepSeek Harness: search it per workspace or across the host, open or preview a file without copying it, file a copy into the session workspace, and reuse it in a chat as an @library mention. Also exposes library_list, library_read and library_use tools to the agent. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 侧栏文件库：按工作区或全机检索所有发过的文件，可就地打开或预览、一键归档进会话工作区，并以 @library 在对话中复用；同时向 agent 提供 library_list / library_read / library_use 三个工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

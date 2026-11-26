@@ -1,0 +1,6 @@
+url: https://github.com/lwfjyjy/dsh-session-prompt-vault
+name: lwfjyjy/dsh-session-prompt-vault
+category: tools
+description:
+  en: 'Adds a prompt library button at the left of the input box: manage prompts (add, edit, delete, search, groups), insert with one click or Enter/Tab, save prompt combinations, and sync over WebDAV. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在输入框左侧新增提示词库按钮：弹窗管理提示词（增删改查、分组），一键或回车/Tab 插入，支持组合预设与 WebDAV 同步。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

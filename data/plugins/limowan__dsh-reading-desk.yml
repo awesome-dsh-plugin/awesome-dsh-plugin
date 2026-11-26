@@ -1,0 +1,7 @@
+url: https://github.com/limowan/dsh-reading-desk
+name: limowan/dsh-reading-desk
+category: tools
+description:
+  en: 'A WeRead reading desk: monthly book plan and calendar, FSRS-scheduled highlight review, notes with AI summaries, a monthly reading exhibition and reading statistics.'
+  zh: '微信读书阅读台：月度书单与日历、按 FSRS 排期的划线回顾、带 AI 摘要的笔记、月度阅读展与阅读统计。'
+icon: https://raw.githubusercontent.com/limowan/dsh-reading-desk/main/assets/icon-180.png

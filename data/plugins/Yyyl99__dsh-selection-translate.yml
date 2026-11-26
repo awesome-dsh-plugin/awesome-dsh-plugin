@@ -1,0 +1,6 @@
+url: https://github.com/Yyyl99/dsh-selection-translate
+name: Yyyl99/dsh-selection-translate
+category: ui
+description:
+  en: Select text in a conversation and click the 译 badge at the bottom-right corner of the selection. A card opens below it with the translation, and for a single word also phonetics, part-of-speech meanings and bilingual examples. The original text can be read aloud. No API key or configuration is needed.
+  zh: 在对话中框选文本，点选区右下角的“译”字，下方弹出翻译卡片；选中的是单词时还显示音标、词性与双语例句，原文可朗读，无需 API Key 或任何配置。

@@ -1,0 +1,6 @@
+url: https://github.com/CyberYui/dsh-workspace-isolate
+name: CyberYui/dsh-workspace-isolate
+category: session
+description:
+  en: Per-workspace plugin and skill gating for DSH. Arm one workspace to freeze its exact plugin and skill set, and every other workspace automatically loses what that workspace does not use.
+  zh: DSH 工作区级插件与技能门控。锁定一个工作区的插件/技能集合后，其它工作区会自动失去该工作区不使用的部分。

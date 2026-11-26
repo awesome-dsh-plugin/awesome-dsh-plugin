@@ -1,0 +1,8 @@
+url: https://github.com/eat-ice-gpu/wilbot
+name: eat-ice-gpu/wilbot
+category: ui
+description:
+  en: 'Chat panel as a sidebar entry. A conversation view over a pinned DSH session, plus an outbound panel that relays QQ messages through a local OneBot implementation and drafts Bilibili comments for manual approval. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧栏一级入口的聊天面板。在固定的 DSH 会话上提供一套会话界面，另有对外分区：通过本地 OneBot 转发 QQ 消息，并为 B 站视频起草评论草稿、由你手动确认后才发。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/eat-ice-gpu/wilbot/main/icon.png
+tarball: https://github.com/eat-ice-gpu/wilbot/releases/latest/download/wilbot.tgz

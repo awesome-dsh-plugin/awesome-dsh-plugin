@@ -1,0 +1,6 @@
+url: https://github.com/lwfjyjy/dsh-session-ignore-claude-md
+name: lwfjyjy/dsh-session-ignore-claude-md
+category: session
+description:
+  en: 'Loads project rule files in AGENTS.md then CLAUDE.md order: when an earlier file exists in the same directory, the later CLAUDE.md is skipped, avoiding duplicate injection and saving context.'
+  zh: '按 AGENTS.md、CLAUDE.md 的先后顺序加载项目规则文件：同目录存在靠前文件时跳过靠后的 CLAUDE.md，避免重复注入、节省上下文。'

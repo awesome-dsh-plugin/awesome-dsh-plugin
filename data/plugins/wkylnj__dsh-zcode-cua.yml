@@ -1,0 +1,6 @@
+url: https://github.com/wkylnj/dsh-zcode-cua
+name: wkylnj/dsh-zcode-cua
+category: tools
+description:
+  en: 'Reuses ZCode''s own native Computer Use runtime, so DSH drives Windows apps without shipping or redistributing any of it: one `js` tool runs top-level await in a fresh Node.js kernel with the full `agent.computerUse` accessibility API, behind a per-session switch that is off for every new session, plus a screen-edge indicator that Windows excludes from every screenshot. Windows only, and ZCode must be installed.'
+  zh: '复用 ZCode 自带的原生电脑控制运行时，DSH 因此能驱动 Windows 应用，且不分发其中任何二进制：一个 `js` 工具在全新 Node.js 内核里跑顶层 await，可用完整的 `agent.computerUse` 无障碍 API；带按会话开关（新会话默认关闭）与屏幕边缘提示浮层，Windows 会把它从任何截图中排除。仅限 Windows，且需先安装 ZCode。'

@@ -1,0 +1,10 @@
+url: https://github.com/Arrosam/dsh-fishball-bundle
+name: Arrosam/dsh-fishball-bundle
+category: session
+description:
+  en: >-
+    All-in-one embedded Fishball: one install adds a Fishball child DSH managed by
+    this DSH, an MCP 2026-07-28 endpoint with OAuth 2.1 for driving this DSH's
+    sessions from other agents, a cross-DSH connector adapter and a session
+    watchdog, plus a combined Fishball and Connector settings page.
+  zh: Fishball 一体化嵌入版：一次安装加入由本 DSH 托管的 Fishball 子 DSH、供其他 agent 驱动本 DSH 会话的 MCP 2026-07-28 + OAuth 2.1 端点、跨 DSH 连接适配器与会话看护，并提供合并的 Fishball / 连接器设置页。

@@ -1,0 +1,7 @@
+url: https://github.com/GT-610/dsh-auto-review-model-select
+name: GT-610/dsh-auto-review-model-select
+category: security
+description:
+  en: 'Gives Auto review its own model instead of inheriting the main one, and repairs replies that break the reviewer''s closed JSON protocol: prose, Markdown fences, an `allow` carrying a `reason`, a truncated finish, or a decision emitted as a tool call no longer become `AUTO_REVIEW_FAILED`. Contradictions resolve fail-closed (`high + allow` becomes a denial), and an unreadable reply degrades to an ordinary approval prompt instead of blocking the call.'
+  zh: '让自动审查改用指定的审查模型，而不是沿用主模型；并把破坏审查协议的回答就地修正——前后夹杂的文字、Markdown 代码围栏、带 `reason` 的 `allow`、被截断的结尾，或写成工具调用的裁决，都不再变成 `AUTO_REVIEW_FAILED`。矛盾组合按 fail-closed 处理（`high + allow` 转为拒绝），彻底读不出裁决时降级为一次普通审批弹窗，而不是直接拦下调用。'
+icon: https://raw.githubusercontent.com/GT-610/dsh-auto-review-model-select/main/assets/icon-180.png

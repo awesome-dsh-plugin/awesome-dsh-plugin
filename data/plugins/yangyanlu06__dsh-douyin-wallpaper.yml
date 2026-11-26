@@ -1,0 +1,7 @@
+url: https://github.com/yangyanlu06/dsh-douyin-wallpaper
+name: yangyanlu06/dsh-douyin-wallpaper
+category: ui
+description:
+  en: 'Douyin wallpaper for DSH: paste a Douyin share link and that video becomes the background of the DSH web interface, the video filling the window while the interface surfaces turn translucent above it. Handles video, image and multi-video carousel links, downloads the media to this machine, and keeps the look settings in a local state file.'
+  zh: '抖音壁纸：粘贴一条抖音链接，DSH 的极简界面就变成它的播放背景，视频铺满窗口，界面各层变成半透明浮在上面。支持视频、图文与多视频轮播链接，媒体下载到本机，外观设置保存在本地。'
+icon: https://raw.githubusercontent.com/yangyanlu06/dsh-douyin-wallpaper/main/assets/icon-180.png

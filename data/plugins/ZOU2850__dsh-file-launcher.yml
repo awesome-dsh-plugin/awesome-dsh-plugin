@@ -1,0 +1,6 @@
+url: https://github.com/ZOU2850/dsh-file-launcher
+name: ZOU2850/dsh-file-launcher
+category: ui
+description:
+  en: Right-sidebar file launcher for DeepSeek Harness conversations and projects, with search and filters, image/PDF/Office previews, missing-file markers, pins, archive copies, and @ references.
+  zh: 为 DeepSeek Harness 提供右侧栏文件启动器，支持对话与项目文件盘点、搜索筛选、图片/PDF/Office 预览、缺失文件标记、收藏、归档副本与 @ 引用。

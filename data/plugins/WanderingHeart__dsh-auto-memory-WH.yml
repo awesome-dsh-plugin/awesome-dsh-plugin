@@ -1,0 +1,6 @@
+url: https://github.com/WanderingHeart/dsh-auto-memory-WH
+name: WanderingHeart/dsh-auto-memory-WH
+category: memory
+description:
+  en: DSH Memory stores project and user memories as local Markdown, with a management page, relationship graphs, and backup and recovery tools.
+  zh: DSH Memory 将项目级和用户级记忆存为本地 Markdown，提供记忆管理页、关系图及备份恢复工具。

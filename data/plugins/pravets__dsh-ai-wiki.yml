@@ -1,0 +1,6 @@
+url: https://github.com/pravets/dsh-ai-wiki
+name: pravets/dsh-ai-wiki
+category: tools
+description:
+  en: 'ACL-aware, read-only BM25 gateway to an ai-wiki-template vault: six tools for search, page or section reads, catalog filters, link and backlink checks, index status, and frontmatter lint; Russian Snowball stemming and SQLite FTS5, no vault writes, no Python.'
+  zh: '面向 ai-wiki-template 知识库的 ACL 感知只读 BM25 网关：六个工具分别用于检索、读取页面或小节、按分类筛选目录、查看链接与反向链接、索引状态和 frontmatter 校验；使用俄语 Snowball 词干与 SQLite FTS5，不写入知识库，也不需要 Python。'

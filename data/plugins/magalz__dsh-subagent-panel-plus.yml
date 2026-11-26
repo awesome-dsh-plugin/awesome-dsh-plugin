@@ -1,0 +1,7 @@
+url: https://github.com/magalz/dsh-subagent-panel-plus
+name: magalz/dsh-subagent-panel-plus
+category: ui
+description:
+  en: 'Replaces the session header subagent list with a copy that shows model and reasoning effort, orders rows by state, adds status dots, token counts, working time and start time, and offers archive and two-click permanent delete of subagent sessions.'
+  zh: '替换会话顶栏的子代理列表：显示模型与推理强度，按状态排序，加状态点、token 数、工作时长与开始时间，并支持归档与两次点击的永久删除子代理会话。'
+tarball: https://github.com/magalz/dsh-subagent-panel-plus/releases/download/v0.1.0/dsh-subagent-panel-plus-0.1.0.tgz

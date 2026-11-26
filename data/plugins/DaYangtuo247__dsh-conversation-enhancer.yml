@@ -1,0 +1,7 @@
+url: https://github.com/DaYangtuo247/dsh-conversation-enhancer
+name: DaYangtuo247/dsh-conversation-enhancer
+category: ui
+description:
+  en: 'Conversation view enhancer for DeepSeek Harness — work details and tool calls regrouped, an inline plan card, Markdown user messages, older messages loaded automatically at the top of the scroll, and one reading column with its own typography and command-line colours.'
+  zh: '对话视图增强：工作过程与工具调用重新分组、内联计划卡片、用户消息按 Markdown 渲染、滚到顶部自动加载更早消息，以及统一的阅读排版与命令行语法配色。'
+icon: https://raw.githubusercontent.com/DaYangtuo247/dsh-conversation-enhancer/main/assets/icon-180.png

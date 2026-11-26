@@ -1,0 +1,6 @@
+url: https://github.com/MokoKing666/dsh-jimeng
+name: MokoKing666/dsh-jimeng
+category: vision
+description:
+  en: 'Registers `jimeng_image` and `jimeng_video` tools that generate through the locally signed-in Jimeng desktop app, reading its session cookies and the account''s live model catalog from two web endpoints, so new models work without a plugin update; `jimeng_models` and `jimeng_status` list models and credits for free, and `dryRun`, `minCreditsToKeep` and `allowSpend` bound credit spending.'
+  zh: '注册 `jimeng_image` 与 `jimeng_video` 工具，通过本机已登录的即梦 AI 桌面端生成图片和视频：读取桌面端会话 Cookie，并从两个网页端接口实时拉取账号的模型清单，所以即梦上新模型无需更新插件；`jimeng_models` 与 `jimeng_status` 免费列出模型与积分，`dryRun`、`minCreditsToKeep`、`allowSpend` 控制积分消耗。'

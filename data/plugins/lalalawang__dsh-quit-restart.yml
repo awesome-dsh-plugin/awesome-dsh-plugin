@@ -1,0 +1,7 @@
+url: https://github.com/lalalawang/dsh-quit-restart
+name: lalalawang/dsh-quit-restart
+category: tools
+icon: https://raw.githubusercontent.com/lalalawang/dsh-quit-restart/main/icon.png
+description:
+  en: 'Adds one row to the sidebar that quits DeepSeek Harness Desktop and relaunches it in a single click. It ends both the Electron main process and the host process it spawned, waits for both PIDs to disappear, then starts the app again through a windowless relaunch so no console flashes up. The route only accepts loopback same-origin POSTs and never takes a PID from the request. Windows only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在侧边栏加一行：一键退出 DeepSeek Harness Desktop 并重启。先结束 Electron 主进程和它拉起的宿主进程、等两个进程都消失后，再以无窗口方式重新启动应用，不会弹出控制台。接口只接受本机同源请求，且不从请求里读取进程号。仅支持 Windows。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

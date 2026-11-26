@@ -1,0 +1,7 @@
+url: https://github.com/linbei0203-zh/dsh-ink-poem-wallpaper
+name: linbei0203-zh/dsh-ink-poem-wallpaper
+category: theme
+description:
+  en: 'Wallpaper of a daily Chinese couplet set in a brush face on an ink-wash landscape drawn as SVG from the verse itself, with a re-cut Qin bird-worm seal; both are draggable, and nothing is fetched from the internet. A page button opens the whole poem behind the couplet with the poet''s life and the poem''s background where the corpus has them — 319 of the 343 poems, 84 of those with background notes — keeping the couplet picked out in red even where the corpus wording differs. Its three read-only local HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '水墨诗词壁纸：每天一句中国古典诗词，题在一幅随句意现场生成的 SVG 水墨山水上，配一枚重刻边框的秦式鸟虫篆朱印；诗句与朱印均可拖动，不从互联网取任何内容。页形按钮可展开这一联背后的整首诗，并附作者生平与创作背景——壁纸涉及的 343 首中 319 首有全篇，其中 84 首另附背景资料；与语料存在异文时，壁纸那一联仍以朱红标出。它的三条只读本地 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/linbei0203-zh/dsh-ink-poem-wallpaper/main/docs/icon.png

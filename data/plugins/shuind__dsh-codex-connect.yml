@@ -1,0 +1,6 @@
+url: https://github.com/shuind/dsh-codex-connect
+name: shuind/dsh-codex-connect
+category: model
+description:
+  en: 'Streamlined, refactored fork of dsh-codex-connect, maintained independently alongside dsh-codex-harness: connects ChatGPT OAuth and OpenAI Codex models to DSH with strongest-first model grouping, a simplified settings UI, web search with accuracy reference, GPT-Image-2.6 generation/editing, and native compaction. Registers the same openai-codex provider, so it cannot be installed alongside upstream dsh-codex-connect.'
+  zh: 'dsh-codex-connect 的精简重构分支，独立于上游并与 dsh-codex-harness 一起维护：通过 ChatGPT OAuth 免 API Key 接入 Codex 模型，提供按能力排序的模型列表、精简设置页、联网搜索（含准确率参考）、GPT-Image-2.6 生图/改图与原生上下文压缩。注册同一个 openai-codex provider，不能与原版 dsh-codex-connect 同装。'

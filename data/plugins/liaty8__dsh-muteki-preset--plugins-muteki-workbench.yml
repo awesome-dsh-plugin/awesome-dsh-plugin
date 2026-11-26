@@ -1,0 +1,7 @@
+url: https://github.com/liaty8/dsh-muteki-preset/tree/main/plugins/muteki-workbench
+name: liaty8/dsh-muteki-preset#muteki-workbench
+category: ui
+description:
+  en: 'Right-sidebar control console for the Muteki CTF swarm preset (same repo): tier buttons switch the preset to bulk mode and set pool size, token refill and cost walls at runtime without a restart, with a CNY/USD per-challenge dispatch and estimated-cost ledger and auto-opened live subagent panes; this entry is the workbench UI only — the preset itself is the separate muteki-preset entry (market-installable bundle; install.ps1 remains an alternative). An optional first-solve alert banner surfaces each new flag the moment a worker writes it back, with one-click copy (flag value only), per-flag delete and delete-all behind an in-panel confirmation modal.'
+  zh: 'Muteki CTF 蜂群预设（同仓库）的右侧栏控制台：档位按钮一键切靶场批量并设并发池/令牌回填/成本墙，运行时生效不用重启；按题显示派单次数与估算成本的人民币/美元账本，派单自动打开子代理实时 pane；本条目仅工作台 UI——预设本体是另外的 muteki-preset 条目（market 可装 bundle；install.ps1 仍为备选）。可选「首解即报」横幅在 worker 写回 flag 的瞬间亮旗，支持一键复制（仅 flag 值）、逐条删除与全部删除（工作台内确认模态）。'
+icon: https://raw.githubusercontent.com/liaty8/dsh-muteki-preset/main/assets/icon.png

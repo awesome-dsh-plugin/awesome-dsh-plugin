@@ -1,0 +1,6 @@
+url: https://github.com/hj178250/dsh-exam-gen
+name: hj178250/dsh-exam-gen
+category: education
+description:
+  en: K12 science exam generator for Chinese middle/high school. Say one sentence and get a full exam paper, focused drill set, tutor handout, knowledge tree or textbook-sync worksheet. Renders print-ready A4 PDF locally (real fractions, superscripts, exam header, student info line) in about 40 ms with zero model tokens. Ships 3340 questions; adds an optional parameter card and a web page for browsing the question bank. No signup, no API key - it uses the model already configured in your DSH.
+  zh: K12 初中/高中理科出题插件。一句话出整套试卷、专项突破、家教讲义、知识图谱或教材同步练习页；本地 40 毫秒渲染可打印 A4 PDF（真分式、真上标、密封线、考生栏），不花模型 token。内置 3340 道题，另带参数卡片与题库管理页。零配置、无需注册填 Key，直接用你 DSH 里已配好的模型。

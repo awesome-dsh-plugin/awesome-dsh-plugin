@@ -1,0 +1,8 @@
+url: https://github.com/TryToFindHeart/dsh-feishu-mcp
+name: TryToFindHeart/dsh-feishu-mcp
+category: remote
+description:
+  en: 'Feishu (Lark) channel for DeepSeek Harness: a group webhook turns every finished turn into a Card JSON 2.0 alert with inline @all, while a self-built Feishu app bot (QR-code onboarding, WebSocket long connection, no public callback URL) receives DM text, images and files into the bound DSH session and answers approval/question/permission cards from the chat; every notice footer shows the current model with /model to switch it, sessions are switchable by short codes, and the typing indicator clears on every terminal turn.'
+  zh: 'DeepSeek Harness 飞书通道：群 Webhook 把每轮任务结束变成一张内嵌 @all 的卡片强提醒；自建飞书应用机器人（扫码创建、WebSocket 长连接、无需公网回调）把私聊的文本、图片和文件送进绑定的 DSH 会话，并在聊天里处理审批/提问/权限卡片；每张通知底部显示当前模型且 /model 可切换，会话支持短码切换，Typing 反应在每轮结束时自动撤销。'
+icon: https://raw.githubusercontent.com/TryToFindHeart/dsh-feishu-mcp/main/assets/icon-180.png
+tarball: https://github.com/TryToFindHeart/dsh-feishu-mcp/releases/download/v0.3.16/dsh-feishu-mcp.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/howie79794-sys/dsh-openfilm
+name: howie79794-sys/dsh-openfilm
+category: tools
+description:
+  en: 'OpenFilm AI video making, enhanced for DeepSeek Harness — embedded Studio, local MP4 rendering, canvas pointing, render jobs, and a sidechat with screenshots and voice.'
+  zh: '开源 OpenFilm AI 视频制作，针对 DeepSeek Harness 做了增强：内嵌 Studio、本地渲染 MP4、指着画布改片、后台渲染任务、支持截图与语音的面板对话。'

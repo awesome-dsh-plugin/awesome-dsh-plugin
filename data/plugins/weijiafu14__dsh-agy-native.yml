@@ -1,0 +1,7 @@
+url: https://github.com/weijiafu14/dsh-agy-native
+name: weijiafu14/dsh-agy-native
+category: model
+tarball: https://github.com/weijiafu14/dsh-agy-native/releases/download/v0.2.0/dsh-agy-native-0.2.0.tgz
+description:
+  en: 'Native LlmAdapter for Google AI Pro and Ultra subscriptions over official agy acp --stdio: per-session eager MCP & PTC (run_code) routing, sticky warm pool, compaction/rewind sync, Context OS support, accurate single-step context occupancy, and multimodal input.'
+  zh: '基于本机官方 agy acp --stdio 的 Google AI Pro/Ultra 订阅原生 LlmAdapter：按会话隔离的直连 MCP 与 PTC (run_code) 路由、粘性热会话池、历史压缩/回退自动同步、兼容 Context OS、精准单步上下文水位与原生多模态输入。'

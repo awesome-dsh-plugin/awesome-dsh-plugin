@@ -1,0 +1,7 @@
+url: https://github.com/xin505/dsh-xin505-notify
+name: xin505/dsh-xin505-notify
+category: notify
+tarball: https://github.com/xin505/dsh-xin505-notify/releases/download/v0.1.0-alpha.3/dsh-xin505-notify-0.1.0-alpha.3.tgz
+description:
+  en: Shows Windows desktop notifications for DeepSeek Harness task completion or failure, pending approvals or questions, and recognized quota or sign-in errors.
+  zh: 为 Windows 上的 DeepSeek Harness 提供任务完成或失败、等待授权或回答，以及可识别的额度或登录错误提醒。

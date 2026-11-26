@@ -1,0 +1,7 @@
+url: https://github.com/hzlooolzh/ThinkBuilder/tree/main/packages/editor-ui
+name: hzlooolzh/ThinkBuilder#thinkbuilder
+category: ui
+description:
+  en: 'Drawn flowcharts where each block holds the requirements and rules for one task; exports to a folder tree the bundled tools let the agent read block by block.'
+  zh: '画一张流程图，每个逻辑块填写该任务的输入、输出、处理与规范；导出为文件夹树，插件自带的工具让 AI 逐块读取并照图施工。'
+icon: https://raw.githubusercontent.com/hzlooolzh/ThinkBuilder/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/Meiyukichan/madoka/tree/main/dsh-magica-rune
+name: Meiyukichan/madoka#dsh-magica-rune
+category: tools
+icon: https://raw.githubusercontent.com/Meiyukichan/madoka/main/dsh-magica-rune/assets/icon-180.png
+description:
+  en: 'Your harness, your rules: tailor dsh to whatever the current job needs by switching any tool or skill on or off — globally, or for one workspace only — from a single Settings page. A disabled ability leaves both the model tool list and the system prompt, so the model stops seeing what it must not use: fewer tokens spent, no ghost calls. Every invocation is still refused at runtime as a second line of defence, and the change lands in the running conversation without a restart. Search by tool name or category, flip a whole category with one checkbox (built-in tools still ask for confirmation), and trust the abilities dsh itself depends on to stay protected. Workspace rules layer on top of the global ones, so the same harness can be locked down for one repo and wide open in another.'
+  zh: '定制你自己的 harness：一个「能力管理」页按全局或单个工作区开关任意工具与技能。被禁用的能力会同时从模型的工具清单与系统提示词里消失——少花 token、不再误调；运行期还有第二道兜底拒绝，改完在正在跑的会话里立刻生效、无需重启。支持按工具名/分类搜索、整组一键开关（内置工具会先要你确认），harness 自身依赖的内置能力默认受保护。工作区规则叠加在全局之上，同一个 harness 可以对某个仓库收紧、对其他仓库保持全开。'

@@ -1,0 +1,6 @@
+url: https://github.com/cccuuuhhh/dsh-sidebar-more
+name: cccuuuhhh/dsh-sidebar-more
+category: ui
+description:
+  en: Folds the sidebar's global panel rows into the built-in More menu, leaving a single More row above the workspace list.
+  zh: 把侧栏的全局面板入口收进内置的「更多」菜单，工作区列表上方只保留一个「更多」。

@@ -1,0 +1,6 @@
+url: https://github.com/Kook543/dsh-task-toast
+name: Kook543/dsh-task-toast
+category: notify
+description:
+  en: 'Windows 10/11 desktop notifications for DeepSeek Harness: approval requests, interruptions, questions, and completed tasks. Clicking a notification opens the session that produced it. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '适用于 Windows 10/11。DSH 任务需要审批、被中断、提问或完成时弹出桌面通知，点击通知回到对应会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

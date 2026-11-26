@@ -1,0 +1,6 @@
+url: https://github.com/jacky-aj/dsh-plugin-daily-report
+name: jacky-aj/dsh-plugin-daily-report
+category: git
+description:
+  en: 'Aggregates commits from multiple Git repositories and branches plus local notes into a daily report, optionally summarized by AI, and exports it as XLSX, Markdown, CSV or HTML.'
+  zh: '按天汇总多个 Git 仓库与分支的提交和本地文档，可由 AI 生成摘要，并导出 XLSX、Markdown、CSV 或 HTML 日报。'

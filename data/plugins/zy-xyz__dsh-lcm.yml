@@ -1,0 +1,6 @@
+url: https://github.com/zy-xyz/dsh-lcm
+name: zy-xyz/dsh-lcm
+category: session
+description:
+  en: 'Lossless context compaction: an LLM summarizes a leaf of compacted events and replaces it with one checkpoint node, nothing is deleted, so lcm_search still matches text a checkpoint summarized and lcm_expand restores any event by seq. Summaries condense at fanin 4, a threshold crossing sweeps several leaves under two clocks, and an idle pass resumes a sweep that ran out of budget. Optional semantic recall ranks events against any OpenAI-compatible embedding endpoint, with a /lcm-embed backfill command and status. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '无损上下文压缩：LLM 为一段被压缩事件写摘要并替换为一条 checkpoint 节点，内容不删除，因此 lcm_search 仍能命中已被摘要折叠的原文，lcm_expand 可按 seq 原样恢复任意事件。摘要按 fanin 4 逐层凝聚，越过阈值时在双时钟约束下一次 sweep 多个叶，预算用尽后由空闲续跑接着完成。可选语义召回按余弦相似度对事件排序，支持任意 OpenAI 兼容 embedding 端点，附带 /lcm-embed 回填命令与状态查询。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

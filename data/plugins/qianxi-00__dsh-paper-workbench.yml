@@ -1,0 +1,7 @@
+url: https://github.com/qianxi-00/dsh-paper-workbench
+name: qianxi-00/dsh-paper-workbench
+category: docs
+description:
+  en: 'Read research PDFs with bilingual translation, native DSH conversations, and Obsidian notes.'
+  zh: '提供论文 PDF 双语阅读、独立翻译、原生 DSH 会话联动与 Obsidian 笔记。'
+tarball: https://github.com/qianxi-00/dsh-paper-workbench/releases/download/v1.2.0/dsh-paper-workbench-1.2.0.tgz

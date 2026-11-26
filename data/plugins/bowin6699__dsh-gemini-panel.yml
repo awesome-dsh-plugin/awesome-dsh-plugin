@@ -1,0 +1,7 @@
+url: https://github.com/bowin6699/dsh-gemini-panel
+name: bowin6699/dsh-gemini-panel
+category: browser
+description:
+  en: Full-bleed Gemini web panel in the DSH desktop right sidebar, with page zoom and one-click Markdown/JSON conversation export.
+  zh: 在 DSH 桌面端右侧栏内全幅打开 Gemini 网页版，支持整页缩放（可跟随 DSH 字号）与一键导出 Markdown / JSON 对话。
+icon: https://raw.githubusercontent.com/bowin6699/dsh-gemini-panel/main/assets/icon-180.png

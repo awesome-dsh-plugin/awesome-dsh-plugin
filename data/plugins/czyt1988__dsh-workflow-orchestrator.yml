@@ -1,0 +1,6 @@
+url: https://github.com/czyt1988/dsh-workflow-orchestrator
+name: czyt1988/dsh-workflow-orchestrator
+category: workflow
+description:
+  en: 'Visual workflow orchestrator: drag task nodes on a canvas, wire them into sequential, parallel or gateway-joined graphs, and run them; every task node creates a real DSH task session, with judge and terminate nodes that can end a run early.'
+  zh: '可视化工作流编排：在画布上拖任务节点、连成串行、并行或网关汇合的工作流后执行；每个任务节点都会创建真实的 DSH 任务会话，判断与终止节点可以让整次运行提前结束。'

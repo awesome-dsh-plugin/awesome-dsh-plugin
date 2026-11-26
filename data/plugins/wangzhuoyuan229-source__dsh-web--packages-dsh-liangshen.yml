@@ -1,0 +1,6 @@
+url: https://github.com/wangzhuoyuan229-source/dsh-web/tree/liangshenswitch/packages/dsh-liangshen
+name: wangzhuoyuan229-source/dsh-web#dsh-liangshen
+category: model
+description:
+  en: 'A fork of the LiangShen mode agent preset that adds per-session planning and execution model and reasoning-effort routing, applied when plan mode toggles. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '梁神模式 agent 预设的分支：按会话分别保存计划/执行模型与思考强度，并在计划模式切换时自动应用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

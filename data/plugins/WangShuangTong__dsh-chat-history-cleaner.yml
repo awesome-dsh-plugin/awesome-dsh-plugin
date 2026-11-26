@@ -1,0 +1,8 @@
+url: https://github.com/WangShuangTong/dsh-chat-history-cleaner
+name: WangShuangTong/dsh-chat-history-cleaner
+category: session
+description:
+  en: 'Delete DSH chat history safely: per-project selection, a recoverable trash with restore, and permanent purge from the Session menu and Settings.'
+  zh: '安全清理 DSH 历史会话：按项目筛选、可恢复回收站，并从会话菜单和设置页删除、恢复或彻底清空。'
+icon: https://raw.githubusercontent.com/WangShuangTong/dsh-chat-history-cleaner/main/assets/icon-180.png
+tarball: https://github.com/WangShuangTong/dsh-chat-history-cleaner/releases/latest/download/dsh-chat-history-cleaner.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/Vesna-Strivozha-cn/dsh-bili-account-bridge
+name: Vesna-Strivozha-cn/dsh-bili-account-bridge
+category: identity
+description:
+  en: One Bilibili login shared by two DSH bots. Each incoming message is scored by a shared weighted lexicon to see which bot it sounds like, per-side gates then decide whether that side acts or stays silent, and a claim file keeps them from answering the same message twice.
+  zh: 一份 B站 登录态给养鱼与大肥鱼共用：每条消息先按共享词库定归属，再由两侧闸门决定谁动、谁静默，同一句只回一次。
+icon: https://raw.githubusercontent.com/Vesna-Strivozha-cn/dsh-bili-account-bridge/main/assets/icon-180.png

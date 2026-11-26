@@ -1,0 +1,7 @@
+url: https://github.com/SivanCola/dsh-zentao-hub
+name: SivanCola/dsh-zentao-hub
+category: workflow
+description:
+  en: 'ZenTao panel for DSH: reads the requirements, tasks and bugs assigned to you through REST v1/v2 or the official zentao-cli, dispatches an agent on a branch you name, and writes a state transition back after showing the exact request.'
+  zh: 'DSH 的禅道面板：通过 REST v1/v2 或官方 zentao-cli 读取指派给你的需求、任务与 Bug，在你指定的分支上派发 Agent，并在展示请求原文后把状态流转回写禅道。'
+icon: https://raw.githubusercontent.com/SivanCola/dsh-zentao-hub/main/assets/icon-512.png

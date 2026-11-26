@@ -1,0 +1,8 @@
+url: https://github.com/shenzhongchao/lumina-kitchen
+name: shenzhongchao/lumina-kitchen
+category: vision
+description:
+  en: 'Shot workbench with 454 cinematography concepts, 97 motion demos, and side-by-side comparison using configured AI image or video services.'
+  zh: '光影厨房：AI 镜头试拍台，浏览 454 条摄影概念与 97 个运镜演示，并排对照拍法并通过配置的 AI 服务生成图片或视频。'
+icon: https://raw.githubusercontent.com/shenzhongchao/lumina-kitchen/main/assets/icon-180.png
+tarball: https://github.com/shenzhongchao/lumina-kitchen/releases/download/v3.2.4/local-lumina-kitchen-3.2.4.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/wunankun/dsh-task-traffic-light
+name: wunankun/dsh-task-traffic-light
+category: notify
+icon: https://raw.githubusercontent.com/wunankun/dsh-task-traffic-light/main/assets/icon-180.png
+description:
+  en: 'A floating macOS traffic light for DeepSeek Harness: red while a session runs, yellow while one waits for you, green until the finished session is opened — clicking a lit lamp jumps to that session.'
+  zh: 贴在屏幕边上的 macOS 红绿灯：会话在跑亮红灯，有东西等你亮黄灯，跑完还没看亮绿灯；点亮着的那盏灯会跳到对应会话。

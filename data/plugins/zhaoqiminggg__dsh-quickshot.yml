@@ -1,0 +1,6 @@
+url: https://github.com/zhaoqiminggg/dsh-quickshot
+name: zhaoqiminggg/dsh-quickshot
+category: ui
+description:
+  en: 'Global-hotkey screenshots for DeepSeek Harness: press the shortcut over any window, drag a region, and the image lands in the current session composer without switching back to DSH. The overlay offers only confirm and cancel, you can keep capturing one after another (up to 20 images per message), it works even when no session is open and then asks which session to use, and the shortcut is customizable.'
+  zh: '给 DeepSeek Harness 的全局快捷键截图：在任意界面按快捷键即可框选截图，图片直接进入当前会话输入框，不用切回 DSH；框选界面只有确定和取消，可以连截多张，DSH 单条消息最多 20 张；不在会话中也能截图，点确定后切回任意会话，截图会自动放进输入框；快捷键可自定义。（同义：截图输入 / 快捷截图 / 任意界面截图 / 截图插件 / 全局截图 / 截图进输入框 / 框选截图）'

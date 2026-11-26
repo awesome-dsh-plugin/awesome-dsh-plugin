@@ -1,0 +1,6 @@
+url: https://github.com/MisakaChino/dsh-wallpaper-glass
+name: MisakaChino/dsh-wallpaper-glass
+category: theme
+description:
+  en: 'Wallpaper Engine library behind the DSH GUI: video and image wallpapers stream from the local Steam library, app surfaces become dark glass, and a wallpaper/appearance panel controls both independently. Scene and web wallpapers are detected and can be replaced with a usable one in one click. An optional reversible app.asar patch adds a real Windows acrylic window.'
+  zh: '把本机 Wallpaper Engine 壁纸作为 DeepSeek Harness 界面背景：视频与图片壁纸从本地 Steam 库流式播放，界面转为深色玻璃，并可用面板分别控制壁纸源与外观。场景/网页类壁纸会被识别并可一键换成可用的壁纸；另有可选的可逆 app.asar 补丁，用于开启 Windows acrylic 透明窗口。'

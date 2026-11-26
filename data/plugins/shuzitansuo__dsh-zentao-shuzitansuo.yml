@@ -1,0 +1,7 @@
+url: https://github.com/shuzitansuo/dsh-zentao-shuzitansuo
+name: shuzitansuo/dsh-zentao-shuzitansuo
+category: tools
+description:
+  en: 'ZenTao workbench for DeepSeek Harness with project, task and bug views, DeepSeek chat, batch task creation and daily reminders. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '禅道 AI 工作台：浏览项目、任务与 BUG，支持 DeepSeek 对话、批量建任务和今日待办提醒。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/shuzitansuo/dsh-zentao-shuzitansuo/main/assets/icon-180.png

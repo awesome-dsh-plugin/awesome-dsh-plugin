@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-spec-doc-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-spec-doc-check'
+category: 'tools'
+description:
+  en: 'Spec-doc hygiene: the problem stated, acceptance criteria a reader could actually check, an explicit out-of-scope section, and no criterion written as a wish («体验良好» can be neither accepted nor rejected). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '方案文档的检查：问题背景、可被检查的验收标准、明确的范围外，以及验收标准不能写成愿望——「体验良好」无法通过也无法拒绝；带阈值的愿望词不算违规。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

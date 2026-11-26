@@ -1,0 +1,7 @@
+url: https://github.com/Greatbeing/Aesthetics-OS
+name: Greatbeing/Aesthetics-OS
+category: skill
+tarball: https://github.com/Greatbeing/Aesthetics-OS/releases/latest/download/dsh-aesthetics-os.tgz
+description:
+  en: 'Bundles the Aesthetics-OS aesthetic-judgment skill as a runtime skill with a red-line routing section, plus 22 native tools backed by bundled Python scripts: a persistent propose→brief→evidence→measure→critique→verdict state machine that refuses unverified passes, a delivery gate, fingerprint-based reskin detection, and Euler color/texture/structure lenses. State machine needs only Python 3 stdlib; lenses need numpy+Pillow.'
+  zh: '把 Aesthetics-OS 审美判断技能注册为运行时技能并注入红线路由段，另提供 22 个由包内 Python 脚本驱动的原生工具：持久化 命题→简报→证据→测量→审判→结论 状态机（拒绝无证据通过）、交付门禁、形式指纹抓换皮、欧拉色彩/纹理/结构透镜。状态机仅需 Python 3 标准库；透镜需 numpy+Pillow。'

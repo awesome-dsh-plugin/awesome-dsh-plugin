@@ -1,0 +1,6 @@
+url: https://github.com/xqh0405/dsh-memory-es
+name: xqh0405/dsh-memory-es
+category: memory
+description:
+  en: 'DSH memory plugin backed by Elasticsearch: per-user indices with index-level ACL, a shared team knowledge base, Chinese BM25 plus vector retrieval, and a built-in review and audit panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '以 Elasticsearch 为后端的 DSH 记忆插件：一人一索引与索引级 ACL、团队共享知识库、中文 BM25 与向量混合检索，以及内置的审核与审计面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

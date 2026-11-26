@@ -1,0 +1,6 @@
+url: https://github.com/hongcha-dsh/dsh-dev-plan-presets
+name: hongcha-dsh/dsh-dev-plan-presets
+category: agi
+description:
+  en: 'A "Development planning and delivery" agent preset in which the expensive main model only plans, dispatches and reviews: four delegation tools (recon, review, scribe, develop) spawn child agents in-process, the build subagent reports straight back to the main window, and a subagent model guard keeps every child on the provider and model chosen on the settings page while the main session is never re-routed. The build subagent may be any preset already installed on the host. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '「开发规划与交付」agent 预设：昂贵主模型只做规划、派工与复核，四个委派工具（recon、review、scribe、develop）在进程内创建子代理，施工子代理完成后直接向主窗口汇报；子代理模型守门把子代理钉在设置页选定的服务商与模型上，主会话永不被改模型。施工子代理可选宿主已安装的任意预设。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

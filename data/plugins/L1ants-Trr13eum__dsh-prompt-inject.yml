@@ -1,0 +1,7 @@
+url: https://github.com/L1ants-Trr13eum/dsh-prompt-inject
+name: L1ants-Trr13eum/dsh-prompt-inject
+category: session
+description:
+  en: 'Appends condition-scoped prompt snippets to the system prompt of a matching DeepSeek Harness session: rule cards in settings, plus a per-session override that applies mid-conversation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '按会话条件往系统提示词里追加片段：设置里写规则卡，会话里还能临时覆盖，改完下一轮就生效。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/L1ants-Trr13eum/dsh-prompt-inject/releases/download/v0.2.7/dsh-prompt-inject-0.2.7.tgz

@@ -1,0 +1,8 @@
+url: https://github.com/KunKun24/dsh-ghost-input
+name: KunKun24/dsh-ghost-input
+category: ui
+description:
+  en: 'Inline autocomplete in the composer: pause after half a sentence and the session''s own model finishes it in faint grey behind a small Tab key cap; Tab accepts, Escape or further typing dismisses. On phones, tap the grey text instead.'
+  zh: 输入框行内自动补全：写完半句停一下，当前会话所用的模型就用淡灰字把后半句补完，灰字后跟一个很淡的 Tab 键帽提示收下；Esc 或继续打字即丢弃。手机上直接点灰字收下。
+icon: https://raw.githubusercontent.com/KunKun24/dsh-ghost-input/main/assets/icon-180.png
+tarball: https://github.com/KunKun24/dsh-ghost-input/releases/download/v0.2.3/dsh-ghost-input-0.2.3.tgz

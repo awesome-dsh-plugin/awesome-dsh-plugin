@@ -1,0 +1,6 @@
+url: https://github.com/JiamingShi-JsPhys/dsh-token-steward
+name: JiamingShi-JsPhys/dsh-token-steward
+category: model
+description:
+  en: 'Runs an OpenAI-compatible gateway on your own machine. Several upstreams sit behind one base URL, and each request picks a model from capability tags, context window and current availability. A 429, a 5xx or a context overflow moves the request along the fallback chain inside the same call. Token usage and cost are recorded per route in a local ledger, and vendors, keys and prices are edited on a settings page.'
+  zh: '在本机运行一个 OpenAI 兼容网关。几个上游放进同一个 base URL，请求进来后按能力标签、上下文窗口和当前可用状态挑型号。遇到 429、5xx 或上下文超限，请求在同一次调用内沿降级链换到下一个上游。每次调用的 token 用量与费用按路由记在本地账本里，厂家、密钥和价目在设置页维护。'

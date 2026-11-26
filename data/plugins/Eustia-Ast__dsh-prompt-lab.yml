@@ -1,0 +1,7 @@
+url: https://github.com/Eustia-Ast/dsh-prompt-lab
+name: Eustia-Ast/dsh-prompt-lab
+category: session
+description:
+  en: 'Per-session DeepSeek Harness system-prompt section editing and a local Agent preset registry, with templates, presets, automatic backups, blank-window drafts, message appends and per-session global-tool switches; only explicitly enabled sessions are affected, agent presets apply to new sessions,  and the session config becomes read-only after the first turn so stale overrides yield when DSH changes official text.'
+  zh: '按会话改写、置空或新增 DeepSeek Harness 系统提示词 section，并注册本机 Agent 预设，支持模板、预设、自动备份、空白窗口草稿、追加消息与按会话的 global 工具开关；只影响用户明确开启的会话；Agent 预设只影响新会话；首轮后提示词配置转为只读，官方段变化时覆盖让位。'
+icon: https://raw.githubusercontent.com/Eustia-Ast/dsh-prompt-lab/main/assets/icon-180.png

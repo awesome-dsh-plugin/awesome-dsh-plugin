@@ -1,0 +1,7 @@
+url: https://github.com/hestudio-community/dsh-plugin-workspace-browser
+name: hestudio-community/dsh-plugin-workspace-browser
+category: browser
+description:
+  en: 'Opens a Chromium window in the right sidebar, with one containerized browser and persistent profile per workspace, and one opt-in agent tool for navigation and page interaction. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在右侧边栏打开 Chromium 窗口，每个工作区各有一个容器化浏览器与持久化配置，并提供需逐会话授权的单一 Agent 工具，用于导航与页面交互。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/hestudio-community/dsh-plugin-workspace-browser/main/assets/icon-180.png

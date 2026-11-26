@@ -1,0 +1,6 @@
+url: https://github.com/notEatingOranges/oranges-dsh-skin
+name: notEatingOranges/oranges-dsh-skin
+category: theme
+description:
+  en: 'Wallpaper skin for the DSH web client: drop an image into the sidebar dialog and it repaints the interface, with sliders for wallpaper opacity, interface transparency, blur and dimming. The image stays in this browser (IndexedDB); no host behaviour, model requests or network calls.'
+  zh: 'DSH Web 客户端的壁纸皮肤：在侧边栏对话框里拖入一张图片即可给界面换底，可调壁纸不透明度、界面透明度、模糊与压暗。图片只存在本机浏览器（IndexedDB），不涉宿主行为、模型请求或网络请求。'

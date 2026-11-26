@@ -1,0 +1,6 @@
+url: https://github.com/noname-nikke/dsh-model-picker-wide
+name: noname-nikke/dsh-model-picker-wide
+category: ui
+description:
+  en: 'Widens the composer model picker so long model names and provider suffixes are no longer cut off: one stylesheet raises the model button and its dropdown panel to configurable widths (default 360 px and 480 px), a "Model picker width" section added to DSH settings changes both live, and long names can optionally wrap instead of being truncated. It covers both the better-panel overlay and the official model-selection UI without replacing either, and leaves the model list untouched.'
+  zh: '加宽 DSH 输入框的模型选择器，带 provider 后缀或本身很长的模型名不再被省略号截断：用一份样式表把模型按钮和下拉面板改为可配置宽度（默认 360 px / 480 px），并在 DSH 设置里新增「模型选择器宽度」一栏，两处宽度即时生效，超长名字还可以选择折行而不是被截断。同时适配 better-panel 浮层与官方模型选择界面，不替换其中任何一个，也不改动模型列表。'

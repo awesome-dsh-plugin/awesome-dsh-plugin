@@ -1,0 +1,6 @@
+url: https://github.com/fjcqv/dsh-cronops
+name: fjcqv/dsh-cronops
+category: tools
+description:
+  en: 'Console for self-hosted task panels (Qinglong and Daidai) in the sidebar: manage panel connections, environment variables and scheduled tasks over each panel''s OpenAPI application credential, with persisted per-resource permission probes and four agent tools for the remaining resources.'
+  zh: 在侧栏管理自托管定时面板（青龙 / 呆呆）：用面板的 OpenAPI 应用凭据管理连接、环境变量与定时任务，权限探测结果落库，其余资源由四个智能体工具完成。

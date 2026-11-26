@@ -1,0 +1,6 @@
+url: https://github.com/ciskonc/modsearch-plus
+name: ciskonc/modsearch-plus
+category: browser
+description:
+  en: 'Fork of liustack/modsearch: a web-search bridge for text-only agents that adds MiniMax engines and a Zhipu engine (coding-plan MCP or balance REST, one engine with a channel setting) to a parallel multi-engine chain with per-engine failover, health lights and a Plugins-page settings card. Its HTTP routes refuse cross-site browser requests, fetches that come back as error pages or empty shells are reported as failed instead of reading as evidence, and MODSEARCH_HOME isolates config and state for e2e or second-instance setups. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'liustack/modsearch 的分支：为纯文本模型的 agent 桥接网页搜索，在并行多引擎链上新增 MiniMax 引擎与智谱引擎（编程套餐 MCP 或余额 REST，一个引擎用通道设置切换），带逐引擎故障转移、健康状态灯与插件页设置卡片。HTTP 路由拒绝跨站浏览器请求；错误页或空壳抓取会如实标记为失败而非充当证据；支持 MODSEARCH_HOME 隔离配置与状态（e2e/多实例）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

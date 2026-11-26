@@ -1,0 +1,10 @@
+url: https://github.com/flying-ovaltine/dsh-hematology-expert
+name: flying-ovaltine/dsh-hematology-expert
+category: skill
+
+description:
+  en: 'Hematology consultant for clinicians. Reads CBC, smear, marrow, flow cytometry, immunohistochemistry and molecular reports; types against WHO5 and ICC 2022 side by side, ranks a differential with counter-evidence on every arm, stratifies risk and sketches guideline-anchored regimens. Emergency red flags such as suspected APL or TTP are managed before confirmation. Six interpretation references ship with the skill.'
+  zh: '血液病学专家顾问：读血常规、涂片、骨髓、流式、免疫组化与分子报告，按 WHO5 / ICC 2022 双体系分型，鉴别清单必排序且每条带反证，给危险分层与指南锚定的方案骨架；疑诊 APL、TTP 等急症先处理不等确诊。随技能分发六份判读底本。'
+
+icon: https://raw.githubusercontent.com/flying-ovaltine/dsh-hematology-expert/main/assets/icon-180.png
+tarball: https://github.com/flying-ovaltine/dsh-hematology-expert/releases/latest/download/dsh-hematology-expert.tgz

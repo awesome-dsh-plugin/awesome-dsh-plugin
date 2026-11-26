@@ -2,5 +2,5 @@ url: https://github.com/JayYuen666/dsh-danger-guard
 name: JayYuen666/dsh-danger-guard
 category: security
 description:
-  en: 'Pre-execution guard: a `tools.guard` predicate decides allow, ask or refuse per permission preset for dangerous shell commands (git hook bypass, catastrophic `rm`, download-and-run, git history rewrites) and for edits to credential paths or to files the turn never read, and hands the model the reason plus a working alternative.'
-  zh: '执行前拦截：`tools.guard` 谓词按当前权限档位，对危险 shell 命令（跳过 git 钩子、灾难性 `rm`、下载即执行、重写 git 历史）与「写凭据路径」「没读过目标文件的首次编辑」逐条给出放行 / 询问 / 拒绝，并把成因与可行替代写法交回模型。'
+  en: 'Pre-execution guard on `ctx.tools.guard`: dangerous `bash` and `pwsh` commands and `terminal_send` input are allowed, asked about or refused according to the current permission preset (git hook bypass, catastrophic `rm`, download-and-run, long-running dev servers, git and infrastructure destruction), while edits to credential paths and edits of files the turn never read are refused before dispatch with the missing evidence attached; every refusal returns a model-facing reason, naming the offending flags or targets where the rule can.'
+  zh: '执行前拦截：`ctx.tools.guard` 按当前权限档位对危险的 `bash` / `pwsh` 命令与 `terminal_send` 输入给出放行 / 询问 / 拒绝（跳过 git 钩子、灾难性 `rm`、下载即执行、常驻开发服务器、git 与基础设施破坏）；写凭据路径、编辑本回合没读过的文件会在下发前直接拒绝并附上缺失的证据；每次拒绝都回传模型可读的成因，能在规则里点名的就点名越界旗标或目标。'

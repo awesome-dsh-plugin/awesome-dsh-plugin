@@ -1,0 +1,6 @@
+url: https://github.com/IsaacHuo/dsh-ops-pro
+name: IsaacHuo/dsh-ops-pro
+category: tools
+description:
+  en: 'Tool runtime for DSH: bash, PowerShell 7 and Rust file, search and batch tools with batched OPS-PTC calls, plus opt-in Windows desktop and browser computer use driven by the UI Automation tree and the CDP accessibility tree, a sidebar console and usage statistics.'
+  zh: '面向 DSH 的工具运行时：bash、PowerShell 7 与 Rust 文件、搜索、批处理工具，支持批量 OPS-PTC 调用；另含可选的 Windows 桌面与浏览器电脑操控（基于 UI Automation 树与 CDP 无障碍树）、侧栏控制台与用量统计。'

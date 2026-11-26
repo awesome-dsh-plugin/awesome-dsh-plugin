@@ -1,0 +1,6 @@
+url: https://github.com/renshaokai/dsh-chip-design-closure
+name: renshaokai/dsh-chip-design-closure
+category: skill
+description:
+  en: 'Adds the Design closure agent preset and the chip-design skill for digital chip front-end work: architecture budgets, design specs, functional and acceptance point lists, RTL, timing closure and PPA. Ships three scripts — a 38-rule spec linter, a Markdown to docx/PDF converter, and a draw.io / Mermaid / WaveDrom figure renderer.'
+  zh: '增加「设计收口」代理预设与 chip-design 技能，覆盖架构预算、设计规格、功能点与验收点清单、RTL、时序收口与 PPA。附带三个脚本：38 条规则的规格校验、Markdown 转 docx/PDF、draw.io / Mermaid / WaveDrom 出图。'

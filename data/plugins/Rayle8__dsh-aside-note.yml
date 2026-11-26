@@ -2,6 +2,6 @@ url: https://github.com/Rayle8/dsh-aside-note
 name: Rayle8/dsh-aside-note
 category: ui
 description:
-  en: 'Per-session note list beside the conversation: a button at the top right of the chat badges the open count and opens a resizable right-side panel where notes are added, checked off, copied, edited or appended to the chat input, with panel size and drafts kept in the browser.'
-  zh: '对话旁的会话级便笺：会话右上角入口用角标显示未完成数量，点开是可拖拽调宽高的右侧面板，便笺可添加、勾选完成、复制、编辑和一键转发到输入框，面板尺寸与草稿保存在浏览器本地。'
+  en: "AsideNote (旁边记) is a lightweight notes and todo list beside the conversation: a button at the top right of a session badges the open count and opens a resizable right-side panel. Notes default to one list shared across the workspace, with a switch back to the current session, and are stored in a DSH host file, so refreshing, restarting or switching browsers keeps them. Check items off, reopen completed ones, clear completed behind a confirm, copy, edit or delete, and forward a note to the open composer with a custom prefix (never auto-sent). Drafts are saved per workspace, and the panel follows the light/dark theme and all 8 DSH languages."
+  zh: 旁边记（AsideNote）是对话旁的轻量便笺（便签）与待办清单：会话右上角入口带未完成角标，点开是可拖拽调宽高的右侧面板。默认同一工作区共享一份清单，也能切回当前会话；便笺保存在 DSH 宿主文件里，刷新、重启、换浏览器都不丢。支持勾选完成、已完成回看、清除已完成、复制、编辑、删除，一键把便笺转发到当前输入框（前缀可自定义、不自动发送），草稿按工作区保存，跟随明暗主题与 DSH 的 8 种官方语言。
 icon: https://raw.githubusercontent.com/Rayle8/dsh-aside-note/main/icon.png

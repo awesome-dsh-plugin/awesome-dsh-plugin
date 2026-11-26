@@ -1,0 +1,6 @@
+url: https://github.com/lulaalu/dsh-session-tree
+name: lulaalu/dsh-session-tree
+category: session
+description:
+  en: Per-workspace map of DeepSeek Harness sessions whose nodes are conversation turns (one prompt and reply each), so forks and sub-sessions are visible as a graph.
+  zh: 以「一轮对话」为节点画出的工作区会话地图，分叉与子会话一眼可见。

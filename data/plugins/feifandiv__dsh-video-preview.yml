@@ -1,0 +1,6 @@
+url: https://github.com/feifandiv/dsh-video-preview
+name: feifandiv/dsh-video-preview
+category: docs
+description:
+  en: 'Play local video and audio inside the sidebar preview — HTTP Range streaming keeps memory flat at any file size, nothing buffers until you press play, playback pauses when the pane is hidden, and formats the browser cannot decode hand off to a native player.'
+  zh: '在右侧边栏直接播放本地视频与音频：HTTP Range 流式读取让内存不随文件变大、不点播放不缓冲、侧边栏收起即暂停；浏览器解不了的格式一键交给本机播放器。'

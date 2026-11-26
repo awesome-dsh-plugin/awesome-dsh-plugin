@@ -1,0 +1,6 @@
+url: https://github.com/zhouhb0321/dsh-box
+name: zhouhb0321/dsh-box
+category: tools
+description:
+  en: 'Your agent has a cloud desktop but may not know how to drive it well. A short guide teaches it when a real browser with login state is worth opening, how to work the GUI and shell and take snapshots, when to hand sign-in or a captcha back to you, and why a sleeping box is normal. Adds no tools and touches no credentials; needs the official box plugin.'
+  zh: '你的 AI 有了一台云电脑，却未必会用。一段简短引导教它：什么时候值得开带登录态的真实浏览器、怎么操作 GUI 和 Shell 并保存快照、遇到登录或验证码时把控制权交回给你、以及休眠是正常的不用瞎折腾。不新增工具、不碰密钥；需先装官方 box 插件。'

@@ -1,0 +1,6 @@
+url: https://github.com/leotier196/dsh-lifeboard
+name: leotier196/dsh-lifeboard
+category: ui
+description:
+  en: Folds daily markdown logs, a TODO file and a TSV asset table into five cards (health, tasks, assets, mood, bookshelf). Reads local files only; the finance card stays unread until clicked.
+  zh: 把每日 markdown 日志、TODO 文件与资产 TSV 折成五张卡（健康/任务/资产/情绪/书架）。只读本地文件。

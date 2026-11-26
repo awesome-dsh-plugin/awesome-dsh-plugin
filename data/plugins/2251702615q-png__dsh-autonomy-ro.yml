@@ -1,0 +1,7 @@
+url: https://github.com/2251702615q-png/dsh-autonomy-ro
+name: 2251702615q-png/dsh-autonomy-ro
+category: security
+description:
+  en: 'Chat | Agent switch for DeepSeek Harness, derived from dsh-autonomy 0.1.5 (MIT) with one change: Chat mode keeps the reading half of the tool surface (read, read_image, glob, grep, web_search, web_fetch, skill, read-only memory tools) while write, edit, pwsh and every other mutating tool are denied; Agent mode restores the full set. Three fences enforce it: the model-facing tool list is filtered, an execution-time guard denies non-allowlisted calls, and a system-prompt section states what the mode permits. The mode is stored per session, so it survives refresh, restart and resume.'
+  zh: 'DeepSeek Harness 的 Chat | Agent 开关插件，基于 dsh-autonomy 0.1.5（MIT）改造，只改一处行为：Chat 模式保留「读」的一半工具面（read、read_image、glob、grep、web_search、web_fetch、skill 与会话记忆只读工具），write、edit、pwsh 等一切会改动东西的工具一律拒绝；Agent 模式恢复全部工具。三道闸同时生效：下发给模型的工具清单先过滤，执行期 guard 再拒绝白名单外的调用，系统提示词里说明当前模式允许什么。模式按会话记录，刷新、重启、恢复后仍然有效。'
+icon: https://raw.githubusercontent.com/2251702615q-png/dsh-autonomy-ro/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/imCBW/dsh-session-strip
+name: imCBW/dsh-session-strip
+category: session
+description:
+  en: 'Session strip above the composer: live status for the current session and its sub-agents, other sessions that need you, token usage, and right-click unfinished marks.'
+  zh: '输入框上方的会话概览条：当前会话与子代理的实时状态、需要你处理的其他会话、token 用量，右键可标记未完成。'

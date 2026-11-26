@@ -1,0 +1,7 @@
+url: https://github.com/adsqwui/dsh-welcome
+name: adsqwui/dsh-welcome
+category: ui
+description:
+  en: "Replaces the blank-chat logo, headline and Preview badge with one of five fixed greetings in eight interface languages, optionally with a name set on the plugin's page under Plugins."
+  zh: "将空白会话页的标志、标题与 Preview 徽标替换为五句固定问候之一，支持八种界面语言；可在「插件」中的插件页面设置名字，问候会带上它。"
+icon: https://raw.githubusercontent.com/adsqwui/dsh-welcome/main/docs/icon-180.png

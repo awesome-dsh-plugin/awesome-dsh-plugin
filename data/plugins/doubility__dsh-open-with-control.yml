@@ -1,0 +1,6 @@
+url: https://github.com/doubility/dsh-open-with-control
+name: doubility/dsh-open-with-control
+category: ui
+description:
+  en: 'Add any application installed on this machine to the session header''s Open with menu, not just the ones the host ships with: real icons, reordering, a pinned default, and restore for anything you remove. Preferences persist on the host; discovery covers macOS and Windows.'
+  zh: '把本机已安装的任意应用加进会话头部的「打开方式」菜单，不限于宿主自带的几个：带真实图标，可调整顺序、设定默认应用、移除后随时恢复。偏好保存在主机上，覆盖 macOS 与 Windows。'

@@ -1,0 +1,6 @@
+url: https://github.com/Z06528/dsh-tutorflow
+name: Z06528/dsh-tutorflow
+category: tools
+description:
+  en: Teaches one idea and one question at a time, draws local SVG math figures, and keeps study progress on disk.
+  zh: 一次只讲一个知识点、只问一个问题，在本地画数学图，并把学习进度写在本机。

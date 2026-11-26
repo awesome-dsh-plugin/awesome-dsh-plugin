@@ -1,0 +1,18 @@
+# DSH 插件市场条目
+#
+# 提交位置：awesome-dsh-plugin/awesome-dsh-plugin
+#           data/plugins/fangqiuci__feiyu-brain.yml
+# 文件名是 **双下划线**（<owner>__<repo>.yml），不是单个。
+#
+# 提交前确认三件事（CI 会自动查）：
+#   ① 仓库 package.json 里有 "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+#   ② 仓库创建满 1 天（未满也能提，CI 会几小时后自动重跑）
+#   ③ 仓库打了 `dsh-plugin` topic
+
+url: https://github.com/fangqiuci/feiyu-brain
+name: fangqiuci/feiyu-brain
+category: memory
+
+description:
+  en: 'Persona-grounded brain kernel with nine tools (status, wake, observe, tick, feel, app, lint, snapshot, diary): weighted traits that erode into memories, a 30-day recall window, PAD emotions, her own diary, and phone/tablet/desktop bodies.'
+  zh: '以人设为根的大脑内核，提供 9 个工具（status / wake / observe / tick / feel / app / lint / snapshot / diary）：带权重的命题随经历涨落、蜕皮成记忆，30 天回忆窗口，PAD 三维情绪，她自己的日记，手机/平板/电脑三具身体。'
