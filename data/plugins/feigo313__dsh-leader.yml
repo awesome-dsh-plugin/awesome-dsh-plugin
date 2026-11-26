@@ -1,0 +1,7 @@
+url: https://github.com/feigo313/dsh-leader
+name: feigo313/dsh-leader
+category: workflow
+description:
+  en: 'Injects a leader contract into the root session so the main agent plans, slices the work, delegates to subagents and verifies their output; checks the [ROUTE] header and the declared model/effort of every dispatch (off, audit or enforce), watches for the main agent doing implementation work itself, and records it all in an audit log. Ships a settings page and a local HTTP API.'
+  zh: '给根会话注入 Leader 合同，让主代理做统筹、切片、派活与验收；核对每次派活的 [ROUTE] 头与声明的 model/effort（off/audit/enforce），检测主代理是否自己动手改文件，并写入审计日志；提供设置页与本地 HTTP API。'
+icon: https://raw.githubusercontent.com/feigo313/dsh-leader/main/assets/icon-180.png
