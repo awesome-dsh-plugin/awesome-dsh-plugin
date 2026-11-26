@@ -1,0 +1,6 @@
+url: https://github.com/Sonder-frmc/dsh-subagent-window
+name: Sonder-frmc/dsh-subagent-window
+category: ui
+description:
+  en: Floats a DSH subagent's conversation in a draggable window over the web client, so you can keep watching the main conversation while reading, messaging, confirming permissions or stopping that subagent.
+  zh: 把 DSH 子智能体对话浮成可拖动的窗口叠在网页客户端上，主对话不用来回切换即可查看、发消息、确认权限或停止子智能体。
