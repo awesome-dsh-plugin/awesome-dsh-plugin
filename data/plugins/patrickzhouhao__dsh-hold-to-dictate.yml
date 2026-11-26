@@ -1,0 +1,7 @@
+url: https://github.com/patrickzhouhao/dsh-hold-to-dictate
+name: patrickzhouhao/dsh-hold-to-dictate
+category: voice
+description:
+  en: Hold Space to dictate with DSH Voice Input, with optional per-session auto-send.
+  zh: 按住空格调用 DSH 官方听写，松开后转写到草稿，可按会话开启自动发送。
+tarball: https://github.com/patrickzhouhao/dsh-hold-to-dictate/releases/download/v1.1.3/local-dsh-hold-to-dictate-1.1.3.tgz
