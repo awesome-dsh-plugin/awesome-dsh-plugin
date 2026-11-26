@@ -1,0 +1,6 @@
+url: https://github.com/Bacon-01/desktop-pilot
+name: Bacon-01/desktop-pilot
+category: ui
+description:
+  en: Give DSH eyes and hands on Windows with UIA-first desktop control, OCR fallback, Chinese/emoji input, and read-back verification.
+  zh: 给 DSH 装上 Windows 桌面的眼睛和手，优先用 UI Automation 找控件、OCR 兜底，支持点击、输入中文和 emoji、按键、拖拽，并用读回验证结果。
