@@ -1,0 +1,7 @@
+url: https://github.com/suyunxing/dsh-quick-reply-bar
+name: suyunxing/dsh-quick-reply-bar
+category: ui
+icon: https://raw.githubusercontent.com/suyunxing/dsh-quick-reply-bar/main/assets/icon-180.png
+description:
+  en: 'One-click quick replies above the composer: collapsed it is a single small pill button, expanded it is a horizontal strip of reply chips, and clicking a chip types the phrase into the input box and sends it immediately. Phrases are added, renamed, reordered and deleted in an inline panel next to the strip, stored in the browser, and the strip lines up with the composer card edge.'
+  zh: '输入框上方的快捷回复条：收起时是一枚小胶囊按钮，展开后是一条横向排列的回复按钮，点一下就把该短语填进输入框并直接发送。短语可在按钮条旁的编辑面板里新增、改名、上下排序和删除，保存在浏览器本地，按钮条与输入卡片左边缘对齐。'
