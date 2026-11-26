@@ -2,5 +2,5 @@ url: https://github.com/ifrankwang/openspec-agents
 name: ifrankwang/openspec-agents
 category: workflow
 description:
-  en: 'Gated multi-agent pipeline for OpenSpec changes — six opx_* tools drive the phase state machine, two agent presets (developer and reviewer) carry implementation and review, and 23 bundled skills define the quality standards they are checked against; full mode runs analyze, implement, then tool, task and dimension-based quality review, while simple mode runs implement and one merged quality review.'
-  zh: '面向 OpenSpec 变更的按阶段门禁多 Agent 编排：6 个 opx_* 工具驱动阶段状态机，开发者与审核人两个 agent preset 分工实施与审查，23 份内置 skill 定义审查基准；完整流程为 analyze、实施、工具/任务/维度质量三层审查，精简流程为实施加一次合并质量审查。'
+  en: 'OpenSpec process plugin: proposals clarify requirements up front and get a dedicated review pass; implementation runs in an isolated worktree, grouped by task unit per round, leaving the main repo untouched; development and review are split across two agents — a change cannot finish while functional or quality issues remain open, they loop back to the developer agent; bundled standards define the review baseline, with Vue frontend and Java backend kits included.'
+  zh: 'OpenSpec 流程插件：提案前先澄清需求，并对提案文档做一轮复核；实施在独立 worktree 中进行，不影响主仓库，每轮以一个任务组为单位推进；实施由开发与审核两个 Agent 分工，功能有问题或质量不通过时不允许结束，问题会退回开发 Agent 修复；内置多类规范 skill 作为质量审查基准，支持 Vue 前端与 Java 后端项目。'

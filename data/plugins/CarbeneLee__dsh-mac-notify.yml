@@ -1,0 +1,7 @@
+url: https://github.com/CarbeneLee/dsh-mac-notify
+name: CarbeneLee/dsh-mac-notify
+category: notify
+description:
+  en: 'Native macOS notifications for DSH: task completion, failures, approval requests, questions and plan reviews. A small bundled helper app lets banners use the DSH icon and opens DSH on click; the notification tone can be any audio file.'
+  zh: '为 DSH 提供 macOS 原生通知：任务完成、失败、需要批准、需要回答、计划确认时弹横幅。内置的极简 helper 应用让横幅使用 DSH 图标、点击唤起 DSH；提示音可以用任意音频文件。'
+icon: https://raw.githubusercontent.com/CarbeneLee/dsh-mac-notify/main/assets/icon-180.png

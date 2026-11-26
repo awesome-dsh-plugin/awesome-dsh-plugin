@@ -1,0 +1,6 @@
+url: https://github.com/wssdll/dsh-chat-preset
+name: wssdll/dsh-chat-preset
+category: identity
+description:
+  en: 'Pure-chat preset that replicates the web chat experience: only web search, page fetching and file reading, supports uploads, tiny context, Chinese reasoning chain.'
+  zh: 纯净聊天模式预设，复刻网页版的聊天体验。纯聊天，只保留联网搜索、打开网页和读取文件三个工具。支持上传附件，极小上下文，中文思维链。

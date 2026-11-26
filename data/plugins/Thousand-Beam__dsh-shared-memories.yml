@@ -1,0 +1,7 @@
+url: https://github.com/Thousand-Beam/dsh-shared-memories
+name: Thousand-Beam/dsh-shared-memories
+category: memory
+tarball: https://github.com/Thousand-Beam/dsh-shared-memories/releases/download/v0.6.4/dsh-shared-memories-0.6.4.tgz
+description:
+  zh: DSH 共享记忆插件。将长期记忆、人格、技能与用户画像以日志记录，并通过 Git 快照在多个设备之间同步（实验性单写交接）。提供投毒检测、销毁语义、并发写入检测与 doctor 自检命令。
+  en: 'Shared-memory plugin for DSH. Records long-term memories, persona, skills, and user profile as journaled entries and synchronizes them across devices via Git snapshots (experimental single-writer handoff). Includes poison detection, destruction semantics, concurrent-write detection, and a doctor self-check.'

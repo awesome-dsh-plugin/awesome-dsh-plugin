@@ -1,0 +1,6 @@
+url: https://github.com/Raccoon-njuse/dsh-no-project-sessions
+name: Raccoon-njuse/dsh-no-project-sessions
+category: session
+description:
+  en: "Adds a work-without-a-project picker entry, creates a dated working directory named from the first message under a configurable root, and groups these sessions under a Recent section."
+  zh: "项目选择器新增「不在项目中工作」选项，在可配置根目录下按日期和首条消息创建独立工作目录，并统一归入侧栏「最近」分区。"

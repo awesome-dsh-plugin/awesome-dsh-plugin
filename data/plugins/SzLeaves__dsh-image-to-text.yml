@@ -1,0 +1,6 @@
+url: https://github.com/SzLeaves/dsh-image-to-text
+name: SzLeaves/dsh-image-to-text
+category: vision
+description:
+  en: 'Lets a text-only model read images in-session: an ask_image tool hands the image to another vision-capable model in the same instance and returns its answer as text.'
+  zh: 让纯文本模型在会话中读图：通过 ask_image 工具把图片交给同实例内支持视觉的模型读取，并以文字返回结果。

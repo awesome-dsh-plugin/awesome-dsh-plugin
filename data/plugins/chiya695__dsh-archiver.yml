@@ -1,0 +1,6 @@
+url: https://github.com/chiya695/dsh-archiver
+name: chiya695/dsh-archiver
+category: tools
+description:
+  en: 'Back up every DSH skill and plugin as its own zip — manually, on a schedule, or on startup — writing to a local folder and/or WebDAV. Keeps a configurable number of version snapshots, records a sha256 manifest for every package, and can import those backups back into DSH (skills into the skill roots, plugins into an import folder with the link command printed).'
+  zh: '把 DSH 里每个技能、每个插件各自打成一个 zip——可手动、定时或随 DSH 启动自动归档，落到本地目录并/或同步到 WebDAV；保留可配置份数的历史快照，为每个包记录 sha256 清单，并能把备份导回 DSH（技能进技能根，插件进导入目录并给出 link 命令）。'

@@ -1,0 +1,6 @@
+url: https://github.com/doubility/dsh-open-with-control
+name: doubility/dsh-open-with-control
+category: ui
+description:
+  en: 'Replaces the session header Open with split button with a configurable one: remove and reorder its entries, pin the default application, and add applications installed on this machine with their real icons. Preferences persist on the host; application discovery covers macOS and Windows, with no Linux support.'
+  zh: '把会话头部的「打开方式」分裂按钮换成可配置版本：可移除条目、调整顺序、设定默认应用，并把本机已安装的应用加入菜单（带真实图标）。偏好保存在主机上；应用探测覆盖 macOS 与 Windows，暂不支持 Linux。'

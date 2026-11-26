@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-voice
+name: DrizzleGig/dsh-novel-voice
+category: tools
+description:
+  en: 'Want AI to write in the style of novels you love, or to develop a voice that is uniquely yours? Creative Style imports novels you like and your own original work, distils their writing patterns into a personal style profile, and lets you blend several sources into one voice. Before you write it compiles a short brief; afterwards it points out clichés, repetition and off-style sentences, and can rewrite specific spans. Off by default, no scores, no model training.'
+  zh: '想让 AI 写出你喜欢的小说风格，甚至形成独属于自己的文风？「创作风格」支持导入你喜欢的小说和自己的原创作品，从中提炼写作特点，建立专属风格档案。无论你是想让 AI 写出喜欢的故事风格，还是寻找、打磨自己的独特文风，都可以把喜欢的作品和自己的创作变成风格素材，让 AI 按照你喜欢的方式写小说。'

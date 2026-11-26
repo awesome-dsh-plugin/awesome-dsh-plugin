@@ -1,0 +1,8 @@
+url: https://github.com/sonhoang23/dsh-mindmap
+name: sonhoang23/dsh-mindmap
+category: docs
+description:
+  en: 'Native Markdown mind map viewer with interactive navigation, layout controls and SVG/PNG export.'
+  zh: '原生 Markdown 思维导图查看器，支持交互式导航、布局控制及 SVG/PNG 导出。'
+icon: https://raw.githubusercontent.com/sonhoang23/dsh-mindmap/main/assets/icon-180.png
+tarball: https://github.com/sonhoang23/dsh-mindmap/releases/download/v0.2.2/dsh-mindmap-0.2.2.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/sixzjd/dsh-usage-dashboard
+name: sixzjd/dsh-usage-dashboard
+category: usage
+description:
+  en: 'DSH usage dashboard: per-model, per-session and per-date token and cost statistics, cache-hit rate and balance widgets in the Web UI.'
+  zh: 'DSH 用量看板：在 Web UI 展示按模型、会话与日期的 token 用量与成本统计、缓存命中率与余额组件。'

@@ -1,0 +1,7 @@
+url: https://github.com/luojiahao-cn/dsh-literature-lab
+name: luojiahao-cn/dsh-literature-lab
+category: workflow
+icon: https://raw.githubusercontent.com/luojiahao-cn/dsh-literature-lab/main/assets/icon-180.png
+description:
+  en: 'Daily literature pipeline: collects new papers from arXiv, journal RSS, cross-database search and mail alerts, screens them in three AI passes (abstract, triage, full reading), fetches open-access PDFs, writes structured reading cards and files selected papers into Zotero.'
+  zh: '每日文献流水线：从 arXiv、期刊 RSS、跨库检索与邮件快讯采集新论文，按「摘要判读 → 初筛 → 精读」三层筛选，取回开放原文，生成结构化精读卡片并把选中的论文入库 Zotero。'

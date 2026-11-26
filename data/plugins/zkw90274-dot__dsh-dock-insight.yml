@@ -1,0 +1,6 @@
+url: https://github.com/zkw90274-dot/dsh-dock-insight
+name: zkw90274-dot/dsh-dock-insight
+category: usage
+description:
+  en: Folds the composer dock's context occupancy, session timing and token usage into one pill that opens a panel, adds the signed-in account's wallet balance, and hides the host's own dock readouts while loaded.
+  zh: 把底栏的上下文占用、会话耗时与 token 用量收进一个胶囊（点开是面板），并加上登录账号余额；加载时隐藏宿主自带的底栏读数。

@@ -1,0 +1,7 @@
+url: https://github.com/Lee2277-t/dsh-zip-verify
+name: Lee2277-t/dsh-zip-verify
+category: tools
+description:
+  en: Check that a delivery zip really round-trips before you hand it over. `zip_verify` decompresses every entry, checks its CRC32, compares each file against a source directory by hash, and reports entry names that only decode as GBK or that carry an unflagged UTF-8 name; `zip_list` dumps the entries with size and compression method without verifying anything. It reads the central directory itself instead of trusting an external unzip, so a perfectly good Compress-Archive output is not mistaken for mojibake.
+  zh: 交付包打出来之后，先验证它真能原样还原。`zip_verify` 逐条解压、核对 CRC32、按哈希与源目录逐文件对账，并报出只能按 GBK 解码的条目名和未打 UTF-8 标记的中文名；`zip_list` 只列条目的大小与压缩方式，不做校验。它自己读中央目录而不依赖外部解压工具，因此不会把一份完全正常的 Compress-Archive 输出看成乱码。
+icon: https://raw.githubusercontent.com/Lee2277-t/dsh-zip-verify/main/assets/icon-180.png

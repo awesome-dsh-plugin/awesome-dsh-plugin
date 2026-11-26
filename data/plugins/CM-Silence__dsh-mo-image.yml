@@ -1,0 +1,7 @@
+url: https://github.com/CM-Silence/dsh-mo-image
+name: CM-Silence/dsh-mo-image
+category: workflow
+description:
+  en: 'Generate and edit images in DSH conversations using cloud or local models, with provider presets and configurable image APIs.'
+  zh: '在 DSH 对话中生成和编辑图片，支持云端和本地模型、提供商预设及自定义生图 API。'
+icon: https://raw.githubusercontent.com/CM-Silence/dsh-mo-image/master/icon.png

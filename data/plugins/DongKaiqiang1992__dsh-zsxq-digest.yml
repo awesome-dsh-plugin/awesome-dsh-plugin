@@ -1,0 +1,7 @@
+url: https://github.com/DongKaiqiang1992/dsh-zsxq-digest
+name: DongKaiqiang1992/dsh-zsxq-digest
+category: workflow
+description:
+  en: Cloud Knowledge compiles daily research from selected Zsxq groups and Tencent IMA libraries, archives sourced notes to IMA and optionally syncs highlights to a local research dashboard.
+  zh: 云知识汇总所选知识星球和腾讯 IMA 知识库的投研资料，保留出处，将详版归档至个人 IMA，并可将精选同步到量化平台。
+tarball: https://github.com/DongKaiqiang1992/dsh-zsxq-digest/releases/download/v0.4.0/dsh-zsxq-digest-0.4.0.tgz

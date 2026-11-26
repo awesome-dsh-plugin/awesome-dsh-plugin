@@ -1,0 +1,6 @@
+url: https://github.com/chendb888/dsh-project-board
+name: chendb888/dsh-project-board
+category: ui
+description:
+  en: 'Domain-agnostic whitebox project board with a persistent conversation box at every level (locked to the selected task), blueprint-driven layout, dynamic loading progress, SVG dependency flowchart, burndown, edit cards with diffs, voice input and auto TTS broadcast. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '领域无关项目白盒看板：每层保留对话框并锁定当前任务、蓝图驱动布局、动态加载进度、SVG依赖流程图、燃尽图、编辑卡diff、语音输入与自动播报。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

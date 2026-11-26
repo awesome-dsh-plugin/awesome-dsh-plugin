@@ -1,0 +1,7 @@
+url: https://github.com/kuangmi-bit/dsh-a2a-interop
+name: kuangmi-bit/dsh-a2a-interop
+category: identity
+description:
+  en: 'A2A interop bridge for the Harness: serves it as an A2A agent on both the v1.0 and 0.3.x wire formats (auto-detected), drives a real DSH session per inbound message, and adds four a2a_* tools that discover and call remote A2A agents. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'A2A 双向互通：把本机 Harness 同时以 v1.0 与 0.3.x 两代线格式对外提供 Agent Card、JSON-RPC 与 SSE（自动判别），每条入站消息驱动一个真实 DSH 会话，并提供四个 a2a_* 工具调用远端 A2A 智能体。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/kuangmi-bit/dsh-a2a-interop/main/assets/icon-180.png

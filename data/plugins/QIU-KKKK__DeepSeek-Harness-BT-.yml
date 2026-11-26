@@ -1,0 +1,8 @@
+url: https://github.com/QIU-KKKK/DeepSeek-Harness-BT-
+name: QIU-KKKK/DeepSeek-Harness-BT-
+category: tools
+description:
+  en: "Adds a BT and magnet search panel to the Web sidebar with two sources: 磁力猫 (Cilimao) and the Anime Garden index (dmhy, Mikan, Moe, ANi). Supports broad/precise matching, type filters, sorting, search history and favorites."
+  zh: "在左侧栏提供 BT / 磁力资源搜索面板，聚合 磁力猫 与 动漫花园（动漫花园、蜜柑计划、萌番组、ANi）两个来源，支持广泛/精准匹配、类型筛选、排序、搜索历史与收藏。"
+icon: https://raw.githubusercontent.com/QIU-KKKK/DeepSeek-Harness-BT-/main/assets/icon-180.png
+tarball: https://github.com/QIU-KKKK/DeepSeek-Harness-BT-/releases/download/v1.2.2/dsh-plugin-bt-search.tgz

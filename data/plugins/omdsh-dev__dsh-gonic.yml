@@ -1,0 +1,7 @@
+url: https://github.com/omdsh-dev/dsh-gonic
+name: omdsh-dev/dsh-gonic
+category: fun
+description:
+  en: Play Gonic/Subsonic libraries in the DSH Web GUI with search, playlists, queues, and agent-controlled browser playback.
+  zh: 在 DSH Web 界面播放 Gonic/Subsonic 曲库，支持搜索、歌单、队列和 Agent 指令浏览器播放。
+tarball: https://github.com/omdsh-dev/dsh-gonic/releases/latest/download/pkg.tgz

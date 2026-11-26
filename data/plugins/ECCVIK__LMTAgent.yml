@@ -1,0 +1,6 @@
+url: https://github.com/ECCVIK/LMTAgent
+name: ECCVIK/LMTAgent
+category: workflow
+description:
+  en: 'Multi-agent full-stack dev workbench for DSH (dsh-lmtagent v1.1.0): turns feature wishes into parallel file-disjoint coding shards with 8 role presets, detached standalone OS window, 1-click Git scope rollback, budget guard, and a live bilingual DAG console.'
+  zh: '多智能体全栈研发编排工作台（dsh-lmtagent v1.1.0）：一句话需求自动拆解为并行开发分片，支持脱离 DSH 的独立弹出窗口、8 角色协同编码、防并发覆盖、越界一键 Git 回滚与预算熔断，内置全双语可视化控制台。'

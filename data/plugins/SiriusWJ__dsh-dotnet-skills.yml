@@ -1,0 +1,6 @@
+url: https://github.com/SiriusWJ/dsh-dotnet-skills
+name: SiriusWJ/dsh-dotnet-skills
+category: skill
+description:
+  en: 'Project-scoped .NET skills for DeepSeek Harness: the current model picks from a 203-skill catalog using facts read from the project, the selection is copied into the project root, refreshed when the catalog updates, and the Microsoft Learn MCP server can be switched on per working directory. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 DeepSeek Harness 提供按项目生效的 .NET 技能注入：由当前模型依据从项目读取的事实，从 203 个技能的目录中挑选，选中项复制进项目根目录，并在目录更新时自动刷新；还可按工作目录开启 Microsoft Learn MCP 服务器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

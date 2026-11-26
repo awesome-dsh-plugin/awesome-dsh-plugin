@@ -1,0 +1,8 @@
+url: https://github.com/steelunicorn/dsh-mcp-tool
+name: steelunicorn/dsh-mcp-tool
+category: tools
+description:
+  en: 'Folder-scoped MCP server governance: one global server registry, per-folder presets that decide which servers are allowed, and on-demand start/stop for the servers it owns (mcp_load / mcp_release, idle stop after ten minutes).'
+  zh: '按工作文件夹管理 MCP 服务器：一份全局服务器清单，由预设决定每个文件夹允许哪些服务器，自己持有的服务器按需启动与停止（mcp_load / mcp_release，空闲十分钟后停止）。'
+tarball: https://github.com/steelunicorn/dsh-mcp-tool/releases/latest/download/dsh-mcp-tool.tgz
+icon: https://raw.githubusercontent.com/steelunicorn/dsh-mcp-tool/main/assets/icon-180.png

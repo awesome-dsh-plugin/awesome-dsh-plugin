@@ -1,0 +1,7 @@
+url: https://github.com/a-molecule-of-ATP/dsh-subagent-model-guard
+name: a-molecule-of-ATP/dsh-subagent-model-guard
+category: security
+description:
+  en: 'Gates subagent delegation against DSH''s official model allow-list, and can replace the delegation and model-discovery tools so a session snapshot cannot hide newly published models.'
+  zh: '用 DSH 官方的模型白名单校验子智能体派发，并可选替换派发与模型发现工具，使会话快照不会挡住新上架的模型。'
+icon: https://raw.githubusercontent.com/a-molecule-of-ATP/dsh-subagent-model-guard/main/assets/icon-180.png

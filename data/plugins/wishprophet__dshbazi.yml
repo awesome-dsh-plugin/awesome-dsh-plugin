@@ -1,0 +1,8 @@
+url: https://github.com/wishprophet/dshbazi
+name: wishprophet/dshbazi
+category: fun
+description:
+  en: 'Calculates BaZi charts locally or via Zydx, with twelve-domain readings, linked luck-cycle and year views, annual trend charts, standalone HTML reports and a bundled skill.'
+  zh: '支持本地或周易大学排盘，提供十二方面批语、运年联动对照、年度趋势折线与独立 HTML 报告，内置解读 skill。'
+icon: https://raw.githubusercontent.com/wishprophet/dshbazi/main/assets/icon-180.png
+tarball: https://github.com/wishprophet/dshbazi/releases/download/v0.1.7/dsh-bazi-0.1.7.tgz

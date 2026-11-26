@@ -1,6 +1,7 @@
 url: https://github.com/STARDUSTLC666/dsh-calendar
 name: STARDUSTLC666/dsh-calendar
 category: tools
+icon: https://raw.githubusercontent.com/STARDUSTLC666/dsh-calendar/main/assets/plugin-icon.webp
 description:
-  en: CalDAV calendar tools (list/create/update/delete/search/health) for Google/iCloud/Nextcloud/custom endpoints, with RRULE expansion, a month/week/agenda panel inside the settings page, in-panel connection setup that is tested before saving, and drag-to-reschedule in the week view (15-minute snapping, undo). A step-by-step first-run guide (4 steps) now opens inside its settings panel.
-  zh: CalDAV 日历插件：查/建/改/删/搜日程与健康自检，Google/iCloud/Nextcloud/自定义端点，RRULE 重复事件展开；设置页内置月/周/议程面板，连接可在面板内填写并先测后存，周视图支持拖拽改期（15 分钟吸附、5 秒撤销）。面板内置 4 步首次使用引导，看一次后不再出现。
+  en: 'CalDAV calendar workbench and 7 calendar_* tools (list/create/update/delete/search/find_time/health) for iCloud, Google, Nextcloud and custom endpoints: month/week/agenda views, free-slot search with copyable invite text, week-view drag-to-reschedule with undo, RRULE expansion, test-before-save connection setup, ICS import preview with conflict checks, and 5 switchable workbench themes.'
+  zh: 'CalDAV 日历工作台与 7 个 calendar_* 工具（查/建/改/删/搜/找空闲时段/自检），支持 iCloud、Google、Nextcloud 与自建端点：提供月/周/议程视图、空闲时段查找与邀约文案复制、周视图拖拽改期与撤销、RRULE 重复展开、连接先测后存、ICS 导入去重冲突预览及 5 套工作台主题。'

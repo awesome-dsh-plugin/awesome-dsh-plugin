@@ -1,0 +1,6 @@
+url: https://github.com/wangpeng2015/dsh-unified-memory
+name: wangpeng2015/dsh-unified-memory
+category: memory
+description:
+  en: 'Unifies long-term memory and past conversations across WorkBuddy, Qoder CN and DeepSeek Harness, and writes shared facts back into their Markdown memory files. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '统一 WorkBuddy、Qoder CN 与 DeepSeek Harness 的长期记忆和历史会话，并把共享事实写回两个应用自己的 Markdown 记忆文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

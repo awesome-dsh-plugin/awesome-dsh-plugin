@@ -1,0 +1,9 @@
+# Entry for the awesome-dsh-plugin catalog (data/plugins/ in that repository).
+# The bundle ships its own behaviour (/te), so it is no longer a bare dependency
+# list; that is what makes it listable under the catalog's "no meta-package" rule.
+url: https://github.com/SonettoGu14/dsh-tokeneconomizer/tree/master/packages/bundle
+name: SonettoGu14/dsh-tokeneconomizer#packages/bundle
+category: usage
+description:
+  en: 'Installs the cost, facts and prune components together and adds /te, one command that reports whether each is mounted, what it measured, and how to switch one off. The components stay separately installable; this is the one-install path.'
+  zh: '一次装齐成本记账、仓库事实与工具隐藏三个组件，并注册 /te：一条命令报出三者是否在运行、各自测到了什么、要关掉某一个该动哪一行。三个组件仍可单独安装，这里只是一次装齐的入口。'

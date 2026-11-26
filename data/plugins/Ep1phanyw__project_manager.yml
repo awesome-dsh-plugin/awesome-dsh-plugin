@@ -1,0 +1,6 @@
+url: https://github.com/Ep1phanyw/project_manager
+name: Ep1phanyw/project_manager
+category: workflow
+description:
+  en: 'Project orchestration for DSH: splits a delivery into parts that independent subagent conversations run in parallel, and verifies each part by executing the checks itself (command exit codes and artifact assertions). Plan approval and final sign-off stay user-only; the final acceptance reruns every check.'
+  zh: 把一次交付拆成若干部分，交给独立上下文里的子对话并行完成；验收由插件亲自执行检查（命令退出码与产物断言）。计划批准与收尾点头只归用户，收尾会全量重跑一遍。

@@ -1,0 +1,6 @@
+url: https://github.com/1158295269/dsh-serial-trigger
+name: 1158295269/dsh-serial-trigger
+category: tools
+description:
+  en: 'Serial-port capture and troubleshooting for DeepSeek Harness: lossless recordings with a SQLite index, incremental tail, byte-level lookup, workspace scan marks and a live FSM middleware, plus a web panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '面向 DeepSeek Harness 的串口抓取与排障插件：无损录制与 SQLite 索引、增量读取、字节级回查、工作区扫描标记、实时状态机中间件，并提供 Web 面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

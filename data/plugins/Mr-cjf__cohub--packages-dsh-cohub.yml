@@ -1,0 +1,6 @@
+url: https://github.com/Mr-cjf/cohub/tree/main/packages/dsh-cohub
+name: Mr-cjf/cohub#dsh-cohub
+category: workflow
+description:
+  en: 'Orchestrate coding tasks in DeepSeek Harness: the main agent delegates instead of editing files, 13 skills route to models, and subagents are read/write-isolated; plans and replies stay in Chinese.'
+  zh: '在 DeepSeek Harness 中编排编码任务：主代理只做调度、不亲自改文件，13 个技能按名路由模型，子代理读写权限隔离，规划与回复用中文。'

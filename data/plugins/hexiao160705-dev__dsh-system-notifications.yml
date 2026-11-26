@@ -1,0 +1,6 @@
+url: https://github.com/hexiao160705-dev/dsh-system-notifications
+name: hexiao160705-dev/dsh-system-notifications
+category: notify
+description:
+  en: 'Native OS notifications for DeepSeek Harness when a turn finishes, an approval is requested, or a question or plan review is waiting, with independent switches, a test button, and click-to-focus.'
+  zh: '为 DeepSeek Harness 提供系统通知：回合完成、请求审批、问题或方案评审等待时弹出原生通知，支持独立开关、测试按钮和点击聚焦。'

@@ -1,0 +1,7 @@
+url: https://github.com/FabianActor/dsh-lil-whale/tree/main/plugin/dsh-lil-whale-group
+name: FabianActor/dsh-lil-whale#dsh-lil-whale-group
+category: tools
+icon: https://raw.githubusercontent.com/FabianActor/dsh-lil-whale/main/docs/image/icon.png
+description:
+  en: 'Host half of lil-whale: a file-backed shared pond for several DeepSeek Harness agents, with one group chat and DM ledger, message-driven wake-ups that respect each fish''s sleep window, per-member cursors and a rename ledger. Both packages are required: this host half plus @fabianactor/dsh-lil-whale-group-ui, which draws the sidebar panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '小小肥鱼的宿主半：几条 DeepSeek Harness agent 共用一个鱼塘，群聊与私聊都是文件账本，按消息唤醒并尊重每条鱼的睡眠窗，每成员有游标、改名有账本。两个包必须一起装：这个宿主半，加上负责侧边栏面板的 @fabianactor/dsh-lil-whale-group-ui。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

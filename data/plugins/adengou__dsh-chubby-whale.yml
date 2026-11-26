@@ -1,0 +1,6 @@
+url: https://github.com/adengou/dsh-chubby-whale
+name: adengou/dsh-chubby-whale
+category: fun
+description:
+  en: 'Desktop pet for the DSH web UI: a whale companion anchored in the page corner that can be dragged with position memory, blinks, chats on click, speaks with TTS, recites poems and tells stories, and listens for voice input. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 网页版桌面宠物「肥鲸」：蓝发鲸鱼娘常驻页面右下角，可拖拽并记住位置、会眨眼、点击可聊天，支持语音对话、念诗说书与饭点提醒。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

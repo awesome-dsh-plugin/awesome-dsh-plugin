@@ -1,0 +1,7 @@
+url: https://github.com/zakeluo/dsh-review-desk
+name: zakeluo/dsh-review-desk
+category: ui
+icon: https://raw.githubusercontent.com/zakeluo/dsh-review-desk/main/assets/icon-180.png
+description:
+  en: 'Turns a topic into a study card: searches the web, asks the host default model for the concept, definition, confusable concepts and 3-5 self-test questions, then grades your answers and keeps a wrong-answer list. Renders LaTeX formulas and mhchem reaction equations with a built-in converter, so no web fonts or CDN are loaded. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '输入知识点生成复习卡：联网检索后调用宿主默认模型给出概念、定义、易混概念与 3-5 道自测题，答题即时判分并累计错题。公式与 mhchem 反应式由内置转换器渲染，不加载外部字体或 CDN。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

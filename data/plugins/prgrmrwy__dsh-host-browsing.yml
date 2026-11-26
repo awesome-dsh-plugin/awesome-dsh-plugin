@@ -1,0 +1,6 @@
+url: https://github.com/prgrmrwy/dsh-host-browsing
+name: prgrmrwy/dsh-host-browsing
+category: remote
+description:
+  en: 'Adds a better-sidebar tab that opens loopback web services on the DSH Host machine (127.0.0.1, localhost, [::1] ports) through a same-origin proxy on the DSH server, so a remote Host''s local pages can be viewed without per-port SSH tunnels.'
+  zh: '为 better-sidebar 添加「本地服务」标签页，经 DSH 服务端的同源代理打开 DSH Host 机器上的回环端口（127.0.0.1、localhost、[::1]），远程 Host 的本地页面无需逐端口建 SSH 隧道即可查看。'

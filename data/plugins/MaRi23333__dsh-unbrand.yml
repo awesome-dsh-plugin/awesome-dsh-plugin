@@ -1,0 +1,6 @@
+url: https://github.com/MaRi23333/dsh-unbrand
+name: MaRi23333/dsh-unbrand
+category: identity
+description:
+  en: Replaces the default DeepSeek Harness identity text in the system prompt with a neutral introduction for selected models.
+  zh: 为选中的模型把 DeepSeek Harness 系统提示词中的默认身份介绍替换成通用措辞。

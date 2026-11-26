@@ -1,0 +1,7 @@
+url: https://github.com/KokoTa/dsh-deepseek-chat-panel
+name: KokoTa/dsh-deepseek-chat-panel
+category: browser
+description:
+  en: 'In-UI panel that opens chat.deepseek.com inside the Harness Web UI through a Host-side loopback proxy, keeping the DeepSeek login across restarts and importing the login state of WeChat-only accounts. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 Harness 网页界面内用浮层面板打开 chat.deepseek.com，经 Host 端回环代理转发，跨重启保留 DeepSeek 登录态，并可从正式站点导入微信账号的登录态。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/KokoTa/dsh-deepseek-chat-panel/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/Stars-XK/dsh-bitwarden
+name: Stars-XK/dsh-bitwarden
+category: security
+icon: https://raw.githubusercontent.com/Stars-XK/dsh-bitwarden/main/assets/icon-180.png
+description:
+  en: 'Bitwarden / Vaultwarden vault connector: six agent tools return item metadata only, a use-without-reveal channel injects an item password into a subprocess and redacts it from the output, and Settings gets a Bitwarden-style vault page.'
+  zh: '接入 Bitwarden / Vaultwarden 密码库：6 个 AI 工具只返回条目元数据，密码通过受控执行通道注入子进程使用、回显脱敏、不进对话，设置页另有 Bitwarden 风格的密码库页面。'

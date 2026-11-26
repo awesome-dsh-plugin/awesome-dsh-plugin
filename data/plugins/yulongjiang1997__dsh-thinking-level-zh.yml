@@ -1,0 +1,6 @@
+url: https://github.com/yulongjiang1997/dsh-thinking-level-zh
+name: yulongjiang1997/dsh-thinking-level-zh
+category: dev
+description:
+  en: 'Shows model reasoning effort levels in Chinese everywhere in the conversation dialog, with an editable level-to-label mapping in Settings.'
+  zh: '将对话框中的模型思考等级显示为中文，并可在设置页编辑所有可能出现等级的映射。'

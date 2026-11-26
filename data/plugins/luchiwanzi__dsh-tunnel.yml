@@ -1,0 +1,6 @@
+url: https://github.com/luchiwanzi/dsh-tunnel
+name: luchiwanzi/dsh-tunnel
+category: tools
+description:
+  en: Subscription-driven outbound proxy for DSH. Import a Clash / mihomo subscription, a base64 node list, or a single v2rayN node link (vless://, vmess://, ss://, trojan://, …), including IPv6-only v2rayN links that publish no IPv4 address. Runs a local mihomo core and routes the DSH process's own network traffic through the selected node. Binds only to 127.0.0.1, filters skip-cert-verify nodes by default, and masks subscription tokens.
+  zh: DSH 的订阅驱动出站代理。支持导入 Clash / mihomo 订阅、Base64 节点列表，以及 v2rayN 单节点链接（vless://、vmess://、ss://、trojan:// 等），包括只有 IPv6 地址、没有 IPv4 地址的纯 IPv6 v2rayN 链接。本地运行 mihomo 内核，让 DSH 进程自身的网络流量走所选节点。仅绑定 127.0.0.1，默认过滤关闭证书校验的节点，订阅令牌脱敏。

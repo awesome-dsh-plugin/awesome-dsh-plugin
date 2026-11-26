@@ -1,0 +1,8 @@
+url: https://github.com/anheon/dsh-connect-codearts
+name: anheon/dsh-connect-codearts
+category: model
+description:
+  en: Connects Huawei Cloud CodeArts Doer models to DeepSeek Harness using IAM access keys, with model discovery, credit balance, and an automatic daily check-in toggle.
+  zh: 使用华为云 IAM 访问密钥将码道 CodeArts Doer 模型接入 DeepSeek Harness，支持模型发现、积分余额和自动签到开关。
+icon: https://raw.githubusercontent.com/anheon/dsh-connect-codearts/v0.1.3/icons/dsh-connect-codearts-128.png
+tarball: https://github.com/anheon/dsh-connect-codearts/releases/download/v0.1.3/dsh-connect-codearts-0.1.3.tgz

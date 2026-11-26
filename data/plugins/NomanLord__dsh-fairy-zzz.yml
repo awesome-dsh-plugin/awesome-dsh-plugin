@@ -1,0 +1,7 @@
+url: https://github.com/NomanLord/dsh-fairy-zzz
+name: NomanLord/dsh-fairy-zzz
+category: theme
+description:
+  en: 'Zenless Zone Zero H.D.D skin for the DSH Web UI: boot animation, animated eye core with a usage bubble, time-of-day greeting, automatic light/dark switching with a contrast check, a study-todo card in the sidebar, and optional local GPT-SoVITS voice that reads the analysis when it finishes and a ~100-character summary after the reply (URLs, paths and English are never spoken). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '绝区零 H.D.D 风格的 Fairy Ⅲ 皮肤：开机动画、眼徽核心与用量气泡、按时段问候、深浅色自动切换与对比度校验、侧栏学习代办卡片，以及可选的本地 GPT-SoVITS 语音（分析结束念分析、回复弹完念约 100 字总结，网址 / 路径 / 英文不念）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/NomanLord/dsh-fairy-zzz/main/assets/icon-180.png

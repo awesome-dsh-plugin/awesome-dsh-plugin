@@ -1,0 +1,6 @@
+url: https://github.com/Lornatang/dsh-plugin/tree/main/packages/workflow/dsh-caveman
+name: Lornatang/dsh-plugin#dsh-caveman
+category: usage
+description:
+  en: 'Caveman skills and tools for DeepSeek Harness: response styles, recoverable tool-result compression, model routing, browser tools, and delegation.'
+  zh: '为 DeepSeek Harness 提供 Caveman 技能与工具：响应风格、可恢复的工具结果压缩、模型路由、浏览器工具和委派。'

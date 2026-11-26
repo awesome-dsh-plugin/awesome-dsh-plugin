@@ -1,0 +1,7 @@
+url: https://github.com/pengtang1024/dsh-paste-image
+name: pengtang1024/dsh-paste-image
+category: ui
+description:
+  en: 'Paste or drop images whose declared type is XPM, BMP, DIB, SVG, ICO or a lie: the renderer sniffs the real bytes and re-encodes them to PNG before the attachment whitelist sees them.'
+  zh: '粘贴 XPM、BMP/DIB、SVG、ICO 或 MIME 类型标错的图片：渲染进程按字节嗅探真实格式并重编码为 PNG，再交给附件白名单校验。'
+icon: https://raw.githubusercontent.com/pengtang1024/dsh-paste-image/master/assets/icon-180.png

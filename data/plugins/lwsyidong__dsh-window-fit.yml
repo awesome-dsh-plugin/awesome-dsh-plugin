@@ -1,0 +1,6 @@
+url: https://github.com/lwsyidong/dsh-window-fit
+name: lwsyidong/dsh-window-fit
+category: ui
+description:
+  en: 'Sizes and centres the DSH desktop window to a share of the screen on launch, adjustable from Settings > General. Windows only. Its HTTP routes only accept calls from the DSH page itself (same-origin). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '启动时按屏幕比例缩放并居中 DSH 桌面窗口，可在设置 → 通用 里直接改比例。仅 Windows。它的 HTTP 路由只接受本应用页面的同源调用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

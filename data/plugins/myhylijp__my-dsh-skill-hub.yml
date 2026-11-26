@@ -1,0 +1,7 @@
+url: https://github.com/myhylijp/my-dsh-skill-hub
+name: myhylijp/my-dsh-skill-hub
+category: skill
+description:
+  en: 'Skills panel: one shared external skill pool plus per-agent-preset authorization of pool skills and built-in system skills.'
+  zh: '技能面板：一个共享的外部技能池，并按 agent 预设授权技能池技能与本角色系统内置技能。'
+icon: https://raw.githubusercontent.com/myhylijp/my-dsh-skill-hub/main/assets/icon-180.png

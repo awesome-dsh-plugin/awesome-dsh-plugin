@@ -1,0 +1,8 @@
+url: https://github.com/hanfang5057-byte/co-space/tree/main/adapters/dsh
+name: hanfang5057-byte/co-space#dsh
+category: docs
+description:
+  en: 'Review agent-proposed edits to personal Markdown documents: the agent proposes changes, and the user accepts or rejects each suggestion.'
+  zh: '审阅 Agent 对个人 Markdown 文档提出的修改建议，逐条接受或拒绝。'
+icon: https://raw.githubusercontent.com/hanfang5057-byte/co-space/main/assets/icon-180.png
+tarball: https://github.com/hanfang5057-byte/co-space/releases/download/v0.1.8/dsh-plugin-space-0.1.8.tgz

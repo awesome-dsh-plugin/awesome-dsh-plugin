@@ -1,0 +1,6 @@
+url: https://github.com/chen114514st/dsh-go-adb-link
+name: chen114514st/dsh-go-adb-link
+category: tools
+description:
+  en: 'Auto-finds the phone ADB TCP port and keeps adb connected, with a tool-layer risk guard and wireless-debugging pairing.'
+  zh: '自动找到手机上的 ADB TCP 端口并保持连接，带工具层风险拦截和无线调试配对。'

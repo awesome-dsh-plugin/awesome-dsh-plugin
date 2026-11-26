@@ -1,0 +1,6 @@
+url: https://github.com/wsy320/dsh-memory-vault
+name: wsy320/dsh-memory-vault
+category: memory
+description:
+  en: 'Personal memory vault with weighted recall, guarded writes, self-checked frontmatter, secret redaction, and automatic git sync.'
+  zh: '个人记忆库：加权检索、受保护写入、frontmatter 自检、密钥脱敏与自动 git 同步。'

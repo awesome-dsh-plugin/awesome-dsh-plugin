@@ -1,0 +1,8 @@
+url: https://github.com/yanmoren/dsh-whale-letter
+name: yanmoren/dsh-whale-letter
+category: fun
+description:
+  en: 'Write a letter to a blue-haired whale-girl companion on a separate page; a desktop notification arrives 2 to 8 hours later and opens an envelope whose kraft-paper sheet carries the reply in a Chinese handwriting font with ink bleed, crease marks and struck-through typos, paged by swapping sheets instead of scrolling. The reply is written by a bundled local 4B model (Qwen3-4B GGUF served by llama.cpp on CPU, started on demand), so no request leaves the machine and no model server has to be installed. The queue lives in ~/.dsh/whale-letter/letters.json and letters that came due while dsh was closed are redelivered after a restart.'
+  zh: '在独立页面给蓝发鲸鱼娘少女写一封信，2 到 8 小时后桌面弹提醒，点开是信封，牛皮信纸上用中文手写字体写着回信，带墨水晕开、纸面折痕与划掉补写的错字，按页换纸而不是上下滚动。回信由插件自带的本地 4B 模型（Qwen3-4B GGUF，llama.cpp CPU 推理，按需起停）写出，请求不出本机，也不需要另装模型服务。信件队列在 ~/.dsh/whale-letter/letters.json，dsh 关着时到点的信重启后自动补投。'
+icon: https://raw.githubusercontent.com/yanmoren/dsh-whale-letter/master/assets/icon-180.png
+tarball: https://github.com/yanmoren/dsh-whale-letter/releases/download/v1.0.0/dsh-whale-letter-1.0.0.tgz

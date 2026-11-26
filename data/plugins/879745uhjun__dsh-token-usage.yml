@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-token-usage
+name: 879745uhjun/dsh-token-usage
+category: usage
+description:
+  en: 'Adds a dedicated Token usage page to DSH with live per-session input, output, cache read, cache write and total counts, cache hit rate, a 14-day history strip, search and sortable columns; usage is read incrementally from durable session artifacts and refreshed every two seconds. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DSH 增加独立的 Token 用量页：按会话实时统计输入、输出、缓存读、缓存写与总量、缓存命中率，提供 14 天历史条、搜索和可排序列；数据从持久化会话文件增量读取，每两秒刷新。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

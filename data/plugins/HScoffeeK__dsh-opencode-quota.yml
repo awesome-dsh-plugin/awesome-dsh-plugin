@@ -1,0 +1,7 @@
+url: https://github.com/HScoffeeK/dsh-opencode-quota
+name: HScoffeeK/dsh-opencode-quota
+category: usage
+description:
+  en: 'OpenCode Go quota in the DSH right sidebar: per-model monthly caps, the shared 5-hour, weekly and monthly allowance left, and an opencode_quota tool for chat.'
+  zh: '在 DSH 右侧边栏查看 OpenCode Go 各模型的月度上限与共享 5 小时／每周／每月额度剩余，并在对话中提供 opencode_quota 工具。'
+icon: https://raw.githubusercontent.com/HScoffeeK/dsh-opencode-quota/main/assets/icon-180.png

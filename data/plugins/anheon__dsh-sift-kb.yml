@@ -1,0 +1,6 @@
+url: https://github.com/anheon/dsh-sift-kb
+name: anheon/dsh-sift-kb
+category: memory
+description:
+  en: 'Wires DSH on Windows to a local sift knowledge base installed separately with sift-rag: opt-in server start/stop, a sidebar panel for hybrid, keyword and semantic search plus full-text reading with line ranges, courseware import through the courseware-to-sift skill, and agent access via the sift_kb tool and sift MCP tools.'
+  zh: '在 Windows 上把 DSH 接到用 sift-rag 单独安装的本机 sift 知识库：按需启停服务，侧栏面板支持混合/关键词/语义检索与带行号的全文阅读，课件经 courseware-to-sift 技能导入，Agent 可通过 sift_kb 工具与 sift MCP 工具访问。'

@@ -1,0 +1,6 @@
+url: https://github.com/lwfjyjy/dsh-sidebar-copy-file-reference
+name: lwfjyjy/dsh-sidebar-copy-file-reference
+category: tools
+description:
+  en: 'In the sidebar file preview, copy or insert a file reference @relative/path with one click, and when code lines are selected, a reference with a line range such as @path#L92-L94.'
+  zh: '在右侧文件预览中一键复制/插入文件引用 @相对路径；选中代码行时可复制/插入带行号的引用 @相对路径#L92-L94。'

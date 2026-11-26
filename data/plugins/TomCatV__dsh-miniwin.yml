@@ -1,0 +1,7 @@
+url: https://github.com/TomCatV/dsh-miniwin
+name: TomCatV/dsh-miniwin
+category: remote
+description:
+  en: 'Mirrors an Android phone screen into a transparent desktop mini-window from the DSH sidebar: scan a QR code to pair, then the H.264 stream runs over scrcpy through adb outside the browser, with independent content and background opacity, eight-way resize and pin. Bundles adb, scrcpy and the phone-side APK, so nothing else needs installing; Windows hosts only.'
+  zh: 'DSH 侧边栏手机投屏：扫码配对后，画面以 scrcpy 的 H.264 流显示在桌面透明迷你窗里（不进浏览器），支持内容/背景透明度分别调节、八向缩放与置顶。自带 adb、scrcpy 与手机端 APK，无需另装；仅支持 Windows 主机。'
+icon: https://raw.githubusercontent.com/TomCatV/dsh-miniwin/main/assets/icon-180.png

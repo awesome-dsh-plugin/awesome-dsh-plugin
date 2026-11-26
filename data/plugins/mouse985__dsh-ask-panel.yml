@@ -1,0 +1,6 @@
+url: https://github.com/mouse985/dsh-ask-panel
+name: mouse985/dsh-ask-panel
+category: ui
+description:
+  en: "Replace the plain question card with a consequence-aware panel: options carry what choosing them changes (files, behaviour, risk, cost), hovering one opens that preview with room to read and scroll, a note typed there rides along with the answer, and Cancel becomes a real decision — a card that either hands the call back to the agent or halts the turn through concludesTurn instead of quietly closing."
+  zh: 把出厂提问卡换成「带代价」的面板：每个选项都带着选它之后会发生什么（改哪些文件、影响哪些行为、风险、几轮），悬停即展开可读可滚的预览，在预览里写下的意见随答案回传；取消不再是静默关闭，而是一张接管卡——要么把决定权交回智能体，要么用 concludesTurn 真正停住这一轮。

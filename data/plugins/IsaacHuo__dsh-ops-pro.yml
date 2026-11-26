@@ -1,0 +1,6 @@
+url: https://github.com/IsaacHuo/dsh-ops-pro
+name: IsaacHuo/dsh-ops-pro
+category: tools
+description:
+  en: 'Fork of dsh-ops: bash, PowerShell 7 and Rust file/search tools for DSH on Windows, with OPS-PTC batched tool calls to reduce token usage.'
+  zh: 'dsh-ops 的分叉：为 Windows 上的 DSH 提供 bash、PowerShell 7 与 Rust 文件/搜索工具，并以 OPS-PTC 批量调用减少 token 消耗。'

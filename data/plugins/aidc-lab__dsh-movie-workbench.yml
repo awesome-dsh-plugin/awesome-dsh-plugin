@@ -1,0 +1,7 @@
+url: https://github.com/aidc-lab/dsh-movie-workbench
+name: aidc-lab/dsh-movie-workbench
+category: tools
+description:
+  en: 'DSH Movies workbench : Search for movies and TV series from TMDB, IMDb and Douban on one page and automatically discover BT resources, selecting resources by AI intelligently.'
+  zh: 'DSH 影视工作台：在一个页面里检索 TMDB、IMDb 和 豆瓣 的电影与剧集，自动发现 BT 资源, AI 智能选择资源。'
+icon: https://raw.githubusercontent.com/aidc-lab/dsh-movie-workbench/main/assets/icon-180.png

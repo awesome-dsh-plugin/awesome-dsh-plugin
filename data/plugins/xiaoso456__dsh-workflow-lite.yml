@@ -1,0 +1,7 @@
+url: https://github.com/xiaoso456/dsh-workflow-lite
+name: xiaoso456/dsh-workflow-lite
+category: workflow
+description:
+  en: 'A plugin that creates soft workflows from a single sentence for simple automations and fixed tasks, compiles steps, resources, and conditions into a prompt plan for the model to execute, and supports automatic triggers and Skill export.'
+  zh: '支持一句话生成软工作流的插件，适用于许愿式生成简单自动化以及固定任务，把步骤、资源与条件编译成提示词计划交给模型执行，并支持自动触发和导出成 Skill。'
+icon: https://raw.githubusercontent.com/xiaoso456/dsh-workflow-lite/main/assets/icon.webp

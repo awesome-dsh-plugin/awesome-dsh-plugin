@@ -1,0 +1,6 @@
+url: https://github.com/WilliamWang6586/dsh-jlu-baixiaosheng
+name: WilliamWang6586/dsh-jlu-baixiaosheng
+category: skill
+description:
+  en: Jilin University knowledge base skill. Registers one skill with 38 reference documents covering major transfer, curricula and credit plans, postgraduate recommendation, campus network setup, exam schedules and freshman life. Pure data plugin - no network calls, no subprocesses, no API key; answers load from the bundled documents.
+  zh: 吉林大学知识库技能。注册一个技能并随包携带 38 篇参考文档，覆盖转专业、培养方案与学分、保研、校园网络配置、考试安排与新生生活。纯数据插件——无网络请求、无子进程、无需 API key，回答均取自随包文档。

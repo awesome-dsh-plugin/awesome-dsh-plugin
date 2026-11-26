@@ -1,0 +1,7 @@
+url: https://github.com/FelixRaySun/dsh-session-cleanup
+name: FelixRaySun/dsh-session-cleanup
+category: session
+description:
+  en: 'Deletes sessions for real and keeps them restorable — detaches the registry through the official API, moves the log into a 7-day recycle bin with an atomic rename, and sweeps orphan log directories and projection caches. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '真正删除会话且可还原——通过官方 API 解绑注册表，把日志原子移动到保留 7 天的回收站，并清理孤儿日志目录与孤儿投影缓存。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/FelixRaySun/dsh-session-cleanup/main/assets/icon-360.png

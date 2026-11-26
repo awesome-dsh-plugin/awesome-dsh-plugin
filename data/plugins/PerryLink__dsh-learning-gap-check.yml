@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-learning-gap-check
+name: PerryLink/dsh-learning-gap-check
+category: tools
+description:
+  en: "Learning-gap analysis check for DeepSeek Harness: check learning-gap analyses against the Quality management guidelines for competence management and people development. Flags discrepancies only and makes no conclusive judgment."
+  zh: "学情差距分析核对：依据《质量管理 能力管理和人员发展指南》。仅提示差异，不作出定性结论。"

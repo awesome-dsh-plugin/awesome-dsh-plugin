@@ -1,0 +1,6 @@
+url: https://github.com/vlln/dsh-overview
+name: vlln/dsh-overview
+category: ui
+description:
+  en: 'A session overview container: todos, sub-agents, background jobs, input materials and key outputs in one place, with extension slots for other plugins.'
+  zh: '通用会话总览容器：集中收口待办、子智能体、后台任务、输入材料与关键产出，并向其他插件开放扩展插槽。'

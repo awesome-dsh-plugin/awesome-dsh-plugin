@@ -1,0 +1,6 @@
+url: https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-code/packages/dsh-code
+name: gabrielbav/dsh-workspace#dsh-code
+category: dev
+description:
+  en: 'Codex cloud–style coding sessions you host yourself: pick a GitHub repo and branch, and each session gets its own checkout and branch, a live preview of the app it builds and an Environment tab, inside a gVisor sandbox (non-root, no capabilities, no Docker socket) whose traffic passes an egress allowlist you extend host by host; your GitHub token never enters it. Runs on your computer or your own VM over SSH.'
+  zh: '自托管的 Codex 云端式编码会话：选择 GitHub 仓库和分支，每个会话都有独立的检出和分支、所构建应用的实时预览和环境标签页，全部运行在 gVisor 沙箱中（非 root、无 capabilities、无 Docker 套接字），流量经过出站白名单，新主机由你逐个批准；你的 GitHub 令牌从不进入沙箱。可在本机或通过 SSH 在你自己的虚拟机上运行。'

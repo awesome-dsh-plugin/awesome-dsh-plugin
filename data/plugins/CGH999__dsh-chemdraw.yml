@@ -1,0 +1,6 @@
+url: https://github.com/CGH999/dsh-chemdraw
+name: CGH999/dsh-chemdraw
+category: tools
+description:
+  en: 'Read and write ChemDraw .cdx files from DSH: structures, stereo geometry, captions, reaction arrows and 3D conformers, through 12 tools whose writes are dry-run by default and re-read for verification. Requires an installed, activated ChemDraw; before first use copy CambridgeSoft.ChemScript.dll into the plugin bin/ folder and set CHEMDRAW_HOME to the ChemDraw install directory.'
+  zh: '在 DSH 里读写 ChemDraw 的 .cdx 文件：结构、立体几何、标注、反应箭头和 3D 构象，共 12 个工具；写操作默认 dry-run，落盘前重新读回校验。需要本机已安装并激活 ChemDraw，首次使用前要把 CambridgeSoft.ChemScript.dll 复制到插件的 bin/ 目录、并设置 CHEMDRAW_HOME 指向 ChemDraw 安装目录。'

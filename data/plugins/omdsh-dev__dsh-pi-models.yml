@@ -1,0 +1,7 @@
+url: https://github.com/omdsh-dev/dsh-pi-models
+name: omdsh-dev/dsh-pi-models
+category: model
+description:
+  en: Project pi providers, models, API keys, and reasoning levels into the DSH model picker with watched configuration updates.
+  zh: 将 pi 的提供商、模型、API 密钥和思考等级投影到 DSH 模型选择器，并监听配置变化自动更新。
+tarball: https://github.com/omdsh-dev/dsh-pi-models/releases/latest/download/pkg.tgz

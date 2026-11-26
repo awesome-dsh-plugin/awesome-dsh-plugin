@@ -1,0 +1,8 @@
+url: https://github.com/NoMana666/dsh-floatball
+name: NoMana666/dsh-floatball
+category: ui
+description:
+  en: 'A desktop floating ball for DeepSeek Harness: whale-shaped, pixel-transparent, valley/peak tint, yellow highlight when an approval is waiting, edge docking and four themes. Click to bring the DSH window back.'
+  zh: 'DSH 桌面悬浮球：鲸鱼形状、逐像素透明、谷时蓝峰时粉、有授权待确认时腹部亮黄，支持贴边半隐藏、四套主题，点一下把 DSH 窗口唤回。'
+icon: https://raw.githubusercontent.com/NoMana666/dsh-floatball/main/icon-180.png
+# dsh-floatball submission

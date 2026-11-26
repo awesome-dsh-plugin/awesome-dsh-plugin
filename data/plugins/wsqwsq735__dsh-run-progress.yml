@@ -1,0 +1,6 @@
+url: https://github.com/wsqwsq735/dsh-run-progress
+name: wsqwsq735/dsh-run-progress
+category: ui
+description:
+  en: A right-edge progress rail with live token usage, an estimated RMB cost, and a per-turn run flow panel.
+  zh: 最右侧运行进度条、实时 token 用量与人民币费用估算，以及逐轮展开的运行流程面板。

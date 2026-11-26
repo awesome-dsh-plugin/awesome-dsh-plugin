@@ -1,0 +1,7 @@
+url: https://github.com/zuoyunlai/dsh-healthkit
+name: zuoyunlai/dsh-healthkit
+category: dev
+description:
+  en: 'Read-only health check for DeepSeek Harness: scores the install 0–10 across seven weighted dimensions, lists findings with fix hints, and verifies whether previously reported findings were actually fixed. Ships 16 tools and a native sidebar panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 只读体检：按七个加权维度给 0–10 分、列出问题与修法，并核对上次报的问题到底修了没；共 16 个工具 + 原生侧栏面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/zuoyunlai/dsh-healthkit/main/assets/icon-180.png

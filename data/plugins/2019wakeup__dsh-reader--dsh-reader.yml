@@ -1,0 +1,6 @@
+url: https://github.com/2019wakeup/dsh-reader/tree/main/dsh-reader
+name: 2019wakeup/dsh-reader#dsh-reader
+category: docs
+description:
+  en: 'Reading workspace for DeepSeek Harness: open PDF, EPUB and Markdown in the main view with highlights, notes, concept cards that stay next to the passage, a chapter guide and mind map, and an in-reader conversation panel driven by the current Session. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的阅读工作台：在主视图阅读 PDF、EPUB 与 Markdown，支持高亮、笔记、留在原文处的概念卡、分层导读与导图，以及由当前会话驱动的阅读侧边对话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

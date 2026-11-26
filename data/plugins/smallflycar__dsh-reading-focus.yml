@@ -1,0 +1,7 @@
+url: https://github.com/smallflycar/dsh-reading-focus
+name: smallflycar/dsh-reading-focus
+category: ui
+description:
+  en: 'Reading aids for the DSH chat transcript: gradient text, a reading ruler, line and block focus, and colour bands. Visual overlays only; the message text, selection and copy are untouched.'
+  zh: '给 DSH 聊天正文增加阅读辅助：渐变文字、阅读尺、逐行/逐段聚焦与色块分段。只做视觉叠加，不改动正文、选择和复制。'
+icon: https://raw.githubusercontent.com/smallflycar/dsh-reading-focus/main/icon-512.png

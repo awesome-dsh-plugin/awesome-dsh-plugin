@@ -1,0 +1,7 @@
+url: https://github.com/rigelmansid/dsh-flick
+name: rigelmansid/dsh-flick
+category: notify
+description:
+  en: A macOS menu bar companion for DeepSeek Harness that lists recent sessions and lets you allow or reject permission requests while the app is out of view.
+  zh: macOS 菜单栏里的 DSH 伴侣：查看最近会话，并在主界面不可见时直接允许或拒绝权限请求。
+icon: https://raw.githubusercontent.com/rigelmansid/dsh-flick/main/assets/icon-180.png

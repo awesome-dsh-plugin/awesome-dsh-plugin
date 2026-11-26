@@ -1,0 +1,6 @@
+url: https://github.com/xianweics/dsh-js-clean
+name: xianweics/dsh-js-clean
+category: dev
+description:
+  en: "Scans JavaScript for code smells, grades cleanliness from A to E, and maps most findings to a refactoring technique from Fowler's catalog."
+  zh: "扫描 JavaScript 代码味道并给出整洁度评分，并把大多数问题对应到《重构》里的具体手法。"

@@ -1,0 +1,6 @@
+url: https://github.com/mloluyu/dsh-session-notify
+name: mloluyu/dsh-session-notify
+category: notify
+description:
+  en: 'Quick reminder: DSH sends you a system notification when a task finishes, when your approval is needed, or when a question is waiting for your answer.'
+  zh: '提醒一下：dsh会在任务完成、申请授权、提问时向您发送系统通知。'

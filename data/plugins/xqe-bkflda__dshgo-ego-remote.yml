@@ -1,0 +1,6 @@
+url: https://github.com/xqe-bkflda/dshgo-ego-remote
+name: xqe-bkflda/dshgo-ego-remote
+category: browser
+description:
+  en: Streams the page running in the agent browser to any LAN web browser over WebSocket, with live clicks, typing and scrolling forwarded back through CDP.
+  zh: 把 agent 浏览器里正在跑的页面通过 WebSocket 转发给局域网内任意浏览器，点击、输入、滚动会经 CDP 回传到原页面。

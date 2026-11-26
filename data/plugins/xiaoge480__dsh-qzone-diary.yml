@@ -1,0 +1,6 @@
+url: https://github.com/xiaoge480/dsh-qzone-diary
+name: xiaoge480/dsh-qzone-diary
+category: identity
+description:
+  en: 'Scheduled QQ Zone diary publisher: at a configured hour it reminds the current session to write the day diary, then posts it with one image through Ego browser automation, reusing the browser existing QQ Zone login (no password or cookie handling). Same-text dedupe plus idempotent retry make a re-run safe. A separate scanner lists new comments into a pending file and never replies on your behalf. Post time, title format and comment-check schedule are configurable; ships with a skill document covering text format, privacy rules, image specs and failure handling. Requires the Ego browser; dsh-image-studio is optional and only needed when the diary should carry an image.'
+  zh: '定时发 QQ 空间日记：到点提醒当前会话写当天日记，然后连同配图一起通过 Ego 浏览器自动化发出去，复用浏览器已有的空间登录态（不碰密码和 cookie）。同文去重 + 幂等重试，重跑安全。另带评论扫描器，只把新评论列进待办文件，绝不代回。发布钟点、标题格式、评论检查时间都可配；附一份技能文档，写清正文格式、隐私红线、配图规格与失败处理。需要 Ego 浏览器；dsh-image-studio 可选，只有日记要配图时才需要。'

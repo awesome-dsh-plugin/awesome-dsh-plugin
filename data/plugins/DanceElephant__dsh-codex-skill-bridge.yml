@@ -1,0 +1,7 @@
+url: https://github.com/DanceElephant/dsh-codex-skill-bridge
+name: DanceElephant/dsh-codex-skill-bridge
+category: skill
+description:
+  en: 'Moves the skills already installed in Codex into DeepSeek Harness with one command — the bridge between the two. After installing, DSH can scan, inspect and import those skills directly: imported skills appear in the DSH skill list and are loaded on demand by the model like native skills. Imported descriptions are compressed to fit the DSH prompt budget (220 characters by default), upstream changes and removals can be checked with one command, and any import can be removed cleanly. It never executes imported code: scripts are only listed, bodies are only read and registered. Six tools plus a CLI, zero runtime dependencies, no build step, Node.js 20 or newer.'
+  zh: '把本机 Codex 已装的 skills，一条命令搬进 DeepSeek Harness —— 这个插件就是那座桥。装一次之后：DSH 里能直接扫描、检视、导入这些 skills，导入过的技能会出现在 DSH 的 skill 列表里，和原生 skill 一样被模型按需加载；导入的描述会按 DSH 提示词预算压缩好（默认 220 字符），不会把上下文撑爆；上游改了、删了能一条命令查出来；不想用了也能干净地撤掉。它自己不执行任何被导入的 skill：脚本只是被列出来给你看，正文只是被读取和登记。六个工具 + 一个 CLI，零运行时依赖，无需构建，Node.js 20 或更新。'
+tarball: https://github.com/DanceElephant/dsh-codex-skill-bridge/releases/download/v0.2.0/dsh-codex-skill-bridge-0.2.0.tgz
