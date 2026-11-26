@@ -3,5 +3,5 @@ name: WaterDJiang/wtt-dsh-plugin#dsh-wanalysis
 category: tools
 icon: https://raw.githubusercontent.com/WaterDJiang/wtt-dsh-plugin/5996df6f7dcd49d4c343205a1d95377e1cadf84e/plugins/dsh-wanalysis/src/assets/wattter-agent.png
 description:
-  en: 'WTT Stock Analysis charts A-share prices and chip concentration, shows archived financials, and syncs one stock or the market to local SQLite.'
-  zh: 'WTT 股票分析支持 A 股日线、周线、筹码集中度与归档财务，可将单只股票或全市场行情同步到本机 SQLite。'
+  en: "Turn your chart-reading ideas and stock-screening strategies into indicators without writing code. Ask AI to mark the days when the 20-day moving average crossed above the 60-day average, then see the signals on a historical A-share chart and how the price moved afterward. A chip concentration indicator is included, and downloaded charts are available offline."
+  zh: "不用写代码，也能把自己的股票看盘想法、选股策略做成指标。比如告诉 AI「帮我标出 20 日均线上穿 60 日均线的日子」，就能在 A 股历史走势图上看看信号出现在哪天、后来股价怎么走。自带筹码集中度指标，下载过的行情断网也能看。"
