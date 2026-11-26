@@ -1,0 +1,6 @@
+url: https://github.com/Admire-wq/dsh-slim
+name: Admire-wq/dsh-slim
+category: session
+description:
+  en: One-click session slimming for DeepSeek Harness: drops filler turns, renumbers the event log safely, backs up before writing, and restarts DSH itself.
+  zh: DSH 会话一键瘦身：删掉废话轮次、安全重编事件流、落盘前自检并自动备份、剪完自动重启，带剪枝后自检与一键回滚。
