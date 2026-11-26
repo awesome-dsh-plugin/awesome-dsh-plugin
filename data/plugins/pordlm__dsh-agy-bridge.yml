@@ -1,0 +1,6 @@
+url: https://github.com/pordlm/dsh-agy-bridge
+name: pordlm/dsh-agy-bridge
+category: workflow
+description:
+  en: Bridges DeepSeek Harness to Antigravity's official agy ACP, with task dispatch tools, a web panel, and a native Gemini provider.
+  zh: 把 Antigravity 官方 agy ACP 接入 DeepSeek Harness：任务派发工具、Web 面板与原生 Gemini provider。
