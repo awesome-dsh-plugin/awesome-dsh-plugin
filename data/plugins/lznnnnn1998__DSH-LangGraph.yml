@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/DSH-LangGraph
+name: lznnnnn1998/DSH-LangGraph
+category: workflow
+description:
+  en: 'Durable LangGraph workflows as DSH tools: registered TS/JS graphs run and resume across turns, run as background jobs, delegate to DSH subagents, and trace nodes, tools and model calls in Trajectory.'
+  zh: '把 LangGraph 图注册成 DSH 工具：线程持久化、可中断恢复，支持后台运行和子 agent 派发，节点/工具/模型动作在 Trajectory 中逐层可见。'
