@@ -1,0 +1,8 @@
+url: https://github.com/862287884-alt/dsh-month-timer
+name: 862287884-alt/dsh-month-timer
+category: ui
+description:
+  en: A monthly progress bar docked above the composer that logs hand-entered minutes and seconds as coloured stages against a workday-derived target, with paper, frosted-glass or fully transparent backdrops.
+  zh: '停在输入框上方的月度进度条：手填「分:秒」与备注记成彩色阶段，节点按当月工作日 × 2 或 × 3 分钟折算，背景可选纸面、毛玻璃或透明。'
+icon: https://raw.githubusercontent.com/862287884-alt/dsh-month-timer/main/assets/icon-180.png
+tarball: https://github.com/862287884-alt/dsh-month-timer/releases/latest/download/dsh-month-timer.tgz
