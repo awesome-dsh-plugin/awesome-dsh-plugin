@@ -1,0 +1,7 @@
+url: https://github.com/github-yousen/dsh-workbuddy-browser
+name: github-yousen/dsh-workbuddy-browser
+category: browser
+description:
+  en: 'Drive your own logged-in Chrome or Edge through the WorkBuddy browser extension: 32 MCP tools for DOM reads, clicks, typing, scrolling and screenshots.'
+  zh: '通过 WorkBuddy 浏览器扩展操控你自己已登录的 Chrome 或 Edge：32 个 MCP 工具，覆盖 DOM 读取、点击、输入、滚动与截图。'
+icon: https://raw.githubusercontent.com/github-yousen/dsh-workbuddy-browser/main/assets/icon-180.png
