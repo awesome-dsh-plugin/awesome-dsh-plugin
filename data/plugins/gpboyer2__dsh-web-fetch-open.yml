@@ -1,0 +1,6 @@
+url: https://github.com/gpboyer2/dsh-web-fetch-open
+name: gpboyer2/dsh-web-fetch-open
+category: browser
+description:
+  en: Replaces the web_fetch provider with one that skips private-range filtering, so web_fetch can reach localhost, private networks, link-local and fake-ip ranges and file:// paths.
+  zh: 替换 web_fetch 的抓取后端，跳过私网过滤，让它能读 localhost、内网、link-local 与 fake-ip 段以及 file:// 路径。

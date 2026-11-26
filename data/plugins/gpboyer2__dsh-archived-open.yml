@@ -1,0 +1,6 @@
+url: https://github.com/gpboyer2/dsh-archived-open
+name: gpboyer2/dsh-archived-open
+category: session
+description:
+  en: Clicking an archived session in the sidebar unarchives it and opens it in one step, instead of blocking the click and asking you to unarchive first.
+  zh: 点侧栏里的归档会话就自动取消归档并打开，省掉「先取消归档、再点开」两步。
