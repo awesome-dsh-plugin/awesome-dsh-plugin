@@ -1,0 +1,7 @@
+url: https://github.com/G1111b/dsh-tray-restart
+name: G1111b/dsh-tray-restart
+category: dev
+description:
+  en: Adds a restart item to the DeepSeek Harness tray menu that relaunches the whole desktop app.
+  zh: 在 DeepSeek Harness 的托盘右键菜单里加入重启项，一键重启整个桌面应用。
+icon: https://raw.githubusercontent.com/G1111b/dsh-tray-restart/main/assets/icon-180.png
