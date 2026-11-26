@@ -1,0 +1,7 @@
+url: https://github.com/bikabika978/dsh-image-search
+name: bikabika978/dsh-image-search
+category: vision
+description:
+  en: 'Reverse image search for DSH: passes an image to AnimeTrace, trace.moe and optionally Google Lens, then reports the character, the anime episode and the source pages found through AniList. Works without any API key; a free SerpApi key adds Lens.'
+  zh: 'DSH 的以图搜图：把图片交给 AnimeTrace、trace.moe 和可选的 Google Lens，返回角色名、番剧集数与经 AniList 解析的出处页。不配 Key 也能用，免费 SerpApi Key 可加 Lens。'
+icon: https://raw.githubusercontent.com/bikabika978/dsh-image-search/main/assets/icon-180.png
