@@ -1,0 +1,6 @@
+url: https://github.com/fubai-fenzhi/dsh-bilibili-upload
+name: fubai-fenzhi/dsh-bilibili-upload
+category: tools
+description:
+  en: 'Upload and edit Bilibili videos from DSH through biliup: title, description, tags, cover, partition, visibility, with a settings panel.'
+  zh: '在 DSH 里通过 biliup 上传/编辑 B 站视频：标题、简介、标签、封面、分区、可见性，带设置面板。'
