@@ -1,0 +1,7 @@
+url: https://github.com/ultrafastmov/ultrafast/tree/main/plugins/dsh
+name: ultrafastmov/ultrafast#dsh
+category: tools
+icon: https://raw.githubusercontent.com/ultrafastmov/ultrafast/main/packaging/mcpb/icon.png
+description:
+  en: Registers the ultrafast MCP server (uf mcp) so the agent can write, check, preview and export GPU-rendered videos from JSON documents.
+  zh: 注册 ultrafast MCP 服务器（uf mcp），让智能体用 JSON 文档编写、检查、预览并导出 GPU 渲染的视频。
