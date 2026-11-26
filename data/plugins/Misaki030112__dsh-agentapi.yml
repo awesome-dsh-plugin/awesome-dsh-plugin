@@ -1,0 +1,7 @@
+url: https://github.com/Misaki030112/dsh-agentapi
+name: Misaki030112/dsh-agentapi
+category: tools
+tarball: https://github.com/Misaki030112/dsh-agentapi/releases/download/v0.1.0/dsh-agentapi-0.1.0.tgz
+description:
+  en: Connects DSH to Qiniu AgentAPI and exposes managed cloud sessions as live, continuable subagents.
+  zh: 将七牛 AgentAPI 接入 DSH，以原生子会话委派云端任务、实时查看执行过程并继续对话。
