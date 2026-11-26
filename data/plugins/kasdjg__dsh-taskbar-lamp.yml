@@ -1,0 +1,6 @@
+url: https://github.com/kasdjg/dsh-taskbar-lamp
+name: kasdjg/dsh-taskbar-lamp
+category: ui
+description:
+  en: A pixel whale on the Windows taskbar showing how many dsh sessions are working, red and blinking when a dialog waits for you.
+  zh: Windows 任务栏上的一只像素鲸鱼，显示正在干活的 dsh 会话数；有弹窗等你确认时变红闪动。
