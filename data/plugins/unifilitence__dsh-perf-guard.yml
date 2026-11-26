@@ -1,0 +1,6 @@
+url: https://github.com/unifilitence/dsh-perf-guard
+name: unifilitence/dsh-perf-guard
+category: ui
+description:
+  en: 'Zero-polling performance guard for DeepSeek Harness: reversible cold/hot session archiver with title search, on-demand storage doctor with open-folder helper, before/after plugin snapshots, pure CSS offscreen optimization, and configurable stream slimming.'
+  zh: '零后台轮询的 DSH 性能护航插件：可逆会话冷热归档与标题离线搜索、按需存储体检与一键打开目录、插件前后性能对比快照、纯 CSS 离屏渲染优化及可调参流瘦身（内置 4 套一键预设）。'
