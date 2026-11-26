@@ -2,6 +2,6 @@ url: https://github.com/Daaaaavid-zhou/dsh-camera
 name: Daaaaavid-zhou/dsh-camera
 category: vision
 description:
-  en: Adds a live camera preview above the DeepSeek Harness composer and inserts captured photos as attachments.
-  zh: 在 DeepSeek Harness 输入框上方实时取景拍照，照片直接作为附件插入。
+  en: Local photo capture for DeepSeek Harness (macOS), bundled with a macOS camera app.
+  zh: DeepSeek Harness (macOS) 的本地拍照功能。包含一个 macOS 相机软件。
 icon: https://raw.githubusercontent.com/Daaaaavid-zhou/dsh-camera/main/assets/icon-180.png
