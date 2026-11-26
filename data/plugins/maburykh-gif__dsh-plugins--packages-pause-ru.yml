@@ -1,0 +1,6 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/pause-ru
+name: maburykh-gif/dsh-plugins#pause-ru
+category: session
+description:
+  en: 'Russian-language fork of dsh-pause (MIT): pauses the agent right before it sends the next model request of a tool round, keeping the composer usable — a bare Enter or the resume button continues, and text typed meanwhile is sent as a steering message; every label, hint and error is in Russian, and the pause never interrupts an in-flight API call.'
+  zh: 'dsh-pause 的俄语本地化分叉（MIT）：在一轮工具调用结束、下一次模型请求发出前暂停，输入框保持可用——直接按回车或点继续按钮放行，期间输入的文字作为插话随请求发出；所有标签、提示与错误均为俄语，暂停不会打断进行中的 API 调用。'
