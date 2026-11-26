@@ -1,0 +1,6 @@
+url: https://github.com/G33s3Fr13s/dsh-weread-free-library
+name: G33s3Fr13s/dsh-weread-free-library
+category: skill
+description:
+  en: 'Rank WeRead free-library books by coin price. Fetches all 120 titles of the current issue via the official in-app API, adds ratings, and outputs sortable HTML/CSV/Markdown. Needs your own WeRead login state.'
+  zh: '按书币价格排行微信读书「免费图书馆」书目：官方客户端接口抓取当期 120 本，补评分，输出可排序 HTML/CSV/Markdown。需自己的微信读书登录态。'
