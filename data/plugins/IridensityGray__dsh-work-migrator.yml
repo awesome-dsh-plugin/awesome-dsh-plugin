@@ -1,0 +1,6 @@
+url: https://github.com/IridensityGray/dsh-work-migrator
+name: IridensityGray/dsh-work-migrator
+category: session
+description:
+  en: Exports a DSH workspace with its code, data and conversation history as one pack, and imports it on another machine under a category you choose.
+  zh: 把 DSH 工作的代码、数据和对话记录导出成一个包，在另一台电脑上按指定分组导入。
