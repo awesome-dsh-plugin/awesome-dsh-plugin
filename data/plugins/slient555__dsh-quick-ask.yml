@@ -1,0 +1,15 @@
+# 提交路径：awesome-dsh-plugin 仓库 data/plugins/slient555__dsh-quick-ask.yml
+# 规则：url 必须与仓库完全一致；description.en 必填；不要手写 npm: 字段；category 取注册表值
+url: https://github.com/slient555/dsh-quick-ask
+name: slient555/dsh-quick-ask
+category: ui
+description:
+  en: >-
+    Ask anything without leaving the page you are on: press Ctrl+Alt+Q, drag a box over the
+    question on screen, and a local Windows OCR pass hands the text to DeepSeek Harness for an
+    answer in a small floating window. Ships the host plugin that routes questions to the current
+    default model plus a PowerShell overlay for screenshot, OCR, a translation page and one-click copy.
+  zh: >-
+    不用切窗口就能提问：按 Ctrl+Alt+Q 在屏幕上拖框圈住题目，本地 Windows OCR 认出文字后交给
+    DeepSeek Harness，答案直接出现在悬浮小窗里。包含把问题转发给当前默认模型的宿主插件，以及一个
+    PowerShell 小窗（截图、识别、翻译页、一键复制）。
