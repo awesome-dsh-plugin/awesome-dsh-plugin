@@ -1,0 +1,6 @@
+url: https://github.com/moshangssh/dsh-hindsight-manager
+name: moshangssh/dsh-hindsight-manager
+category: memory
+description:
+  en: Configure the official Hindsight plugin, inspect recall and writeback activity, and optionally recall memories each turn in DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中配置官方 Hindsight 插件、查看召回与回写活动，并可选启用逐轮记忆检索。
