@@ -1,0 +1,6 @@
+url: https://github.com/MorseWayne/dsh-agy-acp
+name: MorseWayne/dsh-agy-acp
+category: model
+description:
+  en: 'Connects Google Antigravity CLI (agy acp) as a DSH model provider over persistent stdio JSON-RPC sessions, with session/load recovery, native tool card mirroring, reverse MCP bridge, egress geo-fence guard, multi-account quota scheduling, /agy-acp doctor, and a web status panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过持久 stdio JSON-RPC 会话将 Google Antigravity CLI（agy acp）接入 DSH 模型提供方，支持 session/load 会话恢复、原生工具卡片镜像、反向 MCP 桥接、出口地域熔断防护、多账号配额调度、/agy-acp doctor 自检及 Web 状态面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

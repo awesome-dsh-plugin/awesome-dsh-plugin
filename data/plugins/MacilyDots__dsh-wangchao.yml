@@ -1,0 +1,7 @@
+url: https://github.com/MacilyDots/dsh-wangchao
+name: MacilyDots/dsh-wangchao
+category: workflow
+tarball: https://github.com/MacilyDots/dsh-wangchao/releases/download/v0.5.0-alpha.4.1/dsh-wangchao-0.5.0-alpha.4.1.tgz
+description:
+  en: 'Cross-session workbench for DeepSeek Harness: authorized session and project overview, traceable summaries with seq citations, quick idea capture, a read-only chief advisor for proposal review, and an inspector that marks unchecked items instead of faking a pass.'
+  zh: 'DeepSeek Harness 的跨会话工作台：汇总已授权会话与项目、带 seq 引用的可追溯摘要、灵感快录、只读首辅议事与提案审阅，巡检遇到未核验项会如实标注而不是画绿勾。'

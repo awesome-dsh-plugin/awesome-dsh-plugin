@@ -2,6 +2,6 @@ url: https://github.com/chenxubin2016/dsh-workspace-curator
 name: chenxubin2016/dsh-workspace-curator
 category: session
 description:
-  en: 'A Settings page for workspace and session housekeeping: add, rename, reorder or remove workspaces, and archive or permanently delete sessions, refusing open or still-active ones.'
-  zh: '在设置页集中整理工作区与会话：添加、重命名、排序、删除工作区，归档或永久删除会话，并拒绝打开中或仍有工作的会话。'
+  en: 'Row menus and a Settings page for workspace and session housekeeping: delete sessions, cascade-delete a workspace with all its sessions and folder, queue open sessions for cleanup after a DSH restart, and protect the last workspace.'
+  zh: '通过会话/工作区菜单和设置页整理工作区与会话：删除会话，级联删除工作区及其全部会话和文件夹，打开中的会话重启 DSH 后清理，并保护最后一个工作区。'
 icon: https://raw.githubusercontent.com/chenxubin2016/dsh-workspace-curator/main/assets/icon-180.png

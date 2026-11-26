@@ -1,0 +1,6 @@
+url: https://github.com/liangyu112212/dsh-aiyting-image-video
+name: liangyu112212/dsh-aiyting-image-video
+category: tools
+description:
+  en: "Connect an AIyting account through website sign-in, set image defaults in the sidebar, and use conversation tools to browse models and routes, request a live quote, submit with a credit ceiling, and recover image tasks."
+  zh: "在 DSH 中使用 AIyting 生图。通过官网授权登录，在侧栏查看点数和设置默认参数，在对话中查询模型与线路、获取实时报价、按确认的点数上限提交并找回图片任务。"

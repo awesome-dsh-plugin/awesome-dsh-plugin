@@ -1,0 +1,6 @@
+url: https://github.com/heiyedehen/dsh-self-clock
+name: heiyedehen/dsh-self-clock
+category: tools
+description:
+  en: 'Heartbeat (dsh-self-clock) — the agent sets its own timers: at the due moment it gets one quiet notice in the same conversation, after a five-gate check of whether the user is actually idle. It ships heartbeat_* and presence tools plus a settings panel; timers persist across restarts, and nothing is injected while the model is talking. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '鱼的心跳（dsh-self-clock）：给智能体自己设的闹钟——到点在同一段对话里收到一句安静的通知，它先看你有没有在说话。带 5 个工具和设置面板，闹钟落盘、重启不丢，模型输出期间不打扰。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

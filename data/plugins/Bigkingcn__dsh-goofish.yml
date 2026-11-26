@@ -1,0 +1,6 @@
+url: https://github.com/Bigkingcn/dsh-goofish
+name: Bigkingcn/dsh-goofish
+category: workflow
+description:
+  en: Monitors Xianyu (goofish) listings through a self-hosted ai-goofish-monitor instance, with chat tools for tasks and results, a management panel, and a scheduled digest delivered into one session.
+  zh: 通过本机部署的 ai-goofish-monitor 监控闲鱼商品：提供查任务与结果的对话工具、管理面板，并按时把汇报投递到固定会话。

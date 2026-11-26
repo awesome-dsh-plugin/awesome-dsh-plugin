@@ -1,0 +1,7 @@
+url: https://github.com/naturalth2012/singularity-dsh-plugin
+name: naturalth2012/singularity-dsh-plugin
+category: ui
+icon: https://github.com/naturalth2012/singularity-dsh-plugin/raw/main/assets/icon-180.png
+description:
+  en: "An interactive foresight panel simulating social-form evolution in the AI era: fourteen levers (AI capability, compute, automation, energy, redistribution, public ownership, global coordination, labour power, meaning, education, solidarity, transition shock, class conflict, capital capture) drive a 2024-2060 yearly simulation, and a single decision function picks the outcome among compute-feudalism, social democracy, early communism and collapse - the panel gravity shares are that same function output, so display always matches result. Six preset scenarios, draggable timeline, localStorage persistence, an offline pure-JS engine with no Host RPC and no runtime dependencies, a rent-pressure gauge with crossing years, a penetration-by-socialisation phase diagram with the feudal basin shaded, a rent heatmap over the ownership-by-capture plane, and a published model contract enforced by 173 automated checks."
+  zh: "AI 时代社会形态演化的交互式推演面板：十四个杠杆（AI 认知、算力、自动化、能源、再分配、公共产权、全球协同、劳动者组织度、意义供给、教育、团结度、转型冲击、阶级对抗、资本俘获）驱动 2024-2060 逐年推演；单一裁决函数在算力封建制、社会民主主义、共产主义初级形态与文明崩解之间选出结局，面板显示的引力占比即该函数输出，显示与结果永远一致。六种预设情景、可拖动时间轴、本地持久化；引擎纯 JS 离线运行，无 Host RPC、无网络请求、零运行时依赖；v1.2 新增租金压力仪表（含越线年份）、渗透×社会化相图（封建稳态域阴影）与产权×捕获租金热力图，模型契约由 173 项自动化检查守护。"

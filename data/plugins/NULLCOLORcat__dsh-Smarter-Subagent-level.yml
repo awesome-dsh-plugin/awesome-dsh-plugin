@@ -1,0 +1,6 @@
+url: https://github.com/NULLCOLORcat/dsh-Smarter-Subagent-level
+name: NULLCOLORcat/dsh-Smarter-Subagent-level
+category: model
+description:
+  en: Routes native local DSH subagent tasks by difficulty using models authorized for the current session.
+  zh: 按任务难度为 DSH 原生本地子智能体选模，仅使用当前会话已授权的模型。

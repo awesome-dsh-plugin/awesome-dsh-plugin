@@ -1,0 +1,6 @@
+url: https://github.com/lanxiake/dsh-vyra-plugins/tree/master/plugins/vyra-file-manager
+name: lanxiake/dsh-vyra-plugins#file-manager
+category: tools
+description:
+  en: 'A file manager in the right sidebar: browse every workspace file type, zoom the grid, switch compact/detailed lists, preview PDFs, Markdown, code and CSV in the panel, and rename, copy, delete, reveal or insert a file into the composer.'
+  zh: '右侧栏文件管理：浏览工作区全部文件类型，网格整体缩放，简洁 / 详细列表切换，面板内预览 PDF、Markdown、代码与 CSV，并支持重命名、复制、删除、打开所在位置及引用到输入框。'

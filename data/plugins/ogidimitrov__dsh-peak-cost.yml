@@ -1,0 +1,13 @@
+url: https://github.com/ogidimitrov/dsh-peak-cost
+name: ogidimitrov/dsh-peak-cost
+category: usage
+icon: https://raw.githubusercontent.com/ogidimitrov/dsh-peak-cost/main/assets/icon-180.png
+tarball: https://github.com/ogidimitrov/dsh-peak-cost/releases/download/v1.4.2/dsh-peak-cost-1.4.2.tgz
+description:
+  en: >-
+    Adds one line under the composer with DeepSeek's live peak/off-peak billing status, this
+    session's estimated USD cost broken down by content category (web results, tool results,
+    messages, thinking, system prompt, tool schemas), and the account balance.
+  zh: >-
+    在输入框下方显示 DeepSeek 当前计费时段、按内容分类（网页结果、工具结果、消息、思考、系统提示、
+    工具定义）拆分的本会话预估花费，以及账户余额。

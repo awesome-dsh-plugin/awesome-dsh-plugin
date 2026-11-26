@@ -1,0 +1,6 @@
+url: https://github.com/EasonMWS/dsh-sim
+name: EasonMWS/dsh-sim
+category: memory
+description:
+  en: 'Local failure-to-fix memory: when a tool call fails and a revised input then succeeds in the same task, the pair is recorded, and the verified fix is appended to matching tool results later. Rules run locally with no model calls, and a hint is at most 100 bytes.'
+  zh: '本地防复发记忆：工具调用失败后，若同一任务内改用新输入成功，就记下这一对失败与修法；之后遇到匹配的报错，在工具结果中追加已验证的修法。规则全部在本地执行，不调用模型，提示最多 100 字节。'

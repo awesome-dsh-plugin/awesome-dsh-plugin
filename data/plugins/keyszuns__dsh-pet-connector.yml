@@ -1,0 +1,6 @@
+url: https://github.com/keyszuns/dsh-pet-connector
+name: keyszuns/dsh-pet-connector
+category: fun
+description:
+  en: 'Connects local dsh-pet to Big Fat Fish World (install dsh-pet first) with pairing, presence, bilingual panel, unique names, and friend co-op. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把本机 dsh-pet 接入大肥鱼世界（需先安装 dsh-pet），支持配对、在线状态、中英文面板、唯一昵称和好友结伴。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

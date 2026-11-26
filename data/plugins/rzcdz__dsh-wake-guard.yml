@@ -1,0 +1,6 @@
+url: https://github.com/rzcdz/dsh-wake-guard
+name: rzcdz/dsh-wake-guard
+category: remote
+description:
+  en: 'Keeps a Modern Standby laptop reachable for a grace period after it wakes, so a remote client has time to reconnect, and adds Sleep and Restart buttons to the panel. Sleep enters S0ix (any key wakes it) by turning the display off, never S4 hibernation; Restart relaunches DSH through Electron, or through a detached helper that waits for the old process to exit first. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '电脑从 Modern Standby 唤醒后按宽限时间持续保持可连，给远程客户端留出重连时间；面板另带「电脑睡眠」与「重启」两个按钮。睡眠走关闭显示器的方式进入 S0ix（按任意键即可唤醒），不会落入 S4 休眠；重启通过 Electron 重载 DSH，或经独立助手进程确认旧进程已退出后再启动。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
