@@ -748,6 +748,7 @@ dsh plugin --profile web add dshmarket
 - [Diomchen/dsh-better-tag](https://github.com/Diomchen/dsh-better-tag) — 给会话贴扁平标签并落一枚持久的「完成」章：侧栏行尾、悬停卡片与标题旁都能看到标签，另有跨全部 workspace、按状态计数与标签筛选的会话总览。
 - [Dippppper/dsh-hero-motto](https://github.com/Dippppper/dsh-hero-motto) — 主界面标语自定义：把新会话页的标语换成一组自定义文本按时轮换；另含可独立开关的输入框边框跑马灯，色带沿边缘流动、外圈带辉光，速度、亮度、宽度、呼吸、生效范围与仅聚焦可在设置中调节。
 - [djs326/dsh-plugin-width-slider](https://github.com/djs326/dsh-plugin-width-slider) — DSH 桌面版多功能 UI 插件：对话宽度滑块（按下全屏预览、跟随窗口宽度）、思考块增强（思考/回复强制中文、展开收起、Markdown 渲染）、Open With 头部打开按钮、界面英文标签中文化、设置弹窗窗口化、会话删除与工作区分页。
+- [dkmnx/dsh-session-panel-centering](https://github.com/dkmnx/dsh-session-panel-centering) — 会话面板停靠后，将对话记录居中显示在旁边空间。
 - [Dkrillex/dsh-macos-pet](https://github.com/Dkrillex/dsh-macos-pet) — 分叉自 anneheartrecord/dsh-desk-pet 的 macOS 桌宠，一个真的置顶窗口，全屏 Space 也盖得住：姿势跟着本地 DSH 在六种状态之间走，右键菜单是真的 AppKit 菜单，里面有免打扰和会话清单，随包带七套皮肤。七套里有两套是仓库中的脚本用几何画出来的，不是生成的，所以做一套皮肤不需要图像模型、也不烧 API 额度；自带的 skill 仍用你自己的画图工具和额度，把一张照片扩写成十八个姿势。没有 Electron，也不用另装任何东西：窗口是用 macOS 自带的那个 Python 经 ctypes 驱动的。
 - [dlgrv/dsh-remove-deepseek-logo](https://github.com/dlgrv/dsh-remove-deepseek-logo) — 移除侧边栏里的 DeepSeek Harness 标志、品牌名、版本号，以及对话页的主视觉小鱼。
 - [dmscode/dsh-peak-valley](https://github.com/dmscode/dsh-peak-valley) — 按 DeepSeek 峰谷计费时段给输入卡上方那条染色（谷绿峰红），以进度条显示当前时段剩余时长，带六套主题与自定义 CSS。
