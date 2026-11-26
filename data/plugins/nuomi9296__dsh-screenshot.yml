@@ -1,0 +1,7 @@
+url: https://github.com/nuomi9296/dsh-screenshot
+name: nuomi9296/dsh-screenshot
+category: ui
+description:
+  en: 'Adds a Screenshot entry to the composer''s + menu: the host captures the screen and attaches the PNG to the current message through DSH''s own attachment pipeline. Windows only.'
+  zh: '在输入框左下角的「+」菜单里加一项「截图」：由宿主截取屏幕，并把 PNG 经 DSH 自带的附件流程加入当前消息。目前仅支持 Windows。'
+icon: https://raw.githubusercontent.com/nuomi9296/dsh-screenshot/main/assets/icon-180.png
