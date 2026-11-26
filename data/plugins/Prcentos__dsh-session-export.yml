@@ -1,0 +1,12 @@
+# Catalog entry for awesome-dsh-plugin (https://github.com/awesome-dsh-plugin/awesome-dsh-plugin).
+# Copy this file to data/plugins/Prcentos__dsh-session-export.yml in a fork of that repository.
+# Owner is already filled in; only touch the optional lines at the bottom.
+url: https://github.com/Prcentos/dsh-session-export
+name: Prcentos/dsh-session-export
+category: session
+description:
+  en: Export any DSH session as a portable Markdown or JSON transcript that can move to another machine or resume in another agent.
+  zh: 把任意 DSH 会话导出为可移植的 Markdown 或 JSON 转录，可迁移到另一台电脑，或交给其他 agent 继续。
+# Optional. Only set these when the asset exists.
+# icon: https://raw.githubusercontent.com/Prcentos/dsh-session-export/main/icon.png
+# tarball: https://github.com/Prcentos/dsh-session-export/releases/download/v0.1.0/dsh-session-export-0.1.0.tgz
