@@ -1,0 +1,6 @@
+url: https://github.com/BioAIEvolu/dsh-superagent-ptc
+name: BioAIEvolu/dsh-superagent-ptc
+category: tools
+description:
+  en: 'Long-task supervision layer for DeepSeek Harness: versioned goal anchors, bounded Mandate delegation to Workers, independent Reviewer acceptance, evidence gates (pass/fail/unknown) before release, and SnapshotProof recovery after crashes. Preset-first on the native PTC/Agent/Goal/Teams runtimes — no extra agent loop, task board or router.'
+  zh: 'DeepSeek Harness 长任务监督层：目标与义务的版本化锚点、Mandate 有界委派给 Worker、独立 Reviewer 验收、证据门（pass/fail/unknown）放行，以及崩溃后基于 SnapshotProof 的恢复。以 preset 形式叠加在原生 PTC/Agent/Goal/Teams 运行时之上，不另造 Agent loop、任务板或路由器。'
