@@ -1,0 +1,7 @@
+url: https://github.com/jsnancy/shiliu-wechat-assistant
+name: jsnancy/shiliu-wechat-assistant
+category: docs
+description:
+  en: Learn the typography of a published WeChat article, lay out a new post in that style, preview it, and save it to the WeChat Official Account draft box.
+  zh: 学习一篇已发布公众号文章的字体、段落、标题、引用与图片装饰，把新内容排成同样的样子，预览后存进公众号草稿箱。
+icon: https://raw.githubusercontent.com/jsnancy/shiliu-wechat-assistant/main/assets/icon-512.png
