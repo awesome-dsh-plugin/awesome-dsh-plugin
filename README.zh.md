@@ -2351,7 +2351,7 @@ dsh plugin --profile web add dshmarket
 - [vicfei/dsh-uigen](https://github.com/vicfei/dsh-uigen) — DSH 回复内组件生成+渲染：agent 组合 dsh-ui 组件树，ui_compose 工具按 genui 0.16.0 白名单（59 型；carousel<=24、map<=50 等硬限；每答案一个 hero 等纪律帽）做带修复诊断的起飞前 lint，只有干净块才被发出渲染。本地 LLM，无云端生成 API。
 - [VicissitudeYW/dsh-message-toolbar](https://github.com/VicissitudeYW/dsh-message-toolbar) — 为对话添加消息工具栏，支持在当前会话内使用原模型或其他模型重答、选择历史回答继续对话、编辑或删除消息，以及双语翻译。
 - [victormshan/dsh-web-relay](https://github.com/victormshan/dsh-web-relay) — dsh 三方协作协议插件：Step List 状态机、五级审核链（含本地 Claude Code 混合审）、alternatives 裁决、无介入续跑与能力持久化体系。
-- [vicyangworld/dsh-music#bundle](https://github.com/vicyangworld/dsh-music/tree/main/bundle) — DeepSeek Harness 音乐插件：扫描本地曲库、从 YouTube Music 在线试听（约 128 kbps AAC，喜欢才入库）、基于收听历史与口味偏好推荐、歌手页（维基简介与封面）、收听统计，可手机扫码只读导入网易云音乐 / QQ 音乐的「我喜欢」并在后台为导入曲目查找已核实音源，下载队列配右下角状态面板，并为新用户提供设置页与公有领域 starter 曲库。收听历史、缓存与登录态仅存本地。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [vicyangworld/dsh-music#bundle](https://github.com/vicyangworld/dsh-music/tree/main/bundle) — DeepSeek Harness 音乐插件：扫描本地曲库、从 YouTube Music 在线试听（约 128 kbps AAC，喜欢才入库）、基于收听历史与口味偏好推荐、歌手页（维基简介与封面）、收听统计，可手机扫码只读导入网易云音乐 / QQ 音乐的「我喜欢」并在后台为导入曲目查找已核实音源，下载队列配右下角状态面板，并为新用户提供设置页与公有领域 starter 曲库，另有四套亮暗主题都清晰可辨的面板背景（小蓝鱼 / 晨雾 / 暖沙 / 唱片）与透明卡片的历史页。收听历史、缓存与登录态仅存本地。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [ViewWay/dsh-prompt-optimizer#bundle](https://github.com/ViewWay/dsh-prompt-optimizer/tree/main/packages/bundle) — DSH 输入框提示词优化器。一键对草稿执行「改写 → 自审」多轮优化，逐轮差异预览，被拒绝的结果作为上一次尝试进入下一轮；五个固定重跑方向（更精简／更详尽／更技术／结构化／强化验收）；包内自带 164 个角色的角色库，可按草稿推荐或显式指定；命中的已安装技能以精确名称约束并入元提示词；结果可存入提示词库（浏览、插入、再优化、两步删除）；机械验收准则附带可执行的检查命令模板；输出语言跟随 Agent 界面语言。
 - [Vinzelles/dsh-clearview](https://github.com/Vinzelles/dsh-clearview) — 为 DSH Web 客户端新增「阅读」页签：按源顺序呈现过程步骤与实时思考，成功轮次收起只留最终回答，原有页签、输入框与工具保持不变。
 - [vioeveann/dsh-avatar-frame](https://github.com/vioeveann/dsh-avatar-frame) — 在每轮回复左侧显示角色头像与可编辑 ID，并可用系统语音或你自己指定的本地 TTS 服务朗读回复；含预设、带暂停与上下句的播放控制条、语气与语速调节，以及一键启动该服务。
@@ -10856,6 +10856,7 @@ dsh plugin --profile web add dshmarket
 - [xiaosejun/dsh-golden-partner](https://github.com/xiaosejun/dsh-golden-partner) — 把仓库上下文（浅层目录、技术栈与脚本、既有约定、指定文件的摘录）打成一份上下文包交给外部方案模型，再把返回的六段执行简报落成带日期的计划文件；左侧栏面板负责把指令与简报复制好，长文本不进入对话。
 - [xiaoso456/dsh-workflow-lite](https://github.com/xiaoso456/dsh-workflow-lite) — 支持一句话生成软工作流的插件，适用于许愿式生成简单自动化以及固定任务，把步骤、资源与条件编译成提示词计划交给模型执行，并支持自动触发和导出成 Skill。
 - [xiaoxue-car/dsh-card-workbench](https://github.com/xiaoxue-car/dsh-card-workbench) — 为 DeepSeek Harness 提供卡片任务编排：拆分任务、派单盯办、处理卡顿、核对结果，并接管工作对话。
+- [xiaoyuanGP/dsh-codenow](https://github.com/xiaoyuanGP/dsh-codenow) — 多智能体协同工作台：19 个岗位模板、团队面板（任务板 / 用量 / 缓存），以及让主智能体自己派活、复核、交付的 codenow 工具。
 - [WhaleMaid](https://github.com/Xiaxin1235/WhaleMaid/tree/master/packages/host) — 支持 DSH 0.2.1-rc.2、0.2.1-rc.3，提供范围授权、独立验收、可编辑记忆和伙伴聊天的项目自动推进插件，自动安装配套桌宠 fork。配套桌宠是 takboo/dsh-coopanion 的 fork（AGPL-3.0-or-later），不能与上游桌宠同装。
 - [xiebaiyuan/dsh-lead-mode](https://github.com/xiebaiyuan/dsh-lead-mode) — 给官方 Agent Teams 运行时配的 Lead 模式预设与两个 runtime skill：一套拆活、派活、验收的工作法，以及收尾时把多个成员产出合并成一份文件的团队汇总。本身不带 Team 运行时。
 - [XMoon/dsh-subagent-router](https://github.com/XMoon/dsh-subagent-router) — 新增 subagent_route 与 subagent_fork_route 委托工具：由模型自主为子代理挑选 provider/model 路由，部署方仅配置 spawn/fork 后端、调度策略与 allowedProviders 白名单；续聊子代理与后台任务复用官方 send_message / job_output 工具。
@@ -12404,6 +12405,7 @@ dsh plugin --profile web add dshmarket
 - [Darren-Tang/dsh-provenance](https://github.com/Darren-Tang/dsh-provenance) — 为 DeepSeek Harness 插件做安装前供应链校验：在代码运行前核对即将安装的包是否与你读到的源码一致。
 - [deepestevan/dsh-delete-guard](https://github.com/deepestevan/dsh-delete-guard) — 拦截 agent 的删除命令，改为经 file_trash 工具移入 Windows 回收站；拒绝“读改写同一文件”，共享删除先复制到本地 NTFS 卷、校验并回收副本后再删原件。
 - [deepsleepAquarium/dsh-whale-post#verify](https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/verify) — 校验其他 agent 写来的信：规范字段顺序、摘要与 HMAC 校验。默认关闭；开启后，缺字段或未登记字段不放行，任何一项不过就拒收。
+- [dengmuming/dsh-cloud-sandbox](https://github.com/dengmuming/dsh-cloud-sandbox) — 为 DSH 命令、终端和 Skill 脚本提供 Docker 沙箱，支持工作目录隔离、资源限额及公平调度。
 - [devil233-ui/dsh-auto-review-default](https://github.com/devil233-ui/dsh-auto-review-default) — 让会话进入内置的 Auto review 权限预设：新建会话在创建时进入，已有的根会话在重新打开时切过去。
 - [DevilSpiderX/dsh-workspace-only-plugin](https://github.com/DevilSpiderX/dsh-workspace-only-plugin) — 把任何沙箱模式（read-only / workspace-write / danger-full-access / auto）下代理的文件访问限制在会话工作区内，越界访问一律请用户裁决；每个会话还能用 composer 旁的档位选择框把越界门禁放宽为「工作区外只读」或「完全放开」。
 - [dingchenhui0618-arch/dsh-ps-preflight](https://github.com/dingchenhui0618-arch/dsh-ps-preflight) — agent 要跑的每条 PowerShell 命令，执行前先分级：删除 / 覆盖 / 网络下载 / 触碰凭据四类必测，另加动态执行、系统改动、权限改动。判定是纯确定性规则函数——不调模型、不联网、亚毫秒，另有一条组合升级（下载+执行、凭据+外发直接判高危）。高危会停住这次工具调用等一次确认（面板队列或原生审批），拒绝或超时即不执行；中危只记录不拦。每条命令和它的判定（含脱敏后的命令原文）都追加到本地 JSONL 审计日志。引号里的危险字样当数据不当命令，-WhatIf 尊重空跑，-EncodedCommand 先解码再分析。host + client 双半、零运行时依赖、55 条规则、136 个测试。
