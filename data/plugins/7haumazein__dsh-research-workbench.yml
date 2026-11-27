@@ -1,0 +1,8 @@
+url: https://github.com/7haumazein/dsh-research-workbench
+name: 7haumazein/dsh-research-workbench
+category: docs
+description:
+  en: Builds traceable Obsidian research libraries with report comparison, evidence links, and contribution views using the DSH DeepSeek host.
+  zh: 通过 DSH DeepSeek 宿主生成可溯源的 Obsidian 研报知识库，支持观点合并、证据链接和信息贡献展示。
+
+tarball: https://github.com/7haumazein/dsh-research-workbench/releases/download/v0.3.35/dsh-research-workbench-0.3.35.tgz
