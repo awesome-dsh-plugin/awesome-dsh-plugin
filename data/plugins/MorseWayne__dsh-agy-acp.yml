@@ -2,5 +2,6 @@ url: https://github.com/MorseWayne/dsh-agy-acp
 name: MorseWayne/dsh-agy-acp
 category: model
 description:
-  en: 'Connects Google Antigravity CLI (agy acp) as a DSH model provider over persistent stdio JSON-RPC sessions, with session/load recovery, native tool card mirroring, reverse MCP bridge, egress geo-fence guard, multi-account quota scheduling, /agy-acp doctor, and a web status panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '通过持久 stdio JSON-RPC 会话将 Google Antigravity CLI（agy acp）接入 DSH 模型提供方，支持 session/load 会话恢复、原生工具卡片镜像、反向 MCP 桥接、出口地域熔断防护、多账号配额调度、/agy-acp doctor 自检及 Web 状态面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'Connects Google Antigravity CLI (agy acp) to DSH over persistent low-latency sessions with session/resume & session/load recovery, accurate cache-hit metering, native chat tool cards (Read/Diff/Terminal), a tiered on-demand reverse MCP gateway with presets and schema budget guards, cross-provider auto-review routing, anonymous Google egress geo-fencing, multi-account 5h/7d quota scheduling with TOS quarantine, /agy-acp doctor, and a native-themed web console.'
+  zh: '将 Google Antigravity CLI（agy acp）以零冷启动长连接接入 DSH：支持 session/resume 与 session/load 三级会话恢复与精准缓存计量、聊天气泡原生工具卡片（Read/Diff/终端）、按需加载的分级反向 MCP 网关（含预设与预算控制）、跨模型自动审查转发、纯匿名出口合规熔断、多账号 5h/7d 配额调度与 TOS 隔离，以及原生风格控制台与 /agy-acp doctor 自检。'
+icon: https://raw.githubusercontent.com/MorseWayne/dsh-agy-acp/main/docs/images/icon-256.png
