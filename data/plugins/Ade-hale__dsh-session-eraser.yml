@@ -1,0 +1,6 @@
+url: https://github.com/Ade-hale/dsh-session-eraser
+name: Ade-hale/dsh-session-eraser
+category: session
+description:
+  en: "Adds a Delete session action to the session context menu: the session moves off disk into a recoverable trash directory while its workspace, pin and archive references are cleared, so it disappears from the sidebar immediately. A session that is still running is refused until it stops."
+  zh: '在会话右键菜单增加「删除会话」：会话从磁盘移入可恢复的回收目录，同时清掉它的工作区、置顶与归档引用，侧栏立即消失；仍在运行的会话会先被拒绝。'
