@@ -1,0 +1,6 @@
+url: https://github.com/holderlink/dsh-tutorial-check
+name: holderlink/dsh-tutorial-check
+category: tools
+description:
+  en: "Turns a long tutorial into a persistent, checkable markdown list so each install step is actually verified."
+  zh: "把长教程变成可勾选、可验收的 markdown 清单，记录每一步是否真的做完。"
