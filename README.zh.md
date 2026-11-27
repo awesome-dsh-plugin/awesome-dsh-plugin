@@ -1919,6 +1919,7 @@ dsh plugin --profile web add dshmarket
 - [prgrmrwy/dsh-sidebar-session-provider-icon](https://github.com/prgrmrwy/dsh-sidebar-session-provider-icon) — DeepSeek Harness 插件：在侧边栏为每个会话显示 provider 与 model 图标，跟随输入框选择器即时更新，历史会话回退到最近一次请求；聚合路由（如 opencode-go、traex）显示 provider 主图并叠加 10px model 小图标。
 - [PrismScopes/dsh-aide](https://github.com/PrismScopes/dsh-aide) — 在 DeepSeek Harness 中提供 VS Code 风格的本地 IDE：Monaco 编辑器、资源管理器、搜索、Git、终端与语言服务。用 pnpm 安装时需运行 `pnpm approve-builds --all`，允许 node-pty 的原生构建。
 - [prog656/dsh-one-click-new-session](https://github.com/prog656/dsh-one-click-new-session) — 侧边栏底部新增一键入口，直接打开可输入的空白对话，不需要选择工作区；专用工作区自动创建，已有空白会话自动复用，连点也不会堆出一串空对话。
+- [Protonhydrogen/dsh-mol-workspace](https://github.com/Protonhydrogen/dsh-mol-workspace) — 原生 Mol* 分子侧栏，支持 Agent 控制结构查看、表面渲染、几何测量及已有 MD 轨迹播放。
 - [psychiiii/dsh-three-window#personal-web](https://github.com/psychiiii/dsh-three-window/tree/publish/packages/personal-web) — dsh web 的三窗工作台：每个工作区并排显示聊天、施工和只读审核三个窗口，各窗口独立配置 hook；审核窗提供匿名多模型评审，先确认再运行，按同一件事归组，报告为 Markdown。
 - [Pudge1996/dsh-composer-stretch](https://github.com/Pudge1996/dsh-composer-stretch) — 输入框全屏扩展按钮——内容达 3 行以上时出现，点击扩展至全屏高度，发送后自动折叠；扩展模式下 Enter 与 Shift+Enter 换行，Cmd/Ctrl+Enter 发送。
 - [pure-craft/dsh-actions](https://github.com/pure-craft/dsh-actions) — 人与 Agent 共用的确定性项目任务：一份 actions.json，右侧栏运行面板与 Agent 工具双入口。
@@ -7718,6 +7719,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-tool-time](https://github.com/omdsh-dev/dsh-tool-time) — 严格 ISO 8601 解析、IANA 时区转换、UTC 日历运算。
 - [omdsh-dev/dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit) — 零依赖工具包：time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十件套一键安装。
 - [omicverse/dsh-omicos](https://github.com/omicverse/dsh-omicos) — 在持久 Python 内核里跑 OmicVerse/OmicOS 生信分析，附能力目录检索、内核变量查看与账号订阅页签。
+- [omnimux-ai/omnimux-client#omnimux-clip](https://github.com/omnimux-ai/omnimux-client/tree/main/plugins/plugins/omnimux-clip) — DeepSeek Harness 多轨非线性视频时间轴剪辑插件，支持实时画面预览、基于 WebCodecs 与 WebGPU 的本地 MP4 导出以及 Agent 时间轴协同剪辑工具。
 - [OneLastTlipoca/dsh-tool-barotrauma](https://github.com/OneLastTlipoca/dsh-tool-barotrauma) — 为 DeepSeek Harness 增加 17 个 barotrauma_* 工具，用于制作潜渊症 mod：环境探测、内容包骨架、物品/武器/状态效果/角色/随机事件 XML、Lua 与 C# 脚本脚手架、本地化、校验、图标生成、打包与创意工坊发布文案。barotrauma_gen_icon 会把你的提示词发到 image.pollinations.ai，并把返回的图写进 mod 目录；在 Windows 上会用 reg query 读取 Steam 安装路径。
 - [OneOfJuly/dsh-ax-computer-use](https://github.com/OneOfJuly/dsh-ax-computer-use) — AX 优先的跨平台电脑操作插件（macOS / Windows / Linux）：六个工具（窗口、无障碍树、批量带验证动作、JPEG 截图、元素读取、Electron 带参重启）通过系统无障碍树（AX / UIA / AT-SPI2）驱动原生应用、Chrome 网页和 Electron 应用，取代截图点击的视觉循环。批量动作每步返回 confirmed / unverified / suspected_noop 结论，dropdown 搜索组合 op 直击 antd 式网页表单，空间坐标缓存跨会话记住字段位置，OCR 兜底覆盖自绘界面——网页操作从 20+ 轮截图点击降到 4-6 轮。
 - [onup-1/dsh-github-guard](https://github.com/onup-1/dsh-github-guard) — 监视 GitHub 流量，只在你访问 GitHub 时才用 TCP 与 TLS 探测候选边缘地址，再由 SYSTEM 助手把可用的那个钉进 hosts 文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -10596,6 +10598,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-advisor](https://github.com/omdsh-dev/dsh-advisor) — 搭配一个副模型，每轮被动审查并注入见解。
 - [omdsh-dev/dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research) — 自适应深度研究编排器（基于官方 workflow 引擎）。
 - [omdsh-dev/dsh-inspect](https://github.com/omdsh-dev/dsh-inspect) — 发现问题→修复交付→质量复查的对抗式闭环工具集。
+- [omnimux-ai/omnimux-client#omnimux-workflow](https://github.com/omnimux-ai/omnimux-client/tree/main/plugins/plugins/omnimux-workflow) — 基于 React Flow 的 DeepSeek Harness 可视化 DAG 工作流无限画布插件，支持拓扑子图调度、断点恢复、本地文件存储与 Agent 画布操作工具。
 - [onesmash/dsh-reflex](https://github.com/onesmash/dsh-reflex) — 给 DS Bot 的反射弧：作为兄弟插件运行、不改 ds-bot，用低成本层持续采集事实并在本地决策模型上打分，只有越过阈值时才唤醒 Bot 的推理层。
 - [openfcp/dsh-fcp](https://github.com/openfcp/dsh-fcp) — DSH 侧栏里的金融消保工作台：六位专家按关键词调度或手动点选；技能页对齐 dsh-financial-skills v0.2.3，技能真实安装到共享 skills 目录，即时生效、跨插件同步；支持 IMA、Obsidian 与本地知识源。输入框展示模型全名、话筒、发送和模式选择（标准 / PTC / 极简 / 创造），需求一键直达流程。本地路由带回环、Host 白名单与同源校验。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [orion-nebula-dev/dsh-Dynamic-Workflow](https://github.com/orion-nebula-dev/dsh-Dynamic-Workflow) — 使用 /workflow 运行 JSON 工作流，查看进度、选择 Agent 模型、复用已有会话继续执行，并通过有次数上限的独立审查与修复控制交付。
@@ -12487,7 +12490,7 @@ dsh plugin --profile web add dshmarket
 - [lvxianchao/dsh-web-guard](https://github.com/lvxianchao/dsh-web-guard) — 给 DSH Web UI 加密码登录，同时修掉反向代理导致的 403，带可吊销会话、管理页和零依赖。
 - [LWLAymh/dsh-edit-guardian](https://github.com/LWLAymh/dsh-edit-guardian) — 文件修改 diff 栏与保留/撤销汇总，以及对 bash/pwsh 危险命令的审批与标红。
 - [maburykh-gif/dsh-plugins#pii-guard](https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/pii-guard) — 在 undici 传输层对发往模型的请求做可逆脱敏：把俄罗斯个人数据（СНИЛС、ИНН、ОГРН/ОГРНИП、КПП、БИК、银行账号、俄罗斯护照、ОМС 保单、银行卡、+7 电话、邮箱、地址、姓名）与密钥类数据（API key、JWT、PEM、密码）替换为稳定占位符，并在 SSE/JSON 响应中还原原值，因此服务商只看到占位符，而智能体、工具与会话日志保留真实值。默认 fail-closed，审计日志不写原值，支持 enforce/audit/off 模式、按类别开关、自定义词典与白名单。
-- [MaRi23333/dsh-second-look](https://github.com/MaRi23333/dsh-second-look) — 为 DeepSeek Harness 提供按会话切换的日常与加强审查，日常审查按规则放行常规操作，并在覆盖整个文件等变更前交给独立模型审核。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [MaRi23333/dsh-second-look](https://github.com/MaRi23333/dsh-second-look) — 为 DeepSeek Harness 提供按会话切换的日常与加强审查，日常审查按规则放行常规操作，并在覆盖整个文件等变更前交给独立模型审核。从 0.1.6 起，设置和审查记录接口只接受经 DSH 认证的所有者访问。旧版本用户请升级。
 - [Martlet-Tech/dsh-approval-explain](https://github.com/Martlet-Tech/dsh-approval-explain) — 在审批卡片上加一个「解释」按钮：一次模型调用返回固定三行解读——做什么、读写改了什么、是否安全（风险等级加一句理由）。同时补上 `write`/`edit` 类调用详情区留白的问题——官方渲染器只读 `command` 字段，那两类调用没有该字段。
 - [maxmilian/dsh-sonarqube](https://github.com/maxmilian/dsh-sonarqube) — 面向 SonarQube Community Build 的只读工具：实例状态、分支或 PR 的项目质量阈、议题与安全热点搜索、单个热点详情，以及覆盖率、重复率或调用方指定的度量项。议题与热点结果附带标准化的位置信息，包含组件 key、文件路径、行号与文本范围。
 - [mdalboni/dsh-static-token](https://github.com/mdalboni/dsh-static-token) — 为 DeepSeek Harness Web GUI 配置固定的静态启动令牌，方便跨服务重启和反向代理访问。
@@ -13140,6 +13143,7 @@ dsh plugin --profile web add dshmarket
 - [nanshan1995/DSH-Plugin-Market](https://github.com/nanshan1995/DSH-Plugin-Market) — 另一款 DSH 插件市场：精选目录 + GitHub 实时浏览、中英互通搜索、安装前 fail-closed 静态安全审计（拦截安装钩子），每个插件可直接查看 README 且乱码自动修复。
 - [nonentity303/dsh-drydock](https://github.com/nonentity303/dsh-drydock) — 插件管理器 + 引擎外救援层：按必要程度分组启停、来源三分区（核心 / 官方 / 用户）、事务化卸载可撤销、npm/GitHub/自定义镜像一键更新、ADP 精选目录、下载完整性校验；引擎起不来时 3081 兜底页照常可用——自检、隔离坏包并把它拉起来。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [nuolingmo/dsh-market-notes](https://github.com/nuolingmo/dsh-market-notes) — 给 dshmarket 里还没有备注的插件自动写一句中文说明，显示在市场卡片上；手写备注不会动（只有带 🤖 标记的条目会在 force=ai 时重新生成），使用时需要先装好 dshmarket。
+- [omnimux-ai/omnimux-client#omnimux-market](https://github.com/omnimux-ai/omnimux-client/tree/main/plugins/plugins/omnimux-market) — DeepSeek Harness 插件与技能市场面板，提供技能、插件、专家与连接器四个标签页，支持搜索并安装技能、社区插件、内置专家预设与托管 MCP 连接器。
 - [open-dshai/dsh-employee](https://github.com/open-dshai/dsh-employee) — 数字员工，整合专家、技能、连接器三大目录，支持浏览、收藏、召唤与发布，且无需改动宿主代码。
 - [openfcp/dsh-financial-skills](https://github.com/openfcp/dsh-financial-skills) — 在 DSH 左侧栏加一个「金融技能」入口，点开是整页精选金融行业技能目录，数据构建自 openfcp/awesome-financial-skills 的 catalog.json。支持搜索、按业务分类筛选和已安装视图；详情弹窗渲染技能的 SKILL.md，并列出文件清单、大小、许可证与来源坐标。安装按清单声明的来源取回正文（SkillHub zip，或 GitHub raw 并回退 API 与 jsDelivr），校验文件数与体积上限后先暂存再重命名落位；卸载把目录移进 .trash 而不是删除。页面由 6 条仅限本机回环的路由支撑，客户端只能传技能 id，目录不可达时回落到随包快照并如实标注为快照。
 - [Oscar-Williams/dsh-deepatlas](https://github.com/Oscar-Williams/dsh-deepatlas) — 任务感知的 DSH 插件导航：聚合 GitHub topic 与社区清单建立本地索引，按 28 类中英能力检索；提供 commit 级静态风险审计、用户确认后的锁定版本安装、组合验证与恢复流程。
