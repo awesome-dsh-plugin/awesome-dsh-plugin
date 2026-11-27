@@ -1,0 +1,7 @@
+url: https://github.com/gu70619052/dsh-subtitle-studio
+name: gu70619052/dsh-subtitle-studio
+category: tools
+description:
+  en: 'Subtitle Studio: transcribe, translate and burn subtitles for videos in local or SSH folders, scheduled or on demand.'
+  zh: '字幕工坊：对本地或 SSH 目录里的视频做转写、翻译与字幕压制，可手动运行也可定时执行。'
+tarball: https://github.com/gu70619052/dsh-subtitle-studio/releases/download/v1.6.0/dsh-subtitle-studio.tgz
