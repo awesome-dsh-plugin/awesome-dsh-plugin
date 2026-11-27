@@ -4491,7 +4491,7 @@ dsh plugin --profile web add dshmarket
 - [MoonlitDropOfBlood/dsh-model-prompt-injector](https://github.com/MoonlitDropOfBlood/dsh-model-prompt-injector) — DSH 按模型注入系统提示词：为本地已配置的模型把自定义提示词追加到系统提示词末尾，支持 provider/model 精确匹配与 provider/* 服务商级通配（两者按序叠加）。设置页自动列出每个已配置服务商及其模型，逐行编辑、即时生效；规则持久化保存、重启不丢；对主会话、subagent 与 workflow 子代理同样生效。
 - [MoRanYue/dsh-openrouter-providers](https://github.com/MoRanYue/dsh-openrouter-providers) — 配置 OpenRouter 请求使用的提供商列表与量化位数上限，注入 provider.only/order（allow_fallbacks）与 provider.quantizations 路由参数。
 - [MorseWayne/dsh-agy-acp](https://github.com/MorseWayne/dsh-agy-acp) — 通过持久 stdio JSON-RPC 会话将 Google Antigravity CLI（agy acp）接入 DSH 模型提供方，支持 session/load 会话恢复、原生工具卡片镜像、反向 MCP 桥接、出口地域熔断防护、多账号配额调度、/agy-acp doctor 自检及 Web 状态面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
-- [MorseWayne/dsh-team-router](https://github.com/MorseWayne/dsh-team-router) — 为 DSH 原生团队委派提供七种可配置的任务类别，按类别为新队友选择已授权的模型。
+- [MorseWayne/dsh-team-router](https://github.com/MorseWayne/dsh-team-router) — 为 DSH 原生 subagent 与团队委派按任务类别选择已授权模型和推理强度：内置 4 组 12 类（支持逐类开关与 12/7 类快捷切换）及最多 8 个自定义类别（含 4 套模板），提供被动/专长优先/编排者三档委派模式、可选严格校验、一键推荐预览与保存时自动补齐模型授权。
 - [MoruTeaven/dsh-model-quickslots](https://github.com/MoruTeaven/dsh-model-quickslots) — 输入框上方的一排模型预设按钮：左键点击把当前会话切换到该预设的提供方、模型与思考强度，右键点击打开该预设的编辑弹窗，每个预设还可以自定义备注名称而不必使用模型名。编辑弹窗读取当前会话真实的模型目录，预设保存在本地。
 - [moxiaoren/dsh-xiaoyiwork-connect](https://github.com/moxiaoren/dsh-xiaoyiwork-connect) — 复用已登录的小艺Work 桌面端本地模型代理（仅限 Windows），其模型直接出现在 DeepSeek Harness 中，无需单独 API Key。
 - [Mu-scorpio/dsh-reasoning-effort](https://github.com/Mu-scorpio/dsh-reasoning-effort) — 为 DeepSeek Harness 配置 Provider 与模型的推理强度映射，并提供按 Provider 分组的模型选择器和输入框滑块。
@@ -7521,6 +7521,7 @@ dsh plugin --profile web add dshmarket
 - [loyalchiiina/dsh-lit-fetch](https://github.com/loyalchiiina/dsh-lit-fetch) — 免费文献下载：给 DOI、标题或关键词就能定位论文，先依次遍历 8 个 Sci-Hub 镜像，全部失败才用 Unpaywall 开放获取兜底。PDF 要过 %PDF- 魔数与最小体积校验，抓不到的论文生成可点击的批量获取清单。不需要付费订阅，也不需要 API Key。适配 DSH 内核 0.2.2-rc.1。
 - [Lphehe/dsh-token-economizer](https://github.com/Lphehe/dsh-token-economizer) — 统计跨会话工具使用情况，并可按项目隐藏未使用的发现类工具。
 - [lplalbert/deepseekhermes-codex-bridge#dsh-codex-bridge](https://github.com/lplalbert/deepseekhermes-codex-bridge/tree/main/packages/dsh-codex-bridge) — 为 DeepSeek Harness 注册两个工具。ask_codex 把问题发给本机已登录的 Codex CLI 并回传回复；codex_review 让 Codex 按给定标准对一组文件做红队评审。两者都可指定模型与推理强度，并在本地记录 token 用量。
+- [LPRabdusamat/dsh-gh-downloader](https://github.com/LPRabdusamat/dsh-gh-downloader) — 面向 DeepSeek Harness 的 GitHub 加速下载管理插件。在侧栏提供下载管理面板，并向 Agent 提供 github_download 工具，可通过 gh-proxy 把 GitHub 文件、Release 资产、源码归档与 Gist 下载到工作区，支持进度显示、暂停续传、多通道链接转换与下载历史列表。
 - [lqq151510/dsh-computer-use](https://github.com/lqq151510/dsh-computer-use) — macOS 电脑操作：8 个 computer_* 工具，读屏走辅助功能树与 Vision OCR，按元素 index 或可见文字执行 press / focus / set_value / click（后台窗口也能操作），CoreGraphics 鼠标键盘事件走常驻 daemon 低延迟通道，支持游戏级连招序列；自带的 Swift 助手首次调用时编译，无运行时依赖。
 - [lsqace-del/dsh-progress](https://github.com/lsqace-del/dsh-progress) — 「进度」实验/项目进度管理：16 个 progress_* agent 工具（安排增删改查、画板页、每日记录、全局搜索、概览、甘特、留言、导入导出），并在 better-sidebar 注册「进度」侧边栏 tab 托管原版界面；数据存会话项目 .progress/progress.json，随项目目录走。
 - [lsz-asd/dsh-plugin-device-info](https://github.com/lsz-asd/dsh-plugin-device-info) — 只读的 Windows 设备信息工具：每个 Win32 设备类别一个 agent 工具（时间、系统、CPU、内存、磁盘、GPU、网络、电池、进程、USB、音频、打印机），基于 WMI/CIM 与 Node os 采集。
