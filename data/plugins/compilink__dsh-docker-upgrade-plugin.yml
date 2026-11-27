@@ -2,6 +2,6 @@ url: https://github.com/compilink/dsh-docker-upgrade-plugin
 name: compilink/dsh-docker-upgrade-plugin
 category: dev
 description:
-  en: Displays Docker upgrade status and the scheduled check time in DSH Web, and queues source checks or upgrade requests for a separately configured host service.
-  zh: 在 DSH Web 设置中查看 Docker 升级状态和下次计划检查时间，并向另行配置的宿主服务提交源码检查或升级请求。
-tarball: https://github.com/compilink/dsh-docker-upgrade-plugin/releases/download/v0.1.1/dsh-bundle-docker-upgrade.tgz
+  en: Automatically detects compatible Docker Compose deployments on macOS and upgrades DSH from official source on demand or on a schedule with dsh-bundle-docker-upgrade.
+  zh: dsh-bundle-docker-upgrade 可在 Mac 上自动发现兼容的 Docker Compose 部署，支持手动或定时从官方源码升级 DSH。
+tarball: https://github.com/compilink/dsh-docker-upgrade-plugin/releases/download/v0.2.0/dsh-bundle-docker-upgrade.tgz
