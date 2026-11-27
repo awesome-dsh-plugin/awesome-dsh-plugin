@@ -409,7 +409,7 @@ dsh plugin --profile web add dshmarket
 - [Anna-la/dsh-simplify](https://github.com/Anna-la/dsh-simplify) — Web 界面清理：清理模式下悬浮元素右键即可移除，刷新后依然生效，设置页中可原样恢复。
 - [anneheartrecord/dsh-desk-pet](https://github.com/anneheartrecord/dsh-desk-pet) — 装在 DSH 页面之外的 macOS 桌宠：一个真的置顶窗口，全屏 Space 也盖得住；六种状态跟着本地 DSH 走，原生右键菜单里有免打扰与会话清单；自带的 skill 用你自己的画图工具和额度，把一张照片变成整套十八个姿势的皮肤。跑系统自带的 Python 与 ctypes，不用 Electron，零依赖。
 - [anonamerjaxon-dev/dsh-model-grid](https://github.com/anonamerjaxon-dev/dsh-model-grid) — 把 DeepSeek Harness 输入框的模型选择器改成按供应商分组的响应式卡片网格。纯宿主端：通过 webserver/index-inject 注入样式、无需重建前端包，同时支持官方选择器与 dsh-peakrate 菜单。
-- [Antares422/dsh-design-board](https://github.com/Antares422/dsh-design-board) — 右侧栏交互式设计画布，内置 165 套设计体系：选好风格直接生成可交互页面，支持单页精修、多方案并排对比、点选或框选 DOM 元素留批注原地改稿、深浅主题切换与多格式导出。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Antares422/dsh-design-board](https://github.com/Antares422/dsh-design-board) — 右侧栏交互式设计画布，内置 165 套设计体系：选好风格直接生成可交互页面，支持单页精修、多方案并排对比、点选或框选 DOM 元素留批注原地改稿、深浅主题切换与多格式导出。
 - [antnesswcm/dsh-shell-card-plus](https://github.com/antnesswcm/dsh-shell-card-plus) — 用自定义 Shell 命令卡片替换 DSH Web 原版 bash/pwsh 工具行：长命令自动换行带行号不再截断，并提供独立的复制命令/复制输出按钮。
 - [anye-99/dsh-next-step-suggest](https://github.com/anye-99/dsh-next-step-suggest) — 下一步建议：每轮回答结束后，用会话当前模型做一次辅助调用提炼 3 条可点击的后续提问建议，显示在输入框上方，点击任意一条即填入草稿。
 - [anzhaohao/DragView](https://github.com/anzhaohao/DragView) — 拖拽文件以 Codex 风格附件卡片呈现，支持 PDF/文本/音视频应用内预览，其余格式调用系统默认应用打开。
@@ -7782,6 +7782,7 @@ dsh plugin --profile web add dshmarket
 - [PandaBoby/dsh-liangheng](https://github.com/PandaBoby/dsh-liangheng) — 面向 DeepSeek Harness 的专项编码 Agent 预设：意图对齐、第一性原理根因修复、原生并行工具面与改后实测交付，以组合包形式热插拔安装。
 - [pangxie985/dsh-desktop-yida](https://github.com/pangxie985/dsh-desktop-yida) — 通过 OpenYida CLI 给 Agent 14 个创建、修改钉钉宜搭应用（应用、表单、页面、Schema、数据）的工具，并在右侧栏工作台里用内置浏览器打开查看。
 - [Pappet/dsh-tool-imagegen](https://github.com/Pappet/dsh-tool-imagegen) — 通过 OpenRouter 统一 Image API 的文生图与图生图：以别名配置模型，参数按实时模型能力列表校验，支持参考图输入、设置卡片与对话内联展示结果。
+- [Parado-D/stata-copilot](https://github.com/Parado-D/stata-copilot) — 让 agent 直接跑 Stata：执行代码与 do 文件，回归结果读成系数、标准误、95% 区间与被省略项；erase、shell 这类命令在到达 Stata 前就被拦下；插补、bootstrap 这类长任务转后台进程跑完，不再被 Stata 忙占掐断。
 - [paranoidPhantom/dsh-rtk-minimal](https://github.com/paranoidPhantom/dsh-rtk-minimal) — 在 `tools/execute` 钩子上把 bash 工具调用经 `rtk rewrite` 改写，因此对任意 provider 路由生效。零依赖、无需构建：单个 ESM 模块，退出码 0 与 3 时采纳改写结果，其余情况（无等价命令、命中拒绝规则、rtk 缺失、启动失败）原样执行，执行后还原原始参数；`RTK_PREFIX_ONLY` 直接改为 `rtk <cmd>`，`DSH_RTK_BIN` 用于指定二进制。
 - [patrykorwat/open-dream-rsi#deepseek_harness](https://github.com/patrykorwat/open-dream-rsi/tree/main/plugins/deepseek_harness) — 不是又一个记忆插件：ODR 是“演化世界”式（Dream-RSI）自我改进回路——每次尝试都记入发现树（Discovery Tree），任务间歇将数千个策略变体在这棵记录下来的世界上回放；策略、配方或经验只有通过反事实回放的考验才会晋升，绝不因模型自己说好就获得信任，Sentinel 还会在预算耗尽前拦截工具调用；LLM 保持冻结，可从 npm 安装 dsh-open-dream-rsi。
 - [PaysNatal/dsh-qwen-mcp](https://github.com/PaysNatal/dsh-qwen-mcp) — 一步接全千问 Token Plan 的 7 个 Harness 权益 MCP 服务（联网搜索、网页解析、代码解释器、垂类搜索、图像生成、语音合成、语音识别）与决策模型（qwen_decide），附逐服务开关与实时状态面板。
