@@ -1,0 +1,7 @@
+url: https://github.com/MOUboy/dsh-haloflux-orbit
+name: MOUboy/dsh-haloflux-orbit
+category: ui
+description:
+  en: HALOFLUX dashboard for DSH Web with live session status, tool-event animations, and links to open sessions.
+  zh: 在 DSH Web 中通过 HALOFLUX 面板查看实时会话状态和工具事件动效，并跳转到对应会话。
+tarball: https://github.com/MOUboy/dsh-haloflux-orbit/releases/download/v0.2.0/dsh-haloflux-orbit-0.2.0.tgz
