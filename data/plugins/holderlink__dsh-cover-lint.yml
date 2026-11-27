@@ -1,0 +1,6 @@
+url: https://github.com/holderlink/dsh-cover-lint
+name: holderlink/dsh-cover-lint
+category: tools
+description:
+  en: "Checks whether a thumbnail still reads at 512px and 320px: dimensions, ratio, brightness, contrast and text bands."
+  zh: "检查封面在 512px/320px 下还看不看得清：尺寸、比例、亮度、对比度和文字区域。"
