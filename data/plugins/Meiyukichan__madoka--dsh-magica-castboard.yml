@@ -1,0 +1,7 @@
+url: https://github.com/Meiyukichan/madoka/tree/main/dsh-magica-castboard
+name: Meiyukichan/madoka#dsh-magica-castboard
+category: tools
+icon: https://raw.githubusercontent.com/Meiyukichan/madoka/main/dsh-magica-rune/assets/icon-180.png
+description:
+  en: 'A multi-person, multi-instance, multi-system collaboration framework built on DSH: projects, devices and issues share one ledger; a task board runs agent sessions; issues route to tasks or to a runtime command on the target instance; comments and interactions flow across sessions and machines, and external systems can create issues through the teamwork SDK with a source code and receive results and artifacts back in the shared issue stream.'
+  zh: '基于 DSH 的多人、多实例、多系统协同框架：项目、设备与 issue 共用一套共享台账；任务看板运行 Agent 会话；issue 可路由成 task，也可在目标实例上直接执行一次 runtime 命令；评论与交互跨会话、跨机器流转；外部系统可通过 teamwork SDK 带 source 标识创建 issue，并从共享 issue 事件流取回结果与产物。'
