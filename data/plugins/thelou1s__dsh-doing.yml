@@ -1,0 +1,7 @@
+url: https://github.com/thelou1s/dsh-doing
+name: thelou1s/dsh-doing
+category: notify
+description:
+  en: 'Looping beep while the agent works and a two-beep alert every few seconds while it waits for your confirmation, with editable volume and intervals.'
+  zh: 'Agent 干活时循环播放提示音，等待你确认时每几秒响两声提醒，音量与两个间隔都可在设置里调整。'
+icon: https://raw.githubusercontent.com/thelou1s/dsh-doing/main/assets/icon-180.png
