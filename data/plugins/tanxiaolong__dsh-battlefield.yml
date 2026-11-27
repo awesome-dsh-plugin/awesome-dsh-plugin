@@ -1,0 +1,7 @@
+url: https://github.com/tanxiaolong/dsh-battlefield
+name: tanxiaolong/dsh-battlefield
+category: fun
+icon: https://raw.githubusercontent.com/tanxiaolong/dsh-battlefield/main/docs/icon-512.png
+description:
+  en: 'A floating keyboard battlefield HUD that turns each keystroke into a cannon shot — dwell time in, a 1–99 impact score, a live key heatmap, and a continuous battlefield ambience bed. No keystroke content ever leaves the window.'
+  zh: '悬浮在 Harness 里的键盘战场 HUD：把每次按键的按下时长换算成 1–99 冲击力，敲击即响炮声，底下铺着不断的战场背景音。只读物理键位，拿不到你敲出的字符，也不联网。'
