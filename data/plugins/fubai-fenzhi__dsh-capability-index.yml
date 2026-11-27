@@ -2,5 +2,5 @@ url: https://github.com/fubai-fenzhi/dsh-capability-index
 name: fubai-fenzhi/dsh-capability-index
 category: tools
 description:
-  en: 'Capability index for DSH: one tool plus one on-demand skill that list installed plugin tools and skills by suite, so an agent picks the right plugin + skill combination.'
-  zh: 'DSH 能力索引：一个工具 + 一个按需技能，按插件套列出已安装的工具和技能，帮 agent 选对「插件 + 技能」组合。'
+  en: 'Capability index for DSH: one tool plus one on-demand skill that lists installed plugin tools and skills by suite. Measured on a 5-suite ecosystem (17 publish tools, 3 Bilibili tools, 1 procedure tool, 1 index tool, 3 on-demand skills): the index costs about 120 resident tokens per turn while workflows load on demand (~600 tokens per hit); the experience-card suite cuts per-hit context by 86.5% (6,491 → 879 tokens). 5 npm packages, 4/4 catalog PRs merged on imsai, video demo live on Bilibili.'
+  zh: 'DSH 能力索引：一个工具 + 一个按需技能，按插件套列出已安装的工具和技能。实测 5 个套件（17 个 publish 工具、3 个 bili 工具、3 个按需技能）；索引约 120 token/轮，技能命中约 600 token/次、不命中 0；经验卡单次命中省 86.5%（6,491 → 879 token）；npm 5 个包、imsai 4/4 合并。'
