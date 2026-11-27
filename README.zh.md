@@ -3084,7 +3084,7 @@ dsh plugin --profile web add dshmarket
 - [Genesi599/dsh-plugins#quota-panel](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/quota-panel) — 侧栏底部的余额与用量卡片：DeepSeek 账号余额、今日 token（含输入、缓存、输出明细）、本会话 token，以及抓取失败时的最近错误。
 - [ghang/dsh-cache-helper](https://github.com/ghang/dsh-cache-helper) — 展示缓存命中、发送前确认请求前缀风险，并按调用步骤定位缓存失效。
 - [Ghost011118/dsh-balance-meter](https://github.com/Ghost011118/dsh-balance-meter) — 输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。
-- [GiftiaCoder/dsh-coupon](https://github.com/GiftiaCoder/dsh-coupon) — 给 DSH agent 的票夹：md 模板即票种 + 单账户鲸圆券 + md5 绑定的一次性票据；5 个钱包工具（列模板、查票、要票、自主兑换、核销）+ 审批签发 + 流水账 + 设置页/右侧栏 Web 面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [GiftiaCoder/dsh-coupon](https://github.com/GiftiaCoder/dsh-coupon) — 给 DSH agent 的票夹：md 模板即票种 + 单账户鲸圆券 + md5 绑定的一次性票据；5 个钱包工具（列模板、查票、要票、自主兑换、核销）+ 审批签发 + 流水账 + 设置页/右侧栏 Web 面板；面板的 HTTP 路由走宿主的 DSH 访问检查。
 - [GIN0076/dsh-token-usage](https://github.com/GIN0076/dsh-token-usage) — DSH 设置面板词元用量统计：从会话日志折叠出日/周/月 × 模型（或按厂商合并）的词元统计，storage-domain 持久化、经同源 /token-usage-rpc 路由出数；SVG 折线图（十字线悬浮按日拆到每个模型）+ 占比排行（含可选金额）+ 缓存命中率与缓存读写卡片 + 用户自备的每百万 token 价目表 + 日/月预算告警 + 当前区间导出 CSV/JSON + 可见时自动刷新 + 预设与自定义起止日期 + 重建（存储里存在日志已不存在的历史时先要一次确认）。
 - [github798383392/dsh-money-board](https://github.com/github798383392/dsh-money-board) — 给 DeepSeek Harness 用的会话花费看板：读取 save-token 的 token 统计，按官方价表折成金额，在输入框上方显示本次会话花费、压缩省下的钱与错峰差价。
 - [GLFzr/dsh-opencode-go-quota](https://github.com/GLFzr/dsh-opencode-go-quota) — 模型选择器左侧的 OpenCode Go 额度圆环：点击循环切换 5 小时/每周/每月用量窗口，按紧急程度着色（绿/蓝/橙/红），悬停显示百分比与重置倒计时。
@@ -4697,7 +4697,7 @@ dsh plugin --profile web add dshmarket
 - [wqy8593521/dsh-model-pro](https://github.com/wqy8593521/dsh-model-pro) — llm-pi-ai 模型提供商的生命周期管理 UI：提供商的新建/编辑/删除与启停（自定义请求头、AES-GCM 加密密钥）；卸载时安全还原滞留提供商，远端模型发现与批量写入，五种策略的智能路由，并集/交集组合提供商，逐模型连通性测试与请求观测。
 - [wshdp123/dsh-connect-qoder-pro](https://github.com/wshdp123/dsh-connect-qoder-pro) — 连接 DSH 与本地 Qoder 桌面客户端登录态，接入 Qoder CN 官方模型（qmodel、qfmodel）。仅 Windows：凭据读取依赖 DPAPI。
 - [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) — 通过 ChatGPT OAuth 在 DSH 中使用 Codex 模型，提供订阅联网搜索、额度与安全重置、图片工具、高速模式和模型感知上下文；无需 API Key 或 Codex CLI。
-- [wsl1602291891-stack/dsh-zhilian-api](https://github.com/wsl1602291891-stack/dsh-zhilian-api) — 在 DeepSeek Harness 中一键接入 NewAPI 站点：浏览器授权本站账号，按分组创建/复用专用 Key（同名复用、模型范围原地更新），并按模型家族自动选择协议——GPT 走 Responses、Claude 走 Messages、其余走 Chat——账户余额、每把 Key 的用量和站点入口都集中在同一个设置页。
+- [wsl1602291891-stack/dsh-zhilian-api](https://github.com/wsl1602291891-stack/dsh-zhilian-api) — 在设置页一键授权智连站点账号，按分组自动创建或复用专用 Key，并按模型家族注册正确的协议路由，无需手动建 Key。
 - [wss534857356/dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) — 使用本地 Codex 登录的 Codex App Server 模型提供方，支持会话复用、Harness 工具桥接、原生动作轨迹和生成图片持久化。
 - [wth373737/dsh-plugin-ollama-bridge](https://github.com/wth373737/dsh-plugin-ollama-bridge) — 本机 Ollama 工具：模型清单、单次（未校验）问答，以及跑长文本的批处理——分块并发、逐条确定性校验、回传一小段抽样原文供复核，结果可选择写入会话工作区。
 - [wufeng0105/dsh-teammate-model-picker](https://github.com/wufeng0105/dsh-teammate-model-picker) — 让你手动给队友（子智能体）换模型：队友卡在一个不能用的模型上（比如额度用完）时，换个还能用的模型就能接着干，不用删掉重建，也不影响你自己的会话和全局默认模型。
@@ -4886,6 +4886,7 @@ dsh plugin --profile web add dshmarket
 - [polohot/dsh-adrian-inject-context](https://github.com/polohot/dsh-adrian-inject-context) — 把你保存的上下文条目以「Remember」行的形式注入到每条用户消息之后，可按轮或按会话一次；带设置编辑器与管理页。
 - [promise0320/dsh-persona-studio](https://github.com/promise0320/dsh-persona-studio) — 在 DSH 里把 LLM 的人格拆成六个维度（身份、语气、创作习惯、反馈方式、边界、运行参数）编译成一段提示词，注入系统提示词末尾；内置六套模板并支持直接丢文件的模板目录；还能读你过往消息归纳出人格草案——或统计成文，或让当前模型深读并给出判断依据。附带输入框旁的悬浮面板与 /persona 命令。
 - [proteuscrypto/wapliss-for-deepseek](https://github.com/proteuscrypto/wapliss-for-deepseek) — 通过托管的 Wapliss MCP 服务把 DSH 连接到你自己的 WhatsApp（使用个人 API Key 鉴权）；可读取和总结私聊与群聊、查看最新消息和群成员，并在你确认后发送文字、媒体、位置、联系人与投票。禁止群发或骚扰消息；与 Meta 或 WhatsApp 无关联。
+- [pseudonymzjt/dsh-direct-human-style](https://github.com/pseudonymzjt/dsh-direct-human-style) — 常驻 system prompt 的写作风格段（1449 字符：六条原则、必删套话、必拆句式和英文镜像清单），把回复压成直白工程口吻；另配两个工具：humanize_check 按 58 条规则（中文 45、英文 13、八组）扫描文本并报告命中和破折号、加粗、句长统计，humanize_rules 取回 direct、GPT 腔、DeepSeek 腔或 31 个编辑检查点的全文清单。
 - [puffdog-git/dsh-discord-cyberfriend](https://github.com/puffdog-git/dsh-discord-cyberfriend) — 把 DSH 人格接到 Discord，可用 Bot 或选用的个人账号；每个频道独立会话，能看图片与贴图、按表情、在语音房收听与说话、收发语音消息、播放音乐，频道操作先预览再确认。
 - [railgun20001/dsh-persona-modes](https://github.com/railgun20001/dsh-persona-modes) — 在「设置 → 人格模式」或 /persona 命令（/persona catgirl、/persona off）里切换回复语气，下一轮对话生效。同一时刻只注入当前这一条（放在运行时上下文里，系统提示词只保留一条约 50 字的稳定策略），关闭时注入 0 字；只改语气，不改事实、代码与工程纪律。
 - [Refreshing-CZQ/dsh-xhs-style](https://github.com/Refreshing-CZQ/dsh-xhs-style) — 在选品、版本选择与竞品分析前加入需求澄清门槛：默认进行 2–3 轮反问，每轮只问 2–4 个会改变选择的问题，验证真实痛点和硬约束，比较原方案、替代方案与最低成本路线，确认需求卡后再调研和成稿。正式报告保留小红书结构、具体步骤、逐张核验的配图与来源链接；普通查询和用户明确跳过时不拦截。纯 Host 静态提示词，无配置项、无前端 UI、无依赖。
@@ -6226,6 +6227,7 @@ dsh plugin --profile web add dshmarket
 - [jojoman2024/dsh-memj](https://github.com/jojoman2024/dsh-memj) — 以项目为主线的 DSH 记忆插件。开放知识书写，以及插件提示词编辑，让用户不改一行代码就能重新设计记忆库结构与模型被驱动的方式。默认的记忆库核心设计在于，项目以一份你自己设计的项目文档（默认是一份交接文档）作为实体，插件自动识别会话所属项目、把沉淀的知识与项目绑定，并把可复用的部分升级进主题与全局层。用最自然的逻辑完成知识的初筛，上下文可控压缩和留档。
 - [joymitu/xuyi-memory-release#dsh-adapter](https://github.com/joymitu/xuyi-memory-release/tree/main/dsh-adapter) — 续忆（Xuyi），QQ 陪伴聊天的本地长期记忆：把 QQ 私聊和群聊消息存进本机 SQLite，通过自动召回和 `xuyi_recall` 工具带原话找回以前说过的事，每天写一篇日记，支持备份导出与恢复，附 11 套人设和首次安装引导。
 - [JqandCl/dsh-memory-huixiang](https://github.com/JqandCl/dsh-memory-huixiang) — 给 AI 一个本地记忆库：纯文本卡片，会随时间变淡、也会被想起来；记不清时如实说不知道；数据全放在你自己的电脑里。
+- [juki001/dsh-memory-curate](https://github.com/juki001/dsh-memory-curate) — 给 DSH 的可审计长期记忆：把记忆、决策和提示版本写进同一个只追加的 NDJSON 文件；最近 5 个真人回合不参与压缩；写入、召回、压缩都能追溯到来源并随时改。
 - [JunNanLYS/dsh-layered-memory](https://github.com/JunNanLYS/dsh-layered-memory) — dsh 长期记忆：对话自动蒸馏为原子事实、场景摘要与用户画像，每步模型调用前自动注入相关记忆。开箱零配置——BM25 + 向量混合检索，可选本地离线嵌入，chat/work 双族隔离。
 - [Kagurazaka135/dsh-memory](https://github.com/Kagurazaka135/dsh-memory) — 明文 YAML 的分层跨会话记忆：事实带版本链而非覆盖，会话开始注入简报，夜间整理并在超过阈值后按主题分片。零运行时依赖，在 dsh 安卓版实测可用。
 - [kaveys/agent-user-profile](https://github.com/kaveys/agent-user-profile) — 把「你是谁」记成一份持久画像——从红线、口味到沟通习惯共十类，每轮任务前先读一遍，偏好不用反复交代。候选事实先进待审队列，确认后才进画像；注入前过相关性闸门，可以要求某一轮不读画像。写入时自动合并近义条目，别家 AI 导出的画像文本能整段搬进来并拆成条目；另带七页签面板、`profile` 命令行与 14 个 MCP 工具，覆盖审阅、修改、置顶、软失效、快照、恢复与加密备份。
@@ -7481,6 +7483,7 @@ dsh plugin --profile web add dshmarket
 - [DSH MCP Tool Schema Diff](https://github.com/liuhange789/dsh-mcp-tool-schema-diff) — MCP 工具契约的破坏性变更预警。从运行中的 tools/change 注册表里，为每个 MCP server 记住最近三代工具定义并做结构化 diff：工具删除、参数删除、可接受类型收窄、新增必填、枚举收窄记为 breaking；默认值与约束变化记为 warning；新增工具/可选参数记为 info。静默窗口防抖吸收 mcp-client 的重新同步抖动，首次连接和重连都不会误报。通过会话通知加 `/mcp-diff` 输出，快照存 `$DSH_HOME/mcp-schema-cache`（每个 server 保留 3 个版本），只读注册表，不写其他状态。
 - [liuhange789/party-eco-agent](https://github.com/liuhange789/party-eco-agent) — 面向党建引领街道产业生态场景的轻量规则工具：生成企业画像卡片、按品类与数量匹配供需、规整政策记录字段（不解析原文）、按优先级给出诉求处理人角色与预计天数；不调用任何外部系统。
 - [LiuJiaCheng11/dsh-postman](https://github.com/LiuJiaCheng11/dsh-postman) — 用 9 个工具在 dsh 里管理 Postman 云端集合——列出、浏览、新增（单个或批量）、修改、删除接口，导出或整体覆盖集合。
+- [liujing9178/dsh-tool-picker](https://github.com/liujing9178/dsh-tool-picker) — 每步先给模型一份工具目录，由它用 tool_pick 只加载需要的工具，据此收窄本轮可见工具集，减少每步的工具定义 token 开销。
 - [liwei9745/dsh-genbox-plugin](https://github.com/liwei9745/dsh-genbox-plugin) — 通过本地 GenBox 服务生图、改图、生视频，并用 ffmpeg 本地剪辑；自带零成本测试台。
 - [liwuzhan/agent-native-trade#dsh-plugin](https://github.com/liwuzhan/agent-native-trade/tree/main/packages/dsh-plugin) — 为模型原生交易提供目录检索、交易方联络、合同签名、结算协调、人工任务交接和签名评价回执工具。
 - [liwuzhan/cad-tool#dsh-cad-studio](https://github.com/liwuzhan/cad-tool/tree/main/packages/dsh-cad-studio) — 为 DSH 添加参数化 CAD 建模、几何验证、预览、设计历史和 STEP/STL 导出能力。
@@ -8028,6 +8031,7 @@ dsh plugin --profile web add dshmarket
 - [sizhe03/dsh-muse-media](https://github.com/sizhe03/dsh-muse-media) — 在对话里用你自己 Muse 账号的每周免费额度生成图片和视频，不需要 API key：驱动你已登录的 Chrome，并在输入框旁显示剩余额度。
 - [sjdhdbbf/dsh-drawai-vectorizer](https://github.com/sjdhdbbf/dsh-drawai-vectorizer) — fork 自 fourzkw/dsh-drawai，保留 .drawio 可编辑画布与两个模型工具，并在原版描边之外新增第二套矢量化引擎：分层颜色聚类 + 贝塞尔样条拟合 + 每通道色彩精度，绘制任务可选三档保真度（同一 1920×1080 帧实测约 18 / 38 / 46 dB PSNR（上游引擎同帧约 26 dB）），并行度提升为逻辑核心数的一半（不再封顶 4）。原版描边仍是默认引擎，也是整段视频的正确选择——新引擎在视频上产物会大出数百倍。
 - [sjh9714/dsh-retry-guard](https://github.com/sjh9714/dsh-retry-guard) — 监视连续相同的工具失败，可在下一个模型步之前选择暂停；保留原始结果与成功的重复调用，并在 DSH Web 里出一份会话内报告。
+- [sjkk16/dsh-game-player](https://github.com/sjkk16/dsh-game-player) — 为 DeepSeek Harness 提供受审批的键鼠操作、窗口绑定、屏幕截图，以及可选的 Live2D 桌面显示，用于操作窗口化游戏。
 - [skillpie/dsh-plugins#dsh-datasource](https://github.com/skillpie/dsh-plugins/tree/main/dsh-datasource) — 在 DeepSeek Harness 中连接 SQLite / PostgreSQL / MySQL 数据源：浏览表结构与数据、执行 SQL，也可以在对话里让助手直接查数和改数。
 - [sleepwalk2887/transproof-dsh-plugin](https://github.com/sleepwalk2887/transproof-dsh-plugin) — 译校助手 TransProof 的 DSH 插件：内置完整网页界面，支持 AI 翻译（需自备模型 API Key 或本地 Ollama 端点）、三段流水线校对、术语与专名核验、批量体检改错与一键交付报告；网页版与插件内置同一套界面，另提供一个不联网、不调模型的本地体检 Agent 工具。首次安装需联网 GitHub（国内用户请先开代理）；已安装后更新走 npm + npmmirror 国内镜像，无需代理。
 - [slow-stack/dsh-cura](https://github.com/slow-stack/dsh-cura) — 给 DSH 加一层生活关怀：每个会话都带健康日志与周期关怀，面板里存过的常用坐标省掉「你在哪」的反问，高德与瑞幸的 MCP 工具挂进所有会话；另附 QQ 伴生层，把表达规则注入回复。
@@ -10834,6 +10838,7 @@ dsh plugin --profile web add dshmarket
 - [xiangzz/dsh-subagent-qodercn](https://github.com/xiangzz/dsh-subagent-qodercn) — 把 Qoder CLI CN（qoderclicn）注册为一次性 DSH 子智能体提供方（ACP 协议），沿用官方 Codex 提供方的约定：每次调用在任务目录里全新启动一个 qoderclicn --acp 进程，只把最终回答返回父会话（失败时返回部分输出和只含固定事实的诊断）。需本机已安装并登录 Qoder CLI CN。
 - [xiao0o0/dsh-workflow-execute](https://github.com/xiao0o0/dsh-workflow-execute) — 多阶段 agent 工作流：工作流是含阶段、环节、门禁与期望产物的 YAML 文件，运行时只输入一次需求并按环节依次推进；面板展示每环节进度、门禁得分、返工次数与产物文件，并提供 workflow_list、workflow_get、workflow_validate、workflow_save 四个工具，让 agent 读取、校验与保存工作流。
 - [xiaobaifly7/dsh-codex-conductor](https://github.com/xiaobaifly7/dsh-codex-conductor) — 将 DeepSeek Harness 的编码任务委派给 WSL 内的 Codex CLI，提供必填验收标准、后台进度与取消、线程续跑、逐条结果汇报、改动记录及可选工作区护栏。需要 Windows 与 WSL2；WSL 内需有 Python 3.11+ 和已登录的 Codex CLI。
+- [xiaobaijiadepugongyingpai-coder/dsh-crew-x](https://github.com/xiaobaijiadepugongyingpai-coder/dsh-crew-x) — ZSeven-W/dsh-crew 的增强分支，面向 Claude Code、Codex、Antigravity 与 Grok 提供 8 个 MCP 工具：新增可选持久会话、hub.json 动态端口发现、可视化模型路由与连通性探测、4 档逐任务权限及 Windows 自动 Worktree 降级，以及阈值报告落档。
 - [xiaofeng-bm/dsh-clarify-mode](https://github.com/xiaofeng-bm/dsh-clarify-mode) — 加一个需求澄清模式：模式内移除写文件工具，Agent 只能提问，覆盖完必需维度后产出带验收标准的 spec，再开始实现。
 - [xiaohai-78/dsh-modes](https://github.com/xiaohai-78/dsh-modes) — Agent 模式（预设）设置页：按模式开关最多 15 项能力（运行命令、读写或只读文件、网页、子代理等），也能逐个开关插件；编辑每个模式的系统提示词，带变量校验、完整预览和历史版本，可选让正在运行的会话即时生效，并提供每次保存都需审批的对话内修改工具 mode_prompt；用四个起步模板或复制现有模式新建模式；dsh 升级后合并内置更新并保留你的修改，一键关闭加载失败的插件。
 - [xiaomengxinbb/dsh-todo-freshness](https://github.com/xiaomengxinbb/dsh-todo-freshness) — 告诉你任务卡片已经过期。插件注册一个 todoFreshness 会话投影，从会话里已有的事件折叠出：上次 todo_write 之后又跑了多少次工具调用、清单里还有几项没有结论、这一轮结束时是不是还留着未完成项。清单落后时按阈值注入一条提醒，要求模型用真实状态整表重写；同时在输入框上方标明这份清单只是旧快照，而不是实时进度。插件自己不写 todo/write，也不会把没做完的项标成 completed。
@@ -11738,6 +11743,7 @@ dsh plugin --profile web add dshmarket
 - [DaJiang07/dsh-plugin-backup](https://github.com/DaJiang07/dsh-plugin-backup) — 换机迁移 DSH profile，连插件本身一起：把插件包选择与整个配置层打包成一个 JSON 文件，恢复时写回配置、还原本地插件源码与插件数据，并安装备份里记录、新机器缺失的插件包（优先插件管理器，失败回退 pnpm）。
 - [DamonKoy/dsh-plugin-toggle](https://github.com/DamonKoy/dsh-plugin-toggle) — 设置→插件开关面板：每个已加载插件的卡片显示简述与运行阶段，支持模糊搜索与运行时启动/关闭（不改写配置文件）。
 - [DamonKoy/dsh-plugins#dsh-system-proxy](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-system-proxy) — 系统代理检测（scutil/env/PAC）：状态工具 + proxy_export 导出 bash 代理片段。
+- [DAnonyvinciT/dsh-preset-composer](https://github.com/DAnonyvinciT/dsh-preset-composer) — 在设置页以插件树编辑 DSH Agent 预设，为每个插件提供参数表单，并支持自定义预设。
 - [DanYikona/DSH-script-hub](https://github.com/DanYikona/DSH-script-hub) — 把任意会话里写出的脚本归档到按类别分好的目录，逐个生成 Markdown 文档，并能启动/停止、按真实进程与计划任务核对状态。
 - [daoyan2142/dsh-plugin-git-sync](https://github.com/daoyan2142/dsh-plugin-git-sync) — 把 DSH 配置档里已安装的第三方插件连同源码打包成 tarball 推送到 GitHub 或 Gitee 仓库；另一台电脑拉取清单、比对版本，只安装缺失或过期的插件。需要对该仓库有写权限的个人访问令牌（存于 DSH 凭据服务）；压缩包含各插件已安装的源码，建议使用私有仓库。
 - [daoyan2142/dsh-repot](https://github.com/daoyan2142/dsh-repot) — 通过一个私有 GitHub / Gitee 仓库在机器之间搬运 DSH 环境：第三方插件（按版本重装，或携带 tarball / 源码目录）、四个 profile 配置文件、以及文件夹快照。还原时逐文件比对，本机改过的文件不覆盖，被替换的文件先备份，并按绝对路径、已登记的根、或显式确认三级解析落点；逃出根、穿越 junction、覆盖非本插件目录的写入一律拒绝。配置文件和文件夹内容原样上传（不做密钥脱敏），插件也不检查仓库是否私有；访问令牌保存在凭据服务里，首次启动会把 dsh-plugin-git-sync 留下的 GIT_SYNC_* 令牌复制过来。需要 Node 22.12 及以上。
