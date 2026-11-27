@@ -1607,7 +1607,7 @@ dsh plugin --profile web add dshmarket
 - [maqian1632/dsh-tray-restart](https://github.com/maqian1632/dsh-tray-restart) — 在 DSH 桌面端的 Windows 系统托盘菜单中只增加一个“重启 DeepSeek Harness”项，做法是原位修改已安装的 app.asar 并在桌面端每次更新后重打补丁；需要 DSH 安装目录可写，不添加其他托盘操作。
 - [MarchLiu/dsh-rich-editor](https://github.com/MarchLiu/dsh-rich-editor) — 为输入区提供富 Markdown 笔记本：工具行开关加 CodeMirror 编辑卡片，支持 Codex 风格列表编辑，经会话服务提交。
 - [MaRi23333/dsh-agent-instructions-editor](https://github.com/MaRi23333/dsh-agent-instructions-editor) — 在 DeepSeek Harness 设置页编辑全局 AGENTS.md 和项目 AGENTS.md / CLAUDE.md 个性化指令，提供项目指令链浏览、字节预算显示与保存冲突处理。
-- [mark-qtech/dsh-inline-link-preview](https://github.com/mark-qtech/dsh-inline-link-preview) — 在 DeepSeek Harness 聊天输入框为支持的单条链接显示行内图标和标题，复制和发送时保留网址。
+- [mark-qtech/dsh-inline-link-preview](https://github.com/mark-qtech/dsh-inline-link-preview) — 在 DeepSeek Harness 聊天输入框中单独粘贴链接后，尝试将飞书/Lark 文档（需 lark-cli）、GitHub 公开页面、微信公众号文章及可访问的公开网页就地显示为「图标 + 标题」，复制和发送时保留原始网址。
 - [markmuteki/dsh-session-prompt-optimizer](https://github.com/markmuteki/dsh-session-prompt-optimizer) — 在输入框里加一个按钮，借助当前会话的一小段上下文把草稿改写成更清楚的提示词（Shift 改成结构化任务书，Alt 压缩），结果先并排显示在草稿旁，确认后才替换。
 - [MarkTina/dsh-activity-heat](https://github.com/MarkTina/dsh-activity-heat) — 按距最后一次活动的时间给会话与工作区打 0–100% 热度分，并在侧边栏图标、会话标题前的小热度圆点、会话悬浮卡片和可筛选的会话/工作区面板中呈现；工作区卡片还汇总该工作区的轮次、步数、Token 与会话时长。
 - [Martlet-Tech/dsh-open-folder-fix](https://github.com/Martlet-Tech/dsh-open-folder-fix) — 修正 Windows 上「打开工作目录」的行为。官方调用 `explorer.exe "<file:// URI>"`，在某些主机上会报告成功却不弹窗口——因为成功判据是退出码，分不出「窗口开了」和「什么都没发生」。本插件把该操作改走 `explorer.exe /e,<目录>`，稳定新开窗口；菜单里其它应用仍走官方路径。
@@ -1619,7 +1619,7 @@ dsh plugin --profile web add dshmarket
 - [Max-Null/dsh-chat-rail](https://github.com/Max-Null/dsh-chat-rail) — DeepSeek Harness 画卷式消息导航栏：会话面板右侧一条竖排导轨，每条用户消息一个指示点，scroll-spy 跟随阅读位置，hover 展开画卷查看完整消息预览，点击跳转任意历史消息；与 better-sidebar 面板动画同步避让。
 - [Max-Null/dsh-node-appearance](https://github.com/Max-Null/dsh-node-appearance) — DeepSeek Harness Web GUI 会话节点外观插件：按节点类别/工具名可配置着色（左侧色条 + 淡色底），附带"显示思考过程"开关；纯前端渲染增强，改动即时生效并持久化到 DSH 用户设置文件。
 - [Max-Null/dsh-quick-toolbar](https://github.com/Max-Null/dsh-quick-toolbar) — 插钮聚合器（载体+驻场 LLM 范式）：把任何插件的散落按钮聚合到统一入口（SSiD 标题栏 / web 悬浮球）——LLM 按环境注册、右键删除=注销，纯数据零代码，不动插件源码。
-- [MaxBill/dsh-file-explorer](https://github.com/MaxBill/dsh-file-explorer) — 主栏里的文件浏览面板，也负责把文件喂给 agent：图标 / 列表 / 分类三种视图（列宽可拖拽），面板内直接预览图片、PDF、Markdown、HTML、CSV/TSV、XLSX 工作簿与 DOCX 文档（后两者由插件自行解析 zip+XML），支持面板内改文本、上传下载、ZIP 压缩解压与 Git 状态角标；右键或拖拽即可把文件夹添加为 DSH 工作区、把文件加进当前对话、把路径以 @ 引用插入输入框，工具栏还能一键切换工作区，远程访问时自动隐藏仅桌面可用的动作。
+- [MaxBill/dsh-file-explorer](https://github.com/MaxBill/dsh-file-explorer) — 文件管理器：主栏里的文件浏览面板，也负责把文件喂给 agent —— 图标 / 列表 / 分类三种视图（列宽可拖拽），面板内直接预览图片、PDF、Markdown、HTML、CSV/TSV、XLSX 工作簿与 DOCX 文档（后两者由插件自行解析 zip+XML），支持面板内改文本、上传下载、ZIP 压缩解压与 Git 状态角标；右键或拖拽即可把文件夹添加为 DSH 工作区、把文件加进当前对话、把路径以 @ 引用插入输入框，工具栏还能一键切换工作区，远程访问时自动隐藏仅桌面可用的动作。
 - [maxlee/dsh-prompt-manage](https://github.com/maxlee/dsh-prompt-manage) — 复用你在 DeepSeek Harness 各会话中输入过的提示词：输入框模型选择器旁的可搜索面板、用当前会话模型和可编辑的系统提示词改写草稿的魔法棒按钮，以及侧边栏里可搜索的全量提示词历史页。
 - [maxy1817/dsh-inline-edit](https://github.com/maxy1817/dsh-inline-edit) — 原地修改用户消息文字及增删附件，可在设置中选择新建分支，或在当前对话重新生成最近一条符合条件的任务主消息。
 - [mdalboni/dsh-mobile](https://github.com/mdalboni/dsh-mobile) — 移动端视口锁定、滚动溢出阻断、虚拟键盘自适应及侧边栏自动收起。
@@ -9642,6 +9642,7 @@ dsh plugin --profile web add dshmarket
 - [AAAlenwow/dsh-spring-admin-kit](https://github.com/AAAlenwow/dsh-spring-admin-kit) — Spring Boot 后台开发套件：EasyExcel 批量导入导出代码生成与 Thymeleaf + LayUI 模板安全守卫。
 - [aawef/dsh-skill-manager-tags](https://github.com/aawef/dsh-skill-manager-tags) — 按标签筛选技能：给 DSH 技能打标签，再用布尔表达式为每个工作区或对话选出下发给模型的子集（例如 `pdf + docx` 或 `aegis * plugin`）。命中以外的技能会被 deny-shadow 真正从模型目录里移走，而不只是在设置页隐藏；表达式之外的技能可手动添加或强制禁用，另附带 `tagging-skills` 教 agent 从本机技能清单自建标签体系。
 - [addie-ace/dsh-mattpocock-skills](https://github.com/addie-ace/dsh-mattpocock-skills) — 技能包插件：把 mattpocock/skills 的 25 个 promoted 技能（工程与效率）全文汉化，注册为 DSH 捆绑技能 provider，经技能系统发现与调用。
+- [Ade-hale/dsh-skill-conflicts](https://github.com/Ade-hale/dsh-skill-conflicts) — 检测已安装 skill 之间的冲突：按能力分组，区分「同类型但不冲突」与「互相冲突」。
 - [adithyanraj03/dsh-skills-pack](https://github.com/adithyanraj03/dsh-skills-pack) — 把 36 个内置 agent 技能（科研写作、LaTeX、实验、设计评审、办公文档、动画、Windows shell 与 dsh 插件规范）注册为一个纯宿主侧的技能提供者：没有界面、没有网络请求，也没有自己的遥测；技能脚本以用户的权限运行。
 - [afterpartyai/ss33-skill-store-for-agents#dsh](https://github.com/afterpartyai/ss33-skill-store-for-agents/tree/main/adapters/dsh) — 根据项目技术栈摘要检索 ss33 Skill Store，将选中的技能作为原生 SKILL.md 安装并钉入 ss33.lock，支持按需开启提示词匹配。
 - [AhaCrazy/action-hub#dsh-action-hub](https://github.com/AhaCrazy/action-hub/tree/main/packages/dsh) — 面向 DSH 的标准 Agent Skill 库：同一份 SKILL.md 可作为模型可见的 Skill 或仅由用户调用的 Command，支持分组、项目范围、导入导出和原生 Alt+A 面板。
