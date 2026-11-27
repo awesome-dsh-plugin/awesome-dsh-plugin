@@ -1,0 +1,7 @@
+url: https://github.com/Tanloon/dsh-share-chat-card
+name: Tanloon/dsh-share-chat-card
+category: docs
+description:
+  en: 'Picks individual records out of the loaded conversation and exports them as paginated PNG images, one self-contained HTML page, or straight to the clipboard. Reasoning blocks and timestamps are optional; the header line reports record count, tool calls, turn time, span and tokens.'
+  zh: '从已加载的会话里逐条勾选记录，导出成分页 PNG、单文件 HTML，或直接复制到剪贴板；思考过程与时间戳可开关，文件头给出记录数、工具调用、耗时、跨度与 token。'
+icon: https://raw.githubusercontent.com/Tanloon/dsh-share-chat-card/master/icon.png
