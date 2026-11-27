@@ -1267,6 +1267,7 @@ dsh plugin --profile web add dshmarket
 - [jue5hen/dsh-window-size](https://github.com/jue5hen/dsh-window-size) — 在设置页设置 DeepSeek Harness 桌面版启动时的窗口大小，内置 4:3、16:9、16:10 比例预设，支持保存最多 12 个自定义预设。
 - [juliankang4/dsh-locale-ko](https://github.com/juliankang4/dsh-locale-ko) — 给 DeepSeek Harness 的「设置 - 通用设置 - 语言」加入韩语（한국어），翻译 dsh 0.2.0-rc.2 与 0.2.1-alpha.2 Web UI 的全部 2,775 条文案，包括实验功能。dsh web 与桌面应用均可使用。
 - [juliankang4/dsh-ui-scale](https://github.com/juliankang4/dsh-ui-scale) — 将 DeepSeek Harness 整个界面（包括菜单和弹窗）缩放到 50% 至 200%，在「设置 - 通用设置」中用滑块、百分比输入或预设调整。dsh web 与桌面应用均可使用，桌面应用本身没有缩放功能。
+- [julypjyt-creator/dsh-word-translate](https://github.com/julypjyt-creator/dsh-word-translate) — 在 DSH 对话里选中或指向任意英文单词，右键直接弹出「翻译成中文」卡片，中文释义就地显示，不用复制出去查。
 - [JungleYXu/dsh-minichat](https://github.com/JungleYXu/dsh-minichat) — 快问小面板：不碰主对话，固定 10 轮便签窗口；问答成对收藏且不占轮次，结论可一键放进输入框，每次重启都是空的。
 - [JupiterWalker/dsh-section](https://github.com/JupiterWalker/dsh-section) — 把不同项目的会话收进左侧边栏里可折叠的自定义分组：会话行与项目行各有菜单，可加入分组、移出分组、重命名、归档，或把整个项目一次性移入某个分组；分组面板里的开关可把宿主侧栏切换成分组树、随时恢复，行尾还会提示会话正在跑（自己这一轮、派出去的子代理、没结束的后台任务都算）或跑完还没看过。
 - [Justin-Mai/dsh-stock-view](https://github.com/Justin-Mai/dsh-stock-view) — A 股 / ETF / 港股 / 美股 / 加密货币行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面右上角显示可折叠、可拖动的弹窗，同时盯多个市场——实时行情、分时与日/周/月 K 线（含均线）、买卖目标价、分组管理（切换、拖动排序、重命名、删除）、跨市场搜索、明暗主题。fork 自 Awu12277/dsh-stock-watch，新增东方财富美股行情与 OKX 现货加密货币行情。
@@ -1376,6 +1377,7 @@ dsh plugin --profile web add dshmarket
 - [left0ver/dsh-file-review](https://github.com/left0ver/dsh-file-review) — 在 Diff 面板中审查 Agent 的文件改动、添加评论以继续修改，并撤销已编辑或新建的文件。
 - [legendbone/dsh-prompt-enhancer](https://github.com/legendbone/dsh-prompt-enhancer) — 在聊天输入框添加星光按钮，使用当前选中的模型重写纯文本草稿，并把结果回填到输入框。
 - [lemon0-00/dsh-file-menu](https://github.com/lemon0-00/dsh-file-menu) — 给 DSH 聊天里的交付文件卡片、改动卡片、行内文件引用与 http(s) 链接加上右键菜单。动作包括用默认程序打开、用系统「打开方式」对话框打开、在文件管理器中定位、复制文件本体、复制文件路径、另存到指定文件夹、下载，以及用浏览器打开链接。交付卡片走宿主从会话日志反查的会话坐标；行内引用与改动卡片走宿主要求复核的绝对路径。
+- [Lemon357/dsh-transparent](https://github.com/Lemon357/dsh-transparent) — DSH 桌面版透明窗口：滑杆调节页面蒙层不透明度（0–62%），开关切换亚克力磨砂或无磨砂窗口材质；切换材质会改写桌面壳 app.asar，需重启一次。
 - [lemonorangeapple/dsh-effort-switcher](https://github.com/lemonorangeapple/dsh-effort-switcher) — 为DSH添加一个类似于Codex的推理强度切换器。
 - [Leni-More/dsh-market-watching](https://github.com/Leni-More/dsh-market-watching) — 钉在 DSH 侧栏的行情卡片：加密货币、A股 / 港股 / 美股与世界主要指数、外汇直盘、伦敦金银的实时价格与 24 小时涨跌幅。填上买入或做空成本价与持仓数量后，涨跌列会切换成盈亏百分比与浮动金额；标的、顺序、刷新间隔都在 DSH 设置页里决定。免登录、免密钥。行情取自 Gate.io、东方财富和新浪的公开接口，每次刷新都会把你选的标的发给它们。
 - [lenrendre/dsh-screenshot-native](https://github.com/lenrendre/dsh-screenshot-native) — 微信式截图：点一下冻结桌面，框选区域或单击窗口，截图直接进输入框。Windows 专用的 Durandalw/dsh-plugin-screenshot 衍生版，请勿与原版同时安装。
@@ -10068,6 +10070,8 @@ dsh plugin --profile web add dshmarket
 - [Ztqing4Agents/dsh-skill-panel](https://github.com/Ztqing4Agents/dsh-skill-panel) — DSH Web GUI 原生风格技能管理面板：统一管理内置、本地与市场技能，支持无损启停开关、本机/GitHub 仓库导入，以及内置 SkillHub 镜像技能市场。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zuoyunlai/lunheng-article-pipeline-dsh](https://github.com/zuoyunlai/lunheng-article-pipeline-dsh) — DSH bundle 技能包：把深度长文生产（学术论文 / 行业分析 / 商业评论）拆成 9 角色流水线——T1 文献 / T2 数据 / T3 案例三线并行检索、T4 分析、T5 写作、T6 批判伙伴、T7 审计、T8 终检（主控亲执行）、T9 同行评审，跨 6 个阶段，含三角验证、M 门 26 项终检（25 项机检 + 1 项人工）、G0-G16 独立审计（含中文 AI 痕迹闸）、审稿评分与期刊匹配，以及 4 个人在环节点。以 bundle 分发（`package.json#dsh.bundle.patch` + `lib/index.js` 入口注册技能），`dsh plugin add lunheng-article-pipeline` 即装；随包 T1-T9 角色卡、模板与 36 个零依赖校验脚本，README 五语。
 - [zz12hui/dsh-local-writing-suite](https://github.com/zz12hui/dsh-local-writing-suite) — 提供两个审查工具与四个技能，覆盖中长文本（例如小说）与文档审稿：七维 AI 味打分、带行号的阻断项，以及落盘的长篇连续性状态。不要与同作者的旧版 dsh-deai-audit 同装，二者注册同名工具。
+- [ZZR-rui-997/dsh-academic-figure-ops](https://github.com/ZZR-rui-997/dsh-academic-figure-ops) — 出图前按正文宽度反算印刷字号，落盘后逐张验收印刷字号、有效分辨率与像素宽三项，并按表达意图选图型。自带样式模块、只读验收器、压盖检查、CFD 云图范式，以及 19 个用合成数据渲染的可复现配方。
+- [ZZR-rui-997/dsh-fluent-pyfluent-ops](https://github.com/ZZR-rui-997/dsh-fluent-pyfluent-ops) — Windows 下的 PyFluent 实操规程，来自真实生产算例：启动握手、设置顺序、会话状态机陷阱、时间步与 Courant 判定、长跑与断点续算、VOF 与多相及非牛顿设置、UDS 与 UDF 编译、.dat.h5 结果读取，以及十二条环境坑与它们的原始报错。
 - [ZZR-rui-997/dsh-project-dept](https://github.com/ZZR-rui-997/dsh-project-dept) — 加一个 project-dept skill，把一次复杂工作当成一个可验收的板块串行推进：开工前跑闸门脚本，项目台账显示还没准备好就拦住不干；验收分三层，中间一层必须由没动手的人独立盲审；基准本身可能过期时先审基准；交付进登记簿，完成是一次被记录的决定而不是自称。
 - [Zzzk187/dsh-file-state-cache](https://github.com/Zzzk187/dsh-file-state-cache) — 文件状态缓存技能：一次 explore 代替 ls+grep+read，读过的文件不再重复全量读，改完只回 diff 与精确变更行区间而不是重读全文。状态存在磁盘上的 JSON 缓存里，跨工具调用与重启都有效。需要 Python 3.8+（仅标准库，无需安装第三方依赖）。
 
