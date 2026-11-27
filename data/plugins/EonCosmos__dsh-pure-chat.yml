@@ -1,0 +1,7 @@
+url: https://github.com/EonCosmos/dsh-pure-chat
+name: EonCosmos/dsh-pure-chat
+category: agi
+icon: https://raw.githubusercontent.com/EonCosmos/dsh-pure-chat/main/icon.png
+description:
+  en: 'A plain-chat agent preset with web search, file export (txt, md, doc, xls, pdf), a clear-context control and a question jumper; no system prompt and no host-global tools.'
+  zh: '纯对话预设：对话直接发给模型，带联网搜索、文件导出（txt/md/doc/xls/pdf）、清空上下文按钮和提问跳转；没有系统提示词，隐藏全部宿主全局工具。'

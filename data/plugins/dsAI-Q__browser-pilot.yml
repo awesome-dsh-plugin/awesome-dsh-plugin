@@ -1,0 +1,6 @@
+url: https://github.com/dsAI-Q/browser-pilot
+name: dsAI-Q/browser-pilot
+category: browser
+description:
+  en: 'Agent-friendly browser control: attach to the Chrome you are already signed in to, snapshot pages into ref handles, assert each action, and switch into cross-origin iframes.'
+  zh: '面向 agent 的浏览器操作：附着你已经登录的 Chrome、把页面扫成 ref 引用、每个动作都能断言结果，并可切进跨域 iframe 操作。'

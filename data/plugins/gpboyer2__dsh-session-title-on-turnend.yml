@@ -1,0 +1,6 @@
+url: https://github.com/gpboyer2/dsh-session-title-on-turnend
+name: gpboyer2/dsh-session-title-on-turnend
+category: session
+description:
+  en: After each turn, summarizes the session's human messages with a configurable model and writes a length-limited title back to the session.
+  zh: 每回合回答结束后，用可配置的模型把该会话的人类消息压成限定字数的标题，写回会话标题。

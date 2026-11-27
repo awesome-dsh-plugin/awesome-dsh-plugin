@@ -1,0 +1,6 @@
+url: https://github.com/H-ATK/dsh-usage
+name: H-ATK/dsh-usage
+category: usage
+description:
+  en: 'Usage, token, cache, and cost statistics for DeepSeek Harness, with workspace and model breakdowns, per-turn history, price references, and CSV/Excel export.'
+  zh: 'DSH 使用量与费用统计：按工作区、模型和渠道拆分 Token 与消费，包含逐轮记录、价格表以及 CSV/Excel 导出。'

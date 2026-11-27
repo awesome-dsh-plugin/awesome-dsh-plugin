@@ -1,0 +1,7 @@
+url: https://github.com/fairyqinglan/dsh-usage-dashboard
+name: fairyqinglan/dsh-usage-dashboard
+category: usage
+icon: https://raw.githubusercontent.com/fairyqinglan/dsh-usage-dashboard/master/docs/icon-180.png
+description:
+  en: 'Reads local DSH session logs into a daily token dashboard with a per-model breakdown, a full-year blue activity heatmap that follows light/dark themes, a distribution ring that updates when you click a heatmap or trend-chart day, week-over-week and year-over-year comparison, custom date ranges, and CSV/JSON export. Read-only, authenticated HTTP surface, no network calls.'
+  zh: '把本机 DSH 会话日志汇总成按天的 Token 用量看板,按模型细分,提供跟随明暗主题的全年蓝色活动热力图、点击热力图或趋势图某天即联动更新的占比环、周环比与同比对比、自定义日期范围以及 CSV/JSON 导出。只读、HTTP 接口有访问检查、不发起网络请求。'

@@ -1,0 +1,6 @@
+url: https://github.com/ECNU/EduWork/tree/main/packages/dsh-side-chat
+name: ECNU/EduWork#dsh-side-chat
+category: session
+description:
+  en: 'Open temporary side conversations from a message with a snapshot of its history, then archive them on close; optional annotation integration adds selection-based questions. Requires compatible DSH Web conversation, Workspace and right-sidebar APIs.'
+  zh: '从消息开启继承历史快照的临时侧聊，关闭后归档；可选配合批注插件从选中文字发起提问。需要兼容的 DSH Web 对话、Workspace 和右侧栏接口。'

@@ -1,0 +1,7 @@
+url: https://github.com/maplewf/dsh-kube
+name: maplewf/dsh-kube
+category: tools
+icon: https://raw.githubusercontent.com/maplewf/dsh-kube/main/assets/icon-180.png
+description:
+  en: 'Kubernetes workbench for DeepSeek Harness: kubectl-backed multi-cluster tools, interactive OIDC login, CRD lists, container terminal, YAML editing, RBAC view, node cordon/uncordon/drain and cluster read/write mode. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的 Kubernetes 工作台：基于 kubectl 的多集群工具、交互式 OIDC 登录、CRD 列表、容器终端、YAML 编辑、RBAC 视图、节点封锁/解封/排空与集群读写模式。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/Hero-997/dsh-rewind-message
+name: Hero-997/dsh-rewind-message
+category: session
+description:
+  en: 'Rewind and edit sent user messages in DSH Web: long-press or right-click a prompt to edit it inline and resend as a new branch.'
+  zh: '在 DSH Web 里回退并编辑已发送的问题：长按或右键一条 user 消息，就地改文本后作为新分支重发。'

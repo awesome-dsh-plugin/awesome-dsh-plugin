@@ -1,0 +1,6 @@
+url: https://github.com/yeachofly/dsh-restart
+name: yeachofly/dsh-restart
+category: ui
+description:
+  en: 'One-click restart for DeepSeek Harness: a sidebar glyph that closes and relaunches the entire application. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 DeepSeek Harness 提供侧栏一键重启按钮，点击即可关闭并重新启动整个应用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

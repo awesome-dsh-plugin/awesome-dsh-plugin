@@ -1,0 +1,6 @@
+url: https://github.com/StillQuery/hgdb_monitor
+name: StillQuery/hgdb_monitor
+category: tools
+description:
+  en: 'Read-only monitoring for HGDB and PostgreSQL 14+, including live metrics, sessions, blocking chains, Top SQL, replication status, historical trends and eight DSH agent tools.'
+  zh: '面向 HGDB 与 PostgreSQL 14+ 的只读监控插件，提供实时指标、会话与阻塞链、Top SQL、复制状态、历史趋势及八个 DSH 智能体工具。'

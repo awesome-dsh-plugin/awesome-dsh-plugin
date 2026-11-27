@@ -1,0 +1,6 @@
+url: https://github.com/TwinsEarth/Ai-PRISON/tree/main/dsh-plugin
+name: TwinsEarth/Ai-PRISON#dsh-plugin
+category: security
+description:
+  en: Adds eight AI Prison governance tools, an L0–L5 and audit-chain sidebar panel, and a memory watchdog that can quarantine misbehaving plugins.
+  zh: 提供八个 AI Prison 治理工具、L0–L5 分级与审计链侧边栏面板，以及可隔离异常插件的内存看门狗。

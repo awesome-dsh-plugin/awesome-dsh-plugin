@@ -1,0 +1,7 @@
+url: https://github.com/sayzwx/dsh-progress-tree
+name: sayzwx/dsh-progress-tree
+category: workflow
+description:
+  en: 'Live AI task tree in the right sidebar: per-step status, blockers, artifacts, and a compact progress dock above the composer.'
+  zh: 在右侧栏实时显示 AI 任务树：每一步状态、阻塞原因、产物，以及输入框上方的紧凑进度条。
+icon: https://raw.githubusercontent.com/sayzwx/dsh-progress-tree/main/assets/icon-180.png

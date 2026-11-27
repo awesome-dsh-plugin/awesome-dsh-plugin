@@ -1,0 +1,8 @@
+url: https://github.com/freeman745/dsh-janction-render
+name: freeman745/dsh-janction-render
+category: tools
+description:
+  en: Renders Blender scenes and 3D models (GLB, FBX, USD, OBJ, STL) on JANCTION Render cloud GPUs through its MCP server (13 tools) and a workflow skill; creates a free key on first load.
+  zh: 通过 JANCTION Render 的 MCP 服务器（13 个工具）和工作流技能，在云端 GPU 上渲染 Blender 场景和 3D 模型（GLB、FBX、USD、OBJ、STL）；首次加载时自动创建免费 key。
+icon: https://raw.githubusercontent.com/freeman745/dsh-janction-render/main/assets/icon.png
+tarball: https://github.com/freeman745/dsh-janction-render/releases/latest/download/dsh-janction-render.tgz

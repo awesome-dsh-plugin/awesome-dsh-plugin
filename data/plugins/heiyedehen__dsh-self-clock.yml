@@ -1,0 +1,6 @@
+url: https://github.com/heiyedehen/dsh-self-clock
+name: heiyedehen/dsh-self-clock
+category: tools
+description:
+  en: 'Heartbeat (dsh-self-clock) — the agent sets its own timers: at the due moment it gets one quiet notice in the same conversation, after a five-gate check of whether the user is actually idle. It also takes intents (intent_set / intent_list / intent_cancel): "wake me when he is still up at 23:30" — each one is kept until it really fires, at most 5 pending and 4 wake-ups a day. Ships heartbeat_* / intent_* / presence tools plus a settings panel; state persists across restarts, and nothing is injected while the model is talking.'
+  zh: '鱼的心跳（dsh-self-clock）：给智能体自己设的闹钟——到点在同一段对话里收到一句安静的通知，它先看你有没有在说话。除闹钟外还能挂「意图」（intent_set / intent_list / intent_cancel）：比如「23:30 他还在就看我一眼」，没叫成的那条留着，最多 5 条待发、一天最多叫 4 次。带设置面板，闹钟落盘、重启不丢，模型输出期间不打扰。'

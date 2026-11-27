@@ -1,0 +1,6 @@
+url: https://github.com/luckyou-dot/dsh-sidebar-box
+name: luckyou-dot/dsh-sidebar-box
+category: ui
+description:
+  en: 'Manage all registered DSH sidebar entries from one page: collect or show them, reorder, pin, search, batch collect or show, and rename. Settings are stored locally in the browser.'
+  zh: 在一个页面管理所有已注册的 DSH 侧栏入口：收纳或显示、排序、置顶、搜索、批量收纳或显示和重命名，设置保存在浏览器本地。

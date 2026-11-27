@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-railway-window
+name: PerryLink/dsh-railway-window
+category: tools
+description:
+  en: "Railway waybill and time-window check for DeepSeek Harness: check waybills and time windows against the Measures for Safety Management of Construction on Railway Operating Lines. Flags discrepancies only and makes no conclusive judgment."
+  zh: "铁路运单与时效核对：依据《铁路营业线施工安全管理办法》。仅提示差异，不作出定性结论。"

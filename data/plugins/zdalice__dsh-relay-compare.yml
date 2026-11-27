@@ -1,0 +1,7 @@
+url: https://github.com/zdalice/dsh-relay-compare
+name: zdalice/dsh-relay-compare
+category: usage
+icon: https://raw.githubusercontent.com/zdalice/dsh-relay-compare/main/assets/icon-180.png
+description:
+  en: Compares relay-channel and official model prices for every call and shows the per-session and total saving under the composer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 按官方峰谷价与中转站公开价对比每一次调用的 token 费用，在输入框下方显示本会话与累计省了多少钱。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

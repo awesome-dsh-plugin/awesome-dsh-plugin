@@ -1,0 +1,6 @@
+url: https://github.com/hiyced/dsh-quote-reply
+name: hiyced/dsh-quote-reply
+category: session
+description:
+  en: Draft a reply beside selected chat text, combine multiple quotes in one reply, and remove individual quote replies from the composer.
+  zh: 划选会话文字后可在选区旁回复，同一条回复可以引用多段原文，并可在聊天框里逐条删除引用回复。

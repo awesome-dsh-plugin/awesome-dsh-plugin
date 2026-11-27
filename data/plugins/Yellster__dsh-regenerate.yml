@@ -1,0 +1,7 @@
+url: https://github.com/Yellster/dsh-regenerate
+name: Yellster/dsh-regenerate
+category: ui
+description:
+  en: 'Adds a regenerate button below assistant answers and lets you edit and resend sent user prompts. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 回答下方添加重新生成按钮，并支持编辑已发送的用户提问后重新发送。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Yellster/dsh-regenerate/main/assets/icon-180.png

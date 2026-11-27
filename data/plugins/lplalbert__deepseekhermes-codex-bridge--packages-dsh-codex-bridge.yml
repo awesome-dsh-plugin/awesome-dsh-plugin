@@ -1,0 +1,9 @@
+# 投稿条目：复制到 awesome-dsh-plugin 仓库的
+#   data/plugins/lplalbert__deepseekhermes-codex-bridge--packages-dsh-codex-bridge.yml
+url: https://github.com/lplalbert/deepseekhermes-codex-bridge/tree/main/packages/dsh-codex-bridge
+name: lplalbert/deepseekhermes-codex-bridge#dsh-codex-bridge
+category: tools
+description:
+  en: 'Registers two tools for DeepSeek Harness. ask_codex sends a question to the Codex CLI signed in on the same machine and returns its reply; codex_review has Codex red-team a list of files against given criteria. Both accept a model and a reasoning-effort value and keep a local token ledger.'
+  zh: '为 DeepSeek Harness 注册两个工具。ask_codex 把问题发给本机已登录的 Codex CLI 并回传回复；codex_review 让 Codex 按给定标准对一组文件做红队评审。两者都可指定模型与推理强度，并在本地记录 token 用量。'
+icon: https://raw.githubusercontent.com/lplalbert/deepseekhermes-codex-bridge/main/assets/icon-180.png

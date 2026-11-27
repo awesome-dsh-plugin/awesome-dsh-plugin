@@ -1,0 +1,7 @@
+url: https://github.com/wxsimon2022/dsh-metaontic-newapi-lite
+name: wxsimon2022/dsh-metaontic-newapi-lite
+category: usage
+description:
+  en: "DSH management plugin for the MetaOntic AI unified AI API gateway, aggregating models with OpenAI, Anthropic and Gemini compatibility, layered quotas, isolated personal and team allocations, and centralized request records."
+  zh: "MetaOntic AI 统一 AI 接口网关的 DSH 管理插件聚合多家模型，兼容 OpenAI、Anthropic 与 Gemini 协议，支持分层额度、个人与团队配额隔离及集中调用记录。"
+icon: https://raw.githubusercontent.com/wxsimon2022/dsh-metaontic-newapi-lite/master/src/metaontic-ai.png

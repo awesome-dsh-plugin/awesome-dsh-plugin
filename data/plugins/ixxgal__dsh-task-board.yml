@@ -1,0 +1,7 @@
+url: https://github.com/ixxgal/dsh-task-board
+name: ixxgal/dsh-task-board
+category: tools
+icon: https://raw.githubusercontent.com/ixxgal/dsh-plugins/main/docs/icons/dsh-task-board.png
+description:
+  en: 'Lists the Windows scheduled tasks DSH created and DSH''s own schedules on one page; from there you can run, disable, enable, delete and create them.'
+  zh: '把 Windows 计划任务里 DSH 建的条目和 DSH 内部定时任务放在同一页；可以直接运行、停用、启用、删除和新建。'

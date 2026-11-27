@@ -1,0 +1,7 @@
+url: https://github.com/littlemosquito123/reportgem-global-research/tree/main/dsh-plugin
+name: littlemosquito123/reportgem-global-research#dsh-plugin
+category: tools
+description:
+  en: "ReportGem Global Research (ReportGem 全球研报). Connects DSH to ReportGem's hosted MCP server to search and cite investment research for stocks and finance: sell-side equity research reports from investment banks, SEC filings, China company announcements, earnings-call notes and charts, with source links and page numbers. Adds a Connect ReportGem card on the Plugins page for OAuth sign-in. Free to try with a ReportGem account (new accounts get 10 free credits, about 100,000 returned tokens); after that, usage is billed in credits."
+  zh: "ReportGem 全球研报：把 DSH 接到 ReportGem 托管的 MCP 服务，检索并引用股票与金融投研资料：投行和券商研报、美股 SEC 文件、A 股公司公告、业绩会纪要和图表，答案附来源链接和页码。在插件页添加“连接 ReportGem”卡片，用 OAuth 登录。注册 ReportGem 账号即可免费试用（新账号赠送 10 积分，约 10 万 token 返回资料），用完后按积分计费。"
+icon: https://raw.githubusercontent.com/littlemosquito123/reportgem-global-research/main/dsh-plugin/icon.png

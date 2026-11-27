@@ -1,0 +1,7 @@
+url: https://github.com/ZHANGaohan13213/dsh-master-prompt
+name: ZHANGaohan13213/dsh-master-prompt
+category: session
+description:
+  en: 'Adds a sub-conversation action to any conversation: the main stays in place while native sub-conversations open as tabs in the right sidebar, each carrying a snapshot of a versioned shared prompt. A panel reviews proposals, edits the prompt, and rolls versions back.'
+  zh: '在任意会话的输入框工具栏加一个副对话入口：主对话留在左侧，副对话以原生会话标签开在右侧栏，各自带一份可版本化总要求的快照；面板里可以审阅提案、编辑总要求、回滚版本。'
+icon: https://raw.githubusercontent.com/ZHANGaohan13213/dsh-master-prompt/main/assets/icon-180.png

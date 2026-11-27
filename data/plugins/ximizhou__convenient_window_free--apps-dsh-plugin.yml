@@ -1,0 +1,8 @@
+url: https://github.com/ximizhou/convenient_window_free/tree/main/apps/dsh-plugin
+name: ximizhou/convenient_window_free#dsh-convenient-window
+category: tools
+description:
+  en: Manage Windows windows from the DeepSeek Harness sidebar with edge hiding and hover-to-reveal, hot corners and screen-edge actions, mouse gestures, saved window layouts, window pinning, dragging and resizing, region screenshots, pinned images and OCR.
+  zh: 在 DeepSeek Harness 侧栏集中管理 Windows 窗口：将窗口贴边收起、鼠标移近唤回，为屏幕边角设置快捷动作，用鼠标手势执行常用操作，保存并恢复窗口布局；还支持窗口置顶、拖拽缩放、区域截图、截图贴图与文字识别。
+icon: https://raw.githubusercontent.com/ximizhou/convenient_window_free/main/docs/images/app-icon.png
+tarball: https://github.com/ximizhou/convenient_window_free/releases/download/dsh-v0.2.0-beta.3/dsh-convenient-window-0.2.0-beta.3.tgz

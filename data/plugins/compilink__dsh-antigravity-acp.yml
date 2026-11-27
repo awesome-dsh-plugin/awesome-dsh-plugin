@@ -1,0 +1,7 @@
+url: https://github.com/compilink/dsh-antigravity-acp
+name: compilink/dsh-antigravity-acp
+category: model
+description:
+  en: Connects DSH to the official Antigravity ACP agent over stdio, checks the official distribution archive against a pinned digest before each launch, and can open a local macOS sign-in helper on request.
+  zh: 通过标准输入输出连接官方 Antigravity ACP 程序，每次启动前按锁定的摘要校验官方归档，可由用户主动唤起本机 macOS 登录助手。
+tarball: https://github.com/compilink/dsh-antigravity-acp/releases/download/v0.1.51/dsh-bundle-antigravity-official-acp-0.1.51.tgz

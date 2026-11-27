@@ -1,0 +1,6 @@
+url: https://github.com/xqe-bkflda/dshgo-dir-share
+name: xqe-bkflda/dshgo-dir-share
+category: remote
+description:
+  en: Serves the DSH Go workspace folder over FTP and WebDAV with a built-in browser panel, so a phone file manager such as MT Manager can mount it read-write.
+  zh: 内置面板一键开启 FTP 与 WebDAV，把 DSH Go 的工作区目录转发出去，MT 管理器等客户端可直接挂载读写。

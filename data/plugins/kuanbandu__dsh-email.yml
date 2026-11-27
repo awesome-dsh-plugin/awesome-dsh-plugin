@@ -1,0 +1,7 @@
+url: https://github.com/kuanbandu/dsh-email
+name: kuanbandu/dsh-email
+category: identity
+description:
+  en: 'Email for DeepSeek Harness: after one login in Settings → Email, the agent reads, searches, replies and sends mail through eight email_* tools. Reads use IMAP PEEK so messages are never marked as seen; passwords stay in the harness credential store; IMAP/SMTP can go through an HTTP CONNECT or SOCKS5 proxy with separate routes per direction. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DeepSeek Harness 装邮箱：在「设置 → 邮件」里登录一次后，agent 可用 8 个 email_* 工具读信、检索、回复、发信、等验证邮件、下载附件。读信用 IMAP PEEK，不会把邮件标记为已读；密码存在 harness 凭据库；IMAP/SMTP 可走 HTTP CONNECT 或 SOCKS5 代理，并支持收/发分别指定路由。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/kuanbandu/dsh-email/releases/latest/download/kuanbandu-dsh-email.tgz

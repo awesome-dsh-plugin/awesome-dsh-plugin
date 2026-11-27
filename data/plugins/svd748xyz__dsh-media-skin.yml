@@ -1,0 +1,7 @@
+url: https://github.com/svd748xyz/dsh-media-skin
+name: svd748xyz/dsh-media-skin
+category: theme
+description:
+  en: 'Uses any local image or video as the DSH surface background, with live controls for blur, media opacity, surface opacity, brightness, saturation, contrast, scale, fill mode and focal position; video also gets playback rate and pause, and every setting saves automatically. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把任意本地图片或视频铺成 DSH 界面背景：模糊、画面不透明度、界面不透明度、亮度、饱和度、对比度、缩放、填充方式与取景位置实时可调，视频另可调速与暂停，设置自动保存。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/svd748xyz/dsh-media-skin/main/assets/icon-180.png

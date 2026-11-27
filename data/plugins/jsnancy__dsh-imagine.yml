@@ -1,0 +1,7 @@
+url: https://github.com/jsnancy/dsh-imagine
+name: jsnancy/dsh-imagine
+category: vision
+description:
+  en: 'Reads the Codex (ChatGPT) subscription quota already on your machine and draws with it: plan, weekly usage and reset time in a sidebar panel, one prompt to a PNG saved locally, with history. No API key, no extra billing.'
+  zh: '读取本机已有的 Codex（ChatGPT 订阅）额度并直接生图：侧栏显示套餐、本周已用与重置时间，写一句话出 PNG 存到本机并保留历史。不需要 API key，不额外计费。'
+icon: https://raw.githubusercontent.com/jsnancy/dsh-imagine/main/icon.png

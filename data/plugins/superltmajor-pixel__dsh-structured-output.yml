@@ -1,0 +1,6 @@
+url: https://github.com/superltmajor-pixel/dsh-structured-output
+name: superltmajor-pixel/dsh-structured-output
+category: identity
+description:
+  en: 'Adds response guidelines for concise answers to simple questions and structured answers to complex tasks, with extra hints for explicit requests at the start of a message for JSON, a comparison table, or a detailed explanation.'
+  zh: '为聊天加入自适应表达规则，引导模型简单问题直接答、复杂任务分层回答，并在消息开头明确要求 JSON、表格对比或详细解释时追加相应提示。'

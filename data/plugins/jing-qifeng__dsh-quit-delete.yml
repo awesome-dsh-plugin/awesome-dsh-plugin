@@ -1,0 +1,7 @@
+url: https://github.com/jing-qifeng/dsh-quit-delete
+name: jing-qifeng/dsh-quit-delete
+category: session
+tarball: https://github.com/jing-qifeng/dsh-quit-delete/releases/latest/download/dsh-quit-delete-1.0.0.tgz
+description:
+  en: "Adds the /quit-delete slash command: it stops the current session's running work, waits for the agent to go idle, then permanently deletes the session's stored log and its stored subagent logs on disk, drops pins and leaves the conversation; a bare /quit-delete only opens a confirmation dialog, and nothing is archived."
+  zh: "新增 /quit-delete 斜杠命令：先停掉当前会话正在运行的工作并等它空闲，再永久删除磁盘上的会话日志与子代理日志、取消置顶并离开该会话；裸命令只弹确认框，不归档，也没有回收站。"

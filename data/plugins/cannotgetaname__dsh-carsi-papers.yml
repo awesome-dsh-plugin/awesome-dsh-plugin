@@ -1,0 +1,7 @@
+url: https://github.com/cannotgetaname/dsh-carsi-papers
+name: cannotgetaname/dsh-carsi-papers
+category: tools
+description:
+  en: Searches campus-subscribed databases (IEEE Xplore, Springer Nature Link, ScienceDirect) through its own dedicated Chrome profile and downloads verified full-text PDFs. Merges results across databases by DOI, exports BibTeX/RIS, and leaves CARSI or IP-based institutional sign-in to the user so no credentials are stored or replayed.
+  zh: 用专用 Chrome 配置承接学校订阅授权（IEEE、Springer、ScienceDirect），检索并下载校验过的全文，跨库按 DOI 合并、导出 BibTeX/RIS；机构登录始终由人完成，不保存也不回放凭据。
+icon: https://raw.githubusercontent.com/cannotgetaname/dsh-carsi-papers/main/docs/images/icon-180.png

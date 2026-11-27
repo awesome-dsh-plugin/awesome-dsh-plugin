@@ -1,0 +1,7 @@
+url: https://github.com/greenballyjq/dsh-deepseek-chat-history-import
+name: greenballyjq/dsh-deepseek-chat-history-import
+category: session
+description:
+  en: 'Imports DeepSeek web chat history into DeepSeek Harness as resumable sessions: official export v3 and legacy ZIP/JSON, split files, browser records and JSONL, with branch selection, image/file attachment import, semantic dedupe, optional summaries or full-archive memory files, and cost estimates.'
+  zh: '把 DeepSeek 网页端聊天历史导入 DeepSeek Harness：支持官方新版 v3 与旧版 ZIP/JSON、拆分文件、浏览器记录、JSONL，并支持版本选择、图片/文件附件导入、语义去重、摘要或完整存档记忆文件与费用预估。'
+tarball: https://github.com/greenballyjq/dsh-deepseek-chat-history-import/releases/download/v2.16.1/dsh-deepseek-chat-history-import-2.16.1.tgz

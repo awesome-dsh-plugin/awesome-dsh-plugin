@@ -2,5 +2,5 @@ url: https://github.com/chen1pengvincent/dsh-model-sync-plugin
 name: chen1pengvincent/dsh-model-sync-plugin
 category: model
 description:
-  en: Discovers the model providers actually configured in DSH, surfaces unread catalog changes from eight official platforms, and applies only the selection you confirm, with a version check and a pre-write backup.
-  zh: 发现 DSH 实际配置的模型供应商，显示八家官方平台的目录未读变化，只应用你确认的勾选结果，并在写入前做版本校验与备份。
+  en: 'Synchronizes upstream model catalogs for configured DSH providers, reviews model metadata such as context limits and reasoning options, and controls which models appear in the chat selector without deleting their configuration. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '同步 DSH 已配置供应商的上游模型目录，复核上下文窗口、推理档位等模型参数，并管理聊天下拉框中的模型显示，不删除原配置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/pn1024/dsh-automotive/tree/main/auto-policy-plugin
+name: pn1024/dsh-automotive#auto-policy-plugin
+category: tools
+description:
+  en: 'China automotive industry research console - 78 official policy documents with clause-level source anchors, national NEV penetration and brand shares, Chery official monthly exports, quarterly financials and analyst consensus for 10 listed automakers, plus policy-to-earnings quarterly comparison and GB/T 9704 formatted Word reports. Nothing is shown without a verifiable source. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '汽车产业研究台——78 条官方政策原文带条款级定位，全国新能源渗透率与品牌份额，奇瑞官方月度出口，10 家上市车企季度财报与机构一致预期，政策与财报季度对照，并可导出公文格式 Word 研究报告。没有可核验来源的数据不展示。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

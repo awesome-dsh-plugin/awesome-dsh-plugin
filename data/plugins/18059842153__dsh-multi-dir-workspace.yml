@@ -1,0 +1,7 @@
+url: https://github.com/18059842153/dsh-multi-dir-workspace
+name: 18059842153/dsh-multi-dir-workspace
+category: ui
+description:
+  en: 'Attaches more than one directory to a workspace: a chip in the global header adds, switches and removes directories, and every attached directory is passed to the model as prompt context and granted sandbox write access, with a workspace_directories tool for the same operations.'
+  zh: '给工作区附加多个目录：全局标题栏上的 chip 用来添加、切换、移除目录，每个附加目录都会作为提示上下文交给模型并被授予沙箱写权限，另有 workspace_directories 工具完成同样的操作。'
+icon: https://raw.githubusercontent.com/18059842153/dsh-multi-dir-workspace/main/assets/icon-180.png

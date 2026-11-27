@@ -1,0 +1,6 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/chadgpt-models
+name: maburykh-gif/dsh-plugins#chadgpt-models
+category: model
+description:
+  en: 'ChadGPT token API routes in the model picker: the OpenAI-compatible endpoint (https://chadgpt.ru/api/v1) as three sections — text, architecture and design, separate from the ChadGPT chat subscription; the key is read from CHADGPT_API_KEY in the credential store. A settings card edits shortcodes, creates user-defined sections, and links to the key page (author referral link, disclosed).'
+  zh: 在模型选择器中接入 ChadGPT token API（https://chadgpt.ru/api/v1）OpenAI 兼容端点，按文本、架构与设计三个分区展示（独立于 ChadGPT 聊天订阅），密钥从凭据库的 CHADGPT_API_KEY 读取。设置卡片支持编辑快捷码、创建自定义分区，并提供密钥页链接（含作者推广链接，已注明）。

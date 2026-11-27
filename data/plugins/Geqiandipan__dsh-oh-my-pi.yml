@@ -1,0 +1,7 @@
+url: https://github.com/Geqiandipan/dsh-oh-my-pi
+name: Geqiandipan/dsh-oh-my-pi
+category: tools
+description:
+  en: 'Delegates DeepSeek Harness tasks to the local oh-my-pi coding agent: every delegation runs one unattended `pi` session in the current workspace and returns only its final answer, and an OMP entry in the left sidebar shows the provider''s configuration and every finished run. Needs the Pi CLI installed; the oh-my-pi extension adds the orchestrator prompt. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 DeepSeek Harness 的任务委派给本地 oh-my-pi 编码代理：每次委派在当前工作区跑一个无人值守的 pi 会话，只回传最终答案；左侧栏的 OMP 入口展示该 provider 的配置与每一次已完成的运行。需先安装 Pi CLI，装上 oh-my-pi 扩展则额外获得编排器提示词。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Geqiandipan/dsh-oh-my-pi/main/assets/icon-180.png

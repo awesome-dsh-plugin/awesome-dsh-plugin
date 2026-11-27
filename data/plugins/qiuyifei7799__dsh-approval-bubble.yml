@@ -1,0 +1,6 @@
+url: https://github.com/qiuyifei7799/dsh-approval-bubble
+name: qiuyifei7799/dsh-approval-bubble
+category: security
+description:
+  en: 'Floating approval card for DeepSeek Harness that shows the exact command, path or URL an agent is about to run (taken from the tool call, not just the tool name), with reject and allow-once buttons and an automatic fallback to the native approval panel when nobody answers within 120 seconds. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 DSH 的审批提示换成右下角浮层卡片：显示 agent 即将执行的具体命令、路径或 URL（取自工具调用参数，而不只是工具名），提供「拒绝 / 允许一次」按钮；120 秒无人处理时自动退回原生审批面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

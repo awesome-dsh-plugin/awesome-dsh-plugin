@@ -1,0 +1,7 @@
+url: https://github.com/SHI2008/dsh-qgis-driver
+name: SHI2008/dsh-qgis-driver
+category: tools
+description:
+  en: 'Drive a running QGIS 4 from DeepSeek Harness through ten qgis_* tools: project, layers, features, Processing algorithms, print layouts and map rendering, plus async tasks and a raw-PyQGIS escape hatch. Writes take an instance-wide lease and the last structural write can be undone.'
+  zh: '从 DeepSeek Harness 驱动正在运行的 QGIS 4：十个 qgis_* 工具覆盖项目、图层、要素、Processing 算法、地图与版式出图，另有异步任务与直接写 PyQGIS 的逃生口。写入需取得实例级租约，最近一次结构写入可撤销。'
+tarball: https://github.com/SHI2008/dsh-qgis-driver/releases/latest/download/dsh-qgis-driver.tgz

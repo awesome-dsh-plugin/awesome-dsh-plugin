@@ -1,0 +1,6 @@
+url: https://github.com/setoya/dsh-panel-updater
+name: setoya/dsh-panel-updater
+category: tools
+description:
+  en: Sidebar updater that checks every installed plugin and plugin source, applies updates silently, and reports dependency and extension failures with one-click repairs.
+  zh: '侧边栏更新器：检查全部已安装插件与插件源、静默更新，依赖与扩展出问题时定位到阶段并一键修复。'

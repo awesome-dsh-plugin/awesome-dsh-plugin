@@ -1,0 +1,7 @@
+url: https://github.com/Beeasy-L/DSH-plugin-market/tree/main/plugins/dsh-qq-panel
+name: Beeasy-L/DSH-plugin-market#dsh-qq-panel
+category: ui
+description:
+  en: 'A settings panel for the DSH QQ bridge (OneBot v11): edit and hot-swap persona cards, manage stickers and remarks, tune proactive-reply behaviour, and read runtime status and logs.'
+  zh: 'DeepSeek Harness 上 QQ 桥接（OneBot v11）的设置面板：人格卡编辑与热切换、表情包与备注管理、主动发言等行为参数、运行状态与日志。'
+icon: https://raw.githubusercontent.com/Beeasy-L/DSH-plugin-market/main/plugins/dsh-qq-panel/icon-180.png
