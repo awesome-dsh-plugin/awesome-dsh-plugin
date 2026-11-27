@@ -1,0 +1,6 @@
+url: https://github.com/lidaiyue/dsh-idea
+name: lidaiyue/dsh-idea
+category: dev
+description:
+  en: 'A minimal IDE in the DSH right column: workspace file tree, a text editor with find and save, Markdown preview, file-name and file-content search, language-server navigation, Git, a Run panel for discovered apps and .dsh/run.json entries, and a database explorer for PostgreSQL, MySQL, Oracle, and Redis.'
+  zh: 右栏里的迷你 IDE：工作区文件树、带查找与保存的文本编辑器、Markdown 预览、文件名与内容搜索、语言服务器跳转、Git、可启动发现的程序与 .dsh/run.json 条目的 Run 面板，以及 PostgreSQL / MySQL / Oracle / Redis 数据库浏览器。

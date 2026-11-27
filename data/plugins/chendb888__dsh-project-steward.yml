@@ -1,0 +1,6 @@
+url: https://github.com/chendb888/dsh-project-steward
+name: chendb888/dsh-project-steward
+category: ui
+description:
+  en: 'Project Steward: manage all your software projects like a department store. Categorized shelf board (downloads/views/comments/revenue), import listed products from npm/GitHub accounts, fully automated release pipeline with README/CHANGELOG gate, scheduled operations collection, competitor comparison radar + market-gap analysis, and per-version annotated update images. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '项目管家：像百货商店一样管理软件项目的发布/上架/运营。分区货架（下载/浏览/留言/收入）、从npm/GitHub账号导入已上架商品、全自动发布流水线（README/CHANGELOG门禁）、定时运营采集、竞品雷达对比+市场空白研判、逐版本更新位置标注图。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

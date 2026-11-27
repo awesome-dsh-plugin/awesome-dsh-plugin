@@ -1,0 +1,6 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/ai-hubs-models
+name: maburykh-gif/dsh-plugins#ai-hubs-models
+category: model
+description:
+  en: 'Six OpenAI-compatible AI hubs (Polza, GenAPI, ChadGPT, BotHub, provod.ai, GPTunnel) as separate model-picker sections: text, architecture, design, image and video routes wherever the hub catalogue has such models, plus a settings card with each hub key page and slash-command shortcodes that switch the session model to a section. ruGPT is not included because its API sits behind an anti-bot wall.'
+  zh: '把六个 OpenAI 兼容的 AI 网关（Polza、GenAPI、ChadGPT、BotHub、provod.ai、GPTunnel）作为独立分区接入模型选择器：按各网关目录提供文本、架构、设计、图像与视频路由，并在设置页提供各网关密钥页链接与切换会话模型的分区快捷命令。ruGPT 未收录，其 API 有反爬拦截。'

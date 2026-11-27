@@ -1,0 +1,6 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/gptunnel-models
+name: maburykh-gif/dsh-plugins#gptunnel-models
+category: model
+description:
+  en: 'GPTunnel routes in the model picker: the OpenAI-compatible gateway (https://gptunnel.ru/v1) as five sections — text, architecture, design, images and video; the key is read from GPTUNNEL_API_KEY in the credential store. The image and video sections are catalogs only, because GPTunnel generates media through its separate CreativeLab API. A settings card edits shortcodes, creates user-defined sections, and links to the key page (author referral link, disclosed).'
+  zh: 在模型选择器中接入 GPTunnel（https://gptunnel.ru/v1）OpenAI 兼容网关，按文本、架构、设计、图像与视频五个分区展示，密钥从凭据库的 GPTUNNEL_API_KEY 读取；图像与视频分区仅作目录展示（实际生成需走其独立 CreativeLab API）。设置卡片支持编辑快捷码、创建自定义分区，并提供密钥页链接（含作者推广链接，已注明）。

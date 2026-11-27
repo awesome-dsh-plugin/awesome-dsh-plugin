@@ -1,0 +1,6 @@
+url: https://github.com/2532316972/dsh-preset-scope
+name: 2532316972/dsh-preset-scope
+category: session
+description:
+  en: 'Preset switching and capability scoping for DeepSeek Harness, in one package: change the Agent preset of a running session from its header, and restrict which Skills and MCP servers load per workspace, per session, or globally. Combines dsh-preset-switcher and dsh-workspace-scope. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '会话标题栏切换 Agent 预设，并按工作区、会话或全局收窄可加载的 Skill 与 MCP，两个能力合成一个包。合并自 dsh-preset-switcher 与 dsh-workspace-scope。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

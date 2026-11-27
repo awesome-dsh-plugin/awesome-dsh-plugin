@@ -1,0 +1,6 @@
+url: https://github.com/trimine/dsh-purge-archived
+name: trimine/dsh-purge-archived
+category: session
+description:
+  en: Inspect archived conversations and their local log files, then permanently delete selected sessions individually or in batches.
+  zh: 查看已归档对话及其本地日志文件，支持逐条或批量永久删除所选对话。

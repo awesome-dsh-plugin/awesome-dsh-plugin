@@ -1,0 +1,7 @@
+url: https://github.com/Yamashigure/dsh-restart-button
+name: Yamashigure/dsh-restart-button
+category: ui
+tarball: https://github.com/Yamashigure/dsh-restart-button/releases/download/v1.0.0/local-dsh-restart-button-1.0.0.tgz
+description:
+  en: 'Adds a red restart button in the Windows caption row. One click ends the running app processes, waits for the local port and single-instance lock to release, then relaunches the same executable, retrying up to three times. The same action is also exposed as the /dsh-restart command. Desktop only; nothing renders in a plain dsh web tab.'
+  zh: '在 Windows 标题栏上加一枚红色重启按钮。点一下结束正在跑的应用进程，等本地端口和单实例锁松开，再拉起同一个可执行文件，最多重试三次。同一个动作也做成了 /dsh-restart 命令。只在桌面端出现，浏览器里打开 dsh web 时不渲染。'

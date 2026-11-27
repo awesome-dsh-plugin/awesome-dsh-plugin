@@ -1,0 +1,7 @@
+url: https://github.com/JackyZhou0227/dsh-phone-fleet/tree/main/plugin
+name: JackyZhou0227/dsh-phone-fleet#plugin
+category: remote
+description:
+  en: 'Drives several Android phones from DSH at once, with HarmonyOS and iOS adapters behind the same tools: a claimed device belongs to exactly one session, so parallel tasks never contend for the same phone, one task can be dispatched to many devices, and every Android screen mirrors live in the right sidebar. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '同时操作多台 Android 手机，HarmonyOS 与 iOS 走同一套工具面：一台设备只归一个会话，并行任务不会抢同一台手机，同一条任务可下发到多台设备，Android 画面在右侧栏实时投屏。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/JackyZhou0227/dsh-phone-fleet/main/assets/icon-180.png

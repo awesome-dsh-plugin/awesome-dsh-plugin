@@ -1,0 +1,7 @@
+url: https://github.com/xtzqhy/dsh-conversation-search
+name: xtzqhy/dsh-conversation-search
+category: ui
+description:
+  en: 'Keyword search inside the current conversation: matches the prompts you sent and the replies the model wrote, lists hits by turn, renders an expanded hit as Markdown with KaTeX, and jumps back to that turn in the chat.'
+  zh: '在当前对话内按关键词检索：覆盖你发出的提示词与模型回复，按轮次列出命中结果，展开后按 Markdown/KaTeX 渲染，并可跳回聊天中对应的那一轮。'
+icon: https://raw.githubusercontent.com/xtzqhy/dsh-conversation-search/main/assets/icon-180.png

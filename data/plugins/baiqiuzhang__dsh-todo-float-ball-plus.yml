@@ -1,0 +1,6 @@
+url: https://github.com/baiqiuzhang/dsh-todo-float-ball-plus
+name: baiqiuzhang/dsh-todo-float-ball-plus
+category: ui
+description:
+  en: 'Fork of dsh-todo-float-ball 0.14.7 (MIT, by loyalchiiina) that adds a global multi-session task view, token throughput, per-session metadata, calibrated ETA with overtime display, and a hard gate making todo_write the first tool call of every turn. Upstream is still maintained (0.14.12); later patches are not merged. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'dsh-todo-float-ball 0.14.7 的派生版（MIT，原作者 loyalchiiina）：新增多会话全局任务视图、token 吞吐、per-session 元数据、ETA 分段校准与超时显示，并硬性要求每轮首个工具调用为 todo_write。上游仍在维护（0.14.12），本分支未合并后续补丁。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

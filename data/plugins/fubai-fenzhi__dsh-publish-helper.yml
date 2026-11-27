@@ -1,0 +1,6 @@
+url: https://github.com/fubai-fenzhi/dsh-publish-helper
+name: fubai-fenzhi/dsh-publish-helper
+category: tools
+description:
+  en: 'DSH plugin publishing assistant: preflight, submit for review, publish to npm and recall versions from a settings panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 插件发布助手：自检、提交审核、发布到 npm、按版本撤回，带设置面板与 AI 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

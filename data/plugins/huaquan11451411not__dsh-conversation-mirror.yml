@@ -1,0 +1,7 @@
+url: https://github.com/huaquan11451411not/dsh-conversation-mirror
+name: huaquan11451411not/dsh-conversation-mirror
+category: session
+description:
+  en: 'Mirrors every finished DSH turn into a readable local Markdown transcript: one file per session plus a latest.md pointer, atomic writes, no polling, no network. Subagent sessions are archived without stealing latest.md; hostile session ids cannot escape the target directory.'
+  zh: '每轮对话结束时把该会话重写成可读的中文 Markdown：一个会话一个文件，外加指向最近一次导出的 latest.md；原子落盘、不轮询、不联网。子代理会话照常归档但不抢 latest.md；恶意会话 id 无法写出目标目录之外。'
+icon: https://raw.githubusercontent.com/huaquan11451411not/dsh-conversation-mirror/main/assets/icon-180.png

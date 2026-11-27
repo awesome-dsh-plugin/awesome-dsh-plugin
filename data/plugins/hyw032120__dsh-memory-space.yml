@@ -1,0 +1,7 @@
+url: https://github.com/hyw032120/dsh-memory-space
+name: hyw032120/dsh-memory-space
+category: memory
+icon: https://raw.githubusercontent.com/hyw032120/dsh-memory-space/main/docs/icon.png
+description:
+  en: 'Long-term memory for DeepSeek Harness: a profile injected into every conversation, candidate memories, on-demand recall, timer-based organizing, and Git sync of the data folder.'
+  zh: 把用户画像与长期记忆分层管理：画像全量注入每次对话，成功回合可后台提取候选记忆，候选可手动提升为正式记忆并按需检索召回，也可定时自动整理，数据目录可作为 git 仓库同步到 GitHub 私有仓库，换电脑时先预览再就位。
