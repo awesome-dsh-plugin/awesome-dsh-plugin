@@ -1,0 +1,7 @@
+url: https://github.com/JoblessJoe/deep-toolbox
+name: JoblessJoe/deep-toolbox
+category: usage
+description:
+  en: 'Tool usage and startup cost: a Plugins-page tab showing which tools your agents call, which ones fail, and how many tokens each tool definition (built-in, plugin or MCP server) adds to every request, with a startup-context chart and plain-language tips on what to drop; a read-only toolbox_report agent tool gives agents the same numbers. Reads dsh session logs locally, no hooks.'
+  zh: '工具用量与启动成本：在插件页新增标签，显示智能体调用了哪些工具、哪些经常出错，以及每个工具定义（内置、插件或 MCP 服务器）在每次请求中占用多少 token，附启动上下文图和该关掉哪些工具的通俗建议；只读的 toolbox_report 智能体工具提供同样的数据。在本机读取 dsh 会话日志，无钩子。'
+icon: https://raw.githubusercontent.com/JoblessJoe/deep-toolbox/main/.github/assets/icon-256.png
