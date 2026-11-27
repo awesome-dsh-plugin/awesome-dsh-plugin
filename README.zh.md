@@ -5776,6 +5776,7 @@ dsh plugin --profile web add dshmarket
 - [SunshineR04/dsh-session-manager](https://github.com/SunshineR04/dsh-session-manager) — 在设置页管理已归档会话：恢复或彻底删除（直接物理删除，无备份层）。会话菜单新增红色彻底删除项，附三个 agent 工具。已打开的会话也能立即删除，残留内存副本以归档墓碑隐藏、重启后自动清理。
 - [Sunshow/dsh-recent-sessions](https://github.com/Sunshow/dsh-recent-sessions) — 在 DSH 侧栏「设置」上方加一行「最近会话」：浮层可按标题、工作区、Session ID 或状态搜索，按最后活动时间列出各工作区的会话；子代理会话可折叠进主会话、隐藏或单独列出，并可选 1/7/30 天范围；入口行用黄点/绿点提示有待确认或已完成未打开的会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [sunyuhuirong/shl-session-history](https://github.com/sunyuhuirong/shl-session-history) — 会话历史迷你滑轨：对话区左侧垂直居中的短横线，每条横线代表一条真实用户请求，悬停预览请求内容，点击跳转到对应轮次。
+- [superltmajor-pixel/dsh-task-sidebar](https://github.com/superltmajor-pixel/dsh-task-sidebar) — 在会话标题栏加任务面板，按当前会话汇总：这次对话的附件与提到的文件引用、用到的技能及其说明、MCP 连接器及实时连接状态、以及交付的文件。图片可就地预览，文件可在右侧栏打开。
 - [svgop/dsh-rich-indexing](https://github.com/svgop/dsh-rich-indexing) — 分级压缩中枢：把单一的 80% 压缩阈值换成可配置的阶梯（默认 30/50/70/90），逐级加强压缩力度；每次检查点都折叠入确定性关键词索引，让事实跨周期累积；摘要走模型链——主模型加最多 3 个回退，各自独立推理档位。附带 Compaction 模块子标签页与设置卡片；关闭插件始终恢复原版压缩。
 - [swrabbit/dsh-keeper](https://github.com/swrabbit/dsh-keeper) — DSH 管家：按工作区浏览会话，归档、移入回收站或永久删除，清理空会话；开关已装插件的侧栏入口，并设置任务通知。
 - [SZMY-haruhi/dsh-session-plus](https://github.com/SZMY-haruhi/dsh-session-plus) — DSH Web 侧栏归档目录：将会话恢复到原工作区槽位、删除会话日志，或从用户消息修改并分支为新会话。
@@ -13674,6 +13675,7 @@ dsh plugin --profile web add dshmarket
 - [xnwang1999/dsh-dragon-maid-pet](https://github.com/xnwang1999/dsh-dragon-maid-pet) — DSH Web GUI 的桌宠：形象随当前模型的思考强度在五档之间切换，龙女仆／Claude／DeepSeek 三套立绘按模型自动选择；可拖动、可收起，每一档都能换成自己的图片，并为自定义服务商补上「设置 → 模型」里的思考强度档位。
 - [xrn1997/dsh-novel](https://github.com/xrn1997/dsh-novel) — 在 DSH 里读网络小说：导入 legado 书源、跨源搜索、带进度的书架、连续滚动阅读、听书、导入本地 TXT 与 EPUB，并让 AI 助手工具接到同一套书源、书架与正文上。
 - [xxxiii/dsh-fish-dream](https://github.com/xxxiii/dsh-fish-dream) — 给 dsh-fish 里的她做梦：安静够久之后，从她真实的事件流里挑碎片，按六种梦理论之一拼成「梦的种子」，她自己把梦写完。提供三个工具（dream_recall、dream_record、dream_now），插件自己不调用模型，数据放在 ~/.dsh-fish-dream。梦只能用真实发生过的事重拼，理论只决定怎么拼。
+- [Xyk0729/dsh-lulu-pet](https://github.com/Xyk0729/dsh-lulu-pet) — 住在 DSH 窗口里的透明水豚桌宠：15 段动作、27 张表情、可拖拽换位置，设置页能调大小、停靠角落和开关。
 - [Yang-wudi/dsh-kun-like-pet#kunpet-dsh](https://github.com/Yang-wudi/dsh-kun-like-pet/tree/main/packages/kunpet-dsh) — 住在 DSH Web 界面右下角的坤坤桌宠：随 Agent 状态切换动作，任务完成时播放「你干嘛~哎哟」。
 - [yanmoren/dsh-whale-letter](https://github.com/yanmoren/dsh-whale-letter) — 在独立页面给蓝发鲸鱼娘少女写一封信，2 到 8 小时后桌面弹提醒，点开是信封，牛皮信纸上用中文手写字体写着回信，带墨水晕开、纸面折痕与划掉补写的错字，按页换纸而不是上下滚动。回信由插件自带的本地 4B 模型（Qwen3-4B GGUF，llama.cpp CPU 推理，按需起停）写出，请求不出本机，也不需要另装模型服务。信件队列在 ~/.dsh/whale-letter/letters.json，dsh 关着时到点的信重启后自动补投。
 - [ygc06/fishpet-release#fishpet](https://github.com/ygc06/fishpet-release/tree/main/plugins/fishpet) — 为 DSH 提供情绪状态、陪伴上下文，以及默认关闭、按需调用的单次截图工具的桌宠插件。
