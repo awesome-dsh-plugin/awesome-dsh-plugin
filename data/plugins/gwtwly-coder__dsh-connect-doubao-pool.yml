@@ -1,0 +1,7 @@
+url: https://github.com/gwtwly-coder/dsh-connect-doubao-pool
+name: gwtwly-coder/dsh-connect-doubao-pool
+category: model
+description:
+  en: 'Account pool for Doubao Web on Windows: scan a QR code to add several accounts, test each one''s remaining quota, switch the account in use, rotate to another account when one is exhausted, and serve the whole pool through a built-in model provider that also lists the third-party models the account can reach.'
+  zh: '豆包账号池（Windows）：扫码收纳多个网页端账号，逐个检测剩余额度，一键切换当前使用账号，额度用尽自动换号，并把整个池子作为自带 provider 提供模型——连同账号可用的第三方模型一起列出来。'
+icon: https://raw.githubusercontent.com/gwtwly-coder/dsh-connect-doubao-pool/main/assets/icon-180.png
