@@ -1,0 +1,6 @@
+url: https://github.com/xqe-bkflda/dshgo-vmbridge
+name: xqe-bkflda/dshgo-vmbridge
+category: tools
+description:
+  en: Drives an Android VM running inside AndVM over adb, giving the AI tools to read the screen, tap and type, run root shell commands, install APKs and capture screenshots.
+  zh: 通过 adb 驱动 AndVM 里的 Android 虚拟机，给 AI 提供读屏、点击输入、root shell、装 APK 和截图等工具。

@@ -1,0 +1,8 @@
+url: https://github.com/xiaolai181/dsh_laivox_tts
+name: xiaolai181/dsh_laivox_tts
+category: voice
+description:
+  en: 'Turns TXT and EPUB novels into narrated or multi-voice audiobooks with Edge TTS, reads chat replies aloud, and gives the agent tools to add, import and queue books.'
+  zh: '把 TXT / EPUB 小说做成单人朗读或多角色有声书（Edge TTS），朗读对话里的回答，并为 AI 提供建书、导入和排队制作的工具。'
+icon: https://raw.githubusercontent.com/xiaolai181/dsh_laivox_tts/main/assets/icon-180.png
+tarball: https://github.com/xiaolai181/dsh_laivox_tts/releases/latest/download/dsh-laivox-tts.tgz

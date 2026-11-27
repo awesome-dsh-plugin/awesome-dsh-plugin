@@ -1,0 +1,6 @@
+url: https://github.com/jinweixu1999-ux/dsh-screen-control
+name: jinweixu1999-ux/dsh-screen-control
+category: tools
+description:
+  en: Screen capture plus real mouse and keyboard control for Windows. Typing needs a named target window, the foreground is checked before and after, and focus loss aborts the call. Uses the built-in Win32 APIs only, with no driver, MCP server or bundled binary.
+  zh: Windows 上的截屏与真实鼠标键盘控制。打字必须指定目标窗口，发送前后都校验前台窗口，中途丢焦立即中止；只用系统自带的 Win32 API，不需要驱动、MCP 服务或随包二进制。

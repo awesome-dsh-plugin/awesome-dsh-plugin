@@ -1,0 +1,8 @@
+url: https://github.com/MIU-MA/resume-grill-agent
+name: MIU-MA/resume-grill-agent
+category: workflow
+description:
+  en: Find jobs, tailor an uploaded resume to a job description, prepare applications, and track follow-ups from DSH.
+  zh: 在 DSH 查找岗位、按岗位要求修改已上传的简历、准备投递并记录跟进。
+icon: https://raw.githubusercontent.com/MIU-MA/resume-grill-agent/v0.4.5/plugin/branding/ds-chan.webp
+tarball: https://github.com/MIU-MA/resume-grill-agent/releases/download/v0.4.5/resume-grill-agent-0.4.5.tgz

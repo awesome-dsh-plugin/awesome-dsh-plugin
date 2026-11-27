@@ -1,0 +1,6 @@
+url: https://github.com/UltraBlur/dsh-cowrite
+name: UltraBlur/dsh-cowrite
+category: ui
+description:
+  en: 'An editable Markdown tab in the right sidebar: a block-level editing view, a preview and a source view over the same workspace file, so an agent can rewrite a section in chat while you edit it beside the conversation. Saving is a compare-and-swap on the file''s mtime, so a write by the agent or another editor reloads the buffer when it is clean and raises a conflict when it is not, instead of overwriting either side. Also includes find and replace, an outline, pasted images written to an assets folder beside the document, HTML-to-Markdown paste, a TeX subset, a self-drawn mermaid subset (flowchart with subgraphs, sequence, pie) and per-language code highlighting. Not a CRDT: concurrent edits are detected and shown, never merged.'
+  zh: '右侧栏的可编辑 Markdown 标签页：排版（逐块编辑）、预览、源码三种视图共用同一个工作区文件，助手在对话里改一节的同时你可以在旁边改。保存采用比较-交换，助手或其它编辑器写入后，若无未保存改动则自动载入，若有则提示冲突，不覆盖任何一方。另有查找替换、大纲、粘贴图片落到文档旁的 assets 目录、HTML 转 Markdown、TeX 子集、自绘 mermaid 子集（流程图含子图、时序图、饼图）与按语言的代码着色。不是 CRDT：并发修改会被检测并提示，但不会自动合并。'

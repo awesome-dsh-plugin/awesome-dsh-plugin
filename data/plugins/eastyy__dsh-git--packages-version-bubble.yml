@@ -1,0 +1,7 @@
+url: https://github.com/eastyy/dsh-git/tree/main/packages/version-bubble
+name: eastyy/dsh-git#version-bubble
+category: git
+description:
+  en: 'Floating whale that commits the current workspace on one click, writes a short note from the diff, lists versions by day, and restores any version. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '浮在窗口上的鲸鱼，一键把当前工作区存成 git 提交，按 diff 写一句版本说明，按日期列出历史并可回到任意一版。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/eastyy/dsh-git/main/packages/version-bubble/assets/icon-180.png

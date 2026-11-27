@@ -1,0 +1,7 @@
+url: https://github.com/eastyy/dsh-git/tree/main/packages/html-editor
+name: eastyy/dsh-git#html-editor
+category: ui
+description:
+  en: 'Visual editor for workspace HTML files in the DSH web UI, with element selection, text and color editing, undo, and a timestamped backup on save. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 网页界面里的工作区 HTML 可视化编辑器，支持选中元素、改文字与颜色、撤销，保存写回原文件并自动备份。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/eastyy/dsh-git/main/packages/html-editor/assets/icon-180.png

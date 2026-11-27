@@ -1,0 +1,8 @@
+url: https://github.com/zztand/dsh-lan-bridge
+name: zztand/dsh-lan-bridge
+category: remote
+description:
+  en: 'Hand a task to DSH on another computer in the same LAN. Both sides run the same bundle, discover each other over UDP, and dispatch over plain HTTP with the attached files streamed and sha256-checked. The remote DSH runs the agent turn in its own session, publishes live progress back, and returns the answer plus every produced file to the conversation that dispatched it. Includes approval tokens, a shared secret, resume of half-transferred jobs, disk-free pre-check, fan-out to several machines, and an offline USB package path for air-gapped peers. Its panel routes use the DSH request admission (Host/Origin plus browser login) on top of a same-origin check.'
+  zh: '把任务交给同一局域网里另一台电脑上的 DSH。两台装同一个 bundle，用 UDP 互相发现，走普通 HTTP 派活，附带的文件流式传输并做双端 sha256 校验。远端在自己的会话里跑完 agent 回合，实时回传进度，最后把结论和所有产物送回发起派活的那个对话。带准入令牌与共享口令、传一半断了能续传、盘满预检、一次分给多台，以及给不通网机器的 U 盘离线包路径。它的面板路由走 DSH 自己的请求准入检查（Host/Origin 加浏览器登录态），另加一道同源校验。'
+icon: https://raw.githubusercontent.com/zztand/dsh-lan-bridge/main/assets/icon-180.png
+tarball: https://github.com/zztand/dsh-lan-bridge/releases/latest/download/dsh-lan-bridge.tgz

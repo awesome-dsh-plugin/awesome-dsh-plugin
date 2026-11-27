@@ -1,0 +1,7 @@
+url: https://github.com/loud404/dsh-burp-mcp
+name: loud404/dsh-burp-mcp
+category: security
+description:
+  en: Connects Burp MCP to DeepSeek Harness, routing HTTP requests through Burp Proxy by default with an explicit extension HTTP API option.
+  zh: 将 Burp MCP 接入 DeepSeek Harness，HTTP 请求默认经过 Burp Proxy，并可显式选择原扩展 HTTP API。
+tarball: https://github.com/loud404/dsh-burp-mcp/releases/download/v1.3.2/dsh-burp-mcp-1.3.2.tgz

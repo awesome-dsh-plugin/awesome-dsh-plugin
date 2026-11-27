@@ -1,0 +1,6 @@
+url: https://github.com/mark-qtech/dsh-inline-link-preview
+name: mark-qtech/dsh-inline-link-preview
+category: ui
+description:
+  en: 'Adds inline icon and title previews for supported pasted links in the DeepSeek Harness composer, preserving the URL for copy and send.'
+  zh: '在 DeepSeek Harness 聊天输入框为支持的单条链接显示行内图标和标题，复制和发送时保留网址。'

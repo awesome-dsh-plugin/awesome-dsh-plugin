@@ -1,0 +1,6 @@
+url: https://github.com/yxn3hc/dsh-precise-quote
+name: yxn3hc/dsh-precise-quote
+category: ui
+description:
+  en: "A precise quote and comment plugin for DeepSeek Harness. Quote almost any text, including reasoning, tool cards and search results, into a queue above the composer with an optional comment; drag to reorder, sent quotes render as cards, and ↑ jumps back to the source. Quotes are located by layered position and occurrence count, unaffected by folds or streaming."
+  zh: "面向 DeepSeek Harness 的精确划词引用与批注插件。选中几乎任意文字，包括推理、工具卡片、搜索结果，可加批注后放入输入框上方的队列，拖拽排序；发送后渲染为卡片，按 ↑ 跳回原文。引用按分层位置与出现次数定位，不受折叠或流式文本影响。"

@@ -1,0 +1,7 @@
+url: https://github.com/Niangaol/dsh-mistral-relay
+name: Niangaol/dsh-mistral-relay
+category: model
+description:
+  en: 'Mistral-compatible relay provider for DeepSeek Harness. Sends the model id the endpoint actually serves instead of the built-in snapshot id, so a selection no longer fails with invalid_model; multi-account failover and the real subscription quota stay on the settings page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的 Mistral 兼容中继 provider：发送端点真正提供的模型 id（而非内置快照 id），所选模型不再因 invalid_model 失败；多账号故障切换与真实订阅额度保留在设置页。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Niangaol/dsh-mistral-relay/master/assets/icon-180.png

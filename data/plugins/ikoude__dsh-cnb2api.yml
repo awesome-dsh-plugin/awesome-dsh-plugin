@@ -1,0 +1,6 @@
+url: https://github.com/ikoude/dsh-cnb2api
+name: ikoude/dsh-cnb2api
+category: model
+description:
+  en: 'Registers your own CNB workspace cnb2api gateway as a DSH model provider at a fixed base URL. Follows the workspace address across restarts, auto-starts a stopped workspace, switches accounts by availability, and shows AI credits and core-hours with a configurable low-credit warning and hard floor. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把你自己的 CNB 工作区 cnb2api 网关登记为 DSH 模型供应商，基址固定不变。工作区重启后自动跟随地址、停止后自动拉起、多账号按可用性切换；面板显示 AI credits 与核时，支持自定义余额警戒线和保底停用阈值。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

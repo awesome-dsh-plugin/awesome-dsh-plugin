@@ -1,0 +1,10 @@
+url: https://github.com/Re50Na/dsh-tokyonight-theme        # must match the repo exactly / 必须与仓库完全一致
+name: Re50Na/dsh-tokyonight-theme                         # link text shown in the list / 列表中显示的链接文字
+category: theme                              # see the category list below / 见下方分类列表
+description:
+  en: A Tokyo Night theme plugin featuring three UI and syntax highlighting themes inspired by Enkia's Tokyo Night color scheme, along with a built-in, customizable glassmorphism skin that can be toggled on or off.
+  zh: Tokyo Night 主题插件， 包含以 Enkia 的 Tokyo Night 配色方案为参考的三个 UI 及代码着色主题,同时内置一套可开关和配置的玻璃质感皮肤。   # optional — a maintainer will add it / 可选，维护者会补
+# optional — GitHub-hosted raster image used as the storefront tile;
+# falls back to the owner's avatar when omitted
+# 可选——用 GitHub 托管的位图作为市场卡片图标；不写则回退到作者头像
+icon: https://raw.githubusercontent.com/Re50Na/dsh-tokyonight-theme/main/icon.png

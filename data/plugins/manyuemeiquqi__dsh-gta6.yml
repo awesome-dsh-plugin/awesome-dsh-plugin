@@ -1,0 +1,6 @@
+url: https://github.com/manyuemeiquqi/dsh-gta6
+name: manyuemeiquqi/dsh-gta6
+category: theme
+description:
+  en: 'A Vice City theme for DeepSeek Harness: wanted stars light up while the agent runs, tool-call rows are colour-coded by action, a sidebar panel shows the live session title, token usage, model and reasoning level, and two draggable characters sit in the corner.'
+  zh: 把 DeepSeek Harness 的界面换成 Vice City 主题：Agent 运行时点亮通缉星级，工具调用行按动作分色，右栏实时显示会话标题、累计 token、模型与推理档位，角落还有两个可拖动的人物。

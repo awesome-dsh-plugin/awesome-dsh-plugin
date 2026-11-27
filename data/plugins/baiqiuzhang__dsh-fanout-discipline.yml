@@ -1,0 +1,6 @@
+url: https://github.com/baiqiuzhang/dsh-fanout-discipline
+name: baiqiuzhang/dsh-fanout-discipline
+category: tools
+description:
+  en: 'Injects a short resident system-prompt section (order 191) that makes the agent judge parallelizable sub-lines before starting and spawn subagents instead of serializing independent work; also states when fan-out is wrong (write dependencies, shared outputs, GPU exclusivity).'
+  zh: '常驻注入一段 system prompt（order 191），让 agent 每轮开工先判断可并行子线并 spawn 子代理，而不是把独立工作串行化；同时写明不该并行的情形（写依赖、共享输出、显存互斥）。'

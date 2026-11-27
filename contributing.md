@@ -9,17 +9,46 @@ Thanks for helping grow the list! / 感谢参与！
 Open a PR that adds **one file**, named after your repo — `data/plugins/<owner>__<repo>.yml`:
 
 ```yaml
-url: https://github.com/owner/repo        # must match the repo exactly / 必须与仓库完全一致
-name: owner/repo                          # link text shown in the list / 列表中显示的链接文字
-category: ui                              # see the category list below / 见下方分类列表
+url: https://github.com/owner/repo
+name: owner/repo
+category: ui
 description:
   en: One-line description ending with a period.
-  zh: 一句话描述，以句号结尾。   # optional — a maintainer will add it / 可选，维护者会补
-# optional — GitHub-hosted raster image used as the storefront tile;
-# falls back to the owner's avatar when omitted
-# 可选——用 GitHub 托管的位图作为市场卡片图标；不写则回退到作者头像
-icon: https://raw.githubusercontent.com/owner/repo/main/assets/icon-180.png
+  zh: 一句话描述，以句号结尾。
 ```
+
+What each field is / 每个字段是什么：
+
+- `url` — the repository's own address, exactly as GitHub shows it. Monorepos point at the subdirectory: `https://github.com/owner/repo/tree/main/packages/my-plugin`. / 仓库地址，与 GitHub 上显示的一致。monorepo 指到子目录。
+- `name` — the link text. Use `owner/repo`; for a monorepo subpackage use `owner/repo#subname`, where `subname` is the last segment of the subdirectory path. / 列表里显示的链接文字。写 `owner/repo`；monorepo 子包写 `owner/repo#subname`，`subname` 取子目录路径的最后一段。
+- `category` — one of the values listed below. / 下方列出的取值之一。
+- `description.en` — required, one line, ends with a period, states what the plugin does. / 必填，单行，以句号结尾，说明它做什么。
+- `description.zh` — optional; a maintainer will add it if you leave it out. / 可选，不写维护者会补。
+
+Two optional fields, when they apply / 两个可选字段（适用时）：
+
+- `icon: https://raw.githubusercontent.com/owner/repo/main/assets/icon-180.png` — a GitHub-hosted raster image used as the storefront tile (png/jpg/jpeg/webp; vectors are not accepted). Without it the card falls back to the owner's avatar. / GitHub 图床上的位图，用作市场卡片图标（png/jpg/jpeg/webp，不收矢量图）。不写则回退到作者头像。
+- `tarball: https://github.com/owner/repo/releases/download/v1.0.0/my-plugin-1.0.0.tgz` — a prebuilt package attached to a GitHub Release, for plugins that cannot be installed from source. / 预构建包，指向 GitHub Release 附件，给无法从源码安装的插件用。
+
+Do not put comments in the file: whatever is in the YAML is data, and a copied example comment ends up in your entry. / 不要在文件里写注释：YAML 里的东西就是数据，连示例注释一起复制，它就成了你条目的一部分。
+
+### What is enforced, and what a maintainer reads / 哪些是自动检查的，哪些是人看的
+
+Worth knowing before you polish the wrong thing / 先说清楚，免得你在没人检查的地方较劲：
+
+**Checked automatically (a red X, no reviewer involved) / 自动检查（直接红叉，不经过人）：**
+
+- `filename` — must equal the slug the `url` produces (`owner__repo.yml`, or `owner__repo--packages-my-plugin.yml` for a subdirectory). / 必须与 `url` 推出的 slug 一致。
+- `url` — must be a `https://github.com/owner/repo` link. / 必须是这种形状的链接。
+- `category` — must be one of the values listed below. / 必须是下方列出的取值之一。
+- `description.en` — must be present, non-empty, and a single line. / 必须存在、非空、单行。
+- `icon` / `tarball` — when present, must be hosted on GitHub and be the right kind of file (raster image, `.tgz`). / 出现时必须托管在 GitHub 且文件类型正确。
+
+**Read by a maintainer, not by CI / 由维护者阅读，不由 CI 判定：**
+
+- the **shape of `name`**. We ask new submissions for `owner/repo` (`owner/repo#subname` for monorepos) because the name is the link text, and a reader should be able to tell where it goes. CI only rejects a `name` that names a *different* repository. Entries written before this convention existed keep their display names — please don't reformat someone else's entry. / **`name` 的写法**。我们请新投稿写成 `owner/repo`（monorepo 用 `owner/repo#subname`），因为它是链接文字，读者应当能看出它指向哪里。CI 只拒「`name` 指向另一个仓库」这一种。这条约定之前写下的条目保留它们原来的显示名——不要去改别人的条目。
+- the **`#sub` label** when the `url` points at a subdirectory, and the reverse case. Both are conventions, reviewed by a human, and a near miss is fixed rather than bounced. / `url` 指到子目录时的 `#sub` 标签，以及反过来那种情况。两者都是约定，由人来看；不够准的会被直接改，不会被打回。
+- whether the description is **accurate** and the category **fits**. / 描述是否属实、分类是否贴切。
 
 **Only `description.en` is required.** If you can't write the Chinese, leave `zh` out and a maintainer will add it — a missing translation is our work, not a reason to bounce your plugin. / **只有 `description.en` 是必填的。** 写不了中文就不写 `zh`，维护者会补上——缺翻译是我们的活，不该成为你的插件被打回的理由。
 
@@ -28,9 +57,10 @@ icon: https://raw.githubusercontent.com/owner/repo/main/assets/icon-180.png
 Want to preview what your line will look like? Regenerating locally is fine, and committing the result is still accepted — it just has to match / 想预览你那一行长什么样？本地重新生成没问题，把结果一起提交也照样接受，只是必须与数据源一致：
 
 ```sh
-npm ci
-node scripts/generate-readme.mjs
+npm ci && node scripts/generate-readme.mjs
 ```
+
+That command is also the closest thing to a local pre-check: it runs the same entry validation CI runs and exits non-zero, printing what is wrong, so a filename or `url` mistake shows up on your machine instead of in a red X. / 这条命令同时是最接近本地自查的东西：它跑的就是 CI 跑的那套条目校验，出错会以非零退出并打印原因——文件名或 `url` 写错，在你自己的机器上就看得见，不必等一个红叉。
 
 ⚠️ **A description containing `: ` must be quoted** — otherwise YAML reads it as a nested key. / **描述中含 `: `（冒号加空格）时必须加引号**，否则 YAML 会把它当成嵌套键：
 

@@ -1,0 +1,8 @@
+url: https://github.com/Sakura7301/dsh-model-deck
+name: Sakura7301/dsh-model-deck
+category: model
+description:
+  en: 'A card-style composer model picker: the provider sits in the top bar and opens a provider column to the left on hover, the middle is a fixed-height scrollable model list with search and per-row text/vision badges, and the bottom is an inline thinking-effort slider whose detents come from the selected model''s declared levels.'
+  zh: '输入框里的卡片式模型选择器：顶栏供应商悬停时向左展开供应商列，中间是固定高度、可滚动并带搜索的模型列表（每行标注文本/视觉能力），底部是内嵌思考强度滑块，挡位取自所选模型声明的推理等级。'
+icon: https://raw.githubusercontent.com/Sakura7301/dsh-model-deck/main/assets/icon-180.png
+tarball: https://github.com/Sakura7301/dsh-model-deck/releases/download/v1.0.0/dsh-model-deck-1.0.0.tgz

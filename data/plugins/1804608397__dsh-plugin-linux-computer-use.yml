@@ -1,0 +1,6 @@
+url: https://github.com/1804608397/dsh-plugin-linux-computer-use
+name: 1804608397/dsh-plugin-linux-computer-use
+category: tools
+description:
+  en: 'Computer Use for a Wayland Linux desktop: screenshots through the XDG desktop portal, the AT-SPI accessibility tree, and pointer and keyboard events written straight to /dev/uinput, exposed to the model as mcp__linux__* tools together with clipboard, process, gsettings and notification helpers, plus a host-side doctor tool and an opt-in AI unlock switch that is off by default.'
+  zh: '让 DSH 接管 Wayland Linux 桌面：经 XDG 桌面 portal 截屏、读取 AT-SPI 无障碍树、把鼠标键盘事件直接写入 /dev/uinput，并以 mcp__linux__* 工具连同剪贴板、进程、gsettings 与通知一起交给模型，附带宿主机诊断工具和默认关闭的可选解锁开关。'

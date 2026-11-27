@@ -1,0 +1,6 @@
+url: https://github.com/IridensityGray/dsh-quick-restart
+name: IridensityGray/dsh-quick-restart
+category: dev
+description:
+  en: Adds reload and restart buttons to the DSH session header so plugin changes apply without a manual quit-and-relaunch.
+  zh: 在 DSH 会话标题栏加刷新与重启按钮，改完插件不用手动退出再打开。

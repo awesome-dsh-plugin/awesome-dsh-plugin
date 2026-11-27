@@ -1,0 +1,7 @@
+url: https://github.com/kizaki-R/OpenCode-Next-for-DSH
+name: kizaki-R/OpenCode-Next-for-DSH
+category: model
+description:
+  en: 'OpenCode OAuth and OpenCode Go provider for DeepSeek Harness: dual-track OAuth (desktop DB or device flow), auto-probed free models, and quota tracking. Its HTTP routes authenticate requests through DSH connection.requestRejection (with local origin fallback for older DSH releases).'
+  zh: 'DeepSeek Harness 的 OpenCode OAuth 與 OpenCode Go 模型供應商：支援雙軌 OAuth（桌面版 DB 或裝置碼登入）、免費模型自動探測與額度檢視。HTTP 路由已透過 DSH 的 connection.requestRejection 進行請求驗證（舊版 DSH 保留本機來源檢查）。'
+icon: https://raw.githubusercontent.com/kizaki-R/OpenCode-Next-for-DSH/main/assets/icon-512-dark.png
