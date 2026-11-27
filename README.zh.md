@@ -1599,7 +1599,7 @@ dsh plugin --profile web add dshmarket
 - [Makk9609/dsh-session-mark](https://github.com/Makk9609/dsh-session-mark) — 右键左侧会话列表中的会话，选择八档渐变或三个手绘线条图案（星星、猫、狗）；最后一条空白条清除。
 - [MannixHu/dsh-statusbar-config](https://github.com/MannixHu/dsh-statusbar-config) — 用 ${变量} 显示模板自定义输入框下方的会话统计行——显示哪些统计段、单位文案怎么写，全部由模板决定。
 - [mantonlove/dsh-margin-notes](https://github.com/mantonlove/dsh-margin-notes) — DSH 页边批注：在文档预览或助手回复里划词写批注，攒成一批后收进输入框里的一个内联批注块，发送时才展开成编号块，方便继续输入其他指令。
-- [mantonlove/dsh-saynext](https://github.com/mantonlove/dsh-saynext) — 在 DSH 输入框里给你写下「下一句」：每轮回答正常结束后，宿主拿这段对话调一次模型，猜出你接下来最可能说的那句话。输入框为空时，它显示在输入框内部、原占位符的位置上，一行灰字，不额外占高度，也不会和目标条、待办面板打架；按第一次 Enter 只把它填进草稿、不发送，按第二次 Enter 才发出去。回答流式输出中或输入框里已有文字时自动隐藏，多条会话各存各的，互不串台。（输入预测 / 提示词建议 / 下一句 / 灰字补全）
+- [mantonlove/dsh-saynext](https://github.com/mantonlove/dsh-saynext) — 在 DSH 输入框里写下「下一句」。每轮回答正常结束后，宿主让模型一次给出三条候选，再用本地规则挑一条，而不是直接信模型：复述 AI 刚说的话、复用只有 AI 用过的标识符、谈论插件自身的候选会被挡掉。选中的那句显示在输入框内部、原占位符的位置上，一行灰字，不额外占高度，也不会和目标条、待办面板打架；按第一次 Enter 只把它填进草稿、不发送，按第二次 Enter 才发出去。流式输出中、输入框已有文字、或这条建议属于更早的回合时自动隐藏，多条会话各存各的。建议默认不离开你的机器：分享关闭，只有在下载页亲自选择后才会上传展示的那句、你随后发送的那句，以及上一轮请求与最后一条助手答复各最多 1200 个 UTF-16 码元；随时可停止并清除本机队列。（输入预测 / 提示词建议 / 下一句 / 灰字补全）
 - [maomaoxyz1/dsh-cpu-temp](https://github.com/maomaoxyz1/dsh-cpu-temp) — 在 DSH 输入框「技能」按钮右侧每秒显示温度胶囊，支持 Windows ACPI 热区、部分 Linux CPU hwmon 传感器或可选外部采样器快照。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [maqian1632/dsh-tray-restart](https://github.com/maqian1632/dsh-tray-restart) — 在 DSH 桌面端的 Windows 系统托盘菜单中只增加一个“重启 DeepSeek Harness”项，做法是原位修改已安装的 app.asar 并在桌面端每次更新后重打补丁；需要 DSH 安装目录可写，不添加其他托盘操作。
 - [MarchLiu/dsh-rich-editor](https://github.com/MarchLiu/dsh-rich-editor) — 为输入区提供富 Markdown 笔记本：工具行开关加 CodeMirror 编辑卡片，支持 Codex 风格列表编辑，经会话服务提交。
@@ -9001,7 +9001,7 @@ dsh plugin --profile web add dshmarket
 - [jing-hy/picturereader](https://github.com/jing-hy/picturereader) — 给纯文本模型的"读图"能力：图片降分辨率+降色深+结构/色彩指纹渲染成文本网格喂回对话，模型像多模态一样自主缩放、取样、OCR 读图；纯本地零外部模型依赖，附读图方法论 skill 与可选 PaddleOCR。
 - [jmxsxwyzjdwl/dsh-mmroute](https://github.com/jmxsxwyzjdwl/dsh-mmroute) — 纯文本模型的透明多模态路由：每一次模型调用里的每张图片先由你自己配置的多模态理解模型全量转述（逐字 OCR、数据、不确定区、防注入），vision_relook 定点复看，图片类报错自动转述重试。不内置端点、不借登录态。
 - [joeseesun/qiaomu-cover-design-dsh](https://github.com/joeseesun/qiaomu-cover-design-dsh) — 在画布中使用模板和排版控件制作封面，并导出 PNG 图片。
-- [jsnancy/dsh-imagine](https://github.com/jsnancy/dsh-imagine) — 读取本机已有的 Codex（ChatGPT 订阅）额度并直接生图：侧栏显示套餐、本周已用与重置时间，写一句话出 PNG 存到本机并保留历史。不需要 API key，不额外计费。
+- [jsnancy/dsh-imagine](https://github.com/jsnancy/dsh-imagine) — 读取本机已有的 Codex（ChatGPT 订阅）额度并直接生图：额度一目了然，一句话出 PNG 存本机并保留历史，还能按内置的 handraw-style 手绘模板库（594 条素材 + 60 个配方）一键跟做；界面是一套手绘纸皮肤，深浅主题各有一套。不需要 API key，不额外计费。
 - [junchenxin88/dsh-guangke](https://github.com/junchenxin88/dsh-guangke) — 把一句话刻成一张干净底图——87 种插画、二次元与信息图风格，四家出图接口直接接好，附描述扩写帮你补出说不清的画面细节。
 - [Junkrat9527/dsh-autovision](https://github.com/Junkrat9527/dsh-autovision) — 纯文本 dsh 模型的识图插件：粘贴图片自动由你配置的多模态模型转成文字——透明孪生路由、模型可自主调用识图工具、无内置密钥与中转。
 - [jx70/dsh-comfyui-link](https://github.com/jx70/dsh-comfyui-link) — 9 个 Agent 工具把 DeepSeek Harness 接到本机 ComfyUI：文生图、图生图、自定义 API 工作流、带提示词文档的 LoRA、算法放大，以及用视觉模型审图后自动重画；插件还加入绘图模式预设，在输入框旁提供生图模型与 LoRA 选择。
