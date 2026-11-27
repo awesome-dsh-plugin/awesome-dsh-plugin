@@ -1,5 +1,5 @@
-url: https://github.com/ssamurias/dsh-fish
-name: ssamurias/dsh-fish
+url: https://github.com/mochi-fish/dsh-fish
+name: mochi-fish/dsh-fish
 category: fun
 description:
   en: 'A pet fish you raise in DSH. No personality settings — she grows up through the event stream, and your interactions decide who she becomes. She browses Bilibili on her own, writes a diary, and brings what she finds back to ask you. Four stages and three bottlenecks advance only by what happens; only after all four does she begin to have a stance list. Her diary is hers by default; one switch in settings and you can read it. Records in the event stream can never be deleted, so it remains the only trustworthy source. Zero runtime dependencies.'
