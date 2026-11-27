@@ -1,0 +1,8 @@
+url: https://github.com/raydoomed/dsh-noesia
+name: raydoomed/dsh-noesia
+category: voice
+description:
+  en: 'Floating Noesia voice companion with manual Vidu avatar calls, DeepSeek TTS lip-sync and type-9 action matching.'
+  zh: '悬浮 Noesia 语音伴侣：手动接通 Vidu 数字人，用 DeepSeek TTS 驱动口型，并支持 type 9 动作匹配。'
+icon: https://raw.githubusercontent.com/raydoomed/dsh-noesia/main/icon.png
+tarball: https://github.com/raydoomed/dsh-noesia/releases/download/v0.1.2/dsh-noesia-0.1.2.tgz
