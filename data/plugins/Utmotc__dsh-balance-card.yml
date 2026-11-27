@@ -2,5 +2,6 @@ url: https://github.com/Utmotc/dsh-balance-card
 name: Utmotc/dsh-balance-card
 category: ui
 description:
-  en: Shows the API balance of the provider behind the current model as a dsh Web sidebar card, with per-package progress bars, currency/credit-aware units, a settings tab, and subscription and credit quota monitoring.
-  zh: 在当前会话所用模型的厂商 API 余额，以 dsh Web 侧边栏卡片常驻展示，含每套餐进度条、货币/积分单位区分、设置页，以及订阅与积分额度监测。
+  en: Self-contained dsh Web sidebar card showing the balance and quota windows of the provider behind the current model, with four card styles, per-vendor monitoring, three settings pages, and 21 direct vendor integrations.
+  zh: 把当前会话模型背后厂商的余额与额度窗口做成自包含的 dsh Web 侧边栏卡片，内置四种卡片样式、逐厂商监控、三个设置页与 21 家厂商直连。
+icon: https://raw.githubusercontent.com/Utmotc/dsh-balance-card/main/assets/icon-180.png
