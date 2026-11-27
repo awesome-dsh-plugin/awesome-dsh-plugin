@@ -1,0 +1,8 @@
+url: https://github.com/FallenWings27/saving-your-ass
+name: FallenWings27/saving-your-ass
+category: security
+icon: https://raw.githubusercontent.com/FallenWings27/saving-your-ass/main/assets/icon-180.png
+tarball: https://github.com/FallenWings27/saving-your-ass/releases/download/v0.1.0/saving-your-ass-0.1.0.tgz
+description:
+  en: 'Reins for full-access AI agents: hard red-line stops, reversible vault soft-delete (3 tools), plain-language impact cards, and a bilingual Web settings panel with zero runtime dependencies.'
+  zh: '给全权限 AI Agent 套上安全缰绳：硬红线拦截与自纠偏、保险箱可逆软删（3 个工具）、白话影响卡与双语 Web 设置面板，零运行时依赖。'
