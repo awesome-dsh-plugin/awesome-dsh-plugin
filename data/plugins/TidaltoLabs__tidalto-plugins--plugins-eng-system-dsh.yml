@@ -1,5 +1,5 @@
-url: https://github.com/TidaltoLabs/eng-system/tree/main/plugins/dsh
-name: TidaltoLabs/eng-system#eng-system-dsh
+url: https://github.com/TidaltoLabs/tidalto-plugins/tree/main/plugins/eng-system/dsh
+name: TidaltoLabs/tidalto-plugins#dsh
 category: skill
 description:
   en: 'Engineering documentation system in seven skills - bootstrap, research, decision, architecture, milestone, audit, plus an entry-point router - that hardens project docs into gated, falsifiable workflows; two legal paths, right-sizing tiers, phase-tiered milestone gates and a whole-repo consistency audit. Every skill also works standalone; installs as one bundled skill provider.'
