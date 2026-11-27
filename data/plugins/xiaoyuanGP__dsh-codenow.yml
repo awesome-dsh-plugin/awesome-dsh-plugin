@@ -1,0 +1,7 @@
+url: https://github.com/xiaoyuanGP/dsh-codenow
+name: xiaoyuanGP/dsh-codenow
+category: workflow
+description:
+  en: Multi-agent workbench for DSH — 19 role templates, a team panel with task board and per-agent usage, plus a codenow tool that lets the lead agent plan, dispatch, review and deliver.
+  zh: 多智能体协同工作台：19 个岗位模板、团队面板（任务板 / 用量 / 缓存），以及让主智能体自己派活、复核、交付的 codenow 工具。
+icon: https://raw.githubusercontent.com/xiaoyuanGP/dsh-codenow/main/assets/icon-180.png
