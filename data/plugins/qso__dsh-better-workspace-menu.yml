@@ -1,0 +1,6 @@
+url: https://github.com/qso/dsh-better-workspace-menu
+name: qso/dsh-better-workspace-menu
+category: ui
+description:
+  en: 'Sidebar workspace context menu actions: copy workspace path, tilde path, cd command, Git branch/remote URL, and workspace ID, plus move to top, 1-click favorite app launch, Open in external apps, Open Git repository, new/latest session, and batch-archive idle sessions with undo.'
+  zh: '增强侧边栏工作区右键菜单：复制工作区路径、~ 路径、cd 命令、Git 分支/远程地址与 Workspace ID，并支持置顶工作区、一键常用应用打开、在外部应用中打开、浏览器打开 Git 仓库、新建/打开最近会话及带撤销的批量归档空闲会话。'
