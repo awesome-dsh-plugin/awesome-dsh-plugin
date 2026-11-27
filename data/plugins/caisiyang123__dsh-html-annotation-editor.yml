@@ -1,0 +1,7 @@
+url: https://github.com/caisiyang123/dsh-html-annotation-editor
+name: caisiyang123/dsh-html-annotation-editor
+category: ui
+description:
+  en: Annotate local HTML previews and queue serial editing tasks in the current Agent session.
+  zh: 在本地 HTML 预览中点选批注，并在当前 Agent 会话中串行排队执行修改任务。
+tarball: https://github.com/caisiyang123/dsh-html-annotation-editor/releases/download/v0.2.0/dsh-html-annotation-editor-0.2.0.tgz
