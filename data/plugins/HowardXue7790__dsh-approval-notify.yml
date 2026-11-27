@@ -1,0 +1,6 @@
+url: https://github.com/HowardXue7790/dsh-approval-notify
+name: HowardXue7790/dsh-approval-notify
+category: notify
+description:
+  en: 'Shows a Windows toast with Allow and Deny buttons when DSH asks for approval, with the reason rewritten by a model into one plain sentence; clicking the toast body brings DSH forward and hands the decision to the in-app card.'
+  zh: 'DSH 请求审批时弹 Windows 通知，正文由模型改写成一句大白话，通知上带允许和拒绝按钮；点通知正文会把 DSH 抬到前台并交回网页卡片。'
