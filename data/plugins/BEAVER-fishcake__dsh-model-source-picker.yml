@@ -1,0 +1,6 @@
+url: https://github.com/BEAVER-fishcake/dsh-model-source-picker
+name: BEAVER-fishcake/dsh-model-source-picker
+category: ui
+description:
+  en: 'Rebuilds the composer model picker as a source-first menu: the first level lists the model sources enlarged, each with an initial badge, its model count and which model is current, and the models of a source open one level down, with a search box once a source has more than six models and a row per model showing its reasoning-effort count or its description. Reasoning effort is its own row on the first level, or a third level for models that carry efforts. It occupies the conversation.input.model seat at priority -20 and reads the same catalog as the /model command through the modelDirectories service, so the two agree on what is selectable; a failed registration logs and hands the seat back to the shipped picker.'
+  zh: '把输入框上的模型选择器改成「先选来源、再选模型」的菜单：第一层放大列出模型来源，每个带首字母徽标、模型数量和当前模型，点进去才是该来源的模型；模型超过 6 个时出现搜索框，每行显示推理档数或模型描述。推理强度在第一层是独立一行，对带推理档的模型则展开为第三层。它以 priority -20 占用 conversation.input.model 座位，通过 modelDirectories 服务读与 /model 命令相同的目录，两者对「能选什么」保持一致；注册失败时打印日志并把座位交还原生选择器。'
