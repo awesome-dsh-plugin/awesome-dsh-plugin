@@ -1,0 +1,6 @@
+url: https://github.com/Yang-wudi/dsh-video-gen
+name: Yang-wudi/dsh-video-gen
+category: vision
+description:
+  en: Text-to-video and image-to-video generation with workspace saving and a persistent video gallery.
+  zh: 文生视频与图生视频插件，支持保存到工作区和持久化视频画廊。
