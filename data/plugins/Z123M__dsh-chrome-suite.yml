@@ -1,0 +1,7 @@
+url: https://github.com/Z123M/dsh-chrome-suite
+name: Z123M/dsh-chrome-suite
+category: browser
+description:
+  en: 'Drives the Chrome you are already signed in to through 13 browser tools: structured page snapshots with element refs, real clicks and typing, screenshots, tab control, downloads and DevTools Console/Network, plus a pause gate that only the user can reopen and a configurable action allowlist. Installs a bundled Native Messaging host and requires loading the bundled Chrome extension unpacked; no TCP port is opened.'
+  zh: '用 13 个 browser_* 工具直接操作你已登录的 Chrome：带元素编号的页面快照、真实点击与输入、截图、标签页控制、下载和 DevTools 的 Console/Network，并提供只有用户能恢复的暂停闸门与可配置的动作白名单。安装时落地包内 Native Messaging 宿主，需要手动「加载已解压」安装包内扩展，不开 TCP 端口。'
+icon: https://raw.githubusercontent.com/Z123M/dsh-chrome-suite/main/assets/icon-180.png
