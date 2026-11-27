@@ -1,0 +1,7 @@
+url: https://github.com/hosimiAKE/dsh-ssh-scper
+name: hosimiAKE/dsh-ssh-scper
+category: remote
+description:
+  en: Runs read, write, edit, grep, glob and bash on a remote host over a saved SSH connection, with an encrypted local vault, pinned host keys and a Sidebar preview of remote files.
+  zh: 把保存的 SSH 连接变成工作区：read、write、edit、grep、glob 与 bash 都在远端主机执行，凭据加密保存、主机密钥固定，并可在侧边栏预览远端文件。
+icon: https://raw.githubusercontent.com/hosimiAKE/dsh-ssh-scper/main/assets/icon-180.png
