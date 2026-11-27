@@ -1,0 +1,6 @@
+url: https://github.com/Thomas-zz/dsh-worktree-desk
+name: Thomas-zz/dsh-worktree-desk
+category: git
+description:
+  en: 'Read-only DSH sidebar listing every Git worktree on the machine by repository, with status, inline diffs and matching Codex / ZCode / DSH sessions; fetch, pull, push and AI code review only on request.'
+  zh: '在 DSH 侧栏只读总览本机的全部 Git 工作树，按仓库分组：状态、未推送和落后数、未提交与未推送改动的就地差异、本地分支，以及匹配到的 Codex / ZCode / DSH 会话；获取、拉取、推送和 AI 代码审查都只在你触发之后才执行。'
