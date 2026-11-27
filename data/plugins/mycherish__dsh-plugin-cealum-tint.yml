@@ -1,0 +1,6 @@
+url: https://github.com/mycherish/dsh-plugin-cealum-tint
+name: mycherish/dsh-plugin-cealum-tint
+category: theme
+description:
+  en: Recolours user chat bubbles in DeepSeek Harness. Pick a preset or any hex colour, and both your manual messages and the answers you submit to AI confirmation questions take the background, while AI replies, approval cards and unanswered question cards stay native. Adds an automatic WCAG-contrast text colour with a live read-out, a real-bubble preview, theme-safe fallbacks, and a remove-everything-on-uninstall cleanup contract.
+  zh: 深度定制 DeepSeek Harness 用户聊天气泡配色。选择预设或任意十六进制颜色后，手动消息与对 AI 确认问题提交的回答会一起换上同款背景；AI 回复、审批卡与未回答的问题卡保持原样。附 WCAG 对比度自动文字色与实时读数、真实气泡预览、随主题回退以及卸载即净的清理契约。
