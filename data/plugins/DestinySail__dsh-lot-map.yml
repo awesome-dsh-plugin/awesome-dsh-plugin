@@ -1,0 +1,7 @@
+url: https://github.com/DestinySail/dsh-lot-map
+name: DestinySail/dsh-lot-map
+category: ui
+description:
+  en: Live radial map beside the chat where tool calls, model steps, memory, files, shell, network, browser, agents, skills and hooks light up as they happen.
+  zh: 对话旁的实时环形工作地图：工具调用、模型步骤、记忆、文件、终端、网络、浏览器、代理、技能与钩子随发生而点亮。
+icon: https://raw.githubusercontent.com/DestinySail/dsh-lot-map/main/assets/icon-180.png
