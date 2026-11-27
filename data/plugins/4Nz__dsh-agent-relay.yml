@@ -1,0 +1,8 @@
+url: https://github.com/4Nz/dsh-agent-relay
+name: 4Nz/dsh-agent-relay
+category: notify
+description:
+  en: Connect DSH with local Claude Code, Codex, and Antigravity sessions to track progress, relay messages, and hand off tasks across agents.
+  zh: 将 DSH 与本机 Claude Code、Codex 和 Antigravity 会话相连，支持进度关注、双向通知与跨 Agent 任务接力。
+icon: https://raw.githubusercontent.com/4Nz/dsh-agent-relay/main/assets/icon.png
+tarball: https://github.com/4Nz/dsh-agent-relay/releases/latest/download/dsh-agent-relay.tgz
