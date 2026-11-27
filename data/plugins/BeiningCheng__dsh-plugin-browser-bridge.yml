@@ -1,0 +1,6 @@
+url: https://github.com/BeiningCheng/dsh-plugin-browser-bridge
+name: BeiningCheng/dsh-plugin-browser-bridge
+category: browser
+description:
+  en: 'Chrome page bridge for DeepSeek Harness: eight browser_* tools read DOM elements, click, type and navigate through a token-paired extension over a loopback WebSocket, so the model works on page text instead of screenshots and no DevTools port is opened.'
+  zh: '让 DSH 直接读 Chrome 页面：通过令牌配对的扩展在本地回环 WebSocket 上提供 8 个 browser_* 工具，按选择器或文本读元素、点击、填表、跳转，不截图，也不打开 DevTools 端口。'
