@@ -1,0 +1,6 @@
+url: https://github.com/bestnite/search/tree/main/packages/dsh-search
+name: bestnite/search#dsh-search
+category: tools
+description:
+  en: 'Search the web through configurable backends with explicit access modes, visible cost tiers, page fetching, and a DSH settings page.'
+  zh: '通过可配置后端搜索网页，提供明确的接入模式、费用分档、页面抓取和 DSH 设置页面。'
