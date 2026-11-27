@@ -1,0 +1,6 @@
+url: https://github.com/runzhi214/gui-eyes/tree/master/dsh-bundle
+name: runzhi214/gui-eyes#dsh-bundle
+category: browser
+description:
+  en: 'Persistent authenticated browser session for dsh: open pages, click, type, read DOM/console/network, assert visibility, screenshot, and run YAML regression scenarios, via seven mcp__gui-eyes__* tools.'
+  zh: '给 dsh 装上持久鉴权的浏览器会话：打开页面、点击、输入、读取 DOM/console/network、做可见性断言、截图、跑 YAML 回归场景，七个 mcp__gui-eyes__* 工具。'
