@@ -1843,6 +1843,7 @@ dsh plugin --profile web add dshmarket
 - [oumaekumiko0821/dsh-splash-gojo](https://github.com/oumaekumiko0821/dsh-splash-gojo) — 用图片做全屏开机动画：启动 HTML 首帧即铺满画面并缓慢推近，横向光带扫过，左下进度与阶段提示，应用挂载完成后淡出。点击任意处或按 Esc / 空格 / 回车可跳过。
 - [outmanwt/dsh-chat-privacy-blur](https://github.com/outmanwt/dsh-chat-privacy-blur) — 把 DSH Web 对话里的提问与回答画成模糊，鼠标停在哪一条才显示哪一条；窗口失焦时自动全糊，谁都看不到指针留下的那条。输入框下方一个按钮在「关闭 / 悬停显示 / 始终模糊」三档间切换，选择按浏览器记住。
 - [outmanwt/dsh-team-fishbone](https://github.com/outmanwt/dsh-team-fishbone) — 会话标题栏鱼骨图面板，展示子代理分工、实时状态、可用的 Token 与耗时指标及共享任务，并支持跳转子会话。
+- [ouyang111/video-preview](https://github.com/ouyang111/video-preview) — 在侧边栏文档预览里直接播放 mp4、m4v、webm、ogv、mov，替代“该格式文件暂无法预览”。
 - [Ouyangyouzi/dsh-whale-backup](https://github.com/Ouyangyouzi/dsh-whale-backup) — 鲸鱼娘备份 — 一键备份与恢复：把聊天记录、插件、插件数据、设置和项目文件打包成带 SHA-256 校验的归档，可存到本机或 WebDAV；支持计划任务、恢复前安全备份与同名冲突策略，并提供 whale-backup 命令行。
 - [overact/dsh-statusline-plus](https://github.com/overact/dsh-statusline-plus) — 在 DeepSeek Harness Web 显示账户额度、Git 状态、上下文、公开 API 参考费用、Subagents 活动和生成速度。
 - [overFloweee/dsh-foresight](https://github.com/overFloweee/dsh-foresight) — DSH 输入框增强：回合结束后预测下一句并以灰字显示，输入时按会话历史补全，每轮结束追加一行回顾，草稿为空时 ↑/↓ 翻看之前发过的提示词。
@@ -2022,6 +2023,7 @@ dsh plugin --profile web add dshmarket
 - [rolfhu/dsh-subagent-model-tags](https://github.com/rolfhu/dsh-subagent-model-tags) — 在会话顶部的子代理面板（根面板、兄弟切换面板、子面板）中，于每个子代理的名称行显示其模型名，并把面板加宽到 460px。模型名取自各子代理会话记录的模型选择；没有记录的子代理和 external 子代理显示“—”。
 - [romany-saad/dsh-plugins#dsh-drafts](https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-drafts) — 找回打了字却没发送就离开的内容：未发送就离开的新 Web 对话不会出现在侧栏，里面的草稿也就找不到了。本插件在下一个新对话的输入框上方按时间倒序列出这些草稿，并显示所属工作区与时间；「打开」带你回到原对话，文字和引用条原样还在；「丢弃」可撤销地删除草稿。
 - [romany-saad/dsh-plugins#dsh-quote](https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-quote) — 让模型准确知道你指的是哪一段：在 Web 对话中选中段落，它们会作为引用条进入下一条消息，每条可附可编辑的备注。被引用的段落在发送前保持高亮，悬停引用条显示全文，发送后的消息把每条引用显示为卡片。
+- [RonaWhite/dsh-gongwei](https://github.com/RonaWhite/dsh-gongwei) — 工位打卡、每日学习记录与周报：到达时间与固定基准线和自己近十个工作日平均对比，事实与感想分栏存放，另有一个「想学的」池子，并可在 dsh-pet 桌宠上弹出右键菜单与摘要气泡。
 - [rongyishuaige7/dsh-team-kanban](https://github.com/rongyishuaige7/dsh-team-kanban) — DeepSeek Harness 右侧栏多智能体活体任务看板：实时读取原生 agentTeam 投影 DAG，三列流转、依赖血缘与进度自明。
 - [roninni/dsh-central-editor](https://github.com/roninni/dsh-central-editor) — 开发未完成 · 测试中 · 请勿下载。在对话旁浏览、修改并逐块审阅工作区文件的工作台面板，支持逐块保留与回滚。
 - [rsbsnv/dsh-mobile-adapt](https://github.com/rsbsnv/dsh-mobile-adapt) — 手机上的 DSH 界面优化：侧边栏变可滑动抽屉、手势开关侧栏、宽度可调、返回键逐层退出、按钮放大、回车换行而不是直接发送、键盘不挡输入框、字号不小于 15px。
@@ -9263,6 +9265,7 @@ dsh plugin --profile web add dshmarket
 - [regrevia/pocket-harness#pocket-harness](https://github.com/regrevia/pocket-harness/tree/main/plugins/pocket-harness) — Pocket Harness：DSH 的手机端。在手机上接着用电脑里的同一份 DSH——同一条会话、历史、项目、目标、队列和待确认提问，可经局域网、自建域名或自建中转连接（不经作者服务器、无需账号）。需要配套的 Android App（仓库 Releases 里的 APK），扫码配对；可选的像素鲸鱼娘桌宠会听会说，神经语音与本机识别也是可选件。原名 dsh-pet-voice。
 - [Ren-xing/dsh-audio-tools](https://github.com/Ren-xing/dsh-audio-tools) — DSH 音频工具：查看音频/视频信息、转码、从视频提取音轨、裁剪与响度归一化，并用本地 whisper.cpp 或 OpenAI 兼容接口把语音转成文字和字幕。需要本机已装 ffmpeg 与 ffprobe（插件不自带）；本地转写还需 whisper-cli 与 ggml 模型。
 - [rirtue/dsh-breeze-speak](https://github.com/rirtue/dsh-breeze-speak) — 通过云端 BreezeBlue / Breeze TTS 2 API 朗读每轮回复：回复的第一句一完整就发起合成、不必等整段说完，音频以 PCM 裸流边收边推给 Web Audio 连续播放。需要 BreezeBlue API Key，在设置页填写或用 BREEZE_API_KEY 环境变量；设置页保存的 Key 以明文写在 ~/.dsh/breeze-speak.json。默认只念每条回复的第一句（最多 120 字），这段文字会发给 api.breeze.blue。默认音色只是示例，请在设置页里挑一个自己账号可用的。
+- [RonaWhite/dsh-pet-voice-clone](https://github.com/RonaWhite/dsh-pet-voice-clone) — 给 dsh-pet 桌宠用的克隆音色：注册一个基于硅基流动 CosyVoice2 的音色，让桌宠用从你自己的短录音复刻出的声音念台词。需要硅基流动 API Key 和一段 10 至 30 秒的参考录音。
 - [Root-7-KHX/ai-voice](https://github.com/Root-7-KHX/ai-voice) — 《AI语音》：本地音色工作台，内置 9 个本地 TTS 引擎，支持文字描述造声、参考音复刻、情绪表演、参考音库与音频导出。本插件只注册 /ai-voice/api 接口，界面由 companion-memory 插件的「接入软件」页承载；每个引擎都需要自备 Python 虚拟环境与自行下载的模型权重，插件不打包。
 - [rootryanlau-art/dsh-voice-transcribe](https://github.com/rootryanlau-art/dsh-voice-transcribe) — 在输入框面板、命令行与 agent 技能里离线转写本地音视频文件，引擎为 SenseVoice int8。
 - [SAOS-3624/dsh-watch-together](https://github.com/SAOS-3624/dsh-watch-together) — 和只有文字的智能体一起看视频：需要 ffmpeg 和浏览器扩展上报真实播放位置（不是定时器），在每段结束前把画面和台词交到它手上。插件不带 TTS 引擎，只按时间轴发台词事件，要出声需自行配置语音/TTS。
