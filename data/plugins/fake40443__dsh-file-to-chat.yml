@@ -1,0 +1,7 @@
+url: https://github.com/fake40443/dsh-file-to-chat
+name: fake40443/dsh-file-to-chat
+category: ui
+description:
+  en: Send files and folders from the workspace file tree to the chat composer via right-click or drag.
+  zh: 通过右键或拖拽，把工作区文件树中的文件和文件夹发送到对话输入框。
+icon: https://raw.githubusercontent.com/fake40443/dsh-file-to-chat/main/icon-180.png
