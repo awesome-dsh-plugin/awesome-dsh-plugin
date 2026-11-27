@@ -1,6 +1,0 @@
-url: https://github.com/wsl1602291891-stack/dsh-zhilian-api
-name: wsl1602291891-stack/dsh-zhilian-api
-category: model
-description:
-  en: Signs a zhilian site account in from the settings page, mints one key per group it reuses on reconnects, and registers the models with the protocol each family needs, so chat, responses and messages routes all work without hand-made keys.
-  zh: 在设置页一键授权智连站点账号，按分组自动创建或复用专用 Key，并按模型家族注册正确的协议路由，无需手动建 Key。
