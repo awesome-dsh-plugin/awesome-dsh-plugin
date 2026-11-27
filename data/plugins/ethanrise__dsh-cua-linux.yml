@@ -1,0 +1,8 @@
+url: https://github.com/ethanrise/dsh-cua-linux
+name: ethanrise/dsh-cua-linux
+category: tools
+description:
+  en: 'Linux (X11/XWayland) computer use for DSH with AT-SPI controls, screenshots, XTEST input, Unicode paste, and Chromium CDP. Includes an X11 task progress card and indicators for mouse input and click locations.'
+  zh: '适用于 DSH 的 Linux（X11/XWayland）电脑操作插件，支持 AT-SPI 控件、截图、XTEST 键鼠、Unicode 粘贴和 Chromium CDP，并提供 X11 任务进度、鼠标接管和点击位置提示。'
+icon: https://raw.githubusercontent.com/ethanrise/dsh-cua-linux/main/assets/icon-180.png
+tarball: https://github.com/ethanrise/dsh-cua-linux/releases/latest/download/dsh-cua-linux.tgz

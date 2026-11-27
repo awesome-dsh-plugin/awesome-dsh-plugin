@@ -1,0 +1,7 @@
+url: https://github.com/HSHSir/dsh-plugins/tree/main/dsh-a6-failover
+name: HSHSir/dsh-plugins#dsh-a6-failover
+category: model
+description:
+  en: 'A6API merchant failover for DeepSeek Harness: ranks relay merchants by real usage-adjusted cost (cache hits and output ratio), drops those above a set multiple of official price, and switches the pinned merchant on failures or on demand from a settings panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: A6API 商家故障切换插件：按真实用量（缓存命中率与输出比）计算中转商家成本，剔除超过官网价指定倍数的商家，失败时或通过设置面板手动切换固定商家。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/HSHSir/dsh-plugins/main/dsh-a6-failover/assets/a6-icon.png

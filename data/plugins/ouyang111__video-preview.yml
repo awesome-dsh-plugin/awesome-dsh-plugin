@@ -1,0 +1,8 @@
+url: https://github.com/ouyang111/video-preview
+name: ouyang111/video-preview
+category: ui
+description:
+  en: Play mp4, m4v, webm, ogv and mov files inside the DeepSeek Harness Sidebar document preview with native playback controls, instead of the unsupported-format message.
+  zh: 在侧边栏文档预览里直接播放 mp4、m4v、webm、ogv、mov，替代“该格式文件暂无法预览”。
+icon: https://raw.githubusercontent.com/ouyang111/video-preview/main/assets/icon-180.png
+# age gate re-check: repo older than 1 day (2026-11-27)

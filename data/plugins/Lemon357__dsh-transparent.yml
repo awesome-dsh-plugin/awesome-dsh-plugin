@@ -1,0 +1,6 @@
+url: https://github.com/Lemon357/dsh-transparent
+name: Lemon357/dsh-transparent
+category: ui
+description:
+  en: Translucent window background for DSH Desktop — a slider sets the page tint opacity (0-62%) and a switch picks the acrylic (blurred) or transparent (no blur) window material; the material switch rewrites the desktop shell's app.asar and needs one restart.
+  zh: DSH 桌面版透明窗口：滑杆调节页面蒙层不透明度（0–62%），开关切换亚克力磨砂或无磨砂窗口材质；切换材质会改写桌面壳 app.asar，需重启一次。

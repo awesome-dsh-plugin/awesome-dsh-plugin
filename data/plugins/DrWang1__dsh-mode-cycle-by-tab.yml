@@ -1,0 +1,7 @@
+url: https://github.com/DrWang1/dsh-mode-cycle-by-tab
+name: DrWang1/dsh-mode-cycle-by-tab
+category: ui
+description:
+  en: "Tab and Shift+Tab cycle the composer between normal and plan mode by calling the official /plan handler directly, so no command row is written to the conversation; while a slash or trigger menu is open the key stays with the menu."
+  zh: "在输入框用 Tab 正向、Shift+Tab 反向切换普通 / 计划模式，直调官方 /plan 处理器，因此会话里不会多出命令行记录；斜杠或触发菜单打开时按键先归菜单。"
+tarball: https://github.com/DrWang1/dsh-mode-cycle-by-tab/releases/latest/download/dsh-mode-cycle-by-tab.tgz

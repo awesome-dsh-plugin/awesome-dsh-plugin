@@ -1,0 +1,7 @@
+url: https://github.com/sjkk16/dsh-game-player
+name: sjkk16/dsh-game-player
+category: tools
+description:
+  en: Gives DeepSeek Harness approved mouse and keyboard control, window binding, screen capture, and an optional Live2D desktop display for playing windowed games.
+  zh: 为 DeepSeek Harness 提供受审批的键鼠操作、窗口绑定、屏幕截图，以及可选的 Live2D 桌面显示，用于操作窗口化游戏。
+tarball: https://github.com/sjkk16/dsh-game-player/releases/download/v0.3.13/dsh-game-player-0.3.13.tgz

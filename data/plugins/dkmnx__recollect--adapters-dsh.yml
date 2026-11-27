@@ -1,0 +1,7 @@
+url: https://github.com/dkmnx/recollect/tree/main/adapters/dsh
+name: dkmnx/recollect#dsh
+category: memory
+description:
+  en: Per-workspace Recollect memory for DeepSeek Harness. Adds a scoped memory tool and injects a memory snapshot for each agent's working directory.
+  zh: 为 DeepSeek Harness 提供按工作区隔离的 Recollect 记忆，添加作用域记忆工具，并注入与当前工作目录绑定的记忆快照。
+icon: https://raw.githubusercontent.com/dkmnx/recollect/main/adapters/dsh/icon.png

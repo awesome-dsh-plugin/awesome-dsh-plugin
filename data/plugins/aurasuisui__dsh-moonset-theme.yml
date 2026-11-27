@@ -1,0 +1,7 @@
+url: https://github.com/aurasuisui/dsh-moonset-theme
+name: aurasuisui/dsh-moonset-theme
+category: theme
+icon: https://raw.githubusercontent.com/aurasuisui/dsh-moonset-theme/main/assets/icon-180.png
+description:
+  en: Light and dark themes covering all 228 --dsw-* tokens, plus a thin skin layer with ambient ground glow, frosted input card and conversation header, per-tool-type colours on work-step rows, and document-site surface colours. No resident JavaScript, no network access, no telemetry.
+  zh: 覆盖全部 228 个 --dsw-* token 的浅/深双主题，外加一层轻皮肤：环境地面光晕、磨砂输入卡与会话顶栏、工作步骤行按类型分色、代码框与卡片的文档站表面色。零常驻 JS、不联网、无遥测。

@@ -1,0 +1,7 @@
+url: https://github.com/kezan31/dsh-bocha-web-search-plugin
+name: kezan31/dsh-bocha-web-search-plugin
+category: tools
+description:
+  en: Adds a Bocha web-search provider to DSH with a General Settings switch for routing searches between Bocha and DeepSeek.
+  zh: 为 DSH 提供博查网页搜索 provider，并在通用设置中用开关在博查与 DeepSeek 之间切换搜索来源。
+icon: https://raw.githubusercontent.com/kezan31/dsh-bocha-web-search-plugin/main/icon.png

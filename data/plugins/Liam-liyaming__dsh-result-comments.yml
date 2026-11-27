@@ -1,0 +1,7 @@
+url: https://github.com/Liam-liyaming/dsh-result-comments
+name: Liam-liyaming/dsh-result-comments
+category: ui
+description:
+  en: 'Select text in an AI reply, mark it 👍 or write a 🤔 comment, and send each comment as a composer tag.'
+  zh: '框选 AI 回复中的文字，用 👍 认可或写 🤔 评论，并把评论作为输入框 tag 随消息发送。'
+icon: https://raw.githubusercontent.com/Liam-liyaming/dsh-result-comments/main/assets/icon-180.png

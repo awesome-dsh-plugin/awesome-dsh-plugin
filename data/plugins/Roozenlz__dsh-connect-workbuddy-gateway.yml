@@ -1,0 +1,6 @@
+url: https://github.com/Roozenlz/dsh-connect-workbuddy-gateway
+name: Roozenlz/dsh-connect-workbuddy-gateway
+category: model
+description:
+  en: 'Exposes the WorkBuddy models registered by dsh-connect-workbuddy over one local base URL in four protocols (OpenAI Chat Completions, OpenAI Responses, Anthropic Messages, Gemini), with per-API-key model checklists, region-suffixed names for models that repeat across the CN and Intl pools, and reasoning efforts passed through for the client to choose. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 dsh-connect-workbuddy 注册的 WorkBuddy 模型以四种协议（OpenAI Chat Completions、OpenAI Responses、Anthropic Messages、Gemini）开放成一个本机 base URL，按 API key 勾选要提供的模型，国内版与国际版重名时加区域后缀区分，推理档位交给客户端自己选。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

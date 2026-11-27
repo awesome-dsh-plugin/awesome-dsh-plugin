@@ -1,0 +1,8 @@
+url: https://github.com/CarviS0302/dsh-editable-question-options
+name: CarviS0302/dsh-editable-question-options
+category: ui
+description:
+  en: "Makes ask_user_question options editable in their cards before you answer: select the closest option, then use the inline option editor to edit or modify its label, text and details, or customize the text and add a note; the original choice is kept and your revision is sent to the model with it. Useful when you want to fine-tune or adjust an option, edit an option on a question card, or answer single- or multiple-choice questions when the offered options almost fit."
+  zh: "在 ask_user_question 的选项卡片（选择题卡片、问题卡片、提问卡片）中直接编辑选项：选中接近的答案后，用内置的选项编辑器就地修改选项名称、选项文字与细节，也可以自定义选项文案或补充说明；提交时保留原选项，并把修改内容一起带给模型。适合微调选项、调整选项、补充细节，以及单选题或多选题作答。"
+icon: https://raw.githubusercontent.com/CarviS0302/dsh-editable-question-options/main/assets/icon-180.png
+tarball: https://github.com/CarviS0302/dsh-editable-question-options/releases/download/v1.0.1/dsh-editable-question-options-1.0.1.tgz

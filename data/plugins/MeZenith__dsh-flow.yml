@@ -1,0 +1,6 @@
+url: https://github.com/MeZenith/dsh-flow
+name: MeZenith/dsh-flow
+category: workflow
+description:
+  en: Adds five switchable workflow modes (Plan, Plan Ultra, Build, Review, Flow) to DSH, with layered prompt injection, a numbered document pipeline, and approval gates answerable from the desktop or an IM chat. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 为 DSH 增加 Plan / Plan Ultra / Build / Review / Flow 五种可切换工作流模式，包含分层提示词注入、编号文档流水线，以及可在桌面或 IM 中回复的审批门禁。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

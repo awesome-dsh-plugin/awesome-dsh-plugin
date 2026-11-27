@@ -1,0 +1,7 @@
+url: https://github.com/NUAAHANDA/dsh-composer-enhance
+name: NUAAHANDA/dsh-composer-enhance
+category: ui
+description:
+  en: Adds one four-point star to the composer that rewrites the draft in place into a clearer prompt with the current model, plus a back button that restores the previous text.
+  zh: 在输入框加一个四角星，点一下就用当前模型把草稿在框内改写成更清楚的提示词，并留一个返回按钮恢复上一版文字。
+icon: https://raw.githubusercontent.com/NUAAHANDA/dsh-composer-enhance/main/assets/icon-180.png

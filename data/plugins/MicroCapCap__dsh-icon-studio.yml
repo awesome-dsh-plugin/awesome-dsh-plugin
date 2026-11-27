@@ -1,0 +1,7 @@
+url: https://github.com/MicroCapCap/dsh-icon-studio
+name: MicroCapCap/dsh-icon-studio
+category: ui
+tarball: https://github.com/MicroCapCap/dsh-icon-studio/releases/download/v1.2.0/dsh-icon-studio-1.2.0.tgz
+description:
+  en: 'Replaces the DeepSeek Harness application icons from one PNG — tray, About panel, desktop and Start Menu shortcuts, window, taskbar, Explorer entry, and the icon resources inside the executable — backing up the originals first, verifying the patched executable before the swap, and restoring the official set with one command.'
+  zh: '用一张 PNG 替换 DeepSeek Harness 的应用图标——托盘、关于面板、桌面与开始菜单快捷方式、窗口、任务栏、资源管理器条目，以及可执行文件内的图标资源——换前备份原文件、换前校验打补丁后的可执行文件，并可一条命令恢复官方图标。'

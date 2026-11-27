@@ -1,0 +1,7 @@
+url: https://github.com/Yuzl127/dsh-plugin-money-widgets
+name: Yuzl127/dsh-plugin-money-widgets
+category: usage
+description:
+  en: Adds a remaining-balance pill beside the composer, per-turn and session cost readouts with input/output tokens, and a sidebar cost-bill page that breaks spending down by day, model, provider and session (aggregated from session logs) with CSV/JSON export, per-turn and per-session budgets, and peak/off-peak price reminders. Its single HTTP route is read-only and passes the host's Connection admission check (Host/Origin fence plus browser authentication) before it answers.
+  zh: 在输入框旁显示账户余额，在每条回复与输入框下方显示本轮/会话消费与输入、输出 token，并提供侧栏「费用账单」页：按天、模型、供应商、会话分账（宿主直接聚合会话日志），支持 CSV/JSON 导出、每轮与整段会话预算、峰谷价提醒。它唯一的一条 HTTP 路由是只读的，应答前会先过宿主 Connection 的准入检查（Host/Origin 校验 + 浏览器认证）。
+tarball: https://github.com/Yuzl127/dsh-plugin-money-widgets/releases/latest/download/dsh-plugin-money-widgets-0.4.3.tgz

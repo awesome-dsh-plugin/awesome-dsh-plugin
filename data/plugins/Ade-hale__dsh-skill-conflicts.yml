@@ -1,0 +1,6 @@
+url: https://github.com/Ade-hale/dsh-skill-conflicts
+name: Ade-hale/dsh-skill-conflicts
+category: skill
+description:
+  en: 'Detect conflicts between installed skills: group them by capability and separate compatible overlap from real conflicts.'
+  zh: 检测已安装 skill 之间的冲突：按能力分组，区分「同类型但不冲突」与「互相冲突」。

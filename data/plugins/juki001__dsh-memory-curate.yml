@@ -1,0 +1,6 @@
+url: https://github.com/juki001/dsh-memory-curate
+name: juki001/dsh-memory-curate
+category: memory
+description:
+  en: 'Auditable long-term memory for DSH: memories, decisions and prompt versions in one append-only NDJSON, the last five human turns are never compacted, and every write, recall and compaction can be traced back to its source. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 给 DSH 的可审计长期记忆：把记忆、决策和提示版本写进同一个只追加的 NDJSON 文件；最近 5 个真人回合不参与压缩；写入、召回、压缩都能追溯到来源并随时改。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

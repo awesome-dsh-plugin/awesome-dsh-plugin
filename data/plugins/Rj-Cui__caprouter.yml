@@ -1,0 +1,6 @@
+url: https://github.com/Rj-Cui/caprouter
+name: Rj-Cui/caprouter
+category: tools
+description:
+  en: "Local capability ledger for AI agents: index, search, probe and verify the skills, plugins and MCP servers already on your machine, then expose them to the host as an MCP bus."
+  zh: "本机 AI 能力台账：把已安装的技能、插件与 MCP 服务编目、检索、探测并验证，再通过 MCP 总线提供给宿主使用。"

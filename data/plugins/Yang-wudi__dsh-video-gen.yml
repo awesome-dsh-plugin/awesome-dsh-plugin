@@ -1,0 +1,6 @@
+url: https://github.com/Yang-wudi/dsh-video-gen
+name: Yang-wudi/dsh-video-gen
+category: vision
+description:
+  en: Text-to-video and image-to-video generation with workspace saving and a persistent video gallery. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 文生视频与图生视频插件，支持保存到工作区和持久化视频画廊。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

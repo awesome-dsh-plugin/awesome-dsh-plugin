@@ -1,0 +1,7 @@
+url: https://github.com/ivezhang/dsh-GameDesignMemory
+name: ivezhang/dsh-GameDesignMemory
+category: memory
+description:
+  en: 'Knowledge workbench for game designers: typed memories and knowledge nodes in one relational graph, with versioned evidence, protected conventions the AI cannot overwrite, and task-scoped recall. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 面向游戏策划的知识工作台：把带类型的记忆与知识对象连成一张关系网，提供版本与证据留痕、AI 改不动的固有约定保护，以及按任务分层的召回。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/ivezhang/dsh-GameDesignMemory/main/assets/icon-180.png

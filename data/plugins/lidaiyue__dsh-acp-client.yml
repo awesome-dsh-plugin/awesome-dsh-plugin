@@ -1,0 +1,6 @@
+url: https://github.com/lidaiyue/dsh-acp-client
+name: lidaiyue/dsh-acp-client
+category: model
+description:
+  en: 'Runs the main DSH conversation through an official ACP agent chosen from the Agent preset picker: CodeBuddy, Claude, Codex, Grok, or Antigravity. A client, not a server, and the presets load no DSH tools — the agent brings its own tools and permission prompts. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在智能体预设里选 CodeBuddy、Claude、Codex、Grok 或 Antigravity，主会话就走那个 agent 自己的 ACP stdio 进程。它是客户端不是服务端，这些预设不加载 DSH 工具——工具和权限确认都由 agent 自己提供。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,7 @@
+url: https://github.com/cauthy12/dsh-runs-log
+name: cauthy12/dsh-runs-log
+category: tools
+tarball: https://github.com/cauthy12/dsh-runs-log/releases/download/v0.1.0/dsh-runs-log-0.1.0.tgz
+description:
+  en: 'Appends one timestamped row to a Markdown run log, creating the file and its table header when missing. Append-only: never rewrites or truncates existing rows.'
+  zh: '每次调用往 Markdown 运行日志追加一行带时间戳的记录，文件和表头缺失时自动创建。只追加、不改写：永不重写或截断已有行。'

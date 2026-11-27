@@ -1,0 +1,7 @@
+url: https://github.com/PerfectPan/estela/tree/main/apps/dsh-plugin
+name: PerfectPan/estela#dsh-plugin
+category: session
+description:
+  en: 'Adds an Estela view beside Chat and Trajectory that reads the current session log from disk: the ledger, what the model saw at a request, a context compare, what a compaction removed, and list-price cost.'
+  zh: '在 Chat 和 Trajectory 旁增加 Estela 视图，从磁盘读取当前会话日志：事件列表、模型在某次请求看到的内容、上下文对比、上下文压缩移除的内容和按目录价计算的费用。'
+icon: https://raw.githubusercontent.com/PerfectPan/estela/main/apps/dsh-plugin/assets/icon.png

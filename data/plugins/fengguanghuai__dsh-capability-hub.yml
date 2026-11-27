@@ -1,0 +1,7 @@
+url: https://github.com/fengguanghuai/dsh-capability-hub
+name: fengguanghuai/dsh-capability-hub
+category: tools
+icon: https://raw.githubusercontent.com/fengguanghuai/dsh-capability-hub/main/assets/icon-256.png
+description:
+  en: Unified capability hub for organizing MCP servers, tools, and skills into switchable suites with per-session injection.
+  zh: 统一能力中心，支持将 MCP 服务、细分工具与 Skills 编排为可切换的场景套件并按会话按需注入。

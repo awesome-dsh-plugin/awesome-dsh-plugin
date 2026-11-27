@@ -1,0 +1,7 @@
+url: https://github.com/fzjmaclearn/zack-calendar
+name: fzjmaclearn/zack-calendar
+category: workflow
+description:
+  en: 'A local calendar and to-do panel for DSH: day, week and month views over six fixed daily time blocks, goals with two completion models, category boxes, progress and blocker snapshots, append-only progress timelines, notes and collections, spaced-review prompts, a daily exercise prescription, and calendar_read/calendar_write agent tools that only schedule into empty slots. Data stays in a local JSON file with no network calls or telemetry.'
+  zh: 'DSH 的本地日程与待办面板：日、周、月三种视图围着每天六个固定时间块，支持目标拆解、分类盒、进度与卡点快照、只追加的进展时间线、笔记与合集、间隔复习、每日运动处方，以及只往空槽排程的 calendar_read/calendar_write 工具。数据保存在本地 JSON 文件，无网络请求与遥测。'
+icon: https://raw.githubusercontent.com/fzjmaclearn/zack-calendar/main/icon.png

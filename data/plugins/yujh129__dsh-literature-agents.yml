@@ -1,0 +1,6 @@
+url: https://github.com/yujh129/dsh-literature-agents
+name: yujh129/dsh-literature-agents
+category: tools
+description:
+  en: 'Literature and classics research for DeepSeek Harness: 9 read-only tools, 11 specialist subagents, 3 review panels, and a per-conversation switch. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '文学与古典文献研究：9 个只读工具、11 位文史专家子代理、3 个评审团，以及按对话启停的「古籍」开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

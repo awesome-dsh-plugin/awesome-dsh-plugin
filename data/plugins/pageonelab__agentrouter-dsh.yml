@@ -1,0 +1,6 @@
+url: https://github.com/pageonelab/agentrouter-dsh
+name: pageonelab/agentrouter-dsh
+category: tools
+description:
+  en: Find research providers, preview prices for free, approve a provider call with a USD limit, and retrieve its receipt in DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中查找研究数据服务、免费询价、按美元上限批准调用，并查看费用回执。

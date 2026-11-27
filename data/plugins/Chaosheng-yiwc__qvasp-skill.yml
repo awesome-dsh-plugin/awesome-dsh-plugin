@@ -1,0 +1,7 @@
+url: https://github.com/Chaosheng-yiwc/qvasp-skill
+name: Chaosheng-yiwc/qvasp-skill
+category: tools
+description:
+  en: 'DeepSeek Harness plugin for qvasp: a skill bundle with the full 88-command reference of the qvasp VASP toolkit (INCAR/KPOINTS/POTCAR templates, structure building, band/DOS/phonon/optical/magnetic/thermo post-processing) plus an MCP server that runs qvasp commands, checks the inputs before a job is submitted, executes 10 standard multi-stage workflows (relax, band, DOS, phonon, optics, elastic, MD, surface, freqfix), checks structures with spglib, extracts and cross-checks results, and builds per-system reports - standardized steps so routine runs cost fewer tokens and fewer mistakes.'
+  zh: 'qvasp 插件：在 DeepSeek Harness 中使用 qvasp（VASP 前后处理工具）。技能包收录全部 88 条命令的用法与坑，MCP 服务端可运行 qvasp 命令、提交前检查输入、执行 10 个标准多阶段工作流（弛豫、能带、DOS、声子、光学、弹性、MD、表面、虚频修复）、用 spglib 做结构核查、抽取并交叉核对计算结果、生成报告——流程标准化，常规 VASP 计算更省 token 也更不易出错。（作者：曲阜师范大学 易文才）'
+icon: https://raw.githubusercontent.com/Chaosheng-yiwc/qvasp-skill/main/assets/icon-180.png

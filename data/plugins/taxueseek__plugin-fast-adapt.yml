@@ -1,0 +1,6 @@
+url: https://github.com/taxueseek/plugin-fast-adapt
+name: taxueseek/plugin-fast-adapt
+category: dev
+description:
+  en: 'Official-guide-driven DSH plugin upgrade scanner, in-memory Cordis smoke tester, fleet health board, and five-form plugin scaffolder (CLI + Agent Skill, zero dependencies).'
+  zh: '直连官方升级指南的 DSH 插件破坏性变更扫描、内存级 Cordis 冒烟验证、整机集群健康看板与五形态造插件工具（CLI 与 Agent Skill 双形态，零依赖）。'

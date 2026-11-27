@@ -1,0 +1,6 @@
+url: https://github.com/TanHonN/dsh-plantuml
+name: TanHonN/dsh-plantuml
+category: ui
+description:
+  en: 'Render PlantUML code blocks in DSH conversations and the built-in Markdown file preview using a local command, a JAR, or a configured PlantUML server, with live editing and diagram export.'
+  zh: '在 DSH 会话和内建 Markdown 文件预览中渲染 PlantUML 代码块，支持本机命令、JAR 或自选 PlantUML 服务，以及实时编辑预览和图表导出。'

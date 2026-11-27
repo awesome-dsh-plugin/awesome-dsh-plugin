@@ -1,0 +1,6 @@
+url: https://github.com/wsy320/dsh-git-backup
+name: wsy320/dsh-git-backup
+category: dev
+description:
+  en: Git-based backup and restore for DSH plugin manifests, configuration and skills, with per-item selection, previews, conflict preservation and credential filtering.
+  zh: 基于 Git 备份并还原 DSH 插件清单、配置和技能，支持逐项勾选、预览、冲突时保留本地版本和凭据过滤。

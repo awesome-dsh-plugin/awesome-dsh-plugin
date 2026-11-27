@@ -1,0 +1,7 @@
+url: https://github.com/dengmuming/dsh-cloud-sandbox
+name: dengmuming/dsh-cloud-sandbox
+category: security
+description:
+  en: Docker execution sandbox for DSH with workspace isolation, resource limits, and fair scheduling on Linux and Windows/WSL2.
+  zh: 为 DSH 命令、终端和 Skill 脚本提供 Docker 沙箱，支持工作目录隔离、资源限额及公平调度。
+tarball: https://github.com/dengmuming/dsh-cloud-sandbox/releases/download/v0.2.2/dsh-cloud-sandbox-0.2.2.tgz

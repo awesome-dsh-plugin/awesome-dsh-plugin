@@ -1,6 +1,7 @@
 url: https://github.com/linkpain/dsh-recall-rebuild
 name: linkpain/dsh-recall-rebuild
 category: memory
+icon: https://raw.githubusercontent.com/linkpain/dsh-recall-rebuild/main/docs/images/icon-180.png
 description:
-  en: 'Enhances DSH memory plugins by reconstructing retrieved memory fragments into contextual, emotionally-toned recollections with an LLM before injection, instead of quoting raw text; read-only to the underlying memory store, with multi-source support, per-user IM isolation, sleep consolidation and a JSONL audit log.'
-  zh: '增强 DSH 记忆插件：把检索到的记忆碎片经 LLM 重建为带语境与情绪的回忆片段再注入，而非念原文；对底层记忆库只读，支持多记忆源、IM 用户级隔离、睡眠巩固与 JSONL 审计日志。'
+  en: Reconstructive recall enhancer for DeepSeek Harness, with a Memory Sea visualization panel that draws memories as a deep-space point cloud (dots are memories, lines are associations) and switches between raw and consolidated sources in one click. It reads the memory stores of existing memory plugins (16 built-in adapters, RRF fusion in auto mode) and rebuilds retrieved fragments into contextual, emotionally-toned recollections before each model step instead of raw-text injection. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 重建式回忆增强插件，附带「记忆识海」可视化面板：把记忆画成深空点云（点是记忆、线是联想），原始 / 巩固双数据源一键切换。核心能力：只读现有记忆插件的记忆库（内置 16 种记忆源适配，auto 模式多库 RRF 融合），在模型步骤前把检索到的记忆碎片重建为带语境与情绪的回忆片段再注入，替代生硬的原文注入。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

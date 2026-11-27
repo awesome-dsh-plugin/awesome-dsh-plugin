@@ -2,5 +2,5 @@ url: https://github.com/xiaomao361/dsh-capability-gateway
 name: xiaomao361/dsh-capability-gateway
 category: tools
 description:
-  en: 'Search, inspect, and use selected third-party skills and MCP tools through one on-demand gateway. Catalog trimming depends on the host and tool mode. A local journal records usage metadata.'
-  zh: '通过一个按需网关搜索、查看和使用选定的第三方技能与 MCP 工具。目录精简取决于宿主和工具模式。本地日志记录使用元数据。'
+  en: 'Search, inspect, and use selected skills and MCP tools through one gateway. Try searches, add local aliases, and open filtered logs from the capability inventory. Catalog trimming depends on the host and tool mode.'
+  zh: '通过一个网关按需搜索、查看和调用选定的技能与 MCP 工具。支持试搜、添加本地别名，以及从能力清单打开对应的运行日志。目录精简取决于宿主和工具模式。'

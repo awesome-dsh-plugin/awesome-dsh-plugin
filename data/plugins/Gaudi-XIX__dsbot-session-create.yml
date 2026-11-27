@@ -2,5 +2,5 @@ url: https://github.com/Gaudi-XIX/dsbot-session-create
 name: Gaudi-XIX/dsbot-session-create
 category: session
 description:
-  en: "Four host-level session tools: create, message, read, list dispatches. Idle sessions resume in place; terminal marks gate receipts only."
-  zh: "给 DSH 加四个会话工具的宿主插件。放弃界面与云端中转，直接调用宿主会话控制器；派会话钉死派活者模型与全权限档，停下的会话一律续投同一条不另开。终态标记只管回执，不拦续投；派单台账可查，未知会话拒投。"
+  en: "Four host-level session tools: create, message, read, list dispatches. Dispatched sessions follow the host default model or a model you name; idle sessions resume in place; receipts persist to disk and survive restarts."
+  zh: "给 DSH 加四个会话工具的宿主插件。放弃界面与云端中转，直接调用宿主会话控制器；派会话默认跟随宿主全局模型、全权限档，停下的会话一律续投同一条不另开。终态回执落盘必达；终态标记只管回执，不拦续投。"

@@ -1,0 +1,6 @@
+url: https://github.com/LPRabdusamat/dsh-gh-downloader
+name: LPRabdusamat/dsh-gh-downloader
+category: tools
+description:
+  en: Accelerated GitHub download manager for DeepSeek Harness. Adds a download panel in the sidebar and a github_download tool the agent can call to fetch GitHub files, release assets, source archives and gists through gh-proxy into the workspace, with progress, pause/resume, multi-channel link conversion and a download-history list.
+  zh: 面向 DeepSeek Harness 的 GitHub 加速下载管理插件。在侧栏提供下载管理面板，并向 Agent 提供 github_download 工具，可通过 gh-proxy 把 GitHub 文件、Release 资产、源码归档与 Gist 下载到工作区，支持进度显示、暂停续传、多通道链接转换与下载历史列表。

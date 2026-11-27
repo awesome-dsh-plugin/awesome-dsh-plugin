@@ -1,0 +1,8 @@
+url: https://github.com/JiuYue-sky/dsh-ww-auto-model-extractor
+name: JiuYue-sky/dsh-ww-auto-model-extractor
+category: tools
+tarball: https://github.com/JiuYue-sky/dsh-ww-auto-model-extractor/releases/download/v0.1.2/dsh-ww-auto-model-extractor-0.1.2.tgz
+icon: https://raw.githubusercontent.com/JiuYue-sky/dsh-ww-auto-model-extractor/main/icon.png
+description:
+  en: 'Unofficial Windows-only Wuthering Waves stylized Blender showcase and UE handoff pipeline with 5 dsh_ww_* tools and 1 bundled skill: audits texture channels, assembles an isolated Blender toon-shaded .blend with baked motions and facial shape keys without touching host preferences, and outputs a standardized UE handoff manifest.'
+  zh: '【非官方】面向 Windows 的《鸣潮》（Wuthering Waves）正式服角色风格化贴图审计、Blender 卡渲动作表情展示与标准化 UE 交接管线，提供 5 个 dsh_ww_* 工具与 1 个内置 Skill：在隔离沙盒中自动装配卡渲材质、物理飘带与面部形态键生成 .blend（不修改宿主 Blender 配置）并输出标准化 UE 交接清单。'

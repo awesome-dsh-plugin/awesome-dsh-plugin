@@ -1,0 +1,6 @@
+url: https://github.com/onup-1/dsh-github-guard
+name: onup-1/dsh-github-guard
+category: tools
+description:
+  en: 'Watches GitHub traffic and, only while GitHub is in use, probes the candidate edge addresses over TCP and TLS so a SYSTEM helper can pin the working one in the hosts file. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '监视 GitHub 流量，只在你访问 GitHub 时才用 TCP 与 TLS 探测候选边缘地址，再由 SYSTEM 助手把可用的那个钉进 hosts 文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

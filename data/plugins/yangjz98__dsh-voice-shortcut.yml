@@ -1,0 +1,6 @@
+url: https://github.com/yangjz98/dsh-voice-shortcut
+name: yangjz98/dsh-voice-shortcut
+category: voice
+description:
+  en: 'Adds a configurable keyboard shortcut to the built-in DSH voice input button — Left Alt+V starts recording and a second press stops and transcribes, and every modifier (Ctrl, Alt, Shift, Win) is matched by its left or right key. Esc closes an open voice row.'
+  zh: '给 DSH 内置的语音输入按钮加可自定义的键盘快捷键：默认左 Alt+V 开始录音、再按一次停止并识别；所有修饰键（Ctrl、Alt、Shift、Win）都区分左右；Esc 关闭已打开的语音行。'

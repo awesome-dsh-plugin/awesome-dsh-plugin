@@ -1,0 +1,7 @@
+url: https://github.com/Sakura050512/dsh-github-hub
+name: Sakura050512/dsh-github-hub
+category: git
+description:
+  en: 'Connect a GitHub account and work with it from a Settings page: browse repositories with files and a collapsible code tree, read and comment on issues and pull requests, review diffs and merge, list Actions runs with their jobs, logs, re-run and cancel, commit files through the API, and record star history with a daily report. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '连接 GitHub 账号，在设置页里看仓库与可折叠的代码树、读写 issue 与 PR、看 diff 并合并、列 Actions 运行与日志并重跑或取消、通过 API 提交文件，还会按天记录 star 历史并生成日报。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Sakura050512/dsh-github-hub/main/assets/icon-180.png

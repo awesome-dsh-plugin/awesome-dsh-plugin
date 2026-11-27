@@ -1,0 +1,7 @@
+url: https://github.com/Vladivostok1017/dsh-context-truth
+name: Vladivostok1017/dsh-context-truth
+category: usage
+description:
+  en: Injects the measured context budget into the model at the start of each turn, at every 10% boundary and near the compaction threshold, corrects a context-exhausted claim made below that threshold, and registers a /context command that injects the reading on demand.
+  zh: 在每轮第一步、每跨 10% 刻度以及临近压缩阈值时，把真实上下文用量（与自动压缩判定同一个 token 数）注入给模型；模型在阈值以下声称上下文耗尽时补一条更正；并注册 /context 命令可随时手动注入读数。
+tarball: https://github.com/Vladivostok1017/dsh-context-truth/releases/download/v1.1.1/dsh-context-truth-1.1.1.tgz

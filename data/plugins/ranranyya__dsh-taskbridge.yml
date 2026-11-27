@@ -1,0 +1,7 @@
+url: https://github.com/ranranyya/dsh-taskbridge
+name: ranranyya/dsh-taskbridge
+category: workflow
+icon: https://raw.githubusercontent.com/ranranyya/dsh-taskbridge/master/docs/assets/icon-256.png
+description:
+  en: 'Let Codex and Antigravity focus on planning and review while DeepSeek Harness runs heavy coding and test loops in isolated Git worktrees: wait silently without polling, approve out-of-sandbox calls per fingerprint, and conflict-check before syncing accepted changes back to save flagship model quota.'
+  zh: '让 Codex 与 Antigravity 专注架构规划与验收，把重度写代码和跑测试交给 DeepSeek Harness 在独立 Git worktree 中并行执行：不污染主分支、静默长等免轮询、越权调用按参数指纹逐次审批，验收通过后经冲突预检安全写回原目录，大幅节省主力模型配额。'

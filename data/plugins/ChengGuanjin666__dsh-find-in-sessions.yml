@@ -1,0 +1,6 @@
+url: https://github.com/ChengGuanjin666/dsh-find-in-sessions
+name: ChengGuanjin666/dsh-find-in-sessions
+category: session
+description:
+  en: 'Ctrl+F searches the current session and a double Ctrl tap searches every DSH session log: message text and tool output are indexed as separate partitions in a local SQLite FTS5 index, Chinese is split into two-character windows so short queries hit the index instead of scanning the table, and a hit either jumps to its message or opens a sidebar preview. The preview requires dsh-better-sidebar.'
+  zh: 'Ctrl+F 检索当前会话，双击 Ctrl 跨会话检索全部 DSH 会话日志：正文与工具输出分区写入本地 SQLite FTS5 索引，中文按两字窗口切词，短词查询走索引而不是全表扫；命中可跳到那条消息，或开右侧预览。预览需前置插件 dsh-better-sidebar。'

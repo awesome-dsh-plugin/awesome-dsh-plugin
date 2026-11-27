@@ -1,0 +1,7 @@
+url: https://github.com/lavandiI/dsh-peak-opencode
+name: lavandiI/dsh-peak-opencode
+category: usage
+description:
+  en: 'OpenCode Go rate band above the composer: the tariff that applies to the current model (peak, off-peak, flat or free), the price per million tokens for input, output and cache, and the time left until the rate changes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '输入框上方的 OpenCode Go 费率条：显示当前模型适用的费率（高峰、低谷、统一或免费）、每百万 token 的输入／输出／缓存价格，以及距离费率切换的剩余时间。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/lavandiI/dsh-peak-opencode/main/assets/icon-180.png

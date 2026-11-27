@@ -1,0 +1,7 @@
+url: https://github.com/Lroyia/dsh-book-reader
+name: Lroyia/dsh-book-reader
+category: docs
+description:
+  en: 'Local bookshelf that scans EPUB, TXT, PDF and DOCX files from a folder on your disk and reads them offline in a Harness panel, with search, sorting, grouping and saved reading progress. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '本地书架：扫描磁盘文件夹里的 EPUB / TXT / PDF / DOCX 文件，在 Harness 面板中离线阅读，支持搜索、排序、分组与阅读进度记忆。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Lroyia/dsh-book-reader/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/RACE-RACE/dsh-genshin-check
+name: RACE-RACE/dsh-genshin-check
+category: fun
+description:
+  en: Checks whether Genshin Impact is installed when a conversation starts. If it is, the assistant says a one-line cheer and launches the game; if not, it greets you with a joke line and opens the official site.
+  zh: 对话开始时检测本机是否安装《原神》；装了则喊一句「原神牛逼」并启动游戏，没装则吐槽一句并打开原神官网。

@@ -1,7 +1,7 @@
 url: https://github.com/femnn/dsh-plugin-remote-control
 name: femnn/dsh-plugin-remote-control
 category: remote
-tarball: https://github.com/femnn/dsh-plugin-remote-control/releases/download/v1.0.0/dsh-plugin-remote-control-1.0.0.tgz
+tarball: https://github.com/femnn/dsh-plugin-remote-control/releases/download/v1.0.2/dsh-plugin-remote-control-1.0.2.tgz
 description:
-  en: 'Remote control for Android phones and TVs from the DeepSeek Harness sidebar: wireless ADB auto-discovery, a live screen you can tap, AI control that lets a multimodal model look at the screen and act on its own, computer-to-device casting, device-to-device relaying, file transfer, APK install, and a multi-device group chat. Its HTTP routes are local-only and reach the devices through the host adb binary. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '在 DeepSeek Harness 侧边栏远程操控安卓手机与电视：无线 ADB 自动发现、可点击的实时画面、由多模态模型看屏幕自行决策的 AI 操控、电脑投屏到设备、设备间转串流、文件传输、APK 安装与多设备群聊。它的 HTTP 路由仅限本机，并通过宿主上的 adb 二进制访问设备。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'Remote control for Android phones, glasses and TVs from the DeepSeek Harness sidebar: wireless ADB auto-discovery with automatic reconnection, a low-bandwidth live screen you can tap, long-press and swipe (TV drags map to arrow keys), a scrcpy-based 60 fps smooth window for phones and glasses, a pop-out second screen, key buttons that differ per device type with manual screen-off/wake, AI control that lets a multimodal model look at the screen and act on it, casting, file transfer, APK install and a multi-device group chat. Its HTTP routes are local-only and reach the devices through the host adb binary.'
+  zh: '在 DeepSeek Harness 侧边栏远程操控安卓手机、眼镜与电视：无线 ADB 自动发现与断线重连、低带宽实时画面（可点按、长按、滑动，电视拖动映射为方向键）、手机与眼镜可开 scrcpy 60fps 真流畅窗口、可弹出的副屏、按设备类型区分的功能键与手动熄屏/唤醒、由多模态模型看屏幕自行决策的 AI 操控、投屏、文件传输、APK 安装与多设备群聊。它的 HTTP 路由仅限本机，并通过宿主上的 adb 二进制访问设备。'

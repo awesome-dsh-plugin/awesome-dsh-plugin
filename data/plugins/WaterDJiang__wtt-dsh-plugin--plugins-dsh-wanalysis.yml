@@ -1,0 +1,7 @@
+url: https://github.com/WaterDJiang/wtt-dsh-plugin/tree/main/plugins/dsh-wanalysis
+name: WaterDJiang/wtt-dsh-plugin#dsh-wanalysis
+category: tools
+icon: https://raw.githubusercontent.com/WaterDJiang/wtt-dsh-plugin/5996df6f7dcd49d4c343205a1d95377e1cadf84e/plugins/dsh-wanalysis/src/assets/wattter-agent.png
+description:
+  en: "Turn your chart-reading ideas and stock-screening strategies into indicators without writing code. Ask AI to mark the days when the 20-day moving average crossed above the 60-day average, then see the signals on a historical A-share chart and how the price moved afterward. A chip concentration indicator is included, and downloaded charts are available offline."
+  zh: "不用写代码，也能把自己的股票看盘想法、选股策略做成指标。比如告诉 AI「帮我标出 20 日均线上穿 60 日均线的日子」，就能在 A 股历史走势图上看看信号出现在哪天、后来股价怎么走。自带筹码集中度指标，下载过的行情断网也能看。"

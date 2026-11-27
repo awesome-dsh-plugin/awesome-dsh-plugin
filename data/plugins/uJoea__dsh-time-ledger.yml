@@ -1,0 +1,7 @@
+url: https://github.com/uJoea/dsh-time-ledger
+name: uJoea/dsh-time-ledger
+category: usage
+description:
+  en: 'A usage clock for DSH: counts time only while the window is visible and there has been input within the last 60 seconds, shows the current session and today total in a bottom-right card, and opens a calendar view with year / month / per-session breakdowns. Records are written to one local JSON file with atomic rename and never leave the machine. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: DSH 使用时长计时器：只在窗口可见且 60 秒内有过输入时累计计时，右下角卡片实时显示当前会话与今日总时长，点开是年 / 月 / 单会话的日历视图。记录写入本地单个 JSON 文件并用原子重命名保存，不向外发送。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/uJoea/dsh-time-ledger/main/icon.png
