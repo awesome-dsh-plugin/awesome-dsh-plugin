@@ -1,0 +1,7 @@
+url: https://github.com/binsonHao/dsh-llm-gateway
+name: binsonHao/dsh-llm-gateway
+category: model
+description:
+  en: Merges many OpenAI-compatible upstreams behind one local endpoint with automatic failover, supervised as a plugin.
+  zh: 把多个 OpenAI 兼容上游合并成一个本地出口，同名模型自动故障转移，由插件托管生命周期。
+icon: https://raw.githubusercontent.com/binsonHao/dsh-llm-gateway/main/assets/icon-180.png
