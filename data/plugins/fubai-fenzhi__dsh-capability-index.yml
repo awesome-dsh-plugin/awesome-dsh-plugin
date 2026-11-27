@@ -1,0 +1,6 @@
+url: https://github.com/fubai-fenzhi/dsh-capability-index
+name: fubai-fenzhi/dsh-capability-index
+category: tools
+description:
+  en: 'Capability index for DSH: one tool plus one on-demand skill that list installed plugin tools and skills by suite, so an agent picks the right plugin + skill combination.'
+  zh: 'DSH 能力索引：一个工具 + 一个按需技能，按插件套列出已安装的工具和技能，帮 agent 选对「插件 + 技能」组合。'
