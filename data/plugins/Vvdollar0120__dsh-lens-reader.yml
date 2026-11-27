@@ -1,0 +1,7 @@
+url: https://github.com/Vvdollar0120/dsh-lens-reader
+name: Vvdollar0120/dsh-lens-reader
+category: docs
+description:
+  en: 'Local document reader for DeepSeek Harness with PDF, Office, EPUB and Markdown support, selection actions, region questions, page screenshots and instruction-based editing.'
+  zh: 'DSH 里的本地文档阅读器，支持 PDF、Office、EPUB、Markdown，划词翻译/解释/总结、框选提问、页面截图与按指令编辑。'
+icon: https://raw.githubusercontent.com/Vvdollar0120/dsh-lens-reader/main/icon-512.png
