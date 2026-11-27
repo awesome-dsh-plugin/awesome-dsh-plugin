@@ -1,0 +1,6 @@
+url: https://github.com/Junlet/dsh-workflow-kit
+name: Junlet/dsh-workflow-kit
+category: workflow
+description:
+  en: 'Two workflow features in one bundle: a composer control that attaches a one-shot instruction to the next turn, and a two-way link between task-board cards and their Sessions.'
+  zh: '一个包集成两项工作流功能：在输入框旁给下一轮对话附加一次性指令；任务看板卡片与会话双向关联跳转。'
