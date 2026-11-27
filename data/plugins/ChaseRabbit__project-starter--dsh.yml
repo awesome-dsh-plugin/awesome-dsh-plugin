@@ -1,0 +1,6 @@
+url: https://github.com/ChaseRabbit/project-starter/tree/main/dsh
+name: ChaseRabbit/project-starter#dsh
+category: skill
+description:
+  en: 'Agent development project starter skill providing full-lifecycle project bootstrap and development guidelines, including requirements discussion, three approval gates, independent review and black-box testing.'
+  zh: 'agent开发：项目启动skill ，全生命周期项目启动与开发规范技能，支持需求讨论、三道门禁、独立审查与黑盒测试。'
