@@ -1,0 +1,6 @@
+url: https://github.com/ElementBen555/context-hub
+name: ElementBen555/context-hub
+category: memory
+description:
+  en: 'Long-term memory, compaction and context observability in one DSH bundle: SQLite recall with hard token budgets, reversible folding, audited governance, and a 7-language panel.'
+  zh: '把长期记忆、压缩与上下文观测装进一个 DSH bundle：SQLite 记忆与预算化召回、可逆折叠、带审计链的治理，以及 7 语言面板。'
