@@ -1640,6 +1640,7 @@ dsh plugin --profile web add dshmarket
 - [MeruSu/dsh-better-setting-page](https://github.com/MeruSu/dsh-better-setting-page) — 让 800px 的设置弹窗铺满窗口，左侧分类栏可按需收成 56px 图标列，还能隐藏你从不打开的设置页。
 - [mervin1944/dsh-version-badge](https://github.com/mervin1944/dsh-version-badge) — 侧边栏设置按钮上方的版本徽标：常驻显示当前 dsh 版本，展开可查看全部核心包版本，并支持检查 npm 更新与一键部署。
 - [mervyn-teo/dsh-plugin-collapsible-steps](https://github.com/mervyn-teo/dsh-plugin-collapsible-steps) — 把消息之间连续的工具调用与思考步骤折叠成单个可展开的括号条目。
+- [Merziller/prompt-fusion](https://github.com/Merziller/prompt-fusion) — 禾杨灵词预发布版：单按钮提示词改写、保真检查、可见失败原因、停止与撤销，共用 CLI、Skill、MCP 与 REST。
 - [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) — 右下角常驻的小鲸鱼挂件：余额、今日已用与每轮对话消耗（含峰谷价），余额预警与今日预算的泡泡内容都可编辑；泡泡点击序列模块化自定义，支持并列加权 A/B、随机台词与随机图片；内置 30+ 厂商模板（OpenAI / OpenRouter / Kimi / 硅基流动 / 方舟 / 智谱 / MiniMax 等），按模型查余额与订阅额度；另有任务结束音效、导入音频、自定义角色与资源管理。数据全在本机，无遥测。
 - [mewcoder/power-dsh](https://github.com/mewcoder/power-dsh) — DSH 桌面增强插件，提供技能/MCP 管理、全局指令、任务通知等实用功能，支持按需精简内置功能。
 - [meyaomiao/dsh-files-native](https://github.com/meyaomiao/dsh-files-native) — 接近原生的 DSH 附件：PNG/JPEG/WebP/GIF 走官方缩略图，其它文件经拖入、粘贴或回形针变成 64px 卡片；非图片落到 .dsh-uploads，发送后贴在用户气泡旁。
@@ -2867,6 +2868,7 @@ dsh plugin --profile web add dshmarket
 - [ZzimaR/dsh-yanfield](https://github.com/ZzimaR/dsh-yanfield) — DeepSeek Harness 里的长篇小说写作台：书架、三栏编辑器（目录、正文、AI 助手）、大纲、角色 / 世界观 / 伏笔资料、故事档案，以及会先给出可审阅的正文与资料改动、确认后才写入的 AI 助手。界面与 AI 提示词支持中英双语，书稿保存在本地 SQLite，模型复用 Harness 中已配置的 DeepSeek 服务。
 - [ZZJQ678/dsh-model-picker](https://github.com/ZZJQ678/dsh-model-picker) — 把聊天输入框的模型选择器换成按渠道商分组、可折叠的列表：按渠道商归组，把视觉桥镜像渠道商折叠回上游，并逐模型带上设置里声明的思考强度选项。仅在 DSH 桌面版实测，Web 版未测试。
 - [ZZR-rui-997/dsh-sidebar-quote](https://github.com/ZZR-rui-997/dsh-sidebar-quote) — 在侧栏文档预览里选中原文即可引用进输入框、批注紧跟同一行；在 Word/PPT/PDF 预览里框选一张图提出修改意见；把文件拖进侧栏直接打开；改写提示词时先找出草稿缺什么，再据此补齐，而不是换个说法。
+- [ZZR-rui-997/dsh-skill-switchboard](https://github.com/ZZR-rui-997/dsh-skill-switchboard) — 左侧栏的技能开关台：列出你自己装的技能，逐个拨动「模型调用 / 用户调用」，全文搜索技能正文，按规范检查并一键修复，直接编辑 SKILL.md，导入文件夹或 zip，在用户/通用/项目三个根之间移动，打标签，删除后还能从回收站恢复。开关写回技能 frontmatter，无需重启即生效。
 - [zzt0818/dsh-task-details](https://github.com/zzt0818/dsh-task-details) — DeepSeek Harness 任务详情侧边栏：每个已结束任务的最下方显示「查看任务详情」，点开后从右侧边栏打开可拖拽调宽的面板，列出该任务的输入文件、中间产物、输出文件、所用工具与 skill、推断出的语言、按步骤组织的流程时间线，以及模型提供方与 Token 用量、缓存命中率。
 - [zzx-dear/dsh-selection-followup](https://github.com/zzx-dear/dsh-selection-followup) — 选中聊天回复中的任意文字，浮出「追问/复制」气泡：一键把选中内容作为引用填入输入框（问题由你输入），或一键复制。另附安装与实现文档。
 - [zzy6-a/dsh-prompt-enhance](https://github.com/zzy6-a/dsh-prompt-enhance) — 在输入框的模型选择器左侧加一个星标按钮：把草稿改写成目标明确、细节完整的任务说明并就地替换，可一键撤销；提供五种改写风格，草稿含文件引用 / 命令芯片时自动置灰。
@@ -3907,6 +3909,7 @@ dsh plugin --profile web add dshmarket
 - [qaz040619/dsh-bluefatfish](https://github.com/qaz040619/dsh-bluefatfish) — DSH Web 深海皮肤：80 条明暗双值令牌、背景两层、渐变侧栏与鲸鱼娘贴纸；左上角大字标就是皮肤开关，运行中的状态文案每 6 秒轮播。
 - [qiaoshi-dot/dsh-wechat-classic-theme](https://github.com/qiaoshi-dot/dsh-wechat-classic-theme) — 微信风格浅色主题，包含深色图标栏、灰色会话列表和绿色聊天气泡。
 - [QinpanWan/dsh-sky-skin](https://github.com/QinpanWan/dsh-sky-skin) — 光遇·遇境主题皮肤：星盘之上的光之子，烛火暖金与深蓝星空双主题，为 dsh WebUI 定制。
+- [qisisiqi/dsh-sf-theme](https://github.com/qisisiqi/dsh-sf-theme) — 《少女前线》铁血工造主题：近黑绯红 HUD、伊莱莎与代理人壁纸、S.F 开屏、侧栏碑形标、首页 hero 与代码雨。
 - [quaner1234-cmd/DSH-THEME-KAMI](https://github.com/quaner1234-cmd/DSH-THEME-KAMI) — 基于 Kami 视觉风格的 DeepSeek Harness WebUI 皮肤；暖羊皮纸画布、墨蓝强调色、衬线字形与发丝线边框，提供浅色与深色两套配色。
 - [rans725/dsh-glass-ranswork](https://github.com/rans725/dsh-glass-ranswork) — DSH Web 界面的毛玻璃主题：磨砂半透明表面，可调不透明度、模糊半径与饱和度，支持氛围光与配色方案，并可设置自定义背景图片（填充、适应、拉伸、平铺、居中与裁剪），全部参数保存在设置页中。
 - [raven3005672/dsh-plugin-shell-skin](https://github.com/raven3005672/dsh-plugin-shell-skin) — 开场动画、三张内置壁纸、最多九张上传壁纸与随机轮换，以及实时生效的面板与侧边栏透明度。
@@ -5799,6 +5802,7 @@ dsh plugin --profile web add dshmarket
 - [vlln/dsh-autofork](https://github.com/vlln/dsh-autofork) — Agent 忙时自动分叉会话：新指令立刻在新会话里得到响应，旧会话留在后台跑完并把结果回注。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [vlln/dsh-better-trajectory](https://github.com/vlln/dsh-better-trajectory) — 原生轨迹的超集：一条可组合的查询（角色 / 类型 / 模型 / 步骤）、统一的四页签详情，以及逐字显示的原始日志。
 - [Voellin/dsh-deephub-share#dsh-deephub-share](https://github.com/Voellin/dsh-deephub-share/tree/main/packages/dsh-deephub-share) — 将一条 dsh 会话提炼为脱敏后的思路，端到端加密投递给 DeepHub 上的朋友；收到的思路落为一条新会话。
+- [Vonalier/dsh-global-session-search](https://github.com/Vonalier/dsh-global-session-search) — 跨所有工作区搜索 DSH 的全部历史对话与记录。
 - [walksls/dsh-degeneration-kit#auto-checkpoint](https://github.com/walksls/dsh-degeneration-kit/tree/main/auto-checkpoint) — 压缩前先落档：会话接近 token 阈值时先要求模型把项目状态写进工作区的检查点文件，再按需开新会话接力、把旧会话停用。落档必须写于本次压缩周期内，且「这一轮定下的结论」那节正文确实变了——旧档、或用 cat 追加一行刷时间戳的档都过不了关。
 - [wangkohan/dsh-composer-draft-keeper](https://github.com/wangkohan/dsh-composer-draft-keeper) — 把未发送的文本草稿按会话存在本机，切会话、切页面、乃至重启应用之后回来仍在；已经发出或主动清空的草稿不会回灌。
 - [WangLemna/dsh-recycle-bin](https://github.com/WangLemna/dsh-recycle-bin) — 把 DSH 会话删入可恢复的回收站——子会话随其父会话作为一棵树处理，支持批量归档、恢复与彻底删除，只有彻底清除才会真正销毁数据。
@@ -10702,6 +10706,7 @@ dsh plugin --profile web add dshmarket
 - [spheritier/dsh-plugin-bulk-update](https://github.com/spheritier/dsh-plugin-bulk-update) — 检查已安装的 DSH registry 插件是否有兼容更新，并选择要应用的版本。
 - [SpookyWaste/dsh-plan-compact-execute](https://github.com/SpookyWaste/dsh-plan-compact-execute) — 在 DSH Web 的计划审批卡上增加「压缩后执行」：先把计划提交之前的历史压成检查点，再批准计划。
 - [SPYfighting/dsh-science-plugin](https://github.com/SPYfighting/dsh-science-plugin) — 在科研工作台中整理论文研究问题、目标结果及支持证据，并向专业子代理分派任务。
+- [SPYfighting/dsh-science-review](https://github.com/SPYfighting/dsh-science-review) — 对照用户要求、工具执行记录和交付文件，审查科研与日常任务的回答，并在原回答下展示问题和证据原文。
 - [squirrel20/dsh-cron](https://github.com/squirrel20/dsh-cron) — 宿主侧无人值守定时任务：按 cron 表达式、固定间隔或一次性时点运行一次性 agent 任务或 shell 命令，调度状态持久化（至多一次语义），支持重叠/错过策略与有界运行历史。
 - [SShiRkiT/dsh-orchestrator](https://github.com/SShiRkiT/dsh-orchestrator) — 面向 DeepSeek Harness本地研发会话的主从编排(Orchestrator)插件：用硬门禁让主代理专心负责理解需求、拆分任务、后台定时巡检与最终验收，让子代理在隔离环境里并行承担具体施工。改前防撞车，交工查账单丨热重载不断联，冷重启可对账丨支持并行 delegate、多阶段批量 orchestrate 流水线。
 - [SSHOOTING/dsh-plugin-skill-distiller](https://github.com/SSHOOTING/dsh-plugin-skill-distiller) — 从成功任务提炼可复用技能草稿，附适用条件与最小测试。
