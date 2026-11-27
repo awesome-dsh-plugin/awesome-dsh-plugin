@@ -1,0 +1,6 @@
+url: https://github.com/atorber/dsh-connect-godagent
+name: atorber/dsh-connect-godagent
+category: model
+description:
+  en: 'Connects God Agent / gptgod to DSH: reuses the desktop app login from the macOS Keychain (rotating the refresh token safely so the app stays signed in), auto-creates one API key per rate group, and exposes every chat model of all enabled groups as OpenAI-compatible providers with real prices folded into the model picker names (official USD or credit pricing times the group multiplier, cheapest group first). Ships a settings card for enabling groups, model allowlist and API key, rebuilds the catalog on a timer and on config change, and streams with reasoning-effort support.'
+  zh: '把 God Agent（gptgod）接入 DSH：复用桌面端登录态（macOS Keychain 里的 refresh token，安全轮换不影响 App 登录），按费率分组自动创建 API Key，把各分组的全部聊天模型以 OpenAI 兼容接口接入，模型选择器名称里直接显示折算后的真实费率（官方美元价或积分价 × 分组倍率，便宜分组排前面）。自带设置页（分组开关、模型白名单、API Key），目录定时与配置变更时自动重建，支持推理档位流式输出。'
