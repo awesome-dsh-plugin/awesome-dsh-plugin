@@ -1,5 +1,5 @@
-url: https://github.com/GuyeQiuchen/dsh-fish-memory
-name: GuyeQiuchen/dsh-fish-memory
+url: https://github.com/GuyeQiuchen/dsh-jiyiti-memory
+name: GuyeQiuchen/dsh-jiyiti-memory
 category: memory
 description:
   en: 'Compact long-term memory for DeepSeek Harness: a short boot block, details retrieved on demand, writes through tools. House rules get their own budget, and after compaction it checks which constraints were lost and warns at the start of the next turn. Mood and tidy reminders plus a self-wake mechanism, all modular and removable.'
