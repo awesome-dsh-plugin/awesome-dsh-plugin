@@ -6705,6 +6705,7 @@ dsh plugin --profile web add dshmarket
 - [amd47802574/dsh-agents-editor](https://github.com/amd47802574/dsh-agents-editor) — 在设置面板里直接查看和编辑宿主全局规则文件 ~/.dsh/AGENTS.md 的可视化编辑器：Ctrl+S 保存并自动备份、外部修改冲突检测（409 提示）、备份预览与一键恢复。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Ame-Choo/dsh-study-coach](https://github.com/Ame-Choo/dsh-study-coach) — DSH 的学习教练：把一门课拆成知识地图（大类 / 模块 / 最小单元），逐单元记六档掌握度，按资料索引排每日任务，带错题本与记忆卡，并自带一个网页面板。
 - [AMeYunCloud/renpy-toolkit](https://github.com/AMeYunCloud/renpy-toolkit) — Ren'Py 汉化工具集：为只有 .rpyc 的成品游戏生成完整翻译骨架，移植旧译本并校验译文。
+- [AMindFlow/dsh-search-chain](https://github.com/AMindFlow/dsh-search-chain) — 有序多厂商搜索降级链：按保存顺序逐个尝试、失败或无结果才降级，把各厂商免费额度聚合为一个高额度、始终可用的 web_search，支持条目级代理出站与 PAC 沙箱。
 - [Andyfree-98/dsh-checkin-workbuddy](https://github.com/Andyfree-98/dsh-checkin-workbuddy) — 常驻输入框工具行的 WorkBuddy 每日签到按钮，一键调用 dsh-connect-workbuddy 的签到路由为当前选中账号签到，并在按钮旁显示结果：已签到、签到成功加分或连签天数。已签状态通过本地日期戳跨会话保留，加载时与上游状态对账，跨天后自动复位。
 - [angelky7/dsh-origin-bridge](https://github.com/angelky7/dsh-origin-bridge) — 通过 27 个 MCP 工具在对话里驱动本机 Origin/OriginPro：导入 .dat/.csv/.txt 与 CHI 工作站 .bin，绘图、改样式、拟合，交付 PNG/TIF/SVG/PDF 图片和可继续编辑的 .opju 工程；绘图、样式、导出都带读回验证。需要 Windows、Origin/OriginPro 2021+ 与 Python 3.10+，并把 `pip install originpro numpy` 装进 dsh 启动的那个解释器：缺包时每个工具都会返回 `missing_originpro`，PATH 上没有解释器时工具完全不注册。
 - [angelomadara/dsh-plugin-jira](https://github.com/angelomadara/dsh-plugin-jira) — DSH 的 Jira 集成：设置页保存站点、邮箱和 API token，/jira-do 拉取工单并为智能体建分支，/jira-comment 发表评论或总结分支改动，jira_ticket 与 jira_comment 工具可读写工单。
@@ -7227,6 +7228,7 @@ dsh plugin --profile web add dshmarket
 - [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) — 将 DSH 连接到本机 Beav，面向小红书（RED/RedNote）、社交媒体运营和自媒体 AI 创作，覆盖选题研究、知识库、文案、图片、音频与短视频工作流，并保留审批和产物追踪。
 - [James-web11/dsh-matlab-mcp](https://github.com/James-web11/dsh-matlab-mcp) — 把 MathWorks MATLAB/Simulink MCP 服务器注册进 dsh profile，让会话获得 mcp__matlab__* 工具，用于运行 MATLAB 代码以及读取、编辑与测试 Simulink 模型。
 - [janehk416-alt/dsh-FocusCapture](https://github.com/janehk416-alt/dsh-FocusCapture) — Windows 截图与标注插件，支持自定义全局快捷键、置顶贴图和添加到当前 DSH 聊天附件草稿；需要兼容的 Python 运行环境。随包带有预编译的 Windows 可执行文件（native/DualCtrlSnip.exe）和一个只轮询所选快捷键状态的 Python 辅助程序。
+- [Jason-KK-kk/dsh-db-lens](https://github.com/Jason-KK-kk/dsh-db-lens) — 给 DSH agent 的只读、限量、留痕查数窗口（SQLite/MySQL/PostgreSQL），含 schema 树、可排序结果表、CSV 导出与须人确认的自然语言问数。
 - [Jason25417/dsh-external-bridge](https://github.com/Jason25417/dsh-external-bridge) — 只在 127.0.0.1:39217 监听的本机 HTTP 桥（Host 半插件），用 0600 落盘的 Bearer token 鉴权：外部进程可创建出现在工作区侧栏的真会话、发消息（queue/steer）、读状态与最后一条助手回复、列工作区/会话，并长轮询到回合结束。零运行时依赖，端口固定，不联网，日志不记消息正文。
 - [Jaylor-Wang/dsh-tool-ast-grep](https://github.com/Jaylor-Wang/dsh-tool-ast-grep) — 基于 ast-grep 的语法级 AST 代码结构检索与大纲提取工具。
 - [Jaylor-Wang/dsh-tool-lsp](https://github.com/Jaylor-Wang/dsh-tool-lsp) — DeepSeek Harness 的通用 LSP 工具面，提供语言服务器诊断、格式化、重命名、代码动作与符号导航。
@@ -11105,6 +11107,7 @@ dsh plugin --profile web add dshmarket
 - [Sycada/dsh-git-connector](https://github.com/Sycada/dsh-git-connector) — DeepSeek Harness 的 Git 仓库连接：按档案名操作仓库（clone/fetch/pull/push/commit）、Gitea/Forgejo/GitHub API、密钥存 DSH 凭据中心，并按仓库单独授权忽略证书/允许覆盖/force push 等危险开关。
 - [tangyixiao/dsh-pr-release-workspace](https://github.com/tangyixiao/dsh-pr-release-workspace) — 在 DSH 中只读查看 GitHub 拉取请求与发布状态，浏览差异、评论和 CI 检查，并保存本地评审草稿。所有 GitHub 读取都经由 GitHub CLI，需先安装并执行 gh auth login 登录。 0.1.8 要求 DSH >=0.2.2-rc.1 <0.3.0-0 且提供同步 connection.requestRejection 与 connection.admit API，仅已认证 owner 可使用宿主 GitHub 会话或本地草稿；缺方法、异常、无效或异步返回均拒绝。 0.1.9 已在 DSH 0.2.2-rc.5 验证。
 - [Tanjintao2/dsh-version-history](https://github.com/Tanjintao2/dsh-version-history) — 本地 git 仓库的侧边栏面板：按标签列出每个版本的改动文件与提交，旁边一栏是磁盘健康与 SMART，能用局域网 Smart HTTP 分享裸仓库，还有一张把仓库绑定到 GitHub 一键推送的卡片。展示的数据来自用户自己 PowerShell 脚本生成的快照，插件提供面板与调用这些脚本的路由。
+- [Thomas-zz/dsh-worktree-desk](https://github.com/Thomas-zz/dsh-worktree-desk) — 在 DSH 侧栏只读总览本机的全部 Git 工作树，按仓库分组：状态、未推送和落后数、未提交与未推送改动的就地差异、本地分支，以及匹配到的 Codex / ZCode / DSH 会话；获取、拉取、推送和 AI 代码审查都只在你触发之后才执行。
 - [TiChuXiXi/dsh-git-vcs](https://github.com/TiChuXiXi/dsh-git-vcs) — 右侧栏的 IDEA 风格 Git 面板：本地变更与按文件勾选提交、提交树与提交详情、分支 / 远程 / 贮藏管理、带凭据兜底的推送，以及 git 命令流水，全部通过原生 git CLI 执行。
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — 把 agent 的每次写入、编辑和 shell `rm` 删除记录进一个 shadow git 仓库，然后在 VS Code 里逐 hunk 接受或撤回。需要配合 dsh-review-vscode 扩展；面板只出现在 VS Code 的 webview 里，独立浏览器中的对话界面不变。
 - [TristGek/dsh-github-tool](https://github.com/TristGek/dsh-github-tool) — 侧栏里的 GitHub 工作区：用个人访问令牌登录并保持登录，浏览最近 7 天 star 最多的新公开仓库、搜索仓库，并在插件内打开带 Code/Issues 标签、分支切换、克隆地址、文件与 README 视图和 Star 的仓库页。
@@ -11913,7 +11916,7 @@ dsh plugin --profile web add dshmarket
 - [k0ndrateff/dsh-plugins#sentry](https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/sentry) — 把 Sentry 接进 DeepSeek Harness：提供 Sentry MCP 服务器的工具、结果卡片，以及可解决、忽略与指派的问题面板。
 - [kaine380/dsh-mcp-unified-panel](https://github.com/kaine380/dsh-mcp-unified-panel) — 一站式 MCP 与技能管理中心，支持特征识别与原生 OAuth 2.1 浏览器鉴权。
 - [kanneiren/dsh-network-settings](https://github.com/kanneiren/dsh-network-settings) — 可视化 DSH 进程在 Windows 或 WSL 上的网络链路（DNS/TCP/TLS/HTTP 分层探测），检测失效的代理配置，并提供带快照回滚的安全修复。
-- [kasshuang/dsh-plugin-profile-sync](https://github.com/kasshuang/dsh-plugin-profile-sync) — 通过私有 GitHub 仓库或同步文件夹，在多台机器之间同步已装插件列表与白名单内的插件设置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [kasshuang/dsh-plugin-profile-sync](https://github.com/kasshuang/dsh-plugin-profile-sync) — 通过私有 GitHub 仓库或同步文件夹，在多台机器之间同步已装插件列表与白名单内的插件设置。
 - [KDreamelf/dsh-phoenix](https://github.com/KDreamelf/dsh-phoenix) — 进程内崩溃兜底：接管本该让 DSH 退出的致命错误处理器，从栈里认出是哪个插件，只在 home 层停用那一行——profile 与里面的供应商配置一个字节都不写。崩溃页给出恢复、保持禁用、卸载三个选择；认不出是谁时，开一个临时的安全模式会话（仅命令行与 web 启动）。
 - [kelvin0304ykx-coder/dsh-task-readiness](https://github.com/kelvin0304ykx-coder/dsh-task-readiness) — 开工前检查当前会话能否真正执行一项任务：本轮工具准入、模型路由、工作区写入边界、文档引擎与 MCP 可见性，逐项给出状态与依据；可选最小探测，并在经批准的处理后复检。
 - [kennethfan/dsh-sandbox-tune](https://github.com/kennethfan/dsh-sandbox-tune) — 让构建命令直接在 DSH 沙箱内跑通，不再每次申请提权：把纯缓存（GOCACHE、NPM_CONFIG_CACHE、BUN_INSTALL_CACHE_DIR、PIP_CACHE_DIR）重定向到临时目录，或原地授权真实缓存目录以与终端共用。依赖仓库（GOMODCACHE、CARGO_HOME）永不重定向，只做授权。另提供可选的用户目录授权（~/.config 等，默认全关）与命令白名单：支持逐字符匹配，或按 &&、||、;、| 拆段后逐段匹配，写文件的重定向（fd 复制如 2>&1 与 /dev/null 除外）、命令替换与后台执行一律拒绝。配置支持按 profile 或按会话生效，改配置文件无需重启。
