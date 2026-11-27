@@ -1,0 +1,5 @@
+url: https://github.com/Nolitor/dsh-a2ui-plus
+name: Nolitor/dsh-a2ui-plus
+category: ui
+description:
+  en: Renders A2UI 1.0 surfaces as a live conversation card and a persistent sidebar tab from one shared state store, with real-time deltas and a single dispatch path so a click repeated in both views reaches the agent once.
