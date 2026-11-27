@@ -1,0 +1,6 @@
+url: https://github.com/Hakuno410/dsh-snip
+name: Hakuno410/dsh-snip
+category: ui
+description:
+  en: 'Press Alt+A on Windows to capture the screen, drag a rectangle over the frozen image shown inside the DSH window, and the crop lands in the composer as a draft attachment. The capture runs in a background PowerShell helper that opens no window of its own, and the paste goes through DSH''s own file intake.'
+  zh: 按下 Alt+A 截整屏，DSH 窗口里显示缩放后的整屏视图，拖框裁剪，裁好的图直接变成输入框里的草稿附件。抓屏由一个不显示任何窗口的 PowerShell 助手完成，粘贴走 DSH 自己的文件摄取入口。仅 Windows 桌面版。
