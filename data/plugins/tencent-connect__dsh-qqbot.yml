@@ -1,0 +1,6 @@
+url: https://github.com/tencent-connect/dsh-qqbot
+name: tencent-connect/dsh-qqbot
+category: remote
+description:
+  en: 'QQ official channel for DeepSeek Harness, by the QQ open platform team: bind your bot with one QR scan, then chat with your agent in QQ direct and group chats — streaming replies in direct chat, @-mention triggering in groups, per-type access control, and no re-binding on restart.'
+  zh: 'QQ 官方 DeepSeek Harness 通道插件（QQ 开放平台团队出品）：扫码一次绑定机器人，即可在 QQ 私聊和群聊中与 agent 对话——私聊流式回复、群聊 @ 触发、分类型访问控制，重启免扫码。'
