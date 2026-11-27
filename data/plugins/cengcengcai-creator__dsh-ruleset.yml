@@ -2,5 +2,5 @@ url: https://github.com/cengcengcai-creator/dsh-ruleset
 name: cengcengcai-creator/dsh-ruleset
 category: security
 description:
-  en: "Audit whether an agent actually follows your AGENTS.md-style rules: 15 predicates evaluated over native DSH events, a pre-execute approval gate for red lines, per-finding false-positive triage, and baseline significance so a noisy day does not read as a regression."
-  zh: "审计 agent 是否真的遵守 AGENTS.md 式规则：15 类判据基于 DSH 原生事件、红线在执行前弹审批、发现级误报标记、与基线做显著性比较（噪声大的日子不等于变差）。"
+  en: "Audit whether an agent actually follows your AGENTS.md-style rules: 20 predicate types evaluated over native DSH events, a pre-execute approval gate for red lines, per-finding false-positive triage, baseline significance so a noisy day does not read as a regression, and rule-authoring advice (is the predicate evaluable before work starts?) with one-click fixes. On npm as dsh-ruleset."
+  zh: "审计 agent 是否真的遵守 AGENTS.md 式规则：20 类判据基于 DSH 原生事件、红线在执行前弹审批、发现级误报标记、与基线做显著性比较（噪声大的日子不等于变差），并对规则本身给制定建议（判据能否开工前求值）支持一键采纳。已发布 npm：dsh-ruleset。"
