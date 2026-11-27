@@ -1,0 +1,7 @@
+url: https://github.com/unknown3310v0/dsh-share-html
+name: unknown3310v0/dsh-share-html
+category: session
+description:
+  en: Export a DSH session as one self-contained offline HTML file that looks like the original conversation.
+  zh: 把 DSH 会话导出为单个离线自包含 HTML 文件，观感与原会话一致。
+tarball: https://github.com/unknown3310v0/dsh-share-html/releases/download/v0.1.0/dsh-share-html-0.1.0.tgz
