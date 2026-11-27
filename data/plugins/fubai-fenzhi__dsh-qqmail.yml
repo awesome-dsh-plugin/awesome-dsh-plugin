@@ -1,0 +1,6 @@
+url: https://github.com/fubai-fenzhi/dsh-qqmail
+name: fubai-fenzhi/dsh-qqmail
+category: tools
+description:
+  en: 'Manage a QQ mailbox from DSH over IMAP/SMTP: list, read, search, file by rule, mark read, deduplicate, and send, with a dry-run before every bulk action.'
+  zh: '在 DSH 里通过 IMAP/SMTP 管理 QQ 邮箱：查看、搜索、按规则归档、标记已读、去重和发信，批量操作一律先预览。'
