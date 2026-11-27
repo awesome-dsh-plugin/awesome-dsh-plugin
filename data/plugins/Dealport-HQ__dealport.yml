@@ -1,0 +1,7 @@
+url: https://github.com/Dealport-HQ/dealport
+name: Dealport-HQ/dealport
+category: tools
+icon: https://raw.githubusercontent.com/Dealport-HQ/dealport/v0.1.6/plugin/assets/icon.png
+description:
+  en: 'SMB knowledge layer for agents: size markets for $0.00 with preview_companies, open cited Records across 28M+ US private companies and commercial buildings, score Projects and Playbooks, resolve verified human owners, and request double-opt-in introductions via Avery (Dealport''s AI outreach specialist, who always discloses she is an AI). Ships the dealport skill plus a Streamable HTTP MCP row disabled until DP_API_KEY is set.'
+  zh: '面向 Agent 的美国中小企业知识层：通过 preview_companies 免费（$0.00）测算市场规模，查阅 2800 万家以上美国私营企业与商业楼宇的公开备案溯源 Record，管理 Project 与 Playbook 评分，解析经核验的企业主联系方式，并通过 Avery（始终声明 AI 身份的 Dealport AI 外联专员）发起双重确认引荐。内置 dealport 技能，Streamable HTTP MCP 行在设置 DP_API_KEY 前保持禁用。'
