@@ -1,0 +1,6 @@
+url: https://github.com/holderlink/fishclick
+name: holderlink/fishclick
+category: tools
+description:
+  en: Capture a window's client area and click the same client-relative pixel coordinates, with optional UI Automation control clicks.
+  zh: 按窗口客户区截图，并用同一套客户区像素坐标点击，可选按 UI Automation 控件名点击。
