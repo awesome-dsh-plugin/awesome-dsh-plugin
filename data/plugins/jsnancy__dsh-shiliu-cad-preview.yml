@@ -1,0 +1,6 @@
+url: https://github.com/jsnancy/dsh-shiliu-cad-preview
+name: jsnancy/dsh-shiliu-cad-preview
+category: tools
+description:
+  en: 'In-app CAD viewer and editor: open DWG/DXF drawings, zoom, pan, pick a segment, delete and export as PNG, with parsing and rendering powered by shiliu-cad-core.'
+  zh: '在 DSH 里直接查看和编辑 CAD 图纸：打开 DWG/DXF、滚轮缩放、拖动平移、单击拾取线段、删除与撤销、导出 PNG，解析与渲染由 shiliu-cad-core 提供。'
