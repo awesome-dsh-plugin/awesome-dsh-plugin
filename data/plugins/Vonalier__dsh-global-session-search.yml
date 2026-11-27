@@ -1,0 +1,7 @@
+url: https://github.com/Vonalier/dsh-global-session-search
+name: Vonalier/dsh-global-session-search
+category: session
+description:
+  en: Search every DSH conversation across all workspaces and all records.
+  zh: 跨所有工作区搜索 DSH 的全部历史对话与记录。
+icon: https://raw.githubusercontent.com/Vonalier/dsh-global-session-search/main/assets/icon-180.png
