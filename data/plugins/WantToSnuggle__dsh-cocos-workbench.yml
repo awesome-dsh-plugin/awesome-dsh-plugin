@@ -1,0 +1,6 @@
+url: https://github.com/WantToSnuggle/dsh-cocos-workbench
+name: WantToSnuggle/dsh-cocos-workbench
+category: dev
+description:
+  en: Drives Cocos Creator 4 projects inside DSH — project scaffold, async build, local preview, scene tools and a right-side workbench.
+  zh: 在 DSH 里驱动 Cocos Creator 4 项目——建项目、异步构建、本地预览、场景工具与右侧栏工作台。
