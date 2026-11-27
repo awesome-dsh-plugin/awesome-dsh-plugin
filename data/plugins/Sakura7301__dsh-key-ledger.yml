@@ -1,0 +1,6 @@
+url: https://github.com/Sakura7301/dsh-key-ledger
+name: Sakura7301/dsh-key-ledger
+category: security
+description:
+  en: "One ledger for every credential on the machine — credential-store keys, authorization records, environment variables, .env entries, SSH keys, certificates, JSON tokens and plaintext config secrets — showing which plugins, skills and sessions used each one and how often, with usage statistics, a first-run scan of existing non-archived sessions, and a single audited vault tool that agents must use."
+  zh: "把本机散落的密钥与凭据（credential store 键、授权记录、环境变量、.env、SSH 私钥、证书、JSON token、明文配置）收拢成一本账，显示每条被哪些插件、技能、会话用过、用了几次，带使用统计与首次安装自动扫描（跳过归档会话），并给 agent 一个统一、留痕的 vault 取用入口。"
