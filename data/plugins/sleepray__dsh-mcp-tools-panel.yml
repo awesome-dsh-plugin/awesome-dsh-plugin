@@ -1,0 +1,6 @@
+url: https://github.com/sleepray/dsh-mcp-tools-panel
+name: sleepray/dsh-mcp-tools-panel
+category: tools
+description:
+  en: Lists every MCP server connection in the left sidebar with one switch per connection, toggling the same Loader entries the plugin manager toggles.
+  zh: 在左侧栏列出当前 profile 的所有 MCP 服务器连接，每条连接一个开关，切换的是插件管理器同一条 Loader 条目。
