@@ -2,5 +2,5 @@ url: https://github.com/weedlu/dsh-browser-element-picker
 name: weedlu/dsh-browser-element-picker
 category: browser
 description:
-  en: Adds a crosshair to the Desktop built-in Browser toolbar that inserts the clicked element's selector, text, HTML, and React source location into the composer for the agent.
-  zh: 在 Desktop 内置浏览器工具栏加一个十字准星，把点选元素的选择器、文本、HTML 和 React 源码位置填入输入框交给 Agent。
+  en: Adds a crosshair to the Desktop built-in Browser toolbar that inserts the clicked element's page, CSS selector, attributes, and HTML into the composer for the agent.
+  zh: 在 Desktop 内置浏览器工具栏加一个十字准星，把点选元素的页面、CSS 选择器、属性和 HTML 填入输入框交给 Agent。
