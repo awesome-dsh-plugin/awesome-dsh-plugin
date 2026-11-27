@@ -1,0 +1,6 @@
+url: https://github.com/forxiucn/secops-reporter
+name: forxiucn/secops-reporter
+category: security
+description:
+  en: Renders a structured security-incident ledger into one self-contained, bilingual (EN/中文) Bitrise-style HTML report with an in-page language switch, a customizable top-left logo, and a settings entry that can also surface in the sidebar.
+  zh: 把结构化的安全事件台账渲染成单个自包含的中英双语 Bitrise 风格 HTML 报告，页内可切换语言，左上角 logo 可自定义，默认入口在「设置」，可选出现在左侧菜单。
