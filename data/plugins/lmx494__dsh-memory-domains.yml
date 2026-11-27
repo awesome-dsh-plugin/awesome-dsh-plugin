@@ -1,0 +1,7 @@
+ url: https://github.com/lmx494/dsh-memory-domains
+   name: lmx494/dsh-memory-domains
+   category: memory
+   description:
+     en: 'Human-curated agent memory library: domains and a global store distilled from session trajectories — AI draf
+   ts, humans approve before anything enters the knowledge base.'
+     zh: '人审策展的 agent 记忆库：从会话轨迹提炼领域与全局知识库，AI 起草、人审入库，agent 按需检索。'
