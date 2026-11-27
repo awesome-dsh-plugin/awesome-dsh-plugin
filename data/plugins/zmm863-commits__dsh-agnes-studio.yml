@@ -2,5 +2,5 @@ url: https://github.com/zmm863-commits/dsh-agnes-studio
 name: zmm863-commits/dsh-agnes-studio
 category: tools
 description:
-  en: 'Film and video studio for the DSH web GUI — text-to-image, text-to-video, short-drama pipeline (story, script, storyboard, per-shot video, merged cut), narration video with burned subtitles, novel covers, video-to-prompt analysis, local media library with ffprobe tagging, lyric alignment and a ComfyUI bridge, with Oh Story writing skills bundled.'
-  zh: '泡泡猫的影视工具 — DSH 内的影视创作工作站：文生图、文生视频、短剧流水线（故事/剧本/分镜/逐镜出片/合成）、数字人口播（烧中文字幕）、小说封面、视频反解提示词、本地素材库（ffprobe 打标）、歌词对齐与 ComfyUI 接入，并内置 Oh Story 写作技能。'
+  en: Film and video studio for the DSH web GUI — text-to-image, text-to-video, short-drama pipeline (story, script, storyboard, per-shot video, merged cut), narration video with burned subtitles, novel covers, video-to-prompt analysis, local media library with ffprobe tagging, lyric alignment and a ComfyUI bridge, with Oh Story writing skills bundled. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 泡泡猫的影视工具 — DSH 内的影视创作工作站：文生图、文生视频、短剧流水线（故事/剧本/分镜/逐镜出片/合成）、数字人口播（烧中文字幕）、小说封面、视频反解提示词、本地素材库（ffprobe 打标）、歌词对齐与 ComfyUI 接入，并内置 Oh Story 写作技能。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
