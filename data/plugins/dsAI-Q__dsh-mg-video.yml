@@ -1,0 +1,6 @@
+url: https://github.com/dsAI-Q/dsh-mg-video
+name: dsAI-Q/dsh-mg-video
+category: workflow
+description:
+  en: Renders motion-graphics videos from a JSON manifest with Pillow frames and ffmpeg, shipping nine card templates, five transitions, screenshot callout annotations for screen recordings, and procedurally synthesized audio.
+  zh: 用 JSON 清单渲染 MG 动画视频：九个卡片模板、五种转场、面向录屏的截图标注、程序化合成音轨，逐帧渲染后由 ffmpeg 编码。
