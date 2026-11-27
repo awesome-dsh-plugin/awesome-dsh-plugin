@@ -2,5 +2,5 @@ url: https://github.com/Maybe-Zero-not-one/dsh-daily-backup
 name: Maybe-Zero-not-one/dsh-daily-backup
 category: session
 description:
-  en: 'Copy sessions, personas, memory, and app state to a folder outside every workspace once a day, keep the last N days, browse and delete a day from the Backup panel in the left sidebar, and push each day''s copy to OpenList or WebDAV. The Backup panel lists every file per day, and its second tab edits the netdisk settings without hand-editing the profile.'
-  zh: '每天把会话本体、索引、人设、记忆、应用状态各留一份到工作区外，只保留最近 N 天。左侧栏「备份」页里能看每天备了哪些文件、能删掉某一天、能立刻拍一版；第二个页签「网盘推送」直接配 OpenList / WebDAV，每天备份完自动推一份异地副本，不必手改 profile。'
+  en: 'Copy sessions, personas, memory, and app state to a folder outside every workspace once a day, keep the last N days, browse and delete a day from the Backup panel in the left sidebar, and push each day''s copy to your own OpenList or WebDAV storage. The Backup panel lists every file per day, and its second tab edits the netdisk settings without hand-editing the profile. Persona cards come from dsh-soul-md; memory comes from dsh-soul-md (per persona card) and dsh-fish-memory (per session) — this plugin only copies them, it does not create that data. Everything stays on your machine or your own storage.'
+  zh: '每天把会话本体、索引、人设、记忆、应用状态各留一份到工作区外，只保留最近 N 天。左侧栏「备份」页里能看每天备了哪些文件、能删掉某一天、能立刻拍一版；第二个页签「网盘推送」直接配 OpenList / WebDAV，每天备份完自动推一份异地副本，不必手改 profile。人设卡来自 dsh-soul-md，记忆来自 dsh-soul-md（按人设卡）和 dsh-fish-memory（按会话）——本插件只负责抄一份，不生产这些数据。备份只落在本机或你自己的网盘，不上传第三方。'
