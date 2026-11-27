@@ -1,0 +1,6 @@
+url: https://github.com/mayufeng2595/dsh-commit-plugin
+name: mayufeng2595/dsh-commit-plugin
+category: git
+description:
+  en: 'IDEA-style Git commit panel for DeepSeek Harness: per-file diff, selective commit, pull, push, fetch, merge, rebase, branch switching, and remote management with credential validation.'
+  zh: 'IDEA 风格 Git 提交面板：逐文件 diff、勾选提交、pull、push、fetch、merge、rebase、分支切换，以及带凭据校验的远程管理。'
