@@ -3200,6 +3200,7 @@ dsh plugin --profile web add dshmarket
 - [JinShuXuan/dsh-context-budget](https://github.com/JinShuXuan/dsh-context-budget) — 每步上下文账本：量化每步重发量，并提供三个可单独开关的闸门——按 schema 体积裁工具表、长结果外置、重复读回指针。 作者 A/B 实测，工具表闸门省首步 16,110 token（-49.7%），长会话每步上下文约降 23%。 v0.3.1 新增只读 /budget-doctor 自检、spill 索引维护与增速预测。
 - [dsh-token-panorama](https://github.com/jiuwu02/dsh-token-panorama) — 看清每个会话的 token 去向：累计总量、缓存命中率、峰谷分时成本、日历热力图、趋势曲线、模型与工作区分布，以及展开展示子代理的会话树，支持 CSV / JSON 导出。另带上下文清理 / 压缩按钮与提示词优化按钮。
 - [jkStars/dsh-token-usage-stats](https://github.com/jkStars/dsh-token-usage-stats) — 仿 DeepSeek 官方 Token 统计，跨会话 Token 消耗、请求次数与峰谷分时费用统计看板。
+- [JoblessJoe/deep-toolbox](https://github.com/JoblessJoe/deep-toolbox) — 工具用量与启动成本：在插件页新增标签，显示智能体调用了哪些工具、哪些经常出错，以及每个工具定义（内置、插件或 MCP 服务器）在每次请求中占用多少 token，附启动上下文图和该关掉哪些工具的通俗建议；只读的 toolbox_report 智能体工具提供同样的数据。在本机读取 dsh 会话日志，无钩子。
 - [Jockjrop/dsh-usage-stats](https://github.com/Jockjrop/dsh-usage-stats) — 在 DSH 桌面端看清每一次请求的 Token、费用与速度，按模型和供应商汇总花费，统一同一模型的不同名称，核对余额并比较模型实际表现。
 - [Jolly-J/dsh-deepseek-billing](https://github.com/Jolly-J/dsh-deepseek-billing) — 侧边栏底部 DeepSeek 账户余额显示与会话费用估算卡片。
 - [JonyChan1350/dsh-llm-balance](https://github.com/JonyChan1350/dsh-llm-balance) — 聊天输入框下方显示多个 LLM API 账户余额，内置 DeepSeek、OpenRouter、SiliconFlow 预设。
@@ -4499,6 +4500,7 @@ dsh plugin --profile web add dshmarket
 - [Modellix/dsh-modellix](https://github.com/Modellix/dsh-modellix) — 将 Modellix 接入 DSH：使用一个 API Key 在分栏 Design 工作区中提供基于 Schema 的图片、视频与音频生成、实时 LLM 模型目录，以及原生网页搜索与抓取 Provider。
 - [MoJIeAIGC/dsh-mojie-model-provider](https://github.com/MoJIeAIGC/dsh-mojie-model-provider) — 把 Mojie（mojieaigc.com）接入 DSH 的模型提供商，模型出现在模型下拉里，并注册原生图片工具与 /image 命令，用于生成与编辑图片。
 - [MoonlitDropOfBlood/dsh-model-prompt-injector](https://github.com/MoonlitDropOfBlood/dsh-model-prompt-injector) — DSH 按模型注入系统提示词：为本地已配置的模型把自定义提示词追加到系统提示词末尾，支持 provider/model 精确匹配与 provider/* 服务商级通配（两者按序叠加）。设置页自动列出每个已配置服务商及其模型，逐行编辑、即时生效；规则持久化保存、重启不丢；对主会话、subagent 与 workflow 子代理同样生效。
+- [moqiaoduo/dsh-qianwen](https://github.com/moqiaoduo/dsh-qianwen) — 把 platform.qianwenai.com 接入 DSH：Token Plan 与按量付费双通道、模型目录与定价、Credits 额度查询与思考模式控制。
 - [MoRanYue/dsh-openrouter-providers](https://github.com/MoRanYue/dsh-openrouter-providers) — 配置 OpenRouter 请求使用的提供商列表与量化位数上限，注入 provider.only/order（allow_fallbacks）与 provider.quantizations 路由参数。
 - [MorseWayne/dsh-agy-acp](https://github.com/MorseWayne/dsh-agy-acp) — 将 Google Antigravity CLI（agy acp）以零冷启动长连接接入 DSH：支持 session/resume 与 session/load 三级会话恢复与精准缓存计量、聊天气泡原生工具卡片（Read/Diff/终端）、按需加载的分级反向 MCP 网关（含预设与预算控制）、跨模型自动审查转发、纯匿名出口合规熔断、多账号 5h/7d 配额调度与 TOS 隔离，以及原生风格控制台与 /agy-acp doctor 自检。
 - [MorseWayne/dsh-team-router](https://github.com/MorseWayne/dsh-team-router) — 为 DSH 原生 subagent 与团队委派按任务类别选择已授权模型和推理强度：内置 4 组 12 类（支持逐类开关与 12/7 类快捷切换）及最多 8 个自定义类别（含 4 套模板），提供被动/专长优先/编排者三档委派模式、可选严格校验、一键推荐预览与保存时自动补齐模型授权。
@@ -5172,6 +5174,7 @@ dsh plugin --profile web add dshmarket
 - [devzer0o0/dsh-prompt-optimizer](https://github.com/devzer0o0/dsh-prompt-optimizer) — 发送前把你打进 DSH 输入框的话改写成精确的提示词，用会话自己的路由跑一次很便宜的小调用。改写结果就是真正落盘、真正发出去的内容，所以对话记录里看到的就是模型收到的；悬停鲸鱼图标能对照改写前后。斜杠命令、过短或过长的消息、纯图片消息一律不动，任何失败都原样发送。输入框里那只鲸鱼就是开关：关闭时是深色剪影，开启时是金色。
 - [DieJob/dsh-session-folders](https://github.com/DieJob/dsh-session-folders) — 在工作区中为每个会话的首次对话自动创建摘要命名的文件夹，支持新会话继承已有会话的文件夹，可按工作区开关。
 - [Diluka/dsh-afk](https://github.com/Diluka/dsh-afk) — 面向 ask_user_question 的 AFK 离开模式：当前 profile 全局或会话级设置，自定义自动应答或禁用新提问调用，基于会话日志的提问记录与已读状态；不批准权限或计划。仅支持 DSH 0.2.1-rc.2 与 0.2.1-rc.3。
+- [diyu331/dsh-btw-patched](https://github.com/diyu331/dsh-btw-patched) — 主任务继续运行的同时发一句侧问：答案只出现在输入框上方的弹窗里，参考的上下文包括当前这一轮正在流式生成的思考与工具调用、最近完成的工具调用，以及已完成的对话历史。
 - [Domaki-co/dsh-message-forward](https://github.com/Domaki-co/dsh-message-forward) — DSH 会话间消息转发：把单条模型回复、用户消息或多选合并的消息与图片从上游会话提取出来投递到另一个会话，支持静默发送、填入草稿、发送并跳转三种投递方式，并可套用提示词模板。
 - [domitor-syh/dsh-rollback](https://github.com/domitor-syh/dsh-rollback) — TRAE 式「回退到本轮对话发起前」插件：按轮次建立检查点（10 轮滑动窗口），同时回滚工作区文件与原位截断模型上下文，保持同一 session id。回退只能由人发起：/rollback 命令或每轮的 Web 回退按钮（被中断的轮次也可用），弹窗逐条列出受影响文件及其动作（恢复/找回/删除/跳过）。
 - [dongasai/dsh_compact_queue](https://github.com/dongasai/dsh_compact_queue) — 注册 /compact_queue：会话忙时也不丢弃请求的压缩命令——空闲就立刻压缩，忙时把请求排进本会话队列，等这个会话下一次空闲自动补跑；agent 状态事件之外再挂一条 2 秒兜底 tick，避免漏触发，排队最长等 30 分钟，排队中或执行中都可以用 /compact_queue cancel 撤销。命令只注册一次，每个会话各自一份排队状态，完成与失败以折叠 notice 注入、不唤醒模型；ManualCompactionError 除 busy 外一律视为终态、不再重试。只有 Host 半边，核心 /compact 不改。
@@ -8566,6 +8569,7 @@ dsh plugin --profile web add dshmarket
 - [zjukop3/dsh-vertical-kit#dsh-weekly-report-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-weekly-report-check) — 周报的结构检查：本周完成与下周计划分开写、风险与阻塞在场、至少一行带量化数字——让读者分得清进展和动作。空泛承诺按计划语句计数：在场可判定，空洞不可判定。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [ZK-Andy/dsh-frecency](https://github.com/ZK-Andy/dsh-frecency) — 为 DeepSeek Harness 提供常驻索引 grep，以同名遮蔽内置 grep/glob 工具：重复内容检索命中按访问/修改 frecency 排序的内存索引，glob 在可用时对齐内置 ripgrep 语义、不可用时回退索引。
 - [zmh2000829/dsh-web-search-multi](https://github.com/zmh2000829/dsh-web-search-multi) — 为原生 web_search 工具提供可选的 SearXNG、Brave、Tavily、Gemini 搜索溯源或 Wikipedia 后端，支持 Web 设置且不进行隐式回退。
+- [zmm863-commits/dsh-agnes-studio](https://github.com/zmm863-commits/dsh-agnes-studio) — 泡泡猫的影视工具 — DSH 内的影视创作工作站：文生图、文生视频、短剧流水线（故事/剧本/分镜/逐镜出片/合成）、数字人口播（烧中文字幕）、小说封面、视频反解提示词、本地素材库（ffprobe 打标）、歌词对齐与 ComfyUI 接入，并内置 Oh Story 写作技能。
 - [zoahdev/dsh-artifacts](https://github.com/zoahdev/dsh-artifacts) — 把 Markdown + JSON 渲染成自包含 HTML 文档/卡片/仪表盘/画廊（CLI + 内置 artifact_render 工具）。
 - [zoahdev/dsh-browser-use](https://github.com/zoahdev/dsh-browser-use) — Browser Use 云端桥接：通过 Browser Use API 让 dsh agent 执行真实网页任务，包括打开页面、点击、输入、填表和提取数据。
 - [zoahdev/dsh-firecrawl](https://github.com/zoahdev/dsh-firecrawl) — 通过 Firecrawl Cloud API 把 URL 抓成 LLM 可用 Markdown，或搜索网页并返回结果内容。
@@ -9164,7 +9168,6 @@ dsh plugin --profile web add dshmarket
 - [zirscard/dsh-ocr](https://github.com/zirscard/dsh-ocr) — 为 DeepSeek Harness 注册两个工具：`doc_ocr` 把扫描件 PDF 与图片转成结构化文本（逐页文本、带资产负债表平衡勾稽的财务报表行、合同条款命中），可用本机 RapidOCR 或智谱 GLM-OCR 云端引擎；`doc_preprocess` 用 7 阶段管线把一批原始文件整理成 Obsidian 可读知识库，含后端路由与 sha256 增量跳过。勾稽不平的数字只报出、不编造。本机引擎需 Python 3 并安装 rapidocr-onnxruntime、pypdfium2、Pillow（pip install -r requirements.txt）；GLM 引擎需设置 ZHIPU_API_KEY。
 - [zlmddygggzh-collab/dsh-tool-camera](https://github.com/zlmddygggzh-collab/dsh-tool-camera) — 从本机摄像头抓一帧实时画面，以图片形式交给 agent，让它真正从摄像头看见画面——不用打开相机应用，也不要求窗口在前台。暗光房间不会再拍成一片黑，亮度、伽马、对比度、锐化和自动拉伸都在抓帧时一次做完。首次使用时自动下载 ffmpeg，配套还有一个工具用于列出可用采集设备。
 - [zmengle/dsh-plugin-ark-image-gen](https://github.com/zmengle/dsh-plugin-ark-image-gen) — 火山方舟 / 豆包 Seedream 生图：ark_generate_image 支持文生图、图生图和固定 seed 批量出图，ark_image_gen_status 检查密钥、模型与输出目录。需配置火山方舟 API Key（ARK_API_KEY）。
-- [zmm863-commits/dsh-agnes-studio](https://github.com/zmm863-commits/dsh-agnes-studio) — 一站式 AI 影视创作工作站，作为 DSH 全局浮层面板运行，不占用对话框：生图（文生图 / 图生图 / 多图合成，1K–4K、8 种宽高比）、生视频（文生视频 / 图生视频，4–12 秒、支持首帧控制）、短剧（导入 .txt/.md/.json 剧本自动拆解分镜，故事板预览与批量生成）与提示词专家工作区。零运行时依赖。
 - [zxygithub/dsh-agnes-create](https://github.com/zxygithub/dsh-agnes-create) — 侧边栏 Agnes 出图与出视频面板。出图：纯文生图，或用最多 8 张参考图做图生图 / 多图合成（参考图可从本地文件选，也可直接从面板里已生成的结果中挑），1K/2K/3K/4K、8 种宽高比，另有 6 个一键风格预设。出视频：agnes-video-2.5-flash，720p、4-12 秒，支持纯文本、首帧 / 尾帧关键帧、最多 5 张参考图三种模式（面板自动判断），可选 seed；任务提交给宿主进程推进，切面板、刷新页面、重启应用都能接回进度，不会丢任务。生成时把提示词写进图片本身（PNG iTXt / JPEG COM），鼠标移到结果上就能看到并一键复制。可浏览输出目录（图片与视频分页）并在生成后自动刷新，支持复制路径、在访达中显示、下载；最近 24 条历史重启不丢。图片与视频也能在对话里通过 agnes_image、agnes_video、agnes_video_status 三个工具直接生成。图片与视频模型都可在面板切换并一键测试连接；本地参考图与关键帧以 base64 data URI 直传，不需要公网图床。需要 Agnes AI 平台的 API Key，存放在本地文件中（默认 ~/.agnes-key.txt）。
 - [zyf2492313716-cloud/dsh-auto-image-optimizer](https://github.com/zyf2492313716-cloud/dsh-auto-image-optimizer) — DSH 图片上传前客户端等比压缩插件：拦截剪贴板粘贴与拖拽上传的图像，在内存中用 Canvas 将最长边超过 1999px 的图片等比缩放后再投递，并在未冻结的旧宿主上尝试放宽 maxImageDimension 至 4096。
 - [Zymjason/DSH_VCG](https://github.com/Zymjason/DSH_VCG) — 节点式图像/视频生成工作流画布：内置 16 个节点与 5 个示例工作流，支持聊天与项目画布、AI 自动搭建工作流、云端 Model Studio 生图生视频、可选本地 ComfyUI、本地 safetensors 权重检查、可信源模型下载与单次运行 Token 用量统计。
