@@ -1,0 +1,6 @@
+url: https://github.com/zangxx66/dsh-markdown-session/tree/master/plugins/dsh-markdown-session
+name: zangxx66/dsh-markdown-session#dsh-markdown-session
+category: session
+description:
+  en: 'DSH Web GUI Session Markdown Rendering Plugin: GFM rendering for user messages + post-processing of embedded HTML in assistant messages from the whitelist + strict XSS whitelist + chat bubbles.'
+  zh: 'DSH Web GUI 会话 Markdown 渲染插件：用户消息 GFM 渲染 + 助手消息白名单内嵌 HTML 后处理 + XSS 强白名单 + 聊天气泡。'
