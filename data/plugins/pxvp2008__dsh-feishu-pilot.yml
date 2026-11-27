@@ -1,0 +1,7 @@
+url: https://github.com/pxvp2008/dsh-feishu-pilot
+name: pxvp2008/dsh-feishu-pilot
+category: remote
+description:
+  en: 'Feishu (Lark) remote control for DSH: drive desktop sessions from Feishu, answer approvals and questions on either side, pick workspaces and sessions, and receive task completion notifications, with QR onboarding and no public IP required.'
+  zh: '把飞书变成 DSH 的远程控制台：在飞书里驱动桌面会话、双端处理审批与提问、切换工作区与会话、接收任务完成通知；扫码即可接入，无需公网 IP。'
+icon: https://raw.githubusercontent.com/pxvp2008/dsh-feishu-pilot/main/assets/logo.png
