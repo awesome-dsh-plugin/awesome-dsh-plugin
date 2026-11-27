@@ -1,0 +1,7 @@
+url: https://github.com/xiaomao361/dsh-toaster
+name: xiaomao361/dsh-toaster
+category: ui
+description:
+  en: A theme-independent retro chrome toaster companion for DeepSeek Harness inspired by 1989 After Dark Flying Toasters — roasts while AI works, pops golden buttered toast on completion, smokes burnt toast on errors, with a 1-5 doneness Pomodoro dial, toast tray Markdown export, and Flying Toasters screensaver mode.
+  zh: DSH Toaster（吐司机）：致敬 1989 After Dark 飞翔烤面包机的独立复古挂件——AI 干活按杆烘烤、完成叮一声弹金黄吐司、卡审批半熟抖动、报错冒黑烟弹焦炭，内置 1~5 档番茄钟、涂黄油收藏装盘导出与全屏放飞彩蛋。
+icon: https://raw.githubusercontent.com/xiaomao361/dsh-toaster/main/icon.png
