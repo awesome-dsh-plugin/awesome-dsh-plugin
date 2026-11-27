@@ -1,0 +1,7 @@
+url: https://github.com/liujia1128/dsh-cuawright
+name: liujia1128/dsh-cuawright
+category: browser
+description:
+  en: 'Adds two skills: one writes Robot Framework suites that drive Playwright through the web keywords of an existing Robot Framework framework, the other runs OSWorld-V2 desktop tasks through the cuawright CLI.'
+  zh: '新增两个技能：一个按既有 Robot Framework 框架的网页关键字编写套件来驱动 Playwright，另一个通过 cuawright CLI 运行 OSWorld-V2 桌面任务。'
+icon: https://raw.githubusercontent.com/liujia1128/dsh-cuawright/main/assets/icon-180.png

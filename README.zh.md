@@ -8752,6 +8752,7 @@ dsh plugin --profile web add dshmarket
 - [limingyao-xx/dsh-sidebar-mobile-browser](https://github.com/limingyao-xx/dsh-sidebar-mobile-browser) — 右侧边栏的移动端视口预览标签页：九种预设尺寸（手机、平板、笔记本）及自定义宽高，一键复制当前地址，并可通过 @ 按钮或 /url 指令把页面地址插入输入框。
 - [linhuanwen/dsh-plugin-agent-browser#dsh-plugin-agent-browser](https://github.com/linhuanwen/dsh-plugin-agent-browser/tree/main/dist/dsh-plugin-agent-browser) — 在 DSH 桌面端右侧栏放一个真正的 Electron 浏览器，给 Agent 十一个 browser_* 工具去操作：带 ref 的快照、点击、输入、滚动、悬停、缩放、截图、下载与求值；跑在你已登录的会话里，你随时可以接管。检测到人机验证就停下交给你，不硬闯。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [lirui1024k/dsh-browser-ops](https://github.com/lirui1024k/dsh-browser-ops) — DeepSeek Harness 真实浏览器自动化：agent 可直接驱动真实 Chrome（独立托管档案，或附加日常 Chrome/CDP），提供页面快照、点击、填表、读表与控制台/网络诊断工具；可将手动操作录制成流程并把输入标记为变量槽，按参数自动重放来批量造测试数据；附带 27 个 browser_* 工具与设置页控制面板。
+- [liujia1128/dsh-cuawright](https://github.com/liujia1128/dsh-cuawright) — 新增两个技能：一个按既有 Robot Framework 框架的网页关键字编写套件来驱动 Playwright，另一个通过 cuawright CLI 运行 OSWorld-V2 桌面任务。
 - [liustack/modsearch](https://github.com/liustack/modsearch) — 纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。
 - [LockyBee/dsh-douyin-agent](https://github.com/LockyBee/dsh-douyin-agent) — 在专用浏览器中按每日时段和额度观看抖音，共享本地人格与兴趣，提供原生设置、自检、用量和观看日报。回复与分享限定所选好友和群聊，群聊仅在被 @ 或叫到设定昵称时回复；公开评论需单独开启。
 - [longmiaoo/dsh-native-browser](https://github.com/longmiaoo/dsh-native-browser) — DSH 浏览器插件（Browser）：以 Codex 浏览器操作为体验参考，直接使用已登录的 Chrome 浏览器，平滑虚拟鼠标，支持页面读取、填表、截图与控制交还；安装后从侧栏「浏览器」完成配置。需要 macOS + Google Chrome（125+），并一次性以解压加载方式安装随包的 MV3 扩展；Edge、Windows 与完整的 Linux 安装仍属实验。
