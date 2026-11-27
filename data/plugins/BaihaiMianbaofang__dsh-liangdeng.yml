@@ -1,0 +1,6 @@
+url: https://github.com/BaihaiMianbaofang/dsh-liangdeng
+name: BaihaiMianbaofang/dsh-liangdeng
+category: ui
+description:
+  en: A centred call popup and a draggable row of session chips for DeepSeek Harness.
+  zh: 给 DeepSeek Harness 加屏幕中间的呼叫弹窗，和一排可拖动的会话小方块。
