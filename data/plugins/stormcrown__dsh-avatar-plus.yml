@@ -1,0 +1,7 @@
+url: https://github.com/stormcrown/dsh-avatar-plus
+name: stormcrown/dsh-avatar-plus
+category: ui
+description:
+  en: 'Adds AI and user avatars to DSH chat, with import-and-crop upload, per-session and per-subagent overrides, configurable hover cards, and a right-sidebar tab that merges the main AI with its subagents into one timeline.'
+  zh: 给 DSH 对话加 AI 与用户头像：导入即裁切、可按会话与子智能体单独覆盖、头像悬停大图，并在右侧边栏开一个把主 AI 与子智能体合并的时间线 TAB。
+icon: https://raw.githubusercontent.com/stormcrown/dsh-avatar-plus/main/assets/group-icon.png
