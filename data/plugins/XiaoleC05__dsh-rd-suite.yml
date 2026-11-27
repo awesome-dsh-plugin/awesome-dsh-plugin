@@ -1,0 +1,6 @@
+url: https://github.com/XiaoleC05/dsh-rd-suite
+name: XiaoleC05/dsh-rd-suite
+category: workflow
+description:
+  en: 'One bundle for R&D work: a development agent preset with a staged pipeline and review gates, code-standardizing tools that format written files by project rules, a searchable local memory with a sidebar panel, and a GitHub issue-first delivery flow from precheck to release.'
+  zh: '一个 bundle 装出研发工作台：带分级流水线与验收关卡的研发模式预设、按项目规则格式化写入文件的代码标准化工具、可在侧栏搜索的本地记忆，以及从预检到发版的 GitHub Issue 优先交付流程。'
