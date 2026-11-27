@@ -10271,6 +10271,7 @@ dsh plugin --profile web add dshmarket
 - [fuhefei/dsh-sentinel](https://github.com/fuhefei/dsh-sentinel) — 条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。
 - [fujingzhai/youxia-dsh-plugins#dsh-pi-mode](https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-pi-mode) — 为 DeepSeek Harness 新增三个以 pi 为蓝本的模式：Pi（精简基线）、Pi+（额外启用官方 apply_patch，便于批量改同一文件多处或多个文件）、Pi-IM（面向 IM 机器人调整交付方式）。一次安装注册三个模式，DSH 自带模式不受影响。需要 DSH 0.2.2-rc.1 或更新版本；每个模式都用自带的简短中文系统提示取代标准系统提示。
 - [fxylabs/superself#dsh-plugin](https://github.com/fxylabs/superself/tree/main/apps/dsh-plugin) — 把 Superself 的 self CLI 暴露为模型工具（项目上下文、工作单元、报告、决策）并提供 /self 命令——跨会话、跨项目的项目状态，保存在代码仓库之外。
+- [fzjmaclearn/zack-calendar](https://github.com/fzjmaclearn/zack-calendar) — DSH 的本地日程与待办面板：日、周、月三种视图围着每天六个固定时间块，支持目标拆解、分类盒、进度与卡点快照、只追加的进展时间线、笔记与合集、间隔复习、每日运动处方，以及只往空槽排程的 calendar_read/calendar_write 工具。数据保存在本地 JSON 文件，无网络请求与遥测。
 - [GaoHu1997/dsh-maestro-codex](https://github.com/GaoHu1997/dsh-maestro-codex) — 在 dsh 中管理 Claude Code / Codex / Grok CLI，并把任务派发给它们作为子智能体执行：dsh 的模型、技能与工具随任务桥接，CLI 子会话可回放续聊，右侧栏提供分层任务看板（看板 tab 需另装 DSH-better-sidebar 插件，未安装时不会注册）。
 - [gavinc-cn/touchstone-dsh](https://github.com/gavinc-cn/touchstone-dsh) — 面向 DeepSeek Harness（dsh）的 AI 智能体驱动自动化测试平台：以长期多轮会话驱动 agent 编写并执行 Markdown 用例、产出 bug 报告、修复代码并复验，配套按项目串行的统一队列、开发看板与内置压测。
 - [GEB-lab/dsh-codex-mcp](https://github.com/GEB-lab/dsh-codex-mcp) — 让 Codex 通过 dsh_env、dsh_run、dsh_resume 三个 MCP 工具启动和续跑 DSH headless 会话的桥。
