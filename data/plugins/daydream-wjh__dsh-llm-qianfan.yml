@@ -1,0 +1,7 @@
+url: https://github.com/daydream-wjh/dsh-llm-qianfan
+name: daydream-wjh/dsh-llm-qianfan
+category: model
+description:
+  en: "Baidu Qianfan Token Plan provider route for the DSH LLM seam: streaming text, reasoning and tool calls, a per-model reasoning-effort ladder, plus a composer row that reads the subscription quota from the console (used and total credits or tokens, percent, expiry) and a local meter of this machine's own billed tokens across the plan's 5-hour, weekly and monthly windows."
+  zh: 百度千帆 Token Plan 个人版的 DSH 模型通道：流式文本、深度思考、工具调用、按模型的思考档位，并提供 composer 额度行——从控制台读套餐已用/总量与到期时间，同时按 5 小时 / 本周 / 本月统计本机实际计费的 token。
+icon: https://raw.githubusercontent.com/daydream-wjh/dsh-llm-qianfan/main/assets/icon-180.png
