@@ -1,0 +1,7 @@
+url: https://github.com/wkqian06/dsh-knowledgepalace
+name: wkqian06/dsh-knowledgepalace
+category: memory
+description:
+  en: 'Personal Academic Think Tank: Research papers are distilled into index cards, complete with verbatim quotes and page references. These feed into a knowledge graph that supports model-based reasoning, the exploration of research topics, and the writing process.'
+  zh: '个人学术智库：论文入库总结为卡片，带逐字引句与页码。派生知识图谱供模型推理，研究话题讨论与写作。'
+icon: https://raw.githubusercontent.com/wkqian06/dsh-knowledgepalace/main/assets/icon-180.png
