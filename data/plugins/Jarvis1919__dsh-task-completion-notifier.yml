@@ -1,0 +1,8 @@
+url: https://github.com/Jarvis1919/dsh-task-completion-notifier
+name: Jarvis1919/dsh-task-completion-notifier
+category: notify
+description:
+  en: 'Lightweight Windows desktop popups for completed DSH turns, with the session title and final-reply excerpt; works independently of notification-center banner policy, with optional subagent, incomplete-turn, and silent modes.'
+  zh: '主会话回合完成时在 Windows 桌面显示轻量置顶弹窗，包含会话标题和最后回复节选；不依赖通知中心横幅策略，可选子代理、异常结束和静音模式。'
+icon: https://raw.githubusercontent.com/Jarvis1919/dsh-task-completion-notifier/main/assets/icon-180.png
+tarball: https://github.com/Jarvis1919/dsh-task-completion-notifier/releases/download/v1.0.2/dsh-task-completion-notifier-1.0.2.tgz
