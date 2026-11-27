@@ -1,0 +1,7 @@
+url: https://github.com/daydream-wjh/dsh-llm-qianfan
+name: daydream-wjh/dsh-llm-qianfan
+category: model
+description:
+  en: 'Baidu Qianfan Token Plan model route for DeepSeek Harness: streaming text, reasoning blocks, tool calls and token usage against the Token Plan gateway, with reasoning-effort ladders declared per model from each vendor''s own documentation.'
+  zh: '在 DeepSeek Harness 中接入百度千帆 Token Plan 套餐网关，提供流式文本、深度思考、工具调用与用量统计；思考档位按各家官方文档逐模型声明。'
+icon: https://raw.githubusercontent.com/daydream-wjh/dsh-llm-qianfan/main/assets/icon-180.png
