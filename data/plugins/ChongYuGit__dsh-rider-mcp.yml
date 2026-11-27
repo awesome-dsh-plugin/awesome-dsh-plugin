@@ -1,0 +1,7 @@
+url: https://github.com/ChongYuGit/dsh-rider-mcp
+name: ChongYuGit/dsh-rider-mcp
+category: dev
+description:
+  en: Connects DeepSeek Harness to the MCP server built into JetBrains Rider, adding a per-session project picker, a connection badge and the mcp__rider__* tools.
+  zh: 把 DeepSeek Harness 接到 JetBrains Rider 内置的 MCP server，并给每个会话一个项目选择器、一个连接徽标和 mcp__rider__* 工具。
+icon: https://raw.githubusercontent.com/ChongYuGit/dsh-rider-mcp/main/assets/icon-180.png
