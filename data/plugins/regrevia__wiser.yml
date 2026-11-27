@@ -1,0 +1,6 @@
+url: https://github.com/regrevia/wiser
+name: regrevia/wiser
+category: skill
+description:
+  en: 'Turns one flow you actually ran into a narrow skill: judgeable criteria with numbers and counter-examples, enumerable assets, an executable detector that returns an exit code, and blind evals with control arms. Five gates decide whether it is publishable, a second ruler counts violations so two runs can be compared on the same scale, and freeze snapshots a version so published thresholds and counter-examples cannot change silently. Pure local CLI: no network, no credentials.'
+  zh: '把一条真实做过的流程沉淀成窄 skill：判据带数字与反例、资产可枚举、检测器给 exit code、eval 带对照臂盲评。五道闸判定能不能发布，第二把尺子数违背条数让两次运行同尺度对比，freeze 把整版快照存下来，发布后的阈值与反例不会被暗改。纯本地 CLI，不联网、不读凭据。'
