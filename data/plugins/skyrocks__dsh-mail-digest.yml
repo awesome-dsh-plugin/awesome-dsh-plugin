@@ -1,0 +1,6 @@
+url: https://github.com/skyrocks/dsh-mail-digest
+name: skyrocks/dsh-mail-digest
+category: notify
+description:
+  zh: 自动整理邮箱并每轮留一份可读报告。
+  en: Digests incoming email into a readable report each round.

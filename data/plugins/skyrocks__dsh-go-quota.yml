@@ -1,0 +1,6 @@
+url: https://github.com/skyrocks/dsh-go-quota
+name: skyrocks/dsh-go-quota
+category: usage
+description:
+  zh: OpenCode GO 套餐 5 小时 / 周 / 月额度常驻显示。
+  en: OpenCode GO plan quota for the 5-hour, weekly and monthly windows, always visible.
