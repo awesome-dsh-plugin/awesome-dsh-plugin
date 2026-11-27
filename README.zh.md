@@ -4353,6 +4353,7 @@ dsh plugin --profile web add dshmarket
 - [Hoemr/dsh-llm-cc-switch](https://github.com/Hoemr/dsh-llm-cc-switch) — 把本地 CC Switch 数据库里的账号接进 DeepSeek Harness：Claude Code、Codex、OpenCode、Grok Build 的每个账号在模型选择器里各成一类，列模型与发请求时都会重读 SQLite 数据库，在 CC Switch 里换账号不必重启 DSH。需 CC Switch 与 DSH 桌面端。
 - [home-river/dsh-opencode-cli-bridge](https://github.com/home-river/dsh-opencode-cli-bridge) — 经本机 OpenCode CLI 在 DSH 中使用 OpenCode 兼容模型：原生 LlmAdapter 透传、OC 会话持久续接（工具结果跨轮可见）、工具镜像回传、CLI 环境检测面板。需本机已安装 OpenCode CLI。
 - [hongcha-dsh/dsh-subagent-model-pin](https://github.com/hongcha-dsh/dsh-subagent-model-pin) — 把所有子代理统一钉到指定模型：每一步都核对即将进入的路由，越界就拒绝该步、中止该子代理并向父会话注入提醒，避免子代理继承高价模型烧穿额度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [HongKongDoll-cmd/dsh-connect-loomy](https://github.com/HongKongDoll-cmd/dsh-connect-loomy) — 将讯飞 Loomy 模型接入 DSH，支持免客户端微信扫码与短信登录、自动同步官方模型目录与积分倍率、多账号池同模型自动换号、积分兑换码、模型测速及输入框积分胶囊。
 - [hongxin-y/dsh-fallback-router](https://github.com/hongxin-y/dsh-fallback-router) — 面向 DeepSeek Harness 的模型级路由：每个模型配置可设兜底链（官方兜底或循环兜底）、时间区间、按 provider 的重试策略，以及按错误码、正则或结构标记判定的失效规则。
 - [HOWILLMAKEIT/dsh-model-context-catalog](https://github.com/HOWILLMAKEIT/dsh-model-context-catalog) — 一键匹配 DSH 已配置模型的上下文窗口，展示容量来源，支持勾选批量配置、手动编辑和持续同步。
 - [Howthemeaning/dsh-model-settings](https://github.com/Howthemeaning/dsh-model-settings) — DeepSeek Harness 模型设置面板：设置新会话的默认模型，并为子代理与 goal 回合分别配置 provider、模型和推理强度，保存后热更新。
@@ -6060,6 +6061,7 @@ dsh plugin --profile web add dshmarket
 - [baosfeng/my-dsh-plugins#dsh-my-memory](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-memory) — 全局 / 项目两级记忆：会话开始时把记忆注入系统提示词，设置页面板支持新增 / 修改 / 删除（写操作需确认），并为 agent 提供只读查询工具 memory_query（npm: `dsh-my-memory`）。
 - [BaxterL/dsh-code-taste](https://github.com/BaxterL/dsh-code-taste) — 从指令和纠正里学习编码习惯，存成带置信度、可手工编辑的 Markdown 规则，并在每个会话中作为参考数据注入。衰减出注入窗口或与更新规则冲突的条目会留在待审列表里，而不是继续生效。
 - [bbqisbbq/dsh-tiddlywiki](https://github.com/bbqisbbq/dsh-tiddlywiki) — 把 TiddlyWiki 5 变成 DSH 的持久知识库：十个 tiddlywiki_* 智能体工具（带过滤的检索、读写/批量/改名/删除、最近、标签，以及 git 同步与冲突解决），GUI 中央栏经同源代理内嵌完整 TiddlyWiki 编辑器，右侧栏知识库 Tab，会话级汇总本会话读写过的笔记，快速笔记卡片支持草稿自动保存，另可选剪藏书签（选中图片一并存为二进制附件）——全部由自动提交的 git 仓库支撑。
+- [blank-win/dsh-deep-memory](https://github.com/blank-win/dsh-deep-memory) — 给 DSH 用的可移植记忆库：记忆文件、按天留底的原话、跨机器搬家的认识层。
 - [bonerush/dsh-obsidian-mem](https://github.com/bonerush/dsh-obsidian-mem) — 把项目文档与长期记忆以纯 Markdown 存进专用 Obsidian 仓库：六个 mem_* 工具（search / read / write / log / brief / admin）、会话第一步的一次带预算召回注入，以及已完成回合的自动蒸馏。Obsidian 无需运行，卸载插件后仓库内容照常可读。
 - [boogoo619/dsh-noteboard](https://github.com/boogoo619/dsh-noteboard) — 工作区级的无限画布便签：便签以 Markdown 文件保存，可手动创建、从对话中摘录或由 AI 提炼生成，并能作为上下文提供给 AI 使用；附带 12 个模型工具与 5 个内置技能，用于创建、打标签、整理、比较与合并便签。
 - [Breeze136/dsh-kb-rag#npm-package](https://github.com/Breeze136/dsh-kb-rag/tree/main/npm-package) — 本地文献知识库 RAG：10 个工具（kb_ingest、kb_search、kb_rag、kb_zotero、kb_dedup、kb_clear、kb_fetch、kb_scope、kb_stats、kb_status），BM25+向量+重排混合检索、DOI 可点击溯源问答，全本地 bge 嵌入 + 单文件 SQLite 索引。需要 Python 3.9+ 及 pymupdf、faiss-cpu、sentence-transformers（`npx dsh-kb-rag-install` 安装器会自动装好并预下载模型）。
@@ -11023,7 +11025,7 @@ dsh plugin --profile web add dshmarket
 - [Letter2025/dsh-task-worktree](https://github.com/Letter2025/dsh-task-worktree) — 任务级 git worktree：per-repo manifest 持久保存；Worktree 模式在首条消息注入创建指引并统一 worktree/ 分支前缀，头部徽标替代工作区注册，支持带回主目录或强制删除收尾。
 - [LHCWN/dsh-triage-desk](https://github.com/LHCWN/dsh-triage-desk) — 将 GitHub 审核请求、可合并的拉取请求、失败的检查和议题汇集到一个收件箱，可带着预先填好的提示词打开编码智能体或新的 DSH 对话。
 - [LighghtEeloo/dsh-vcs-panel](https://github.com/LighghtEeloo/dsh-vcs-panel) — DSH 的版本控制面板，除 Git 上游同步与本地分支切换外只读：工作区改动、语法高亮差异、Git 与 Jujutsu 的提交历史轨道图，以及每轮结束的改动横幅。
-- [LijunTong/git-branch-tool](https://github.com/LijunTong/git-branch-tool) — 在 DSH 对话中切换与创建 Git 分支，支持初始化仓库并自定义入口标签位置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [LijunTong/git-branch-tool](https://github.com/LijunTong/git-branch-tool) — 在 DSH 对话中切换与创建 Git 分支，支持初始化仓库并自定义入口标签位置。
 - [LingQi-07-std/dsh-client-ui-git](https://github.com/LingQi-07-std/dsh-client-ui-git) — DSH Web GUI 的 Git 面板：提交图与分支筛选、工作区状态、单提交 diff、暂存、合并冲突处理、远程同步与仓库设置。
 - [LingYingNX/dsh-codex-parity](https://github.com/LingYingNX/dsh-codex-parity) — 为 DeepSeek Harness 提供 Codex 风格的 Git 面板：会话头部按钮打开菜单，提供提交、推送、切换分支、创建并切换与初始化仓库；显示当前分支与未提交文件的总增减。
 - [LinXueyuanStdio/dsh-git](https://github.com/LinXueyuanStdio/dsh-git) — DSH 官方右侧栏里的本地 Git 与四个 GitHub 远端页签：Changes（按文件暂存、逐行 diff、提交信息由 DSH 里已配好的模型生成）、History，以及由 host 半代理的 Code / Issues / Pull requests / Actions。令牌只存在 host 半（ctx.credentials），/dsh-git/* 只接受 loopback 请求。
