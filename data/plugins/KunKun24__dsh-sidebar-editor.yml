@@ -1,0 +1,8 @@
+url: https://github.com/KunKun24/dsh-sidebar-editor
+name: KunKun24/dsh-sidebar-editor
+category: ui
+description:
+  en: 'Adds an Edit sidebar entry to the More menu so individual sidebar buttons can be switched off. Hidden rows leave the rail but stay listed under Hidden in the same menu, so nothing is lost; state is kept in localStorage.'
+  zh: 在左侧栏「更多」菜单里加一个「编辑侧边栏」，把不想要的侧栏按钮一个个关掉。关掉的整行会从侧栏消失，但仍列在「更多」的「已隐藏」里，随时点得回来；开关状态存在浏览器本地。
+icon: https://raw.githubusercontent.com/KunKun24/dsh-sidebar-editor/main/assets/icon-180.png
+tarball: https://github.com/KunKun24/dsh-sidebar-editor/releases/download/v0.1.0/dsh-sidebar-editor-0.1.0.tgz
