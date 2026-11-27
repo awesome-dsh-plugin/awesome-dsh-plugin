@@ -1,0 +1,6 @@
+url: https://github.com/603619710-creator/dsh-peak-coach
+name: 603619710-creator/dsh-peak-coach
+category: workflow
+description:
+  en: 'Blocks only the work nobody asked for during DeepSeek peak billing hours (weekdays 9:00-12:00 and 14:00-18:00 Beijing time), so an explicit request still runs while self-driven continuation turns become a plan; off-peak it blocks nothing.'
+  zh: 'DeepSeek 高峰时段（北京时间工作日 9:00–12:00、14:00–18:00）只拦「没人让它做」的动作：用户明确要求的事照做，自己往下推的部分改成给方案；谷时完全不拦。'
