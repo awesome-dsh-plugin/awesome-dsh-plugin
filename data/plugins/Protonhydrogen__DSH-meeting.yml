@@ -1,0 +1,6 @@
+url: https://github.com/Protonhydrogen/DSH-meeting
+name: Protonhydrogen/DSH-meeting
+category: voice
+description:
+  en: Local meeting recording, Whisper and Qwen transcription, and meeting notes in DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中录制会议，使用 Whisper 或 Qwen 转录，并整理会议纪要。
