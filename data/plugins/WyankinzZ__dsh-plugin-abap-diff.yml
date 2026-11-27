@@ -1,0 +1,8 @@
+url: https://github.com/WyankinzZ/dsh-plugin-abap-diff
+name: WyankinzZ/dsh-plugin-abap-diff
+category: dev
+icon: https://raw.githubusercontent.com/WyankinzZ/dsh-plugin-abap-diff/main/assets/icon.png
+tarball: https://github.com/WyankinzZ/dsh-plugin-abap-diff/releases/download/v0.1.0/dsh-plugin-abap-diff-0.1.0.tgz
+description:
+  en: Read-only SAP ABAP change tracker and embedded split/unified diff workbench for abap-adt MCP servers.
+  zh: 面向 abap-adt MCP 的只读 SAP ABAP 代码变更追踪插件，维护本地影子 Git 仓库并提供内置分栏/行内 Diff 面板。
