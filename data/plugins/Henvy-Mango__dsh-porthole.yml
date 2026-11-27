@@ -4,4 +4,3 @@ category: remote
 description:
   en: Remote access portal for DeepSeek Harness optimized for deployments behind an external tunnel or overlay network such as frps or EasyTier. It provides HTTP and WebSocket proxying, adapts login routes, redirects and cookie paths for subdomain and subpath deployments, and supports optional visitor and administrator passwords and remote workspace registration.
   zh: 专为内网穿透场景优化的 DeepSeek Harness 远程访问门户，配合 frps、EasyTier 等外部链路，可通过浏览器访问内网的 DSH。支持 HTTP 和 WebSocket 转发，适配子域名和子路径部署的登录入口、重定向及 Cookie 路径，并提供可选的访客和管理员双密码认证及远程工作区注册。
-tarball: https://github.com/Henvy-Mango/dsh-porthole/releases/download/v1.5.3/dsh-porthole-1.5.3.tgz
