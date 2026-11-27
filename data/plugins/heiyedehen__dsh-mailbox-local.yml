@@ -1,0 +1,6 @@
+url: https://github.com/heiyedehen/dsh-mailbox-local
+name: heiyedehen/dsh-mailbox-local
+category: workflow
+description:
+  en: 'Same-machine Mailbox (dsh-mailbox-local) — two agents on one machine leave each other letters. mailbox_send drops a markdown note into ~/.dsh/mailbox/inbox, the recipient gets one quiet notice in its own conversation, and mailbox_done moves the file to done/ with a rename, so whoever grabs it first owns the reply and nobody relays through the human. Undeliverable mail is retried every minute and expires after 24 hours by default. Ships five mailbox_* tools plus a read-only work-order board in the settings panel: which task is moving, what it cost, and any work order in full at one click.'
+  zh: '同机信箱（dsh-mailbox-local）：同一台机器上的两只 agent 互相留信——mailbox_send 把活写成 ~/.dsh/mailbox/inbox 里的一封 markdown，收件方在自己那段对话里收到一句提醒；处理前先 mailbox_done，用 rename 把信搬进 done/，谁先搬走谁负责回执，人不用在窗口之间来回搬运。投不出去的信每分钟重试，默认 24 小时过期。带五个 mailbox_* 工具，设置页里附一个只读的工单看板，能看见活走到哪、点开就是全文。'
