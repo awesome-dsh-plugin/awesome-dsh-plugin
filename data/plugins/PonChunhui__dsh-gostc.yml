@@ -1,0 +1,7 @@
+url: https://github.com/PonChunhui/dsh-gostc
+name: PonChunhui/dsh-gostc
+category: remote
+description:
+  en: 'Manage gostc intranet-penetration clients, tunnels and P2P links; reuse a running backend or auto-download, launch and supervise the matching command-line client per OS and CPU arch, with optional Windows service install.'
+  zh: '管理 gostc 内网穿透的客户端、隧道与 P2P 连接；可复用已有后端，或按操作系统与处理器架构自动下载、拉起并守护命令版客户端，支持安装为 Windows 服务。'
+icon: https://raw.githubusercontent.com/PonChunhui/dsh-gostc/main/assets/icon-180.png
