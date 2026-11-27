@@ -2,6 +2,6 @@ url: https://github.com/kit686/dsh-kolors
 name: kit686/dsh-kolors
 category: vision
 description:
-  en: 'A sidebar page that draws with the free Kwai-Kolors/Kolors model on SiliconFlow, and a `kolors_image` tool that draws with the same model inside a conversation: the model is fixed, the canvases are the five sizes Kolors accepts, and prompt, steps, guidance, negative prompt, seed and an explicit-watermark switch are adjustable. A local key pool holds your SiliconFlow keys, 2 pictures a minute and 400 a day per key are counted on disk and refused rather than queued, pictures are saved into a folder you pick, and the history page filters by the last 1, 3, 7 or 30 days with multi-select delete, parameter reuse and a trash that restores or empties.'
-  zh: '侧栏生图页，用硅基流动免费的 Kwai-Kolors/Kolors 出图，并注册 `kolors_image` 工具，让模型在对话里用同一个模型画。模型固定，尺寸只有 Kolors 支持的五个；提示词、步数、贴合度、反向提示词、种子与显式水印开关都可调。本机 Key 池管理你的硅基流动 Key，每 Key 每分钟 2 张、每天 400 张，额度写盘计数、超限直接拒绝而不排队；图片存进你选的目录，历史页按最近 1 / 3 / 7 / 30 天筛选，支持多选删除、复用参数，以及可恢复、可清空的回收站。'
+  en: 'Free image generation: a sidebar page for DeepSeek Harness that draws with the free Kwai-Kolors/Kolors model on SiliconFlow, plus a `kolors_image` tool so the model can draw in a conversation. Key pool, on-disk quotas and history with trash stay on your machine.'
+  zh: '免费生图：给 DeepSeek Harness 侧栏加一页出图界面，用硅基流动免费的 Kwai-Kolors/Kolors 作画，并注册 `kolors_image` 工具，让模型在对话里出图。本机 Key 池、写盘额度和带回收站的历史都随插件走。'
 icon: https://raw.githubusercontent.com/kit686/dsh-kolors/main/assets/icon-180.png
