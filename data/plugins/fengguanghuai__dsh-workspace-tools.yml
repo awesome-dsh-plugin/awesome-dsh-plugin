@@ -1,0 +1,7 @@
+url: https://github.com/fengguanghuai/dsh-workspace-tools
+name: fengguanghuai/dsh-workspace-tools
+category: ui
+icon: https://raw.githubusercontent.com/fengguanghuai/dsh-workspace-tools/main/assets/icon-180.png
+description:
+  en: Modular sidebar & pin enhancement suite (global pinned sessions and workspaces, drag reorder, inline search, header quick actions, 7-color labels, recency sort, auto-fold history) plus workspace_manage and session_title agent tools.
+  zh: 可独立开关的侧边栏与置顶增强套件（顶部跨工作区置顶区、工作区置顶展开、拖拽排序、就地搜索、标题栏快捷按钮、7 色标签、按最近活跃排序、超期历史自动折叠），并内置 workspace_manage 与 session_title 两个 Agent 工具。
