@@ -1670,6 +1670,7 @@ dsh plugin --profile web add dshmarket
 - [MingGH/dsh-pin-top](https://github.com/MingGH/dsh-pin-top) — 把 DSH 的置顶会话收进侧边栏独立分区并支持 macOS 式颜色标签，同时给工作区标题栏加上定位、全部收起、全部展开三个按钮。
 - [MingoYung/dsh-awakening](https://github.com/MingoYung/dsh-awakening) — 启动动画选择器，内置DeepSeek、Codex和Claude Code三套主题，支持本地MP4/WebM导入和插件内社区动画库；已支持的Windows DSH NEXT构建可选安装和恢复首屏兼容层。
 - [MingoYung/dsh-superagent-power](https://github.com/MingoYung/dsh-superagent-power) — 在 Windows 输入栏添加全局 Sup 开关，按需启动或正常关闭独立的 Super-agent 后台进程，关闭后释放其占用的内存。前置条件：已装好 DSH NEXT、Node 24+、独立 DSH CLI，且 Super-agent 已在独立 profile 中配置好（已在 DSH 0.2.1-rc.4/rc.5 验证）；还需在 Super-agent profile 中注册包内的 bridge.js——只安装桌面包并不能完成整套安装。
+- [mingyang66/dsh-gohome](https://github.com/mingyang66/dsh-gohome) — 在消息输入框下方显示下班倒计时：剩余时间、今日进度、提前提醒（默认提前 30 分钟，可在设置页改为 0–120）、下班后自动切换为加班计时、周末单独提示。上下班时间与提醒在设置页中修改；配置仅保存在本浏览器。零依赖、无构建步骤、不发起网络请求。
 - [minhaoli/dsh-ui-reload](https://github.com/minhaoli/dsh-ui-reload) — 在会话头部一键重载整个前端。点击后先读取下一个文档并等待其 bundle 地址可解析，避免客户端 bundle 重建后重载进入无法启动的图。
 - [minivv/dsh-activity-bell](https://github.com/minivv/dsh-activity-bell) — 侧边栏活动铃铛：会话跑完后铃铛显示红色角标，点一下把工作区列表换成按天分组的最近活动列表，尚未打开过的完成项带绿点。
 - [Minus77/dsh-prompt-optimize](https://github.com/Minus77/dsh-prompt-optimize) — 在输入框里就地改写提示词：浮层在输入区上方流式生成结构化改写，替换前逐行 diff 确认，替换后 9 秒内可撤销；附带本地历史、版本对比、7 套模板与变量抽取。
@@ -3739,6 +3740,7 @@ dsh plugin --profile web add dshmarket
 - [gnk478/dsh-client-ui-wallpaper](https://github.com/gnk478/dsh-client-ui-wallpaper) — 把本机图片/视频（含 Dynamic Wallpaper.app 素材）用作 DSH 桌面客户端背景：定时轮换与 0.7 秒交叉淡化、等首帧就绪再淡入、按壁纸明暗自动切换深/浅字色、模糊与面板/侧栏透明度可调、视频缩略图，探针接口上报加载、图层与界面选择器的健康状态。只读取本机文件，不联网。
 - [GptsApp/dsh-stylevault](https://github.com/GptsApp/dsh-stylevault) — 为 DeepSeek Harness 提供 30 套经典开源主题配色（Catppuccin、Nord、Tokyo Night、Gruvbox、Solarized 等），映射官方 ThemeService token；带 Style Settings 面板，可实时调整颜色/字体/圆角，并支持 JSON 导出/导入分享配置。
 - [Gsaecy/Zero-State-Radar](https://github.com/Gsaecy/Zero-State-Radar) — 赛博朋克皮肤：空会话时扫描线自上而下扫过，扫过处浮现点阵世界地图与城市航线，左下角带信号监控；发出第一条消息即整体退场。
+- [gtggdd4mzb-source/dsh-liquid-glass-fluid-background](https://github.com/gtggdd4mzb-source/dsh-liquid-glass-fluid-background) — 面向 DSH 0.2.2 的液态玻璃表面、渐变流动背景与交互水波，支持停用清理和设备本地设置。
 - [gulagala001/dsh-theme-plugin](https://github.com/gulagala001/dsh-theme-plugin) — 为 DeepSeek Harness 提供主题、配色、背景与外观设置。
 - [GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO) — 刀剑神域主题：原生 Link Start、桐人／亚丝娜语音与 NerveGear 音效，支持宽屏、竖屏和窗口缩放，可选全部功能或仅启动动画；明暗主题色独立记忆、系统默认字体与本机字体选择；液态／磨砂玻璃，会话液态表面默认透明度 50%，输入框两种材质及透明度独立设置并分别记忆，默认均 20%；圆角提问选项、自定义回答、设置与右栏文件／变更／任务等 GUI 适配；九张壁纸、本地图片或循环视频及静态省电；模型思考强度滑条与单项重置。
 - [H2CO3w/dsh-theme-frost](https://github.com/H2CO3w/dsh-theme-frost) — 把文件夹里的图片设为 DSH 网页端全局磨砂壁纸，配色沿用官方原版。
