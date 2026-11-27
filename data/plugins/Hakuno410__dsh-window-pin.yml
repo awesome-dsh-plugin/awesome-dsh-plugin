@@ -1,0 +1,6 @@
+url: https://github.com/Hakuno410/dsh-window-pin
+name: Hakuno410/dsh-window-pin
+category: ui
+description:
+  en: A pushpin in the session header that keeps the Windows desktop window above every other window; clicking it again releases the window, and the choice is restored on the next launch. The same switch is exposed to the agent as the window_pin tool with pin, unpin, toggle and status actions.
+  zh: 会话标题栏右侧的图钉按钮，点一下让 Windows 桌面窗口钉在所有窗口最上层，再点一下取消；置顶状态保存在本地，下次启动自动恢复。同一个开关也开成 window_pin 工具，支持 pin、unpin、toggle、status 四个动作。
