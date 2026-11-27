@@ -1,0 +1,26 @@
+name: dsh-task-panel-local
+repo: https://github.com/heiyedehen/dsh-task-panel-local
+npm: dsh-task-panel-local
+author: heiyedehen
+category: workflow
+description:
+  en: >-
+    Scripts & Schedules: a read-only panel over this machine's Windows scheduled
+    tasks and the scripts in the folders you point it at. Run one by hand, read
+    its log tail, and see what ran recently — successful and failed runs both
+    leave a trace. DSH's own tasks (names starting with Dsh) show by default and
+    one click reveals every task on the machine; tasks under \Microsoft are
+    never listed. If no folder is set it looks in DSH's own toolkit/scripts
+    first. No start/stop, no delete, no moving scripts.
+  zh: >-
+    脚本与计划：只读地看一眼本机的 Windows 计划任务，以及你指定的目录里的脚本。
+    能手动跑一次、看日志尾巴，成功的失败的都留痕。默认只列 DSH 自己的计划任务
+    （名字带 Dsh），点一下能看到本机全部，\Microsoft 下的系统任务永远不列。
+    没填目录时会自动找 DSH 自己的 toolkit / scripts。不做启停、不做删除、不搬脚本。
+license: MIT
+tags:
+  - windows
+  - scheduled-tasks
+  - scripts
+  - local
+  - read-only
