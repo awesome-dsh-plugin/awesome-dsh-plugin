@@ -1,0 +1,7 @@
+url: https://github.com/lijiawei255/dsh-plugin-solarized-eyecare
+name: lijiawei255/dsh-plugin-solarized-eyecare
+category: theme
+description:
+  en: Whole-app Solarized light and dark theme for DeepSeek Harness (Desktop app and Web GUI), with higher-contrast text and state colors tuned for long sessions.
+  zh: 为 DeepSeek Harness 桌面版与 Web 版提供全应用 Solarized 浅色与深色主题，并提高文字与状态色对比度，适合长时间使用。
+tarball: https://github.com/lijiawei255/dsh-plugin-solarized-eyecare/releases/latest/download/dsh-plugin-solarized-eyecare.tgz
