@@ -1,0 +1,7 @@
+url: https://github.com/ckbw1941-crypto/dsh-paperang-print
+name: ckbw1941-crypto/dsh-paperang-print
+category: tools
+icon: https://raw.githubusercontent.com/ckbw1941-crypto/dsh-paperang-print/main/assets/icon-180.png
+description:
+  en: Prints to a Paperang (喵喵机) P2 HD thermal printer over Bluetooth LE from a sidebar panel — text, pasted or dropped images with a real 576-dot bitmap preview, grey-dither toggle, 20-100% scale, 90° rotation, print density and paper feed. A watched folder prints new images automatically. Ships a small Python bridge that builds its own virtual environment on first use; nothing is uploaded.
+  zh: 在左侧菜单里直接打印到作业帮喵喵机 P2 HD：文字、粘贴或拖入的图片，带真实 576 点阵预览、灰阶抖动开关、20–100% 缩放、90° 旋转、浓度与纸尾走行；文件夹里出现图片会自动打印。自带 Python 桥，首次使用自动建独立虚拟环境，数据不上传。
