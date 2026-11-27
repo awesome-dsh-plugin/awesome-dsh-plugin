@@ -1,0 +1,6 @@
+url: https://github.com/houwudi14010/dsh-global-find
+name: houwudi14010/dsh-global-find
+category: ui
+description:
+  en: 'Ctrl+F find bar that searches the whole DSH frame at once: every mounted panel including the ones hidden or collapsed right now, with a scope switch for the current conversation only. Matches that land in a region you cannot see are reported as such instead of being silently skipped or jumped to, and highlighting uses the CSS Custom Highlight API so no DOM node is modified.'
+  zh: '一次搜索整个 DSH 界面的 Ctrl+F 查找条：涵盖所有已挂载面板，包括此刻隐藏或折叠的那些，并可切换为只搜当前对话。命中落在看不见的区域时会明确说明，而不是悄悄跳过或假装跳转；高亮用 CSS Highlight API，不改动任何 DOM 节点。'
