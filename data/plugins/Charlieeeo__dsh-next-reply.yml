@@ -1,0 +1,8 @@
+url: 'https://github.com/Charlieeeo/dsh-next-reply'
+name: 'Charlieeeo/dsh-next-reply'
+category: 'ui'
+icon: 'https://raw.githubusercontent.com/Charlieeeo/dsh-next-reply/main/icon-180.png'
+tarball: 'https://github.com/Charlieeeo/dsh-next-reply/releases/download/v0.8.0/dsh-next-reply.tgz'
+description:
+  en: 'Vertical next-reply suggestions under each completed turn: the reply itself ends with up to three suggested follow-ups, so no auxiliary model call is made. Clicking a suggestion inserts it into the composer at the caret; a paper-plane button sends it, a bubble button inserts it.'
+  zh: '每条回答结束后，在本轮下方显示最多 3 条竖排的下一步建议：建议由主回复自身给出，不额外调用模型。点建议文字会插入输入框光标处；纸飞机按钮直接发送，气泡按钮插入输入框。'
