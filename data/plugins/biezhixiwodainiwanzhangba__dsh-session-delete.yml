@@ -1,0 +1,8 @@
+url: https://github.com/biezhixiwodainiwanzhangba/dsh-session-delete
+name: biezhixiwodainiwanzhangba/dsh-session-delete
+category: session
+description:
+  en: "Permanently deletes a session instead of archiving it: a confirmation dialog lists what the conversation left on disk — its log, the whole subagent session tree, the projection cache entry, referenced attachment blobs, spill temp directories and the files the session wrote in the workspace — and the dialog has two independent columns, so one set of categories can be backed up to a chosen folder while a different set is removed. Attachments still referenced by another live session are kept, and the backup writes a manifest plus a restore guide; a target inside the sessions root is refused."
+  zh: "把会话真正删掉而不是归档：确认弹窗先列出这次对话在磁盘上留下的东西——日志、整条子代理会话树、投影缓存、日志引用的附件 blob、spill 临时目录，以及会话在工作区写过的文件——弹窗是两列独立的表，可以把一类内容备份到指定目录、同时删掉另一类。仍被其他存活会话引用的附件会保留，备份里带 manifest 与恢复说明；指向会话根目录内的备份目标会被拒绝。"
+icon: https://raw.githubusercontent.com/biezhixiwodainiwanzhangba/dsh-session-delete/main/docs/icon-180.png
+tarball: https://github.com/biezhixiwodainiwanzhangba/dsh-session-delete/releases/download/v2.1.3/dsh-session-delete-2.1.3.tgz
