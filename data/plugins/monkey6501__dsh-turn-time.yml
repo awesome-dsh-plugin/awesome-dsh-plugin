@@ -1,0 +1,7 @@
+url: https://github.com/monkey6501/dsh-turn-time
+name: monkey6501/dsh-turn-time
+category: usage
+icon: https://raw.githubusercontent.com/monkey6501/dsh-turn-time/main/assets/icon-180.png
+description:
+  en: "Shows how long the current task took and the session total below the composer, with the task's model time, tool time and step count."
+  zh: 在输入框下方显示本轮任务耗时与本会话累计耗时，并可展开查看本轮的模型用时、工具用时和步骤数。
