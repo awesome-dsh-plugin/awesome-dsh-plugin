@@ -2,5 +2,5 @@ url: https://github.com/Gaudi-XIX/dsh-agy-cli
 name: Gaudi-XIX/dsh-agy-cli
 category: model
 description:
-  en: 'Use your Gemini account in DSH via official agy.exe: it sends and signs every request, credentials stay local, DSH owns tools and sandbox. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '在 DSH 里用本机已登录的 Gemini 账号跑模型：官方 agy.exe 自己发请求并签名，不反代、不改二进制，凭据留在本机；工具、审批、沙箱归 DSH，每步可见可拦。默认 180 秒自动收尾。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'Use your Gemini account in DSH via official agy.exe: it sends and signs every request, credentials stay local, DSH owns tools and sandbox.'
+  zh: '在 DSH 里用本机已登录的 Gemini 账号跑模型：官方 agy.exe 自己发请求并签名，不反代、不改二进制，凭据留在本机；工具、审批、沙箱归 DSH，每步可见可拦。默认 180 秒自动收尾。'
