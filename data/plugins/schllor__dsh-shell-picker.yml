@@ -1,0 +1,7 @@
+url: https://github.com/schllor/dsh-shell-picker
+name: schllor/dsh-shell-picker
+category: tools
+description:
+  en: "Lets Windows users choose which shell the Agent's command tool runs in, detecting installed PowerShell 7, Windows PowerShell 5.1 and Git Bash from a picker panel."
+  zh: '让 Windows 用户为 Agent 的命令工具选择 shell 解释器，并在选择面板中自动探测已安装的 PowerShell 7、Windows PowerShell 5.1 与 Git Bash。'
+icon: https://raw.githubusercontent.com/schllor/dsh-shell-picker/main/assets/icon-180.png
