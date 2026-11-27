@@ -1,0 +1,7 @@
+url: https://github.com/binsonHao/dsh-workspace-links
+name: binsonHao/dsh-workspace-links
+category: workflow
+tarball: https://github.com/binsonHao/dsh-workspace-links/releases/download/v2.2.2/dsh-workspace-links-2.2.2.tgz
+description:
+  en: 'Visual groups of 2–20 related workspaces, automatically giving agents the other members’ paths, roles, and notes.'
+  zh: '在设置页中可视化组建 2–20 个工作区的关联组，并自动向 AI 提供其他成员的路径、角色和备注。'

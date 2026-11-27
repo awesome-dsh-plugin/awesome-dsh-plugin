@@ -1,0 +1,7 @@
+url: https://github.com/ZZR-rui-997/dsh-project-dept
+name: ZZR-rui-997/dsh-project-dept
+category: skill
+description:
+  en: 'Adds a project-dept skill that runs one piece of complex work as a single reviewable board, with an opening gate script that blocks a start when the project''s own ledger says it is not ready, three-layer acceptance whose middle layer is a review by someone who did not build the thing, an audit of the baseline itself when the "known good" reference may be stale, and a delivery ledger so done is a recorded decision rather than a self-declaration.'
+  zh: '加一个 project-dept skill，把一次复杂工作当成一个可验收的板块串行推进：开工前跑闸门脚本，项目台账显示还没准备好就拦住不干；验收分三层，中间一层必须由没动手的人独立盲审；基准本身可能过期时先审基准；交付进登记簿，完成是一次被记录的决定而不是自称。'
+icon: https://raw.githubusercontent.com/ZZR-rui-997/dsh-project-dept/main/icon.png

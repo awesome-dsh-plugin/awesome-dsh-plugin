@@ -1,0 +1,6 @@
+url: https://github.com/CoolrfulDARkness/resource-lease/tree/main/plugin
+name: CoolrfulDARkness/resource-lease#plugin
+category: tools
+description:
+  en: 'Cross-process resource leases for parallel agents. A PowerShell CLI, an MCP server and this DSH plugin share one lock-file format, so agents driven by different tools still exclude each other. Eight resource classes (path, port, proc, browser, screen, window, api, named) expand into facets, and a conflict is decided on facets rather than on string equality, so a directory covers its descendants while a sibling prefix does not. A lease carries a TTL, an owner and a reason, and the current holders are written into the model context at every step. Three tools let an agent acquire, release and inspect leases; a lease whose owner process is provably dead is reclaimed without waiting for the TTL.'
+  zh: '给并行 agent 用的跨进程资源租约。PowerShell CLI、MCP server 与本 DSH 插件共用同一套锁文件格式，所以不同工具驱动的 agent 之间也会互相排斥。八种资源类（path、port、proc、browser、screen、window、api、named）会展开成 facet，冲突按 facet 判定而不是按字符串相等，所以一个目录覆盖它的子路径、而兄弟前缀不会误撞。租约带 TTL、持有者与用途说明，当前持有者会写进每步的模型上下文。三个工具可让 agent 申请、释放与查看租约；持有者进程被证明已死时，租约不必等 TTL 到期即可被回收。'

@@ -1,0 +1,6 @@
+url: https://github.com/NONON01/dsh-multithread-downloader
+name: NONON01/dsh-multithread-downloader
+category: tools
+description:
+  en: Range-based multi-connection HTTP/HTTPS downloader with resume, mirror fallback, checksum verification and DoH resolution; connections climb from 4/6/8 up to 8 while every connection stays rate-limited, keeping downloaded bytes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 分片多线程 HTTP/HTTPS 下载器：断点续传、镜像回退、多算法校验、DoH 解析；每条连接被限速时并发从 4/6/8 爬到最多 8 条，已下载字节保留。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

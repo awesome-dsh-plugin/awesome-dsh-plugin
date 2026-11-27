@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-subagent-board
+name: SSHOOTING/dsh-plugin-subagent-board
+tarball: https://github.com/SSHOOTING/dsh-plugin-subagent-board/releases/download/v0.1.0/0.1.0.tgz
+category: dev
+description:
+  en: 'Read-only board of subagent activity: ownership, event counts and merged results.'
+  zh: '只读子代理看板：所有权、事件数与已合并结果。'

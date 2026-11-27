@@ -1,0 +1,7 @@
+url: https://github.com/Reco1or/dsh-prompt-zh-cn
+name: Reco1or/dsh-prompt-zh-cn
+category: usage
+description:
+  en: Replace the system prompt sections, runtime context, automatically injected messages, and tool definitions built into DSH with Chinese.
+  zh: 替换DSH内置的系统提示词sections、运行时上下文、自动注入消息与工具定义为中文。
+icon: https://raw.githubusercontent.com/Reco1or/dsh-prompt-zh-cn/main/assets/icon-180.png

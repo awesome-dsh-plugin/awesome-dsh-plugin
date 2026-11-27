@@ -1,0 +1,6 @@
+url: https://github.com/rzcdz/dsh-session-handoff
+name: rzcdz/dsh-session-handoff
+category: session
+description:
+  en: 'Cron-driven session handoff: on a schedule (or one click) it creates a new session inside a chosen workspace, names it after tomorrow''s date, pins it to the top, and sends the handoff command as its first message. One shared expression drives an ordered list of handoffs, each switchable, and a missed trigger is skipped rather than replayed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '按 cron 定时自动交接会话：到点或点一下，就在指定工作区新建会话，用「前缀 + 明天的日期」命名，置顶后把交接指令作为第一条消息发出去。全局一条表达式驱动一份有序的交接清单，每条可单独启用；错过的触发直接跳过，不补跑。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/liujianqiao701/dsh-small-mcp-server
+name: liujianqiao701/dsh-small-mcp-server
+category: ui
+description:
+  en: 'MCP server manager in the DSH settings panel: lists, adds, edits, removes and enables or disables the mcp-client loader entries, with each in-flight phase shown separately and unsaved drafts never committed behind your back.'
+  zh: 'DSH 设置面板里的 MCP 服务管理器：列出 / 新增 / 编辑 / 删除 / 启停 mcp-client loader 条目；每个中间状态各自显示，且未保存的草稿不会被悄悄提交。'

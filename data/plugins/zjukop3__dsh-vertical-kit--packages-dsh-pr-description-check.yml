@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-pr-description-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-pr-description-check'
+category: 'tools'
+description:
+  en: 'Pull-request description hygiene: what changed, why, how it was verified, the issue it closes, any breaking change paired with a migration note, and no all-unchecked checklist. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'PR 描述的检查：改了什么、为什么、怎么验证的，加上关联 issue、破坏性变更配迁移说明、检查清单是否真读了。CLI 支持 stdin，可直接接 gh pr view 管道。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

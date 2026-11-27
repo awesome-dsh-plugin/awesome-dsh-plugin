@@ -1,0 +1,7 @@
+url: https://github.com/ixxgal/dsh-task-mail-notifier
+name: ixxgal/dsh-task-mail-notifier
+category: notify
+icon: https://raw.githubusercontent.com/ixxgal/dsh-plugins/main/docs/icons/dsh-task-mail-notifier.png
+description:
+  en: 'Sends an SMTP mail when a DSH task finishes; the sidebar panel switches mail reminders, skips IM sessions and toggles the end-of-turn chime, and edits the sending mailbox with a test send.'
+  zh: '任务结束后用 SMTP 发一封邮件；侧边栏面板可开关邮件提醒、让 IM 会话跳过不发、开关完成语音，并改发信邮箱、发测试信。'

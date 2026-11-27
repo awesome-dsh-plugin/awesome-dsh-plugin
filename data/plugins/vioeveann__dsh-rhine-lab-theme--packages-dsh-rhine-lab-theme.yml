@@ -1,0 +1,8 @@
+url: https://github.com/vioeveann/dsh-rhine-lab-theme/tree/main/packages/dsh-rhine-lab-theme
+name: vioeveann/dsh-rhine-lab-theme#dsh-rhine-lab-theme
+category: theme
+description:
+  en: 'An Arknights fan theme built around the Rhine Lab faction: two skins (cream/graphite and a lighter variant), a header lockup, a grid-only background with the central animated watermark removed, and user bubbles that hug their text. Plain CSS and local SVG, no network access at runtime.'
+  zh: '《明日方舟》莱茵生命（Rhine Lab）同人主题：两套皮肤（奶油白/石墨黑与明色变体）、顶栏标志、去掉中央动态水印的纯网格背景、贴内容宽度的用户气泡。纯 CSS 与本地 SVG，运行时不联网。'
+icon: https://raw.githubusercontent.com/vioeveann/dsh-rhine-lab-theme/main/packages/dsh-rhine-lab-theme/skins/rhine-lab/preview/light.png
+tarball: https://github.com/vioeveann/dsh-rhine-lab-theme/releases/download/dsh-v1.0.2/dsh-rhine-lab-theme-1.0.2.tgz

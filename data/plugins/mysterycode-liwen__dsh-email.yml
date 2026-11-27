@@ -1,0 +1,6 @@
+url: https://github.com/mysterycode-liwen/dsh-email
+name: mysterycode-liwen/dsh-email
+category: tools
+description:
+  en: A sidebar mail client for DeepSeek Harness that sends and receives QQ, 163, Gmail and other IMAP/SMTP mailboxes, with new-mail notifications, an unread badge, read/unread filters, and authorization codes stored in the local credential vault.
+  zh: DeepSeek Harness 侧边栏邮件客户端，收发 QQ、163、Gmail 等 IMAP/SMTP 邮箱，支持新邮件通知、未读角标、已读未读筛选，授权码保存在本机凭据保险箱。

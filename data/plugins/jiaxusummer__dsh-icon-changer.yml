@@ -1,0 +1,7 @@
+url: https://github.com/jiaxusummer/dsh-icon-changer
+name: jiaxusummer/dsh-icon-changer
+category: ui
+description:
+  en: 'Changes the DeepSeek Harness desktop app icon (window, taskbar, tray): use your own image or restore the official set. DSH quits and restarts once to apply it. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '更换 DeepSeek Harness 桌面版的应用图标（窗口、任务栏、托盘）：可以换用自己的图，也可以恢复官方那套。换图标时 DSH 会退出并重启一次。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/jiaxusummer/dsh-icon-changer/main/assets/icon-512.png

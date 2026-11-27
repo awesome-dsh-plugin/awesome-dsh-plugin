@@ -1,0 +1,6 @@
+url: https://github.com/yanghangju/dsh-duanju-slice
+name: yanghangju/dsh-duanju-slice
+category: tools
+description:
+  en: "Short-drama clipping workbench: given a drama folder, a script DOCX, an export folder and a content direction, it picks the matching lines, obtains their real time codes by streaming the episode audio to Doubao speech recognition (a Doubao voice API key is required), tightens the cut to the returned word timestamps, checks the boundary frames, and exports an editable Jianying draft plus an MP4 carrying the source dialogue, BGM and sound effects; trim points and volume can be revised in the same chat and every revision is kept as a new version."
+  zh: '短剧切片工作台：给定短剧素材目录、剧本 DOCX、成片保存目录和一个内容方向，按剧本挑出对应台词，把这一集音频推给豆包流式语音识别拿到真实时间码（需要豆包语音 API Key），用逐词时间码收紧切点并抽首尾帧核对，产出可继续编辑的剪映草稿和带原声、BGM 与音效的成片 MP4；之后可在同一对话里改首尾与音量，每次修改都留成新版本。'

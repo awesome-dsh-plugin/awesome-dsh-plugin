@@ -1,0 +1,6 @@
+url: https://github.com/edsml-jz2321/dsh-evokit
+name: edsml-jz2321/dsh-evokit
+category: agi
+description:
+  en: 'Measured self-improvement for prompts, skills, code and config: versions the editable files, runs paired experiments against the current version, gates changes on measured noise, cost and latency, and confirms adoptions on a sealed holdout, reverting them when confirmation fails. Adds the evokit stdio MCP tools and three skills (onboard, evolve, meta); the MCP server is the Python engine from PyPI (uv tool install dsh-evokit).'
+  zh: '可度量的自我改进：对提示词、技能、代码与配置做版本管理，与当前版本做配对实验，按实测噪声、成本和延迟设门槛，并在封存的留出集上确认采纳，确认不通过即回退。接入 evokit 的 stdio MCP 工具和 onboard/evolve/meta 三个技能；MCP 服务端是 PyPI 上的 Python 引擎（uv tool install dsh-evokit）。'

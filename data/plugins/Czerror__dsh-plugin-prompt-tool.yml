@@ -1,0 +1,6 @@
+url: https://github.com/Czerror/dsh-plugin-prompt-tool
+name: Czerror/dsh-plugin-prompt-tool
+category: identity
+description:
+  en: 'Prompt and rule tool with a web workbench: modules decide what gets injected, when it triggers, and whether it applies to the main session or subagents, with editable prompt bodies, personas, conditions, variables and per-target model parameters; imports SillyTavern presets, character cards and world books, and can attach a ledger, knowledge retrieval and persistent memory to a module.'
+  zh: '提示词与规则工具，带 Web 工作台：模块决定注入什么内容、何时触发、作用于主会话还是子代理，可编辑正文、人设、条件、变量与各目标的模型参数；支持导入 SillyTavern 预设、角色卡与世界书，模块内可配置账本、知识检索与持续记忆。'

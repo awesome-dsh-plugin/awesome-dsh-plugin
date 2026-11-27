@@ -1,0 +1,7 @@
+url: https://github.com/sjbdhr/dsh-model-request-stats
+name: sjbdhr/dsh-model-request-stats
+category: usage
+description:
+  en: 'Per-session model request statistics in the composer dock: attempts, failures, cancellations, retries, a ranked failure-reason breakdown, and an overall tok/s computed over the full wall time of each request, connection and retry backoff included, instead of the built-in decode-only rate.'
+  zh: '输入框停靠栏中的会话级模型请求统计：访问次数、失败、取消、重试、失败原因排行，以及按每次请求完整耗时计算的整体 tok/s，连接与重试等待都计入其中，而非内置的纯解码速率。'
+tarball: https://github.com/sjbdhr/dsh-model-request-stats/releases/download/v0.1.0/dsh-model-request-stats-0.1.0.tgz

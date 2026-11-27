@@ -1,0 +1,6 @@
+url: https://github.com/Librorum545/Enter_Newline
+name: Librorum545/Enter_Newline
+category: ui
+description:
+  en: 'Enter inserts a line break in the DSH composer, Ctrl/Cmd+Enter and Shift+Enter steer or queue the draft, and a Settings page rebinds all three keys with presets and JSON export/import of the mapping.'
+  zh: 'Enter 在 DSH 输入框插入换行，Ctrl/Cmd+Enter 与 Shift+Enter 分别插话发送或排队发送；设置页可逐键重新指派，并提供预设与映射的 JSON 导出/导入。'

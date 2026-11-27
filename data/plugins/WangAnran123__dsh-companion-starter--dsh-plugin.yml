@@ -1,0 +1,6 @@
+url: https://github.com/WangAnran123/dsh-companion-starter/tree/master/dsh-plugin
+name: WangAnran123/dsh-companion-starter#dsh-plugin
+category: tools
+description:
+  en: 'Starter kit for building a local AI companion on dsh: 40 tools for persona and memory, QQ channel (setup wizard, stickers, inbound media inbox), video pipeline (HyperFrames/Remotion/OpenFilm), Blender 3D, Douyin prep with risk gates, and a self-learning loop (lesson library, reflection gate, daily review); brand-new DSH install to working companion with one quickstart script.'
+  zh: 在 dsh 上搭本地 AI 伙伴的起步骨架：40 个工具覆盖人格与记忆、QQ 通道（装机向导/表情包/收件箱）、视频出片（HyperFrames/Remotion/OpenFilm）、Blender 3D、带风险闸门的抖音准备链路，以及自主学习回路（经验库/反思闸门/每日复盘）；一条 quickstart 脚本从全新 DSH 搭到能用的伙伴。

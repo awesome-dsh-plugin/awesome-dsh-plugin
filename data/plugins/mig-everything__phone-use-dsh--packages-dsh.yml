@@ -1,0 +1,8 @@
+url: https://github.com/mig-everything/phone-use-dsh/tree/main/packages/dsh
+name: mig-everything/phone-use-dsh#dsh
+category: tools
+description:
+  en: Agent tools for connected HarmonyOS, Android and iPhone devices, with native controls, on-demand screenshots and OCR, and a multi-device sidebar.
+  zh: 操作已连接的鸿蒙、安卓和 iPhone 设备，提供原生控件读取、按需截图与 OCR，以及多设备侧栏。
+icon: https://raw.githubusercontent.com/mig-everything/phone-use-dsh/main/packages/dsh/assets/icon.png
+tarball: https://github.com/mig-everything/phone-use-dsh/releases/latest/download/phone-use-dsh.tgz

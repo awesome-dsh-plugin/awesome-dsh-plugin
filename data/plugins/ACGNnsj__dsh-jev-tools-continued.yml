@@ -1,0 +1,6 @@
+url: https://github.com/ACGNnsj/dsh-jev-tools-continued
+name: ACGNnsj/dsh-jev-tools-continued
+category: model
+description:
+  en: 'Jev judgments inside DeepSeek Harness: prune oversized tool output, screen fetched pages, suggest skills, plus explicit ask/gate tools and a persistent local ledger.'
+  zh: '把 Jev 判定模型接进 DeepSeek Harness：精简超长工具输出、筛查抓取页面、推荐技能，另带显式 ask/gate 判定工具与本地累计台账。'

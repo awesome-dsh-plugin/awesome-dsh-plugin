@@ -1,0 +1,7 @@
+url: https://github.com/z460440448/dsh-web-updater-tab
+name: z460440448/dsh-web-updater-tab
+category: ui
+icon: https://raw.githubusercontent.com/z460440448/dsh-web-updater-tab/main/assets/icon-180.png
+description:
+  en: 'Docked edge tab for the Web UI — hover to expand, click for details — that checks @deepseek-ai/dsh releases and updates the profile on confirmation, with backup, version and config verification, and rollback on failure; a settings section controls the tab''s visibility, the scheduled-update window and its colour theme.'
+  zh: '贴在 Web 页面左右边缘的竖直标签，悬停展开、点击查看详情；检查 @deepseek-ai/dsh 新版本，确认后更新 profile（备份、版本与配置校验、失败回滚）；设置页可开关标签显示、配置定时更新时段与配色。'

@@ -1,0 +1,7 @@
+url: https://github.com/lizzkkafei/my-projects/tree/main/desktop-pool-plugin
+name: lizzkkafei/my-projects#desktop-pool-plugin
+category: fun
+icon: https://raw.githubusercontent.com/lizzkkafei/my-projects/main/desktop-pool-plugin/assets/icon-180.png
+description:
+  en: "A 3D billiards game opened from a DSH session: an American eight-ball (8-ball) pool table on a 9ft tournament bed with three-stage friction physics so draw, follow and side spin are computed rather than scripted, WPA rules against an AI opponent, and fully procedural art and Web Audio sound."
+  zh: "从 DSH 会话打开的 3D 台球游戏（美式八球 / 黑八 / 桌球）：9ft 比赛球台，三段式摩擦物理让低杆、高杆与左右塞都是算出来的而非预设动画，按 WPA 规则与 AI 对手对局，画面与音效全部由代码生成。"

@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-running-sessions
+name: 879745uhjun/dsh-running-sessions
+category: session
+description:
+  en: 'Lists the sessions that are working right now on the DSH home screen, with live status, workspace, what each one is waiting for, and one click to jump in.'
+  zh: '在 DSH 首页列出当前正在工作的会话：实时状态、所属工作区、正在等待什么，并可一键进入。'

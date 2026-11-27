@@ -1,0 +1,6 @@
+url: https://github.com/playfox2025/dsh-perf-control
+name: playfox2025/dsh-perf-control
+category: tools
+description:
+  en: 'A Settings page with one 5–100 slider that hard-caps the whole DSH process tree through a Windows Job Object, so ffmpeg, whisper and python children stop using every core. Windows only; without koffi the slider only stores its value.'
+  zh: '设置页里一根 5–100 的滑块，用 Windows Job Object 给整棵 DSH 进程树设 CPU 硬上限，ffmpeg、whisper、python 这些子进程不再吃满所有核。仅 Windows；没装上 koffi 时滑块只保存设置。'

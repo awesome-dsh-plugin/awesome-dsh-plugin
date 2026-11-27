@@ -1,0 +1,6 @@
+url: https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-session-history
+name: fujingzhai/youxia-dsh-plugins#dsh-session-history
+category: memory
+description:
+  en: 'Turns conversations from Claude Code, Codex, Antigravity, Pi, DSH, OpenCode, LobsterAI and experimental WorkBuddy into per-day verbatim Markdown logs with a local full-text index, then shares one skill so any of those agents can look up what was said in the others. Original wording is kept: no summaries, no embeddings, no model calls. Data stays in ~/.session-history. Needs DSH 0.2.2-rc.1 or newer and Node.js 22.15+.'
+  zh: '把 Claude Code、Codex、Antigravity、Pi、DSH、OpenCode、LobsterAI 以及实验性的 WorkBuddy 的对话整理成按天存放的原文 Markdown 日志，并建本地全文索引；以一个共用技能提供给这些 agent，让它们能查到彼此聊过什么。保留原话，不做摘要，不用向量，不调用模型；数据在 ~/.session-history。需要 DSH 0.2.2-rc.1 或更新版本与 Node.js 22.15+。'

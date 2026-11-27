@@ -1,0 +1,6 @@
+url: https://github.com/serein772/dsh-quick-shot
+name: serein772/dsh-quick-shot
+category: ui
+description:
+  en: 'Screenshot straight into the composer: the app window is cloaked so it never appears in the grab, you drag a region (or only the app window), and the PNG lands in the draft as an attachment. A C# helper is compiled by the host on first use, so the overlay opens in about 0.3 s. Windows only; nothing is written to disk and no pixel leaves the machine.'
+  zh: '截图直接进输入框：窗口先被 cloaking 掉，所以不会拍进自己的界面；拖框选区或只截当前窗口，PNG 立刻成为草稿附件。C# helper 由宿主编译并缓存，点击到选区浮层约 0.3 秒。仅支持 Windows；不写磁盘、图像不出本机。'

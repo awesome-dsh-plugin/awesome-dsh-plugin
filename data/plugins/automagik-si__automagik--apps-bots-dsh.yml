@@ -1,0 +1,7 @@
+url: https://github.com/automagik-si/automagik/tree/dev/apps/bots-dsh
+name: automagik-si/automagik#bots-dsh
+category: workflow
+description:
+  en: "A team of long-lived Bots, each a DSH Session with its own name, instructions, model and permission preset: Bots message each other and talk in group chats with @mentions, keep Markdown memory per Bot, per group chat and for the whole team, and each drives its own browser profile in the Chrome, Edge, Chromium or Brave already installed, asking before it posts, uploads, downloads or deletes. The first Main Bot, named Omni, is created when the team first opens. Built on DS Bot (Fei2411/DS-Bot)."
+  zh: "一支长期存在的 Bot 团队，每个 Bot 都是一个 DSH 会话，有自己的名字、指令、模型和权限预设：Bot 之间可以互发消息，也能在群聊里用 @ 提及交流；以 Markdown 分别为每个 Bot、每个群聊和整个团队保存记忆；每个 Bot 在本机已安装的 Chrome、Edge、Chromium 或 Brave 中操控自己的浏览器配置文件，发帖、上传、下载或删除前会先征求你的同意。团队首次打开时会创建第一个主 Bot，名为 Omni。基于 DS Bot（Fei2411/DS-Bot）开发。"
+tarball: https://github.com/automagik-si/automagik/releases/download/v3.130.0/automagik-bots-dsh-3.130.0.tgz

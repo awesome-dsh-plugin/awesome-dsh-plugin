@@ -1,0 +1,6 @@
+url: https://github.com/iamjager416/dsh-daily-checkin
+name: iamjager416/dsh-daily-checkin
+category: usage
+description:
+  en: 'Runs the daily check-in for Kuro Games (Wuthering Waves, Punishing Gray Raven), Skland (Arknights, Endfield) and NTE, then pushes the result to QQ. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '每天自动签到库街区（鸣潮/战双）、森空岛（明日方舟/终末地）和塔吉多（异环），签完可把结果推到 QQ。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

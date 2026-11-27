@@ -1,0 +1,6 @@
+url: https://github.com/Roshenn/dsh-workaround-git
+name: Roshenn/dsh-workaround-git
+category: git
+description:
+  en: 'Batch git across every repository in a workspace: eight tools that each return one table — status with branch, working-tree dirt, ahead/behind and last commit; fast-forward-only sync that skips dirty trees; per-repo change digests for writing commit messages; one commit per repo with its own message; push; stage/unstage; discard or stash; and merge/rebase/cherry-pick conflicts (list, resolve ours or theirs, continue, abort) — plus a sidebar panel with a per-repo commit box, and dryRun on sync, commit and push. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '工作区批量 git：八个工具每次调用各返回一张表——status（分支、工作区脏、领先/落后、最后提交）、只做 fast-forward 且跳过脏工作区的 sync、供写提交信息用的逐仓改动摘要、每仓独立提交信息的一次提交、push、暂存/取消暂存、丢弃或 stash，以及 merge/rebase/cherry-pick 冲突（列出、选 ours 或 theirs、continue、abort）——另带逐仓提交框的侧栏面板，sync、commit 与 push 都支持 dryRun。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

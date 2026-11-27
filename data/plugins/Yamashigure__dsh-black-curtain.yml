@@ -1,0 +1,7 @@
+url: https://github.com/Yamashigure/dsh-black-curtain
+name: Yamashigure/dsh-black-curtain
+category: ui
+tarball: https://github.com/Yamashigure/dsh-black-curtain/releases/download/v1.0.0/local-black-curtain-1.0.0.tgz
+description:
+  en: 'Renders text wrapped in a pair of double tildes as a moegirl-style black bar that reveals on hover or long press. Applies to assistant markdown and to plain-text user messages, and does not change the message content or the copy result. Optional pointer-following quip; a settings page covers bar style, scope and the quip.'
+  zh: '把一对波浪线围住的字渲染成萌娘百科式黑幕，鼠标移上去或长按才露出。助手回复和纯文本用户消息都生效，不改变消息内容和复制结果。可选的跟着指针的吐槽气泡，设置页用来调样式、范围和气泡。'

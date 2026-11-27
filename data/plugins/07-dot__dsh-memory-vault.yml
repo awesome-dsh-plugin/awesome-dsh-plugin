@@ -1,0 +1,6 @@
+url: https://github.com/07-dot/dsh-memory-vault
+name: 07-dot/dsh-memory-vault
+category: memory
+description:
+  en: 'Recalls an Obsidian Markdown vault before each task: a per-agent prompt context is registered on agent creation and re-queried with the current task text, adding a standing profile plus the notes that match, while three tools read, write and audit the vault (inbox backlog, broken links, duplicate candidates, stale goals). Scoring is local n-gram matching with no embedding model, no external service and no runtime dependencies.'
+  zh: '把 Obsidian Markdown 记忆库接进 Harness：每个 Agent 创建时挂一个提示词上下文，按当前任务文本检索后注入常驻档案与相关条目；另有三个工具用于读写与结构体检（收件箱积压、断链、重复候选、过期目标）。检索为本地 n-gram 打分，无嵌入模型、无外部服务、无运行时依赖。'

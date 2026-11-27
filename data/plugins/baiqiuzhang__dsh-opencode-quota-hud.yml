@@ -1,0 +1,6 @@
+url: https://github.com/baiqiuzhang/dsh-opencode-quota-hud
+name: baiqiuzhang/dsh-opencode-quota-hud
+category: usage
+description:
+  en: 'Fork of dsh-opencode-usage-settings 1.2.0 (MIT, by 锈者之家): removes the settings sub-page and shows the OpenCode Go 5h/week/month quota as a pill left of the composer model picker, rendered only while an OpenCode model is selected. Host half keeps the official usage feed; the 1.4.1 upstream changes are not merged. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'dsh-opencode-usage-settings 1.2.0 的派生版（MIT，原作者锈者之家）：删掉设置子页面，把 OpenCode Go 的 5h/本周/本月额度做成输入栏左侧药丸，只在选中 OpenCode 模型时显示。宿主半边沿用官方 usage 数据源；未合并上游 1.4.1 改动。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

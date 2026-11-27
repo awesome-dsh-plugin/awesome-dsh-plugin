@@ -1,0 +1,7 @@
+url: https://github.com/lonyness/dsh-rust-anything
+name: lonyness/dsh-rust-anything
+category: dev
+description:
+  en: Records a program's behavior and replays it against an incremental Rust port, as 22 MCP tools backed by the bundled Windows x64 rust-anything engine.
+  zh: 录制原程序行为，并对增量 Rust 迁移逐项回放验证；以 22 个 MCP 工具提供随包内置的 Windows x64 rust-anything 引擎。
+tarball: https://github.com/lonyness/dsh-rust-anything/releases/download/v3.3.5/dsh-rust-anything-3.3.5.tgz

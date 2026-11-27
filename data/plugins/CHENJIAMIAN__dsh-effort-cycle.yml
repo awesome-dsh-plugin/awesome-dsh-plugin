@@ -1,0 +1,6 @@
+url: https://github.com/CHENJIAMIAN/dsh-effort-cycle
+name: CHENJIAMIAN/dsh-effort-cycle
+category: ui
+description:
+  en: 'Adds one button to the composer toolbar that cycles the model thinking level through every level it declares, wrapping from the highest back to the lowest.'
+  zh: '在输入框工具行加一个按钮：点一下切到模型支持的下一个思考档位，走到最高档再绕回最低档，如此循环。'

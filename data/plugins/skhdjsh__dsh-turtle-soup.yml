@@ -1,0 +1,7 @@
+url: https://github.com/skhdjsh/dsh-turtle-soup
+name: skhdjsh/dsh-turtle-soup
+category: fun
+description:
+  en: 'Hosts turtle-soup puzzle games: draws from a 100-puzzle bank with type and difficulty filters, tracks hints, pause and stop, scores rounds with ranks, and collects puzzle ratings.'
+  zh: '主持海龟汤：从 100 道题库里按类型和难度抽题，管提示与暂停，给每局算分和段位，并收汤面评分。'
+icon: https://raw.githubusercontent.com/skhdjsh/dsh-turtle-soup/main/assets/icon-180.png

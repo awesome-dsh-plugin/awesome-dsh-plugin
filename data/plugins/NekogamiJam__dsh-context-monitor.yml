@@ -1,0 +1,7 @@
+url: https://github.com/NekogamiJam/dsh-context-monitor
+name: NekogamiJam/dsh-context-monitor
+category: usage
+description:
+  en: 'Read-only context occupancy, provider cache-read trends, and native compaction structure with optional billion-context-dsh metadata support.'
+  zh: '只读查看上下文水位、提供商缓存读取趋势与原生压缩结构，可选识别 billion-context-dsh 元数据。'
+tarball: https://github.com/NekogamiJam/dsh-context-monitor/releases/latest/download/dsh-context-monitor.tgz

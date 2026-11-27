@@ -1,0 +1,6 @@
+url: https://github.com/dkmnx/dsh-session-panel-centering
+name: dkmnx/dsh-session-panel-centering
+category: ui
+description:
+  en: Centers the conversation transcript in the space beside the docked Session panel.
+  zh: 会话面板停靠后，将对话记录居中显示在旁边空间。

@@ -1,0 +1,6 @@
+url: https://github.com/banzhangdeerfenzhiyi/dsh-qqmusic-plugin
+name: banzhangdeerfenzhiyi/dsh-qqmusic-plugin
+category: voice
+description:
+  en: 'Karaoke and AI cover singing for a DSH WeChat/QQ persona bot: search QQ Music, split vocals with Demucs, convert the voice with RVC, mix with the accompaniment and send a real WeChat voice bubble or QQ voice message.'
+  zh: 让 DSH 微信/QQ 人格机器人真·唱歌：点一首 QQ 音乐的歌，Demucs 分离人声、RVC 换音色、与原曲伴奏混音，以真实微信语音条或 QQ 语音发出。

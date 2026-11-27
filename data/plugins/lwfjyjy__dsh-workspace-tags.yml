@@ -1,0 +1,6 @@
+url: https://github.com/lwfjyjy/dsh-workspace-tags
+name: lwfjyjy/dsh-workspace-tags
+category: ui
+description:
+  en: 'Adds colored macOS-style tags to workspaces and lets you insert an Emoji icon before a conversation title; tags support multiple colors, custom names, drag ordering and first/full display modes.'
+  zh: '给工作区（文件夹）打彩色标签、给对话标题前插入 Emoji 图标；标签支持多色、自定义名称、拖拽排序与首/全显示。'

@@ -1,0 +1,6 @@
+url: https://github.com/wth373737/dsh-plugin-sandbox-mode
+name: wth373737/dsh-plugin-sandbox-mode
+category: agi
+description:
+  en: 'A separate agent mode for DeepSeek Harness: reasoning goes into a sandbox document, every action is written there first and then executed by reading it back, and the final answer is printed from that document. Direct tool calls are blocked per preset, and the output also lands as a file card. Deliberately more expensive, and the mode picker says so.'
+  zh: 'DSH 的一个独立 agent 模式（preset）：推理写进沙盒文档，每个动作先写进文档再读回来执行，最终输出也从文档发出。按 preset 拦截其它工具直调，输出同时落成文件卡片。设计上更费 token，模式选择器里已注明。'

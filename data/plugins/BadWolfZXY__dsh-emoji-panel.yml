@@ -1,0 +1,7 @@
+url: https://github.com/BadWolfZXY/dsh-emoji-panel
+name: BadWolfZXY/dsh-emoji-panel
+category: ui
+description:
+  en: 'Emoji picker in the DSH composer: category tabs and a permanent search box over 200+ Unicode emoji, a Recent tab, and a Mine tab that imports local images or image URLs with a one-line caption. Picking inserts at the caret, closes the panel and returns focus to the composer; imported memes insert "[meme: caption]" so the model reads what the meme means. Data stays in the browser.'
+  zh: 'DSH 输入框里的表情面板：分类标签 + 常驻搜索框，200 多个 Unicode emoji，另有「最近」和「自定义」——自定义可导入本地图片或图片网址，导入时写一句含义。点选即插到光标处、自动收起并把焦点还给输入框；导入的表情插入「[表情: 含义]」文本，模型据此理解表情意思。数据只存本机浏览器。'
+icon: https://raw.githubusercontent.com/BadWolfZXY/dsh-emoji-panel/main/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/ErgeAIA/dsh-skills-zhiyin
+name: ErgeAIA/dsh-skills-zhiyin
+category: skill
+description:
+  en: 'ZhiYin (织音) toggles skills on and off per task: enable only what the current job needs and save the context the skill catalog would otherwise spend. Group skills into packs for one-click switching, and install, uninstall, archive or restore them.'
+  zh: '织音（ZhiYin）按任务启停技能：只开当前真正要用的，省下技能目录占用的上下文。技能可编成包一键切换，也支持安装、卸载、归档与恢复。'
+icon: https://raw.githubusercontent.com/ErgeAIA/dsh-skills-zhiyin/main/assets/icon-180.png

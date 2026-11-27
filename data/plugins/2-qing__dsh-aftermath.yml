@@ -1,0 +1,8 @@
+url: https://github.com/2-qing/dsh-aftermath
+name: 2-qing/dsh-aftermath
+category: session
+description:
+  en: "Logs what each AI turn changed inside the folders you point it at — which files were created, deleted or modified, and which tool call most likely did it. Never reads file contents."
+  zh: "记录每一轮对话在观测目录里改了什么：哪些文件被新建、删除或修改，大致是哪次工具调用干的。不读文件内容。"
+icon: https://raw.githubusercontent.com/2-qing/dsh-aftermath/main/assets/icon-512.png
+tarball: https://github.com/2-qing/dsh-aftermath/releases/latest/download/dsh-aftermath.tgz

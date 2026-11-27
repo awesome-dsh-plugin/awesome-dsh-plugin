@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-review-reply-check
+name: PerryLink/dsh-review-reply-check
+category: tools
+description:
+  en: "Review-comment response check for DeepSeek Harness: check responses to reviewer comments against the Chinese University Science and Technology Journal Editing Standard. Flags discrepancies only and makes no conclusive judgment."
+  zh: "评审意见回复核对：依据《中国高校科技期刊编排规范》。仅提示差异，不作出定性结论。"

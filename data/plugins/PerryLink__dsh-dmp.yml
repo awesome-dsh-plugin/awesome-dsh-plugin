@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-dmp
+name: PerryLink/dsh-dmp
+category: tools
+description:
+  en: 'Data-management-plan tooling for DeepSeek Harness: a ten-section scaffold with prompts, completeness/consistency checks (datasets, personal data, open-sharing conflicts, retention minimum, backup, repository/license/DOI, contact), Markdown/JSON/SARIF export. Checks are internal consistency checks, not funder-template certification; no network, no file writes.'
+  zh: 'DeepSeek Harness 数据管理计划（DMP）工具：提供十段式模板与提示词、完整性与一致性检查（数据集、个人数据、开放共享冲突、最短保留期、备份、存储库/许可/DOI、联系人），支持 Markdown / JSON / SARIF 导出。仅做内部一致性检查而非资助方模板认证；无网络请求、不写文件。'

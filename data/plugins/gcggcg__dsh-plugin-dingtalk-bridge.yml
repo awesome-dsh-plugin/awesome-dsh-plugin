@@ -1,0 +1,7 @@
+url: https://github.com/gcggcg/dsh-plugin-dingtalk-bridge
+name: gcggcg/dsh-plugin-dingtalk-bridge
+category: notify
+description:
+  en: 'Receives DingTalk direct messages and group @-mentions in real time through the dws CLI, records each message source (sender or group), drafts replies with the model currently selected in DSH, and auto-replies when the confidence passes a threshold you set; every source keeps its own sliding context window, images are analysed when the model supports vision, a group reply @-mentions the sender back, and the dws CLI is installed on demand when it is missing.'
+  zh: '通过 dws CLI 实时接收钉钉私信与群 @ 消息，按发送人或群记录消息来源，用 DSH 当前选中的模型生成建议回复，置信度达到设定阈值时自动回复；每个来源各自维护滑动上下文窗口，模型支持视觉时会分析图片，群回复会 @ 回发送人；缺少 dws 时可一键自动安装。'
+icon: https://raw.githubusercontent.com/gcggcg/dsh-plugin-dingtalk-bridge/main/docs/images/icon.png

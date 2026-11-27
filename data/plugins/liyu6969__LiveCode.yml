@@ -1,0 +1,7 @@
+url: https://github.com/liyu6969/LiveCode
+name: liyu6969/LiveCode
+category: ui
+description:
+  en: Right-sidebar panel that replays a file write or edit line by line as the agent produces it, with per-file tabs, a diff gutter and an optional animated character scene.
+  zh: 右侧栏面板，把 agent 的 write/edit 调用按行实时回放，带按文件分页、diff 边栏，以及可选的角色动画场景。
+icon: https://raw.githubusercontent.com/liyu6969/LiveCode/main/icon.png

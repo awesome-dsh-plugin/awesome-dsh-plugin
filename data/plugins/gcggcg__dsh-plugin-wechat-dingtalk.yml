@@ -1,0 +1,6 @@
+url: https://github.com/gcggcg/dsh-plugin-wechat-dingtalk
+name: gcggcg/dsh-plugin-wechat-dingtalk
+category: notify
+description:
+  en: 'Bridges DingTalk direct messages and group @mentions to WeChat. It signs in to DingTalk with the official DWS CLI and to WeChat with an iLink bot QR code, then forwards new messages in a configurable merge window and tracks the WeChat push quota with reminders.'
+  zh: '将钉钉私信与群 @我 桥接到微信：通过官方 DWS CLI 登录钉钉、扫码登录微信 iLink 机器人，按可配置的合并窗口转发新消息，并统计微信推送额度、在接近或达到上限时提醒。'

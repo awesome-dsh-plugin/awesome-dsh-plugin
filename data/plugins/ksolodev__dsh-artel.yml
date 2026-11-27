@@ -1,0 +1,7 @@
+url: https://github.com/ksolodev/dsh-artel
+name: ksolodev/dsh-artel
+category: dev
+tarball: https://github.com/ksolodev/dsh-artel/releases/latest/download/dsh-artel.tgz
+description:
+  en: 'Runs development work in an isolated copy of the project. Solo runs one agent; Swarm runs three agents in the same copy that message each other via send_message/list_agents; Conductor adds a lead that hands out shares, answers stuck agents and accepts the work as a whole (up to two rework rounds); Fusion asks three models the same question in parallel in a read-only sandbox, has a judge merge their answers and one implementer do the work; Orchestrator splits the task into a plan of parts and approves them first. An auto-queue takes a whole list of tasks, branches them and runs them unattended, and the Factory turns an incoming issue or note into a ticket that goes through triage, work, checks, review and a ready pull request. The result is shown as a per-file diff and only the files you approve are applied. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在项目的隔离副本里执行开发任务。Solo 模式一个 agent 独立完成；Swarm 模式三个 agent 在同一副本里通过 send_message/list_agents 互相通信；Conductor 模式增加一个指挥，负责分配份额、回答卡住的 agent 并整体验收成果（最多两轮返工）；Fusion 模式让三个模型在只读沙箱里同时回答同一问题，由裁判模型合并答案，再由一个实现模型完成工作；Orchestrator 模式把任务拆成计划中的多个部分，先经你批准。自动队列可接收一整列任务、分到不同分支并无人值守地执行；工厂把收到的 issue 或笔记变成工单，依次经过分诊、执行、检查、审查，产出可直接合并的 pull request。结果按文件展示 diff，只应用你批准的文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

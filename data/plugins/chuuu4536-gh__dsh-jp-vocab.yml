@@ -1,0 +1,8 @@
+url: https://github.com/chuuu4536-gh/dsh-jp-vocab
+name: chuuu4536-gh/dsh-jp-vocab
+category: tools
+description:
+  en: 'Daily Japanese vocabulary digest: reads the JSONL of words starred with the companion Edge extension and writes a Markdown summary grouped by part of speech, with a configurable day boundary, template and output directory.'
+  zh: '日语生词日汇总：读取配套 Edge 扩展收藏的当日单词（JSONL），按词性分组生成 Markdown 汇总（读音、音调、词性、释义、例句），日界、模板与输出目录均可配置。'
+icon: https://raw.githubusercontent.com/chuuu4536-gh/dsh-jp-vocab/main/assets/icon-180.png
+tarball: https://github.com/chuuu4536-gh/dsh-jp-vocab/releases/latest/download/dsh-jp-vocab.tgz

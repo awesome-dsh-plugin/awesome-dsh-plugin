@@ -1,0 +1,7 @@
+url: https://github.com/handy-git/dsh-workspace-active-top
+name: handy-git/dsh-workspace-active-top
+category: ui
+description:
+  en: Moves the workspace you send a message in to the top of its own section (pinned or project) in the sidebar, falling back to the top of the whole list when the codex sidebar is not installed.
+  zh: 发消息时，把当前工作区移到它所在分区（置顶 / 项目）的最前面；未安装 codex 侧边栏时兜底为全部工作区置顶。
+icon: https://raw.githubusercontent.com/handy-git/dsh-workspace-active-top/main/assets/icon-180.png

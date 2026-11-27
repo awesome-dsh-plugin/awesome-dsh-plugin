@@ -1,0 +1,6 @@
+url: https://github.com/unera/dsh-nodes
+name: unera/dsh-nodes
+category: remote
+description:
+  en: 'Run commands on other machines from a DSH session: a small dshnc client on each node connects out over a websocket and declares shell, job, session and files APIs, while the server adds nodes_list, nodes_catalog, nodes_api and nodes_call plus an admin panel. Every command runs in an ro, rw or full sandbox whose ceiling is a policy, and widening it needs an explicit human decision; all decisions are audited. Files move in chunks, assembled as `<path>.inprogress`, verified by SHA-256 on both ends and confined to the directories the calling session may touch.'
+  zh: '在 DSH 会话里操作其他机器：每个节点跑一个小客户端 dshnc，主动连出并声明 shell / job / session / files 四类 API；服务端提供 nodes_list、nodes_catalog、nodes_api、nodes_call 以及一块管理面板。每条命令都在 ro / rw / full 沙箱下执行，权限上限由策略决定，放宽需要人来拍板，所有决定写入审计日志。文件分块传输，经 `<path>.inprogress` 组装，两端做 SHA-256 校验，且只能落在发起会话有权访问的目录内。'

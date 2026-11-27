@@ -1,0 +1,6 @@
+url: https://github.com/Dvva/dsh-alert
+name: Dvva/dsh-alert
+category: notify
+description:
+  en: Pops a Windows toast and plays a sound when DSH pauses for your approval or an answer.
+  zh: DSH 需要你批准操作、回答提问或审批计划时，弹出 Windows 系统通知并播放提示音；原生通知失败时退回自绘卡片。

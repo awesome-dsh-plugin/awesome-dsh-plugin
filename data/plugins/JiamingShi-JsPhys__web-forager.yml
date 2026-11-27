@@ -1,0 +1,6 @@
+url: https://github.com/JiamingShi-JsPhys/web-forager
+name: JiamingShi-JsPhys/web-forager
+category: browser
+description:
+  en: 'Reads public pages as clean Markdown, keeping text, tables and code blocks while stripping navigation, ads and footers. Search, HTML, PDF, Office documents, RSS and sitemap go through one set of commands, and long documents can be split into chunks that a model can take directly. The same code runs as an MCP server, so an agent can fetch its own sources during a conversation.'
+  zh: '把公开网页读成干净的 Markdown，保留正文、表格和代码块，剥掉导航、广告与页脚。搜索、HTML、PDF、Office 文档、RSS 与 sitemap 由同一组命令处理，长文档可以按块切分后直接送进模型。同一套代码也能作为 MCP 服务挂给 Agent，让它在对话里自己取资料。'

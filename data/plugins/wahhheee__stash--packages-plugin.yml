@@ -1,0 +1,6 @@
+url: https://github.com/wahhheee/stash/tree/main/packages/plugin
+name: wahhheee/stash#dsh-stash
+category: memory
+description:
+  en: Provides local memory for software development, with shared project rules and notes across workspace sessions, independent note edits in forks, and references back to the original conversation turns.
+  zh: 面向软件开发的本地记忆插件，让同一工作区的会话共享项目规则和笔记，支持分叉会话独立编辑笔记，并可按引用回看原始对话。

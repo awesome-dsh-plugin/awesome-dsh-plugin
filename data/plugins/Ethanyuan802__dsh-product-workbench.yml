@@ -1,0 +1,8 @@
+url: https://github.com/Ethanyuan802/dsh-product-workbench
+name: Ethanyuan802/dsh-product-workbench
+category: workflow
+description:
+  en: Provides product management workflows, knowledge search, and editable Office reports in DeepSeek Harness.
+  zh: 支持需求分析、竞品研究、知识检索和可编辑 Office 汇报，PPT 材料模板保留中国联通与联通数科双 Logo。
+icon: https://raw.githubusercontent.com/Ethanyuan802/dsh-product-workbench/main/ui/assets/product-workbench.png
+tarball: https://github.com/Ethanyuan802/dsh-product-workbench/releases/download/v0.1.0-alpha.21/dsh-product-workbench-0.1.0-alpha.21.tgz

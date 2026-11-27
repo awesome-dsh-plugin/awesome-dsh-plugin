@@ -1,0 +1,6 @@
+url: https://github.com/roost-qq/dsh-roost
+name: roost-qq/dsh-roost
+category: remote
+description:
+  en: 'Connect a QQ bot to DeepSeek Harness: bridge QQ chats through the official QQ bot API. One QQ conversation maps to one DSH session that survives restarts, with per-speaker tool permissions, three-layer memory, personas, scheduled proactive messages and a sidebar panel. Optional QQ-number binding ties openids to QQ numbers so memories survive an AppID change (voluntary). A first-run wizard installs the Roost kernel and sets up a direct connection; requires a QQ Open Platform bot (AppID and AppSecret). Anyone in a paired QQ group can chat by default; only the owner gets the full local toolset.'
+  zh: '把 QQ 机器人接入 DeepSeek Harness：通过 QQ 官方机器人接口接入 QQ 会话，一个 QQ 会话对应一个 DSH 会话、重启后映射保留，按说话人分档收放本地工具，三层记忆、人格、定时主动搭话与侧栏面板。可选的 QQ 号绑定把 openid 对上 QQ 号，换 AppID 后记忆照样读得到（完全自愿）。首次接入向导自动装好 Roost 内核并完成直连；需要一个 QQ 开放平台机器人（AppID 与 AppSecret）。接好的 QQ 群里任何人都能聊；只有主人拿得到完整的本地工具。'

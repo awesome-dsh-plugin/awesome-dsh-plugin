@@ -1,0 +1,6 @@
+url: https://github.com/01TY10/dsh-pin-window
+name: 01TY10/dsh-pin-window
+category: ui
+description:
+  en: Adds a title-bar pin button that keeps the Windows DeepSeek Harness desktop window above other applications; the button is disabled while the window is maximized.
+  zh: 在 Windows 桌面版标题栏添加置顶按钮，让应用始终显示在其他窗口之上；窗口最大化时按钮禁用。

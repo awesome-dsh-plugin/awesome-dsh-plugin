@@ -1,0 +1,7 @@
+url: https://github.com/liujinyang035-ops/dsh-wage-pet
+name: liujinyang035-ops/dsh-wage-pet
+category: ui
+description:
+  en: "A brass coin with a face floats in the corner and counts today's earnings every second. Pay basis is monthly, daily or hourly; the work week is five days, six days, alternating weeks or a custom day count. The counter pauses over lunch, stops at clock-out and reads zero on a rest day. Night shifts that cross midnight are handled. Drag it anywhere, click to fold into a capsule; settings stay in a draft until Save."
+  zh: "一枚带表情的小铜钱浮在窗口角落，按秒累计今日进账。计薪方式可选月薪、日薪或时薪；工作制支持双休、单休、大小周或自定义每周天数。午休暂停，下班封顶，休息日归零；跨午夜夜班同样处理。可拖到任意位置，点一下折叠成只显示金额的小胶囊；设置改动先进草稿，点保存才生效。"
+icon: https://raw.githubusercontent.com/liujinyang035-ops/dsh-wage-pet/main/icon.png

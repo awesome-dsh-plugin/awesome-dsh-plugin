@@ -1,0 +1,7 @@
+url: https://github.com/chengzhi43/dsh-desktop-notify
+name: chengzhi43/dsh-desktop-notify
+category: notify
+description:
+  en: 'Watches a long session for the two moments that need you and raises one system notification for each: the turn finished, and the agent starting to wait for your choice. The body is the conversation name and the state, and a click opens that conversation. Notifications you have not opened are counted on the app icon — a Dock badge on macOS, a taskbar overlay on Windows — and the count clears when you come back; subagent conversations stay quiet. A pure client bundle: no dependencies, no build step, no network requests, nothing written to disk. Needs DSH desktop 0.2.2-rc.3 or newer, and notifications come from the open page, so a closed window is silent.'
+  zh: '盯住长会话里真正需要你的两个时刻，各弹一条系统通知：回合结束，以及智能体开始等你做选择。正文是会话名与状态，点一下通知就回到那个会话。没点开的通知会计到应用图标上（macOS Dock 角标、Windows 任务栏覆盖），回到窗口即清零；子智能体会话保持安静。纯客户端插件：无依赖、无构建、不联网、不写磁盘。需要 DSH 桌面版 0.2.2-rc.3 及以上，通知由已打开的页面发出，关掉窗口就不再提醒。'
+icon: https://raw.githubusercontent.com/chengzhi43/dsh-desktop-notify/main/docs/icon-180.png

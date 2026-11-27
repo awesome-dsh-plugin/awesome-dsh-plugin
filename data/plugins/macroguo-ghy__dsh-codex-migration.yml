@@ -1,0 +1,7 @@
+url: https://github.com/macroguo-ghy/dsh-codex-migration
+name: macroguo-ghy/dsh-codex-migration
+category: session
+description:
+  en: Preview and import local Codex conversations into DeepSeek Harness, browse their history, and continue chatting in DSH.
+  zh: 预览本机 Codex 对话并导入 DeepSeek Harness，在 DSH 中查看历史、继续对话。
+tarball: https://github.com/macroguo-ghy/dsh-codex-migration/releases/download/v0.4.1-beta.8/dsh-codex-migration-0.4.1-beta.8.tgz

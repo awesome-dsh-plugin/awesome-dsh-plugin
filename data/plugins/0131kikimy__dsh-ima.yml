@@ -1,0 +1,6 @@
+url: https://github.com/0131kikimy/dsh-ima
+name: 0131kikimy/dsh-ima
+category: tools
+description:
+  en: 'Connect Tencent ima knowledge bases to the agent through 16 ima_* tools that list knowledge bases and documents, search, read document text, write notes and upload files, configured from a sidebar panel.'
+  zh: '通过 16 个 ima_* 工具把腾讯 ima 知识库接给 agent：列知识库与文档、检索、读文档正文、写笔记、上传文件，在侧边栏面板里配置。'

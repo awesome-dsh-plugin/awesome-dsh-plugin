@@ -1,0 +1,7 @@
+url: https://github.com/songshun1021/workfiles-assistant
+name: songshun1021/workfiles-assistant
+category: voice
+icon: https://raw.githubusercontent.com/songshun1021/workfiles-assistant/main/assets/icon-180.png
+description:
+  en: "Voice-first macOS work-documents assistant for DeepSeek Harness. It keeps a local 7-day ledger of the apps you choose, searches documents only inside folders you approve, and opens the file or page you saw recently from what you say. Window titles and HTTPS addresses are separate per-app opt-ins; it does not take screenshots, run OCR, or read the clipboard or the browser-history database."
+  zh: "给 DeepSeek Harness 的 macOS 语音资料助手。只记录你勾选的应用最近 7 天的前台线索，只在你批准的资料文件夹里按名称和正文检索，说一句记得的内容就能找回并打开最近看过的文件或网页。窗口标题和 HTTPS 地址需逐应用额外同意；不截图、不做 OCR，也不读剪贴板或浏览器历史数据库。"

@@ -1,6 +1,7 @@
 url: https://github.com/WaterDJiang/wtt-dsh-plugin/tree/main/plugins/dsh-creation-workbench
 name: WaterDJiang/wtt-dsh-plugin#dsh-creation-workbench
 category: workflow
+icon: https://raw.githubusercontent.com/WaterDJiang/wtt-dsh-plugin/36fc1bcaf2f16635a8b354378335ce44f89c6b31/plugins/dsh-creation-workbench/src/assets/wattter-agent.png
 description:
-  en: 'An AI creation canvas for DeepSeek Harness. Organize project materials, reference cards and files, run local Skills, and manage versions of text, presentations, images, and video. Requires DSH 0.2.1-rc.5 or newer; document handling needs Python 3, PPT page rendering needs LibreOffice, video preview needs ffprobe, and image/video generation uses your selected local Skills and their prerequisites. API provider extension points are available, but no provider models or API Key settings are bundled yet.'
-  zh: 'DeepSeek Harness 的 AI 创作画布。在同一个项目里整理资料、引用卡片与文件、调用本机 Skill，并管理文本、演示文稿、图片和视频的成果版本。需要 DSH 0.2.1-rc.5 或更新版本；文档处理需要 Python 3，PPT 分页渲染需要 LibreOffice，视频预览需要 ffprobe，图片／视频通过用户自选的本机 Skill 生成，具体服务与账号按该 Skill 配置；API 提供商扩展接口已预留，尚未内置模型或 API Key 设置。'
+  en: "An infinite canvas where you can connect cards to build your own workflow for making slide decks, producing videos, or writing copy. Choose an AI model for each card, or tell Xiaowa, the built-in super agent, what you want in a single sentence and it will create a series of connected cards to get it done."
+  zh: "一块神奇的无限画布，你能够在这上面通过卡片的方式连接任意的流程，包括制作 PPT、制作视频以及文案创作。每个卡片可以独立设置 AI 模型，还可以通过内置的 super agent 小瓦，一句话创建连续工作流卡片来完成任务。"

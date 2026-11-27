@@ -1,0 +1,6 @@
+url: https://github.com/mimierZBL/dsh-costline
+name: mimierZBL/dsh-costline
+category: usage
+description:
+  en: Shows recorded whole-turn token usage and estimated DeepSeek costs with a local session ledger.
+  zh: 显示实际记录的整轮 token 和 DeepSeek 预估费用，并提供本地会话总账。

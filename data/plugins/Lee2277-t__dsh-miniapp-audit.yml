@@ -1,0 +1,7 @@
+url: https://github.com/Lee2277-t/dsh-miniapp-audit
+name: Lee2277-t/dsh-miniapp-audit
+category: tools
+description:
+  en: Before submitting a WeChat mini program, check the parts a machine can. `miniapp_privacy_scan` lists the privacy APIs that must be declared in the user-privacy guideline, gaps in `requiredPrivateInfos`, and silent failure handlers that leave a tap doing nothing; `miniapp_asset_audit` reports package weight and assets no source file references; `miniapp_release_check` combines both and adds the items only a human can confirm in the console. Every hit carries a file and line, and machine-checked items are kept apart from the manual ones.
+  zh: 小程序提审前先把机器能查的部分查一遍。`miniapp_privacy_scan` 列出需要在用户隐私保护指引里声明的接口、`requiredPrivateInfos` 缺项，以及让用户「点了没反应」的静默失败点；`miniapp_asset_audit` 报包体积与源码里从未引用的资源；`miniapp_release_check` 合并两者，并单列只能在后台人工确认的项。每条命中都带文件与行号，机器查的和人工确认的分开列。
+icon: https://raw.githubusercontent.com/Lee2277-t/dsh-miniapp-audit/main/assets/icon-180.png

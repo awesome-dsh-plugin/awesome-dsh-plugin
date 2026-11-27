@@ -1,0 +1,6 @@
+url: https://github.com/Yi-qing-dev/dsh-restart-relay
+name: Yi-qing-dev/dsh-restart-relay
+category: tools
+description:
+  en: 'Restarts the DSH host without losing work. A top strip counts down before the restart and offers "restart now" or "later"; if nobody acts, the restart happens when the countdown expires, and clicking "later" cancels it permanently. Before the process tree is closed it queues a one-shot continuation prompt for the session that asked and for every other session that is mid-turn, so their tasks resume afterwards. The countdown is derived from this machine''s measured kill-to-port time. Windows and the desktop profile only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '重启 DSH 时不丢工作。页面顶部横条先倒数，可点「立即重启」或「稍后」；无人操作时 倒计时结束自动重启，点「稍后」则永久取消。关闭进程树前，会为发起重启的会话以及 其他正在运行的会话各排一条一次性续接提示，让它们的任务在重启后继续。倒计时取自 本机实测的「杀进程到端口可用」耗时。仅支持 Windows 与桌面端 desktop profile。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

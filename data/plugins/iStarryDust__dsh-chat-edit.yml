@@ -1,0 +1,6 @@
+url: https://github.com/iStarryDust/dsh-chat-edit
+name: iStarryDust/dsh-chat-edit
+category: session
+description:
+  en: 'Edits the assistant reply body as well as your own messages: rewrite either side and continue in a new conversation that keeps every later message, leaving the original untouched.'
+  zh: '对话编辑：能改 AI 回复的正文，也能改自己发的消息——改完开新对话，后续消息一条不少。'

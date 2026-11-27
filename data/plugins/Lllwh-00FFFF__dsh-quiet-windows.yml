@@ -1,0 +1,6 @@
+url: https://github.com/Lllwh-00FFFF/dsh-quiet-windows
+name: Lllwh-00FFFF/dsh-quiet-windows
+category: tools
+description:
+  en: Launch and drive Windows GUI apps entirely off-screen, so the agent reads and clicks through UI Automation while the user's desktop and keyboard focus stay untouched.
+  zh: 让智能体在屏幕外启动并操作 Windows 图形界面——用 UI Automation 读写、PrintWindow 截图，全程不占用户桌面、不抢键盘焦点。

@@ -1,0 +1,6 @@
+url: https://github.com/ninthmonee/AccreMind/tree/main/packages/dsh-plugin
+name: ninthmonee/AccreMind#dsh-plugin
+category: memory
+description:
+  en: "Captures engineering experience from a coding session into a local Markdown knowledge base and hands the relevant parts back at the start of each turn; ships a CLI, a standalone workbench and a DeepSeek Harness adapter."
+  zh: "把编码过程中的工程经验沉淀成本地 Markdown 知识库，并在每回合开始时把相关的部分交还给模型；带 CLI、独立工作台与 DeepSeek Harness 适配层。"

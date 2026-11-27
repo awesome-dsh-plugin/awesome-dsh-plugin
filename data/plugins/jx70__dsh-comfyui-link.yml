@@ -1,0 +1,6 @@
+url: https://github.com/jx70/dsh-comfyui-link
+name: jx70/dsh-comfyui-link
+category: vision
+description:
+  en: 'Nine agent tools connect DeepSeek Harness to a local ComfyUI server for text-to-image, image-to-image, custom API workflows, LoRA presets with prompt documents, algorithm upscaling, and review-and-redraw with a vision model; the bundle also adds a Draw agent preset with generation-model and LoRA pickers beside the composer.'
+  zh: '9 个 Agent 工具把 DeepSeek Harness 接到本机 ComfyUI：文生图、图生图、自定义 API 工作流、带提示词文档的 LoRA、算法放大，以及用视觉模型审图后自动重画；插件还加入绘图模式预设，在输入框旁提供生图模型与 LoRA 选择。'

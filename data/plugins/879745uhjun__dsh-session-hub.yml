@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-session-hub
+name: 879745uhjun/dsh-session-hub
+category: session
+description:
+  en: 'Aggregates the per-session metadata that the small DSH plugins keep in their own files — stars, todos, boxes and finish alerts — into one read-only GET /session-meta response for the workspace UI and for other plugins, replacing four routes and four reads. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把各小插件各自保存的会话元数据（星标、待办、盒子、结束提醒）只读聚合到同一个 GET /session-meta，供工作区界面和其他插件一次读全，替代四条路由、四次读取。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

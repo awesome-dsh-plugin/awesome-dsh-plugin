@@ -2,5 +2,6 @@ url: https://github.com/KyoMio/dsh-zen-remote
 name: KyoMio/dsh-zen-remote
 category: remote
 description:
-  en: 'Pairing-code remote access for DSH: a phone-first PWA with Web Push, plus a client role that operates the host''s shared sessions in the native DSH interface, behind your own reverse proxy or Cloudflare Tunnel.'
-  zh: '配对码远程访问 DSH：手机端可安装 PWA、带 Web Push 推送；另一台设备作为客户端，在原生 DSH 界面里直接操作主机共享的会话，经自建反代或 Cloudflare Tunnel 接入。'
+  en: 'Three-role remote access and peer mesh for DSH: link multiple computers across NATs without public IPs in peer mode (LAN direct, dual-UDP STUN hole-punching, and X25519 + AES-256-GCM blind relay via a self-hosted gateway with Ed25519 TOFU identity), or run host/client roles for a mobile PWA with Web Push (Caddy, Cloudflare Tunnel, reverse proxy, or LAN) and native sidebar mounting from up to 8 hosts, including PTY terminals, DSH 0.2.2+ Forge panels, a Plugin Bridge with dsh-better-sidebar support, and a headless CLI wizard.'
+  zh: '集三种角色于一体的 DSH 远程访问与多机虚拟组网插件：节点端（peer）通过 zr-net:// 邀请加入自建中继网关，跨 NAT 双向发现并挂载共享会话（局域网直连、双 UDP STUN 打洞与 X25519 + AES-256-GCM 盲转发兜底，Ed25519 TOFU 身份校验），同时保留手机 PWA 与 Web Push 推送；主服务端（host）支持内置 Caddy、Cloudflare Tunnel、反代与局域网接入；桌面客户端（client）可在原生侧边栏同时接入最多 8 台主机，支持远程终端、0.2.2+ Forge 面板、Plugin Bridge（兼容 dsh-better-sidebar）与无头 CLI 向导。'
+icon: https://raw.githubusercontent.com/KyoMio/dsh-zen-remote/main/assets/logo/png/dsh-zen-remote-symbol-app-icon-512.png

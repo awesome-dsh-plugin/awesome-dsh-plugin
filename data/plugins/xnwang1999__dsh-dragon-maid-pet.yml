@@ -1,0 +1,7 @@
+url: https://github.com/xnwang1999/dsh-dragon-maid-pet
+name: xnwang1999/dsh-dragon-maid-pet
+category: fun
+description:
+  en: 'A desk pet for the DSH web GUI whose illustration follows the current model''s reasoning effort across five stages, taken from one of three art sets that auto-select for Claude and DeepSeek models. Draggable and collapsible, with a custom image per stage, and it also fills in reasoning-effort levels for custom model providers in Settings → Models.'
+  zh: 'DSH Web GUI 的桌宠：形象随当前模型的思考强度在五档之间切换，龙女仆／Claude／DeepSeek 三套立绘按模型自动选择；可拖动、可收起，每一档都能换成自己的图片，并为自定义服务商补上「设置 → 模型」里的思考强度档位。'
+icon: https://raw.githubusercontent.com/xnwang1999/dsh-dragon-maid-pet/main/icon.png

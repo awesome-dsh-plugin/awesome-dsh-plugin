@@ -1,0 +1,6 @@
+url: https://github.com/xuanfenglajiao/dsh-mcp-more-panel
+name: xuanfenglajiao/dsh-mcp-more-panel
+category: tools
+description:
+  en: 'MCP server panel for DeepSeek Harness: reads MCP servers from nine existing agent config files (Claude Code, Cursor, VS Code, Codex TOML, Gemini CLI, ZCode, pi, .agents and .dsh), merges them per project, and requires approval bound to a SHA-256 fingerprint before a repository-declared server runs.'
+  zh: 'DeepSeek Harness 的 MCP 服务器管理面板：读取 Claude Code、Cursor、VS Code、Codex TOML、Gemini CLI、ZCode、pi、.agents、.dsh 九种已有配置，按项目合并；仓库声明的服务器需批准后运行，批准绑定 SHA-256 指纹。'

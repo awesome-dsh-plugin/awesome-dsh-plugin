@@ -1,0 +1,7 @@
+url: https://github.com/lcy362/dsh-railkeeper
+name: lcy362/dsh-railkeeper
+category: ui
+description:
+  en: 'Sidebar manager for DeepSeek Harness: reorder, rename, re-icon, hide and group the left rail (sidebar) panel list. Instant, persistent; imports dsh-panellist.'
+  zh: 'Railkeeper（左栏管家）是 DSH 的侧边栏插件：接管面板列表管理——拖拽排序、改名、换 24 个内置图标、隐藏、合并成分组。左侧栏与左栏通用，改动即时生效、重启保留，可一键导入 dsh-panellist 旧配置。'
+tarball: https://github.com/lcy362/dsh-railkeeper/releases/latest/download/dsh-railkeeper.tgz

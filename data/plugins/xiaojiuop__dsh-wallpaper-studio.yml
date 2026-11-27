@@ -1,0 +1,8 @@
+url: https://github.com/xiaojiuop/dsh-wallpaper-studio
+name: xiaojiuop/dsh-wallpaper-studio
+category: theme
+description:
+  en: "Paints an uploaded image, a video file, a direct URL, or one of 6 built-in gradients behind the whole DSH interface, with fill/fit/tile scaling, wallpaper opacity, background blur and a darkening veil. Overrides the primary, canvas and panel design tokens, keeping separate light and dark values, and sets independent opacity for panels, inputs and popovers. Media stays in the browser (IndexedDB) and is never uploaded."
+  zh: "把上传的图片、视频文件、直链 URL 或 6 套内置渐变铺到整个 DSH 界面背后，支持填充/适应/平铺、壁纸可见度、背景模糊与遮罩暗度；覆盖主色/底色/面板色三类设计令牌（深浅模式各一套），并可分别调整面板、输入框、弹层的透明度。素材只留在本机浏览器（IndexedDB），不上传任何服务器。"
+icon: https://raw.githubusercontent.com/xiaojiuop/dsh-wallpaper-studio/main/assets/icon-180.png
+tarball: https://github.com/xiaojiuop/dsh-wallpaper-studio/releases/latest/download/dsh-wallpaper-studio.tgz

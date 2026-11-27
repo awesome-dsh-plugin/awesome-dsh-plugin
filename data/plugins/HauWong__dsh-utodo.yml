@@ -1,0 +1,7 @@
+url: https://github.com/HauWong/dsh-utodo
+name: HauWong/dsh-utodo
+category: ui
+description:
+  en: 'Sidebar todo and idea panel with a 中文/EN switch: tasks with a single date or a range, overdue/important/due-soon views, reminder pushes to WeChat or a custom webhook, colour-coded tags, and one-click import into the current conversation.'
+  zh: '侧栏待办与想法面板，支持中英文切换：待办可设单日或日期区间，提供逾期、重要、临期视图，到点可推送微信或自定义 Webhook；想法支持彩色标签，选中条目可一键导入当前会话。'
+icon: https://raw.githubusercontent.com/HauWong/dsh-utodo/main/assets/icon-180.png

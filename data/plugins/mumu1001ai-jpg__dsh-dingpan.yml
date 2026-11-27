@@ -1,0 +1,6 @@
+url: https://github.com/mumu1001ai-jpg/dsh-dingpan
+name: mumu1001ai-jpg/dsh-dingpan
+category: ui
+description:
+  en: 'A watchlist panel for A-share, Hong Kong, US, Korean and FTSE China A50 quotes, with daily/weekly/monthly candlestick charts that page and zoom, a global-markets board, sector boards, DRAM/NAND spot prices, and a draggable Windows taskbar price pill. It also has a dark-pool tab for US-stock perpetuals on OKX / Bitget / Gate with 24-hour quotes, 15-minute / 1-hour / daily candles, CNY conversion and premium vs the A-share close; OKX and Bitget need a proxy or VPN, otherwise it falls back to Gate. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '盯盘面板：A股/港股/美股/韩股/富时中国A50 实时行情，可翻页缩放的日周月K线，全球市场、板块与存储（DRAM/NAND）价格走势，以及把自选股价格钉在 Windows 任务栏上的可拖动胶囊。另有暗盘页签：加密交易所（OKX/Bitget/Gate）上的股票永续，24 小时报价、15 分钟/1 小时/日线 K 线、人民币换算与对 A 股折溢价；取 OKX / Bitget 报价需要开启代理（VPN），未开代理时自动回落 Gate。 插件的 HTTP 路由没有 DSH 访问校验，浏览器里打开的任意网页都可以调用它们。'

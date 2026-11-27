@@ -1,0 +1,6 @@
+url: https://github.com/dengjx1-apk/dsh-soft-moe
+name: dengjx1-apk/dsh-soft-moe
+category: skill
+description:
+  en: Registers a soft-moe skill that gives replies a cute tone with 喵 sentence-enders, while leaving code, paths and error messages verbatim.
+  zh: 注册 soft-moe skill，让回复带「喵～」的软萌语气，代码、路径与报错原文保持原样。

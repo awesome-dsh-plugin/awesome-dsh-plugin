@@ -1,0 +1,6 @@
+url: https://github.com/demian-1013/dsh-demian-drama-strip
+name: demian-1013/dsh-demian-drama-strip
+category: skill
+description:
+  en: 'Turns a short-drama video into a shot-by-shot storyboard and a shootable screenplay. A still frame only ever gives composition, so camera moves and subject motion come from ffmpeg 4fps frame-diff sheets, and luma jumps locate cuts and flashbacks. Installs as one skill; needs ffmpeg on PATH.'
+  zh: '把短剧视频扒成运镜分镜表与可拍摄剧本。静帧只能读构图，运镜与主体运动靠 ffmpeg 4fps 连拍差分读出来，切点与闪回靠亮度跳变定位。以单个 skill 安装，需要本机有 ffmpeg。'

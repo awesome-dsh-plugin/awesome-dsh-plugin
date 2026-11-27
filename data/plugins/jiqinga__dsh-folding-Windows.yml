@@ -1,0 +1,6 @@
+url: https://github.com/jiqinga/dsh-folding-Windows
+name: jiqinga/dsh-folding-Windows
+category: ui
+description:
+  en: Folds the DeepSeek Harness sidebar's panel area and workspace area independently, each remembering its own state.
+  zh: 独立折叠 DeepSeek Harness 侧边栏的功能区与工作区，两个区域各自记住展开状态。

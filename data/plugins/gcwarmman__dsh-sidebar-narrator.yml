@@ -1,0 +1,8 @@
+url: https://github.com/gcwarmman/dsh-sidebar-narrator
+name: gcwarmman/dsh-sidebar-narrator
+category: ui
+description:
+  en: 'A right-sidebar narrator for DeepSeek Harness. Done / doing / next are each tied to the request they belong to, so the three lines read as one story instead of three loose sentences: what you asked, where it stands, and what finishing would take. Also a battle log, a squad view for delegated subagents, steer receipts that say whether a nudge was ever read, a read-only explain channel, a non-interrupting steer, and a stop that reports what it kept. Watching costs no tokens: everything is folded from session events, and a model is only called when you press Ask. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '右侧栏三行话，但每一行都挂回它所属的那件事，所以三句连起来读得通：你要什么、它现在到哪一步、还差什么才算完。另有战况时间线、派出去的小队、会告诉你「读没读到」的提醒回执、只读提问、不打断的提醒，以及把代价讲清楚再喊停。实时监测不花 token：全部由会话事件折叠而成，只有你按「问」的时候才调一次模型。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/gcwarmman/dsh-sidebar-narrator/main/docs/icon.png
+tarball: https://github.com/gcwarmman/dsh-sidebar-narrator/releases/latest/download/dsh-sidekick-lens.tgz

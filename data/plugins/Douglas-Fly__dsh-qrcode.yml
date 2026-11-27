@@ -1,0 +1,6 @@
+url: https://github.com/Douglas-Fly/dsh-qrcode
+name: Douglas-Fly/dsh-qrcode
+category: tools
+description:
+  en: 'Generates a QR code from any text and reads one back out of a PNG or JPEG. Also scans images sent in a message automatically and adds a select-text button in the Web UI. The QR encoder is built in, and the plugin makes no network requests.'
+  zh: '把任意文本生成二维码，也能从 PNG/JPEG 图片里读出二维码内容；消息里发来的图片会自动扫描，Web 界面选中文字即可出图。二维码编码器为内置实现，插件不发起任何网络请求。'

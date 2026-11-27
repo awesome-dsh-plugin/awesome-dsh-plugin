@@ -1,0 +1,7 @@
+url: https://github.com/Winjazw/effort-slider
+name: Winjazw/effort-slider
+category: ui
+description:
+  en: "Replaces the composer model picker with a draggable reasoning-effort slider: dragging the track changes the model's reasoning effort, and the top tier turns the track into a cosmic particle field."
+  zh: "把输入框的模型选择器换成可拖拽的推理强度滑块：拖动轨道改推理强度，最高档把轨道变成宇宙粒子场。"
+icon: https://raw.githubusercontent.com/Winjazw/effort-slider/main/assets/icon-180.png

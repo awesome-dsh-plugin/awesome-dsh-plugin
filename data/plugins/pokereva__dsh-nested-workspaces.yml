@@ -1,0 +1,7 @@
+url: https://github.com/pokereva/dsh-nested-workspaces
+name: pokereva/dsh-nested-workspaces
+category: ui
+description:
+  en: 'Nested workspaces in the sidebar: double-click the section title to rename it, add a child workspace group that is kept inside the sidebar store so no folder is created on disk, drag a session onto another workspace or group to file it there (a view assignment, the session working directory does not change), reorder sibling workspaces by dragging, and pin sessions; session rows also show a relative last-used time.'
+  zh: 侧栏的嵌套工作区：双击分区标题即可改名；添加的子工作区是侧栏里的分组记录，不会在磁盘上创建文件夹；可以把会话拖到别的工作区或分组归档（只是视图归属，会话的工作目录不变）；同级工作区可拖动排序；会话可置顶，会话行显示最近使用时间。
+icon: https://raw.githubusercontent.com/pokereva/dsh-nested-workspaces/master/assets/icon-180.png

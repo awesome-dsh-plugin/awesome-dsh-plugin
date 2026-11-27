@@ -1,0 +1,6 @@
+url: https://github.com/GarinZ/dsh-sidebar-view
+name: GarinZ/dsh-sidebar-view
+category: ui
+description:
+  en: 'Groups the DSH sidebar by repository and git worktree, time bucket or tag, with status tabs, workspace icons and session tags, layered on the shipped workspace browser with a safe fallback.'
+  zh: 'DSH 侧栏按仓库与 git worktree、时间或标签分组，带状态标签页、工作区图标与会话标签；叠加在原生工作区浏览器上，失败自动回落。'

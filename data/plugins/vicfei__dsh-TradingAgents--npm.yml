@@ -1,0 +1,7 @@
+url: https://github.com/vicfei/dsh-TradingAgents/tree/main/npm
+name: vicfei/dsh-TradingAgents#npm
+category: workflow
+description:
+  en: 'Multi-agent investment committee for DSH - analyst, bull, bear, risk and PM debate where every claim carries an evidence tag, abstention (PASS) is a first-class verdict, Buffett/Munger/Lynch/Wood guest seats critique the debate itself, and zero-key market data (CBOE quote/K-line/options-IV + SEC 10-K + nasdaq news, Yahoo-free) feeds an auditable IC-MEMO - 6 to 10 model calls per session.'
+  zh: '多智能体投研议院：分析师→多方→空方→风控→组合经理辩论，主张全带证据标签、PASS 弃权一等公民，巴菲特/芒格/林奇/伍德客座评辩（会真实分裂），零 key 行情（CBOE 报价/K线/期权隐含波动 + SEC 10-K + nasdaq 新闻，绕开雅虎限流）喂给可审计的 IC-MEMO——一场 6-10 次调用约 40 秒。'
+icon: https://raw.githubusercontent.com/vicfei/dsh-TradingAgents/main/assets/demo.png

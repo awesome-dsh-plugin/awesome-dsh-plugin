@@ -1,0 +1,6 @@
+url: https://github.com/LighghtEeloo/dsh-vcs-panel
+name: LighghtEeloo/dsh-vcs-panel
+category: git
+description:
+  en: 'Version control panel for DSH, read-only except Git upstream sync and local branch switching: working changes, syntax-highlighted diffs, and Git or Jujutsu history with a lane graph, plus a turn-end diff banner.'
+  zh: 'DSH 的版本控制面板，除 Git 上游同步与本地分支切换外只读：工作区改动、语法高亮差异、Git 与 Jujutsu 的提交历史轨道图，以及每轮结束的改动横幅。'

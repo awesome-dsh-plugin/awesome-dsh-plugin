@@ -1,0 +1,7 @@
+url: https://github.com/wednesday-solutions/chime-scheduler/tree/main/plugins/dsh-chime-scheduler
+name: wednesday-solutions/chime-scheduler#dsh-chime-scheduler
+category: tools
+description:
+  en: 'LinkedIn post scheduler for DeepSeek Harness: write, schedule, publish, edit and delete LinkedIn posts on your own profile, with images, video and a first comment. Registers the hosted Chime Scheduler MCP server with OAuth (LinkedIn sign-in, no API key) and adds a Plugins page account.'
+  zh: 'DeepSeek Harness 的 LinkedIn 帖子排期插件：在你的个人主页上撰写、排期、发布、编辑和删除 LinkedIn 帖子，支持图片、视频和首条评论。以 OAuth（LinkedIn 登录，无需 API 密钥）注册托管的 Chime Scheduler MCP 服务器，并在插件页显示账号。'
+icon: https://raw.githubusercontent.com/wednesday-solutions/chime-scheduler/main/logo.png

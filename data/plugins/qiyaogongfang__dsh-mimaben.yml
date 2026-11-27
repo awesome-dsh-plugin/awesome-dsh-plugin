@@ -1,0 +1,6 @@
+url: https://github.com/qiyaogongfang/dsh-mimaben
+name: qiyaogongfang/dsh-mimaben
+category: security
+description:
+  en: 'Local encrypted credential vault for accounts, passwords, API keys and documents; the agent can save entries and fetch them on request, with AES-256-GCM at rest and optional folder sync across devices. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '本机加密密码本：在侧栏管理账号密码、API Key、密钥与文档，模型可随时存取；AES-256-GCM 落盘，可选目录同步实现多端共用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

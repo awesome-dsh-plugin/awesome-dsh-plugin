@@ -1,0 +1,6 @@
+url: https://github.com/Fruneng/dsh-share-session
+name: Fruneng/dsh-share-session
+category: docs
+description:
+  en: Generates a shareable long PNG from selected turns of a DSH session, with optional reasoning and tool activity.
+  zh: 把一个 DSH 会话中选定的轮次生成可分享的长图，可选包含思考过程和工具调用。

@@ -1,0 +1,6 @@
+url: https://github.com/SSHOOTING/dsh-plugin-token-budget
+name: SSHOOTING/dsh-plugin-token-budget
+category: usage
+description:
+  en: 'Read-only DSH command that scores a session token usage against a configurable budget.'
+  zh: '只读 DSH 命令，按可配置预算为会话 token 用量评分。'

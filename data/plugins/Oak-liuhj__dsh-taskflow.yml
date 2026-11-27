@@ -1,0 +1,7 @@
+url: https://github.com/Oak-liuhj/dsh-taskflow
+name: Oak-liuhj/dsh-taskflow
+category: workflow
+description:
+  en: 'Persistent model-planned task trees with execution-time child sessions, recursive delegation, readable task-local progress and direct-parent completion notifications for DSH.'
+  zh: '由模型规划并持久保存任务树，执行时建立子会话，支持递归委派、可读的子任务执行记录、对话增量调整及直接父任务完成通知。'
+icon: https://raw.githubusercontent.com/Oak-liuhj/dsh-taskflow/main/assets/icon.png

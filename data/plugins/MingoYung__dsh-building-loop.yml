@@ -1,0 +1,7 @@
+url: https://github.com/MingoYung/dsh-building-loop
+name: MingoYung/dsh-building-loop
+category: workflow
+description:
+  en: Adds a long-running DSH project mode with a user-confirmed start, scoped executor sessions, source checks, independent review, and a task ledger for resuming work.
+  zh: 为 DSH 添加长任务模式，用户确认开工后按文件授权派发子会话，分两道审核核对成果与出处，并用任务账本接续工作。
+tarball: https://github.com/MingoYung/dsh-building-loop/releases/download/v0.7.50/dsh-building-loop-0.7.50.tgz

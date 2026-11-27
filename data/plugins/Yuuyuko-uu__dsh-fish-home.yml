@@ -1,0 +1,6 @@
+url: https://github.com/Yuuyuko-uu/dsh-fish-home
+name: Yuuyuko-uu/dsh-fish-home
+category: fun
+description:
+  en: 'Puts a 3D room inside DSH: chat from inside the room, farm the yard, keep fish, and collect a gacha card album. The room runtime itself is a separate download. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把「大肥鱼的小日子」那个 3D 房间接进 DSH：屋里能打字聊天，院子里能种地养鱼，还有抽卡和卡册。房间本体单独下载。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
