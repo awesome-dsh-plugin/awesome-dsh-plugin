@@ -4984,7 +4984,7 @@ dsh plugin --profile web add dshmarket
 - [5aaee9/pi-agent-extensions#dsh-autocompact](https://github.com/5aaee9/pi-agent-extensions/tree/main/dsh-autocompact) — 为 DeepSeek Harness 按模型设置更早的自动压缩阈值：/autocompact 以精确 provider/model 为键写入仅本会话生效的覆盖值（off 回退后端默认、default 清除覆盖），设置页「自动压缩」管理所有会话继承的持久化逐模型阈值，输入框状态条目显示当前读数。
 - [5D-artist/dsh-archived-purge](https://github.com/5D-artist/dsh-archived-purge) — DSH 归档会话清理：全选并永久删除归档会话的日志、投影缓存、工作区记账与归档标记（级联子代理日志），可选深度清理无人引用的附件、请求图缓存与该会话写出的工作区文件，并可扫描已删除会话的历史残留。
 - [643048695/dsh-compaction-route](https://github.com/643048695/dsh-compaction-route) — 在 Web 设置页里为会话压缩指定摘要模型，并在主模型出错时改用配置的兜底模型重试。
-- [7nian173/dsh-session-orchestrator](https://github.com/7nian173/dsh-session-orchestrator) — 建会话、交棒、在会话之间跳转，并用工作区信箱来回通信——送达、已读、已回执三段分开记录。信件重启后不丢，加急件优先投递，配置都在设置页里。
+- [7nian173/dsh-session-orchestrator](https://github.com/7nian173/dsh-session-orchestrator) — 可以通过对话让 agent 自己建立工作区与会话，也可以通过信箱让所有 DSH 里的会话相互通信，甚至页面的自动跳转；信件会保留在对应会话工作区根目录 .dsh-mail 中做本地化储存，不会涉及联网服务。同时注册了 / 与 @ 的相关命令，详情请见仓库。
 - [7starsseeker/dsh-task-anchor](https://github.com/7starsseeker/dsh-task-anchor) — 中途插话时把计划保住：未完成的 todo 落盘，插话落地的当回合就把「被挂起的项 + 插话原文 + 取消 / 补充 / 另起一件事」摆到模型面前，之后以「挂起工作」段继续渲染，直到完成或取消；回合收尾再兜底催一次，让剩余工作被明确交代，而不是被静默丢掉——它缓解注意力漂移，但不消除。
 - [7vw58n3ftvq7cn89v/dsh-plugin-session-colors](https://github.com/7vw58n3ftvq7cn89v/dsh-plugin-session-colors) — 给 DeepSeek Harness 的每个会话标颜色：悬停侧栏会话行即可选色（12 色），被标色行显示同色竖条，宿主侧持久化。
 - [879745uhjun/dsh-running-sessions](https://github.com/879745uhjun/dsh-running-sessions) — 在 DSH 首页列出当前正在工作的会话：实时状态、所属工作区、正在等待什么，并可一键进入。
@@ -8368,7 +8368,7 @@ dsh plugin --profile web add dshmarket
 - [YanYunCY/dsh-exit-code-lens](https://github.com/YanYunCY/dsh-exit-code-lens) — 为 exit code 1 表示结果而非错误的 bash 输出（grep 无匹配、diff 有差异、test 为假）补充说明，避免 agent 反复排查。
 - [YaphetHayate/codeRDD#dsh-rdd-explore](https://github.com/YaphetHayate/codeRDD/tree/master/dsh/dsh-rdd-explore) — 缓存优先的代码探索：rdd_explore 工具查询项目 .rdd/exploration 索引，未命中时派遣只读 worker 子代理探索并注册产物；rdd_models 提供实时模型目录，用于派遣时选模型。
 - [yasaxiwind/dsh-data-console](https://github.com/yasaxiwind/dsh-data-console) — 本地数据工作台：打开 CSV/Excel/JSON，查看列画像、排序筛选、SQL 多表查询、六种图表与 CSV/XLSX/PNG 导出，并向 agent 提供五个有界工具。
-- [yasaxiwind/dsh-experiment-ledger](https://github.com/yasaxiwind/dsh-experiment-ledger) — 本地实验台账：记录运行的参数、指标、产物与日志，对比运行、复现命令、签名结论并导出报告或包，向 agent 提供 33 个有界工具和交互面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [yasaxiwind/dsh-experiment-ledger](https://github.com/yasaxiwind/dsh-experiment-ledger) — 本地实验台账：记录运行的参数、指标、产物与日志，对比运行、复现命令、签名结论并导出报告或包，向 agent 提供 33 个有界工具和交互面板。
 - [yaways/dsh-subagent-claude-code-wrapper](https://github.com/yaways/dsh-subagent-claude-code-wrapper) — 子代理委派提供方：通过可配置的 executablePath 字段，运行任意 Claude 兼容 CLI 二进制。
 - [yayuqianhuang/dsh-video-to-knowledge](https://github.com/yayuqianhuang/dsh-video-to-knowledge) — 把视频链接编译成带时间戳、可回跳原片时刻的 Markdown 知识卡。需自备 Python 3.10+ 与 yt-dlp（无字幕视频另需 ffmpeg + faster-whisper，B 站会员字幕需登录 cookie）。
 - [ycm50/dsh-proxy](https://github.com/ycm50/dsh-proxy) — 按域名分流的 DSH 代理插件：列入「强制走代理」的域名（含子域名）永远走代理，其余域名先直连、1 秒内不通再换代理，先答上的通道在本会话定格，连接复用 120 秒，每次尝试都记录；可让插件安装用的 pnpm/git 子进程也走代理。
@@ -8685,6 +8685,7 @@ dsh plugin --profile web add dshmarket
 - [Baisbt/dsh-plugin-webrelay](https://github.com/Baisbt/dsh-plugin-webrelay) — 通过同源反向代理把外部 AI 对话站点嵌进 DSH 右侧面板（DOM 适配器写在配置里，站点改版无需改代码），并在输入框旁加一个按钮：要么用宿主模型改写草稿，要么跑一轮闭环——压缩对话、优化、发送到嵌入站点、捕获回复、整理成终稿写回输入框。
 - [Barry-1212/dsh-webscout](https://github.com/Barry-1212/dsh-webscout) — 为 DeepSeek Harness 提供 Tavily 网页搜索与页面抓取：包含 Search provider、支持 Tavily Extract/Firecrawl/本地 HTTP 的 Fetch provider，以及设置卡片。需要 Tavily API key，Firecrawl 可选。
 - [BeatAPI/beatapi-agent-plugin#dsh-browser](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-browser) — 通过带命名空间的 MCP 工具和任务空间 Skill 接入已发布的 BeatBrowser；需要 Chrome 扩展，保留人工接管规则。
+- [BeiningCheng/dsh-plugin-browser-bridge](https://github.com/BeiningCheng/dsh-plugin-browser-bridge) — 让 DSH 直接读 Chrome 页面：通过令牌配对的扩展在本地回环 WebSocket 上提供 8 个 browser_* 工具，按选择器或文本读元素、点击、填表、跳转，不截图，也不打开 DevTools 端口。
 - [big0lives/dsh-web-window-companion](https://github.com/big0lives/dsh-web-window-companion) — 在独立浏览器 profile 的 Edge/Chrome 应用模式窗口中打开 dsh web 界面，关闭窗口即优雅停止服务。
 - [binskyz/dsh-yunpa](https://github.com/binskyz/dsh-yunpa) — 仅 Windows：本地加密凭据库（DPAPI 包裹的 AES-256-GCM）配无头 Chrome 登录态保管：31 个 agent 工具登录一次即可把会话存到本机，之后抓登录墙内的页面（贴吧、NGA、Pixiv、书屋）并逐楼层提取正文。页面实时镜像到可拖动、可收起的右边缘抽屉，点击、打字、滚动经 CDP 回放，验证码不必再开独立浏览器窗口。可迁移 Edge/Chrome 已存密码：插件会读取浏览器的 Login Data 密码库，在进程内解密 v10/v11 条目，并把密码库及其密钥复制进自己的受控 profile 让浏览器自动填充（v20 App-Bound 条目只能自动填充、无法离线解密）。另附一条命令修复 DSH profile 登记的安装器，以及内置自检。
 - [BitDG/dsh-plugins#reference-library](https://github.com/BitDG/dsh-plugins/tree/main/plugins/reference-library) — 在原生 @ 引用菜单中提供 CodePen、Pinterest、Z-Library 与 GitHub 数据卡片，并支持 Pinterest 分页和 Z-Library 排序。
