@@ -2,6 +2,6 @@ url: https://github.com/weichen704/dsh-chaoxing-assistant
 name: weichen704/dsh-chaoxing-assistant
 category: tools
 description:
-  en: Drives Chaoxing (Xuexitong) course tasks inside a real Edge window with five tools — video and document progress, chapter quizzes, homework — plus a sidebar panel.
-  zh: 用真实 Edge 浏览器托管学习通课程任务——视频与文档进度、章节测验、作业，提供侧边栏面板与 5 个工具。
+  en: Chaoxing (Xuexitong) task assistant for DeepSeek Harness: real Edge or the Windows client, sidebar panel + five tools for video/document progress, chapter quizzes and homework. Hard stops on human verification, no submit with blanks, playback confirmed by the platform first.
+  zh: 学习通（超星）任务助手：真实 Edge 或 Windows 客户端完成视频/文档、章节测验与作业，右侧栏面板 + 5 个工具。人工验证自动停机、空题不交卷、播完先等平台确认。
 tarball: https://github.com/weichen704/dsh-chaoxing-assistant/releases/latest/download/dsh-chaoxing-assistant.tgz
