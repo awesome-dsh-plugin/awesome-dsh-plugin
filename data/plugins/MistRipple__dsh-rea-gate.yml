@@ -1,0 +1,6 @@
+url: https://github.com/MistRipple/dsh-rea-gate
+name: MistRipple/dsh-rea-gate
+category: tools
+description:
+  en: 'Gates REA''s reverse-engineering tools per session: REA stays installed and registered once for the host, but a session only sees its mcp__rea__* tools after you turn them on from the composer switch, and switching off mid-session withdraws them again without restarting DSH. A rea_gate tool exposes the same switch to the agent, and the sidebar panel installs or updates REA and reports engine status.'
+  zh: '按会话门控 REA 的逆向工具：REA 在宿主里只安装、注册一次，新会话默认看不到 mcp__rea__* 工具，在输入框工具条的开关上打开才出现，关掉即撤走且无需重启 DSH；agent 也可通过 rea_gate 工具切换，侧栏面板负责安装/更新 REA 与引擎状态。'

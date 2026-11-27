@@ -1,0 +1,7 @@
+url: https://github.com/wungjyan/dsh-port-kill
+name: wungjyan/dsh-port-kill
+category: dev
+icon: https://raw.githubusercontent.com/wungjyan/dsh-port-kill/main/assets/icon-180.png
+description:
+  en: Lists every TCP port this machine listens on, names the process behind it, and ends that process only after re-checking it is still the same one.
+  zh: 列出本机所有 TCP 监听端口与占用它的进程，复核身份之后再结束它。

@@ -1,0 +1,6 @@
+url: https://github.com/huanyu-a/dsh-memory-gate
+name: huanyu-a/dsh-memory-gate
+category: memory
+description:
+  en: 'Per-model, per-session header gate for pi-ai inference requests: stamps configurable identity headers on calls to trusted origins and pins each session''s first decision, with a settings card and a per-model selector in the Web UI.'
+  zh: 按模型、按会话的 pi-ai 推理请求头闸门：向受信 origin 的请求盖上可配置的身份头，并钉住每个会话的首次决策；Web 端提供配置卡片与按模型选择器。

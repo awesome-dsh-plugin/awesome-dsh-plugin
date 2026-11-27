@@ -4,4 +4,4 @@ category: workflow
 description:
   en: 'Compare 2–4 answers, files or live pages in the main DSH Desktop or Web conversation. Pick styles, compare blind or openly, and review what you adopt. The Chinese/English interface keeps the chosen result and reasons in context.'
   zh: '鲸挑细选 AgentCompare。在 DSH 桌面端或 Web 主对话中比较 2–4 版回答、文件或可操作网页。可选择风格、盲选或公开对比，再审查采用。界面支持中英双语，保留选择结果与理由。'
-icon: https://raw.githubusercontent.com/lijiaqi-AI-Product-Manager/dsh-agent-compare/v3.3.0/assets/icon.png
+icon: https://raw.githubusercontent.com/lijiaqi-AI-Product-Manager/dsh-agent-compare/main/assets/icon.png

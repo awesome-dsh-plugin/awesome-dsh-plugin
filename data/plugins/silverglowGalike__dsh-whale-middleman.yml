@@ -1,0 +1,6 @@
+url: https://github.com/silverglowGalike/dsh-whale-middleman
+name: silverglowGalike/dsh-whale-middleman
+category: workflow
+description:
+  en: 'A middle layer for semi-automated work in DeepSeek Harness: the main session records the design interview and risks, splits the converged design into dependency-tracked draft tickets, and after manual approval in the panel dispatches each ready ticket to a separate session; child sessions return a self-assessment, and only a done report unlocks successors. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: DSH 中台：主会话记录设计盘问与风险，把收敛后的设计拆成带依赖的草稿工单，在面板中人工批准后把就绪工单派给独立子会话；子会话交回自评与汇报，只有 done 会解锁后继工单。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

@@ -154,7 +154,13 @@ async function probe(url) {
       signal: AbortSignal.timeout(30000),
     })
     if (r.body) await r.body.cancel().catch(() => {})
-    if (r.ok || r.status === 206) return { ok: true, status: r.status }
+    // The same response that proves the image is there proves which version of
+    // it is there. GitHub's hosting answers with an ETag that moves when the
+    // object does and stays put when it does not, which is what build-site.mjs
+    // turns into the URL's `v` parameter — see lib/screenshot-bust.mjs for why
+    // a storefront needs that to notice a replaced picture at all.
+    const etag = r.headers.get('etag')
+    if (r.ok || r.status === 206) return { ok: true, status: r.status, etag }
     if (r.status === 404 || r.status === 410) return { ok: false, status: r.status }
     return { ok: null, status: r.status }
   } catch (e) {
@@ -210,7 +216,10 @@ for (let i = 0; i < urls.length; i += CONCURRENCY) {
       unknown.push(`${u} — HTTP ${r.status}${r.error ? ` (${r.error})` : ''}`)
       continue
     }
-    out[u] = { ok: r.ok, status: r.status, checkedAt: today }
+    // `etag` is omitted rather than written as null when the host sent none:
+    // build-site reads a missing value as "publish the URL as it is", and a
+    // null would put a meaningless key in a file people read.
+    out[u] = { ok: r.ok, status: r.status, checkedAt: today, ...(r.etag ? { etag: r.etag } : {}) }
   }
 }
 

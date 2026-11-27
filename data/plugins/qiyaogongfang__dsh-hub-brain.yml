@@ -1,0 +1,7 @@
+url: https://github.com/qiyaogongfang/dsh-hub-brain
+name: qiyaogongfang/dsh-hub-brain
+category: memory
+description:
+  en: 'Unifies knowledge atoms, skills and roles in one hub, with an in-composer picker that injects the selected role''s CORE and skill notes into the system prompt. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把知识元、技能、角色合成一个中枢；输入框选择器可挑角色、技能与知识元，并把角色 CORE 与技能说明注入系统提示。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/qiyaogongfang/dsh-hub-brain/releases/download/v1.1.0/qiyaogongfang-dsh-hub-brain-1.1.0.tgz

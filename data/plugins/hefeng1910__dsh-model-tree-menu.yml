@@ -1,0 +1,6 @@
+url: https://github.com/hefeng1910/dsh-model-tree-menu
+name: hefeng1910/dsh-model-tree-menu
+category: ui
+description:
+  en: Groups the model picker by relay and then by model in a two-level menu, with per-relay fuzzy search and an iOS 18 frosted-glass panel.
+  zh: 把模型选择器按「中转站 → 模型」分组为两级菜单，站内支持模糊搜索，采用 iOS 18 磨砂玻璃面板。

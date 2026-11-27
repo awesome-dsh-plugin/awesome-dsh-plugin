@@ -1,0 +1,6 @@
+url: https://github.com/vlln/dsh-compute-env
+name: vlln/dsh-compute-env
+category: remote
+description:
+  en: 'Pick where a session runs before it starts: Local, OCI container or remote SSH host. Commands, file I/O and skills land on the chosen environment, with live CPU / memory / disk monitoring.'
+  zh: '启动会话前选择 Local / OCI 容器 / SSH 远端运行环境：命令、文件读写与 Skill 都落到所选环境，并实时监测 CPU、内存与磁盘负载。'

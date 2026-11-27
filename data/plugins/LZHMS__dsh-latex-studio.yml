@@ -1,0 +1,6 @@
+url: https://github.com/LZHMS/dsh-latex-studio
+name: LZHMS/dsh-latex-studio
+category: docs
+description:
+  en: 'Overleaf-style LaTeX workbench in the DSH sidebar: syntax-highlighted editing with line numbers and sidecar comments, one-click compile with clean/auto modes and root-document discovery, live pdf.js preview with two-way SyncTeX jumps, plus multi-writer merge protection with automatic backups. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: DSH 侧边栏里的 Overleaf 风格 LaTeX 工作台：语法高亮编辑、行号与行内评论，一键编译（清理/自动模式、主文档自动发现），pdf.js 实时预览与双向 SyncTeX 跳转，多写者自动合并与写前备份。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

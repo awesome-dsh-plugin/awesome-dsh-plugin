@@ -28577,20 +28577,6 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/nonentity303/dsh-plugin-manager": {
-    "version": "0.8.2",
-    "spec": "github:nonentity303/dsh-plugin-manager",
-    "capabilities": [
-      "shell",
-      "fs-write",
-      "fs-read",
-      "network",
-      "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/nonewind/dsh-spend": {
     "version": "0.6.3",
     "spec": "github:nonewind/dsh-spend",
@@ -34685,20 +34671,6 @@
     "scannedAt": "2026-09-24T17:41:52.360Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/SiriusWJ/dsh-updater-npm": {
-    "version": "1.13.4",
-    "spec": "github:SiriusWJ/dsh-updater-npm",
-    "capabilities": [
-      "shell",
-      "fs-write",
-      "fs-read",
-      "network",
-      "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/siruignaw-sys/dsh-tool-bandit-search": {
     "version": "0.1.0",
     "spec": "github:siruignaw-sys/dsh-tool-bandit-search",
@@ -40457,22 +40429,6 @@
       "env"
     ],
     "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
-  "https://github.com/Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl": {
-    "version": "0.4.0",
-    "spec": "github:Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl",
-    "capabilities": [
-      "fs-write",
-      "fs-read",
-      "network",
-      "credentials",
-      "env"
-    ],
-    "redLines": [
-      "reads credentials/secrets AND has network access"
-    ],
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },

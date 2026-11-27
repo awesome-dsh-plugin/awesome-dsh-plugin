@@ -1,0 +1,6 @@
+url: https://github.com/AIcivilization/dsh-voice-engine
+name: AIcivilization/dsh-voice-engine
+category: voice
+description:
+  en: 'A voice engine for DSH and any app that needs a voice: read aloud, dubbing with subtitles, audiobooks with a voice per character, your own cloned voice, real-time speech and transcription; pick free or paid sources (iFLYTEK, Edge, local Ming, Xiaomi MiMo, DeepSeek TTS, SiliconFlow or any OpenAI-compatible service) and share them with other plugins, dsh-her and AnyAudio.'
+  zh: '声音引擎：给 DSH 和所有需要声音的软件提供声音——朗读、配音字幕、按角色配音的有声书、克隆自己的声音、实时发音、转写；讯飞、Edge、本机 Ming、小米 MiMo、DeepSeek 语音、硅基流动和任何 OpenAI 兼容的语音免费收费任选，也给别的插件、dsh-her、AnyAudio 用。'

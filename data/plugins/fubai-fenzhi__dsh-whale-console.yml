@@ -1,0 +1,6 @@
+url: https://github.com/fubai-fenzhi/dsh-whale-console
+name: fubai-fenzhi/dsh-whale-console
+category: ui
+description:
+  en: 'Unofficial Windows desktop companion console for DeepSeek Harness: start and stop a local desktop pet, voice services and local models from one settings panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '面向 Windows 的 DSH 桌宠、语音与本地模型控制台：在设置页一键启停本地服务。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

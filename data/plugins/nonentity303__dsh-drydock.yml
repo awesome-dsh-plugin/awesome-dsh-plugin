@@ -1,0 +1,6 @@
+url: https://github.com/nonentity303/dsh-drydock
+name: nonentity303/dsh-drydock
+category: market
+description:
+  en: 'Plugin manager with an out-of-engine rescue layer: grouped enable/disable by necessity, three-way source classification (core / official / user), transactional uninstall with rollback, one-click updates from npm, GitHub or custom mirrors, the ADP curated catalog, and integrity-verified downloads. A standalone 3081 page keeps working when the engine will not boot - it self-checks, quarantines broken bundles and restarts the engine. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 插件管理器 + 引擎外救援层：按必要程度分组启停、来源三分区（核心 / 官方 / 用户）、事务化卸载可撤销、npm/GitHub/自定义镜像一键更新、ADP 精选目录、下载完整性校验；引擎起不来时 3081 兜底页照常可用——自检、隔离坏包并把它拉起来。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

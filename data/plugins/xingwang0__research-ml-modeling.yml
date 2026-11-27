@@ -1,0 +1,7 @@
+url: https://github.com/xingwang0/research-ml-modeling
+name: xingwang0/research-ml-modeling
+category: skill
+tarball: https://github.com/xingwang0/research-ml-modeling/releases/latest/download/dsh-research-ml-modeling.tgz
+description:
+  en: 'Registers one skill that runs a reviewer-grade modelling pipeline for spectra and tabular regression: grouped nested cross-validation, Y-randomization permutation tests, four applicability-domain checks, publication figures and a draft Methods paragraph, backed by a 6-stage Python CLI and a 55-item environment self-check.'
+  zh: '注册一个科研级建模技能：面向光谱与表格数据的回归与分类，做分组嵌套交叉验证、Y 随机化置换检验、四类适用域判定，产出论文级图表与 Methods 草稿；底层是 6 阶段 Python 命令行与 55 项环境自检。'

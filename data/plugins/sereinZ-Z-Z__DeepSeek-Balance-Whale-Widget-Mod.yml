@@ -1,0 +1,7 @@
+url: https://github.com/sereinZ-Z-Z/DeepSeek-Balance-Whale-Widget-Mod
+name: sereinZ-Z-Z/DeepSeek-Balance-Whale-Widget-Mod
+category: ui
+description:
+  en: 'A maintained fork of MeteorNOX/DeepSeek-Balance-Whale-Widget (v0.4.2) that adds a bubble-balance source switch between the DeepSeek official balance and a third-party model you configure (peak and off-peak modules hide automatically in third-party mode), 24 solid and 6 animated balance colours, and a menu entry that reloads the page for the desktop client, which has no reload shortcut. Keeps the original package name, so it replaces the upstream plugin rather than sitting beside it.'
+  zh: '基于 MeteorNOX/DeepSeek-Balance-Whale-Widget v0.4.2 的持续维护二改版：气泡余额可在 DeepSeek 官方与自行配置的第三方模型之间切换（第三方态下峰谷与峰谷倒计时自动隐藏），余额颜色支持 24 种纯色与 6 套流动渐变，另在菜单里加了一键重载页面（桌面客户端没有重载快捷键）。包名与原版相同，属于替换安装，请勿两者同时安装。'
+icon: https://raw.githubusercontent.com/sereinZ-Z-Z/DeepSeek-Balance-Whale-Widget-Mod/main/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/zhnew2/health-reminders
+name: zhnew2/health-reminders
+category: notify
+description:
+  en: Periodic reminders to drink water and stand up for programmers who sit too long, enabled by default.
+  zh: 久坐健康提醒：每 60 分钟提醒喝水、每 30 分钟提醒起身站立，安装即默认开启。

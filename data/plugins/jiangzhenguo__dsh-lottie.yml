@@ -1,0 +1,7 @@
+url: https://github.com/jiangzhenguo/dsh-lottie
+name: jiangzhenguo/dsh-lottie
+category: ui
+description:
+  en: Plays Lottie JSON and .lottie animations in the right sidebar with packaged images, multiple animations, playback controls, and a seekable progress bar.
+  zh: 在右侧栏播放 Lottie JSON 和 .lottie 动画，支持包内图片、多动画切换、播放控制和可拖动进度条。
+icon: https://raw.githubusercontent.com/jiangzhenguo/dsh-lottie/main/assets/icon-180.png
