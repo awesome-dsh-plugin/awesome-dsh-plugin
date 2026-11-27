@@ -1,0 +1,7 @@
+url: https://github.com/yidasanqian/dsh-mac-intel-desktop/tree/main/plugin
+name: yidasanqian/dsh-mac-intel-desktop#plugin
+category: usage
+icon: https://raw.githubusercontent.com/yidasanqian/dsh-mac-intel-desktop/main/assets/icon-180.png
+description:
+  en: "Update channel and updater for the macOS Intel build of DeepSeek Harness Desktop: adds a row in Settings → General that follows this repository's releases, downloads and verifies the DMG, and replaces the app bundle after macOS administrator approval."
+  zh: "DSH 桌面版 macOS Intel 构建的更新渠道与一键更新：在「设置 → 通用」里跟随本仓库 Release，下载并校验 DMG，经管理员授权后替换应用并重启。"
