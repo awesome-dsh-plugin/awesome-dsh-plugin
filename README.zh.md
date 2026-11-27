@@ -4622,7 +4622,7 @@ dsh plugin --profile web add dshmarket
 - [SISCHOI/daruma#dsh-daruma](https://github.com/SISCHOI/daruma/tree/main/packages/dsh-daruma) — 渠道开始失败时不让长任务中断：内置重试放弃后 daruma 接管，对连续 429/5xx 或终止性错误跳闸自愈断路器，把下一个请求切到链上的其他渠道。支持 DSH 0.1.x 与 0.2.x 宿主，含已实测故障转移与备用管理 RPC 的 0.2.1-rc.2。备用渠道可在设置页或输入框旁的面板挑选，两处即时同步；每次切换落盘成可审计的 JSONL 日志。切换只记入这份审计日志，不再写入会话内的提示行——宿主不认识的插件事件类型会让整段会话加载失败。
 - [sixzjd/dsh-opencode-connect](https://github.com/sixzjd/dsh-opencode-connect) — 通过进程内 loopback shim 把 OpenCode Zen 模型（含限时免费模型池）接入 DSH，支持自动模型 fallback，无需外部进程或改配置文件。
 - [sixzjd/dsh-workbuddy-connect](https://github.com/sixzjd/dsh-workbuddy-connect) — 通过进程内 loopback shim 把 WorkBuddy（国际版与国内版）订阅模型接入 DSH，提供账号管理设置卡片与实时模型目录。
-- [Skeltx/dsh-moduleapi](https://github.com/Skeltx/dsh-moduleapi) — Registers Module API (moduleapi.pro) as a model provider - one key, the full 26-model catalog (GPT, Claude, Gemini, DeepSeek, GLM, Grok), with reasoning levels and image input where the model supports it.
+- [Skeltx/dsh-moduleapi](https://github.com/Skeltx/dsh-moduleapi) — 将 Module API（moduleapi.pro）注册为模型提供方：一把密钥接入全部 26 个模型目录（GPT、Claude、Gemini、DeepSeek、GLM、Grok），支持模型可用的推理档位与图像输入。
 - [skillpie/dsh-plugins#dsh-tokenbank](https://github.com/skillpie/dsh-plugins/tree/main/dsh-tokenbank) — 一键用上 TokenBank 免费模型：注册领免费 API Key 送 $5 体验金，模型直接进模型列表（协议与能力自动配置）；自带余额、每日签到、密钥托管（闲置临时额度转永久余额，带上游探活）与人民币充值（支付宝）。无需自建中转。
 - [SkylerFee/dsh-llm-opencode-go-live](https://github.com/SkylerFee/dsh-llm-opencode-go-live) — 为 DSH 提供 OpenCode Go 模型来源：从 Models.dev 读取 opencode-go 目录，在独立的 opencode-go-live 路由上提供，内置 opencode-go 路由保持原样。目录快照缓存在 DSH home 下，刷新失败时沿用上一次成功的目录；插件自带 Models 设置卡片用于填写该路由密钥，并可显示 OpenCode Go 订阅用量。
 - [Smartloe/dsh-catpaw](https://github.com/Smartloe/dsh-catpaw) — 把妙手（CatPaw）的 12 个模型接入 DeepSeek Harness，支持按模型区分的推理档位、由 Harness 执行的工具调用与扫码登录。内置 catpaw-cli 仅提供 macOS arm64 版本（其它平台需自备），调用消耗妙手账号额度。
@@ -11786,7 +11786,7 @@ dsh plugin --profile web add dshmarket
 - [chenkai2/dsh-daemon](https://github.com/chenkai2/dsh-daemon) — 将 DeepSeek Harness 的 web 服务（dsh web）注册为自启动、自愈的后台服务：LaunchAgent / systemd / cron 加 30 秒健康检查 watchdog，并提供 7 个 dsh_daemon_* 工具（安装/卸载/重装/状态/启动/停止/更新）。
 - [chenkui-luo/dsh-plugin-restart](https://github.com/chenkui-luo/dsh-plugin-restart) — 在设置页增加「重启」卡片：一键把重启交给 DeepSeek Harness 启动器（`Launch-DeepSeekHarness.ps1`）替换正在为页面提供服务的 web 进程，新实例就绪后页面自行重连。仅支持 Windows；缺少该启动器时按钮会报错，而不是完成重启。
 - [chenxiaojie1009/dsh-console](https://github.com/chenxiaojie1009/dsh-console) — 串口与 SSH 设备控制台：面板内模型按需求生成命令、执行前确认、中文注释与输出解读。
-- [ChongYuGit/dsh-rider-mcp](https://github.com/ChongYuGit/dsh-rider-mcp) — 把 DeepSeek Harness 接到 JetBrains Rider 内置的 MCP server，并给每个会话一个项目选择器、一个连接徽标和 mcp__rider__* 工具。
+- [ChongYuGit/dsh-rider-mcp](https://github.com/ChongYuGit/dsh-rider-mcp) — 把 DeepSeek Harness 接到 JetBrains Rider 内置的 MCP server，并给每个会话一个项目选择器、一个连接徽标和 mcp__rider__* 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [chouyong/dsh-effect-doctor](https://github.com/chouyong/dsh-effect-doctor) — 隔离插件卸载后验证 Cordis 管理的运行时资源是否回到基线，并生成确定性清理回执。
 - [chrischjh/dsh-copilotkit](https://github.com/chrischjh/dsh-copilotkit) — 为 DSH 提供官方 CopilotKit skills 与文档 MCP，详情页可一键自检并自动修复 MCP 行。
 - [chunfenxiazhi-collab/dsh-stability-audit](https://github.com/chunfenxiazhi-collab/dsh-stability-audit) — 已安装 dsh 插件的稳定性审计：静态风险分级（钩子面/启动任务/inject/入口/依赖区间）加可选隔离安装验证。
