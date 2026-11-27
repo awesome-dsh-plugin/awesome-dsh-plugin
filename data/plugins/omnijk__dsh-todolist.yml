@@ -1,0 +1,7 @@
+url: https://github.com/omnijk/dsh-todolist
+name: omnijk/dsh-todolist
+category: ui
+description:
+  en: Write your next prompts and walk away — the agent works through the queue one by one on autopilot, starting the next todo the moment a turn ends.
+  zh: 写下接下来的待办就可以撒手——模型一条条自动干完，一轮结束接着下一条。
+icon: https://raw.githubusercontent.com/omnijk/dsh-todolist/main/assets/icon-180.png
