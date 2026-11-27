@@ -1,0 +1,7 @@
+url: https://github.com/veritaswiki/dsh-expert-panel
+name: veritaswiki/dsh-expert-panel
+category: workflow
+description:
+  en: 'Runs one fixed three-stage review — parallel read-only evidence, a cross-review round, then a single arbiter that issues an instruction list — and returns a verdict under a step and time cap. It ships no default roster: the panel must be configured before first use.'
+  zh: '跑固定的三阶段评审：并行只读取证、交叉互审、终裁下发指派单，并在步数与时长上限内必定收口。仓库不预置任何阵容，首次使用需自行配置专家。'
+icon: https://raw.githubusercontent.com/veritaswiki/dsh-expert-panel/main/assets/icon-180.png

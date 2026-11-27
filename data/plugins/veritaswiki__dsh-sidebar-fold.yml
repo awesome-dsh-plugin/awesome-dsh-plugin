@@ -1,0 +1,7 @@
+url: https://github.com/veritaswiki/dsh-sidebar-fold
+name: veritaswiki/dsh-sidebar-fold
+category: ui
+description:
+  en: 'Collapses the sidebar plugin entries into the Plugins row behind a toggle arrow, with a settings page that decides entry by entry which ones join the group; it changes display only and leaves the icon rail untouched.'
+  zh: '把左侧栏的插件入口收进「插件」行，行尾箭头切换展开与折叠；设置页可逐项决定哪些入口参与折叠。只改展示，图标轨道形态不处理。'
+icon: https://raw.githubusercontent.com/veritaswiki/dsh-sidebar-fold/main/assets/icon-180.png
