@@ -1,0 +1,7 @@
+url: https://github.com/Arthyra/multisim-mcp/tree/main/integrations/deepseek-harness
+name: Arthyra/multisim-mcp#deepseek-harness
+category: tools
+description:
+  en: Connects DeepSeek Harness on Windows to an installed Multisim MCP gateway for schematic editing, wire routing, and simulation.
+  zh: 在 Windows 上将 DeepSeek Harness 连接至已安装的 Multisim MCP 网关，用于编辑原理图、布线和运行仿真。
+icon: https://raw.githubusercontent.com/Arthyra/multisim-mcp/main/integrations/deepseek-harness/icon.png
