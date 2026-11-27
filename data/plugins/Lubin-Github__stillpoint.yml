@@ -1,0 +1,7 @@
+url: https://github.com/Lubin-Github/stillpoint
+name: Lubin-Github/stillpoint
+category: security
+tarball: https://github.com/Lubin-Github/stillpoint/releases/download/v1.0.11/stillpoint-1.0.11.tgz
+description:
+  en: 'Activity-aware workspace lock for DeepSeek Harness: scheduled (weekly preset or Cron) and manual screen locking that waits for 90s UI idle and lets tracked DSH agents and background jobs finish before unloading managed Host .cjs plugins; encrypts imported plugin source (up to 128 KiB, compiled in memory) and SMTP credentials with Argon2id + AES-256-GCM; unlocks with a master password and six-digit email verification code (QQ Mail preset or custom SMTP), with 15-day lock history.'
+  zh: '面向 DeepSeek Harness 的活动感知工作区锁屏插件：支持定时（按周预设或 Cron）与手动锁屏，等待 90 秒界面空闲并在 DSH 跟踪的 Agent 与后台作业完成后卸载托管 Host .cjs 插件；使用 Argon2id + AES-256-GCM 加密导入的插件源码（上限 128 KiB，内存编译执行）与 SMTP 授权码；通过主密码与六位邮件验证码（内置 QQ 邮箱预设及自定义 SMTP）解锁，保留最近 15 天锁定日志。'
