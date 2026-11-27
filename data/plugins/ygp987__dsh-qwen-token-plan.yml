@@ -1,0 +1,7 @@
+url: https://github.com/ygp987/dsh-qwen-token-plan
+name: ygp987/dsh-qwen-token-plan
+category: model
+description:
+  en: Qianwen Token Plan model provider with endpoint-discovered models, per-model reasoning levels, and an in-plugin quota and usage console.
+  zh: 千问 Token Plan 模型线路：端点动态发现模型、按模型提供推理等级，并在插件内提供套餐与用量控制台。
+tarball: https://github.com/ygp987/dsh-qwen-token-plan/releases/download/v0.5.4/dsh-qwen-token-plan-0.5.4.tgz
