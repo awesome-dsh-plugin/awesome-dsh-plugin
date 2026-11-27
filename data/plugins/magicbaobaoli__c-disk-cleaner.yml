@@ -1,0 +1,7 @@
+url: https://github.com/magicbaobaoli/c-disk-cleaner
+name: magicbaobaoli/c-disk-cleaner
+category: tools
+icon: https://raw.githubusercontent.com/magicbaobaoli/c-disk-cleaner/main/assets/icon-180.png
+description:
+  en: 'A draggable trash-can button pinned in a DSH corner that cleans rebuildable caches (uv, npm, pnpm, pip, DSH logs and thumbnails) on one click to free C: space whenever you want. It glows red while cleaning, turns green and blinks five times when done, and finishes in the background even if you close the panel.'
+  zh: '一个常驻在 DSH 右上角、可拖到任意位置的小垃圾桶按钮，随时一键清掉可安全重建的缓存（uv、npm、pnpm、pip、DSH 日志与缩略图）来释放 C 盘空间。清理时按钮亮红光，完成转绿光并闪 5 下；即使关掉面板，也会在后台清完再弹回来告诉你结果。'
