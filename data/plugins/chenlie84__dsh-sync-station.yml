@@ -1,0 +1,6 @@
+url: https://github.com/chenlie84/dsh-sync-station
+name: chenlie84/dsh-sync-station
+category: session
+description:
+  en: 'Push session logs, the workspace registry, agent presets and the profile plugin manifest to a private GitHub repository, then pull them on another machine: multi-frame Zstd logs are compared by event count and prefix so an append-only log is never merged, a session that is still running is staged instead of overwritten, and every replaced file is backed up first.'
+  zh: '把会话日志、工作区注册表、Agent 预设与 profile 插件清单推送到 GitHub 私有仓库，在另一台机器上拉取：多帧 Zstd 日志按事件条数与前缀比对，只追加的日志从不做合并；仍在运行的会话只写入暂存目录而不覆盖；任何被替换的文件先备份。'
