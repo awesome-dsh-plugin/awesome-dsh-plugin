@@ -1,0 +1,7 @@
+url: https://github.com/qiniu/dsh-agentapi
+name: qiniu/dsh-agentapi
+category: tools
+tarball: https://github.com/qiniu/dsh-agentapi/releases/download/v0.1.1/dsh-agentapi-0.1.1.tgz
+description:
+  en: Connects DeepSeek Harness to Qiniu AgentAPI so managed cloud agents can run tasks as native DSH subagents with live messages and follow-up conversations.
+  zh: 将七牛 AgentAPI 接入 DeepSeek Harness，以原生子智能体分派云端任务、查看实时消息并继续对话。
