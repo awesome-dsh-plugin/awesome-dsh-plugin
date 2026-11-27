@@ -589,7 +589,7 @@ dsh plugin --profile web add dshmarket
 - [chaochaokongbai/dsh-beginner-hub](https://github.com/chaochaokongbai/dsh-beginner-hub) — 面向 DSH 新手的说人话需求路由面板：用本地关键词引擎把一句大白话需求路由成可直接用的方案（提问话术变体、匹配技能、进阶玩法），选中的方案可一键填入新会话。
 - [charce526/dsh-logo-swap](https://github.com/charce526/dsh-logo-swap) — 替换 DeepSeek Harness 界面各处品牌元素——侧栏 Logo、品牌字标两半、对话页 Logo、欢迎语标语，预览版徽章开关。纯前端注入，不修改安装文件。
 - [chargeduck/xechat-dsh](https://github.com/chargeduck/xechat-dsh) — 可停靠的侧边面板，用一条 WebSocket 保持 XEChat 聊天在线：支持图片与表情的 Markdown 消息、通过 #showServer 与 #login 切换服务器、在线成员列表、全屏伪装覆盖层，停靠位置、宽度与可视状态持久化到 localStorage。
-- [Charlieeeo/dsh-next-reply-chips](https://github.com/Charlieeeo/dsh-next-reply-chips) — 每条回答下方显示可点击的下一步建议：建议由主回复自身给出，不额外调用模型；点击可立即发送，或只填入输入框待你修改。
+- [Charlieeeo/dsh-next-reply](https://github.com/Charlieeeo/dsh-next-reply) — 每条回答结束后，在本轮下方显示最多 3 条竖排的下一步建议：建议由主回复自身给出，不额外调用模型。点建议文字会插入输入框光标处；纸飞机按钮直接发送，气泡按钮插入输入框。
 - [charliesbyte/dsh-workspace-activity](https://github.com/charliesbyte/dsh-workspace-activity) — 侧边栏的工作区行会在其下会话运行时显示转圈，会话停止后短暂保留一个已完成标记。
 - [charrywhite/dsh-sticky-notes](https://github.com/charrywhite/dsh-sticky-notes) — 可拖动的便签纸,9 款皮肤与图片便签,AI 模型可读取并追加待办条目。
 - [CheeseFox259/dsh-better-composer](https://github.com/CheeseFox259/dsh-better-composer) — DSH Web Composer 视觉增强与会话工作台：实时 Markdown 呈现与光标行源码还原（非焦点行语法标记可完全隐藏或淡化显示）、确定性本地补全、列表与引用的换行自动续行及有序列表重编号；超长粘贴自动收纳为持久化引用 chip，支持直接内联或文件送达（支持 50+ 种扩展名），并在右栏抽屉提供大模型智能改写（支持中止、预览对比、应用与撤销重做）；集成实时上下文地图，包含 Token 仪表盘、构成穿透钻取、逐轮增长图与锚定刻线、一键 /compact 及会话分叉，并内置 Context Doctor 工作区（概览、诊断、分析、反馈）。
@@ -11059,6 +11059,7 @@ dsh plugin --profile web add dshmarket
 - [MoonlitDropOfBlood/dsh-git-manager](https://github.com/MoonlitDropOfBlood/dsh-git-manager) — DeepSeek Harness 的 Git 工作区管理：输入框「模式」选择器旁的仓库感知入口，打开与设置同规格的面板，覆盖 diff/commit、分支、冲突、worktree 管理与带分支线的提交历史。
 - [Moowningstar/gitnexus-plus](https://github.com/Moowningstar/gitnexus-plus) — 在 DSH 侧栏读取 GitNexus 索引，报告被跳过的文件、索引新鲜度与语言覆盖，支持符号搜索和最近的 Git 活动审查。
 - [NEAZ71eve/dsh-tool-github](https://github.com/NEAZ71eve/dsh-tool-github) — GitHub REST API 工具 + 浏览器侧边栏面板：仓库/搜索/Issue/PR/评论、账号绑定（凭据库）与一键克隆为工作区。
+- [Niefee/dsh-svn-viewer](https://github.com/Niefee/dsh-svn-viewer) — DeepSeek Harness 的 SVN 只读查看器：目录树、文件名与全文搜索、Office/文本/图片/PDF 预览、历史、逐行归属、差异对比与 zip 导出。
 - [nightosong/gord-dsh-worktree](https://github.com/nightosong/gord-dsh-worktree) — 为 DeepSeek Harness 管理 git worktree —— 让并行工作各自隔离在自己的目录与分支里。自带快速模式（Fast mode）。
 - [No-PRM/dsh-explorer#dsh-explorer](https://github.com/No-PRM/dsh-explorer/tree/main/dsh-plugins/dsh-explorer) — Git 优先的文件树侧栏：VS Code 风格层级线、M/A/U/D/R git 状态装饰、HEAD 与工作区对照预览、媒体预览、拖拽引用（文件/文件夹/选中代码带行号）—— 纯插件。
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) — 零终端的 GitHub 可视化登录插件：窗口内完成设备码授权，令牌同步进 gh CLI，附宿主端状态与唤起接口。
