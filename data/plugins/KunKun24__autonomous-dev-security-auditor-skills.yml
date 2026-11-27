@@ -1,0 +1,7 @@
+url: https://github.com/KunKun24/autonomous-dev-security-auditor-skills
+name: KunKun24/autonomous-dev-security-auditor-skills
+category: skill
+description:
+  en: 'Autonomous development and security-audit skill for non-coders: inspects the project, plans, writes code, runs real tests, audits authentication, authorization and payment logic, then delivers a six-section report that separates facts from guesses.'
+  zh: '面向编程零基础用户的自主开发与安全审计技能：检查项目、制定方案、编写代码、跑真实测试、审计认证与越权与支付逻辑，最后交付一份把事实、推测和建议分开写的六节报告。'
+icon: https://raw.githubusercontent.com/KunKun24/autonomous-dev-security-auditor-skills/HEAD/docs/images/icon.png
