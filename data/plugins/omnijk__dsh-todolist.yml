@@ -2,6 +2,6 @@ url: https://github.com/omnijk/dsh-todolist
 name: omnijk/dsh-todolist
 category: ui
 description:
-  en: A per-workspace todo panel that queues the next prompts while the model works and sends the first one when a turn in that workspace ends, into the same session or a new one.
-  zh: 按工作区的待办队列面板：模型工作时先把接下来的提示词写好排队，该工作区一轮结束后自动发出队首那条，可留在同一会话或新建会话。
+  en: Queue your next prompts while the agent works — it then runs them one by one on autopilot, so you never sit waiting for a turn to end.
+  zh: 模型干活时先排好接下来的提示词，它一轮结束就自动接手下一条——不用复制粘贴，也不用干等。
 icon: https://raw.githubusercontent.com/omnijk/dsh-todolist/main/assets/icon-180.png
