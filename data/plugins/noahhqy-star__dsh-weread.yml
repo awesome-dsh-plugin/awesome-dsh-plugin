@@ -1,0 +1,6 @@
+url: https://github.com/noahhqy-star/dsh-weread
+name: noahhqy-star/dsh-weread
+category: docs
+description:
+  en: Browse your WeRead shelf, read in the Harness sidebar, and optionally search Z-Library and import books.
+  zh: 在 Harness 侧栏浏览微信读书书架、阅读电子书，并可按需开启 Z-Library 找书与导入。
