@@ -1,0 +1,6 @@
+url: https://github.com/holderlink/dsh-video-preflight
+name: holderlink/dsh-video-preflight
+category: tools
+description:
+  en: Checks a local video, loudness, cover, title, description and tags before uploading to Bilibili, with PASS/WARN/FAIL and fix hints.
+  zh: 上传 B 站前本地检查视频、响度、封面、标题、简介和标签，给出 PASS/WARN/FAIL 和修改建议。
