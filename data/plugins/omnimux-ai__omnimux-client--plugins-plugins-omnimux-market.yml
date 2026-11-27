@@ -1,0 +1,6 @@
+url: https://github.com/omnimux-ai/omnimux-client/tree/main/plugins/plugins/omnimux-market
+name: omnimux-ai/omnimux-client#omnimux-market
+category: market
+description:
+  en: 'Plugin and skill market panel for DeepSeek Harness with four tabs (Skills, Plugins, Experts, and Connectors) for searching and installing skills, community plugins, bundled expert presets, and managed MCP connectors.'
+  zh: 'DeepSeek Harness 插件与技能市场面板，提供技能、插件、专家与连接器四个标签页，支持搜索并安装技能、社区插件、内置专家预设与托管 MCP 连接器。'

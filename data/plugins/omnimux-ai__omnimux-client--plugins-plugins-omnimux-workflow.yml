@@ -1,0 +1,6 @@
+url: https://github.com/omnimux-ai/omnimux-client/tree/main/plugins/plugins/omnimux-workflow
+name: omnimux-ai/omnimux-client#omnimux-workflow
+category: workflow
+description:
+  en: 'Visual DAG workflow canvas for DeepSeek Harness built on React Flow with topological subgraph execution, checkpoint recovery, local file storage, and agent canvas tools.'
+  zh: '基于 React Flow 的 DeepSeek Harness 可视化 DAG 工作流无限画布插件，支持拓扑子图调度、断点恢复、本地文件存储与 Agent 画布操作工具。'
