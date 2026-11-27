@@ -1,0 +1,6 @@
+url: https://github.com/gaolvsuan/dsh-sidebar-font
+name: gaolvsuan/dsh-sidebar-font
+category: ui
+description:
+  en: 'Scales the DSH sidebar text, row heights and icons together from 11 to 16 pixels, with a - / + size step in the sidebar More menu, on its own panel page and on the plugin page. The conversation keeps its own font size.'
+  zh: '把 DSH 侧边栏的文字、行高和图标一起按 11–16px 等比缩放，侧栏「更多」、插件自带的面板页和插件页里都能用 − / + 调；会话正文仍用自己的字号。'
