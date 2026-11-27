@@ -1,0 +1,7 @@
+url: https://github.com/zhang-1239/dsh-positions
+name: zhang-1239/dsh-positions
+category: tools
+description:
+  en: "Cost-basis workbench for your own positions: log buys/sells, then preview how a trade would change cost, position size and break-even before you place it. Local-only, no quotes, no network."
+  zh: "持仓成本台：记录自己的买卖，并在下单前预览这笔交易会把成本、仓位、保本价变成多少。只在本机读写，不含行情、不联网。"
+icon: https://raw.githubusercontent.com/zhang-1239/dsh-positions/main/icon-512.png

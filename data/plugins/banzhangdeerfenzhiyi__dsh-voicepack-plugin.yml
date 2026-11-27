@@ -1,0 +1,6 @@
+url: https://github.com/banzhangdeerfenzhiyi/dsh-voicepack-plugin
+name: banzhangdeerfenzhiyi/dsh-voicepack-plugin
+category: voice
+description:
+  en: 'Voice pack for the DSH WeChat persona: 15 Edge neural voices (9 female / 6 male, dialects, Cantonese, Taiwan) plus optional RVC timbres, spoken as native WeChat voice bubbles.'
+  zh: 给 DSH 微信人格机器人加一套语音包：15 个 Edge 神经音色（9 女声 / 6 男声，含东北话、陕西话、粤语、台湾腔）＋可选 RVC 音色，用指定音色说出真实微信语音条。

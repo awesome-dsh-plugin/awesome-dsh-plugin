@@ -1,0 +1,6 @@
+url: https://github.com/yan9690/dsh-whale-glance
+name: yan9690/dsh-whale-glance
+category: vision
+description:
+  en: 'Whale Glance (余光, "yu guang") — a screen companion for DeepSeek Harness on Windows. A background helper samples the screen, diffs it, and when the picture changes enough, wakes a one-shot subagent that looks at a stitched frame grid plus the on-screen text, and writes one line to a floating subtitle window. Game mode recognizes the running game and uses its slang library; video mode buffers recent subtitles so the subagent can follow a stretch of dialogue and keep a per-show episode archive. The subagent never writes back into your main session, so long use does not grow its context. Off by default, with cooldown, hourly cap and window-title filter.'
+  zh: '余光（dsh-whale-glance）：给 DSH 配一双眼睛：后台定时采样屏幕、判画面变化，变了就叫醒一个一次性子代理，看一张拼图和屏幕上的字，往悬浮字幕窗里说一句。游戏模式认游戏、用黑话库；视频模式把最近的字幕攒起来，够撑一个段落，也能建番剧档案记进度。子代理不回灌主会话，挂久了也不涨上下文。默认关闭，有冷却、每小时上限和窗口标题过滤。'

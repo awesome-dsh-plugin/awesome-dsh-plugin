@@ -1,0 +1,6 @@
+url: https://github.com/jusong/dsh-session-table
+name: jusong/dsh-session-table
+category: session
+description:
+  en: 'Every session across all workspaces in one sortable table ordered by last interaction, with workspace, status, tag and custom time-range filters, keyword search over titles and message content, title-derived tags, bulk archive, and export of a single session or a selection to Markdown, plain text, HTML, Word or PDF.'
+  zh: '把所有工作区的会话放进一张按最后交互倒序、可按列排序的表；支持按工作区、状态、标签与自定义时间区间筛选，按标题和消息内容搜索，按标题自动打标签，批量归档，并把单个或选中的会话导出为 Markdown、纯文本、HTML、Word 或 PDF。'

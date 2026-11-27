@@ -1,0 +1,6 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/rugpt-models
+name: maburykh-gif/dsh-plugins#rugpt-models
+category: model
+description:
+  en: 'ruGPT routes in the model picker: the OpenAI-compatible gateway (https://rugpt.io/api/openai/v1) declared as three sections — text, architecture and design; the key is read from RUGPT_API_KEY in the credential store. A settings card edits each section''s shortcode, creates user-defined sections as extra provider routes, and links to the service panel (author referral link, disclosed).'
+  zh: 在模型选择器中接入 ruGPT（https://rugpt.io/api/openai/v1）OpenAI 兼容网关，声明为文本、架构与设计三个分区，密钥从凭据库的 RUGPT_API_KEY 读取。设置卡片支持编辑各分区快捷码、以额外提供方路由形式创建自定义分区，并提供服务面板链接（含作者推广链接，已注明）。

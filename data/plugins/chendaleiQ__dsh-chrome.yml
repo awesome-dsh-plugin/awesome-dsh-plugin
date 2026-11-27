@@ -1,0 +1,6 @@
+url: https://github.com/chendaleiQ/dsh-chrome
+name: chendaleiQ/dsh-chrome
+category: browser
+description:
+  en: 'Local Chrome control: list tabs, snapshot pages, navigate, screenshot, fill forms and evaluate JS over a loopback bridge.'
+  zh: '本地 Chrome 操控：标签页列表、页面快照、导航、截图、填表与 JS 取值，走回环桥。'

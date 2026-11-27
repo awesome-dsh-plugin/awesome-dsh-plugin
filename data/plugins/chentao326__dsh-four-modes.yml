@@ -1,0 +1,6 @@
+url: https://github.com/chentao326/dsh-four-modes
+name: chentao326/dsh-four-modes
+category: ui
+description:
+  en: Switch the agent preset mid-conversation (Standard, PTC, Minimal, Creator) from a composer chip or the /mode command, without starting a new session.
+  zh: 在已开始的会话里，用输入框 chip 或 /mode 命令切换 Agent 模式（标准 / PTC / 极简 / 创造），不必重开会话。

@@ -1,0 +1,6 @@
+url: https://github.com/zhaochunqi/dsh-magpie-route
+name: zhaochunqi/dsh-magpie-route
+category: ui
+description:
+  en: 'Shows the real upstream model behind a magpie routing-group alias in the composer dock, refreshed from the local gateway route record; read-only, no command or tool.'
+  zh: '在输入框下方显示 magpie 路由组别名背后的真实上游模型，从本地网关的路由记录刷新；只读，不提供命令或工具。'

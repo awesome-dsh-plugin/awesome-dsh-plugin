@@ -1,0 +1,6 @@
+url: https://github.com/feifandiv/dsh-skins
+name: feifandiv/dsh-skins
+category: theme
+description:
+  en: Two global skins (warm paper, ink charcoal) switched from Settings → General; colour tokens only, with layout and features untouched and an off switch back to the stock look.
+  zh: 两套全局皮肤（暖纸象牙白 / 墨暖炭黑），开关在「设置 → 通用 → 皮肤」；只改颜色变量，不动布局、字号与功能，关掉即回官方外观。

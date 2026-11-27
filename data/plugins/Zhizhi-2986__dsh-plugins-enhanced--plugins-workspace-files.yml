@@ -1,0 +1,7 @@
+url: https://github.com/Zhizhi-2986/dsh-plugins-enhanced/tree/main/plugins/workspace-files
+name: Zhizhi-2986/dsh-plugins-enhanced#workspace-files
+category: tools
+tarball: https://github.com/Zhizhi-2986/dsh-plugins-enhanced/releases/download/v0.1.2/dsh-workspace-enhanced-0.1.2.tgz
+description:
+  en: Workspace file search, editing, creation, and replacement for DSH Desktop.
+  zh: 为 DSH Desktop 提供工作区文件搜索、编辑、创建和替换功能。

@@ -1,0 +1,7 @@
+url: https://github.com/SShiRkiT/dsh-orchestrator
+name: SShiRkiT/dsh-orchestrator
+category: workflow
+icon: https://raw.githubusercontent.com/SShiRkiT/dsh-orchestrator/main/docs/images/plugin-icon.png
+description:
+  en: 'DSH-Orchestrator: Disables main-agent tools to enforce planning and review, with parallel delegate, multi-stage orchestrate pipelines, writeScope checks, and log patrol.'
+  zh: '面向 DeepSeek Harness本地研发会话的主从编排(Orchestrator)插件：用硬门禁让主代理专心负责理解需求、拆分任务、后台定时巡检与最终验收，让子代理在隔离环境里并行承担具体施工。改前防撞车，交工查账单丨热重载不断联，冷重启可对账丨支持并行 delegate、多阶段批量 orchestrate 流水线。'

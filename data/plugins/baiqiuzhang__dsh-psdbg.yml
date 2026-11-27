@@ -1,0 +1,6 @@
+url: https://github.com/baiqiuzhang/dsh-psdbg
+name: baiqiuzhang/dsh-psdbg
+category: dev
+description:
+  en: 'MCP server for live Photoshop debugging: inspect documents, run ExtendScript (COM), load a UXP plugin over CDP and drive its DOM, capture windows/panels, classify PiPL/classic plug-ins, and build evidence bundles. Windows + Photoshop 2025 verified; requires local Photoshop and one path edit after install.'
+  zh: 'Photoshop 实机调试 MCP：查看文档、跑 ExtendScript（COM）、通过 CDP 加载并操作 UXP 插件 DOM、截取窗口/面板、分类 PiPL/经典插件、生成证据包。仅在 Windows + Photoshop 2025 验证；需本机装 PS，并在安装后改一行路径。'

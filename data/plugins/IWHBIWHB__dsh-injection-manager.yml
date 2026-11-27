@@ -1,0 +1,7 @@
+url: https://github.com/IWHBIWHB/dsh-injection-manager
+name: IWHBIWHB/dsh-injection-manager
+category: usage
+description:
+  en: 'Shows and switches what a new DSH session injects before its first request (prompt sections, runtime contexts, skill catalog, tool schemas, workspace rules) with a content browser, cross-session first-turn trend, health checks and five entry points: panel page, conversation tab, right sidebar, /inject and a Settings row.'
+  zh: 'DSH 上下文注入管理：把新会话首轮注入的提示词段落、运行时上下文、技能目录、工具 schema 与工作区规则逐条摊开，按套件一键关闭并支持撤销；可读取每一项原文，另有跨会话首轮趋势、健康检查和五个入口（面板页、会话标签页、右侧栏、/inject、设置行）。'
+icon: https://raw.githubusercontent.com/IWHBIWHB/dsh-injection-manager/master/docs/images/icon-180.png

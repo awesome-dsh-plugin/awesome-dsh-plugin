@@ -1,0 +1,6 @@
+url: https://github.com/yanaoyong/dsh-server-ops-agent
+name: yanaoyong/dsh-server-ops-agent
+category: remote
+description:
+  en: 'Uses an existing SSH identity to deploy a Linux collector after confirmation, shows capacity samples, daily reports and event evidence, and opens read-only DSH operations sessions.'
+  zh: '使用现有 SSH 身份，经确认后部署 Linux 采集服务，在 DSH 查看容量采样、巡检日报和事件证据，并打开只读运维会话。'

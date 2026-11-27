@@ -1,0 +1,6 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/pii-guard
+name: maburykh-gif/dsh-plugins#pii-guard
+category: security
+description:
+  en: 'Reversible masking of Russian personal data and secrets in model requests: at the undici transport layer it replaces SNILS, INN, OGRN/OGRNIP, KPP, BIK, bank accounts, Russian passports, OMS policies, cards, +7 phones, emails, addresses and names, plus API keys, JWT, PEM keys and passwords with stable placeholders, and restores the originals in the SSE or JSON response, so the provider sees placeholders while the agent, tools and session log keep real values. Fail-closed, an audit journal without originals, enforce/audit/off modes, per-category switches, a custom dictionary and an allowlist.'
+  zh: '在 undici 传输层对发往模型的请求做可逆脱敏：把俄罗斯个人数据（СНИЛС、ИНН、ОГРН/ОГРНИП、КПП、БИК、银行账号、俄罗斯护照、ОМС 保单、银行卡、+7 电话、邮箱、地址、姓名）与密钥类数据（API key、JWT、PEM、密码）替换为稳定占位符，并在 SSE/JSON 响应中还原原值，因此服务商只看到占位符，而智能体、工具与会话日志保留真实值。默认 fail-closed，审计日志不写原值，支持 enforce/audit/off 模式、按类别开关、自定义词典与白名单。'

@@ -1,0 +1,7 @@
+url: https://github.com/xiaomao361/dsh-afterwave-style
+name: xiaomao361/dsh-afterwave-style
+category: theme
+description:
+  en: A dry-dock theme for DeepSeek Harness with a workspace dashboard, a session-status companion, draft recovery, and Markdown export.
+  zh: 四号船坞为 DeepSeek Harness 提供干船坞主题、工作区概览、会话状态挂件、草稿恢复和 Markdown 导出。
+icon: https://raw.githubusercontent.com/xiaomao361/dsh-afterwave-style/main/icon.png

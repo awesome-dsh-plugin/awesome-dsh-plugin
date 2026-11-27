@@ -1,0 +1,7 @@
+url: https://github.com/FriendG3154/dsh-tokenplan-quota
+name: FriendG3154/dsh-tokenplan-quota
+category: usage
+description:
+  en: 'Shows the Qianwen Token Plan individual-edition quota in a sidebar card and a settings tab: Credits remaining, monthly usage percent, tier label, reset countdown and a night-discount countdown, read live from the official qianwen CLI on this machine, with an estimation fallback when the CLI is not installed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧栏卡片与设置页实时显示千问 Token Plan 个人版额度：剩余 Credits、月度已用百分比、档位标签、重置倒计时与夜间折扣倒计时，经本机官方 qianwen CLI 读取真实数据；CLI 未安装时回退本地估算。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/FriendG3154/dsh-tokenplan-quota/releases/latest/download/dsh-tokenplan-quota-0.2.4.tgz

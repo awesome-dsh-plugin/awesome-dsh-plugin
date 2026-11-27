@@ -1,0 +1,6 @@
+url: https://github.com/Bejohnself/dsh-study-less
+name: Bejohnself/dsh-study-less
+category: tools
+description:
+  en: 'Reading desk for DSH: imports PDFs, cuts them into sections, tracks per-point mastery and schedules spaced review. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 知止读书台：导入 PDF 并按节切分，记录每个知识点的掌握度，安排间隔复习。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

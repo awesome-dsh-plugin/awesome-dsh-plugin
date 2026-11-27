@@ -1,0 +1,6 @@
+url: https://github.com/firstfreeman/dsh-turn-chime
+name: firstfreeman/dsh-turn-chime
+category: notify
+description:
+  en: Plays a two-note bell when the current turn ends and two quick beeps when an approval or a question needs an answer, for the conversation in the main view.
+  zh: 本轮结束响两声上行铃音，出现审批或提问响两声短促蜂鸣，只跟随主视图中的对话。

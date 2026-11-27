@@ -1,0 +1,6 @@
+url: https://github.com/1165655527-dot/dsh-cyber-green-theme
+name: 1165655527-dot/dsh-cyber-green-theme
+category: theme
+description:
+  en: 'CRT cyber-green theme for DeepSeek Harness: sidebar, top bar, composer and popovers share one palette with scanlines and a small toggle switch at the left of the composer toolbar; colors come from design tokens, so plugins installed later follow automatically.'
+  zh: '赛博绿 CRT 配色主题：侧边栏、顶栏、输入框、浮层统一配色并带扫描线，输入框工具条左侧有小开关；配色基于设计令牌，之后新装的插件自动跟随。'

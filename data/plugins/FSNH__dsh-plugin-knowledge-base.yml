@@ -1,0 +1,6 @@
+url: https://github.com/FSNH/dsh-plugin-knowledge-base
+name: FSNH/dsh-plugin-knowledge-base
+category: docs
+description:
+  en: 'Local knowledge base for DeepSeek Harness: a folder tree, in-app viewing of the original layout of Office files, PDFs and images, Chinese-friendly full-text search with optional vector fusion, image descriptions produced by a vision model so pictures become searchable, and three read-only tools the model calls to list, search and read files. It also turns a knowledge base into practice material: learning-topic cards (objective, outline, question count) drive either an AI sparring session with per-question scoring and a written report, or multiple-choice drills whose questions are saved to a local question bank. Every HTTP route requires a custom request header and rejects requests whose Origin differs from the host origin, so a page in your browser cannot drive them. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '个人本地知识库：树状目录、Office / PDF / 图片的原版式阅读、中英文全文检索（可选向量融合）、用视觉模型把图片描述成文字后也能搜；模型可通过三个只读工具列出、检索并读取文件。还能把知识库变成练习材料：学习主题卡片（目标 / 大纲 / 题量）驱动「AI 对练」（逐题评分 + 检验报告）或「刷题」（单选多选，题目存入本地题库）。所有 HTTP 路由都要求自定义请求头，并拒绝 Origin 与宿主不一致的请求，浏览器里打开的网页无法驱动它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

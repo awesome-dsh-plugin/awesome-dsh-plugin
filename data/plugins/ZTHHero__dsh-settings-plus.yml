@@ -1,0 +1,7 @@
+url: https://github.com/ZTHHero/dsh-settings-plus
+name: ZTHHero/dsh-settings-plus
+category: session
+description:
+  en: "Adds a Settings Enhanced section with a send shortcut, a default workspace that switches on exit, moving a session to another workspace, permanent session deletion, Windows window position/size memory, and hiding the DeepSeek provider card under Settings → Models."
+  zh: "在设置中新增「设置增强」分区：发送快捷键、退出时切换的默认工作区、把会话移动到其它工作区、永久删除会话、Windows 窗口位置/大小记忆，以及隐藏设置里的 DeepSeek 提供方卡片。"
+icon: https://raw.githubusercontent.com/ZTHHero/dsh-settings-plus/main/assets/icon-180.png

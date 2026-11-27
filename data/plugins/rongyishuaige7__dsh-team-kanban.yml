@@ -1,0 +1,6 @@
+url: https://github.com/rongyishuaige7/dsh-team-kanban
+name: rongyishuaige7/dsh-team-kanban
+category: ui
+description:
+  en: 'A living three-column kanban board in the right sidebar for DeepSeek Harness agent teams, driven by the native agentTeam projection DAG.'
+  zh: 'DeepSeek Harness 右侧栏多智能体活体任务看板：实时读取原生 agentTeam 投影 DAG，三列流转、依赖血缘与进度自明。'

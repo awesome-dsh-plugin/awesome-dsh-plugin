@@ -1,0 +1,7 @@
+url: https://github.com/Geekhyt/dsh-markdown-studio
+name: Geekhyt/dsh-markdown-studio
+category: docs
+description:
+  en: 'Local-first Markdown writing and WeChat Official Account typesetting studio: CodeMirror 6 editor, live mobile/desktop and dark-mode preview across 8 built-in themes and custom CSS themes, MathJax 3, Mermaid 11, local image hosting, one-click inline-styled HTML copy, and optional SKILL.md writing skills with inline diff review.'
+  zh: '本地优先的 Markdown 写作与微信公众号排版工作台：提供 CodeMirror 6 编辑器、手机/桌面与暗黑模式实时预览、8 套内置主题与自定义 CSS 主题、MathJax 3 公式、Mermaid 11 图表、本机图片托管、一键复制内联样式 HTML 及可选 SKILL.md 写作技能与行内 Diff 审查。'
+icon: https://raw.githubusercontent.com/Geekhyt/dsh-markdown-studio/main/assets/icon-180.png

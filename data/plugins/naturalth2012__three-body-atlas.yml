@@ -1,0 +1,7 @@
+url: https://github.com/naturalth2012/three-body-atlas
+name: naturalth2012/three-body-atlas
+category: fun
+description:
+  en: 'An explorable atlas of the Three-Body trilogy: 56 characters with 247 curated relations, 46 plot beats, 52 events across 10 eras, 24 technologies, 19 places, 37 glossary terms and 5 reading paths, plus a real velocity-Verlet gravity simulation that derives stable and chaotic eras, catastrophes and civilization generations from the planet radiation flux. Registers 11 agent tools and gates every view by a spoiler tier. Its HTTP routes apply the Host access check (ctx.connection.requestRejection), so an unauthenticated caller is refused. The interface is fully bilingual (Chinese and English); the simulation report follows the UI language, while the archive text — character, plot and lore descriptions — is Chinese, with English names for every character, place, technology and glossary term.'
+  zh: '三体三部曲可探索图鉴：56 位人物与 247 条关系、46 个情节节点、10 个纪元的 52 个事件、24 件技术、19 个地点、37 条术语与 5 条导读路线，以及一个真正运行的引力模拟，由行星辐射通量推出恒纪元/乱纪元、灾变与文明代数。注册 11 个对话工具，全部视图可按剧透层级遮蔽。HTTP 路由复用 DSH 的访问检查（ctx.connection.requestRejection），未认证的调用方会被拒绝。界面中英双语；模拟报告随界面语言生成，图鉴正文（人物、情节、设定描述）为中文，人物、地点、技术与术语均有英文名。'
+icon: https://raw.githubusercontent.com/naturalth2012/three-body-atlas/main/assets/icon-180.png

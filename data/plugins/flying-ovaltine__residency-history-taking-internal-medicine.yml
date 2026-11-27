@@ -1,0 +1,18 @@
+# dsh 插件市场条目（awesome-dsh-plugin）
+# 提交时重命名为 flying-ovaltine__residency-history-taking-internal-medicine.yml，
+# 放到 awesome-dsh-plugin 仓库的 data/plugins/ 目录。
+
+url: https://github.com/flying-ovaltine/residency-history-taking-internal-medicine
+name: flying-ovaltine/residency-history-taking-internal-medicine
+category: skill
+
+description:
+  # 含 ": " 的英文描述必须加引号，否则 YAML 会把它当嵌套键
+  en: 'Residency OSCE history-taking trainer for internal medicine. It plays the standardized patient while you interview, then switches to examiner and scores the interview against the official 100-point rubric with itemized deductions; ships 32 internal-medicine case scripts and an append-only training log.'
+  zh: '住培结业考病史采集（内科）陪练：先当 SP 病人等你问诊，说「结束考试」就切考官，按官方 100 分表逐项打分并给可照抄的替换问句；内置 32 例内科病例脚本、4 份规则手册与自动落盘的训练记录。'
+
+# 市场卡片图标：GitHub 托管的位图（正方形 180px 最清楚）
+icon: https://raw.githubusercontent.com/flying-ovaltine/residency-history-taking-internal-medicine/main/assets/icon-180.png
+
+# 预构建 tarball：资产名不带版本号，latest/download/ 不会随下次发版 404
+tarball: https://github.com/flying-ovaltine/residency-history-taking-internal-medicine/releases/latest/download/dsh-osce-history-internal-medicine.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/YiDaWuYi/dsh-manga-workflow
+name: YiDaWuYi/dsh-manga-workflow
+category: workflow
+description:
+  en: 'Manga translation pipeline for DeepSeek Harness: sidebar workbench with box types (body/SFX/title) and per-box GPU erase, local Japanese/Korean/English OCR with vision-engine fallback, DSH-model translation, a reviewed "confirm embed" flow with preflight checks and page previews, staged DSH takeover modes (SFX recognition, whole-book localization), page jump, version checks, and an automatic box-detection benchmark.'
+  zh: '漫画汉化流水线插件：侧边栏工作台支持类型标注（正文/拟声词/标题）与按框 GPU 去字、本地日/韩/英 OCR（可视觉引擎兜底）、DSH 模型翻译、「确认嵌字」带前置体检与逐页预览、分阶段 DSH 接管模式（拟声词识别填词 / 整本汉化）、页码直达、版本检测，并带自动标框基准测试。'

@@ -1,0 +1,7 @@
+url: https://github.com/Sophia-DuoDuo/dsh-smart-planner
+name: Sophia-DuoDuo/dsh-smart-planner
+category: workflow
+description:
+  en: 'A quiet task planner for DeepSeek Harness: date-ordered tasks, staged projects, A-D levels, catch-up review, 16-type coaching, five paper themes, hand-drawn cherry honors, and a bird popover in every conversation header.'
+  zh: '面向 DeepSeek Harness 的任务规划助手：任务按日期自动排序、项目阶段拆解、A-D 等级、补复盘、16 型人格建议、五种纸色主题、手绘果实功勋，以及每个对话标题前的飞鸟浮层。'
+icon: https://raw.githubusercontent.com/Sophia-DuoDuo/dsh-smart-planner/main/assets/icon-180.png

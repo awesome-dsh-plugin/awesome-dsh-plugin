@@ -1,0 +1,6 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/polza-models
+name: maburykh-gif/dsh-plugins#polza-models
+category: model
+description:
+  en: 'Polza.ai routes in the model picker: one OpenAI-compatible gateway (https://polza.ai/api/v1) declared as five sections — text, architecture, design, images and video; the key is read from POLZA_AI_API_KEY in the credential store. A settings card edits each section''s shortcode, creates user-defined sections as extra provider routes, and links to the key page (author referral link, disclosed).'
+  zh: 在模型选择器中接入 Polza.ai（https://polza.ai/api/v1）OpenAI 兼容网关，声明为文本、架构、设计、图像与视频五个分区，密钥从凭据库的 POLZA_AI_API_KEY 读取。设置卡片支持编辑各分区快捷码、以额外提供方路由形式创建自定义分区，并提供密钥页链接（含作者推广链接，已注明）。

@@ -1,0 +1,7 @@
+url: https://github.com/arrongao/dsh-turn-ding        # 必须与仓库完全一致
+name: arrongao/dsh-turn-ding                          # 列表中显示的链接文字
+category: notify                                      # 通知/提醒类，见下方分类说明
+description:
+  en: Windows taskbar unread badge and completion chime for DeepSeek Harness turns.
+  zh: 在 Windows 任务栏显示未读角标，并在 DeepSeek Harness 回合完成时播放提示音。
+icon: https://raw.githubusercontent.com/arrongao/dsh-turn-ding/main/assets/icon-180.png   # 可选

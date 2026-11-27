@@ -1,0 +1,7 @@
+url: https://github.com/tlxqgj/dsh-yy-gamebox
+name: tlxqgj/dsh-yy-gamebox
+category: fun
+description:
+  en: 'Run local games natively inside the DeepSeek Harness panel: owned-window embedding with viewport sizing, no extra taskbar window, one UAC prompt for admin games. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把本机游戏收进 DeepSeek Harness 面板里原生运行：窗口按视口尺寸摆放、不占任务栏、管理员游戏只需确认一次。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/tlxqgj/dsh-yy-gamebox/main/assets/icon-192.png

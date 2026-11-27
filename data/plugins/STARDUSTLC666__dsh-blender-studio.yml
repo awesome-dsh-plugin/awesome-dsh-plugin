@@ -1,0 +1,7 @@
+url: https://github.com/STARDUSTLC666/dsh-blender-studio
+name: STARDUSTLC666/dsh-blender-studio
+category: tools
+icon: https://raw.githubusercontent.com/STARDUSTLC666/dsh-blender-studio/main/assets/plugin-icon.webp
+description:
+  en: 'Blender 3D studio workbench, 6 tools (`blender_health`, `blender_project`, `blender_render`, `blender_script`, `blender_bridge`, `blender_assets`) and 9 bundled skills for Blender 3.6–5.x: Headless CLI rendering with Cycles GPU auto-detection (stills, 2×2 four-view contact sheets, single-launch multi-shot batches, MP4 animation, GLB/FBX/OBJ/STL/.blend export), optional loopback Live Bridge add-on with one-click install and direct camera/object/material controls, 8 templates + 5 engineering exemplars with live lookdev overrides and auto-wired HDRI/3D asset import, 24 `DSH_KIT` helpers, `QC-3D` audit, 4-stage pipeline, script checkpoints/patching, offline binary GLB 3D mesh viewer, A/B render compare, optional Poly Haven CC0 search, and 13 workbench themes.'
+  zh: 'Blender 3D 创作与渲染工作台、6 个工具（`blender_health`/`blender_project`/`blender_render`/`blender_script`/`blender_bridge`/`blender_assets`）与 9 个内置技能（兼容 Blender 3.6–5.x）：支持 Headless CLI 与 Cycles GPU 自动加速（静帧、2×2 四视角质检、单次启动多机位分镜批量渲染、MP4 动画、GLB/FBX/OBJ/STL/.blend 导出）、可选本地回环 Live Bridge 插件（含一键安装与相机/对象/材质直控）、8 套模板 + 5 套高阶工程范本（支持实时 Lookdev 覆写与 HDRI/3D 资产自装配）、24 个 `DSH_KIT` 函数、`QC-3D` 体检、4 阶段流水线、脚本快照与局部补丁、离线二进制 GLB 3D 网格视口、A/B 对比滑块、可选 Poly Haven CC0 检索与 13 套主题。'

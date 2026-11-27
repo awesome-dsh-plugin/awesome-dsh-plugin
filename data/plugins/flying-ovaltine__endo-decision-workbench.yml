@@ -1,0 +1,10 @@
+url: https://github.com/flying-ovaltine/endo-decision-workbench
+name: flying-ovaltine/endo-decision-workbench
+category: skill
+
+description:
+  en: 'Endocrinology decision workbench for frontline endocrinologists. A differential table ranked on two axes (likelihood x harm if missed) where every row must carry counter-evidence, one of six evidence grades on each recommendation, branching workup paths and a treatment plan; emergency red flags collapse everything into three lines. The clinical rules ship as the skill endocrinology-decision-team.'
+  zh: '内分泌临床决策工作台：鉴别清单按「可能性 × 漏诊后果」双轴排序，每行必须有反证（留空即判无效）；每条推荐挂六档证据标记之一；检查路径可分叉；命中糖尿病急性并发症、甲状腺危象、垂体卒中等急诊红线时中断流程、只留三句话处置。临床规则以技能 endocrinology-decision-team 随包分发。'
+
+icon: https://raw.githubusercontent.com/flying-ovaltine/endo-decision-workbench/main/assets/icon-180.png
+tarball: https://github.com/flying-ovaltine/endo-decision-workbench/releases/latest/download/dsh-endo-decision-team.tgz

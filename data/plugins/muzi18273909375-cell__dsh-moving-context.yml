@@ -1,0 +1,8 @@
+url: https://github.com/muzi18273909375-cell/dsh-moving-context
+name: muzi18273909375-cell/dsh-moving-context
+category: session
+tarball: https://github.com/muzi18273909375-cell/dsh-moving-context/releases/download/v0.3.0/dsh-moving-context-0.3.0.tgz
+description:
+  en: 'Move one DeepSeek Harness conversation to another workspace from the session menu or the command line: it rewrites the session log, the workspace membership and the projection cache together, verifies the result and keeps backups.'
+  zh: '在会话菜单或命令行里把一个 DeepSeek Harness 对话搬到另一个工作区：同步改写会话日志、工作区成员表与投影缓存，搬完读回校验并保留备份。'
+  # note: repo is now older than one day; nudging the submission gate to re-run

@@ -1,0 +1,8 @@
+url: https://github.com/xiaosejun/dsh-golden-partner
+name: xiaosejun/dsh-golden-partner
+category: workflow
+description:
+  en: Hands a repository context pack (shallow tree, stack and scripts, existing conventions, excerpts of the files you pick) to an external planning model, then turns the returned six-section brief into a dated plan file; the sidebar panel copies the requests and the brief for you, and long text never enters the conversation.
+  zh: 把仓库上下文（浅层目录、技术栈与脚本、既有约定、指定文件的摘录）打成一份上下文包交给外部方案模型，再把返回的六段执行简报落成带日期的计划文件；左侧栏面板负责把指令与简报复制好，长文本不进入对话。
+icon: https://raw.githubusercontent.com/xiaosejun/dsh-golden-partner/main/assets/icon-180.png
+tarball: https://github.com/xiaosejun/dsh-golden-partner/releases/download/v0.1.2/dsh-golden-partner-0.1.2.tgz

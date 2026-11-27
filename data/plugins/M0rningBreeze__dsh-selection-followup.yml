@@ -1,0 +1,6 @@
+url: https://github.com/M0rningBreeze/dsh-selection-followup
+name: M0rningBreeze/dsh-selection-followup
+category: ui
+description:
+  en: Select a passage in a chat reply, right-click, and ask about it in a floating card beside the selection; the answer never enters the main conversation, and context depth is one click away.
+  zh: 在对话里选中一段文字，右键就在它旁边浮出追问卡片；答案只留在卡片里，不写进主对话，上下文深浅一点即切。

@@ -1,0 +1,7 @@
+url: https://github.com/SpokAtom/dsh-status-lamp
+name: SpokAtom/dsh-status-lamp
+category: ui
+description:
+  zh: '侧栏会话行状态灯（状态指示灯）：空闲蓝点、挂起灰空心（手动或 5 天无对话自动，恢复运行即解除）、归档灰实心。「筛选会话」用两个复选框控制是否显示已挂起/已归档：都不勾选只看其他，勾选即加回该组。'
+  en: 'Sidebar session-row status light (status indicator): blue idle, hollow grey on hold (manual or after 5 quiet days, released when it runs), solid grey archived. Filter sessions has two checkboxes — On hold and Archived — to show or hide those groups.'
+icon: https://raw.githubusercontent.com/SpokAtom/dsh-status-lamp/main/docs/icon-180.png

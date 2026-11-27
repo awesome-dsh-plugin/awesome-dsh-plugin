@@ -1,0 +1,6 @@
+url: https://github.com/jidekaixin2dian/dsh-factmesh
+name: jidekaixin2dian/dsh-factmesh
+category: docs
+description:
+  en: Reconciles PowerPoint report figures with Excel evidence and reuses confirmed links in DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中核对 PowerPoint 汇报数字与 Excel 底表，复用已确认的对应关系。

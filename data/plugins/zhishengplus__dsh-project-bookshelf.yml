@@ -1,0 +1,8 @@
+url: https://github.com/zhishengplus/dsh-project-bookshelf
+name: zhishengplus/dsh-project-bookshelf
+category: ui
+icon: https://raw.githubusercontent.com/zhishengplus/dsh-project-bookshelf/main/docs/media/icon.png
+description:
+  en: Replaces the workspace browser with book covers and conversation chapters for existing projects and sessions, with live activity, cover editing, project context menus and an original-view switch.
+  zh: 将已有项目显示为书封、会话显示为章节，支持实时工作状态、封面编辑、项目右键菜单和切回原版工作区。
+tarball: https://github.com/zhishengplus/dsh-project-bookshelf/releases/download/v1.1.4/dsh-project-bookshelf-1.1.4.tgz

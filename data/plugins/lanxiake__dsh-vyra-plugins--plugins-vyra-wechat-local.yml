@@ -1,0 +1,6 @@
+url: https://github.com/lanxiake/dsh-vyra-plugins/tree/master/plugins/vyra-wechat-local
+name: lanxiake/dsh-vyra-plugins#wechat-local
+category: session
+description:
+  en: 'Gives the agent read-only access to the local WeChat PC database: sessions, chats, images, unread counts, keyword search and export, plus sending as the user. Everything stays on this machine; nothing is uploaded. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '让 Agent 只读访问本机 PC 微信数据库：会话、聊天记录、图片、未读数、关键词检索与导出，也能以本人身份发送。数据只在本机，不外传。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,7 @@
+url: https://github.com/emo-bird/dsh-deepmemory
+name: emo-bird/dsh-deepmemory
+category: memory
+description:
+  en: Cross-session long-term memory for DSH — facts, verbatim episodes and a daily diary in one local SQLite file, plus a sidebar console and per-session switches.
+  zh: 给 DSH 的跨会话长期记忆——事实、原样片段和每天一篇日记存在一个本地 SQLite 文件里，附带侧边栏面板和按会话的开关。
+icon: https://raw.githubusercontent.com/emo-bird/dsh-deepmemory/master/assets/icon-180.png

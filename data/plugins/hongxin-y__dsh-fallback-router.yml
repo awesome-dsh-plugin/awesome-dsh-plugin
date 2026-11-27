@@ -1,0 +1,6 @@
+url: https://github.com/hongxin-y/dsh-fallback-router
+name: hongxin-y/dsh-fallback-router
+category: model
+description:
+  en: 'Per-model routing for DeepSeek Harness: fallback chains (official or loop), time-slot windows, per-provider retry policies, and failure rules by error code, regex, or structural markup detection.'
+  zh: '面向 DeepSeek Harness 的模型级路由：每个模型配置可设兜底链（官方兜底或循环兜底）、时间区间、按 provider 的重试策略，以及按错误码、正则或结构标记判定的失效规则。'

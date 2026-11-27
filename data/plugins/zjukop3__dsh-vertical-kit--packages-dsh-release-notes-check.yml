@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-release-notes-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-release-notes-check'
+category: 'tools'
+description:
+  en: 'Release-note hygiene from markdown: a version heading, a date, breaking changes paired with an upgrade path, and reverse-chronological ordering. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '发布说明的书记检查：版本号标题、发布日期、破坏性变更必须配升级/迁移说明、版本倒序排列——读者依赖的唯一惯例。只验书记层面，不验软件质量。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

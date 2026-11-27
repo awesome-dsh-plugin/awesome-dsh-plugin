@@ -1,0 +1,6 @@
+url: https://github.com/RomanticMysteryLH/dsh-workday-schedule
+name: RomanticMysteryLH/dsh-workday-schedule
+category: workflow
+description:
+  en: 'Runs dsh automation tasks on real working days instead of weekdays, skipping China statutory holidays, honouring 调休 make-up workdays, and composing ordinals such as the second working day after a break.'
+  zh: '让 dsh 的自动化任务按真实工作日触发而不是按星期：跳过中国法定节假日，识别调休补班日，并支持「连续段第 N 个工作日」这类序数规则。'

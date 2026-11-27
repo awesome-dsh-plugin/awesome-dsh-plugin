@@ -1,0 +1,6 @@
+url: https://github.com/caprimoon/dsh-live-wallpaper
+name: caprimoon/dsh-live-wallpaper
+category: theme
+description:
+  en: 'Dynamic wallpaper with a six-zone glass skin. A Host-side gallery aggregates five online video sources (Mixkit, MoeWalls, MotionBgs, WallpaperWaifu, LiveWallpapers4Free) with category filters, English keyword search, paging and favourites; local MP4/WebM/GIF/images up to 256 MB are imported by chunked upload without transcoding, and three canvas scenes work offline. The sidebar, content area, composer, usage bar, command menu and sent message bubbles each take their own colour, 0–100% opacity and backdrop blur of up to 30px. Playback pauses while the window is hidden or the system asks for reduced motion, and can also pause while an agent is working — signalled from the Host over SSE rather than by polling the DOM. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '动态壁纸 + 六区毛玻璃皮肤。Host 侧图库聚合五家在线视频源（Mixkit、MoeWalls、MotionBgs、WallpaperWaifu、LiveWallpapers4Free），支持分类筛选、英文关键词搜索、分页与收藏；本地 MP4/WebM/GIF/图片上限 256 MB，分片上传、不转码，另有三款离线 Canvas 场景。左侧栏、内容区、输入框、用量栏、指令菜单与你发送的气泡各自拥有底色、0–100% 遮罩和最高 30px 的毛玻璃模糊。窗口不可见或系统要求减少动态效果时暂停播放，也可在模型执行任务期间暂停——该信号由 Host 通过 SSE 下发，不靠轮询 DOM。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

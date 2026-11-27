@@ -1,0 +1,6 @@
+url: https://github.com/QLNPLUS/dsh-opendesign-quota-card
+name: QLNPLUS/dsh-opendesign-quota-card
+category: usage
+description:
+  en: OpenDesign (AMR) coding-plan quota card for the DSH Web sidebar — one bar per plan window showing what it has used, a dashboard, and a console sign-in that replaces the local estimate with the vendor's own figures.
+  zh: 在 DSH Web 侧栏底部显示 OpenDesign（AMR）套餐额度：每个额度窗口一条已用进度条，点开是仪表盘，还能登录官网控制台，用官方读数替换本机估算。

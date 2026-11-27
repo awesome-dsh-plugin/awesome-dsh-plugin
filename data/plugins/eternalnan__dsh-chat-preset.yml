@@ -1,0 +1,6 @@
+url: https://github.com/eternalnan/dsh-chat-preset
+name: eternalnan/dsh-chat-preset
+category: agi
+description:
+  en: "Agent preset that turns a session into a plain chat mode: it mounts only web search, and masks the tools other plugins register so the agent talks instead of acting on the machine."
+  zh: "把会话变成纯聊天模式的 agent 预设：只挂联网搜索，并屏蔽其他插件注册的工具，让 agent 只对话、不操作这台机器。"

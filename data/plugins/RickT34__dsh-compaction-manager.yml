@@ -1,0 +1,7 @@
+url: https://github.com/RickT34/dsh-compaction-manager
+name: RickT34/dsh-compaction-manager
+category: session
+description:
+  en: 'Compaction settings panel: orders model-free compaction steps (official head/tail pruner, Magic Compact-style output omission, DCP-style dedupe and error purge, tool-call folding), tunes compaction-basic, adds a per-session Compaction tab that previews savings and queues a compact-now run, and adds a restore_context tool that returns hidden content.'
+  zh: 压缩设置面板：排列不调用模型的压缩步骤（官方首尾裁剪、仿 Magic Compact 的输出省略、仿 DCP 的去重与出错清理、工具调用折叠），调整 compaction-basic 参数，在每个会话里增加「压缩」标签用于预览节省量和排队立即压缩，并提供 restore_context 工具取回被隐藏的内容。
+icon: https://raw.githubusercontent.com/RickT34/dsh-compaction-manager/main/assets/icon-180.png

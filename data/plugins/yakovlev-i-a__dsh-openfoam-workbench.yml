@@ -1,0 +1,7 @@
+url: https://github.com/yakovlev-i-a/dsh-openfoam-workbench
+name: yakovlev-i-a/dsh-openfoam-workbench
+category: tools
+description:
+  en: 'OpenFOAM CFD workbench for DeepSeek Harness with 65 tools and 11 skills to inspect a case, plan and check a mesh, scaffold incompressible, compressible and conjugate-heat-transfer cases, run solvers, verify runs and render fields, plus golden cases on OpenFOAM.org 14 and OpenFOAM.com v2606.'
+  zh: 'DeepSeek Harness 的 OpenFOAM CFD 工作台：提供 65 个工具与 11 项技能，用于检查算例、规划与校验网格、构建不可压/可压及共轭传热算例、运行求解器、校验结果与渲染流场，附带基于 OpenFOAM.org 14 与 OpenFOAM.com v2606 的基准算例。'
+icon: https://raw.githubusercontent.com/yakovlev-i-a/dsh-openfoam-workbench/v0.9.27/icon.png

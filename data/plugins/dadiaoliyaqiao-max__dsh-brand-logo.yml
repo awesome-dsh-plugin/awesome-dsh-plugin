@@ -1,0 +1,8 @@
+url: https://github.com/dadiaoliyaqiao-max/dsh-brand-logo
+name: dadiaoliyaqiao-max/dsh-brand-logo
+category: ui
+tarball: https://github.com/dadiaoliyaqiao-max/dsh-brand-logo/releases/latest/download/dsh-brand-logo.tgz
+description:
+  en: Replaces the DeepSeek Harness sidebar brand with the Action Formula (言动方程) logo and leaves the rest of the interface unchanged; turning the plugin off restores the original brand.
+  zh: 将 DSH 侧边栏左上角的品牌替换为言动方程（ACTION FORMULA）Logo，其余界面保持不变；关闭插件即可恢复原品牌。
+icon: https://raw.githubusercontent.com/dadiaoliyaqiao-max/dsh-brand-logo/main/assets/icon-180.png

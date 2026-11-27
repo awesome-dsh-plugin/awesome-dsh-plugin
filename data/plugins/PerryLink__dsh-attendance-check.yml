@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-attendance-check
+name: PerryLink/dsh-attendance-check
+category: tools
+description:
+  en: "Reconcile a punch-in CSV into per-person daily hours, overtime, over-limit days, missing punches and rest shortfalls, with a monthly summary and CSV export."
+  zh: "把打卡明细 CSV 核对成每人的日工时、加班、超限日、缺卡与休息不足，按月汇总并导出核对表。"

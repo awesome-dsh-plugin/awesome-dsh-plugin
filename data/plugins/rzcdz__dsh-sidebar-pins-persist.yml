@@ -1,0 +1,6 @@
+url: https://github.com/rzcdz/dsh-sidebar-pins-persist
+name: rzcdz/dsh-sidebar-pins-persist
+category: ui
+description:
+  en: 'Remembers which panels you unpinned from the left sidebar and restores them after a DSH restart, so the pin choices survive instead of resetting with every launch.'
+  zh: '记住你在左侧边栏取消了哪些面板的置顶，重启 DSH 后自动恢复，置顶选择不再随每次启动被重置。'

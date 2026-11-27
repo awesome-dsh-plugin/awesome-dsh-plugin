@@ -1,0 +1,7 @@
+url: https://github.com/emeryxu1-blip/dsh-matrix-skin
+name: emeryxu1-blip/dsh-matrix-skin
+category: theme
+description:
+  en: Session-powered Matrix code rain for DeepSeek Harness Desktop and Web, with animation throughout normal use and content masks that preserve text and control clarity.
+  zh: 为 DeepSeek Harness 桌面端与 Web 提供会话驱动的 Matrix 代码雨，日常使用时持续播放动画，通过内容遮罩保留文字与控件的清晰度。
+tarball: https://github.com/emeryxu1-blip/dsh-matrix-skin/releases/download/v0.3.1/dsh-matrix-skin.tgz

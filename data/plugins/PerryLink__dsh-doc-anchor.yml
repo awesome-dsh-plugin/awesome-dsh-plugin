@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-doc-anchor
+name: PerryLink/dsh-doc-anchor
+category: docs
+description:
+  en: "Turn PDF/HTML/LaTeX/Markdown documents into locatable evidence surfaces for DeepSeek Harness: content-addressed snapshots, page/section/paragraph/char anchors, table grids and a REP v1 evidence record."
+  zh: "把 PDF/HTML/LaTeX/Markdown 文档变成可定位的证据面：内容寻址快照、页/节/段/字符锚点、表格网格与 REP v1 证据记录。"

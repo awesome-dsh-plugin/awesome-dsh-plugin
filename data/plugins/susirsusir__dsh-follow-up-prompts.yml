@@ -1,0 +1,8 @@
+url: https://github.com/susirsusir/dsh-follow-up-prompts
+name: susirsusir/dsh-follow-up-prompts
+category: ui
+description:
+  en: Shows up to three follow-up instructions above the composer after each completed turn; hover shows the full text, click fills the draft, double-click or the send arrow sends it.
+  zh: 每轮完成后在输入框上方最多给出三条后续指令建议；悬停显示全文，点击填入输入框，双击或点发送箭头直接发送。
+icon: https://raw.githubusercontent.com/susirsusir/dsh-follow-up-prompts/main/assets/icon-180.png
+tarball: https://github.com/susirsusir/dsh-follow-up-prompts/releases/latest/download/dsh-follow-up-prompts.tgz

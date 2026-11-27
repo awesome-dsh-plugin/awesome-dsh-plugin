@@ -1,0 +1,7 @@
+url: https://github.com/Johnson1662/dsh-inbox
+name: Johnson1662/dsh-inbox
+category: notify
+tarball: https://github.com/Johnson1662/dsh-inbox/releases/download/v0.9.10/dsh-inbox-0.9.10.tgz
+description:
+  en: 'Inbox for DeepSeek Harness: four sources (Telegram, Feishu, WeChat through wx-cli and GitHub notifications) turn incoming messages into envelopes on a durable SQLite queue, and a delivery loop hands them to the agent session you pick, retrying until each one is acknowledged. Sources run as separate processes and only the daemon writes the database; the settings panel covers per-source fields and the chat and repository whitelists. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的收件箱：Telegram、飞书、微信（经 wx-cli）与 GitHub 通知四路来源把新消息变成信封写进持久化的 SQLite 队列，投递循环交给指定的 Agent 会话，未确认就重试。来源是独立进程，数据库只有守护进程一个写者；设置面板覆盖各来源字段、会话白名单与仓库白名单。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/Qing8-Max/dsh-dev-modes
+name: Qing8-Max/dsh-dev-modes
+category: workflow
+description:
+  en: 'Three agent presets in one bundle: software development, game development, and read-only discussion, plus per-session isolation and quiet-run switches and a recoverable session trash. Ships delivery and engine workflow skills for Godot, Unity, Unreal and Cocos. Every HTTP route requires host authentication through ctx.connection.requestRejection.'
+  zh: '一次安装新增三个 Agent 预设：软件开发、游戏开发、只读讨论，并带每会话的隔离与静默运行开关以及可恢复的会话回收站；随包附带交付流程与 Godot / Unity / Unreal / Cocos 引擎工作流技能。所有 HTTP 路由都通过 ctx.connection.requestRejection 接入宿主认证。'

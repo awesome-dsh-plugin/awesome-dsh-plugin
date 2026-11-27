@@ -1,0 +1,6 @@
+url: https://github.com/wojiao42/dsh-chatgpt-to-memory
+name: wojiao42/dsh-chatgpt-to-memory
+category: memory
+description:
+  en: 'Complete memory-import pipeline for DSH: runs the official ChatGPT export with automatic email-code re-authentication, transfers and verifies the download, deduplicates processed conversations, distills durable facts, interests and viewpoints through the host LLM service, and merges them through dsh-long-term-memory. Does not write memory files directly.'
+  zh: 面向 DSH 的完整记忆导入链路：执行 ChatGPT 官方导出（含邮箱验证码自动重新认证），下载并校验压缩包，按会话去重，经宿主 LLM 蒸馏事实、兴趣与观点，再交由 dsh-long-term-memory 合并。不直接写入记忆文件。

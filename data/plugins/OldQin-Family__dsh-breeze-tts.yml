@@ -1,0 +1,7 @@
+url: https://github.com/OldQin-Family/dsh-breeze-tts
+name: OldQin-Family/dsh-breeze-tts
+category: voice
+description:
+  en: 'DSH client for a self-hosted Breeze TTS service: AI auto-read plus a voice workshop for designing, cloning, and managing voices. Requires a running Breeze service; no model is bundled.'
+  zh: 'DSH 的 Breeze 语音客户端：AI 自动朗读，以及设计、克隆和管理音色的声音工坊；需自备并运行 Breeze 服务，插件不含模型。'
+icon: https://raw.githubusercontent.com/OldQin-Family/dsh-breeze-tts/main/icon.png

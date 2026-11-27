@@ -1,0 +1,6 @@
+url: https://github.com/zx-yk/dsh-codex-adapter
+name: zx-yk/dsh-codex-adapter
+category: agi
+description:
+  en: 'Dispatch tasks from Claude Code / Codex to DSH agents as native subagents with live progress; configure dispatch defaults, execution mode, and vision / image-generation access, installed into the host in one click.'
+  zh: '从 Claude Code / Codex 把任务派发给 DSH 智能体，作为原生子代理并实时显示进度；配置派发默认值、执行模式，以及视觉 / 生图访问，一键安装到宿主。'

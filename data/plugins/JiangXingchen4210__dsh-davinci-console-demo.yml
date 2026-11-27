@@ -1,0 +1,6 @@
+url: https://github.com/JiangXingchen4210/dsh-davinci-console-demo
+name: JiangXingchen4210/dsh-davinci-console-demo
+category: tools
+description:
+  en: 'DaVinci Resolve color console (DEMO, 0.14.1): DeepSeek-V4.1-Flash reads multiple frames, plans scene issues and color moves; V-Log technical transform with Node1 protection, independent style node, paired before/after review, clipping/spill/banding checks; local skin tracking not yet complete; macOS only.'
+  zh: 'dsh-davinci-console-demo（DEMO 0.14.1）：DeepSeek-V4.1-Flash 看多个时间点画面后规划场景/问题和调色；V-Log 技术转换与 Node1 保护、独立风格节点、前后配对复看、裁切/溢色/断层检查；局部肤色跟踪尚未完成；仅支持 macOS。'

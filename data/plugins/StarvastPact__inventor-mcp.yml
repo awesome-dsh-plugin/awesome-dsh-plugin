@@ -1,0 +1,10 @@
+# tarball v1.2.0 repacked 2026-11-25: package.json#main now resolves to
+# package/index.js (470511 B, 17 entries). Same download URL as before.
+url: https://github.com/StarvastPact/inventor-mcp
+name: StarvastPact/inventor-mcp
+category: tools
+icon: https://raw.githubusercontent.com/StarvastPact/inventor-mcp/main/icon.png
+tarball: https://github.com/StarvastPact/inventor-mcp/releases/download/v1.2.0/dsh-inventor-mcp-1.2.0.tgz
+description:
+  en: 'Autodesk Inventor 2025 as an MCP server for DeepSeek Harness: parametric parts, fully constrained sketches driven by user parameters, circular and rectangular patterns, drawings with section and detail views, and STEP/IGES/DXF export.'
+  zh: '把本机 Autodesk Inventor 2025 接进 DeepSeek Harness：参数化零件、由用户参数驱动的全约束草图、圆形与矩形阵列、带剖视与局部放大的工程图，以及 STEP/IGES/DXF 导出。'

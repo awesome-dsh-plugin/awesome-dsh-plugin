@@ -1,0 +1,6 @@
+url: https://github.com/baibiaowang/dsh-voice-input-wb-asr
+name: baibiaowang/dsh-voice-input-wb-asr
+category: voice
+description:
+  en: 'Free speech-to-text for DeepSeek Harness. Hold the composer microphone (or Alt while the caret is in the composer) and the text is typed into the input box as you speak: the audio is cut at pauses, each phrase is recognized as it lands, and releasing the button recognizes the whole take once more and replaces the preview with the corrected transcript. Also ships wb_transcribe, which turns long audio or video into one timestamped Markdown document (an 82-minute recording in 47 seconds in a measured run). Recognition uses the WorkBuddy accounts already signed in; WorkBuddy does not bill speech input. International and domestic builds are separate settings, international by default.'
+  zh: '输入框里的按住说话麦克风：说话时字直接打进输入框（按住期间音频在停顿处切开，每句落下就识别），松开后整段重新识别一次，用纠正后的文稿替换预览。另带 wb_transcribe，把长音频/视频转成一份带时间戳的 Markdown 文稿（实测 82 分钟录像 47 秒转完）。识别走本机已登录的 WorkBuddy 账号，WorkBuddy 对语音输入不计费。国际版与国内版分开设置，默认国际版。'

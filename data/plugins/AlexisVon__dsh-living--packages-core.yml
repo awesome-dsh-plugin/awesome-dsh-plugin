@@ -1,0 +1,6 @@
+url: https://github.com/AlexisVon/dsh-living/tree/main/packages/core
+name: AlexisVon/dsh-living#core
+category: agi
+description:
+  en: 'A runtime for an agent that lives by its own settings: a 10–60 minute auto-wake grid, three-layer SQLite memory consolidated at night, an auto-evolving persona (nightly rewrite with version history) plus a journal, and WorldGem channels for Bilibili, WeChat and the PetKit feeder.'
+  zh: '按设定活着的 agent 运行时：10–60 分钟自动唤醒、夜睡整理的三层 SQLite 记忆、每晚自动演化并保留版本历史的人设与日记，以及 B站 / 微信 / 小佩喂食器 WorldGem 通道。'

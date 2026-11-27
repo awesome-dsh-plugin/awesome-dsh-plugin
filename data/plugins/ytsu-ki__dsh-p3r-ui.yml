@@ -1,0 +1,8 @@
+url: https://github.com/ytsu-ki/dsh-p3r-ui
+name: ytsu-ki/dsh-p3r-ui
+category: theme
+tarball: https://github.com/ytsu-ki/dsh-p3r-ui/releases/download/v1.0.1/dsh-p3r-ui-1.0.1.tgz
+icon: https://raw.githubusercontent.com/ytsu-ki/dsh-p3r-ui/main/assets/makoto-avatar.png
+description:
+  en: "Persona 3 Reload (Makoto Yuki) theme: 60fps underwater video backdrop, adaptive frosted-glass panels with eye-care scrims, draggable settings dock, synced DSH language, and optional wallet HUD."
+  zh: "女神异闻录 3 Reload（结城理）主题皮肤：60fps 水下循环视频背景、可调毛玻璃与深蓝护眼衬底、可拖拽头像设置坞、跟随 DSH 语言自动切换及可选余额悬浮卡。"

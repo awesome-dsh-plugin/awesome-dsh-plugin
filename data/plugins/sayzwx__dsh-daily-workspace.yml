@@ -1,0 +1,6 @@
+url: https://github.com/sayzwx/dsh-daily-workspace
+name: sayzwx/dsh-daily-workspace
+category: ui
+description:
+  en: 'Adds a user-chosen default workspace for new conversations, lists recent conversations above the workspace groups, and hides the default workspace from the lower groups to avoid duplication. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为新会话增加可自定义的默认工作区，在侧栏顶部显示最近对话，并把默认工作区从下方工作区分组中隐藏，避免重复。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

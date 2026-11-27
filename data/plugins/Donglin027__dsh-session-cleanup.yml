@@ -1,6 +1,7 @@
 url: https://github.com/Donglin027/dsh-session-cleanup
 name: Donglin027/dsh-session-cleanup
 category: session
+icon: https://raw.githubusercontent.com/Donglin027/dsh-session-cleanup/main/assets/icon-512.png
 description:
   en: >-
     Purges what DSH's "delete session" leaves behind: orphan attachments, session projection cache

@@ -1,0 +1,6 @@
+url: https://github.com/HougeLangley/dsh-nvchecker
+name: HougeLangley/dsh-nvchecker
+category: workflow
+description:
+  en: Checks upstream releases with nvchecker and reports recipes that are behind. Regenerates nvchecker.toml from an ABBS-style recipe tree, runs nvchecker, diffs every reported tag against the recipe's VER line, and writes a Markdown report. Never edits a recipe - version bumps stay a human decision, because nvchecker's use_max_tag sorts tags lexically and mis-picks year-style tags on repos that mix 2.8.15 with 20160726. Built for the AOSC OS loongarch64 third-party tree; reads the plain ABBS layout (section/pkg/spec with a VER= line).
+  zh: 用 nvchecker 检查上游发布，报告落后于上游的配方。从 ABBS 风格的配方树重新生成 nvchecker.toml，跑 nvchecker，把上游 tag 逐条与配方的 VER 行比对，产出 Markdown 报告。不改任何配方——升版本始终由人决定，因为 nvchecker 的 use_max_tag 按字面排序，在 2.8.15 与 20160726 混排的仓库上会选错年份 tag。为 AOSC OS loongarch64 第三方树而写，读取标准 ABBS 布局（section/pkg/spec 含 VER= 行）。

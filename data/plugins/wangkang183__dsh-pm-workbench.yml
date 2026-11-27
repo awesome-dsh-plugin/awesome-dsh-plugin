@@ -1,0 +1,7 @@
+url: https://github.com/wangkang183/dsh-pm-workbench
+name: wangkang183/dsh-pm-workbench
+category: ui
+description:
+  en: 'A right-sidebar workbench for memos, projects with Gantt, a read-only QQ Mail inbox, calendar, AI item parsing, a weekly digest, and host tools for conversational and WeChat todo management.'
+  zh: '右侧栏工作台：记事本式备忘、项目甘特图、QQ 邮箱只读收件箱、日历、AI 拆分、周报，以及对话/微信操作待办的 Host 工具。'
+icon: https://raw.githubusercontent.com/wangkang183/dsh-pm-workbench/main/assets/icon-180.png

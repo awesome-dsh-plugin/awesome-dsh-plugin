@@ -1,0 +1,6 @@
+url: https://github.com/DerikZhang/dsh-http-local-proxy
+name: DerikZhang/dsh-http-local-proxy
+category: dev
+description:
+  en: Routes the pnpm and git installs DSH runs through one HTTP proxy, with a switch and an editable address in the Web UI.
+  zh: 让 DSH 执行的 pnpm 与 git 安装走同一个 HTTP 代理，并在 Web 界面里提供开关和可编辑的地址。

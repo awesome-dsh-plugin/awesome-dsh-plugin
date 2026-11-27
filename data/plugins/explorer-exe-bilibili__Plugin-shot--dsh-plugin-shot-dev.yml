@@ -1,0 +1,6 @@
+url: https://github.com/explorer-exe-bilibili/Plugin-shot/tree/main/dsh-plugin-shot-dev
+name: explorer-exe-bilibili/Plugin-shot#dsh-plugin-shot-dev
+category: skill
+description:
+  en: "Registers the plugin-shot-dev skill for building Plugin-shot plugins without the host source tree: it downloads the official offline SDK, scaffolds from a template, writes the C++, builds with CMake, and runs `Plugin-shot.exe --test-plugin` before the plugin is installed."
+  zh: "注册 plugin-shot-dev 技能，在没有宿主源码的情况下开发 Plugin-shot 插件：下载官方离线 SDK、从模板生成工程、编写 C++、用 CMake 编译，并在安装前运行 `Plugin-shot.exe --test-plugin` 自检。"

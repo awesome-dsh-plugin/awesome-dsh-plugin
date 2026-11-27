@@ -1,0 +1,6 @@
+url: https://github.com/OrstedOshua/dsh-api-cost
+name: OrstedOshua/dsh-api-cost
+category: usage
+description:
+  en: Tracks per-chat API token cost in DeepSeek Harness from real usage data, with configurable prices per 1M tokens, currency and language selectors, and live exchange rates.
+  zh: 在 DeepSeek Harness 中基于真实用量统计每个会话的 API 令牌成本，支持每百万令牌自定义价格、币种与语言选择，以及实时汇率。

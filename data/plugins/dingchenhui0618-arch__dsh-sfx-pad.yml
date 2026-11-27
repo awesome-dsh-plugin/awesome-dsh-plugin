@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-sfx-pad
+name: dingchenhui0618-arch/dsh-sfx-pad
+category: ui
+description:
+  en: 'Event sound pad for DeepSeek Harness: bind test pass/fail, build pass/fail, recording start/stop, publish done, pending approvals and turn end to ten local cue files, classified from real tool arguments plus exit code. The panel previews each pad, mutes everything in one click, and switches a mute profile (default / focus / silent) when you leave the harness or report a matching app name. Audio is read-only and local, the only file it writes is its own preferences, and no path outside the cue catalog is ever served.'
+  zh: '事件音垫：把测试通过/失败、构建通过/失败、开始/结束录屏、发布完成、待审批、本轮结束绑成十个本地音效，判定依据是真实命令文本加退出码。面板可逐个试听、一键静音，并在你离开 DSH 或上报匹配的应用名时自动切档（默认/专注/静音）。音频全程只读本地文件，唯一会写的是自己的偏好设置，且只服务音垫目录里的文件。'

@@ -1,0 +1,7 @@
+url: https://github.com/Foru-hue/dsh-model-reorder
+name: Foru-hue/dsh-model-reorder
+category: model
+description:
+  en: Drag-to-reorder the provider cards on the Models settings page with live drag preview; the order persists and the model pickers regroup after a restart.
+  zh: 在设置页「模型」里拖拽排序供应商卡片（拖动 ☰、实时预览落点、顺序持久化），模型选择器的分组在重启后跟随你的顺序。
+# refreshed-by-author 2026-11-25

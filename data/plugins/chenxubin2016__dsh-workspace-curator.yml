@@ -1,0 +1,7 @@
+url: https://github.com/chenxubin2016/dsh-workspace-curator
+name: chenxubin2016/dsh-workspace-curator
+category: session
+description:
+  en: 'Row menus and a Settings page for workspace and session housekeeping: delete sessions, cascade-delete a workspace with all its sessions and folder, queue open sessions for cleanup after a DSH restart, and protect the last workspace.'
+  zh: '通过会话/工作区菜单和设置页整理工作区与会话：删除会话，级联删除工作区及其全部会话和文件夹，打开中的会话重启 DSH 后清理，并保护最后一个工作区。'
+icon: https://raw.githubusercontent.com/chenxubin2016/dsh-workspace-curator/main/assets/icon-180.png

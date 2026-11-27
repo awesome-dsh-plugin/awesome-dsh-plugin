@@ -1,0 +1,6 @@
+url: https://github.com/luokexiaoguo/dsh-team-mode
+name: luokexiaoguo/dsh-team-mode
+category: workflow
+description:
+  en: 'Splits a task across role-defined subagents (product, research, architecture, frontend, backend, QA, release), each with its own session and write scope, then aggregates their structured reports in a session panel with a list view and an organisation graph.'
+  zh: '把一个任务拆给带职责定义的子代理（产品、调研、架构、前端、后端、测试、部署），每个角色都有独立会话与写入范围；汇报用结构化字段回收，并在会话面板里以列表和组织图谱两种视图汇总。'

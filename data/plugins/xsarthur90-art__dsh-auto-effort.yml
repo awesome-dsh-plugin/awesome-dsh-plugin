@@ -1,0 +1,7 @@
+url: https://github.com/xsarthur90-art/dsh-auto-effort
+name: xsarthur90-art/dsh-auto-effort
+category: model
+description:
+  en: 'Picks the reasoning effort (off, low, high or max) for each message before it is queued, from the message itself plus a short card the plugin keeps of what the conversation is doing and what is left, so the effort applies to that same turn.'
+  zh: '每条消息入队前自动判断推理等级（off / low / high / max）：依据是你这句话，加上插件维护的一张「在做什么、还差什么」的任务便签；判断完立即生效，同一轮就用上。'
+icon: https://raw.githubusercontent.com/xsarthur90-art/dsh-auto-effort/main/icon.png

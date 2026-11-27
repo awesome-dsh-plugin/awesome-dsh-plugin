@@ -1,0 +1,7 @@
+url: https://github.com/KhalilWong/dsh-plugin-touchline-football/tree/main/plugin
+name: KhalilWong/dsh-plugin-touchline-football#plugin
+category: fun
+description:
+  en: 'Floating football scores, event-based pitch visualization and local tracking replay for DSH.'
+  zh: '为 DSH 提供足球比分小窗、事件推演球场和本地追踪回放。'
+tarball: https://github.com/KhalilWong/dsh-plugin-touchline-football/releases/download/v1.0.0/dsh-plugin-touchline-1.0.0.tgz

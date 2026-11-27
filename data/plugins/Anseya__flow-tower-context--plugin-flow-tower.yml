@@ -1,0 +1,6 @@
+url: https://github.com/Anseya/flow-tower-context/tree/main/plugin/flow-tower
+name: Anseya/flow-tower-context#flow-tower
+category: memory
+description:
+  en: 'Compaction-driven project memory for DeepSeek Harness: deterministic compilation of compaction deltas into a searchable cited dictionary, adaptive dual injection, and a portable compaction-takeover preset.'
+  zh: '面向 DeepSeek Harness 的压缩驱动项目记忆：把压缩增量确定性编译为可检索、带引文的项目词典，自适应双注入，并提供可移植的压缩接管预设。'

@@ -1,0 +1,6 @@
+url: https://github.com/anheon/dsh-session-manager-delete
+name: anheon/dsh-session-manager-delete
+category: session
+description:
+  en: 'Permanently deletes archived DSH sessions in one pass: stops their running work, unregisters them from the host, removes the logs, projection cache and spill directories, detaches workspace accounting and clears browser-side drafts, tabs and layout, then reloads the list; only archived sessions qualify, path and origin checks guard each step, and a session whose work will not stop is not deleted. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '一次性彻底删除已归档的 DSH 会话：停掉正在跑的工作并注销宿主内存，删掉日志、投影缓存与 spill 目录，摘除工作区登记，清理浏览器端的草稿、页签与布局，最后重拉列表；只对已归档会话开放，每一步都有路径与同源校验，工作停不下来就拒删。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

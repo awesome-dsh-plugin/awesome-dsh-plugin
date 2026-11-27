@@ -1,0 +1,7 @@
+url: https://github.com/0xDaj/dsh-amdkey
+name: 0xDaj/dsh-amdkey
+category: model
+description:
+  en: 'Rotates multiple AMD Radeon Cloud API keys behind a local proxy, reads real daily credit from the usage endpoint, and applies model selection without a restart.'
+  zh: '在本地代理后面轮换多个 AMD Radeon Cloud API key，从官方用量接口读取真实日额度，模型选择改完无需重启即可生效。'
+icon: https://raw.githubusercontent.com/0xDaj/dsh-amdkey/main/assets/icon-180.png

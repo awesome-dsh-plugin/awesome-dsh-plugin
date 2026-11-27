@@ -1,0 +1,6 @@
+url: https://github.com/xiafan68/dsh-capability-toggles
+name: xiafan68/dsh-capability-toggles
+category: security
+description:
+  en: "Turns individual tools and skills on or off for the current session from one button in the composer toolbar, grouped by plugin, so a profile with many plugins only exposes what this conversation needs."
+  zh: "在对话输入框的工具行按插件分组开启或关闭本会话的工具与技能，只影响当前会话。"

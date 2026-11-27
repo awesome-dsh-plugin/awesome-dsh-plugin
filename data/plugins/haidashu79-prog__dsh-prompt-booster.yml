@@ -1,0 +1,7 @@
+url: https://github.com/haidashu79-prog/dsh-prompt-booster
+name: haidashu79-prog/dsh-prompt-booster
+category: usage
+tarball: https://github.com/haidashu79-prog/dsh-prompt-booster/releases/download/v0.4.0/dsh-prompt-booster-0.4.0.tgz
+description:
+  zh: "为不擅长写提示词的小白用户设计：每次输入都会自动调用本插件（agent/pre-step 钩子），把不完整、不准确的原话补全为带目标/约束/交付形式的完整表述，并用「► 重点」标注关键诉求，再交给主模型处理。补全稿对用户可见，原话始终保留在首位，二者冲突以原话为准；调用失败不影响原对话（fail-open）。零宿主私有依赖，纯 JS 自包含。"
+  en: "For non-expert users who struggle to write clear prompts: on every message the plugin (agent/pre-step hook) auto-completes the vague/incomplete input into a full instruction with goal/constraints/deliverable, and marks the key requests with \"► 重点\". The original text is always kept first and wins on conflict; the completion preview is shown to the user; failures never break the conversation (fail-open). Self-contained pure-JS, zero host-private deps."

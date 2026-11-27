@@ -1,0 +1,6 @@
+url: https://github.com/chibslee/dsh-deep-dive
+name: chibslee/dsh-deep-dive
+category: workflow
+description:
+  en: 'Deep Dive research mode: clarify, plan, run parallel background retrieval, verify citations against saved sources, then write a cited report; ships a report reviewer panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '深度研究模式：澄清、计划、后台并行检索、按已存来源核验引文，再产出带引用的报告；附带报告审阅面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

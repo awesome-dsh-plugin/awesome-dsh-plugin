@@ -1,0 +1,7 @@
+url: https://github.com/gougou1993/dsh-tree-new-bee-api-client
+name: gougou1993/dsh-tree-new-bee-api-client
+category: dev
+description:
+  en: 'Postman-style HTTP client with collections, environments and history.'
+  zh: '在左侧栏打开 Tree New Bee 接口请求，支持请求构造、集合、环境与历史。'
+icon: https://raw.githubusercontent.com/gougou1993/dsh-tree-new-bee-api-client/refs/heads/main/icon.png

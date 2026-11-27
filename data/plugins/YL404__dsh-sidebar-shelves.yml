@@ -1,0 +1,6 @@
+url: https://github.com/YL404/dsh-sidebar-shelves
+name: YL404/dsh-sidebar-shelves
+category: ui
+description:
+  en: 'Two-line session cards for the sidebar: per-workspace project tiles (monogram, emoji, color or image), pinning, hand or timed archiving with a collapsible archived shelf, running and waiting status markers, per-session background-job and subagent counts, and newest-input-first sorting. Web GUI; requires DSH 0.2.1-rc.5 or later.'
+  zh: '侧栏两行会话卡片：按工作区显示项目图标（字母、emoji、颜色或图片）、置顶、手动或定时归档与可折叠归档架、运行/等待状态标记、按会话的后台任务与子代理计数、按最近输入排序。面向 Web GUI，需要 DSH 0.2.1-rc.5 及以上。'

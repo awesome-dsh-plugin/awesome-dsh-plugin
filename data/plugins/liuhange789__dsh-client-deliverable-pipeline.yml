@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-client-deliverable-pipeline
+name: liuhange789/dsh-client-deliverable-pipeline
+category: tools
+description:
+  en: 'Markdown in, client-grade printable HTML report out: one self-contained file with a branded cover page, a table of contents auto-built from H2/H3 with anchors that resolve, body typography, and a running footer. Print rules are the point — A4 `@page` with 2cm margins, table rows that never split across pages, repeating table headers, headings kept with their content. Brand colour is WCAG-checked: links and TOC numbers are darkened to reach 4.5:1 on white, cover text switches between black and white by luminance, and `#rrggbbaa` is composited first. Open the file and press Ctrl+P to export the PDF; no external CSS/JS/fonts, no browser engine.'
+  zh: "Markdown 进，客户级可打印 HTML 报告出：单文件、无外部 CSS/JS/字体，含品牌色封面、由 H2/H3 自动生成且锚点可跳转的目录、正文排版与页脚。核心是打印规则——A4 `@page` 2cm 页边距、表格行不被分页切断、表头每页重复、标题不与正文分离。品牌色按 WCAG 校验：链接与目录编号自动压深到白底 4.5:1 以上，封面文字按亮度在黑/白间切换，`#rrggbbaa` 先合成再计算。生成后浏览器打开按 Ctrl+P 即可导出 PDF，不依赖浏览器内核。"

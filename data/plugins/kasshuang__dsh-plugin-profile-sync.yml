@@ -1,0 +1,6 @@
+url: https://github.com/kasshuang/dsh-plugin-profile-sync
+name: kasshuang/dsh-plugin-profile-sync
+category: dev
+description:
+  en: 'Keeps the installed-plugin list and whitelisted plugin settings in sync across machines through a private GitHub repository or a synced folder. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过私有 GitHub 仓库或同步文件夹，在多台机器之间同步已装插件列表与白名单内的插件设置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

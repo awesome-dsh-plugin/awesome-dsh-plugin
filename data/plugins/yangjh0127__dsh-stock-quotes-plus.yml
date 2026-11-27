@@ -1,0 +1,6 @@
+url: https://github.com/yangjh0127/dsh-stock-quotes-plus
+name: yangjh0127/dsh-stock-quotes-plus
+category: ui
+description:
+  en: 'Longbridge watchlist quotes for A-shares, Hong Kong and US markets, with a configurable ticker, price and volume charts, and a stock_quote agent tool.'
+  zh: '通过长桥查看 A 股、港股和美股自选股报价，支持顶部行情条、分时量价图和 stock_quote 对话查价工具。'

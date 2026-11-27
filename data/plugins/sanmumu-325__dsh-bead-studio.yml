@@ -1,0 +1,6 @@
+url: https://github.com/sanmumu-325/dsh-bead-studio
+name: sanmumu-325/dsh-bead-studio
+category: fun
+description:
+  en: 'Create editable bead patterns with local conversion, project storage, exports, and optional experimental image assistance. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 中生成和编辑拼豆图纸，支持本地转换、作品保存、导出及可选的 AI 测试功能。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

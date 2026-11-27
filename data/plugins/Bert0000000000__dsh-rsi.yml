@@ -1,0 +1,8 @@
+url: https://github.com/Bert0000000000/dsh-rsi
+name: Bert0000000000/dsh-rsi
+category: agi
+description:
+  en: 'Twelve tools for improving a harness by experiment rather than by opinion: plan probe runs against a sha256-pinned rubric, score repeated samples into pass rates, compare two variants on one task without a ground truth, audit writes outside `.rsi` after a run starts, archive experiments with lineage, and adopt an approved proposal behind a smoke check that rolls back on failure. A global sidebar overview and a cross-workspace experience ledger aggregate runs, evidence and lessons from every workspace.'
+  zh: '用实验而非主观判断改进 harness 的 12 个工具：按 sha256 固定评分表规划探针实验、把重复采样汇总成通过率、在没有标准答案时对比同一任务的两个变体、审计实验开始后 `.rsi` 之外的越界写入、带血缘归档实验、并在冒烟检查与失败回滚的保护下采纳已批准的提案；另提供全局侧栏总览与跨工作区经验账本，汇总所有工作区的实验、证据与教训。'
+tarball: https://github.com/Bert0000000000/dsh-rsi/releases/download/v1.5.0/dsh-rsi-1.5.0.tgz
+icon: https://raw.githubusercontent.com/Bert0000000000/dsh-rsi/main/assets/icon-180.png

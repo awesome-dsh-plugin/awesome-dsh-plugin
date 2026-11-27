@@ -1,0 +1,6 @@
+url: https://github.com/amd47802574/dsh-turn-hider
+name: amd47802574/dsh-turn-hider
+category: session
+description:
+  en: 'Hide any single chat turn (user message, assistant reply and tool activity) from the transcript view; display-only, session logs stay untouched, with a restore panel.'
+  zh: 在聊天界面隐藏任意一轮对话（用户消息、AI 回复与工具过程）：仅作用显示层，会话日志不动，可随时恢复。

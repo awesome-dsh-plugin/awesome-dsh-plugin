@@ -1,0 +1,7 @@
+url: https://github.com/Hieupt1904/dsh-tvkt-vi
+name: Hieupt1904/dsh-tvkt-vi
+category: docs
+description:
+  en: 'Enforces a Vietnamese technical-writing standard on every agent: one prompt section applied to all modes, a skill with 30 writing rules and 70 terms, an agent mode with draft/review/rewrite discipline, and a bundled L001-L007 linter.'
+  zh: '给每个 agent 套上越南语技术写作规范：一段对所有模式生效的提示词、含 30 条写作规则和 70 个术语的技能、带起草/评审/重写纪律的 agent 模式，以及自带的 L001-L007 检查器。'
+tarball: https://github.com/Hieupt1904/dsh-tvkt-vi/releases/latest/download/dsh-tvkt-vi.tgz

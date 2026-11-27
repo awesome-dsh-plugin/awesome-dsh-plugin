@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-numberlint'
+name: 'zjukop3/dsh-verify-kit#dsh-numberlint'
+category: 'tools'
+description:
+  en: 'Number consistency check for one document: the same quantity written 4,985 and 4985, the same percentage with and without a space, and ranges with mixed dashes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '文档内数字一致性：同一数量既写 4,985 又写 4985、百分比空格不一致、区间连接号混用——写法比较而非数值比较。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-verify-kit/main/assets/icon-180.png'

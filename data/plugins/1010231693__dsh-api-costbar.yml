@@ -1,0 +1,6 @@
+url: https://github.com/1010231693/dsh-api-costbar
+name: 1010231693/dsh-api-costbar
+category: usage
+description:
+  en: 'Check cloud model API costs at a glance: switch which vendor the sidebar cell shows by hand, and adjust how often it refreshes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '一个可以快速查看云端模型api费用的插件，支持手动切换厂商，支持调节刷新频率。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

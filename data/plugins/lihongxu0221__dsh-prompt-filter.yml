@@ -1,0 +1,7 @@
+url: https://github.com/lihongxu0221/dsh-prompt-filter
+name: lihongxu0221/dsh-prompt-filter
+category: identity
+description:
+  en: "Rewrites DeepSeek Harness identity text and tool names out of requests sent to selected models, restoring original names in responses so tool calls still run."
+  zh: "按模型匹配重写请求中的 DeepSeek Harness 身份文本与工具名，并在响应中还原原名，保证工具调用正常执行。"
+tarball: https://github.com/lihongxu0221/dsh-prompt-filter/releases/latest/download/dsh-prompt-filter.tgz

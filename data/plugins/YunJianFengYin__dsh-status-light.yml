@@ -1,0 +1,7 @@
+url: https://github.com/YunJianFengYin/dsh-status-light
+name: YunJianFengYin/dsh-status-light
+category: notify
+description:
+  en: 'Factory-style stack light for the Harness Web UI: red with a buzzer while a conversation waits for you, amber while it works, green when idle. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '工厂式三色信号灯：有对话在等你处理时亮红灯并蜂鸣，有对话在运行时亮黄灯，全部空闲时亮绿灯。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/YunJianFengYin/dsh-status-light/main/assets/icon-256.png

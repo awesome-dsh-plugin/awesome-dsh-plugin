@@ -1,0 +1,7 @@
+url: https://github.com/hemu996/smart-ppt-designer/tree/main/smart-ppt-studio
+name: hemu996/smart-ppt-designer#国赛PPT设计台
+category: ui
+description:
+  en: 'Competition-grade PPT design console for DeepSeek Harness, paired with the smart-ppt-designer skill: 19 visual systems to retrieve by content, 29 hard red lines that a failing design must be rebuilt against, a 13-step workflow, 32 ready commands, 18 animation recipes and 95 catalogued templates. Import a local .pptx and it extracts the cover and summarises the deck structure (page outline, imagery and data it expects, theme colours); templates are browsed with inline thumbnails, and one click copies the assembled generation brief for the skill to execute. Latest (1.9.0): layered cover pages (hairline frame, arc, corner block and seal drawn under the calligraphy title instead of one photo with a title on top), a storyline tab organising decks by problem, solution, innovation and validation with a four-part speaker-note frame, and a page-preview tab that renders every page for review.'
+  zh: '国赛/创赛级 PPT 设计台，配合 smart-ppt-designer 技能使用：19 套视觉系统按内容检索、29 条硬红线（违反即返工）、13 步工作流、32 条命令、18 条动效、95 份模板清单。导入本地 .pptx 会自动抽取封面，并生成结构速览（页面框架、需要的素材与数据、主题色）；模板内联缩略图预览，一键复制组装好的生成指令交给技能执行。最新 1.9.0：封面改为多层叠加（细线框、弧线、色块、印章位铺在书法主标之下，不再是一张图上压标题）；新增叙事框架页，按问题—方案—创新—验证组织内容并附演讲备注四段式；新增页面预览页，逐页渲染后平铺查看。'
+icon: https://raw.githubusercontent.com/hemu996/smart-ppt-designer/main/smart-ppt-studio/icon-180.png

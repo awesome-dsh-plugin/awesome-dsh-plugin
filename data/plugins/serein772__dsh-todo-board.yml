@@ -1,0 +1,6 @@
+url: https://github.com/serein772/dsh-todo-board
+name: serein772/dsh-todo-board
+category: workflow
+description:
+  en: 'A sticky-note to-do board on a month calendar: pastel paper, tape and a rubber-stamp counter, notes pinned to days by drag, plus a 15/25/50-minute Pomodoro focus timer with automatic breaks. A collapsible pending summary sits above the composer and hides itself when nothing is open. Tasks live in one JSON file on the host, so they survive reloads, restarts and port changes.'
+  zh: '画成月历便利贴的个人待办板：淡彩纸、胶带、图章式计数，便利贴拖到日期上即可排期，另有 15/25/50 分钟番茄钟与自动休息。输入框上方有可折叠的待完成摘要，全空时自动隐藏。任务存在宿主侧单个 JSON 文件里，刷新、重启、换端口都不丢。'

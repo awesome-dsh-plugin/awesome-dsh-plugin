@@ -1,0 +1,6 @@
+url: https://github.com/yishan/dsh-sequence
+name: yishan/dsh-sequence
+category: ui
+description:
+  en: In-conversation per-turn agent tool-call sequence diagram and timeline replay plugin with animated playback, synchronized frame inspector, and SVG/HTML export.
+  zh: 会话内单轮 Agent 工具调用时序图与时间轴回放插件，支持动画回放、帧检查器联动及 SVG/HTML 导出。

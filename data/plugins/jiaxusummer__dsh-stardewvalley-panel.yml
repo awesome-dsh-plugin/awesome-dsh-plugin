@@ -1,0 +1,6 @@
+url: https://github.com/jiaxusummer/dsh-stardewvalley-panel
+name: jiaxusummer/dsh-stardewvalley-panel
+category: ui
+description:
+  en: "Stardew Valley in a DeepSeek Harness side panel: game day, weather, money, energy, location and the mood curve, with start, wake-the-session, close-with-save-check, force-sleep and scheduled play. Requires the game and SMAPI; the in-game mod is Darian's Blind Whale Farmer."
+  zh: '在 DSH 侧边栏看 AI 玩星露谷：游戏日、天气、钱、体力、地点、心情曲线，可以开始、叫醒、带存档检查关游戏、强制回家睡觉、定时开玩。需要正版游戏和 SMAPI；游戏里的模组是 Darian 的 Blind Whale Farmer。'

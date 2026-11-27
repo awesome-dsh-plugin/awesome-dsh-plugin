@@ -1,0 +1,6 @@
+url: https://github.com/Qing8-Max/dsh-session-overview
+name: Qing8-Max/dsh-session-overview
+category: session
+description:
+  en: 'Adds an Overview tab to the DSH conversation view switcher showing the current session''s turns, wall time, token usage, cache hit rate and generation speed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 会话视图切换器中增加「概览」页签，显示当前会话的回合数、墙面时间、令牌用量、缓存命中率与生成速度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

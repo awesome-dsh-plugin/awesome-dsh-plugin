@@ -1,0 +1,8 @@
+# dsh-pdf-tools — a subpackage of a monorepo, so the entry points at its
+# subdirectory and the name uses the owner/repo#subname form.
+url: https://github.com/alotherss/DeepSeekHarness-plugin/tree/main/packages/dsh-pdf-tools
+name: alotherss/DeepSeekHarness-plugin#dsh-pdf-tools
+category: tools
+description:
+  en: 'Page-scoped PDF tools for the model: pdf_info reads the page count and whether a text layer exists, pdf_outline and pdf_search locate pages, pdf_text extracts only those pages, and pdf_render rasterises one page. Per-call caps and CJK radical normalisation are built in.'
+  zh: '给模型按页读 PDF 的五个工具：先看页数与有无文字层，再用书签或全文搜索定位页码，只抽那几页；图纸、扫描页单页渲成 PNG 直接进上下文。中文 PDF 的康熙部首与部首补充区字符已归一化，搜「首页」不会漏。'

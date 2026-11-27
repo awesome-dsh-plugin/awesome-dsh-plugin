@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-safety-brief-check
+name: PerryLink/dsh-safety-brief-check
+category: tools
+description:
+  en: "Safety-briefing record check for DeepSeek Harness: check safety briefing records against the Unified Safety Technical Code for Construction (GB 50870-2013) and the Regulations on the Administration of Work Safety in Construction Projects (JGJ 59-2011). Flags discrepancies only and makes no conclusive judgment."
+  zh: "安全交底记录核对：依据《建筑施工安全技术统一规范》《建设工程安全生产管理条例》（GB 50870-2013、JGJ 59-2011）。仅提示差异，不作出定性结论。"

@@ -1,0 +1,6 @@
+url: https://github.com/eurekame2000/dsh-vision-direct
+name: eurekame2000/dsh-vision-direct
+category: vision
+description:
+  en: 'Self-contained vision for text-only DSH models: registers its own vision_read_image tool (verbatim OCR, reading-order layout, semantics, uncertainty), turns pasted or dragged images into local file paths through a capture-phase channel with rolling storage, explains every takeover verdict in the console with the reason and the matched model, and optionally exposes a loopback OpenAI/Anthropic-compatible endpoint. Per-image save cap and boot-log rotation cap are configurable. Talks to your own upstream directly, with no external vision CLI and no runtime dependency.'
+  zh: '给 DSH 的纯文本模型自带一双眼睛：注册自己的 vision_read_image 工具（逐字 OCR、阅读顺序版面、语义、不确定项），粘贴或拖拽的图片在捕获阶段转成本机路径并滚动保留最近若干张，每次接管判定都在 console 带回原因与命中的模型；单张保存上限与启动日志滚动上限均可配置，另可选暴露一个本机 OpenAI/Anthropic 兼容端点；直接连接你自己的上游，不依赖任何外部视觉 CLI，也没有运行时依赖。'

@@ -1,0 +1,6 @@
+url: https://github.com/SonettoGu14/dsh-tokeneconomizer/tree/master/packages/prune
+name: SonettoGu14/dsh-tokeneconomizer#packages/prune
+category: tools
+description:
+  en: 'Hides the tools that stayed idle across previous sessions, decided once when a session starts from recorded evidence; compression, skill and image tools are never hidden, and restoring is one command. Off by default. One of the three dsh-te components; installing dsh-te installs all three.'
+  zh: '按历史证据隐藏跨会话都未使用的工具，每个会话开始时决定一次；压缩、技能与图片相关工具永不被隐藏，用一条命令即可恢复。默认关闭。属于 dsh-te 套件的三个组件之一，安装 dsh-te 即装齐三个。'

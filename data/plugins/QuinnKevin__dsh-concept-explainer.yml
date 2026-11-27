@@ -1,0 +1,6 @@
+url: https://github.com/QuinnKevin/dsh-concept-explainer
+name: QuinnKevin/dsh-concept-explainer
+category: ui
+description:
+  en: 'Select a term in a DeepSeek Harness conversation and get an explanation built from the surrounding messages, streamed into its own right-sidebar tab with a follow-up thread and an editable system prompt, while the original conversation stays untouched; a finished explanation can be saved as a Markdown note in the workspace, or used to branch the conversation into a new session that the panel keeps talking in.'
+  zh: '在 DSH 对话里划词，用所选文字周围的对话作为语境，把解释流式输出到独立的右侧栏标签页，可继续追问、可改写系统提示词，原对话保持不动；解释可以存成工作区里的 Markdown 笔记，也可以用它把对话分出一个新会话，之后在面板里继续聊都会写进那个会话。'

@@ -1,0 +1,7 @@
+url: https://github.com/vamyane/dsh-guofeng-studio
+name: vamyane/dsh-guofeng-studio
+category: skill
+description:
+  en: "Chinese-style songwriting studio for DeepSeek Harness: three bundled skills — a composer (mode and scale decisions, number-notation melody, pentatonic chords, arrangement table, three lint gates, multi-track MIDI), a lyricist (rhyme scheme, imagery, allusion control, structure, 14 lint rules, fill-in lyric slots), and a suite entry that connects both through .jp / .lyr / .slots.json files. The Python scripts use only the standard library and run fully locally."
+  zh: "中国风词曲工作室：一个插件装好三个技能——作曲（调式音阶、简谱旋律、五声化和弦、配器结构表、三道校验、多轨 MIDI）、作词（韵辙句式、意象典故、结构与金句、14 条校验、填词槽位），以及用 .jp / .lyr / .slots.json 把两半接起来的词曲总入口。脚本只用 Python 标准库，全部本地运行。"
+icon: https://raw.githubusercontent.com/vamyane/dsh-guofeng-studio/main/assets/icon.png

@@ -2,5 +2,6 @@ url: https://github.com/QuaonY/dsh-mem-weave
 name: QuaonY/dsh-mem-weave
 category: memory
 description:
-  en: 'MemWeave (dsh-mem-weave) weaves memory into persona: layered memory and a persona editor in one DeepSeek Harness plugin, with a bounded per-turn injection budget, decay and consolidation, a candidate and conflict review queue, 24-hour undo, and calendar reminders, all stored in a local SQLite file.'
-  zh: '忆织 MemWeave（dsh-mem-weave）—— 把记忆编织进人格（记忆 × 人格一体 DSH 插件）：分层记忆与人格编辑，每轮注入有固定上限，记忆按层遗忘与整理，候选与冲突需人工确认，写入可在 24 小时内撤销，另有约定与纪念日提醒，全部数据存在本机 SQLite 文件里。'
+  en: 'MemWeave — long-term memory and a persona editor for DeepSeek Harness (DSH). Seven memory layers with per-layer half-life and a decay floor feed three capped injection sections (persona, first-turn snapshot plus user profile, per-turn delta plus recall); recall fuses FTS5/BM25, embeddings and links with RRF. Writes pass source detection, dedupe/merge and risk-tiered conflict governance with human confirmation, are audited and can be undone for 24 hours; extraction candidates persist by risk tier; credentials are blocked, sensitive fields redacted before injection, and turn notices stay scoped to the current session. 22 weave_* tools, nine settings pages, promise and anniversary reminders, one local SQLite file, no runtime dependencies.'
+  zh: '忆织 MemWeave —— 面向 DeepSeek Harness（DSH）的长期记忆与人格编辑器。七层记忆各带半衰期与衰减下限，注入分三段、各自限额（人格、首轮快照与用户画像、每轮增量与召回）；召回把 FTS5/BM25、向量与链接三路用 RRF 融合。写入先过来源检测、去重合并与风险分级的冲突治理（高风险需人工确认），全程审计、24 小时内可撤销；抽取候选按风险分级落库；密钥写入即拦，敏感字段注入前脱敏，轮后通知只留在本会话。另有 22 个 weave_* 工具、九个设置页面、约定与纪念日提醒，数据在本机一个 SQLite 文件里，无运行时依赖。'
+tarball: https://github.com/QuaonY/dsh-mem-weave/releases/download/v1.0.4/dsh-mem-weave-1.0.4.tgz

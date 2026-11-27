@@ -1,0 +1,7 @@
+url: https://github.com/xerxescom/dsh-theme-cinnabar
+name: xerxescom/dsh-theme-cinnabar
+category: theme
+description:
+  en: 'Warm ink-and-cinnabar theme for the DSH web client: one --dsw-* token layer behind a 58-pair contrast gate, a liquid-glass composer, a short paper-and-whale entrance, a typeset reading surface, and a settings row that turns it off.'
+  zh: 'DSH Web 客户端的暖墨朱砂主题：一层 --dsw-* token 覆盖（58 组对比度门禁）、液态玻璃输入框、约 1.5 秒的铺纸揭幕入场、阅读面排版，以及一行可以关掉它的设置项。'
+icon: https://raw.githubusercontent.com/xerxescom/dsh-theme-cinnabar/main/assets/icon-180.png

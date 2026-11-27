@@ -1,0 +1,7 @@
+url: https://github.com/OverToWind/dsh-grouped-sessions
+name: OverToWind/dsh-grouped-sessions
+category: session
+description:
+  en: 'Groups sessions inside each workspace of the sidebar: the session region becomes a workspace, group, session tree where groups are created per workspace, a session is filed by dragging it onto a group or through the row menu, and clicking a row opens that session. Groups can be moved up or down, renamed, or deleted without losing their sessions; groups start collapsed, the ungrouped bucket starts open, group counts follow the rows actually shown, and a collapsed sidebar renders the official session list.'
+  zh: '在侧边栏按工作区分组会话：会话区变成「工作区 → 分组 → 会话」三级树，分组归各工作区所有，拖动会话到分组或通过行内菜单归档，点击行打开会话；分组可上移下移调整顺序、可改名、可删除且会话不丢，分组默认收起、未分组默认展开，分组计数跟随实际显示的行，侧边栏收起时回落到官方会话列表。'
+icon: https://raw.githubusercontent.com/OverToWind/dsh-grouped-sessions/main/assets/icon-180.png

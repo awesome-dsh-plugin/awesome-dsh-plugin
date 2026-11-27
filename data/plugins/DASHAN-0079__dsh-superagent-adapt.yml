@@ -1,0 +1,8 @@
+url: https://github.com/DASHAN-0079/dsh-superagent-adapt
+name: DASHAN-0079/dsh-superagent-adapt
+category: workflow
+icon: https://raw.githubusercontent.com/DASHAN-0079/dsh-superagent-adapt/1e8aaeac5cc90c7f85a2dd5c7e211c8ac989ac02/assets/icon-180.png
+tarball: https://github.com/DASHAN-0079/dsh-superagent-adapt/releases/latest/download/dsh-superagent.tgz
+description:
+  en: 'Community adaptation of the dsh-superagent prototype to DeepSeek Harness 0.2.2-rc.3. Watches one GitHub repository, and optionally Feishu, for work an authorized person asks for. Each request becomes a work item that runs in its own DSH session and directory, and the answer goes back to the original conversation, for example as a pull request. A web panel shows what needs a person. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 dsh-superagent 原型适配到 DeepSeek Harness 0.2.2-rc.3 的社区版本。监听一个 GitHub 仓库（可选再加飞书）中授权人员提出的工作请求，每条请求开一个工单，在独立的 DSH 会话与目录中执行，并把结果回复到原对话，例如一个 pull request。网页面板显示需要人处理的事项。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

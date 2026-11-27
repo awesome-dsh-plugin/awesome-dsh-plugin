@@ -1,0 +1,6 @@
+url: https://github.com/LHCWN/dsh-triage-desk
+name: LHCWN/dsh-triage-desk
+category: git
+description:
+  en: Collects GitHub review requests, merge-ready pull requests, failing checks, and issues in one inbox, and opens a coding agent or a new DSH chat with a prepared prompt.
+  zh: 将 GitHub 审核请求、可合并的拉取请求、失败的检查和议题汇集到一个收件箱，可带着预先填好的提示词打开编码智能体或新的 DSH 对话。

@@ -1,0 +1,7 @@
+url: https://github.com/Zhizhi-2986/leek-fund/tree/dsh-plugin/dsh-plugin
+name: Zhizhi-2986/leek-fund#dsh-plugin
+category: tools
+tarball: https://github.com/Zhizhi-2986/leek-fund/releases/download/v0.1.0/dsh-leek-fund-0.1.0.tgz
+description:
+  en: A-share quotes, watchlists, stock groups, and price alerts for DSH.
+  zh: 为 DSH 提供 A 股行情、自选股、股票分组和价格提醒。

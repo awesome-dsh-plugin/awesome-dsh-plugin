@@ -1,0 +1,6 @@
+url: https://github.com/KaibuchiShuuki/DSH-token-queue
+name: KaibuchiShuuki/DSH-token-queue
+category: workflow
+description:
+  en: 'Peak-hour batch queue: lines entered on a settings page are held during DeepSeek peak pricing and, once off-peak starts, each line is dispatched as its own task — to a new session or to an existing session picked per line. Entries stay editable and removable until sent.'
+  zh: '峰价批量待办队列：在设置页按行录入任务，峰价时段只存不发；进入谷时后每条各自派发执行——可开新会话，也可逐条指定已有会话。未派发前可编辑、删除。'

@@ -1,0 +1,7 @@
+url: https://github.com/Dushiqi1987/dsh-sweeper
+name: Dushiqi1987/dsh-sweeper
+category: tools
+description:
+  en: 'Cleans up the junk conversations leave on disk: every path a write or edit call touched, plus DSH spill files, is cross-checked against the session logs, the disk and git. Anything no tool has used for a week lands in two tiers, with a one-click cleanup for the obvious junk and a checklist for the rest; files only move into a restorable trash batch. Use it to clean up conversation leftovers, clean cache, scratch scripts and temporary files, and free up space on disk — often searched for as cleaning up memory or freeing up memory, but what it frees is disk space, not RAM. Report-only by default; the model can review a conversation and suggest what is no longer needed.'
+  zh: '清理垃圾与对话残留：把每个会话里 write/edit 写过的路径和 DSH 溢出文件，与会话日志、磁盘、git 三方对账，一周内没被工具再用过的文件分「无脑删」「需要你判断」两档，一键清理或逐项勾选，文件只移入回收站、可整批恢复。用来清理对话垃圾与残留、清理缓存与临时文件，释放磁盘空间、清理被占用的空间——常被搜作「清理内存」「释放内存」「清理空间」，但不动进程内存。默认只报告，也可让模型复核判断哪些文件已经没用。'
+tarball: https://github.com/Dushiqi1987/dsh-sweeper/releases/latest/download/dsh-sweeper.tgz

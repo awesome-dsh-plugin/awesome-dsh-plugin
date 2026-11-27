@@ -1,0 +1,6 @@
+url: https://github.com/Lee2277-t/pbip-forge
+name: Lee2277-t/pbip-forge
+category: tools
+description:
+  en: 'Creates complete Power BI projects (.pbip) on disk — TMDL semantic models, DAX measures, relationships, RLS roles, PBIR pages and native visuals — and works as a CLI, an MCP server or a DSH plugin.'
+  zh: '直接生成完整的 Power BI 项目（.pbip）：TMDL 语义模型、DAX 度量值、关系、RLS 角色、PBIR 页面与原生视觉对象；同时提供 CLI、MCP 服务与 DSH 插件三种入口。'

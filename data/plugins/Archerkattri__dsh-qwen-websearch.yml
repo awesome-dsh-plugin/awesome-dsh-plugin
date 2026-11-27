@@ -1,0 +1,6 @@
+url: https://github.com/Archerkattri/dsh-qwen-websearch
+name: Archerkattri/dsh-qwen-websearch
+category: browser
+description:
+  en: Qwen Token Plan web search provider that runs web_search on Token Plan credits through the Responses API web_search tool, summarizing with Qwen3.8 Flash and returning source URLs.
+  zh: 通过 Responses API 的 web_search 工具让 web_search 走 Qwen Token Plan 额度，由 Qwen3.8 Flash 总结并返回来源链接。

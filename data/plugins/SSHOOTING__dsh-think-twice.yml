@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-think-twice
+name: SSHOOTING/dsh-think-twice
+category: ui
+description:
+  en: 'Question-first DSH composer review that asks up to two evidence-backed questions without rewriting the draft.'
+  zh: '只提问、不代写的 DSH 输入框表达审查，最多给出两个带原文依据的问题。'
+

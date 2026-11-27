@@ -1,0 +1,7 @@
+url: https://github.com/sayzwx/dsh-custom-model
+name: sayzwx/dsh-custom-model
+category: model
+tarball: https://github.com/sayzwx/dsh-custom-model/releases/download/v1.0.0/dsh-custom-model-1.0.0.tgz
+description:
+  en: 'Custom-model console for the Models page: manage hand-declared llm-pi-ai providers in one list, fetch the model list an endpoint serves, and fill each model context window, max output and the reasoning levels the endpoint accepts straight into the configuration. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '「设置 → 模型」里的自定义模型控制台：一处管理手写的 llm-pi-ai 提供商，向端点索取模型清单，并把每个模型的真实上下文窗口、输出上限与端点接受的推理档位直接写进配置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

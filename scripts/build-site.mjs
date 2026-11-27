@@ -20,7 +20,9 @@ import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
 import { slugOf, slugHref, termOf } from './lib/terms.mjs'
+import { versionShots } from './lib/screenshot-bust.mjs'
 import { releaseMetadataFor } from './lib/release-manifest.mjs'
+import { catalogRepo, HISTORY_CACHE_KEY, publishReleaseHistory } from './lib/release-history.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -412,6 +414,11 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
 // `ok: false` — which the probe writes for 404/410 alone — removes an image.
 // An entry whose shots all die loses the field entirely rather than shipping an
 // empty array, which is the state every entry had before screenshots existed.
+//
+// Declared outside the block because publishing needs the same map: it carries
+// the ETag each image answered with, which becomes the URL's `v` parameter.
+const LIVE_FILE = 'data/screenshots-live.json'
+const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
 {
   // The author's own repository wins. probe-screenshots.mjs reads
   // `screenshots.json` from beside the plugin's package.json and resolves it to
@@ -432,8 +439,6 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
     console.log(`screenshots: ${Object.keys(declaredMap).length} entry/entries declare their own (${adopted} superseding ${SCREENSHOTS_FILE})`)
   }
 
-  const LIVE_FILE = 'data/screenshots-live.json'
-  const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
   let dropped = 0
   for (const [key, list] of Object.entries(shotsMap)) {
     if (!Array.isArray(list)) continue
@@ -443,6 +448,11 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
     else delete shotsMap[key]
   }
   if (dropped) console.log(`screenshots: dropped ${dropped} image(s) confirmed 404/410 by probe-screenshots.mjs`)
+}
+
+function releaseTarballCmd(tarball) {
+  // The DSH profile is itself a pnpm workspace root.
+  return tarball ? `dsh plugin --profile web add -w "${tarball}"` : null
 }
 
 // derive repo/subdir install specs and the detail-page slug once
@@ -458,7 +468,7 @@ for (const e of ordered) {
   // Some plugins ship only a built tarball and are not installable from
   // source at all, so `github:owner/repo` would hand users a broken command.
   e.tarball = tarballMap[e.url] ?? null
-  e.cmdTarball = e.tarball ? `dsh plugin --profile web add "${e.tarball}"` : null
+  e.cmdTarball = releaseTarballCmd(e.tarball)
   e.stars = starsMap[e.url]?.stars ?? null
   e.releaseMetadata = releaseMetadataFor(e, releasesMap[e.url])
   // Last-30-days npm downloads (probe-downloads.mjs), null for the ~60% of
@@ -1167,15 +1177,19 @@ const registry = {
         capabilityRedLines: capabilitiesMap[e.url].redLines,
         capabilityCheckedAt: capabilitiesMap[e.url].scannedAt,
       }),
-      install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
+      install: cardCmd(e),
       added: e.added,
       // Optional, author-declared storefront tile; omitted when absent so the
       // payload stays lean and a consumer falls back to the owner avatar.
       ...(iconMap[e.url] === undefined ? {} : { icon: iconMap[e.url] }),
       // Optional, author-maintained (data/screenshots.json); omitted when
       // absent so the payload stays lean. Storefronts fall back to their own
-      // README extraction (dsh-market #61).
-      screenshots: shotsMap[e.url],
+      // README extraction (dsh-market #61). Each URL carries a `v` parameter
+      // derived from the image's ETag so a replaced picture gets a new URL —
+      // without it the resize cache and the visitor's browser both keep serving
+      // the old bytes for a year, because the URL never moved. See
+      // lib/screenshot-bust.mjs.
+      screenshots: versionShots(shotsMap[e.url], verdicts),
     }
   }),
 }
@@ -1222,6 +1236,13 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
 // removes everything else about a plugin.
 {
   const listed = new Set(ordered.map((e) => e.url))
+  const history = updates[HISTORY_CACHE_KEY] ?? {}
+  // Pages limits the whole site to 1 GB. Keep space for the update manifest,
+  // sitemap and artifact metadata as well as the existing catalog pages.
+  const currentBytes = Object.keys(history).length === 0 ? 0
+    : fs.readdirSync('docs', { recursive: true, withFileTypes: true })
+      .reduce((bytes, file) => file.isFile() ? bytes + fs.statSync(`${file.parentPath}/${file.name}`).size : bytes, 0)
+  const { repositories: publishedHistory, publishedBytes, skipped } = publishReleaseHistory(ordered, history, 'docs', 900_000_000 - currentBytes)
   const payload = {
     name: 'awesome-dsh-plugin',
     url: ORIGIN,
@@ -1231,11 +1252,19 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
   }
   for (const [url, entry] of Object.entries(updates)) {
     if (!listed.has(url)) continue
-    payload.updates[url] = entry
+    payload.updates[url] = publishedHistory.has(catalogRepo(url))
+      ? { ...entry, releaseHistory: true }
+      : entry
+    payload.count++
+  }
+  for (const url of [...listed].sort()) {
+    if (payload.updates[url] || !publishedHistory.has(catalogRepo(url))) continue
+    payload.updates[url] = { releaseHistory: true }
     payload.count++
   }
   fs.writeFileSync('docs/updates.json', JSON.stringify(payload) + '\n')
   console.log(`updates.json: ${payload.count} entries, ${(fs.statSync('docs/updates.json').size / 1024).toFixed(0)} KB`)
+  console.log(`release history: ${publishedHistory.size} repository fragments, ${publishedBytes} bytes, ${skipped} over the Pages budget`)
 }
 
 const lastAdded = [...ordered].map((e) => e.added).sort().pop()

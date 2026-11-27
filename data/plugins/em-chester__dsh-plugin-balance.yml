@@ -1,0 +1,6 @@
+url: https://github.com/em-chester/dsh-plugin-balance
+name: em-chester/dsh-plugin-balance
+category: usage
+description:
+  en: 'Adds a sidebar balance entry showing the DeepSeek account balance with a live level bar, the gift and top-up split, today and month spend sampled locally, and a low-balance warning.'
+  zh: '侧栏余额入口：显示账户余额与水位条、赠送与充值拆分、本地采样的今日与本月消耗，以及低余额告警。'

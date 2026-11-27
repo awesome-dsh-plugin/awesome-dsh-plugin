@@ -1,0 +1,7 @@
+url: https://github.com/9-bai/dsh-external-toolbox
+name: 9-bai/dsh-external-toolbox
+category: tools
+description:
+  en: 'Select text in any Windows app and a small pill appears: translate, explain, quote into a new DSH session, save to a spaced-repetition vocabulary book, or copy. Works without switching windows, and the card never steals focus.'
+  zh: '在任意 Windows 程序里选中文字，旁边冒出一个小胶囊：翻译、解释、引用到新的 DSH 会话、存入按遗忘曲线复习的生词本，或者直接复制。不用切窗口，浮窗也不抢焦点。'
+icon: https://raw.githubusercontent.com/9-bai/dsh-external-toolbox/master/icon.png

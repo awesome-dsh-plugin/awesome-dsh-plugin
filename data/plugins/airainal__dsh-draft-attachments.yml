@@ -1,0 +1,7 @@
+url: https://github.com/airainal/dsh-draft-attachments
+name: airainal/dsh-draft-attachments
+category: ui
+description:
+  en: "Keeps unsent images and files in the composer when you switch sessions."
+  zh: "切换会话再回来时，保留未发送的图片和文件附件。"
+icon: https://raw.githubusercontent.com/airainal/dsh-draft-attachments/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/albisjee25/albis-aipassport-badge
+name: albisjee25/albis-aipassport-badge
+category: tools
+description:
+  en: 'Companion for the FoloToy AI Passport cyber badge firmware: edit the pixel avatar, profile, status lines, skins, memos and answers in a local editor or through agent tools, and sync them to the device over the LAN.'
+  zh: AI Passport 赛博工牌的电脑端：在本机编辑页或对话里修改像素头像、资料、状态大字、皮肤、便签和答案，通过局域网同步到设备。
+icon: https://raw.githubusercontent.com/albisjee25/albis-aipassport-badge/main/assets/icon-180.png

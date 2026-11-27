@@ -1,0 +1,7 @@
+url: https://github.com/dingminhua/dsh-ldvh
+name: dingminhua/dsh-ldvh
+category: workflow
+description:
+  en: 'A DSH-native AI collaboration governance framework: spec-and-fact backed recall, controlled fact writes, and Git-guarded commits.'
+  zh: 'DSH 原生 AI 协作与治理框架：以规范与事实为据的双源召回、受控事实写入与 Git 守护提交。'
+icon: https://raw.githubusercontent.com/dingminhua/dsh-ldvh/main/icons/ldvh-plugin-icon-128.png

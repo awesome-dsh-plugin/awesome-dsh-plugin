@@ -1,0 +1,7 @@
+url: https://github.com/lklkuu/dsh-prompt-optimizer
+name: lklkuu/dsh-prompt-optimizer
+category: ui
+tarball: https://github.com/lklkuu/dsh-prompt-optimizer/releases/latest/download/dsh-prompt-optimizer.tgz
+description:
+  en: 'Adds an Optimize button to the composer. One click rewrites the current draft with the model you already selected, using the "basic optimization" prompt from linshenkx/prompt-optimizer (41.5k stars) verbatim, and writes the result straight back into the input box without adding a chat turn. A running rewrite can be cancelled by clicking again; requests time out after 150 seconds and the previous draft stays one click away. English and Chinese copy, no runtime dependencies, no stored credentials, no port of its own: the route rides DSH''s authenticated /api mount.'
+  zh: '给输入框加一个「优化」按钮。点一下就用你当前选中的模型就地改写草稿，提示词逐字取自 linshenkx/prompt-optimizer（41.5k star）的「基础优化」模板，结果直接写回输入框，不新增对话轮次。改写进行中可再次点击取消，150 秒超时自动中止，原文留一键撤销。中英双语，零运行时依赖，不存凭据、不开端口：路由挂在 DSH 自己的 /api 认证挂载点上。'

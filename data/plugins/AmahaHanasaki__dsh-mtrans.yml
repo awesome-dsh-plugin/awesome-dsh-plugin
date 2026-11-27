@@ -1,0 +1,6 @@
+url: https://github.com/AmahaHanasaki/dsh-mtrans
+name: AmahaHanasaki/dsh-mtrans
+category: tools
+description:
+  en: "Four DSH tools for translating MTool-format game scripts: mtrans_info analyses a ManualTransFile.json, mtrans_prepare splits its text keys into chunk files, mtrans_apply merges the translated chunks back, and mtrans_translate runs the whole file through a registered LLM provider (Japanese or English to Chinese)."
+  zh: "四个 DSH 工具，用于翻译 MTool 格式的游戏文本：mtrans_info 分析 ManualTransFile.json，mtrans_prepare 把文本键拆成块文件，mtrans_apply 合并译文回写，mtrans_translate 通过已注册的大模型服务整篇翻译（日译中或英译中）。"

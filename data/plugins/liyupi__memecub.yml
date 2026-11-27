@@ -1,0 +1,7 @@
+url: https://github.com/liyupi/memecub
+name: liyupi/memecub
+category: skill
+icon: https://raw.githubusercontent.com/liyupi/memecub/master/assets/icon-180.png
+description:
+  en: 'Meme search and AI placement: connects the memecub remote MCP server (5 tools) and bundled Agent Skill to search Chinese and English reaction memes, place them into articles, or generate custom memes.'
+  zh: 'memecub 表情包搜索与 AI 配图：挂载远程 MCP 服务（5 个工具）与内置 Agent Skill，按情绪检索中英文表情包与梗图、给文章自动配图或用 AI 生成专属表情包。'

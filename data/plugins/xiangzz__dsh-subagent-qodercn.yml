@@ -1,0 +1,7 @@
+url: https://github.com/xiangzz/dsh-subagent-qodercn
+name: xiangzz/dsh-subagent-qodercn
+category: workflow
+description:
+  en: 'Registers Qoder CLI CN (qoderclicn) as a one-shot DSH subagent provider over ACP, following the official Codex provider contract: each call spawns a fresh qoderclicn --acp process in the task directory, and only the final answer returns to the parent session (partial output plus a fixed-fact diagnostic on failure). Requires Qoder CLI CN installed and signed in on the same machine.'
+  zh: '把 Qoder CLI CN（qoderclicn）注册为一次性 DSH 子智能体提供方（ACP 协议），沿用官方 Codex 提供方的约定：每次调用在任务目录里全新启动一个 qoderclicn --acp 进程，只把最终回答返回父会话（失败时返回部分输出和只含固定事实的诊断）。需本机已安装并登录 Qoder CLI CN。'
+icon: https://raw.githubusercontent.com/xiangzz/dsh-subagent-qodercn/main/assets/icon-180.png

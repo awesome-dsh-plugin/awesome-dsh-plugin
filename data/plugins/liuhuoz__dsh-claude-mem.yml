@@ -1,0 +1,7 @@
+url: https://github.com/liuhuoz/dsh-claude-mem
+name: liuhuoz/dsh-claude-mem
+category: memory
+description:
+  en: "A DeepSeek Harness plugin that integrates claude-mem: query, context injection, manual save, and session lifecycle over a local claude-mem worker's HTTP API."
+  zh: "接入 claude-mem 的 DeepSeek Harness 插件：查询、上下文注入、手动保存，以及通过本地 claude-mem worker 的 HTTP API 处理会话生命周期。"
+icon: https://raw.githubusercontent.com/liuhuoz/dsh-claude-mem/main/icon.png

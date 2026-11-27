@@ -1,0 +1,7 @@
+url: https://github.com/GUGUQ1/dsh-todo
+name: GUGUQ1/dsh-todo
+category: ui
+description:
+  en: "A shared plan board in the right sidebar that shows two boards at once: a workspace board (the todolist.json in your project) and a per-conversation board kept in the DSH data directory, so it follows the conversation across workspaces. Both track stages, item dependencies and due dates; the agent reads and writes them through one tool, and panel edits reach it as one notice that names the board. Requires DSH >=0.2.2-rc.5 <0.3.0-0."
+  zh: "右栏里的一块共用计划板，同时显示两块：工作区公板（项目里的 todolist.json）与本会话私板（存在 DSH 数据目录，跟着对话走，换工作区也还在）。两块都按阶段跟踪待办、依赖与截止日期；助手通过一个工具读写，面板上的改动合成一条通知并说明是哪块板。要求 DSH >=0.2.2-rc.5 <0.3.0-0。"
+icon: https://raw.githubusercontent.com/GUGUQ1/dsh-todo/main/assets/icon-180.png

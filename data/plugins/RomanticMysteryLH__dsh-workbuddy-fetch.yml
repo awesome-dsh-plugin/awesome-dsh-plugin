@@ -1,0 +1,6 @@
+url: https://github.com/RomanticMysteryLH/dsh-workbuddy-fetch
+name: RomanticMysteryLH/dsh-workbuddy-fetch
+category: tools
+description:
+  en: 'Routes the dsh web_fetch tool through the WorkBuddy desktop app gateway using its existing sign-in, falling back to the built-in HTTP fetcher when the gateway rejects a domain or is unavailable.'
+  zh: '让 dsh 的 web_fetch 通过 WorkBuddy 桌面 App 网关抓取（复用 App 已有登录状态），网关拒绝该域名或不可用时回落到内置 HTTP 抓取；同时为 web_search 提供 WorkBuddy 网关的注册。'

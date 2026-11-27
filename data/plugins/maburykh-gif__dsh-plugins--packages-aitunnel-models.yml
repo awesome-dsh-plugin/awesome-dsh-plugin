@@ -1,0 +1,6 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/aitunnel-models
+name: maburykh-gif/dsh-plugins#aitunnel-models
+category: model
+description:
+  en: 'AITunnel routes in the model picker: declares one OpenAI-compatible gateway (https://api.aitunnel.ru/v1) as five separate routes — text, architecture, design, images and video — each with its own model list in the plugin patch; the key is read from AITUNNEL_API_KEY in the credential store.'
+  zh: '模型选择器中的 AITunnel：把同一个 OpenAI 兼容网关（https://api.aitunnel.ru/v1）声明为五条独立路由——文本、架构、设计、图像和视频，每条路由的模型列表写在插件的 patch 文件里；密钥从凭据库的 AITUNNEL_API_KEY 读取。'

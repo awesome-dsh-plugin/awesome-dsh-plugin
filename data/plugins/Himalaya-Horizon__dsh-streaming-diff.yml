@@ -1,0 +1,6 @@
+url: https://github.com/Himalaya-Horizon/dsh-streaming-diff
+name: Himalaya-Horizon/dsh-streaming-diff
+category: ui
+description:
+  en: Replays finished edits line by line in the right sidebar and lists files changed in the latest turn with edits. Visit the project for the animated demo.
+  zh: 在右侧栏逐行回放刚完成的编辑，另有一页列出最近一轮改过的文件。前往项目可查看实时动画效果。

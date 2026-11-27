@@ -1,0 +1,7 @@
+url: https://github.com/angusggsimid/dsh-antigravity-acp
+name: angusggsimid/dsh-antigravity-acp
+category: model
+description:
+  en: Gemini through the official Antigravity ACP server, with tools executed locally over a reverse tunnel. The default model is Gemini 3.8 Flash, and a route can use any model id that agy accepts.
+  zh: 通过官方 Antigravity ACP 接入 Gemini，工具经反向隧道在本机执行。默认模型是 Gemini 3.8 Flash，路线可以改成 agy 接受的其他模型 id。
+icon: https://raw.githubusercontent.com/angusggsimid/dsh-antigravity-acp/main/docs/images/icon-180.png

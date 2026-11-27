@@ -1,0 +1,6 @@
+url: https://github.com/hsushjk/dsh-traffic-statistics
+name: hsushjk/dsh-traffic-statistics
+category: usage
+description:
+  en: 'Per-process public network traffic accounting for DSH: splits TCP/UDP bytes from the DSH process tree into chat / tools / plugins / other lanes, excludes LAN traffic, and reports per-producer totals. Linux only.'
+  zh: 'DSH 进程树的公网流量统计：把 TCP/UDP 字节按聊天 / 工具 / 插件 / 其它四类分账，排除局域网流量，并给出各产生者的用量。仅支持 Linux。'

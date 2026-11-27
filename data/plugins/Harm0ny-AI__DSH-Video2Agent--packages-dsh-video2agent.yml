@@ -1,0 +1,7 @@
+url: https://github.com/Harm0ny-AI/DSH-Video2Agent/tree/main/packages/dsh-video2agent
+name: Harm0ny-AI/DSH-Video2Agent#dsh-video2agent
+category: vision
+description:
+  en: 'Bilibili/Douyin favorites gathering dust? Want your agent to gain video retrieval and understanding? Choose Video2Agent! One-click install gives your agent top-tier video understanding and turns online video into an information source. Whether you are researching social trends or working in media, any task that requires watching videos can now be handed to Video2Agent. Local-first; optional cloud ASR/OCR; optional Bilibili/Douyin login to unlock favorites/history and CC/AI subtitles.'
+  zh: 'B站/抖音收藏夹吃灰？想要Agent获得视频检索和理解能力？欢迎选择Video2Agent！一键安装，让Agent获取顶尖视频理解能力，并获取网络视频作为信息源。无论你是想调研社会趋势，还是自媒体工作者，只要需要你看视频完成的工作，现在统统交给Video2Agent即可！本地优先，云端 ASR/OCR 可选；B 站/抖音登录可选，解锁收藏夹/历史与 CC/AI 字幕。'
+icon: https://raw.githubusercontent.com/Harm0ny-AI/DSH-Video2Agent/main/packages/dsh-video2agent/assets/icon-180.png

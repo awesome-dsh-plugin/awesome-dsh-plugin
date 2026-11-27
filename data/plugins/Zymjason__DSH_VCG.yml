@@ -1,0 +1,6 @@
+url: https://github.com/Zymjason/DSH_VCG
+name: Zymjason/DSH_VCG
+category: vision
+description:
+  en: 'Node-based image and video generation canvas for DeepSeek Harness: 16 built-in nodes and 5 example workflows, chat and project canvases, AI workflow building, cloud Model Studio image/video models, optional local ComfyUI, local safetensors weight inspection, trusted-source model downloads, and per-run token usage.'
+  zh: '节点式图像/视频生成工作流画布：内置 16 个节点与 5 个示例工作流，支持聊天与项目画布、AI 自动搭建工作流、云端 Model Studio 生图生视频、可选本地 ComfyUI、本地 safetensors 权重检查、可信源模型下载与单次运行 Token 用量统计。'

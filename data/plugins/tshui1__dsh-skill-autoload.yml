@@ -1,0 +1,7 @@
+url: https://github.com/tshui1/dsh-skill-autoload
+name: tshui1/dsh-skill-autoload
+category: skill
+description:
+  en: 'Auto-loads a matching installed skill from each user message, and lets the user choose which skills may auto-load from a sidebar panel.'
+  zh: '按每条消息自动加载匹配的已装技能，并可在右侧栏面板勾选允许自动加载的技能。'
+icon: https://raw.githubusercontent.com/tshui1/dsh-skill-autoload/main/assets/icon-180.png

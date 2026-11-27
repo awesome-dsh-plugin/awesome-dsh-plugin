@@ -1,0 +1,7 @@
+url: https://github.com/zebbkira/dsh-browser-context
+name: zebbkira/dsh-browser-context
+category: browser
+description:
+  en: 'Reference web articles, WeCom document selections, accessible Bilibili subtitles and screenshots in DSH Desktop without automatically sending messages.'
+  zh: '在 DSH 桌面版中引用网页正文、企微文档选区、可访问的 B站字幕和截图，不自动发送消息。'
+tarball: https://github.com/zebbkira/dsh-browser-context/releases/download/v0.2.0/dsh-browser-context-0.2.0.tgz

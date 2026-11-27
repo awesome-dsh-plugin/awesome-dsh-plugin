@@ -1,0 +1,6 @@
+url: https://github.com/zhiyaunhe-ops/dsh-excalidraw-canvas
+name: zhiyaunhe-ops/dsh-excalidraw-canvas
+category: tools
+description:
+  en: Excalidraw workspaces for local DSH Desktop or a separately deployed cloud server, with automatic saving and document-scoped assistant sessions. Requires workspace setup.
+  zh: 支持本机 DSH Desktop 或独立云端部署的 Excalidraw 工作空间，自动保存并限定助手会话的编辑画布。需先准备工作空间。

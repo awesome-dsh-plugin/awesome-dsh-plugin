@@ -1,0 +1,6 @@
+url: https://github.com/Hao0311/dsh-model-price
+name: Hao0311/dsh-model-price
+category: usage
+description:
+  en: 'Passive peak / off-peak price note for the model: one short system-prompt section states whether the DeepSeek API is in peak (2x) or off-peak (half-price) hours and when it switches, with no timer and no interruption.'
+  zh: '模型侧峰谷价提示：一条很短的 system prompt section 告知当前 DeepSeek API 处于高峰（2 倍价）还是谷价（半价）时段及下次切换时刻，不起定时器、不打断任务。'

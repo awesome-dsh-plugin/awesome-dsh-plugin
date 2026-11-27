@@ -1,0 +1,6 @@
+url: https://github.com/Calvin-Xia/dsh-error-museum
+name: Calvin-Xia/dsh-error-museum
+category: session
+description:
+  en: Turns the last 30 days (7 / 30 / 90 selectable) of Session failures into an error museum, with each hall grouping failures by what the model did next (restored, retried verbatim, handed back, stalled) and every exhibit keeping the calls before and after plus the verbatim error. Logs are read locally, and only the selected Session's summary reaches the configured model when you press audit.
+  zh: 把最近 30 天（可切 7 / 30 / 90 天）的会话可确认失败做成「错误博物馆」，展品按模型失败后的处置（复原 / 重试 / 交还 / 搁置）分馆陈列，保留失败前后的调用与错误原文。会话日志只在本机读取，只有点「用模型深挖」时才把该会话摘要发给已配置的模型。

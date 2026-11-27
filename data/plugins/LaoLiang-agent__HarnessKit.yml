@@ -1,0 +1,7 @@
+url: https://github.com/LaoLiang-agent/HarnessKit
+name: LaoLiang-agent/HarnessKit
+category: workflow
+description:
+  en: 'Multi-agent engineering workflow for individual developers and small teams on DeepSeek Harness: seven roles, four flow profiles, human approval gates, guards, and a shared asset repository that accumulates specs and memory with every archived task.'
+  zh: '面向个人开发者与小团队的多 Agent 工程流程框架：七个角色、四档流程、人工审批点、护栏，以及随任务归档持续沉淀规格与经验的共享资产仓库。'
+icon: https://raw.githubusercontent.com/LaoLiang-agent/HarnessKit/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/Wasabi2575/dsh-workflow-canvas
+name: Wasabi2575/dsh-workflow-canvas
+category: workflow
+description:
+  en: 'Visual multi-agent workflow canvas in the sidebar: wire prompt/JSON/session links, run parallel subagents, route with condition nodes and bounded retry loops, pause at Lead gates, attach refs, switch horizontal/vertical layouts, stop runs in one click, or sketch and patch graphs from chat.'
+  zh: 'DeepSeek Harness 侧边栏可视化多代理工作流画布：支持并行子代理、三种语义连线、条件分支与受控回环重试、Lead 节点暂停拍板、参考资料注入、横竖版布局、一键终止以及对话搭图与改图。'

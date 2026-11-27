@@ -1,0 +1,7 @@
+url: https://github.com/qui11zxy/dsh-hsr
+name: qui11zxy/dsh-hsr
+category: tools
+description:
+  en: 'Query Honkai: Star Rail data as agent tools: character stats, skills, Light Cones, relic sets and current endgame stages. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '以工具形式查询《崩坏：星穹铁道》数据：角色属性、技能、光锥、遗器套装与当前深渊关卡。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/qui11zxy/dsh-hsr/main/dsh-hsr-ico.png

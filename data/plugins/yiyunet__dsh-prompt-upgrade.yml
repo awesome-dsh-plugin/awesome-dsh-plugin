@@ -1,0 +1,6 @@
+url: https://github.com/yiyunet/dsh-prompt-upgrade
+name: yiyunet/dsh-prompt-upgrade
+category: agi
+description:
+  en: 'Rewrites the DSH composer draft into a well-structured prompt through the harness LLM service, shows a before/after preview, and only then fills it back, copies it, or undoes the change. The original draft is always preserved, and the settings panel lives inside the 「ANB 工具」 settings shell. Fork of dsh-prompt-enhance. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 DSH 输入框里的草稿经 harness 的 LLM 服务重写成结构化提示词，先看前后对比，再决定回填、复制还是撤销；原始草稿始终保留。设置面板挂在「ANB 工具」壳内。dsh-prompt-enhance 的 fork。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

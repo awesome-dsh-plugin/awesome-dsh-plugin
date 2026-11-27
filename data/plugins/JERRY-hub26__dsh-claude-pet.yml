@@ -1,0 +1,7 @@
+url: https://github.com/JERRY-hub26/dsh-claude-pet
+name: JERRY-hub26/dsh-claude-pet
+category: fun
+description:
+  en: 'Adds a Claude companion to the DSH web UI that blinks, follows session activity, and can stay on the desktop while the window is minimised. Deliberately just two entry points: a one-line remark, or a balance check when the provider exposes one.'
+  zh: '在 DSH 网页界面里放一只 Claude 桌宠：会眨眼、跟着会话换姿势，最小化后留在桌面。入口只有两处——听她碎碎念一句，或者查一次余额（服务商支持查询时）。'
+icon: https://raw.githubusercontent.com/JERRY-hub26/dsh-claude-pet/main/icon.png

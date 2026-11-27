@@ -1,0 +1,6 @@
+url: https://github.com/hechenhao9/dsh-goal-loop
+name: hechenhao9/dsh-goal-loop
+category: workflow
+description:
+  en: 'Turns done into something checkable in four layers - machine-verifiable checks must all pass, a blind 4-6 dimension rubric scored by someone other than the author must clear 95 with no red lines, a sealed blind prediction is reconciled against the actual score so a drifting rubric gets caught, and a goal that borrows another design must record what that design cost them (paid_for) plus a pre-written refusal list. The review file itself is machine-audited: quotes matched verbatim, scores recomputed from weights, self-signing rejected. goal_doctor tells you which check to run next. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把「做完了」变成能验的事，四层：能用命令验的判据 0 容忍全绿 → 不是作者的人按盲定标准打分过 95 线且不犯红线 → 判分前先封一份盲预测、判完对账，标准偏了能被抓住 → 说了「借鉴」就必须写对方付过的代价（paid_for）和一份预先写好的拒绝清单。判分文件本身由机器审计：引文逐字比对、分数按权重重算、自己盖章直接拒收。不知道下一步敲什么就 goal_doctor。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
