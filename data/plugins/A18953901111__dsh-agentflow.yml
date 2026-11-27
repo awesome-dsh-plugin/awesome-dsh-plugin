@@ -1,0 +1,6 @@
+url: https://github.com/A18953901111/dsh-agentflow
+name: A18953901111/dsh-agentflow
+category: workflow
+description:
+  en: "Declarative multi-agent workflow engine for DeepSeek Harness: YAML templates compile to orchestration scripts with hard agent budgets, verified citation anchors, run artifacts and a sidebar panel."
+  zh: "声明式多智能体工作流引擎：把 YAML 模板编译成编排脚本，带硬性 agent 预算、引用锚点核查、运行产物与侧栏面板。"
