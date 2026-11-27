@@ -1,0 +1,6 @@
+url: https://github.com/Cxquang/dsh-incognito
+name: Cxquang/dsh-incognito
+category: session
+description:
+  en: 'Community fork of the incognito-session plugin: a standalone ephemeral sub-agent with its own preset (no parent context) and the full toolset, now streaming both its reasoning and its answer token by token in a collapsible panel, draggable floating window, burned to zero traces on close.'
+  zh: 无痕会话插件的社区分支：独立临时子 Agent（独立 preset 不继承父会话、全量工具集），思考过程与答案均按 token 流式输出、可折叠，浮窗可拖动，关闭即焚毁、磁盘零痕迹。
