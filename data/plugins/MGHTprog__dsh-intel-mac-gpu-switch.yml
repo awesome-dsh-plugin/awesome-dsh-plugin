@@ -1,0 +1,7 @@
+url: https://github.com/MGHTprog/dsh-intel-mac-gpu-switch
+name: MGHTprog/dsh-intel-mac-gpu-switch
+category: ui
+description:
+  en: Sets the GPU preference for the next DeepSeek Harness launch on dual-GPU Intel Macs via a separate launcher and displays the current WebGL renderer.
+  zh: 在双显卡 Intel Mac 上设置 DeepSeek Harness 下次启动的显卡偏好，由配套启动器应用，并显示当前 WebGL 渲染器。
+tarball: https://github.com/MGHTprog/dsh-intel-mac-gpu-switch/releases/download/v0.1.0/dsh-intel-mac-gpu-switch-0.1.0.tgz
