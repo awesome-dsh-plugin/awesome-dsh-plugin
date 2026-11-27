@@ -1,0 +1,7 @@
+url: https://github.com/xian-yu-zhao/dsh-stop-all
+name: xian-yu-zhao/dsh-stop-all
+category: session
+description:
+  en: 'Stops the whole conversation tree in one click: the main turn, every running subagent at any depth, and the background jobs those sessions own, while queued input and scheduled tasks stay untouched.'
+  zh: '一键停止整棵会话树：主对话回合、任意层级的运行中子代理，以及这些会话拥有的后台任务，同时不动排队输入与定时任务。'
+icon: https://raw.githubusercontent.com/xian-yu-zhao/dsh-stop-all/main/assets/icon-180.png
