@@ -1,0 +1,7 @@
+url: https://github.com/zizhennini/nextskills/tree/main/plugins/dsh-plugin-esp-dev-skill
+name: zizhennini/nextskills#dsh-plugin-esp-dev-skill
+category: skill
+description:
+  en: 'Espressif ESP32 and ESP8266 development skill for DeepSeek Harness, built from 41 SDK repositories with 554 scenario recipes plus API, configuration and pitfall references.'
+  zh: 'DeepSeek Harness 的 ESP32 / ESP8266 开发技能，基于 41 个 Espressif SDK 仓库，含 554 个场景 recipe 与 API、配置、陷阱参考。'
+icon: https://raw.githubusercontent.com/zizhennini/nextskills/main/plugins/dsh-plugin-esp-dev-skill/assets/icon-180.png
