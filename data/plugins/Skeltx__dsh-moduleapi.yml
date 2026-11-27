@@ -1,0 +1,6 @@
+url: https://github.com/Skeltx/dsh-moduleapi
+name: Skeltx/dsh-moduleapi
+category: model
+description:
+  en: 'Registers Module API (moduleapi.pro) as a model provider - one key, the full 26-model catalog (GPT, Claude, Gemini, DeepSeek, GLM, Grok), with reasoning levels and image input where the model supports it.'
+tarball: https://github.com/Skeltx/dsh-moduleapi/releases/download/v0.1.1/dsh-moduleapi-0.1.1.tgz
