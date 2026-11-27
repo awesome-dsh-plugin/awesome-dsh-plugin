@@ -1,0 +1,6 @@
+url: https://github.com/liangchen-h/dsh-lcstation
+name: liangchen-h/dsh-lcstation
+category: session
+description:
+  en: Folds each session's event stream into a card-chain canvas with memory, calls and outputs views; bilingual UI and no model calls on the chat path.
+  zh: 把会话事件流折成卡片链画布，另有记忆、调用、产出三个视图；界面中英双语，不占对话模型的调用预算。
