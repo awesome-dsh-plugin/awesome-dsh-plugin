@@ -1,0 +1,6 @@
+url: https://github.com/liushutong123/dsh-choerodon-plugin
+name: liushutong123/dsh-choerodon-plugin
+category: tools
+description:
+  en: Connects a Choerodon account and project to DeepSeek Harness with a sidebar work-item board, 16 agent tools for issues, comments, worklogs and attachments, and the project's models registered in the model picker.
+  zh: 把猪齿鱼（Choerodon）的账号、项目与工作项接进 DeepSeek Harness：侧栏看板支持筛选、评论、工时、附件与状态流转，16 个模型工具操作工作项，并把项目模型注册进模型选择器。
