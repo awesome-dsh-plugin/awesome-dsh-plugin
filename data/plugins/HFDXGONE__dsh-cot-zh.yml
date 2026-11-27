@@ -1,0 +1,6 @@
+url: https://github.com/HFDXGONE/dsh-cot-zh
+name: HFDXGONE/dsh-cot-zh
+category: ui
+description:
+  en: "Machine-translates the expanded Think body into Chinese while the agent writes it, with one click back to the English original. Splits reasoning by paragraph, translates only finished paragraphs, caches results, and calls the public Microsoft Translator endpoint, so no API key is needed."
+  zh: "把展开后的「思考」正文边写边机翻成中文，一键切回英文原文。按段落切分、只翻已写完的段落、结果写入缓存，走微软翻译公开接口，不需要 API Key。"
