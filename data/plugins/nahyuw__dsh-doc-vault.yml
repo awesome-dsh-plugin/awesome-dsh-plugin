@@ -1,0 +1,7 @@
+url: https://github.com/nahyuw/dsh-doc-vault
+name: nahyuw/dsh-doc-vault
+category: docs
+description:
+  en: Turns a folder or GitHub repository of Markdown into a browsable documentation site with a chapter outline, tutorial tags, a frontmatter header, and Site / Markdown / RAW views.
+  zh: 把本地目录或 GitHub 仓库里的 Markdown 变成可浏览的文档站：章节导航、教程风格组件、frontmatter 头部，以及 Site / Markdown / RAW 三种视图。
+icon: https://raw.githubusercontent.com/nahyuw/dsh-doc-vault/main/assets/icon-180.png
