@@ -1,0 +1,7 @@
+url: https://github.com/leecyno1/newma-kanban-dsh
+name: leecyno1/newma-kanban-dsh
+category: session
+description:
+  en: Adds a five-column session and task board to the DSH sidebar using the separately installed Newma Kanban local service.
+  zh: 在 DSH 侧栏提供五列会话与任务看板，需要单独安装并运行 Newma 看板本机服务。
+tarball: https://github.com/leecyno1/newma-kanban-dsh/releases/download/v0.3.0/handoff-session-sync-0.3.0.tgz
