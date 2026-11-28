@@ -1,0 +1,7 @@
+url: https://github.com/WQLEON/dsh-better-plan/tree/main/better-plan
+name: WQLEON/dsh-better-plan#better-plan
+category: workflow
+description:
+  en: "A two-phase ask-then-plan panel: the agent publishes questions with pre-selected options, you confirm the batch once, then confirm the ordered plan before any implementation."
+  zh: "两阶段提问—计划面板：智能体把带预选选项的问题发布到右侧面板，整批确认后再确认有序计划，确认后才开始实施。"
+icon: https://raw.githubusercontent.com/WQLEON/dsh-better-plan/main/assets/icon-180.png
