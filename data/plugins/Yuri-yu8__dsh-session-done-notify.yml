@@ -1,0 +1,7 @@
+url: https://github.com/Yuri-yu8/dsh-session-done-notify
+name: Yuri-yu8/dsh-session-done-notify
+category: notify
+description:
+  en: Post a clickable macOS banner when a DSH session finishes a turn, waits for approval, or asks a question.
+  zh: DSH 会话跑完一轮、等你批准或向你提问时，弹出一条可点击的 macOS 通知。
+icon: https://raw.githubusercontent.com/Yuri-yu8/dsh-session-done-notify/main/assets/icon-180.png
