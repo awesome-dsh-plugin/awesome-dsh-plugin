@@ -1,0 +1,8 @@
+url: 'https://github.com/dengxingyu/dsh-go-artifacts'
+name: 'dengxingyu/dsh-go-artifacts'
+category: tools
+description:
+  en: 'Chat artifacts panel for the dsh-go native phone UI: intermediate files in the workspace grouped by the conversation that produced them, multi-select and batch delete, and a confirmed clean-up of the current scope. Session logs are read locally to attribute a file to a chat; deletion is limited to regular files inside the workspace root and refuses symlinks and escaping paths.'
+  zh: '给 dsh-go 手机原生界面的「对话产物」面板：把工作区里的中间文件按产出它的对话归类，可多选批量删除，也能确认后清空当前范围。归属靠本机会话日志比对，删除只限工作区根目录内的普通文件，符号链接与越界路径一律拒绝。'
+icon: 'https://raw.githubusercontent.com/dengxingyu/dsh-go-artifacts/main/assets/icon-180.png'
+tarball: 'https://github.com/dengxingyu/dsh-go-artifacts/releases/latest/download/dsh-go-artifacts.tgz'
