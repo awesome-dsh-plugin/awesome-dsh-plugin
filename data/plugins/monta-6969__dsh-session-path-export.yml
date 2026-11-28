@@ -1,0 +1,6 @@
+url: https://github.com/monta-6969/dsh-session-path-export
+name: monta-6969/dsh-session-path-export
+category: session
+description:
+  en: 'Exports a session as a folder and copies its absolute path, from one row added to both the conversation header menu and the sidebar session menu. The folder holds the official Markdown transcript with image links rewritten plus the referenced image bytes, and exports older than three days are pruned; the clipboard slot is reserved on click so a slow export still lands.'
+  zh: '在会话头部「…」菜单和左侧会话行「…」菜单里各加一行：把会话导出成一个目录并复制绝对路径。目录里是官方 Markdown 全文（图片标签改写成相对链接）加上被引用的图片原字节，超过三天的导出自动清理；点击瞬间就占住剪贴板槽，导出再慢也复制得到。'

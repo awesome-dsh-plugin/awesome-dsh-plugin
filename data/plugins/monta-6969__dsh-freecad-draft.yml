@@ -1,0 +1,6 @@
+url: https://github.com/monta-6969/dsh-freecad-draft
+name: monta-6969/dsh-freecad-draft
+category: tools
+description:
+  en: 'A FreeCAD-style draft board for DeepSeek Harness: describe a part in one line and it draws a real outline (gears grow teeth, helical gears twist), previewed live in the right sidebar with one .draftboard file per version. Six draft tools cover sketching, inspection, mechanism lookup, RPM propagation, collision and mating checks, and STEP/STL export; only the freecad-draft preset gains them.'
+  zh: '在 DeepSeek Harness 里画机械草稿：一句话描述零件就长成真实的轮廓（齿轮长齿、斜齿轮扭出螺旋面），右栏实时预览，每版写一个 .draftboard 文件。六个 draft 工具负责画、看、机构查表、转速推演、穿模与配合检查、STEP/STL 导出；只有「freecad 草稿」这一个预设会拿到它们。'

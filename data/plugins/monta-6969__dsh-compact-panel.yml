@@ -1,0 +1,6 @@
+url: https://github.com/monta-6969/dsh-compact-panel
+name: monta-6969/dsh-compact-panel
+category: session
+description:
+  en: 'Decides when a session compacts instead of only how: it watches context pressure at turn end and runs the official /compact once the agent is genuinely idle, ahead of the goal driver next round. A dialog page panel adds a per-preset threshold slider, a compact-now button and a compaction counter, stored beside the profile so dragging the slider never restarts the plugin; the official compaction backend and command still do the work.'
+  zh: '补上「什么时候压」：轮末判定上下文占用，等 agent 真正空闲时执行官方 /compact，goal 继续时抢在下一轮之前。对话页面板多了按预设分别保存的阈值滑条、「立即压缩」与累计压缩次数，偏好存在 profile 边车文件里，拖动滑条不重启插件；压缩后端与 /compact 命令仍是官方的。'
