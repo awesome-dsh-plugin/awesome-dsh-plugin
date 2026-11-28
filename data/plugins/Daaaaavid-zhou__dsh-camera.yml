@@ -1,0 +1,7 @@
+url: https://github.com/Daaaaavid-zhou/dsh-camera
+name: Daaaaavid-zhou/dsh-camera
+category: vision
+description:
+  en: Lets DeepSeek access the camera directly, supports one-click photo capture into the input box, and bundles a Mac camera app.
+  zh: 让 DeepSeek 直接访问摄像头，支持一键拍照导入输入框，附带一个 Mac 相机软件。
+icon: https://raw.githubusercontent.com/Daaaaavid-zhou/dsh-camera/main/assets/icon-180.png
