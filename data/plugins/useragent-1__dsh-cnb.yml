@@ -1,0 +1,6 @@
+url: https://github.com/useragent-1/dsh-cnb
+name: useragent-1/dsh-cnb
+category: model
+description:
+  en: 'Connects CNB (cnb.cool) models to DSH: scan-to-sign-in, repository and cloud-native workspace management, and one-click wiring of the cloud-hosted gateway into llm-pi-ai, with image input enabled by default and each model at its measured context and output limits.'
+  zh: '把 CNB（cnb.cool）的模型接进 DSH：扫码登录、仓库与云原生开发环境管理，以及一键把云端网关写进 llm-pi-ai——默认开启图片输入，每个模型按实测的上下文与输出上限配置。'
