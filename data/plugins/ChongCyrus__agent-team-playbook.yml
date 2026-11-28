@@ -1,0 +1,7 @@
+url: https://github.com/ChongCyrus/agent-team-playbook
+name: ChongCyrus/agent-team-playbook
+category: workflow
+description:
+  en: 'Installs a multi-agent collaboration workflow — triage tiers, a six-stage pipeline, audit gates and an experience library — as AGENTS.md plus referenced docs, and ships an /atp command with a web panel that settles each file collision by overwriting, backing up, or renaming with cross-references rewritten, applied atomically with rollback on failure.'
+  zh: '把多智能体协作工作流（档位分流、六阶段流水线、审计门禁、经验库）以 AGENTS.md 加引用文档的形式装进工作区；配 /atp 命令与网页面板，逐项处理同名文件——覆盖、备份，或整份改名并同步改写文档内引用，全程原子安装、失败自动回滚。'
+icon: https://raw.githubusercontent.com/ChongCyrus/agent-team-playbook/main/assets/icon-180.png
