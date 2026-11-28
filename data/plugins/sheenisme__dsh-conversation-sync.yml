@@ -1,0 +1,7 @@
+url: https://github.com/sheenisme/dsh-conversation-sync
+name: sheenisme/dsh-conversation-sync
+category: session
+description:
+  en: Import and bidirectionally sync conversations from Claude Code, Codex, WorkBuddy, TRAE, Antigravity, OpenCode, JSONL and DeepSeek exports over local disk or SSH.
+  zh: 从 Claude Code、Codex、WorkBuddy、TRAE、Antigravity、OpenCode、通用 JSONL 及 DeepSeek 网页导出导入会话，支持本地与 SSH 双向同步。
+icon: https://raw.githubusercontent.com/sheenisme/dsh-conversation-sync/main/docs/mascot.png
