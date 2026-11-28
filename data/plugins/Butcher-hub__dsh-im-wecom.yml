@@ -1,0 +1,6 @@
+url: https://github.com/Butcher-hub/dsh-im-wecom
+name: Butcher-hub/dsh-im-wecom
+category: identity
+description:
+  en: Bridge WeCom smart-bot chats to DSH sessions with text, images, files, live progress, automatic replies, and attachments.
+  zh: 将企业微信智能机器人接入 DSH 会话，支持文本、图片、文件、实时进度、自动回复与附件回传。
