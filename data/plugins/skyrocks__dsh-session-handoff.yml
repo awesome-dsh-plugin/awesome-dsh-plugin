@@ -1,0 +1,6 @@
+url: https://github.com/skyrocks/dsh-session-handoff
+name: skyrocks/dsh-session-handoff
+category: session
+description:
+  zh: 把当前讨论交接给另一个会话，可跨工作区。
+  en: Hands the current discussion to another session, across workspaces.
