@@ -1,0 +1,6 @@
+url: https://github.com/fubai-fenzhi/dsh-coordination-bridge
+name: fubai-fenzhi/dsh-coordination-bridge
+category: tools
+description:
+  en: 'Wake idle DSH sessions when the local coordination room mentions them: maps members to sessions by sessionId and delivers @ mentions with followup.'
+  zh: '本地协作室的 @ 消息桥：按 sessionId 把成员和 DSH 会话对上号，闲置会话被点名时用 followup 唤醒去回复，不轮询。'
