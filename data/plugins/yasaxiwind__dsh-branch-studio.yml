@@ -1,0 +1,6 @@
+url: https://github.com/yasaxiwind/dsh-branch-studio
+name: yasaxiwind/dsh-branch-studio
+category: tools
+description:
+  en: 'Parallel branch studio: fan a conversation into isolated git-worktree or directory-copy branches, run each with its own model and prompt, compare answers, changed files, verification and tokens, then promote the winner with post-apply verification and automatic rollback. Includes per-branch cancel, live tool activity and a settings panel.'
+  zh: '并行分支工作室：从当前会话分出多条独立工作区（git worktree 或目录副本），各自用不同模型与提示运行，对比回答、文件改动、验证结果和 token，把胜出分支提升回工作区并在复验失败时自动回滚；支持单分支取消、运行中工具活动和设置面板。'
