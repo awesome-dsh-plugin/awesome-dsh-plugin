@@ -1,0 +1,7 @@
+url: https://github.com/HeyLop/dsh-book-quality-diagrams
+name: HeyLop/dsh-book-quality-diagrams
+category: skill
+description:
+  en: Publication-grade SVG diagrams rendered to crisp 2x Retina PNGs for Markdown, plus a global DSH policy that keeps raw Mermaid out of finished docs.
+  zh: 为 Markdown 生成出版级 SVG 配图并导出 2x Retina PNG，附带禁止在成稿中保留 Mermaid 源码的全局配图规范。
+icon: https://raw.githubusercontent.com/HeyLop/dsh-book-quality-diagrams/main/assets/icon-180.png
