@@ -1,0 +1,6 @@
+url: https://github.com/cemcarolo/dsh-deltaforce-cut
+name: cemcarolo/dsh-deltaforce-cut
+category: workflow
+description:
+  en: 'Adds a skill that guides an agent through cutting Delta Force (三角洲行动) recordings into kill highlights: banner-reading rules that separate real kills from assists and AI soldiers, audio-transient cut points instead of late kill banners, and JianyingPro (剪映) draft generation.'
+  zh: '为 Agent 增加一套《三角洲行动》击杀高光剪辑规程：按横幅区分真击杀与助攻/小兵、用音频瞬态定位真正生效的那一枪、并生成剪映草稿。'
