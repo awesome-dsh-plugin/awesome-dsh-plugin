@@ -1,0 +1,6 @@
+url: https://github.com/skyrocks/dsh-go-model-limits
+name: skyrocks/dsh-go-model-limits
+category: usage
+description:
+  zh: 在模型选择列表里显示 OpenCode GO 模型的月度额度。
+  en: Shows each OpenCode GO model's monthly limit inside the model picker.

@@ -1,0 +1,6 @@
+url: https://github.com/skyrocks/dsh-deepseek-cost
+name: skyrocks/dsh-deepseek-cost
+category: usage
+description:
+  zh: DeepSeek 余额与花费统计，常驻输入框下方。
+  en: DeepSeek balance and spend tracking, shown under the composer.
