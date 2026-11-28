@@ -2,5 +2,5 @@ url: https://github.com/In-clude/dsh-approval-reminder
 name: In-clude/dsh-approval-reminder
 category: notify
 description:
-  en: 'Sends an Edge/Windows desktop notification when a tool call waits for approval, the agent asks you to choose an option, or a session finishes a turn, and only while the DSH page is in the background or unfocused; an optional chime covers cases where the browser or Windows suppresses the notification.'
-  zh: '工具调用等待审批、智能体提问等你选择、或会话跑完一轮时，弹出 Edge/Windows 桌面通知，且只在你不看 DSH 页面（后台或未聚焦）时提醒；浏览器或 Windows 抑制通知时可用可选提示音兜底。'
+  en: 'Sends an Edge/Windows desktop notification when a tool call waits for approval, the agent asks you to choose (plan review included), or a session finishes a turn, but only while the DSH page is in the background or unfocused; a two-tone chime can also sound while you are on the page (on by default) or while the page is in the background (off by default), so the reminder is still heard if Edge or Windows suppresses the notification.'
+  zh: '工具调用等待审批、智能体提问（含计划审阅）或会话跑完一轮时，用 Edge/Windows 桌面通知提醒你，且只在 DSH 页面处于后台或未聚焦时弹出；看着页面时（默认开启）或页面在后台时（默认关闭）还可响两声短提示音，即使 Edge 或 Windows 抑制通知也仍能听到。'
