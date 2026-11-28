@@ -1,0 +1,7 @@
+url: https://github.com/oldc12138/dsh-moyu-novel
+name: oldc12138/dsh-moyu-novel
+category: ui
+description:
+  en: Reads novels in the DSH right column as a bookshelf tab on the Start page, collapses the whole column when the window loses focus and brings the same chapter back when it is expanded again; imports TXT, EPUB or a single-file reader HTML, or copies the dsh-novel download cache.
+  zh: 在 DSH 右侧栏「开始」页加一个书架标签页读小说，窗口一失焦整个右栏收起，重新展开回到原处；可导入 TXT / EPUB / 单文件阅读页 HTML，或从 dsh-novel 的下载缓存搬书。
+icon: https://raw.githubusercontent.com/oldc12138/dsh-moyu-novel/main/assets/icon-512.png
