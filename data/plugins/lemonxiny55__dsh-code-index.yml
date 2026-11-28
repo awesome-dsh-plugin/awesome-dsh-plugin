@@ -2,5 +2,5 @@ url: https://github.com/lemonxiny55/dsh-code-index
 name: lemonxiny55/dsh-code-index
 category: tools
 description:
-  en: 'Review Brief, Impact X-Ray and bounded Context Packs present source evidence and static relationships; candidate tests are not run and runtime impact is not guaranteed.'
-  zh: 'Review Brief、Impact X-Ray 和有界 Context Pack 展示源码证据与静态关系；候选测试未运行，运行时影响不保证。'
+  en: 'Local static code intelligence: Review Brief, Impact X-Ray, path alias/barrel & monorepo cross-package impact, test command leads, and ArkTS (.ets) support.'
+  zh: '本地静态代码索引与变更分析：提供 Review Brief、Impact X-Ray、路径别名/Barrel 与 Monorepo 跨包影响、测试命令线索及 ArkTS (.ets) 支持。'
