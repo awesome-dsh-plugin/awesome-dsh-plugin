@@ -1,0 +1,6 @@
+url: https://github.com/SparkforDream/dsh-powertoys
+name: SparkforDream/dsh-powertoys
+category: ui
+description:
+  en: 'Modular DSH PowerToys: per-feature toggles for AI working time excluding approval and question waits, repeating confirmation alerts, in-conversation find, workspace explorer, and page reload.'
+  zh: '模块化 DSH 工具箱：支持在设置页按项独立开关的 AI 实际工作时长统计（扣除审批与提问等待）、重复确认提醒音、会话内查找、打开工作区目录与刷新页面。'
