@@ -1,0 +1,8 @@
+url: https://github.com/ZevGit/dsh-next-step-hint
+name: ZevGit/dsh-next-step-hint
+category: ui
+description:
+  en: 'Ghost-text next-step suggestion in the composer: after each turn one background call on the session''s own model writes the message you are most likely to send next, and Tab fills it into the draft.'
+  zh: '输入框内的下一步建议占位提示：每轮结束后用会话当前模型做一次后台调用，写出你最可能发出的下一句话，按 Tab 填入草稿。'
+icon: https://raw.githubusercontent.com/ZevGit/dsh-next-step-hint/main/assets/icon-180.png
+tarball: https://github.com/ZevGit/dsh-next-step-hint/releases/latest/download/dsh-next-step-hint.tgz
