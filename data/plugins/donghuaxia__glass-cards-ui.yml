@@ -1,0 +1,8 @@
+url: https://github.com/donghuaxia/glass-cards-ui
+name: donghuaxia/glass-cards-ui
+category: theme
+description:
+  en: A floating-island skin for the DSH web UI with glass panels, 13 gradient palettes and a light/dark switch kept in sync with the host appearance setting.
+  zh: DSH Web 界面的浮岛式皮肤，带玻璃面板、13 套渐变配色，以及跟随宿主外观设置的明暗切换。
+icon: https://raw.githubusercontent.com/donghuaxia/glass-cards-ui/main/assets/icon-180.png
+tarball: https://github.com/donghuaxia/glass-cards-ui/releases/latest/download/glass-cards-ui.tgz
