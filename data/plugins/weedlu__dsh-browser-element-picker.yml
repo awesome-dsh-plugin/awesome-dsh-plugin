@@ -1,5 +1,5 @@
 url: https://github.com/weedlu/dsh-browser-element-picker
-name: weedlu/dsh-browser-element-picker
+name: dsh-browser-element-picker
 category: browser
 description:
   en: Adds a crosshair to the Desktop built-in Browser toolbar that inserts the selected element's page, CSS selector, attributes, and HTML into the composer with a ready-to-edit instruction.
