@@ -147,6 +147,8 @@ export default [
       P_NPM: 'npm package ↗',
       P_MARKET: 'Install via dsh-market',
       P_README_SRC: 'Content from the project README on GitHub ↗',
+      // Snapshot freshness label (#19425 proposal B). {DATE} is an ISO date.
+      P_README_FETCHED: 'README snapshot fetched {DATE}',
       // Shown when the plugin publishes no README in this page's language. The
       // block below is then marked with its real `lang`, so say so plainly
       // rather than letting the reader wonder why the page switched languages.
@@ -272,6 +274,8 @@ export default [
       P_NPM: 'npm 包 ↗',
       P_MARKET: '通过 dsh-market 安装',
       P_README_SRC: '内容来自项目 README（GitHub）↗',
+      // README 快照抓取时间标注（#19425 提案 B），{DATE} 为 ISO 日期。
+      P_README_FETCHED: 'README 快照抓取于 {DATE}',
       P_README_ONLY: '该插件的 README 只有{LANG}版本。',
       PRIVACY: '隐私政策',
       BACKHOME: '← 返回列表',
