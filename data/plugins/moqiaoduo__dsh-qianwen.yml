@@ -1,0 +1,6 @@
+url: https://github.com/moqiaoduo/dsh-qianwen
+name: moqiaoduo/dsh-qianwen
+category: model
+description:
+  en: 'Brings platform.qianwenai.com into DSH: Token Plan and pay-as-you-go providers, a model catalog with pricing, credits and quota readout, and thinking-mode controls. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 把 platform.qianwenai.com 接入 DSH：Token Plan 与按量付费双通道、模型目录与定价、Credits 额度查询与思考模式控制。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

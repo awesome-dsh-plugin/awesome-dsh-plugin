@@ -1,0 +1,6 @@
+url: https://github.com/laiyouxing/dsh-session-budget
+name: laiyouxing/dsh-session-budget
+category: usage
+description:
+  en: Per-session token, cost and wall-clock budgets that stop the model session at the limit, plus a DeepSeek peak and off-peak schedule.
+  zh: 按会话限制 token、金额与时长并在到达上限时停止模型会话，另外带 DeepSeek 峰谷时段的暂停与自动恢复。

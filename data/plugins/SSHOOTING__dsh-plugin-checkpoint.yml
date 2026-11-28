@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-checkpoint
+name: SSHOOTING/dsh-plugin-checkpoint
+tarball: https://github.com/SSHOOTING/dsh-plugin-checkpoint/releases/download/v0.1.0/0.1.0.tgz
+category: dev
+description:
+  en: 'Checkpoint and resume view: safe points, open plan and fork/restore hints.'
+  zh: '检查点与续跑视图：安全点、未完成计划与分叉/恢复提示。'

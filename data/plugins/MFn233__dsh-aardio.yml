@@ -1,0 +1,6 @@
+url: https://github.com/MFn233/dsh-aardio
+name: MFn233/dsh-aardio
+category: dev
+description:
+  en: 'Aardio development tools and skills — keyword search over the local installation, a configurable aardio folder, open-in-IDE, and compile/run inside the IDE through an optional bridge.'
+  zh: 'aardio 开发工具链：检索本地安装里的文档与示例、在插件页选择 aardio 目录、把文件交给 IDE 打开，并通过可选的 IDE 桥接编译运行代码。'

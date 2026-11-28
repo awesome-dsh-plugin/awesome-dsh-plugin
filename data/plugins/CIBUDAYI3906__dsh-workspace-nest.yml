@@ -1,0 +1,8 @@
+# Copy this file into a fork of awesome-dsh-plugin at data/plugins/ and open a PR.
+url: https://github.com/CIBUDAYI3906/dsh-workspace-nest
+name: CIBUDAYI3906/dsh-workspace-nest
+category: ui
+description:
+  en: 'Sidebar workspace tree: nested sub-workspaces at any level, a session on every level, and sessions pinned to the top of their nearest folder. Nesting derives from directory ancestry. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧边栏工作区多级树：任意一级都能新建子工作区与会话，会话可置顶到所属的最近一级文件夹，层级由目录祖先关系推导。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/CIBUDAYI3906/dsh-workspace-nest/main/icon.png

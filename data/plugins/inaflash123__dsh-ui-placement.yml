@@ -1,0 +1,6 @@
+url: https://github.com/inaflash123/dsh-ui-placement
+name: inaflash123/dsh-ui-placement
+category: ui
+description:
+  en: Moves the question panel's Skip and Submit buttons in from the right edge, and steps the composer column left so its controls stay clear of a bottom-right desktop pet.
+  zh: 把提问卡的「跳过」「提交」从贴右边收到中间偏右，并让输入区整列左移，避开右下角的桌面宠物。

@@ -1,0 +1,6 @@
+url: https://github.com/muhadif/dsh-atlassian-mcp
+name: muhadif/dsh-atlassian-mcp
+category: tools
+description:
+  en: 'Confluence and Jira over Atlassian remote MCP as a configuration-only bundle: one MCP client row, OAuth handled by mcp-remote with the token cached in ~/.mcp-auth, no login command and no in-app UI. Exposes mcp__atlassian__* tools (CQL search, pages, comments, JQL issues, transitions).'
+  zh: '以纯配置包的形式接入 Atlassian 远程 MCP，提供 Confluence 与 Jira：只加一行 MCP 客户端配置，OAuth 交给 mcp-remote、令牌缓存在 ~/.mcp-auth，没有登录命令也没有界面。工具名为 mcp__atlassian__*（CQL 搜索、页面、评论、JQL 问题、状态流转）。'

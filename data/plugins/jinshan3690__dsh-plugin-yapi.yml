@@ -1,0 +1,6 @@
+url: https://github.com/jinshan3690/dsh-plugin-yapi
+name: jinshan3690/dsh-plugin-yapi
+category: tools
+description:
+  en: 'A YAPI documentation panel for DeepSeek Harness with search, multi-tab, field tree, and copy features. Needs your own YAPI server and account.'
+  zh: '为 DeepSeek Harness 提供 YAPI 接口文档面板，支持搜索、多标签、字段树与勾选复制。需自备 YAPI 服务与账号。'

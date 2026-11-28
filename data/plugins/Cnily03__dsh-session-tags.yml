@@ -1,0 +1,6 @@
+url: https://github.com/Cnily03/dsh-session-tags
+name: Cnily03/dsh-session-tags
+category: session
+description:
+  en: Colored tags for sessions, shown on the sidebar row and in the conversation header, with preset colors, pin-to-sidebar, hover-remove and drag-to-reorder; tags persist in a Host-side storage domain and survive restarts.
+  zh: 会话彩色标签：侧边栏行与会话标题旁均可显示，提供预设颜色、固定到侧边栏、悬停移除与拖拽排序；标签存于宿主侧存储域，重启后保留。

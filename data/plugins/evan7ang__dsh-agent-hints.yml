@@ -1,0 +1,6 @@
+url: https://github.com/evan7ang/dsh-agent-hints
+name: evan7ang/dsh-agent-hints
+category: model
+description:
+  en: Adds a DeepSeek provider route that sends a normalized X-Agent-Hint request header and bounded session lifecycle control.
+  zh: 为 DeepSeek Harness 增加按请求发送规范化 X-Agent-Hint 头的 DeepSeek 提供方路由，并提供有界的会话生命周期控制。

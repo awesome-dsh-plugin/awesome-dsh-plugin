@@ -1,0 +1,6 @@
+url: https://github.com/MeruSu/dsh-better-setting-page
+name: MeruSu/dsh-better-setting-page
+category: ui
+description:
+  en: Gives the 800px settings dialog the whole window, collapses its section rail to a 56px icon column on demand, and lets you hide settings pages you never open.
+  zh: 让 800px 的设置弹窗铺满窗口，左侧分类栏可按需收成 56px 图标列，还能隐藏你从不打开的设置页。

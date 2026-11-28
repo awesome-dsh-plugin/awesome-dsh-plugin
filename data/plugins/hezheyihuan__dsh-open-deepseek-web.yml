@@ -1,0 +1,7 @@
+# data/plugins/hezheyihuan__dsh-open-deepseek-web.yml
+url: https://github.com/hezheyihuan/dsh-open-deepseek-web
+name: hezheyihuan/dsh-open-deepseek-web
+category: browser
+description:
+  en: 'Adds a sidebar button to the DSH Web UI that opens chat.deepseek.com in a standalone Chrome app window and focuses that window when it is already open (Windows).'
+  zh: '在 DSH 侧边栏加一个「网页版」按钮，用 Chrome 应用窗口打开 chat.deepseek.com；已经打开时改为聚焦置顶（仅 Windows）。'

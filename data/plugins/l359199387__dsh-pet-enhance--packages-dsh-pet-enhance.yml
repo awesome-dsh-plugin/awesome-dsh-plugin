@@ -1,0 +1,6 @@
+url: https://github.com/l359199387/dsh-pet-enhance/tree/master/packages/dsh-pet-enhance
+name: l359199387/dsh-pet-enhance#dsh-pet-enhance
+category: skill
+description:
+  en: 'Enhances dsh-pet with computer-use screen work, oral coaching into ~/.dsh/skills, and skill replay.'
+  zh: '增强 dsh-pet：看屏/干活走 computer-use，口述带教写入 ~/.dsh/skills，并可再执行技能。'

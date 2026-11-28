@@ -1,0 +1,6 @@
+url: https://github.com/HakureiMonika/dsh-better-tips
+name: HakureiMonika/dsh-better-tips
+category: dev
+description:
+  en: 'Recovers socket cause chains, key HTTP response headers, and size-limited error bodies from failed DSH model requests, shows them next to the native error, and adds bounded extra retries for model and compaction requests.'
+  zh: '还原 DSH 失败请求的异常原因链、关键响应头和限长错误正文，与原生报错并排展示，并为普通请求和压缩请求提供次数受限的额外重试。'

@@ -1,0 +1,6 @@
+url: https://github.com/soso-deepseek-harness-plugins/dsh-context-track
+name: soso-deepseek-harness-plugins/dsh-context-track
+category: session
+description:
+  en: 'Expandable tree of one agent session''s context: rounds, model steps, tool calls, subagents, session naming, compaction and search, with each call''s input, output, token usage, cache hit rate and timing on click.'
+  zh: '把一次 agent 会话的上下文收成可展开的树：轮次、模型步骤、工具调用、子会话、会话命名、上下文压缩与检索，点开每个节点可看这次调用的输入、输出、token 用量、缓存命中率与耗时。'

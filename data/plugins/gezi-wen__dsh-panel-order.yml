@@ -1,0 +1,6 @@
+url: https://github.com/gezi-wen/dsh-panel-order
+name: gezi-wen/dsh-panel-order
+category: ui
+description:
+  en: 'Drag-and-drop reordering for the global panel icons in the DSH sidebar (Plugins, Skill / MCP, Plugin Market, Scheduled Tasks, Memory, ...). The drag starts only after the pointer travels 4px, so a plain click still opens the panel, and a blue line marks the insertion point. The collapsed icon rail follows the same order, More stays at the bottom, and a panel you have never dragged is appended after the ones already arranged. The order is kept in localStorage under dsh-panel-order.v1 and replayed on every load. No dependencies, no host services, no network, no API key; uninstalling returns the sidebar to its plain registration order. It reorders by writing the slot registry entries at runtime, which upstream does not document as a stable API.'
+  zh: '拖动 DSH 侧栏里那排全局面板图标（插件、Skill / MCP、插件市场、定时任务、记忆……）调换顺序：指针移动超过 4px 才开始拖，普通点击照旧打开面板，拖动时有一条蓝色插入线。收起成图标条后用的是同一顺序，「更多」固定在最下面，第一次拖动的新面板追加在已经排好的那些之后。顺序存在 localStorage 的 dsh-panel-order.v1 下，每次加载都重放。无依赖、无宿主服务、不联网、无 API key；卸载后侧栏回到插件注册的原始顺序。实现方式是运行期改写槽位注册项里的顺序值，上游没有把这套内部结构列为稳定 API。'

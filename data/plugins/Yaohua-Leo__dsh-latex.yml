@@ -1,0 +1,8 @@
+url: https://github.com/Yaohua-Leo/dsh-latex
+name: Yaohua-Leo/dsh-latex
+category: docs
+tarball: https://github.com/Yaohua-Leo/dsh-latex/releases/latest/download/dsh-latex.tgz
+icon: https://raw.githubusercontent.com/Yaohua-Leo/dsh-latex/main/assets/icon-180.png
+description:
+  en: 'Local LaTeX workspace for DeepSeek Harness: CodeMirror editor, latexmk builds, structured diagnostics, PDF preview with SyncTeX, build-history audit with side-by-side diffs, local OCR for screenshots, and paper checks for citations, BibTeX and layout — 14 agent tools.'
+  zh: 'DeepSeek Harness 的本地 LaTeX 工作台：CodeMirror 编辑器、latexmk 编译、结构化诊断、带 SyncTeX 的 PDF 预览、基于构建历史的并排 audit、截图本地 OCR，以及引用/BibTeX/排版体检，共 14 个 Agent 工具。'

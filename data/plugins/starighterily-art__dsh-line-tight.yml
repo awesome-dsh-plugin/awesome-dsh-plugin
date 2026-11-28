@@ -1,0 +1,6 @@
+url: https://github.com/starighterily-art/dsh-line-tight
+name: starighterily-art/dsh-line-tight
+category: ui
+description:
+  en: Sets the chat transcript's markdown line height and paragraph gap, both adjustable under Settings > General.
+  zh: 调整对话正文的行高与段间距，两个数值在设置 → 通用里可改。

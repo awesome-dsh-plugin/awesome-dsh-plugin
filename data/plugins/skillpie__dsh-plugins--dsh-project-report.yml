@@ -1,0 +1,6 @@
+url: https://github.com/skillpie/dsh-plugins/tree/main/dsh-project-report
+name: skillpie/dsh-plugins#dsh-project-report
+category: workflow
+description:
+  en: 'Project reporting in the DSH sidebar: draft a per-project report from its git commits and session records with one click, run it on a built-in schedule with a configurable daily cutover offset, and optionally submit Moka overtime automatically; all sessions of a project share one report.'
+  zh: '侧栏「项目汇报」：一键整理本项目的代码提交与会话记录生成工作汇报，支持内置定时运行与自定义每日切分偏移，可选自动提交 Moka 加班；同一项目的所有会话共享同一份汇报。'

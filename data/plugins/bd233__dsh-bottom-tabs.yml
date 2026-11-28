@@ -1,0 +1,7 @@
+url: https://github.com/bd233/dsh-bottom-tabs
+name: bd233/dsh-bottom-tabs
+category: ui
+description:
+  en: Browser-style Session tab strip docked at the bottom of the DSH Web UI window. Each tab is an open Session - click to switch, the close button removes it from the strip without archiving it, and "+" starts a new Session. Sessions can also be added from the sidebar Session context menu.
+  zh: 挂在 DSH Web 窗口底部的浏览器式会话标签栏。一个标签对应一个已打开的会话，点击切换，关闭按钮只把它移出标签栏、不归档会话，＋ 直接新建会话；也可以在侧栏会话右键菜单里「添加到 Tab」。
+icon: https://raw.githubusercontent.com/bd233/dsh-bottom-tabs/main/assets/icon-180.png

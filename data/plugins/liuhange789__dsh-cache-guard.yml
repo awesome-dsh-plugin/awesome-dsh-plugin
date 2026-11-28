@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-cache-guard
+name: liuhange789/dsh-cache-guard
+category: tools
+description:
+  en: 'DSH prompt-cache health guard and cost coach: install from npm as dsh-prompt-cache-guard (not the unrelated dsh-cache-guard package). cache_guard_health returns green/yellow/red health, a one-line hint and a PTC suggestion; cache_guard_config reads or updates settings.'
+  zh: 'DSH 提示缓存健康度守卫与省钱教练：npm 包名是 dsh-prompt-cache-guard（与无关的 dsh-cache-guard 不是同一个包）。cache_guard_health 工具给出绿/黄/红健康度、一行干预建议与 PTC 切换提示，cache_guard_config 读写开关与灵敏度。'

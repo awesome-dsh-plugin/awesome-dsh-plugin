@@ -1,0 +1,7 @@
+url: https://github.com/Souffle-78/dsh-code-vault
+name: Souffle-78/dsh-code-vault
+category: ui
+description:
+  en: 'Save code blocks from a conversation into a local vault with its own sidebar panel: search, tags, multi-select batch actions, merging blocks into a new entry, and putting a block back into the composer.'
+  zh: '把对话里的代码块收进本地收藏夹，侧栏面板可搜索、打标签、多选批量整理、把几个代码块合并成新条目，并能一键插回输入框。'
+icon: https://raw.githubusercontent.com/Souffle-78/dsh-code-vault/main/assets/icon-180.png

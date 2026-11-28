@@ -1,0 +1,8 @@
+url: https://github.com/YaoZhang0224/dsh-formula-editor
+name: YaoZhang0224/dsh-formula-editor
+category: ui
+tarball: https://github.com/YaoZhang0224/dsh-formula-editor/releases/download/v1.1.2/dsh-formula-editor-1.1.2.tgz
+description:
+  en: 'Image-to-LaTeX formula editor that works out of the box: it reads a dropped or pasted screenshot with the vision model your DSH already has configured, so there is no endpoint, API key or account to set up. A MathLive field edits the formula in place with a 272-symbol palette, and the result copies into Word as a native equation or exports to .docx. Any model that accepts image input works, and you can pin one specific model in the plugin settings instead of following the current default.'
+  zh: '装完即用的图片转 LaTeX 公式编辑器：拖入或粘贴的截图由你 DSH 里已经配好的视觉模型识别，不需要填接口、填 Key 或申请账号。MathLive 公式域可就地修改并提供 272 个符号的面板，结果可复制为 Word 原生公式或导出 .docx。任何支持图片输入的模型都能用，也可以在插件设置里固定用某一个模型，而不是跟随当前默认。'
+icon: https://raw.githubusercontent.com/YaoZhang0224/dsh-formula-editor/main/icon.png

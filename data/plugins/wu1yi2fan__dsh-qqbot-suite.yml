@@ -1,0 +1,8 @@
+url: https://github.com/wu1yi2fan/dsh-qqbot-suite
+name: wu1yi2fan/dsh-qqbot-suite
+category: session
+description:
+  en: 'Adds group gating, chat history and tool allow/deny lists to the official QQ bot plugin.'
+  zh: '为官方 QQ 机器人插件提供增强功能，包括群聊闸门、群聊历史、执行工具黑白名单等。'
+tarball: https://github.com/wu1yi2fan/dsh-qqbot-suite/releases/latest/download/dsh-qqbot-suite.tgz
+icon: https://raw.githubusercontent.com/wu1yi2fan/dsh-qqbot-suite/main/assets/icon-market.png

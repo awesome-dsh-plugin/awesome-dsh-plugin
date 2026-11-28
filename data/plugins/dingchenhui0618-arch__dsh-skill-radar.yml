@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-skill-radar
+name: dingchenhui0618-arch/dsh-skill-radar
+category: tools
+description:
+  en: 'Skill usage radar for DeepSeek Harness: records every skill hit from the skill tool and /name gestures into a local JSONL ledger, ranks skills by hits in the last 7 days, greys out zero-hit skills with an archive suggestion, and expands a row into time, session, trigger and prompt. Ships a conversation-view panel with frontmatter model-invocation toggle, skill creation, and a recoverable .trash archive/restore. 52 zero-dependency tests; loopback-only, no external network.'
+  zh: '给 DSH 的技能面板加一列「命中记录」：从 skill 工具调用与 /name 手势记下每次命中的时间、会话、触发词与提示词到本地 JSONL，按最近 7 天命中数排序，零命中的技能灰显并标「建议归档」，展开行可查看命中明细。带会话视图「技能雷达」面板、frontmatter 模型调用开关、新建技能、以及走 .trash 的可恢复归档。52 个零依赖测试；只监听 loopback，无外部网络。'

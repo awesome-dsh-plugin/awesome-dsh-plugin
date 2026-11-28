@@ -1,0 +1,7 @@
+url: https://github.com/liuke-zhu/dsh-toonflow-canvas
+name: liuke-zhu/dsh-toonflow-canvas
+category: ui
+tarball: https://github.com/liuke-zhu/dsh-toonflow-canvas/releases/download/v0.1.0/dsh-toonflow-canvas-0.1.0.tgz
+description:
+  zh: "在 DeepSeek Harness 侧边栏内嵌 Toonflow 无限画布面板。伴侣插件：需本机自备并运行 Toonflow（默认 http://127.0.0.1:6017）。支持地址自定义、连接/重载/新窗口打开。"
+  en: "Embed the Toonflow infinite canvas as a dsh sidebar panel. Companion plugin: requires you to self-host and run Toonflow locally (default http://127.0.0.1:6017). Configurable URL, connect / reload / open in new window."

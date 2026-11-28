@@ -1,0 +1,6 @@
+url: https://github.com/REALOIYO/dsh-web-gate
+name: REALOIYO/dsh-web-gate
+category: remote
+description:
+  en: 'Password-protected LAN gateway for DeepSeek Harness, letting a phone browser on the same Wi-Fi drive the desktop DSH; DSH''s own files are untouched, but a small compatibility polyfill is injected into the pages served to the phone. Plain HTTP, trusted LAN only.'
+  zh: '带密码的 DSH 局域网网关，手机连同一个 WiFi 就能用浏览器打开电脑上的 DSH；不改 DSH 自身文件，但会向发给手机的页面注入一小段兼容 polyfill。明文 HTTP，仅限可信局域网。'

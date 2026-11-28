@@ -1,0 +1,7 @@
+url: https://github.com/quirekit/dsh-quirekit-md-editor
+name: quirekit/dsh-quirekit-md-editor
+category: docs
+description:
+  en: Edit Markdown in place in the right sidebar and send inline comments to the agent, which resolves each one it handles.
+  zh: 在右侧栏直接编辑 Markdown，把行内评论发给 Agent，处理完自动标记解决。
+icon: https://raw.githubusercontent.com/quirekit/dsh-quirekit-md-editor/main/.github/assets/icon-180.png

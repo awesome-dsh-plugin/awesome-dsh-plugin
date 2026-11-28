@@ -1,0 +1,7 @@
+url: https://github.com/WangZW928/dsh-writing-style
+name: WangZW928/dsh-writing-style
+category: skill
+description:
+  en: 'Genre-aware writing guidance based on the author’s curated style rules, with drafting, revision, review and human-confirmed rule feedback; raw samples are excluded from the install package.'
+  zh: '基于作者提炼规则的分文体写作技能，支持起草、润色、复核与待确认的规则反馈；安装包不含原始写作材料。'
+tarball: https://github.com/WangZW928/dsh-writing-style/releases/download/v0.1.1/dsh-writing-style-0.1.1.tgz

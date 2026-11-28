@@ -1,0 +1,6 @@
+url: https://github.com/fzcohq/dsh-ipv6-gate
+name: fzcohq/dsh-ipv6-gate
+category: remote
+description:
+  en: 'IPv6 remote-access gateway for DSH: PIN-protected HTTPS reverse proxy with a Let''s Encrypt certificate (DNS-01 via DuckDNS), QR scan-to-connect and a settings page, no relay in the data path. Needs a public IPv6 address (detected on Windows and Linux only, not macOS), a free DuckDNS subdomain and token, and inbound ports 8787/8788 open on the router; the AAAA record is only auto-updated when the plugin config sets ddns or tls.'
+  zh: 'DSH 的 IPv6 远程访问网关：带 PIN 保护的 HTTPS 反向代理（Let''s Encrypt 证书，经 DuckDNS 做 DNS-01 验证）、扫码直达、设置页管理，数据不经中继。需要公网 IPv6（仅 Windows、Linux 能探测，macOS 不行）、免费的 DuckDNS 子域名与 Token，并在路由器放行入站 8787/8788；仅当插件配置里设了 ddns 或 tls 才会自动更新 AAAA 记录。'

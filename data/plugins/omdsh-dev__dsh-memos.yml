@@ -1,0 +1,7 @@
+url: https://github.com/omdsh-dev/dsh-memos
+name: omdsh-dev/dsh-memos
+category: tools
+description:
+  en: Read self-hosted usememos notes from DSH with search, list, get, and a credential settings panel.
+  zh: 在 DSH 中搜索、浏览和读取自托管 usememos 笔记，并提供凭据设置面板。
+tarball: https://github.com/omdsh-dev/dsh-memos/releases/latest/download/pkg.tgz

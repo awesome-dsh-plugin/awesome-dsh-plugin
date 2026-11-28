@@ -1,0 +1,7 @@
+url: https://github.com/Zhao0335/dsh-conversation-retry
+name: Zhao0335/dsh-conversation-retry
+category: session
+description:
+  en: 'Edits a message you already sent and re-runs from that point by forking the session, and retries a completed turn, in the DeepSeek Harness Web UI.'
+  zh: '在 DeepSeek Harness Web 界面里编辑已发出的消息并从该点分叉重跑，以及重试某一轮。'
+icon: https://raw.githubusercontent.com/Zhao0335/dsh-conversation-retry/master/assets/icon-180.png

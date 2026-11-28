@@ -2,6 +2,6 @@ url: https://github.com/EternalNight996/memory-eternal
 name: EternalNight996/memory-eternal
 category: memory
 description:
-  zh: "别的记忆插件让 AI 记住更多，我们让 AI 只记住对的：Agent 只能提案，人工审核才进主库（三库分离 + 不可变审计日志）；召回走 SQLite FTS5/BM25、零模型调用（实测 p50 2.3ms），记忆账本摊开召回成本与有用率；一个库接 DSH / Claude Code / Codex / Cursor / 任意 MCP。"
-  en: "Other memory plugins help your agent remember more. This one decides what is allowed to count: agents propose, a human approves (three-store gate + immutable audit log), and recall runs on SQLite FTS5/BM25 with zero model calls (measured p50 2.3ms). A token ledger shows what recall actually cost; one vault for DSH, Claude Code, Codex, Cursor and any MCP client."
+  zh: "别的记忆插件让 AI 记住更多，我们让 AI 只记住对的：Agent 只能提案，人工审核才进主库（三库分离 + 不可变审计日志）；召回走 SQLite FTS5/BM25、零模型调用（实测 p50 2.3ms），记忆账本摊开召回成本与有用率。一个库接 DSH / Claude Code / Codex / Cursor / OpenClaw / Hermes / MengBot（任意 MCP 客户端）；v0.31 起内置五套一键切换皮肤（默认暗色 / 波普 / 明亮 / 生化危机 / 蜘蛛侠）与全幅主题头图。"
+  en: "Other memory plugins help your agent remember more. This one decides what is allowed to count: agents propose, a human approves (three-store gate + immutable audit log), and recall runs on SQLite FTS5/BM25 with zero model calls (measured p50 2.3ms). A token ledger shows what recall actually cost. One vault for DSH, Claude Code, Codex, Cursor, OpenClaw, Hermes, MengBot and any MCP client. v0.31 adds five one-click skins (Default, Pop, Light, Resident Evil, Spider-Man) with full-bleed theme banners and per-skin hover contrast."
 icon: https://raw.githubusercontent.com/EternalNight996/memory-eternal/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/c10ck-p/dsh-checkpoint-dock
+name: c10ck-p/dsh-checkpoint-dock
+category: tools
+description:
+  en: 'Per-turn, per-file checkpoints for files written by DSH tools: keep, undo, redo, and revert to here from a dock above the composer, with inline before/after diffs, pinning, and per-session storage cleanup.'
+  zh: '按轮次记录 DSH 文件工具改过的文件，在输入框上方的 dock 里保留、撤销、重做、回退到某一轮，支持行内前后 diff、钉住与按会话清理存储。'

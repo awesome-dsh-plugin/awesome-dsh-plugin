@@ -1,0 +1,6 @@
+url: https://github.com/zlmddygggzh-collab/dsh-tool-camera
+name: zlmddygggzh-collab/dsh-tool-camera
+category: vision
+description:
+  en: Grabs a live frame from the local webcam and hands it to the agent as an image, so the model can actually look through the camera without opening any app or keeping a window in front. A dim room no longer comes back black — brightness, gamma, contrast, sharpen and an auto-level pass run inside the capture itself. ffmpeg is fetched automatically on first use, and the same plugin lists the available capture devices.
+  zh: 从本机摄像头抓一帧实时画面，以图片形式交给 agent，让它真正从摄像头看见画面——不用打开相机应用，也不要求窗口在前台。暗光房间不会再拍成一片黑，亮度、伽马、对比度、锐化和自动拉伸都在抓帧时一次做完。首次使用时自动下载 ffmpeg，配套还有一个工具用于列出可用采集设备。

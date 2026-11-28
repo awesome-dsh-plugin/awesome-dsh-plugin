@@ -1,0 +1,6 @@
+url: https://github.com/atlasmarkz/dsh-ink-whale
+name: atlasmarkz/dsh-ink-whale
+category: theme
+description:
+  en: 'Black-and-white theme for the DSH web client: UI tokens remapped to neutral ink greys, a Bayer-dithered signal field revealed by the pointer with click ripples, a blueprint-style headline that shows dashed selection boxes and dimension labels as the pointer comes near, neutral frosted composer and HUD glass, and a small school of pale-blue ASCII whales that drifts across the page. The new-session page and the chat page each have their own background, headline, whale and glass settings under Settings → Ink Whale.'
+  zh: 'DSH Web 黑白主题：界面令牌映射为中性墨阶，Bayer 抖动信号场随指针揭示并带点击涟漪，蓝图式标题在指针靠近时显示虚线选框与尺寸标注，输入框与 HUD 使用中性毛玻璃，淡蓝 ASCII 鲸群缓缓游过界面；新建会话页与聊天页各有独立的背景、标题、鲸鱼与玻璃设置，入口在「设置 → Ink Whale」。'

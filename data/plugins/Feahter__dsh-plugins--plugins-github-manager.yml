@@ -1,0 +1,6 @@
+url: https://github.com/Feahter/dsh-plugins/tree/main/plugins/github-manager
+name: Feahter/dsh-plugins#github-manager
+category: git
+description:
+  en: 'Sidebar GitHub panel plus github_* agent tools: list your repositories, inspect issues and pull requests, and create, update or comment on issues.'
+  zh: '侧栏 GitHub 面板加 github_* 工具：列出仓库、查看 Issue 与 PR，新建、更新或评论 Issue。'

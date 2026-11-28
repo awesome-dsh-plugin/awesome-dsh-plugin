@@ -1,0 +1,7 @@
+url: https://github.com/SivanCola/dsh-deepseek-search
+name: SivanCola/dsh-deepseek-search
+category: browser
+description:
+  en: 'DeepSeek web search with its own API key: a left-sidebar search page and a deepseek_search tool that every model in the profile can call, falling back to the DeepSeek key already configured for the model provider. It registers its own tool and routes instead of replacing the built-in web_search and web_fetch providers, so an existing search setup keeps working.'
+  zh: '使用独立 DeepSeek API Key 的网页搜索：左侧栏搜索页，外加一个配置内任意模型都能调用的 deepseek_search 工具；未配独立 Key 时自动复用模型列表里已配好的 DeepSeek Key。它注册自己的工具与路由、不接管内置 web_search 与 web_fetch 提供方，因此不会打断已有的搜索配置。'
+icon: https://raw.githubusercontent.com/SivanCola/dsh-deepseek-search/main/assets/icon-180.png

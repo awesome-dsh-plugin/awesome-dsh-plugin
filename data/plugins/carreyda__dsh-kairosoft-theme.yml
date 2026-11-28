@@ -1,0 +1,7 @@
+url: https://github.com/carreyda/dsh-kairosoft-theme
+name: carreyda/dsh-kairosoft-theme
+category: theme
+description:
+  en: Six Kairosoft-inspired palettes (onsen, moving day, kingdom, water park, new-year mall, ski resort), each with its own promotional artwork as a full-window background under a translucent wash, 166 theme tokens per palette, light/dark switching through the theme service, and a lantern panel for per-theme opacity, sidebar matching and artwork on/off. The default DSH theme is one click away and restores natively without leftovers.
+  zh: 六套开罗游戏配色（温泉、搬家、王国、水上乐园、百货、滑雪场），每套自带宣传图作整窗背景并压一层半透明薄纱，每套 166 条主题令牌，右下角灯笼面板可调主题、明暗、面板与侧栏不透明度、背景开关，一键可回到 DSH 默认主题且不留残留。
+icon: https://raw.githubusercontent.com/carreyda/dsh-kairosoft-theme/main/assets/icon-180.png

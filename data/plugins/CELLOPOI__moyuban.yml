@@ -1,0 +1,7 @@
+url: https://github.com/CELLOPOI/moyuban
+name: CELLOPOI/moyuban
+category: fun
+description:
+  en: Read Xiaohongshu recommendations, browse Baidu Tieba threads and nested replies, and quote posts when replying on NGA from DSH workspaces.
+  zh: 在 DSH 工作区读小红书推荐、浏览百度贴吧帖子和楼中楼，也可以在 NGA 引用楼层回帖。
+tarball: https://github.com/CELLOPOI/moyuban/releases/download/v0.14.1/moyuban-0.14.1.tgz

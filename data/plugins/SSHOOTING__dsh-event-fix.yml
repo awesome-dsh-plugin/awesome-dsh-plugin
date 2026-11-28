@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-event-fix
+name: SSHOOTING/dsh-event-fix
+category: usage
+tarball: https://github.com/SSHOOTING/dsh-event-fix/releases/download/v0.3.1/dsh-event-fix-0.3.1.tgz
+description:
+  en: 'Read-only per-step error and wasted-work analytics for DeepSeek Harness sessions: reports tool and command failures, model retries, repeated calls, interrupted turns, and empty steps, with the wasted tokens and elapsed time attributed to each.'
+  zh: '只读分析 DeepSeek Harness 会话中每一步的报错与无效动作：统计工具与命令失败、模型重试、重复调用、轮次中断和空转步，并归因对应浪费的 token 与耗时。'

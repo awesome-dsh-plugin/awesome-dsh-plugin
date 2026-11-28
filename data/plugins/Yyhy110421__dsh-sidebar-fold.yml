@@ -1,0 +1,6 @@
+url: https://github.com/Yyhy110421/dsh-sidebar-fold
+name: Yyhy110421/dsh-sidebar-fold
+category: ui
+description:
+  en: 'Adds one button above the workspace that collapses the whole sidebar entry group (Task board, plugins, Skill/MCP, automation, context insights and more) and restores it on a second click, with the state kept in localStorage.'
+  zh: '侧栏折叠：在侧栏工作区上方加一个按钮，一键收起整组入口（Task board、插件、Skill/MCP、自动化任务、上下文洞察等），再点一次恢复，状态存在 localStorage。'

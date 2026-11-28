@@ -1,0 +1,6 @@
+url: https://github.com/wang-yudong/dsh-pet-extend
+name: wang-yudong/dsh-pet-extend
+category: voice
+description:
+  en: 'Adds offline Chinese wake-word detection with speaker verification to dsh-pet, plus right-click chat access and wake reactions. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 dsh-pet 增加离线中文唤醒词与声纹校验，并提供右键打开对话与唤醒联动。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

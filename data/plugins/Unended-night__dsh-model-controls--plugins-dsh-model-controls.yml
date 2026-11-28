@@ -2,6 +2,7 @@ url: https://github.com/Unended-night/dsh-model-controls/tree/main/plugins/dsh-m
 name: Unended-night/dsh-model-controls#dsh-model-controls
 category: model
 description:
-  en: 'Per-provider User-Agent and stream idle timeout settings, with visible request retries and optional bounded continuation messages.'
-  zh: '按模型渠道设置 User-Agent 和流空闲超时，提供可见的请求重试及可限制次数的自动继续消息。'
+  en: 'Customize per-provider User-Agent headers and stream idle timeouts, set retry counts and intervals with visible progress, and optionally send bounded continuation messages after retries run out.'
+  zh: '按渠道自定义 User-Agent 请求头与流空闲超时，自由设置重试次数和间隔、查看重试进度，并可在重试耗尽后自动发送有次数上限的继续消息。'
+icon: https://raw.githubusercontent.com/Unended-night/dsh-model-controls/main/plugins/dsh-model-controls/assets/icon.png
 tarball: https://github.com/Unended-night/dsh-model-controls/releases/download/v4.0.0/dsh-model-controls-4.0.0.tgz

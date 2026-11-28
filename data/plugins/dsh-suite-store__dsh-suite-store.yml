@@ -1,0 +1,6 @@
+url: https://github.com/dsh-suite-store/dsh-suite-store
+name: dsh-suite-store/dsh-suite-store
+category: market
+description:
+  en: 'Browse, search, and Install or uninstall full sets of plugins with one click. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '可视化整合包商店：浏览、搜索、一键安装与卸载一整套插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

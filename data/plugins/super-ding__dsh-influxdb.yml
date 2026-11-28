@@ -1,0 +1,6 @@
+url: https://github.com/super-ding/dsh-influxdb
+name: super-ding/dsh-influxdb
+category: tools
+description:
+  en: 'InfluxDB 2.x client for DeepSeek Harness: six agent tools and a side panel run Flux queries, inspect schemas and buckets, manage connections, and write line protocol.'
+  zh: 'DeepSeek Harness 的 InfluxDB 2.x 插件：6 个智能体工具加一个侧边面板，可执行 Flux 查询、查看 schema 与 bucket、管理连接、写入 line protocol。'

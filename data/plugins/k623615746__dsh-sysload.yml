@@ -1,0 +1,6 @@
+url: https://github.com/k623615746/dsh-sysload
+name: k623615746/dsh-sysload
+category: ui
+description:
+  en: 'CPU, GPU and memory load in the DeepSeek Harness Session header: three compact cells with a percentage and a 2 px bar, coloured at 75 % and 90 %; CPU from os.cpus() deltas, GPU from nvidia-smi (Windows counter fallback).'
+  zh: 在 DeepSeek Harness 会话顶栏实时显示 CPU、GPU 与内存占用：三个小格各带百分比和 2 px 细条，75 %、90 % 变色；CPU 取 os.cpus() 差值，GPU 优先 nvidia-smi（Windows 下可退回性能计数器）。

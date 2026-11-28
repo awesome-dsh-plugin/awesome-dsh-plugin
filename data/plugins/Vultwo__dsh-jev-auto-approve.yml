@@ -1,0 +1,7 @@
+url: https://github.com/Vultwo/dsh-jev-auto-approve
+name: Vultwo/dsh-jev-auto-approve
+category: security
+description:
+  en: 'Reviews DeepSeek Harness approval requests with TypeSafe Jev and auto-approves low-risk, explicitly authorized actions; includes an English settings page for the key and token/cost usage. Each approval request is sent to the third-party TypeSafe Jev service (api.typesafe.ai) with your key, and low-risk ones are approved automatically.'
+  zh: '用 TypeSafe Jev 复核 DeepSeek Harness 的审批请求，自动批准低风险且已明确授权的操作；含英文设置页，可填密钥并查看 token 与费用用量。每条审批请求都会连同你的密钥发给第三方 TypeSafe Jev 服务（api.typesafe.ai），低风险的会被自动批准。'
+tarball: https://github.com/Vultwo/dsh-jev-auto-approve/releases/latest/download/dsh-jev-auto-approve.tgz

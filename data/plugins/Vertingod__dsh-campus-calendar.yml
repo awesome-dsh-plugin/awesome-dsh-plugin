@@ -1,0 +1,7 @@
+url: https://github.com/Vertingod/dsh-campus-calendar
+name: Vertingod/dsh-campus-calendar
+category: tools
+tarball: https://github.com/Vertingod/dsh-campus-calendar/releases/download/v0.3.1/dsh-campus-calendar-0.3.1.tgz
+description:
+  en: 'Local-first calendar for university competitions and certificate exams: readings are ranked by fit to your declared major, year and region; month, year, timeline and list views; four-level importance can be set per date; ICS export; data stays on this machine.'
+  zh: '本地维护的大学生赛事与证书日历：按声明过的专业、年级与地区计算适配度；月历、全年、时间轴、列表四种视图；每个日期可手动标四档重要程度；支持 ICS 导出；数据不出本机。'

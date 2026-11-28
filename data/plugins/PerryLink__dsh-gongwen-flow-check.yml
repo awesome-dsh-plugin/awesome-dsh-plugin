@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-gongwen-flow-check
+name: PerryLink/dsh-gongwen-flow-check
+category: tools
+description:
+  en: "Official-document routing record check for DeepSeek Harness: check routing records against the Regulations on the Handling of Official Documents of Party and Government Organs (Zhongbanfa [2012] No. 14). Flags discrepancies only and makes no legal conclusion."
+  zh: "公文流转记录核对：依据《党政机关公文处理工作条例》（中办发〔2012〕14号）。仅提示差异，不作出定性结论。"

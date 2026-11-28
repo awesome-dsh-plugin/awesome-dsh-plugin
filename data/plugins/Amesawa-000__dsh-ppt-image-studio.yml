@@ -1,0 +1,6 @@
+url: https://github.com/Amesawa-000/dsh-ppt-image-studio
+name: Amesawa-000/dsh-ppt-image-studio
+category: vision
+description:
+  en: "Configures an OpenAI Images-compatible or Gemini image API in Settings, and adds agent tools that write prompts, generate illustrations for presentation slides, and return the original local image paths."
+  zh: "在设置页配置 OpenAI Images 兼容或 Gemini 生图接口，并提供 agent 工具：编写提示词、为幻灯片生成配图，返回原始图片的本地路径。"

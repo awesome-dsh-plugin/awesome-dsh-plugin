@@ -1,0 +1,7 @@
+url: "https://github.com/Codenestra/deepseek-harness-plugins/tree/main/plugins/dsh-storage-doctor"
+name: "Codenestra/deepseek-harness-plugins#dsh-storage-doctor"
+category: tools
+description:
+  en: "Disk usage scanning, growth trends, cleanup previews, and restorable trash for DSH data."
+  zh: "DSH 磁盘占用扫描、增长趋势、清理预览，以及支持还原的回收站。"
+tarball: "https://github.com/Codenestra/deepseek-harness-plugins/releases/download/v0.1.0/local-dsh-storage-doctor-0.1.0.tgz"

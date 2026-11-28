@@ -1,0 +1,6 @@
+url: https://github.com/DreamPerday/dsh-team-toolkit/tree/main/packages/team-compact
+name: DreamPerday/dsh-team-toolkit#team-compact
+category: tools
+description:
+  en: Manual context compaction for DSH Agent Teams, adding a scoped compact_context tool and the /compact-agent command.
+  zh: DSH 智能体团队的手动上下文压缩：按成员作用域注册的 compact_context 工具与 /compact-agent 命令。

@@ -1,0 +1,6 @@
+url: https://github.com/apfsds-dog/dsh-limbs
+name: apfsds-dog/dsh-limbs
+category: ui
+description:
+  en: A DSH model picker plugin with search, keyboard navigation, provider grouping, and real-time status indicators.
+  zh: DSH 模型选择器增强插件，支持搜索、键盘导航、提供商分组与实时状态显示。

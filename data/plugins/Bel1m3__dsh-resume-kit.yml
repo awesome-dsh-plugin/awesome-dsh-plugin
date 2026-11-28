@@ -1,0 +1,6 @@
+url: https://github.com/Bel1m3/dsh-resume-kit
+name: Bel1m3/dsh-resume-kit
+category: tools
+description:
+  en: 'Renders resumes in three fixed layouts (two-column engineering, wine-ribbon design, single-column ATS) to editable Word and PDF, asks follow-up questions for missing fields, and auto-shrinks the single-column layout to one page.'
+  zh: '用三套固定版式（深灰蓝双栏、酒红绶带、单栏 ATS）渲染可编辑的 Word 和 PDF 简历，缺项先追问，单栏超一页自动微缩。'

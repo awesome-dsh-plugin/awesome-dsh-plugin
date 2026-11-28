@@ -1,0 +1,6 @@
+url: https://github.com/w1207433681/better-dsh-session-cleaner
+name: w1207433681/better-dsh-session-cleaner
+category: session
+description:
+  en: Deletes DSH session logs, workspace records and artifact directories with a family tree, batch delete, and one-click workspace binding. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 删除 DSH 会话日志、工作区记录和产物目录，支持会话家族树、批量删除与一键绑定工作区。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

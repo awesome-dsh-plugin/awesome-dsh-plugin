@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-chat-spacing
+name: imcaibaicai/dsh-chat-spacing
+category: ui
+description:
+  en: 'Unifies the conversation flow gap and the indent, margins, card borders and radii of expanded reasoning and tool bodies through CSS variables, with one live stepper per knob in Settings → General.'
+  zh: '把对话正文、思考行与工具行的垂直间距，以及展开后正文的缩进、边距、卡片边框与圆角统一到一组 CSS 变量，设置 → 通用 里每个参数都有实时步进器。'

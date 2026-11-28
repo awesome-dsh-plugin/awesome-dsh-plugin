@@ -1,0 +1,6 @@
+url: https://github.com/lehuaner/dsh-connect-marvis
+name: lehuaner/dsh-connect-marvis
+category: model
+description:
+  en: 'Brings the models behind Tencent Marvis into the DSH model picker: DeepSeek V4.1 Flash and V4 Pro, Claude Sonnet 4.6 and Opus 4.6, GPT-5.4, Hunyuan Hy3 and HY-Vision. Reuses the login state of a Marvis client already signed in on this machine and refreshes its short-lived access token automatically, so no API key is needed and the client need not stay running. Also detects the gateway rule that rejects a system prompt opening with a generic assistant identity sentence, and rewrites it at the boundary.'
+  zh: '把腾讯马维斯背后的模型接进 DSH 模型选择器：DeepSeek V4.1 Flash 与 V4 Pro、Claude Sonnet 4.6 与 Opus 4.6、GPT-5.4、混元 Hy3 与 HY-Vision。复用本机已登录 Marvis 客户端的登录态并自动续期短命的 access token，因此不用填 API Key，客户端也不必常驻。另外会识别网关「system 开头是通用助手身份句就判非法」的规则，并在出口处改写掉。'

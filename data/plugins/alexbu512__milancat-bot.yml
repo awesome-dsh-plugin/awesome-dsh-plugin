@@ -1,0 +1,7 @@
+url: https://github.com/alexbu512/milancat-bot
+name: alexbu512/milancat-bot
+category: agi
+icon: https://raw.githubusercontent.com/alexbu512/milancat-bot/main/assets/icon.png
+description:
+  en: 'Grok-bot-style AI organization in the sidebar: a chief-of-staff agent creates departments, roles and per-department group chats, dispatches each task to child agents running on this machine, and reports finished work back as one assistant message. Its HTTP routes have no DSH access check, and they can create agents and dispatch tasks to them.'
+  zh: '把 Grok bot 式的 AI 组织搬进 DSH 左侧栏：总裁助理建部门、立岗位、开部门群，任务分派给本机真实运行的子 agent，做完的活由助理汇总成一条消息回报。它的 HTTP 路由没有 DSH 的访问检查，而这些路由可以创建智能体并向其派发任务。'

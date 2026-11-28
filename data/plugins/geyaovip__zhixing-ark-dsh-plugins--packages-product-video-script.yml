@@ -1,0 +1,7 @@
+url: https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/product-video-script
+name: geyaovip/zhixing-ark-dsh-plugins#product-video-script
+category: skill
+description:
+  en: Create timed product video scripts with shots, voiceover, and captions, and link to the Zhixing Ark content workspace.
+  zh: 知行方舟品牌短视频脚本，根据商品卖点生成分镜、口播和字幕，并提供品牌内容工作台入口。
+tarball: https://github.com/geyaovip/zhixing-ark-dsh-plugins/releases/download/v1.0.0/dsh-plugin-zhixing-ark-video-script-1.0.0.tgz

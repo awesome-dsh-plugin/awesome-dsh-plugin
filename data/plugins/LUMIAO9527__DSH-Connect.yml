@@ -1,0 +1,6 @@
+url: https://github.com/LUMIAO9527/DSH-Connect
+name: LUMIAO9527/DSH-Connect
+category: remote
+description:
+  en: 'Open the full DeepSeek Harness running on your computer from a phone browser, with QR pairing over LAN HTTPS and shared sessions and workspace; cross-network access needs your own HTTPS entry or a self-hosted relay (no public relay is provided). Connection and auth code is adapted in part from saya-ch/dsh-mobile.'
+  zh: '在手机浏览器中打开电脑上运行的完整 DeepSeek Harness，支持局域网 HTTPS 扫码配对，会话与工作区共用；跨网访问需自备 HTTPS 入口或自建中继（不提供公共中继）。连接与认证代码部分改编自 saya-ch/dsh-mobile。'

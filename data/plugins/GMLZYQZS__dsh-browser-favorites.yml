@@ -1,0 +1,7 @@
+url: https://github.com/GMLZYQZS/dsh-browser-favorites
+name: GMLZYQZS/dsh-browser-favorites
+category: ui
+description:
+  en: A star at the right end of the conversation header that keeps web pages and opens each one as a Browser tab in the right sidebar, with a per-row "open in system browser" fallback for sites that refuse to be embedded. The list lives in the browser's local storage, so it is shared by every conversation in the profile; the star appears only while a conversation is open.
+  zh: 对话标题栏右端的五角星：收藏常看的网址，点一下就在右侧栏的浏览器里打开，每行还能用系统浏览器打开（应对禁止内嵌的站点）。列表存在本机浏览器里，同一个 profile 的每个对话都能用；没有打开对话时按钮不显示。
+

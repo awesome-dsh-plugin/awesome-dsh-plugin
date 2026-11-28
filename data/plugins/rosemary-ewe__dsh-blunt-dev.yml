@@ -1,0 +1,6 @@
+url: https://github.com/rosemary-ewe/dsh-blunt-dev
+name: rosemary-ewe/dsh-blunt-dev
+category: identity
+description:
+  en: 'Adds a system-prompt section that asks the model to drop stock AI writing habits: subheadings, bold and emoji overload, quoted aphorisms and grand-finale endings.'
+  zh: '往系统提示词里加一段，要求模型去掉常见的 AI 写作习惯：小标题、加粗与 emoji 堆砌、引用名言和结尾升华。'

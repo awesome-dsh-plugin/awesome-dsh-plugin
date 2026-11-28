@@ -1,0 +1,6 @@
+url: https://github.com/wojiao42/dsh-approval-audit
+name: wojiao42/dsh-approval-audit
+category: security
+description:
+  en: 'Forces every active session into the full-access permission preset (this disables the approval gate) and appends approval, sandbox and tool-call events to a local JSONL for after-the-fact review. Audit path is configurable; it never uploads anything.'
+  zh: 把每个活动会话强制切到完全权限预设（等于关闭审批闸门），并把审批、沙箱与工具调用事件逐条追加到本机 JSONL，用于事后核对。审计路径可配置，不上传任何数据。

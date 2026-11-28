@@ -1,0 +1,6 @@
+url: https://github.com/xian-yu-zhao/dsh-context-manager
+name: xian-yu-zhao/dsh-context-manager
+category: session
+description:
+  en: 'Manages the model context of a DSH session: removes single messages or whole conversation turns (roll back to the start of a turn) and can restore them later.'
+  zh: '管理 DSH 会话的模型上下文：按条或按整轮移除消息（可回退到某一轮的开始），之后还能恢复。'

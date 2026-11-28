@@ -1,0 +1,9 @@
+# Entry for the awesome-dsh-plugin catalog (data/plugins/ in that repository).
+# One of four entries for this monorepo: the three components plus the bundle,
+# which ships /te and therefore qualifies as a plugin, not a bare meta-package.
+url: https://github.com/SonettoGu14/dsh-tokeneconomizer/tree/master/packages/cost
+name: SonettoGu14/dsh-tokeneconomizer#packages/cost
+category: usage
+description:
+  en: 'Cache-weighted cost accounting: folds each DSH session into equivalent full-price input tokens, keeps per-session history and per-repository totals, and prints them with /te-cost. One of the three dsh-te components; installing dsh-te installs all three, and each can be switched off on its own.'
+  zh: '缓存加权成本记账：把每个 DSH 会话折算成等效全价输入 token，按会话留历史、按仓库累计，用 /te-cost 打印。属于 dsh-te 套件的三个组件之一，安装 dsh-te 即装齐三个，每个也能单独关掉。'

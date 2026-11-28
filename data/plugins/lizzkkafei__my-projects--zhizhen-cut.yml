@@ -1,0 +1,6 @@
+url: https://github.com/lizzkkafei/my-projects/tree/main/zhizhen-cut
+name: lizzkkafei/my-projects#zhizhen-cut
+category: tools
+description:
+  en: 'A single-window video editing workbench opened from a DSH session: multi-video import, magnetic timeline with trimming and skimming, audio roles with ducking, local silence-detection rough cut, script-based captions, nine color looks, and MP4 export (WebM where the browser cannot record MP4).'
+  zh: '从 DSH 会话进入的单窗口视频剪辑工作台：多视频导入、磁吸时间线修剪与掠视、音频角色和自动闪避、本地静音检测粗剪、脚本字幕、9 种调色与 MP4 导出（浏览器不支持 MP4 录制时回退 WebM）。'

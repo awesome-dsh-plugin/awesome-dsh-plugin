@@ -1,0 +1,6 @@
+url: https://github.com/imnotRiv3r/dsh-job-notify
+name: imnotRiv3r/dsh-job-notify
+category: notify
+description:
+  en: Native Windows notifications when an unawaited background job settles (completed, failed, or stopped), when a conversation turn ends, or when the agent waits for a question answer or tool approval.
+  zh: 无人等待的后台任务结算（完成、失败或停止）、对话轮次结束、或 agent 等待你回答问题/工具审批时，弹出 Windows 原生通知。

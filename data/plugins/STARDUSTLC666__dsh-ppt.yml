@@ -1,6 +1,7 @@
 url: https://github.com/STARDUSTLC666/dsh-ppt
 name: STARDUSTLC666/dsh-ppt
 category: docs
+icon: https://raw.githubusercontent.com/STARDUSTLC666/dsh-ppt/master/assets/plugin-icon.webp
 description:
-  en: 'Presentation skill and tools: one sentence or one document to an HTML slideshow plus editable PPTX, seven layouts (incl. quote and native PPTX tables), speaker notes (HTML S-key panel and native notes slides), five built-in themes, default theme/language config and bilingual support. A step-by-step first-run guide (4 steps) now opens inside its settings panel.'
-  zh: 演示文稿技能与工具：一句话或一篇文档生成 HTML 放映与可编辑 PPTX，7 种页型（含金句与原生 PPTX 表格），演讲者备注（HTML 按 S 呼出 + PPTX 原生备注页），内置 5 套主题，可配置默认主题/语言，中英双语。面板内置 4 步首次使用引导，看一次后不再出现。
+  en: 'Presentation workbench and 13 ppt_* tools: generate offline HTML slideshows and editable PPTX decks with 24 themes, 6 master skeletons, 20 scenario blueprints and 20 built-in exemplars; import PPTX/Word/Excel/CSV, absorb reference layouts, edit slides with undo, check layout and source evidence, and export Remotion storyboards; PDF/PNG rendering requires the optional official LibreOffice engine.'
+  zh: '演示文稿工作台与 13 个 ppt_* 工具：生成离线 HTML 放映及可编辑 PPTX，含 24 套主题、6 套母版骨架、20 套场景蓝图与 20 套内置标杆范本；支持导入 PPTX/Word/Excel/CSV、吸收参考版式、点选改字与撤销、排版及事实出处检查、Remotion 分镜导出；PDF/PNG 渲染需可选官方 LibreOffice 引擎。'

@@ -1,0 +1,6 @@
+url: https://github.com/lieang-git/dsh-quote-cards
+name: lieang-git/dsh-quote-cards
+category: session
+description:
+  en: "Conversation bookmark cards: select text to save the quote with tags, a note, and a timestamp; browse saved quotes in a draggable gallery panel, filter by conversation, jump back to the source with a highlight, and restore or permanently delete items from a recycle bin."
+  zh: 对话摘记：选中文字即可收藏原话并加标签、说明和收藏时间；用可拖动的画廊面板浏览、按对话筛选，一键定位回原文并高亮，回收箱支持批量恢复与永久删除。

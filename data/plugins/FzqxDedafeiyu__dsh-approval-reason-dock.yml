@@ -1,0 +1,6 @@
+url: https://github.com/FzqxDedafeiyu/dsh-approval-reason-dock
+name: FzqxDedafeiyu/dsh-approval-reason-dock
+category: ui
+description:
+  en: "Add an optional rejection reason to approval prompts: the text is steered into the running turn before the rejection is answered, and the panel only follows the session you are currently viewing."
+  zh: "在审批卡上增加可选的拒绝理由：理由会先作为 steering 消息进入当前轮，再把审批答成拒绝；浮层只跟随你正在查看的会话。"

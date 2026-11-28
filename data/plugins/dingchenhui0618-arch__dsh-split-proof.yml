@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-split-proof
+name: dingchenhui0618-arch/dsh-split-proof
+category: tools
+description:
+  en: 'Read-only split-rule acceptance for DeepSeek Harness: point it at a Clash/Mihomo profile plus a JSON suite of expected routes (direct / proxy / block or a concrete policy) and it walks the rules in their real order, reporting per domain the expected route, the matched rule with its index and raw text, and what actually happens. Rules that need DNS, an IP-geo database or phone runtime state are marked as undecidable offline instead of guessed. Optional baseline diff checks that domestic direct routes did not move. Ships an agent tool, a conversation-view panel, a CLI with exit codes, and a self-contained HTML report. Zero runtime dependencies, no network, writes no device configuration. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给「手机连家里 Wi-Fi 自动分流」做只读验收：读一份 Clash/Mihomo 配置和一份 JSON 用例（direct / proxy / block，或具体策略名），按规则真实顺序逐条求值，输出每个域名的期望、实际命中规则（序号+原文）与最终策略。需要 DNS、IP 地理库或手机运行时状态的规则明确标为无法离线判定，不猜；可选基线对比检查国内直连有没有变。带 agent 工具、会话视图面板、带退出码的 CLI 和自包含 HTML 报告。零运行时依赖、不联网、不写任何设备配置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

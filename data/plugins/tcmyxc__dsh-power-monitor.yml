@@ -1,0 +1,6 @@
+url: https://github.com/tcmyxc/dsh-power-monitor
+name: tcmyxc/dsh-power-monitor
+category: usage
+description:
+  en: Current wall-side power in watts, today's energy use and electricity cost, shown above the sidebar account row.
+  zh: 在左侧边栏账号头像上方显示整机功耗、今日用电量与电费估算，支持电价与 CPU TDP 校准。

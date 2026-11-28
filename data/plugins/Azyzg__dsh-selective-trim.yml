@@ -1,0 +1,6 @@
+url: https://github.com/Azyzg/dsh-selective-trim
+name: Azyzg/dsh-selective-trim
+category: session
+description:
+  en: Trim a DSH session log segment by segment, with an automatic backup and a host-validated write. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 按段修剪 DSH 会话日志（可勾选、可反悔），写盘前自动备份并用宿主校验器验过。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

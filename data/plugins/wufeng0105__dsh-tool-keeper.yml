@@ -1,0 +1,7 @@
+url: https://github.com/wufeng0105/dsh-tool-keeper
+name: wufeng0105/dsh-tool-keeper
+category: tools
+description:
+  en: 'AI re-reads every tool''s manual on every reply, including the tools you never use. Hide the ones you don''t need and rewrite the manuals of the ones you keep — a tool''s own manual or any single parameter''s. Turning a whole MCP server off also removes its instruction page from the system prompt, so the server stops costing context even when it is not providing tools. Rewriting touches only the wording, never the schema, so a rewritten tool still works. Both the settings page and a model-callable tool write the same config; changes apply after a restart. Its HTTP routes have no DSH access check: requests without an Origin header are accepted. A page in your browser cannot forge the Host header, but it can still send such a request with fetch.'
+  zh: 'AI 每回答一次，都要把手上所有工具的说明书重读一遍，包括你从来用不到的那些。这个插件让你把用不上的收起来，并把留下的说明书改成你自己的话——工具本身的说明，或者任意一个参数的说明。关掉一整台 MCP 服务器时，它在系统提示词里的说明页也一起消失，所以这台服务器即使不提供工具、只剩说明页，也不再占上下文。改写只动文字、不碰参数格式，所以改过的工具照常能用。设置页和模型可调用的管理工具写的是同一份配置；改动重启后生效。它的 HTTP 路由没有 DSH 的访问检查：不带 Origin 头的请求会被接受。浏览器里的页面无法伪造 Host 头，但仍可以用 fetch 发出这种请求。'
+icon: https://raw.githubusercontent.com/wufeng0105/dsh-tool-keeper/main/icon.png

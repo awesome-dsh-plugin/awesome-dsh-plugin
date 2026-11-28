@@ -1,0 +1,6 @@
+url: https://github.com/yulongjiang1997/dsh-session-todos
+name: yulongjiang1997/dsh-session-todos
+category: dev
+description:
+  en: 'Pre-store instructions in a composer popover, then send them into the current conversation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在对话框的待办弹窗里预存指令，之后一键发送到当前会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,7 @@
+url: https://github.com/SSHOOTING/dsh-plugin-tool-dryrun
+name: SSHOOTING/dsh-plugin-tool-dryrun
+tarball: https://github.com/SSHOOTING/dsh-plugin-tool-dryrun/releases/download/v0.1.0/0.1.0.tgz
+category: security
+description:
+  en: 'Read-only dry-run view of tool calls: read vs write, permission and reversibility.'
+  zh: '只读工具预演视图：读/写区分、权限与可逆性。'

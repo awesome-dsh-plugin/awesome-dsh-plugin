@@ -1,0 +1,6 @@
+url: https://github.com/liweitan2046-cyber/dsh-wanfeng-studio
+name: liweitan2046-cyber/dsh-wanfeng-studio
+category: workflow
+description:
+  en: 'Remake a viral short video end to end in one workbench: source clip, character sheet behind a human approval gate before any paid render, AI face swap, frame-sample QA and the final cut, plus a media library, a three-track timeline, and any RunningHub workflow connected by its ID.'
+  zh: '爆款短视频复刻工作台：原片、角色图（付费生成前必须人工过审）、换人、抽帧质检、成片五步；附素材库与三轨时间线，填 RunningHub 工作流 ID 即可接入任意工作流。'

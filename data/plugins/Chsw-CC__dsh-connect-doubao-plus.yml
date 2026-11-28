@@ -1,0 +1,8 @@
+url: https://github.com/Chsw-CC/dsh-connect-doubao-plus
+name: Chsw-CC/dsh-connect-doubao-plus
+category: model
+description:
+  en: 'Fork of Wahwayhale/dsh-connect-doubao that connects a Doubao account to DeepSeek Harness as a model provider after one browser QR sign-in. Keeps the upstream menu-driven model discovery, composer billing multipliers, per-model thinking ladders, task-mode models on paid quota, chain-of-thought passthrough, Seedream image generation and read-only quota panel, and adds a daily check-in that can claim the reward and re-claim it on a timer, monthly and incentive quota windows instead of the fixed five-hour and weekly ones, a model picker that offers exactly the models ticked in the settings card, Windows / macOS / Linux session sealing, and stream hardening: a rejected conversation is never reused, the same-turn fallback opens a fresh one, three consecutive upstream failures trip a local circuit valve, and an interrupted stream stops the server-side generation.'
+  zh: 'Wahwayhale/dsh-connect-doubao 的 fork，扫码登录一次即可把豆包账号接入 DeepSeek Harness。保留上游的菜单式模型发现、对话框计费倍率、逐模型思考档位、走会员额度的任务模型、思考链透传、Seedream 生图与只读额度看板，并加入每日签到（可手动领取，也可定时自动补领）、按月与活动两档展示额度（不再是固定的五小时与周额度）、模型选择器只提供设置卡片里勾选的模型、Windows / macOS / Linux 跨平台会话密封，以及流式加固：被拒会话不再复用、同 turn 回退改发新会话、连续三次失败触发本地熔断阀、流中断时停掉服务端生成。'
+icon: https://raw.githubusercontent.com/Chsw-CC/dsh-connect-doubao-plus/main/docs/assets/dsh-connect-doubao-icon.png
+tarball: https://github.com/Chsw-CC/dsh-connect-doubao-plus/releases/download/v0.12.5/dsh-connect-doubao-plus-0.12.5.tgz

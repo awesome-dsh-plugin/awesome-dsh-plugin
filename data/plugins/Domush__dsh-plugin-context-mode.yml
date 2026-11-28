@@ -1,0 +1,6 @@
+url: https://github.com/Domush/dsh-plugin-context-mode
+name: Domush/dsh-plugin-context-mode
+category: memory
+description:
+  en: 'Native DSH support for context-mode (mksglu/context-mode), intercepting large tool outputs with SQLite FTS5 indexing, BM25+RRF search, and session continuity. On by default: tool outputs over 4 KB are replaced with a short preview while the full text is indexed into ~/.context-mode/context.db, and a section is added to the system prompt. Its ctx_execute and ctx_batch tools run shell, Node, Python, PowerShell or cmd commands with DSH''s own permissions and environment (not sandboxed), and ctx_index reads any local file path or fetches any http(s) URL it is given.'
+  zh: '原生支持 context-mode (mksglu/context-mode)，通过 SQLite FTS5 拦截工具大输出并提供 BM25+RRF 搜索与会话连续性恢复。默认开启：超过 4 KB 的工具输出会被替换成简短预览，全文索引进 ~/.context-mode/context.db，并在系统提示里加一段说明。其 ctx_execute、ctx_batch 工具以 DSH 自身的权限和环境变量运行 shell / Node / Python / PowerShell / cmd 命令（没有沙箱），ctx_index 可读取任意本地文件路径或抓取任意 http(s) 地址。'

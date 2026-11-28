@@ -1,0 +1,6 @@
+url: https://github.com/philomelcc/dsh-downloads
+name: philomelcc/dsh-downloads
+category: tools
+description:
+  en: 'Download queue with aria2 and optional Xunlei engines, magnet links, and a per-session history; aria2 is not bundled and must be installed separately, and the Xunlei engine needs its own SDK and API key. Built mainly for Windows. Its POST routes (add, pause, remove downloads, with a caller-chosen target directory) are mounted with webServer.register and only check that the connection is from loopback, so a web page open in your browser can queue downloads on your behalf.'
+  zh: '下载队列：aria2 与可选迅雷双引擎、磁力链接、按会话记录下载历史；aria2 不随包附带，需自行安装，迅雷引擎需自装 SDK 并提供 API Key；主要面向 Windows。它的 POST 路由（添加、暂停、删除下载，可指定保存目录）通过 webServer.register 挂载，只检查连接来自本机回环，所以浏览器里打开的任意网页都能替你加下载任务。'

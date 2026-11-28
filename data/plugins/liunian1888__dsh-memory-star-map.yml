@@ -1,0 +1,7 @@
+url: https://github.com/liunian1888/dsh-memory-star-map
+name: liunian1888/dsh-memory-star-map
+category: memory
+description:
+  en: Renders DSH session memories as an interactive 3D night sky with renameable lunar-mansion categories, meteor showers, focus mode, time travel and PNG/JSON export. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 把 DSH 会话记忆渲染成可交互的 3D 星空，含可重命名星宿、流星雨、聚焦模式、时间旅行与 PNG/JSON 导出。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/liunian1888/dsh-memory-star-map/main/docs/images/v4-main.png

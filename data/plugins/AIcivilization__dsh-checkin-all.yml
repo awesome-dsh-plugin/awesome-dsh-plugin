@@ -1,0 +1,6 @@
+url: https://github.com/AIcivilization/dsh-checkin-all
+name: AIcivilization/dsh-checkin-all
+category: usage
+description:
+  en: 'Daily auto check-in for MiniMax Code, WPS Lingxi, Baidu DuMate, AStudio, Qoder, Trae, Doubao, Huawei CodeArts and Tencent WorkBuddy: reads each app''s own local credentials so nothing has to be pasted, supports multiple accounts per service, and lets you add any other site yourself by importing a JSON definition the agent wrote for it. Streak tracking, per-service schedules, collapsible sidebar cards. The Doubao service can also read its login cookies from the local Chrome, Edge, Brave or Doubao app cookie store (Doubao hosts only), and a custom service sends requests to whatever http(s) URL its JSON names.'
+  zh: '每天自动给 MiniMax Code、WPS 灵犀、百度 DuMate、AStudio、Qoder、Trae、豆包、华为 CodeArts、腾讯 WorkBuddy 签到领积分：凭据取自本机 App 自己的登录态，不用手抠，每个服务支持多账号，列表之外的站点也能自己加——让 agent 查好接口、导入一份 JSON 就多一张卡片。带连续天数记账、按服务设时间、可折叠的侧边栏卡片。豆包服务还可以从本机 Chrome、Edge、Brave 或豆包 App 的 Cookie 库读取登录 Cookie（只取豆包的域名）；自定义服务会向其 JSON 里写的任意 http(s) 地址发请求。'

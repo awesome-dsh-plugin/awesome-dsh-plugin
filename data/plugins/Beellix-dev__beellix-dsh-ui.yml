@@ -1,0 +1,7 @@
+url: https://github.com/Beellix-dev/beellix-dsh-ui
+name: Beellix-dev/beellix-dsh-ui
+category: ui
+description:
+  en: 'Beelli X UI brings searchable settings to DSH NEXT on Windows. Appearance groups themes, skins, fonts, pets, and effects, while Models has its own page. Use images or MP4 wallpaper, adjust frosted panels, and save skin presets. Switch between pets and upload default and extra animations for each one. Preview, time, or skip MP4 and GIF startup animations. Add model connections from provider presets or a custom endpoint, fetch and select models, or enter model IDs manually. You can also restore or bulk-delete archived chats by workspace and switch or add plugin catalogs on the same page. Replaces the built-in Settings page and sidebar (disables ui-settings-general and ui-sidebar); run only one plugin that takes them over.'
+  zh: 'Beelli X UI 为 Windows 上的 DSH NEXT 提供一套可搜索的设置。左栏按用途导航，「外观」内分为主题、皮肤、字体、吉祥物和效果，「模型」单独管理服务连接。皮肤支持图片或 MP4 壁纸、磨砂面板与方案保存。桌宠可以添加多只、切换显示，并为每只上传默认和额外动作，右键播放。启动动画支持 MP4 或 GIF，可预览、设定时长和跳过。模型可用厂商预设或自定义接口，从服务获取型号后勾选，也能手动填写模型 ID。还支持按原工作区恢复或批量删除归档聊天，以及在插件页直接切换和添加市场。会替换内置设置页与侧栏（停用 ui-settings-general 与 ui-sidebar），请勿与其他接管设置页或侧栏的插件同装。'
+tarball: https://github.com/Beellix-dev/beellix-dsh-ui/releases/download/v0.1.1/beellix-dsh-ui-0.1.1.tgz

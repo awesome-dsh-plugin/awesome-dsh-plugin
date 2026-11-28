@@ -1,0 +1,6 @@
+url: https://github.com/hds1989824/dsh-agent-usage
+name: hds1989824/dsh-agent-usage
+category: usage
+description:
+  en: 'Left-sidebar panel that reads this machine''s local agent-client session logs (Claude desktop, Qwen Work, WorkBuddy, MiniMax Code, DeepSeek Harness) and shows per-client session counts and token consumption for today, the current week, or the current month, with a token-share donut.'
+  zh: 左侧栏面板，读取本机多个 Agent 客户端（Claude 桌面端、千问办公、WorkBuddy、MiniMax Code、DeepSeek Harness）的本地会话日志，按今天 / 本周 / 本月展示各客户端的会话数与 token 消耗，并给出用量占比环形图。

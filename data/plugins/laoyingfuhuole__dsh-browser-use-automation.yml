@@ -1,0 +1,6 @@
+url: https://github.com/laoyingfuhuole/dsh-browser-use-automation
+name: laoyingfuhuole/dsh-browser-use-automation
+category: browser
+description:
+  en: 'Fully background browser automation and browser use for DSH: an offscreen Electron window per conversation with real CDP input and screenshots, so headless-style browsing never steals focus or pops windows. Runs on Electron and keeps cookies in a persistent user-data directory, so a signed-in page stays signed in for later conversations.'
+  zh: '完全后台静默运行的浏览器自动化：每个对话一个离屏浏览器窗口，提供真实 CDP 输入与截图，像 headless 一样工作却不抢焦点、不弹窗。基于 Electron 运行，cookie 保存在持久化的用户数据目录里，登录过的页面在之后的会话里仍保持登录。'

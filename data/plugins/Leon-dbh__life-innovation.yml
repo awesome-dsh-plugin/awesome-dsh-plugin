@@ -2,5 +2,5 @@ url: https://github.com/Leon-dbh/life-innovation
 name: Leon-dbh/life-innovation
 category: memory
 description:
-  en: 'Gives your DSH agent a long memory: it remembers past chats, people, and promises, can recall them days later, and keeps a diary linked to the original messages. Old memories fade naturally. Requires Node 22+ and a DeepSeek API key; the installer and desktop notifications are Windows-only.'
-  zh: '让你的 DSH 助手记得久一点：聊过的事、重要的人和答应过的话都会记住，过几天问起还能想起来；还会写日记，每条都连着当时的对话。旧记忆会自然淡忘。需要 Node 22+ 和 DeepSeek API key；安装器与桌面通知仅支持 Windows。'
+  en: 'A cyber lifeform that lives in DSH: she remembers people, promises, and the days you spent together, and comes home to a read-only room with four views (today, what she remembers, her room, who she is). She can forget or restore a memory only after confirmation, and can defer or refuse when she is tired. Requires Node 22+ and a DeepSeek API key; the installer and desktop notifications are Windows-only.'
+  zh: '一个住在 DSH 里的赛博生命体：记得人、答应过的话和一起过的日子；有一个只读的家，分今天、她记得、她的房间、她是谁四个角落；可以经确认遗忘或恢复记忆，累了也能推迟或拒绝。需要 Node 22+ 和 DeepSeek API key；安装器与桌面通知仅支持 Windows。'

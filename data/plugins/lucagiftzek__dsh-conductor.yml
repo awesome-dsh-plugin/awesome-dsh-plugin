@@ -1,0 +1,6 @@
+url: https://github.com/lucagiftzek/dsh-conductor
+name: lucagiftzek/dsh-conductor
+category: session
+description:
+  en: 'A Conductor tab and commands for a chat''s context: /new replaces the context in place with a model-written handoff, /rewind restores the chat and the agent''s file edits to an earlier prompt, plus /drop, pins, an automatic compaction level, recovery after failed turns, silent messages between chats and agent and task orchestration. Supersedes dsh-orchestrator, dsh-force-compact and dsh-continue, so do not install it alongside them. Requires DSH >= 0.2.1-rc.5, Node >= 22.5, the web profile and dsh-better-sidebar.'
+  zh: '聊天上下文的 Conductor 标签页与命令：/new 用模型写的交接单就地替换上下文，/rewind 把对话与智能体的文件改动回退到更早的提示，另有 /drop、置顶、自动压缩阈值、失败轮次后的自动恢复、聊天间静默消息，以及 agent 与任务编排。取代 dsh-orchestrator、dsh-force-compact 与 dsh-continue，不能与它们同装。需要 DSH >= 0.2.1-rc.5、Node >= 22.5、web profile 与 dsh-better-sidebar。'

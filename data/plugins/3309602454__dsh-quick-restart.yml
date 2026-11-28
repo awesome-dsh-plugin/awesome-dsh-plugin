@@ -1,0 +1,6 @@
+url: https://github.com/3309602454/dsh-quick-restart
+name: 3309602454/dsh-quick-restart
+category: ui
+description:
+  en: 'One-click restart button in the DSH conversation header: it checks for running sessions and background jobs and warns before restarting, then closes and relaunches the desktop app without opening a console window. Windows desktop app only: it restarts through a temporary Windows scheduled task, and a restart interrupts running work.'
+  zh: 'DSH 会话标题栏的一键重启按钮：重启前会检查并警告正在运行的会话与后台任务，点击后关闭并重新启动桌面端，全程不弹控制台窗口。仅限 Windows 桌面版：通过临时的 Windows 计划任务完成重启，重启会中断正在运行的工作。'

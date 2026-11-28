@@ -1,0 +1,7 @@
+url: https://github.com/avego/dsh-api-monitor
+name: avego/dsh-api-monitor
+category: dev
+description:
+  en: 'Inspects the Host''s outbound API calls in a right-sidebar tab — URL, method, every request header, JSON body and response — assembling streamed replies into readable text and highlighting search across each view. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在右侧栏标签页里查看宿主发出的 API 调用：URL、方法、所有请求头、JSON 请求体与响应，把流式回复拼成可读文本，并在每个视图里高亮搜索结果。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/avego/dsh-api-monitor/main/icon.png

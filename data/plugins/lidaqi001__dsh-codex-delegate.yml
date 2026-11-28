@@ -1,0 +1,6 @@
+url: https://github.com/lidaqi001/dsh-codex-delegate
+name: lidaqi001/dsh-codex-delegate
+category: workflow
+description:
+  en: 'Adds a DeepSeek Harness agent preset that hands implementation work to Codex subagents (auto-approved, workspace-write sandbox); the session agent only splits tasks, dispatches them and reports results. Requires DSH 0.2.2-rc.1+, the @deepseek-ai/dsh-subagent-codex bundle and a locally installed, logged-in Codex CLI.'
+  zh: '新增一个 DeepSeek Harness Agent 预设：把实际工作交给 Codex 子代理执行（自动审批、工作区可写），会话主代理只负责拆分任务、委派与汇总结果。需 DSH 0.2.2-rc.1+、已装 @deepseek-ai/dsh-subagent-codex，且本机已安装并登录 Codex CLI。'

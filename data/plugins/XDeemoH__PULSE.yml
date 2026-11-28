@@ -1,0 +1,7 @@
+url: https://github.com/XDeemoH/PULSE
+name: XDeemoH/PULSE
+category: ui
+icon: https://raw.githubusercontent.com/XDeemoH/PULSE/main/docs/logo.png
+description:
+  en: 'Running panel for dsh for skill management and visualizing skill calls: live skill and tool calls, the skill-catalog token budget against a line that follows the model''s context window, a skill loadout window that enables and disables skills in bulk with dry run and undo, a skill dock left of the composer that suggests skills for what you are typing (scored locally, no model calls) and can enable parked ones after you confirm, goals and ideas, and saved conversation excerpts. Applying a loadout, or enabling a skill from the dock, moves skill folders between ~/.agents/skills and ~/.agents/skills-parked, which other apps share (you confirm first, undo available); automatic translation, goal inference and idea collection call your default model only after you opt in on first open.'
+  zh: 'dsh 运行面板，用于技能管理与 Skill 调用可视化：实时显示技能调用和工具调用；技能目录占用的 token 预算，预算线随模型上下文窗口变化；技能装配窗口可批量启用、停用技能，带预演和撤销；输入框左侧的技能推荐栏会根据你正在写的内容推荐技能（本机打分，不调用模型），确认后可直接启用已停用的技能；另有目标与灵感、对话收藏。应用技能装配或从推荐栏启用技能，会在共享的 ~/.agents/skills 与 ~/.agents/skills-parked 之间移动技能目录（先确认、可撤销），其他应用也会受影响；自动翻译、目标推断和灵感收集只有在首次打开时选择开启后，才会调用你的默认模型。'

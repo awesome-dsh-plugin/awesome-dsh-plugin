@@ -1,0 +1,7 @@
+url: https://github.com/lonelycrab888/roundtable-bots
+name: lonelycrab888/roundtable-bots
+category: workflow
+description:
+  en: 'Adds lightweight, minimally invasive multi-Bot roundtables to DeepSeek Harness using its native composer, with Grok Bot-style @mentions and visible handoffs as KingBot assigns tasks, moderates, and summarizes in the same chat.'
+  zh: '为 DeepSeek Harness 添加轻量、低侵入的多 Bot 圆桌讨论，沿用原生输入框，像 Grok Bot 一样支持 @ 点名和可见的任务交接，由 KingBot 在同一会话中分派任务、主持讨论并汇总结论。'
+icon: https://raw.githubusercontent.com/lonelycrab888/roundtable-bots/main/assets/roundtable-bots-icon-v2.png

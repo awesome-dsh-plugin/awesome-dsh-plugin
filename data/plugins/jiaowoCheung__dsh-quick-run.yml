@@ -1,0 +1,7 @@
+url: https://github.com/jiaowoCheung/dsh-quick-run
+name: jiaowoCheung/dsh-quick-run
+category: dev
+description:
+  en: 'Run configurations in the DSH conversation header: it lists the scripts already in the project (package.json scripts and root .ps1/.bat/.cmd/.sh files), runs the selected one in the session working directory, and streams the output in a floating panel.'
+  zh: 'DSH 会话头部的运行配置：自动列出项目里已有的脚本（package.json 的 scripts 与根目录的 .ps1/.bat/.cmd/.sh），在会话工作目录里运行选中的那个，并在浮动面板里实时输出。'
+icon: https://raw.githubusercontent.com/jiaowoCheung/dsh-quick-run/main/assets/icon-180.png

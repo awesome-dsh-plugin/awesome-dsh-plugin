@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-tablelint'
+name: 'zjukop3/dsh-verify-kit#dsh-tablelint'
+category: 'tools'
+description:
+  en: 'Markdown table check for generated reports: rows with the wrong cell count, a delimiter row that disagrees with the header, duplicate or empty headers, and tables with no rows. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '生成报告的 Markdown 表格检查：行列错位、分隔行与表头不符、表头重名、只有表头没有数据行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-verify-kit/main/assets/icon-180.png'

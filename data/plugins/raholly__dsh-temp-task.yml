@@ -1,0 +1,7 @@
+url: https://github.com/raholly/dsh-temp-task
+name: raholly/dsh-temp-task
+category: session
+description:
+  en: Adds a Temporary tasks section above the workspace list, where one click creates a timestamped folder, workspace and session; tasks support search, sort, pin, rename and archive, can be moved into a regular workspace, and tasks that never receive a message are cleaned up automatically.
+  zh: 在工作区列表上方增加独立的「临时任务」区：一键创建带时间戳的文件夹、工作区与会话；支持搜索、排序、置顶、重命名与归档，可把任务移入普通工作区，未发过消息的任务会自动回收。
+icon: https://raw.githubusercontent.com/raholly/dsh-temp-task/main/docs/images/icon.png

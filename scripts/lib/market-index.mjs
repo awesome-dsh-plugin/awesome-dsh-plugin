@@ -15,7 +15,7 @@
  */
 import semver from 'semver'
 import { parseMarketIndex } from '@deepseek-ai/dsh-plugin-market-index'
-import { slugOf } from './terms.mjs'
+import { slugOf, slugHref } from './terms.mjs'
 
 export const INDEX_ORIGIN = 'https://awesome-dsh-plugin.com'
 
@@ -111,6 +111,10 @@ export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIG
   const indexUrl = `${origin}/index.json`
   const skipped = { noNpm: 0, noVersion: 0, noPublishTime: 0, refused: 0 }
   const refused = []
+  // Which entry claimed each npm name. Format 1 keys plugins by name, so a
+  // monorepo root and one of its subdirectories that resolve to the same
+  // package can only be listed once - that row is spent, not the whole index.
+  const claimed = new Map()
 
   for (const entry of entries) {
     const record = npmMap[entry.url]
@@ -126,7 +130,7 @@ export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIG
       name: record.npm,
       title: entry.name,
       ...(description === undefined ? {} : { description }),
-      homepage: `${origin}/p/${slugOf(entry.url)}/`,
+      homepage: `${origin}/p/${slugHref(slugOf(entry.url))}/`,
       repository: repositoryOf(entry.url),
       // Everything the format defaults is left out: `keywords: []` and
       // `engines: {}` cost bytes in every one of ~3,000 entries and say
@@ -139,11 +143,22 @@ export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIG
         ...(dsh === undefined ? {} : { engines: { dsh } }),
       }],
     }
+    // A monorepo root and one of its subdirectories can resolve to the same
+    // package (dsh-dots and dsh-dots/packages/dsh-dot-mcp both resolve to
+    // dsh-dot-mcp), and format 1 keys plugins by name: the parser rejects the
+    // document, not the second row. First entry in list order keeps the name.
+    const owner = claimed.get(plugin.name)
+    if (owner !== undefined) {
+      skipped.refused += 1
+      refused.push(`${entry.url}: ${plugin.name} is already listed by ${owner}`)
+      continue
+    }
     // Validate one plugin at a time so a single bad row costs that row, not
     // the whole index; the caller sees exactly which entry and why.
     try {
       parseMarketIndex({ ...spec, plugins: [plugin] }, indexUrl)
       spec.plugins.push(plugin)
+      claimed.set(plugin.name, entry.url)
     } catch (error) {
       skipped.refused += 1
       refused.push(`${entry.url}: ${error.message}`)

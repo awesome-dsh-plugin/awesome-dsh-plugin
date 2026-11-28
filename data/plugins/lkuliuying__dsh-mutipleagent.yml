@@ -1,0 +1,7 @@
+url: https://github.com/lkuliuying/dsh-mutipleagent
+name: lkuliuying/dsh-mutipleagent
+category: ui
+description:
+  en: '3D office view for DeepSeek Harness: the sidebar panel turns the real main session, its sub-agents, tool activity and reports into animated desks, with per-desk screen details and a notification centre for collaboration events; sessions are picked per working directory. Read-only: it starts no tasks, calls no model, needs no API key, and ships its own scene and models (no CDN). Requires DSH 0.2.2-rc.1 (or a later 0.2.x) and Node ^22.19.0 || >=24.0.0.'
+  zh: 'DeepSeek Harness 的 3D 多 Agent 办公室：侧栏面板把真实主会话、子 Agent、工具活动和汇报呈现为动画工位，点开工位屏幕可查看该 Agent 的详情，通知中心记录协作动态，会话按工作目录分组选择。只读：不启动任务、不调用模型、不需要 API Key，场景与模型随包提供，不使用 CDN。要求 DSH 0.2.2-rc.1（或之后的 0.2.x）与 Node ^22.19.0 || >=24.0.0。'
+tarball: https://github.com/lkuliuying/dsh-mutipleagent/releases/latest/download/dsh-mutipleagent.tgz

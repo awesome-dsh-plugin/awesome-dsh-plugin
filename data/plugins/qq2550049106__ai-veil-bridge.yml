@@ -1,0 +1,7 @@
+url: https://github.com/qq2550049106/ai-veil-bridge
+name: qq2550049106/ai-veil-bridge
+category: notify
+icon: https://raw.githubusercontent.com/qq2550049106/ai-veil-bridge/main/assets/icon-180.png
+description:
+  en: 'AI-Veil takeover indicator: registers the veil_emit and veil_cancel tools so every agent takeover action shows a system-level banner and border, plays a cue, sends a desktop notification, and offers one-key abort.'
+  zh: 'AI-Veil 接管提示器：把 Agent 的接管动作注册为 veil_emit / veil_cancel 两个工具，桌面端随之弹出系统级横幅与边框、播放提示音、发桌面通知，并可一键中止。'

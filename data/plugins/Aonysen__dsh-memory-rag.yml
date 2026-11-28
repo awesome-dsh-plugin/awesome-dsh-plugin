@@ -1,0 +1,7 @@
+url: https://github.com/Aonysen/dsh-memory-rag
+name: Aonysen/dsh-memory-rag
+category: memory
+description:
+  en: Long-term RAG memory for DSH agents with cloud, local Ollama, and offline BM25 keyword modes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 给 DSH Agent 的 RAG 长期记忆，支持云端、本地 Ollama 与离线 BM25 关键词三种模式。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/Aonysen/dsh-memory-rag/main/docs/icon-180.png

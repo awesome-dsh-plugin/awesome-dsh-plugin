@@ -1,0 +1,6 @@
+url: https://github.com/chen1pengvincent/dsh-archived-manager
+name: chen1pengvincent/dsh-archived-manager
+category: session
+description:
+  en: 'Searches archived DSH sessions, restores them to the sidebar, and supports bulk cleanup with a recoverable Recently Deleted area, configurable retention, and a preview before permanent deletion. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '检索 DSH 已归档会话、还原到侧边栏，并支持批量清理、可恢复的「最近删除」、可配置的保留期限和彻底删除前预览。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

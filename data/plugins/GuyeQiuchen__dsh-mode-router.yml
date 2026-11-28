@@ -1,0 +1,6 @@
+url: https://github.com/GuyeQiuchen/dsh-mode-router
+name: GuyeQiuchen/dsh-mode-router
+category: identity
+description:
+  en: Classifies each incoming message as chat or work by rule-based scoring and injects the matching answer protocol, with manual /chat, /work and /auto overrides and a mode_status diagnostic tool.
+  zh: 用规则给每条消息打分，区分闲聊与派活并注入对应回答协议，支持 /chat、/work、/auto 手动切换与 mode_status 诊断。

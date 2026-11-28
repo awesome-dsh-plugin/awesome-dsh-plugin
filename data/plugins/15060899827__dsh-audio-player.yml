@@ -1,0 +1,6 @@
+url: https://github.com/15060899827/dsh-audio-player
+name: 15060899827/dsh-audio-player
+category: voice
+description:
+  en: 'Inline audio player for generated clips and songs: the play_audio tool renders a player in the conversation (promoted into the transcript when the host supports it, otherwise inside the tool-call fold). Serves only allow-listed directories, supports Range seeking and HEAD, 512 MB cap per file.'
+  zh: 对话内音频播放器：play_audio 工具把生成的语音和歌曲直接渲染成播放器（宿主支持时提升到正文，否则留在工具折叠里）。只服务白名单目录，支持 Range 拖动与 HEAD，单文件上限 512 MB。

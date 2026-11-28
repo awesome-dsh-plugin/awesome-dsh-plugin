@@ -1,0 +1,6 @@
+url: https://github.com/huanyu-a/dsh-ssh-hub
+name: huanyu-a/dsh-ssh-hub
+category: remote
+description:
+  en: 'Server fleet operations hub for DeepSeek Harness: keeps 6 SSH tools (list, exec, upload, download, tunnel, cluster) and adds 9 more for fleet inspection with retained rounds, metrics and alert rules, deployment rollout with per-batch health probes and rollback, cross-host log search, and an audit trail; agentless, all over SSH. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '面向 DeepSeek Harness 的服务器车队运维插件：保留 6 个 SSH 工具（清单、执行、上传、下载、隧道、集群），另加 9 个工具用于巡检并留存每轮结果、指标与告警规则、按批健康探测与失败回滚的部署发布、跨机日志检索，以及审计留痕；无 agent，全部通过 SSH 完成。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

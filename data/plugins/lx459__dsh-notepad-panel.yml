@@ -1,0 +1,7 @@
+url: https://github.com/lx459/dsh-notepad-panel
+name: lx459/dsh-notepad-panel
+category: ui
+description:
+  en: A notepad panel for the DSH web GUI with multiple plain-text notes, search, and local autosave.
+  zh: DSH Web 界面的记事本面板，支持多个纯文本笔记、搜索与本地自动保存。
+icon: https://raw.githubusercontent.com/lx459/dsh-notepad-panel/main/assets/icon-180.png

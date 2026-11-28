@@ -1,0 +1,6 @@
+url: https://github.com/sayzwx/dsh-monitor
+name: sayzwx/dsh-monitor
+category: usage
+description:
+  en: 'Adds a monitor panel to the sidebar that reads local DSH session logs and shows, per model and per task, call counts, tokens, cache hit rate and estimated cost, with model-share and daily-trend charts; official DeepSeek models use official peak and off-peak prices, third-party models can be given prices in the panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在侧边栏加入「监控台」面板，读取本地会话日志，按模型和任务统计调用次数、token、缓存命中率与预估花费，并提供模型占比、每日趋势图表；官方 DeepSeek 模型按官方高峰/空闲价自动计价，第三方模型可在面板里填写单价。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

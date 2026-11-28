@@ -1,0 +1,6 @@
+url: https://github.com/a895047059/dsh-stack-diagram
+name: a895047059/dsh-stack-diagram
+category: skill
+description:
+  en: 'Bundles the stack-diagram architecture-diagram skill as a runtime skill, and injects a system-prompt section so the model draws diagrams without being asked. Output is self-contained HTML plus light and dark PNGs from bundled Python scripts; brand logos are fetched at run time.'
+  zh: '把 stack-diagram 架构图技能注册成运行时技能，并注入一段系统提示路由，模型遇到架构、技术栈、部署拓扑需求时会主动画图。输出为自包含 HTML 与明暗两版 PNG，由包内 Python 脚本生成；品牌图标在运行时抓取。'

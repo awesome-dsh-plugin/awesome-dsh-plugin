@@ -2,5 +2,5 @@ url: https://github.com/ccch713/deepddw/tree/main/plugins/ddw-teams-panel
 name: ccch713/deepddw#ddw-teams-panel
 category: memory
 description:
-  en: 'Adds a multi-user settings panel to the DSH web client: usage-mode selection, member management with online status and device binding, and switching or sharing of per-member memory and knowledge bases.'
-  zh: '为 DSH Web 客户端增加多用户设置面板：使用模式选择、成员管理与在线状态、一人多设备绑定，以及各成员记忆体和知识库的切换与共享。'
+  en: 'Shared by a team of up to 20 on one DSH: isolated memory and knowledge base per member, any LAN phone/tablet/laptop with no app install, distillation into a deduped shared space. Device-bound identities, the stock DSH workbench, writes wait for human confirmation, AI assets pack up and leave in one click, nothing leaves your LAN, no DSH source changes. Also works as a family sharing one server across devices.'
+  zh: '20人团队共用：成员记忆彼此隔离，局域网多设备免装直连，蒸馏共享——每成员独立记忆体与知识库、设备绑定身份，免装 App 直用官方原版工作台；写操作先确认再执行，AI 资产一键打包带走，不改一行源码、数据不出内网；也可以一个家庭多设备使用。'

@@ -1,0 +1,6 @@
+url: https://github.com/lonelycrab888/dsh-molecular-viewer
+name: lonelycrab888/dsh-molecular-viewer
+category: tools
+description:
+  en: 'Gives DeepSeek Harness agents tools to independently inspect, align, and measure protein structures, with an interactive Mol* 3D viewer in chat where users can rotate structures, select residues, and ask about their selections.'
+  zh: '让 DeepSeek Harness 的 Agent 能独立查看、对齐和测量蛋白质结构。你也可以在对话中的 Mol* 三维视图里旋转结构、点选残基，并针对选中的部位继续提问。'

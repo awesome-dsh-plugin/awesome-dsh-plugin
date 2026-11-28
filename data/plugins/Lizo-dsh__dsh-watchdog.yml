@@ -1,0 +1,6 @@
+url: https://github.com/Lizo-dsh/dsh-watchdog
+name: Lizo-dsh/dsh-watchdog
+category: session
+description:
+  en: 'Wakes a Session after the host restarts: an agent arms its own Session, and after the next boot the plugin delivers one message to it, then unregisters it.'
+  zh: '宿主重启后唤醒会话：由 Agent 把自己的会话登记进唤醒列表，下次启动后插件投递一条消息把它叫醒，投完自动注销。'

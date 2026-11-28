@@ -1,0 +1,7 @@
+url: https://github.com/wyk4447/dsh-diff-review
+name: wyk4447/dsh-diff-review
+category: security
+icon: https://raw.githubusercontent.com/wyk4447/dsh-diff-review/main/assets/icon-256.png
+description:
+  en: 'Pre-execution review gate for file writes, edits and deletions: the tool call is held before it runs, a right-sidebar panel shows the diff (unified, or source versus result side by side), and nothing is written until Accept is clicked. Deletion and rename are always asked, "Allow all" is a manual per-conversation switch that resets when the host restarts, and "/diff-review off" silences a conversation completely. Commands are judged by shape instead of by name, so PowerShell, cmd, bash and inline scripts that create, overwrite or delete files are held too; when the new content cannot be computed the panel shows the command and the files it would touch. The panel opens only for the conversation you are looking at, and every accepted change is kept as a snapshot that can be restored from a per-turn history view. Zero runtime dependencies.'
+  zh: '写入前的审查闸门：write、edit 与删除操作在执行前被挂起，右侧边栏展示算好的 diff（统一视图或原文/新文并排），点「接受」才真正落盘。删除与改名永远照问，「全部允许」是按对话的手动开关、宿主重启即恢复，/diff-review off 则让整个对话彻底安静。命令按「形状」而不是按名字判定，PowerShell、cmd、bash 与内联脚本里创建、覆盖、删除文件的命令同样挂起；算不出新内容时，面板展示原始命令与它会动的文件。面板只为你眼前这个对话弹出，已接受的改动留有快照，可在按轮次分组的「历史」里还原。零运行时依赖。'

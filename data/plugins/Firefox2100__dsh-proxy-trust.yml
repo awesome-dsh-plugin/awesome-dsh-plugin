@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-proxy-trust
+name: Firefox2100/dsh-proxy-trust
+category: remote
+description:
+  en: Lets the DSH Web UI run behind an authenticating reverse proxy, with separate controls for trusted hosts, login bypass, cross-site navigation, local-page trust, and an optional network listener.
+  zh: 让 DSH Web UI 可在带身份验证的反向代理后运行，并分别控制受信任主机、跳过登录、跨站导航、本地页面信任和可选的网络监听器。

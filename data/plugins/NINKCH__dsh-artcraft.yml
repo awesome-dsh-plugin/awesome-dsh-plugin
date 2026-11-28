@@ -1,0 +1,6 @@
+url: https://github.com/NINKCH/dsh-artcraft
+name: NINKCH/dsh-artcraft
+category: tools
+description:
+  en: 'Drives the open-source ArtCraft studio suite (17 apps including PhotoCraft, FilmCraft and PdfCraft) from DeepSeek Harness: agent tools, a same-origin HTTP API, a bundled craft skill pack, and plugins-page status with self-update. The ArtCraft apps are not bundled: install them separately so the plugin can find their CLIs (auto-discovery, artcraft.config.json or PATH).'
+  zh: '从 DeepSeek Harness 驱动开源创作套件 ArtCraft（含 PhotoCraft、FilmCraft、PdfCraft 等 17 个应用）：提供代理工具、同源 HTTP API、内置 craft 技能包，以及插件页状态与自更新。不含 ArtCraft 应用本体：需另行安装各应用，插件通过自动探测、artcraft.config.json 或 PATH 找到它们的 CLI。'

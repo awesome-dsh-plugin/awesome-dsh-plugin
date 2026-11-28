@@ -1,0 +1,7 @@
+url: https://github.com/kuangdang123/dsh-zotero
+name: kuangdang123/dsh-zotero
+category: tools
+description:
+  en: 'Zotero bridge: search, read, add, update and trash items in a local Zotero library, read PDF annotations and notes, pull indexed full text, and find related papers by DOI. Needs Zotero 7 or later with its local API enabled; the first write triggers a Zotero authorization prompt (the key is stored in plugin-data/dsh-zotero/auth.json) and permanent deletion asks for confirmation. Finding and adding items query OpenAlex, Crossref, arXiv, PubMed and Open Library. Uses the same package name (dsh-zotero) as Vncntvx/dsh-zotero, so only one of the two can be installed per profile.'
+  zh: 'Zotero 直连：检索、新增、修改、回收本机条目，读 PDF 高亮批注与笔记，取已索引全文，按 DOI 找相关论文。需要 Zotero 7 及以上并开启其本地 API；首次写入会触发 Zotero 授权提示（密钥存在 plugin-data/dsh-zotero/auth.json），永久删除需要确认。检索与新增文献会查询 OpenAlex、Crossref、arXiv、PubMed 和 Open Library。包名与 Vncntvx/dsh-zotero 相同（dsh-zotero），同一个 profile 里只能装其中一个。'
+icon: https://raw.githubusercontent.com/kuangdang123/dsh-zotero/main/icon.png

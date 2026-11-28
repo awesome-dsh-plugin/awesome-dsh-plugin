@@ -2,6 +2,6 @@ url: https://github.com/yingqi-studio/md2chat-dsh-share
 name: yingqi-studio/md2chat-dsh-share
 category: ui
 description:
-  en: 'Adds a Share to chat action under each reply: converts the answer to WeChat or WeCom text, ordered segments or a long image, editable-table email HTML, or a downloadable Word document.'
-  zh: '在每条回复下加「分享到聊天」：把回答转成微信/企微可直接粘贴的文本、分段或长图、可编辑表格的邮件 HTML，或直接下载 Word 文档。'
+  en: 'Adds a Share action to every reply: turn an answer into something you can paste into WeChat or WeCom — plain text, a few ordered segments, or one long image — or export an editable Word document (tables, code and formulas stay native) or table HTML for email. Conversion runs locally; the answer itself is never uploaded.'
+  zh: '在每条回复下加一个「分享到聊天」：把回答转成能直接粘贴进微信/企微的内容——纯文本、分几段发，或一张长图；也能导出可编辑的 Word（表格、代码、公式保持原生结构）或邮件用的表格 HTML。转换全部在本机完成，正文不上传。'
 icon: https://raw.githubusercontent.com/yingqi-studio/md2chat-dsh-share/main/assets/icon-180.png

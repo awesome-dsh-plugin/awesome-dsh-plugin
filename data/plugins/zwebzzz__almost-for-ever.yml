@@ -1,0 +1,6 @@
+url: https://github.com/zwebzzz/almost-for-ever
+name: zwebzzz/almost-for-ever
+category: memory
+description:
+  en: 'Persistent memory and a local knowledge base for DSH, built from plain Markdown notes. Automatically recalls relevant entries on every turn using library and section tags, title tokens and body text, injecting exact line ranges instead of whole files. The visual memory atlas centers AGENTS.md among size- and color-weighted libraries: full-text search, read, add, edit and delete entries and sections in one place. Safe editing includes version-conflict protection and snapshot undo; model-proposed sticky-note writes still require confirmation. No database, embedding service or hand-maintained index. Reads and writes only local memory files and AGENTS.md. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 DSH 提供本地 Markdown 长期记忆与个人知识库：每轮自动检索并注入相关笔记，按库与章节标签、标题和正文排序，只带命中的行号区间，不整篇塞上下文。可视化馆藏地图以 AGENTS.md 为中心，库卡按体量调整大小与颜色浓度；跨库全文检索、阅读、条目与章节增删修改都在同一个面板完成。编辑有版本冲突保护和快照撤销，模型提议的便利贴写入仍需你确认。无需数据库、Embedding 服务或手写索引，只读写本机记忆文件与 AGENTS.md。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

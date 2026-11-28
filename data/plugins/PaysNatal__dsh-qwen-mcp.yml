@@ -1,0 +1,6 @@
+url: https://github.com/PaysNatal/dsh-qwen-mcp
+name: PaysNatal/dsh-qwen-mcp
+category: tools
+description:
+  en: 'Connects all seven Qwen Token Plan Harness-entitlement MCP services (enhanced search, web fetch, code interpreter, vertical search, image, TTS, ASR) plus the decision-model-preview model (qwen_decide) as native tools, with a per-service on/off and live-status panel.'
+  zh: '一步接全千问 Token Plan 的 7 个 Harness 权益 MCP 服务（联网搜索、网页解析、代码解释器、垂类搜索、图像生成、语音合成、语音识别）与决策模型（qwen_decide），附逐服务开关与实时状态面板。'

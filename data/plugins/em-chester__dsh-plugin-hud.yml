@@ -1,0 +1,6 @@
+url: https://github.com/em-chester/dsh-plugin-hud
+name: em-chester/dsh-plugin-hud
+category: ui
+description:
+  en: 'Turns the whole window into an animated data-stream backdrop, and gives every session row a rotating double ring while the model is thinking and an in-row breathing progress bar while it writes, with several sessions animating at once.'
+  zh: '整窗换成动态数据流背景；会话行在模型思考时亮起旋转双环，输出时显示行内呼吸进度条，多个会话可同时播放。'

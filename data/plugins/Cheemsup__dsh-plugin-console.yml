@@ -1,0 +1,7 @@
+url: https://github.com/Cheemsup/dsh-plugin-console
+name: Cheemsup/dsh-plugin-console
+category: dev
+description:
+  en: 'DSH sidebar plugin console: inspect plugin information, session sources and tool ownership, preview context content and the impact of disabling a plugin, and customize prompts and tools for the first request.'
+  zh: 'DSH 侧边栏插件控制台：查看 DSH 插件信息、会话来源与工具归属，预演上下文内容与插件禁用影响，并支持提示词/工具定制首次请求。'
+icon: https://raw.githubusercontent.com/Cheemsup/dsh-plugin-console/main/docs/images/icon.png

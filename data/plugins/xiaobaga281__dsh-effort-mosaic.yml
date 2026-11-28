@@ -1,0 +1,8 @@
+url: https://github.com/xiaobaga281/dsh-effort-mosaic
+name: xiaobaga281/dsh-effort-mosaic
+category: ui
+tarball: https://github.com/xiaobaga281/dsh-effort-mosaic/releases/latest/download/dsh-effort-mosaic.tgz
+icon: https://raw.githubusercontent.com/xiaobaga281/dsh-effort-mosaic/main/docs/icon-180.png
+description:
+  en: 'Replaces the DSH model-menu reasoning-effort row with a continuous track. Two styles are available: a pixel-mosaic particle wall that stays dense next to the knob and drifts apart toward the left, and a neon capsule whose highest tier wipes from blue to purple and adds a spark burst and drifting particles. Knob shape, size, fill, accent color, highest-tier glow and light-up animation, and out-of-track particle effects are configurable in the plugin settings.'
+  zh: '把 DSH 模型菜单的「推理等级」一行换成连续滑轨。两种风格可选：贴近滑块处密实、向左逐渐脱离网格漂散的像素马赛克粒子墙，以及最高档用蓝盖板擦出蓝到紫渐变、带火星与漂移粒子的霓虹胶囊轨道。滑块形状、尺寸、填充、强调色、最高档点亮与光晕动画、粒子越界效果均可在插件设置中调整。'

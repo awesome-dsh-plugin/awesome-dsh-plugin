@@ -1,0 +1,6 @@
+url: https://github.com/LiuQhahah/dsh-commit-review
+name: LiuQhahah/dsh-commit-review
+category: git
+description:
+  en: 'Review commits made in the current workspace, grouped by repository, each expandable to its per-file diff.'
+  zh: '按仓库分组查看本工作区产生的提交，每个提交可展开查看文件级 diff。'

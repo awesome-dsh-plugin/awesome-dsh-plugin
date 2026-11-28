@@ -1,0 +1,6 @@
+url: https://github.com/deeparchi-ai/dsh-deepsight
+name: deeparchi-ai/dsh-deepsight
+category: skill
+description:
+  en: 'Adds a deep-research agent preset with the DeepSight methodology skill bundled, plus three tools that set an evidence contract, audit claim tiers along the provenance chain of every action item, and summarize the persisted ledger. Delivery is blocked while an action basis derives from unverified estimates or an unresolved conflict.'
+  zh: '新增一个深度研究 Agent 预设，内置 DeepSight 方法论技能；另附三个工具，分别用于设定证据契约、沿行动依据的来源链审计结论档位、汇总已落盘账本。行动依据若源自未验证估算或尚未闭环的冲突，交付会被拦截。'

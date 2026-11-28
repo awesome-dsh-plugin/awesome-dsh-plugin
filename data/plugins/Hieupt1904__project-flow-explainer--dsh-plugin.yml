@@ -1,0 +1,7 @@
+url: https://github.com/Hieupt1904/project-flow-explainer/tree/main/dsh-plugin
+name: Hieupt1904/project-flow-explainer#dsh-plugin
+category: tools
+description:
+  en: 'Builds offline codebase maps and flow diagrams with file and line evidence. Includes seven code-intelligence tools, a slash command for maps and blueprints, and local map lookup or optional Ask with a configured DeepSeek Harness model.'
+  zh: '生成可离线查看的代码库地图和流程图，并提供文件与行号证据。包含七个代码分析工具、用于地图和蓝图的斜杠命令，以及本地地图查询和可选的 DeepSeek Harness 模型问答。'
+tarball: https://github.com/Hieupt1904/project-flow-explainer/releases/latest/download/project-flow-explainer.tgz

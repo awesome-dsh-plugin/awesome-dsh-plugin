@@ -1,0 +1,7 @@
+url: https://github.com/vegetable86/dsh-multi-session
+name: vegetable86/dsh-multi-session
+category: ui
+description:
+  en: 'Tiling multi-session workspace for the DSH web UI: 1-4 panes whose splitters resize neighbouring tiles together, browser-style tabs that keep several tiling boards, drag-to-swap sessions, per-pane session pickers, and a workspace chooser when creating a session inside a pane.'
+  zh: 'DSH Web UI 的多会话平铺工作区：1–4 个格子，拖分隔条同时改变相邻格子的大小；浏览器式标签页可并存多套布局；拖标题栏交换会话；每格独立选会话；格内新建会话时先选工作区，全程不跳出面板。'
+icon: https://raw.githubusercontent.com/vegetable86/dsh-multi-session/main/icon.png

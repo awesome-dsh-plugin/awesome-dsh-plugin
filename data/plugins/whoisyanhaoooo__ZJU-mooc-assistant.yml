@@ -1,0 +1,6 @@
+url: https://github.com/whoisyanhaoooo/ZJU-mooc-assistant
+name: whoisyanhaoooo/ZJU-mooc-assistant
+category: tools
+description:
+  en: 'A DeepSeek Harness plugin for ZJU students on icourse163 that plays course videos, handles quizzes and exams, posts course discussions, and shows live task progress. It drives a local Edge or Chrome window signed in to your own icourse163 account (slider verification is yours to complete); with Remember password ticked the password is saved in $DSH_HOME/ZJU-mooc-assistant/account.json (mode 0600), and automated quizzes and posts are subject to your course''s and the platform''s rules.'
+  zh: '浙大中国大学 MOOC 上课助手：按章节看视频、做测验和作业、参加考试、在讨论区提问，并实时显示任务进度。它驱动本机 Edge 或 Chrome 登录你自己的 icourse163 账号（滑块验证需你自己完成）；勾选「记住密码」时密码保存在 $DSH_HOME/ZJU-mooc-assistant/account.json（权限 0600）；自动答题和发帖是否允许取决于课程与平台的规定。'

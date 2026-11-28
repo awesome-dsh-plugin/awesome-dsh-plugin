@@ -1,0 +1,6 @@
+url: https://github.com/savinglighting/dsh-sd-bridge-guard
+name: savinglighting/dsh-sd-bridge-guard
+category: vision
+description:
+  en: Bridges DeepSeek Harness to a Stable Diffusion WebUI (A1111) already installed on the same machine — nine sd_* tools cover text-to-image, image-to-image, mask inpainting, reproducible PowerShell script generation, model and LoRA listing, server start-stop and a file-integrity check, with the WebUI directory auto-detected and the API started on first use. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 把 DeepSeek Harness 接到本机已装的 Stable Diffusion WebUI（A1111）——9 个 sd_* 工具覆盖文生图、图生图、蒙版重绘、可复现的 PowerShell 脚本生成、模型与 LoRA 清单、服务启停和文件完整性检测；SD 目录自动探测，首次调用自动以纯 API 模式拉起。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

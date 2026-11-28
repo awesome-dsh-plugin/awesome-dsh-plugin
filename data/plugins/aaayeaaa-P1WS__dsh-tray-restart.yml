@@ -1,0 +1,6 @@
+url: https://github.com/aaayeaaa-P1WS/dsh-tray-restart
+name: aaayeaaa-P1WS/dsh-tray-restart
+category: dev
+description:
+  en: Adds a Restart item to the DeepSeek Harness desktop tray menu, patching the app's tray template in place and re-applying the patch after desktop updates.
+  zh: 给 DeepSeek Harness 桌面端托盘右键菜单加一条「重启 DeepSeek Harness」，原地给应用打补丁，桌面端升级后自动补回。

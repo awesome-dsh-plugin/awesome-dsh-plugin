@@ -1,0 +1,6 @@
+url: https://github.com/LoneLeave/aiplug/tree/main/packages/ui
+name: LoneLeave/aiplug#dsh-ai-import-ui
+category: ui
+description:
+  en: 'Web panel for the DSH AI history importer — a floating button and a three-column wizard to preview conversations, pick which ones to import, and file them into workspace folders.'
+  zh: 'AI 历史导入插件的可视化面板：悬浮按钮加三栏向导，可预览对话、逐条勾选，并把它们归档进工作区文件夹。'

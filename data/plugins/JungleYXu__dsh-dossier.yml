@@ -1,0 +1,14 @@
+# Submission entry for the awesome-dsh-plugin list.
+#
+# This file is a copy of what goes into the list's repository as
+#   data/plugins/JungleYXu__dsh-dossier.yml
+# (filename = "<owner>__<repo>.yml"; one file is the whole submission).
+# See the list's contributing.md for the PR procedure and the rules it has to satisfy.
+
+url: https://github.com/JungleYXu/dsh-dossier
+name: JungleYXu/dsh-dossier
+category: session
+description:
+  en: "Volumes and handoffs for DeepSeek Harness: group sessions per project and hand state to a fresh session through a generated handoff document instead of replaying context."
+  zh: "给 DeepSeek Harness 的长期项目分卷：会话按项目归档，用一份约 1500 token 的交接文档把状态交给新会话，而不是重放上下文。"
+icon: https://raw.githubusercontent.com/JungleYXu/dsh-dossier/main/docs/icon.png

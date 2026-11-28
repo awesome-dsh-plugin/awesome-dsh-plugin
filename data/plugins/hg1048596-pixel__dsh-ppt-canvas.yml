@@ -2,5 +2,5 @@ url: https://github.com/hg1048596-pixel/dsh-ppt-canvas
 name: hg1048596-pixel/dsh-ppt-canvas
 category: ui
 description:
-  en: 'Element-level PowerPoint canvas that edits the opened .pptx in place: click, marquee-select or pick a whole slide, describe the change, and the AI writes byte-preserving OOXML patches with undo and redo.'
-  zh: '元素级 PPT 画布，就地改写已打开的 .pptx：点选、框选或整页选中后用自然语言描述改动，AI 以字节保真的 OOXML 补丁写入，支持撤销与重做。'
+  en: 'PowerPoint workbench for DeepSeek Harness: drag in a PPTX, annotate objects or regions across slides, review AI changes on the canvas, and confirm one batch with undo and redo.'
+  zh: 'DeepSeek Harness 的 PPT 工作台：拖入 PPTX，跨页批注对象或区域，在原画布检查 AI 修改，整批确认保存，支持撤销与重做。'

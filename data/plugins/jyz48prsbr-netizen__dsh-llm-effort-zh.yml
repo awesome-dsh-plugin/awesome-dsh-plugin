@@ -1,0 +1,6 @@
+url: https://github.com/jyz48prsbr-netizen/dsh-llm-effort-zh
+name: jyz48prsbr-netizen/dsh-llm-effort-zh
+category: theme
+description:
+  en: 'Shows reasoning-effort levels in Chinese in the model selector; display names only, the reasoning_effort values sent to the provider are unchanged.'
+  zh: '在模型选择器中把推理等级名称显示为中文，仅改显示文本，发给模型的 reasoning_effort 参数不变。'

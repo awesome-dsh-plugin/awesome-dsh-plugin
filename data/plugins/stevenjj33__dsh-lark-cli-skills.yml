@@ -1,0 +1,7 @@
+url: https://github.com/stevenjj33/dsh-lark-cli-skills
+name: stevenjj33/dsh-lark-cli-skills
+category: skill
+icon: https://raw.githubusercontent.com/stevenjj33/dsh-lark-cli-skills/main/assets/icon-180.png
+description:
+  en: 'Agent skills for the Lark/Feishu CLI: exports the complete skill tree embedded in the lark-cli binary — all 25 skills, nothing excluded — and registers them with the DeepSeek Harness skill registry so the agent can read them on demand. Covers Messenger, docs, sheets, base, calendar, drive, task, wiki, approval, mail, slides, meetings, minutes and more. Every cross-skill link resolves as shipped upstream. Requires lark-cli to be installed.'
+  zh: '飞书/Lark CLI 的 agent 技能包：把 lark-cli 二进制内嵌的完整技能树（全部 25 个技能，不做任何排除）导出并注册到 DeepSeek Harness 技能库，供 agent 按需读取。覆盖即时通讯、文档、表格、多维表格、日历、云空间、任务、知识库、审批、邮箱、幻灯片、视频会议、妙记等。跨技能链接与上游发布时完全一致。需先安装 lark-cli。'

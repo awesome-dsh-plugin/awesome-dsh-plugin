@@ -1,0 +1,7 @@
+url: https://github.com/qianhaoq/dota2.ai/tree/main/packages/dsh
+name: qianhaoq/dota2.ai#dsh
+category: fun
+description:
+  en: Standalone Dota 2 post-match review page in the DSH sidebar (10-player scoreboard, checked replay evidence cards, 10-hero minimap moment replay, coach chat rail, and next-game goal tracking) plus seven dota2ai_* coach tools and a dota2ai skill, running replay investigations and follow-up Q&A on your configured DSH host models over cached replay traces from dota2.ai.
+  zh: 在 DSH 侧边栏提供独立的 Dota 2 赛后复盘页（10 人记分板、经事实核查的录像证据卡、10 英雄逐秒走位与眼位小地图回放、教练追问栏、下局训练目标追踪）及 7 个 dota2ai_* 教练工具与 dota2ai 技能，基于从 dota2.ai 获取并缓存在本地的录像轨迹调用你配置的 DSH 宿主模型完成深度复盘与查证追问。
+icon: https://raw.githubusercontent.com/qianhaoq/dota2.ai/main/packages/dsh/assets/icon-180.png

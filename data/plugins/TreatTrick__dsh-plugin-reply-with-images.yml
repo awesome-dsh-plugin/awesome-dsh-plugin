@@ -1,0 +1,6 @@
+url: https://github.com/TreatTrick/dsh-plugin-reply-with-images
+name: TreatTrick/dsh-plugin-reply-with-images
+category: ui
+description:
+  en: Searches and embeds reference images into DeepSeek Harness replies with table, collage, strip, and single layouts, using Bing, 360, Baidu, and Wikimedia Commons fallback, native attachment storage, and an optional Web layout client.
+  zh: 为 DeepSeek Harness 回答自动搜索并嵌入参考图片，支持目录表格、三图拼贴、横向图集与单图四种布局，内置 Bing/360/百度/Wikimedia Commons 回退链、原生附件持久化与可选 Web 端排版增强。

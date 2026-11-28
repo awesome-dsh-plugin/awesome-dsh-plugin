@@ -1,0 +1,6 @@
+url: https://github.com/wungjyan/dsh-offwork-countdown
+name: wungjyan/dsh-offwork-countdown
+category: ui
+description:
+  en: 'A pill in the corner of every DSH page that walks a shift with you: it asks you to clock in when the shift starts, counts down quietly afterwards, tints the card with your reminder colour as the end approaches, then fills it, breathes and shakes when it is time to clock out, and stays on screen outside a shift naming when you are next on.'
+  zh: '常驻 DSH 页面角落的班次胶囊：上班时间显示「打卡」提醒你打卡，打卡后安静倒计时，快下班时卡片染上你设的提醒色，到点整块填满并呼吸抖动提醒下班；班次之外也不消失，显示下一次上班时间。'

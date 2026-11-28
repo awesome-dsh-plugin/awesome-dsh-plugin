@@ -1,0 +1,7 @@
+url: https://github.com/511659192/ai-plugins/tree/main/plugins/drag-workspace
+name: 511659192/ai-plugins#drag-workspace
+category: ui
+description:
+  en: Drag a folder onto the sidebar workspace list to register it as a workspace and open a new session. The Desktop app supplies the folder path; a plain browser page falls back to the host folder picker.
+  zh: 把文件夹拖到左侧工作区列表，注册为工作区并打开新会话；桌面端直接取文件夹路径，普通浏览器页面回退到宿主的选择文件夹。
+icon: https://raw.githubusercontent.com/511659192/ai-plugins/main/plugins/drag-workspace/assets/icon-180.png

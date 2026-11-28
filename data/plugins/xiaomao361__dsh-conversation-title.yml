@@ -1,0 +1,7 @@
+url: https://github.com/xiaomao361/dsh-conversation-title
+name: xiaomao361/dsh-conversation-title
+category: session
+description:
+  en: Organize unarchived conversations in batches and share named title templates across workspaces.
+  zh: 批量整理未归档会话标题，并在多个工作区之间复用可命名的标题模板。
+icon: https://raw.githubusercontent.com/xiaomao361/dsh-conversation-title/main/assets/icon-512.png

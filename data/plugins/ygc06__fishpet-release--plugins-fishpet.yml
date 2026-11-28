@@ -1,0 +1,8 @@
+url: https://github.com/ygc06/fishpet-release/tree/main/plugins/fishpet
+name: ygc06/fishpet-release#fishpet
+category: fun
+description:
+  en: DSH companion plugin with emotion state, persistent companionship context, and an opt-in single-screenshot screen tool.
+  zh: 为 DSH 提供情绪状态、陪伴上下文，以及默认关闭、按需调用的单次截图工具的桌宠插件。
+icon: https://raw.githubusercontent.com/ygc06/fishpet-release/main/demo/icon.png
+tarball: https://github.com/ygc06/fishpet-release/releases/latest/download/fishpet-emotion.tgz

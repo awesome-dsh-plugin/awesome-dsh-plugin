@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-session-recovery
+name: liuhange789/dsh-session-recovery
+category: session
+description:
+  en: "Checkpoint-and-resume for interrupted runs: when a conversation reaches a key step — two consecutive successful file writes/edits, or one successful test command — it appends a lightweight record (timestamp, step type, tool, ≤200-char argument summary, result status) to a local JSONL file, keeping the newest 50 and pruning after 24 hours. After DSH restarts, the session_recovery tool lists unfinished sessions and resuming one creates a new session whose system prompt carries only the last three checkpoints (≤500 characters) instead of the full transcript."
+  zh: "中断续跑：对话走到关键节点时（连续两次成功的文件写入/编辑，或一次成功的测试命令），向本地 JSONL 追加一条轻量记录（时间、步骤类型、工具名、≤200 字参数摘要、结果状态），只保留最近 50 条并在 24 小时后过期。DSH 重启后，session_recovery 工具列出未完成的会话，恢复时新建会话，系统提示只携带最后三个检查点（≤500 字），而不是整段历史。"

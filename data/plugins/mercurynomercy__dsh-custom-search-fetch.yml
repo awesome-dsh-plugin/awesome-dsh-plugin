@@ -1,0 +1,6 @@
+url: https://github.com/mercurynomercy/dsh-custom-search-fetch
+name: mercurynomercy/dsh-custom-search-fetch
+category: browser
+description:
+  en: Routes the built-in web_search tool to a self-hosted SearXNG instance and web_fetch to a self-hosted Firecrawl instance as DSH web providers, with a settings card for both backends.
+  zh: 把内置 web_search 的后端换成自托管的 SearXNG，把 web_fetch 换成自托管的 Firecrawl（作为 DSH 网页能力提供方注册），并提供两个后端的设置卡片。

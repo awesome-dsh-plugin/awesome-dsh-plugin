@@ -1,0 +1,7 @@
+url: https://github.com/bzsang/dsh-turn-quote
+name: bzsang/dsh-turn-quote
+category: session
+description:
+  en: 'Quote an earlier turn of the current conversation into the composer from the @ menu — by turn, not by selected text — so a chat that drifted can be re-anchored on what was actually asked.'
+  zh: '在输入框用 @ 按轮次引用本次对话前文（不是选中文字），把跑偏的对话重新锚回当初的需求原文。'
+icon: https://raw.githubusercontent.com/bzsang/dsh-turn-quote/main/assets/icon-180.png

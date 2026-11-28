@@ -1,0 +1,7 @@
+url: https://github.com/lp86ndlb/dsh-todo-note
+name: lp86ndlb/dsh-todo-note
+category: ui
+description:
+  en: 'A draggable sticky note beside the chat: short-term tasks and a long-term plan whose phases carry real progress, plus three todo_note_* tools (read, update, complete) so the agent works from the same note. A task only counts as done after the user ticks it off, and the state stays on the local machine.'
+  zh: '对话旁的可拖动便签：短期待办，加上带真实阶段进度的长期计划，并通过 todo_note_read / todo_note_update / todo_note_complete 三个工具让 agent 与你在同一份便签上协作；任务须经你点击确认才算完成，状态只保存在本机。'
+tarball: https://github.com/lp86ndlb/dsh-todo-note/releases/download/v0.1.8/dsh-todo-note-0.1.8.tgz

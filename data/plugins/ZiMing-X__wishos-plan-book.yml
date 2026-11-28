@@ -1,0 +1,8 @@
+url: https://github.com/ZiMing-X/wishos-plan-book
+name: ZiMing-X/wishos-plan-book
+category: skill
+description:
+  en: 'Document-form plan task-book plugin for DeepSeek Harness: one entry skill plus three tools — structure check, skeleton generator, package self-check — for a four-element task book, with the protocol reference shipped in-package. Only the generator writes files, and it refuses to overwrite an existing one unless force is set.'
+  zh: '给 DeepSeek Harness 的文档态计划任务书插件：一个入口技能，加上「四要素校验 / 骨架生成 / 包自检」三个工具，规程全文随包分发。只有生成工具会写盘，且默认拒绝覆盖已存在文件（需显式 force）。'
+icon: https://raw.githubusercontent.com/ZiMing-X/wishos-plan-book/main/assets/icon-180.png
+tarball: https://github.com/ZiMing-X/wishos-plan-book/releases/download/v0.2.0/wishos-plan-book-0.2.0.tgz

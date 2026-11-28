@@ -1,0 +1,6 @@
+url: https://github.com/hg1048596-pixel/dsh-incremental
+name: hg1048596-pixel/dsh-incremental
+category: dev
+description:
+  en: 'Read-only incremental AI code review with declared task dependencies, eligible result reuse, and selective reruns after input changes.'
+  zh: '只读增量 AI 代码审查，声明任务依赖、复用符合条件的结果，并在输入变化后重跑受影响的任务。'

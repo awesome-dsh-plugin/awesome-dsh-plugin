@@ -1,0 +1,7 @@
+# Author: KILL-STAR SX · https://github.com/KILLSTARSX · build wsr-7d48ce5
+url: https://github.com/KILLSTARSX/dsh-web-search-rss
+name: KILLSTARSX/dsh-web-search-rss
+category: browser
+description:
+  en: 'Free web search for DSH. The default mode reads cn.bing, bing or google result pages directly, so there is no API key to paste and nothing billed per query. Sponsored slots get removed, and every result domain is checked against a bundled list of official sites; lookalike download pages are marked or dropped. If scraping starts getting blocked, switch to an API channel: it reuses the search provider DSH already registered, or calls Brave, Tavily, Serper or a custom JSON endpoint. Engine order, ad filtering, domain checks and channel credentials sit on one settings page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '让 DSH 的搜索免费。默认模式直接读 cn.bing 的结果页（bing、google 也能切），不填 API Key，也不按次扣费。赞助广告位会清掉，结果域名逐个对本地官网库，仿冒下载站标出来或直接丢掉。抓取被挡了再切 API 频道：默认复用 DSH 已注册的搜索提供方，也能接 Brave、Tavily、Serper，或者你自己的 JSON 接口。设置页里能改引擎顺序、广告屏蔽和域名鉴别，各频道凭证也在那里。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

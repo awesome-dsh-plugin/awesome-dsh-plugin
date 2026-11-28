@@ -1,0 +1,6 @@
+url: https://github.com/owenKu1010/dsh-pure-mode
+name: owenKu1010/dsh-pure-mode
+category: skill
+description:
+  en: "A switch beside the permission control in the composer: while it is on, that session mounts no skill - the skill tool and its catalog are gone, and turning it back off restores both."
+  zh: "输入栏权限控件旁有一个「纯净模式」开关：开启后该会话不挂载任何 skill —— skill 工具与目录一起消失，再点一次即恢复。"

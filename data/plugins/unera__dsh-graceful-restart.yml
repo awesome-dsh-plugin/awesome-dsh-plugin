@@ -1,0 +1,6 @@
+url: https://github.com/unera/dsh-graceful-restart
+name: unera/dsh-graceful-restart
+category: dev
+description:
+  en: 'Restart the DSH host from inside a session without cutting the answer: dsh_restart waits for every agent to go idle, logs the causes, and wakes the asking sessions afterwards.'
+  zh: '在会话内部重启 DSH 宿主而不打断回答：dsh_restart 等到所有代理空闲，记录原因，并在重启后唤醒请求通知的会话。'

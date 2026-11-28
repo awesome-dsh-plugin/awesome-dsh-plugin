@@ -1,0 +1,6 @@
+url: https://github.com/Chenpi-Sakura/harness-supervisor/tree/main/packages/dsh-plugin
+name: Chenpi-Sakura/harness-supervisor#dsh-harness-supervisor
+category: workflow
+description:
+  en: 'Use Pi, Qoder CLI, MiniMax Code, DeepSeek Harness, Codex, Claude Code and OpenCode v2 as independent subagents for DSH through session-scoped MCP, with optional persistent sessions and a project/session WebUI for status, results, traces, approvals and cancellation. By default the Qoder and MiniMax Code workers run with every tool approval bypassed (change it with HARNESS_SUPERVISOR_QODER_PERMISSION_MODE and HARNESS_SUPERVISOR_MCODE_PERMISSION_MODE); DSH workers default to workspace-write with approval.'
+  zh: '通过按会话限定的 MCP，让 DSH 将 Pi、Qoder CLI、MiniMax Code、DeepSeek Harness、Codex、Claude Code 和 OpenCode v2 作为独立子智能体委派和管理，支持可选的持久会话，并提供按项目和会话组织的 WebUI，可查看状态、结果与轨迹、处理审批和取消任务。默认情况下 Qoder 和 MiniMax Code 的 Worker 会绕过所有工具审批（用 HARNESS_SUPERVISOR_QODER_PERMISSION_MODE 和 HARNESS_SUPERVISOR_MCODE_PERMISSION_MODE 修改）；DSH Worker 默认是 workspace-write 加审批。'

@@ -1,0 +1,6 @@
+url: https://github.com/zhangkaiqiu/dsh-no-account-models
+name: zhangkaiqiu/dsh-no-account-models
+category: model
+description:
+  en: Disables the built-in llm-deepseek-account route so the DeepSeek account model group no longer appears in the picker.
+  zh: 通过禁用内置的 llm-deepseek-account 路由，让模型选择器里不再出现「DeepSeek 账号」模型组。

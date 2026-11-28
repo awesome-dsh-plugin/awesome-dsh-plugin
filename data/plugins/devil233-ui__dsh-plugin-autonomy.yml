@@ -1,0 +1,7 @@
+url: https://github.com/devil233-ui/dsh-plugin-autonomy
+name: devil233-ui/dsh-plugin-autonomy
+category: agi
+description:
+  en: Schedule-driven autonomy for DSH sessions — the host rolls the dice on an interval, she decides whether to act, speak or stay quiet, with an intent ledger, diary wishes, judgement records, scoring and a standalone panel.
+  zh: 给 DSH 会话加一层节律驱动的自主：宿主按间隔掷骰决定是否唤醒，她自己决定动手、说话还是继续睡；带意图台账、日记愿望、判断记录、打分与独立面板。
+tarball: https://github.com/devil233-ui/dsh-plugin-autonomy/releases/download/v0.1.0/dsh-plugin-autonomy-0.1.0.tgz

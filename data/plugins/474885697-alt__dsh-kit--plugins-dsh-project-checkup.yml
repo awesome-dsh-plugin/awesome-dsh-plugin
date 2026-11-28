@@ -1,0 +1,7 @@
+url: https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-project-checkup
+name: 474885697-alt/dsh-kit#dsh-project-checkup
+category: dev
+tarball: https://github.com/474885697-alt/dsh-kit/releases/download/v0.1.0/dsh-project-checkup-0.1.0.tgz
+description:
+  en: 'Runs project checks described in a dsh-checkup.json file (files, syntax, JSON, HTTP health, asset counts, and any node/npm scripts or commands you list) and falls back to auto-detected defaults when no profile exists.'
+  zh: '按项目里的 dsh-checkup.json 运行检查（文件、语法、JSON、HTTP 健康、资源计数，以及你列出的 node/npm 脚本与命令），没有配置时回退到自动探测的默认项。'

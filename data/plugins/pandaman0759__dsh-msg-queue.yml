@@ -1,0 +1,7 @@
+url: https://github.com/pandaman0759/dsh-msg-queue
+name: pandaman0759/dsh-msg-queue
+category: ui
+description:
+  en: 'Adds a message queue to the sidebar foot: park a thought in a collapsible list, then send one entry to the current session when you choose instead of interrupting the running turn. Entries can be edited or deleted, the list holds two rows and scrolls beyond that, and an unsent composer draft is moved into the queue before a send rather than overwritten.'
+  zh: '侧栏底部加一个待发送队列：把临时想到的话存进可折叠的列表，合适的时机再点某一条发送到当前会话，不必插队打断正在跑的回合。条目可编辑、可删除，列表一次露两条、更多滚动，发送前若输入框里还有草稿会先把草稿收进队列而不是覆盖掉。'
+icon: https://raw.githubusercontent.com/pandaman0759/dsh-msg-queue/main/assets/icon-180.png

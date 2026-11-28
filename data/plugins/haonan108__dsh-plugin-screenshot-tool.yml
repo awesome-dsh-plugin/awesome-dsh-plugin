@@ -1,0 +1,7 @@
+url: https://github.com/haonan108/dsh-plugin-screenshot-tool
+name: haonan108/dsh-plugin-screenshot-tool
+category: ui
+description:
+  en: 'A macOS screenshot button in the composer tool row: the scissors split button runs the native screencapture marquee — optionally hiding the Harness window first, chosen from its caret menu — then copies the PNG to the clipboard and attaches it to the composer draft; Screen Recording is preflighted, so an un-granted capture points at the settings instead of returning a wallpaper-only image.'
+  zh: 'macOS 输入框工具栏截图按钮：剪刀分体按钮调起系统原生 screencapture 框选（右侧下拉可先隐藏 Harness 窗口），截图自动进剪贴板并附成输入框草稿；会先检查屏幕录制授权，未授权时提示去设置，而不是返回一张只有壁纸的图。'
+icon: https://raw.githubusercontent.com/haonan108/dsh-plugin-screenshot-tool/main/assets/icon-180.png

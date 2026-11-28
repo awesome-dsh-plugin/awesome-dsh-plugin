@@ -1,0 +1,6 @@
+url: https://github.com/hexiao160705-dev/dsh-account-ring
+name: hexiao160705-dev/dsh-account-ring
+category: usage
+description:
+  en: 'Sidebar balance and quota ring: reads the Magpie gateway quota endpoint first (DeepSeek wallets, Codex plan windows, and whatever else Magpie reports), falls back to local readers for Volcengine Agent Plan AFP/cash and LobeHub, and masks account emails before anything reaches the page.'
+  zh: '侧栏余额与额度圆环：优先读取 Magpie 网关的额度接口（DeepSeek 钱包、Codex 套餐窗口，以及 Magpie 报告的其他供应商），读不到时回退到本机 ve 读火山方舟 Agent Plan AFP 与现金余额、以及 LobeHub；账号邮箱在进入页面前已脱敏。'

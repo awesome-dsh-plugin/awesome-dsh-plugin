@@ -1,0 +1,6 @@
+url: https://github.com/lankongtongmeng/dsh-pixelbar-studio
+name: lankongtongmeng/dsh-pixelbar-studio
+category: fun
+description:
+  en: 'Drive an Edifier Halo PixelBar — a 256x32 1-bit dot-matrix screen in a desktop speaker — from DSH over raw USB HID: push custom bitmaps, play GIF animations, render pixel-art walk scenes from sprite sheets and push self-rendered text, with a color-calibration table, a hardware self-check and EQ / volume / lighting / face-scene control. A push can return the screen to the clock afterwards.'
+  zh: '在 DSH 里驱动花再 Halo PixelBar（桌面音箱上的 256×32 单色点阵屏）：通过裸 USB HID 推自定义位图、播放 GIF 动画、用精灵图渲染像素角色行走场景、推自绘文字，并带颜色校准表、硬件自检，以及 EQ / 音量 / 氛围灯 / 表情与场景控制；推送后还能自动切回时钟。'

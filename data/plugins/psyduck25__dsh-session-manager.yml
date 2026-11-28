@@ -1,0 +1,7 @@
+url: https://github.com/psyduck25/dsh-session-manager
+name: psyduck25/dsh-session-manager
+category: session
+icon: https://raw.githubusercontent.com/psyduck25/dsh-session-manager/main/assets/icon-180.png
+description:
+  en: 'Delete one session at a time from Settings instead of deleting the whole workspace: every session is listed by workspace with a lock toggle, a move-to-workspace picker and a delete button. Deletion lands in a recycle bin after a second confirm, and the session log is moved out of the sessions directory so the row leaves the sidebar rather than greyed out. The picker really relocates the log folder and rewrites the session header cwd, since DSH derives workspace membership from that cwd; when the system refuses a file operation the panel lists both real paths first and offers a registration-only fallback. Deleting or moving a locked session is refused by the Host, not just disabled in the UI. Recoverable for a configurable window of 0-720 hours; expired entries are deleted for real, logs included. Its routes answer loopback callers only: the socket address, the Host header and Sec-Fetch-Site are each checked.'
+  zh: '在「设置」里逐个删除会话，不必连整个工作区一起删：所有会话按工作区列出，每行带锁定、迁移下拉框和删除；删除要二次确认后进入删除缓冲站，且日志被移出会话目录，所以那一行是真正消失而不是变灰留在原地。迁移是真迁移——因为 DSH 从会话头的 cwd 推算工作区归属，插件会真的搬动日志目录并改写会话头；系统拒绝文件操作时先把两个真实路径摆出来，再让你选只改归属。被锁定的会话由宿主拒绝删除和迁移，不只是界面上禁用。缓冲期内可回档，窗口 0–720 小时可配；到期连同日志一起真正删除。路由只接受回环来源：socket 地址、Host 头与 Sec-Fetch-Site 三项都校验。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

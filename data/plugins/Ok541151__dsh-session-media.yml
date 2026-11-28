@@ -1,0 +1,17 @@
+url: https://github.com/Ok541151/dsh-session-media
+name: Ok541151/dsh-session-media
+category: session
+description:
+  en: >-
+    Recovers the images and documents your past sessions carried: find attachments by topic
+    across every stored session, get the original file path, or copy them out in one call.
+    A context compressor only shrinks what is already inside the live window, and a transcript
+    searcher returns quoted text, so neither hands back the original file. It also injects one
+    per-workspace Markdown memory file into the system prompt every turn, searches past
+    transcripts with AND keywords plus an optional time window and workspace filter, and
+    reports index health. Keyword search only, no embedding service.
+  zh: >-
+    把历史会话里带过的图片和文档找回来：按主题跨会话搜附件、拿到原始文件路径、或一次性复制出来。
+    上下文压缩器只压缩当前窗口里的东西，会话检索返回的是引用文本——两者都给不回原始文件。此外每轮
+    把一个按工作区定位的 Markdown 记忆文件注入系统提示，支持多关键词 AND、时间窗与工作区过滤的
+    会话检索，并提供索引体检。仅关键词检索，不依赖向量服务。

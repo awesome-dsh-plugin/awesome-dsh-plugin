@@ -1,0 +1,7 @@
+url: https://github.com/Aeroscis/dsh-workspace-manager
+name: Aeroscis/dsh-workspace-manager
+category: ui
+description:
+  en: 'Sorts the DSH sidebar workspace list: the workspace you last sent a prompt in rises above the first non-running one, with pin, drag-to-reorder, name filtering and one-click tidy; also removes empty workspaces and relocates a workspace folder to a new path while carrying its conversations over.'
+  zh: 'DSH 侧栏工作区排序：刚发过消息的工作区升到「第一个非运行工作区」之上，另有置顶、拖拽排序、按名称筛选与一键整理；并可清理空工作区、把工作区文件夹连对话一起迁到新路径。'
+icon: https://raw.githubusercontent.com/Aeroscis/dsh-workspace-manager/main/assets/icon-180.png

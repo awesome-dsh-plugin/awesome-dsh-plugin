@@ -1,0 +1,6 @@
+url: https://github.com/lyingloong/dsh-auto-workflow
+name: lyingloong/dsh-auto-workflow
+category: workflow
+description:
+  en: Persistent concurrent node-graph workflows for DeepSeek Harness with agent, command, HTTP, human, fan-out/join, gate, and subworkflow nodes.
+  zh: DeepSeek Harness 的持久化并发节点图工作流，支持 agent、命令、HTTP、人工、fan-out/join、gate 与子工作流节点。

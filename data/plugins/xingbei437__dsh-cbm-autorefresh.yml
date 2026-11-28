@@ -1,0 +1,6 @@
+url: https://github.com/xingbei437/dsh-cbm-autorefresh
+name: xingbei437/dsh-cbm-autorefresh
+category: tools
+description:
+  en: 'Zero-config per-Session freshness for codebase-memory: on Session start and on every working-directory change it refreshes the index of the Session''s own repository, so each project in each Session answers from its current graph while indexing stays in the shared daemon.'
+  zh: '零配置的 codebase-memory 保鲜插件：会话开始时、以及每次切换工作目录时，自动刷新该会话自己那个仓库的索引，让每个会话里的每个项目都查得到与当前代码一致的图；索引重活仍在共享 daemon 里完成。'

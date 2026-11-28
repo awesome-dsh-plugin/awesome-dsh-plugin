@@ -1,0 +1,8 @@
+url: https://github.com/linfeicxy/dsh-idea-box
+name: linfeicxy/dsh-idea-box
+category: tools
+description:
+  en: "A floating box that turns one line or a screenshot into a Markdown file in your workspace."
+  zh: "界面里一颗灯泡：写一句话或拖一张截图，回车就存成工作区里的 Markdown 文件。"
+icon: https://raw.githubusercontent.com/linfeicxy/dsh-idea-box/main/assets/icon-180.png
+tarball: https://github.com/linfeicxy/dsh-idea-box/releases/latest/download/dsh-idea-box.tgz

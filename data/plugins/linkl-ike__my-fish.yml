@@ -1,0 +1,7 @@
+url: https://github.com/linkl-ike/my-fish
+name: linkl-ike/my-fish
+category: fun
+description:
+  en: 'Runs a virtual fish companion inside DeepSeek Harness: persona, long-term memory (digest, audit, markdown export), QQ/Bilibili/Douyin chat, voice, diary and backups, plus AI painting via local ComfyUI and a 12-tab control panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 里养一条鱼：人格、长期记忆（摘要 / 体检 / Markdown 导出）、QQ/B站/抖音聊天、语音、日记与备份，外加本地 ComfyUI 画图和 12 个标签页的一体化面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/linkl-ike/my-fish/main/assets/icon-180.png

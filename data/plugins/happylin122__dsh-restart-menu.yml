@@ -1,0 +1,7 @@
+url: https://github.com/happylin122/dsh-restart-menu
+name: happylin122/dsh-restart-menu
+category: ui
+description:
+  en: 'Adds a Restart button beside the 应用 / 编辑 caption menu in DeepSeek Harness Desktop: one click closes the whole app and brings it back, with no tray icon hunt and no console window flash. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 在 DeepSeek Harness 桌面版左上角「应用 / 编辑」旁加一枚「重启」按钮，一键重启整个应用，免去关窗、找托盘、重新打开的麻烦。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/happylin122/dsh-restart-menu/main/assets/icon-180.png

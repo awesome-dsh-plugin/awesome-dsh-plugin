@@ -1,0 +1,7 @@
+url: https://github.com/azopt/dsh-acut
+name: azopt/dsh-acut
+category: tools
+description:
+  en: 'Screenshot plugin: hover snaps to the window, pane or web element under the cursor; annotated region capture (rectangle, ellipse, arrow, pen, text, mosaic); scrolling capture stitched into one long image with a floating preview; pin-to-screen; the same engine is exposed to the agent as a screenshot tool.'
+  zh: '截图插件：鼠标悬停自动吸附窗口 / 应用内模块 / 网页元素，框选截图并标注（矩形、椭圆、箭头、画笔、文字、马赛克），滚屏截图拼接成长图并悬浮预览，可钉住置顶；同一套能力也作为截图工具提供给 Agent 调用。'
+icon: https://raw.githubusercontent.com/azopt/dsh-acut/main/assets/icon-180.png

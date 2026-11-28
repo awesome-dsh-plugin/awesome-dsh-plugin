@@ -1,0 +1,6 @@
+url: https://github.com/xingzhen199186/dsh-entry-drawer
+name: xingzhen199186/dsh-entry-drawer
+category: ui
+description:
+  en: 'Turns the first row of the DSH sidebar entry list into a switch that folds every other entry away, giving the session history more room.'
+  zh: '把 DSH 左侧栏入口列表的第一行变成开关，一键收起/展开其余入口，把空间还给会话历史。'

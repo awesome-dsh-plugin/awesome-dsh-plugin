@@ -1,0 +1,7 @@
+url: https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/erp
+name: geyaovip/zhixing-ark-dsh-plugins#erp
+category: tools
+description:
+  en: Query ERP inventory, replenishment, purchase orders, and sales contracts with read-only Zhixing Ark authorization.
+  zh: 知行方舟 ERP 履约，查询库存、补货量、采购单和销售合同。
+tarball: https://github.com/geyaovip/zhixing-ark-dsh-plugins/releases/download/apps-v1.0.0/dsh-plugin-zhixing-ark-erp-1.0.0.tgz

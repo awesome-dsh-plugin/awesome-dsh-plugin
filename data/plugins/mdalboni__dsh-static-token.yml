@@ -1,0 +1,6 @@
+url: https://github.com/mdalboni/dsh-static-token
+name: mdalboni/dsh-static-token
+category: security
+description:
+  en: 'Configurable static launch token for the DeepSeek Harness Web GUI across restarts and reverse proxies.'
+  zh: '为 DeepSeek Harness Web GUI 配置固定的静态启动令牌，方便跨服务重启和反向代理访问。'

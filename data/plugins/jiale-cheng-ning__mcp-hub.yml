@@ -1,0 +1,7 @@
+url: https://github.com/jiale-cheng-ning/mcp-hub
+name: jiale-cheng-ning/mcp-hub
+category: security
+description:
+  en: 'DeepSeek Harness tools to discover MCP configurations across clients, audit static security rules and probe a named server, using a separately installed mcp-hub Rust binary.'
+  zh: '通过单独安装的 mcp-hub Rust 程序，在 DeepSeek Harness 对话中跨客户端发现 MCP 配置、检查静态安全规则并验证指定服务的连通性。'
+

@@ -1,0 +1,6 @@
+url: https://github.com/Kun-Fox/dsh-foxy-memory
+name: Kun-Fox/dsh-foxy-memory
+category: memory
+description:
+  en: 'Connects DSH Foxy to Foxy Memory for cross-platform recall, with local JSONL fallback, platform filters, and a memory browser. Requires dsh-foxy.'
+  zh: '把 DSH 的 Foxy 接入 Foxy Memory，支持跨平台召回、本地 JSONL 回退、平台筛选与记忆浏览。需先安装 dsh-foxy。'

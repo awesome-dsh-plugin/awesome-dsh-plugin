@@ -1,0 +1,6 @@
+url: https://github.com/ami678-dev/session-manager
+name: ami678-dev/session-manager
+category: session
+description:
+  en: 'Session alerts, safe deletion of archived sessions (optionally to the Recycle Bin), batch cleanup, and leftover-file cleanup for the DeepSeek Harness Web GUI.'
+  zh: '为 DeepSeek Harness Web 界面提供会话提醒、归档会话的安全删除（可选移入回收站）、批量清理和遗留文件清理。'

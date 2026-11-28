@@ -1,0 +1,7 @@
+url: https://github.com/weixiaolv/dsh-sidebar-cards
+name: weixiaolv/dsh-sidebar-cards
+category: ui
+description:
+  en: 'A sidebar tool for DeepSeek Harness: switch between the card list and the native list, group workspaces and plugins into categories you create, and browse the project file tree in place.'
+  zh: '一个侧边栏工具：可在卡片列表与原生列表之间切换，并支持工作区分组管理、插件分组管理以及项目文件树浏览。'
+icon: https://raw.githubusercontent.com/weixiaolv/dsh-sidebar-cards/main/assets/icon-512.png

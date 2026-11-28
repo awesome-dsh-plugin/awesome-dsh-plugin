@@ -1,0 +1,6 @@
+url: https://github.com/TidaltoLabs/tidalto-plugins/tree/main/plugins/eng-system/dsh
+name: TidaltoLabs/tidalto-plugins#dsh
+category: skill
+description:
+  en: 'Engineering documentation system in seven skills - bootstrap, research, decision, architecture, milestone, audit, plus an entry-point router - that hardens project docs into gated, falsifiable workflows; two legal paths, right-sizing tiers, phase-tiered milestone gates and a whole-repo consistency audit. Every skill also works standalone; installs as one bundled skill provider.'
+  zh: '七个技能组成的工程文档体系：骨架 / 调研 / 决策 / 架构 / 里程碑 / 审查 + 总入口路由，把项目文档固化成带门禁、可判真伪的流程约束——两条合法路径、轻量分档、里程碑阶段分档门禁与全库一致性审查。每个技能可单独使用；以一个 bundled skill provider 装入 DSH。'

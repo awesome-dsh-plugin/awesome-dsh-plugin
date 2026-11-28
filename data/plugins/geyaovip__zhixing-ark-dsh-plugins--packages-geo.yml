@@ -1,0 +1,7 @@
+url: https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/geo
+name: geyaovip/zhixing-ark-dsh-plugins#geo
+category: tools
+description:
+  en: Find existing GEO projects and reports and review sample coverage, competitors, and citations with read-only Zhixing Ark authorization.
+  zh: 知行方舟 GEO 品牌可见度，查询已有项目和报告，查看样本口径、竞品和引用。
+tarball: https://github.com/geyaovip/zhixing-ark-dsh-plugins/releases/download/apps-v1.0.0/dsh-plugin-zhixing-ark-geo-1.0.0.tgz

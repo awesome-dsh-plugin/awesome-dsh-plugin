@@ -19,7 +19,10 @@ import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
-import { slugOf, termOf } from './lib/terms.mjs'
+import { slugOf, slugHref, termOf } from './lib/terms.mjs'
+import { versionShots } from './lib/screenshot-bust.mjs'
+import { releaseMetadataFor } from './lib/release-manifest.mjs'
+import { catalogRepo, HISTORY_CACHE_KEY, publishReleaseHistory } from './lib/release-history.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -196,6 +199,7 @@ if (indexBuilt) fs.writeFileSync('docs/index.json', JSON.stringify(builtIndex.in
   console.log(`index: ${index.plugins.length} listed (${unpublished} entries have no npm package or version yet${skipped.noPublishTime > 0 ? `, ${skipped.noPublishTime} await a publish-time probe` : ''})`)
 }
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
+const releasesMap = fs.existsSync('data/releases.json') ? JSON.parse(fs.readFileSync('data/releases.json', 'utf8')) : {}
 // Missing (not yet bootstrapped, or an entry with no npm package) is a
 // normal, permanent state for most entries — unlike stars.json, absence
 // here needs no publish-blocking floor of its own: probe-downloads.mjs
@@ -410,6 +414,11 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
 // `ok: false` — which the probe writes for 404/410 alone — removes an image.
 // An entry whose shots all die loses the field entirely rather than shipping an
 // empty array, which is the state every entry had before screenshots existed.
+//
+// Declared outside the block because publishing needs the same map: it carries
+// the ETag each image answered with, which becomes the URL's `v` parameter.
+const LIVE_FILE = 'data/screenshots-live.json'
+const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
 {
   // The author's own repository wins. probe-screenshots.mjs reads
   // `screenshots.json` from beside the plugin's package.json and resolves it to
@@ -430,8 +439,6 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
     console.log(`screenshots: ${Object.keys(declaredMap).length} entry/entries declare their own (${adopted} superseding ${SCREENSHOTS_FILE})`)
   }
 
-  const LIVE_FILE = 'data/screenshots-live.json'
-  const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
   let dropped = 0
   for (const [key, list] of Object.entries(shotsMap)) {
     if (!Array.isArray(list)) continue
@@ -441,6 +448,11 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
     else delete shotsMap[key]
   }
   if (dropped) console.log(`screenshots: dropped ${dropped} image(s) confirmed 404/410 by probe-screenshots.mjs`)
+}
+
+function releaseTarballCmd(tarball) {
+  // The DSH profile is itself a pnpm workspace root.
+  return tarball ? `dsh plugin --profile web add -w "${tarball}"` : null
 }
 
 // derive repo/subdir install specs and the detail-page slug once
@@ -456,8 +468,9 @@ for (const e of ordered) {
   // Some plugins ship only a built tarball and are not installable from
   // source at all, so `github:owner/repo` would hand users a broken command.
   e.tarball = tarballMap[e.url] ?? null
-  e.cmdTarball = e.tarball ? `dsh plugin --profile web add "${e.tarball}"` : null
+  e.cmdTarball = releaseTarballCmd(e.tarball)
   e.stars = starsMap[e.url]?.stars ?? null
+  e.releaseMetadata = releaseMetadataFor(e, releasesMap[e.url])
   // Last-30-days npm downloads (probe-downloads.mjs), null for the ~60% of
   // entries with no npm package at all — a coverage gap, not a zero.
   // Consumers must tell "not published" apart from "published, unused".
@@ -472,7 +485,7 @@ for (const e of ordered) {
   // `npm` for "on the registry"; treat missing/null version as "unknown",
   // not as "github-only".
   // Surfaced for dsh-market's discover list (dsh-market#348).
-  e.version = e.npm ? (npmMap[e.url]?.version ?? null) : null
+  e.version = e.npm ? (npmMap[e.url]?.version ?? null) : (e.releaseMetadata.releaseManifest?.version ?? null)
   // The detail-page path, the sitemap entry and the comment term all read
   // this one derivation (scripts/lib/terms.mjs): the term is the join key a
   // plugin's discussion is filed under, and it has to match the path the
@@ -557,11 +570,11 @@ function buildRows(loc, only, limit) {
     ].filter(Boolean).join(' ')
     return `    <li class="card" ${attrs}>
       <div class="top">
-        <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
+        <h3><a href="${loc.urlPath}p/${slugHref(e.slug)}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
         ${e.stars != null ? `<span class="stars" translate="no">${e.stars}</span>` : ''}
         ${e.downloads != null ? `<span class="dl" translate="no" title="${loc.strings.P_DOWNLOADS}">${fmtNum(e.downloads)}</span>` : ''}
       </div>
-      <a class="desc-link" href="${loc.urlPath}p/${e.slug}/" tabindex="-1"><p>${esc(e.descs[loc.code])}</p></a>
+      <a class="desc-link" href="${loc.urlPath}p/${slugHref(e.slug)}/" tabindex="-1"><p>${esc(e.descs[loc.code])}</p></a>
       <div class="foot">
         <a class="tag" href="${loc.urlPath}${e.cat}/">${loc.categories[e.cat]}</a>
         <details class="inst">
@@ -614,7 +627,7 @@ function catalogPayload(loc, only) {
         slug: e.slug,
         desc: e.descs[loc.code] || '',
         cmd: cardCmd(e),
-        href: `${loc.urlPath}p/${e.slug}/`,
+        href: `${loc.urlPath}p/${slugHref(e.slug)}/`,
       }
     }),
   }
@@ -894,11 +907,11 @@ function renderReadme(rm) {
 }
 for (const loc of LOCALES) {
   for (const e of ordered) {
-    const url = `${ORIGIN}${loc.urlPath}p/${e.slug}/`
+    const url = `${ORIGIN}${loc.urlPath}p/${slugHref(e.slug)}/`
     const catUrl = `${loc.urlPath}${e.cat}/`
     const dHreflangs = [
-      ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}p/${e.slug}/">`),
-      `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/">`,
+      ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}p/${slugHref(e.slug)}/">`),
+      `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${slugHref(e.slug)}/">`,
     ].join('\n')
     const desc = e.descs[loc.code]
     // Trim to a boundary rather than mid-word: a description cut at "config" ->
@@ -954,7 +967,7 @@ for (const loc of LOCALES) {
       .filter((r) => r.cat === e.cat && r.url !== e.url)
       .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
       .slice(0, 6)
-      .map((r) => `      <li><h3><a href="${loc.urlPath}p/${r.slug}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><a class="desc-link" href="${loc.urlPath}p/${r.slug}/" tabindex="-1"><p>${esc(r.descs[loc.code])}</p></a></li>`)
+      .map((r) => `      <li><h3><a href="${loc.urlPath}p/${slugHref(r.slug)}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><a class="desc-link" href="${loc.urlPath}p/${slugHref(r.slug)}/" tabindex="-1"><p>${esc(r.descs[loc.code])}</p></a></li>`)
       .join('\n')
 
     // Map a plugin, rather than a rendered URL, to its Discussion. This keeps
@@ -1051,7 +1064,7 @@ ${readmeHtml}
       .replaceAll('__JSONLD__', () => ldSafe(jsonldDetail))
       .replaceAll('__HOME__', () => loc.urlPath)
       .replaceAll('__PRIVACY__', () => loc.privacyPath)
-      .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
+      .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${slugHref(e.slug)}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
       .replaceAll(AD_HEAD_TOKEN, () => adHead())
       .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
@@ -1134,7 +1147,7 @@ const registry = {
       name: shortName(e.name),
       owner: e.owner,
       url: e.url,
-      page: `${ORIGIN}/p/${e.slug}/`,
+      page: `${ORIGIN}/p/${slugHref(e.slug)}/`,
       category: e.cat,
       description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
       npm: e.npm,
@@ -1150,6 +1163,8 @@ const registry = {
       // probed with no latest tag. Not the same signal as `downloads`.
       version: e.version,
       stars: e.stars,
+      starsCheckedAt: starsMap[e.url]?.checkedAt ?? null,
+      ...e.releaseMetadata,
       downloads: e.downloads,
       downloadsStart: downloadsMap[e.url]?.start ?? null,
       downloadsEnd: downloadsMap[e.url]?.end ?? null,
@@ -1162,15 +1177,19 @@ const registry = {
         capabilityRedLines: capabilitiesMap[e.url].redLines,
         capabilityCheckedAt: capabilitiesMap[e.url].scannedAt,
       }),
-      install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
+      install: cardCmd(e),
       added: e.added,
       // Optional, author-declared storefront tile; omitted when absent so the
       // payload stays lean and a consumer falls back to the owner avatar.
       ...(iconMap[e.url] === undefined ? {} : { icon: iconMap[e.url] }),
       // Optional, author-maintained (data/screenshots.json); omitted when
       // absent so the payload stays lean. Storefronts fall back to their own
-      // README extraction (dsh-market #61).
-      screenshots: shotsMap[e.url],
+      // README extraction (dsh-market #61). Each URL carries a `v` parameter
+      // derived from the image's ETag so a replaced picture gets a new URL —
+      // without it the resize cache and the visitor's browser both keep serving
+      // the old bytes for a year, because the URL never moved. See
+      // lib/screenshot-bust.mjs.
+      screenshots: versionShots(shotsMap[e.url], verdicts),
     }
   }),
 }
@@ -1217,6 +1236,13 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
 // removes everything else about a plugin.
 {
   const listed = new Set(ordered.map((e) => e.url))
+  const history = updates[HISTORY_CACHE_KEY] ?? {}
+  // Pages limits the whole site to 1 GB. Keep space for the update manifest,
+  // sitemap and artifact metadata as well as the existing catalog pages.
+  const currentBytes = Object.keys(history).length === 0 ? 0
+    : fs.readdirSync('docs', { recursive: true, withFileTypes: true })
+      .reduce((bytes, file) => file.isFile() ? bytes + fs.statSync(`${file.parentPath}/${file.name}`).size : bytes, 0)
+  const { repositories: publishedHistory, publishedBytes, skipped } = publishReleaseHistory(ordered, history, 'docs', 900_000_000 - currentBytes)
   const payload = {
     name: 'awesome-dsh-plugin',
     url: ORIGIN,
@@ -1226,11 +1252,19 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
   }
   for (const [url, entry] of Object.entries(updates)) {
     if (!listed.has(url)) continue
-    payload.updates[url] = entry
+    payload.updates[url] = publishedHistory.has(catalogRepo(url))
+      ? { ...entry, releaseHistory: true }
+      : entry
+    payload.count++
+  }
+  for (const url of [...listed].sort()) {
+    if (payload.updates[url] || !publishedHistory.has(catalogRepo(url))) continue
+    payload.updates[url] = { releaseHistory: true }
     payload.count++
   }
   fs.writeFileSync('docs/updates.json', JSON.stringify(payload) + '\n')
   console.log(`updates.json: ${payload.count} entries, ${(fs.statSync('docs/updates.json').size / 1024).toFixed(0)} KB`)
+  console.log(`release history: ${publishedHistory.size} repository fragments, ${publishedBytes} bytes, ${skipped} over the Pages budget`)
 }
 
 const lastAdded = [...ordered].map((e) => e.added).sort().pop()
@@ -1270,10 +1304,10 @@ ${LOCALES.map((l) => `  <url>
 ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.privacyPath}"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].privacyPath}"/>`].join('\n')}
   </url>`).join('\n')}
 ${LOCALES.flatMap((l) => ordered.map((e) => `  <url>
-    <loc>${ORIGIN}${l.urlPath}p/${e.slug}/</loc>
+    <loc>${ORIGIN}${l.urlPath}p/${slugHref(e.slug)}/</loc>
     <lastmod>${e.added}</lastmod>
     <changefreq>weekly</changefreq>
-${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}p/${e.slug}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/"/>`].join('\n')}
+${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}p/${slugHref(e.slug)}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${slugHref(e.slug)}/"/>`].join('\n')}
   </url>`)).join('\n')}
 </urlset>
 `)

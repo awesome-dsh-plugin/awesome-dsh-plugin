@@ -1,0 +1,8 @@
+url: https://github.com/milestone-17/dsh-bao
+name: milestone-17/dsh-bao
+category: usage
+tarball: https://github.com/milestone-17/dsh-bao/releases/download/v0.2.4/dsh-bao-0.2.4.tgz
+description:
+  en: 'A TRAE-宝-style personal assistant plugin for DeepSeek Harness: cross-session long-term memory, auto-extracted candidate memories, first-time onboarding, a dedicated assistant agent preset, scheduled daily digest, desktop notifications, and a live overview panel.'
+  zh: 'DSH 宝 —— TRAE 宝式个人助理插件：跨会话长期记忆、自动候选记忆提取、首次启动引导、专属助理 Agent 预设、定时每日简报、桌面通知与实时工作状态面板。'
+icon: https://raw.githubusercontent.com/milestone-17/dsh-bao/master/assets/icon-180.png

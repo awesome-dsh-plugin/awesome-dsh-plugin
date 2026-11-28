@@ -1,0 +1,8 @@
+url: https://github.com/ZhexuanZhou/dsh-paper-desk
+name: ZhexuanZhou/dsh-paper-desk
+category: tools
+description:
+  en: 'Mendeley-style paper library for DeepSeek Harness: import PDFs, read them in the panel with highlights, notes and questions, turn AI answers into note cards, compare 2–6 papers, build a typed relation graph (manual, AI-discovered, or citations parsed from PDF references), and keep everything as plain files in a folder any cloud drive can sync.'
+  zh: '给 DeepSeek Harness 的 Mendeley 式论文库：导入 PDF、在面板内阅读并做高亮/划线/笔记/提问、把 AI 回答生成笔记卡片、对比 2–6 篇论文、建立带类型的论文关联图谱（手动添加、AI 发现、从 PDF 参考文献解析引用），全部以普通文件存放在可由任意云盘同步的目录里。'
+icon: https://raw.githubusercontent.com/ZhexuanZhou/dsh-paper-desk/main/assets/icon-180.png
+tarball: https://github.com/ZhexuanZhou/dsh-paper-desk/releases/download/v0.3.0/dsh-paper-desk-0.3.0.tgz

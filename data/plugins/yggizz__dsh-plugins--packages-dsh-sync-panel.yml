@@ -1,0 +1,8 @@
+url: https://github.com/yggizz/dsh-plugins/tree/main/packages/dsh-sync-panel
+name: yggizz/dsh-plugins#dsh-sync-panel
+category: dev
+description:
+  en: 'Packs a profile and restores it on another machine from a page in Settings, with six independently selectable categories: local linked plugin sources, market plugin manifests and lockfiles, each plugin''s own config block, the whole cordis patch, just the per-plugin enabled flags, and agent presets. Restore rewrites the link paths for the new machine, backs every file it overwrites up as .bak with a timestamp, merges or overwrites the config according to which categories were picked, and optionally runs the dependency install. Windows only, since the packing scripts shell out to PowerShell; node_modules, session data and credential files are never archived. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在设置页里把一个 profile 打包、再还原到另一台机器，六个类别可独立勾选：本地 link: 插件源码、市场插件的清单与锁文件、各插件自己的 config 段、整份 cordis 补丁、只带每条目开关、以及 Agent 预设。还原时按本机路径改写 link:、把要覆盖的文件备份成带时间戳的 .bak、按勾选的类别决定整份覆盖还是增量合并，并可选跑依赖安装。仅 Windows（脚本调用 PowerShell）；node_modules、会话数据和凭据文件不进包。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yggizz/dsh-plugins/main/packages/dsh-sync-panel/assets/icon-180.png
+# nudge: retrigger gate after the repository crossed 24h

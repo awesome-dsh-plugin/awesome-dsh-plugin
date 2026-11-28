@@ -1,0 +1,6 @@
+url: https://github.com/ljttt0824/dsh-safety-inspector
+name: ljttt0824/dsh-safety-inspector
+category: security
+description:
+  en: "Read-only behavior audit for DSH sessions: flags unsafe actions in 8 categories (A–H) with rules for 14 subclasses (the 41-subclass taxonomy file is not shipped, so a built-in 14-subclass fallback is used), anchors every finding to a real event seq, and gives deep links plus the full tool-call / data-access chain of any assistant reply (parameters, results, files read and written, domains, sandbox and approval context). Every finding is drill-downable."
+  zh: "只读的 DSH 会话行为安全审计：按 A–H 八大类标注不安全行为，目前有规则覆盖其中 14 个子类（41 子类的完整分类文件未随仓库提供，缺失时使用内置 14 子类兜底），每条发现都锚定到真实事件 seq，并提供深链倒查与任意一条回答的完整工具调用/数据访问链（参数、结果、读写文件、域名、沙箱与审批上下文）。发现可逐条下钻。"

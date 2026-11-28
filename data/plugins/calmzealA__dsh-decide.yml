@@ -1,0 +1,6 @@
+url: https://github.com/calmzealA/dsh-decide
+name: calmzealA/dsh-decide
+category: model
+description:
+  en: 'Connects DSH to decision models (TypeSafe Jev, TokenRhythm NeoHorse-Jev, OpenAI Decisions, and local System One endpoints) with decide, gate, rerank, and judge tools plus a settings page. Needs an API key for at least one provider (kept in the DSH credential store); the text you ask it to judge is sent to the selected provider unless it is local. The command guard is off by default.'
+  zh: '把 DSH 接入决策模型（TypeSafe Jev、基元律动 NeoHorse-Jev、OpenAI Decisions、本地 System One），提供 decide / 守门 / 重排 / 验收工具和设置页。至少需要一家提供方的 API 密钥（存放在 DSH 凭据库里）；要它判断的文字会发给所选提供方（本地提供方除外）。命令守门默认关闭。'

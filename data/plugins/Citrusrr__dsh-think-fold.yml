@@ -1,0 +1,7 @@
+url: https://github.com/Citrusrr/dsh-think-fold
+name: Citrusrr/dsh-think-fold
+category: ui
+tarball: https://github.com/Citrusrr/dsh-think-fold/releases/latest/download/dsh-think-fold.tgz
+description:
+  en: "The row that is running expands itself and folds back when it settles. A running turn keeps its whole procedure in one height-capped window that scrolls itself; a finished turn merges into the built-in finished header, leaving only the final answer. It works by driving the official disclosure rows rather than drawing its own panel, leaves rows you opened by hand alone, and restores the official settings on uninstall."
+  zh: '正在跑的那一行自动展开、跑完自动收起；跑着的一轮把过程收进一个限高窗口，页面不再被越堆越长的步骤拽着走；一轮结束并进官方那条「已完成」表头，只留最终回复。做法是点官方自己的折叠行、给官方过程体加限高，不自绘面板；你手动开合过的行不动，卸载时把改过的官方设置还原。'

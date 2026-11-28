@@ -1,0 +1,8 @@
+url: https://github.com/pearjelly/dsh-heros/tree/main/agent-loadout
+name: pearjelly/dsh-heros#agent-loadout
+category: ui
+icon: https://raw.githubusercontent.com/pearjelly/dsh-heros/main/agent-loadout/art/icon.png
+tarball: https://github.com/pearjelly/dsh-heros/releases/download/v0.269.0/dsh-heros-bundle.tgz
+description:
+  en: 'Pick an Agent Preset, equip tools and plugins, and compare what each loadout delivers. Invite a friend to try the same Lighthouse task, then swap reports. Available in English and Chinese.'
+  zh: '像选英雄一样挑 Agent Preset，搭配工具和插件。用不同出装做同一道题，看看各自交付了什么。也可以邀请好友挑战灯塔，再交换战报。支持中英文。'

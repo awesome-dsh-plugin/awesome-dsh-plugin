@@ -1,0 +1,7 @@
+url: https://github.com/yhuan416/dsh-opencode-client
+name: yhuan416/dsh-opencode-client
+category: tools
+description:
+  en: Cross-server board, 7/30-day insights and a native dsh subagent backend for OpenCode 2 fleets.
+  zh: OpenCode 2 机群观测台：跨 server 看板、7/30 天洞察、成本归因，并把每台 server 注册为 dsh 原生子代理后端。
+icon: https://raw.githubusercontent.com/yhuan416/dsh-opencode-client/master/docs/assets/icon-180.png

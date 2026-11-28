@@ -1,0 +1,6 @@
+url: https://github.com/yunxiao11xie/dsh-sidebar-compact
+name: yunxiao11xie/dsh-sidebar-compact
+category: ui
+description:
+  en: "Sidebar compaction: the global panel rows (plugins, market, tasks, context, memory, More) and the footer actions (e.g. paper reading and remote control) pack two per line in the wide sidebar, so the workspace session list regains the height. The collapsed icon rail keeps its shipped vertical layout. Pure CSS, no network or model calls."
+  zh: "侧栏紧凑化：宽栏模式下把全局面板行（插件 / 插件市场 / 自动化任务 / 上下文洞察 / Dream 记忆 / 更多）和底部功能入口（论文伴读、远程控制等）排成每行两个，把竖直空间还给工作区会话列表；收起成图标列时保持官方竖排布局。纯 CSS，不联网、不调模型。"

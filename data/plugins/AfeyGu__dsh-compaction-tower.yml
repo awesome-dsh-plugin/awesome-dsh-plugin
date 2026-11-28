@@ -1,0 +1,6 @@
+url: https://github.com/AfeyGu/dsh-compaction-tower
+name: AfeyGu/dsh-compaction-tower
+category: session
+description:
+  en: 'Automatic context compaction: a background observer distills early history into summary blocks, and when usage crosses the trigger line the engine commits whole blocks until it is back under the target line, with no model call on the commit path. Blocks merge into higher tiers as material runs out, and decompress or search_context reads any block back at its original length. The background observer spends model tokens: it uses the session''s provider and model unless you pick another, with up to 10 distillations at once by default.'
+  zh: '自动压缩上下文：后台观察者提前把早期历史蒸成摘要块，占用越过触发线时逐块提交直到回到目标线以下，提交路径不调模型；材料用尽后块可合并成更高层，decompress 与 search_context 可按块读回原文。后台观察者会消耗模型 token：默认沿用会话的 provider 与 model（可另选），默认最多同时进行 10 个蒸馏。'

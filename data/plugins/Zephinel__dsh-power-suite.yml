@@ -1,0 +1,6 @@
+url: https://github.com/Zephinel/dsh-power-suite
+name: Zephinel/dsh-power-suite
+category: ui
+description:
+  en: 'One DSH Web bundle that adds session artifacts with Quick Look, Dynamic Workspaces, prompt history, draft memory, interrupted-session recovery, a synced sidebar width and UI element annotation.'
+  zh: '为 DSH Web 提供会话产物与快速预览、动态工作区、提示历史、草稿附件记忆、中断会话恢复、同步侧栏宽度和 UI 元素标注的一体化插件。'

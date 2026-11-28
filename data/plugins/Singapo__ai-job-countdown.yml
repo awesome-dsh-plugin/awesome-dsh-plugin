@@ -1,0 +1,7 @@
+url: https://github.com/Singapo/ai-job-countdown
+name: Singapo/ai-job-countdown
+category: skill
+description:
+  en: 'Registers a Chinese career task assessment skill with a confrontational voice, conditional AI adoption scenarios, handover checklists, and 30-day action plans.'
+  zh: '注册“取代倒计时”职业任务分析技能，以攻击性口吻输出有条件的 AI 接管情景、任务交接清单与 30 天行动计划。'
+tarball: https://github.com/Singapo/ai-job-countdown/releases/download/v0.1.0/dsh-ai-job-countdown-0.1.0.tgz

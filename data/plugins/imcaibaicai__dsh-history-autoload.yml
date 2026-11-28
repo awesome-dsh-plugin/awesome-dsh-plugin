@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-history-autoload
+name: imcaibaicai/dsh-history-autoload
+category: ui
+description:
+  en: 'Loads a session''s full earlier history automatically when it opens instead of only the last page, which also restores the turn-process fold control on long sessions; a toggle in Settings → General turns it off.'
+  zh: '打开会话时自动把更早的历史全部加载完，而不是只加载最后一页；长会话的回合过程折叠也会随之恢复。设置 → 通用 可关闭。'

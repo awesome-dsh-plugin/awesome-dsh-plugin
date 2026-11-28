@@ -1,0 +1,6 @@
+url: https://github.com/zknyy/dsh-session-highlight
+name: zknyy/dsh-session-highlight
+category: ui
+description:
+  en: Highlights the active session's name in the DSH sidebar with a flowing iridescent gradient and continuously marquees long titles to reveal their full text.
+  zh: 为左侧会话列表中当前活动会话的名字加上不停滑动的彩色流光渐变，并让过长的标题走马灯滚动、始终展示完整内容。

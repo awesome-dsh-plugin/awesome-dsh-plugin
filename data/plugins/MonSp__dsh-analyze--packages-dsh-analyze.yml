@@ -1,0 +1,6 @@
+url: https://github.com/MonSp/dsh-analyze/tree/main/packages/dsh-analyze
+name: MonSp/dsh-analyze#dsh-analyze
+category: tools
+description:
+  en: 'Local dataset analysis tools for DSH: ingest CSV/JSONL once, then head, schema, stats_describe, transform_agg, list, export and rm against a workspace store under .dsh-analyze/ through a path-confined dsh-analyze CLI. Needs that Rust CLI installed separately (prebuilt on GitHub Releases for Windows x64, macOS, Linux x64) on PATH or via DSH_ANALYZE_CLI_PATH; without it no tools are registered.'
+  zh: 'DSH 本地数据分析工具：CSV/JSONL 入库一次后，用 head、schema、stats_describe、transform_agg、list、export、rm 在工作区 .dsh-analyze/ 存储上分析，由路径受限的 dsh-analyze CLI 执行。需另行安装该 Rust CLI（GitHub Releases 有 Windows x64、macOS、Linux x64 预编译包）并放入 PATH 或设 DSH_ANALYZE_CLI_PATH；缺失时插件不注册任何工具。'

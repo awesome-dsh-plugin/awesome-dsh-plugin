@@ -1,0 +1,6 @@
+url: https://github.com/silverglowGalike/dsh-approval-popup
+name: silverglowGalike/dsh-approval-popup
+category: security
+description:
+  en: 'Windows-only approval popup for DeepSeek Harness: while DSH is minimized or in the tray, a pending tool approval appears as a topmost WPF window showing the session, tool and command, with allow-once, deny and open-session actions; closing the window does not answer the request. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: Windows 专用的 DSH 审批弹窗：DSH 最小化或退到托盘后，待处理的工具审批以置顶 WPF 窗口显示会话、工具与命令，可允许一次、拒绝或打开会话；关闭窗口不代表回应请求。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

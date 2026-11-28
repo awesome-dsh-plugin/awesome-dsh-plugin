@@ -1,0 +1,6 @@
+url: https://github.com/yanming119/dsh-spectacles
+name: yanming119/dsh-spectacles
+category: vision
+description:
+  en: 'Point at one window and the AI reads only that window -- text, layout and small print. No full-screen fallback, and it still works when that window is covered by others. Windows 10/11 only.'
+  zh: '只读你指定的那一个窗口：读字、看版式、看清小字；被别的窗口盖住也照样能读，绝不回退整屏。仅支持 Windows 10/11。'

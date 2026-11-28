@@ -1,0 +1,7 @@
+url: https://github.com/StudentBuilding-Studio/dsh-search-pull
+name: StudentBuilding-Studio/dsh-search-pull
+category: agi
+icon: https://raw.githubusercontent.com/StudentBuilding-Studio/dsh-search-pull/main/assets/icon-180.png
+description:
+  en: Pushes the agent to search the web before answering instead of relying on memory — especially for library choice, version and error questions, where reusing an existing open-source solution beats reasoning from scratch.
+  zh: 让 agent 回答前先联网搜一下，而不是凭记忆作答——尤其是选型、版本和报错这类问题，现成的开源实现往往比自己从头推演更靠谱。

@@ -1,0 +1,6 @@
+url: https://github.com/gyxsza/approval-alert
+name: gyxsza/approval-alert
+category: notify
+description:
+  en: Plays a short chime and shows a desktop notification when a tool asks for permission approval.
+  zh: 当有工具请求权限审批时播放提示音并弹出系统通知。

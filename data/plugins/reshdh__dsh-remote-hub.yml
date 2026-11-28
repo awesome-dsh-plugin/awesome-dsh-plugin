@@ -1,0 +1,7 @@
+url: https://github.com/reshdh/dsh-remote-hub
+name: reshdh/dsh-remote-hub
+category: remote
+tarball: https://github.com/reshdh/dsh-remote-hub/releases/download/v1.0.0/dsh-remote-hub-1.0.0.tgz
+description:
+  en: 'Community fork of KyoMio/dsh-zen-remote (do not enable both simultaneously — shares the ~/.dsh/zen-remote state and /_dsh/zen-remote/* wire protocol, and auto-defers if dsh-zen-remote is active): keeps the pairing-code PWA with Web Push and multi-host session relay, and adds a desktop Local / Remote / All workspace switcher, remote directory browsing with folder creation and workspace rename/delete (/v1/workspace-manage), automatic custom LLM provider and API-key sync to paired hosts, and bidirectional cross-host @ session reference hydration (session-ref-bridge). The gateway binds 127.0.0.1 by default; the LAN/Tailscale mode binds 0.0.0.0 behind a private-IP wall, and a paired desktop client runs terminals and file previews with the host''s OS-user permissions.'
+  zh: 'KyoMio/dsh-zen-remote 的社区分支（请勿与上游同时启用——复用 ~/.dsh/zen-remote 状态文件与 /_dsh/zen-remote/* 协议，检测到上游已激活时自动避让）：保留配对码手机 PWA（含 Web Push）与多服务端会话中继，新增桌面端「本机 / 远程主机 / 全部」工作区分栏切换器、远程目录树浏览与新建文件夹及工作区重命名/删除（/v1/workspace-manage）、自定义模型渠道与 API 密钥向配对主机的自动同步，以及跨机双向 @ 会话引用正文桥接（session-ref-bridge）。网关默认监听 127.0.0.1；局域网 / Tailscale 模式监听 0.0.0.0 并有私网源 IP 闸，已配对的桌面客户端以主机系统用户的权限运行终端与文件预览。'

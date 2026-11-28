@@ -1,0 +1,6 @@
+url: https://github.com/ADBdad/dsh-qq-identity
+name: ADBdad/dsh-qq-identity
+category: identity
+description:
+  en: "Injects the agent's own group card and group role, and the DM peer's identity, into the system prompt each turn. Read-only queries over OneBot 11."
+  zh: 每轮把 agent 自己在群里的群名片与群角色、以及私聊对方是谁，自动注入系统提示词。基于 OneBot 11 只读查询。

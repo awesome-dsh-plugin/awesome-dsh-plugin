@@ -1,0 +1,6 @@
+url: https://github.com/timefarer/dsh-chat-search
+name: timefarer/dsh-chat-search
+category: session
+description:
+  en: 'Global and in-session search for DeepSeek Harness: search chat history across all sessions or just the current one, and retrieve both paragraph text and file names — find it even when you only remember the file name. Filter by date range and each session recent turns; results expand as session → question → paragraph, and a jump lands on the match with the words highlighted. Defaults to the last 14 days and the latest 30 turns per session; leave either empty to search everything.'
+  zh: 'DSH 全局搜索与会话搜索插件：在所有会话或当前会话中搜索聊天记录，同时检索正文段落与文件名——忘了内容、只记得文件名也能找到。支持按日期范围与每个会话的最近轮次筛选、过滤，结果按“会话 → 问题 → 段落”展开，跳转后自动定位并高亮命中词。默认只搜最近 14 天、每会话最近 30 轮，清空任一项即可不限范围。'

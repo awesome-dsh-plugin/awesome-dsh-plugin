@@ -1,0 +1,6 @@
+url: https://github.com/hZsFN/dsh-sidebar-panel-visibility
+name: hZsFN/dsh-sidebar-panel-visibility
+category: ui
+description:
+  en: 'Adds a show/hide toggle for each sidebar panel entry to the sidebar More menu, one row per panel with its current state; the choice is stored in localStorage and replayed when the plugin reloads. The Plugins entry stays fixed and cannot be hidden.'
+  zh: '在侧边栏「更多」菜单里给每个面板入口加一行显隐开关，右侧标出当前状态；选择存 localStorage，插件重载后自动回放。插件面板本身固定显示，不可隐藏。'

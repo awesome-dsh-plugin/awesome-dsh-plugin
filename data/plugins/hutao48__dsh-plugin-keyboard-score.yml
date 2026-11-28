@@ -1,0 +1,7 @@
+url: https://github.com/hutao48/dsh-plugin-keyboard-score
+name: hutao48/dsh-plugin-keyboard-score
+category: skill
+description:
+  en: 'Windsong Lyre keyboard-score rules for Genshin. Maps notes to the 21 lyre keys, validates score text against the notation rules, and converts between 简谱 and key letters; ships one skill and a keyboard_score tool.'
+  zh: 原神风物之诗琴键盘谱规则：21 键字母映射、和弦与拍/段语法、谱面校验、简谱与键位互转；包含一个技能和一个 keyboard_score 工具。
+icon: https://raw.githubusercontent.com/hutao48/dsh-plugin-keyboard-score/main/assets/icon-180.png

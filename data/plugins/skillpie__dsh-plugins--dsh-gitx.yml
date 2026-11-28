@@ -1,0 +1,6 @@
+url: https://github.com/skillpie/dsh-plugins/tree/main/dsh-gitx
+name: skillpie/dsh-plugins#dsh-gitx
+category: git
+description:
+  en: 'Git workbench for DeepSeek Harness: session-header chips keep branch, change count and sync state at hand for in-place switching, review and pull/push; the full window adds a lane commit graph, block-level staging, interactive rebase and history rewrite with restore points, batch cherry-pick, a three-way conflict editor, inline blame, worktree management and Git LFS import/export.'
+  zh: 'DeepSeek Harness 的 Git 工作台：会话标题栏芯片常驻分支、改动数与同步状态，可就地切分支、看改动、拉取推送；完整窗口提供泳道提交图、逐块暂存、带恢复点的交互式变基与历史改写、批量 cherry-pick、三方冲突编辑器、行内 blame、worktree 管理与 Git LFS 迁入迁出。'

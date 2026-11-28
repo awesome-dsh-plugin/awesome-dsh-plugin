@@ -1,0 +1,6 @@
+url: https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/textru-unique
+name: maburykh-gif/dsh-plugins#textru-unique
+category: tools
+description:
+  en: 'Uniqueness checks through the text.ru API as two agent tools: textru_unique submits the text, waits for the result and returns the score, the matching sources and the fragments that need a rewrite; textru_balance returns the characters left on the account. Needs a text.ru key, read from TEXT_RU_KEY in the credential store.'
+  zh: '通过 text.ru API 提供两个 agent 工具做查重：textru_unique 提交文本、等待结果并返回重复率、命中来源以及需要改写的片段；textru_balance 返回账号剩余字符数。需要 text.ru 密钥，从凭据库的 TEXT_RU_KEY 读取。'

@@ -1,0 +1,6 @@
+url: https://github.com/DreamPerday/dsh-team-toolkit/tree/main/packages/team-ext
+name: DreamPerday/dsh-team-toolkit#team-ext
+category: dev
+description:
+  en: Observation-only audit for DSH Agent Teams that records per-request cache usage and prompt-prefix rewrites to JSONL, with no tool or prompt changes.
+  zh: DSH 智能体团队的纯观测审计：把每请求缓存用量与提示前缀重写事件落成 JSONL，不加工具、不改提示词。

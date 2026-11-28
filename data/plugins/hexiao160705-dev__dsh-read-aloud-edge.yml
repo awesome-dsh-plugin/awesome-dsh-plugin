@@ -1,0 +1,6 @@
+url: https://github.com/hexiao160705-dev/dsh-read-aloud-edge
+name: hexiao160705-dev/dsh-read-aloud-edge
+category: voice
+description:
+  en: 'Speaker button on every assistant reply that synthesizes the reply with the locally installed edge-tts and plays it in a small player with 1x-4x speed control; audio is cached by content hash and the reply text never leaves the machine to a paid API.'
+  zh: '在每条助手回复上加一个喇叭按钮：用本机安装的 edge-tts 合成语音，并在小播放器里以 1 倍到 4 倍速播放；音频按内容哈希缓存在本地，回复正文不经过付费接口。'

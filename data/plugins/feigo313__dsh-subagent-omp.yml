@@ -1,0 +1,7 @@
+url: https://github.com/feigo313/dsh-subagent-omp
+name: feigo313/dsh-subagent-omp
+category: tools
+description:
+  en: 'Registers the locally installed Oh My Pi CLI (omp) as a DSH subagent backend: every delegation runs one `omp --print --mode json` process that inherits your own ~/.omp model and provider settings, and runs are serialized so a single-session local engine is never oversubscribed. Requires omp installed and configured.'
+  zh: '把本机已安装的 Oh My Pi CLI（omp）注册为 DSH 子代理后端：每次委派跑一个 omp --print --mode json 进程，模型与供应商沿用你自己的 ~/.omp 配置，串行排队，不会把单会话的本地引擎压垮。需先安装并配置 omp。'
+tarball: https://github.com/feigo313/dsh-subagent-omp/releases/download/v0.1.2/dsh-subagent-omp-0.1.2.tgz

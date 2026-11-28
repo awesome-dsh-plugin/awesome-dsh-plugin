@@ -1,0 +1,7 @@
+url: https://github.com/qisisiqi/dsh-sf-theme
+name: qisisiqi/dsh-sf-theme
+category: theme
+description:
+  en: 'Sangvis Ferri theme for DeepSeek Harness: near-black crimson HUD, Eliza and Agent wallpapers, S.F boot splash, sidebar crest, hero rework and code rain. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 《少女前线》铁血工造主题：近黑绯红 HUD、伊莱莎与代理人壁纸、S.F 开屏、侧栏碑形标、首页 hero 与代码雨。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/qisisiqi/dsh-sf-theme/main/icon.png

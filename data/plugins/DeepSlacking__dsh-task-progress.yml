@@ -1,0 +1,6 @@
+url: https://github.com/DeepSlacking/dsh-task-progress
+name: DeepSlacking/dsh-task-progress
+category: ui
+description:
+  en: 'Per-turn task progress for DSH: a node rail and expandable list above the composer, a gray progress glyph in a completed reply footer, and a Right Sidebar tab listing every node as a card, driven by the model report_progress calls and a side-channel evaluator.'
+  zh: 'DSH 会话内的本轮任务进度：输入框上方有节点轨道和可展开列表，完成回复底部有灰色进度图标，右侧边栏按时间顺序用卡片显示全部节点；节点来自模型的 report_progress 调用和旁路评估。'

@@ -1,0 +1,7 @@
+url: https://github.com/LZM-P/dsh-plugin-rack
+name: LZM-P/dsh-plugin-rack
+category: usage
+description:
+  en: 'Plugin dashboard for DSH: every installed plugin in one list with a per-row power switch, a manual-or-auto flag that scopes the one-click bulk actions, and inline update badges. Updates are hot-swapped, so the new version takes effect without restarting DSH. Detects npm, GitHub, tarball and symlink installs. A second page lists, previews and toggles skills; it reads skill files but never modifies them. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 插件管理台：所有已装插件一屏看完，每行一个开关；「手动/自动」标记决定一键批量操作的作用范围；有新版时行内标出并可单独更新。装完热替换，新版本当场生效、不用重启 DSH。能识别 npm、GitHub、压缩包、软链四种装法。另有一页列出、预览并开关技能，只读技能文件，不做任何修改。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/LZM-P/dsh-plugin-rack/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/InsaneGenji/dsh-safe-restart
+name: InsaneGenji/dsh-safe-restart
+category: ui
+tarball: https://github.com/InsaneGenji/dsh-safe-restart/releases/latest/download/dsh-safe-restart.tgz
+description:
+  en: 'Adds a Restart DeepSeek Harness item to the desktop tray. When tasks are running it asks first, with an Electron native dialog whose title and button both read Restart, reusing the official interrupted-tasks notice. The decision path is the same one the tray Quit item uses (inspectQuit plus resolveDesktopQuitPrompt). After a client update replaces main.js the plugin re-applies its small patch on the next start. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DeepSeek Harness 桌面端托盘加一项「重启 DeepSeek Harness」。有正在运行的任务时先弹 Electron 原生确认框，标题与按钮都是「重启」，说明沿用官方那句「当前正在运行的任务将会中断」；判断条件与托盘「退出」同源（同一个 inspectQuit 与 resolveDesktopQuitPrompt）。客户端升级替换 main.js 后，插件会在下次启动自动重打补丁。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

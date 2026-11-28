@@ -2,6 +2,6 @@ url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-auto-trust-all
 name: mzzsfy/dsh-plugin#dsh-auto-trust-all
 category: remote
 description:
-  en: 'Dynamically trusts every Host header that actually arrives and flips the default web binding to 0.0.0.0: wildcard or unenumerable entry domains work without editing the start command, the authentication layer is untouched, and hosts are evicted by LRU beyond a capacity cap.'
-  zh: '动态信任所有实际到达的 Host 并把 web 默认绑定翻转为 0.0.0.0：泛域名等无法枚举的入口免改启动命令，认证层不动，超出容量的 Host 按 LRU 淘汰。'
+  en: 'Makes every Host header that actually reaches the server a trusted entry: all webServer routes are wrapped and the parsed host is registered in connection.trustedHosts (mirrored into webRuntime.trustedHosts on host generations that still have that service), so wildcard or otherwise unenumerable entry domains work without editing the start command; entries beyond a configurable capacity are evicted LRU-first. It does not change the listen binding — that stays with the deployment layer — and the authentication layer is untouched. Because any Host header is accepted, the host allowlist no longer protects against DNS rebinding; use it only on a network you trust.'
+  zh: '把实际到达的 Host 动态登记为受信任入口:包装全部 webServer 路由,解析出的域名写入 connection.trustedHosts(仍有 webRuntime 的宿主世代同步镜像),泛域名等无法枚举的入口免改 --trusted-host 启动参数,超出可配容量的按 LRU 淘汰。不改监听绑定(监听地址始终由部署层 --host 或宿主缺省决定),认证层原样保留。由于任何 Host 头都会被接受，主机白名单不再能防 DNS 重绑定；只应在可信网络中使用。'
 icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-auto-trust-all.png

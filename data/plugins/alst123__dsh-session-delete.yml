@@ -1,0 +1,6 @@
+url: https://github.com/alst123/dsh-session-delete
+name: alst123/dsh-session-delete
+category: session
+description:
+  en: 'Adds a Delete Session action to the DeepSeek Harness sidebar context menu — physically removes the session log from disk instead of only archiving it. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DSH 会话列表右键菜单加「删除会话」，物理删除会话记录而不是仅归档。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

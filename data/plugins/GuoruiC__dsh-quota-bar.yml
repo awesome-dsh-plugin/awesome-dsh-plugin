@@ -1,0 +1,7 @@
+url: https://github.com/GuoruiC/dsh-quota-bar
+name: GuoruiC/dsh-quota-bar
+category: usage
+icon: https://raw.githubusercontent.com/GuoruiC/dsh-quota-bar/main/assets/icon-180.png
+description:
+  en: 'Persistent bottom bar showing remaining Codex and Gemini quota (weekly and 5-hour windows with reset countdown) and the DeepSeek platform wallet balance. Codex and Gemini values come from accounts already signed in through the dsh-codex-subscription and dsh-gemini-pool plugins; each source can be switched off, and a switched-off source makes no requests.'
+  zh: '在主界面底部常驻一条额度状态条：显示 Codex、Gemini 的周 / 5 小时剩余额度与重置倒计时，以及 DeepSeek 平台账号的钱包余额。Codex / Gemini 的数值来自 dsh-codex-subscription 与 dsh-gemini-pool 里已登录的账号；三个来源可分别关闭，关掉的来源不再发起任何请求。'

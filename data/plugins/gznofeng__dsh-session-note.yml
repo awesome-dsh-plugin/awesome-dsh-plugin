@@ -1,0 +1,7 @@
+url: https://github.com/gznofeng/dsh-session-note
+name: gznofeng/dsh-session-note
+category: session
+description:
+  en: 'A memos tab in the conversation view: each conversation keeps its own handwritten notes on this machine — add, edit in place, one-click copy and confirm-guarded delete, most recently touched first. Scoped strictly by session id (a missing id refuses to write rather than guessing), stored in one plugin-data JSON with atomic writes and v1 migration; an unparsable file refuses all writes instead of being cleared. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '对话视图里的备忘录标签页：每个会话在本机保存自己的一组手写备忘——添加、就地编辑、一键复制、删除前二次确认，最近改动排在最前。数据严格按会话 id 隔离（拿不到 id 就拒绝写入而不是猜一个），存于单个 plugin-data JSON，原子写入并兼容 v1 迁移；文件损坏时拒绝一切写入而不是清空。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/gznofeng/dsh-session-note/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/beings-labs/dsh-cloudflare-connector
+name: beings-labs/dsh-cloudflare-connector
+category: tools
+description:
+  en: Shared Cloudflare access for agents and plugins through browser OAuth and the official MCP server, with upstream tools, automatic token refresh, and a typed plugin service.
+  zh: 通过浏览器 OAuth 和官方 MCP 服务器为智能体与插件共享 Cloudflare 访问，提供上游工具、令牌自动刷新及带类型定义的插件服务。

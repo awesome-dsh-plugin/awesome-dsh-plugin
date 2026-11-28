@@ -1,0 +1,7 @@
+url: https://github.com/goodjin/dsh-auto-resume
+name: goodjin/dsh-auto-resume
+category: session
+tarball: https://github.com/goodjin/dsh-auto-resume/releases/download/v0.1.0/dsh-auto-resume-0.1.0.tgz
+description:
+  en: 'Scans the local sessions when DeepSeek Harness starts and continues the ones that ended abnormally (crash, network loss, timeout, or the app quitting), while never continuing a session the user stopped on purpose, and keeps a ledger of what it did and why. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '桌面版启动后扫描本机会话，把因崩溃、断网、超时或应用退出而异常中断的会话自动继续；用户主动停掉的会话永不继续，并留一份账目记录扫了谁、续了谁、为什么跳过。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/zhiquanchi/dsh-mac-notifications
+name: zhiquanchi/dsh-mac-notifications
+category: notify
+description:
+  en: Native macOS Notification Center alerts for DeepSeek Harness when the agent asks for your choice, a task completes, or a task fails, with per-scenario switches, background-job suppression, and click-to-open the session.
+  zh: 为 DeepSeek Harness 提供原生 macOS 通知中心提醒：智能体需要你做出选择、任务完成或任务失败时弹出通知，可在配置中分别开关、在后台任务运行时抑制完成提醒，点击通知可直接跳回对应会话。

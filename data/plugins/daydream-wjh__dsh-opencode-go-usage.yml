@@ -1,0 +1,6 @@
+url: https://github.com/daydream-wjh/dsh-opencode-go-usage
+name: daydream-wjh/dsh-opencode-go-usage
+category: usage
+description:
+  en: "OpenCode Go quota readout pinned above the composer in the DSH web GUI: rolling, weekly and monthly used percentages with progress bars, and reset countdowns that keep ticking without a network read. Expanding adds each window's reported status and reset time. The Host half reads the gateway usage endpoint with a key from the credentials store — OPENCODE_API_KEY, falling back to the older OPENCODE_GO_API_KEY — while the browser only reads a same-origin route, so the key never reaches the page. A settings page (Settings → OpenCode Go) stores that key in the credentials store and reports only whether it is configured, its source and a masked preview, so entering a key no longer means editing the credentials file by hand."
+  zh: "在 DSH 网页界面的输入框上方常驻一行 OpenCode Go 套餐额度：滚动窗口、本周、本月的已用百分比与进度条，重置倒计时不依赖网络刷新也会自己走；展开可看每档上报状态与重置时刻。宿主半边用凭据库里的 Key（OPENCODE_API_KEY，回退旧名 OPENCODE_GO_API_KEY）读取网关用量接口，浏览器只读同源路由，Key 不进页面。设置页（设置 → OpenCode Go）可把 Key 写进凭据库，页面只显示是否已配置、来源与掩码预览，不必再手改凭据文件。"

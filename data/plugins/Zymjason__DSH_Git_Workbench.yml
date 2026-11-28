@@ -1,0 +1,6 @@
+url: https://github.com/Zymjason/DSH_Git_Workbench
+name: Zymjason/DSH_Git_Workbench
+category: git
+description:
+  en: 'Multi-platform Git workbench for DeepSeek Harness: manage Gitea, GitHub, GitLab and Gitee accounts at the same time, browse repositories and branch graphs, review pull and merge requests, check contribution heatmaps, and sync-push one commit to several platforms.'
+  zh: '多平台 Git 工作台：同时登录管理 Gitea、GitHub、GitLab、Gitee 账号，浏览仓库与分支图、审阅 PR/MR、查看贡献热力图，并把一次提交同步推送到多个平台。'

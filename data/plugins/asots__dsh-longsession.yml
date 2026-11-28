@@ -1,0 +1,6 @@
+url: https://github.com/asots/dsh-longsession
+name: asots/dsh-longsession
+category: ui
+description:
+  en: 'Adds a reversible “Collapse history” toggle to the session header with a light/dark status dot: it unloads the history already rendered by the page and keeps the latest two turns, then shows “History collapsed”; clicking again restores the saved window. A manual restore keeps auto-collapse off for the rest of that session; thresholds and request caps live on Settings → Long session.'
+  zh: '在会话标题栏添加带深浅色状态圆点的可逆「收起历史」开关：未收起时点击卸载页面已渲染的旧历史、只保留最近两轮，按钮变为「已收起历史」；再点还原之前的窗口。手动还原后本会话不再自动收起；阈值与请求上限在 设置 → 长会话。'

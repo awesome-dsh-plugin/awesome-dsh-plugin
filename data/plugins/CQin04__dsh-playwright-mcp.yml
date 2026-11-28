@@ -1,0 +1,6 @@
+url: https://github.com/CQin04/dsh-playwright-mcp
+name: CQin04/dsh-playwright-mcp
+category: browser
+description:
+  en: 'Configuration bundle that connects Microsoft''s official @playwright/mcp to your running Chrome through the Playwright extension, so the agent can drive your logged-in tabs. Install from a local copy: put your extension token in cordis.patch.yml first (with the token, connections skip the extension''s approval prompt, so keep it private). Needs Node.js and the Playwright Chrome extension; the default command is the Windows form (cmd.exe /c npx), so change it to npx on macOS or Linux. It starts @playwright/mcp@latest through npx.'
+  zh: '配置型插件：通过 Microsoft 官方 @playwright/mcp 与 Chrome 扩展，让智能体操作你已登录的浏览器标签页。请装本地副本：先把扩展的 token 填进 cordis.patch.yml（持有 token 时连接不再弹出扩展的批准提示，请勿外传）。需要 Node.js 和 Playwright Chrome 扩展；默认命令是 Windows 形式（cmd.exe /c npx），macOS / Linux 要改成 npx。启动时通过 npx 拉取并运行 @playwright/mcp@latest。'

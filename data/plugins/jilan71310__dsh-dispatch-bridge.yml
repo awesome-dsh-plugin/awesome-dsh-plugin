@@ -1,0 +1,6 @@
+url: https://github.com/jilan71310/dsh-dispatch-bridge
+name: jilan71310/dsh-dispatch-bridge
+category: workflow
+description:
+  en: 'Publishes the running host''s authenticated local URL and a workspace snapshot so local automation clients can create sessions inside a chosen workspace.'
+  zh: '把宿主进程内的授权地址与工作区快照写到本机，让本地自动化客户端能在指定工作区创建会话。'

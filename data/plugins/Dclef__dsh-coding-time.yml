@@ -1,0 +1,7 @@
+url: https://github.com/Dclef/dsh-coding-time
+name: Dclef/dsh-coding-time
+category: usage
+icon: https://raw.githubusercontent.com/Dclef/dsh-coding-time/main/assets/icon-180.png
+description:
+  en: Local coding-activity timing per project with wall-clock interval unions, AI added/deleted lines from real diff metadata, per-file time shares, a settings dashboard and CSV export.
+  zh: 本地编码活动计时：按项目统计墙钟活跃区间并集、基于真实 diff 元数据的 AI 增删行、按文件时长占比、设置页仪表盘与 CSV 导出。

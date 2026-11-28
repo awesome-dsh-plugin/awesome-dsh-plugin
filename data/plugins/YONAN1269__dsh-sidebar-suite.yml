@@ -2,5 +2,6 @@ url: https://github.com/YONAN1269/dsh-sidebar-suite
 name: YONAN1269/dsh-sidebar-suite
 category: ui
 description:
-  en: Adds three switchable sidebar layouts to DeepSeek Harness and a settings control for the startup default layout.
-  zh: 为 DeepSeek Harness 提供三种可切换的侧栏布局，并在插件详情页设置启动时的默认布局。
+  en: 'Adds two switchable sidebar layouts (tabs and overlay) plus a no-override official default, an always-expanded session list, disposable temporary sessions and a third-party tab API to DeepSeek Harness, with default-layout and feedback controls in the plugin detail page.'
+  zh: '为 DeepSeek Harness 提供两种可切换的侧栏布局（标签页 / 浮层）与一个不改动布局的「官方默认」，以及默认全部展开的会话列表、默认在退出 DSH 时删除的临时会话和第三方 tab 注册接口，并在插件详情页设置默认布局与反馈入口。'
+icon: https://raw.githubusercontent.com/YONAN1269/dsh-sidebar-suite/main/assets/icon-180.png

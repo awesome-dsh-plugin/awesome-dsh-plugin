@@ -1,0 +1,6 @@
+url: https://github.com/AlaIchhe/dsh-qwenwork-connect
+name: AlaIchhe/dsh-qwenwork-connect
+category: model
+description:
+  en: 'QwenWork (千问办公) model provider for dsh: signs in through the desktop device flow and then calls the official OpenAI-compatible gateway, so tool calls, image input and usage pass through; adds the tiers of the plan as a qwenwork provider, keeps the credential in a local file that a refresh rewrites in place, and shows the remaining credits of the account.'
+  zh: '把千问办公（QwenWork）接成 dsh 的模型提供方：用桌面端设备码登录，直连官方 OpenAI 兼容网关，工具调用、图片输入和 usage 都能透传；在 qwenwork 下提供套餐里的各档模型，凭据落在本地文件、到期自动刷新写回，并显示账号剩余积分。'

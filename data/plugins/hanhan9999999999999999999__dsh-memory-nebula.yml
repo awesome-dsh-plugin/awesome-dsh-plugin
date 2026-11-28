@@ -1,0 +1,7 @@
+url: https://github.com/hanhan9999999999999999999/dsh-memory-nebula
+name: hanhan9999999999999999999/dsh-memory-nebula
+category: memory
+description:
+  en: 'Local-first memory nebula for DeepSeek Harness with graph views, evidence chains, hygiene checks, and offline snapshots. Reads the memory stores of every workspace and of other memory plugins (read-only, for example meow-memory''s SQLite) and writes only under $DSH_HOME/memory-nebula. Registers 9 agent tools and a system-prompt section (usage rules every turn, plus not-yet-read neighbouring memories after a few reads); its /export and /share endpoints return the full memory text without authentication on the local server, and an optional standalone engine listens on 127.0.0.1:7890.'
+  zh: '面向 DeepSeek Harness 的本地优先记忆星图，提供图形视图、证据链、记忆体检与离线快照。只读地读取各工作区以及其他记忆插件（如 meow-memory 的 SQLite）的记忆库，只写入 $DSH_HOME/memory-nebula。会注册 9 个 agent 工具和一段系统提示（每轮带用法规则，读过几条记忆后再补充尚未读过的邻近记忆）；/export 与 /share 接口在本地服务上无需认证即返回完整记忆原文；可选的独立引擎监听 127.0.0.1:7890。'
+icon: https://raw.githubusercontent.com/hanhan9999999999999999999/dsh-memory-nebula/main/market/assets/icon-180.png

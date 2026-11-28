@@ -1,0 +1,6 @@
+url: https://github.com/amd47802574/dsh-skill-hub
+name: amd47802574/dsh-skill-hub
+category: skill
+description:
+  en: 'Sidebar skill hub: browse and search DSH skills, import from a folder or GitHub, and read full SKILL.md bodies rendered as Markdown. Imports are copied into ~/.dsh/skills (existing names are overwritten only on opt-in), skills there can be moved to a .trash folder from the detail view, and GitHub imports download the repository archive from codeload.github.com. It uses the same package name (dsh-skill-hub) and mount id (skill-hub) as cheshireez/dsh-skill-hub and hoshino114/dsh-skill-hub, so only one of the three can be installed.'
+  zh: '侧栏技能中心：浏览、搜索 DSH 技能，从文件夹或 GitHub 导入技能，并以 Markdown 渲染查看完整技能正文。导入的技能复制到 ~/.dsh/skills（同名只在勾选覆盖时才覆盖），详情页可把其中的技能移入 .trash 回收目录；GitHub 导入会从 codeload.github.com 下载仓库压缩包。包名 dsh-skill-hub 和挂载 id skill-hub 与 cheshireez/dsh-skill-hub、hoshino114/dsh-skill-hub 相同，三者只能装一个。'

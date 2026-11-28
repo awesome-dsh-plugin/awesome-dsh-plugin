@@ -1,0 +1,6 @@
+url: https://github.com/FairmeHIT/dsh-sync
+name: FairmeHIT/dsh-sync
+category: git
+description:
+  en: 'Syncs the plugin manifest and cordis.patch.yml of any DSH profile, desktop included, through a private Git repository over SSH, HTTPS or a local path: /sync-status, /sync-pull and /sync-push plus a Settings page, conflicting pushes refused unless forced, snapshots before apply with automatic rollback, and credentials, sessions and plugin-private data kept out.'
+  zh: '通过私有 Git 仓库（SSH、HTTPS 或本地路径）同步任意 DSH profile（含 desktop）的插件清单与 cordis.patch.yml：提供 /sync-status、/sync-pull、/sync-push 与设置页；冲突 push 默认拒绝、显式 force 才覆盖；应用前快照并在失败时自动回滚；凭据、会话与插件私有数据不在同步范围内。'

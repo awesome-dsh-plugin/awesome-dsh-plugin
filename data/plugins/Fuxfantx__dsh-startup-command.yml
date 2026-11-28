@@ -1,0 +1,6 @@
+url: https://github.com/Fuxfantx/dsh-startup-command
+name: Fuxfantx/dsh-startup-command
+category: dev
+description:
+  en: 'Runs enabled PowerShell, CMD, Bash and Python presets in a user-defined order when DSH starts, shows live output for the selected preset in a left-sidebar page, and ends each managed process tree on stop, restart, disable, delete, or exit.'
+  zh: '在 DSH 启动时按用户设定的顺序运行启用的 PowerShell、CMD、Bash 与 Python Preset，在左侧边栏页查看所选 Preset 的实时输出，并在停止、重启、停用、删除或退出时结束对应进程树。'

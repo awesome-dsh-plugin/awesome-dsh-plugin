@@ -1,0 +1,7 @@
+url: https://github.com/onlyinliu/dsh-ambient-gallery
+name: onlyinliu/dsh-ambient-gallery
+category: ui
+description:
+  en: A wall of photographs hung behind the main panel - uneven sizes at their own angles with room to breathe, twenty real landscape photographs shipped to fill it on first run, up to twenty rotating images per frame, rectangles only, the three lowest frames playing a local video, and one shortcut that sends the video back into the rotation.
+  zh: 挂在主面板背后的一面照片墙：大小不一、各自倾斜、彼此留白。自带二十张真实风景照，首次启动就挂上墙；每个画框最多二十张图轮播，最下面三个框可以放本地视频，一个快捷键让视频退回照片轮播。
+icon: https://raw.githubusercontent.com/onlyinliu/dsh-ambient-gallery/main/assets/icon-180.png

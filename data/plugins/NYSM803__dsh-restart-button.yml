@@ -1,0 +1,7 @@
+url: https://github.com/NYSM803/dsh-restart-button
+name: NYSM803/dsh-restart-button
+category: ui
+description:
+  en: 'Draggable floating restart button for the dsh Web GUI (Windows only, dsh >= 0.2.2-rc.1): confirm, then the app and its host close and come back on their own, with a cancel button, a watchdog and a clear failure message. Icon, background colour and position lock are edited in Settings.'
+  zh: '给 dsh Web GUI 的悬浮重启按钮（仅 Windows，需 dsh >= 0.2.2-rc.1）：拖动改位置、点击确认后一键重启应用与 Host，可中途取消、超时会自动收手并说明原因；图标（4 个自带矢量图或上传图片）、底色、位置锁定都在设置里改。'
+icon: https://raw.githubusercontent.com/NYSM803/dsh-restart-button/main/assets/icon-180.png

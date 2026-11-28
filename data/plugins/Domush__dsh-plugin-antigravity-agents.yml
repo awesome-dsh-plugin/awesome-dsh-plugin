@@ -1,0 +1,6 @@
+url: https://github.com/Domush/dsh-plugin-antigravity-agents
+name: Domush/dsh-plugin-antigravity-agents
+category: agi
+description:
+  en: 'Native Google Antigravity agents loader and subagent orchestration engine with model selection and Web UI settings integration. Loads agent definitions from ~/.agents/agents and the workspace''s .agents/agents; the selected main agent''s instructions go into the system prompt, and a matching agent''s instructions are prepended to DSH''s own subagent and spawn_teammate calls. Settings are written to .agents/agents/settings.json in the workspace.'
+  zh: '原生 Google Antigravity Agent 规范加载与子代理编排引擎，支持模型选择与 Web 设置界面集成。从 ~/.agents/agents 和工作区的 .agents/agents 读取 agent 定义；选中的主 agent 的指令会写进系统提示，匹配到的 agent 指令还会加到 DSH 自带的 subagent / spawn_teammate 调用的提示词前面；设置写在工作区的 .agents/agents/settings.json。'

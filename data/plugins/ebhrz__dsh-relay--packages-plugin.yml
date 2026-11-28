@@ -1,0 +1,6 @@
+url: https://github.com/ebhrz/dsh-relay/tree/main/packages/plugin
+name: ebhrz/dsh-relay#plugin
+category: remote
+description:
+  en: 'Phone access to a local DeepSeek Harness through a relay you run: QR pairing, request payloads sealed end to end, and a host machine that opens no inbound port.'
+  zh: '通过自建中继从手机访问本机的 DeepSeek Harness：扫码配对、请求载荷端到端加密、本机无需开放入站端口。'

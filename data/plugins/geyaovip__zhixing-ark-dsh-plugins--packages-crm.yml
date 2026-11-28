@@ -1,0 +1,7 @@
+url: https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/crm
+name: geyaovip/zhixing-ark-dsh-plugins#crm
+category: tools
+description:
+  en: Query CRM customers, leads, opportunities, follow-ups, and personal tasks with read-only Zhixing Ark authorization.
+  zh: 知行方舟 CRM 跟进，查询客户、线索、商机、跟进记录和本人待办。
+tarball: https://github.com/geyaovip/zhixing-ark-dsh-plugins/releases/download/apps-v1.0.0/dsh-plugin-zhixing-ark-crm-1.0.0.tgz

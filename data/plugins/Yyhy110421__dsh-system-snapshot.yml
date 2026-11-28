@@ -1,0 +1,6 @@
+url: https://github.com/Yyhy110421/dsh-system-snapshot
+name: Yyhy110421/dsh-system-snapshot
+category: tools
+description:
+  en: 'On Windows (PowerShell 5.1), snapshots whitelisted registry keys, hosts, user environment variables, services, firewall rules and scheduled tasks, diffs changes, and restores only registry, hosts and user environment variables.'
+  zh: '仅 Windows（依赖 PowerShell 5.1）：改动系统前记录白名单注册表、hosts、用户环境变量、服务、防火墙和计划任务，可对比；只恢复注册表、hosts 和用户环境变量。'

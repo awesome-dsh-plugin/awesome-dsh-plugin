@@ -1,0 +1,6 @@
+url: https://github.com/ymf2317-tech/dsh-my-computer
+name: ymf2317-tech/dsh-my-computer
+category: remote
+description:
+  en: 'Full-disk Windows file manager tab in DSH Web right sidebar: browse all drives (A:-Z:), preview/edit text, upload/download files, stream directory ZIP archives, move across drives, and switch directory or category view. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH Web 右栏「我的电脑」全盘文件管理器：跨盘符浏览 A:-Z: 驱动器、文本预览编辑、上传下载、整目录流式打包 ZIP、剪切粘贴与目录/分类双视图。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

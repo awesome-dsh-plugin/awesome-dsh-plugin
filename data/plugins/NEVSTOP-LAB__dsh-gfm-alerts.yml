@@ -1,0 +1,7 @@
+url: https://github.com/NEVSTOP-LAB/dsh-gfm-alerts
+name: NEVSTOP-LAB/dsh-gfm-alerts
+category: ui
+description:
+  en: 'Renders GitHub-flavored Markdown alerts (the `> [!NOTE]`, TIP, IMPORTANT, WARNING and CAUTION callout blocks) in DSH replies as theme-aware boxes with localized titles, and registers a system-prompt section asking the model to prefer them.'
+  zh: '把 DSH 回复里的 GitHub Markdown 提示块（`> [!NOTE]`、TIP、IMPORTANT、WARNING、CAUTION 这类 callout 引用）渲染成跟随主题、标题本地化的提示框，并通过系统提示偏好让模型优先使用。'
+tarball: https://github.com/NEVSTOP-LAB/dsh-gfm-alerts/releases/download/v0.2.0/dsh-gfm-alerts-0.2.0.tgz

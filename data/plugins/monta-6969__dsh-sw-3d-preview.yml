@@ -1,0 +1,6 @@
+url: https://github.com/monta-6969/dsh-sw-3d-preview
+name: monta-6969/dsh-sw-3d-preview
+category: ui
+description:
+  en: 'The preview-and-feedback step of a SOLIDWORKS modelling loop driven by an agent: it draws the STEP/STL/OBJ a design was delivered as into the DSH file preview panel, so you can see whether the part was built correctly, then pick faces, edges and points, sample three points on a face, cut sections with caps, and hand the saved annotations back to the agent as a Markdown sheet of face ids and coordinates.'
+  zh: 'agent 经 sw-mcp 驱动 SOLIDWORKS 建模后的预览与反馈环节：把设计 deliver 出的 STEP/STL/OBJ 画进 DSH 文件预览面板，让人看出零件建得对不对，再拾取面/边/点、在面上做三点法取样、带封盖剖切，并把已保存的标注汇总成一份含面号与坐标的 Markdown 交接单交回 agent。'

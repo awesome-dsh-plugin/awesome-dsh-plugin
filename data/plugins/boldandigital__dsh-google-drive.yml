@@ -1,0 +1,7 @@
+url: https://github.com/boldandigital/dsh-google-drive
+name: boldandigital/dsh-google-drive
+category: remote
+description:
+  en: 'Connect Google Drive accounts in the Settings, browse their files in a Drive tab of the right sidebar, and drag a file straight into the conversation. You create your own Google OAuth client (or service-account key) in Google Cloud Console; the plugin can read and write the Drive of the accounts you connect, and downloads a file only when you ask.'
+  zh: '在设置中连接 Google Drive 账号，在右侧边栏的 Drive 选项卡中浏览文件，并可将文件直接拖入对话。需要自己在 Google Cloud Console 创建 OAuth 客户端（或服务账号密钥）；插件对已连接账号的云端硬盘有读写权限，只在你要求时才下载文件。'
+icon: https://raw.githubusercontent.com/boldandigital/dsh-google-drive/main/assets/icon-180.png

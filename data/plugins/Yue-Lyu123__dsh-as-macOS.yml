@@ -1,0 +1,6 @@
+url: https://github.com/Yue-Lyu123/dsh-as-macOS
+name: Yue-Lyu123/dsh-as-macOS
+category: ui
+description:
+  en: 'Turns the DSH Web UI into a macOS-style desktop with the chat parked behind it: Sonoma wallpaper, menu bar, magnifying Dock, F4 Launchpad, ⌘Space Spotlight, Control Centre, clock/calendar widgets, F3 Mission Control and a desktop orb that floats the native conversation back up. Finder, Terminal (a /bin/bash session) and Settings ship with the plugin; the Browser, Code, Office and Notes windows are unlocked by separate companion plugins (dsh-ego-browser, dsh-code-workbench, dsh-univer-office, dsh-obsidian-notes) and show a placeholder until installed, and the Browser window also launches a headless Chromium (found under /usr/bin, or set DSH_MACOS_CHROME). The agent can drive the desktop through /api/macos-desktop/* routes and window.__macos.'
+  zh: '把 DSH 的 Web 界面变成 macOS 风格桌面，并把对话藏到桌面后面：Sonoma 壁纸、菜单栏、可放大的程序坞、F4 启动台、⌘Space 聚焦搜索、控制中心、时钟/日历小组件、F3 调度中心，以及一颗能把原生对话浮出来的桌面悬浮球。访达、终端（/bin/bash 会话）、设置随插件自带；浏览器、代码、Office、笔记四个窗口由另装的配套插件解锁（dsh-ego-browser、dsh-code-workbench、dsh-univer-office、dsh-obsidian-notes），未安装时显示占位窗口；浏览器窗口另会以无头方式启动本机 Chromium（默认在 /usr/bin 下查找，或设置 DSH_MACOS_CHROME）。agent 可通过 /api/macos-desktop/* 路由与页面内 window.__macos 操作整个桌面。'

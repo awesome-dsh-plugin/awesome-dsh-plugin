@@ -1,0 +1,6 @@
+url: https://github.com/seonzzy/dsh-live-terminal
+name: seonzzy/dsh-live-terminal
+category: ui
+description:
+  en: 'A real terminal shared by the agent and the user, scoped per conversation in a right-sidebar tab: the agent drives a persistent PTY through live_terminal_* tools (open, run, send, read, signal, close) and both sides see the same screen, so ssh, vim, tmux and password prompts work as they do in a normal terminal. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '模型与用户共用的一条真实终端，按会话隔离在右侧栏页签：模型用 live_terminal_* 工具（open/run/send/read/signal/close）驱动常驻 PTY，两边看到的是同一块屏幕，ssh、vim、tmux 和密码提示都按终端原本的方式工作。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

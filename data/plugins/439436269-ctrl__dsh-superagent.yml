@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-superagent
+name: 439436269-ctrl/dsh-superagent
+category: workflow
+description:
+  en: 'A proactive coding agent as a DSH bundle: it listens to GitHub issues and comments, and optionally Feishu, DingTalk and WeCom, turns requests from authorized people into tickets, runs each ticket in its own DSH session and git worktree, and replies in the original thread with a branch or pull request.'
+  zh: '以 DSH bundle 形式发布的主动式编码智能体：监听 GitHub 的 issue 与评论，也可接入飞书、钉钉、企业微信，把有权限的人提出的请求开成工单，每条工单在自己的 DSH 会话与 git worktree 里执行，并回到原话题以分支或 PR 回话。'

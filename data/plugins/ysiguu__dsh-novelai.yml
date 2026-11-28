@@ -1,0 +1,6 @@
+url: https://github.com/ysiguu/dsh-novelai
+name: ysiguu/dsh-novelai
+category: vision
+description:
+  en: 'NovelAI image generation for DSH: `nai_image` (style presets, artist strings, per-model weight rewriting, token budget warnings, results rendered inline), `nai_status`, and `nai_prompt` (build / check / guide), plus a studio page with live draft previews, a standalone studio server, and a prompt guide distilled from four tutorials. Bring your own `pst-` token.'
+  zh: '把 NovelAI 生图接进 DSH：`nai_image`（画风预设、画师串、按模型自动转权重、token 预算提醒，出图直接内联显示）、`nai_status`、`nai_prompt`（build / check / guide 三个动作），外加带逐帧草稿预览的画室页面、独立 studio 和一个从四份教程里提炼的提示词手册。用自己的 `pst-` token。'

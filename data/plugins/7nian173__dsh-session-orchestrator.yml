@@ -1,0 +1,6 @@
+url: https://github.com/7nian173/dsh-session-orchestrator
+name: 7nian173/dsh-session-orchestrator
+category: session
+description:
+  en: 'Agents can create workspaces and sessions through conversation, exchange letters with any DSH session through a workspace mailbox, and navigate the UI automatically. Letters are stored locally under .dsh-mail in the session workspace; no network service is involved. Slash and @ commands are registered; see the repository for details.'
+  zh: '可以通过对话让 agent 自己建立工作区与会话，也可以通过信箱让所有 DSH 里的会话相互通信，甚至页面的自动跳转；信件会保留在对应会话工作区根目录 .dsh-mail 中做本地化储存，不会涉及联网服务。同时注册了 / 与 @ 的相关命令，详情请见仓库。'

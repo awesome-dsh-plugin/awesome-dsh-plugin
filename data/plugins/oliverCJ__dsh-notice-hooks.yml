@@ -1,0 +1,7 @@
+url: https://github.com/oliverCJ/dsh-notice-hooks
+name: oliverCJ/dsh-notice-hooks
+category: workflow
+description:
+  en: Configure automation Hooks for user and project scopes to run commands on session, tool, permission, and context-compaction events. Manage Hook authorization manually in Hooks setting.
+  zh: 为用户和项目配置自动化 Hook，在会话、工具调用、权限请求和上下文压缩等事件发生时运行命令。Hook 授权需在“Hooks 设置”中手动管理。
+icon: https://raw.githubusercontent.com/oliverCJ/dsh-notice-hooks/main/assets/icon-180.png

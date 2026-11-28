@@ -1,0 +1,7 @@
+url: https://github.com/hiJoeLee/dsh-session-cost-daily
+name: hiJoeLee/dsh-session-cost-daily
+category: usage
+tarball: https://github.com/hiJoeLee/dsh-session-cost-daily/releases/download/v0.1.1/dsh-session-cost-daily-0.1.1.tgz
+description:
+  en: 'A cost bar for DSH relay users: current-session and today totals under the composer (today includes already-closed sessions), a peak/off-peak dot, and no call to the official balance API. Click for a per-model breakdown; narrow windows keep the money line first. Derived from KIDLi1412/dsh-session-cost (MIT); it uses the same plugin id and /api/session-cost/summary route, so do not install it alongside the original.'
+  zh: '给走中转站的 DSH 用户做的费用条：输入框下方常驻本次与今日花费（今日累计含已关闭的会话），峰谷时段一眼可辨，不查官方余额接口。点开看分模型明细，窄窗口优先保留费用读数。改自 KIDLi1412/dsh-session-cost（MIT），与原版使用相同的插件 id 和 /api/session-cost/summary 路由，不能与原版同装。'

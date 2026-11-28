@@ -1,0 +1,7 @@
+url: https://github.com/chanyuenpang/dsh-better-file-viewer
+name: chanyuenpang/dsh-better-file-viewer
+category: ui
+description:
+  en: 'An independent file session view for DSH, with tree and column navigation, image galleries, JSON inspection, and document previews without replacing the original sidebar.'
+  zh: 'DSH 独立文件会话视图，提供树与层级列导航、图片网格、JSON 查看和文档预览，不替换原侧栏。'
+tarball: https://github.com/chanyuenpang/dsh-better-file-viewer/releases/download/v0.1.12/dsh-better-file-viewer-0.1.12.tgz

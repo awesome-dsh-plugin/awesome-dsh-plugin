@@ -1,0 +1,7 @@
+url: https://github.com/lijieyu233/dsh-codex-account-tools
+name: lijieyu233/dsh-codex-account-tools
+category: tools
+description:
+  en: 'Import, preview and export JSON accounts for dsh-codex-subscription with duplicate detection and explicit full-backup confirmation. Requires dsh-codex-subscription 3.2.6 or newer.'
+  zh: '为 Codex 订阅插件提供账号 JSON 导入、预览与导出，支持重复识别和完整备份确认。需先安装 dsh-codex-subscription 3.2.6 或更高版本。'
+tarball: https://github.com/lijieyu233/dsh-codex-account-tools/releases/download/v1.1.0/dsh-codex-account-tools-1.1.0.tgz

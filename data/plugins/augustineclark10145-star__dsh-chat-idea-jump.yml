@@ -1,0 +1,6 @@
+url: https://github.com/augustineclark10145-star/dsh-chat-idea-jump
+name: augustineclark10145-star/dsh-chat-idea-jump
+category: dev
+description:
+  en: 'Opens file references from DSH chat at the exact line: click a path to choose the right sidebar or any detected desktop editor, including IntelliJ IDEA, VS Code, Trae, Qoder, CodeBuddy, Sublime Text and Typora. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 在 DSH 聊天里按行打开文件引用：点击路径即可选右侧栏或本机已装编辑器，支持 IntelliJ IDEA、VS Code、Trae、Qoder、CodeBuddy、Sublime Text 与 Typora。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

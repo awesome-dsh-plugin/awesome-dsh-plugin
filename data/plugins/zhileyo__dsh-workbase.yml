@@ -1,0 +1,6 @@
+url: https://github.com/zhileyo/dsh-workbase
+name: zhileyo/dsh-workbase
+category: ui
+description:
+  en: 'Project, session and todo workbench for the DeepSeekRuntime web UI: projects in grid or list view with rename, pin, favorite, archive and restore; sessions browsed per project with body preview, rename, archive and delete; todos with priority, Markdown notes, image or file attachments, search and filters. State is kept in a plugin-owned host storage domain (dsh_workbase). 11 agent tools read and update todos of the project the calling session belongs to using version-checked writes, and the same panel covers project diagnostics, plugin updates and encrypted backup and restore.'
+  zh: DeepSeekRuntime Web 端的工作台插件：宫格或列表管理项目（改名、置顶、收藏、归档与恢复），按项目浏览会话并预览正文、改名／归档／删除，待办支持优先级、Markdown 备注、图片与文件附件、搜索与筛选。状态存放在插件自己的宿主存储域 dsh_workbase。注册 11 个 Agent 工具，按版本校验读写会话所属项目的待办；同一面板还提供项目诊断、插件更新与加密备份恢复。

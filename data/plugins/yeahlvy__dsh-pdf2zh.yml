@@ -1,0 +1,7 @@
+url: https://github.com/yeahlvy/dsh-pdf2zh
+name: yeahlvy/dsh-pdf2zh
+category: tools
+description:
+  en: 'Exposes a pdf2zh tool that translates PDF papers while preserving formulas, figures and layout, returning a translated PDF and a bilingual side-by-side PDF; requires a local PDFMathTranslate (pdf2zh) runtime.'
+  zh: '注册一个 pdf2zh 工具，翻译 PDF 论文时保留公式、图表与排版，输出译文版和双语对照版 PDF；需要本机安装 PDFMathTranslate（pdf2zh）运行时。'
+icon: https://raw.githubusercontent.com/yeahlvy/dsh-pdf2zh/main/docs/icon-512.png

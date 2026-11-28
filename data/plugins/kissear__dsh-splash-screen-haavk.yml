@@ -1,0 +1,7 @@
+url: https://github.com/kissear/dsh-splash-screen-haavk
+name: kissear/dsh-splash-screen-haavk
+icon: https://raw.githubusercontent.com/kissear/dsh-splash-screen-haavk/main/assets/icon-512.png
+category: ui
+description:
+  en: "Full-screen HAAVK-themed boot animation for DSH, rewritten from dsh-startup-secret 1.5.2 (which is listed separately): an intro video, a cold-blue console board and a five-step access sequence with recorded voice lines and a looping background track. Text and two accent colours are editable in DSH settings, and the intro video and BGM can be switched there; replacement media files go into lib/assets. Install it instead of dsh-startup-secret, not alongside it — the two share ~/.dsh/dsh-startup.json and the same settings section."
+  zh: "哈夫克风格的全屏启动动画：开屏视频、冷蓝控制台底板、五步访问流程，配预录人声与循环背景音乐；文字与两处主色、开屏视频和背景音乐的开关可在 DSH 设置页调整，替换素材需覆盖 lib/assets 下的同名文件。本包由 dsh-startup-secret 1.5.2 改写，两者共用启动配置和设置区，请与上游二选一安装。"

@@ -1,0 +1,6 @@
+url: https://github.com/Arrosam/dsh-model-quick-selector
+name: Arrosam/dsh-model-quick-selector
+category: ui
+description:
+  en: 'Adds a quick-select model list to the DSH composer model button: a settings icon on the Model row of the model menu opens a dialog to pick and reorder favourite models, dragging vertically on the model button switches between them on release, and dragging left or right steps the reasoning effort; the menu''s reasoning-effort row also gets a draggable slider (based on Microqian2th/dsh-codex-effort-slider). Text follows the DSH language setting (English / Chinese).'
+  zh: '为 DSH 输入框的模型按钮加入快速选择列表：模型菜单 Model 行右端的设置图标打开弹窗，勾选并排序常用模型；在模型按钮上竖向拖动、松手即在这些模型间切换，左右拖动逐档调整推理等级；菜单的「推理等级」行同时变成可拖动的滑条（基于 Microqian2th/dsh-codex-effort-slider）。界面文字跟随 DSH 语言设置（中文 / English）。'

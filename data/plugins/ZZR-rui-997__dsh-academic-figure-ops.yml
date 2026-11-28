@@ -1,0 +1,7 @@
+url: https://github.com/ZZR-rui-997/dsh-academic-figure-ops
+name: ZZR-rui-997/dsh-academic-figure-ops
+category: skill
+description:
+  en: Compute a figure's printed font size from your page's text width before you export it, then verify three things per file — printed size, effective resolution, and pixel width — and pick a chart type that matches the message. Ships a style module, a read-only verifier, an overlap audit, CFD panel conventions, and 19 reproducible recipes rendered from synthetic data.
+  zh: 出图前按正文宽度反算印刷字号，落盘后逐张验收印刷字号、有效分辨率与像素宽三项，并按表达意图选图型。自带样式模块、只读验收器、压盖检查、CFD 云图范式，以及 19 个用合成数据渲染的可复现配方。
+icon: https://raw.githubusercontent.com/ZZR-rui-997/dsh-academic-figure-ops/main/icon.png

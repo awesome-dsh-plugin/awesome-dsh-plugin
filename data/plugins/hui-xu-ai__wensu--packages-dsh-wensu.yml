@@ -2,5 +2,5 @@ url: https://github.com/hui-xu-ai/wensu/tree/main/packages/dsh-wensu
 name: hui-xu-ai/wensu#dsh-wensu
 category: tools
 description:
-  en: "Read-only CNKI bibliographic search for DSH: four MCP tools (search, detail, export, status) drive your own Edge/Chrome through a native-messaging bridge, with no PDF downloads, a 3-second minimum interval and a 300-action daily cap. Requires pip install wensu plus wensu setup and loading the browser extension before the four tools appear."
-  zh: "只读的知网题录检索：四个 MCP 工具（search / detail / export / status）通过原生消息桥驱动你自己的 Edge/Chrome，不下载全文，最小间隔 3 秒，每日上限 300 次。需要先 pip install wensu，运行 wensu setup 并在浏览器加载扩展，四个工具才会出现。"
+  en: "Read-only literature search and full-text reading for DSH: ten MCP tools search CNKI and Web of Science through your own Edge/Chrome over a native-messaging bridge, export RIS/EndNote text, and save the article page you already have open as MHTML for offline Markdown conversion. No PDF or CAJ downloads; 900 ms minimum interval and a 300-action daily cap. Requires pip install wensu, wensu setup and loading the browser extension."
+  zh: "只读的文献检索与全文读取：十个 MCP 工具通过原生消息桥驱动你自己的 Edge/Chrome，检索知网与 Web of Science、导出 RIS/EndNote 文本，并把已打开的论文页存成 MHTML 供离线转 Markdown。不下载 PDF/CAJ，最小间隔 900 毫秒，每日上限 300 次。需要先 pip install wensu、运行 wensu setup 并加载浏览器扩展。"

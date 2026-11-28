@@ -1,0 +1,7 @@
+url: https://github.com/mkpoli/dsh-continue-all
+name: mkpoli/dsh-continue-all
+category: session
+tarball: https://github.com/mkpoli/dsh-continue-all/releases/download/v0.1.1/dsh-continue-all-0.1.1.tgz
+description:
+  en: Continues every session whose turn was left open by an unexpected DSH exit.
+  zh: DSH 意外退出后，继续那些回合停在半途的会话。

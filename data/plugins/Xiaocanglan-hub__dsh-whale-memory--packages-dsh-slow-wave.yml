@@ -1,0 +1,6 @@
+url: https://github.com/Xiaocanglan-hub/dsh-whale-memory/tree/main/packages/dsh-slow-wave
+name: Xiaocanglan-hub/dsh-whale-memory#dsh-slow-wave
+category: memory
+description:
+  en: 'What it does while she sleeps, in one card. Two things: (1) tidy the element memory — merge synonyms only when the model agrees, trim descriptions, prune weak links, propose analogies for the user to confirm, with a backup before every write and a 15%-of-library cap per pass; (2) dream — stitch her own past experiences (plus props from the element memory) into a short 3–6 sentence story, leave one line on her desk as a note labelled "this is a dream, not something that happened". The dream lives in its own file and never enters her memory or her personality prompt. Requires @ssamurias/dsh-fish for her event stream and dsh-memory-brain for the element library; model-approved merges and dreams need a local Ollama model (or a paid API key).'
+  zh: '她睡着时的两件事，装在同一个设置页里。① 睡眠整理：模型点头才合并同义词，压短描述，剪掉弱边，把元素组合成猜想请用户确认；每次写入前先备份，单次改库不超过全库 15%。② 潜意识梦：拿她自己经历过的旧事（加上元素库里的"道具"）拼成 3–6 句的小故事，在桌上留一句并标明「是梦，不是发生过的事」。梦只存在自己的文件里，不进她的记忆，也不进她的人格提示词。需已装 @ssamurias/dsh-fish（提供经历）与 dsh-memory-brain（元素记忆库）；模型复判与做梦还需要本地 ollama（或付费 API）。'

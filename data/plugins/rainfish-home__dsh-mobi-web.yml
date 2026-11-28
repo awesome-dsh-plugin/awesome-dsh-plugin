@@ -1,0 +1,7 @@
+url: https://github.com/rainfish-home/dsh-mobi-web
+name: rainfish-home/dsh-mobi-web
+category: remote
+description:
+  en: 'Phone-first web client for DeepSeek Harness whose /m/ page serves a compact mobile UI instead of proxying the full desktop UI, with approvals staying on the phone when the phone started the turn and Mermaid rendered on the device.'
+  zh: '手机优先的 DeepSeek Harness 客户端，/m/ 页面提供紧凑的手机界面而不是代理完整桌面 UI；手机发起的 turn 审批留在手机，Mermaid 在设备上渲染。'
+icon: https://raw.githubusercontent.com/rainfish-home/dsh-mobi-web/main/assets/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-auto-plugin-factory
+name: Daphne999/dsh-auto-plugin-factory
+category: workflow
+description:
+  en: "Daily demand radar for plugin ideas: every night it collects “wanted tool” posts from Hacker News and GitHub, normalizes and dedupes them, checks each candidate against two plugin markets for an existing plugin, scores it with a fixed rubric, and writes a Markdown report (a short brief even on days with no qualifying demand). Judgment only — it never generates, installs or publishes plugin code."
+  zh: "需求雷达：每晚采集 Hacker News 与 GitHub 上「求工具 / 求插件」的帖子，归一化聚类去重，对两个插件市场查重，用固定公式打分，产出一份 Markdown 需求雷达日报（当天无达标需求也会出简报）。只做判断，不生成、不安装、不上架任何插件代码。"

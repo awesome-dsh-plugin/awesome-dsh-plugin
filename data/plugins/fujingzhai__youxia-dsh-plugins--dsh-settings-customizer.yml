@@ -1,0 +1,6 @@
+url: https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-settings-customizer
+name: fujingzhai/youxia-dsh-plugins#dsh-settings-customizer
+category: ui
+description:
+  en: 'Overrides the order, names and icons of DeepSeek Harness settings navigation entries from a personal profile configuration, without patching other plugins. Shipped defaults contain no rules, so the interface is unchanged until configured. The rules are written by hand in the profile''s cordis.patch.yml; needs DSH 0.2.2-rc.1 or newer and Node.js 24.9+.'
+  zh: '用个人配置覆盖 DeepSeek Harness 设置导航的顺序、名称与图标，不修改其他插件源码；公共默认不含任何规则，未配置时界面不变。规则需手写在 profile 的 cordis.patch.yml 里；需要 DSH 0.2.2-rc.1 或更新版本与 Node.js 24.9+。'

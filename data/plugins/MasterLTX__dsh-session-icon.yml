@@ -1,0 +1,8 @@
+url: https://github.com/MasterLTX/dsh-session-icon
+name: MasterLTX/dsh-session-icon
+category: ui
+tarball: https://github.com/MasterLTX/dsh-session-icon/releases/download/v0.1.1/dsh-session-icon-0.1.1.tgz
+icon: https://raw.githubusercontent.com/MasterLTX/dsh-session-icon/main/assets/icon-512.png
+description:
+  en: 'Draws an icon in front of every session row in the DSH sidebar, decided from the session itself: keyword rules on the title first, then the session content (title, first user message and tool names), then an optional one-shot model verdict, then a workspace fallback. 445 Ant Design outlined icons are inlined for offline use, and the rules, colours, keywords and row indent are editable in a settings page.'
+  zh: '在 DSH 左侧每一条会话行前画一个图标，由会话本身决定：先按标题关键词，再读会话内容（标题、首条用户消息与工具名），再走可选的模型一次性判类，最后按工作区兜底。445 个 Ant Design outlined 图标内联离线可用，规则、颜色、关键词与行缩进都可在设置页调整。'

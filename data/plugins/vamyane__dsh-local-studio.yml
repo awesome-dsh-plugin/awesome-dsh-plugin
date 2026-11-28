@@ -1,0 +1,7 @@
+url: https://github.com/vamyane/dsh-local-studio
+name: vamyane/dsh-local-studio
+category: vision
+description:
+  en: Local creation toolbox for DeepSeek Harness. It talks to a ComfyUI instance for image generation and a local GPT-SoVITS service for speech, checks which local services are reachable, and saves generated files into the workspace.
+  zh: 本地创作工具箱：连接本机 ComfyUI 出图、连接本地 GPT-SoVITS 配音，检查服务是否在线，并把生成的文件保存到工作区。
+icon: https://raw.githubusercontent.com/vamyane/dsh-local-studio/main/assets/icon.png

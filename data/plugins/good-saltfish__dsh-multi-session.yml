@@ -2,6 +2,6 @@ url: https://github.com/good-saltfish/dsh-multi-session
 name: good-saltfish/dsh-multi-session
 category: session
 description:
-  en: 'Multi-session overview: list every session grouped by workspace with live status, pin up to three side by side to read their conversation text, and send a message or interrupt any of them without switching away.'
-  zh: 多会话一体：在一个会话内按工作区总览全部会话的实时状态，钉住最多三个并排看对话正文，可直接发消息或打断，不用来回切换。
+  en: 'Multi-session overview: list every session grouped by workspace with live status, and pin up to three side by side to read their conversation text. Each card says whether a session finished since you last looked, is waiting on your answer, or has stalled mid-turn, and which files it changed. Send a message or interrupt any session without switching away, with a receipt showing whether it was queued, delivered or being processed. Search across all sessions, forward a turn to another, and switch a session''s model from its card.'
+  zh: 多会话一体：在一个会话内按工作区总览全部会话的实时状态，钉住最多三个并排看对话正文。每张卡片标出它自你上次查看后是否跑完、是否卡在等你回话、是否停滞不动，并列出它改过哪些文件。可直接发消息或打断，不用来回切换，消息会显示排队中／已送达／处理中。可以跨全部会话搜索、把一轮对话转发给另一个会话，也能直接在卡片上换模型。
 icon: https://raw.githubusercontent.com/good-saltfish/dsh-multi-session/main/icon.png

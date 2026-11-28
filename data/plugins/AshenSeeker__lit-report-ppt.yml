@@ -1,0 +1,6 @@
+url: https://github.com/AshenSeeker/lit-report-ppt
+name: AshenSeeker/lit-report-ppt
+category: skill
+description:
+  en: Turns one journal paper PDF into three deliverables by default — a Chinese group-meeting literature report deck (.pptx) in the Nanyang Normal University physics template, a matching Word speaker script, and a two-colour defence-prediction Q&A HTML (ten-odd questions with short direct answers). Requires Python 3 with python-pptx, python-docx, Pillow and pymupdf (pypdf fallback); install them with pip install -r requirements.txt.
+  zh: 把一篇期刊论文默认做成三份产物 —— 中文组会文献汇报 PPT（南阳师范学院物理模板）、配套 Word 讲稿、双色答辩预测问答 HTML（十题左右，答案简短直接）。需本机 Python 3 及 python-pptx、python-docx、Pillow、pymupdf（pypdf 兜底）依赖，可用 pip install -r requirements.txt 安装。

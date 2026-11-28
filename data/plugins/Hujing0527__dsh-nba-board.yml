@@ -1,0 +1,7 @@
+url: https://github.com/Hujing0527/dsh-nba-board
+name: Hujing0527/dsh-nba-board
+category: ui
+description:
+  en: 'NBA daily board in the DSH sidebar with game scores and quarter lines, per-game box scores, East/West standings and a top-ten news feed, in Simplified Chinese. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧边栏 NBA 每日看板：当天比分与分节数据、单场技术统计、东西部排名、热点新闻 TOP10，全部简体中文。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Hujing0527/dsh-nba-board/main/assets/icon-180.png

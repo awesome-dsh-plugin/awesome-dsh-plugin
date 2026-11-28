@@ -1,0 +1,7 @@
+url: https://github.com/Mastiff-No/dsh-tone
+name: Mastiff-No/dsh-tone
+category: identity
+description:
+  en: 'A 0-10 tone dial for DeepSeek Harness that writes the selected level into the system prompt on every turn, with four editable levels and a master on/off switch.'
+  zh: '给 DeepSeek Harness 加一个 0-10 的语气档位旋钮，每轮把所选档位写进系统提示；四档文案可自行编辑，另有总开关。'
+icon: https://raw.githubusercontent.com/Mastiff-No/dsh-tone/main/icon.png

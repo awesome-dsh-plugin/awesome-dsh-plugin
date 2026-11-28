@@ -1,0 +1,8 @@
+url: https://github.com/Oak-liuhj/dsh-todo-progress
+name: Oak-liuhj/dsh-todo-progress
+category: ui
+description:
+  en: 'A task progress sidebar for DeepSeek Harness Web and desktop with a top-right Tasks button, completion percentage, current step, status filters and details; declares DSH 0.2.1-rc.5 or >=0.2.2-rc.1 <0.3.0-0 compatibility.'
+  zh: 'DeepSeek Harness Web / 桌面客户端的任务进度侧栏：从右上角“任务”查看完成比例、当前步骤、状态筛选与详情；声明兼容 DSH 0.2.1-rc.5 或 >=0.2.2-rc.1 <0.3.0-0。'
+icon: https://raw.githubusercontent.com/Oak-liuhj/dsh-todo-progress/main/assets/icon.png
+tarball: https://github.com/Oak-liuhj/dsh-todo-progress/releases/download/v1.2.3/dsh-todo-progress-1.2.3.tgz

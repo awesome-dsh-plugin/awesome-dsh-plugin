@@ -1,0 +1,6 @@
+url: https://github.com/wychmod/dsh-mini-superagent/tree/main/dsh-mini-superagent
+name: wychmod/dsh-mini-superagent#dsh-mini-superagent
+category: agi
+description:
+  en: 'Task dispatch plus a workbench for DeepSeek Harness: the main session hands work to independent background child sessions and returns at once, with each child''s report flowing back into the conversation as a message; a Dispatch Workbench in the sidebar shows concurrency slots, queued tasks, batch progress and failure reasons, and each task can be cancelled, retried or archived. Adds 10 dispatch_* tools.'
+  zh: '给 DeepSeek Harness 加任务派发与一个工作台：主会话把任务派给独立的后台子会话、立即返回，子会话的报告自动回流成本会话的一条消息；侧边栏「派发工作台」显示并发位、排队、批次进度与失败原因，每条任务可取消、重试、归档。新增 10 个 dispatch_* 工具。'

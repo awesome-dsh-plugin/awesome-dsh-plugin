@@ -1,0 +1,6 @@
+url: https://github.com/Feahter/dsh-plugins/tree/main/plugins/mind-canvas
+name: Feahter/dsh-plugins#mind-canvas
+category: ui
+description:
+  en: 'Infinite-canvas mind map in the sidebar: grow nodes with Tab, tidy a branch into a tree, ask the assistant to expand a node into child ideas, and export to Markdown, OPML, FreeMind, JSON or PNG.'
+  zh: '侧栏里的无限画布脑图：Tab 长出节点、一键把分支整理成树、让助手把一个节点发散成子想法，可导出 Markdown / OPML / FreeMind / JSON / PNG。'

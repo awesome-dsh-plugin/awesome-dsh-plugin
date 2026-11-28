@@ -1,0 +1,6 @@
+url: https://github.com/Jaylor-Wang/dsh-awesome-optimizer
+name: Jaylor-Wang/dsh-awesome-optimizer
+category: dev
+description:
+  en: 'DeepSeek Harness plugin with runtime policy guards, batch search and editing (find_and_read, edit_batch), persistent Python and Node.js evaluation (eval_python, eval_node), a mode that replaces official system-prompt sections with your SYSTEM.md, adaptive workflow guidance and per-turn telemetry.'
+  zh: '为 DeepSeek Harness 提供运行时策略防护、批量搜索与编辑（find_and_read、edit_batch）、持久化 Python 和 Node.js 求值（eval_python、eval_node）、通过自定义 SYSTEM.md 替换官方系统提示词段落的模式、自适应工作流提示和按轮次统计的遥测。'

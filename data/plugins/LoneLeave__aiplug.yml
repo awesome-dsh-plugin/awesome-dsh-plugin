@@ -1,0 +1,6 @@
+url: https://github.com/LoneLeave/aiplug
+name: LoneLeave/aiplug
+category: tools
+description:
+  en: Import Claude Code, Codex, WorkBuddy, Cursor and Trae conversation history into DeepSeek Harness as resumable sessions, with readable titles and one workspace per source.
+  zh: 把 Claude Code、Codex、WorkBuddy、Cursor、Trae 的历史对话导入 DeepSeek Harness 成可续聊的会话，自动起可读标题，每个来源一个工作区。

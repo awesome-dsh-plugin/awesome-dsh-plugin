@@ -1,0 +1,6 @@
+url: https://github.com/ruochen361/dsh-work-summary
+name: ruochen361/dsh-work-summary
+category: workflow
+description:
+  en: "Scheduled daily, weekly and monthly work reports for DeepSeek Harness: collect the day's traces, validate the report structure, save it, and push the next checklist onto a board."
+  zh: "定时生成日报、周报和月报：采集当天痕迹、校验结构、落盘，并把明日开场清单推进看板。"

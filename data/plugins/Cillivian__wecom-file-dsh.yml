@@ -1,0 +1,6 @@
+url: https://github.com/Cillivian/wecom-file-dsh
+name: Cillivian/wecom-file-dsh
+category: ui
+description:
+  en: 'A WeCom WeDrive picker for the DeepSeek Harness composer: a draggable floating window with list, column and gallery views, search, sorting and multi-select inserts selected files, documents and folders as official `@` reference chips. Data comes from a local wecom-cli with the official doc.weixin.qq.com selector as fallback, and a bundled wecom-wedrive-ref skill routes the chips to the matching wecomcli-* document readers.'
+  zh: '在 DeepSeek Harness 输入条添加企业微信微盘选择器：可拖动的浮动窗口提供列表、分栏、画廊三种查看方式，支持搜索、排序与多选，把选中的文件 / 文档 / 文件夹写成官方 `@` 引用 chip。数据来自本机 wecom-cli，缺少 CLI 时回退到官方 doc.weixin.qq.com 选择器；附带 wecom-wedrive-ref 技能，按 id 前缀把 chip 路由到对应的 wecomcli-* 文档技能。'

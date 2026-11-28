@@ -1,0 +1,6 @@
+url: https://github.com/brungcm/dsh-server-resources
+name: brungcm/dsh-server-resources
+category: dev
+description:
+  en: Adds a Resources tab to the right sidebar with live CPU, RAM, swap and disk usage on Linux, macOS and Windows, plus rankings of the top processes, folders and files; read-only, no dependencies, requires dsh-better-sidebar.
+  zh: 在右侧边栏新增“资源”页，在 Linux、macOS 和 Windows 上实时显示 CPU、内存、交换区和磁盘用量，并列出占用最多的进程、文件夹和文件；只读、无依赖，需要 dsh-better-sidebar。

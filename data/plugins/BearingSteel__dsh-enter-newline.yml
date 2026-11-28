@@ -1,0 +1,7 @@
+url: https://github.com/BearingSteel/dsh-enter-newline
+name: BearingSteel/dsh-enter-newline
+category: ui
+description:
+  en: 'Swaps the DSH composer keys: Enter inserts a newline and Shift+Enter sends the message.'
+  zh: '调换 DSH 输入框的回车键位：Enter 插入换行，Shift+Enter 发送消息。'
+icon: https://raw.githubusercontent.com/BearingSteel/dsh-enter-newline/main/assets/icon-180.png

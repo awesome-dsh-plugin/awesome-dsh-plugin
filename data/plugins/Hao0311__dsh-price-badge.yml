@@ -1,0 +1,6 @@
+url: https://github.com/Hao0311/dsh-price-badge
+name: Hao0311/dsh-price-badge
+category: usage
+description:
+  en: 'Peak/off-peak pricing badge in the composer: shows the DeepSeek API peak and off-peak windows with a countdown in the tooltip, and only appears while the session model is a DeepSeek route.'
+  zh: '输入框旁的峰谷计价徽标：显示 DeepSeek API 的高峰/低谷时段与倒计时，仅在会话模型是 DeepSeek 路由时显示。'

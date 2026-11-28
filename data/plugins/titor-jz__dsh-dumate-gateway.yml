@@ -1,0 +1,7 @@
+url: https://github.com/titor-jz/dsh-dumate-gateway
+name: titor-jz/dsh-dumate-gateway
+category: model
+icon: https://raw.githubusercontent.com/titor-jz/dsh-dumate-gateway/main/docs/assets/icon-180.png
+description:
+  en: 'Bridges the DuMate desktop app into DSH: a curated live model list in the model selector, streaming chat with reasoning content, an Off/On thinking toggle, image input and tool calls. It can also run DuMate''s two background binaries without the full app, and serves a loopback-only OpenAI/Anthropic-compatible gateway with a sidebar dashboard for status, local usage and latency.'
+  zh: '把本机 DuMate 接入 DSH：模型选择器里可筛选的实时模型表、带思考内容的流式对话、Off/On 思考开关、图片输入与工具调用；可选 headless 模式只启动 DuMate 的两个后台二进制；另提供只绑回环的 OpenAI/Anthropic 兼容网关，以及显示状态、本地用量与延迟的右侧栏面板。'

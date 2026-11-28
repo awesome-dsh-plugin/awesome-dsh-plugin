@@ -1,0 +1,6 @@
+url: https://github.com/Kun-Fox/dsh-foxy-bili
+name: Kun-Fox/dsh-foxy-bili
+category: fun
+description:
+  en: 'Lets Foxy browse Bilibili with daily windows and video limits, filter by interests, comment or remember through an editable prompt, reply to mentions and comment threads, and deduplicate per video. Requires dsh-foxy.'
+  zh: '让 Foxy 按每日时段和视频上限浏览 B 站，按兴趣筛选，用可编辑提示词评论或记忆，并回复 @ 与评论楼中楼，按视频去重。需先安装 dsh-foxy。'

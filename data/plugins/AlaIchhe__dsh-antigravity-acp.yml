@@ -1,0 +1,6 @@
+url: https://github.com/AlaIchhe/dsh-antigravity-acp
+name: AlaIchhe/dsh-antigravity-acp
+category: model
+description:
+  en: 'Adds Google Antigravity as a DSH model provider: it drives the official agy ACP server over stdio, so Gemini 4 Argon/Hydrogen, Gemini 3.8 Flash and Claude Opus/Sonnet 5.5 show up in the model picker. Tool calls execute back in DSH through a private loopback MCP bridge. Extra accounts get an isolated HOME and log in through browser OAuth in the settings page; plan quota is read per account.'
+  zh: '把 Google Antigravity 接成 DSH 的模型提供方：通过 stdio 驱动官方 agy ACP server，模型选择器里出现 Gemini 4 Argon/Hydrogen、Gemini 3.8 Flash 与 Claude Opus/Sonnet 5.5。工具调用经私有 loopback MCP 桥回到 DSH 执行；新增账号使用隔离的 HOME，在设置页里走浏览器授权，额度按账号读取。'

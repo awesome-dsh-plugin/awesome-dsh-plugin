@@ -1,0 +1,6 @@
+url: https://github.com/xuexue61/dsh-task-queue
+name: xuexue61/dsh-task-queue
+category: workflow
+description:
+  en: 'Task queue as a conversation view: per-project lists with priorities and a per-chat scope, one-click send of an item into the current conversation, per-conversation auto-run by priority, and pending/running/done/failed progress for every item.'
+  zh: '以会话视图形式出现的任务清单：按项目隔离的列表，每条可设优先级与「这个对话 / 全部」范围，一键把事项发给当前会话，自动执行按对话独立生效，并逐条显示待发送、执行中、已完成或发送失败。'

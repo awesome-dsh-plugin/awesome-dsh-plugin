@@ -1,0 +1,6 @@
+url: https://github.com/Matthew-Laplace/dsh-conversation-archive
+name: Matthew-Laplace/dsh-conversation-archive
+category: ui
+description:
+  en: 'Codex conversation panel for DeepSeek Harness: lists local Codex threads, renders their history, and sends messages back to the original thread through the Codex CLI. Needs the Codex CLI and Python installed locally.'
+  zh: '在 DSH 里用 Codex CLI 重建 Codex 对话窗口：浏览本机线程、查看历史，并通过 CLI 把消息发回原线程。需要本机已安装 Codex CLI 与 Python。'

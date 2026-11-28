@@ -1,0 +1,6 @@
+url: https://github.com/BaihaiMianbaofang/dsh-liangdeng
+name: BaihaiMianbaofang/dsh-liangdeng
+category: ui
+description:
+  en: A centred call popup and a draggable row of session chips for DeepSeek Harness. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 给 DeepSeek Harness 加屏幕中间的呼叫弹窗，和一排可拖动的会话小方块。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

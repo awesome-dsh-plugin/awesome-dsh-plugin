@@ -1,0 +1,7 @@
+url: https://github.com/lukema95/dsh-news
+name: lukema95/dsh-news
+category: ui
+description:
+  en: 'Adds a right-sidebar tab and full-page reader for the ShellPulse AI news feed, with news, trending, featured, tutorial and paper views, Chinese summaries, AI explanations and an arXiv paper reader.'
+  zh: '在 DSH 右侧栏和整页提供 ShellPulse AI 新闻流，包含新闻、热点、精选、教程与论文视图、中文摘要、AI 解读和 arXiv 论文阅读。'
+icon: https://raw.githubusercontent.com/lukema95/dsh-news/main/icon.png

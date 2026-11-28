@@ -1,0 +1,6 @@
+url: https://github.com/tyouter/dsh-recorder
+name: tyouter/dsh-recorder
+category: dev
+description:
+  en: 'Drives another DSH plugin''s real interface from a script and records the real window to an animated GIF. Windows only. Its /recorder routes have no DSH access check, and the run route can make the open DSH page click and type, so any web page you have open could drive it; recordings capture a region of your screen with Pillow.'
+  zh: '按脚本操作另一个 DSH 插件的真实界面，并把真实窗口录成 GIF。仅限 Windows。它的 /recorder 路由没有 DSH 的访问检查，而 run 路由可以让已打开的 DSH 页面点击和输入，所以你打开的任何网页都可能驱动它；录制会用 Pillow 截取屏幕的一块区域。'

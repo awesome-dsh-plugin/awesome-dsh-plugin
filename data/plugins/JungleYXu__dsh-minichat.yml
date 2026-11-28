@@ -1,0 +1,6 @@
+url: https://github.com/JungleYXu/dsh-minichat
+name: JungleYXu/dsh-minichat
+category: ui
+description:
+  en: "A floating quick-ask panel that answers without touching the conversation: a 10-turn scratch window, question-and-answer favourites that do not take up a turn, the conclusion dropped into the composer on request, and an empty window on every restart."
+  zh: "快问小面板：不碰主对话，固定 10 轮便签窗口；问答成对收藏且不占轮次，结论可一键放进输入框，每次重启都是空的。"

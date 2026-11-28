@@ -1,0 +1,6 @@
+url: https://github.com/Fictional-Historians/dsh-villager-widget
+name: Fictional-Historians/dsh-villager-widget
+category: ui
+description:
+  en: "Community fork of the DSH whale balance widget that renders Minecraft villagers from your own local Java Edition install. At startup it reads the villager textures and sounds out of your .minecraft client jar (no game assets are bundled), draws a green-robed villager and a swamp librarian, and swaps between them automatically as DeepSeek pricing moves between peak and off-peak. Clicking the pet flashes it red the way Minecraft mobs do and plays a greet, hurt or death sound across a six-click cycle, each pitched one hertz above vanilla. Requires Minecraft Java Edition on the same machine — without it the villager skins and sounds are simply absent and the rest of the widget behaves like upstream."
+  zh: "小鲸鱼记账挂件的社区分支：村民外观与音效由插件启动时从你本机的 Minecraft Java 版客户端现场生成（仓库不附带任何游戏素材）——绿衣村民与沼泽图书管理员两套外观，随 DeepSeek 峰谷价自动切换；点击角色会按「打招呼 → 受击 → 阵亡」六下一循环播放原版村民音效（各高 1Hz），并按 Minecraft 生物受击的方式整体泛红。需要本机安装 Minecraft Java 版，没装则不含村民外观与音效，其余功能与上游一致。"

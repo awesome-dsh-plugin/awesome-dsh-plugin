@@ -1,0 +1,6 @@
+url: https://github.com/STao-Gee/dsh-token-curve
+name: STao-Gee/dsh-token-curve
+category: usage
+description:
+  en: 'Sidebar token and cost curve for the current conversation plus a local ledger across all sessions: monthly/weekly rollups, per-turn detail, Excel export with print-ready A4 layout, and a live account balance. Reads session logs only, prices every message by its own peak/off-peak timestamp, and drops fork-inherited history so it is never billed twice. Desktop app only, verified on Windows; the live balance needs a signed-in DSH account.'
+  zh: '右栏 Token 曲线 + 账本：当前对话逐轮 token 与费用，本机全部会话按月/周汇总，逐轮明细可导出 Excel，顶部实时显示账户余额。只读会话日志，逐条按峰谷计价，分叉会话抄来的历史不重复计费。仅桌面端，仅在 Windows 上验证；实时余额需登录 DSH 账号。'

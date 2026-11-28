@@ -1,0 +1,7 @@
+url: https://github.com/nacivageer/dsh-gif-gate
+name: nacivageer/dsh-gif-gate
+category: vision
+description:
+  en: 'Blocks the first animated-image read in a session until the model has read a strategy document, returning the opening lines of that document in the denial and releasing the session once it is read; only reads by file path are covered.'
+  zh: '本会话第一次读动图时拦下，把策略文档开头放进拒绝理由，读过即放行；只覆盖按文件路径读取。'
+tarball: https://github.com/nacivageer/dsh-gif-gate/releases/download/v0.1.0-alpha.2/dsh-gif-gate-0.1.0-alpha.2.tgz

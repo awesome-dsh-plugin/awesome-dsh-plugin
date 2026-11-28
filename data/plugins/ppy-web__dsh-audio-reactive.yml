@@ -1,0 +1,6 @@
+url: https://github.com/ppy-web/dsh-audio-reactive
+name: ppy-web/dsh-audio-reactive
+category: theme
+description:
+  en: 'Audio-reactive visual background theme powered by audioMotion-analyzer for DSH Web and Desktop, driven by streaming TTS, dsh-music-panel, voice dictation, microphone, browser audio sharing, or Windows loopback capture, with 17 presets, custom preset import/export, and an idle immersive overlay. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '基于 audioMotion-analyzer 的 DSH Web 与 Desktop 音频响应背景主题，支持流式朗读、音乐面板、语音听写、麦克风、浏览器共享音频与 Windows 本机声音采集，内置 17 个预设、自定义预设导入导出及无操作沉浸遮罩。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

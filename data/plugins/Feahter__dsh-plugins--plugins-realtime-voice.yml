@@ -1,0 +1,6 @@
+url: https://github.com/Feahter/dsh-plugins/tree/main/plugins/realtime-voice
+name: Feahter/dsh-plugins#realtime-voice
+category: voice
+description:
+  en: 'Continuous dictation for the composer using a local SenseVoice ONNX model on CPU: recognised text appears while you speak, a pause ends the sentence and writes it into the input box, and audio never leaves the machine.'
+  zh: '输入框连续听写：本机 CPU 跑 SenseVoice ONNX 模型，说话时实时显示识别文字，停顿后整句写入输入框，音频不出本机。'

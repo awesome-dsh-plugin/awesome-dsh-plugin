@@ -1,0 +1,7 @@
+url: https://github.com/vamyane/dsh-skill-audit
+name: vamyane/dsh-skill-audit
+category: dev
+description:
+  en: Skill and plugin audit console for DeepSeek Harness. It scans local skill folders and installed DSH plugins, checks the packaging rules that commonly break installation, scores each asset, and exports a Markdown fix report.
+  zh: 给 DeepSeek Harness 的技能与插件做体检的审核台：扫描本地技能目录和已安装插件，检查容易导致安装失败的打包规则，逐项打分并导出 Markdown 修复报告。
+icon: https://raw.githubusercontent.com/vamyane/dsh-skill-audit/main/assets/icon.png

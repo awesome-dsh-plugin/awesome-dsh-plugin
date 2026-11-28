@@ -1,0 +1,6 @@
+url: https://github.com/Verchiel666/dsh-echochat-plugin
+name: Verchiel666/dsh-echochat-plugin
+category: tools
+description:
+  en: 'Adds one tool, echo_judge, that scores 1-4 draft replies to an emotionally loaded message on three steps (perception, mental-state inference, response strategy), combines the steps with a cascade gate and step-level credit assignment, and names the weakest step to redo; scoring runs through ctx.llm of the running engine, so no API key is needed.'
+  zh: '加一个工具 echo_judge：对 1–4 条回复候选按「感知／心智状态推理／支持策略」三步打分，用级联门控与步骤级信用分配合成总分，并指出最弱、该重做的那一步；打分走引擎自带的 ctx.llm，不需要 API key。'

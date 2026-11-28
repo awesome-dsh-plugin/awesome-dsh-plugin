@@ -1,0 +1,8 @@
+url: https://github.com/Kingzhoudk/dsh-grill
+name: Kingzhoudk/dsh-grill
+category: agi
+icon: https://raw.githubusercontent.com/Kingzhoudk/dsh-grill/main/assets/icon-180.png
+tarball: https://github.com/Kingzhoudk/dsh-grill/releases/latest/download/dsh-grill.tgz
+description:
+  en: 'Per-conversation Grill mode: a composer switch plus `/grill on|off|status|toggle`, usable in Web, terminal, ACP/SDK and IM conversations. While it is on the agent analyzes every request for ambiguity, missing information and contradictions, asks focused questions with 2-4 concrete options and a repair proposal, and plans or executes only after every blocking question is resolved; trivial work is done directly with a one-line reading, non-trivial work is planned and stopped for approval. State is folded from the session log, so reload, resume and fork restore it. A spawned subagent inherits an active parent, a delegated child reports unresolved questions instead of asking, and where no human can answer (`NO_PROVIDER`) the agent writes the question down and acts on its recommendation for reversible work.'
+  zh: '按会话的拷问模式：输入框开关，外加 `/grill on|off|status|toggle`，Web、终端、ACP/SDK 与 IM 会话都能用。开启后 Agent 先分析每条请求中的模糊、缺失与矛盾信息，用 ask_user_question 给出 2–4 个具体选项与修复方案，等所有阻塞问题澄清后才规划或执行；琐碎工作直接做并附一行说明，非琐碎工作先给计划、停下等批准。状态从会话日志折叠得出，刷新、恢复与分叉都会还原。派生的子代理继承父会话的开启状态，被委派的子代理不提问、而是把未决问题写进最终结果；环境没有人工应答（`NO_PROVIDER`）时，Agent 把问题写出来并对可逆工作按推荐方案继续。'

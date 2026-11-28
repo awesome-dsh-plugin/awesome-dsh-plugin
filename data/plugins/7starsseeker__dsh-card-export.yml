@@ -1,0 +1,7 @@
+url: https://github.com/7starsseeker/dsh-card-export
+name: 7starsseeker/dsh-card-export
+category: docs
+icon: https://raw.githubusercontent.com/7starsseeker/dsh-card-export/main/assets/icon-180.png
+description:
+  en: 'Render any Markdown report or DSH session excerpt into shareable PNG images with no npm dependencies, driving the Chromium-family browser already on the machine and falling back to PDF, then HTML. Reports come out as a summary card plus a full verbatim long image; a report written for dsh-fact-check also gets the tier badge, the two rails and the per-claim tiering, all taken from the report itself, and a report following one of the other report skeletons it defines gets the section that skeleton designates as its conclusion lifted onto the summary card. Conversations come out as a message flow, exportable by turn range, event range or the most recent N turns.'
+  zh: '把任意 Markdown 报告或 DSH 会话片段渲染成可分享的 PNG 图片，零 npm 依赖：复用本机已有的 Chromium 系浏览器，不可用时退回 PDF、再退回 HTML。报告输出短图（结论）加长图（完整原文）；dsh-fact-check 的报告额外带档位徽标、甲乙双轨与逐条断言分档（都取自报告本身），其余几种报告骨架则把该骨架自己指定的结论段抬到短图上。对话输出消息流长图，可按轮次、事件序号或最近 N 轮选定范围。'

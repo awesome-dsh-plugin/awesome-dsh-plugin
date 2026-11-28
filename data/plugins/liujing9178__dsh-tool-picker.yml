@@ -1,0 +1,6 @@
+url: https://github.com/liujing9178/dsh-tool-picker
+name: liujing9178/dsh-tool-picker
+category: tools
+description:
+  en: Hands the model a tool catalog on each step, lets it load only the tools it needs with tool_pick, and narrows the visible tool set accordingly to reduce per-step tool schema tokens.
+  zh: 每步先给模型一份工具目录，由它用 tool_pick 只加载需要的工具，据此收窄本轮可见工具集，减少每步的工具定义 token 开销。

@@ -1,0 +1,7 @@
+url: https://github.com/MicroCapCap/periodic-model-picker
+name: MicroCapCap/periodic-model-picker
+category: ui
+tarball: https://github.com/MicroCapCap/periodic-model-picker/releases/download/v0.2.3/periodic-model-picker-0.2.3.tgz
+description:
+  en: 'Replaces the composer model seat with a periodic-table picker and adds a Model table settings page where each model gets a display name, icon, element, and color; clicking an element previews the model and a button switches the current session to it without sending a message.'
+  zh: '把输入框旁的模型选择器换成元素周期表，并在设置里加入「Model table」页面，为每个模型设置显示名、图标、占用元素与颜色；点击元素只是预览，点按钮才会切换当前会话的模型，不会发送消息。'

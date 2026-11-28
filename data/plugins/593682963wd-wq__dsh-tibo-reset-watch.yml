@@ -1,0 +1,7 @@
+url: https://github.com/593682963wd-wq/dsh-tibo-reset-watch
+name: 593682963wd-wq/dsh-tibo-reset-watch
+category: notify
+description:
+  en: 'Corner card that watches Tibo (@thsottiaux) on X, shows new posts and replies with a Chinese translation, and marks reset-related posts; extra JSON sources can be added. Reads the third-party tiboreset.com text mirror rather than X itself (a few minutes behind, text only); translation goes through the host translation service, which may send post text to a public provider unless translate is set to false.'
+  zh: '右上角卡片：盯 Tibo（@thsottiaux）在 X 上的新帖与回复，自动配中文译文，重置类消息加标；支持追加 JSON 数据源，Host 侧抓取与翻译，不消耗对话 token。数据来自第三方文字镜像 tiboreset.com 而非 X 本身（有数分钟延迟，仅文字）；翻译走宿主翻译服务，帖子文字可能经公共翻译服务商，把 translate 设为 false 可只留本地。'
+icon: https://raw.githubusercontent.com/593682963wd-wq/dsh-tibo-reset-watch/main/screenshots/icon.png

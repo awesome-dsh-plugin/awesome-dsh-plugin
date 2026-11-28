@@ -1,0 +1,6 @@
+url: https://github.com/xinming-chenniang/dsh-kb-sync
+name: xinming-chenniang/dsh-kb-sync
+category: session
+description:
+  en: 'Pulls your chat.deepseek.com conversations into a local knowledge base — one Markdown file per conversation, a JSONL transcript and a catalog — and searches them from a control page inside DSH. Daily increments plus a full-history backfill from the official export, an integrity check, and an optional model step that runs through the host llm service and writes only after its JSON passes validation. Reads the web userToken from the DSH credential store and calls chat.deepseek.com only; no install scripts, no runtime dependencies.'
+  zh: '把 chat.deepseek.com 的对话抓进本地知识库——每条会话一份 Markdown、一份 JSONL 语料和一个目录，并在 DSH 的控制页里检索。日常增量之外，可用官方导出包全量回填历史，带完整性体检；可选的模型整理步走宿主 llm 服务，JSON 校验通过才落盘。网页端 userToken 从 DSH 凭据服务读取，出网只连 chat.deepseek.com；无安装脚本、无运行依赖。'

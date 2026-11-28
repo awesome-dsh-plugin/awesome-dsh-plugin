@@ -1,0 +1,6 @@
+url: https://github.com/shiyan688/dsh-attune
+name: shiyan688/dsh-attune
+category: memory
+description:
+  en: Generates playful contextual quizzes and uses confirmed, editable preferences in later DSH chats.
+  zh: 按情境生成趣味小测试，把用户确认、可纠正和删除的偏好用于之后的 DSH 对话。

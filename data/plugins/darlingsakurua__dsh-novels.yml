@@ -1,0 +1,7 @@
+url: https://github.com/darlingsakurua/dsh-novels
+name: darlingsakurua/dsh-novels
+category: ui
+description:
+  en: 'A bookshelf panel for reading .txt novels beside the conversation: import a local file, decode UTF-8, UTF-8 with BOM, UTF-16 or GB18030, split it into chapters, then read with a table of contents, chapter navigation, adjustable font size, line height and column width. Each book resumes at the chapter and scroll position you left it at.'
+  zh: '在对话旁边加一个书架面板，用来读本地 .txt 小说：导入文件后识别 UTF-8、带 BOM 的 UTF-8、UTF-16 或 GB18030 编码并自动分章，提供目录、上下章、字号、行距与版心宽度，每本书从上次读到的章节与位置继续。'
+icon: https://raw.githubusercontent.com/darlingsakurua/dsh-novels/main/icon-180.png

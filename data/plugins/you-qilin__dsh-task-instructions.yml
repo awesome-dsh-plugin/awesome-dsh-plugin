@@ -1,0 +1,7 @@
+url: https://github.com/you-qilin/dsh-task-instructions
+name: you-qilin/dsh-task-instructions
+category: session
+description:
+  en: 'DeepSeek Harness plugin: a Task Instructions button beside the input box pins reusable task requirements to a session, and the instruction survives context compression.'
+  zh: 'DeepSeek Harness 插件：输入框旁的「任务指令」按钮，把可复用的任务要求固定到整场会话，压缩上下文也不变形。'
+icon: https://raw.githubusercontent.com/you-qilin/dsh-task-instructions/main/assets/icon-180.png

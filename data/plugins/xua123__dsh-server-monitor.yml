@@ -1,0 +1,6 @@
+url: https://github.com/xua123/dsh-server-monitor
+name: xua123/dsh-server-monitor
+category: dev
+description:
+  en: 'Server resource dashboard for DeepSeek Harness: CPU, memory, disk, network, GPU/NPU/DCU, processes and Docker for the local host and SSH servers, with global and per-session panels. Supports process termination and force kill, container start/stop/restart/delete, image deletion, multi-select batch deletion with progress, an image dependency tree, server hide/restore, and SSH config cleanup.'
+  zh: '在 DSH 侧栏和会话页签中查看本机与 SSH 服务器的 CPU、内存、磁盘、网络、GPU/NPU/DCU、进程和 Docker 资源，提供全局面板与会话级面板；支持进程终止与强制终止、容器启停/重启/删除、镜像删除、多选批量删除与进度显示、镜像依赖树，以及服务器隐藏/恢复和 SSH 配置清理。'

@@ -1,0 +1,6 @@
+url: https://github.com/bot-for-imitoy/dsh-ui-automation
+name: bot-for-imitoy/dsh-ui-automation
+category: tools
+description:
+  en: "Linux-only numbered-image UI control: screenshots a display with yellow numbered badges, then clicks, double-clicks, scrolls, drags and types by index. Every action waits, captures the next numbered image, and returns it; indices only exist inside their own image. GTK4's broken AT-SPI screen coordinates are repaired from the X11 toplevel origin plus WINDOW rectangles."
+  zh: "仅限 Linux 的标号图片 UI 控制：把桌面截成带黄色数字徽章的截图，agent 只按编号点击、双击、滚动、拖拽和输入；每次操作后自动等待并返回下一张标号图片，编号只在对应图片内有效。GTK4 的 AT-SPI 屏幕坐标缺陷用 X11 顶层原点 + WINDOW 矩形修复。"

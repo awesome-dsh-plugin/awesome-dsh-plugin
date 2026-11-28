@@ -1,0 +1,6 @@
+url: https://github.com/qihao1123/dsh-whale-pal
+name: qihao1123/dsh-whale-pal
+category: memory
+description:
+  en: 'Cross-session memory and compaction archives for dsh, plus a persona kernel. After each substantive turn a background model call extracts facts, preferences, open tasks and commitments; entries carry ids, fade when they stop being mentioned, are capped per kind and can be corrected. When the host compacts a conversation the compressed span is written to the note vault as an archive card whose catalog is injected into the session, so details can be read back by id. Ships an append-only ledger, a settings page, a /whale command group and nine tools.'
+  zh: 'dsh 的跨会话记忆与压缩档案插件，另带人格内核。每轮有实质内容时由一次后台模型调用萃出事实、偏好、未完成的事与答应过的事；条目带编号，久不提会淡化，按类限额，也可以纠正。宿主动压缩时，被压掉的一段落成档案卡写进笔记库，目录注入会话，需要细节时按编号读回原文。另有只追加台账、设置页、/whale 命令组与九个工具。'

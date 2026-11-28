@@ -1,0 +1,7 @@
+url: https://github.com/zccokie/dsh-future-command-deck
+name: zccokie/dsh-future-command-deck
+category: theme
+icon: https://raw.githubusercontent.com/zccokie/dsh-future-command-deck/main/assets/icon-180.png
+description:
+  en: "A sci-fi command-deck skin for the DeepSeek Harness web shell. Focus mode folds both sidebars and the conversation header behind a draggable strip; a sector deck above the composer switches workspaces; a live-ops panel lists only the sessions still running and drops each row when its turn ends; and a compass maps every tool call to one of eight palaces on a 24-mountain ring. Fifty --dsw-alias-* and six --dsw-specific-* variables are repointed in both the light and the dark palette, and the glass layer is mounted only in focus mode."
+  zh: "赛博指挥舱皮肤：聚焦模式把左右两栏与标题行收到一条可拖动细条后面，输入框上方是战区面板、直接切工作区，实时面板只列还在跑的会话并在跑完后自动移除，罗盘把每次工具调用映射到二十四山与后天八卦八宫之一。50 个 --dsw-alias-* 与 6 个 --dsw-specific-* 变量在浅色与深色两套主题里重绘，玻璃层只在聚焦模式挂载。"

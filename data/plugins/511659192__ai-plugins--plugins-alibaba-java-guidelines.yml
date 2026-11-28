@@ -1,0 +1,7 @@
+url: https://github.com/511659192/ai-plugins/tree/main/plugins/alibaba-java-guidelines
+name: 511659192/ai-plugins#alibaba-java-guidelines
+category: skill
+description:
+  en: Ships the Alibaba Java coding guidelines, 44 selected rules, as an embedded harness skill, so writing, changing and reviewing Java code or DDL follows the handbook with a numbered self-check before delivery.
+  zh: 把《阿里巴巴 Java 开发手册》精选 44 条做成内嵌技能：写、改、评审 Java 代码与建表语句时按手册约束，交付前按编号自检。
+icon: https://raw.githubusercontent.com/511659192/ai-plugins/main/plugins/alibaba-java-guidelines/assets/icon-180.png

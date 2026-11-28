@@ -1,0 +1,7 @@
+url: https://github.com/wlerry/dsh-spend-trend
+name: wlerry/dsh-spend-trend
+category: usage
+description:
+  en: 'Sidebar: peak/off-peak phase, switch countdown and alarm, balance and 7-day spend; balance guard, low-balance alert, one-click top-up. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧边栏实时显示峰谷档位、切换倒计时与提醒、余额与近 7 天花费；余额保护，余额预警，支持一键充值。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/wlerry/dsh-spend-trend/main/assets/icon-180.png

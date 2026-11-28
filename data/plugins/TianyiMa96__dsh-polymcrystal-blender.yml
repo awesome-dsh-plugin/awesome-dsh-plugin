@@ -1,0 +1,7 @@
+url: https://github.com/TianyiMa96/dsh-polymcrystal-blender
+name: TianyiMa96/dsh-polymcrystal-blender
+category: tools
+description:
+  en: Crystallography bridge to Blender for DSH — loads CIF/POSCAR/LAMMPS polymer crystals, unwraps periodic bonds via an isolated Python sidecar, and renders ball-and-stick models in a live Blender 4.2+ GUI.
+  zh: DSH 到 Blender 的晶体学桥接插件。加载 CIF/POSCAR/LAMMPS 聚合物晶体，经隔离 Python 侧车处理周期性边界，在 Blender 4.2+ GUI 中实时协同编辑与出版级渲染球棍模型。
+icon: https://raw.githubusercontent.com/TianyiMa96/dsh-polymcrystal-blender/main/assets/icon-180.png

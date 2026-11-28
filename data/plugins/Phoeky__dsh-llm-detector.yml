@@ -1,0 +1,6 @@
+url: https://github.com/Phoeky/dsh-llm-detector
+name: Phoeky/dsh-llm-detector
+category: model
+description:
+  en: 'Fingerprint models registered in DSH to see which model actually serves a route: it asks the model for a sequence of "random" integers, compares the distribution against a reference bank with calibrated confidence, and supports both a sidebar panel UI and in-chat detection.'
+  zh: '检测DSH注册的模型指纹，看看其背后实际是哪个模型：让模型写一串“随机”整数，用数值分布与参考库比对并给出置信度。提供左侧边栏面板UI检测和直接与模型对话检测两种方式。'

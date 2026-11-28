@@ -1,0 +1,7 @@
+url: https://github.com/tntfireage/dsh-systeminfo
+name: tntfireage/dsh-systeminfo
+category: ui
+icon: https://raw.githubusercontent.com/tntfireage/dsh-systeminfo/main/assets/icon-180.png
+description:
+  en: 'Adds a live system dashboard with per-core CPU, memory, GPU, processes, disk usage and a STOP action for ending processes, plus per-process energy on macOS, exposed as a browser page, a GUI panel and a `systemInfo` service other plugins can inject. macOS is the main platform and Linux is best-effort. The dashboard page and its read-only JSON (process list with users, disks, logged-in users) are served with no login check; publicDashboard: false only refuses non-loopback peers. STOP accepts loopback requests only and sends SIGTERM, then SIGKILL after a grace period, to any process your account may signal except pid 1, the DSH host and its parent.'
+  zh: '在 DSH 中提供 CPU（逐核）、内存、GPU、进程、磁盘占用与 STOP 结束进程的实时仪表盘，macOS 上另含逐进程能耗，并提供浏览器页面、侧栏面板与供其他插件注入的 systemInfo 服务。以 macOS 为主，Linux 尽力支持。仪表盘页面及其只读 JSON（含进程列表与所属用户、磁盘、已登录用户）不做登录校验，publicDashboard 设为 false 也只是拒绝非回环来源。STOP 只接受回环请求，会对你的账号有权发信号的任何进程先发 SIGTERM、宽限期后再发 SIGKILL，pid 1、DSH 宿主进程及其父进程除外。'

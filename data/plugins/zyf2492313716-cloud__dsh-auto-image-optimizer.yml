@@ -1,0 +1,6 @@
+url: https://github.com/zyf2492313716-cloud/dsh-auto-image-optimizer
+name: zyf2492313716-cloud/dsh-auto-image-optimizer
+category: vision
+description:
+  en: 'Client-side image downscaler for DeepSeek Harness: intercepts paste and drag-drop images over 1999px in memory via HTML Canvas and raises legacy attachment maxImageDimension up to 4096 when writable.'
+  zh: 'DSH 图片上传前客户端等比压缩插件：拦截剪贴板粘贴与拖拽上传的图像，在内存中用 Canvas 将最长边超过 1999px 的图片等比缩放后再投递，并在未冻结的旧宿主上尝试放宽 maxImageDimension 至 4096。'

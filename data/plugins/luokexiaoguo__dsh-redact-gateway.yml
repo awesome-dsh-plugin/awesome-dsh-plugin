@@ -1,0 +1,6 @@
+url: https://github.com/luokexiaoguo/dsh-redact-gateway
+name: luokexiaoguo/dsh-redact-gateway
+category: security
+description:
+  en: 'Replaces identity numbers, phone numbers, bank cards, emails, addresses, customer names and secrets with numbered placeholders before a model request leaves the machine, restores the response, and keeps an encrypted local mapping plus a hash-chained audit log exportable as CSV.'
+  zh: '在模型请求离开本机前，把身份证、手机号、银行卡、邮箱、地址、客户名与密钥替换成编号占位符，响应回来自动回填；映射表加密存本机，每次替换写入带哈希链的审计日志，可导出 CSV。'

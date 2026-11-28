@@ -1,0 +1,6 @@
+url: https://github.com/cestbonn/dsh-bilibili-radio
+name: cestbonn/dsh-bilibili-radio
+category: voice
+description:
+  en: 'Sidebar radio that plays Bilibili audio with search, playlists, scrolling lyrics (looked up on music.163.com, kugeci.com and lrclib.net), and chat-driven song picks. Runs a local audio proxy on 127.0.0.1:13210 and, when the system resolver fails, DNS lookups in the whole DSH host process fall back to public DoH servers (1.12.12.12, 223.5.5.5).'
+  zh: '左侧栏 B 站电台：播放音频、搜索、歌单、滚动歌词（从 music.163.com、kugeci.com、lrclib.net 检索），以及对话点歌。内置 127.0.0.1:13210 本地音频代理；系统解析失败时，整个 DSH 宿主进程的 DNS 查询会回退到公共 DoH（1.12.12.12、223.5.5.5）。'

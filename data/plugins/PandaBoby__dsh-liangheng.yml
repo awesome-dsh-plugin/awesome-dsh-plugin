@@ -1,0 +1,7 @@
+url: https://github.com/PandaBoby/dsh-liangheng
+name: PandaBoby/dsh-liangheng
+category: tools
+description:
+  en: 'A focused coding agent preset for DeepSeek Harness: intent-first scope, first-principles root-cause fixes, native parallel tool surface, and verified delivery — installed as a hot-pluggable bundle.'
+  zh: '面向 DeepSeek Harness 的专项编码 Agent 预设：意图对齐、第一性原理根因修复、原生并行工具面与改后实测交付，以组合包形式热插拔安装。'
+icon: https://raw.githubusercontent.com/PandaBoby/dsh-liangheng/main/docs/assets/whale-256.png

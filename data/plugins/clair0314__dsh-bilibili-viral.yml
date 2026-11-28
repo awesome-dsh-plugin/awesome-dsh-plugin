@@ -1,0 +1,8 @@
+url: https://github.com/clair0314/dsh-bilibili-viral
+name: clair0314/dsh-bilibili-viral
+category: skill
+description:
+  en: 'Bilibili viral-content radar skill for DSH: collect trending videos by keyword, analyze transcripts and covers, and generate weekly clone plans with scripts and cover specs.'
+  zh: B站爆款雷达技能：按关键词抓取热门视频，拆解字幕与封面，生成每周复刻选题、脚本和封面规格。
+icon: https://raw.githubusercontent.com/clair0314/dsh-bilibili-viral/main/assets/icon-180.png
+tarball: https://github.com/clair0314/dsh-bilibili-viral/releases/latest/download/dsh-bilibili-viral.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/themachinecorp/dsh-minimax-radar
+name: themachinecorp/dsh-minimax-radar
+category: usage
+description:
+  en: 'Monochrome MiniMax Token Plan radar: a sidebar readout with the 5-hour and weekly window remaining and both reset countdowns, plus a dashboard with tokens spent on this machine by day and by model and the pay-as-you-go cost estimate.'
+  zh: 'MiniMax Token Plan 的黑白仪表盘：侧边栏常驻 5 小时与周窗口余量及两级重置倒计时，主面板另有本机按日、按模型的 token 消耗与按量价目估算费用。'

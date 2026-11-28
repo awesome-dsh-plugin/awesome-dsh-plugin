@@ -1,0 +1,7 @@
+url: https://github.com/KevinZhangNothing/dsh-nico
+name: KevinZhangNothing/dsh-nico
+category: voice
+description:
+  en: 'Hold right-Cmd and talk: local SenseVoice STT, a fixed headless DSH session rotated by voice or the overlay button, streaming CosyVoice2 TTS with emotion voices, and an optional Live2D whale-girl overlay that lists what the session is doing — plus screen awareness, hands-free mode and a hotword correction table.'
+  zh: '按住右⌘说一句就替我操作电脑：本地 SenseVoice 识别、固定 headless 会话（语音/按钮开新会话）、CosyVoice2 流式播报与情感音色、可选 Live2D 鲸鱼娘悬浮窗与任务动作清单，另支持屏幕感知、免提与热词修正。'
+icon: https://raw.githubusercontent.com/KevinZhangNothing/dsh-nico/main/assets/readme/icon-180.png

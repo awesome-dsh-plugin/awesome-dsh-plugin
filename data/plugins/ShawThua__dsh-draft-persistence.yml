@@ -1,0 +1,7 @@
+url: https://github.com/ShawThua/dsh-draft-persistence
+name: ShawThua/dsh-draft-persistence
+category: session
+description:
+  en: 'Store the unsent composer draft in a file on the DSH Host instead of browser localStorage, so the text is back after a reload, a Session switch, a Host restart, or opening the same Session in a second browser or on a phone.'
+  zh: '把未发送的输入框草稿存成 DSH 宿主机上的一个文件，而不是留在浏览器 localStorage：刷新、切换会话、重启宿主后草稿还在，换个浏览器或手机打开同一会话也能看到。'
+icon: https://raw.githubusercontent.com/ShawThua/dsh-draft-persistence/main/assets/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/ris-cloud/dsh-ris-yds
+name: ris-cloud/dsh-ris-yds
+category: dev
+description:
+  en: 'Local YonBIP/YMS development runtime: resolves project settings, issues platform API tokens, pulls and adapts middleware endpoints, provides internal DB/Redis/service access via a SOCKS forwarder or direct mode, builds and starts the local YMS runtime, and prepares IDE launch/debug configuration. Works without dsh-ris-ide. Needs JDK 21 and Maven on PATH (the first build downloads dependencies).'
+  zh: 'YonBIP/YMS 本地开发运行时：解析项目配置、签发平台 API 凭据、拉取并适配中间件端点、通过 SOCKS 转发或直连访问内网数据库/缓存/服务、构建并启停本地 YMS 运行时、生成 IDE 启动/调试配置。不依赖 dsh-ris-ide。需要 JDK 21 与 PATH 中的 Maven（首次构建会下载依赖）。'

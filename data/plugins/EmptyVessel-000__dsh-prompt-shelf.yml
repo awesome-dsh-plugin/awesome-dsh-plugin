@@ -1,0 +1,6 @@
+url: https://github.com/EmptyVessel-000/dsh-prompt-shelf
+name: EmptyVessel-000/dsh-prompt-shelf
+category: workflow
+description:
+  en: 'Right-sidebar prompt shelf for DSH: store prompts as cards, click one to append it to the next message, keep selected cards injected into every turn of the current session, and save any sent user message back into the shelf with one click. Per-session switches, JSON storage under ~/.dsh with atomic writes.'
+  zh: 'DSH 右侧栏快捷指令库：把常用提示词存成卡片，点一下追加到下一条消息；打开「每轮注入」后按会话在每一轮自动附带；已发出的用户消息也能一键存回。开关按会话保存，数据以原子写入存在 ~/.dsh 下的 JSON 文件中。'

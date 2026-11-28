@@ -1,0 +1,6 @@
+url: https://github.com/asterdot/dsh-prompt-pilot
+name: asterdot/dsh-prompt-pilot
+category: ui
+description:
+  en: Rewrites prompt drafts, suggests a conversation mode, and recommends relevant skills.
+  zh: 改写提示词草稿、建议对话模式，并推荐相关技能。

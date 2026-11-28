@@ -1,0 +1,7 @@
+url: https://github.com/airainal/dsh-codex-mode
+name: airainal/dsh-codex-mode
+category: workflow
+tarball: https://github.com/airainal/dsh-codex-mode/releases/download/v1.1.0/dsh-codex-mode-1.1.0.tgz
+description:
+  en: 'Adds a Codex-style step driver to DSH sessions with progress text before tool calls, turn continuation while todos remain, and a remembered permission-menu switch.'
+  zh: '为 DSH 会话增加 Codex 式步骤驱动：工具调用前补进度文本、待办未完成时继续回合，并在权限菜单提供记忆开关。'

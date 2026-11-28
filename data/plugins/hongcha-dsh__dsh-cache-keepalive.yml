@@ -1,0 +1,8 @@
+url: https://github.com/hongcha-dsh/dsh-cache-keepalive
+name: hongcha-dsh/dsh-cache-keepalive
+category: usage
+description:
+  en: 'Replays the last request while a main session idles, so the provider prompt cache keeps its hit and the next real turn is billed at the cache-hit price instead of a cold re-prefill. Per-window toggle, per-task records, and an estimated net saving.'
+  zh: '主会话空闲时自动重放最近一次请求，让上游提示词缓存保持命中，下一次真实请求按缓存命中价计费而不是冷启动重算；支持按窗口开关、按任务记录与估算净省。'
+icon: https://raw.githubusercontent.com/hongcha-dsh/dsh-cache-keepalive/main/assets/icon-180.png
+tarball: https://github.com/hongcha-dsh/dsh-cache-keepalive/releases/latest/download/dsh-cache-keepalive.tgz

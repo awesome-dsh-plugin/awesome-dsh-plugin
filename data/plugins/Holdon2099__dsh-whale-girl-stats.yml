@@ -1,0 +1,7 @@
+url: https://github.com/Holdon2099/dsh-whale-girl-stats
+name: Holdon2099/dsh-whale-girl-stats
+category: usage
+description:
+  en: 'Reads local DSH session logs to show real token totals, session count, estimated cost and budget, a 14-day usage timeline, per-session breakdown and CPU monitoring, plus a draggable token/cost status window and a whale-girl who eats rice as tokens are spent.'
+  zh: '读取本机 DSH 会话日志，展示真实 Token 总量、会话数、估算成本与预算、14 天消耗时间线、逐会话明细和 CPU 监控，并提供可拖动的 Token/成本状态小窗，以及随 Token 消耗干饭的鲸鱼娘。'
+icon: https://raw.githubusercontent.com/Holdon2099/dsh-whale-girl-stats/main/assets/icon-180.png

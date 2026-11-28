@@ -1,0 +1,6 @@
+url: https://github.com/liaoangbo-droid/dsh-notewall
+name: liaoangbo-droid/dsh-notewall
+category: ui
+description:
+  en: 'Sticky notes wall in the sidebar: rich text, images, ink, drag-to-reorder, per-note alarms, and scheduled delivery of a note into a session. Its read-only /state and /media routes have no authentication.'
+  zh: '侧边栏便签墙：富文本、图片、手写、拖动排序、便签闹钟，以及把便签定时投递到会话。只读的 /state 和 /media 路由没有鉴权。'

@@ -2,6 +2,6 @@ url: https://github.com/1010231693/dsh-auto-compaction/tree/master/packages/dsh-
 name: 1010231693/dsh-auto-compaction#dsh-auto-compaction
 category: session
 description:
-  en: 'A session auto-compaction plugin that is friendly to local models: the trigger point is configurable, compaction does not make the local engine re-read the whole history, and the model writes a structured handoff summary from the prefix that is already cached. Trigger ratio, summary template, display style and per-preset scope are configurable. Installing and restarting DSH takes over; uninstalling restores native DSH compaction.'
-  zh: '对本地模型友好的会话自动压缩插件：可自定义压缩触发点，不会使本地引擎重读全部历史，并让模型基于已缓存的前缀撰写结构化交接摘要，触发比例、摘要模板、显示样式与逐预设生效范围均可配置。安装重启 DSH 后接管；卸载即恢复DSH原生压缩。'
+  en: 'A session auto-compaction plugin built for local models (compaction should also drop to seconds on cloud models): when idle it replaces the oldest history with a summary so the local engine never re-reads the whole history; the trigger point is adjustable, compaction can be rolled back at any time, and mid-task compaction can compress early when the remaining budget is low (off by default).'
+  zh: '本地模型友好的 DSH 会话自动压缩插件（理论上云端模型压缩时间也大大缩短为秒级）；空闲时用摘要替换最旧历史，避免本地模型全量 prefill；触发点可调，压缩后可随时回滚，任务中途也能按余量提前压缩（默认关闭）。'
 icon: https://raw.githubusercontent.com/1010231693/dsh-auto-compaction/master/docs/icon.png

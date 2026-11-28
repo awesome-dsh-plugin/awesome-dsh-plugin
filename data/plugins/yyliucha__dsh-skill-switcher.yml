@@ -1,0 +1,7 @@
+url: https://github.com/yyliucha/dsh-skill-switcher
+name: yyliucha/dsh-skill-switcher
+category: skill
+description:
+  en: 'Switch each agent skill between on, user-only, and off from a composer popover and a Settings page, writing only the SKILL.md invocation fields, with the host inventory of every visible skill and a skill_manager tool for the agent.'
+  zh: 在输入框弹层和设置页里把每个 agent 技能切换为「全开 / 仅用户 / 已关闭」，只改写 SKILL.md 的调用字段；列出宿主可见的全部技能，并提供 skill_manager 工具。
+icon: https://raw.githubusercontent.com/yyliucha/dsh-skill-switcher/main/assets/icon-180.png

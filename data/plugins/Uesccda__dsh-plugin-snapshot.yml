@@ -1,0 +1,7 @@
+url: https://github.com/Uesccda/dsh-plugin-snapshot
+name: Uesccda/dsh-plugin-snapshot
+category: tools
+icon: https://raw.githubusercontent.com/Uesccda/dsh-plugin-snapshot/main/docs/icon.png
+description:
+  en: 'An upgrade assistant for DSH plugins. Checks which installed plugins have newer versions, then upgrades them in one click or on a schedule — taking a snapshot before every upgrade and rolling back automatically if the install fails, so a bad upgrade never breaks your environment. Also runs a health check: conflicts, undeclared compatibility, missing dependencies, ranked by review priority. Auto-update scope is configurable (patch / minor / major) with a per-package exclude list. Any operation can be reverted to a historical snapshot.'
+  zh: 'DSH 插件的升级助手。自动检查已装插件哪些有新版本，可一键全部升级或定时自动升级；每次升级前自动打快照，装失败自动回滚到升级前，不会把环境弄坏。也能体检：列出插件冲突、兼容性未声明、依赖缺失，并给出检查优先级。支持按补丁/次版本/主版本三档控制自动升级范围，可排除不想动的插件。所有操作都能回退到任意历史快照。'

@@ -1,0 +1,7 @@
+url: https://github.com/woaiCarlos/dsh-minimax-quota
+name: woaiCarlos/dsh-minimax-quota
+category: usage
+description:
+  en: 'Shows the remaining MiniMax coding-plan quota (5-hour window and weekly window) below the chat composer, and keeps the profile''s MiniMax model list current by appending newly released models.'
+  zh: '在对话输入框下方显示 MiniMax 编程套餐剩余额度（5 小时窗口与周窗口），点击可查看详情；并把新发布的模型追加到配置的模型列表里。'
+icon: https://raw.githubusercontent.com/woaiCarlos/dsh-minimax-quota/main/assets/icon-180.png

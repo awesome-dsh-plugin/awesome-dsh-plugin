@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/vault
+name: ityyq777/dsh-workbench#vault
+category: tools
+description:
+  en: 'Credential vault for DSH: secrets are encrypted with AES-256-GCM under a scrypt-derived key, stay on the local machine, and the agent only ever sees a masked preview.'
+  zh: 'DSH 凭据保险箱：密码与 token 用 scrypt 派生密钥 + AES-256-GCM 加密，只存本机，agent 只见掩码。'

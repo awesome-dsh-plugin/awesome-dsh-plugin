@@ -1,0 +1,6 @@
+url: "https://github.com/QYF-888/dsh-plugin-shelf"
+name: "QYF-888/dsh-plugin-shelf"
+category: dev
+description:
+  en: "Browse, sort, group, toggle and batch-update every DSH plugin you already installed — with groups, filters and resumable updates."
+  zh: 已安装 DSH 插件的书架：按名称/安装时间/大小排序，自由分组与一键启停，批量检查并可断点续装的自动更新。

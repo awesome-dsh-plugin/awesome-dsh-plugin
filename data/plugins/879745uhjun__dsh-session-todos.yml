@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-session-todos
+name: 879745uhjun/dsh-session-todos
+category: session
+description:
+  en: 'Puts a todo checkbox on every sidebar session row and adds a dedicated Todo page that groups sessions as in progress, to do and done, with priority, due date and a note per session. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给侧边栏每个会话行加一个待办方格，并提供整页待办面板，按正在做、将要做、已做完分组，支持重要度、截止时间与备注。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

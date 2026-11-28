@@ -1,0 +1,7 @@
+url: https://github.com/zhengbo2/dsh-glance
+name: zhengbo2/dsh-glance
+category: ui
+icon: https://raw.githubusercontent.com/zhengbo2/dsh-glance/main/assets/icon-180.png
+description:
+  en: Shows the agent's live state in an always-on-top strip on the desktop — one ball when idle, a pill with the running tool name and elapsed time while working, expandable to the last message.
+  zh: 在桌面置顶小条里显示 Agent 的实时状态——空闲时一颗球，干活时变成带工具名和用时的小条，点开可看最后一条消息。

@@ -1,0 +1,7 @@
+url: https://github.com/dreamlee0/dsh-sticky-notes
+name: dreamlee0/dsh-sticky-notes
+category: ui
+description:
+  en: 'Sticky-note memo board beside a month calendar: notes carry a date, an optional time and one of five paper colours, checking a note off moves it to a Done tab that keeps its completion timestamp, and the calendar shows each day as a large centred number with coloured dots for that day''s notes and a hand-drawn red pen ring on today.'
+  zh: '便利贴备忘录配月历：便签带日期、可选时间与五种纸色，打勾完成后移入「已完成」标签并保留完成时间；月历中日期数字放大居中，当天的便签以彩色小点环绕数字显示，今天用红笔手绘圈标出。'
+icon: https://raw.githubusercontent.com/dreamlee0/dsh-sticky-notes/main/assets/icon-180.png

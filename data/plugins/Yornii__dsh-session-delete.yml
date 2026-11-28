@@ -1,0 +1,6 @@
+url: https://github.com/Yornii/dsh-session-delete
+name: Yornii/dsh-session-delete
+category: session
+description:
+  en: 'Permanently deletes a Session from the sidebar: the row archive button becomes a delete action with an in-app confirmation, and the Host stops live work then removes the saved history after checking the directory belongs only to that Session.'
+  zh: '从侧边栏永久删除会话：把会话行上的归档按钮换成删除操作，弹窗内二次确认后由 Host 停止运行中的工作，校验目录只属于该会话，再删除其保存的记录。'

@@ -1,0 +1,6 @@
+url: https://github.com/dreanzy/dsh-plg/tree/main/packages/dsh-mcp-pack
+name: dreanzy/dsh-plg#dsh-mcp-pack
+category: tools
+description:
+  en: 'Workspace-scoped MCP server loading for DeepSeek Harness: servers default to dynamic mode, so they are not mounted at boot and the model loads them on demand with mcp_load (set a row to eager to keep boot-time mounting); tools can be filtered with ! globs, and a pack lets one project hide a server without affecting another. Registers the same mcp_load/mcp_unload/mcp_call tools as @guowenzhang/dsh-mcp-manager, so install only one of them.'
+  zh: '按工作区控制 MCP 服务器的可见性与加载方式：行默认为 dynamic，启动时不挂载，模型按需用 mcp_load 加载（设为 eager 才保持启动即挂载）；工具可用 ! 通配规则过滤；pack 可让一个工程隐藏某台 server 而不影响别的工程。与 @guowenzhang/dsh-mcp-manager 注册同名的 mcp_load/mcp_unload/mcp_call，二者只装一个。'

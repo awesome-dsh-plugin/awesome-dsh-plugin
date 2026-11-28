@@ -1,0 +1,6 @@
+url: https://github.com/JJJACKsong/dsh-plugin-context-cleanup-master
+name: JJJACKsong/dsh-plugin-context-cleanup-master
+category: fun
+description:
+  en: 'Scans recent sessions locally for real token usage, scores context health on a floating dashboard and plays a token-ledger animation with made-up figures; its one action opens a new empty session, the same as /new, and nothing is deleted. A parody plugin that makes no model calls.'
+  zh: '在本地扫描近期会话的真实 token 用量，在悬浮仪表盘上给出上下文健康度评分，并播放数字是编的 token 账本动画；唯一的动作是开一个新的空会话，等同 /new，不会删除任何内容。恶搞性质的插件，不调用模型。'

@@ -26,6 +26,18 @@ export function slugOf(url) {
   return sub ? `${repo}--${sub.replaceAll('/', '-')}` : repo
 }
 
+/**
+ * Encode a slug for use as a URL path. A slug is the entry URL as-is, so a
+ * percent-encoded byte in the source path (`%20` for a monorepo directory with
+ * a space) is data here, not an escape: interpolated raw, the browser decodes
+ * it once more and requests a path no file has. Encode the `%` a second time;
+ * every other character is left byte-identical, so CJK slugs (valid in browser
+ * URLs) and every entry without a `%` keep the exact URL they publish today.
+ */
+export function slugHref(slug) {
+  return slug.replaceAll('%', '%25')
+}
+
 /** The giscus term for a repository URL, or for a slug that is already derived. */
 export function termOf(urlOrSlug) {
   return `plugin:${urlOrSlug.startsWith('https://github.com/') ? slugOf(urlOrSlug) : urlOrSlug}`

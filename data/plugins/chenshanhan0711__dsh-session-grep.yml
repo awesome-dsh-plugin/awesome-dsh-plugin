@@ -1,0 +1,6 @@
+url: https://github.com/chenshanhan0711/dsh-session-grep
+name: chenshanhan0711/dsh-session-grep
+category: session
+description:
+  en: "Literal substring search across every conversation in the workspace, from a search box in the conversation header. The built-in index tokenizes with unicode61 and only matches whole tokens; this plugin scans the local session logs directly, so mid-token fragments and two-character Chinese words match too. Searches user and assistant message text (tool output is opt-in), rotates results across sessions so one long conversation cannot fill the list, and opens the matched conversation scrolled to the hit. Read-only over local session logs, no network access."
+  zh: "在对话页顶栏按字面文字搜索工作区内全部历史会话。内置索引按 unicode61 分词、只匹配整词，这个插件直接扫描本地会话日志，因此句中片段与两字中文词也能命中；默认只搜用户与助手正文（工具输出需手动开启），结果按会话轮转，避免单个长会话占满列表，点开后滚动定位并高亮命中。只读本地会话日志，零网络请求。"

@@ -1,0 +1,7 @@
+url: https://github.com/pokereva/dsh-no-enter-send
+name: pokereva/dsh-no-enter-send
+category: ui
+description:
+  en: 'Enter line-breaks instead of sending; rest the pointer on the send button and Enter sends again, with the hint flipping to a highlighted "Press Enter to send".'
+  zh: '让 Enter 只换行、不发送；鼠标停在发送按钮上时 Enter 恢复为发送，按钮旁提示从灰字「已屏蔽Enter发送」变成高亮的「点击Enter发送」，Shift+Enter 永远换行。'
+icon: https://raw.githubusercontent.com/pokereva/dsh-no-enter-send/main/assets/icon-180.png

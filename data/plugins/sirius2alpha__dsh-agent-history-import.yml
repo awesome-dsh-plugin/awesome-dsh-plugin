@@ -1,0 +1,6 @@
+url: https://github.com/sirius2alpha/dsh-agent-history-import
+name: sirius2alpha/dsh-agent-history-import
+category: session
+description:
+  en: Import conversations from local Codex, Pi, and Claude Code histories into DSH, then continue them with the full transcript or a detailed summary.
+  zh: 把本机 Codex、Pi 或 Claude Code 的历史会话导入 DSH，可带完整上下文继续，也可生成详细总结后开始新对话。

@@ -1,0 +1,7 @@
+url: https://github.com/pandaman0759/dsh-voice-input
+name: pandaman0759/dsh-voice-input
+category: voice
+description:
+  en: 'Doubao streaming speech-to-text button in the DSH composer — one API key and your words land in the draft. Needs a Doubao (Volcengine) speech-recognition API key, kept in the DSH credential store; recorded audio is sent to Volcengine, and its HTTP routes have no DSH access check.'
+  zh: '给 DSH 输入框加一个麦克风按钮，用豆包流式语音识别把说的话直接变成草稿文字，只填一个 API Key 就能用。需要豆包（火山引擎）语音识别 API Key，保存在 DSH 凭据库；录下的音频会发给火山引擎识别，它的 HTTP 路由没有 DSH 的访问检查。'
+icon: https://raw.githubusercontent.com/pandaman0759/dsh-voice-input/main/assets/icon-180.png

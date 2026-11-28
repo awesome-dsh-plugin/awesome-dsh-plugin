@@ -1,0 +1,8 @@
+url: https://github.com/Xyk0729/dsh-lulu-pet
+name: Xyk0729/dsh-lulu-pet
+category: fun
+description:
+  en: 'A transparent capybara pet for the DSH window: 15 sprite animations, 27 sticker reactions, drag to move, and a settings page for size, corner, and toggles. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 住在 DSH 窗口里的透明水豚桌宠：15 段动作、27 张表情、可拖拽换位置，设置页能调大小、停靠角落和开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/Xyk0729/dsh-lulu-pet/main/assets/icon-180.png
+tarball: https://github.com/Xyk0729/dsh-lulu-pet/releases/latest/download/dsh-lulu-pet.tgz

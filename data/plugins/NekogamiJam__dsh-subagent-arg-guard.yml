@@ -1,0 +1,7 @@
+url: https://github.com/NekogamiJam/dsh-subagent-arg-guard
+name: NekogamiJam/dsh-subagent-arg-guard
+category: security
+description:
+  en: "Recovers known invalid explicit model arguments in DSH subagent and subagent_fork calls by removing the full override and retrying once through the original guarded pipeline."
+  zh: "恢复 DSH subagent 与 subagent_fork 调用中已知的无效显式模型参数，移除完整覆盖后通过原有守卫管线重试一次。"
+tarball: https://github.com/NekogamiJam/dsh-subagent-arg-guard/releases/download/v0.3.1/dsh-subagent-arg-guard-0.3.1.tgz

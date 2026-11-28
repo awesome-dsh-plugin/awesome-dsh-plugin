@@ -1,0 +1,7 @@
+url: https://github.com/hijoywell/dsh-tjing-reading
+name: hijoywell/dsh-tjing-reading
+category: ui
+description:
+  zh: "在 DSH 侧边栏阅读 EPUB、PDF、无 DRM 的 MOBI/AZW3 和 TXT。仿微信读书排版：目录、书签、划线、进度记忆，选中文本一键翻译成中文，AI 问书只依据书中检索到的段落作答。书籍与进度保存在本地 IndexedDB，不上传。支持四种主题（含豆沙绿护眼底色），PDF 纸色跟随主题。"
+  en: "Read EPUB, PDF, DRM-free MOBI/AZW3 and TXT in the DSH sidebar. WeChat Read style typography with TOC, bookmarks, highlights and progress memory; select any passage to translate it into Chinese; the Ask-the-Book AI answers only from passages retrieved from the open book. Books and progress stay in local IndexedDB. Four themes including an eye-care green paper, and PDF paper follows the theme."
+icon: https://raw.githubusercontent.com/hijoywell/dsh-tjing-reading/main/icon-180.png

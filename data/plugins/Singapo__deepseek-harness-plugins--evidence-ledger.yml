@@ -1,0 +1,6 @@
+url: https://github.com/Singapo/deepseek-harness-plugins/tree/main/evidence-ledger
+name: Singapo/deepseek-harness-plugins#evidence-ledger
+category: tools
+description:
+  en: Verifies numerical claims against pinned local data or World Bank population data and blocks delivery when checks fail.
+  zh: 较真核对本地原表或世界银行人口发布值，重算数值，核验未通过时拦截交付。

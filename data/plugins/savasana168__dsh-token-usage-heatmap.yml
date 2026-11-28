@@ -1,0 +1,7 @@
+url: https://github.com/savasana168/dsh-token-usage-heatmap
+name: savasana168/dsh-token-usage-heatmap
+category: usage
+tarball: https://github.com/savasana168/dsh-token-usage-heatmap/releases/download/v0.2.1/dsh-token-usage-heatmap-0.2.1.tgz
+description:
+  en: "Token usage for the DeepSeek Harness web UI: a header chip opens a panel with a 26-week daily heatmap (four blue levels scaled to the busiest day), a per-model bar chart, and totals for all / 30 / 7 days — tokens, sessions, calls, active days, peak hour and top model. Reads local session logs only, no network."
+  zh: "在 DeepSeek Harness 的网页界面上查看 Token 用量：顶栏小标记点开一块面板，含 26 周每日用量热力图（按当日峰值的四档蓝色）、逐模型的柱状图，以及全部 / 30 天 / 7 天三个区间的 token、会话、调用、活跃天数、高峰时段与最常用模型；全部读本地会话日志，不联网。"

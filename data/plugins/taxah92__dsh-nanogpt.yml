@@ -1,0 +1,6 @@
+url: https://github.com/taxah92/dsh-nanogpt
+name: taxah92/dsh-nanogpt
+category: model
+description:
+  en: 'NanoGPT PRO subscription models for DeepSeek Harness: a curated model picker with ×1/×2 rate badges, reasoning levels and the remaining weekly quota, without spending the subscription allowance.'
+  zh: '为 DeepSeek Harness 接入 NanoGPT PRO 订阅模型：精选的模型选择器，带 ×1/×2 倍率标记、推理档位和本周剩余额度，且不消耗订阅额度。'

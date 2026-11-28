@@ -1,0 +1,6 @@
+url: https://github.com/foolfu86/dsh-scrapling-mcp
+name: foolfu86/dsh-scrapling-mcp
+category: browser
+description:
+  en: 'A configuration-only DSH bundle that connects the MCP server shipped with Scrapling to DeepSeek Harness over stdio, exposing its HTTP fetch and stealth-browser scraping tools for page extraction, browser actions, screenshots and network inspection. Requires Python 3.10+ with scrapling[ai] (scrapling-mcp on PATH) and a Chromium-compatible browser (scrapling install).'
+  zh: '纯配置型 DSH bundle，通过 stdio 把 Scrapling 自带的 MCP 服务器接入 DeepSeek Harness，暴露其 HTTP 抓取与隐身浏览器抓取工具，用于页面提取、浏览器操作、截图与网络请求检查。需要 Python 3.10+ 装好 scrapling[ai]（scrapling-mcp 在 PATH 上）以及 Chromium 兼容浏览器（scrapling install）。'

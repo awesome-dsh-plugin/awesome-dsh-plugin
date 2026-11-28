@@ -1,0 +1,7 @@
+url: https://github.com/veritaswiki/dsh-macos-notifier
+name: veritaswiki/dsh-macos-notifier
+category: notify
+description:
+  en: 'Posts a macOS notification titled with the session name when that session finishes a turn, and clicking it returns to the session. An in-app notice is always shown alongside it (9 s in the foreground, 60 s in the background); the system banner needs notifications allowed for DeepSeek Harness in macOS settings, otherwise only the in-app notice appears.'
+  zh: '会话结束本轮时弹出以会话名为标题的 macOS 通知，点击通知回到该会话；同时一定会再显示一张应用内提示（前台 9 秒、后台 60 秒）。系统横幅需要在 macOS 设置里允许 DeepSeek Harness 发通知，否则只有应用内提示。'
+icon: https://raw.githubusercontent.com/veritaswiki/dsh-macos-notifier/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/realRoc/dsh-screensaver
+name: realRoc/dsh-screensaver
+category: ui
+description:
+  en: 'macOS screen saver for stepping away while AI coding agents keep working: covers the screen with a lock-screen-style cover that a touch of Touch ID dismisses (any key or click brings up the system Touch ID / password dialog), keeps the display and system awake while it is up, can optionally stay awake with the lid closed, and ships three themes in the package: a lock-screen clock; Subspace Jump, a three.js warp tunnel; and Arcane Study, an HD-2D pixel-art tower where a knight reads in a moonlit study while nothing runs and climbs a spiral book tower while agent sessions run. Subspace Jump and Arcane Study list live Claude Code, Codex and DeepSeek Harness sessions, and each screen can show a different theme. Opens with Control+Option+Command+L, the /screensaver command, a screensaver agent tool or after a configurable idle time; also runs standalone with npx. A screen cover, not a security boundary.'
+  zh: 'macOS 屏保，适合人走开、AI 编程 agent 继续干活的时候：用和系统锁屏一样的界面盖住屏幕，摸一下 Touch ID 就解锁（按键或点击会弹出系统的 Touch ID / 密码验证框）；屏保开着时屏幕和系统都不睡，可选合盖也不睡；包里自带三个主题：锁屏样式的时钟；「亚空间跃迁」——three.js 跃迁隧道；以及「魔法书斋」——HD-2D 像素风的塔，没有任务在跑时骑士在月光下的书房里读书，会话在跑时沿螺旋书阶爬塔。「亚空间跃迁」和「魔法书斋」都会列出正在跑的 Claude Code、Codex 和 DeepSeek Harness 会话，每块屏幕还可以用不同的主题。按 ⌃⌥⌘L、输入 /screensaver、让 agent 调用 screensaver 工具或空闲一段时间后开启；也能用 npx 单独运行。只是遮挡屏幕，不是安全锁。'
+icon: https://raw.githubusercontent.com/realRoc/dsh-screensaver/main/assets/icon.png

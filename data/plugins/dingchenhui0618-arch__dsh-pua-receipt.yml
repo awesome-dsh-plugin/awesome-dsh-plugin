@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-pua-receipt
+name: dingchenhui0618-arch/dsh-pua-receipt
+category: tools
+description:
+  en: 'Measured /pua for DeepSeek Harness: every pressure message gets a receipt comparing the last N completed model steps with the next N — tool calls, verification-class steps, repeated-call peak, failed calls and text volume — with a three-way verdict (changed approach / merely restated / no change) and a daily ranking of which sentence moved the work. Ships a conversation-view panel, a /pua command with list/status/receipts/rank/off, append-only local JSONL receipts (no tool arguments, content or session ids), 38 node:test tests and a zero-dependency build. Reports observed differences, not causality. Inspired by MichengAI/dsh-pua (independent code); it registers the same /pua command, so it cannot be installed alongside dsh-pua.'
+  zh: '给 DeepSeek Harness 的 /pua 加效果回执：每次施压都对比前 N 个完整模型步与后 N 个完整模型步的工具调用、验证类步骤、重复调用峰值、失败调用与文本量，判定「改变了做法 / 只是重述 / 无变化」，并按话术排出「今天哪句话真的推动了工作」。带对话视图「回执」面板、/pua 的 list/status/receipts/rank/off 子命令、本地追加式 JSONL（不保存工具参数、内容或 session id）、38 个 node:test 测试与零依赖构建。只报告前后差异，不宣称因果。灵感来自 MichengAI/dsh-pua（代码独立）；注册同名 /pua 命令，不能与 dsh-pua 同装。'

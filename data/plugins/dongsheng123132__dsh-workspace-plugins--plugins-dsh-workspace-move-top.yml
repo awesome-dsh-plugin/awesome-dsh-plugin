@@ -1,0 +1,6 @@
+url: https://github.com/dongsheng123132/dsh-workspace-plugins/tree/main/plugins/dsh-workspace-move-top
+name: dongsheng123132/dsh-workspace-plugins#dsh-workspace-move-top
+category: ui
+description:
+  en: Adds one action to the workspace menu that moves a workspace to the top once, without a favorites system or automatic reordering.
+  zh: 在工作区的「…」菜单里加一项「移到最上面」，只调整一次顺序，不做收藏、星标或自动重排。

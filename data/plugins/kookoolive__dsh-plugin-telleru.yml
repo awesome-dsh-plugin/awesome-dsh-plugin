@@ -1,0 +1,7 @@
+url: https://github.com/kookoolive/dsh-plugin-telleru
+name: kookoolive/dsh-plugin-telleru
+category: tools
+description:
+  en: 'Type /telleru in any conversation and an AI tutor teaches it on a whiteboard in the right sidebar: it clarifies your goal, checks your level with quick questions, has you confirm an outline, then writes structured board content (tables, flowcharts, formulas, code) step by step with optional voice, subtitles, quizzes and interruptible Q&A.'
+  zh: '在任意对话里输入 /telleru，AI 老师在右侧白板边写边讲：先问清学习目标、用小题摸底、和你确认大纲，再逐步写出结构化板书（表格、流程图、公式、代码），可选语音讲解与字幕，带快测、检查题，讲解中随时打断提问。'
+icon: https://raw.githubusercontent.com/kookoolive/dsh-plugin-telleru/main/icon.png

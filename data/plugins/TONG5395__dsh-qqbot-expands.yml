@@ -1,0 +1,6 @@
+url: https://github.com/TONG5395/dsh-qqbot-expands
+name: TONG5395/dsh-qqbot-expands
+category: tools
+description:
+  en: 'Add-on layer over the official QQ bot plugin @tencent-connect/dsh-qqbot: gates group messages before they reach the agent (probability, debounce with backlog, invalid-message filtering, admin approval before reading attachments), greets idle private chats, and adds emoji stickers via dsh-meme, TTS/ASR voice replies, image generation and one settings page. Needs the official QQ bot plugin installed (plus dsh-meme for stickers). Group gating defaults to a 25% chance and only applies when mentions are not required; the private-chat greeting is on by default (22:00-08:00, at most 3 a night, only to chats that wrote first); voice and image generation call endpoints you configure; with no admins configured nobody can approve attachments.'
+  zh: '官方 QQ 机器人插件 @tencent-connect/dsh-qqbot 的拓展层：群聊消息进 agent 前先按概率、防抖加积压、无效消息过滤做频控收敛，非管理员附件需管理员回「同意」才读取，私聊按空闲时长主动问候，并补上表情包、TTS/ASR 语音条、绘图与统一设置页。需要先装好官方 QQ 机器人插件（表情包还需 dsh-meme）。群聊按概率放行默认为 25%，且只在不要求 @ 机器人时生效；私聊问候默认开启（22:00–08:00，每晚最多 3 次，只对先发过消息的会话）；语音和绘图调用你自己配置的接口；没配置管理员时没人能批准附件。'

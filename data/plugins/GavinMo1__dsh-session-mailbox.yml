@@ -1,0 +1,6 @@
+url: https://github.com/GavinMo1/dsh-session-mailbox
+name: GavinMo1/dsh-session-mailbox
+category: session
+description:
+  en: 'Gives the top-level sessions of a DSH instance a shared mailbox: eight tools that list the nearby sessions and workspaces, deliver a message addressed by title, short name or full id (a full id wakes a cold session), rename and create sessions, compact a session, archive sessions and unlist workspaces, and refuse delivery explicitly instead of reporting a fake success.'
+  zh: '给 DSH 顶层会话之间加一个共用邮箱：八个工具，列出邻近的会话与工作区、按标题或短名或完整 id 投递消息（完整 id 可唤醒冷会话）、改名与新建会话、压缩指定会话、归档会话、删掉工作区注册；送不出去时明确拒绝，而不是假装送达。'

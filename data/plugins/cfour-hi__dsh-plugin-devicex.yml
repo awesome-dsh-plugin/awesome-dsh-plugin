@@ -1,0 +1,7 @@
+url: https://github.com/cfour-hi/dsh-plugin-devicex
+name: cfour-hi/dsh-plugin-devicex
+category: tools
+description:
+  en: Device inspector and control panel for macOS and Windows that shows hardware, system, software, network, security and processes on one sidebar page and applies 19 whitelisted actions, with a confirmable cleanup scan, a repeatable benchmark and device_info, device_control and device_benchmark tools for the agent.
+  zh: 面向 macOS 与 Windows 的设备检视与操作面板，在侧栏一页展示硬件、系统、软件、网络、安全与进程，执行 19 个白名单操作，并提供需二次确认的磁盘清理扫描、可重复的基准测试，以及 device_info、device_control、device_benchmark 三个 Agent 工具。
+icon: https://raw.githubusercontent.com/cfour-hi/dsh-plugin-devicex/main/assets/icon-180.png

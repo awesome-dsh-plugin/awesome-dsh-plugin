@@ -1,0 +1,6 @@
+url: https://github.com/cv588888888888888888888ju/dsh-gallery
+name: cv588888888888888888888ju/dsh-gallery
+category: ui
+description:
+  en: 'Image gallery for the conversation: collect local files, image URLs and conversation attachments into albums (content-hash dedup), tag them, find them by keyword or tag, and send them back as native markdown images; ships a settings panel, an input-box picker, and a pack market with SHA-256 verified installs plus ZIP import/export. A generalized fork of yyh-001/dsh-meme (MIT), credited in the LICENSE and README. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '对话里的图片收藏夹：本地文件、网图 URL、对话附件一键收进专辑（按内容哈希去重），打标签、按关键词或分类找图，并以原生 markdown 图片直接发出；带设置面板、输入框选图器，以及带 SHA-256 校验的图包市场与 ZIP 导入导出。由 yyh-001/dsh-meme（MIT）通用化改造而来，LICENSE 与 README 均保留上游署名。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/KonnectSuite/dsh-arya-computer-use
+name: KonnectSuite/dsh-arya-computer-use
+category: tools
+description:
+  en: 'Drives Windows apps through accessibility controls instead of pixels, with a takeover overlay that frames the window being driven, marks each action with a ghost cursor, and stops on Esc; a browser lane adds sign-in profiles, saved state, and attach-to-my-Chrome. Windows only, and DSH must be run as Administrator for the desktop lane.'
+  zh: '用辅助功能接口而不是像素来驱动 Windows 应用：接管浮层只框住被操作的窗口、用虚拟光标标出每一步动作，按 Esc 立即停止；另有一条浏览器通道，支持登录配置、保存状态和接到你自己的 Chrome。仅限 Windows，桌面通道要求 DSH 以管理员身份运行。'

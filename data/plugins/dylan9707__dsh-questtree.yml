@@ -1,0 +1,6 @@
+url: https://github.com/dylan9707/dsh-questtree
+name: dylan9707/dsh-questtree
+category: workflow
+description:
+  en: "Quest tree for DeepSeek Harness: track a long-running task as a main quest plus a branch tree, with a sidebar panel showing status, progress, markdown notes and a 'you are here' marker to prevent drift."
+  zh: "任务树：把长任务维护成一条主线加分支树，侧边栏展示状态、进度、markdown 备注与「你在这」标记，防止跑偏。"

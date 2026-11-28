@@ -1,0 +1,6 @@
+url: https://github.com/EviMing/dsh-balance
+name: EviMing/dsh-balance
+category: usage
+description:
+  en: One loopback GET request returns the DSH account wallet balance (recharge + bonus), the same figure as Settings → Account.
+  zh: 利用简单的HTTP接口，让 DSH 可以直接获取自己剩余的余额

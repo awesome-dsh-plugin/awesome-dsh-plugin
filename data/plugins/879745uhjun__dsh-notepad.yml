@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-notepad
+name: 879745uhjun/dsh-notepad
+category: ui
+description:
+  en: 'Adds a notepad to the DSH Web UI that floats as an edge-snapping, resizable card or docks into the real bottom layout row, switchable at runtime with shared text and images; notes auto-save (text in localStorage, images in IndexedDB) and follow the active theme.'
+  zh: '在 DSH Web 界面加一个记事本：可悬浮为四边吸附、可调尺寸的卡片，也可停靠进真实底栏布局行，两种模式随时切换并共享文字和图片；内容自动保存（文字存 localStorage，图片存 IndexedDB），跟随当前主题。'

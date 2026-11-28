@@ -1,0 +1,6 @@
+url: https://github.com/turambarr/subagent-orchestrator-dsh
+name: turambarr/subagent-orchestrator-dsh
+category: skill
+description:
+  en: 'Experiment-orchestration SOP skill for long-running experiments. A top-level model drafts a decomposition plan — subtasks, the model for each, an acceptance figure with tolerance, and dependency order — and dispatches only after the user confirms that plan; each subtask then goes to a lightweight executor subagent as a self-contained prompt, and its report is confined to measured facts and the delta from the agreed figure, with judgement and decisions staying at the top level. Ships one plan template and five task templates (gather, execute, consistency check, read-only review, mechanical transform), acceptance gates split into a task layer and an experiment layer, and three rules that stop internal-consistency evidence from being presented as independent or external validation.'
+  zh: '实验编排 SOP 技能：顶层模型起草分解计划（子任务、每个的模型、带容差的验收基准、依赖顺序），经用户确认后才派工；每个子任务以自包含 prompt 交给轻量子智能体执行，回报限定为测量事实与基准差值，判读与裁决留在顶层。附一份分解计划模板、五类任务模板（采集/执行/一致性校验/只读审查/机械转换）、任务层与实验层两级验收门，以及三条防止把内部一致性证据说成独立或外部验证的规则。'

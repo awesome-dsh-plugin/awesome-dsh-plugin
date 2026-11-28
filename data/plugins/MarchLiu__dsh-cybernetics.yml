@@ -1,0 +1,6 @@
+url: https://github.com/MarchLiu/dsh-cybernetics
+name: MarchLiu/dsh-cybernetics
+category: workflow
+description:
+  en: "Runs the DSH session agent as an explicit control loop: a persistent session goal drives rounds of task, verify and triage agents via one workflow run per round, with append-only goal revisions and an optional hard gate that restricts the top-level agent to read and orchestration tools while routing every change through a goal. Includes a client-side Goal tab and sub-agent approval relay."
+  zh: "把 DSH 会话代理组织为显式控制回路：持久的会话目标驱动每轮由任务、验证、分诊代理组成的 workflow 执行，目标修订只追加不改写，并提供可选硬门——顶层代理仅保留读取与编排工具，一切变更须经目标循环。含客户端「目标」标签页与子代理审批透传。"

@@ -1,0 +1,6 @@
+url: https://github.com/HaroldZ32/My-Power-Dsh
+name: HaroldZ32/My-Power-Dsh
+category: workflow
+description:
+  en: 'A DeepSeek Harness plugin bundle: eleven specialist roles usable as one-shot consults or as team members, a team plane with a plan, a shared board and a dependency graph, a durable workmate library, a memory engine, and a verification plane that refuses a PASS unless a different agent records the verdict against gate evidence. Installs as one package with a dsh.bundle patch; also ships a native dshGo panel interface and a conformance gate pinned to a dsh-Go protocol v1 spec commit (d5ad25c).'
+  zh: '面向 DeepSeek Harness 的插件包：十一个专家角色，可作单次咨询或团队成员；团队平面带计划、共享看板与依赖图；另有可长期积累的 Workmate 库、记忆引擎，以及一个验证平面——除非由另一个 agent 带上 gate 证据记录裁决，否则拒绝 PASS。以单个包加 dsh.bundle 补丁安装，同时提供原生 dshGo 面板接口与钉在 dsh-Go 协议 v1 规范提交 d5ad25c 的一致性检查。'

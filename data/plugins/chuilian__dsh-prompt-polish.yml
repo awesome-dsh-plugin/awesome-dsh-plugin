@@ -1,0 +1,7 @@
+url: https://github.com/chuilian/dsh-prompt-polish
+name: chuilian/dsh-prompt-polish
+category: ui
+icon: https://raw.githubusercontent.com/chuilian/dsh-prompt-polish/main/assets/icon-180.png
+description:
+  en: 'Prompt polishing in the DSH composer: a button rewrites the draft with the profile''s own model, then shows the original and the rewrite side by side with a list of every edit before anything is sent. The rewrite keeps the intent, names and numbers the author gave, and refuses to invent a detail it cannot know. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 输入框里的提示词美化：一个按钮用 profile 当前的模型改写草稿，改写结果与原文并排展示并列出每一处改动，确认前不会发送任何内容。改写保留作者给出的意图、名称与数字，不确定的细节不会被编造出来。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

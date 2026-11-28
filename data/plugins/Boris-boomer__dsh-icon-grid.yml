@@ -1,0 +1,6 @@
+url: https://github.com/Boris-boomer/dsh-icon-grid
+name: Boris-boomer/dsh-icon-grid
+category: ui
+description:
+  en: 'Scene-independent floating icon grid container for DSH plugins, with drag-and-drop sorting, theming, and persistence.'
+  zh: '场景无关的 DSH 插件浮动图标网格容器，支持拖拽排序、主题适配与持久化。'

@@ -1,0 +1,7 @@
+url: https://github.com/wjinxuan/dsh-perch
+name: wjinxuan/dsh-perch
+category: ui
+description:
+  en: A Dynamic-Island-style status panel that lives in the macOS notch and lists running turns, background jobs and subagents, with a completion banner and a spoken reminder.
+  zh: 住在 macOS 刘海里的灵动岛式状态面板，列出正在跑的轮次、后台任务与子 agent，结束时弹出横幅并语音播报。
+icon: https://raw.githubusercontent.com/wjinxuan/dsh-perch/main/assets/icon-180.png

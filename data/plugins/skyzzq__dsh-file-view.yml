@@ -1,0 +1,7 @@
+url: https://github.com/skyzzq/dsh-file-view
+name: skyzzq/dsh-file-view
+category: ui
+tarball: https://github.com/skyzzq/dsh-file-view/releases/latest/download/dsh-file-view.tgz
+description:
+  en: Converts file paths in chat to clickable links with sidebar preview, external editor opening, and theme customization.
+  zh: 对话文件路径高亮与交互插件，支持侧边栏秒级预览、外部编辑器跳转与资源管理器定位，支持强调色自定义。

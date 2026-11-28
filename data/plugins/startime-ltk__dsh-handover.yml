@@ -1,0 +1,6 @@
+url: https://github.com/startime-ltk/dsh-handover
+name: startime-ltk/dsh-handover
+category: session
+description:
+  en: 'Compresses a past DSH session into a bounded handover pack (progress, touched files, commands that changed state, and open todos) so the current session can continue the work; the source session is read-only, and one tool covers list, pack, search and read.'
+  zh: '把旧 DSH 会话压成有字数上限的交接包（进度、动过的文件、改变过状态的命令、待办），让当前会话接着干；旧会话全程只读，list / pack / search / read 由同一个工具承担。'

@@ -1,0 +1,7 @@
+url: https://github.com/QiNFPV/dsh-voice-dialog
+name: QiNFPV/dsh-voice-dialog
+category: voice
+description:
+  en: 'Continuous voice conversation for DSH: auto sentence splitting, a 2-second confirm window before sending, and spoken replies you can interrupt by speaking. Speech is recognised by DSH''s own speech service by default (a local Whisper bridge or an OpenAI-compatible endpoint can be set instead), the recognised text is corrected by a DSH model call, and replies are read aloud through Microsoft Edge''s online text-to-speech service, so reply text is sent to Microsoft. A daily check of PyPI and Hugging Face for faster-whisper updates is on by default; settings and any API keys are stored in plain text in ~/.dsh/voice-tutor-config.json. Its /voice-tutor routes require an authenticated DSH session (admission is checked per request), API keys are never returned, and applying an update needs a one-time confirmation token.'
+  zh: 'DSH 连续语音对话：自动断句、发送前 2 秒确认窗口、回复朗读且开口即打断。默认用 DSH 自带的语音识别（可在设置里改接本机 Whisper 桥或 OpenAI 兼容接口），识别结果再用 DSH 模型纠错一次；回复经微软 Edge 的在线朗读服务合成，回复文字会发给微软。默认每天检查一次 PyPI 与 Hugging Face 上的 faster-whisper 更新；设置与 API Key 明文存放在 ~/.dsh/voice-tutor-config.json。/voice-tutor 路由逐个请求做准入校验（需要已登录的 DSH 会话），API Key 不回传原文，执行更新需要一次性确认 token。'
+tarball: https://github.com/QiNFPV/dsh-voice-dialog/releases/download/v0.1.4/dsh-voice-dialog-0.1.4.tgz

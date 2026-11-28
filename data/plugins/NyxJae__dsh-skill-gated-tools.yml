@@ -1,0 +1,6 @@
+url: https://github.com/NyxJae/dsh-skill-gated-tools
+name: NyxJae/dsh-skill-gated-tools
+category: skill
+description:
+  en: Load skills to reveal bound tools on demand, with per-tool blocking and MCP support.
+  zh: 加载技能后按需解锁绑定工具，支持按工具拦截和 MCP 工具。

@@ -1,0 +1,8 @@
+url: https://github.com/abdelrhmanwaelbishr/dsh-all-over-chinese-to-english
+name: abdelrhmanwaelbishr/dsh-all-over-chinese-to-english
+category: usage
+icon: https://raw.githubusercontent.com/abdelrhmanwaelbishr/dsh-all-over-chinese-to-english/main/icon.png
+description:
+  en: Translates Chinese text in the DSH interface into English as it appears - plugin cards, settings pages, dropdown menus, plugin view tabs, same-origin iframe panels, and the Chinese the agent writes in the conversation (assistant messages and thinking titles). User-authored rows, tool output, the composer, the Trajectory table and the Context dashboard are left untouched, so user content is never sent to a translation backend. Uses the shipped translator service (Bing or Google, no key needed) and falls back to the default model.
+  zh: 把 DSH 界面中的中文实时翻译成英文——插件卡片、设置页、下拉菜单、插件视图标签、同源 iframe 面板，以及智能体在对话中自己写的中文（回复正文与思考标题）。用户自己写的消息、工具输出、输入框、Trajectory 表格与 Context 仪表盘不改动，因此用户内容不会被发送到翻译后端。使用内置翻译服务（Bing 或 Google，无需密钥），不可用时回退到默认模型。
+tarball: https://github.com/abdelrhmanwaelbishr/dsh-all-over-chinese-to-english/releases/download/v1.1.0/dsh-all-over-chinese-to-english-1.1.0.tgz

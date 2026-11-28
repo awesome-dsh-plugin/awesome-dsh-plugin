@@ -1,0 +1,6 @@
+url: https://github.com/moldkey/dsh-plugin-mj7
+name: moldkey/dsh-plugin-mj7
+category: tools
+description:
+  en: 'Read-only tools for mj7.cn: search standards, products and materials, plus HS-code lookup, Incoterms, trade documents and CNY rates across 6 tools. Network-only, no local writes.'
+  zh: 'mj7.cn 只读工具：检索标准、产品与材料，另有 HS 编码联想、Incoterms、贸易单证与人民币汇率，共 6 个工具。仅网络访问，不写本地。'

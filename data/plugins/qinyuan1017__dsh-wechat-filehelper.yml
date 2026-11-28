@@ -1,0 +1,7 @@
+url: https://github.com/qinyuan1017/dsh-wechat-filehelper
+name: qinyuan1017/dsh-wechat-filehelper
+category: tools
+description:
+  en: 'Send files and text to your own WeChat File Transfer Helper straight from the agent. Scan one QR code once, then just ask to send a file - it runs over plain HTTP without opening the web client or a browser. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '让 agent 把文件和文字直接发到你自己的微信文件传输助手。扫一次码，之后说句话就能发；全程走 HTTP，不用打开网页版或浏览器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/qinyuan1017/dsh-wechat-filehelper/main/assets/icon.png

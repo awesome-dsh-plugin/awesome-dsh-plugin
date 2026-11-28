@@ -1,0 +1,6 @@
+url: https://github.com/jichengkai/dsh-codex-migrate-next
+name: jichengkai/dsh-codex-migrate-next
+category: session
+description:
+  en: 'Imports Codex CLI conversations, MCP servers, memories and project files into DeepSeek Harness as Session V4 transcripts, and moves a DSH conversation or project back into Codex. Maintained fork of dsh-codex-migrate for DSH 0.2.x; install it instead of, not alongside, the upstream package.'
+  zh: '把 Codex CLI 的对话、MCP、记忆与项目文件导入 DeepSeek Harness（Session V4），也能把 DSH 的对话或整个项目导回 Codex。dsh-codex-migrate 的维护分支，适配 DSH 0.2.x，与原版二选一安装。'

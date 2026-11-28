@@ -1,0 +1,7 @@
+url: https://github.com/NanQing233/dsh-tps-splitter
+name: NanQing233/dsh-tps-splitter
+category: usage
+icon: https://raw.githubusercontent.com/NanQing233/dsh-tps-splitter/main/assets/icon-180.png
+description:
+  en: Split DeepSeek Harness's native session-wide tok/s calculation into per-model readings.
+  zh: 将 DeepSeek Harness 原生按会话计算 tok/s 的方式拆分为按模型计算。

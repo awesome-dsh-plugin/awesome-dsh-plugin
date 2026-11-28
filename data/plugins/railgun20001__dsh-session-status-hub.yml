@@ -1,0 +1,6 @@
+url: https://github.com/railgun20001/dsh-session-status-hub
+name: railgun20001/dsh-session-status-hub
+category: notify
+description:
+  en: "A status rail in the DSH title bar that lists the sessions needing you, ordered red (failed) > yellow (waiting for your answer) > green (unread) > blue (running) > gray (not started, meaning an unsent draft sits in that session's composer); one click jumps to the session. State changes raise Windows toasts that clear themselves once you open the session or answer the question, and the DSH taskbar button carries a red/yellow/green dot through ITaskbarList3.SetOverlayIcon, so the state stays visible when the window is minimized or buried."
+  zh: "DSH 标题栏里的一条状态栏，按「红（失败）> 黄（等你回答）> 绿（未读）> 蓝（运行中）> 灰（未开始，即该会话输入框里有未发送草稿）」列出需要处理的会话，点一下直达；状态变化时弹 Windows 通知，打开该会话或回答提问后通知自动消失；任务栏按钮再用红黄绿状态点（ITaskbarList3.SetOverlayIcon）标出状态，窗口最小化或被遮住时也看得见。"

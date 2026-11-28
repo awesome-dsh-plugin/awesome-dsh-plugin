@@ -1,0 +1,6 @@
+url: https://github.com/paranoidPhantom/dsh-rtk-minimal
+name: paranoidPhantom/dsh-rtk-minimal
+category: tools
+description:
+  en: 'Rewrites bash tool calls through `rtk rewrite` on the `tools/execute` hook, so it applies to any provider route. Zero dependencies and no build step: a single ESM module that adopts exit codes 0 and 3, runs the original command otherwise (no equivalent, deny rule, missing rtk, spawn failure), restores the original arguments after dispatch, and honors `RTK_PREFIX_ONLY` for direct `rtk <cmd>` prefixing and `DSH_RTK_BIN` to pin the binary.'
+  zh: '在 `tools/execute` 钩子上把 bash 工具调用经 `rtk rewrite` 改写，因此对任意 provider 路由生效。零依赖、无需构建：单个 ESM 模块，退出码 0 与 3 时采纳改写结果，其余情况（无等价命令、命中拒绝规则、rtk 缺失、启动失败）原样执行，执行后还原原始参数；`RTK_PREFIX_ONLY` 直接改为 `rtk <cmd>`，`DSH_RTK_BIN` 用于指定二进制。'

@@ -1,0 +1,6 @@
+url: https://github.com/hsushjk/dsh-net-consent
+name: hsushjk/dsh-net-consent
+category: security
+description:
+  en: 'Gates the session''s own network access behind a consent card: web tools and shell network verbs are allowed once, allowed for the session, or denied, with tool / command / domain / IP allowlists and an audit log.'
+  zh: '会话自身联网的审批闸门：网页工具与命令行联网动作按「放行一次 / 本会话放行 / 拒绝」处理，支持工具 / 命令 / 域名 / IP 白名单与审计日志。'

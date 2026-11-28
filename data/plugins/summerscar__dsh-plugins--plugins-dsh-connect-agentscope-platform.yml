@@ -1,0 +1,6 @@
+url: https://github.com/summerscar/dsh-plugins/tree/main/plugins/dsh-connect-agentscope-platform
+name: summerscar/dsh-plugins#dsh-connect-agentscope-platform
+category: model
+description:
+  en: 'AgentScope Platform inside DeepSeek Harness: manage several platform accounts (switch the billing account by hand, pick one by remaining Credits, probe and flag unhealthy ones), an optional OpenAI-compatible model provider whose catalog you can fetch, add to and edit row by row, an available-Credits and redeemable-contribution readout under the composer, and a settings panel for the daily check-in, the balance, contribution grants, usage detail and the price list. Switching accounts affects new requests only and never interrupts a session already in flight.'
+  zh: 把 AgentScope Platform 接入 DSH：管理多个平台账号（手动切换计费账号、按额度自动选号、测活与健康标记），可自行开关的 OpenAI 兼容模型供应商（模型目录可自动获取、手动添加并逐行修改元数据），输入框下方的可用 Credits 与可兑换贡献值读数，以及包含每日签到、额度、贡献值、用量明细与价目表的设置面板。切换账号只影响新请求，不会打断正在进行的会话。

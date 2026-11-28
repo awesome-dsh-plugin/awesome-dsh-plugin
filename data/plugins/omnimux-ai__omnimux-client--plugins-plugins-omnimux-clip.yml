@@ -1,0 +1,6 @@
+url: https://github.com/omnimux-ai/omnimux-client/tree/main/plugins/plugins/omnimux-clip
+name: omnimux-ai/omnimux-client#omnimux-clip
+category: tools
+description:
+  en: 'Multi-track nonlinear video timeline editor for DeepSeek Harness with real-time frame preview, local MP4 export via WebCodecs and WebGPU, and agent timeline editing tools.'
+  zh: 'DeepSeek Harness 多轨非线性视频时间轴剪辑插件，支持实时画面预览、基于 WebCodecs 与 WebGPU 的本地 MP4 导出以及 Agent 时间轴协同剪辑工具。'

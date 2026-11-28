@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-session-broadcast
+name: 879745uhjun/dsh-session-broadcast
+category: session
+description:
+  en: 'Sends one message to several DSH sessions at once from a speaker button in the composer toolbar: pick targets by title, workspace, running state or box, deliver queued or as a steer, and see a per-session result with retry for the ones that failed.'
+  zh: '用输入框工具栏上的喇叭按钮把同一条消息一次发给多个 DSH 会话：按标题、工作区、运行状态或盒子挑选目标，可选择排队或打断投递，并逐个显示结果、对失败项重试。'

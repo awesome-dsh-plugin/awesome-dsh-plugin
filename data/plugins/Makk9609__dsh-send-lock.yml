@@ -1,0 +1,6 @@
+url: https://github.com/Makk9609/dsh-send-lock
+name: Makk9609/dsh-send-lock
+category: ui
+description:
+  en: "Changes how DSH Web sends messages: Enter inserts a newline and sending takes Cmd on macOS or Ctrl elsewhere."
+  zh: "调整 DSH Web 的消息发送方式：Enter 只换行，发送用 Cmd（macOS）或 Ctrl。"

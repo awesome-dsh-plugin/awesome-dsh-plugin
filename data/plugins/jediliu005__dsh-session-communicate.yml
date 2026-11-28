@@ -1,0 +1,6 @@
+url: https://github.com/jediliu005/dsh-session-communicate
+name: jediliu005/dsh-session-communicate
+category: session
+description:
+  en: 'Lets two existing DSH sessions talk to each other on a daily schedule. Pick session A and B, which one speaks first, a purpose, a round count and a time of day; each delivered turn carries the same rules block (purpose, rounds, per-message character limit) and waits for the reply with a configurable timeout. The sidebar panel lists sessions by their own title and last-update time, saves the schedule, shows the per-round status and the transcript of the current run, keeps a local markdown log per conversation, and lets a run be started or stopped by hand. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '每天到点让两个已有的 DSH 会话互相对话。选好会话 A、B、谁先说、目的、轮次与时间；每一次投递都附带同一份规则（目的、轮次、单条字数上限），并按可配置的超时等待回话。侧栏面板按会话自己的名字与最后更新时间列出会话，可保存配置、查看本轮逐条状态与本次对白，把每场对话写成本地 markdown 记录，也支持手动开始与停止。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

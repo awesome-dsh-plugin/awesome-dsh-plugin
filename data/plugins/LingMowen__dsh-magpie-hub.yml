@@ -1,0 +1,6 @@
+url: https://github.com/LingMowen/dsh-magpie-hub
+name: LingMowen/dsh-magpie-hub
+category: model
+description:
+  en: 'Runs the magpie vendor-plugin ecosystem inside DSH: inherits installed plugins and signed-in accounts from ~/.config/magpie, registers every provider as a model route, and ships a dual-surface panel — the magpie web UI on desktop plus a native mobile panel for DSH Go (provider cards, quota windows, usage stats, plugin store with one-click install), with a quota strip above the composer and a per-turn usage footnote. 84 tests.'
+  zh: '在 DSH 进程内直接运行 magpie 的供应商插件：继承 ~/.config/magpie 里已装的插件与已登录的账号，把每个供应商注册成一条模型路由，提供双端面板——桌面是 magpie 原版 Web UI，手机（DSH Go）是原生插件面板（平台卡片、额度窗口、用量统计、插件商店一键安装），另有输入框上方的额度条与每回合的消耗脚注。84 条测试。'

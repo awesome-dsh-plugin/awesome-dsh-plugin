@@ -1,0 +1,7 @@
+url: https://github.com/xiaohuangbo/dsh-conversation-lock
+name: xiaohuangbo/dsh-conversation-lock
+category: security
+icon: https://raw.githubusercontent.com/xiaohuangbo/dsh-conversation-lock/main/icon-180.png
+description:
+  en: 'Session-level restriction plugin for DeepSeek Harness: the model can close a conversation behind a yellow notice with countdown, disable the Stop button and both response ratings, exclude the session from official Session Log uploads while turning Session OTel off, and block copying of the transcript — each gated by a user-authorized settings switch.'
+  zh: 'DeepSeek Harness 的会话级限制插件：模型可把对话关闭在带倒计时的黄色提示后、禁用停止按钮与两个回答评价、在隐私限制期间把会话排除出官方 Session Log 上传并关闭会话 OTel 遥测、禁止复制会话文本；每项能力都由设置页的用户授权开关控制。'

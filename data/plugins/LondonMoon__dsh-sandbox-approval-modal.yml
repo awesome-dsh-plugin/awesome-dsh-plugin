@@ -1,0 +1,6 @@
+url: https://github.com/LondonMoon/dsh-sandbox-approval-modal
+name: LondonMoon/dsh-sandbox-approval-modal
+category: security
+description:
+  en: 'A top-most sandbox-escalation approval modal for DeepSeek Harness with a FIFO queue, one-shot allowed-once grants, reject-with-comment, and host-enforced timeout.'
+  zh: '复用 DSH 现有审批链路的置顶沙盒越权审批弹窗，支持 FIFO 排队、仅本次放行、拒绝附理由与宿主侧超时自动拒绝。'

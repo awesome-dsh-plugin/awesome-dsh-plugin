@@ -1,0 +1,7 @@
+url: https://github.com/VermilionPasvikin/dsh-pack-and-go
+name: VermilionPasvikin/dsh-pack-and-go
+category: session
+description:
+  en: 'Pack DSH conversations and workspaces into one .dshpack file and restore them on another machine or platform, with cross-platform path repair.'
+  zh: '把 DSH 的对话与工作区打包成单个 .dshpack 文件，换台电脑或换个平台继续用，并自动处理跨平台路径。'
+icon: https://raw.githubusercontent.com/VermilionPasvikin/dsh-pack-and-go/main/docs/icon-180.png

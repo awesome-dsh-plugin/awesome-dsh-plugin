@@ -1,0 +1,6 @@
+url: https://github.com/iannil/dsh-workstyle
+name: iannil/dsh-workstyle
+category: workflow
+description:
+  en: 'Packages a working style into a versioned pack of rules, skills and presets injected into the system prompt at global, project or session scope, distills local agent sessions into aggregate reports and suggested rules you can adopt or undo, exports the pack as a tarball a teammate can install, and ships a reference FDE pack with 40 skills.'
+  zh: '把工作方式打包成可版本化的规则、技能与预设包，按全局、项目或会话作用域注入系统提示；可蒸馏本机 Agent 会话生成聚合报告与建议规则，供采纳或撤销；导出 tar.gz 供同事安装；并附带含 40 个技能的 FDE 参考包。'

@@ -1,0 +1,8 @@
+url: https://github.com/ghostmss86-afk/dsh-featured-market
+name: ghostmss86-afk/dsh-featured-market
+category: market
+tarball: https://github.com/ghostmss86-afk/dsh-featured-market/releases/latest/download/dsh-featured-market.tgz
+description:
+  en: "Curated DeepSeek Harness plugin market with a daily heat leaderboard, bilingual descriptions, 2-3 plugin comparison, compatibility checks and README summaries."
+  zh: "精选 DeepSeek Harness 插件市场，提供每日热度榜、双语说明、2–3 款并排对比、兼容性检查与 README 摘要。"
+icon: https://raw.githubusercontent.com/ghostmss86-afk/dsh-featured-market/main/icon-180.png

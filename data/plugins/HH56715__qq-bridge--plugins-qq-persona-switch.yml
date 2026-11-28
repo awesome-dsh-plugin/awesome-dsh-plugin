@@ -1,0 +1,6 @@
+url: https://github.com/HH56715/qq-bridge/tree/main/plugins/qq-persona-switch
+name: HH56715/qq-bridge#qq-persona-switch
+category: identity
+description:
+  en: Switches a bot between qq-bridge role cards and dsh-persona-dafeiyu personas so only one is active, either globally or one persona per QQ conversation. Needs a running qq-bridge.
+  zh: 在 qq-bridge 角色卡与 dsh-persona-dafeiyu 人设之间切换，保证只生效一个；可全局生效，也可每个 QQ 会话各配一个。需 qq-bridge 已运行。

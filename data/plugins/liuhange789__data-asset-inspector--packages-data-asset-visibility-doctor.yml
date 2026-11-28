@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/visibility-doctor
+name: liuhange789/data-asset-inspector#visibility-doctor
+category: tools
+description:
+  en: 'Diagnoses how discoverable a DSH plugin is (npm keywords, README install format, GitHub topics, market listing) and drafts fix suggestions; registers diagnose_visibility and boost_exposure tools. Scoring rules are tuned to the author''s own @liuhange packages; needs network access (npm, GitHub API, dsh-plugin.org).'
+  zh: '诊断 DSH 插件的可发现性（npm 关键词、README 安装写法、GitHub topics、市场收录）并生成改进建议；注册 diagnose_visibility 与 boost_exposure 两个工具。评分规则按作者自家 @liuhange 系列包调校，需联网访问 npm、GitHub API 与 dsh-plugin.org。'

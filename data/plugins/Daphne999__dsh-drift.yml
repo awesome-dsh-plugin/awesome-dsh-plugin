@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-drift
+name: Daphne999/dsh-drift
+category: dev
+description:
+  en: 'Capability drift detection: audit a plugin once, store a baseline of what it could do, then after every upgrade report only what is NEW (new install scripts, shell/eval access, outbound domains, credential paths). Deletions and version bumps are not reported, and no score is computed.'
+  zh: '能力漂移检测：先审一次、存下这份插件当时能做什么的基线，之后每次升级只报新增的能力（新增安装脚本、shell/eval、外联域名、凭据路径）。删除项和版本号变化不报；不计算评分。'

@@ -1,0 +1,6 @@
+url: https://github.com/byteuser1977/ColaMD-themes
+name: byteuser1977/ColaMD-themes
+category: dev
+description:
+  en: "Extract CSS themes from URLs, DOCX or PDF; generate, validate and export ColaMD contract themes, and export Markdown to standalone HTML or PDF."
+  zh: "从 URL、DOCX 或 PDF 提取 CSS 主题，生成并校验 ColaMD 契约主题，以及将 Markdown 导出为独立 HTML 或 PDF。"

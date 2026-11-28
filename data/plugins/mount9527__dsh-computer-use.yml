@@ -1,0 +1,6 @@
+url: https://github.com/mount9527/dsh-computer-use
+name: mount9527/dsh-computer-use
+category: tools
+description:
+  en: 'Windows desktop operation layer for DSH: 17 tools for window listing, screenshot plus OCR, UI Automation, keyboard and mouse, file operations and CDP browser control. Non-intrusive by default (UI Automation patterns and window messages, never the physical pointer), irreversible steps go through a native confirmation dialog, Esc or an on-page button stops a running task, and a global lease keeps two sessions from driving the desktop at once.'
+  zh: '为 DSH 增加 Windows 桌面操作层：17 个工具覆盖窗口枚举、截图加 OCR、UI 自动化、键鼠、文件操作与 CDP 浏览器。默认非侵入（走 UI 自动化模式与窗口消息，不移动物理指针），不可逆动作弹原生确认窗，按 Esc 或页面按钮可中断正在跑的任务，全局租约保证同一时刻只有一个会话操作桌面。'

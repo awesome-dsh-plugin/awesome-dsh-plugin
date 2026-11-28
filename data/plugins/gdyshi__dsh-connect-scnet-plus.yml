@@ -1,0 +1,7 @@
+url: https://github.com/gdyshi/dsh-connect-scnet-plus
+name: gdyshi/dsh-connect-scnet-plus
+category: model
+description:
+  en: 'Brings the models already signed in to the local SCNet (超算互联网) client into DSH, with no second login and no API key to paste. Adds per-model on/off switches, per-model context budgets and thinking tiers that actually reach the upstream. Reuses the API key the SCNet client cached under ~/.sclaw (or SCNET_API_KEY, or a key set in the plugin config) and sends chats to api.scnet.cn through a loopback proxy; it depends on SCNet''s unofficial client interface, which may change, and use is subject to SCNet''s terms.'
+  zh: '把本机已登录的超算互联网（SCNet）模型接入 DSH，无需二次登录或填写 API Key；插件页提供逐模型开关、逐模型上下文预算，以及真正发到上游的思考档位。沿用 SCNet 客户端缓存在 ~/.sclaw 下的 API Key（也可用 SCNET_API_KEY 或插件配置里填的 Key），经本机回环代理把对话发往 api.scnet.cn；依赖 SCNet 客户端的非官方接口，上游调整后可能失效，使用受 SCNet 服务条款约束。'
+tarball: https://github.com/gdyshi/dsh-connect-scnet-plus/releases/download/v0.1.2/dsh-connect-scnet-plus-0.1.2.tgz

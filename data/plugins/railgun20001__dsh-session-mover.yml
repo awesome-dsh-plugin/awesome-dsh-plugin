@@ -1,0 +1,6 @@
+url: https://github.com/railgun20001/dsh-session-mover
+name: railgun20001/dsh-session-mover
+category: session
+description:
+  en: "Drags a session in the sidebar onto another project group to change the project it belongs to. It rewrites the workspace membership ledger and projects the read side (file tree, open folder, working directory) onto the new project, while the session's JSONL log, header and attachments stay in the original project directory, so the change is reversible and never touches the archive."
+  zh: "把侧栏里的对话拖到另一个项目分组上，即可修改这段对话的所属项目：插件改 workspace 归属账本，并把读取侧（文件树、打开文件夹、工作目录）投影到新项目；会话的 JSONL 日志、header 与附件仍留在原项目目录，因此改动可逆、不碰档案。"

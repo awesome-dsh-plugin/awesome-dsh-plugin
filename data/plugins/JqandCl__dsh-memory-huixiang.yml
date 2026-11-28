@@ -1,0 +1,6 @@
+url: https://github.com/JqandCl/dsh-memory-huixiang
+name: JqandCl/dsh-memory-huixiang
+category: memory
+description:
+  en: 'A local-first memory library for DSH: plain-text cards that decay and strengthen, recall that admits when it does not know, and everything kept on your own disk.'
+  zh: 给 AI 一个本地记忆库：纯文本卡片，会随时间变淡、也会被想起来；记不清时如实说不知道；数据全放在你自己的电脑里。

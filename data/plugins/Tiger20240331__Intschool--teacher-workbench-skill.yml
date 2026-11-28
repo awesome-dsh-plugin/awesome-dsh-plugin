@@ -1,0 +1,7 @@
+url: https://github.com/Tiger20240331/Intschool/tree/main/teacher-workbench-skill
+name: Tiger20240331/Intschool#teacher-workbench-skill
+category: skill
+description:
+  en: "IntSchool+ teacher workbench: a local bilingual timetable, attendance, gradebook and intervention dashboard built from a teacher's own IntSchool and Radar exports."
+  zh: "IntSchool+ 教师工作台：基于教师自己的 IntSchool 与 Radar 导出，搭建本地双语课表、出勤、成绩分析与干预看板。"
+icon: https://raw.githubusercontent.com/Tiger20240331/Intschool/main/teacher-workbench-skill/icon-180.png

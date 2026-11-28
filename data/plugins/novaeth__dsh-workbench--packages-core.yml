@@ -1,0 +1,7 @@
+url: https://github.com/novaeth/dsh-workbench/tree/main/packages/core
+name: novaeth/dsh-workbench#core
+category: workflow
+description:
+  en: 'Workbench layer for the DeepSeek Harness web UI: projects and sessions in the left column, a persistent conversation in the middle, and a right-hand board of modules you install, enable per project, reorder and configure, with a module market and a DIY mode where the agent builds a new panel. Board actions and the agent tools share one implementation, and panels that read logged-in platforms go through the OpenCLI browser extension. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness Web UI 的工作台层：左栏项目与会话，中间常驻对话，右侧一块由模块组成的看板——安装、按项目启用、拖动排序、配置，还有模块市场与 DIY 模式（让 agent 现场创建面板）；看板动作与 agent 工具共用同一实现，读取已登录平台的面板经 OpenCLI 浏览器扩展。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/novaeth/dsh-workbench/main/packages/core/assets/icon-512.png

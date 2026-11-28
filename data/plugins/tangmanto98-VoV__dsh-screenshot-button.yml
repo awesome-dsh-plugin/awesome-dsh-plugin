@@ -1,0 +1,12 @@
+# Submission entry for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# Save this file, in that repository, as:
+#     data/plugins/tangmanto98-VoV__dsh-screenshot-button.yml
+# Do not edit the READMEs by hand — they are generated from data/plugins/*.yml.
+url: https://github.com/tangmanto98-VoV/dsh-screenshot-button
+name: tangmanto98-VoV/dsh-screenshot-button
+category: ui
+description:
+  en: 'Adds a camera button to the composer that captures one chosen monitor, every screen, or any rectangle dragged across several screens, and attaches the image to the draft (Windows only).'
+  zh: '在输入框加一个相机按钮：截你选中的那台显示器、全部屏幕，或用鼠标跨屏拖出的任意大小一块，图片直接作为附件放进草稿（仅 Windows）。'
+icon: https://raw.githubusercontent.com/tangmanto98-VoV/dsh-screenshot-button/main/assets/icon-180.png

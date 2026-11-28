@@ -1,0 +1,7 @@
+url: https://github.com/ddyfight/dsh-plugin-codex-mirror
+name: ddyfight/dsh-plugin-codex-mirror
+category: session
+description:
+  en: 'Read local Codex sessions live in a DSH sidebar panel, quote a session or message into the current draft or a new session, and write a reviewed progress handoff file back to Codex. Read-only; Codex files, authentication and windows are untouched.'
+  zh: '在 DSH 侧栏实时只读查看本机 Codex 会话，可把会话或消息引用到当前草稿或新会话，并把经你确认的进展交接文件交回 Codex；不会修改 Codex 原始文件、认证信息或窗口。'
+tarball: https://github.com/ddyfight/dsh-plugin-codex-mirror/releases/download/v1.1.2/dsh-plugin-codex-mirror-1.1.2.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/snaiheihei/dsh-siyuan-export
+name: snaiheihei/dsh-siyuan-export
+category: tools
+description:
+  en: Exports a single dsh assistant reply into a SiYuan notebook as a structured Markdown note, with sections split by heading, icon-tagged bullet points and code blocks kept as-is. A button on every assistant message opens a dialog with a model-generated editable title and a document-tree picker, or runs silently and reports the result in a toast. SiYuan only and export-only, with no sync back.
+  zh: 把 dsh 的单条助手回复导出为思源笔记里的结构化 Markdown：按二级标题分节、要点带小图标、代码块原样保留。每条助手回复的操作栏都有导出按钮，弹窗里可用模型生成并编辑主题名、在文档树里选择存放位置，也可以静默导出并用 toast 报告结果。仅支持思源、仅单向导出，不做反向同步。

@@ -1,0 +1,8 @@
+url: https://github.com/shinerain1/dsh-ml-workbench
+name: shinerain1/dsh-ml-workbench
+category: workflow
+description:
+  en: 'Track, branch, compare and reproduce local CSV classification and regression experiments through DSH tools backed by MLflow; requires a separately installed Python backend. By default training runs as detached local worker processes that keep running after DSH exits (executionMode dsh stops them with DSH); running your own Python preprocessing or estimator code needs allowCustomCode, which is off by default; the plugin makes no network requests.'
+  zh: '将 MLflow 适配为 DSH 工具，管理本地 CSV 分类与回归实验的追踪、分支、比较和复现交付；需另行安装 Python 后端。默认情况下训练作为独立的本机工作进程运行，DSH 退出后仍会继续（executionMode 设为 dsh 则随 DSH 停止）；运行你自己的 Python 预处理或估计器代码要打开 allowCustomCode（默认关闭）；插件不发网络请求。'
+icon: https://raw.githubusercontent.com/shinerain1/dsh-ml-workbench/main/assets/icon-180.png
+tarball: https://github.com/shinerain1/dsh-ml-workbench/releases/download/v0.4.0/dsh-ml-workbench-0.4.0.tgz

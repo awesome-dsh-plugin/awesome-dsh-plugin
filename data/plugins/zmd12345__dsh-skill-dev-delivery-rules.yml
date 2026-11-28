@@ -1,0 +1,8 @@
+url: https://github.com/zmd12345/dsh-skill-dev-delivery-rules
+name: zmd12345/dsh-skill-dev-delivery-rules
+category: usage
+description:
+  en: Registers a battle-tested development delivery rulebook as a skill family - one core skill (clarification, delivery checklist, navigation) plus nine focused skills (layered architecture, evidence-driven debugging, minimal changes, impact-graded verification, migration feature parity, async UI feedback, sizing rules, CLI safety and cleanup, project notes). Only the skills matching the current task are loaded, trivial tasks (small reversible single-file edits) are exempted outright, so each session pays tokens just for the rules it actually uses.
+  zh: 把一套实战打磨的《开发交付规则》注册为技能家族：1 个核心技能（需求澄清、交付自检、规则导航）+ 9 个专项技能（分层架构、证据驱动调试、最小变更、验证分级、迁移对等、UI 异步反馈、样式尺寸、命令行安全与清理、项目记录）。按任务场景只加载命中的技能，琐碎小任务（单文件、≤10 行、可回滚）整体豁免不加载，每个会话只为真正用到的规则付 token。
+icon: https://raw.githubusercontent.com/zmd12345/dsh-skill-dev-delivery-rules/main/assets/icon-180.png
+tarball: https://github.com/zmd12345/dsh-skill-dev-delivery-rules/releases/latest/download/dsh-skill-dev-delivery-rules.tgz

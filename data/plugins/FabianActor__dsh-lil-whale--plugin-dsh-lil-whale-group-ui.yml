@@ -1,0 +1,7 @@
+url: https://github.com/FabianActor/dsh-lil-whale/tree/main/plugin/dsh-lil-whale-group-ui
+name: FabianActor/dsh-lil-whale#dsh-lil-whale-group-ui
+category: ui
+icon: https://raw.githubusercontent.com/FabianActor/dsh-lil-whale/main/docs/image/icon.png
+description:
+  en: 'Sidebar panel of lil-whale: group chat and DMs between the host and the fish, unread badges, image attachments, and a pond page that starts or stops each agent. Both packages are required: this panel plus @fabianactor/dsh-lil-whale-group as the host half. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '小小肥鱼的面板：宿主与几条鱼之间的群聊和私聊、未读红点、图片附件，以及开关每条鱼的鱼塘页。两个包必须一起装：这个面板，加上作为宿主半的 @fabianactor/dsh-lil-whale-group。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

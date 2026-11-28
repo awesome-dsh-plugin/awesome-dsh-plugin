@@ -1,0 +1,7 @@
+url: https://github.com/mako-o-o/dsh-opendesign-limit
+name: mako-o-o/dsh-opendesign-limit
+category: usage
+description:
+  en: 'OpenDesign (AMR) quota readout: the Design Plan 5-hour and 7-day windows, wallet balance and days-to-exhaust in a composer pill, read over a local controlKey or a browser session. The local source reads the controlKey from ~/.amr/config.json; the browser source opens a temporary Chrome window, and after you log in collects the session cookie over CDP into DSH''s credential store.'
+  zh: 'OpenDesign（AMR）额度读数：输入框旁显示 Design Plan 的 5 小时与 7 天窗口、钱包余额与外推天数，走本机 controlKey 或浏览器会话两条通道。本机来源会读取 ~/.amr/config.json 里的 controlKey；浏览器来源会打开一个临时 Chrome 窗口，你登录后通过 CDP 收集会话 cookie 存进 DSH 的凭据库。'
+icon: https://raw.githubusercontent.com/mako-o-o/dsh-opendesign-limit/main/assets/icon-180.png

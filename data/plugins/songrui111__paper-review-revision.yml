@@ -1,0 +1,7 @@
+url: https://github.com/songrui111/paper-review-revision
+name: songrui111/paper-review-revision
+category: skill
+description:
+  en: 'Runs a fixed four-stage review-and-revision loop over an engineering or applied-mathematics paper with two delegated agents: a reviewer writes each round report, a reviser applies that report to a working copy, and the next round reviews that copy. The stages are academic review, verification of the maths and theorem proofs, sentence-level English editing, and a final pass over the revision. A Node script shipped in the skill records draft versions, per-round reports and the handoff state on disk, so an interrupted run can be resumed from that state; the skill reads multi-file LaTeX projects, DOCX and PDF, and any single stage can be run on its own.'
+  zh: '用两个受派的智能体对工程或应用数学论文跑固定的四阶段审修循环：审稿智能体逐轮出报告，修订智能体把报告落到工作副本，下一轮再审这份新稿。四个阶段依次是学术审查、逐式复核数学推导与定理证明、英文逐句编辑、修订稿终审。技能内附 Node 脚本，把稿件版本、逐轮报告和交接状态记录在磁盘上，中断后可按状态继续；可读多文件 LaTeX 工程、DOCX 与 PDF，也可以只跑指定的单个阶段。'
+icon: https://raw.githubusercontent.com/songrui111/paper-review-revision/main/assets/icon.png

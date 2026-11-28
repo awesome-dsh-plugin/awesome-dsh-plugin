@@ -1,0 +1,6 @@
+url: https://github.com/atattier/local-model-speedtest
+name: atattier/local-model-speedtest
+category: ui
+description:
+  en: Adds model speed tests to the DSH model picker and, on desktop, a plain-language "explain this error" button on failed turns with a user-selectable explainer model.
+  zh: 在 DSH 模型选择器里加一键测速，并在桌面端对话报错处提供「大白话解释」按钮，解释模型可自选。
