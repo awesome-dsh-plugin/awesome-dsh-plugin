@@ -1,0 +1,7 @@
+url: https://github.com/rose-1-4/dsh-prompt-engineering
+name: rose-1-4/dsh-prompt-engineering
+category: ui
+description:
+  en: 'One-click prompt optimizer button in the composer: rewrites the current draft with a six-step pipeline and previews the result before replacing it.'
+  zh: '输入框一键提示词优化按钮：按六步流水线改写当前草稿，结果先预览再替换，可编辑、复制或放弃。'
+icon: https://raw.githubusercontent.com/rose-1-4/dsh-prompt-engineering/main/assets/icon-180.png
