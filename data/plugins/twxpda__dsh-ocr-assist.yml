@@ -1,0 +1,6 @@
+url: https://github.com/twxpda/dsh-ocr-assist
+name: twxpda/dsh-ocr-assist
+category: vision
+description:
+  en: 'Local image preprocessing for pasted screenshots: it checks how much of the picture is text, asks once, and sends the recognised text instead of the image, saving a large amount of tokens. Recognition runs fully offline with a bundled PaddleOCR engine.'
+  zh: '图片预处理文字识别：粘贴截图后先在本地判断是否以文字为主，文字为主时询问一次，识别成文本再发送，可节省大量词元（token）。内置识别引擎，全程离线，图片不上传。'
