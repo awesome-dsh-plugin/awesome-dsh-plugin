@@ -1,0 +1,7 @@
+url: https://github.com/SPYfighting/dsh-science-review
+name: SPYfighting/dsh-science-review
+category: workflow
+description:
+  en: Reviews research and everyday task answers against user instructions, tool results and delivered files, with quoted evidence beneath each answer.
+  zh: 对照用户要求、工具执行记录和交付文件，审查科研与日常任务的回答，并在原回答下展示问题和证据原文。
+tarball: https://github.com/SPYfighting/dsh-science-review/releases/download/v0.4.0/dsh-science-review-0.4.0.tgz

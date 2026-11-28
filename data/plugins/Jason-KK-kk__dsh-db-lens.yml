@@ -1,0 +1,6 @@
+url: https://github.com/Jason-KK-kk/dsh-db-lens
+name: Jason-KK-kk/dsh-db-lens
+category: tools
+description:
+  en: Read-only, row-capped, audited database query window for DSH agents (SQLite/MySQL/PostgreSQL), with schema tree, sortable result grid, CSV export and human-confirmed natural-language SQL. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 给 DSH agent 的只读、限量、留痕查数窗口（SQLite/MySQL/PostgreSQL），含 schema 树、可排序结果表、CSV 导出与须人确认的自然语言问数。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

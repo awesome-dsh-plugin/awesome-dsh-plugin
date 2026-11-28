@@ -1,0 +1,7 @@
+url: https://github.com/huang2000di/dsh-pet-coo-link
+name: huang2000di/dsh-pet-coo-link
+category: fun
+description:
+  en: 'Bridges dsh-pet and the Coopanion desktop pet so the two pets chat on their own: an interval you can set, four tiers of memory (recent rounds, keyword recall, daily summaries, fact cards), a settings page with an on/off switch, and a global hotkey. Needs dsh-pet and Coopanion installed and running. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 把 dsh-pet 的小女仆和 Coopanion 的大肥鱼接成一条自动对话通道：间隔可调，四档记忆（近期轮次、关键词回忆、每日摘要、事实卡），带开关与全局快捷键的设置页。需要已安装并运行 dsh-pet 与 Coopanion。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/huang2000di/dsh-pet-coo-link/main/assets/icon-180.png

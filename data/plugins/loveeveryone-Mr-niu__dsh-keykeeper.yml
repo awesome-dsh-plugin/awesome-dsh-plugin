@@ -1,0 +1,6 @@
+url: https://github.com/loveeveryone-Mr-niu/dsh-keykeeper
+name: loveeveryone-Mr-niu/dsh-keykeeper
+category: usage
+description:
+  en: Encrypted local vault for model API keys. Import keys.txt, check provider balances and subscription quotas, write providers into the DSH model config with one click, and open official top-up pages.
+  zh: 加密保存各家模型 API Key，导入 keys.txt、查看余额与订阅额度、一键写入 DSH 模型配置，并跳转官方充值页。

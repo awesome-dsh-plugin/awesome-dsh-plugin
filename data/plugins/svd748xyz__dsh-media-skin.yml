@@ -2,6 +2,7 @@ url: https://github.com/svd748xyz/dsh-media-skin
 name: svd748xyz/dsh-media-skin
 category: theme
 description:
-  en: 'Uses any local image or video as the DSH surface background, with live controls for blur, media opacity, surface opacity, brightness, saturation, contrast, scale, fill mode and focal position; video also gets playback rate and pause, and every setting saves automatically. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '把任意本地图片或视频铺成 DSH 界面背景：模糊、画面不透明度、界面不透明度、亮度、饱和度、对比度、缩放、填充方式与取景位置实时可调，视频另可调速与暂停，设置自动保存。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'Uses any local image or video as the DSH surface background, either one picture for the whole window or one each for the content area and the left sidebar, each with its own crop, zoom, blur, media opacity, brightness, saturation and contrast; a single button copies a whole grade to the other layer, video also gets playback speed and pause, and every setting saves automatically. Framing is stored in image coordinates, so enlarging the window, switching to fullscreen or collapsing the sidebar keeps the same crop instead of re-fitting the picture; fixed-width areas such as the sidebar fill their extra space with a blurred copy of the same media. Its HTTP routes reuse DSH''s own Host/Origin and browser-login checks, so they carry the same admission as the rest of the interface.'
+  zh: '把任意本地图片或视频铺成 DSH 界面背景：可整窗一张，也可让内容区与左侧栏各配一张；每层都能拖动取景、滚轮缩放，并各自调整模糊、画面不透明度、亮度、饱和度与对比度，一键把整组调色复制到另一层；视频另可调速与暂停，设置自动保存。取景按图像坐标锚定，放大窗口、切全屏或折叠侧栏时保持同一取景、不重新铺满；侧栏这类定宽区域的空隙由同一素材放大虚化填充。它的 HTTP 路由复用 DSH 自己的 Host/Origin 校验与浏览器登录检查，和界面其余部分走同一套准入。'
 icon: https://raw.githubusercontent.com/svd748xyz/dsh-media-skin/main/assets/icon-180.png
+tarball: https://github.com/svd748xyz/dsh-media-skin/releases/download/v0.6.1/dsh-media-skin-0.6.1.tgz

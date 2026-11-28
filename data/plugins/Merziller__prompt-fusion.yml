@@ -1,0 +1,7 @@
+url: https://github.com/Merziller/prompt-fusion
+name: Merziller/prompt-fusion
+category: ui
+description:
+  en: 'Prompt Fusion prerelease: one DSH button for prompt rewriting, fidelity checks, visible failure reasons, stop and undo; shared CLI, Skills, MCP and REST.'
+  zh: '禾杨灵词预发布版：单按钮提示词改写、保真检查、可见失败原因、停止与撤销，共用 CLI、Skill、MCP 与 REST。'
+tarball: https://github.com/Merziller/prompt-fusion/releases/download/v0.5.2-rc.1/prompt-fusion-0.5.2-rc.1.tgz

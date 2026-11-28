@@ -1,0 +1,7 @@
+url: https://github.com/RonaWhite/dsh-pet-voice-clone
+name: RonaWhite/dsh-pet-voice-clone
+category: voice
+icon: https://raw.githubusercontent.com/RonaWhite/dsh-pet-voice-clone/main/assets/icon-180.png
+description:
+  en: 'Voice-clone provider for the dsh-pet desktop pet: registers a SiliconFlow CosyVoice2 voice so the pet speaks its lines in a voice cloned from a short recording of your own. Requires a SiliconFlow API key and a 10 to 30 second reference clip.'
+  zh: '给 dsh-pet 桌宠用的克隆音色：注册一个基于硅基流动 CosyVoice2 的音色，让桌宠用从你自己的短录音复刻出的声音念台词。需要硅基流动 API Key 和一段 10 至 30 秒的参考录音。'

@@ -2,5 +2,5 @@ url: https://github.com/Testiphi/dsh-stage-prose
 name: Testiphi/dsh-stage-prose
 category: ui
 description:
-  en: 'Brings Codex-style progress updates to long DSH tasks and keeps them visible when turns collapse in Standard view.'
-  zh: '借鉴 Codex 的进度播报方式，让 DSH 在长任务中简短说明进展，并在「标准」视图折叠回合后保留这些正文。'
+  en: 'Codex-style live progress updates every N silent steps for long DeepSeek Harness tasks, with auto-folding on completion, hot-reload customization, and Timeline coordination.'
+  zh: '让 DeepSeek Harness 在长任务中像 Codex 一样“边干边说”：每 N 步静默触发进度提醒，执行中实时可见、完成后自动折叠，支持免重启自定义与 Timeline 协同。'

@@ -1,0 +1,7 @@
+url: https://github.com/AppsGanin/dsh-qwen-subscription
+name: AppsGanin/dsh-qwen-subscription
+category: model
+icon: https://raw.githubusercontent.com/AppsGanin/dsh-qwen-subscription/main/assets/icon-180.png
+description:
+  en: 'Adds the qwen.ai subscription to DeepSeek Harness as a qwen model provider (qwen4-max, qwen3.8-max, qwen3.8-flash): OAuth device-flow sign-in from the settings card, a failover pool of several accounts with per-account quota and usage counters, and streaming chat with tool calling and image input.'
+  zh: '把 qwen.ai 订阅接入 DeepSeek Harness 作为 qwen 模型提供方（qwen4-max、qwen3.8-max、qwen3.8-flash）：在设置页用 OAuth 设备码登录，多个账号组成故障转移池并按账号统计额度与用量，对话为流式并支持工具调用与图片输入。'

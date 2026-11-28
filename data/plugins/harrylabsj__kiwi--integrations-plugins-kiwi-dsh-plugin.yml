@@ -1,0 +1,6 @@
+url: https://github.com/harrylabsj/kiwi/tree/main/integrations/plugins/kiwi-dsh-plugin
+name: harrylabsj/kiwi#kiwi-dsh-plugin
+category: tools
+description:
+  en: Kiwi buyer plugin for DeepSeek Harness - runs the kiwi-buyer-mcp server and ships a kiwi-buyer skill for sourcing, RFQs and negotiation on the Kiwi commerce network.
+  zh: Kiwi 买方插件：提供 kiwi-buyer-mcp 服务与 kiwi-buyer 技能，让 dsh 在 Kiwi 商务网络上搜索商品、发询价并自动议价。

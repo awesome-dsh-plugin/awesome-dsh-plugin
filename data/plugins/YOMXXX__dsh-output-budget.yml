@@ -1,0 +1,6 @@
+url: https://github.com/YOMXXX/dsh-output-budget
+name: YOMXXX/dsh-output-budget
+category: tools
+description:
+  en: 'Shape-aware tool-output budget for DeepSeek Harness: git status/log/diff, listings, search matches and package-manager noise are digested before they reach the model, the full text stays one read away through the spill store, and failures are never truncated.'
+  zh: '给 DSH 的工具输出做按形状的预算：git status/log/diff、目录列表、搜索命中与包管理器噪音在进入模型前被摘要，完整原文一条 read 就能从 spill 取回，错误输出永不裁剪。'

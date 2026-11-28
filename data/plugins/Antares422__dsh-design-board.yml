@@ -1,0 +1,8 @@
+url: https://github.com/Antares422/dsh-design-board
+name: Antares422/dsh-design-board
+category: ui
+description:
+  en: 'Interactive right-sidebar design canvas with 165 built-in design systems: pick a style to generate interactive HTML pages, compare directions side by side, click or marquee-select DOM elements with notes, toggle light/dark, and export PNG/PDF/HTML.'
+  zh: '右侧栏交互式设计画布，内置 165 套设计体系：选好风格直接生成可交互页面，支持单页精修、多方案并排对比、点选或框选 DOM 元素留批注原地改稿、深浅主题切换与多格式导出。'
+icon: https://raw.githubusercontent.com/Antares422/dsh-design-board/main/docs/assets/icon-180.png
+tarball: https://github.com/Antares422/dsh-design-board/releases/download/v0.2.2/dsh-design-board-0.2.2.tgz

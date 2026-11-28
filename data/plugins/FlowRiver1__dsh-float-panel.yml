@@ -1,0 +1,7 @@
+url: https://github.com/FlowRiver1/dsh-float-panel
+name: FlowRiver1/dsh-float-panel
+category: ui
+description:
+  en: An always-on-top window that shows the running task's status, the live step and todo progress, offers approve/reject and option buttons for pending approvals and questions, and turns into a done card with a result preview plus a one-click jump back to the conversation. Ships prebuilt native shells for macOS and Windows; on Linux only the in-page wake-up button remains. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 系统级置顶小窗：显示任务状态、实时步骤与待办进度，可直接点审批与选项按钮，完成后变成带结果预览的「已完成」卡片并可一键跳回会话。macOS 与 Windows 都带预编译原生壳，Linux 只保留页面内唤醒按钮。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/FlowRiver1/dsh-float-panel/main/assets/icon-256.png

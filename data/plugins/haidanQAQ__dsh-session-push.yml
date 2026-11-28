@@ -1,0 +1,7 @@
+url: https://github.com/haidanQAQ/dsh-session-push
+name: haidanQAQ/dsh-session-push
+category: notify
+icon: https://raw.githubusercontent.com/haidanQAQ/dsh-session-push/main/icon.png
+description:
+  en: 'Push notifications for DeepSeek Harness: when a session that ran past a configurable threshold ends it pushes the opening user message, and when a question or approval dialog waits past a timeout it pushes the question itself. Delivers to Bark, ServerChan or a custom webhook.'
+  zh: '面向 DeepSeek Harness 的推送插件：会话持续达到设定时长后结束时推送会话开头，提问框或审批框等待回应超时后推送问题本身。支持 Bark、Server酱 与自定义 Webhook。'

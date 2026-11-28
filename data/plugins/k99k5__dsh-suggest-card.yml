@@ -1,0 +1,6 @@
+url: https://github.com/k99k5/dsh-suggest-card
+name: k99k5/dsh-suggest-card
+category: ui
+description:
+  en: Adds quick replies and next-step cards to chat, with a new-session option only when you need to choose where a task runs.
+  zh: 在聊天中提供快捷回复和下一步建议卡片，只在需要选择任务在哪个会话执行时提供新会话选项。

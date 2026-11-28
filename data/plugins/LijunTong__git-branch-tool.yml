@@ -2,5 +2,5 @@ url: https://github.com/LijunTong/git-branch-tool
 name: LijunTong/git-branch-tool
 category: git
 description:
-  en: Switch and create Git branches from the DSH conversation, with repository init and a configurable chip position. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
-  zh: 在 DSH 对话中切换与创建 Git 分支，支持初始化仓库并自定义入口标签位置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+  en: 'Switch and create Git branches from the DSH conversation, with repository init and a configurable chip position.'
+  zh: '在 DSH 对话中切换与创建 Git 分支，支持初始化仓库并自定义入口标签位置。'

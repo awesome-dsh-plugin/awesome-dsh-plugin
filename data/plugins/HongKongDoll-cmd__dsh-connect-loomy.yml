@@ -1,0 +1,7 @@
+url: https://github.com/HongKongDoll-cmd/dsh-connect-loomy
+name: HongKongDoll-cmd/dsh-connect-loomy
+category: model
+icon: https://raw.githubusercontent.com/HongKongDoll-cmd/dsh-connect-loomy/main/icons/dsh-connect-loomy-128.png
+description:
+  en: Connects iFlyTek Loomy models to DSH with standalone WeChat QR and SMS sign-in, automatic model catalog and point-multiplier sync, multi-account auto-failover, redemption codes, live model probing, and compact composer credits. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 将讯飞 Loomy 模型接入 DSH，支持免客户端微信扫码与短信登录、自动同步官方模型目录与积分倍率、多账号池同模型自动换号、积分兑换码、模型测速及输入框积分胶囊。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

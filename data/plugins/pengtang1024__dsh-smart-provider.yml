@@ -1,0 +1,12 @@
+url: https://github.com/pengtang1024/dsh-smart-provider
+name: pengtang1024/dsh-smart-provider
+category: model
+description:
+  en: A DSH meta-provider that routes requests across configured models and accounts with smart routing, account pooling, cost statistics, and layered health management—neutral by default, with cost-first as an opt-in strategy.
+  zh: 一个在已配置模型与账号间智能路由的 DSH 元提供商，提供账号池、成本统计与三层健康管理，默认中立，省钱优先为可选项。
+# 可选：icon 仅接受 GitHub 托管的位图直链（png / jpg / jpeg / webp）。
+# 本仓库目前只有 icon.svg（不符合位图约束），故暂不填写。
+# icon: https://raw.githubusercontent.com/pengtang1024/dsh-smart-provider/<ref>/path/to/icon.png
+# 可选：tarball 仅接受 GitHub Release 附件的 .tgz 直链；未上传发布包前请勿填写占位 URL。
+# 安装来源优先级为 npm 包 → 作者 GitHub Release .tgz → GitHub 源码归档；本包未发布到 npm。
+# tarball: https://github.com/pengtang1024/dsh-smart-provider/releases/download/v<version>/<asset>.tgz

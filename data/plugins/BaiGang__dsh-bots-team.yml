@@ -1,0 +1,8 @@
+url: https://github.com/BaiGang/dsh-bots-team
+name: BaiGang/dsh-bots-team
+category: ui
+description:
+  en: 'Bot roster in the left sidebar: each bot is a DSH session with its own persona, the team shares one workspace, and a chief of staff dispatches work as you ask it — other sessions can only propose. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 左侧栏机器人名册：每个 Bot 都是独立人设的 DSH 会话，整队共用一个工作区；参谋长按你的要求直接派活——其他会话只能提议。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/BaiGang/dsh-bots-team/main/assets/icon-180.png
+tarball: https://github.com/BaiGang/dsh-bots-team/releases/latest/download/dsh-bots-team.tgz

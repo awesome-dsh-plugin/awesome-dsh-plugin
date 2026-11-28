@@ -1,0 +1,7 @@
+url: https://github.com/fabulousnm/HiFairy/tree/main/agent-pc/dsh-host-probe
+name: fabulousnm/HiFairy#dsh-host-probe
+category: remote
+description:
+  en: Connects HiFairy mobile Agent to local DSH sessions and a mounted phone workspace.
+  zh: 将 HiFairy 手机 Agent 连接到本机 DSH 会话和已挂载的手机工作区。
+tarball: https://github.com/fabulousnm/HiFairy/releases/download/v1.0.0/hifairy-dsh-bridge-0.1.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/ZZR-rui-997/dsh-fluent-pyfluent-ops
+name: ZZR-rui-997/dsh-fluent-pyfluent-ops
+category: skill
+description:
+  en: "A PyFluent operating procedure for ANSYS Fluent on Windows, distilled from real production runs: startup handshake, setup order, session state-machine traps, time-step and Courant judgement, long runs with checkpoint and resume, VOF, multiphase and non-Newtonian setups, UDS plus UDF compilation, result reading from .dat.h5, and twelve environment traps with the exact error strings that precede them."
+  zh: "Windows 下的 PyFluent 实操规程，来自真实生产算例：启动握手、设置顺序、会话状态机陷阱、时间步与 Courant 判定、长跑与断点续算、VOF 与多相及非牛顿设置、UDS 与 UDF 编译、.dat.h5 结果读取，以及十二条环境坑与它们的原始报错。"
+icon: https://raw.githubusercontent.com/ZZR-rui-997/dsh-fluent-pyfluent-ops/main/icon.png

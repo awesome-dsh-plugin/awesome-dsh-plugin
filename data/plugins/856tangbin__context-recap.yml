@@ -1,0 +1,7 @@
+url: https://github.com/856tangbin/context-recap
+name: 856tangbin/context-recap
+category: session
+icon: https://raw.githubusercontent.com/856tangbin/context-recap/main/assets/icon-512.png
+description:
+  en: Adds a session recap skill and a right-sidebar board that aggregates unarchived session cards.
+  zh: 内置会话复盘技能，并在右侧栏看板聚合所有未归档会话的卡片。

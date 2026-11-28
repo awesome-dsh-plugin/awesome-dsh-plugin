@@ -1,0 +1,6 @@
+url: https://github.com/Protonhydrogen/dsh-mol-workspace
+name: Protonhydrogen/dsh-mol-workspace
+category: ui
+description:
+  en: Native Mol* sidebar viewer with Agent tools for molecular structures, surfaces, measurements, and playback of existing MD trajectories.
+  zh: 原生 Mol* 分子侧栏，支持 Agent 控制结构查看、表面渲染、几何测量及已有 MD 轨迹播放。

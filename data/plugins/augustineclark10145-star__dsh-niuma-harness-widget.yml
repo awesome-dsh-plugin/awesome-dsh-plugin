@@ -1,0 +1,6 @@
+url: https://github.com/augustineclark10145-star/dsh-niuma-harness-widget
+name: augustineclark10145-star/dsh-niuma-harness-widget
+category: fun
+description:
+  en: 'A sidebar widget that tracks earnings in real time against the configured monthly salary and work hours, with a countdown to the end of the workday, goal progress and a hide-the-amount toggle.'
+  zh: '侧栏小组件：按配置的月薪与工作时间实时累计收入，带下班倒计时、目标进度，金额可一键隐藏。'

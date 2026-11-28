@@ -409,6 +409,7 @@ dsh plugin --profile web add dshmarket
 - [Anna-la/dsh-simplify](https://github.com/Anna-la/dsh-simplify) — Web 界面清理：清理模式下悬浮元素右键即可移除，刷新后依然生效，设置页中可原样恢复。
 - [anneheartrecord/dsh-desk-pet](https://github.com/anneheartrecord/dsh-desk-pet) — 装在 DSH 页面之外的 macOS 桌宠：一个真的置顶窗口，全屏 Space 也盖得住；六种状态跟着本地 DSH 走，原生右键菜单里有免打扰与会话清单；自带的 skill 用你自己的画图工具和额度，把一张照片变成整套十八个姿势的皮肤。跑系统自带的 Python 与 ctypes，不用 Electron，零依赖。
 - [anonamerjaxon-dev/dsh-model-grid](https://github.com/anonamerjaxon-dev/dsh-model-grid) — 把 DeepSeek Harness 输入框的模型选择器改成按供应商分组的响应式卡片网格。纯宿主端：通过 webserver/index-inject 注入样式、无需重建前端包，同时支持官方选择器与 dsh-peakrate 菜单。
+- [Antares422/dsh-design-board](https://github.com/Antares422/dsh-design-board) — 右侧栏交互式设计画布，内置 165 套设计体系：选好风格直接生成可交互页面，支持单页精修、多方案并排对比、点选或框选 DOM 元素留批注原地改稿、深浅主题切换与多格式导出。
 - [antnesswcm/dsh-shell-card-plus](https://github.com/antnesswcm/dsh-shell-card-plus) — 用自定义 Shell 命令卡片替换 DSH Web 原版 bash/pwsh 工具行：长命令自动换行带行号不再截断，并提供独立的复制命令/复制输出按钮。
 - [anye-99/dsh-next-step-suggest](https://github.com/anye-99/dsh-next-step-suggest) — 下一步建议：每轮回答结束后，用会话当前模型做一次辅助调用提炼 3 条可点击的后续提问建议，显示在输入框上方，点击任意一条即填入草稿。
 - [anzhaohao/DragView](https://github.com/anzhaohao/DragView) — 拖拽文件以 Codex 风格附件卡片呈现，支持 PDF/文本/音视频应用内预览，其余格式调用系统默认应用打开。
@@ -453,6 +454,7 @@ dsh plugin --profile web add dshmarket
 - [atattier/local-model-speedtest](https://github.com/atattier/local-model-speedtest) — 在 DSH 模型选择器里加一键测速，并在桌面端对话报错处提供「大白话解释」按钮，解释模型可自选。
 - [atrestandbed-bot/dsh-agents-viewer](https://github.com/atrestandbed-bot/dsh-agents-viewer) — 在右侧栏原生 tab 里查看并编辑 AGENTS.md / CLAUDE.md 指令链：全局、共享，以及从项目根到会话工作目录的每一层；就地保存，文件不存在时直接创建；另有聊天头部按钮，以及界面不可用时也能用的 /agents 命令。
 - [aug-245/dsh-plugin-market-entry](https://github.com/aug-245/dsh-plugin-market-entry) — 在左侧栏添加插件市场入口按钮，点击后在主面板打开已安装的插件市场。
+- [augustineclark10145-star/dsh-subagent-model-badge](https://github.com/augustineclark10145-star/dsh-subagent-model-badge) — 子智能体会话输入框旁的只读徽章，显示该会话实际使用的模型与思考程度，取自它自己的模型选择与请求头事件。
 - [AumiSatori/dsh-ui-beautify](https://github.com/AumiSatori/dsh-ui-beautify) — 自定义 DSH 玻璃材质与独立明暗主题，支持图片、视频与 HTML 背景、粒子、自定义问候与开屏、覆盖侧栏、任务与 Artifact 卡片、消息气泡、回答逐字渐显，以及配置导入导出。
 - [automagik-si/automagik#locale-pt-br-dsh](https://github.com/automagik-si/automagik/tree/dev/apps/locale-pt-br-dsh) — 为 Bot 团队插件（automagik-si/automagik#bots-dsh）提供巴西葡萄牙语界面文案，注册在 DSH 自带的 Português 语言条目下，因此在 设置 › 通用 › 语言 中仍只有一个葡萄牙语选项；本语言包旧版本保存的 pt-BR 选择会迁移到 DSH 的 pt。
 - [AvenYQ/dsh-clipforge](https://github.com/AvenYQ/dsh-clipforge) — 视频工作台：贴链接解析并下载、转写文案、截取拼接片段、按目标体积导出 GIF。需自备 ffmpeg/ffprobe 与 yt-dlp；无字幕视频的本地转写另需 whisper.cpp 与模型（可选）。
@@ -483,6 +485,8 @@ dsh plugin --profile web add dshmarket
 - [bagpipe1289/dsh-paperflight#plugin](https://github.com/bagpipe1289/dsh-paperflight/tree/main/plugin) — 纸航 PaperFlight 是实验性的未来复古 DSH Web 工作台，提供会话管理、文件预览、审批和按预设启用的可选浏览器与终端工具。
 - [Bai-2008/dsh-better-panel](https://github.com/Bai-2008/dsh-better-panel) — 接管 DSH 输入框的模型按钮，点开是自建的两级面板（provider 列表 → 模型列表，带搜索），核心是一条连续可拖动的推理等级滑条：填充由蓝渐变到紫罗兰，高档位带星云与星尘粒子，一档一色。点模型不关面板，滑条落到该模型的中间档。实现起点是 Microqian2th/dsh-codex-effort-slider 1.0.0（README 中有致谢），面板、接管、离线测试与文档为新增。
 - [baifagg/dsh-plugin-busy-workspace](https://github.com/baifagg/dsh-plugin-busy-workspace) — 把含“需要注意的会话”的工作区按紧急度排到侧栏会话列表最前——待你处理优先，其次运行中，再次完成未读，最后刚读过的——并为这些行画状态竖条、着色底与着色标题，一次运行结束时播放一次收敛动效。所有颜色都取自当前主题自身的变量；决定完成会话置顶时长的三个窗口都是可配置项。
+- [BaiGang/dsh-bots-team](https://github.com/BaiGang/dsh-bots-team) — 左侧栏机器人名册：每个 Bot 都是独立人设的 DSH 会话，整队共用一个工作区；参谋长按你的要求直接派活——其他会话只能提议。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [BaihaiMianbaofang/dsh-liangdeng](https://github.com/BaihaiMianbaofang/dsh-liangdeng) — 给 DeepSeek Harness 加屏幕中间的呼叫弹窗，和一排可拖动的会话小方块。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [bailishta/dsh-sidebar-mode-indicator](https://github.com/bailishta/dsh-sidebar-mode-indicator) — 在左侧栏的会话行显示该会话运行的模式（agent preset）胶囊，并可在设置页按模式配置圆点颜色。
 - [bainianlaoyao/easy-archive](https://github.com/bainianlaoyao/easy-archive) — 工作区侧边栏行内两击归档：点一次变红确认，再点即归档，归档项不再出现在 ⋮ 菜单里。
 - [baiqiuzhang/dsh-todo-float-ball-plus](https://github.com/baiqiuzhang/dsh-todo-float-ball-plus) — dsh-todo-float-ball 0.14.7 的派生版（MIT，原作者 loyalchiiina）：新增多会话全局任务视图、token 吞吐、per-session 元数据、ETA 分段校准与超时显示，并硬性要求每轮首个工具调用为 todo_write。上游仍在维护（0.14.12），本分支未合并后续补丁。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -501,6 +505,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-keep-awake](https://github.com/bearice/dsh-keep-awake) — 任意 agent、subagent 或后台任务运行时持有系统唤醒锁，全部结束后按可配置宽限期释放；提供中英双语 Web 设置页，实时显示活动与唤醒锁状态，支持手动保持与阻止屏幕关闭。
 - [BearingSteel/dsh-enter-newline](https://github.com/BearingSteel/dsh-enter-newline) — 调换 DSH 输入框的回车键位：Enter 插入换行，Shift+Enter 发送消息。
 - [BearingSteel/dsh-inline-download](https://github.com/BearingSteel/dsh-inline-download) — 在用户消息里的上传文件气泡上添加下载按钮，同时覆盖 present 交付卡片，把原始文件流式下载到浏览器；附件下载通过会话日志与鉴权坐标定位文件，URL 中不携带路径。
+- [BEAVER-fishcake/dsh-model-source-picker](https://github.com/BEAVER-fishcake/dsh-model-source-picker) — 把输入框上的模型选择器改成「先选来源、再选模型」的菜单：第一层放大列出模型来源，每个带首字母徽标、模型数量和当前模型，点进去才是该来源的模型；模型超过 6 个时出现搜索框，每行显示推理档数或模型描述。推理强度在第一层是独立一行，对带推理档的模型则展开为第三层。它以 priority -20 占用 conversation.input.model 座位，通过 modelDirectories 服务读与 /model 命令相同的目录，两者对「能选什么」保持一致；注册失败时打印日志并把座位交还原生选择器。
 - [BeckChiang/dsh-rsa](https://github.com/BeckChiang/dsh-rsa) — 仅限 Windows 桌面版 DeepSeek Harness 的可配置启动动画（splash）：主进程真实启动画面、设置页实时预览、深浅色跟随。通过改写 app.asar 部署（会保留备份），退出 DSH 后下次启动生效；DSH 升级后需重新部署。
 - [Beeasy-L/DSH-plugin-market#dsh-plugin-categorized](https://github.com/Beeasy-L/DSH-plugin-market/tree/main/plugins/dsh-plugin-categorized) — 给插件页加一个「分类」标签，把已安装的插件按用途自动分组；并用默认模型为新装插件自动补中文标题与说明。
 - [Beeasy-L/DSH-plugin-market#dsh-qq-panel](https://github.com/Beeasy-L/DSH-plugin-market/tree/main/plugins/dsh-qq-panel) — DeepSeek Harness 上 QQ 桥接（OneBot v11）的设置面板：人格卡编辑与热切换、表情包与备注管理、主动发言等行为参数、运行状态与日志。
@@ -539,6 +544,7 @@ dsh plugin --profile web add dshmarket
 - [bmhty123/dsh-comfyui-rp](https://github.com/bmhty123/dsh-comfyui-rp) — 装在 DSH 里的本地文生图自动化：捕获会话正文，交给提示词会话写成提示词，调用本机 ComfyUI 出图，再把图片送回侧栏、悬浮图片框和图库。
 - [Bobnemimimmi/dsh-visible-action-row](https://github.com/Bobnemimimmi/dsh-visible-action-row) — 让每条消息的操作栏（复制、点赞、点踩、分支按钮，时间，以及其他插件添加的内容）无需悬停即可常显。
 - [boogoo619/dsh-focus-overlay](https://github.com/boogoo619/dsh-focus-overlay) — 专注模式：全屏阅读视图，隐藏标题与输入区，把 AI 工具调用折叠成摘要。
+- [boozik3412/dsh-media-artifacts](https://github.com/boozik3412/dsh-media-artifacts) — 在聊天中预览图片和视频，并浏览同一本地项目中跨会话共享的文件快照。
 - [Boris-boomer/dsh-icon-grid](https://github.com/Boris-boomer/dsh-icon-grid) — 场景无关的 DSH 插件浮动图标网格容器，支持拖拽排序、主题适配与持久化。
 - [Boris-boomer/dsh-project-cockpit](https://github.com/Boris-boomer/dsh-project-cockpit) — 右下角浮动驾驶舱面板（可拖拽、可缩放，默认 400x600），含编排/选题/成本/信号/图谱五个页签，整合四大引擎为统一 /__dsh/project-cockpit/* webServer 路由。内置悬浮按钮即可打开，dsh-icon-grid 图标为可选入口。
 - [breakc0re/dsh-yandex-music](https://github.com/breakc0re/dsh-yandex-music) — 在 DSH 侧边栏里使用 Яндекс.Музыка：搜索、可拖拽并可循环与随机播放的队列、支持拖拽编辑的播放列表、700 个「我的波」电台以及任意歌手的波、带真实时间轴与俄语翻译的卡拉 OK 歌词、音量、媒体按键，以及重启后从上次位置继续播放。需要 Яндекс 账号与 Plus 订阅。
@@ -587,7 +593,7 @@ dsh plugin --profile web add dshmarket
 - [chaochaokongbai/dsh-beginner-hub](https://github.com/chaochaokongbai/dsh-beginner-hub) — 面向 DSH 新手的说人话需求路由面板：用本地关键词引擎把一句大白话需求路由成可直接用的方案（提问话术变体、匹配技能、进阶玩法），选中的方案可一键填入新会话。
 - [charce526/dsh-logo-swap](https://github.com/charce526/dsh-logo-swap) — 替换 DeepSeek Harness 界面各处品牌元素——侧栏 Logo、品牌字标两半、对话页 Logo、欢迎语标语，预览版徽章开关。纯前端注入，不修改安装文件。
 - [chargeduck/xechat-dsh](https://github.com/chargeduck/xechat-dsh) — 可停靠的侧边面板，用一条 WebSocket 保持 XEChat 聊天在线：支持图片与表情的 Markdown 消息、通过 #showServer 与 #login 切换服务器、在线成员列表、全屏伪装覆盖层，停靠位置、宽度与可视状态持久化到 localStorage。
-- [Charlieeeo/dsh-next-reply-chips](https://github.com/Charlieeeo/dsh-next-reply-chips) — 每条回答下方显示可点击的下一步建议：建议由主回复自身给出，不额外调用模型；点击可立即发送，或只填入输入框待你修改。
+- [Charlieeeo/dsh-next-reply](https://github.com/Charlieeeo/dsh-next-reply) — 每条回答结束后，在本轮下方显示最多 3 条竖排的下一步建议：建议由主回复自身给出，不额外调用模型。点建议文字会插入输入框光标处；纸飞机按钮直接发送，气泡按钮插入输入框。
 - [charliesbyte/dsh-workspace-activity](https://github.com/charliesbyte/dsh-workspace-activity) — 侧边栏的工作区行会在其下会话运行时显示转圈，会话停止后短暂保留一个已完成标记。
 - [charrywhite/dsh-sticky-notes](https://github.com/charrywhite/dsh-sticky-notes) — 可拖动的便签纸,9 款皮肤与图片便签,AI 模型可读取并追加待办条目。
 - [CheeseFox259/dsh-better-composer](https://github.com/CheeseFox259/dsh-better-composer) — DSH Web Composer 视觉增强与会话工作台：实时 Markdown 呈现与光标行源码还原（非焦点行语法标记可完全隐藏或淡化显示）、确定性本地补全、列表与引用的换行自动续行及有序列表重编号；超长粘贴自动收纳为持久化引用 chip，支持直接内联或文件送达（支持 50+ 种扩展名），并在右栏抽屉提供大模型智能改写（支持中止、预览对比、应用与撤销重做）；集成实时上下文地图，包含 Token 仪表盘、构成穿透钻取、逐轮增长图与锚定刻线、一键 /compact 及会话分叉，并内置 Context Doctor 工作区（概览、诊断、分析、反馈）。
@@ -872,6 +878,7 @@ dsh plugin --profile web add dshmarket
 - [feng-yifan/dsh-plugins#dsh-pwa-icon](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-pwa-icon) — PWA 图标：把 Web GUI 安装 / 添加到桌面时使用的图标与应用名换成自定义内容，覆盖桌面浏览器与 iOS 主屏幕。包内自带开箱即用的图标集，也支持换成自己的图片并覆盖 manifest 字段。
 - [feng-yifan/dsh-plugins#dsh-vertical-layout](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-vertical-layout) — 竖屏布局（仅电脑窗口）：浏览器窗口为竖屏时，左侧导航占整列，文件 / 终端面板移到对话区上方（右上），中间分隔线可拖拽调整高度（初始高度可配）。手机 / 平板不受影响。
 - [fengb3/dsh-session-icons](https://github.com/fengb3/dsh-session-icons) — 侧边栏会话标题图标：标题生成时用同一路由的辅助模型调用画一枚 24×24 单色 SVG 隐喻图标，显示在每行标题左侧，带磁盘缓存。
+- [fengguanghuai/dsh-workspace-tools](https://github.com/fengguanghuai/dsh-workspace-tools) — 可独立开关的侧边栏与置顶增强套件（顶部跨工作区置顶区、工作区置顶展开、拖拽排序、就地搜索、标题栏快捷按钮、7 色标签、按最近活跃排序、超期历史自动折叠），并内置 workspace_manage 与 session_title 两个 Agent 工具。
 - [fengMax1997/dsh-line-select](https://github.com/fengMax1997/dsh-line-select) — 行选区：浏览工作区文件、带行号预览代码、可视化选中行范围，一键把 `@path:start-end` 引用写入输入框，agent 发送时自动收到所选行原文，精准修改指定行。
 - [fengzhaoy/dsh-best-workspace](https://github.com/fengzhaoy/dsh-best-workspace) — dsh Web 客户端的 Codex 风格左侧边栏：项目/会话树，支持分组、置顶、拖拽排序、未读与归档状态，项目行与会话行都有右键菜单；输入框按上下方向键可召回之前发送过的消息。
 - [fengzhaoy/dsh-web-ide](https://github.com/fengzhaoy/dsh-web-ide) — dsh Web 客户端里的 IDE 标签页：Dark Modern 主题的 Monaco 编辑器，配文件树、Git 源代码管理（暂存/提交/推送）、xterm 集成终端与 ripgrep 全工作区搜索，作为会话视图标签打开。
@@ -890,6 +897,7 @@ dsh plugin --profile web add dshmarket
 - [fishcg/dsh-input-prediction](https://github.com/fishcg/dsh-input-prediction) — 输入预测：在输入框里用灰字续写你草稿最可能的后续，按 Tab 接受后落进输入框、可继续编辑；每轮回答结束后在输入框上方给出 1–3 条你可能会发的下一条，点一下就发送。灰字补全、回复后推荐与推荐条数都能在「设置 → 内置插件 → 输入预测」里开关。
 - [fishcg/dsh-recent-tasks](https://github.com/fishcg/dsh-recent-tasks) — 侧边栏「工作区」上方多一个可折叠的「最近任务」文件夹：最近更新的会话一目了然，可置顶常用会话（不参与时间排序），运行中的任务带转圈标记，行内菜单支持重命名、在新会话里接着聊与归档。
 - [flowers-59f/dsh-petpal](https://github.com/flowers-59f/dsh-petpal) — 从 petdex.dev 下载宠物并常驻桌面，跟随 DSH 会话状态显示；外观可调，Agent 需要确认或一轮结束时可通过企业微信机器人推送通知。桌面模式需要 macOS 12+ 或 Windows 10 1903+，桌面端已随安装包预编译。
+- [FlowRiver1/dsh-float-panel](https://github.com/FlowRiver1/dsh-float-panel) — 系统级置顶小窗：显示任务状态、实时步骤与待办进度，可直接点审批与选项按钮，完成后变成带结果预览的「已完成」卡片并可一键跳回会话。macOS 与 Windows 都带预编译原生壳，Linux 只保留页面内唤醒按钮。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [flycucu/dsh-icon-changer](https://github.com/flycucu/dsh-icon-changer) — 更换 DeepSeek Harness 桌面端应用图标（exe、托盘、开始菜单），支持上传任意 .ico，并可随时还原官方默认图标。
 - [flyfly6/dsh-panes](https://github.com/flyfly6/dsh-panes) — DSH 全屏工作台面板：项目侧栏加按项目隔离的 tab，覆盖会话、文件、资源管理器、全项目搜索、终端、浏览器、源代码管理与 Markdown 笔记库。
 - [flyhigao/dsh-file-transfer](https://github.com/flyhigao/dsh-file-transfer) — 在文档预览工具栏与 Files 文件树添加下载按钮（文件夹下载打包为流式 ZIP），并在文件树增加上传按钮：逐个文件流式写入 Host，单文件上限 1 GiB，重名自动改为 (n) 后缀而不覆盖。
@@ -914,7 +922,7 @@ dsh plugin --profile web add dshmarket
 - [FrontierMindLab/dsh-quick-compact#dsh-quick-compact](https://github.com/FrontierMindLab/dsh-quick-compact/tree/main/plugins/dsh-quick-compact) — DSH 输入框工具栏的上下文小环：查看用量，打开面板查看构成并执行 /compact，带烟花动画。
 - [FSMargoo/dsh-at-file](https://github.com/FSMargoo/dsh-at-file) — Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。
 - [fu-silent/dsh-sidebar-home](https://github.com/fu-silent/dsh-sidebar-home) — 在侧栏新增「主页」面板用于选择工作区；进入专注后侧栏只显示该工作区的会话，其他工作区折叠在底部，退出专注即恢复原生侧栏。
-- [fubai-fenzhi/dsh-whale-console](https://github.com/fubai-fenzhi/dsh-whale-console) — 面向 Windows 的 DSH 桌宠、语音与本地模型控制台：在设置页一键启停本地服务。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [fubai-fenzhi/dsh-whale-console](https://github.com/fubai-fenzhi/dsh-whale-console) — 面向 Windows 的 DSH 桌宠、语音与本地模型控制台：在设置页一键启停本地服务。
 - [fujingzhai/youxia-dsh-plugins#dsh-settings-customizer](https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-settings-customizer) — 用个人配置覆盖 DeepSeek Harness 设置导航的顺序、名称与图标，不修改其他插件源码；公共默认不含任何规则，未配置时界面不变。规则需手写在 profile 的 cordis.patch.yml 里；需要 DSH 0.2.2-rc.1 或更新版本与 Node.js 24.9+。
 - [fujingzhai/youxia-dsh-plugins#dsh-speed-pair](https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-speed-pair) — 把底栏输出速度改成双口径，例如 207(122) tok/s：括号外是首字之后的解码速度，括号内是含首字延迟的整段速度。点击可展开轮次、步数、首字延迟与各阶段用时明细。会取代原生的会话统计项；需要 DSH 0.2.1-rc.5 或更新版本。
 - [fujingzhai/youxia-dsh-plugins#dsh-zh-slash](https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-zh-slash) — 在 DSH 输入框开头输入顿号「、」即弹出原生 / 命令菜单；原有中英文筛选、方向键与鼠标操作、参数面板均沿用原生行为，句中顿号与输入法组合过程不改写。位于开头的「、」一律变成 /（没有转义方式）；需要 DSH 0.2.1-rc.5 或更新版本。
@@ -927,7 +935,7 @@ dsh plugin --profile web add dshmarket
 - [FurinaEsE/dsh-ui-zoom-regions](https://github.com/FurinaEsE/dsh-ui-zoom-regions) — DeepSeek Harness 分区域缩放：Ctrl + 滚轮分别为会话顶栏、左侧栏、会话正文和右侧面板设置独立比例（侧栏 25%–300%）；拖动顶栏整条下边界可以把它调矮或调高，调高只增加高度、字大小不变。
 - [FurinaLiF/dsh-tab-complete](https://github.com/FurinaLiF/dsh-tab-complete) — 使用 DSH 已配置模型预测下一句，在输入框显示灰字，Tab 仅填入草稿；结合当前时间理解旧对话，并缓存建议。
 - [FuriousKinght/dsh-restart-button](https://github.com/FuriousKinght/dsh-restart-button) — 在侧边栏底部加一个按钮（仅 Windows），一键重启 DSH 桌面应用，应用回来后页面自动恢复。
-- [furkancak1r/dsh-composer-plus](https://github.com/furkancak1r/dsh-composer-plus) — 一个插件集成多项输入框与侧边栏增强，均可在设置中单独开关：git 改动面板、回合回退、AIProxy 中断后继续、顾问模型（智能体向你选择的另一个模型征求建议，默认关闭）、项目记忆（按项目保存笔记，后续对话会读取，默认关闭）、助理（一个名为 Damon 的长期保留的对话，用 dsh 定时任务设置提醒并读取其他对话；只有在获得批准后才会更改对话）及助理状态面板（一个卡片列表、画布视图和“决定”对话框）、Codex 深色主题（默认关闭）、远程电脑（通过 Tailscale 打开另一台 Mac 的 dsh，默认关闭）、11 种额外界面语言和自动更新。
+- [furkancak1r/dsh-composer-plus](https://github.com/furkancak1r/dsh-composer-plus) — 一个插件集成多项输入框与侧边栏增强，均可在设置中单独开关：git 改动面板、回合回退、AIProxy 中断后继续、顾问模型（智能体向你选择的另一个模型征求建议，默认关闭）、项目记忆（按项目保存笔记，后续对话会读取，默认关闭）、助理（一个名为 Damon 的长期保留的对话，用 dsh 定时任务设置提醒并读取其他对话；只有在获得批准后才会更改对话）及助理状态面板（一个卡片列表、画布视图和“决定”对话框）和助理回复卡片（把回复显示为卡片）、远程电脑（通过 Tailscale 打开另一台 Mac 的 dsh，默认关闭）、11 种额外界面语言和自动更新。
 - [FurryBear2025/dsh-session-drag-move](https://github.com/FurryBear2025/dsh-session-drag-move) — 在 DSH 左侧栏把会话拖到别的工作区，归属真的会变：改写会话日志 header 的 cwd 并把日志目录迁到目标项目下，迁移过程中显示进度条。
 - [future007s/dsh-peak-indicator](https://github.com/future007s/dsh-peak-indicator) — 会话头部徽标：显示 DeepSeek 高峰/闲时状态、当前模型 token 单价，并按真实用量统计会话与每轮费用。
 - [Fyerl/dsh-2d-model-picker](https://github.com/Fyerl/dsh-2d-model-picker) — 使用二维网格，一次拖动同时选定模型与推理强度。
@@ -939,6 +947,7 @@ dsh plugin --profile web add dshmarket
 - [GandalfGao/dsh-plugin-drag-reference](https://github.com/GandalfGao/dsh-plugin-drag-reference) — 把右侧文件树里的文件/文件夹行拖进对话框，或右键该行，插入一个 @路径 引用芯片；芯片通道被拒绝时退化为纯文本。松手位置不在对话框上时不做任何事。
 - [ganglz1024/dsh-weather-matrix-widget](https://github.com/ganglz1024/dsh-weather-matrix-widget) — DSH 网页版悬浮「方格马赛克」天气挂件：动态天气场景、逐时与三日预报、城市搜索、自定义大小与最小化胶囊。
 - [gaog88666-boop/dsh-legal-workbench](https://github.com/gaog88666-boop/dsh-legal-workbench) — 以 Markdown 笔记文件夹为事实源的法律实务工作台：SOP 速查、录音实时转写与逐句批注、可编辑术语表、全文搜索；可选邮件规则库、法宝积分与用量角标。笔记、录音与批注只存本机；实时转写需自备火山引擎密钥，音频会发往火山引擎。
+- [gaolvsuan/dsh-sidebar-font](https://github.com/gaolvsuan/dsh-sidebar-font) — 把 DSH 侧边栏的文字、行高和图标一起按 11–16px 等比缩放，侧栏「更多」、插件自带的面板页和插件页里都能用 − / + 调；会话正文仍用自己的字号。
 - [gaor0605-kq/dsh-workspace-explorer](https://github.com/gaor0605-kq/dsh-workspace-explorer) — 在左侧栏「工作区」标题旁加入「对话 | 文件」切换，把会话列表换成当前会话工作区的按需加载文件树。文件和文件夹可拖进输入框作为 @路径 引用；单击文件打开自带预览；右键可在系统文件管理器中打开所在文件夹或复制路径；条目按 VS Code 的方式显示相对最近一次提交的 Git 状态（修改、未跟踪、新增、删除、冲突、忽略）。
 - [gaoyinxin/dsh-mode-switcher](https://github.com/gaoyinxin/dsh-mode-switcher) — 在输入框中提供 Plan/Build 模式切换：按 Tab 键或点击工具栏按钮即可切换，并按模式分别记住右侧原生模型选择器中所选的模型。
 - [GarinZ/dsh-sidebar-view](https://github.com/GarinZ/dsh-sidebar-view) — DSH 侧栏按仓库与 git worktree、时间或标签分组，带状态标签页、工作区图标与会话标签；叠加在原生工作区浏览器上，失败自动回落。
@@ -986,6 +995,7 @@ dsh plugin --profile web add dshmarket
 - [GraptK/dsh-quick-restart](https://github.com/GraptK/dsh-quick-restart) — 在 DeepSeek Harness 桌面版账号菜单中加入「重启」项，带二次确认、进度与失败原因提示。
 - [Grawl/dsh-screen-switcher](https://github.com/Grawl/dsh-screen-switcher) — Ctrl+Tab 切换器：按住 Ctrl 时列出访问过的页面——会话、设置分区和插件页——松开即切换，Esc 取消。浏览器会把 Ctrl+Tab 留给自己的标签页，所以请在桌面端使用，或在能把该快捷键交给页面的浏览器里使用。
 - [grq6414-hash/dsh-style-detector](https://github.com/grq6414-hash/dsh-style-detector) — 中文「AI 味」检测器：右侧栏面板，本地规则引擎打分并标出套话、句式均匀、缺画面感与重复，另设错字页；分数始终由本地算，界面可切中文 / English。
+- [gszadmin/dsh-hncsd](https://github.com/gszadmin/dsh-hncsd) — 元婴识海（dsh-hncsd）：把本地根目录下的每个一级子目录映射成侧栏星系面板里的一颗星，颜色编码子目录数、大小编码会话数；扫描只读取所指定的本机目录，扫描过程不发起网络请求。
 - [GT-610/dsh-workspace-organize](https://github.com/GT-610/dsh-workspace-organize) — DSH 侧栏的分组工作区浏览器：自定义分组按 分组 → 工作区 → 会话 展开，组级归档与删除会显示影响数量，归档会话可三档筛选，分组文档由 Host 半边写入 $DSH_HOME/storages。行、菜单与折叠均用外壳自己的 --dsw-* 令牌和官方组件绘制，主题切换与原生侧栏一致。
 - [gu040303-ai/dsh-prompt-enhancer](https://github.com/gu040303-ai/dsh-prompt-enhancer) — 在 DeepSeek Harness 中一键优化纯文本提示词，并提供可选的本地检查和句级审阅。
 - [GuanYang14700/dsh-hermes-panel](https://github.com/GuanYang14700/dsh-hermes-panel) — 把 Hermes 放进 DSH 右侧栏：启停网关和 dashboard，聊天旁边就能看 dashboard，再把 DSH 和 Hermes 接起来。仅 Windows；需已安装 Hermes。
@@ -1027,6 +1037,7 @@ dsh plugin --profile web add dshmarket
 - [Hao0311/dsh-sidebar-tidy](https://github.com/Hao0311/dsh-sidebar-tidy) — DSH Web GUI 侧边栏精简：全局面板行收进「更多」菜单，侧栏只留「插件 / 自动化任务 / 更多」；白名单内保留，新面板自动进「更多」。
 - [haonan108/dsh-plugin-screenshot-tool](https://github.com/haonan108/dsh-plugin-screenshot-tool) — macOS 输入框工具栏截图按钮：剪刀分体按钮调起系统原生 screencapture 框选（右侧下拉可先隐藏 Harness 窗口），截图自动进剪贴板并附成输入框草稿；会先检查屏幕录制授权，未授权时提示去设置，而不是返回一张只有壁纸的图。
 - [HaoyueQin/dsh-diff-stat](https://github.com/HaoyueQin/dsh-diff-stat) — 在编辑/写入工具行内联 +N −M 徽标，每轮末尾给出可折叠的文件变更汇总卡：对齐差异、逐文件审查与撤销；覆盖原生 edit/write、str_replace_editor 与 Code Dispatch 子调用，不依赖 git。
+- [happylin122/dsh-restart-menu](https://github.com/happylin122/dsh-restart-menu) — 在 DeepSeek Harness 桌面版左上角「应用 / 编辑」旁加一枚「重启」按钮，一键重启整个应用，免去关窗、找托盘、重新打开的麻烦。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [HapyRain/dsh-router-laya](https://github.com/HapyRain/dsh-router-laya) — 为 DeepSeek Harness 提供自动思考档位路由：本地微调的 7 题分类模型（ModernBERT，842MB，CPU 推理 <1s）对无档位指令的消息自动选择 low/high/max；会话内检测到重试自动沿阶梯升档，受「别用 max」类排除约束压制；判定服务不可达时熔断降级，会话不断。前端档位芯片实时显示当前档位与最近 20 轮判断原因。判定全程本地推理，任务文本不出本机。
 - [Harzva/dsh-superterminal](https://github.com/Harzva/dsh-superterminal) — 面向 macOS 上 DSH 0.1.1-rc.2 的原生终端，支持本地终端 AI 会话、可接回原任务的 SSH 远程终端、有限轮次群讨论，以及任务交接、验收与返工。
 - [hatsuyuki0103/dsh-at-any](https://github.com/hatsuyuki0103/dsh-at-any) — Codex 风格的 `@file` 文件引用：输入框里搜索并引用工作区所有格式的文件（.java、.vue、PDF、图片、无扩展名、隐藏文件），无索引上限。dsh-at-file 的替代品。
@@ -1262,10 +1273,11 @@ dsh plugin --profile web add dshmarket
 - [joythatway/dsh-screenshot](https://github.com/joythatway/dsh-screenshot) — 输入框截图菜单，三种模式：框选（自动让开 DSH 窗口）、窗口列表（悬停实时预览）、整屏；截图可入草稿或存到磁盘（默认桌面），预览支持滚轮缩放，设置页可改快捷键、保存位置与自动隐藏。
 - [Js2Hou/dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) — DSH 网页 MCP 可视化管理插件：在「设置 → MCP」中查看/新增/删除/启停 MCP 服务器，实时显示连接状态与工具数。
 - [jsdvjx/dsh-strata](https://github.com/jsdvjx/dsh-strata) — 滚动条槽位里的会话缩略图：按事件类型着色的等比色块、用户与失败锚点、滚到顶自动补载历史、悬停线索墙铺开全部发言，附近/中/全三档地图尺度切换。
-- [jsnancy/dsh-impeccable](https://github.com/jsnancy/dsh-impeccable) — 侧栏里的设计校审台。impeccable 技能随插件自带，装上就能用：顶部输入框填路径或网址，或直接从最近改过的页面里挑一个，点一下就跑 62 条确定性规则（不调模型、不用 API key）。问题按类型分组，每处都标出文件和行号，点「让 AI 帮我改」直接带着问题开新对话；24 条技能命令变成点一下就复制、或直接开新对话的提示词。整个面板可切中英文，也可在自动/浅色/深色之间切换，两个选择都会记住。检测引擎（约 21 MB）首次加载时在后台下载一次，没下完前面板会说明状态，而不是给一个跑不起来的扫描框。
+- [jsnancy/dsh-impeccable](https://github.com/jsnancy/dsh-impeccable) — 侧栏里的十六校审台，画在纸上：浅色是暖白纸配朱红墨，深色是牛皮纸配粉笔线。impeccable 技能随插件自带，装上就能用：顶部输入框填路径或网址，或直接从最近改过的页面里挑一个，点一下就跑 62 条确定性规则（不调模型、不用 API key）。问题按类型分组，每处都标出文件和行号，点「让 AI 帮我改」直接带着问题开新对话；24 条技能命令变成点一下就复制、或直接开新对话的提示词。整个面板可切中英文，也可在自动/浅色/深色之间切换，两个选择都会记住。检测引擎（约 21 MB）首次加载时在后台下载一次，没下完前面板会说明状态，而不是给一个跑不起来的扫描框。
 - [jue5hen/dsh-window-size](https://github.com/jue5hen/dsh-window-size) — 在设置页设置 DeepSeek Harness 桌面版启动时的窗口大小，内置 4:3、16:9、16:10 比例预设，支持保存最多 12 个自定义预设。
 - [juliankang4/dsh-locale-ko](https://github.com/juliankang4/dsh-locale-ko) — 给 DeepSeek Harness 的「设置 - 通用设置 - 语言」加入韩语（한국어），翻译 dsh 0.2.0-rc.2 与 0.2.1-alpha.2 Web UI 的全部 2,775 条文案，包括实验功能。dsh web 与桌面应用均可使用。
 - [juliankang4/dsh-ui-scale](https://github.com/juliankang4/dsh-ui-scale) — 将 DeepSeek Harness 整个界面（包括菜单和弹窗）缩放到 50% 至 200%，在「设置 - 通用设置」中用滑块、百分比输入或预设调整。dsh web 与桌面应用均可使用，桌面应用本身没有缩放功能。
+- [julypjyt-creator/dsh-word-translate](https://github.com/julypjyt-creator/dsh-word-translate) — 在 DSH 对话里选中或指向任意英文单词，右键直接弹出「翻译成中文」卡片，中文释义就地显示，不用复制出去查。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [JungleYXu/dsh-minichat](https://github.com/JungleYXu/dsh-minichat) — 快问小面板：不碰主对话，固定 10 轮便签窗口；问答成对收藏且不占轮次，结论可一键放进输入框，每次重启都是空的。
 - [JupiterWalker/dsh-section](https://github.com/JupiterWalker/dsh-section) — 把不同项目的会话收进左侧边栏里可折叠的自定义分组：会话行与项目行各有菜单，可加入分组、移出分组、重命名、归档，或把整个项目一次性移入某个分组；分组面板里的开关可把宿主侧栏切换成分组树、随时恢复，行尾还会提示会话正在跑（自己这一轮、派出去的子代理、没结束的后台任务都算）或跑完还没看过。
 - [Justin-Mai/dsh-stock-view](https://github.com/Justin-Mai/dsh-stock-view) — A 股 / ETF / 港股 / 美股 / 加密货币行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面右上角显示可折叠、可拖动的弹窗，同时盯多个市场——实时行情、分时与日/周/月 K 线（含均线）、买卖目标价、分组管理（切换、拖动排序、重命名、删除）、跨市场搜索、明暗主题。fork 自 Awu12277/dsh-stock-watch，新增东方财富美股行情与 OKX 现货加密货币行情。
@@ -1279,6 +1291,7 @@ dsh plugin --profile web add dshmarket
 - [k-ying/dsh-vsceditor](https://github.com/k-ying/dsh-vsceditor) — 在 GUI 页签内嵌真实的 VSCode 编辑器（code-server，或通过自带 bridge 扩展连接本机桌面 VS Code）：Agent 的文件改动弹出按对话轮次累计的红绿 diff，关标签、刷新页面都不丢，写入期间文件自动锁定，看门狗托管进程、崩溃升级不留孤儿。
 - [k623615746/dsh-chat-split](https://github.com/k623615746/dsh-chat-split) — 对话区分屏：左侧栏入口最多开四屏（1 屏铺满 / 2 屏左右并排 / 3–4 屏两列两行），从侧栏把会话拖进对话区即自动分屏，拖一屏的信息头到另一屏可换位，点一下把某屏铺满整个区域；网格是宿主正文区里的真子节点，宿主标题栏、页签行与左侧栏原样保留，每屏自带序号/工作区/标题信息头，屏数加减与关闭挂在宿主顶栏页签行右侧。
 - [k623615746/dsh-sysload](https://github.com/k623615746/dsh-sysload) — 在 DeepSeek Harness 会话顶栏实时显示 CPU、GPU 与内存占用：三个小格各带百分比和 2 px 细条，75 %、90 % 变色；CPU 取 os.cpus() 差值，GPU 优先 nvidia-smi（Windows 下可退回性能计数器）。
+- [k99k5/dsh-suggest-card](https://github.com/k99k5/dsh-suggest-card) — 在聊天中提供快捷回复和下一步建议卡片，只在需要选择任务在哪个会话执行时提供新会话选项。
 - [Kadima-code/dsh-subagent-fold](https://github.com/Kadima-code/dsh-subagent-fold) — 把原生子代理下拉按使用批次折叠为 历史 / 今日 / 上次 / 本次 四组，本次始终展开；不改动原版头部。
 - [Kadima-code/dsh-subagent-toolkit](https://github.com/Kadima-code/dsh-subagent-toolkit) — 子代理工具箱：把原生子代理下拉按使用批次折叠为 历史 / 今日 / 上次 / 本次 四组（本次常展开），支持行内/整组删除子代理会话，并让子代理模型名单实时生效（逐任务选模型）；不改动原版头部。
 - [kahomesl/dsh-chat-diff-summary-legacy](https://github.com/kahomesl/dsh-chat-diff-summary-legacy) — 输入框上方的本轮改动统计条，显示这一轮改了哪些文件、增删多少行，适配 DeepSeek Harness 0.1.5-rc.1 至 0.1.7。
@@ -1328,6 +1341,7 @@ dsh plugin --profile web add dshmarket
 - [kouzerror/dsh-retry](https://github.com/kouzerror/dsh-retry) — 给 DSH 桌面端的 Windows 系统托盘菜单和账户菜单各加一项原生「重启 DeepSeek Harness」：插件启动时准备好补丁版 resources/app.asar，由一个分离的 helper 在正常退出后备份原文件并替换，桌面端每次更新覆盖后自动重打补丁，下次启动即可看到两个入口，点击走 app.relaunch() 优雅重启。仅支持 Windows 桌面端，其它宿主返回 409 not_desktop。
 - [kp-z/dsh-plugins#dsh-spellbook](https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-spellbook) — 前端效果库「咒语书」：右侧栏一个 tab，收录 360 条咒语，每条是机制描述 + 真正跑得起来的代码；点一下把咒语送进对话输入框，模型也能用 spellbook_lookup 查回来。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Kseleven/dsh-pomodoro-timer](https://github.com/Kseleven/dsh-pomodoro-timer) — 输入框下方的番茄钟：专注/短休息/长休息循环、可恢复倒计时、提示音、可选系统通知与中英双语设置。
+- [ku4nc4/dsh-history-window](https://github.com/ku4nc4/dsh-history-window) — 缩小首次会话历史分页，打开旧会话时更快显示对话内容，而不是一次性渲染全部回合。
 - [kuanfu0430/dsh-sidebar-branch-chat](https://github.com/kuanfu0430/dsh-sidebar-branch-chat) — 在 dsh-better-sidebar 新增分支对话页签：开出独立封存 session，注入头／中／尾脉络摘要，并使用与主对话相同的工具。
 - [KukaNo996/dsh-prompt-optimization](https://github.com/KukaNo996/dsh-prompt-optimization) — DSH 输入框提示词优化：把粗糙草稿改写成结构清晰、无歧义的提示词，支持一键撤回、引用芯片保护、三种模型来源与断连即停。
 - [KungerChen/dsh-next-message-predictor](https://github.com/KungerChen/dsh-next-message-predictor) — 每轮回答结束后预测你的下一条消息，以灰色文字显示在空输入框里：Tab 或 → 填入但不发送，Esc 隐藏，可改的快捷键（默认 Alt+\）立即预测或在多条候选间切换。默认关闭，在设置页启用；设置页提供均衡、省流、高质量三种一键模式，可选的左侧栏入口，每日请求与 token 上限，发送前遮蔽密钥、令牌和邮箱，以及近 7 天用量统计；会话中重复发过的短句和自己固定的短语排在模型建议之后，切换候选时出现，不调用模型；界面支持九种语言。
@@ -1375,6 +1389,7 @@ dsh plugin --profile web add dshmarket
 - [left0ver/dsh-file-review](https://github.com/left0ver/dsh-file-review) — 在 Diff 面板中审查 Agent 的文件改动、添加评论以继续修改，并撤销已编辑或新建的文件。
 - [legendbone/dsh-prompt-enhancer](https://github.com/legendbone/dsh-prompt-enhancer) — 在聊天输入框添加星光按钮，使用当前选中的模型重写纯文本草稿，并把结果回填到输入框。
 - [lemon0-00/dsh-file-menu](https://github.com/lemon0-00/dsh-file-menu) — 给 DSH 聊天里的交付文件卡片、改动卡片、行内文件引用与 http(s) 链接加上右键菜单。动作包括用默认程序打开、用系统「打开方式」对话框打开、在文件管理器中定位、复制文件本体、复制文件路径、另存到指定文件夹、下载，以及用浏览器打开链接。交付卡片走宿主从会话日志反查的会话坐标；行内引用与改动卡片走宿主要求复核的绝对路径。
+- [Lemon357/dsh-transparent](https://github.com/Lemon357/dsh-transparent) — DSH 桌面版透明窗口：滑杆调节页面蒙层不透明度（0–62%），开关切换亚克力磨砂或无磨砂窗口材质；切换材质会改写桌面壳 app.asar，需重启一次。
 - [lemonorangeapple/dsh-effort-switcher](https://github.com/lemonorangeapple/dsh-effort-switcher) — 为DSH添加一个类似于Codex的推理强度切换器。
 - [Leni-More/dsh-market-watching](https://github.com/Leni-More/dsh-market-watching) — 钉在 DSH 侧栏的行情卡片：加密货币、A股 / 港股 / 美股与世界主要指数、外汇直盘、伦敦金银的实时价格与 24 小时涨跌幅。填上买入或做空成本价与持仓数量后，涨跌列会切换成盈亏百分比与浮动金额；标的、顺序、刷新间隔都在 DSH 设置页里决定。免登录、免密钥。行情取自 Gate.io、东方财富和新浪的公开接口，每次刷新都会把你选的标的发给它们。
 - [lenrendre/dsh-screenshot-native](https://github.com/lenrendre/dsh-screenshot-native) — 微信式截图：点一下冻结桌面，框选区域或单击窗口，截图直接进输入框。Windows 专用的 Durandalw/dsh-plugin-screenshot 衍生版，请勿与原版同时安装。
@@ -1388,6 +1403,7 @@ dsh plugin --profile web add dshmarket
 - [LHF198/dsh-prompt-optimizer](https://github.com/LHF198/dsh-prompt-optimizer) — 在发送前优化当前聊天输入，采用前先对比原文与优化结果。
 - [lhuans/dsh-genui](https://github.com/lhuans/dsh-genui) — 通过 schemaJson 代码块在 DSH 回复内渲染 OpenTiny GenUI 图表、表单、计算器等迷你应用，用户操作自动回传对话。
 - [Li-Mingshuang/dsh-audio-control](https://github.com/Li-Mingshuang/dsh-audio-control) — Web 界面里的悬浮音频控制面板：控制 Windows 媒体会话（SMTC）的播放/暂停/上一首/下一首与系统主音量/静音，由注册路由的主机半调用 PowerShell 助手实现。
+- [Liam-liyaming/dsh-result-comments](https://github.com/Liam-liyaming/dsh-result-comments) — 框选 AI 回复中的文字，用 👍 认可或写 🤔 评论，并把评论作为输入框 tag 随消息发送。
 - [LiangshouX/dsh-ide-workbench#workbench](https://github.com/LiangshouX/dsh-ide-workbench/tree/main/packages/workbench) — DSH 侧栏里的 JetBrains 式 IDE 工作台：Project 文件树、Commit 面板、泳道图 Git 历史、真实 PTY 终端与内置编辑器（Markdown 预览、全项目查找），并支持聊天文件链接与发送到聊天框的 @ 引用。代码智能已拆为独立插件 dsh-ide-codeintel。
 - [liangzz1998/dsh-workspace-session-drag](https://github.com/liangzz1998/dsh-workspace-session-drag) — 在侧栏把会话从一个工作区拖到另一个工作区，确认后移动会话日志与归属（含子代理、列表边缘自动滚动，已打开的空闲会话经注册表刷新即时生效），未分组双向拖动同样支持。
 - [liaoangbo-droid/dsh-notewall](https://github.com/liaoangbo-droid/dsh-notewall) — 侧边栏便签墙：富文本、图片、手写、拖动排序、便签闹钟，以及把便签定时投递到会话。只读的 /state 和 /media 路由没有鉴权。
@@ -1511,7 +1527,7 @@ dsh plugin --profile web add dshmarket
 - [loyalchiiina/dsh-font-enhancer](https://github.com/loyalchiiina/dsh-font-enhancer) — 全局字体 DIY：界面任意位置的字体大小、字重、颜色与字体族都能改，可逐个元素也可整体生效，调完把悬浮球隐藏即可。不用写 CSS、不用重启。适配 DSH 内核 0.2.2-rc.1。
 - [loyalchiiina/dsh-lobsterai-daddy](https://github.com/loyalchiiina/dsh-lobsterai-daddy) — 把 LobsterAI（有道龙虾）桥接进 DSH：免费签到积分直接接进 DSH 对话，用这些额度跑对话、工作流与技能包。需 LobsterAI 桌面端（Windows）；登录新账号与同步网关需另装 LobsterDaddy 控制台（不在本仓库）。作者已于 2026-10-21 停止维护。
 - [loyalchiiina/dsh-schedule-calendar](https://github.com/loyalchiiina/dsh-schedule-calendar) — 给 dsh-better-sidebar 用的侧边栏日程助手（必须先装该插件；需 DSH 0.2.2+）：今日一屏（天气每天 8:30 / 12:00 / 17:30 定点刷新、黄历、可折叠星座运势）；农历月历（格子可透出壁纸）；日程与待办；日报周报与每日签到；按人设置班制与上下班倒计时。多账号邮箱客户端，支持 QQ 邮箱与 Foxmail 邮箱（@qq.com / @foxmail.com，同一套 imap.qq.com / smtp.qq.com，授权码登录）：IMAP 收信 + SMTP 发信、七个页签、搜索、星标 / 垃圾 / 垃圾箱（可还原）/ 已读未读、草稿箱、可按间隔群发、附件双向收发，正文网址可直接用系统浏览器打开。久坐 / 喝水 / 护眼 / 听音乐提醒以界面内「胶囊」浮在整个 DSH 界面之上，停留秒数（3~60 秒）与位置可调，可选同时推 Windows 通知，并支持手动预览。壁纸轮播（顺序或随机洗牌）、透明度与磨砂、界面文字颜色均可调。数据全部本地保存，不上传云端。适配 DSH 内核 0.2.2-rc.1。
-- [loyalchiiina/dsh-sidebar-media-player](https://github.com/loyalchiiina/dsh-sidebar-media-player) — 把音视频播放器搬进 DSH 侧边栏：视频（mp4/webm/mov/m4v/ogv）与音频（mp3/wav/flac/ogg/opus/m4a/aac）在侧边栏页签里打开，自动加载同名字幕、进度条可拖动；面板分 QQ音乐 与本地音乐两个页签，上方是唱盘、实时频谱（柱状或波形）、音准读数（音名、频率、音分）与歌词，有逐字时间轴时按逐字、没有时按整行，含五种动效与两种版式；控件行统一风格，17 枚候选按钮同屏至多 16 枚，涵盖收藏、循环三态（顺序／单曲／随机）、0.5x–2x 倍速（按钮显示 1x，展开为自绘双列菜单）、字幕与 6–10 列网格。QQ音乐侧覆盖搜索、榜单、歌单与新歌，收藏写回登录账号本人的「我喜欢」，不是本地标记；本地侧扫描目录、支持拖放，音频整文件读取所以拖动进度可用。胶囊播放条可停靠输入框上方、页面底部或隐藏，按钮与面板控件共用一份 store 一一对应。无曲目时点胶囊播放按钮会打开侧边栏并从登录账号的 QQ 音乐「我喜欢」第一首开始播；点播放列表按钮和侧栏入口只打开播放器界面，不触发播放。默认值：胶囊在输入框上方、10 列、歌词炫彩、顺序循环、频谱开、两句歌词、柱状。QQ音乐接口为非官方接口，仅在桌面端 profile 验证。本插件为第三方爱好者工具，非 QQ 音乐官方产品；仅播放自己账号的列表，不参与官方活动，收到侵权通知即删库。适配 DSH 内核 0.2.2-rc.1 及以上（本机官方 0.2.3-alpha.2 实测）；当前稳定版 1.0.0。HTTP 路由带 loopback 与同源请求检查。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [loyalchiiina/dsh-sidebar-media-player](https://github.com/loyalchiiina/dsh-sidebar-media-player) — 把音视频播放器搬进 DSH 侧边栏：视频（mp4/webm/mov/m4v/ogv）与音频（mp3/wav/flac/ogg/opus/m4a/aac）在侧边栏页签里打开，自动加载同名字幕、进度条可拖动；面板分 QQ音乐 与本地音乐两个页签，上方是唱盘、实时频谱（完整柱状）、音准读数（音名、频率、音分）与歌词，有逐字时间轴时按逐字、没有时按整行，含五种动效与两种版式；控件行统一风格，19 枚候选按钮（音频同屏 18 枚、视频同屏 17 枚），涵盖收藏、循环三态（顺序／单曲／随机）、0.5x–2x 倍速（按钮显示 1x，展开为自绘双列菜单）、字幕与 6–10 列网格。QQ音乐侧覆盖搜索、榜单、歌单与新歌，收藏写回登录账号本人的「我喜欢」，不是本地标记；本地侧扫描目录、支持拖放，音频整文件读取所以拖动进度可用。胶囊播放条可停靠输入框上方、页面底部或隐藏，按钮与面板控件共用一份 store 一一对应。无曲目时点胶囊播放按钮会打开侧边栏并从登录账号的 QQ 音乐「我喜欢」第一首开始播；点播放列表按钮和侧栏入口只打开播放器界面，不触发播放。默认值：胶囊在输入框上方、10 列、歌词炫彩、顺序循环、频谱开、两句歌词、柱状。QQ音乐接口为非官方接口，仅在桌面端 profile 验证。本插件为第三方爱好者工具，非 QQ 音乐官方产品；仅播放自己账号的列表，不参与官方活动，收到侵权通知即删库。适配 DSH 内核 0.2.3-alpha.2（最低 0.2.2-rc.1）；当前稳定版 1.0.7。HTTP 路由带 loopback 与同源请求检查。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [loyalchiiina/dsh-skill-browser](https://github.com/loyalchiiina/dsh-skill-browser) — 技能与 MCP 浏览器：一个悬浮球四个 Tab（技能浏览 / 调用台账 / MCP / 市场 · MCP 市场）+ 右上角 ? 快速上手帮助入口（点击展开/再点收起）。技能浏览（系统目录选库、两级分类加自定义分组、树状/平铺、手动/关键词/AI 分组且只发元数据、搜索、单卡或全库启停并自动备份）、调用台账（次数/成功率/趋势/排行）、MCP（真实 loader 配置与 Fiber 状态、工具与调用统计、启停/重连/卸载/导出，并扫描未配置服务器做 AI 修复）、市场（官方 MCP Registry + 精选免费目录、19 大类平铺分类、网格/列表双模式、一键安装/卸载、仅免费筛选，与 MCP 页双向即时同步）。130 款皮肤在三颗悬浮球间同步。适配 DSH 内核 0.2.2-rc.1。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [loyalchiiina/dsh-todo-float-ball](https://github.com/loyalchiiina/dsh-todo-float-ball) — 强制每个 turn 先写 todo 清单并整表覆盖式重写，已完成项保留不删。悬浮球可看完整历史，含被插话打断后丢失的安排，干了什么、什么没干一目了然。适配 DSH 内核 0.2.2-rc.1。
 - [lp86ndlb/dsh-todo-note](https://github.com/lp86ndlb/dsh-todo-note) — 对话旁的可拖动便签：短期待办，加上带真实阶段进度的长期计划，并通过 todo_note_read / todo_note_update / todo_note_complete 三个工具让 agent 与你在同一份便签上协作；任务须经你点击确认才算完成，状态只保存在本机。
@@ -1582,7 +1598,7 @@ dsh plugin --profile web add dshmarket
 - [magic-tab-01/dsh-notes](https://github.com/magic-tab-01/dsh-notes) — 富文本笔记：支持图片、链接、符号、分类、背景、标题折叠与导出。
 - [magiccyclingz/dsh-design-leapavid](https://github.com/magiccyclingz/dsh-design-leapavid) — 侧栏设计风格库：集 84 套品牌设计语言，每套都按该品牌 DESIGN.md 的 token 现场渲染；挑一套并写清需求，就会把一份带完整 token 与交付规范的提示词发进当前会话，由对话模型按这套风格产出网页、五页幻灯片或信息图。还可把选中的风格导出为 CSS 变量、tokens.json 或 Tailwind 配置。
 - [magiccyclingz/dsh-diagram-leapavid](https://github.com/magiccyclingz/dsh-diagram-leapavid) — 侧栏图表工坊：50 种图表模板，填好内容后准备提示词并新建会话，生成单文件 HTML 图表。
-- [MagicMOl/dsh-org-talent](https://github.com/MagicMOl/dsh-org-talent) — DSH 左侧栏的组织人才匹配：项目导览包含可检索的项目进度、项目成果、近期项目与同步预警；每个项目有桌面备忘录并可直接记入反馈；项目进度可直接记录反馈；另有需求池、按项目创建的 DSH 对话工作区、人才库、组织架构、团队匹配与能力培养建议。
+- [MagicMOl/dsh-org-talent](https://github.com/MagicMOl/dsh-org-talent) — DSH 左侧栏的组织人才匹配：项目进度内嵌成果与预警；人才库可编辑、组织架构支持拖拽调队；只给一组最佳团队并可配置基础团队；项目状态/进度与部门人数用本地 SVG 数据图展示；另含粘贴反馈、备忘录、需求池、项目对话与培养建议。
 - [magicOF2/dsh-autoload-history](https://github.com/magicOF2/dsh-autoload-history) — 打开会话时自动加载全部历史消息，免去反复点击「加载更早」。
 - [magicOF2/dsh-chat-width-customizer](https://github.com/magicOF2/dsh-chat-width-customizer) — 会话标题栏按钮循环切换对话宽度（748–1600px），消息区、输入框、用户气泡同步加宽。
 - [magicOF2/dsh-schedule](https://github.com/magicOF2/dsh-schedule) — 本地长期日程面板:顶栏「日程」文字按钮、今天/本周/历史月历统计视图、完成打勾(按天记录历史)、日程↔会话链接点击跳转、重复日程(每天/每周)、一次性日程可选未完成自动顺延,以及 dailytask_* agent 工具。
@@ -1595,12 +1611,12 @@ dsh plugin --profile web add dshmarket
 - [Makk9609/dsh-session-mark](https://github.com/Makk9609/dsh-session-mark) — 右键左侧会话列表中的会话，选择八档渐变或三个手绘线条图案（星星、猫、狗）；最后一条空白条清除。
 - [MannixHu/dsh-statusbar-config](https://github.com/MannixHu/dsh-statusbar-config) — 用 ${变量} 显示模板自定义输入框下方的会话统计行——显示哪些统计段、单位文案怎么写，全部由模板决定。
 - [mantonlove/dsh-margin-notes](https://github.com/mantonlove/dsh-margin-notes) — DSH 页边批注：在文档预览或助手回复里划词写批注，攒成一批后收进输入框里的一个内联批注块，发送时才展开成编号块，方便继续输入其他指令。
-- [mantonlove/dsh-saynext](https://github.com/mantonlove/dsh-saynext) — 在 DSH 输入框里给你写下「下一句」：每轮回答正常结束后，宿主拿这段对话调一次模型，猜出你接下来最可能说的那句话。输入框为空时，它显示在输入框内部、原占位符的位置上，一行灰字，不额外占高度，也不会和目标条、待办面板打架；按第一次 Enter 只把它填进草稿、不发送，按第二次 Enter 才发出去。回答流式输出中或输入框里已有文字时自动隐藏，多条会话各存各的，互不串台。（输入预测 / 提示词建议 / 下一句 / 灰字补全）
+- [mantonlove/dsh-saynext](https://github.com/mantonlove/dsh-saynext) — 在 DSH 输入框里写下「下一句」。每轮回答正常结束后，宿主让模型一次给出三条候选，再用本地规则挑一条，而不是直接信模型：复述 AI 刚说的话、复用只有 AI 用过的标识符、谈论插件自身的候选会被挡掉。选中的那句显示在输入框内部、原占位符的位置上，一行灰字，不额外占高度，也不会和目标条、待办面板打架；按第一次 Enter 只把它填进草稿、不发送，按第二次 Enter 才发出去。流式输出中、输入框已有文字、或这条建议属于更早的回合时自动隐藏，多条会话各存各的。建议默认不离开你的机器：分享关闭，只有在下载页亲自选择后才会上传展示的那句、你随后发送的那句，以及上一轮请求与最后一条助手答复各最多 1200 个 UTF-16 码元；随时可停止并清除本机队列。（输入预测 / 提示词建议 / 下一句 / 灰字补全）
 - [maomaoxyz1/dsh-cpu-temp](https://github.com/maomaoxyz1/dsh-cpu-temp) — 在 DSH 输入框「技能」按钮右侧每秒显示温度胶囊，支持 Windows ACPI 热区、部分 Linux CPU hwmon 传感器或可选外部采样器快照。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [maqian1632/dsh-tray-restart](https://github.com/maqian1632/dsh-tray-restart) — 在 DSH 桌面端的 Windows 系统托盘菜单中只增加一个“重启 DeepSeek Harness”项，做法是原位修改已安装的 app.asar 并在桌面端每次更新后重打补丁；需要 DSH 安装目录可写，不添加其他托盘操作。
 - [MarchLiu/dsh-rich-editor](https://github.com/MarchLiu/dsh-rich-editor) — 为输入区提供富 Markdown 笔记本：工具行开关加 CodeMirror 编辑卡片，支持 Codex 风格列表编辑，经会话服务提交。
 - [MaRi23333/dsh-agent-instructions-editor](https://github.com/MaRi23333/dsh-agent-instructions-editor) — 在 DeepSeek Harness 设置页编辑全局 AGENTS.md 和项目 AGENTS.md / CLAUDE.md 个性化指令，提供项目指令链浏览、字节预算显示与保存冲突处理。
-- [mark-qtech/dsh-inline-link-preview](https://github.com/mark-qtech/dsh-inline-link-preview) — 在 DeepSeek Harness 聊天输入框为支持的单条链接显示行内图标和标题，复制和发送时保留网址。
+- [mark-qtech/dsh-inline-link-preview](https://github.com/mark-qtech/dsh-inline-link-preview) — 在 DeepSeek Harness 聊天输入框中单独粘贴链接后，尝试将飞书/Lark 文档（需 lark-cli）、GitHub 公开页面、微信公众号文章及可访问的公开网页就地显示为「图标 + 标题」，复制和发送时保留原始网址。
 - [markmuteki/dsh-session-prompt-optimizer](https://github.com/markmuteki/dsh-session-prompt-optimizer) — 在输入框里加一个按钮，借助当前会话的一小段上下文把草稿改写成更清楚的提示词（Shift 改成结构化任务书，Alt 压缩），结果先并排显示在草稿旁，确认后才替换。
 - [MarkTina/dsh-activity-heat](https://github.com/MarkTina/dsh-activity-heat) — 按距最后一次活动的时间给会话与工作区打 0–100% 热度分，并在侧边栏图标、会话标题前的小热度圆点、会话悬浮卡片和可筛选的会话/工作区面板中呈现；工作区卡片还汇总该工作区的轮次、步数、Token 与会话时长。
 - [Martlet-Tech/dsh-open-folder-fix](https://github.com/Martlet-Tech/dsh-open-folder-fix) — 修正 Windows 上「打开工作目录」的行为。官方调用 `explorer.exe "<file:// URI>"`，在某些主机上会报告成功却不弹窗口——因为成功判据是退出码，分不出「窗口开了」和「什么都没发生」。本插件把该操作改走 `explorer.exe /e,<目录>`，稳定新开窗口；菜单里其它应用仍走官方路径。
@@ -1612,7 +1628,7 @@ dsh plugin --profile web add dshmarket
 - [Max-Null/dsh-chat-rail](https://github.com/Max-Null/dsh-chat-rail) — DeepSeek Harness 画卷式消息导航栏：会话面板右侧一条竖排导轨，每条用户消息一个指示点，scroll-spy 跟随阅读位置，hover 展开画卷查看完整消息预览，点击跳转任意历史消息；与 better-sidebar 面板动画同步避让。
 - [Max-Null/dsh-node-appearance](https://github.com/Max-Null/dsh-node-appearance) — DeepSeek Harness Web GUI 会话节点外观插件：按节点类别/工具名可配置着色（左侧色条 + 淡色底），附带"显示思考过程"开关；纯前端渲染增强，改动即时生效并持久化到 DSH 用户设置文件。
 - [Max-Null/dsh-quick-toolbar](https://github.com/Max-Null/dsh-quick-toolbar) — 插钮聚合器（载体+驻场 LLM 范式）：把任何插件的散落按钮聚合到统一入口（SSiD 标题栏 / web 悬浮球）——LLM 按环境注册、右键删除=注销，纯数据零代码，不动插件源码。
-- [MaxBill/dsh-file-explorer](https://github.com/MaxBill/dsh-file-explorer) — 主栏里的文件浏览面板，也负责把文件喂给 agent：图标 / 列表 / 分类三种视图（列宽可拖拽），面板内直接预览图片、PDF、Markdown、HTML、CSV/TSV、XLSX 工作簿与 DOCX 文档（后两者由插件自行解析 zip+XML），支持面板内改文本、上传下载、ZIP 压缩解压与 Git 状态角标；右键或拖拽即可把文件夹添加为 DSH 工作区、把文件加进当前对话、把路径以 @ 引用插入输入框，工具栏还能一键切换工作区，远程访问时自动隐藏仅桌面可用的动作。
+- [MaxBill/dsh-file-explorer](https://github.com/MaxBill/dsh-file-explorer) — 文件管理器：主栏里的文件浏览面板，也负责把文件喂给 agent —— 图标 / 列表 / 分类三种视图（列宽可拖拽），面板内直接预览图片、PDF、Markdown、HTML、CSV/TSV、XLSX 工作簿与 DOCX 文档（后两者由插件自行解析 zip+XML），支持面板内改文本、上传下载、ZIP 压缩解压与 Git 状态角标；右键或拖拽即可把文件夹添加为 DSH 工作区、把文件加进当前对话、把路径以 @ 引用插入输入框，工具栏还能一键切换工作区，远程访问时自动隐藏仅桌面可用的动作。
 - [maxlee/dsh-prompt-manage](https://github.com/maxlee/dsh-prompt-manage) — 复用你在 DeepSeek Harness 各会话中输入过的提示词：输入框模型选择器旁的可搜索面板、用当前会话模型和可编辑的系统提示词改写草稿的魔法棒按钮，以及侧边栏里可搜索的全量提示词历史页。
 - [maxy1817/dsh-inline-edit](https://github.com/maxy1817/dsh-inline-edit) — 原地修改用户消息文字及增删附件，可在设置中选择新建分支，或在当前对话重新生成最近一条符合条件的任务主消息。
 - [mdalboni/dsh-mobile](https://github.com/mdalboni/dsh-mobile) — 移动端视口锁定、滚动溢出阻断、虚拟键盘自适应及侧边栏自动收起。
@@ -1637,6 +1653,7 @@ dsh plugin --profile web add dshmarket
 - [MeruSu/dsh-better-setting-page](https://github.com/MeruSu/dsh-better-setting-page) — 让 800px 的设置弹窗铺满窗口，左侧分类栏可按需收成 56px 图标列，还能隐藏你从不打开的设置页。
 - [mervin1944/dsh-version-badge](https://github.com/mervin1944/dsh-version-badge) — 侧边栏设置按钮上方的版本徽标：常驻显示当前 dsh 版本，展开可查看全部核心包版本，并支持检查 npm 更新与一键部署。
 - [mervyn-teo/dsh-plugin-collapsible-steps](https://github.com/mervyn-teo/dsh-plugin-collapsible-steps) — 把消息之间连续的工具调用与思考步骤折叠成单个可展开的括号条目。
+- [Merziller/prompt-fusion](https://github.com/Merziller/prompt-fusion) — 禾杨灵词预发布版：单按钮提示词改写、保真检查、可见失败原因、停止与撤销，共用 CLI、Skill、MCP 与 REST。
 - [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) — 右下角常驻的小鲸鱼挂件：余额、今日已用与每轮对话消耗（含峰谷价），余额预警与今日预算的泡泡内容都可编辑；泡泡点击序列模块化自定义，支持并列加权 A/B、随机台词与随机图片；内置 30+ 厂商模板（OpenAI / OpenRouter / Kimi / 硅基流动 / 方舟 / 智谱 / MiniMax 等），按模型查余额与订阅额度；另有任务结束音效、导入音频、自定义角色与资源管理。数据全在本机，无遥测。
 - [mewcoder/power-dsh](https://github.com/mewcoder/power-dsh) — DSH 桌面增强插件，提供技能/MCP 管理、全局指令、任务通知等实用功能，支持按需精简内置功能。
 - [meyaomiao/dsh-files-native](https://github.com/meyaomiao/dsh-files-native) — 接近原生的 DSH 附件：PNG/JPEG/WebP/GIF 走官方缩略图，其它文件经拖入、粘贴或回形针变成 64px 卡片；非图片落到 .dsh-uploads，发送后贴在用户气泡旁。
@@ -1666,6 +1683,7 @@ dsh plugin --profile web add dshmarket
 - [MingGH/dsh-pin-top](https://github.com/MingGH/dsh-pin-top) — 把 DSH 的置顶会话收进侧边栏独立分区并支持 macOS 式颜色标签，同时给工作区标题栏加上定位、全部收起、全部展开三个按钮。
 - [MingoYung/dsh-awakening](https://github.com/MingoYung/dsh-awakening) — 启动动画选择器，内置DeepSeek、Codex和Claude Code三套主题，支持本地MP4/WebM导入和插件内社区动画库；已支持的Windows DSH NEXT构建可选安装和恢复首屏兼容层。
 - [MingoYung/dsh-superagent-power](https://github.com/MingoYung/dsh-superagent-power) — 在 Windows 输入栏添加全局 Sup 开关，按需启动或正常关闭独立的 Super-agent 后台进程，关闭后释放其占用的内存。前置条件：已装好 DSH NEXT、Node 24+、独立 DSH CLI，且 Super-agent 已在独立 profile 中配置好（已在 DSH 0.2.1-rc.4/rc.5 验证）；还需在 Super-agent profile 中注册包内的 bridge.js——只安装桌面包并不能完成整套安装。
+- [mingyang66/dsh-gohome](https://github.com/mingyang66/dsh-gohome) — 在消息输入框下方显示下班倒计时：剩余时间、今日进度、提前提醒（默认提前 30 分钟，可在设置页改为 0–120）、下班后自动切换为加班计时、周末单独提示。上下班时间与提醒在设置页中修改；配置仅保存在本浏览器。零依赖、无构建步骤、不发起网络请求。
 - [minhaoli/dsh-ui-reload](https://github.com/minhaoli/dsh-ui-reload) — 在会话头部一键重载整个前端。点击后先读取下一个文档并等待其 bundle 地址可解析，避免客户端 bundle 重建后重载进入无法启动的图。
 - [minivv/dsh-activity-bell](https://github.com/minivv/dsh-activity-bell) — 侧边栏活动铃铛：会话跑完后铃铛显示红色角标，点一下把工作区列表换成按天分组的最近活动列表，尚未打开过的完成项带绿点。
 - [Minus77/dsh-prompt-optimize](https://github.com/Minus77/dsh-prompt-optimize) — 在输入框里就地改写提示词：浮层在输入区上方流式生成结构化改写，替换前逐行 diff 确认，替换后 9 秒内可撤销；附带本地历史、版本对比、7 套模板与变量抽取。
@@ -1797,6 +1815,7 @@ dsh plugin --profile web add dshmarket
 - [Nothree-code/folder-tree-sh](https://github.com/Nothree-code/folder-tree-sh) — 工作区文件树插件：多标签预览（文本/DOCX/PDF/Markdown/CSV/图片）、Markdown 内联编辑、Git 变更面板与右键文件操作（重命名/删除/复制/移动/新建）。
 - [nothurry/stronger-dsh](https://github.com/nothurry/stronger-dsh) — 界面与动效、团队侧栏、成员互通、分层记忆与可选微信主动通知。
 - [Novajin0826/dsh-xiaochajian-shizhong](https://github.com/Novajin0826/dsh-xiaochajian-shizhong) — 在输入框 + 菜单顶部增加技能分组，仅显示已启用技能，并提供管理页搜索、启用/停用、删除与批量管理；选中技能后把斜杠命令插入草稿，不自动发送。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [NUAAHANDA/dsh-composer-enhance](https://github.com/NUAAHANDA/dsh-composer-enhance) — 在输入框加一个四角星，点一下就用当前模型把草稿在框内改写成更清楚的提示词，并留一个返回按钮恢复上一版文字。
 - [nuet9/dsh-internal-folder-browser](https://github.com/nuet9/dsh-internal-folder-browser) — 在 Harness 内浏览本地文件目录，支持目标文件高亮与八种查看布局；图片缩略图和系统文件图标仅在 Windows 下提供。
 - [Nuke0519/dsh-status-box](https://github.com/Nuke0519/dsh-status-box) — DSH 的 macOS 菜单栏状态盒：小鲸鱼状态项显示运行中/待处理/已完成数量并随状态变色，点开菜单按工作区分组列出会话，窗口顶部胶囊同步显示数量；全局热键 ⌥⌘⇧D 唤出单行输入窗，把任务排队并在指定工作区新建会话直接发送（DSH 关着时排队，打开后自动发出）；设置页含「发送后打开对话页」开关。需要 macOS 11 及以上、Xcode 命令行工具和桌面版。菜单栏部分是单独的原生小助手，要在仓库副本里运行 menubar/install.sh 来编译（clang）并安装：它会注册登录项（LaunchAgent），监听 127.0.0.1:59421，插件每隔几秒向它发送会话标题和状态。
 - [null-dat/dsh-whale-tail](https://github.com/null-dat/dsh-whale-tail) — 针对 DSH 思考模式鲸鱼尾巴的动画，丰富成 4 种动画。
@@ -1838,6 +1857,7 @@ dsh plugin --profile web add dshmarket
 - [oumaekumiko0821/dsh-splash-gojo](https://github.com/oumaekumiko0821/dsh-splash-gojo) — 用图片做全屏开机动画：启动 HTML 首帧即铺满画面并缓慢推近，横向光带扫过，左下进度与阶段提示，应用挂载完成后淡出。点击任意处或按 Esc / 空格 / 回车可跳过。
 - [outmanwt/dsh-chat-privacy-blur](https://github.com/outmanwt/dsh-chat-privacy-blur) — 把 DSH Web 对话里的提问与回答画成模糊，鼠标停在哪一条才显示哪一条；窗口失焦时自动全糊，谁都看不到指针留下的那条。输入框下方一个按钮在「关闭 / 悬停显示 / 始终模糊」三档间切换，选择按浏览器记住。
 - [outmanwt/dsh-team-fishbone](https://github.com/outmanwt/dsh-team-fishbone) — 会话标题栏鱼骨图面板，展示子代理分工、实时状态、可用的 Token 与耗时指标及共享任务，并支持跳转子会话。
+- [ouyang111/video-preview](https://github.com/ouyang111/video-preview) — 在侧边栏文档预览里直接播放 mp4、m4v、webm、ogv、mov，替代“该格式文件暂无法预览”。
 - [Ouyangyouzi/dsh-whale-backup](https://github.com/Ouyangyouzi/dsh-whale-backup) — 鲸鱼娘备份 — 一键备份与恢复：把聊天记录、插件、插件数据、设置和项目文件打包成带 SHA-256 校验的归档，可存到本机或 WebDAV；支持计划任务、恢复前安全备份与同名冲突策略，并提供 whale-backup 命令行。
 - [overact/dsh-statusline-plus](https://github.com/overact/dsh-statusline-plus) — 在 DeepSeek Harness Web 显示账户额度、Git 状态、上下文、公开 API 参考费用、Subagents 活动和生成速度。
 - [overFloweee/dsh-foresight](https://github.com/overFloweee/dsh-foresight) — DSH 输入框增强：回合结束后预测下一句并以灰字显示，输入时按会话历史补全，每轮结束追加一行回顾，草稿为空时 ↑/↓ 翻看之前发过的提示词。
@@ -1866,6 +1886,7 @@ dsh plugin --profile web add dshmarket
 - [peakSoar/dsh-annimation](https://github.com/peakSoar/dsh-annimation) — 在 DSH 跑任务时用内置浏览器打开抖音并浮成面板（保留登录），所有会话空闲后自动关闭并飘出完成提示。
 - [pearjelly/dsh-heros#agent-loadout](https://github.com/pearjelly/dsh-heros/tree/main/agent-loadout) — 像选英雄一样挑 Agent Preset，搭配工具和插件。用不同出装做同一道题，看看各自交付了什么。也可以邀请好友挑战灯塔，再交换战报。支持中英文。
 - [peilopielo/dsh-Visualization](https://github.com/peilopielo/dsh-Visualization) — 把 DSH 会话画成分层仪表的插件：七层可开关的环（会话、步骤、技能、工具、任务、审批、文件变更）、逐轮时间线、环上任意节点可悬停看名称并点击看详情、连线画在环的下层；直接读会话日志，随对话实时演进，界面中英双语。
+- [peng6yu/dsh-design-mode](https://github.com/peng6yu/dsh-design-mode) — 给 DeepSeek Harness 的设计模式 agent 预设——自己选定视觉方向而不是追问，绑定 56 个 token 的契约，内置 152 套设计系统，并把成品导出为 PDF/PNG。
 - [penghao73551/dsh-desktop-quick-actions](https://github.com/penghao73551/dsh-desktop-quick-actions) — 在 Windows 的 DSH 桌面端侧边栏底部加两个圆形按钮：重启应用（全程不闪黑窗）和打开 DeepSeek 充值页。重启走 WMI + wscript 拉起 helper，新进程不继承控制台；动手前会先核对可执行文件路径，并保留原始命令行。仅支持 Windows 10/11（包声明 os: win32）。
 - [pengtang1024/dsh-paste-image](https://github.com/pengtang1024/dsh-paste-image) — 粘贴 XPM、BMP/DIB、SVG、ICO 或 MIME 类型标错的图片：渲染进程按字节嗅探真实格式并重编码为 PNG，再交给附件白名单校验。
 - [pengtang1024/dsh-quick-phrases](https://github.com/pengtang1024/dsh-quick-phrases) — 在输入框旁加一排快捷短语按钮：按钮名称与真正发送的内容分开编辑，点按行为可选「直接发送」或「插入光标处」，输入框里已有草稿时总是插到光标处；有草稿时整排缩成一个小胶囊，设置里关掉「显示短语行」后连胶囊都不渲染；单条短语也可单独隐藏；位置可选输入框下方、上方或工具行右侧；管理页支持新增、改名、拖动排序、两步确认删除与恢复默认。行为全部集中在一个渲染端脚本里，无依赖、不联网，短语以明文存在 localStorage。
@@ -1909,6 +1930,7 @@ dsh plugin --profile web add dshmarket
 - [prgrmrwy/dsh-sidebar-session-provider-icon](https://github.com/prgrmrwy/dsh-sidebar-session-provider-icon) — DeepSeek Harness 插件：在侧边栏为每个会话显示 provider 与 model 图标，跟随输入框选择器即时更新，历史会话回退到最近一次请求；聚合路由（如 opencode-go、traex）显示 provider 主图并叠加 10px model 小图标。
 - [PrismScopes/dsh-aide](https://github.com/PrismScopes/dsh-aide) — 在 DeepSeek Harness 中提供 VS Code 风格的本地 IDE：Monaco 编辑器、资源管理器、搜索、Git、终端与语言服务。用 pnpm 安装时需运行 `pnpm approve-builds --all`，允许 node-pty 的原生构建。
 - [prog656/dsh-one-click-new-session](https://github.com/prog656/dsh-one-click-new-session) — 侧边栏底部新增一键入口，直接打开可输入的空白对话，不需要选择工作区；专用工作区自动创建，已有空白会话自动复用，连点也不会堆出一串空对话。
+- [Protonhydrogen/dsh-mol-workspace](https://github.com/Protonhydrogen/dsh-mol-workspace) — 原生 Mol* 分子侧栏，支持 Agent 控制结构查看、表面渲染、几何测量及已有 MD 轨迹播放。
 - [psychiiii/dsh-three-window#personal-web](https://github.com/psychiiii/dsh-three-window/tree/publish/packages/personal-web) — dsh web 的三窗工作台：每个工作区并排显示聊天、施工和只读审核三个窗口，各窗口独立配置 hook；审核窗提供匿名多模型评审，先确认再运行，按同一件事归组，报告为 Markdown。
 - [Pudge1996/dsh-composer-stretch](https://github.com/Pudge1996/dsh-composer-stretch) — 输入框全屏扩展按钮——内容达 3 行以上时出现，点击扩展至全屏高度，发送后自动折叠；扩展模式下 Enter 与 Shift+Enter 换行，Cmd/Ctrl+Enter 发送。
 - [pure-craft/dsh-actions](https://github.com/pure-craft/dsh-actions) — 人与 Agent 共用的确定性项目任务：一份 actions.json，右侧栏运行面板与 Agent 工具双入口。
@@ -2008,6 +2030,7 @@ dsh plugin --profile web add dshmarket
 - [Rice00/dsh-loupe](https://github.com/Rice00/dsh-loupe) — 在浮窗里解释 DSH 对话中选中的词或句子：走独立通道、不污染当前会话，解答可以固定成独立会话。
 - [Rick1125/dsh-beads-viewer](https://github.com/Rick1125/dsh-beads-viewer) — 右侧栏的 Beads 议题浏览器：按可开工、受阻与各状态筛选并搜索 tracker，阅读渲染后的议题正文，其中的项目文件与议题 id 可直接点击，并可一键复制或插入 id。需要 PATH 上的 bd CLI，以及已初始化 Beads 工作区的项目。
 - [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) — Web UI 可自定义键盘快捷键：34 个预置功能（会话、视图、剪贴板、模型、静默权限切换、设置），一键录制自定义组合键，内置快捷键速查表与诊断面板。
+- [RickT34/dsh-fake-logos](https://github.com/RickT34/dsh-fake-logos) — 把侧边栏与首页标题的品牌标识换成 13 款 AI 产品 Logo 预设、自定义 SVG/图片与文字，或完全隐藏，并可分别控制侧边栏图标、首页图标、空白首页鲸鱼动画与单色图标。
 - [ridistant8-art/dsh-cookie-meter](https://github.com/ridistant8-art/dsh-cookie-meter) — DSH 桌面版（0.2.x）cookie 占用百分表，仅支持 Windows：浮窗按 dsh-auth cookie 条数估算其占请求头的百分比，超过一半数字变红提醒，点一次即可安排在下一次启动时清空 cookie 库，避免启动约 72 次后被 431 挡住。
 - [riesbri/dshline#dshline](https://github.com/riesbri/dshline/tree/main/packages/dshline) — DeepSeek Harness 的终端原生 TUI 前端，通过 Harness 能力提供会话、模型、插件、任务、子代理、待办事项和 Provider 配置，并保留真实的终端滚动历史。
 - [rinsoraa/dsh-pulse-rail](https://github.com/rinsoraa/dsh-pulse-rail) — 把 DSH 的轮次导航条变成音乐可视化：每根细横条按自己的频段变长变粗（系统声音用 WASAPI loopback 采集）。只改几何、不加颜色或发光，导航条原有的悬停预览、点击跳转与滚轮滚动都保留。
@@ -2017,6 +2040,7 @@ dsh plugin --profile web add dshmarket
 - [rolfhu/dsh-subagent-model-tags](https://github.com/rolfhu/dsh-subagent-model-tags) — 在会话顶部的子代理面板（根面板、兄弟切换面板、子面板）中，于每个子代理的名称行显示其模型名，并把面板加宽到 460px。模型名取自各子代理会话记录的模型选择；没有记录的子代理和 external 子代理显示“—”。
 - [romany-saad/dsh-plugins#dsh-drafts](https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-drafts) — 找回打了字却没发送就离开的内容：未发送就离开的新 Web 对话不会出现在侧栏，里面的草稿也就找不到了。本插件在下一个新对话的输入框上方按时间倒序列出这些草稿，并显示所属工作区与时间；「打开」带你回到原对话，文字和引用条原样还在；「丢弃」可撤销地删除草稿。
 - [romany-saad/dsh-plugins#dsh-quote](https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-quote) — 让模型准确知道你指的是哪一段：在 Web 对话中选中段落，它们会作为引用条进入下一条消息，每条可附可编辑的备注。被引用的段落在发送前保持高亮，悬停引用条显示全文，发送后的消息把每条引用显示为卡片。
+- [RonaWhite/dsh-gongwei](https://github.com/RonaWhite/dsh-gongwei) — 工位打卡、每日学习记录与周报：到达时间与固定基准线和自己近十个工作日平均对比，事实与感想分栏存放，另有一个「想学的」池子，并可在 dsh-pet 桌宠上弹出右键菜单与摘要气泡。
 - [rongyishuaige7/dsh-team-kanban](https://github.com/rongyishuaige7/dsh-team-kanban) — DeepSeek Harness 右侧栏多智能体活体任务看板：实时读取原生 agentTeam 投影 DAG，三列流转、依赖血缘与进度自明。
 - [roninni/dsh-central-editor](https://github.com/roninni/dsh-central-editor) — 开发未完成 · 测试中 · 请勿下载。在对话旁浏览、修改并逐块审阅工作区文件的工作台面板，支持逐块保留与回滚。
 - [rsbsnv/dsh-mobile-adapt](https://github.com/rsbsnv/dsh-mobile-adapt) — 手机上的 DSH 界面优化：侧边栏变可滑动抽屉、手势开关侧栏、宽度可调、返回键逐层退出、按钮放大、回车换行而不是直接发送、键盘不挡输入框、字号不小于 15px。
@@ -2100,6 +2124,7 @@ dsh plugin --profile web add dshmarket
 - [shinelon/dsh-workspace-group-plugin](https://github.com/shinelon/dsh-workspace-group-plugin) — 在侧边栏以自定义分组组织工作目录 - 拖拽变更分组与顺序、组内会话浏览与内容搜索，可一键切回官方工作区列表。
 - [Shiro-umi/dsh-system-monitor](https://github.com/Shiro-umi/dsh-system-monitor) — 输入框底栏监控插件，含 5 枚可拖拽重排胶囊（Context、Tokens、CPU、GPU、MEM）：20x5 上下文方格矩阵、当轮净上传/下载 Token 分步柱图，以及 200ms 原生 macOS Mach/IOKit 滚动柱状图与前 5 进程列表。原生采样器首次启动时现场编译，需要 clang（Xcode 命令行工具）；没有则退回每秒一次的采样。
 - [shizhouyu/dsh-sidebar-notes](https://github.com/shizhouyu/dsh-sidebar-notes) — 右侧栏 Markdown 记事本，与聊天并排，带格式工具栏与本地自动保存。
+- [shoutingyihui/dsh-client-ui-netease-lyrics-wallpaper](https://github.com/shoutingyihui/dsh-client-ui-netease-lyrics-wallpaper) — 把网易云音乐当前演唱的那句歌词以低透明度水印层铺在 DSH 工作区上，不占用任何面板位置；Alt+L 面板可调颜色、不透明度，并显示合成后的对比度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [shskyc/dsh-conversation-search](https://github.com/shskyc/dsh-conversation-search) — 在会话中按 Ctrl+F 打开查找面板：列出匹配项及上下文，全部匹配原文高亮，上一处、下一处或点击结果精确跳转到对应位置。
 - [shushuiu/dsh-bookshelf](https://github.com/shushuiu/dsh-bookshelf) — 按豆瓣「想读」和「在读」书单排出的书架：封面与评分、与本地电子书自动配对，可在面板内阅读 EPUB/PDF/TXT，并支持公版书下载。
 - [shuuul/dsh-bioviewer](https://github.com/shuuul/dsh-bioviewer) — 向 dsh-better-sidebar 注册 Mol* 文件预览器，支持 PDB、mmCIF、MRC 密度图、小分子和 Chimera .cmm 标记（含 .gz），并提供 BioViewer 工作区标签以及 bio_open / bio_add 工具。
@@ -2228,6 +2253,7 @@ dsh plugin --profile web add dshmarket
 - [tangmanto98-VoV/dsh-screenshot-button](https://github.com/tangmanto98-VoV/dsh-screenshot-button) — 在输入框加一个相机按钮：截你选中的那台显示器、全部屏幕，或用鼠标跨屏拖出的任意大小一块，图片直接作为附件放进草稿（仅 Windows）。
 - [tangolee/dsh-sidebar-tuner](https://github.com/tangolee/dsh-sidebar-tuner) — DSH 桌面端的侧栏与对话区排版：两栏式设置面板配可搜索的字体选择器；中英文字体分开设并检测本机是否安装，统一字号、整列缩放、行高、行距与字距，可排成图标列 + 会话列两栏、折叠时保留图标栏、图标悬停显示名称；对话区、代码与终端字体可单独设，排除列表里的控件（如计费卡）不跟随缩放。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [tangu2023/dsh-menu](https://github.com/tangu2023/dsh-menu) — 为侧边栏「工作区文件」树添加自定义右键菜单：新建文件夹、重命名、在文件管理器中显示、浏览器打开、VS Code 打开、复制路径、流式 ZIP 下载、删除。
+- [TanHonN/dsh-plantuml](https://github.com/TanHonN/dsh-plantuml) — 在 DSH 会话和内建 Markdown 文件预览中渲染 PlantUML 代码块，支持本机命令、JAR 或自选 PlantUML 服务，以及实时编辑预览和图表导出。
 - [Tansukii/dsh-screenshot](https://github.com/Tansukii/dsh-screenshot) — 区域截图工具，支持标注、放大器取色与剪贴板输出，并跟随 DSH 界面语言。仅限 Windows。
 - [tao1020/dsh-global-pins](https://github.com/tao1020/dsh-global-pins) — 会话散落在不同工作区，重要内容不好找？全局置顶把你选中的会话集中到侧边栏顶部，支持拖拽排序和清晰的插入位置提示，也可按最近更新时间自动排序。会话完成后小绿点提醒。还有 Codex 同款行内操作：运行中的会话右侧持续转圈显示进度，支持归档/恢复、点开就全选标题的重命名，右键菜单可 Fork 和上下移动。侧边栏「全局置顶」旁的放大镜打开搜索浮层：先按会话标题和工作区名匹配，再查消息正文索引（部署开启内容索引时可用），结果按「会话」「内容」小标题分组，内容命中带摘要。右侧准星按钮可跨折叠工作区跳到当前打开的会话，每个分组标题带半透明灰底，会话行更紧凑，能放下更多条目。v1.0.6 新增「最近会话」：当天用过且未置顶的会话会从各个工作区集中到置顶下方，按时间从近到远排列，第二天自动回到原工作区；分组标题可折叠，折叠时视图不会跳到顶部。
 - [TaoLe-si/dsh-perf-guard](https://github.com/TaoLe-si/dsh-perf-guard) — 减少 DSH 长会话的渲染开销，保留原生滚动，并提供有上限的重试和本地诊断。
@@ -2243,7 +2269,7 @@ dsh plugin --profile web add dshmarket
 - [TelethaMithril/dsh-hot-restart-row](https://github.com/TelethaMithril/dsh-hot-restart-row) — 在 DSH 账号菜单「退出登录」下面加一行「热重启」：原地对账 profile 插件树并刷新页面，不重启 DSH 进程，当前对话不丢。0.2.7 起该行改为由 index.html 注入的普通脚本（不再是 dsh.client 条目），因此本插件不会再导致启动时出现「web boot: N entries did not activate」。
 - [Tera-Dark/dsh-desk-kit](https://github.com/Tera-Dark/dsh-desk-kit) — 侧栏标签页里的定时提醒、能贴截图的随手便签、网页收藏格子和加密保险库，另带 27 个 Agent 工具、全局搜索与备份导入；数据只落在本机 ~/.dsh/desk-kit。它的 HTTP 接口只接受本机回环地址，靠 Host、Origin 与 x-desk-kit 头校验而不是 DSH 会话鉴权，因此本机其它进程可以调用。
 - [tero0224-droid/dsh-locale-zh-tw](https://github.com/tero0224-droid/dsh-locale-zh-tw) — 在網頁介面加入繁體中文（台灣），查詢字串時把內建簡體字典轉成正體，官方日後新增的字串也自動涵蓋，不需重新翻譯。
-- [Testiphi/dsh-stage-prose](https://github.com/Testiphi/dsh-stage-prose) — 借鉴 Codex 的进度播报方式，让 DSH 在长任务中简短说明进展，并在「标准」视图折叠回合后保留这些正文。
+- [Testiphi/dsh-stage-prose](https://github.com/Testiphi/dsh-stage-prose) — 让 DeepSeek Harness 在长任务中像 Codex 一样“边干边说”：每 N 步静默触发进度提醒，执行中实时可见、完成后自动折叠，支持免重启自定义与 Timeline 协同。
 - [Teyvat0/dsh-sidebar-compact](https://github.com/Teyvat0/dsh-sidebar-compact) — 为 DeepSeek Harness 左侧栏加上收起/展开、248px 紧凑模式与面板列表折叠。
 - [thanhvinh0265-art/dsh-locale-vi](https://github.com/thanhvinh0265-art/dsh-locale-vi) — 为 DeepSeek Harness Web UI 增加越南语：61 个命名空间、3,477 条人工翻译词条，在「设置 → 语言」里选中越南语即生效；另带 /vi-sync 命令，用 Harness 内置翻译服务补译新版本新增的字符串。
 - [The-latest-one/dsh-branch-workspace-folders](https://github.com/The-latest-one/dsh-branch-workspace-folders) — 非递归显式栈侧边栏分支树，支持双轨缩进解耦、平滑跑马灯与物理级联删除事务。
@@ -2320,7 +2346,7 @@ dsh plugin --profile web add dshmarket
 - [UnknowCao/dsh-dock](https://github.com/UnknowCao/dsh-dock) — DeepSeek Harness 的 Windows 桌面启动器：一键鲸鱼图标 + 侧栏「更多」菜单（设置 / 重启/刷新 / 优雅完全退出），冷启动卡片支持可滚动的多 DSH 候选选择。
 - [uoiszero/dsh-photo-picker#dsh-photo-picker](https://github.com/uoiszero/dsh-photo-picker/tree/main/plugin) — DSH 本机照片挑选工作台（macOS / Windows）：本地去重、过滤与分组；用你自备的图片输入模型做 AI 网格粗筛与评分（插件不内置模型、凭据或额度）；支持 AI 场景标签与人工修正、可微调修图配方与自由/比例裁剪、五通道曲线与内置预设、从所选样片生成 AI 风格模板、按项目切换模型路由、单图重新精评（含弃用/网格落选照片）、AI 主体与画面描述字段、人工复核、校准、跨项目照片墙与场景/判定筛选、AI 阶段运行记录，以及带场景/修图来源信息的导出。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [user-Mrz/dsh-system-prompt-studio](https://github.com/user-Mrz/dsh-system-prompt-studio) — 按对话管理 DeepSeek Harness 的系统提示词：追加文本、按名替换某一第一方段落，或整段替换，保存后下一次模型请求即生效，无需重启。覆盖按会话持久化，fork 出的对话会沿父链继承上游规则，并可用「在此固定」把继承结果固化成本地规则。面板会列出真实的装配段清单，并对未保存的修改做保护。
-- [Utmotc/dsh-balance-card](https://github.com/Utmotc/dsh-balance-card) — 在当前会话所用模型的厂商 API 余额，以 dsh Web 侧边栏卡片常驻展示，含每套餐进度条、货币/积分单位区分、设置页，以及订阅与积分额度监测。
+- [Utmotc/dsh-balance-card](https://github.com/Utmotc/dsh-balance-card) — 把当前会话模型背后厂商的余额与额度窗口做成自包含的 dsh Web 侧边栏卡片，内置四种卡片样式、逐厂商监控、三个设置页与 21 家厂商直连。
 - [vaisramana/dsh-bookmark](https://github.com/vaisramana/dsh-bookmark) — 在对话中选中文本或表格右键收藏并高亮，在右侧边栏内联添加注释，并提供按会话分组折叠的全局书签页。
 - [vamyane/dsh-brain-viewer](https://github.com/vamyane/dsh-brain-viewer) — 把 Markdown 笔记编译成脑形关系图谱的 DSH 侧栏查看器，附带文档导入与图谱构建管线。查看器自带演示数据、无需 Python；用自己的笔记重建图谱需要 Node.js 20+ 与 Python 3.8+，在命令行里运行。
 - [VanlxyG/dsh-hover-sidebar](https://github.com/VanlxyG/dsh-hover-sidebar) — Windows 桌面版与 Web 左侧栏悬停展开、移开收起，支持手动固定、自定义延迟和减少动态效果。
@@ -2335,7 +2361,7 @@ dsh plugin --profile web add dshmarket
 - [vicfei/dsh-uigen](https://github.com/vicfei/dsh-uigen) — DSH 回复内组件生成+渲染：agent 组合 dsh-ui 组件树，ui_compose 工具按 genui 0.16.0 白名单（59 型；carousel<=24、map<=50 等硬限；每答案一个 hero 等纪律帽）做带修复诊断的起飞前 lint，只有干净块才被发出渲染。本地 LLM，无云端生成 API。
 - [VicissitudeYW/dsh-message-toolbar](https://github.com/VicissitudeYW/dsh-message-toolbar) — 为对话添加消息工具栏，支持在当前会话内使用原模型或其他模型重答、选择历史回答继续对话、编辑或删除消息，以及双语翻译。
 - [victormshan/dsh-web-relay](https://github.com/victormshan/dsh-web-relay) — dsh 三方协作协议插件：Step List 状态机、五级审核链（含本地 Claude Code 混合审）、alternatives 裁决、无介入续跑与能力持久化体系。
-- [vicyangworld/dsh-music#bundle](https://github.com/vicyangworld/dsh-music/tree/main/bundle) — DeepSeek Harness 音乐插件：扫描本地曲库、从 YouTube Music 在线试听（约 128 kbps AAC，喜欢才入库）、基于收听历史与口味偏好推荐、歌手页（维基简介与封面）、收听统计，可手机扫码只读导入网易云音乐 / QQ 音乐的「我喜欢」并在后台为导入曲目查找已核实音源，下载队列配右下角状态面板，并为新用户提供设置页与公有领域 starter 曲库。收听历史、缓存与登录态仅存本地。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [vicyangworld/dsh-music#bundle](https://github.com/vicyangworld/dsh-music/tree/main/bundle) — DeepSeek Harness 音乐插件：扫描本地曲库、从 YouTube Music 在线试听（约 128 kbps AAC，喜欢才入库）、基于收听历史与口味偏好推荐、歌手页（维基简介与封面）、收听统计，可手机扫码只读导入网易云音乐 / QQ 音乐的「我喜欢」并在后台为导入曲目查找已核实音源，下载队列配右下角状态面板，并为新用户提供设置页与公有领域 starter 曲库，另有四套亮暗主题都清晰可辨的面板背景（小蓝鱼 / 晨雾 / 暖沙 / 唱片）与透明卡片的历史页。收听历史、缓存与登录态仅存本地。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [ViewWay/dsh-prompt-optimizer#bundle](https://github.com/ViewWay/dsh-prompt-optimizer/tree/main/packages/bundle) — DSH 输入框提示词优化器。一键对草稿执行「改写 → 自审」多轮优化，逐轮差异预览，被拒绝的结果作为上一次尝试进入下一轮；五个固定重跑方向（更精简／更详尽／更技术／结构化／强化验收）；包内自带 164 个角色的角色库，可按草稿推荐或显式指定；命中的已安装技能以精确名称约束并入元提示词；结果可存入提示词库（浏览、插入、再优化、两步删除）；机械验收准则附带可执行的检查命令模板；输出语言跟随 Agent 界面语言。
 - [Vinzelles/dsh-clearview](https://github.com/Vinzelles/dsh-clearview) — 为 DSH Web 客户端新增「阅读」页签：按源顺序呈现过程步骤与实时思考，成功轮次收起只留最终回答，原有页签、输入框与工具保持不变。
 - [vioeveann/dsh-avatar-frame](https://github.com/vioeveann/dsh-avatar-frame) — 在每轮回复左侧显示角色头像与可编辑 ID，并可用系统语音或你自己指定的本地 TTS 服务朗读回复；含预设、带暂停与上下句的播放控制条、语气与语速调节，以及一键启动该服务。
@@ -2509,6 +2535,8 @@ dsh plugin --profile web add dshmarket
 - [xiaokaizhou/dsh-media-preview](https://github.com/xiaokaizhou/dsh-media-preview) — 在 DSH 聊天记录中自动将本地音视频路径渲染为可播放预览：将路径替换为同源 /api/media-preview/* 路由支持的 <audio>/<video> 播放器，并返回明确的错误状态码。
 - [xiaoluoli45/dsh-code-explainer](https://github.com/xiaoluoli45/dsh-code-explainer) — 在 DSH 工具卡的代码块上给每一行加中文行尾注释：输入侧是灰色「//」，输出侧的代码用蓝色箭头，规则能判的行即时给出、判不出的行用当前会话的模型补一版；顶部「注释：开/关」可关回纯代码，内容在发给模型与落盘前先做凭据掩码。
 - [XiaoLuoMin/dsh-resource-monitor](https://github.com/XiaoLuoMin/dsh-resource-monitor) — DSH 侧栏的 Windows 资源监控：每 60 秒采集 CPU、内存与主频，保留 30 天历史，CPU 与内存各一张 24 小时 / 7 天独立曲线（带 85% / 90% 告警线），另有一张频率曲线标注有负载时的降频，并判定 CPU 持续 ≥ 85%（10 分钟）、内存持续 ≥ 90%（10 分钟）、有负载时频率 ≤ 最高频率 70%（5 分钟）三类异常。
+- [xiaomao361/dsh-hello84](https://github.com/xiaomao361/dsh-hello84) — Hello '84（你好 84）：在 DeepSeek Harness 角落养一台活着的 1984 Macintosh，不绑定任何主题，支持多态复古屏保、InnerLife 自主琢磨冒泡、双模 Mini DSH 副脑、复古命令行终端、翻页便签、软盘 Markdown/长图导出、闹钟、MacPaint 与扫雷。
+- [xiaomao361/dsh-toaster](https://github.com/xiaomao361/dsh-toaster) — DSH Toaster（吐司机）：致敬 1989 After Dark 飞翔烤面包机的独立复古挂件——AI 干活按杆烘烤、完成叮一声弹金黄吐司、卡审批半熟抖动、报错冒黑烟弹焦炭，内置 1~5 档番茄钟、涂黄油收藏装盘导出与全屏放飞彩蛋。
 - [xiaomujiang/dsh-user-question-nav](https://github.com/xiaomujiang/dsh-user-question-nav) — ChatGPT 风格问题导航胶囊，带 ⏫⏬ 上下箭头 — 对话区右侧逐条刻度尺，悬停展开抽屉列出全部用户问题，实时搜索过滤、一键平滑跳转、滚动同步高亮当前问题，会话切换自动重挂载。
 - [XiaoOu2024/dsh-novel-generator](https://github.com/XiaoOu2024/dsh-novel-generator) — 小说生成器：按时间线生成世界快照，通过世界快照和最近章节自动推演新章节。需 DSH >=0.2.1-rc.2。
 - [XiaoPb/dsh-mobile-layout](https://github.com/XiaoPb/dsh-mobile-layout) — DSH Web UI 的手机竖屏布局壳：侧边栏变成左侧右滑打开的抽屉，输入区下方常驻一条 56px 操作栏，设置页与模型 / 权限选择器按触控重排；提供原生、融合、悬浮三套布局预设，全部样式受 html\[data-dshm-mode="mobile"] 作用域保护，桌面、平板与横屏保持官方原样。
@@ -2733,6 +2761,7 @@ dsh plugin --profile web add dshmarket
 - [yuxiangwhn/dsh-chat-wallpaper](https://github.com/yuxiangwhn/dsh-chat-wallpaper) — 在 DSH 聊天界面背后铺一张本地图片：输入框卡片、用户气泡、新会话按钮换成磨砂玻璃，输入框有文字或对话已有消息时磨砂自动加深 5px，设置类窗口打开时整片背景瞬间磨砂、窗口本身保持清晰。
 - [yuyun-git/dsh-meow-constellation](https://github.com/yuyun-git/dsh-meow-constellation) — 把 meow-memory 的七层记忆库实时画成 3D 星图，光点可拖拽、可按层筛选，点开可看全文与元数据；需先安装 meow-memory 插件，并要求 Node 22.5+。
 - [yxn3hc/dsh-precise-quote](https://github.com/yxn3hc/dsh-precise-quote) — 面向 DeepSeek Harness 的精确划词引用与批注插件。选中几乎任意文字，包括推理、工具卡片、搜索结果，可加批注后放入输入框上方的队列，拖拽排序；发送后渲染为卡片，按 ↑ 跳回原文。引用按分层位置与出现次数定位，不受折叠或流式文本影响。
+- [Yyhy110421/dsh-sidebar-fold](https://github.com/Yyhy110421/dsh-sidebar-fold) — 侧栏折叠：在侧栏工作区上方加一个按钮，一键收起整组入口（Task board、插件、Skill/MCP、自动化任务、上下文洞察等），再点一次恢复，状态存在 localStorage。
 - [Yyyl99/dsh-selection-translate](https://github.com/Yyyl99/dsh-selection-translate) — 在对话中框选文本，点选区右下角的“译”字，下方弹出翻译卡片；选中的是单词时还显示音标、词性与双语例句，原文可朗读，无需 API Key 或任何配置。
 - [yz-china/dsh-sidebar-view-density](https://github.com/yz-china/dsh-sidebar-view-density) — 调整 DSH 侧边栏、面板列与插件页的排布：详细列表、单列、双列，或用滑块自定义列数、行高与间距的网格。
 - [yzhclcl/dsh-plan-build-mode](https://github.com/yzhclcl/dsh-plan-build-mode) — DeepSeek Harness 的 Plan / Build 模式切换：在输入框「完全权限」旁常驻一个下拉框，经内置的 /plan 与 /plan off 命令双向切换当前会话；设置 → 通用里另有一行「默认模式」，决定新建会话的起始模式。
@@ -2818,6 +2847,7 @@ dsh plugin --profile web add dshmarket
 - [zhxnix/dsh-madedown](https://github.com/zhxnix/dsh-madedown) — DSH 右侧栏的所见即所得 Markdown 笔记编辑器，支持多标签、表格编辑、对话联动、模型读写与保存到本地文件。
 - [zhxnix/dsh-sidebar-annotations](https://github.com/zhxnix/dsh-sidebar-annotations) — 为 DSH 提供网页与小程序元素注释、折叠注释附件及源码定位。
 - [zhy451/dsh-prompt-natural](https://github.com/zhy451/dsh-prompt-natural) — 输入框提示词增强：只把你自己写的那句话写清楚，不换掉它——保持第一人称与原语气，用一到三段补齐输入、范围、产出形态、验收与禁忌，另可切到七段式任务书。底层调用随包附带的 prompt-enhance 技能 CLI（需要 PATH 上有 Python 3），保留五步撤销，没有模型 key 时走离线模板兜底。
+- [Zi-Kong/dsh-tag](https://github.com/Zi-Kong/dsh-tag) — 给聊天内容打标签：划词加彩色标签（可写标题与备注），从左侧标签轨道或按工作区分组的总览面板点回原文，自动滚动到该段并在原文上闪烁高亮。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Zian-anson/dsh-prompt-seed](https://github.com/Zian-anson/dsh-prompt-seed) — 输入框有内容时单次调用优化草稿，空白时预测下一句；两类任务独立，支持草稿保护、结果预览和原文恢复。
 - [ZichengGurrr/dsh-window#kit](https://github.com/ZichengGurrr/dsh-window/tree/main/kit) — DSH 三件套全家桶：Windows 原生窗口（WebView2）+ DeepEye 视觉（GLM-4V-Flash）+ 语音输入（麦克风按钮），一条命令装齐。
 - [ZichengGurrr/dsh-window#plugin](https://github.com/ZichengGurrr/dsh-window/tree/main/plugin) — DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。
@@ -2864,6 +2894,8 @@ dsh plugin --profile web add dshmarket
 - [ZzimaR/dsh-yanfield](https://github.com/ZzimaR/dsh-yanfield) — DeepSeek Harness 里的长篇小说写作台：书架、三栏编辑器（目录、正文、AI 助手）、大纲、角色 / 世界观 / 伏笔资料、故事档案，以及会先给出可审阅的正文与资料改动、确认后才写入的 AI 助手。界面与 AI 提示词支持中英双语，书稿保存在本地 SQLite，模型复用 Harness 中已配置的 DeepSeek 服务。
 - [ZZJQ678/dsh-model-picker](https://github.com/ZZJQ678/dsh-model-picker) — 把聊天输入框的模型选择器换成按渠道商分组、可折叠的列表：按渠道商归组，把视觉桥镜像渠道商折叠回上游，并逐模型带上设置里声明的思考强度选项。仅在 DSH 桌面版实测，Web 版未测试。
 - [ZZR-rui-997/dsh-sidebar-quote](https://github.com/ZZR-rui-997/dsh-sidebar-quote) — 在侧栏文档预览里选中原文即可引用进输入框、批注紧跟同一行；在 Word/PPT/PDF 预览里框选一张图提出修改意见；把文件拖进侧栏直接打开；改写提示词时先找出草稿缺什么，再据此补齐，而不是换个说法。
+- [ZZR-rui-997/dsh-skill-switchboard](https://github.com/ZZR-rui-997/dsh-skill-switchboard) — 左侧栏的技能开关台：列出你自己装的技能，逐个拨动「模型调用 / 用户调用」，全文搜索技能正文，按规范检查并一键修复，直接编辑 SKILL.md，导入文件夹或 zip，在用户/通用/项目三个根之间移动，打标签，删除后还能从回收站恢复。开关写回技能 frontmatter，无需重启即生效。
+- [zzricls/dsh-deepblue-hud](https://github.com/zzricls/dsh-deepblue-hud) — 深蓝驾驶舱 HUD：右下角可折叠面板显示会话经济（入/出 token、平滑 tok/s、上下文占用与阈值色）；接管 assistant-step 渲染器把思考逐字打出、思考块可折叠、工具调用可展开，正文走自建 Markdown 渲染器；另有数据流弹窗（token 节奏柱、上下文曲线、思考与执行流）。同时用一层 theme token 把整套界面切成深蓝并铺星空，卸载即完全还原。
 - [zzt0818/dsh-task-details](https://github.com/zzt0818/dsh-task-details) — DeepSeek Harness 任务详情侧边栏：每个已结束任务的最下方显示「查看任务详情」，点开后从右侧边栏打开可拖拽调宽的面板，列出该任务的输入文件、中间产物、输出文件、所用工具与 skill、推断出的语言、按步骤组织的流程时间线，以及模型提供方与 Token 用量、缓存命中率。
 - [zzx-dear/dsh-selection-followup](https://github.com/zzx-dear/dsh-selection-followup) — 选中聊天回复中的任意文字，浮出「追问/复制」气泡：一键把选中内容作为引用填入输入框（问题由你输入），或一键复制。另附安装与实现文档。
 - [zzy6-a/dsh-prompt-enhance](https://github.com/zzy6-a/dsh-prompt-enhance) — 在输入框的模型选择器左侧加一个星标按钮：把草稿改写成目标明确、细节完整的任务说明并就地替换，可一键撤销；提供五种改写风格，草稿含文件引用 / 命令芯片时自动置灰。
@@ -3041,7 +3073,7 @@ dsh plugin --profile web add dshmarket
 - [etony668/dsh-balance](https://github.com/etony668/dsh-balance) — 侧边栏底部「设置」旁常驻显示 DeepSeek API 余额——读取 DSH 已保存的密钥，悬停查看赠送/充值明细，余额低于 ¥2 变红告警，每 60 秒自动刷新或点击刷新。
 - [Everglow28/dsh-glm-quota-dock](https://github.com/Everglow28/dsh-glm-quota-dock) — 在输入框统计行常驻 GLM Coding Plan 额度 pill(含 5 小时窗口重置倒计时),点击展开双列卡片式详情面板:各窗口限额、重置时间、近 24 小时按模型 Token 用量与小时级 sparkline,支持插件一键自更新。
 - [EviMing/dsh-balance](https://github.com/EviMing/dsh-balance) — 利用简单的HTTP接口，让 DSH 可以直接获取自己剩余的余额
-- [fairyqinglan/dsh-usage-dashboard](https://github.com/fairyqinglan/dsh-usage-dashboard) — 把本机 DSH 会话日志汇总成按天的 Token 用量看板,按模型细分,提供跟随明暗主题的全年蓝色活动热力图、点击热力图或趋势图某天即联动更新的占比环、周环比与同比对比、自定义日期范围以及 CSV/JSON 导出。只读、HTTP 接口有访问检查、不发起网络请求。
+- [fairyqinglan/dsh-usage-dashboard](https://github.com/fairyqinglan/dsh-usage-dashboard) — 把本机 DSH 会话日志汇总成按天的 Token 用量看板,按模型细分,提供跟随明暗主题的全年蓝色活动热力图、点击热力图或趋势图某天即联动更新的占比环、周环比与同比对比、自定义日期范围以及 CSV/JSON 导出。侧边栏弹窗还显示 DeepSeek 钱包余额,通过 DSH 账户插件读取而非自行请求平台。用量数据纯本地,余额是唯一联网读取,且其路由位于宿主信任栅栏之后。
 - [faith1688/dsh-usage-meter-harness](https://github.com/faith1688/dsh-usage-meter-harness) — DeepSeek Harness 实时用量、费用与余额计量：官方 API 实时查询余额、计费误差 0.02 元内，分本轮/本次会话/整个模型三级费用台账，实时分色档位 Token 速度，输入框旁弹窗即点即看。
 - [fancr-code/dsh-plugin-usage-meter](https://github.com/fancr-code/dsh-plugin-usage-meter) — 本地优先的用量与费用仪表：输入框下方按钮显示实时费用与余额，面板含按模型堆叠的当日/近 7 天柱状图（按刊例价生效区间计价、官方定价页每日同步）、本月消耗段位与画布分享卡片、30/50/85% 上下文压力三档预警与一键 /compact、预算提醒，以及面板内 npm 检查更新与一键更新。
 - [feibi-mochi/deepseek-harness-control-center](https://github.com/feibi-mochi/deepseek-harness-control-center) — DeepSeek Harness 监控、提醒、充值与会话控制中心：查看官方余额、本会话花费与 token、第三方 token 合计，提供完成提醒、官方充值、灵活布局及 Agent 辅助的会话控制。
@@ -3071,7 +3103,7 @@ dsh plugin --profile web add dshmarket
 - [Genesi599/dsh-plugins#quota-panel](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/quota-panel) — 侧栏底部的余额与用量卡片：DeepSeek 账号余额、今日 token（含输入、缓存、输出明细）、本会话 token，以及抓取失败时的最近错误。
 - [ghang/dsh-cache-helper](https://github.com/ghang/dsh-cache-helper) — 展示缓存命中、发送前确认请求前缀风险，并按调用步骤定位缓存失效。
 - [Ghost011118/dsh-balance-meter](https://github.com/Ghost011118/dsh-balance-meter) — 输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。
-- [GiftiaCoder/dsh-coupon](https://github.com/GiftiaCoder/dsh-coupon) — 给 DSH agent 的票夹：md 模板即票种 + 单账户鲸圆券 + md5 绑定的一次性票据；5 个钱包工具（列模板、查票、要票、自主兑换、核销）+ 审批签发 + 流水账 + 设置页/右侧栏 Web 面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [GiftiaCoder/dsh-coupon](https://github.com/GiftiaCoder/dsh-coupon) — 给 DSH agent 的票夹：md 模板即票种 + 单账户鲸圆券 + md5 绑定的一次性票据；5 个钱包工具（列模板、查票、要票、自主兑换、核销）+ 审批签发 + 流水账 + 设置页/右侧栏 Web 面板；面板的 HTTP 路由走宿主的 DSH 访问检查。
 - [GIN0076/dsh-token-usage](https://github.com/GIN0076/dsh-token-usage) — DSH 设置面板词元用量统计：从会话日志折叠出日/周/月 × 模型（或按厂商合并）的词元统计，storage-domain 持久化、经同源 /token-usage-rpc 路由出数；SVG 折线图（十字线悬浮按日拆到每个模型）+ 占比排行（含可选金额）+ 缓存命中率与缓存读写卡片 + 用户自备的每百万 token 价目表 + 日/月预算告警 + 当前区间导出 CSV/JSON + 可见时自动刷新 + 预设与自定义起止日期 + 重建（存储里存在日志已不存在的历史时先要一次确认）。
 - [github798383392/dsh-money-board](https://github.com/github798383392/dsh-money-board) — 给 DeepSeek Harness 用的会话花费看板：读取 save-token 的 token 统计，按官方价表折成金额，在输入框上方显示本次会话花费、压缩省下的钱与错峰差价。
 - [GLFzr/dsh-opencode-go-quota](https://github.com/GLFzr/dsh-opencode-go-quota) — 模型选择器左侧的 OpenCode Go 额度圆环：点击循环切换 5 小时/每周/每月用量窗口，按紧急程度着色（绿/蓝/橙/红），悬停显示百分比与重置倒计时。
@@ -3178,6 +3210,7 @@ dsh plugin --profile web add dshmarket
 - [JinShuXuan/dsh-context-budget](https://github.com/JinShuXuan/dsh-context-budget) — 每步上下文账本：量化每步重发量，并提供三个可单独开关的闸门——按 schema 体积裁工具表、长结果外置、重复读回指针。 作者 A/B 实测，工具表闸门省首步 16,110 token（-49.7%），长会话每步上下文约降 23%。 v0.3.1 新增只读 /budget-doctor 自检、spill 索引维护与增速预测。
 - [dsh-token-panorama](https://github.com/jiuwu02/dsh-token-panorama) — 看清每个会话的 token 去向：累计总量、缓存命中率、峰谷分时成本、日历热力图、趋势曲线、模型与工作区分布，以及展开展示子代理的会话树，支持 CSV / JSON 导出。另带上下文清理 / 压缩按钮与提示词优化按钮。
 - [jkStars/dsh-token-usage-stats](https://github.com/jkStars/dsh-token-usage-stats) — 仿 DeepSeek 官方 Token 统计，跨会话 Token 消耗、请求次数与峰谷分时费用统计看板。
+- [JoblessJoe/deep-toolbox](https://github.com/JoblessJoe/deep-toolbox) — 工具用量与启动成本：在插件页新增标签，显示智能体调用了哪些工具、哪些经常出错，以及每个工具定义（内置、插件或 MCP 服务器）在每次请求中占用多少 token，附启动上下文图和该关掉哪些工具的通俗建议；只读的 toolbox_report 智能体工具提供同样的数据。在本机读取 dsh 会话日志，无钩子。
 - [Jockjrop/dsh-usage-stats](https://github.com/Jockjrop/dsh-usage-stats) — 在 DSH 桌面端看清每一次请求的 Token、费用与速度，按模型和供应商汇总花费，统一同一模型的不同名称，核对余额并比较模型实际表现。
 - [Jolly-J/dsh-deepseek-billing](https://github.com/Jolly-J/dsh-deepseek-billing) — 侧边栏底部 DeepSeek 账户余额显示与会话费用估算卡片。
 - [JonyChan1350/dsh-llm-balance](https://github.com/JonyChan1350/dsh-llm-balance) — 聊天输入框下方显示多个 LLM API 账户余额，内置 DeepSeek、OpenRouter、SiliconFlow 预设。
@@ -3249,9 +3282,11 @@ dsh plugin --profile web add dshmarket
 - [Lornatang/dsh-plugin#dsh-caveman](https://github.com/Lornatang/dsh-plugin/tree/main/packages/workflow/dsh-caveman) — 为 DeepSeek Harness 提供 Caveman 技能与工具：响应风格、可恢复的工具结果压缩、模型路由、浏览器工具和委派。
 - [loshanvren/dsh-codex-reset-tracker](https://github.com/loshanvren/dsh-codex-reset-tracker) — 在 DSH composer 中报道 Codex 重置概率与排期，支持已完成重置的可选系统通知，并提供只读状态与历史记录工具。
 - [LoveDoLove/dsh-token-saver](https://github.com/LoveDoLove/dsh-token-saver) — DeepSeek Harness 插件，可裁剪工具输出并折叠 grep 结果，提供可选的 Caveman 和 Ponytail 提示词精简、本地即时响应、RTK 命令输出压缩、上下文压力处理、可选的 LLM 摘要压缩、稳定的提示缓存布局、Web 设置界面及持久化节省统计。
+- [loveeveryone-Mr-niu/dsh-keykeeper](https://github.com/loveeveryone-Mr-niu/dsh-keykeeper) — 加密保存各家模型 API Key，导入 keys.txt、查看余额与订阅额度、一键写入 DSH 模型配置，并跳转官方充值页。
 - [Lovenndme/dsh-command-context](https://github.com/Lovenndme/dsh-command-context) — 给 DeepSeek Harness 加一个 /context 命令：显示当前会话上下文窗口的占用、剩余空间，以及提示词各部分的占比（系统提示 / 记忆文件 / 技能 / 消息 / 工具结果）。只读、纯本地、不触发模型调用。
 - [Lovenndme/dsh-profile-stats](https://github.com/Lovenndme/dsh-profile-stats) — DSH 侧栏的个人用量主页，数据全部由本机会话日志经 ctx.sessionQuery 折叠而来。包括五个核心数字（用量带小趋势与环比、花费、最长任务用时、连续活跃天数及最长纪录、今日缓存命中率）、近 12 个月活动图（每天 / 每周 / 累计三档）、按日 / 周 / 月分组的模型家族图（堆叠柱看用量、饼图看占比，版本与档位分开，不同供应商写法会正确归并）、按系统提示词 / 工具定义 / 用户消息 / 注入内容 / 技能注入 / 工具调用 / 模型思考 / 模型回复拆分的 Token 统计环形图、按工作目录拆分用量与花费并标出子代理占比的项目，以及带各自命中率与花费的供应商分类。页头的时间范围开关（本日 / 本周 / 本月 / 累计 / 自定义日期）驱动用量与花费数字、Token 统计、项目和供应商分类，所选范围可导出 CSV 或 JSON。花费按内置的官方价折算（直连 DeepSeek 分高峰、空闲时段），每家供应商可设成官方价、倍率、包月或不计入，设置只存在本机。唯一的外发请求是每 6 小时读一次本包在 npm 上的版本号（供面板内的更新按钮使用），不上报数据、不碰凭据。
 - [Lstalu/dsh-quota-meter-plus](https://github.com/Lstalu/dsh-quota-meter-plus) — ai-shushu/dsh-quota-meter 的增强衍生版，不能与上游同装（都占用 /quota 路由）。DSH 的会话额度与花费监控：按可编辑的模型价目表（含峰谷价）对真实 token 用量记账，输入框上方显示消耗进度条、会话头部右侧显示余额胶囊（余额需 DeepSeek API Key），额度耗尽时拦截新的模型调用；子代理与辅助调用的消耗并入父会话账本。
+- [ltrsqks/dsh-answer-cost](https://github.com/ltrsqks/dsh-answer-cost) — 在每条回答的操作行里显示本轮花费与本次对话累计金额，按每轮自己上报的用量计价，模型路由与 DeepSeek 官方现行峰谷价都取自该轮自己的日志。
 - [lucky6star9/prompt-keep](https://github.com/lucky6star9/prompt-keep) — 结合当前项目重写提示词：通过输入框按钮、斜杠命令或 Agent 工具，依据工作区的技术栈、结构与约定改写草稿。
 - [lugezuishuai/dsh-token-chart](https://github.com/lugezuishuai/dsh-token-chart) — 统计 DeepSeek Harness 的 Token 用量：会话抽屉与今日 / 近 3 天 / 近 7 天面板，图表与指标可配置。
 - [LumiDesk/dsh-wallet-pill](https://github.com/LumiDesk/dsh-wallet-pill) — DeepSeek Harness 的余额胶囊：在输入框下方显示 DEEPSEEK_API_KEY 对应账户的余额，点开可查看峰谷计费时段、切换倒计时与各模型价目表。
@@ -3430,6 +3465,7 @@ dsh plugin --profile web add dshmarket
 - [Synapse-ACh/dsh-subagent-cost](https://github.com/Synapse-ACh/dsh-subagent-cost) — 在输入框工具条上统计本会话派出的子智能体 token 用量与人民币花费，按 turn 分组。
 - [sys65/dsh-share-kit](https://github.com/sys65/dsh-share-kit) — 在每条回答的动作条上加一个导出按钮：复制为 Markdown（嵌套列表、表格、带语言标签的代码块、KaTeX），复制为内联计算样式的富文本直接粘进 Word 或飞书，或下载样式表与公式字体都已内嵌的自包含 .html。
 - [Balance & Quota · 余额与额度](https://github.com/takboo/dsh-usage-state) — 在输入框上方查看当前模型供应商的账户余额或套餐额度，显示已用比例和重置倒计时。
+- [tanson515/dsh-usage](https://github.com/tanson515/dsh-usage) — DeepSeek Harness 的 OpenCode Go 用量面板：滚动 5 小时 / 每周 / 每月三窗口套餐额度、本地 token 统计、按模型费用，以及一键刷新 Go 模型清单。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [tcmyxc/dsh-power-monitor](https://github.com/tcmyxc/dsh-power-monitor) — 在左侧边栏账号头像上方显示整机功耗、今日用电量与电费估算，支持电价与 CPU TDP 校准。
 - [tdsjff0513/guiding-thought](https://github.com/tdsjff0513/guiding-thought) — 当现象、本本或摘要正要收成根因、排除或世界时，把指导思想送进这一轮。不弹窗，不拦工具。
 - [teethyachi/dsh-usage-mini](https://github.com/teethyachi/dsh-usage-mini) — DSH Web 悬浮用量小窗，显示 Claude、Codex 订阅用量窗口与重置倒计时，以及 DeepSeek API 今日花费与余额；只展示，是 dsh-cost-meter 的伴侣。
@@ -3445,6 +3481,7 @@ dsh plugin --profile web add dshmarket
 - [TuDouPn/dsh-grok-xai](https://github.com/TuDouPn/dsh-grok-xai) — DeepSeek Harness 的 SuperGrok / X Premium 订阅插件：设备码登录、xai 提供商、账号可见对话模型与上下文/百万 token 价格、按模型能力读取的推理强度，以及订阅用量。
 - [Tuhuaqing/just-dsh-plugins#dsh-auto-update](https://github.com/Tuhuaqing/just-dsh-plugins/tree/main/plugins/dsh-auto-update) — 一键升级Deepseek Harness, 支持侧边栏显示版本号.
 - [turboegg1145/dsh-prompt-inspector](https://github.com/turboegg1145/dsh-prompt-inspector) — 逐条列出为某个会话装配的系统提示词分段、上下文块与工具 schema，并给出各自的 token 估算；可就地改写分段文本或隐藏工具，改动只对该会话之后生效。
+- [uJoea/dsh-time-ledger](https://github.com/uJoea/dsh-time-ledger) — DSH 使用时长计时器：只在窗口可见且 60 秒内有过输入时累计计时，右下角卡片实时显示当前会话与今日总时长，点开是年 / 月 / 单会话的日历视图。记录写入本地单个 JSON 文件并用原子重命名保存，不向外发送。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [V-dev-388/dsh-usage-meter](https://github.com/V-dev-388/dsh-usage-meter) — 设置页用量仪表盘：按服务商/模型汇总全部会话 token 用量，含今日/近 7 天/近 30 天趋势柱状图与缓存命中率。
 - [v587d/dsh-opencode-go-usage](https://github.com/v587d/dsh-opencode-go-usage) — 在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。
 - [vaspike/dsh-usage-stat](https://github.com/vaspike/dsh-usage-stat) — 将会话事件折叠为按天持久化的账本，按供应商/模型路由统计请求数、输入/输出/总 tokens、缓存命中率与 TPS，在侧边栏面板提供 GitHub 风格热力图（90/180/365 天窗口）及时间、供应商、模型、会话筛选。
@@ -3624,6 +3661,7 @@ dsh plugin --profile web add dshmarket
 - [AssassinVIX/fairy-zzz-plugin](https://github.com/AssassinVIX/fairy-zzz-plugin) — DSH Web 界面的 H.D.D 皮肤：带音效的整屏开机动画、可拖动或隐藏的动态眼徽（待机/思考/完成）、新建对话页换标、按时段问候、显示余额与今日花费并带峰谷倒计时的用量气泡、Fairy 模式预设，以及可选的本地 GPT-SoVITS 朗读。
 - [atlasmarkz/dsh-ink-whale](https://github.com/atlasmarkz/dsh-ink-whale) — DSH Web 黑白主题：界面令牌映射为中性墨阶，Bayer 抖动信号场随指针揭示并带点击涟漪，蓝图式标题在指针靠近时显示虚线选框与尺寸标注，输入框与 HUD 使用中性毛玻璃，淡蓝 ASCII 鲸群缓缓游过界面；新建会话页与聊天页各有独立的背景、标题、鲸鱼与玻璃设置，入口在「设置 → Ink Whale」。
 - [Au1314/dsh-style-hub](https://github.com/Au1314/dsh-style-hub) — DSH Web GUI 主题工坊：可切换预设风格、强调色与面板透明度微调、宿主壁纸首帧绘制；wallpaper-engine 玻璃色把浅色主题洗灰时一键改为白色玻璃。
+- [aurasuisui/dsh-moonset-theme](https://github.com/aurasuisui/dsh-moonset-theme) — 覆盖全部 228 个 --dsw-* token 的浅/深双主题，外加一层轻皮肤：环境地面光晕、磨砂输入卡与会话顶栏、工作步骤行按类型分色、代码框与卡片的文档站表面色。零常驻 JS、不联网、无遥测。
 - [AvalonskyAfar/MahoutsukaiNoYoru-DSH-Skin#skin](https://github.com/AvalonskyAfar/MahoutsukaiNoYoru-DSH-Skin/tree/master/skin) — 《魔法使之夜》(Witch on the Holy Night) 风格的 DeepSeek Harness Web UI 整屏皮肤：原作式菜单、三角色与人格 skill、昼夜两套曲单、片尾演出。仓库自身不含素材——驱动它需要 380 个文件、263 MiB（立绘 136、UI 构件 208、背景 13、音频 23），须从你自己拥有的原著副本中还原，在此之前界面基本是空的。其中 23 个音频文件切掉 64 字节头就是合法 OGG；357 张图像是私有 .mzp/.cbg 格式，仓库附逐文件映射指南，给出两条路线，其中一条要你自备解码器。
 - [Avan0203/dsh-skin](https://github.com/Avan0203/dsh-skin) — 给整个 DeepSeek Harness Web 界面铺一层壁纸：来源可以是图床直链、本地文件或目录、Wallpaper Engine 下载目录，可调壁纸透明度、模糊程度与界面不透明度，支持轮播、随机播放、交叉淡入淡出与静音视频播放，带上一张/下一张快捷键，并把每次从图床取回的图片按地址存档到「已加载图片」里。
 - [AvenYQ/dsh-dune](https://github.com/AvenYQ/dsh-dune) — 暖纸质感的 DSH 皮肤：七套内置配色外加 AI 生成主题，克制的字号与字重，侧栏回弹动效，逐字浮现与彗星光标可开关，工作区自定义图标，侧栏入口可拖动排序、也能收进「更多」。
@@ -3732,6 +3770,7 @@ dsh plugin --profile web add dshmarket
 - [gnk478/dsh-client-ui-wallpaper](https://github.com/gnk478/dsh-client-ui-wallpaper) — 把本机图片/视频（含 Dynamic Wallpaper.app 素材）用作 DSH 桌面客户端背景：定时轮换与 0.7 秒交叉淡化、等首帧就绪再淡入、按壁纸明暗自动切换深/浅字色、模糊与面板/侧栏透明度可调、视频缩略图，探针接口上报加载、图层与界面选择器的健康状态。只读取本机文件，不联网。
 - [GptsApp/dsh-stylevault](https://github.com/GptsApp/dsh-stylevault) — 为 DeepSeek Harness 提供 30 套经典开源主题配色（Catppuccin、Nord、Tokyo Night、Gruvbox、Solarized 等），映射官方 ThemeService token；带 Style Settings 面板，可实时调整颜色/字体/圆角，并支持 JSON 导出/导入分享配置。
 - [Gsaecy/Zero-State-Radar](https://github.com/Gsaecy/Zero-State-Radar) — 赛博朋克皮肤：空会话时扫描线自上而下扫过，扫过处浮现点阵世界地图与城市航线，左下角带信号监控；发出第一条消息即整体退场。
+- [gtggdd4mzb-source/dsh-liquid-glass-fluid-background](https://github.com/gtggdd4mzb-source/dsh-liquid-glass-fluid-background) — 面向 DSH 0.2.2 的液态玻璃表面、渐变流动背景与交互水波，支持停用清理和设备本地设置。
 - [gulagala001/dsh-theme-plugin](https://github.com/gulagala001/dsh-theme-plugin) — 为 DeepSeek Harness 提供主题、配色、背景与外观设置。
 - [GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO) — 刀剑神域主题：原生 Link Start、桐人／亚丝娜语音与 NerveGear 音效，支持宽屏、竖屏和窗口缩放，可选全部功能或仅启动动画；明暗主题色独立记忆、系统默认字体与本机字体选择；液态／磨砂玻璃，会话液态表面默认透明度 50%，输入框两种材质及透明度独立设置并分别记忆，默认均 20%；圆角提问选项、自定义回答、设置与右栏文件／变更／任务等 GUI 适配；九张壁纸、本地图片或循环视频及静态省电；模型思考强度滑条与单项重置。
 - [H2CO3w/dsh-theme-frost](https://github.com/H2CO3w/dsh-theme-frost) — 把文件夹里的图片设为 DSH 网页端全局磨砂壁纸，配色沿用官方原版。
@@ -3870,6 +3909,7 @@ dsh plugin --profile web add dshmarket
 - [MitterMeierGithub/dsh-darksoft-theme](https://github.com/MitterMeierGithub/dsh-darksoft-theme) — dsh web 暗色主题插件（移植自 Obsidian things-soft-colorful-headings）：通过 --dsw-alias-label-* token 覆盖实现暖灰调暗文本，配合柔和的彩色 h1-h6 标题，零依赖。
 - [more-nico/dsh-nico-theme](https://github.com/more-nico/dsh-nico-theme) — 可切换的 DSH 网页端液态玻璃主题——14 个面板在流体背景上变成磨砂玻璃，材质参数有滑杆，悬停时玻璃与面板内容一起倾斜。
 - [morningluu/dsh-theme-scaramouche](https://github.com/morningluu/dsh-theme-scaramouche) — 墨黑玻璃质感的原神「散兵」主题：静态/视频壁纸、开屏视频、环境音乐、粒子与可拖动控制条。
+- [moroboshiai/dsh-Sherry](https://github.com/moroboshiai/dsh-Sherry) — 把 DeepSeek Harness 换成薰衣草紫磨砂玻璃——月夜画面壁纸透过半透明的侧边栏、会话区与输入框，右下角是可以拖着走的白大褂宠物，左上角 logo 换成头像标记。
 - [moshangzhe/dsh-shanqi-theme](https://github.com/moshangzhe/dsh-shanqi-theme) — 手绘山湖田园主题：按本地时间连续呈现晨昏昼夜，并让农人随当前展示对话的任务运行状态进出田间。插件架构参考 xikan0/dsh-outerwilds-theme。
 - [MrmoLabs/dsh-yorha-ui](https://github.com/MrmoLabs/dsh-yorha-ui) — 一款面向 DeepSeek Harness Web 的 NieR:Automata / YoRHa 风格工业终端主题，提供沙色与炭黑配色、直角几何和全界面样式。
 - [mumuer1024/dsh-ui-liteglass](https://github.com/mumuer1024/dsh-ui-liteglass) — DeepSeek Harness 轻量级外观皮肤：自定义壁纸、玻璃质感面板与重点色；服务端持久化、多设备一致，不接管原生深浅色。
@@ -3886,7 +3926,7 @@ dsh plugin --profile web add dshmarket
 - [niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme) — 《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
 - [nishuoyang/dsh-wallpaper-bg](https://github.com/nishuoyang/dsh-wallpaper-bg) — DSH 网页界面与桌面端的独立壁纸背景：内置壁纸、本地图片/视频上传（存 IndexedDB）、只读接入本机 Wallpaper Engine 壁纸库（需仓库自带的 wallpaper-engine-api 服务）；支持图片、视频与场景工坊预览渲染，可调浅色雾层/深色遮罩、模糊、亮度与安全放大，并可只读跟随桌面壁纸。
 - [nizihan29/dsh-theme-strinova](https://github.com/nizihan29/dsh-theme-strinova) — 卡拉彼丘主题：日夜双模式；新会话页展示汐的角色立绘，右下角角色与输入栏台词按页面加载随机轮换，并点缀漂浮粒子。
-- [NomanLord/dsh-fairy-zzz](https://github.com/NomanLord/dsh-fairy-zzz) — 绝区零 H.D.D 风格的 Fairy Ⅲ 皮肤：开机动画、眼徽核心与用量气泡、按时段问候、深浅色自动切换与对比度校验、侧栏学习代办卡片，以及可选的本地 GPT-SoVITS 语音（分析结束念分析、回复弹完念约 100 字总结，网址 / 路径 / 英文不念）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [NomanLord/dsh-fairy-zzz](https://github.com/NomanLord/dsh-fairy-zzz) — 绝区零 H.D.D 风格的 Fairy Ⅲ 皮肤：开机动画、眼徽核心与用量气泡、按时段问候、深浅色自动切换与对比度校验、侧栏学习代办卡片、设置页里的 dsh-mind / 神经记忆开关、按会话裁剪模型可见工具的 Fairy 工具链，以及可选的本地 GPT-SoVITS 语音（网址 / 路径 / 英文不念）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [NoNameLeGo/dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) — DSH Web GUI 的 Catppuccin 主题插件：Latte、Frappé、Macchiato、Mocha 四套主题接入原生主题系统，一键切换并记住选择；另附可开关的玻璃质感皮肤，顶栏、侧边栏、输入框、统计行与轨迹视图的磨砂玻璃效果可自由调节。
 - [notEatingOranges/oranges-dsh-skin](https://github.com/notEatingOranges/oranges-dsh-skin) — DSH Web 客户端的壁纸皮肤：在侧边栏对话框里拖入一张图片即可给界面换底，可调壁纸不透明度、界面透明度、模糊与压暗。图片只存在本机浏览器（IndexedDB），不涉宿主行为、模型请求或网络请求。
 - [Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style) — 为 DSH Web GUI 复刻 Claude Code Desktop 的视觉与交互——象牙白/暖黑双画布、陶烬橙强调色、三字体排版、权限分段控件与品牌切换，以 CSS 覆盖与客户端 DOM override 实现。
@@ -3902,6 +3942,7 @@ dsh plugin --profile web add dshmarket
 - [qaz040619/dsh-bluefatfish](https://github.com/qaz040619/dsh-bluefatfish) — DSH Web 深海皮肤：80 条明暗双值令牌、背景两层、渐变侧栏与鲸鱼娘贴纸；左上角大字标就是皮肤开关，运行中的状态文案每 6 秒轮播。
 - [qiaoshi-dot/dsh-wechat-classic-theme](https://github.com/qiaoshi-dot/dsh-wechat-classic-theme) — 微信风格浅色主题，包含深色图标栏、灰色会话列表和绿色聊天气泡。
 - [QinpanWan/dsh-sky-skin](https://github.com/QinpanWan/dsh-sky-skin) — 光遇·遇境主题皮肤：星盘之上的光之子，烛火暖金与深蓝星空双主题，为 dsh WebUI 定制。
+- [qisisiqi/dsh-sf-theme](https://github.com/qisisiqi/dsh-sf-theme) — 《少女前线》铁血工造主题：近黑绯红 HUD、伊莱莎与代理人壁纸、S.F 开屏、侧栏碑形标、首页 hero 与代码雨。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [quaner1234-cmd/DSH-THEME-KAMI](https://github.com/quaner1234-cmd/DSH-THEME-KAMI) — 基于 Kami 视觉风格的 DeepSeek Harness WebUI 皮肤；暖羊皮纸画布、墨蓝强调色、衬线字形与发丝线边框，提供浅色与深色两套配色。
 - [rans725/dsh-glass-ranswork](https://github.com/rans725/dsh-glass-ranswork) — DSH Web 界面的毛玻璃主题：磨砂半透明表面，可调不透明度、模糊半径与饱和度，支持氛围光与配色方案，并可设置自定义背景图片（填充、适应、拉伸、平铺、居中与裁剪），全部参数保存在设置页中。
 - [raven3005672/dsh-plugin-shell-skin](https://github.com/raven3005672/dsh-plugin-shell-skin) — 开场动画、三张内置壁纸、最多九张上传壁纸与随机轮换，以及实时生效的面板与侧边栏透明度。
@@ -3918,6 +3959,7 @@ dsh plugin --profile web add dshmarket
 - [runcat-tommy/dsh-theme-manager](https://github.com/runcat-tommy/dsh-theme-manager) — DSH Web 两级主题管理器：先选文化 / 场景、国旗、开发者配色或强烈对比配色，再选具体风格，内置 58 套浅色 / 深色配色。
 - [RunhuaChen/dsh-claude-theme](https://github.com/RunhuaChen/dsh-claude-theme) — DSH Web GUI 的 Claude 风格配色与排版——纸白底色、近黑文字与赤陶强调色，在 Codex absolutely 主题基础上重新推导中性色阶与强调色阶，以 82 个原生颜色变量覆盖浅色与深色两套外观；使用 Anthropic Sans、Serif、Mono 三款字体排版，界面外框字号跟随正文设置缩放。字体不随插件分发，需自行安装，否则回退到系统字体。
 - [ruohan0713/dsh-theme-studio](https://github.com/ruohan0713/dsh-theme-studio) — 二十套原创文艺主题：每套含浅/深双调色板、116 个界面令牌与动态壁纸。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [ryangallager0323-jpg/dsh-skin-atelier](https://github.com/ryangallager0323-jpg/dsh-skin-atelier) — 暖白纸感、墨色字与毛玻璃的极简皮肤，重绘输入框、对话框与菜单，并锁住整页滚动；只改视觉不改功能。
 - [S-anZZz/dsh-pink-bow-kitty](https://github.com/S-anZZz/dsh-pink-bow-kitty) — 粉嫩、简洁的 DeepSeek Harness 主题：手绘小猫印花壁纸、浅色与深色配色，以及两只小猫装饰；没有复杂配置和额外面板。
 - [sakuraaa667/dsh-wallpaper-engine](https://github.com/sakuraaa667/dsh-wallpaper-engine) — 将 Wallpaper Engine 中已下载的壁纸用作 DeepSeek Harness 的背景：视频壁纸原位播放，图片壁纸优先使用最高分辨率原图，支持铺满/完整显示适配与 0–100 面板暗化。
 - [SamizuHM/dsh-client-ui-theme-xp](https://github.com/SamizuHM/dsh-client-ui-theme-xp) — Windows XP Luna 桌面化主题：浮动窗口管理器（任务栏、桌面图标）加上还原度很高的 Luna 皮肤。
@@ -3960,7 +4002,7 @@ dsh plugin --profile web add dshmarket
 - [superShen0916/dsh-work-skin](https://github.com/superShen0916/dsh-work-skin) — 打开 DSH，今天在海边写代码。换成晴窗猫咪，连侧栏、气泡和代码块也换上暖米色。13 套高清壁纸各有成套配色，宽窄窗口分别取景，长对话照样清楚。也能上传照片或 AI 生成图，选好配色，重启接着用。壁纸、配色和取景都可从源码扩展。
 - [surunlang-creator/dsh-client-ui-skin-runlang](https://github.com/surunlang-creator/dsh-client-ui-skin-runlang) — Runlang：DSH Web UI 的古风庭院动态壁纸皮肤——烟熏玻璃面板、壁纸面板（上传/着色器/Wallpaper Engine）、右上角音乐播放器（单曲循环/随机/拖动进度条）、壁纸视频声音开关，附薄荷小猫桌宠。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [suuuuunamei/dsh-kaze-tachinu-theme](https://github.com/suuuuunamei/dsh-kaze-tachinu-theme) — 宫崎骏《起风了》主题皮肤：全屏电影壁纸配毛玻璃界面，交互色统一为天蓝，侧边栏与首页改用自绘矢量徽标，输入卡重绘为主题化占位文案的云海蓝胶囊，并为消息列加 40px 底部渐隐。
-- [svd748xyz/dsh-media-skin](https://github.com/svd748xyz/dsh-media-skin) — 把任意本地图片或视频铺成 DSH 界面背景：模糊、画面不透明度、界面不透明度、亮度、饱和度、对比度、缩放、填充方式与取景位置实时可调，视频另可调速与暂停，设置自动保存。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [svd748xyz/dsh-media-skin](https://github.com/svd748xyz/dsh-media-skin) — 把任意本地图片或视频铺成 DSH 界面背景：可整窗一张，也可让内容区与左侧栏各配一张；每层都能拖动取景、滚轮缩放，并各自调整模糊、画面不透明度、亮度、饱和度与对比度，一键把整组调色复制到另一层；视频另可调速与暂停，设置自动保存。取景按图像坐标锚定，放大窗口、切全屏或折叠侧栏时保持同一取景、不重新铺满；侧栏这类定宽区域的空隙由同一素材放大虚化填充。它的 HTTP 路由复用 DSH 自己的 Host/Origin 校验与浏览器登录检查，和界面其余部分走同一套准入。
 - [TABmk/dsh-theme-ascetic](https://github.com/TABmk/dsh-theme-ascetic) — 紧凑的 ASCII / 终端风格皮肤：19 套配色（可在状态栏切换）、3 档界面密度、vim 风格状态栏、空会话中的 ascii.rest 字符画，以及可自定义 Logo 文字的复古开机动画。
 - [TaiyakiOffical/claude-style-skin](https://github.com/TaiyakiOffical/claude-style-skin) — Claude 风格暖调编辑 DSH Web 皮肤：象牙白/暖黑双画布、陶烬橙点睛、衬线标题+无衬线界面+等宽标签、发丝线与胶囊 CTA，亮暗双主题跟随系统。
 - [talulra/dsh-wallpaper-glass](https://github.com/talulra/dsh-wallpaper-glass) — 把本地系统壁纸显示在 DeepSeek Harness 主窗口背后并逐像素对齐桌面（贴边、移出屏幕、最大化都适用），跟随壁纸与幻灯片切换，按壁纸明暗自动调节可读性蒙层；对话框、菜单、内嵌浏览器、输入框与搜索框保持原本不透明配色。
@@ -4126,6 +4168,7 @@ dsh plugin --profile web add dshmarket
 - [anye-99/dsh-codearts-auth](https://github.com/anye-99/dsh-codearts-auth) — 华为云 CodeArts 浏览器登录，并把 CodeBuddy、WorkBuddy、LobsterAI、Qoder（国际版与中国版）、TRAE、Cline、Loomy、Raccoon Work、MiniMax Code、TeleAgent、ZCode、Step Code、Antigravity 注册为 LLM 提供商；各 provider 独立账号池，其中多家在同一面板内提供额度余额与每日签到。
 - [apcamargo/dsh-claude-subscription](https://github.com/apcamargo/dsh-claude-subscription) — 在 DeepSeek Harness 中以 OAuth 登录的 Claude 订阅账号运行 Claude 模型，每个账号一条独立 provider 路由与一份可编辑的模型列表，提供 /claude-login、/claude-account、/claude-usage、/claude-logout 命令，并在输入框显示配额用量。
 - [apolenkov/dsh-provider-proxy](https://github.com/apolenkov/dsh-provider-proxy) — 按提供商主机或模型 ID 将模型出站流量分流到指定代理、直连或继承进程策略，可在 Plugins 设置页配置。
+- [AppsGanin/dsh-qwen-subscription](https://github.com/AppsGanin/dsh-qwen-subscription) — 把 qwen.ai 订阅接入 DeepSeek Harness 作为 qwen 模型提供方（qwen4-max、qwen3.8-max、qwen3.8-flash）：在设置页用 OAuth 设备码登录，多个账号组成故障转移池并按账号统计额度与用量，对话为流式并支持工具调用与图片输入。
 - [ArcaneOrion/dsh-model-channel-manager](https://github.com/ArcaneOrion/dsh-model-channel-manager) — 模型渠道管理：多个供应商/模型候选共享一条虚拟路由（roundrobin/组），带失败转移、重试、超时与冷却；设置页签可编辑供应商与轮询组、跑测速与单模型真实请求测试，健康面板聚合七天延迟、失败与上游 token 用量（输入、输出、缓存、推理）。
 - [Archerkattri/dsh-qwen4-effort](https://github.com/Archerkattri/dsh-qwen4-effort) — 为已有 Qwen Token Plan 路由上的 Qwen4 模型补齐官方推理等级（Max Preview 为 low/medium/xhigh，Max 为 low/high/xhigh），并保留其他提供商与已有声明。
 - [architect-xyz/liquid-dsh-plugin](https://github.com/architect-xyz/liquid-dsh-plugin) — 将 Liquid Inference 拍卖式推理交易所接入为模型路由，提供 liquid.auto 及其排序变体，并附带四个工具，用于读取报价、市场、路由器与任务收据。需 Liquid Inference API Key（LIQUID_API_KEY，spend 权限）。
@@ -4259,6 +4302,7 @@ dsh plugin --profile web add dshmarket
 - [elizax/dsh-http-proxy](https://github.com/elizax/dsh-http-proxy) — 把 globalThis.fetch 包一层，按目标域名让 DeepSeek Harness 的模型 API 请求走 HTTP/SOCKS 代理、其它请求保持直连，全程不改 Harness 源码。
 - [EmotionG/dsh-llm-config](https://github.com/EmotionG/dsh-llm-config) — 需要 DSH >= 0.2.0-rc.2 < 0.3.0。在设置页配置任意数量的模型供应商：各自独立设置接口地址、密钥与逐模型参数（思考强度、图片输入、重试策略），支持 OpenAI Chat、OpenAI Responses、Anthropic Messages 与 Google Gemini 四种协议。
 - [ethanweave/dsh-connect-workbuddy](https://github.com/ethanweave/dsh-connect-workbuddy) — 在本机运行 OpenAI 兼容网关，让 DSH 使用已登录的腾讯 CodeBuddy（WorkBuddy）账号额度：一键安装脚本（含 SHA256 校验）、登录自启计划任务（带防重复启动）、manage.ps1 统一管理（status/start/stop/restart/logs/update/uninstall），并内置指导安装与排障的 Agent 技能。
+- [evan7ang/dsh-agent-hints](https://github.com/evan7ang/dsh-agent-hints) — 为 DeepSeek Harness 增加按请求发送规范化 X-Agent-Hint 头的 DeepSeek 提供方路由，并提供有界的会话生命周期控制。
 - [Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL](https://github.com/Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL) — 在 DSH 中使用你的 ChatGPT/Codex 订阅，并支持图像生成和 Web 搜索。
 - [Faide-cyber/dsh-workbuddy](https://github.com/Faide-cyber/dsh-workbuddy) — 把 WorkBuddy 国内版和国际版的免费/付费模型接进 DSH —— 无需下载 WorkBuddy 桌面端。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Fantasy-XY808/dsh-every-models](https://github.com/Fantasy-XY808/dsh-every-models) — 在模型选择器和设置页加入 75 家厂商、1692 条公开模型（2013 至 2026），全是假模型——不管问什么都会一本正经自报代号，由插件本地合成回复，不发推理请求、不扣真实余额，支持厂商分组、80 条分页、推理档位与全目录搜索。
@@ -4291,7 +4335,7 @@ dsh plugin --profile web add dshmarket
 - [GaoHu1997/dsh-model-think-level](https://github.com/GaoHu1997/dsh-model-think-level) — 在官方「模型」页为第三方模型补上思考等级、图片输入与生图；一个供应商可配多把密钥，按模型分流、失败自动换密钥重试，并可配置按路由的请求头、查看余额。
 - [GaoHu1997/dsh-webdav](https://github.com/GaoHu1997/dsh-webdav) — 通过任意 WebDAV 服务在多台电脑之间同步 DSH 的模型供应商与模型：备份离开本机之前先用口令封好，新机器打开就是同一份模型清单。
 - [Garybot126/dsh-subagent-models](https://github.com/Garybot126/dsh-subagent-models) — 在输入框旁的「子代理」胶囊里统一设置委派子代理使用的 provider、模型与思考强度：卡片的「本对话 / 全局默认」两个范围共用同一组控件，胶囊上始终显示当前生效的路由；在每个进程内子代理创建时生效（agent/created + agent.model.select()），不注册设置页、不改 agent preset、不给工具加模型参数。
-- [Gaudi-XIX/dsh-agy-cli](https://github.com/Gaudi-XIX/dsh-agy-cli) — 在 DSH 里用本机已登录的 Gemini 账号跑模型：官方 agy.exe 自己发请求并签名，不反代、不改二进制，凭据留在本机；工具、审批、沙箱归 DSH，每步可见可拦。默认 180 秒自动收尾。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Gaudi-XIX/dsh-agy-cli](https://github.com/Gaudi-XIX/dsh-agy-cli) — 在 DSH 里用本机已登录的 Gemini 账号跑模型：官方 agy.exe 自己发请求并签名，不反代、不改二进制，凭据留在本机；工具、审批、沙箱归 DSH，每步可见可拦。默认 180 秒自动收尾。
 - [Gaudi-XIX/dsh-zcode-cli](https://github.com/Gaudi-XIX/dsh-zcode-cli) — 把本机已安装的 ZCode CLI 接成 DSH 的 `zcode` 模型路由：流量全部由官方二进制签名，插件自身不发请求、不伪造客户端请求、不把凭据传出本机（plan token 只在内存中解密并交还官方 CLI），不需要 API Key，付费一次性与免费 app-server 两条通道并存；v0.3.0 起内建 HTTP MCP 工具桥，工具调用走 DSH 的审批面；有契约文档与 node --test 测试门禁背书。
 - [gdyshi/dsh-connect-scnet-plus](https://github.com/gdyshi/dsh-connect-scnet-plus) — 把本机已登录的超算互联网（SCNet）模型接入 DSH，无需二次登录或填写 API Key；插件页提供逐模型开关、逐模型上下文预算，以及真正发到上游的思考档位。沿用 SCNet 客户端缓存在 ~/.sclaw 下的 API Key（也可用 SCNET_API_KEY 或插件配置里填的 Key），经本机回环代理把对话发往 api.scnet.cn；依赖 SCNet 客户端的非官方接口，上游调整后可能失效，使用受 SCNet 服务条款约束。
 - [GeekRicardo/claude-in-dsh](https://github.com/GeekRicardo/claude-in-dsh) — 把一个 dsh web 会话交给本机 Claude Code CLI 驱动：输入框内的引擎选择器（DSH | Claude Code）按会话切换，模型座换成 Claude 的模型与 reasoning effort，访问模式换成 Claude 权限档；权限请求、AskUserQuestion、ExitPlanMode 分别接到 dsh 原生的审批卡、提问卡与计划审核卡。Claude 的流写成 dsh 原生会话事件，由内建转录、工具卡片与嵌套子 agent 渲染；斜杠命令并入命令面板；CLI 由独立 broker 持有，插件更新与 dsh 重启都不中断进行中的轮次。
@@ -4334,11 +4378,13 @@ dsh plugin --profile web add dshmarket
 - [Hoemr/dsh-llm-cc-switch](https://github.com/Hoemr/dsh-llm-cc-switch) — 把本地 CC Switch 数据库里的账号接进 DeepSeek Harness：Claude Code、Codex、OpenCode、Grok Build 的每个账号在模型选择器里各成一类，列模型与发请求时都会重读 SQLite 数据库，在 CC Switch 里换账号不必重启 DSH。需 CC Switch 与 DSH 桌面端。
 - [home-river/dsh-opencode-cli-bridge](https://github.com/home-river/dsh-opencode-cli-bridge) — 经本机 OpenCode CLI 在 DSH 中使用 OpenCode 兼容模型：原生 LlmAdapter 透传、OC 会话持久续接（工具结果跨轮可见）、工具镜像回传、CLI 环境检测面板。需本机已安装 OpenCode CLI。
 - [hongcha-dsh/dsh-subagent-model-pin](https://github.com/hongcha-dsh/dsh-subagent-model-pin) — 把所有子代理统一钉到指定模型：每一步都核对即将进入的路由，越界就拒绝该步、中止该子代理并向父会话注入提醒，避免子代理继承高价模型烧穿额度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [HongKongDoll-cmd/dsh-connect-loomy](https://github.com/HongKongDoll-cmd/dsh-connect-loomy) — 将讯飞 Loomy 模型接入 DSH，支持免客户端微信扫码与短信登录、自动同步官方模型目录与积分倍率、多账号池同模型自动换号、积分兑换码、模型测速及输入框积分胶囊。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [hongxin-y/dsh-fallback-router](https://github.com/hongxin-y/dsh-fallback-router) — 面向 DeepSeek Harness 的模型级路由：每个模型配置可设兜底链（官方兜底或循环兜底）、时间区间、按 provider 的重试策略，以及按错误码、正则或结构标记判定的失效规则。
 - [HOWILLMAKEIT/dsh-model-context-catalog](https://github.com/HOWILLMAKEIT/dsh-model-context-catalog) — 一键匹配 DSH 已配置模型的上下文窗口，展示容量来源，支持勾选批量配置、手动编辑和持续同步。
 - [Howthemeaning/dsh-model-settings](https://github.com/Howthemeaning/dsh-model-settings) — DeepSeek Harness 模型设置面板：设置新会话的默认模型，并为子代理与 goal 回合分别配置 provider、模型和推理强度，保存后热更新。
 - [hoyyang/dsh-glm-mode](https://github.com/hoyyang/dsh-glm-mode) — 为 zhipuai/glm-5.3-flash 调优的「GLM 模式」Agent 预设：PTC 程序化工具调用、思考死循环守卫与工具空转守卫双层防护（源自活体事故复盘）、GLM 专属自动压缩（75%/22%）。
 - [hpfs0/dsh-provider-proxy](https://github.com/hpfs0/dsh-provider-proxy) — 在设置里为每个已启用的 provider 单独配置正向代理（HTTP/HTTPS/SOCKS5），未配置的 provider 与其它流量保持直连。
+- [HSHSir/dsh-plugins#dsh-a6-failover](https://github.com/HSHSir/dsh-plugins/tree/main/dsh-a6-failover) — A6API 商家故障切换插件：按真实用量（缓存命中率与输出比）计算中转商家成本，剔除超过官网价指定倍数的商家，失败时或通过设置面板手动切换固定商家。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [huhaodong/dsh-auto-driving](https://github.com/huhaodong/dsh-auto-driving) — DeepSeek Harness 模型故障自动回退与轮次保活：请求在产出任何可见内容前因模型错误失败时，沿所选供应商分组的模型（再到下一个供应商）逐个切换直到流式成功；瞬态失败按指数退避自动重试并有活性看门狗防假死，整轮任务失败后自动发送模板化「继续」唤醒续跑；可选全自动模式自动应答权限审批、确认提问与方案评审，每次自动决策追加到 AUTO-MODE.md 审计日志。
 - [hulibuld/dsh-get-it-for-free](https://github.com/hulibuld/dsh-get-it-for-free) — 把免费、签到型的模型账号渠道接进 DeepSeek：华为云 CodeArts、腾讯 CodeBuddy / WorkBuddy、Qoder、TRAE、Raccoon、LobsterAI、MiniMax、ZCode、讯飞 Loomy。在设置里逐渠道登录，能签到的渠道每日签到（也可开自动），同步可用模型池，模型以普通 provider 的形式出现在模型选择器里，并带本机用量看板按账号与模型统计请求数与 Token。凭据只写在本机 ~/.dsh/get-it-for-free/，无遥测，不向上游仓库发请求。可选的局域网中继默认关闭，开启后监听 0.0.0.0。
 - [hxgh776/dsh-connect-codearts](https://github.com/hxgh776/dsh-connect-codearts) — 将本机已登录的华为云 CodeArts Agent 账号接入 DeepSeek Harness：对话模型的结构化工具调用由 DSH 本地执行，附只读额度视图，以及可选每日自动签到——签到在只读权益探测通过前保持关闭。只读取 CodeArts CLI 的 auth.json，不复制、不代刷新、不写回；仅 Windows x64，含 doctor 与 probe 诊断命令。注册 codearts provider，请勿与其他 CodeArts 插件同时安装。
@@ -4406,6 +4452,7 @@ dsh plugin --profile web add dshmarket
 - [lcestou/dsh-oh-my-claude](https://github.com/lcestou/dsh-oh-my-claude) — 把已登录的 Claude Code CLI 作为 dsh 的模型提供方：实时模型列表、按会话恢复、审批中转、回退、记忆面板，以及远程 SSH 主机上的工作区。
 - [lcy362/dsh-radeon-capacity](https://github.com/lcy362/dsh-radeon-capacity) — 显示 AMD Radeon Cloud 的 AI Capacity：模型选择器里每个模型一枚容量徽章，当前模型的容量与模型名同一行。徽章只在配好 Radeon provider 之后才注册，因此不会顶掉内核自带的模型标注。额度仅作展示（AMD 目前免费不限量）。设置页还可以把 provider 写进 DSH 用户层，卸载本插件后依然可用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Leafyezi233/dsh-model-gateway](https://github.com/Leafyezi233/dsh-model-gateway) — 把 DeepSeek Harness 里已配置好的模型通过 OpenAI 兼容网关中转出去，其他本地项目 用标准 OpenAI 客户端即可调用。多个供应商候选共享一个具名分组，支持顺序、均衡、 随机三种调度；上游在产出任何内容前失败时自动切换下一候选，客户端无感，被限流的 请求按供应商指示的退避时间自动重试。每条候选的调用统计（尝试、应答、失败、 token/TTFT 累计）以徽章形式显示在设置页，按天聚合的数据落盘为本地文件，附 30 天 热力图与趋势视图。在界面创建密钥之前，接口对任何能访问到它的人开放；创建密钥 （仅存 SHA-256 哈希）后开启校验，且删掉最后一个密钥仍保持锁定，需显式关闭鉴权 才会重新开放。若启用可选的局域网监听而未配密钥，该端口对整个局域网开放。支持 DSH 0.1.2-rc.1 至 0.1.7-alpha.1 及以后。
+- [lehuaner/dsh-connect-marvis](https://github.com/lehuaner/dsh-connect-marvis) — 把腾讯马维斯背后的模型接进 DSH 模型选择器：DeepSeek V4.1 Flash 与 V4 Pro、Claude Sonnet 4.6 与 Opus 4.6、GPT-5.4、混元 Hy3 与 HY-Vision。复用本机已登录 Marvis 客户端的登录态并自动续期短命的 access token，因此不用填 API Key，客户端也不必常驻。另外会识别网关「system 开头是通用助手身份句就判非法」的规则，并在出口处改写掉。
 - [leilengma/dsh-copilot-bridge](https://github.com/leilengma/dsh-copilot-bridge) — 为 DeepSeek Harness 提供独立的 GitHub Copilot Bridge 模型服务，支持 GitHub/Enterprise 设备码登录、实时模型目录、模型显示控制与置顶。
 - [Leonlee114514/dsh-local-trim](https://github.com/Leonlee114514/dsh-local-trim) — 给小本地模型的一步到位接入 + 轻量 harness。装载时自动探测回环与私有网段上的推理端点（llama.cpp、Ollama、vLLM、LM Studio），从后端读出每个模型的窗口与输出预算，再经 settings 注册 provider —— 不用手写配置就能在模型选择器里选到本地模型。随后只对这一个 provider 裁剪：用 tools.restrict 收缩工具面、按段名丢弃系统提示词段落与记忆 context、把注入的指令块换成一页纸同时保留其首 80 与末 96 字符、截断工具 schema 的 description 而不动结构与 required。云端 provider 原样返回同一个 assembly 对象，不做任何改动。注入正文每次装配都重新读盘，改文件下一次请求就生效，不用重载。插件详情页的面板是一块实时运行视图：显示接管是否生效、走的是哪个钩子，最近一次装配的字符进→出与省下的比例，以及各 provider 的在线灯（多路并发点灯，每个本地 provider 还能发一次真实的最小请求，把延迟与回复原文报出来）。本地后端没起来时，面板能一键拉起：先探测端口（已在应答就不重复启动），再按端口拉起对应后端（ollama serve，或你自己填的启动命令），进程独立于宿主存活，随后轮询到端口应答为止，等待上限夹在 3–600 秒，超时会把刚起的那个进程回收掉不留孤儿，找不到可执行文件时会把搜过的路径写清楚。面板上还有停止按钮，只肯停本插件自己起的后端（先 SIGTERM，1.5 秒不退再 SIGKILL），别人的服务一概不动。模型刚下好、后端还不存在时，面板能扫描本机 .gguf（跳过 .mmproj. 视觉投影、按大小降序，并带 300 个模型 / 20000 个目录项 / Downloads 只扫一层这三道上限），选一个就用它拉起 llama-server（端口上已有服务就复用），按后端自报的模型 id 注册 provider，再发一条真实请求证明能用。真正起之前会做一次装得下算账：只算显存装不下的那部分（hostBytes = 文件体积 − 显存），拿它比 max(总内存 − 2GB, 空闲内存)。文件比「显存 + 内存」还大直接拦；落到宿主的内存太多时先不替你起，要你确认；同样的情况若走 mmap 只给警告，因为权重落在可回收的页缓存里。加载方式下拉（auto / mmap / none / mlock / mmap+mlock）对应 llama.cpp 的 --load-mode，默认交给引擎自己决定。0.4.2 起上面每一条都改成按平台推导，而不是假设本机长什么样：家目录与数据目录走 os.homedir() 和各系统惯例（Windows 用 LOCALAPPDATA，macOS 用 ~/Library/Application Support，其它用 XDG_DATA_HOME）；后端二进制按各系统官方安装位置找，也可以用 OLLAMA_BIN / LLAMA_SERVER_BIN / VLLM_BIN / LMSTUDIO_BIN 钉死；找模型依次走 DSH_LOCAL_MODELS_DIR、~/models、~/llama.cpp/models、~/.cache/llama.cpp 与 LM Studio 数据目录，WorkBuddy 的布局降级成其中一个候选。显存先问 nvidia-smi，再问 rocm-smi，Apple Silicon 上问 sysctl hw.memsize 并标成统一内存（同一块字节不重复扣两次）。拼命令行之前会跑一次 llama-server --help，只保留这个 build 真有的参数 —— 老引擎给 --n-gpu-layers 99 且不下发 KV 量化，新引擎给 auto 加 q8_0；探测不出来的参数一律照传，不因为探不到就丢掉。LM Studio 用 lms server start --port N 起，不再和「必须先给模型参数」的引擎混在一起；vLLM 单独给 --model 的示例，不再套 llama.cpp 的写法。Windows、macOS、Linux 三套都在 CI 里跑，另加 windows-latest 与 macos-latest 两个 job —— 只在一个系统上跑过的「跨平台」不算跨平台。其中两套专门用来抓这台开发机的盲区：一套把 process.platform 改掉、整套测试按各系统重跑；另一套把开发机的所有有利条件全删掉（没有 nvidia-smi、没有 rocm-smi、没有 sysctl、PATH 是空的、家目录里没有模型），要求优雅退化而不是崩。后一套抓到过真实的一类 bug：好几处断言写死了 lms.exe，在可执行文件不带后缀的系统上根本不可能过。参考机实测：16.9GB 的 27.2B MoE 配 14.5GB 显存，进程工作集只有 285–691MB，预热 1000–2000 token 后稳定 76 tok/s —— 光看文件大小判断装不装得下是错的。0.4.3 起扫出来的模型是一张表而不是下拉框（每个 gguf 一行，带体积和偏大提示），选之前能看清磁盘上到底有什么。0.4.4 起 provider 表上的删除键删的是这条 provider 配置，不是磁盘上的权重文件。这个区别很重要：真正想清掉的是那种僵尸条目 —— 指向一个从没应答过的端口、同一个端口注册了两遍、或者模型文件早就删了还留着的那几条，而不是一个 15.8GB 的 gguf。删配置随时可以重新导入，删 gguf 不行。删除走settings.mutate 的 unset，路径是 \['providers', id]：不能用 update，因为 update 是合并层，往那儿写null 只会留下一个 null 的 provider 键，loader 会当成配置坏了而不是「没有这一条」；只有 mutate 的unset 内部是 Reflect.deleteProperty。删完会回读一次，因为对「来自下层（profile 的 cordis.patch.yml或 home patch）的键」做 unset 不是删除而是恢复继承值 —— 调用成功但条目还在。条目还在时面板会直说，并把该改哪个文件指出来，不谎报成功；settings 服务太老没有 mutate() 的版本也会明说，而不是默默忽略。删除要点两次，点别的行就撤回确认；删成功会清掉在线缓存与 baseURL 缓存并重算工具面，因为 provider列表变了。gguf 本身插件一个字节都不动 —— 扫描出来的那张表只用来展示和选中。且显存能不能读到取决于驱动。0.4.5 起模型扫描也读 Ollama 自己的存储：它的 blob 叫 sha256-… 、没有后缀，光按扩展名永远列不出来。现在认权重看后缀或文件头 GGUF 魔数（只开「无点号且 ≥8MB」的文件，一趟最多读 600 次魔数；.json/.md/.safetensors/.part 这类明显不是权重的后缀一次都不开）。Ollama 的模型从 manifest 还原：只取 mediaType 为 application/vnd.ollama.image.model 的层（mmproj/adapter 层不算主模型），人话名从 manifest 路径还原（…/qwen3/8b → qwen3:8b，latest 不加冒号），同一份 blob 被多个 tag 引用时合并成一行，metadata 的 kv 给出名称、量化和 context 上限。对 Ollama 的模型点「一键配置」不会再拿同一份权重重复起一份 llama-server：它确认 11434 上的 ollama 在应答（不在就 ollama serve），并按端点自己报的 tag 注册 provider —— 11434 上报的是 qwen3:14b，拿 blob 的 sha256 名永远匹配不上。顺带修掉两个只有真机才暴露的坑：Windows 上 existsSync('<文件>/') 返回 true，manifest 与目录的分岔改成按内容判定，不再依赖尾斜杠语义；量化标签表照搬了旧一代 ggml 枚举，把 ggml_type 15 标成 Q5_K_S，而 ollama show 实测报 Q4_K_M，整表按真实序号重写。同一份文件的去重按 (dev,ino)，谁有名字留谁。参考机实测：扫描从 1 行变 4 行 —— qwen3:14b（8.64G）与 qwen3:8b（4.87G）带着 Q4_K_M 徽标出现 —— 耗时 4ms；npm run verify 退出码 0（launcher 57 项、portable 35 项、panel-host 含 linux/darwin 模拟平台两套全绿）；panel-host 新增的用法在 tmpdir 里现造一份迷你 Ollama 存储再把 OLLAMA_MODELS 指过去，测试结果不再取决于跑测试的机器装没装 ollama。0.4.6 起面板显示的是模型自己的真名，不再是文件名：有些下载工具会把任何权重都落成同一个通用文件名，真名只写在 GGUF 头部里。扫描会读每个文件的 GGUF KV 区 —— 不是先读一段固定大小的头部，因为 tokenizer.ggml.tokens（大 MoE 模型动辄几十万条字符串）和 chat_template 会把 general.file_type 挤出任何窗口；而且 GGUF 的字符串数组是交错存储（每条 u64 长度加载荷），把它当长度表读会让游标跑偏、算出天文数字的读取量。读与走位分开记账：键名与类型必读，超过 256KB 的字符串值和字符串数组只走位不复制，非字符串数组超过 64 个元素直接跳过，游标越过文件末尾立刻停 —— 越界说明游标错了，不是该把上限调大。显示名依次取 Ollama 的 tag、general.basename 加 size_label、general.name、文件名，整串留在悬停里因为常带内部编号；视觉投影文件现在也靠 general.type 认，不只看文件名。短读（文件被截断）不再把半截字节喂给解析器。参考机实测：读一个文件的头部解析出 44 个键耗时约 16ms，整趟扫描约 31ms。0.4.7 起「试跑」不再出现「第一次失败、第二次成功」。老代码让两轮请求共用一个 AbortController 和一个 30 秒定时器，也就是两轮加起来只有 30 秒：大模型的冷加载第一轮就烧完它，abort 之后 signal 永久处于已中止状态，第二轮（换成 Ollama 认的 reasoning_effort: none 再试一次）连请求都发不出去 —— 这正是第一次点报 This operation was aborted、第二次却能成功的原因。现在每轮各自一个 controller 和定时器；超时自动再来一轮（retryOnTimeout 默认开），因为第一次请求超时几乎总是「权重还在读盘」；非超时错误（连不上、HTTP 报错）完全不重试。超时也会自己说清楚：文案里写明超过了多少秒、是否已自动重试，并指向新增的「试跑超时（秒）」配置项（默认 60，可设 5-600）—— 端口通了不等于能出字，它和「拉起后等端口（秒）」是两个不同的旋钮。顺带：面板提示里那句绑定某一个具体模型的举例去掉了，不是每台机器都下了那个模型，说明改成讲机制。0.4.8 起「一键配置」一个普通 .gguf 不再注册出不相干的 Ollama 模型。端口这一栏原来跟着上一次点击走而不是跟着文件走：选中 Ollama 的条目会把端口挪到 11434，选中普通 .gguf 时却不挪回来，于是一次先前点击留下的 11434 就一直留着。服务端照单全收，去探那个端口，发现 Ollama 在应答就直接借了它（日志里那句「端口本来就在应答，跳过拉起」就是这条路径），接着按文件名拼出来的模型 id 在 Ollama 的 /v1/models 里对不上，而兜底是抓列表里的第一个 —— embedding 模型往往排在第一位，于是注册出了一个用户从没点过的模型。现在端口跟着文件走：普通 .gguf 落在别的引擎的端口上（ollama 11434、vLLM 8000、LM Studio 1234）就改到 8090 并在面板里说明一句；只改「已知引擎的端口」，自己手填 9999 指向另一台 llama-server 的情况一概不动。模型 id 的兜底也不再瞎猜：只有一个条目时才取它（单模型后端报的 id 本来就可能和文件名不同），有多个而对不上就报错并列出实际看到的 id，而不是注册出一个错的 provider。0.4.9 起面板不会再整块消失。以前插件详情页里那一块可能凭空不见，而宿主照常运行、HTTP bridge 照常应答、连崩溃日志都不留一条。原因是一个作用域错误：某个辅助函数声明在一个组件里面，却被另一个组件引用 —— 这是合法 JavaScript，语法检查完全通过，于是它只在渲染期炸，也就是用户按下扫描按钮、React 执行状态更新函数的那一瞬间。宿主给每个插槽条目都包了一层错误边界，兜底渲染是一个空的锚点，所以异常被就地吞掉：插件没有被卸载、进程也没有崩，面板只是被换成了一个空 div。现在这两个辅助函数放在两个组件共享的模块作用域里。客户端这一半也有了专门的用例 —— 一个最小 React 替身载入真正的面板模块，真调用组件、真在渲染期执行状态更新函数、真去按扫描按钮，这类错误不会再走到发布版里。
 - [leotpp/dsh-subagent-toolkit](https://github.com/leotpp/dsh-subagent-toolkit) — 在设置里为子代理单独指定一个 OpenAI 兼容模型（或不选则跟随主模型），写入官方 subagent-model-selection 白名单，并在仅有一条路由时提醒主代理显式传参；可选提供与 DSH 进程隔离的 Pi CLI 一次性子代理。
@@ -4454,8 +4501,6 @@ dsh plugin --profile web add dshmarket
 - [MaiMai0812/dsh-model-fingerprint](https://github.com/MaiMai0812/dsh-model-fingerprint) — 把 lm.ikale.io 的模型指纹检测页做成侧边栏面板：经宿主 llm 服务让已接入的模型凭第一反应写下 292 到 332 个 1 到 355 的整数，与站点提供的参考库比对后给出候选模型排名，收满三条样本时给出校准概率。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [MaRi23333/dsh-grok-kit](https://github.com/MaRi23333/dsh-grok-kit) — 面向符合资格的 X Subscription、SuperGrok 或 X Premium 账号的非官方 Grok 集成：共用 Grok CLI OAuth 登录，支持对话及可选的主循环网页/X 搜索；实验性的图片生成、图生图编辑和视频生成均默认关闭，需主动开启。
 - [Mars-Sea/dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) — 非官方 Command Code 模型接入插件：注册 `commandcode` 路由，带实时模型目录与推理强度支持。
-- [marsma-101/dsh-qoder-connect](https://github.com/marsma-101/dsh-qoder-connect) — 将 Qoder CN 桌面版的模型接入 DeepSeek Harness，零用户交互：解密本地 OSCrypt 凭据，以 COSY 签名对接国内网关，14 个模型含免费额度标注。
-- [marsma-101/dsh-trae-connect](https://github.com/marsma-101/dsh-trae-connect) — 将 Trae CN 桌面版的模型接入 DeepSeek Harness，无需单独 OAuth：复用桌面端登录，17 个模型（含 deepseek-v4.1-flash）带倍率标注与思考强度映射。
 - [maryhodges5070-art/dsh-llm-vertex](https://github.com/maryhodges5070-art/dsh-llm-vertex) — 在 DeepSeek Harness 中接入 Google Cloud Vertex AI（Gemini）：支持 ADC 或服务账号凭证、项目与区域配置、工具调用的签名回传、限流，以及带连通性测试的设置页。
 - [masknull/dsh-qoder-connect](https://github.com/masknull/dsh-qoder-connect) — 通过个人访问令牌将 Qoder（国内版与国际版）接入 DSH，两版各自独立的凭证与模型目录，支持多令牌切换、侧栏额度卡、按模型开关、上下文窗口偏好与每日自动签到。
 - [mengge237/dsh-model-priority](https://github.com/mengge237/dsh-model-priority) — 模型顺序：在「设置 → 模型」的提供方卡片里拖动调整；卡片格被别的插件占用时，入口在设置左导航的「模型顺序」分区。顺序通过宿主 settings 服务带版本校验写回，设置页与模型选择器保持同步；设置左导航本身也可拖拽排序。
@@ -4469,9 +4514,10 @@ dsh plugin --profile web add dshmarket
 - [Modellix/dsh-modellix](https://github.com/Modellix/dsh-modellix) — 将 Modellix 接入 DSH：使用一个 API Key 在分栏 Design 工作区中提供基于 Schema 的图片、视频与音频生成、实时 LLM 模型目录，以及原生网页搜索与抓取 Provider。
 - [MoJIeAIGC/dsh-mojie-model-provider](https://github.com/MoJIeAIGC/dsh-mojie-model-provider) — 把 Mojie（mojieaigc.com）接入 DSH 的模型提供商，模型出现在模型下拉里，并注册原生图片工具与 /image 命令，用于生成与编辑图片。
 - [MoonlitDropOfBlood/dsh-model-prompt-injector](https://github.com/MoonlitDropOfBlood/dsh-model-prompt-injector) — DSH 按模型注入系统提示词：为本地已配置的模型把自定义提示词追加到系统提示词末尾，支持 provider/model 精确匹配与 provider/* 服务商级通配（两者按序叠加）。设置页自动列出每个已配置服务商及其模型，逐行编辑、即时生效；规则持久化保存、重启不丢；对主会话、subagent 与 workflow 子代理同样生效。
+- [moqiaoduo/dsh-qianwen](https://github.com/moqiaoduo/dsh-qianwen) — 把 platform.qianwenai.com 接入 DSH：Token Plan 与按量付费双通道、模型目录与定价、Credits 额度查询与思考模式控制。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [MoRanYue/dsh-openrouter-providers](https://github.com/MoRanYue/dsh-openrouter-providers) — 配置 OpenRouter 请求使用的提供商列表与量化位数上限，注入 provider.only/order（allow_fallbacks）与 provider.quantizations 路由参数。
-- [MorseWayne/dsh-agy-acp](https://github.com/MorseWayne/dsh-agy-acp) — 通过持久 stdio JSON-RPC 会话将 Google Antigravity CLI（agy acp）接入 DSH 模型提供方，支持 session/load 会话恢复、原生工具卡片镜像、反向 MCP 桥接、出口地域熔断防护、多账号配额调度、/agy-acp doctor 自检及 Web 状态面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
-- [MorseWayne/dsh-team-router](https://github.com/MorseWayne/dsh-team-router) — 为 DSH 原生团队委派提供七种可配置的任务类别，按类别为新队友选择已授权的模型。
+- [MorseWayne/dsh-agy-acp](https://github.com/MorseWayne/dsh-agy-acp) — 将 Google Antigravity CLI（agy acp）以零冷启动长连接接入 DSH：支持 session/resume 与 session/load 三级会话恢复与精准缓存计量、聊天气泡原生工具卡片（Read/Diff/终端）、按需加载的分级反向 MCP 网关（含预设与预算控制）、跨模型自动审查转发、纯匿名出口合规熔断、多账号 5h/7d 配额调度与 TOS 隔离，以及原生风格控制台与 /agy-acp doctor 自检。
+- [MorseWayne/dsh-team-router](https://github.com/MorseWayne/dsh-team-router) — 为 DSH 原生 subagent 与团队委派按任务类别选择已授权模型和推理强度：内置 4 组 12 类（支持逐类开关与 12/7 类快捷切换）及最多 8 个自定义类别（含 4 套模板），提供被动/专长优先/编排者三档委派模式、可选严格校验、一键推荐预览与保存时自动补齐模型授权。
 - [MoruTeaven/dsh-model-quickslots](https://github.com/MoruTeaven/dsh-model-quickslots) — 输入框上方的一排模型预设按钮：左键点击把当前会话切换到该预设的提供方、模型与思考强度，右键点击打开该预设的编辑弹窗，每个预设还可以自定义备注名称而不必使用模型名。编辑弹窗读取当前会话真实的模型目录，预设保存在本地。
 - [moxiaoren/dsh-xiaoyiwork-connect](https://github.com/moxiaoren/dsh-xiaoyiwork-connect) — 复用已登录的小艺Work 桌面端本地模型代理（仅限 Windows），其模型直接出现在 DeepSeek Harness 中，无需单独 API Key。
 - [Mu-scorpio/dsh-reasoning-effort](https://github.com/Mu-scorpio/dsh-reasoning-effort) — 为 DeepSeek Harness 配置 Provider 与模型的推理强度映射，并提供按 Provider 分组的模型选择器和输入框滑块。
@@ -4505,6 +4551,7 @@ dsh plugin --profile web add dshmarket
 - [OverDustD7/thu-tok-auto](https://github.com/OverDustD7/thu-tok-auto) — 获取清华 MadModel 的 API token，按每 20 分钟在无窗口浏览器里用已保存的 SSO 会话尝试续期，写入 DSH 凭据 MADMODEL_API_KEY 并创建或复用 madmodel 模型 Provider；手动点一次 Get 就通过校内登录窗口捕获该会话。
 - [oxlyn/dsh-model-health](https://github.com/oxlyn/dsh-model-health) — 设置页「模型健康」面板：列出 settings.yaml 配置的全部模型，一键批量测试可用性与延迟。
 - [passingby000/dsh-nl-model-switch](https://github.com/passingby000/dsh-nl-model-switch) — 用一句自然语言切换当前 DSH 会话模型，可在 Web、TUI 及 IM 桥接的微信、飞书等对话框中使用，无需操作面板。
+- [pengtang1024/dsh-smart-provider](https://github.com/pengtang1024/dsh-smart-provider) — 一个在已配置模型与账号间智能路由的 DSH 元提供商，提供账号池、成本统计与三层健康管理，默认中立，省钱优先为可选项。
 - [penguin-oo/dsh-delegate-router](https://github.com/penguin-oo/dsh-delegate-router) — 给 DeepSeek Harness 的子代理调用做 Flash/Pro 自动分派：轻任务自动用便宜模型、重任务留在强模型，支持手动覆盖与 /delegate 会话模式。
 - [PerryLink/dsh-autotier](https://github.com/PerryLink/dsh-autotier) — 自动模型档位路由：一条用户指令进入、一个档位决策出来——复杂意图由强档规划、廉价档执行，简单意图全程廉价档，确定性护栏 + TTL 升级回退。
 - [PerryLink/dsh-local-ai](https://github.com/PerryLink/dsh-local-ai) — DeepSeek Harness 的 Ollama 接入：模型管理、健康检查、基于规则的本地路由与云端回退。
@@ -4575,6 +4622,7 @@ dsh plugin --profile web add dshmarket
 - [SISCHOI/daruma#dsh-daruma](https://github.com/SISCHOI/daruma/tree/main/packages/dsh-daruma) — 渠道开始失败时不让长任务中断：内置重试放弃后 daruma 接管，对连续 429/5xx 或终止性错误跳闸自愈断路器，把下一个请求切到链上的其他渠道。支持 DSH 0.1.x 与 0.2.x 宿主，含已实测故障转移与备用管理 RPC 的 0.2.1-rc.2。备用渠道可在设置页或输入框旁的面板挑选，两处即时同步；每次切换落盘成可审计的 JSONL 日志。切换只记入这份审计日志，不再写入会话内的提示行——宿主不认识的插件事件类型会让整段会话加载失败。
 - [sixzjd/dsh-opencode-connect](https://github.com/sixzjd/dsh-opencode-connect) — 通过进程内 loopback shim 把 OpenCode Zen 模型（含限时免费模型池）接入 DSH，支持自动模型 fallback，无需外部进程或改配置文件。
 - [sixzjd/dsh-workbuddy-connect](https://github.com/sixzjd/dsh-workbuddy-connect) — 通过进程内 loopback shim 把 WorkBuddy（国际版与国内版）订阅模型接入 DSH，提供账号管理设置卡片与实时模型目录。
+- [Skeltx/dsh-moduleapi](https://github.com/Skeltx/dsh-moduleapi) — 将 Module API（moduleapi.pro）注册为模型提供方：一把密钥接入全部 26 个模型目录（GPT、Claude、Gemini、DeepSeek、GLM、Grok），支持模型可用的推理档位与图像输入。
 - [skillpie/dsh-plugins#dsh-tokenbank](https://github.com/skillpie/dsh-plugins/tree/main/dsh-tokenbank) — 一键用上 TokenBank 免费模型：注册领免费 API Key 送 $5 体验金，模型直接进模型列表（协议与能力自动配置）；自带余额、每日签到、密钥托管（闲置临时额度转永久余额，带上游探活）与人民币充值（支付宝）。无需自建中转。
 - [SkylerFee/dsh-llm-opencode-go-live](https://github.com/SkylerFee/dsh-llm-opencode-go-live) — 为 DSH 提供 OpenCode Go 模型来源：从 Models.dev 读取 opencode-go 目录，在独立的 opencode-go-live 路由上提供，内置 opencode-go 路由保持原样。目录快照缓存在 DSH home 下，刷新失败时沿用上一次成功的目录；插件自带 Models 设置卡片用于填写该路由密钥，并可显示 OpenCode Go 订阅用量。
 - [Smartloe/dsh-catpaw](https://github.com/Smartloe/dsh-catpaw) — 把妙手（CatPaw）的 12 个模型接入 DeepSeek Harness，支持按模型区分的推理档位、由 Harness 执行的工具调用与扫码登录。内置 catpaw-cli 仅提供 macOS arm64 版本（其它平台需自备），调用消耗妙手账号额度。
@@ -4678,7 +4726,7 @@ dsh plugin --profile web add dshmarket
 - [wqy8593521/dsh-model-pro](https://github.com/wqy8593521/dsh-model-pro) — llm-pi-ai 模型提供商的生命周期管理 UI：提供商的新建/编辑/删除与启停（自定义请求头、AES-GCM 加密密钥）；卸载时安全还原滞留提供商，远端模型发现与批量写入，五种策略的智能路由，并集/交集组合提供商，逐模型连通性测试与请求观测。
 - [wshdp123/dsh-connect-qoder-pro](https://github.com/wshdp123/dsh-connect-qoder-pro) — 连接 DSH 与本地 Qoder 桌面客户端登录态，接入 Qoder CN 官方模型（qmodel、qfmodel）。仅 Windows：凭据读取依赖 DPAPI。
 - [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) — 通过 ChatGPT OAuth 在 DSH 中使用 Codex 模型，提供订阅联网搜索、额度与安全重置、图片工具、高速模式和模型感知上下文；无需 API Key 或 Codex CLI。
-- [wsl1602291891-stack/dsh-zhilian-api](https://github.com/wsl1602291891-stack/dsh-zhilian-api) — 在 DeepSeek Harness 中一键接入 NewAPI 站点：浏览器授权本站账号，按分组创建/复用专用 Key（同名复用、模型范围原地更新），并按模型家族自动选择协议——GPT 走 Responses、Claude 走 Messages、其余走 Chat——账户余额、每把 Key 的用量和站点入口都集中在同一个设置页。
+- [wsl1602291891-stack/dsh-zhilian-api](https://github.com/wsl1602291891-stack/dsh-zhilian-api) — 在设置页一键授权智连站点账号，按分组自动创建或复用专用 Key，并按模型家族注册正确的协议路由，无需手动建 Key。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [wss534857356/dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) — 使用本地 Codex 登录的 Codex App Server 模型提供方，支持会话复用、Harness 工具桥接、原生动作轨迹和生成图片持久化。
 - [wth373737/dsh-plugin-ollama-bridge](https://github.com/wth373737/dsh-plugin-ollama-bridge) — 本机 Ollama 工具：模型清单、单次（未校验）问答，以及跑长文本的批处理——分块并发、逐条确定性校验、回传一小段抽样原文供复核，结果可选择写入会话工作区。
 - [wufeng0105/dsh-teammate-model-picker](https://github.com/wufeng0105/dsh-teammate-model-picker) — 让你手动给队友（子智能体）换模型：队友卡在一个不能用的模型上（比如额度用完）时，换个还能用的模型就能接着干，不用删掉重建，也不影响你自己的会话和全局默认模型。
@@ -4842,6 +4890,7 @@ dsh plugin --profile web add dshmarket
 - [lihongxu0221/dsh-prompt-filter](https://github.com/lihongxu0221/dsh-prompt-filter) — 按模型匹配重写请求中的 DeepSeek Harness 身份文本与工具名，并在响应中还原原名，保证工具调用正常执行。
 - [linsport/dsh-persona-manager](https://github.com/linsport/dsh-persona-manager) — 在设置页里管理 DeepSeek Harness 的 Agent 预设（人设）：基于官方预设新建、就地编辑人设正文、用排版预览检查效果，并导出或导入 JSON 备份与 Markdown。改写 profile 里手写的预设时按文本替换，注释、引号和 loader 表达式都原样保留。实测环境为桌面版；基于基准预设新建需要随 DSH 发布的 yaml 包。
 - [lirenjie95/IamChinese#iamchinese](https://github.com/lirenjie95/IamChinese/tree/main/plugins/iamchinese) — 把会话当作中国大陆用户（简体中文、Asia/Shanghai、ISO 日期、人民币），并生成彼此自洽的测试人设：五个工具、六项交叉校验，身份证校验位、号段与运营商 ASN、区划码与地址互相对得上。
+- [lliMill/dsh-persona-manager](https://github.com/lliMill/dsh-persona-manager) — 按模式控制角色设定的 DeepSeek Harness 插件：一份共享角色库，每个模式要么跟随当前角色，要么使用自己的角色卡或提示词；两者都没设置时完全不注入角色文本。
 - [lloydzhou/dsh-feishu-oauth](https://github.com/lloydzhou/dsh-feishu-oauth) — 通过飞书 OAuth 登录减少分发 DSH owner token 的需要，同时保留 token 登录；获准用户使用原生 owner 会话 Cookie，共享 owner 权限，不提供逐用户隔离。
 - [Lutisure/cyrene-dsh-plugin](https://github.com/Lutisure/cyrene-dsh-plugin) — 给 DSH 用的昔涟主题 agent，包括可自定义美化主题（配色、壁纸、粒子效果、背景音乐、打字音效）与代码安全扫描。拥有世界书、长期记忆与说话方式修正（一千个人心中有一千个昔涟），剧情检索增强回答。
 - [lw-storm/dsh-plugin-masterprompt](https://github.com/lw-storm/dsh-plugin-masterprompt) — 每对话独立的人设 / 主提示词插件：在输入框工具栏创建、编辑、切换和删除人设模板，最高优先级系统提示注入，附带固定交互护栏、子代理继承、新对话默认继承与本地 JSON 持久化。
@@ -4867,6 +4916,7 @@ dsh plugin --profile web add dshmarket
 - [polohot/dsh-adrian-inject-context](https://github.com/polohot/dsh-adrian-inject-context) — 把你保存的上下文条目以「Remember」行的形式注入到每条用户消息之后，可按轮或按会话一次；带设置编辑器与管理页。
 - [promise0320/dsh-persona-studio](https://github.com/promise0320/dsh-persona-studio) — 在 DSH 里把 LLM 的人格拆成六个维度（身份、语气、创作习惯、反馈方式、边界、运行参数）编译成一段提示词，注入系统提示词末尾；内置六套模板并支持直接丢文件的模板目录；还能读你过往消息归纳出人格草案——或统计成文，或让当前模型深读并给出判断依据。附带输入框旁的悬浮面板与 /persona 命令。
 - [proteuscrypto/wapliss-for-deepseek](https://github.com/proteuscrypto/wapliss-for-deepseek) — 通过托管的 Wapliss MCP 服务把 DSH 连接到你自己的 WhatsApp（使用个人 API Key 鉴权）；可读取和总结私聊与群聊、查看最新消息和群成员，并在你确认后发送文字、媒体、位置、联系人与投票。禁止群发或骚扰消息；与 Meta 或 WhatsApp 无关联。
+- [pseudonymzjt/dsh-direct-human-style](https://github.com/pseudonymzjt/dsh-direct-human-style) — 常驻 system prompt 的写作风格段（1449 字符：六条原则、必删套话、必拆句式和英文镜像清单），把回复压成直白工程口吻；另配两个工具：humanize_check 按 58 条规则（中文 45、英文 13、八组）扫描文本并报告命中和破折号、加粗、句长统计，humanize_rules 取回 direct、GPT 腔、DeepSeek 腔或 31 个编辑检查点的全文清单。
 - [puffdog-git/dsh-discord-cyberfriend](https://github.com/puffdog-git/dsh-discord-cyberfriend) — 把 DSH 人格接到 Discord，可用 Bot 或选用的个人账号；每个频道独立会话，能看图片与贴图、按表情、在语音房收听与说话、收发语音消息、播放音乐，频道操作先预览再确认。
 - [railgun20001/dsh-persona-modes](https://github.com/railgun20001/dsh-persona-modes) — 在「设置 → 人格模式」或 /persona 命令（/persona catgirl、/persona off）里切换回复语气，下一轮对话生效。同一时刻只注入当前这一条（放在运行时上下文里，系统提示词只保留一条约 50 字的稳定策略），关闭时注入 0 字；只改语气，不改事实、代码与工程纪律。
 - [Refreshing-CZQ/dsh-xhs-style](https://github.com/Refreshing-CZQ/dsh-xhs-style) — 在选品、版本选择与竞品分析前加入需求澄清门槛：默认进行 2–3 轮反问，每轮只问 2–4 个会改变选择的问题，验证真实痛点和硬约束，比较原方案、替代方案与最低成本路线，确认需求卡后再调研和成稿。正式报告保留小红书结构、具体步骤、逐张核验的配图与来源链接；普通查询和用户明确跳过时不拦截。纯 Host 静态提示词，无配置项、无前端 UI、无依赖。
@@ -4963,9 +5013,10 @@ dsh plugin --profile web add dshmarket
 - [5aaee9/pi-agent-extensions#dsh-autocompact](https://github.com/5aaee9/pi-agent-extensions/tree/main/dsh-autocompact) — 为 DeepSeek Harness 按模型设置更早的自动压缩阈值：/autocompact 以精确 provider/model 为键写入仅本会话生效的覆盖值（off 回退后端默认、default 清除覆盖），设置页「自动压缩」管理所有会话继承的持久化逐模型阈值，输入框状态条目显示当前读数。
 - [5D-artist/dsh-archived-purge](https://github.com/5D-artist/dsh-archived-purge) — DSH 归档会话清理：全选并永久删除归档会话的日志、投影缓存、工作区记账与归档标记（级联子代理日志），可选深度清理无人引用的附件、请求图缓存与该会话写出的工作区文件，并可扫描已删除会话的历史残留。
 - [643048695/dsh-compaction-route](https://github.com/643048695/dsh-compaction-route) — 在 Web 设置页里为会话压缩指定摘要模型，并在主模型出错时改用配置的兜底模型重试。
-- [7nian173/dsh-session-orchestrator](https://github.com/7nian173/dsh-session-orchestrator) — 建会话、交棒、在会话之间跳转，并用工作区信箱来回通信——送达、已读、已回执三段分开记录。信件重启后不丢，加急件优先投递，配置都在设置页里。
+- [7nian173/dsh-session-orchestrator](https://github.com/7nian173/dsh-session-orchestrator) — 可以通过对话让 agent 自己建立工作区与会话，也可以通过信箱让所有 DSH 里的会话相互通信，甚至页面的自动跳转；信件会保留在对应会话工作区根目录 .dsh-mail 中做本地化储存，不会涉及联网服务。同时注册了 / 与 @ 的相关命令，详情请见仓库。
 - [7starsseeker/dsh-task-anchor](https://github.com/7starsseeker/dsh-task-anchor) — 中途插话时把计划保住：未完成的 todo 落盘，插话落地的当回合就把「被挂起的项 + 插话原文 + 取消 / 补充 / 另起一件事」摆到模型面前，之后以「挂起工作」段继续渲染，直到完成或取消；回合收尾再兜底催一次，让剩余工作被明确交代，而不是被静默丢掉——它缓解注意力漂移，但不消除。
 - [7vw58n3ftvq7cn89v/dsh-plugin-session-colors](https://github.com/7vw58n3ftvq7cn89v/dsh-plugin-session-colors) — 给 DeepSeek Harness 的每个会话标颜色：悬停侧栏会话行即可选色（12 色），被标色行显示同色竖条，宿主侧持久化。
+- [856tangbin/context-recap](https://github.com/856tangbin/context-recap) — 内置会话复盘技能，并在右侧栏看板聚合所有未归档会话的卡片。
 - [879745uhjun/dsh-running-sessions](https://github.com/879745uhjun/dsh-running-sessions) — 在 DSH 首页列出当前正在工作的会话：实时状态、所属工作区、正在等待什么，并可一键进入。
 - [879745uhjun/dsh-session-boxes](https://github.com/879745uhjun/dsh-session-boxes) — 把 DSH 工作区侧栏里的会话归入自定义命名与配色的盒子，不改变所属工作区：一个会话可属于多个盒子并显示镜像行，支持折叠、拖拽或菜单归类，以及工作区标题栏的盒子管理器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [879745uhjun/dsh-session-broadcast](https://github.com/879745uhjun/dsh-session-broadcast) — 用输入框工具栏上的喇叭按钮把同一条消息一次发给多个 DSH 会话：按标题、工作区、运行状态或盒子挑选目标，可选择排队或打断投递，并逐个显示结果、对失败项重试。
@@ -5025,6 +5076,7 @@ dsh plugin --profile web add dshmarket
 - [ayuanxx-max/dsh-session-fork-tree](https://github.com/ayuanxx-max/dsh-session-fork-tree) — DSH 会话分叉树排列功能：分叉会话缩进排在父会话下方并绘制圆角连接线，有分叉的会话名字右侧带绿色“+”，默认收起、逐层展开，悬停子会话时祖先链高亮。
 - [ayuanxx-max/dsh-smooth](https://github.com/ayuanxx-max/dsh-smooth) — DSH 顺滑包：纯配置 bundle，装上即把对话与用量视图精简为 compact、字号 16、任务轮询放缓到 200ms；另附排障 SKILL.md 和需手动启用的可选配方（追加到自己的 cordis.patch.yml 或手改 profile）：去掉 Agents-Anywhere 的「重新连接」按钮、精简工具表、移除不兼容的旧子代理、让压缩阈值真正生效。用户自己的 patch 优先，移除 bundle 即回滚。
 - [azure5100/huahua-dsh-record-replay](https://github.com/azure5100/huahua-dsh-record-replay) — 功能完整的 DSH 录制回放插件（huahua 出品，Windows 实测可用）：会话时间线回放、回放包导出/导入、复刻会话重新执行、录屏自动生成可安装技能。基于 kangshifu1/dsh-record-replay 做 4 处 Windows/rc.5 适配（见 README 衍生声明）。
+- [Azyzg/dsh-selective-trim](https://github.com/Azyzg/dsh-selective-trim) — 按段修剪 DSH 会话日志（可勾选、可反悔），写盘前自动备份并用宿主校验器验过。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [ba1ying2/dsh-delete-session-menu](https://github.com/ba1ying2/dsh-delete-session-menu) — 在侧栏会话菜单里加中英双语的「删除会话」。确认后删除 <DSH_HOME>/sessions 下的会话日志、从 Workspace 注册表摘掉该 id（sessionIds、置顶、归档），先 detach 活会话再删文件，并广播 api-session/removed，让所有已连接客户端同步移除该行。
 - [Baboo-ming/dsh-session-delete](https://github.com/Baboo-ming/dsh-session-delete) — 用于彻底删除 DeepSeek Harness 会话，并同步清理 .dsh/sessions 目录下相关文件的插件。
 - [bainianlaoyao/dsh-session-robustness](https://github.com/bainianlaoyao/dsh-session-robustness) — 官方 llm-retry（n/5）耗尽后，对超时/传输/限流/5xx/SSE 断流等瞬时失败在同一打开 step 上继续重试直到成功、取消或暂停；认证失败、额度耗尽和用户停止不会重试。
@@ -5138,6 +5190,7 @@ dsh plugin --profile web add dshmarket
 - [devzer0o0/dsh-prompt-optimizer](https://github.com/devzer0o0/dsh-prompt-optimizer) — 发送前把你打进 DSH 输入框的话改写成精确的提示词，用会话自己的路由跑一次很便宜的小调用。改写结果就是真正落盘、真正发出去的内容，所以对话记录里看到的就是模型收到的；悬停鲸鱼图标能对照改写前后。斜杠命令、过短或过长的消息、纯图片消息一律不动，任何失败都原样发送。输入框里那只鲸鱼就是开关：关闭时是深色剪影，开启时是金色。
 - [DieJob/dsh-session-folders](https://github.com/DieJob/dsh-session-folders) — 在工作区中为每个会话的首次对话自动创建摘要命名的文件夹，支持新会话继承已有会话的文件夹，可按工作区开关。
 - [Diluka/dsh-afk](https://github.com/Diluka/dsh-afk) — 面向 ask_user_question 的 AFK 离开模式：当前 profile 全局或会话级设置，自定义自动应答或禁用新提问调用，基于会话日志的提问记录与已读状态；不批准权限或计划。仅支持 DSH 0.2.1-rc.2 与 0.2.1-rc.3。
+- [diyu331/dsh-btw-patched](https://github.com/diyu331/dsh-btw-patched) — 主任务继续运行的同时发一句侧问：答案只出现在输入框上方的弹窗里，参考的上下文包括当前这一轮正在流式生成的思考与工具调用、最近完成的工具调用，以及已完成的对话历史。
 - [Domaki-co/dsh-message-forward](https://github.com/Domaki-co/dsh-message-forward) — DSH 会话间消息转发：把单条模型回复、用户消息或多选合并的消息与图片从上游会话提取出来投递到另一个会话，支持静默发送、填入草稿、发送并跳转三种投递方式，并可套用提示词模板。
 - [domitor-syh/dsh-rollback](https://github.com/domitor-syh/dsh-rollback) — TRAE 式「回退到本轮对话发起前」插件：按轮次建立检查点（10 轮滑动窗口），同时回滚工作区文件与原位截断模型上下文，保持同一 session id。回退只能由人发起：/rollback 命令或每轮的 Web 回退按钮（被中断的轮次也可用），弹窗逐条列出受影响文件及其动作（恢复/找回/删除/跳过）。
 - [dongasai/dsh_compact_queue](https://github.com/dongasai/dsh_compact_queue) — 注册 /compact_queue：会话忙时也不丢弃请求的压缩命令——空闲就立刻压缩，忙时把请求排进本会话队列，等这个会话下一次空闲自动补跑；agent 状态事件之外再挂一条 2 秒兜底 tick，避免漏触发，排队最长等 30 分钟，排队中或执行中都可以用 /compact_queue cancel 撤销。命令只注册一次，每个会话各自一份排队状态，完成与失败以折叠 notice 注入、不唤醒模型；ManualCompactionError 除 busy 外一律视为终态、不再重试。只有 Host 半边，核心 /compact 不改。
@@ -5211,6 +5264,7 @@ dsh plugin --profile web add dshmarket
 - [fujingzhai/youxia-dsh-plugins#dsh-session-labels](https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-session-labels) — Finder 风格的会话标签：悬浮按钮（位于原生归档、固定之后）与右键菜单都能给会话打彩色标签，标题可按第一个标签着色或显示标签符号，「视图选项」增加按标签筛选且在分组前生效；标签由 Host 保存，在同一 Host 的各工作区之间共享。需要 DSH 0.2.2-rc.1 或更新版本与 Node.js 24.9+（node:sqlite）；界面仅提供中英文。
 - [Full626/dsh-session-trash-90d](https://github.com/Full626/dsh-session-trash-90d) — 列出本地 DSH 配置中保存的全部会话（标题、工作区、最近修改时间、大小），把选中项移入保留 90 天的回收站，可随时还原或彻底删除；删除前会先摘掉宿主内存中的会话，侧栏无需重启应用即可刷新。
 - [FunnyDiodio/dsh-session-delete](https://github.com/FunnyDiodio/dsh-session-delete) — 给侧边栏每个会话的"…"菜单加上"删除会话"（官方只有归档/置顶/重命名/分叉，无持久 删除）。一键「强制删除」：逐出宿主内存态会话、停止后台工作后，彻底清除会话日志、 投影缓存与注册表记账，已连接的桌面 Web 端即时清行、不留幽灵。会话生成的工作区文件 保留，对话记录永久删除；第三方云端镜像（如经 Agents Anywhere 同步的手机 App）持有 各自副本、需在其 App 内管理。中英双语界面，本地回环路由带信任栅栏。需 DSH >=0.2.1-rc.1。
+- [G-TY/dsh-delete](https://github.com/G-TY/dsh-delete) — 把已归档的 DSH 会话从磁盘上真正删除；菜单项排在「取消归档」下方并用红字，确认框与应用自身的样式一致。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [gabrielbav/dsh-workspace#dsh-plugin-session-delete](https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-plugin-session-delete) — 永久删除会话：DSH 只能归档会话，删除工作区也会留下其中的会话。本插件添加垃圾桶按钮和菜单项，可删除会话（连同其子代理会话）或删除工作区及其全部会话，且绝不动仍在运行或被其他进程打开的会话。
 - [GallenShao/dsh-faster-compress](https://github.com/GallenShao/dsh-faster-compress) — 在后台准备上下文摘要并于安全步骤应用，保留原生压缩回退，并提供摘要内容、应用状态、耗时与用量的会话压缩历史。
 - [Gaudi-XIX/dsbot-session-create](https://github.com/Gaudi-XIX/dsbot-session-create) — 给 DSH 加四个会话工具的宿主插件。放弃界面与云端中转，直接调用宿主会话控制器；派会话默认跟随宿主全局模型、全权限档，停下的会话一律续投同一条不另开。终态回执落盘必达；终态标记只管回执，不拦续投。
@@ -5490,7 +5544,7 @@ dsh plugin --profile web add dshmarket
 - [margbug01/dsh-ma-plugins#dsh-handoff](https://github.com/margbug01/dsh-ma-plugins/tree/main/dsh-handoff) — 脱敏会话交接，支持审阅、立即启动和仅生成简报。
 - [mars401/dsh-session-batch-manager](https://github.com/mars401/dsh-session-batch-manager) — DSH 会话批量管理：侧栏多选、主会话与子代理的树形看板（token／缓存／上下文统计）、批量归档与级联删除，以及把未分组会话召回重新添加的工作区。
 - [Max-Null/dsh-chinese-thinking](https://github.com/Max-Null/dsh-chinese-thinking) — 注入一条固定 system-prompt 段落，让 Agent 无论用户使用什么语言都始终用中文思考和回复。
-- [Maybe-Zero-not-one/dsh-daily-backup](https://github.com/Maybe-Zero-not-one/dsh-daily-backup) — 每天把会话本体、索引、人设、记忆、应用状态各留一份到工作区外，只保留最近 N 天。左侧栏「备份」页里能看每天备了哪些文件、能删掉某一天、能立刻拍一版；第二个页签「网盘推送」直接配 OpenList / WebDAV，每天备份完自动推一份异地副本，不必手改 profile。
+- [Maybe-Zero-not-one/dsh-daily-backup](https://github.com/Maybe-Zero-not-one/dsh-daily-backup) — 每天把会话本体、索引、人设、记忆、应用状态各留一份到工作区外，只保留最近 N 天。左侧栏「备份」页里能看每天备了哪些文件、能删掉某一天、能立刻拍一版；第二个页签「网盘推送」直接配 OpenList / WebDAV，每天备份完自动推一份异地副本，不必手改 profile。人设卡来自 dsh-soul-md，记忆来自 dsh-soul-md（按人设卡）和 dsh-fish-memory（按会话）——本插件只负责抄一份，不生产这些数据。备份只落在本机或你自己的网盘，不上传第三方。
 - [mayf3/dsh-session-doctor](https://github.com/mayf3/dsh-session-doctor) — 会话医生：列出会话（含 agent 运行状态）、读取会话记录、诊断卡死的 agent、解卡（cancel + keepInbox 保留排队消息）、向其他会话发送消息。
 - [MBSF-Yifan/mbsf-compaction](https://github.com/MBSF-Yifan/mbsf-compaction) — 本地上下文压缩，清冗余，免模型，毫秒级。仅适配 DSH 桌面版（app），web 版不支持。
 - [mcf171/dsh-session-delete](https://github.com/mcf171/dsh-session-delete) — 在会话行菜单中永久删除会话：先归档、再删除日志目录并立即移除该行，带 Delete 快捷键；只使用官方扩展点，仅打开过、未在运行的会话依然可以删除。
@@ -5729,6 +5783,7 @@ dsh plugin --profile web add dshmarket
 - [SunshineR04/dsh-session-manager](https://github.com/SunshineR04/dsh-session-manager) — 在设置页管理已归档会话：恢复或彻底删除（直接物理删除，无备份层）。会话菜单新增红色彻底删除项，附三个 agent 工具。已打开的会话也能立即删除，残留内存副本以归档墓碑隐藏、重启后自动清理。
 - [Sunshow/dsh-recent-sessions](https://github.com/Sunshow/dsh-recent-sessions) — 在 DSH 侧栏「设置」上方加一行「最近会话」：浮层可按标题、工作区、Session ID 或状态搜索，按最后活动时间列出各工作区的会话；子代理会话可折叠进主会话、隐藏或单独列出，并可选 1/7/30 天范围；入口行用黄点/绿点提示有待确认或已完成未打开的会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [sunyuhuirong/shl-session-history](https://github.com/sunyuhuirong/shl-session-history) — 会话历史迷你滑轨：对话区左侧垂直居中的短横线，每条横线代表一条真实用户请求，悬停预览请求内容，点击跳转到对应轮次。
+- [superltmajor-pixel/dsh-task-sidebar](https://github.com/superltmajor-pixel/dsh-task-sidebar) — 在会话标题栏加任务面板，按当前会话汇总：这次对话的附件与提到的文件引用、用到的技能及其说明、MCP 连接器及实时连接状态、以及交付的文件。图片可就地预览，文件可在右侧栏打开。
 - [svgop/dsh-rich-indexing](https://github.com/svgop/dsh-rich-indexing) — 分级压缩中枢：把单一的 80% 压缩阈值换成可配置的阶梯（默认 30/50/70/90），逐级加强压缩力度；每次检查点都折叠入确定性关键词索引，让事实跨周期累积；摘要走模型链——主模型加最多 3 个回退，各自独立推理档位。附带 Compaction 模块子标签页与设置卡片；关闭插件始终恢复原版压缩。
 - [swrabbit/dsh-keeper](https://github.com/swrabbit/dsh-keeper) — DSH 管家：按工作区浏览会话，归档、移入回收站或永久删除，清理空会话；开关已装插件的侧栏入口，并设置任务通知。
 - [SZMY-haruhi/dsh-session-plus](https://github.com/SZMY-haruhi/dsh-session-plus) — DSH Web 侧栏归档目录：将会话恢复到原工作区槽位、删除会话日志，或从用户消息修改并分支为新会话。
@@ -5752,6 +5807,7 @@ dsh plugin --profile web add dshmarket
 - [TiJun-Prime/dsh-turn-delete](https://github.com/TiJun-Prime/dsh-turn-delete) — 从 DSH 会话中删除一个已结束的轮次而不删除会话本身——最后一条助手回复旁的垃圾桶按钮会把该轮的提问、这条回复与工具记录从对话界面和模型上下文中移除，而 Session id、标题、之后的轮次与只追加日志保持不变；删除以持久 tombstone 记录，刷新后依然生效。
 - [timefarer/dsh-chat-search](https://github.com/timefarer/dsh-chat-search) — DSH 全局搜索与会话搜索插件：在所有会话或当前会话中搜索聊天记录，同时检索正文段落与文件名——忘了内容、只记得文件名也能找到。支持按日期范围与每个会话的最近轮次筛选、过滤，结果按“会话 → 问题 → 段落”展开，跳转后自动定位并高亮命中词。默认只搜最近 14 天、每会话最近 30 轮，清空任一项即可不限范围。
 - [tingfeng-droid/dsh-compaction-vcc](https://github.com/tingfeng-droid/dsh-compaction-vcc) — 用确定性文本编译取代 LLM 摘要，压缩过程不调模型、只搬运原文，被省略的内容可凭 seq 指针取回。基于 TsFreddie/dsh-compaction-instant。
+- [Tino0713/dsh_wechat_bot_talkingabout](https://github.com/Tino0713/dsh_wechat_bot_talkingabout) — 在 DSH 左侧栏加一个「微信助理」面板，从本机会话库还原机器人收到的微信对话，可搜索、复制和写草稿，装有 @xmanrui/dsh-im 且保存过投递目标时可把纯文字交给它发出。
 - [tinyblckc0000al/dsh-deepworker](https://github.com/tinyblckc0000al/dsh-deepworker) — DSH 会话工作台：轮次操作、引用出处、本地笔记与摘要、会话内查找、专注锁和多工作区命令按钮。
 - [TLEWA/dsh-fastload](https://github.com/TLEWA/dsh-fastload) — 把长会话首次打开时的历史页缩小到默认最多 100 条消息、尽量保留最新 2 个 turn；缩小的记录短于视口时，Web 端在后台调用内置「加载更早」把视口补齐。
 - [TLEWA/dsh-if](https://github.com/TLEWA/dsh-if) — 为 DSH 增加 /if 斜杠命令：第一行是条件，其余行是指令。由继承当前会话工具、system prompt 与消息历史的 fork 子代理判断条件并回答 YES 或 NO，只有 YES 才把指令作为一条普通用户消息发给主 agent，NO 则什么都不发送；条件、判断用的 prompt 与判断结果都不会写进主会话。模型工作时命令与普通消息一起排队，可在队列面板里编辑、删除、插话，设置里可切回 0.2.x 的后台模式。判断以只读方式运行，宿主没有可继承上下文的 fork provider 时回退为一次性模型调用加纯文本记录。适配 DSH 0.2.1-rc.5 及以上（已在 0.2.1-rc.5 与 0.2.2-rc.1 验证），需 Node.js 20.3 或更新版本。
@@ -5793,6 +5849,8 @@ dsh plugin --profile web add dshmarket
 - [vlln/dsh-autofork](https://github.com/vlln/dsh-autofork) — Agent 忙时自动分叉会话：新指令立刻在新会话里得到响应，旧会话留在后台跑完并把结果回注。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [vlln/dsh-better-trajectory](https://github.com/vlln/dsh-better-trajectory) — 原生轨迹的超集：一条可组合的查询（角色 / 类型 / 模型 / 步骤）、统一的四页签详情，以及逐字显示的原始日志。
 - [Voellin/dsh-deephub-share#dsh-deephub-share](https://github.com/Voellin/dsh-deephub-share/tree/main/packages/dsh-deephub-share) — 将一条 dsh 会话提炼为脱敏后的思路，端到端加密投递给 DeepHub 上的朋友；收到的思路落为一条新会话。
+- [Vonalier/dsh-global-session-search](https://github.com/Vonalier/dsh-global-session-search) — 跨所有工作区搜索 DSH 的全部历史对话与记录。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [w1207433681/better-dsh-session-cleaner](https://github.com/w1207433681/better-dsh-session-cleaner) — 删除 DSH 会话日志、工作区记录和产物目录，支持会话家族树、批量删除与一键绑定工作区。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [walksls/dsh-degeneration-kit#auto-checkpoint](https://github.com/walksls/dsh-degeneration-kit/tree/main/auto-checkpoint) — 压缩前先落档：会话接近 token 阈值时先要求模型把项目状态写进工作区的检查点文件，再按需开新会话接力、把旧会话停用。落档必须写于本次压缩周期内，且「这一轮定下的结论」那节正文确实变了——旧档、或用 cat 追加一行刷时间戳的档都过不了关。
 - [wangkohan/dsh-composer-draft-keeper](https://github.com/wangkohan/dsh-composer-draft-keeper) — 把未发送的文本草稿按会话存在本机，切会话、切页面、乃至重启应用之后回来仍在；已经发出或主动清空的草稿不会回灌。
 - [WangLemna/dsh-recycle-bin](https://github.com/WangLemna/dsh-recycle-bin) — 把 DSH 会话删入可恢复的回收站——子会话随其父会话作为一棵树处理，支持批量归档、恢复与彻底删除，只有彻底清除才会真正销毁数据。
@@ -5841,7 +5899,7 @@ dsh plugin --profile web add dshmarket
 - [xian-yu-zhao/dsh-context-manager](https://github.com/xian-yu-zhao/dsh-context-manager) — 管理 DSH 会话的模型上下文：按条或按整轮移除消息（可回退到某一轮的开始），之后还能恢复。
 - [xiangzz/dsh-clear-session](https://github.com/xiangzz/dsh-clear-session) — 新增 /clear 命令：在当前会话所在的工作区新开一个会话并切换过去，原会话留在侧边栏。是新开会话，不是原地清空上下文。
 - [xianshu-virtuous/dsh-whale-companion](https://github.com/xianshu-virtuous/dsh-whale-companion) — 接近上下文上限时自动创建新 Web 会话并只转移最后一个完整回合，同时提供可编辑的追加式鲸鱼娘人格与按需重读工具。
-- [XiaoFeng7418/dsh-plugin-chat-mode](https://github.com/XiaoFeng7418/dsh-plugin-chat-mode) — 新增零工具的「Chat（轻量对话）」模式，用来做日常聊天：不发送任何工具 schema，系统提示只剩一句极简语气提示或完全留空，也不注入系统、git 与文件树快照。在插件较多的环境实测，单条消息的输入 token 从约 36K 降到约 1.9K（约 19 倍）；思考默认关闭，需要时可在界面里打开；已在安卓 DSH Go 上实机验证。v0.2.0 增加本地斜杠命令（`/chat`、`/tone`、`/temp`、`/web`、`/think`），并支持按需开启联网搜索（只计模型 token）；v0.3.0 在输入框旁提供与网页端同款的「深度思考」与「联网」双开关，并与斜杠命令双向同步；v0.3.1 换成 DeepSeek 同款线框图标，加悬停提示与柔和微交互，并确保请求里不会混入无关的全局工具；v0.3.2 对齐网页端的单次旋转动效，去掉宿主遗留的直角外框，并让点击后的提示气泡自动收起；v0.3.3 在切换预设时释放该会话的工具屏蔽，从 Chat 切到 PTC 或标准模式不再丢失工具；v0.4.0 支持原生识图、8 KiB 内联文本与零依赖 DOCX 抽取，并按需为当前消息放行 read_attachment 读取上传文件。
+- [XiaoFeng7418/dsh-plugin-chat-mode](https://github.com/XiaoFeng7418/dsh-plugin-chat-mode) — 新增零工具的「Chat（轻量对话）」模式，用来做日常聊天：不发送任何工具 schema，系统提示只剩一句极简语气提示或完全留空，也不注入系统、git 与文件树快照。在插件较多的环境实测，单条消息的输入 token 从约 36K 降到约 1.9K（约 19 倍）；思考默认关闭，需要时可在界面里打开；已在安卓 DSH Go 上实机验证。v0.2.0 增加本地斜杠命令（`/chat`、`/tone`、`/temp`、`/web`、`/think`），并支持按需开启联网搜索（只计模型 token）；v0.3.0 在输入框旁提供与网页端同款的「深度思考」与「联网」双开关，并与斜杠命令双向同步；v0.3.1 换成 DeepSeek 同款线框图标，加悬停提示与柔和微交互，并确保请求里不会混入无关的全局工具；v0.3.2 对齐网页端的单次旋转动效，去掉宿主遗留的直角外框，并让点击后的提示气泡自动收起；v0.3.3 在切换预设时释放该会话的工具屏蔽，从 Chat 切到 PTC 或标准模式不再丢失工具；v0.4.0 支持原生识图、8 KiB 内联文本与零依赖 DOCX 抽取，并按需为当前消息放行 read_attachment 读取上传文件；v0.4.1 把两个开关换成网页端同款的分层原子与滑动地球动效，点击期间按钮保持可点（先乐观切换、失败回滚），并改用网页端深色提示气泡。
 - [xiaolin233-ctrl/dsh-session-transfer](https://github.com/xiaolin233-ctrl/dsh-session-transfer) — 在每个对话的「⋯」菜单里加一行「转移到其他工作区…」：把完整事件日志复制成目标工作区下的新会话（保留 header、标题与模型预设，并改写投递标记），读回校验后挂载，默认归档原会话（可勾选保留）。
 - [XiaoMa-PM/dsh-cross-session-agent-pre](https://github.com/XiaoMa-PM/dsh-cross-session-agent-pre) — 支持 DSH 跨工作区消息与发送方导航、同工作区受限上下文，以及可选的本机 Claude Code 双向通信。
 - [xiaomao361/dsh-conversation-title](https://github.com/xiaomao361/dsh-conversation-title) — 批量整理未归档会话标题，并在多个工作区之间复用可命名的标题模板。
@@ -5898,6 +5956,8 @@ dsh plugin --profile web add dshmarket
 - [yingqi-studio/dsh-material-library](https://github.com/yingqi-studio/dsh-material-library) — 对话里产出的成品收藏夹：把聊出来的目录、文件或笔记收进本地真实文件夹，打标签、按 Finder 方式浏览、点一下跳回原会话，条目只记原路径不复制文件。内置 materials_archive 工具与自动归档规则：某个任务的成品收过一次，之后每次定时任务跑完都会自动把新成品归档到同一个文件夹。
 - [ymck-x/dsh-session-continuity](https://github.com/ymck-x/dsh-session-continuity) — 新会话开始时注入一条很小的接续指针，说明上一个会话是谁、工作区有没有交接文档；没有交接文档时复用 DSH 已有的压缩摘要。
 - [yoinchen23-oss/dsh-message-branch](https://github.com/yoinchen23-oss/dsh-message-branch) — 原位编辑纯文本用户提问，并在新的 DSH 会话分支中重新发送。
+- [Yornii/dsh-session-delete](https://github.com/Yornii/dsh-session-delete) — 从侧边栏永久删除会话：把会话行上的归档按钮换成删除操作，弹窗内二次确认后由 Host 停止运行中的工作，校验目录只属于该会话，再删除其保存的记录。
+- [Yornii/dsh-session-unfold](https://github.com/Yornii/dsh-session-unfold) — 全屏任务板：把每个会话展开成一张可调整大小的卡片，显示消息、状态、待答问题与审批，并可直接在卡片里回复，另附搜索与状态筛选；批量删除由单独的 session-delete 插件完成。
 - [you-qilin/dsh-task-instructions](https://github.com/you-qilin/dsh-task-instructions) — DeepSeek Harness 插件：输入框旁的「任务指令」按钮，把可复用的任务要求固定到整场会话，压缩上下文也不变形。
 - [youqu68/dsh-delete-chat](https://github.com/youqu68/dsh-delete-chat) — 在设置页中归档、恢复并删除会话。
 - [yoyococo1234/dsh-drag-graft](https://github.com/yoyococo1234/dsh-drag-graft) — Codex 同款拖拽引用对话：把侧栏的会话行拖到对话区，它就变成输入框里一枚原生会话引用 chip，可以继续打字再发送。拖侧栏的工作区（文件夹）行，则把那个文件夹的路径插进草稿，整个目录一起交给模型。候选按 session id 匹配而不是按标题，标题重名或为空都不会插错对话。引用条数由宿主决定（原版 3 条），插件在运行时从宿主读取该上限而不写死，宿主侧调大后自动跟随、不用改插件。chip 插不进时降级为直接发一条只含引用的消息，不会静默失败。
@@ -6017,6 +6077,7 @@ dsh plugin --profile web add dshmarket
 - [annkun/dsh-memory](https://github.com/annkun/dsh-memory) — 分层 Claude Code 式记忆：用户级+项目级双作用域（项目记忆随 git 团队共享），MEMORY.md 索引会话启动自动注入，上下文护栏，纯文件零依赖。
 - [Anseya/flow-tower-context#flow-tower](https://github.com/Anseya/flow-tower-context/tree/main/plugin/flow-tower) — 面向 DeepSeek Harness 的压缩驱动项目记忆：把压缩增量确定性编译为可检索、带引文的项目词典，自适应双注入，并提供可移植的压缩接管预设。
 - [AntonyLang/dsh-memory-observer](https://github.com/AntonyLang/dsh-memory-observer) — 在后台把长会话提炼为观察与反思并注入系统提示，压缩时直接用预备记忆渲染摘要；提供设置页与可回溯原文的 memory_recall。
+- [Aonysen/dsh-memory-rag](https://github.com/Aonysen/dsh-memory-rag) — 给 DSH Agent 的 RAG 长期记忆，支持云端、本地 Ollama 与离线 BM25 关键词三种模式。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [aoyamabf-max/dsh-obsidian-memory](https://github.com/aoyamabf-max/dsh-obsidian-memory) — 把 agent 的长期记忆存成 Obsidian vault 里的普通 Markdown 笔记——每条记忆是一个带 YAML frontmatter 的 .md 文件，Obsidian 原生索引，可以直接读、改、链接和备份，不锁在数据库里。提供左侧栏面板（按标签筛选、按时间或重要度排序、就地编辑）、7 个 agent 工具、三档 token 预算的召回、BM25 排序（无需 embedding、无需 API key、离线可用、支持中文二元分词）、重要度衰减与归档（只移到 .archive/ 从不删除），以及可选的 GitHub Contents API 同步。含敏感串的记忆会被拒绝推送而不是打码，因为打码后的记忆读起来像完整的、实际关键信息已经丢了。零运行时依赖，依赖全部来自 DSH 宿主。
 - [Apauto-to-all/dsh-hindsight-control-plane](https://github.com/Apauto-to-all/dsh-hindsight-control-plane) — 把 Hindsight 记忆控制台嵌进 DSH 主面板：侧栏一键打开整块控制台，由 npx 拉起、随插件起停。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它通过 npx 启动 Hindsight 控制台（默认版本是 latest），控制台默认监听 0.0.0.0:9999，不设置主机名时整个局域网都能访问。
 - [aqsk-BLG/dsh-memory](https://github.com/aqsk-BLG/dsh-memory) — DeepSeek Harness 分层文件记忆，提供工作区隔离的 USER/MEMORY 笔记、后台沉淀与混合会话召回。
@@ -6037,6 +6098,7 @@ dsh plugin --profile web add dshmarket
 - [baosfeng/my-dsh-plugins#dsh-my-memory](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-memory) — 全局 / 项目两级记忆：会话开始时把记忆注入系统提示词，设置页面板支持新增 / 修改 / 删除（写操作需确认），并为 agent 提供只读查询工具 memory_query（npm: `dsh-my-memory`）。
 - [BaxterL/dsh-code-taste](https://github.com/BaxterL/dsh-code-taste) — 从指令和纠正里学习编码习惯，存成带置信度、可手工编辑的 Markdown 规则，并在每个会话中作为参考数据注入。衰减出注入窗口或与更新规则冲突的条目会留在待审列表里，而不是继续生效。
 - [bbqisbbq/dsh-tiddlywiki](https://github.com/bbqisbbq/dsh-tiddlywiki) — 把 TiddlyWiki 5 变成 DSH 的持久知识库：十个 tiddlywiki_* 智能体工具（带过滤的检索、读写/批量/改名/删除、最近、标签，以及 git 同步与冲突解决），GUI 中央栏经同源代理内嵌完整 TiddlyWiki 编辑器，右侧栏知识库 Tab，会话级汇总本会话读写过的笔记，快速笔记卡片支持草稿自动保存，另可选剪藏书签（选中图片一并存为二进制附件）——全部由自动提交的 git 仓库支撑。
+- [blank-win/dsh-deep-memory](https://github.com/blank-win/dsh-deep-memory) — 给 DSH 用的可移植记忆库：记忆文件、按天留底的原话、跨机器搬家的认识层。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [bonerush/dsh-obsidian-mem](https://github.com/bonerush/dsh-obsidian-mem) — 把项目文档与长期记忆以纯 Markdown 存进专用 Obsidian 仓库：六个 mem_* 工具（search / read / write / log / brief / admin）、会话第一步的一次带预算召回注入，以及已完成回合的自动蒸馏。Obsidian 无需运行，卸载插件后仓库内容照常可读。
 - [boogoo619/dsh-noteboard](https://github.com/boogoo619/dsh-noteboard) — 工作区级的无限画布便签：便签以 Markdown 文件保存，可手动创建、从对话中摘录或由 AI 提炼生成，并能作为上下文提供给 AI 使用；附带 12 个模型工具与 5 个内置技能，用于创建、打标签、整理、比较与合并便签。
 - [Breeze136/dsh-kb-rag#npm-package](https://github.com/Breeze136/dsh-kb-rag/tree/main/npm-package) — 本地文献知识库 RAG：10 个工具（kb_ingest、kb_search、kb_rag、kb_zotero、kb_dedup、kb_clear、kb_fetch、kb_scope、kb_stats、kb_status），BM25+向量+重排混合检索、DOI 可点击溯源问答，全本地 bge 嵌入 + 单文件 SQLite 索引。需要 Python 3.9+ 及 pymupdf、faiss-cpu、sentence-transformers（`npx dsh-kb-rag-install` 安装器会自动装好并预下载模型）。
@@ -6078,6 +6140,7 @@ dsh plugin --profile web add dshmarket
 - [Daphne999/dsh-qq-archive](https://github.com/Daphne999/dsh-qq-archive) — 把会话日志归档成本地可检索的聊天库：逐帧解码几千帧相接的 zstd 日志，抽取 user/assistant 文本入 SQLite，提供同步/检索/统计三个工具。幂等导入，不依赖外部服务，数据不出本机。
 - [Dayi-Z/dsh-learn-wiki](https://github.com/Dayi-Z/dsh-learn-wiki) — DSH 的纠错式补料知识库：agent 反复撞同一堵墙时，后台 worker 在限流下联网抓取、蒸馏结果先落暂存区，只有两段式 commit 才能进入召回——无来源的页面一律拒绝。
 - [ddt2501/dsh-doubao-memory](https://github.com/ddt2501/dsh-doubao-memory) — 人格记忆系统：SQLite 事实记忆（带遗忘衰减）、wiki 人格抽象、每轮住相、按需召回工具；人格数据留在用户自己的目录。
+- [DDVIP/dsh-memory-yuan](https://github.com/DDVIP/dsh-memory-yuan) — 基于 Markdown 文件的长期记忆：十三个工具、L0/L1/L2 三层注入、体检与结构检查，外加带星图的控制台面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [dearbld/dsh-living-memory](https://github.com/dearbld/dsh-living-memory) — 单文件本地 SQLite 的自整理活记忆——夜巡引擎自动去重、合并、衰减、建链，七信号 RRF 混合检索（FTS5+jieba 中文优先分词、可选向量 KNN、图谱 PPR），带类型知识图谱，冲突检测标记矛盾而非静默覆写，Web 遥测面板。
 - [dennisrongo/dsh-plugins#dsh-memory](https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-memory) — /remember 命令将事实写入 dsh 已加载的 AGENTS.md 指令层级，并配有 Memory 标签页，显示加载器在字节预算内实际保留了哪些指令。
 - [Derek-Y-JQ/knowledge-galaxy](https://github.com/Derek-Y-JQ/knowledge-galaxy) — DeepSeek Harness 的知识收录看板：把对话答案、论文与随手笔记收录进学习/学术/日常三种模式，用分组看板、时间轴或日历浏览，卡片之间可建立联系并在单星系星图里漫游；另提供 agent 工具与定时收录任务。
@@ -6101,6 +6164,7 @@ dsh plugin --profile web add dshmarket
 - [ECNU/EduWork#dsh-memory](https://github.com/ECNU/EduWork/tree/main/packages/dsh-memory) — 本地语义记忆与过往对话检索，保留来源引用，支持编辑、保留、遗忘、撤销及 JSON 导入导出。
 - [EdmundZhangzy/dsh-error-lessons](https://github.com/EdmundZhangzy/dsh-error-lessons) — DSH 代理的跨会话错误教训库：处理报错前先检索过去踩过的坑，直接复用已验证的解法。
 - [edsml-jz2321/QuoteMem](https://github.com/edsml-jz2321/QuoteMem) — DSH 长期记忆，每条记忆都保留它出自的原话：原生插件负责保存、召回和遗忘，stdio MCP 服务提供搜索、记忆列表、历史、出处、两步遗忘和健康检查。
+- [ElementBen555/context-hub](https://github.com/ElementBen555/context-hub) — 把长期记忆、压缩与上下文观测装进一个 DSH bundle：SQLite 记忆与预算化召回、可逆折叠、带审计链的治理，以及 7 语言面板。
 - [elvisw/dsh-plugin-magic-context](https://github.com/elvisw/dsh-plugin-magic-context) — Magic Context 帮你在 DSH 的长会话中腾出上下文，也把重要的项目背景留到下一次对话。它将旧对话整理为摘要，回收暂时用不到的工具输出，需要时仍能按标签取回，减少重开会话后反复交代背景的麻烦。
 - [emo-bird/dsh-deepmemory](https://github.com/emo-bird/dsh-deepmemory) — 给 DSH 的跨会话长期记忆——事实、原样片段和每天一篇日记存在一个本地 SQLite 文件里，附带侧边栏面板和按会话的开关。
 - [EPCN-fla/dsh-observational-memory](https://github.com/EPCN-fla/dsh-observational-memory) — 在后台将会话工作提炼为观察和反思，以便在上下文压缩后保留会话上下文。
@@ -6123,7 +6187,7 @@ dsh plugin --profile web add dshmarket
 - [Fqh22/dsh-rag#plugin](https://github.com/Fqh22/dsh-rag/tree/main/plugin) — 给 DeepSeek Harness 加一层按项目分类的长期记忆：面板可浏览、检索、编辑每个项目记得什么，并在会话第一句后注入一条「去读 handoff pack」的指针。记忆库本体是同仓库里的本地 MCP server（Python + SQLite）；插件从 npm 安装，之后按 README 克隆仓库并配置 MCP，插件会通过 DSH_RAG_ROOT 或常见安装位置找到仓库。上下文包按「稳定基线在前、事实追加在后」排序，用来复用 prompt 缓存。
 - [freehul/sgme](https://github.com/freehul/sgme) — 拾光记忆引擎（SGME）桥接：多智能体共享长期记忆（HTTP）—— L0/L1/L1.5/L2 分层提炼、按场景注入、统一检索、主动关怀信号（memory_search / wiki_search / signal_pull / signal_claim / signal_ack），npm 包名 `dsh-sgme`。
 - [Frog755/dsh-hybrid-memory](https://github.com/Frog755/dsh-hybrid-memory) — DSH 本地混合记忆插件：L1 快照（MEMORY.md/USER.md，由 memory_* 工具按需读取）+ L2 可检索知识库（facts + SQLite FTS5，滑窗分词支持中文检索）+ L3 从 Hermes/Claude Code/Codex/WorkBuddy 以及 Agent Hub 已批准文档（memory/global、memory/projects、accepted decisions）导入，内容哈希去重。v0.2.0 已移除全部自动注入：记忆只在模型调用 12 个 memory_* 工具之一时才进入上下文，数据全部留在本地。
-- [fubai-fenzhi/dsh-procedures](https://github.com/fubai-fenzhi/dsh-procedures) — 给 DSH 和其他 agent 用的文件化经验卡：工具报错命中时只注入一行指向本地卡的提示、不注入整卡——实测单次命中约省 83%~90% token——含命中统计、稀有度、跨机同步、社区卡库与非 DSH agent 的通用版。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [fubai-fenzhi/dsh-procedures](https://github.com/fubai-fenzhi/dsh-procedures) — 给 DSH 和其他 agent 用的文件化经验卡：工具报错命中时只注入一行指向本地卡的提示、不注入整卡——实测单次命中约省 83%~90% token——含命中统计、稀有度、跨机同步、社区卡库与非 DSH agent 的通用版。
 - [fujingzhai/youxia-dsh-plugins#dsh-session-history](https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-session-history) — 把 Claude Code、Codex、Antigravity、Pi、DSH、OpenCode、LobsterAI 以及实验性的 WorkBuddy 的对话整理成按天存放的原文 Markdown 日志，并建本地全文索引；以一个共用技能提供给这些 agent，让它们能查到彼此聊过什么。保留原话，不做摘要，不用向量，不调用模型；数据在 ~/.session-history。需要 DSH 0.2.2-rc.1 或更新版本与 Node.js 22.15+。
 - [Gao2612/relationship-notes](https://github.com/Gao2612/relationship-notes) — 私人关系手记：按消息级证据为每天的聊天打分，并跟踪一段关系的进展。聊天、档案与草稿只存在浏览器本机 IndexedDB，插件自身不运行服务器；但使用模型回复、资料整理或历史自动分析时，相应聊天上下文会交给 DSH 配置的模型服务。
 - [Genesi599/dsh-plugins#curator](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/curator) — 每几轮让模型判断是否有值得沉淀的经验，并把结论归入 memory、skill 或 hook 三类之一。
@@ -6137,7 +6201,7 @@ dsh plugin --profile web add dshmarket
 - [GreatArrow-ai/dsh-greatarrow](https://github.com/GreatArrow-ai/dsh-greatarrow) — 通过 Streamable HTTP 将 dsh 连接到 GreatArrow.ai MCP 服务器，让智能体检索和保存与你其他 AI 客户端共享的工作区记忆、任务与决策；纯配置包，从 dsh 主目录的 great-arrow.token 读取令牌，从不读取环境变量。
 - [greyoak111/siyuan-codex-bridge](https://github.com/greyoak111/siyuan-codex-bridge) — 把 DeepSeek Harness 接到本机思源笔记桌面端：把笔记工具注册为 mcp__siyuan__<tool>，额外把思源里配置好的 AI 与其 agent 回路也做成一个工具（按档位门禁），附带笔记使用技能，并在每次调用上执行只读/创作/完整三级策略；思源关闭时工具列表依然可用。
 - [guo6x/dsh-palate](https://github.com/guo6x/dsh-palate) — 给 DSH agent 的积累型设计品味语料库：喂好坏例子、提炼原则，用学到的判断评审新设计，而不是套固定规则。
-- [GuyeQiuchen/dsh-fish-memory](https://github.com/GuyeQiuchen/dsh-fish-memory) — 给 DeepSeek Harness 的紧凑长期记忆：开机只注入一小段，细节按需检索，写回走工具。家规有独立预算；压缩后回头核对哪些约束被压丢了，丢了在下一轮开头报警。另含心情与整理提醒、主动唤醒，全部模块化可删。
+- [GuyeQiuchen/dsh-jiyiti-memory](https://github.com/GuyeQiuchen/dsh-jiyiti-memory) — 给 DeepSeek Harness 的紧凑长期记忆：开机只注入一小段，细节按需检索，写回走工具。家规有独立预算；压缩后回头核对哪些约束被压丢了，丢了在下一轮开头报警。另含心情与整理提醒、主动唤醒，全部模块化可删。
 - [han0han0le0ni/dsh-daughter](https://github.com/han0han0le0ni/dsh-daughter) — 五层人格（L1–L5）、事件记忆（FTS5 与 Dice 混合检索）、认知滤网、技能卡与自固化资产包、毫秒级条件反射、三档安全降级、只读脑星图，另附可选的 VPet-Simulator 桌宠 MOD 桥。
 - [hanhan9999999999999999999/dsh-macro-memory](https://github.com/hanhan9999999999999999999/dsh-macro-memory) — 8 个 memory_* 工具 + 一段 1235 字符常驻注入，主库是 meow 的七层 SQLite：146 条宽池（含 106 条干扰）照抄 hit@1 0.977、1200 条库单次检索 3.3ms、8 个工具参数共 4714 B。
 - [hanhan9999999999999999999/dsh-memory-nebula](https://github.com/hanhan9999999999999999999/dsh-memory-nebula) — 面向 DeepSeek Harness 的本地优先记忆星图，提供图形视图、证据链、记忆体检与离线快照。只读地读取各工作区以及其他记忆插件（如 meow-memory 的 SQLite）的记忆库，只写入 $DSH_HOME/memory-nebula。会注册 9 个 agent 工具和一段系统提示（每轮带用法规则，读过几条记忆后再补充尚未读过的邻近记忆）；/export 与 /share 接口在本地服务上无需认证即返回完整记忆原文；可选的独立引擎监听 127.0.0.1:7890。
@@ -6177,6 +6241,7 @@ dsh plugin --profile web add dshmarket
 - [isheng-eqi/dsh-hermes-memory](https://github.com/isheng-eqi/dsh-hermes-memory) — DSH 上 hermes-agent 记忆机制的忠实移植（MEMORY.md / USER.md）：有界双记忆库（2200/1375 字符）、单个 memory 工具（add/replace/remove/batch 全有或全无）、每会话冻结快照注入与 nudge 提醒、DSH 原生 JSON 存储——零外部依赖、零 LLM 成本。
 - [IStarFoxI/dsh-memory-calendar](https://github.com/IStarFoxI/dsh-memory-calendar) — 本地优先的 DSH 长期记忆插件：文本包、按需检索、可回原始事件、多大脑与工作区边界。
 - [itr-del/dsh-cue-bank](https://github.com/itr-del/dsh-cue-bank) — 跨会话「触点记忆库」插件：自动从每轮对话提取任务/会话级触点与用户惯用词，存入全局持久记忆库；检测到话题切换时重新注入相关历史记忆（关键词或向量匹配）。
+- [ivezhang/dsh-GameDesignMemory](https://github.com/ivezhang/dsh-GameDesignMemory) — 面向游戏策划的知识工作台：把带类型的记忆与知识对象连成一张关系网，提供版本与证据留痕、AI 改不动的固有约定保护，以及按任务分层的召回。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [iwtown/dsh-llm-wiki](https://github.com/iwtown/dsh-llm-wiki) — Karpathy LLM Wiki 模式的 DSH 知识库系统：wiki-write/wiki-search 技能引导模型写读 Obsidian wiki，零依赖管线（lint/索引/mnemon 记忆体同步/质量闭环），极简生命周期插件注入守则与知识预览，Ollama 兼容代理接 SiliconFlow 语义召回。
 - [Jackbessaliuz/dsh-memory-semantic](https://github.com/Jackbessaliuz/dsh-memory-semantic) — meow-memory 的只读语义检索增强层：为本机记忆条目与对话轮次建 bge-m3 向量索引，提供记忆图谱与逐字原文召回，绝不回写记忆库；需与 meow-memory 搭配使用。
 - [jackyytche/dsh-hindsight-memory](https://github.com/jackyytche/dsh-hindsight-memory) — 接入 Hindsight 长期记忆：每轮开始前自动注入相关记忆，回合结束后自动沉淀对话。需要 DSH ^0.2.0-rc.1（已在 0.2.0-rc.2 验证）。
@@ -6200,6 +6265,7 @@ dsh plugin --profile web add dshmarket
 - [jojoman2024/dsh-memj](https://github.com/jojoman2024/dsh-memj) — 以项目为主线的 DSH 记忆插件。开放知识书写，以及插件提示词编辑，让用户不改一行代码就能重新设计记忆库结构与模型被驱动的方式。默认的记忆库核心设计在于，项目以一份你自己设计的项目文档（默认是一份交接文档）作为实体，插件自动识别会话所属项目、把沉淀的知识与项目绑定，并把可复用的部分升级进主题与全局层。用最自然的逻辑完成知识的初筛，上下文可控压缩和留档。
 - [joymitu/xuyi-memory-release#dsh-adapter](https://github.com/joymitu/xuyi-memory-release/tree/main/dsh-adapter) — 续忆（Xuyi），QQ 陪伴聊天的本地长期记忆：把 QQ 私聊和群聊消息存进本机 SQLite，通过自动召回和 `xuyi_recall` 工具带原话找回以前说过的事，每天写一篇日记，支持备份导出与恢复，附 11 套人设和首次安装引导。
 - [JqandCl/dsh-memory-huixiang](https://github.com/JqandCl/dsh-memory-huixiang) — 给 AI 一个本地记忆库：纯文本卡片，会随时间变淡、也会被想起来；记不清时如实说不知道；数据全放在你自己的电脑里。
+- [juki001/dsh-memory-curate](https://github.com/juki001/dsh-memory-curate) — 给 DSH 的可审计长期记忆：把记忆、决策和提示版本写进同一个只追加的 NDJSON 文件；最近 5 个真人回合不参与压缩；写入、召回、压缩都能追溯到来源并随时改。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [JunNanLYS/dsh-layered-memory](https://github.com/JunNanLYS/dsh-layered-memory) — dsh 长期记忆：对话自动蒸馏为原子事实、场景摘要与用户画像，每步模型调用前自动注入相关记忆。开箱零配置——BM25 + 向量混合检索，可选本地离线嵌入，chat/work 双族隔离。
 - [Kagurazaka135/dsh-memory](https://github.com/Kagurazaka135/dsh-memory) — 明文 YAML 的分层跨会话记忆：事实带版本链而非覆盖，会话开始注入简报，夜间整理并在超过阈值后按主题分片。零运行时依赖，在 dsh 安卓版实测可用。
 - [kaveys/agent-user-profile](https://github.com/kaveys/agent-user-profile) — 把「你是谁」记成一份持久画像——从红线、口味到沟通习惯共十类，每轮任务前先读一遍，偏好不用反复交代。候选事实先进待审队列，确认后才进画像；注入前过相关性闸门，可以要求某一轮不读画像。写入时自动合并近义条目，别家 AI 导出的画像文本能整段搬进来并拆成条目；另带七页签面板、`profile` 命令行与 14 个 MCP 工具，覆盖审阅、修改、置顶、软失效、快照、恢复与加密备份。
@@ -6235,7 +6301,7 @@ dsh plugin --profile web add dshmarket
 - [light-cheng/DSH-Mem0](https://github.com/light-cheng/DSH-Mem0) — 为 DeepSeek Harness 提供基于 Mem0 的长期记忆，支持 Platform、自建 Server 和本地 OSS 后端，带可视化设置、自动召回（从第一轮起）与保存、可编辑记忆摘要、Token 预算和每周记忆巡检（只删除本插件写入的记忆）。保存的文本会先脱敏；记忆摘要是稳定的系统提示段（plugin:dsh-mem0:profile），召回是最后追加的独立 mem0:recall 块，不破坏已缓存的提示前缀；召回与保存都有超时（recallTimeoutMs、addTimeoutMs）。安装 dsh-strata 时，召回大小遵循它的 strataBudget 额度；可选设置 captureStrataFolds（默认关闭）还会把它的折叠摘要存为记忆。
 - [lightporta/dsh-knowledge-center](https://github.com/lightporta/dsh-knowledge-center) — DeepSeek Harness 本地知识库：把工作区与对话附件中的 PDF、Word、Excel、Markdown、TXT、CSV、HTML 文档提炼为 Markdown 知识，提供类 VS Code 预览、按工作区授权，以及检索、读取和入库的模型工具。
 - [LingDangZaiXiang/dsh-life-hair](https://github.com/LingDangZaiXiang/dsh-life-hair) — 上下文压缩时把 checkpoint 原文抄进便签归档，并叫醒会话补写丢掉的内容。
-- [linkpain/dsh-recall-rebuild](https://github.com/linkpain/dsh-recall-rebuild) — 增强 DSH 记忆插件：把检索到的记忆碎片经 LLM 重建为带语境与情绪的回忆片段再注入，而非念原文；对底层记忆库只读，支持多记忆源、IM 用户级隔离、睡眠巩固与 JSONL 审计日志。
+- [linkpain/dsh-recall-rebuild](https://github.com/linkpain/dsh-recall-rebuild) — 重建式回忆增强插件，附带「记忆识海」可视化面板：把记忆画成深空点云（点是记忆、线是联想），原始 / 巩固双数据源一键切换。核心能力：只读现有记忆插件的记忆库（内置 16 种记忆源适配，auto 模式多库 RRF 融合），在模型步骤前把检索到的记忆碎片重建为带语境与情绪的回忆片段再注入，替代生硬的原文注入。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [linner1224/dsh-video-coursemap](https://github.com/linner1224/dsh-video-coursemap) — 仅限 Windows：读取前台窗口标题，识别 B 站视频课程并按学科分类，抓取简介/弹幕/评论，生成 Markdown + Mermaid 知识地图与 Word 学习手册（Word 输出依赖本机 Python）。
 - [lishicheng2054/dsh-flavor-memory](https://github.com/lishicheng2054/dsh-flavor-memory) — 角色聊天记忆层：人格、语气、关系与摘要分开保存，原文全量归档并按需检索，附带 SillyTavern 角色卡导入和 OpenAI 兼容网关。
 - [LittleBlackTong/dsh-plugin-memory](https://github.com/LittleBlackTong/dsh-plugin-memory) — 带 LLM Wiki 结构与 SOUL 人格文件的长期 markdown 记忆库：会话启动注入 boot 块（默认提问后才注入、且只注入当前激活会话），含 remember/recall/consolidate/forget 工作流、内嵌 memory 技能、pack/unpack 迁移工具，以及空闲时以第一人称主动追忆（recall nudge）的拟人化能力。同时补上记忆库原先缺的“可观测 + 可维护”：按文件分配 boot 预算（索引路由表不再被截断）、自动戳记 last_access（salience 衰减真正生效）、只读记忆健康看板（体量/新鲜度/与 lint 同源的体检）、声明式索引编译器（页面声明 summary:，一条命令重写索引行），可拖动、可滚轮缩放的记忆图谱（页间链接 + 共享 tag）、结构化检索（tag/type/salience/hot/stale 过滤）、针对「尚无内容关系」页面的补链建议，以及以「最该做的 N 件事」收尾的 `checkup` 体检报告。同时把操作细节移到按需加载的技能，boot 注入体量减少约 23%。设置区块现在还有专属侧栏图标（半脑 + 节点——因为设置 shell 不给插件留图标位）和直达本仓库的反馈入口。要求 DSH session format v4（官方 DeepSeek Harness 0.1.7+）：注入消息使用 producer-owned source kind plugin:memory。 v0.11 起设置面板与侧栏 label 跟随 DSH 语言设置（中文「记忆」/英文 "Memory"）；v0.12 新增跨插件共享发言权、按语境微调的语气段与每周成长回顾；v0.13 用 engines.dsh 声明 DSH 兼容范围（官方 0.2.1-rc.5 系列，旧宿主会被闸门拒绝），新增「立即回顾」按钮（POST /api/memory/control，action growth-now，立即发一次成长回顾且仍尊重发言权）、面板可访问性（aria-label、status/alert role、focus-visible 焦点环）与公开的 PROACTIVE-PROTOCOL.md。v0.14 新增按会话记忆开关：输入框芯片（下拉可选本会话 / 此工作区默认）、/memory on|off|status 命令与设置面板开关共用同一判定——关闭后该会话不注入 boot 块、不发 digest/追忆提醒、不盖 last_access（记忆文件不删）；disabledWorkspaces 可让整个项目默认关闭，会话选择持久化 7 天。v0.15 新增「人格基础（快速铸魂）」卡片：我的名字 / 你的称呼 / 基础人格描述，保存写入 SOUL.md 受管区块（其余内容一字不动）并把 BOOTSTRAP 标 complete；对话铸魂的老库会从 SOUL 文本回显，未铸魂时 boot 块会先提醒用户完成铸魂。v0.16 把记忆图谱升级为可交互 3D 球面（Canvas 手绘、零依赖）：拖拽旋转、滚轮缩放、拖节点 3D 整理布局、双击空白重置、自动慢转（尊重减少动态效果）；悬停或点击节点即时高亮邻居（位移+时长点击阈值），配色随浅色/深色面板自适应。v0.17 新增图谱搜索（排序匹配，镜头飞到命中的节点并点亮邻居）、节点的「在 Finder 中显示 / 复制路径」（等待命令结果，失败自动复制路径兜底）、Windows 兼容（路径变量展开、CRLF 读写保留换行风格、explorer 参数与退出码处理、工作区大小写匹配），README 精简并加入真实截图。v0.18（issue #8）新增 boot 快照模式：session 在本会话固化 boot 块，会话中途写记忆不再让前缀缓存失效（最近动态改走独立的靠后 context 段），默认仍是 live；双击记忆节点改为在 DSH 右侧栏打开该文件（打不开时回退系统文件管理器）。v0.19 兼容 DSH 0.2.2-rc.2：agent 注册表优先 agents.roots()、缺失时回退 agents.list()，所有 agent/created 监听器都做了异常保护——rc.2 下未保护的抛错会让 agent 注册被拒、无法新建会话，因此 rc.2 用户必须升级到 0.19.2 或更新版本（最新 0.19.5）。设置面板、看板与输入框 chip 在老宿主与 rc.2 上均可工作。
@@ -6270,6 +6336,7 @@ dsh plugin --profile web add dshmarket
 - [madage/dsh-self-improved](https://github.com/madage/dsh-self-improved) — DeepSeek Harness 长期记忆与自进化插件：L0 对话捕获 → L1 记忆提取 → L2 场景归纳 → L3 用户画像，自动召回注入 + 技能合成，纯本地（SQLite FTS5 + jieba，可选向量召回）。
 - [malabananclauss-rgb/qing-self](https://github.com/malabananclauss-rgb/qing-self) — 为 DSH agent 的延续搭建结构脚手架：分层记忆（hot/index/judgments）、判断卡、接续包（handoff，含紧凑模式）、压缩审查。零依赖、纯文件、可迁移——换模型后靠文件重建"我"。不是记忆引擎，是自我延续的骨架。
 - [Marquez807/dsh-experience-memory](https://github.com/Marquez807/dsh-experience-memory) — 跨会话经验记忆：经验按证据定级，本轮话题相同时才注入；动手前提示只在记录自己声明了适用哪次调用时才出现。不管聊什么都要守的规矩（例如「一律用中文」）可以标成**常驻**，之后每一轮都会带上它——24 个隔离真模型回合实测：标常驻 6/6，对照组（空库、同一条不标、无关常驻）合计 0/18。光是猜的东西进不了常驻层：标了常驻也必须有可核实的出处。没人再查的记录会被退役（可逆）。五个模型工具、七个斜杠命令、运行时零依赖。
+- [marsma-101/dsh-tag-memory](https://github.com/marsma-101/dsh-tag-memory) — 给 dsh 智能体的标签化长期记忆：条目存在一份可直接用编辑器打开修改的 9 列 CSV 里，写入、读取、整理三本 JSONL 台账记录每一次操作，改库前自动备份。项目与智能体由程序从会话工作目录和已绑定身份填充，模型只决定自由标签，未绑定身份的会话首次使用时必须向用户询问名字。召回先按项目、智能体、状态硬筛再打分，跨智能体条目靠隔离不可见而非分数低，另有两道否决（条目命中率须大于 0.5、query 命中率须不低于 0.15），过线也不会返回噪声。稳定性阶梯需三次验证通过且无错答才升为稳定，出现错答即降为易变。10 个工具、可浏览与编辑的网页界面，无网络请求、无向量、无 API 密钥。
 - [MarsStorm/dsh-hierarchical-fishmemory](https://github.com/MarsStorm/dsh-hierarchical-fishmemory) — 面向 DeepSeek Harness 的分层长期记忆，合并自 AirPineApplea/feiyu-memory 4.0.2、dsh-soul-md 与 dsh-shallow-memory（请勿与这几个插件同时安装）：从结束的对话自动蒸馏的共度时光日记、手写的情感日记、带版本历史的人设卡、每轮全量注入的人格手记，以及带 TTL 的浅层记忆，各自独立限量以控制每轮注入开销；附带一组智能体工具与侧栏面板，可召回、编辑、压缩，并支持本地文件、WebDAV 与 gzip 整包备份还原。
 - [Max-Null/dsh-memory](https://github.com/Max-Null/dsh-memory) — 跨会话明文记忆：确定性 BM25 关键词召回（无向量嵌入），memory_save/list/search/confirm/forget 五个工具 + 人工确认闸门，global/project 两层 JSON 存储（project 随 git 分享）。
 - [meisijiya/dsh-hindsight-memory](https://github.com/meisijiya/dsh-hindsight-memory) — 把 DeepSeek Harness 接入 Hindsight 记忆服务，沿用与 omp 相同的约定：单一共享 bank、自动打项目标签、项目层与全局层同时召回，并提供精神模型、重复检测与失败后台任务重试工具。需要本机已运行 Hindsight 服务（默认 http://127.0.0.1:8888）。
@@ -6340,7 +6407,7 @@ dsh plugin --profile web add dshmarket
 - [qihao1123/dsh-whale-pal](https://github.com/qihao1123/dsh-whale-pal) — dsh 的跨会话记忆与压缩档案插件，另带人格内核。每轮有实质内容时由一次后台模型调用萃出事实、偏好、未完成的事与答应过的事；条目带编号，久不提会淡化，按类限额，也可以纠正。宿主动压缩时，被压掉的一段落成档案卡写进笔记库，目录注入会话，需要细节时按编号读回原文。另有只追加台账、设置页、/whale 命令组与九个工具。
 - [Qinling-Melon-Farmers/dsh-memoir](https://github.com/Qinling-Melon-Farmers/dsh-memoir) — 仅本地运行、零捆绑运行时依赖（仅使用 DSH 宿主 peer）且不调用外部服务的项目记忆：以 JSON 为单一事实源并自动生成 PROJECT_MEMORY.md、按 token 有界且按会话冻结的 Hot Memory 以保持 prompt-prefix cache 稳定、带查询缓存的跨项目 BM25 召回、可信 session/turn 溯源、可解释的写前重复/冲突治理、可编辑的重要度/置顶/标签/supersede/归档生命周期、可配置的顶层回合自动蒸馏，以及支持搜索、检查、诊断和实时设置的中英双语 Web GUI。
 - [QiuYeDx/dsh-rugu#dsh](https://github.com/QiuYeDx/dsh-rugu/tree/main/packages/dsh) — DeepSeek Harness 的人设记忆：所有入口（DSH 桌面，以及经 dsh-qq 桥接的 QQ）共用一份记忆，记的是 Agent 自己经历过什么。保留原话，每次回话前按五路回想（向量、字面、人和事、时间、在场的人）取回相关内容，并按场合判断某件记得的事能不能说。提供 memory_recall、memory_note、memory_fix、memory_look 四个工具和设置页；嵌入可选（本机 Ollama 或 OpenAI 兼容服务）。
-- [qiyaogongfang/dsh-hub-brain](https://github.com/qiyaogongfang/dsh-hub-brain) — 把知识元、技能、角色合成一个中枢；输入框选择器可挑角色、技能与知识元，并把角色 CORE 与技能说明注入系统提示。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [qiyaogongfang/dsh-hub-brain](https://github.com/qiyaogongfang/dsh-hub-brain) — 把知识元、技能、角色合成一个中枢；输入框选择器可挑角色、技能与知识元，并把角色 CORE 与技能说明注入系统提示。HTTP 路由已接入 DSH 的准入检查。
 - [QqiqiQ/dsh-profile-vault](https://github.com/QqiqiQ/dsh-profile-vault) — 带授权的本地个人信息库：以姓名为索引存人，以「姓名 + 条目」取值，未获当次会话授权不会读取任何档案。敏感条目（证件、银行卡、住址、健康）默认掩码，凭证类数据写入时直接拒收；年龄和下次生日一律查询时现算，asOf 能复原过去某天的答案，身高体重住址这类会过期的条目带新鲜度提醒。提供五个 profile_* 工具和设置页，可浏览、编辑、删除与撤销授权。
 - [QuantumKuba/dsh-continuum](https://github.com/QuantumKuba/dsh-continuum) — 持久化项目记忆、事件溯源的任务生命周期、上下文预算控制与多智能体协作交接。
 - [QuaonY/dsh-mem-weave](https://github.com/QuaonY/dsh-mem-weave) — 忆织 MemWeave —— 面向 DeepSeek Harness（DSH）的长期记忆与人格编辑器。七层记忆各带半衰期与衰减下限，注入分三段、各自限额（人格、首轮快照与用户画像、每轮增量与召回）；召回把 FTS5/BM25、向量与链接三路用 RRF 融合。写入先过来源检测、去重合并与风险分级的冲突治理（高风险需人工确认），全程审计、24 小时内可撤销；抽取候选按风险分级落库；密钥写入即拦，敏感字段注入前脱敏，轮后通知只留在本会话。另有 22 个 weave_* 工具、九个设置页面、约定与纪念日提醒，数据在本机一个 SQLite 文件里，无运行时依赖。
@@ -6410,7 +6477,7 @@ dsh plugin --profile web add dshmarket
 - [TacitSay/dsh-compact-arsenal](https://github.com/TacitSay/dsh-compact-arsenal) — 可配置的上下文压缩，三个板块各自独立开关：总压缩（整段检查点）、思考压缩、工具输出压缩，每个板块有自己的触发阈值与方式。机械方式不调用模型，模型方式按批摘要且提供方与提示词可配。左栏面板提供开关、方式卡片与可编辑参数，保存后无需重启即生效；每次改写都会连同原文一起归档。
 - [tancheng33/dsh-yogacara](https://github.com/tancheng33/dsh-yogacara) — 以唯识心所与种子藏记录 agent 的状态，并以第一人称倾向写回提示词。
 - [Tangcuyu4/dsh-long-memory](https://github.com/Tangcuyu4/dsh-long-memory) — 跨会话长期记忆包：混合检索记忆库（BM25+中文二元分词）、长文切块检索、聊天记录提取精炼，外加上下文总结存档与翻阅，重要记忆与最新总结自动注入提示词。
-- [tanxiaolong/dsh-shared-workspace-memory](https://github.com/tanxiaolong/dsh-shared-workspace-memory) — 跨 workspace 共享记忆：一个知识库，关键词索引自动注入每个会话的系统提示，终端用 kb 命令、会话内用 kb_search/kb_read/kb_append 检索与沉淀。零依赖、纯 JS，初始化时只补缺失文件、绝不覆盖你已有的笔记；自带 CLI 安装清单与三条可回退的清理入口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [tanxiaolong/dsh-shared-workspace-memory](https://github.com/tanxiaolong/dsh-shared-workspace-memory) — 跨 workspace 共享记忆：一个知识库，关键词索引自动注入每个会话的系统提示，终端用 kb 命令、会话内用 kb_search/kb_read/kb_append 检索与沉淀。零依赖、纯 JS，初始化时只补缺失文件、绝不覆盖你已有的笔记；自带 CLI 安装清单与三条可回退的清理入口。
 - [text2future/flowix#dsh-flowix-memory](https://github.com/text2future/flowix/tree/main/dsh-flowix-memory) — 将本地 flowix-cli 注册为 MCP 服务，让 agent 可以搜索、读取、创建和编辑 Flowix 备忘与思维导图产物。
 - [thawline/dsh-memewiki](https://github.com/thawline/dsh-memewiki) — 离线梗/黑话词典：内置 6792 条词条，只在消息像在问梗时才提前查好注入上下文。带查询工具、可增删改词条与别名的设置页、可调的玩梗尺度滑杆，以及检查版本更新。
 - [theBeautifulIce/dsh-Immunity-memory#memory-plugin](https://github.com/theBeautifulIce/dsh-Immunity-memory/tree/main/packages/memory-plugin) — 给 DSH 的跨会话长期记忆：八层记忆、四本记事本、FTS5/向量/图谱混合检索、智能体驱动的自动捕获、写入生命周期 Hook、可选写入审计、项目空间、遗忘曲线与可视化管理页。完整的 FTS5/向量/图谱检索依赖随包附带的 Go 服务，而预编译只提供 Windows x64；macOS/Linux 需自行从源码构建，否则退回无 FTS5 的 Node SQLite，检索能力降级。
@@ -6452,6 +6519,7 @@ dsh plugin --profile web add dshmarket
 - [William20100221/dsh-context-graph](https://github.com/William20100221/dsh-context-graph) — 每 4 轮把工作区里的每个对话索引成小型主题图谱，短对话安静下来时也会补一次（一次模型调用，被引用的原文保存在 .context-graph/）；你输入的消息、/goal 的每一轮、提醒、批准的计划和你对模型提问的回答都会计入。在消息末尾附上其他对话中最多 5 个匹配主题，提到某天（“昨天”“上周”）时先排那一天的，并提供 recall 工具按主题、对话、日期或轮次取回原文。默认开启并共享；/context-graph off 与 unshare 可让某个对话退出，stats、build、map、find 用于查看。
 - [Windsander/Mebular#packages/dsh-plugin](https://github.com/Windsander/Mebular/tree/main/packages/dsh-plugin) — 🌌 Mebular 忆云 · 智能体共享记忆与任务协作。通过 DSH 原生插件接入，提供跨设备、跨 Agent 记忆共享与任务图功能，让物理设备不再是你智能体的边界，安全、可控、去中心化！插件连接已有的 Mebular App/CLI 运行时；没有时可在面板里按提示安装共享运行时，不会静默启动或下载 Mebular。
 - [WJPGKZ/dsh-tidal-memory](https://github.com/WJPGKZ/dsh-tidal-memory) — 为 DeepSeek Harness 提供按工作区共享的 L0-L3 SQLite 记忆：FTS5 与可选本地嵌入、带来源与修订出处的证据门槛召回、两跳来源图扩展、场景时间线，以及绑定单一主会话的 Markdown 私人日记。
+- [wkqian06/dsh-knowledgepalace](https://github.com/wkqian06/dsh-knowledgepalace) — 个人学术智库：论文入库总结为卡片，带逐字引句与页码。派生知识图谱供模型推理，研究话题讨论与写作。
 - [wojiao42/dsh-chatgpt-to-memory](https://github.com/wojiao42/dsh-chatgpt-to-memory) — 面向 DSH 的完整记忆导入链路：执行 ChatGPT 官方导出（含邮箱验证码自动重新认证），下载并校验压缩包，按会话去重，经宿主 LLM 蒸馏事实、兴趣与观点，再交由 dsh-long-term-memory 合并。不直接写入记忆文件。
 - [wojiao42/dsh-long-term-memory](https://github.com/wojiao42/dsh-long-term-memory) — DSH 的长期记忆：每个会话开始注入你的 Markdown 记忆文件，提供带备份与撤销的读写/检索工具；注入时列出详细记忆文件（兴趣/画像/项目笔记）并提示何时该读。零依赖、不联网。
 - [wojiao42/dsh-memory-file](https://github.com/wojiao42/dsh-memory-file) — 文件型长期记忆：每个会话开始注入你自己的 Markdown 记忆文件，提供带备份与撤销的读写工具，并能查出 DSH_HOME 漂移。默认不读对话；可选开启 autoScan 后，才从本机会话日志里提取你自己的发言交给 agent 归档。不联网。
@@ -6470,6 +6538,7 @@ dsh plugin --profile web add dshmarket
 - [Xiaocanglan-hub/dsh-whale-memory#dsh-memory-brain](https://github.com/Xiaocanglan-hub/dsh-whale-memory/tree/main/packages/dsh-memory-brain) — DSH 元素记忆库：把物体拆成十四类最简元素（形状、材质、状态、部位、功能等），观察到的边与推断出的边分开存放，猜想只作为问题等待用户回答。
 - [Xiaocanglan-hub/dsh-whale-memory#dsh-school](https://github.com/Xiaocanglan-hub/dsh-whale-memory/tree/main/packages/dsh-school) — 让她自己补上那些你没答、她也没懂的问题。聊天里她问出口、以问号结尾、又没等到回答的话，被记成一条「悬着的问」；到点（默认 08:00–23:00、每天最多 5 条，可选的键鼠空闲闸默认关闭）她挑最久的那条自己去查——搜网页与 B 站，只读真正读得进来的页面，提炼成两三句，在你桌上留一张纸条。问的是我们自家插件的事就跳过，留给你答。全程只读她的经历：不写她的记忆、不动她的成长，也不需要改 dsh-fish 一行代码。需已装大肥鱼人格插件 @ssamurias/dsh-fish 提供经历，并配本地 ollama 模型；搜索 API 可选。
 - [Xiaocanglan-hub/dsh-whale-memory#dsh-slow-wave](https://github.com/Xiaocanglan-hub/dsh-whale-memory/tree/main/packages/dsh-slow-wave) — 她睡着时的两件事，装在同一个设置页里。① 睡眠整理：模型点头才合并同义词，压短描述，剪掉弱边，把元素组合成猜想请用户确认；每次写入前先备份，单次改库不超过全库 15%。② 潜意识梦：拿她自己经历过的旧事（加上元素库里的"道具"）拼成 3–6 句的小故事，在桌上留一句并标明「是梦，不是发生过的事」。梦只存在自己的文件里，不进她的记忆，也不进她的人格提示词。需已装 @ssamurias/dsh-fish（提供经历）与 dsh-memory-brain（元素记忆库）；模型复判与做梦还需要本地 ollama（或付费 API）。
+- [xiaochouxia11/dsh-hindsight-workbench](https://github.com/xiaochouxia11/dsh-hindsight-workbench) — Hindsight 记忆工作台。在 DeepSeek Harness 中以简体中文浏览本机 Hindsight 记忆库、按关键词查找记忆并查看知识页和已安装技能。
 - [Xieddenv/dsh-memory-kit](https://github.com/Xieddenv/dsh-memory-kit) — 给 DSH 机器人装五层持久记忆（人设、说话规则、日记、会话存档、未了结的约定），全部存成磁盘上的纯 Markdown；文件改动一分钟内自动重建注入段落，配 memory_read / memory_write / memory_search 三个工具，另带一个从旧记忆目录迁移的导入器。
 - [XieZongChen/dsh-md-notes](https://github.com/XieZongChen/dsh-md-notes) — DSH 的 MD 笔记管理插件：提供完整的 **MD 笔记管理器** 和 **MD 笔记编辑器**，对话内容可快速记入笔记。笔记可 **同步 Git 仓库** 维护。对话时可将笔记 **加入上下文**。
 - [xinchen03/minta#dsh-plugin](https://github.com/xinchen03/minta/tree/main/dsh-plugin) — Minta 记忆引擎的 DSH 原生接入层:合成官方 dsh-mcp-client 行、注册 minta-memory-governance 技能与 session-start 记忆预热,并提供 Minta agent 预设;19 个 MCP 工具由需单独部署的 Minta 引擎(Python/Docker)提供,未部署引擎则无法使用。
@@ -6515,6 +6584,7 @@ dsh plugin --profile web add dshmarket
 - [yxie15022-debug/dsh-wife-memory](https://github.com/yxie15022-debug/dsh-wife-memory) — 只记关于主人的长期记忆：每轮抽出作息、喜好、雷点、情绪触发、在忙什么、约定与说话方式，把很短的摘要注入每轮提示；会按点主动开口或在回复里顺口关心一句，从短句里学作息，记忆攒多了自动整合——带有插件来源与对外发送动作识别、未核实记忆降权与一键撤回。
 - [yyy2556/dsh-familiar](https://github.com/yyy2556/dsh-familiar) — 纯文本文件的跨会话记忆：字符上限的常驻画像、写入前先过合并（unrelated / repeats / changes / ends）的事实库、只在请求触及记忆时才注入的静默关键词召回，另有少量纠错保底名额。注入有字符硬上限并按档位填充；未被命中的事实只降权或归档，从不按时间删除。六个工具覆盖检索、展开、写入、列出、删除与维护，另有只读侧栏面板。无数据库、无嵌入模型、无运行时依赖，也没有自己的外部服务（抽取用的是 harness 里已配置的模型）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [yzx4036/dsh-memory-snapshot](https://github.com/yzx4036/dsh-memory-snapshot) — 把本地已有的 markdown 文档（笔记、规则、知识库）按路径清单注入 dsh 每个会话的系统提示词，当只读记忆——无数据库、无服务、无写入通道；支持目录收集、UTF-8 字节预算截断、front-matter 剥离与新鲜度时间戳。
+- [Zbcc0826/dsh-llm-wiki](https://github.com/Zbcc0826/dsh-llm-wiki) — 基于 Andrej Karpathy 的 LLM Wiki 说明实现的 DeepSeek Harness 本地插件（不发布到 npm）。原料存入 raw/ 后不再修改。页面只在用户批准后按校验过的补丁更新；没有审批界面时写入返回 NOT_APPROVED，不挂起。仅注册 8 个工具：wiki_status、wiki_parsers、wiki_read、wiki_ingest、wiki_query、wiki_graph、wiki_lint、wiki_llm。页面可记录矛盾的另一面，查询时保留两边。wiki_graph 不调用模型，沿页面上的 relations 走 0 到 4 跳（可用 predicate 筛选一种谓语）；关系和来源哈希都写在页面上。长材料按章节和表格切分，每次最多摄入 8 段且没有续读参数：未纳入的文字标在来源目录页上，wiki_lint 对不完整页报告 PARTIAL，用同一份全文再次摄入仍只展开前 8 段，未读尾巴需另作一份新材料再摄入。内建解析器支持图像（只留像素，不编造 OCR）、Markdown、纯文本、JSON、CSV、HTML；PDF、Office、音视频返回 NEED_EXTERNAL_PARSER，可通过服务 llm-wiki.parsers 或 wiki_ingest 的 parsed 参数接入。
 - [zcd0818/dsh-scribe](https://github.com/zcd0818/dsh-scribe) — 跨会话记忆与工作区知识库合一。记忆默认是 ~/.dsh/memory 下的纯 JSONL，会话开始把相关记忆放进系统提示，会话结束回写一条；每个工作区的 kb/ 目录加一份全局目录构成只读知识库，检索结果能引用到文件行号。十一个工具统一带 scribe_ 前缀（七个 scribe_memory_*、四个 scribe_kb_*），一个 /scribe 斜杠命令，以及概览 / 记忆 / 知识库 / 迁移四页的设置页。云端后端（百炼记忆库、ChromaDB、云端主 + 本地镜像）按需启用；迁移数据必须经显式审批，并留有可回滚的日志。
 - [zhang66633/dsh-memvault](https://github.com/zhang66633/dsh-memvault) — 把 DSH 接到本机 MemVault 记忆库：核心记忆块注入系统提示词、结束的轮次经由 MemVault 自己的管线抽取，并提供浏览、追溯、复核与重抽的面板。
 - [zhangfac-888/personal-memory](https://github.com/zhangfac-888/personal-memory) — 让 DSH 智能体检索并读取同一台 Windows 电脑上的 Personal Memory 记忆库。需安装 Personal Memory 并创建只读客户端令牌；写入会被拒绝，候选记忆仍需本地审核。
@@ -6549,7 +6619,6 @@ dsh plugin --profile web add dshmarket
 - [1344738825/ai-residue-cleaner](https://github.com/1344738825/ai-residue-cleaner) — 把 AI 会话留下的草稿、备份、日志、缓存收进可逆回收站；项目结项时归类成品、归档可引用结果并生成结项清理清单，未结项期间一切保留。清运引擎是 Python 脚本，需 PATH 上有 Python 3（自动探测 python3 / python / py；缺了它清运跑不起来，会明确提示）。
 - [1497105876/dsh-media-studio](https://github.com/1497105876/dsh-media-studio) — 在对话里直接生成图片和视频并发送到会话：generate_image / generate_video / send_media 三个工具，内置 Agnes 免费额度与任意 OpenAI 兼容后端，长耗时生成走后台任务完成后自动推送，内联画廊与视频卡片支持下载、灯箱查看和系统默认应用打开。
 - [1497105876/dsh-tools-manager](https://github.com/1497105876/dsh-tools-manager) — 按 Agent 预设（模式）管理的工具黑名单，只做禁用：在设置页勾掉一个工具，它就从该模式的工具 schema 里消失、调用也会被拒；不设白名单、不负责启用，没被点名的工具一概不碰。每行可展开看工具自己的描述，规则存在 profile 之外的单个 JSON 文件里。
-- [1804608397/dsh-plugin-linux-computer-use](https://github.com/1804608397/dsh-plugin-linux-computer-use) — 让 DSH 接管 Wayland Linux 桌面：经 XDG 桌面 portal 截屏、读取 AT-SPI 无障碍树、把鼠标键盘事件直接写入 /dev/uinput，并以 mcp__linux__* 工具连同剪贴板、进程、gsettings 与通知一起交给模型，附带宿主机诊断工具和默认关闭的可选解锁开关。
 - [18518182595-cell/dsh-prompt-workshop](https://github.com/18518182595-cell/dsh-prompt-workshop) — 把粗糙想法变成精准提示词：内置 19 个目标模型规范（含豆包 Seedream/Seedance 等）、多模型增强、提示词评分诊断、图片反推，并周期联网自更新本地知识库。
 - [19952730389/dsh-app-updater](https://github.com/19952730389/dsh-app-updater) — 检测本机已安装应用里哪些有可用新版本，并一键从各软件官网下载完整安装包静默更新；Windows 走 winget、macOS 走 Homebrew cask，并按本机 ARM64 / x64 架构挑选对应安装包。
 - [1997liuyh-boop/dsh-desktop-tools](https://github.com/1997liuyh-boop/dsh-desktop-tools) — 为 DSH 桌面端提供划词工具栏、悬浮球，以及通过全局快捷键唤起、在屏幕顶部工具栏切换的截图、长截图和录屏，每项功能独立设置。截图支持形状、画笔、箭头、文本与序号、马赛克、钉在桌面、保存，以及转发到 DSH 对话或系统分享面板（Windows 和 macOS）；录屏可录制区域、窗口或全屏，输出 MP4、GIF 或 WebM，可选录制系统声音和麦克风。截图的提取文字、翻译和知识图谱使用 dsh-vision-router 的 OCR 工具，该插件需另行安装（设置页提供一键安装）。需要 DSH Desktop >=0.2.2-rc.1 <0.3.0-0。各项功能运行在单独的 Electron 辅助进程中，插件不会下载 Electron：安装版 DSH Desktop 需另备独立 Electron，可通过插件设置 electronExecutable、环境变量 DSH_DESKTOP_TOOLS_ELECTRON 或 $DSH_HOME/electron/ 提供；由裸 Electron 启动的 DSH Desktop 会直接复用它。Linux 不支持录制系统声音。
@@ -6670,6 +6739,7 @@ dsh plugin --profile web add dshmarket
 - [amd47802574/dsh-agents-editor](https://github.com/amd47802574/dsh-agents-editor) — 在设置面板里直接查看和编辑宿主全局规则文件 ~/.dsh/AGENTS.md 的可视化编辑器：Ctrl+S 保存并自动备份、外部修改冲突检测（409 提示）、备份预览与一键恢复。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Ame-Choo/dsh-study-coach](https://github.com/Ame-Choo/dsh-study-coach) — DSH 的学习教练：把一门课拆成知识地图（大类 / 模块 / 最小单元），逐单元记六档掌握度，按资料索引排每日任务，带错题本与记忆卡，并自带一个网页面板。
 - [AMeYunCloud/renpy-toolkit](https://github.com/AMeYunCloud/renpy-toolkit) — Ren'Py 汉化工具集：为只有 .rpyc 的成品游戏生成完整翻译骨架，移植旧译本并校验译文。
+- [AMindFlow/dsh-search-chain](https://github.com/AMindFlow/dsh-search-chain) — 有序多厂商搜索降级链：按保存顺序逐个尝试、失败或无结果才降级，把各厂商免费额度聚合为一个高额度、始终可用的 web_search，支持条目级代理出站与 PAC 沙箱。
 - [Andyfree-98/dsh-checkin-workbuddy](https://github.com/Andyfree-98/dsh-checkin-workbuddy) — 常驻输入框工具行的 WorkBuddy 每日签到按钮，一键调用 dsh-connect-workbuddy 的签到路由为当前选中账号签到，并在按钮旁显示结果：已签到、签到成功加分或连签天数。已签状态通过本地日期戳跨会话保留，加载时与上游状态对账，跨天后自动复位。
 - [angelky7/dsh-origin-bridge](https://github.com/angelky7/dsh-origin-bridge) — 通过 27 个 MCP 工具在对话里驱动本机 Origin/OriginPro：导入 .dat/.csv/.txt 与 CHI 工作站 .bin，绘图、改样式、拟合，交付 PNG/TIF/SVG/PDF 图片和可继续编辑的 .opju 工程；绘图、样式、导出都带读回验证。需要 Windows、Origin/OriginPro 2021+ 与 Python 3.10+，并把 `pip install originpro numpy` 装进 dsh 启动的那个解释器：缺包时每个工具都会返回 `missing_originpro`，PATH 上没有解释器时工具完全不注册。
 - [angelomadara/dsh-plugin-jira](https://github.com/angelomadara/dsh-plugin-jira) — DSH 的 Jira 集成：设置页保存站点、邮箱和 API token，/jira-do 拉取工单并为智能体建分支，/jira-comment 发表评论或总结分支改动，jira_ticket 与 jira_comment 工具可读写工单。
@@ -6692,6 +6762,7 @@ dsh plugin --profile web add dshmarket
 - [Aression/dsh-maend](https://github.com/Aression/dsh-maend) — 通过本机 MaaEnd（MXU）的 loopback HTTP API 驱动它：10 个 maend_* agent 工具、一个侧边栏看板面板，以及任务链里的启动静音与「全部成功后才关游戏」收尾。需先在本机安装 MaaEnd 并开启 MXU 服务。
 - [ariyflow/dsh-qqnt-chat-export](https://github.com/ariyflow/dsh-qqnt-chat-export) — 读取 Windows / Linux 本机 NTQQ（QQ 9.9.x）消息库，把群聊与私聊的聊天记录导出成 txt、csv、json、md、html 或 sqlite。包含十六个模型工具：qqnt_status 与 qqnt_doctor（环境体检与排障）、qqnt_extract_key、qqnt_index（建立或查看侧车索引）、qqnt_list_groups、qqnt_list_chats、qqnt_search、qqnt_stats（总量与月度统计）、qqnt_export_group、qqnt_export_chat、qqnt_export_batch（可以直接用用户说的名字指代会话，重名时不猜、返回候选）、qqnt_jobs（截图识别 / 语音转写 / 分块与嵌入 / 下载模型）、qqnt_media（取一个会话已下载的图片）、qqnt_storage（磁盘占用与白名单清理），以及做检索问答与时间线回顾的 qqnt_ask、qqnt_recall。127.0.0.1:46728 上的本地网页界面有六个视图：会话、导出、统计、问答、设置、模型与组件，另有任务面板、窄屏单栏布局、昵称 / QQ 脱敏、媒体打包、按天分文件、导出预设与 AES-256 密码压缩包；OCR、语音与嵌入组件按需装进插件自己的虚拟环境。需要带 sqlcipher3 的 python3（设置页可一键创建独立虚拟环境），数据库密钥从正在登录的 QQ 客户端内存中读取。
 - [arnen7000/DSH-Workbuddy-WebSearch](https://github.com/arnen7000/DSH-Workbuddy-WebSearch) — 把 WorkBuddy 桌面 App 的网络搜索作为 dsh 的 web_search 提供方，复用 App 已有的登录状态，无需额外配置。
+- [Arthyra/multisim-mcp#deepseek-harness](https://github.com/Arthyra/multisim-mcp/tree/main/integrations/deepseek-harness) — 在 Windows 上将 DeepSeek Harness 连接至已安装的 Multisim MCP 网关，用于编辑原理图、布线和运行仿真。
 - [asdasdsdsdasdasdasd/dsh-computer-use](https://github.com/asdasdsdsdasdasdasd/dsh-computer-use) — Linux X11 电脑控制插件：9 个工具（截图、鼠标移动/点击/拖拽/滚轮、输入、快捷键），由零依赖 Python XTest 助手驱动——原生像素坐标、每次操作返回坐标校验、可选自动截图。
 - [AshenJyy/dsh-subagent-antigravity](https://github.com/AshenJyy/dsh-subagent-antigravity) — 内置 Google 官方 Antigravity CLI 的 Windows x64 完整包，通过 agy acp 委派一次性文本任务，可复用 CLI 登录并选择认证方式、模型和思考强度；复用宿主依赖，支持 rc.3 起的 Harness 0.2.1 系列和 rc.1 起的 0.2.2 系列，包含各系列后续 RC 及正式版。
 - [Asher-2000/dsh-expert-mode](https://github.com/Asher-2000/dsh-expert-mode) — 专家模式 agent preset（v0.9.2，npm 包 dsh-expert-mode，双语双份）：首席协调官 + 17 位领域专家子代理，按任务特性自动委派。特性：任务调度器（文件系统任务状态机 pending/ready/running/done/failed + 依赖DAG + 原子认领 + 重试 + 崩溃恢复）、质量门禁（高风险任务五段式：需求澄清→实现→验证→独立评审→集成，最多回炉2轮）、五锚约束（每轮回顾/收敛/反跑题/协作检查/资源感知自检）+ 近距离引导（身份/任务/输出格式模板）+ 渐进式披露（省token约28%）+ 专家持久化 + 专家间文件消息总线（P2P直连，零协调官中转）+ 交叉评审 + 经验沉淀 + 简单任务快速通道 + 故障自动重试。专家：数据分析/文案/法务/产品/前端/UI-UX/架构/社交运营/增长/量化/财务/后端/DevOps/数据库/QA/安全/生图短视频。
@@ -6735,6 +6806,7 @@ dsh plugin --profile web add dshmarket
 - [beijingwahw/dsh-nuke-plugin](https://github.com/beijingwahw/dsh-nuke-plugin) — 事务化卸载引擎：每个破坏性动作走 validate/preview/execute/undo 四段式并带 Saga 回滚，WAL 崩溃恢复、hash chain 审计、硬链接去重，提交前先知推演成功率。
 - [beings-labs/dsh-cloudflare-connector](https://github.com/beings-labs/dsh-cloudflare-connector) — 通过浏览器 OAuth 和官方 MCP 服务器为智能体与插件共享 Cloudflare 访问，提供上游工具、令牌自动刷新及带类型定义的插件服务。
 - [beings-labs/dsh-domain-manager](https://github.com/beings-labs/dsh-domain-manager) — 管理域名组合：从 Namecheap 与 Cloudflare 同步注册信息，跟踪到期日、自动续费与年度续费成本，并检查域名可用性。对注册商只读（不注册、不转移、不续费）。同步需要 Cloudflare API 令牌，或带 IP 白名单的 Namecheap API 密钥（也可用 Namecheap 的浏览器登录连接器，但读不到续费价格）。
+- [BeiningCheng/dsh-plugin-linux-computer-use](https://github.com/BeiningCheng/dsh-plugin-linux-computer-use) — 让 DSH 接管 Wayland Linux 桌面：经 XDG 桌面 portal 截屏、读取 AT-SPI 无障碍树、把鼠标键盘事件直接写入 /dev/uinput，并以 mcp__linux__* 工具连同剪贴板、进程、gsettings 与通知一起交给模型，附带宿主机诊断工具和默认关闭的可选解锁开关。
 - [Bejohnself/dsh-study-less](https://github.com/Bejohnself/dsh-study-less) — DSH 知止读书台：导入 PDF 并按节切分，记录每个知识点的掌握度，安排间隔复习。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Bel1m3/dsh-resume-kit](https://github.com/Bel1m3/dsh-resume-kit) — 用三套固定版式（深灰蓝双栏、酒红绶带、单栏 ATS）渲染可编辑的 Word 和 PDF 简历，缺项先追问，单栏超一页自动微缩。
 - [bescriptkiddie/dsh-wechat-collector](https://github.com/bescriptkiddie/dsh-wechat-collector) — 公众号素材采集：扫码登录的多套凭证档案、带冷却保护的限流安全抓取、RSS 第二水源，以及凭证隔离的 ContentStudio 来源卡交接。
@@ -6772,7 +6844,7 @@ dsh plugin --profile web add dshmarket
 - [C1ement314/dsh-clean-agent](https://github.com/C1ement314/dsh-clean-agent) — DSH 清理模式 agent 预设：只读扫描残留（含重复文件检测），删除前先出清单，确认后优先移入回收站，并按会话写审计记录。清理工作区之外的位置需要 danger-full-access 会话；workspace-write 下只能检查并会提示你提升权限。
 - [CaiMingshen/dsh-icloud-calendar](https://github.com/CaiMingshen/dsh-icloud-calendar) — 通过 CalDAV 读写苹果 iCloud 日历，提供五个工具：列出日历、按时间窗读取并展开重复日程、创建事件，以及先干跑、按对象数确认后再删除。凭据保存在 DPAPI／钥匙串／libsecret 或环境变量中。
 - [caishzh/dsh-hot-search](https://github.com/caishzh/dsh-hot-search) — 活在宿主进程里的常驻检索索引：hot_find（文件名与路径模糊匹配，带 frecency 与 git 状态）、hot_fuzzy（内容检索，中文错字也能命中）、hot_grep（字面与正则内容检索）、hot_plan（按文件聚合命中，便于排批量阅读顺序）与 hot_stats。一份内存行索引只建一次、按需重建，单次查询不启动进程。
-- [cannotgetaname/dsh-carsi-papers](https://github.com/cannotgetaname/dsh-carsi-papers) — 用专用 Chrome 配置承接学校订阅授权（IEEE、Springer、ScienceDirect），检索并下载校验过的全文，跨库按 DOI 合并、导出 BibTeX/RIS；机构登录始终由人完成，不保存也不回放凭据。
+- [cannotgetaname/dsh-carsi-papers](https://github.com/cannotgetaname/dsh-carsi-papers) — 用你自己的 Chrome 配置检索并下载学校订阅库（IEEE、Springer、ScienceDirect、知网、万方）的全文 PDF，跨库按 DOI 合并，导出 BibTeX / RIS / GB/T 7714，用 Crossref 审计参考文献表，并判断当前网络是否仍在校园网；CARSI 或 IP 登录始终由人完成，不保存也不回放凭据。
 - [caprimoon/dsh-mcp-settings](https://github.com/caprimoon/dsh-mcp-settings) — 给 DSH 内置 mcp-manager 的 MCP 服务器用的设置页：列出每台服务器的实时连接状态与工具数，并可新增、编辑、启用、停用、测试连接、重启、删除，新增表单里还带一键填入的 chrome-devtools 示例。每处改动都是对 mcp-manager 设置命名空间的带 revision 校验的编辑，因此会持久化到当前 profile 的 cordis.patch.yml。
 - [CARVIN94/dsh-router-ext-rtk](https://github.com/CARVIN94/dsh-router-ext-rtk) — dsh-router 的 RTK(Rust Token Killer)扩展插件：把每次 bash 工具调用经 `rtk rewrite` 改写，让 agent 读到压缩后的命令输出；rtk 缺失或无等价改写时原样执行。
 - [cat-Logan/dsh-rayburst](https://github.com/cat-Logan/dsh-rayburst) — 把 DeepSeek Harness 的下载交给 Rayburst（aria2 引擎），提供 rayburst_download、rayburst_wait、rayburst_status 三个工具。需先在本机安装并运行 Rayburst 桌面端（aria2-next），插件会读取它的 aria2.conf 获取 RPC 端口与密钥。
@@ -6836,7 +6908,7 @@ dsh plugin --profile web add dshmarket
 - [ColdRainLab/dsh-feature-check](https://github.com/ColdRainLab/dsh-feature-check) — DSH 启动自检：每次启动对比上次健康基线，报告丢失的 Loader 条目、客户端模块与被兼容性跳过的插件，升级后尤其有用。
 - [ColdRainLab/dsh-workspace-sync](https://github.com/ColdRainLab/dsh-workspace-sync) — 把工作区、会话记录与自动化任务同步到你自己的云端目录（网盘同步文件夹，后端可扩展），换机器登录后拉取即见。云端目录里是明文会话日志；被 dsh-workspace-vault 隐藏或加锁的工作区不会上传。
 - [coolbreezecoin/dsh-wechat-mp](https://github.com/coolbreezecoin/dsh-wechat-mp) — 把 markdown 变成排好版的微信公众号草稿：样式逐条内联到元素上（编辑器会丢弃 `<style>` 块和 class 名），每张本地图片走微信自己的上传接口以免被过滤，然后创建草稿；不做群发。
-- [CoolrfulDARkness/resource-lease#plugin](https://github.com/CoolrfulDARkness/resource-lease/tree/main/plugin) — 给并行 agent 用的跨进程资源租约。PowerShell CLI、MCP server 与本 DSH 插件共用同一套锁文件格式，所以不同工具驱动的 agent 之间也会互相排斥。八种资源类（path、port、proc、browser、screen、window、api、named）会展开成 facet，冲突按 facet 判定而不是按字符串相等，所以一个目录覆盖它的子路径、而兄弟前缀不会误撞。租约带 TTL、持有者与用途说明，当前持有者会写进每步的模型上下文。三个工具可让 agent 申请、释放与查看租约；持有者进程被证明已死时，租约不必等 TTL 到期即可被回收。
+- [CoolrfulDARkness/resource-lease#plugin](https://github.com/CoolrfulDARkness/resource-lease/tree/main/plugin) — 给并行 agent 用的跨进程资源租约：CLI、MCP server 与 DSH 插件共用同一套锁文件，所以不同工具驱动的 agent 也会互相排斥；租约带 TTL 和用途说明，当前持有者会注入每步的模型上下文。
 - [CoolTea001/dsh-cool-plugins#dsh-cool-terminal](https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-terminal) — 终端插件 — 真 shell、工作区同步、状态常驻、常用命令管理、命令补全、命令自启动。
 - [CooperZhuang/dsh-plugins-cooper-custom#dsh-folder-path](https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-folder-path) — 粘贴复制来的文件夹时插入完整路径文本，而不是尝试上传（支持 Windows 与 macOS）。
 - [CooperZhuang/dsh-plugins-cooper-custom#dsh-open-in-dsh](https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-open-in-dsh) — 从系统里用 DeepSeek Harness 打开文件夹：Windows 资源管理器右键动词、macOS Finder 快速操作与 QSpace 服务，以及负责启动或交接桌面端的 dsh-open 启动器。系统菜单需在安装插件后运行一次注册脚本（Windows 用 install-menu.ps1，macOS 用 install-macos.sh）才会出现。
@@ -6983,7 +7055,7 @@ dsh plugin --profile web add dshmarket
 - [fj7937290-sys/dsh-video-remix](https://github.com/fj7937290-sys/dsh-video-remix) — 把文案变成带配音的讲解视频：默认用文字卡片（快且准确，适合教程），也可逐段调用 AI 生成真实画面（需 AGNES_API_KEY）；内置 14 个在线中文神经音色和 3 个离线 Windows 音色，一条命令即可生成全部音色的试听包。前置需要 ffmpeg，并把仓库内的 video-remix skill 放到 <工作区>/.dsh/skills/video-remix 后在该目录执行 npm install（在线音色所需）。
 - [fjcqv/dsh-cronops](https://github.com/fjcqv/dsh-cronops) — 在侧栏管理自托管定时面板（青龙 / 呆呆）：用面板的 OpenAPI 应用凭据管理连接、环境变量与定时任务，权限探测结果落库，其余资源由四个智能体工具完成。
 - [Flan246/dsh-lit-search](https://github.com/Flan246/dsh-lit-search) — 为 DeepSeek Harness 提供的学术文献检索与引用工具：基于 Crossref 与 OpenAlex 检索论文（无需 API key），支持相关工作发现，并可按 GB/T 7714、APA 与 BibTeX 格式生成引用。
-- [fleekelon/dsh-fintax](https://github.com/fleekelon/dsh-fintax) — 中国跨境财税与月结核对工作台（v0.8.5）：基于 CSS 容器查询自适应的 DSH 侧边栏工作台与设置页（sidebar.panellist、main、settings.section），配套互动官网 https://fleekelon.github.io/fintax-portal/；0 Token 独立工作线程 BigInt 解析引擎（fintax_parse_statement）覆盖 11 通道——8 大销售平台（Amazon/TikTok Shop/Temu/速卖通 AliExpress/Shopee/Shopify/PayPal/Stripe）+ 3 大第三方结汇通道（万里汇 WorldFirst/派安盈 Payoneer/空中云汇 Airwallex）CSV/TSV/UTF-16/XLSX/ZIP，支持独立站双导入防重、三段资金链交叉核对（诚实标注待核银行回单）、脱敏未知表头诊断、自定义汇率持久化、按「主体+店铺+账期」防串账归档（dsh-fintax-history-v3）、12 个月 7500 万/500 万滚动监控及默认零推广老板 HTML/财务 CSV/趋势月报导出；10 场景确定性算税工具（fintax_calc）；带重试、60 秒只读缓存与 V2.4.1 热点短词并发补查的 4 个腾讯 IMA 只读检索工具（ima_list_kbs、ima_browse、ima_search、ima_read）及 4 项合规自查技能。原始账单仅在本地内存经宿主 connection 准入校验的 /api/fintax 路由（/parse、/calc、/history、/history/report、/status、/credentials、/kbs、/settings）运行；可选脱敏 KPI 汇总存盘 ~/.config/ima/fintax_history.json（0600，绝不存原始订单行）；可选只写 IMA 凭证与汇率预设仅发送至官方 ima.qq.com；纯 ESM 零运行时依赖。
+- [fleekelon/dsh-fintax](https://github.com/fleekelon/dsh-fintax) — 中国跨境财税与月结核对工作台（v0.9.1）：模块化零依赖、基于 CSS 容器查询自适应且原生适配暗黑主题（data-ds-dark-theme）的 DSH 侧边栏工作台与设置页（sidebar.panellist、main、settings.section），配套互动官网 https://fleekelon.github.io/fintax-portal/；0 Token 独立工作线程 BigInt 解析引擎（fintax_parse_statement）覆盖 17 通道——11 大销售平台（Amazon 含欧陆本地表头与 2027 FBA 新费/TikTok Shop/Temu/速卖通 AliExpress/Shopee/Shopify/PayPal/Stripe/SHEIN/Walmart/Lazada）+ 6 大第三方结汇通道（万里汇 WorldFirst/派安盈 Payoneer/空中云汇 Airwallex/连连国际 LianLian/PingPong/寻汇 SUNRATE）——并新增 Stage 3 国内对公银行回单解析（招行/中行/工行/建行/农行/交行及通用格式），支持 CSV/TSV/UTF-16/XLSX/ZIP、独立站双导入防重、fail-closed 五键三段资金链核销（独立隔离参考级候选）、会话独占纯内存 cacheToken 免重传导出（/parse/export）、按「主体+店铺+账期」防串账归档（dsh-fintax-history-v4，含 Q1–Q4 年度汇总、中欧美三地交卷自检 810/DAC7/1099-K、主体重分配与 SHA-256 校验按 UUID 幂等 JSON 备份恢复）、12 个月 7500 万/500 万滚动监控及默认零推广老板 HTML/财务 CSV/年度与趋势月报导出；14 场景确定性算税工具（fintax_calc，新增欧盟 €3+€2 低值包裹与 PID 反推、美线 Type 11 vs 9810 DDP 与 IEEPA/FIOR、FBA 有票无票混合采购拆单、退税取消与电池消费税冲击、年终奖双轨比选）及 /calc/specs 规格接口；带重试、60 秒只读缓存、热点短词并发补查与 offset 分页的 4 个腾讯 IMA 只读检索工具（ima_list_kbs、ima_browse、ima_search、ima_read）及工作台内置只读 IMA 轻检索侧抽屉（/ima-quick，严格 3 字段纯文本 ≤160 字）；以及 4 项合规自查技能。原始账单与解析 cacheToken 仅驻本地内存（严禁落盘），经宿主 connection 准入校验的 /api/fintax 路由（/parse、/parse/export、/calc、/calc/specs、/history、/history/report、/history/annual、/history/reassign、/history/backup、/ima-quick、/status、/credentials、/kbs、/settings）运行；可选脱敏 KPI 汇总存盘 ~/.config/ima/fintax_history.json（0600，绝不存原始订单行）；可选只写 IMA 凭证与汇率预设仅发送至官方 ima.qq.com；纯 ESM 严格零运行时与开发依赖。
 - [Fleey/dsh-workspace-capabilities](https://github.com/Fleey/dsh-workspace-capabilities) — 在侧栏工作区行的「…」菜单中新增「技能与 MCP」，按工作区勾选可用的技能与 MCP 服务器；取消勾选的技能从会话技能目录、`skill` 工具和 `/技能名` 中消失，取消勾选的服务器其 `mcp__<服务器>__*` 工具对该工作区的会话禁用，已在运行的会话从下一轮起生效。
 - [Fleey/dsh-workspace-folders](https://github.com/Fleey/dsh-workspace-folders) — 为工作区添加额外的工作目录，可设为读写或只读，可通过输入框旁的文件夹按钮或 `/add-dir`、`/remove-dir`、`/dirs` 命令管理；模型可在运行时上下文中看到这些目录，对读写目录的 `write` 与 `edit` 调用默认免去沙箱提权确认，终端命令仍会询问。
 - [FLL123-Arch/game-crash-doctor](https://github.com/FLL123-Arch/game-crash-doctor) — 仅限 Windows：从事件日志、WER 报告和崩溃转储诊断游戏崩溃，提供 diagnose_game_crash 工具和可选的后台通知。
@@ -7004,8 +7076,8 @@ dsh plugin --profile web add dshmarket
 - [FrogFlaying/dsh-desktop-organizer](https://github.com/FrogFlaying/dsh-desktop-organizer) — Windows 桌面整理：归类桌面快捷方式、发现未建快捷方式的程序、检测失效链接（1 个模型工具 desktop_organize）。
 - [ftrans-cn/ft-ftp-mcp-stdio#dsh](https://github.com/ftrans-cn/ft-ftp-mcp-stdio/tree/main/integrations/dsh) — 通过本地 MCP 服务提供 14 个 FTP/SFTP 文件工具，需另行安装 FT FTP MCP 的 Python 3.12 产品运行时。
 - [FTShare-Lab/dsh_kline](https://github.com/FTShare-Lab/dsh_kline) — 面向 DeepSeek Harness 的交互式 K 线分析，支持多市场行情、技术指标、新闻和基本面信息。
-- [FTShare-Lab/dsh-plugin-fft-bundle#packages/dsh-fft-bundle](https://github.com/FTShare-Lab/dsh-plugin-fft-bundle/tree/dev/packages/dsh-fft-bundle) — 面向 DeepSeek Harness（DSH）的金融工作台：新会话默认进入金融模式，带 FTShare 股票行情、报价与财报数据，K线图表、蜡烛图与技术指标，内联出图，以及 A股/商品期货模拟交易（模拟盘）。
-- [fubai-fenzhi/dsh-publish-helper](https://github.com/fubai-fenzhi/dsh-publish-helper) — DSH 插件发布助手：自检、提交审核、发布到 npm、按版本撤回，带设置面板与 AI 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [FTShare-Lab/dsh-plugin-fft-bundle](https://github.com/FTShare-Lab/dsh-plugin-fft-bundle) — 面向 DeepSeek Harness（DSH）的金融工作台：新会话默认进入金融模式，带 FTShare 股票行情、报价与财报数据，K线图表、蜡烛图与技术指标，内联出图，以及 A股/商品期货模拟交易（模拟盘）。
+- [fubai-fenzhi/dsh-publish-helper](https://github.com/fubai-fenzhi/dsh-publish-helper) — DSH 插件发布助手：自检、提交审核、发布到 npm、按版本撤回，带设置面板与 AI 工具。
 - [Fucaplos/dsh-local-library](https://github.com/Fucaplos/dsh-local-library) — 本地资料库（仅 Windows，需用随包的 PowerShell 脚本安装）：文件传一次，之后每个对话都能用四个工具（library_list / library_search / library_read / library_save）检索、读取；上传、下载与打包下载在设置页完成。文件只保存在本机——除非你启用可选的视觉模型，它会把图片发到你配置的接口。
 - [fufengyuan/dsh-stool-plugin](https://github.com/fufengyuan/dsh-stool-plugin) — 将 stool 运维 CLI 的全部能力整合为 9 个合并工具，Agent 可直接调用：服务器管理、数据库查询与 Redis、日志搜索与尾部查看、CI/CD 部署与历史、MFA 动态码、Git 仓库操作、笔记管理、待办任务，以及记账、周报、审计、项目列表、Nginx 预设等杂项工具。
 - [fujingzhai/youxia-dsh-plugins#dsh-agents-cli](https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-agents-cli) — 在 DSH 主面板里运行本机 CLI Agents（默认 Claude Code、Codex、Antigravity、Pi，自动识别已安装入口），进程复用官方 subprocess.spawnTerminal、画面使用内嵌 xterm.js；名称、指令、颜色与顺序可自定义。需 DSH 0.2.2-rc.1 或更新版本。各 CLI Agent 需事先装好，并以你本人的用户权限运行。
@@ -7054,6 +7126,7 @@ dsh plugin --profile web add dshmarket
 - [Gorkaseto/dsh-markdownize](https://github.com/Gorkaseto/dsh-markdownize) — 将 PDF、Word、PowerPoint、Excel、HTML、CSV、JSON、ZIP 等文档转换为 Markdown 供模型读取，内置 JavaScript 引擎，也可使用 Microsoft MarkItDown。
 - [Gorkaseto/dsh-plugin-updater](https://github.com/Gorkaseto/dsh-plugin-updater) — 通过简单的可用性 UI 帮助跟踪从 github 添加的插件的更新。
 - [gro83j/dsh-boss-job](https://github.com/gro83j/dsh-boss-job) — 给已有目标岗位的人快速筛 BOSS 直聘岗位：偏好访谈技能、多城市多方向搜索、职位详情读取、七个 MCP 工具，以及筛选与 Markdown 报告导出。定位是筛岗工具，不做职业规划。
+- [gu70619052/dsh-subtitle-studio](https://github.com/gu70619052/dsh-subtitle-studio) — 字幕工坊：对本地或 SSH 目录里的视频做转写、翻译与字幕压制，可手动运行也可定时执行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [GUANUI/dsh-campus-net](https://github.com/GUANUI/dsh-campus-net) — 校园网自动登录插件：查看状态、一键登录、本地设置页、连着热点也能自动切回校园网，以及三重保险的开机自启守护。适用于任何“POST JSON + reply_code”门户，不内置任何学校信息。
 - [gugu123a/dsh-tool-see-image](https://github.com/gugu123a/dsh-tool-see-image) — 为 DSH 提供 see_image 工具：将图片文件发送到可配置的 OpenAI 兼容视觉模型，并把其描述回传给纯文本模型。
 - [guhanfei-ai/dsh-grafana](https://github.com/guhanfei-ai/dsh-grafana) — 对话式 Grafana 运维：跨多个命名源站查看实时大盘数据，再通过审批与版本校验安全、可审阅地修改大盘。
@@ -7080,6 +7153,7 @@ dsh plugin --profile web add dshmarket
 - [hanyi7867069-create/dsh-content-lab](https://github.com/hanyi7867069-create/dsh-content-lab) — 内容工坊——选题、标题、文案与排期生成工具，直接调用内置 LLM。
 - [hardlic/dsh-fitness](https://github.com/hardlic/dsh-fitness) — 训练记录插件：fitness_log 工具（记录、历史、统计、每周计划），数据存本地 SQLite；同一仓库 ui/ 里另有需单独安装的左侧栏面板包。
 - [HarryHeYu/figcraft](https://github.com/HarryHeYu/figcraft) — 论文图即代码：Agent 创建版本化 Figure IR，经语义化 Patch 增量修改（单节点粒度——未指定的对象绝不动），确定性导出可编辑的 SVG / PDF / PPTX 真矢量图。七个 papercanvas_* 工具覆盖创建、读取、修改、布局、Lint（FC001–FC008 质量检查）、渲染与检视；中文标签自动使用系统 CJK 字体度量与嵌入。已验证 DSH 0.1.5-rc.3 至 0.2.2-alpha.2 各渠道。dsh-sessionflow 同作者作品。需另装 PaperCanvas 引擎：Python 3.11+ 与 papercanvas CLI（PyPI 尚未发布，当前需从本仓库安装，并放到 PATH 或配置 papercanvasBin）；插件只是薄适配层，不自带引擎。
+- [harrylabsj/kiwi#kiwi-dsh-plugin](https://github.com/harrylabsj/kiwi/tree/main/integrations/plugins/kiwi-dsh-plugin) — Kiwi 买方插件：提供 kiwi-buyer-mcp 服务与 kiwi-buyer 技能，让 dsh 在 Kiwi 商务网络上搜索商品、发询价并自动议价。
 - [HarunaTyan/dsh-rea-dispatcher](https://github.com/HarunaTyan/dsh-rea-dispatcher) — 把 REA 的 207 个逆向工具（Ghidra / Hopper / IDA 后端）折叠成 3 条命令加 6 个只读域入口，常驻约 5 KB。不代装引擎，需自行安装 rea-agents、Ghidra 12.1.x 与 JDK 21。
 - [Harzva/dsh-agent-project-sync](https://github.com/Harzva/dsh-agent-project-sync) — 发现 Codex 和 Claude 使用过的项目目录，并将其注册为共享的 DeepSeek Harness 工作区。
 - [Harzva/dsh-obsidian](https://github.com/Harzva/dsh-obsidian) — 把本机项目接入 Obsidian：有界的 manifest 扫描、确定性的依赖/技术栈/主题边，通过 Local REST API 或 vault 文件系统把带 wiki 链接的笔记写入托管的 graph/ 命名空间。
@@ -7131,7 +7205,7 @@ dsh plugin --profile web add dshmarket
 - [huangxiaoliang/deepclean-mydisk-plugin](https://github.com/huangxiaoliang/deepclean-mydisk-plugin) — Mac（macOS）与 Windows 磁盘清理：分档体检与空间分布，把缓存、残留与相似照片移入废纸篓或隔离区，可撤销；需永久删除整批后才真正释放空间。
 - [huaxiren6/DSH-EmailReader](https://github.com/huaxiren6/DSH-EmailReader) — 面向密码认证被禁用邮箱的 OAuth2 IMAP 读取插件：微软 2024 年起停用个人 Outlook 的 IMAP 基本认证，本插件改用 refresh-token OAuth2（XOAUTH2）自动续期，Gmail 走应用密码并可选本地 HTTP/SOCKS 代理；工具注册为 ol_email_*，可与市场版 dsh-email 共存不撞名。
 - [huaxiren6/DSH-SmsWebhook](https://github.com/huaxiren6/DSH-SmsWebhook) — DSH 短信转发 webhook：手机端转发 App（短信转发器/Tasker 等）把短信 POST 到本地 HTTP 端点，插件落盘 JSONL 并暴露 sms_recent / sms_search 工具，让 agent 在任务中直接读取短信验证码；自动提取 4–8 位 OTP，支持关键词过滤，可走局域网或 Tailscale。
-- [hui-xu-ai/wensu#dsh-wensu](https://github.com/hui-xu-ai/wensu/tree/main/packages/dsh-wensu) — 只读的知网题录检索：四个 MCP 工具（search / detail / export / status）通过原生消息桥驱动你自己的 Edge/Chrome，不下载全文，最小间隔 3 秒，每日上限 300 次。需要先 pip install wensu，运行 wensu setup 并在浏览器加载扩展，四个工具才会出现。
+- [hui-xu-ai/wensu#dsh-wensu](https://github.com/hui-xu-ai/wensu/tree/main/packages/dsh-wensu) — 只读的文献检索与全文读取：十个 MCP 工具通过原生消息桥驱动你自己的 Edge/Chrome，检索知网与 Web of Science、导出 RIS/EndNote 文本，并把已打开的论文页存成 MHTML 供离线转 Markdown。不下载 PDF/CAJ，最小间隔 900 毫秒，每日上限 300 次。需要先 pip install wensu、运行 wensu setup 并加载浏览器扩展。
 - [huyuanxin/dsh-ziwei-doushu](https://github.com/huyuanxin/dsh-ziwei-doushu) — 紫微斗数工作台：管理生辰档案、用 iztro 排盘、查看运限历史并回填 AI 解读。
 - [HwFee/HwFee-dsh#git-bash](https://github.com/HwFee/HwFee-dsh/tree/master/plugins/git-bash) — Windows 上的 Git Bash 默认 shell。从 git --exec-path 定位 bash.exe（不用 WSL 的 bash），提供 run_shell 工具；找不到 Git Bash 时明确降级，而不是让插件消失。
 - [hxlog/dsh-mcp-tools](https://github.com/hxlog/dsh-mcp-tools) — DeepSeek Harness 的 MCP 工具管理器：在设置里添加 streamable-http/stdio 服务器、Postman 式请求头、连通性测试，并按工具开关——停用的工具不会进入模型。
@@ -7191,6 +7265,7 @@ dsh plugin --profile web add dshmarket
 - [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) — 将 DSH 连接到本机 Beav，面向小红书（RED/RedNote）、社交媒体运营和自媒体 AI 创作，覆盖选题研究、知识库、文案、图片、音频与短视频工作流，并保留审批和产物追踪。
 - [James-web11/dsh-matlab-mcp](https://github.com/James-web11/dsh-matlab-mcp) — 把 MathWorks MATLAB/Simulink MCP 服务器注册进 dsh profile，让会话获得 mcp__matlab__* 工具，用于运行 MATLAB 代码以及读取、编辑与测试 Simulink 模型。
 - [janehk416-alt/dsh-FocusCapture](https://github.com/janehk416-alt/dsh-FocusCapture) — Windows 截图与标注插件，支持自定义全局快捷键、置顶贴图和添加到当前 DSH 聊天附件草稿；需要兼容的 Python 运行环境。随包带有预编译的 Windows 可执行文件（native/DualCtrlSnip.exe）和一个只轮询所选快捷键状态的 Python 辅助程序。
+- [Jason-KK-kk/dsh-db-lens](https://github.com/Jason-KK-kk/dsh-db-lens) — 给 DSH agent 的只读、限量、留痕查数窗口（SQLite/MySQL/PostgreSQL），含 schema 树、可排序结果表、CSV 导出与须人确认的自然语言问数。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Jason25417/dsh-external-bridge](https://github.com/Jason25417/dsh-external-bridge) — 只在 127.0.0.1:39217 监听的本机 HTTP 桥（Host 半插件），用 0600 落盘的 Bearer token 鉴权：外部进程可创建出现在工作区侧栏的真会话、发消息（queue/steer）、读状态与最后一条助手回复、列工作区/会话，并长轮询到回合结束。零运行时依赖，端口固定，不联网，日志不记消息正文。
 - [Jaylor-Wang/dsh-tool-ast-grep](https://github.com/Jaylor-Wang/dsh-tool-ast-grep) — 基于 ast-grep 的语法级 AST 代码结构检索与大纲提取工具。
 - [Jaylor-Wang/dsh-tool-lsp](https://github.com/Jaylor-Wang/dsh-tool-lsp) — DeepSeek Harness 的通用 LSP 工具面，提供语言服务器诊断、格式化、重命名、代码动作与符号导航。
@@ -7241,7 +7316,7 @@ dsh plugin --profile web add dshmarket
 - [JinSuperOfficial/dsh-proxy-switcher](https://github.com/JinSuperOfficial/dsh-proxy-switcher) — 在 dsh 运行过程中热切换出站代理（直连/系统/自定义），无需重启即可生效
 - [jinweixu1999-ux/dsh-screen-control](https://github.com/jinweixu1999-ux/dsh-screen-control) — Windows 上的截屏与真实鼠标键盘控制。打字必须指定目标窗口，发送前后都校验前台窗口，中途丢焦立即中止；只用系统自带的 Win32 API，不需要驱动、MCP 服务或随包二进制。
 - [jinwendijv/dsh-applauncher](https://github.com/jinwendijv/dsh-applauncher) — 扫描本机已安装的 Windows 应用，在侧边栏设置图标上方提供一键启动。
-- [JiuYue-sky/dsh-ww-auto-model-extractor](https://github.com/JiuYue-sky/dsh-ww-auto-model-extractor) — 面向 Windows 的《鸣潮》本机角色提取与 Blender 展示管线，提供 5 个 dsh_ww_* 工具与 1 个内置 Skill：通过随包 CUE4Parse 命令行工具（ww-extract.exe）从本地游戏目录提取角色模型、贴图与已烘焙动画，在隔离沙盒中生成卡渲展示 .blend（不修改宿主 Blender 配置）并打包标准化 UE 交接清单。
+- [JiuYue-sky/dsh-ww-auto-model-extractor](https://github.com/JiuYue-sky/dsh-ww-auto-model-extractor) — 【非官方】面向 Windows 的《鸣潮》（Wuthering Waves）正式服角色风格化贴图审计、Blender 卡渲动作表情展示与标准化 UE 交接管线，提供 5 个 dsh_ww_* 工具与 1 个内置 Skill：在隔离沙盒中自动装配卡渲材质、物理飘带与面部形态键生成 .blend（不修改宿主 Blender 配置）并输出标准化 UE 交接清单。
 - [JJJACKsong/sleep-not-permitted](https://github.com/JJJACKsong/sleep-not-permitted) — 禁止 Agent 前台等待：sleep / wait / tail -f / watch / ping 等等待型命令、wait_agent 与 job_output(wait) 等阻塞等待工具，用反复 check 代替等待的轮询（同一条命令在窗口内重复出现），以及需要人输入/确认的命令（sudo 不加 -n、ssh 不开 BatchMode、登录流程、交互式编辑器、docker -it）都会被拒绝，并给出改用后台作业或结束本轮等唤醒的可执行指令；等待预算与轮询窗口可配、文案跟随系统语言（中/英）、零运行时依赖。
 - [JKL-3484/dsh-drive-manager](https://github.com/JKL-3484/dsh-drive-manager) — Windows 多盘磁盘分工面板：用绿/黄/红标出可清理、需确认、系统占用，核对下载目录，并给出多盘分工与迁移建议。
 - [jkm6221/dsh-workspace-folders](https://github.com/jkm6221/dsh-workspace-folders) — 给侧栏里的某个工作区附加额外文件夹：附加后文件工具与终端可读写这些目录，模型能在运行时上下文里看到它们，并可从工作区行右键菜单或 workspace_folders 工具增删；每个工作区各自维护自己的列表。
@@ -7453,6 +7528,7 @@ dsh plugin --profile web add dshmarket
 - [DSH MCP Tool Schema Diff](https://github.com/liuhange789/dsh-mcp-tool-schema-diff) — MCP 工具契约的破坏性变更预警。从运行中的 tools/change 注册表里，为每个 MCP server 记住最近三代工具定义并做结构化 diff：工具删除、参数删除、可接受类型收窄、新增必填、枚举收窄记为 breaking；默认值与约束变化记为 warning；新增工具/可选参数记为 info。静默窗口防抖吸收 mcp-client 的重新同步抖动，首次连接和重连都不会误报。通过会话通知加 `/mcp-diff` 输出，快照存 `$DSH_HOME/mcp-schema-cache`（每个 server 保留 3 个版本），只读注册表，不写其他状态。
 - [liuhange789/party-eco-agent](https://github.com/liuhange789/party-eco-agent) — 面向党建引领街道产业生态场景的轻量规则工具：生成企业画像卡片、按品类与数量匹配供需、规整政策记录字段（不解析原文）、按优先级给出诉求处理人角色与预计天数；不调用任何外部系统。
 - [LiuJiaCheng11/dsh-postman](https://github.com/LiuJiaCheng11/dsh-postman) — 用 9 个工具在 dsh 里管理 Postman 云端集合——列出、浏览、新增（单个或批量）、修改、删除接口，导出或整体覆盖集合。
+- [liujing9178/dsh-tool-picker](https://github.com/liujing9178/dsh-tool-picker) — 每步先给模型一份工具目录，由它用 tool_pick 只加载需要的工具，据此收窄本轮可见工具集，减少每步的工具定义 token 开销。
 - [liwei9745/dsh-genbox-plugin](https://github.com/liwei9745/dsh-genbox-plugin) — 通过本地 GenBox 服务生图、改图、生视频，并用 ffmpeg 本地剪辑；自带零成本测试台。
 - [liwuzhan/agent-native-trade#dsh-plugin](https://github.com/liwuzhan/agent-native-trade/tree/main/packages/dsh-plugin) — 为模型原生交易提供目录检索、交易方联络、合同签名、结算协调、人工任务交接和签名评价回执工具。
 - [liwuzhan/cad-tool#dsh-cad-studio](https://github.com/liwuzhan/cad-tool/tree/main/packages/dsh-cad-studio) — 为 DSH 添加参数化 CAD 建模、几何验证、预览、设计历史和 STEP/STL 导出能力。
@@ -7489,6 +7565,7 @@ dsh plugin --profile web add dshmarket
 - [loyalchiiina/dsh-lit-fetch](https://github.com/loyalchiiina/dsh-lit-fetch) — 免费文献下载：给 DOI、标题或关键词就能定位论文，先依次遍历 8 个 Sci-Hub 镜像，全部失败才用 Unpaywall 开放获取兜底。PDF 要过 %PDF- 魔数与最小体积校验，抓不到的论文生成可点击的批量获取清单。不需要付费订阅，也不需要 API Key。适配 DSH 内核 0.2.2-rc.1。
 - [Lphehe/dsh-token-economizer](https://github.com/Lphehe/dsh-token-economizer) — 统计跨会话工具使用情况，并可按项目隐藏未使用的发现类工具。
 - [lplalbert/deepseekhermes-codex-bridge#dsh-codex-bridge](https://github.com/lplalbert/deepseekhermes-codex-bridge/tree/main/packages/dsh-codex-bridge) — 为 DeepSeek Harness 注册两个工具。ask_codex 把问题发给本机已登录的 Codex CLI 并回传回复；codex_review 让 Codex 按给定标准对一组文件做红队评审。两者都可指定模型与推理强度，并在本地记录 token 用量。
+- [LPRabdusamat/dsh-gh-downloader](https://github.com/LPRabdusamat/dsh-gh-downloader) — 面向 DeepSeek Harness 的 GitHub 加速下载管理插件。在侧栏提供下载管理面板，并向 Agent 提供 github_download 工具，可通过 gh-proxy 把 GitHub 文件、Release 资产、源码归档与 Gist 下载到工作区，支持进度显示、暂停续传、多通道链接转换与下载历史列表。
 - [lqq151510/dsh-computer-use](https://github.com/lqq151510/dsh-computer-use) — macOS 电脑操作：8 个 computer_* 工具，读屏走辅助功能树与 Vision OCR，按元素 index 或可见文字执行 press / focus / set_value / click（后台窗口也能操作），CoreGraphics 鼠标键盘事件走常驻 daemon 低延迟通道，支持游戏级连招序列；自带的 Swift 助手首次调用时编译，无运行时依赖。
 - [lsqace-del/dsh-progress](https://github.com/lsqace-del/dsh-progress) — 「进度」实验/项目进度管理：16 个 progress_* agent 工具（安排增删改查、画板页、每日记录、全局搜索、概览、甘特、留言、导入导出），并在 better-sidebar 注册「进度」侧边栏 tab 托管原版界面；数据存会话项目 .progress/progress.json，随项目目录走。
 - [lsz-asd/dsh-plugin-device-info](https://github.com/lsz-asd/dsh-plugin-device-info) — 只读的 Windows 设备信息工具：每个 Win32 设备类别一个 agent 工具（时间、系统、CPU、内存、磁盘、GPU、网络、电池、进程、USB、音频、打印机），基于 WMI/CIM 与 Node os 采集。
@@ -7579,7 +7656,7 @@ dsh plugin --profile web add dshmarket
 - [MengXingXiaoMing/dsh-tianjige](https://github.com/MengXingXiaoMing/dsh-tianjige) — 图形/动画/物理/AI 算法的可查询天书——219 条术法，带取舍说明与现成实现链接，提供 10 个 agent 工具与侧栏页面。AI 工具需 DEEPSEEK_API_KEY。
 - [menotbobbybrown/dsh-plugin-mcp](https://github.com/menotbobbybrown/dsh-plugin-mcp) — DeepSeek Harness 通用 Model Context Protocol (MCP) 桥接插件：支持 stdio/sse/websocket 协议，具备 10k 休眠伸缩引擎、亚毫秒级 BM25 工具检索、动态 Token 预算管理及实时 Web UI 仪表盘。
 - [merenguesL/dsh-tool-normalizer](https://github.com/merenguesL/dsh-tool-normalizer) — 给工具调用加一层自愈：缺参数、错字段、路径越界在到达模型前自动修好，实测可见错误率从 7.95% 降到 2.20%。
-- [Merziller/dsh-video-workbench](https://github.com/Merziller/dsh-video-workbench) — 全智能体通用双引擎 AI 视频工作台 (v0.7.0 — DSH / DSH NEXT / Claude Code / Codex / WorkBuddy / Cursor / 无黑窗后台静默守护)：「我的动漫形象」会说话的动漫讲解员（用照片做一次，每条视频都能用：免费档本机口型眨眼、可选本地 Talking Head Anime 3 模型、或用你自己的 Vidu / 火山引擎 / Runway 密钥）、AI 剪辑你自己的素材（口播粗剪与真实字幕、口播包装、按讲话插空镜、Vlog 高光）、模板填空、由当前智能体代写（不用 API Key）、画面自检逐个机位看图与本次大模型用量统计、AI Agent 作战大屏（三套皮肤）、内置人物库与人物画风、48 个 MCP 工具（DSH 内 46 个）、影核广场（CinePulse Hub）模板广场、全品类自适应 FFmpeg 节拍卡点与 48kHz 音效响度母带、参考视频分屏对比播放器、4 轨时间轴微调、可选 BYOK 云端生图/生视频/Suno & MiniMax 音乐与自定义 HTTP 协议，及可选本地配音一键安装器（原创作者 Merziller｜QQ：1411574209｜微信：Merziller｜Email：k26789228@gmail.com）。
+- [Merziller/dsh-video-workbench](https://github.com/Merziller/dsh-video-workbench) — 禾杨视频工坊（禾杨智绘出品）· 全智能体通用双引擎 AI 视频工作台（v0.8.1 — DSH / DSH NEXT / Claude Code / Codex / WorkBuddy / Cursor / 无黑窗后台静默守护）：长视频拆条（把你自己的访谈、播客、直播回放、课程剪成多条带字幕、标题和封面的短视频）、配乐从精彩处开始、配音回听校验（AI 配音读错自动重配）、本地语音识别自动准备好（不用手动安装）、片尾声明和署名改为可选；「我的动漫形象」会说话的动漫讲解员、AI 剪辑你自己的素材（口播粗剪与真实字幕、口播包装、Vlog 高光）、模板填空、由当前智能体代写（不用 API Key）、AI Agent 作战大屏（三套皮肤）、49 个 MCP 工具（DSH 内 47 个）、影核广场模板广场、全品类节拍卡点与响度母带，可选 BYOK 云端生图 / 生视频 / 音乐与本地配音（Copyright (c) 2026 绍兴市柯桥区禾杨智绘软件开发工作室 & Merziller (子墨)｜QQ：1411574209｜微信：Merziller｜Email：k26789228@gmail.com）。
 - [MeshTok/dsh-plugin-yuantoutao](https://github.com/MeshTok/dsh-plugin-yuantoutao) — 电商插件——一个 MCP 给你的 AI 加上商品搜索、比价与购买能力，覆盖淘宝/京东/拼多多，商品目录由源头淘 MCP 服务提供。
 - [Meteor-system/dsh-codegraph](https://github.com/Meteor-system/dsh-codegraph) — 将当前工作区索引为关系图，向 agent 暴露一个工具 codegraph_explore（可达性、调用者、影响面），并在 Web 右侧栏提供图形面板。
 - [micln/dsh-mcp-autoload](https://github.com/micln/dsh-mcp-autoload) — 自动加载项目级 MCP 服务器：项目在 `.agents/mcp.json` 中声明服务器（路径与根目录标记可配置），在项目内工作的每个会话各自的作用域里挂载——支持 stdio 与 Streamable HTTP，工具名为 `mcp__<server>__<tool>`——会话结束时断开连接。Web UI 面板列出本会话的服务器及其工具，并可在确认后启用或禁用项目条目，写入前备份并原子替换清单文件。
@@ -7694,6 +7771,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-tool-time](https://github.com/omdsh-dev/dsh-tool-time) — 严格 ISO 8601 解析、IANA 时区转换、UTC 日历运算。
 - [omdsh-dev/dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit) — 零依赖工具包：time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十件套一键安装。
 - [omicverse/dsh-omicos](https://github.com/omicverse/dsh-omicos) — 在持久 Python 内核里跑 OmicVerse/OmicOS 生信分析，附能力目录检索、内核变量查看与账号订阅页签。
+- [omnimux-ai/omnimux-client#omnimux-clip](https://github.com/omnimux-ai/omnimux-client/tree/main/plugins/plugins/omnimux-clip) — DeepSeek Harness 多轨非线性视频时间轴剪辑插件，支持实时画面预览、基于 WebCodecs 与 WebGPU 的本地 MP4 导出以及 Agent 时间轴协同剪辑工具。
 - [OneLastTlipoca/dsh-tool-barotrauma](https://github.com/OneLastTlipoca/dsh-tool-barotrauma) — 为 DeepSeek Harness 增加 17 个 barotrauma_* 工具，用于制作潜渊症 mod：环境探测、内容包骨架、物品/武器/状态效果/角色/随机事件 XML、Lua 与 C# 脚本脚手架、本地化、校验、图标生成、打包与创意工坊发布文案。barotrauma_gen_icon 会把你的提示词发到 image.pollinations.ai，并把返回的图写进 mod 目录；在 Windows 上会用 reg query 读取 Steam 安装路径。
 - [OneOfJuly/dsh-ax-computer-use](https://github.com/OneOfJuly/dsh-ax-computer-use) — AX 优先的跨平台电脑操作插件（macOS / Windows / Linux）：六个工具（窗口、无障碍树、批量带验证动作、JPEG 截图、元素读取、Electron 带参重启）通过系统无障碍树（AX / UIA / AT-SPI2）驱动原生应用、Chrome 网页和 Electron 应用，取代截图点击的视觉循环。批量动作每步返回 confirmed / unverified / suspected_noop 结论，dropdown 搜索组合 op 直击 antd 式网页表单，空间坐标缓存跨会话记住字段位置，OCR 兜底覆盖自绘界面——网页操作从 20+ 轮截图点击降到 4-6 轮。
 - [onup-1/dsh-github-guard](https://github.com/onup-1/dsh-github-guard) — 监视 GitHub 流量，只在你访问 GitHub 时才用 TCP 与 TLS 探测候选边缘地址，再由 SYSTEM 助手把可用的那个钉进 hosts 文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -7718,13 +7796,15 @@ dsh plugin --profile web add dshmarket
 - [ozanstn1-stack/dsh-vps-ops](https://github.com/ozanstn1-stack/dsh-vps-ops) — 先读后写的 VPS 运维工具：systemd 状态与操作、磁盘占用、Docker 状态、日志尾部、可配置备份与静默时段计划。
 - [pageonelab/agentrouter-dsh](https://github.com/pageonelab/agentrouter-dsh) — 在 DeepSeek Harness 中查找研究数据服务、免费询价、按美元上限批准调用，并查看费用回执。
 - [pan17/dsh-tool-manager](https://github.com/pan17/dsh-tool-manager) — DSH 工具管理插件：按 Agent Preset 开关和分组工具，像 Skill 一样按需加载工具，减少模型上下文占用。
+- [PandaBoby/dsh-liangheng](https://github.com/PandaBoby/dsh-liangheng) — 面向 DeepSeek Harness 的专项编码 Agent 预设：意图对齐、第一性原理根因修复、原生并行工具面与改后实测交付，以组合包形式热插拔安装。
 - [pangxie985/dsh-desktop-yida](https://github.com/pangxie985/dsh-desktop-yida) — 通过 OpenYida CLI 给 Agent 14 个创建、修改钉钉宜搭应用（应用、表单、页面、Schema、数据）的工具，并在右侧栏工作台里用内置浏览器打开查看。
 - [Pappet/dsh-tool-imagegen](https://github.com/Pappet/dsh-tool-imagegen) — 通过 OpenRouter 统一 Image API 的文生图与图生图：以别名配置模型，参数按实时模型能力列表校验，支持参考图输入、设置卡片与对话内联展示结果。
+- [Parado-D/stata-copilot](https://github.com/Parado-D/stata-copilot) — 让 agent 直接跑 Stata：执行代码与 do 文件，回归结果读成系数、标准误、95% 区间与被省略项；erase、shell 这类命令在到达 Stata 前就被拦下；插补、bootstrap 这类长任务转后台进程跑完，不再被 Stata 忙占掐断。
 - [paranoidPhantom/dsh-rtk-minimal](https://github.com/paranoidPhantom/dsh-rtk-minimal) — 在 `tools/execute` 钩子上把 bash 工具调用经 `rtk rewrite` 改写，因此对任意 provider 路由生效。零依赖、无需构建：单个 ESM 模块，退出码 0 与 3 时采纳改写结果，其余情况（无等价命令、命中拒绝规则、rtk 缺失、启动失败）原样执行，执行后还原原始参数；`RTK_PREFIX_ONLY` 直接改为 `rtk <cmd>`，`DSH_RTK_BIN` 用于指定二进制。
 - [patrykorwat/open-dream-rsi#deepseek_harness](https://github.com/patrykorwat/open-dream-rsi/tree/main/plugins/deepseek_harness) — 不是又一个记忆插件：ODR 是“演化世界”式（Dream-RSI）自我改进回路——每次尝试都记入发现树（Discovery Tree），任务间歇将数千个策略变体在这棵记录下来的世界上回放；策略、配方或经验只有通过反事实回放的考验才会晋升，绝不因模型自己说好就获得信任，Sentinel 还会在预算耗尽前拦截工具调用；LLM 保持冻结，可从 npm 安装 dsh-open-dream-rsi。
 - [PaysNatal/dsh-qwen-mcp](https://github.com/PaysNatal/dsh-qwen-mcp) — 一步接全千问 Token Plan 的 7 个 Harness 权益 MCP 服务（联网搜索、网页解析、代码解释器、垂类搜索、图像生成、语音合成、语音识别）与决策模型（qwen_decide），附逐服务开关与实时状态面板。
 - [pc439527/dsh-surge-panel](https://github.com/pc439527/dsh-surge-panel) — 通过 Surge HTTP API 展示实时流量趋势、LAN 设备和逐端点诊断，支持多个实例的连接管理及 macOS 本机 API 配置发现；对 Surge 仅执行只读监控。它读取你的 Surge HTTP API（可能监听 0.0.0.0），且自身路由没有 DSH 的访问检查。
-- [pearjelly/deep-blend#bundle](https://github.com/pearjelly/deep-blend/tree/main/packages/deepblend/bundle) — 在 DSH 中创建可编辑的 Blender 产品场景。从胡桃木格栅垫、音箱、杯与灯具配方或导入模型开始，在光台查看保存结果、比较版本，调整尺寸、材质、相机与灯光。创建或继续改稿时，可将格栅垫横条间距设为 52–92 mm 并保持居中。一次操作将静态模型放到实际网格表面并保存，再另存完整静态取景，保留原相机和动画。逐面修复自定义网格上的重复纹理坐标并保持几何不变。保存半搭接前可预览上下槽口，阵列和镜像参数仍可编辑。渲染图片或分镜影片，也可将一个版本连同素材导出为可编辑副本。提供创建、建模、摄影、恢复与工具契约的英文指南。原生几何检查、不可变历史和审批闸门帮助保留已有作品。适配 DSH 0.2.1-rc.1 并保留旧宿主入口，提供 20 个建模、评审与交付工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [pearjelly/deep-blend#bundle](https://github.com/pearjelly/deep-blend/tree/main/packages/deepblend/bundle) — 在 DSH 中创建可编辑的 Blender 产品场景。从胡桃木格栅垫、音箱、杯与灯具配方或导入模型开始，在光台查看保存结果、比较版本，调整尺寸、材质、相机与灯光。创建或继续修改格栅垫时，可将横条间距设为 52–92 mm 并保持居中，也可设置 0–1 mm 的木条边缘倒角。一次操作将静态模型放到实际网格表面并保存，再另存完整静态取景，保留原相机和动画。逐面修复自定义网格上的重复纹理坐标并保持几何不变。保存半搭接前可预览上下槽口，阵列和镜像参数仍可编辑。渲染图片或分镜影片，也可将一个版本连同素材导出为可编辑副本。提供创建、建模、摄影、恢复与工具契约的英文指南。原生几何检查、不可变历史和审批闸门帮助保留已有作品。适配 DSH 0.2.1-rc.1 并保留旧宿主入口，提供 20 个建模、评审与交付工具。从 0.28.0 起，工作台及其 HTTP 路由使用 DSH 所有者会话。0.28.1 修复独立安装包在 Linux 环境下的构建。0.29.0 支持选中已保存半搭接的两组木条，用已保存相机预览逐面 UV 设置，并一次保存两组修改。 0.30.0 可将已检查的照片作为两组半搭接木条的底色贴图，一次保存。两组材质各自保留粗糙度数值和其他图片贴图。
 - [peijiping/dsh-plugin-litsearch](https://github.com/peijiping/dsh-plugin-litsearch) — 大模型对话主导的多轮文献检索：右侧栏可视化展示结果、轮次与全文可用性；覆盖 PubMed、Europe PMC、OpenAlex、Crossref、Semantic Scholar、arXiv、PubTator、DOAJ、OpenReview、OpenAIRE 十家免费源，可下载 PDF、导出引文、存 Zotero。
 - [peijiping/dsh-plugin-zotero](https://github.com/peijiping/dsh-plugin-zotero) — 把 Zotero 文献库映射进 DSH：用AI管理操作Zotero，读文献时让AI辅助你。右侧栏按分类与标签浏览，双击即在 DSH 内精读 PDF，划词摘录、标注、笔记或整篇文献一键引用进对话；从综述、方法对比、数据提取到检索整理、导入论文、回挂译文，都可由模型代劳。首次使用需在 Zotero 装集成 MCP 插件并开启本地 API。
 - [peipei345/hifly-dsh-plugin](https://github.com/peipei345/hifly-dsh-plugin) — 通过飞影账号授权，在对话中查询数字人与声音、生成配音和口播视频、查看任务进度。
@@ -7877,6 +7957,7 @@ dsh plugin --profile web add dshmarket
 - [qinyuan1017/dsh-wechat-filehelper](https://github.com/qinyuan1017/dsh-wechat-filehelper) — 让 agent 把文件和文字直接发到你自己的微信文件传输助手。扫一次码，之后说句话就能发；全程走 HTTP，不用打开网页版或浏览器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [QIU-KKKK/DeepSeek-Harness-BT-](https://github.com/QIU-KKKK/DeepSeek-Harness-BT-) — 在左侧栏提供 BT / 磁力资源搜索面板，聚合 磁力猫 与 动漫花园（动漫花园、蜜柑计划、萌番组、ANi）两个来源，支持广泛/精准匹配、类型筛选、排序、搜索历史与收藏。
 - [qixin-ai-data/dsh-qixin-insight-mcp-oauth](https://github.com/qixin-ai-data/dsh-qixin-insight-mcp-oauth) — 通过 OAuth 2.1 + PKCE 授权接入启信慧眼 MCP 服务，以单条插件条目把它的工具挂载为 mcp__qixin_insight__*，token 到期前自动刷新，断开时吊销。
+- [qiyaogongfang/dsh-rankings](https://github.com/qiyaogongfang/dsh-rankings) — 支持 17 个国家/地区的苹果 App Store 与谷歌 Play 榜单：日榜、周榜、月榜、飙升榜与游戏榜，每款一句话中文简介，侧栏直接看。
 - [qphotoai/dsh-computer-use-windows](https://github.com/qphotoai/dsh-computer-use-windows) — 适用于 Windows 的 DeepSeek Harness Computer Use 插件，支持 UIA、cua-driver 和可选 GLM 视觉。
 - [qq1003240666/dsh-qingshi-plugin](https://github.com/qq1003240666/dsh-qingshi-plugin) — 青史日记与族谱助手：读写生涯记录、按称谓倒推亲属关系，并在独立窗口里操作真实 H5 页面。
 - [qq304379685/dsh-zentao-dashboard-x](https://github.com/qq304379685/dsh-zentao-dashboard-x) — 在 DSH 面板中展示禅道缺陷、任务与需求并支持修改，同时注册 4 个助手工具供会话使用。
@@ -7998,6 +8079,7 @@ dsh plugin --profile web add dshmarket
 - [sizhe03/dsh-muse-media](https://github.com/sizhe03/dsh-muse-media) — 在对话里用你自己 Muse 账号的每周免费额度生成图片和视频，不需要 API key：驱动你已登录的 Chrome，并在输入框旁显示剩余额度。
 - [sjdhdbbf/dsh-drawai-vectorizer](https://github.com/sjdhdbbf/dsh-drawai-vectorizer) — fork 自 fourzkw/dsh-drawai，保留 .drawio 可编辑画布与两个模型工具，并在原版描边之外新增第二套矢量化引擎：分层颜色聚类 + 贝塞尔样条拟合 + 每通道色彩精度，绘制任务可选三档保真度（同一 1920×1080 帧实测约 18 / 38 / 46 dB PSNR（上游引擎同帧约 26 dB）），并行度提升为逻辑核心数的一半（不再封顶 4）。原版描边仍是默认引擎，也是整段视频的正确选择——新引擎在视频上产物会大出数百倍。
 - [sjh9714/dsh-retry-guard](https://github.com/sjh9714/dsh-retry-guard) — 监视连续相同的工具失败，可在下一个模型步之前选择暂停；保留原始结果与成功的重复调用，并在 DSH Web 里出一份会话内报告。
+- [sjkk16/dsh-game-player](https://github.com/sjkk16/dsh-game-player) — 为 DeepSeek Harness 提供受审批的键鼠操作、窗口绑定、屏幕截图，以及可选的 Live2D 桌面显示，用于操作窗口化游戏。
 - [skillpie/dsh-plugins#dsh-datasource](https://github.com/skillpie/dsh-plugins/tree/main/dsh-datasource) — 在 DeepSeek Harness 中连接 SQLite / PostgreSQL / MySQL 数据源：浏览表结构与数据、执行 SQL，也可以在对话里让助手直接查数和改数。
 - [sleepwalk2887/transproof-dsh-plugin](https://github.com/sleepwalk2887/transproof-dsh-plugin) — 译校助手 TransProof 的 DSH 插件：内置完整网页界面，支持 AI 翻译（需自备模型 API Key 或本地 Ollama 端点）、三段流水线校对、术语与专名核验、批量体检改错与一键交付报告；网页版与插件内置同一套界面，另提供一个不联网、不调模型的本地体检 Agent 工具。首次安装需联网 GitHub（国内用户请先开代理）；已安装后更新走 npm + npmmirror 国内镜像，无需代理。
 - [slow-stack/dsh-cura](https://github.com/slow-stack/dsh-cura) — 给 DSH 加一层生活关怀：每个会话都带健康日志与周期关怀，面板里存过的常用坐标省掉「你在哪」的反问，高德与瑞幸的 MCP 工具挂进所有会话；另附 QQ 伴生层，把表达规则注入回复。
@@ -8062,6 +8144,7 @@ dsh plugin --profile web add dshmarket
 - [SwordX-Lu/dsh-agent-settings](https://github.com/SwordX-Lu/dsh-agent-settings) — 智能体设置：在侧边栏管理可复用的子智能体档案，为每个档案写明适用场景与所用提供方/模型，任务中由智能体按场景自动拉起对应的子智能体。
 - [szhuangzan/rofilter-mcp](https://github.com/szhuangzan/rofilter-mcp) — 通过内置的 @deepseek-ai/dsh-mcp-client 桥接接入托管的 ROFilter MCP 服务（rofilter.cn）。ROFilter 是一款反渗透膜系统设计软件，内置 742 件膜元件库（威立雅、杜邦、东丽、LG、海德能、CSM、沃顿、澳维 8 大品牌）、进水水质分析、结垢评估与完整多段系统设计（进水压力、产水 TDS、能耗、逐段通量）。自带一个所有用户共用的试用令牌（每天 1000 次调用），run_design 会计量，正式使用请换成你自己的 rofilter.cn 令牌。
 - [T-Auto/dsh-ops](https://github.com/T-Auto/dsh-ops) — 为 Windows 的 DSH 提供 bash、PowerShell 7 及 Rust 高性能工具，减少 token 消耗。
+- [tachec/dsh-mcp-manage](https://github.com/tachec/dsh-mcp-manage) — 统一管理当前 DSH 中的 MCP 服务器：对 stdio 或 Streamable HTTP 服务器做新增、修改、删除、热启停、探测和重启，查看静态接入行，可读取其他agent工具中的 MCP 客户端导入配置，并可选地在左侧栏添加快捷入口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Taler97/dsh-rollback](https://github.com/Taler97/dsh-rollback) — 文件变更回滚：捕获 write/edit 工具调用的改前映像（git blob 或快照），通过面向模型的 rollback_files 工具或 /rollback 命令还原。
 - [tan000tan/dsh-solidworks](https://github.com/tan000tan/dsh-solidworks) — 通过 MCP 服务器把 DeepSeek Harness 接入本机 SolidWorks，默认只读模式，高风险操作逐次确认。
 - [taoqizhang55-code/stockproof#dsh-plugin](https://github.com/taoqizhang55-code/stockproof/tree/main/dsh-plugin) — 通过 stockproof MCP 服务（Python 3.10+，需先 pip install "stockproof\[mcp,cn]"；A 股/港股数据需 Python 3.11+）为 DSH 提供美股、A 股、港股研究工具：带出处的新闻、财报和公告解读，涨跌原因解释，全市场 A 股选股，用不偷看未来的历史数据回测想法的量化实验室（近两年数据锁定），持仓体检和本地网页看板；共 23 个工具。
@@ -8182,7 +8265,7 @@ dsh plugin --profile web add dshmarket
 - [wangbodbs/dsh-plugins#dsh-mcp-davinci-resolve](https://github.com/wangbodbs/dsh-plugins/tree/main/packages/dsh-mcp-davinci-resolve) — 把 DaVinci Resolve 21.1+ 内置的 MCP 服务器注册进 DSH，让 agent 能通过 Resolve 的脚本 API 操作达芬奇。
 - [wangbodbs/dsh-plugins#dsh-mcp-flapi](https://github.com/wangbodbs/dsh-plugins/tree/main/packages/dsh-mcp-flapi) — 把 FilmLight 官方的 FLAPI MCP（flapi-dev-mcp）注册成 DSH 里的 MCP 服务器，让 agent 能编写并运行 Baselight / Daylight 的 FLAPI 脚本。
 - [wangcong1137-hash/dsh-geoserver](https://github.com/wangcong1137-hash/dsh-geoserver) — 在 dsh web GUI 中读取 GeoServer WMS 服务并渲染地图图像，带服务器地址、用户名和密码设置卡片。
-- [wangjianghu/weread-dsh](https://github.com/wangjianghu/weread-dsh) — 微信读书笔记 × DSH/AI 工作流：增量同步导出 Markdown（划线/想法/书评）、带章节出处的全文搜索、阅读洞察（连续天数/深读比/分类雷达、月报）、SM-2 笔记漫游；近期阅读自动注入每轮模型上下文，会话内 weread Agent 工具（同步/搜索/洞察/漫游/统计/书城/荐书），@微信读书 输入触发器选书，工具结果渲染为可点卡片，附跨宿主 MCP 服务（9 工具）。三通道登录（扫码/cookie/官方 API Key）、多账号秒切、凭据仅存本机；本地 API 宿主调用方认证、fail-closed；单例阅读窗口「问 DSH」把选中文本直接送进 DSH 会话。要求 DSH >=0.2.0。
+- [wangjianghu/weread-dsh](https://github.com/wangjianghu/weread-dsh) — 微信读书笔记 × DSH/AI 工作流：增量同步导出 Markdown（划线/想法/书评）、带章节出处的全文搜索、阅读洞察（连续天数/深读比/分类雷达、月报）、SM-2 笔记漫游；近期阅读自动注入每轮模型上下文，会话内 weread Agent 工具（同步/搜索/洞察/漫游/统计/书城/荐书），@微信读书 输入触发器选书，工具结果渲染为可点卡片，附跨宿主 MCP 服务（9 工具）。三通道登录（扫码/cookie/官方 API Key）、多账号秒切、凭据仅存本机；本地 API 宿主调用方认证、fail-closed；单例阅读窗口「问 DSH」把选中文本直接送进 DSH 会话。要求 DSH >=0.2.0。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [wangxuewangxue98/dsh-daoyi-yijing](https://github.com/wangxuewangxue98/dsh-daoyi-yijing) — 道一-易经推演：通用决策评审 DSH 插件（决策辅助，非迷信）。六层加权聚合引擎（384爻→64卦→8宫→四象→三才→两仪→太极），强关联一票否决，内置电机设计/股票趋势/商业成功率剧本，纯 JS 零求解器依赖。免费档每日限 9 次推演，激活码可提升；stock-trend 剧本会按请求里的股票代码向腾讯行情接口拉取实时行情。
 - [wangxuewangxue98/dsh-motor-ai](https://github.com/wangxuewangxue98/dsh-motor-ai) — 电机电磁设计 AI 插件完整版：在 L0 毫秒级广筛之上补齐 L1（Ansys RMxprt）与 L2（Motor-CAD）精算层，形成 需求解析 → 参数识别 → 候选矩阵 → L0 预筛 → L1/L2 精算校核 的端到端设计链；与 dsh-motor-ai-l0 互斥，安装前请先卸载 l0，共享核心 @wangxue98/dsh-motor-ai-core 随包自动安装；L1 另需本机安装 Ansys AEDT（RMxprt），L2 另需本机安装 Motor-CAD。完整版采用 PolyForm Noncommercial 许可，L1/L2 需激活码。默认开启遥测：按工具聚合的使用次数和作者称已脱敏的设计经验样本会回传到作者在 wangxuewangxue98.deno.net 的服务器，故障协助还可上传故障报告；可在插件配置里用 telemetryEnabled、designExperienceUpload、faultAssistEnabled 关闭。
 - [wangxuewangxue98/dsh-motor-ai-l0](https://github.com/wangxuewangxue98/dsh-motor-ai-l0) — 电机 AI 辅助设计插件：需求解析 → 参数识别 → 候选矩阵 → Top10 校验。L0 纯 JS、零求解器依赖，毫秒级广筛候选并给出交给 L1/L2 精算工具的载荷；可作为本地 agent 预设与 Cordis 插件使用。L1（RMxprt）与 L2（Motor-CAD）在本版本中仅预留接口，层级总闸设为 l0 以上会立即报错。
@@ -8282,7 +8365,7 @@ dsh plugin --profile web add dshmarket
 - [xiao-hans/dsh-rtk](https://github.com/xiao-hans/dsh-rtk) — 在 tools/pre-execute 阶段经 `rtk rewrite` 改写 DSH 的 shell 工具命令，提供 `rtk` 与 `rtk_stats` 工具，并用 `rtk pipe` 压缩结果。
 - [xiaobbl/dsh-mworks-ai](https://github.com/xiaobbl/dsh-mworks-ai) — DeepSeek Harness 的 MWORKS AI：由 MCP 管理器托管的 Syslab 与 Sysplorer MCP 服务、官方 MWORKS 技能与工作规则，并在插件页提供运行环境设置。
 - [xiaobin118/dsh-quiz-tutorial](https://github.com/xiaobin118/dsh-quiz-tutorial) — 刷题场：根据会话，把复习内容变成 15–20 道题集，每道题配逐步手算解析，支持单选与多选，答错进错题本；用 `/dsh-quiz` 出题，支持题集删除。你的复习老师。
-- [xiaomao361/dsh-capability-gateway](https://github.com/xiaomao361/dsh-capability-gateway) — 通过一个按需网关搜索、查看和使用选定的第三方技能与 MCP 工具。目录精简取决于宿主和工具模式。本地日志记录使用元数据。
+- [xiaomao361/dsh-capability-gateway](https://github.com/xiaomao361/dsh-capability-gateway) — 通过一个网关按需搜索、查看和调用选定的技能与 MCP 工具。支持试搜、添加本地别名，以及从能力清单打开对应的运行日志。目录精简取决于宿主和工具模式。
 - [xiaomoL444/ugc-asset-search-dsh-plugin](https://github.com/xiaomoL444/ugc-asset-search-dsh-plugin) — 搜索千星奇域素材，在 DeepSeek Harness 对话中用卡片试听音效、预览特效和打开音乐链接。
 - [xiaoshi7915/dsh-kb-manager](https://github.com/xiaoshi7915/dsh-kb-manager) — 本地知识库管理：多格式导入、CJK 感知分块、sqlite-vec 向量 + BM25 混合检索与 bge-reranker-base 重排序、快照恢复、kbpack 导入导出与跨库检索，提供 22 个 agent 工具与 Web 面板。
 - [xiaoxiao150/vram-switcher](https://github.com/xiaoxiao150/vram-switcher) — 面向本地 AI 陪伴的 AstrBot/DSH 原生显存协调：LLM、IndexTTS、ComfyUI 轮流用卡，不加代理。
@@ -8333,7 +8416,7 @@ dsh plugin --profile web add dshmarket
 - [YanYunCY/dsh-exit-code-lens](https://github.com/YanYunCY/dsh-exit-code-lens) — 为 exit code 1 表示结果而非错误的 bash 输出（grep 无匹配、diff 有差异、test 为假）补充说明，避免 agent 反复排查。
 - [YaphetHayate/codeRDD#dsh-rdd-explore](https://github.com/YaphetHayate/codeRDD/tree/master/dsh/dsh-rdd-explore) — 缓存优先的代码探索：rdd_explore 工具查询项目 .rdd/exploration 索引，未命中时派遣只读 worker 子代理探索并注册产物；rdd_models 提供实时模型目录，用于派遣时选模型。
 - [yasaxiwind/dsh-data-console](https://github.com/yasaxiwind/dsh-data-console) — 本地数据工作台：打开 CSV/Excel/JSON，查看列画像、排序筛选、SQL 多表查询、六种图表与 CSV/XLSX/PNG 导出，并向 agent 提供五个有界工具。
-- [yasaxiwind/dsh-experiment-ledger](https://github.com/yasaxiwind/dsh-experiment-ledger) — 本地实验台账：记录运行的参数、指标、产物与日志，对比运行、复现命令、签名结论并导出报告或包，向 agent 提供 33 个有界工具和交互面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [yasaxiwind/dsh-experiment-ledger](https://github.com/yasaxiwind/dsh-experiment-ledger) — 本地实验台账：记录运行的参数、指标、产物与日志，对比运行、复现命令、签名结论并导出报告或包，向 agent 提供 33 个有界工具和交互面板。
 - [yaways/dsh-subagent-claude-code-wrapper](https://github.com/yaways/dsh-subagent-claude-code-wrapper) — 子代理委派提供方：通过可配置的 executablePath 字段，运行任意 Claude 兼容 CLI 二进制。
 - [yayuqianhuang/dsh-video-to-knowledge](https://github.com/yayuqianhuang/dsh-video-to-knowledge) — 把视频链接编译成带时间戳、可回跳原片时刻的 Markdown 知识卡。需自备 Python 3.10+ 与 yt-dlp（无字幕视频另需 ffmpeg + faster-whisper，B 站会员字幕需登录 cookie）。
 - [ycm50/dsh-proxy](https://github.com/ycm50/dsh-proxy) — 按域名分流的 DSH 代理插件：列入「强制走代理」的域名（含子域名）永远走代理，其余域名先直连、1 秒内不通再换代理，先答上的通道在本会话定格，连接复用 120 秒，每次尝试都记录；可让插件安装用的 pnpm/git 子进程也走代理。
@@ -8348,12 +8431,12 @@ dsh plugin --profile web add dshmarket
 - [yh01010/dsh-mcp-matlab](https://github.com/yh01010/dsh-mcp-matlab) — 将本地 MATLAB MCP server 桥接进 DSH，提供 mcp__matlab__* 工具：执行 MATLAB 代码、运行 .m 脚本与测试、查看已安装工具箱。需要自备 MATLAB 与 MathWorks 官方 MATLAB MCP Server 可执行文件，且安装后需填一次路径——只装插件不会出现工具。
 - [yh01010/dsh-mcp-tia](https://github.com/yh01010/dsh-mcp-tia) — 把本机的博途（TIA Portal）Openness MCP server 桥接进 DSH，提供 mcp__tia__* 工具：读取项目树与块、查交叉引用、把块逻辑读成文本，以及导入并编译 SCL/LAD 文档。需要 Windows 上的博途与 Openness 用户组、一个第三方 Openness MCP server（例如 bulaofen0036-coder/TIA_Portal_Openness_MCP），且安装后需填一次路径——只装插件不会出现工具。
 - [yhm138/dsh-image-rescue](https://github.com/yhm138/dsh-image-rescue) — 图片单边超过 8192px（或总像素超限）导致整条消息被拒收时，把超限图片按原始字节存为普通文件、把只读路径交给模型，不缩放不转码，便于无损查看或转换（如长截图、扫描件转 PDF）。
+- [yhuan416/dsh-opencode-client](https://github.com/yhuan416/dsh-opencode-client) — OpenCode 2 机群观测台：跨 server 看板、7/30 天洞察、成本归因，并把每台 server 注册为 dsh 原生子代理后端。
 - [yhy854/dsh-calc-tool](https://github.com/yhy854/dsh-calc-tool) — 计算器工具：手写递归下降解析器求值算术表达式，不使用 eval 或 new Function，标识符白名单、长度与嵌套上限、结构化错误码。
 - [Yi-qing-dev/dsh-restart-relay](https://github.com/Yi-qing-dev/dsh-restart-relay) — 重启 DSH 时不丢工作。页面顶部横条先倒数，可点「立即重启」或「稍后」；无人操作时 倒计时结束自动重启，点「稍后」则永久取消。关闭进程树前，会为发起重启的会话以及 其他正在运行的会话各排一条一次性续接提示，让它们的任务在重启后继续。倒计时取自 本机实测的「杀进程到端口可用」耗时。仅支持 Windows 与桌面端 desktop profile。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Yijian-quiet/dsh-mol#dsh-bundle](https://github.com/Yijian-quiet/dsh-mol/tree/main/dsh-bundle) — 把 dsh-mol 的 stdio MCP 服务（基于 RDKit，不联网）接进 DSH profile。它提供 12 个工具：三级 SMILES 校验（人话诊断 + 字符定位）、分子性质、类药性与结构警报、结构图渲染（PNG/SVG）、多分子拼图、格式互转（SMILES/InChI/InChIKey/MOL/SDF/分子式）、标准化（逐步记录改了什么）、去重、SMARTS 子结构匹配、指纹相似度，以及逐条报告失败行的批量清洗。本 patch 只负责注册服务；工具实现在本仓库的 Python 包中，需先安装——README 给了 pip 与源码两条路线，包上架 PyPI 之前，源码那条是可用的。
 - [Yijian-quiet/dsh-mol#dsh-ui](https://github.com/Yijian-quiet/dsh-mol/tree/main/dsh-ui) — DSH Web 界面里的化学工作台面板。在 Ketcher 画板上画结构（构建由脚本下载，浏览器本地渲染、不经后端），然后对本机 RDKit 直接计算，不调用模型——分子式、分子量、精确质量、logP、TPSA、氢键供体与受体、环数、Fsp3、立体中心，Lipinski 与 Veber 逐条判定、QED、PAINS/BRENK 结构警报与 Murcko 骨架，另有 SMARTS 子结构匹配、指纹相似度、格式互转、标准化与批量清洗。逆合成页签通过「JSON 进 JSON 出」的单进程协议对接可插拔后端（默认 Retro*），后端没装好时如实说明缺什么，不编造路线。实际计算由本仓库的 Python 包（rdkit）完成，需另外 pip 安装。
 - [yijiezhong/dsh-testhud](https://github.com/yijiezhong/dsh-testhud) — 把自动测试的进展画在被测界面之上的浮层：每步的期待与实际，以及等待的人现在能不能动鼠标键盘。包内附带通用预编译二进制（arm64 + x86_64），无需 Xcode 命令行工具；浮层面板自身要求 macOS 14 及以上。
-- [yikart/aitoearn-dsh-plugin#packages/dsh-plugin-aitoearn](https://github.com/yikart/aitoearn-dsh-plugin/tree/master/packages/dsh-plugin-aitoearn) — 帮你生成文案/图文/短视频，一键分发抖音、快手、小红书、公众号、bilibili、Facebook、TikTok 等海内外平台，覆盖自媒体运营从内容创作，内容发布到内容变现全链路。
 - [yikart/AiToEarn#dsh-plugin-aitoearn](https://github.com/yikart/AiToEarn/tree/main/skills/dsh-plugin-aitoearn) — 帮你生成文案/图文/短视频，一键分发抖音、快手、小红书、公众号、bilibili、Facebook、TikTok 等海内外平台，覆盖自媒体运营从内容创作，内容发布到内容变现全链路。
 - [Yinxe/deepseek-harness-plugins#archive/mcwiki-search](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/mcwiki-search) — 查询中文 Minecraft Wiki（MediaWiki API），把搜索结果与页面全文完整转换为 AI 可直接阅读的干净文本——搜索、引言、全文 Markdown、随机条目；模板、引用、图片、跨语言链接等噪声在插件内部全部清洗完毕。已归档并冻结在固定版本：作者不再为它适配新版 DSH。
 - [YiRan0/dsh-bangumi](https://github.com/YiRan0/dsh-bangumi) — DSH 追番订阅管理器：Bangumi 查番、nyaa/dmhy 搜种、qBittorrent 自动下载（RSS 判新轮询）、本地媒体库查重，附日历/进度侧边栏 GUI 与 11 个 LLM 工具（bangumi_lookup / bangumi_search / bangumi_subscribe / bangumi_unsubscribe / bangumi_list / bangumi_progress / bangumi_calendar / qb_status / qb_configure / qb_add_torrent / library_scan）。
@@ -8364,6 +8447,7 @@ dsh plugin --profile web add dshmarket
 - [yjl9903/AnimeGarden#dsh](https://github.com/yjl9903/AnimeGarden/tree/main/plugins/dsh) — Anime Garden 的 DSH 插件：在 DSH 内搜索来自動漫花園、蜜柑计划、萌番组和 ANi 的动画 BT 资源——支持对话搜索、按字幕组和类型筛选的侧边栏面板、新番周历，以及站内浮窗播放。
 - [ymwang92/dsh-refkeeper](https://github.com/ymwang92/dsh-refkeeper) — 收集对话里引用过的文献，按标识符分派到对应注册表核验，通过核对的导出为 BibTeX 或 RIS。
 - [YokosWY/dsh-guard#plugin](https://github.com/YokosWY/dsh-guard/tree/main/plugin) — 会话头部的「护航」面板：启停本机 dsh-guard 守护，显示扫描开关、守护心跳与上次扫描时间；做监控的 Python 守护需单独部署，插件通过 DSH_GUARD_ROOT 环境变量定位它的目录。守护默认路径是 Windows 上的 D:\AI\Projects\dsh-guard，可用 DSH_GUARD_ROOT 指向别的目录。
+- [YOMXXX/dsh-output-budget](https://github.com/YOMXXX/dsh-output-budget) — 给 DSH 的工具输出做按形状的预算：git status/log/diff、目录列表、搜索命中与包管理器噪音在进入模型前被摘要，完整原文一条 read 就能从 spill 取回，错误输出永不裁剪。
 - [YongjianWan/dsh-loadout](https://github.com/YongjianWan/dsh-loadout) — DSH 的按需工具装配：MCP 工具按 server 自动分组、宿主插件工具按手工前缀分组，进组的默认隐藏、一句话激活，没被规则认领的始终可见。另带写代码/写材料/运维/只读审阅内置模式、新工具观察区用多了自动转正、敏感组激活要用户点头、读网页当轮切断外发组防提示注入，以及长尾工具的内置搜索和代理调用。
 - [you112358/dsh-cache-cleaner](https://github.com/you112358/dsh-cache-cleaner) — 扫描并清理 DeepSeek Harness 的可重建缓存——本体缓存、临时文件、桌面客户端缓存、已安装插件自动发现的缓存，以及已卸载插件的残留——提供设置页、两个 agent 工具（cache_scan、cache_clean）与鉴权 HTTP 路由，可按目标设置时间过滤，保留最近产生的缓存。
 - [yoursc/dsh-siyuan](https://github.com/yoursc/dsh-siyuan) — 把思源笔记（SiYuan）接入 DeepSeek Harness：17 个 siyuan_* 宿主工具，覆盖笔记本与文档列表、全文检索、SQL 查询、读取文档与块、新建与追加内容、移动与重命名文档、日记与块属性，另提供一个 Web 设置页配置思源地址、API token 与逐工具开关。
@@ -8390,7 +8474,7 @@ dsh plugin --profile web add dshmarket
 - [yuehancn/dsh-tool-subtitle](https://github.com/yuehancn/dsh-tool-subtitle) — 读写互转 SRT/WebVTT/ASS 三种字幕并校正时间轴，出片前体检过长或读不过来的 cue，还能用已配置的识别引擎把音视频转成字幕。
 - [yuexushuang/dsh-geojson-map-viewer](https://github.com/yuexushuang/dsh-geojson-map-viewer) — 将会话中的 GeoJSON（消息文本、代码块、投递文件、工作区扫描）以 Leaflet 交互地图呈现，支持底图切换与可分页、点击定位的要素属性表。
 - [yuezhiye/dsh-closet](https://github.com/yuezhiye/dsh-closet) — 按工作区管理临时脚本与其运行日志的收纳间，数据放在每个项目内的 .dsh-fix 目录。可登记脚本（语言与用途）、扫描项目中遗留的临时脚本/备份/日志、带超时执行已登记脚本并把每次运行写进带时间戳的日志、把选中的文件清运进可整批还原的回收站。扫描只列清单永不删除；清运只做移动不做删除；已被 git 跟踪的文件默认拒收，确需处理要显式加 force。含 7 个 Agent 工具与一个设置面板。
-- [yugejixian/vm-blackbox](https://github.com/yugejixian/vm-blackbox) — 面向 DeepSeek Harness 的黑盒 GUI 测试：AI 测试员只靠截图与键鼠操作真实 Windows 虚拟机，判定必须由像素支撑，而不是读日志或源码。包含 dsh-vm-tester 插件的十二个 vm_* 工具（状态、UI 元素树、截图、点击、输入、凭据注入、按键、普通键、等待、快照、上传、下载）、Windows 虚拟机内的反向隧道代理，以及运行体检与围观脚本。需要 Windows、VirtualBox 7 和装有内置代理的 Windows 虚拟机，vm 工具才可用。
+- [yugejixian/vm-blackbox](https://github.com/yugejixian/vm-blackbox) — 面向 DeepSeek Harness 的黑盒 GUI 测试：AI 测试员只靠截图与键鼠操作真实 Windows 虚拟机，判定必须由像素支撑，而不是读日志或源码。包含 dsh-vm-blackbox-tester 插件的十二个 vm_* 工具（状态、UI 元素树、截图、点击、输入、凭据注入、按键、普通键、等待、快照、上传、下载）、Windows 虚拟机内的反向隧道代理，以及运行体检与围观脚本。需要 Windows、VirtualBox 7 和装有内置代理的 Windows 虚拟机，vm 工具才可用。从 GitHub Release 的预构建 tarball 安装（旧 npm 包 dsh-vm-tester 已停止维护）。
 - [yuioi666/dsh-conversation-nav-dots](https://github.com/yuioi666/dsh-conversation-nav-dots) — DSH 网页端对话导航点 — 快速跳转用户消息。
 - [yujh129/dsh-literature-agents](https://github.com/yujh129/dsh-literature-agents) — 文学与古典文献研究：9 个只读工具、11 位文史专家子代理、3 个评审团，以及按对话启停的「古籍」开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [yuloong07-star/dsh-prompt-system](https://github.com/yuloong07-star/dsh-prompt-system) — 输入框内的提示词优化器：结合对话历史、工作区文件与会话选定模型，把草稿改写为十一节分析式提示词，支持一键撤销。
@@ -8414,17 +8498,20 @@ dsh plugin --profile web add dshmarket
 - [YYK0402/dsh-siyuan-archive](https://github.com/YYK0402/dsh-siyuan-archive) — 把 DSH 对话产出归档到思源笔记：一次 siyuan_archive 调用按「<归档路径>/<年-月>/<类型>/<日期>_<时间>_<主题>_<内容>」写入并附元数据表，自动维护笔记本根的「索引与规范」索引文档；6 个 siyuan_* 宿主工具（列笔记本、全文检索、读文档、归档、删块、删文档）与 Web 设置页配置地址（含测试连接）、存宿主凭据库的 API token、归档目标与标题模板，以及按笔记本/文档的读写删权限（默认全拒、子级只能收紧）。
 - [Yzm889/TianZheng-ai-plugin](https://github.com/Yzm889/TianZheng-ai-plugin) — 通过 MCP 驱动真实的天正建筑与 AutoCAD 绘图：墙体、门窗、楼梯、房间、尺寸、符号、图框与排版，每项能力都用实体计数增量验证。
 - [YZz-S/dsh-bili-summary](https://github.com/YZz-S/dsh-bili-summary) — 提供 bili_summary 工具：B 站视频元数据、字幕时间轴与 sharp 切帧配图，内置错误处理与优雅降级。
+- [yzzshanyin-rgb/dsh-background-task-engine](https://github.com/yzzshanyin-rgb/dsh-background-task-engine) — DSH 的可复用后台任务模板：把任务写成 1 到 10 个有序步骤，既可以手动执行，也可以挂到原生定时任务上。步骤由调用方 Agent 在它自己的授权上下文里执行，不存在常驻 Worker。每次执行都是一条独立的 TaskRun，带冻结的模板快照、持久化的步骤状态与进度、心跳与执行凭证、记录失败步骤的错误信息，以及可查询的运行历史。失败、中断、阻塞的运行通过新建一次运行来恢复，已完成步骤会结转、从第一个未完成步骤继续；可能有副作用的步骤必须先由用户确认才能重试，无法确认结果时绝不自动重放。记录存放在 StorageDomain 而不是内存里，重启后仍在；同一时间点的重复定时投递不会重复启动，并发按任务与会话双重限额。已在 DSH 0.2.2-rc.3（桌面版）与 Node 22+ 上验证；定时复用宿主原生 Schedule，未挂载该服务时定时不可用而手动执行照常。任务只对创建它的会话可见；看板按本机单用户设计，不宣称多用户隔离，因为宿主不对插件的 HTTP 路由做认证。注册 14 个 task_* 工具，复用宿主既有的调度、Agent 与工具权限。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [z-imagine/dsh-free-light-search](https://github.com/z-imagine/dsh-free-light-search) — DDDMUC/dsh-free-search 的精简分叉：多引擎网页搜索与抓取，自动回退、失败冷却、API 密钥轮换，接管 DSH 默认的 web_search/web_fetch 提供者；不能与 DDDMUC/dsh-free-search 同装（包名与 bundle 行相同）。
 - [Z06528/dsh-tutorflow](https://github.com/Z06528/dsh-tutorflow) — 一次只讲一个知识点、只问一个问题，在本地画数学图，并把学习进度写在本机。
 - [zangxx66/dsh-movable-settings#dsh-movable-settings](https://github.com/zangxx66/dsh-movable-settings/tree/main/plugins/dsh-movable-settings) — 把 DSH Web GUI 内置的「设置」弹窗从固定居中、不可调整，变成可拖动、可八向缩放、可双击最大化，并记住上次位置与尺寸的浮层。
+- [Zbcc0826/better-dsh](https://github.com/Zbcc0826/better-dsh) — DeepSeek Harness 本地插件（包名 `dsh-friction-drive`，仓库 `Zbcc0826/better-dsh`，不发布到 npm）。插件记录当前会话里工具的失败、同参数重试和带截断标记的结果；过线后下一次直接调用不执行，等待用户通过 `friction_choose` 选择，也可由用户暂停当前会话。替代工具和沉淀程序只在用户同意后安装，原工具定义不改。`dsh-friction-drive` 只注册这 10 个工具：`friction_status`、`friction_choose`、`friction_pause`、`propose_quality_loop`、`record_quality_critique`、`record_quality_plan`、`propose_tool_goal`、`apply_tool_change`、`restore_tool_definition`、`propose_compiled_procedure`。同一个 bundle 还会装上 `dsh-friction-demo`，注册 3 个示例工具：`ledger_lookup`、`fx_convert`、`window_overlap`，它们只是示例，不是账本产品。这个仓库是 Zbcc0826/better-dsh，不是 pgmi-builds/better-dsh。
 - [zdd3143/dsh-vision-click](https://github.com/zdd3143/dsh-vision-click) — 让 Agent 看着屏幕操作 Windows：用 Windows OCR 把界面文字变成可点目标，再执行点击、拖动、滚轮、键入与按键，每步都用逐像素差分和文字增删复核；F6+F7 由独立进程急停。
 - [zdkcomeon/dsh-mcp-link](https://github.com/zdkcomeon/dsh-mcp-link) — 扫描 Cursor、Claude Code、Codex CLI、Gemini CLI、VS Code 等 13 种客户端和项目工作区的 MCP 配置，把选中服务接入当前 DSH profile，并提供连接测试、原地重连、JSON 导入和图形化新增、编辑和移除。
 - [zeki520/dsh-download-nexus](https://github.com/zeki520/dsh-download-nexus) — 统一下载入口：按目标把下载路由到 Motrix、内置直连、yt-dlp 与 Hugging Face，并把 curl -o 这类 shell 写盘命令拦下来。提供五个工具——download、download_status、download_control、download_doctor、motrix_provision——以及一个五页签配置中心，管理引擎、目录白名单、镜像与写盘边界。
 - [zengjunlin2022/dsh-basemind-plugin](https://github.com/zengjunlin2022/dsh-basemind-plugin) — 按会话工作区启动 BaseMind MCP server，并注册其对外提供的代码智能工具，无需配置 MCP 行。需先安装 BaseMind 并在 PATH 上（basemind serve）；否则不会注册任何工具。
-- [zerui-chen/zero-db-tool](https://github.com/zerui-chen/zero-db-tool) — DeepSeek Harness 数据库工作台：连接下拉、对象树、数据/结构/SQL 页签，只读优先的 sql_* 工具，支持 SQLite/PostgreSQL/MySQL。
+- [zerui-chen/zero-db-tool](https://github.com/zerui-chen/zero-db-tool) — DeepSeek Harness 数据库工作台：连接菜单显示可用状态与耗时、对象树、数据/结构/SQL 页签、结构页索引；断线自动重连；只读优先的 sql_* 工具，允许 INSERT，UPDATE 每次确认，DELETE/DDL 拒绝；支持 SQLite/PostgreSQL/MySQL。
 - [ZF3373/dsh-algo-trainer](https://github.com/ZF3373/dsh-algo-trainer) — 算法学习工具：同步 Codeforces 与 AtCoder 提交记录，分析弱项画像， AI 生成训练计划，间隔复习排期，覆盖 114 课算法模板库。
 - [zhang-1239/dsh-nitui](https://github.com/zhang-1239/dsh-nitui) — 逆推：假设决定在六个月后已经失败，用三个问题反推出最可能的失败原因，每条原因配一个 30 分钟内能完成的检验动作；暗线会在同类取舍再次出现时提示你过去的选择。记录只写在本机 ~/.nitui，不上传、不遥测。
 - [zhang-1239/dsh-positions](https://github.com/zhang-1239/dsh-positions) — 持仓成本台：记录自己的买卖，并在下单前预览这笔交易会把成本、仓位、保本价变成多少。只在本机读写，不含行情、不联网。
+- [zhang-1239/dsh-yupan](https://github.com/zhang-1239/dsh-yupan) — 记录自己的价格判断：画出下一段走势，到期手动填入实际值，偏差按你自己的历史累计成画像。不接行情、不自动取价、不给建议——每个数字都来自你导入的文件或你确认过的输入。
 - [zhang-bin-98/sci-fork](https://github.com/zhang-bin-98/sci-fork) — 基于文献和实验结果的生物医学研究图谱，拆分假设，连接证据，推进研究。
 - [zhang-guo-wen/dsh-mcp-manager](https://github.com/zhang-guo-wen/dsh-mcp-manager) — 管理 MCP 服务器，按需加载并筛选工具以减少上下文占用。
 - [zhang787jun/dsh-finance](https://github.com/zhang787jun/dsh-finance) — 金融研究工作流与组合风控工具，对当前市场事实强制来源与时间戳边界。
@@ -8457,7 +8544,7 @@ dsh plugin --profile web add dshmarket
 - [Zhuang-A/dsh-go-sensei](https://github.com/Zhuang-A/dsh-go-sensei) — 围棋复盘教练：解析 SGF 棋谱，用自带 KataGo 引擎补算胜率与目差，在对话里逐手讲解问题手，并把讲解写回 SGF 副本；Web 面板用棋盘展示问题手、AI 首选与变化图。
 - [zhujiuyi/dsh-mcpserver-manager](https://github.com/zhujiuyi/dsh-mcpserver-manager) — 管理 DeepSeek Harness profile 的 MCP 服务：列出每个服务的连接状态与它注册的工具；保存前预检配置（可执行文件缺失、把包名当命令、变量未展开、URL 缺少路径）；粘贴 dsh 配置片段或 Claude Code 的 mcpServers 块即可新增，并自动转换为 dsh 格式。
 - [zhuwencong/xianyu-smart-monitor#dsh](https://github.com/zhuwencong/xianyu-smart-monitor/tree/main/plugins/dsh) — 把本机运行的闲鱼监控服务接入 DSH：十个 xianyu_* 工具通过 127.0.0.1:8000 读取候选商品、任务、运行记录与待处理问题，并可启动、停止或新建任务。
-- [ZhuYw3927/dsh-ai-collab](https://github.com/ZhuYw3927/dsh-ai-collab) — 给仓库里的各个 AI 工具共用一份项目记忆：只追加的 .ai/ 工作日志、当前状态快照，以及自动化永不覆盖用户区的分区 AGENTS.md。全局纪律拆成可独立开关的模块，项目纪律内联进 AGENTS.md §8；.ai/SESSION_BOOT.md 让新会话开场即接手；写入有跨进程锁与原子替换保护。当前仅支持 Windows。图文介绍：https://zhuyw3927.github.io/dsh-ai-collab/
+- [ZhuYw3927/dsh-ai-collab](https://github.com/ZhuYw3927/dsh-ai-collab) — 给仓库里的各个 AI 工具共用一份项目记忆：只追加的 .ai/ 工作日志、当前状态快照，以及自动化永不覆盖用户区的分区 AGENTS.md。全局纪律拆成可独立开关的模块，项目纪律内联进 AGENTS.md §8；.ai/SESSION_BOOT.md 让新会话开场即接手；写入有跨进程锁与原子替换保护。项目根只保留 AGENTS.md 与渲染好的 HTML；任务清单、执行计划与跨项目仪表盘会在每次工具调用及恢复会话时自动重新生成；两者都是自包含的深色 HTML，窄屏自动降级为卡片，状态里的“无”等占位不再计入阻塞。当前仅支持 Windows。图文介绍：https://zhuyw3927.github.io/dsh-ai-collab/
 - [zhuzhaoyun/Molio#dsh-plugin-molio](https://github.com/zhuzhaoyun/Molio/tree/main/packages/dsh-plugin-molio) — Molio 本地知识库只读工具集：列知识库、浏览文件树、全文搜索、读取原文，经本机 Molio daemon HTTP API 取数（需 daemon 常驻运行）。npm 包名 dsh-plugin-molio，dsh plugin add 即装。
 - [zhuziddl/my](https://github.com/zhuziddl/my) — Windows NapCat部署指南与本机端口只读检查，附用户手动运行的管理员启动入口。
 - [ZI-LV68/dsh-deepseek-model-router](https://github.com/ZI-LV68/dsh-deepseek-model-router) — 自动切换 DeepSeek 模型：含图片时走视觉模型，复杂任务走 pro，常规任务走 fast；提供 switch_model 工具手动固定。
@@ -8505,6 +8592,7 @@ dsh plugin --profile web add dshmarket
 - [zjukop3/dsh-vertical-kit#dsh-weekly-report-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-weekly-report-check) — 周报的结构检查：本周完成与下周计划分开写、风险与阻塞在场、至少一行带量化数字——让读者分得清进展和动作。空泛承诺按计划语句计数：在场可判定，空洞不可判定。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [ZK-Andy/dsh-frecency](https://github.com/ZK-Andy/dsh-frecency) — 为 DeepSeek Harness 提供常驻索引 grep，以同名遮蔽内置 grep/glob 工具：重复内容检索命中按访问/修改 frecency 排序的内存索引，glob 在可用时对齐内置 ripgrep 语义、不可用时回退索引。
 - [zmh2000829/dsh-web-search-multi](https://github.com/zmh2000829/dsh-web-search-multi) — 为原生 web_search 工具提供可选的 SearXNG、Brave、Tavily、Gemini 搜索溯源或 Wikipedia 后端，支持 Web 设置且不进行隐式回退。
+- [zmm863-commits/dsh-agnes-studio](https://github.com/zmm863-commits/dsh-agnes-studio) — 泡泡猫的影视工具 — DSH 内的影视创作工作站：文生图、文生视频、短剧流水线（故事/剧本/分镜/逐镜出片/合成）、数字人口播（烧中文字幕）、小说封面、视频反解提示词、本地素材库（ffprobe 打标）、歌词对齐与 ComfyUI 接入，并内置 Oh Story 写作技能。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zoahdev/dsh-artifacts](https://github.com/zoahdev/dsh-artifacts) — 把 Markdown + JSON 渲染成自包含 HTML 文档/卡片/仪表盘/画廊（CLI + 内置 artifact_render 工具）。
 - [zoahdev/dsh-browser-use](https://github.com/zoahdev/dsh-browser-use) — Browser Use 云端桥接：通过 Browser Use API 让 dsh agent 执行真实网页任务，包括打开页面、点击、输入、填表和提取数据。
 - [zoahdev/dsh-firecrawl](https://github.com/zoahdev/dsh-firecrawl) — 通过 Firecrawl Cloud API 把 URL 抓成 LLM 可用 Markdown，或搜索网页并返回结果内容。
@@ -8648,6 +8736,7 @@ dsh plugin --profile web add dshmarket
 - [Baisbt/dsh-plugin-webrelay](https://github.com/Baisbt/dsh-plugin-webrelay) — 通过同源反向代理把外部 AI 对话站点嵌进 DSH 右侧面板（DOM 适配器写在配置里，站点改版无需改代码），并在输入框旁加一个按钮：要么用宿主模型改写草稿，要么跑一轮闭环——压缩对话、优化、发送到嵌入站点、捕获回复、整理成终稿写回输入框。
 - [Barry-1212/dsh-webscout](https://github.com/Barry-1212/dsh-webscout) — 为 DeepSeek Harness 提供 Tavily 网页搜索与页面抓取：包含 Search provider、支持 Tavily Extract/Firecrawl/本地 HTTP 的 Fetch provider，以及设置卡片。需要 Tavily API key，Firecrawl 可选。
 - [BeatAPI/beatapi-agent-plugin#dsh-browser](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-browser) — 通过带命名空间的 MCP 工具和任务空间 Skill 接入已发布的 BeatBrowser；需要 Chrome 扩展，保留人工接管规则。
+- [BeiningCheng/dsh-plugin-browser-bridge](https://github.com/BeiningCheng/dsh-plugin-browser-bridge) — 让 DSH 直接读 Chrome 页面：通过令牌配对的扩展在本地回环 WebSocket 上提供 8 个 browser_* 工具，按选择器或文本读元素、点击、填表、跳转，不截图，也不打开 DevTools 端口。
 - [big0lives/dsh-web-window-companion](https://github.com/big0lives/dsh-web-window-companion) — 在独立浏览器 profile 的 Edge/Chrome 应用模式窗口中打开 dsh web 界面，关闭窗口即优雅停止服务。
 - [binskyz/dsh-yunpa](https://github.com/binskyz/dsh-yunpa) — 仅 Windows：本地加密凭据库（DPAPI 包裹的 AES-256-GCM）配无头 Chrome 登录态保管：31 个 agent 工具登录一次即可把会话存到本机，之后抓登录墙内的页面（贴吧、NGA、Pixiv、书屋）并逐楼层提取正文。页面实时镜像到可拖动、可收起的右边缘抽屉，点击、打字、滚动经 CDP 回放，验证码不必再开独立浏览器窗口。可迁移 Edge/Chrome 已存密码：插件会读取浏览器的 Login Data 密码库，在进程内解密 v10/v11 条目，并把密码库及其密钥复制进自己的受控 profile 让浏览器自动填充（v20 App-Bound 条目只能自动填充、无法离线解密）。另附一条命令修复 DSH profile 登记的安装器，以及内置自检。
 - [BitDG/dsh-plugins#reference-library](https://github.com/BitDG/dsh-plugins/tree/main/plugins/reference-library) — 在原生 @ 引用菜单中提供 CodePen、Pinterest、Z-Library 与 GitHub 数据卡片，并支持 Pinterest 分页和 Z-Library 排序。
@@ -8864,6 +8953,7 @@ dsh plugin --profile web add dshmarket
 - [youbaiyun/dsh-browser-crossplatform#bridge](https://github.com/youbaiyun/dsh-browser-crossplatform/tree/main/packages/bridge) — dsh 浏览器扩展的桌面端一半：在 dsh 自带的 webserver 上挂一个带令牌校验的 WebSocket 桥，向模型暴露 browser_* 工具，让它读取并操作用户当前标签页，图片识别默认关闭、需用户自行开启。
 - [yugasun/dsh-plugins#dsh-web-search](https://github.com/yugasun/dsh-plugins/tree/main/packages/dsh-web-search) — 向 ctx.web 注册百度、豆包、Tavily、Exa 后端供官方 web_search 使用，并在 Tavily 或 Exa 生效时将 web_fetch 转到对应提取接口。
 - [ywleeo/browser-mcp](https://github.com/ywleeo/browser-mcp) — 通过本地 MCP server 驱动你真实的 Chrome：可搜索 Google/Bing/搜狗、读取任意页面（含 JS 渲染与登录后内容）、在后台窗口自动化点击/滚动/输入/按键/选择，并为知乎、小红书、抖音、Bilibili、X、Reddit 提供平台级搜索/详情/评论/下载；评论断点续抓、下载 SHA-256 校验、不返回 cookie、仅本地回环。
+- [Yyhy110421/dsh-quiet-browser](https://github.com/Yyhy110421/dsh-quiet-browser) — 静默浏览：内置浏览器窗口不再抢前台焦点、不遮挡其他窗口——WinEvent 钩子守护进程为其加 WS_EX_NOACTIVATE 并压到 HWND_BOTTOM，页面照常加载、点击、截图。仅 Windows。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zaiwenJ/dsh-cdp-browser](https://github.com/zaiwenJ/dsh-cdp-browser) — 通过 CDP 连接已运行的 Chrome/Edge：为 DSH 提供截图、像素断言、DOM/CSS 检查与页面 JS 执行，全程 HTTP + WebSocket、零子进程、零 npm 依赖、无需逐次授权。
 - [zebbkira/dsh-browser-context](https://github.com/zebbkira/dsh-browser-context) — 在 DSH 桌面版中引用网页正文、企微文档选区、可访问的 B站字幕和截图，不自动发送消息。
 - [zengxiaolou/dsh-annotate-browser](https://github.com/zengxiaolou/dsh-annotate-browser) — DSH 右侧栏里的标注浏览器：通过 CDP 推流并转发输入的实时页面，点选元素或划选文字后，把源码位置、组件栈、样式与裁图带进聊天输入框。需本机 Chrome（Windows 须设置 chromePath）。
@@ -8913,7 +9003,7 @@ dsh plugin --profile web add dshmarket
 - [BW741/dsh-video-eyes](https://github.com/BW741/dsh-video-eyes) — 让模型真的「看见」视频：本地 ffmpeg 按时间抽静帧、faster-whisper 转写音轨，模型逐帧读真实像素，而不是只读一段文字摘要。全程本地、不上传画面；音轨没有语音时如实报告而不是硬编。仅限 Windows；需已装 Python 3.10+ 与 ffmpeg，首次运行 video_eyes_setup 约下载 700 MB（faster-whisper 及其模型）。
 - [Byton-Patrica/dsh-super-image](https://github.com/Byton-Patrica/dsh-super-image) — 通过两个独立配置的 OpenAI Images 兼容或 ComfyUI 后端并行生成图像，比较候选图并可选择融合。视觉比较需要 DSH 中有支持图像输入的模型；没有时候选图只列出、不打分。
 - [CAI-MH/dsh-gpt-image](https://github.com/CAI-MH/dsh-gpt-image) — 控制已登录的网页版 ChatGPT 生成图片并下载到本地。
-- [catodm/dsh-sendcomfy](https://github.com/catodm/dsh-sendcomfy) — 把 ComfyUI 接进 DeepSeek Harness：侧边栏面板列出服务器上的工作流、模型与运行记录，12 个 comfy_* 工具让会话模型自己挑工作流、传提示词并覆盖任意参数（步数、CFG、随机种子、分辨率、模型）后出图；服务器工作流按需加载，无需导入。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [catodm/dsh-sendcomfy](https://github.com/catodm/dsh-sendcomfy) — 把 ComfyUI 接进 DeepSeek Harness：侧边栏面板列出服务器上的工作流、模型与运行记录，12 个 comfy_* 工具让会话模型自己挑工作流、传提示词并覆盖任意参数（步数、CFG、随机种子、分辨率、模型）后出图；服务器工作流按需加载，无需导入。
 - [cctv2333/dsh-vidlens](https://github.com/cctv2333/dsh-vidlens) — 按人看片的顺序取样，而不是下载整片：先元数据与章节，再按时间码抽帧看画面、字幕优先转录（平台没有字幕才走本地 ASR）、AudioSet 527 类声音事件标签与高赞评论——21 个工具共用一个磁盘缓存，并带跨进程锁。需要 Python 3.10+、ffmpeg 与 vidlens 包（pip install vidlens-mcp）；缺依赖时回给你的是两种修法，而不是一句 ImportError。
 - [charovo0059/dsh-model-vision](https://github.com/charovo0059/dsh-model-vision) — 补上 DSH「获取可用模型」漏记的视觉能力，让能看图的模型不再被当成纯文本，并在模型名后标出「可看图」。
 - [chddydwd/dsh-eye](https://github.com/chddydwd/dsh-eye) — 给 DeepSeek Harness 装一双「看得见刚才」的眼睛：屏幕帧按内存环保留最近约 45 秒，能倒带「刚才发生了什么」、按格子回取 1:1 原像素；读窗口文字走 Windows 无障碍接口（不是 OCR 猜）；按名字找控件只报坐标、从不代点；隐私打码让所有给出去的图一起挡。仅支持 Windows，全程本机、不上传。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -8978,7 +9068,7 @@ dsh plugin --profile web add dshmarket
 - [jing-hy/picturereader](https://github.com/jing-hy/picturereader) — 给纯文本模型的"读图"能力：图片降分辨率+降色深+结构/色彩指纹渲染成文本网格喂回对话，模型像多模态一样自主缩放、取样、OCR 读图；纯本地零外部模型依赖，附读图方法论 skill 与可选 PaddleOCR。
 - [jmxsxwyzjdwl/dsh-mmroute](https://github.com/jmxsxwyzjdwl/dsh-mmroute) — 纯文本模型的透明多模态路由：每一次模型调用里的每张图片先由你自己配置的多模态理解模型全量转述（逐字 OCR、数据、不确定区、防注入），vision_relook 定点复看，图片类报错自动转述重试。不内置端点、不借登录态。
 - [joeseesun/qiaomu-cover-design-dsh](https://github.com/joeseesun/qiaomu-cover-design-dsh) — 在画布中使用模板和排版控件制作封面，并导出 PNG 图片。
-- [jsnancy/dsh-imagine](https://github.com/jsnancy/dsh-imagine) — 读取本机已有的 Codex（ChatGPT 订阅）额度并直接生图：侧栏显示套餐、本周已用与重置时间，写一句话出 PNG 存到本机并保留历史。不需要 API key，不额外计费。
+- [jsnancy/dsh-imagine](https://github.com/jsnancy/dsh-imagine) — 读取本机已有的 Codex（ChatGPT 订阅）额度并直接生图：额度一目了然，一句话出 PNG 存本机并保留历史，还能按内置的 handraw-style 手绘模板库（594 条素材 + 60 个配方）一键跟做；界面是一套手绘纸皮肤，深浅主题各有一套。不需要 API key，不额外计费。
 - [junchenxin88/dsh-guangke](https://github.com/junchenxin88/dsh-guangke) — 把一句话刻成一张干净底图——87 种插画、二次元与信息图风格，四家出图接口直接接好，附描述扩写帮你补出说不清的画面细节。
 - [Junkrat9527/dsh-autovision](https://github.com/Junkrat9527/dsh-autovision) — 纯文本 dsh 模型的识图插件：粘贴图片自动由你配置的多模态模型转成文字——透明孪生路由、模型可自主调用识图工具、无内置密钥与中转。
 - [jx70/dsh-comfyui-link](https://github.com/jx70/dsh-comfyui-link) — 9 个 Agent 工具把 DeepSeek Harness 接到本机 ComfyUI：文生图、图生图、自定义 API 工作流、带提示词文档的 LoRA、算法放大，以及用视觉模型审图后自动重画；插件还加入绘图模式预设，在输入框旁提供生图模型与 LoRA 选择。
@@ -9089,6 +9179,7 @@ dsh plugin --profile web add dshmarket
 - [xuhairui-dzz/dsh-shengtu](https://github.com/xuhairui-dzz/dsh-shengtu) — 会话内多引擎生图：agent 工具 + 输入框下方的停靠面板，带启用开关、引擎预设（火山方舟 / 硅基流动 / OpenAI 兼容 / 自定义）和本地消耗统计。需自备所选引擎的 API Key。
 - [XXGJ666/dsh-feiyu-vision](https://github.com/XXGJ666/dsh-feiyu-vision) — 给 DSH 加识图：用智谱 GLM-4V 描述图片、读图中文字（需智谱 API Key，有免费额度），可选火山方舟认人、SauceNAO / trace.moe 反查动漫原图（各需自己的 Key）；GIF/WebP 图需要装 ffmpeg。Key 与 ffmpeg 路径在插件自带的设置页里配。
 - [yan9690/dsh-whale-glance](https://github.com/yan9690/dsh-whale-glance) — 余光（dsh-whale-glance）：给 DSH 配一双眼睛：后台定时采样屏幕、判画面变化，变了就叫醒一个一次性子代理，看一张拼图和屏幕上的字，往悬浮字幕窗里说一句。游戏模式认游戏、用黑话库；视频模式把最近的字幕攒起来，够撑一个段落，也能建番剧档案记进度。子代理不回灌主会话，挂久了也不涨上下文。默认关闭，有冷却、每小时上限和窗口标题过滤。
+- [Yang-wudi/dsh-video-gen](https://github.com/Yang-wudi/dsh-video-gen) — 文生视频与图生视频插件，支持保存到工作区和持久化视频画廊。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [yanming119/dsh-spectacles](https://github.com/yanming119/dsh-spectacles) — 只读你指定的那一个窗口：读字、看版式、看清小字；被别的窗口盖住也照样能读，绝不回退整屏。仅支持 Windows 10/11。
 - [yanming119/dsh-spectacles#eyesight](https://github.com/yanming119/dsh-spectacles/tree/main/eyesight) — 一眼看清：先给一张 146 token 的整屏缩略地图，再按块 1:1 看清（单块上限 1400x900，字按原像素读），一个 sight_see 工具，界面上有一只眼睛随时开关；判据来自实测的 1600px 宿主缩图线。仅支持 Windows（依赖 PowerShell）；不点眼睛就不会截屏。
 - [Yinxe/deepseek-harness-plugins#vision-bridge](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/vision-bridge) — 让纯文本模型也能看图：消息中出现图片占位符时模型调用 vision_describe 工具，插件把本轮图片引用与提问一起转交给多模态视觉模型识别，主模型失败时自动用备用模型重试。配置在设置页完成并通过官方 settings API 持久化到 settings.yaml，热重载不丢。
@@ -9102,7 +9193,6 @@ dsh plugin --profile web add dshmarket
 - [zirscard/dsh-ocr](https://github.com/zirscard/dsh-ocr) — 为 DeepSeek Harness 注册两个工具：`doc_ocr` 把扫描件 PDF 与图片转成结构化文本（逐页文本、带资产负债表平衡勾稽的财务报表行、合同条款命中），可用本机 RapidOCR 或智谱 GLM-OCR 云端引擎；`doc_preprocess` 用 7 阶段管线把一批原始文件整理成 Obsidian 可读知识库，含后端路由与 sha256 增量跳过。勾稽不平的数字只报出、不编造。本机引擎需 Python 3 并安装 rapidocr-onnxruntime、pypdfium2、Pillow（pip install -r requirements.txt）；GLM 引擎需设置 ZHIPU_API_KEY。
 - [zlmddygggzh-collab/dsh-tool-camera](https://github.com/zlmddygggzh-collab/dsh-tool-camera) — 从本机摄像头抓一帧实时画面，以图片形式交给 agent，让它真正从摄像头看见画面——不用打开相机应用，也不要求窗口在前台。暗光房间不会再拍成一片黑，亮度、伽马、对比度、锐化和自动拉伸都在抓帧时一次做完。首次使用时自动下载 ffmpeg，配套还有一个工具用于列出可用采集设备。
 - [zmengle/dsh-plugin-ark-image-gen](https://github.com/zmengle/dsh-plugin-ark-image-gen) — 火山方舟 / 豆包 Seedream 生图：ark_generate_image 支持文生图、图生图和固定 seed 批量出图，ark_image_gen_status 检查密钥、模型与输出目录。需配置火山方舟 API Key（ARK_API_KEY）。
-- [zmm863-commits/dsh-agnes-studio](https://github.com/zmm863-commits/dsh-agnes-studio) — 一站式 AI 影视创作工作站，作为 DSH 全局浮层面板运行，不占用对话框：生图（文生图 / 图生图 / 多图合成，1K–4K、8 种宽高比）、生视频（文生视频 / 图生视频，4–12 秒、支持首帧控制）、短剧（导入 .txt/.md/.json 剧本自动拆解分镜，故事板预览与批量生成）与提示词专家工作区。零运行时依赖。
 - [zxygithub/dsh-agnes-create](https://github.com/zxygithub/dsh-agnes-create) — 侧边栏 Agnes 出图与出视频面板。出图：纯文生图，或用最多 8 张参考图做图生图 / 多图合成（参考图可从本地文件选，也可直接从面板里已生成的结果中挑），1K/2K/3K/4K、8 种宽高比，另有 6 个一键风格预设。出视频：agnes-video-2.5-flash，720p、4-12 秒，支持纯文本、首帧 / 尾帧关键帧、最多 5 张参考图三种模式（面板自动判断），可选 seed；任务提交给宿主进程推进，切面板、刷新页面、重启应用都能接回进度，不会丢任务。生成时把提示词写进图片本身（PNG iTXt / JPEG COM），鼠标移到结果上就能看到并一键复制。可浏览输出目录（图片与视频分页）并在生成后自动刷新，支持复制路径、在访达中显示、下载；最近 24 条历史重启不丢。图片与视频也能在对话里通过 agnes_image、agnes_video、agnes_video_status 三个工具直接生成。图片与视频模型都可在面板切换并一键测试连接；本地参考图与关键帧以 base64 data URI 直传，不需要公网图床。需要 Agnes AI 平台的 API Key，存放在本地文件中（默认 ~/.agnes-key.txt）。
 - [zyf2492313716-cloud/dsh-auto-image-optimizer](https://github.com/zyf2492313716-cloud/dsh-auto-image-optimizer) — DSH 图片上传前客户端等比压缩插件：拦截剪贴板粘贴与拖拽上传的图像，在内存中用 Canvas 将最长边超过 1999px 的图片等比缩放后再投递，并在未冻结的旧宿主上尝试放宽 maxImageDimension 至 4096。
 - [Zymjason/DSH_VCG](https://github.com/Zymjason/DSH_VCG) — 节点式图像/视频生成工作流画布：内置 16 个节点与 5 个示例工作流，支持聊天与项目画布、AI 自动搭建工作流、云端 Model Studio 生图生视频、可选本地 ComfyUI、本地 safetensors 权重检查、可信源模型下载与单次运行 Token 用量统计。
@@ -9250,6 +9340,7 @@ dsh plugin --profile web add dshmarket
 - [regrevia/pocket-harness#pocket-harness](https://github.com/regrevia/pocket-harness/tree/main/plugins/pocket-harness) — Pocket Harness：DSH 的手机端。在手机上接着用电脑里的同一份 DSH——同一条会话、历史、项目、目标、队列和待确认提问，可经局域网、自建域名或自建中转连接（不经作者服务器、无需账号）。需要配套的 Android App（仓库 Releases 里的 APK），扫码配对；可选的像素鲸鱼娘桌宠会听会说，神经语音与本机识别也是可选件。原名 dsh-pet-voice。
 - [Ren-xing/dsh-audio-tools](https://github.com/Ren-xing/dsh-audio-tools) — DSH 音频工具：查看音频/视频信息、转码、从视频提取音轨、裁剪与响度归一化，并用本地 whisper.cpp 或 OpenAI 兼容接口把语音转成文字和字幕。需要本机已装 ffmpeg 与 ffprobe（插件不自带）；本地转写还需 whisper-cli 与 ggml 模型。
 - [rirtue/dsh-breeze-speak](https://github.com/rirtue/dsh-breeze-speak) — 通过云端 BreezeBlue / Breeze TTS 2 API 朗读每轮回复：回复的第一句一完整就发起合成、不必等整段说完，音频以 PCM 裸流边收边推给 Web Audio 连续播放。需要 BreezeBlue API Key，在设置页填写或用 BREEZE_API_KEY 环境变量；设置页保存的 Key 以明文写在 ~/.dsh/breeze-speak.json。默认只念每条回复的第一句（最多 120 字），这段文字会发给 api.breeze.blue。默认音色只是示例，请在设置页里挑一个自己账号可用的。
+- [RonaWhite/dsh-pet-voice-clone](https://github.com/RonaWhite/dsh-pet-voice-clone) — 给 dsh-pet 桌宠用的克隆音色：注册一个基于硅基流动 CosyVoice2 的音色，让桌宠用从你自己的短录音复刻出的声音念台词。需要硅基流动 API Key 和一段 10 至 30 秒的参考录音。
 - [Root-7-KHX/ai-voice](https://github.com/Root-7-KHX/ai-voice) — 《AI语音》：本地音色工作台，内置 9 个本地 TTS 引擎，支持文字描述造声、参考音复刻、情绪表演、参考音库与音频导出。本插件只注册 /ai-voice/api 接口，界面由 companion-memory 插件的「接入软件」页承载；每个引擎都需要自备 Python 虚拟环境与自行下载的模型权重，插件不打包。
 - [rootryanlau-art/dsh-voice-transcribe](https://github.com/rootryanlau-art/dsh-voice-transcribe) — 在输入框面板、命令行与 agent 技能里离线转写本地音视频文件，引擎为 SenseVoice int8。
 - [SAOS-3624/dsh-watch-together](https://github.com/SAOS-3624/dsh-watch-together) — 和只有文字的智能体一起看视频：需要 ffmpeg 和浏览器扩展上报真实播放位置（不是定时器），在每段结束前把画面和台词交到它手上。插件不带 TTS 引擎，只按时间轴发台词事件，要出声需自行配置语音/TTS。
@@ -9499,7 +9590,7 @@ dsh plugin --profile web add dshmarket
 - [s1lencewill/dsh-markdown-reader](https://github.com/s1lencewill/dsh-markdown-reader) — 在独立全屏阅读器中渲染工作区 Markdown 文件，支持 GFM、KaTeX、Mermaid、目录导航、文件更新同步以及浏览器打印和 PDF 导出。
 - [SamyiHu/dsh-visio](https://github.com/SamyiHu/dsh-visio) — 在 DSH 面板里打开和编辑 Visio（.vsdx）图纸：实时 SVG 预览，图形、泳道与连接线（侧面中点走线、禁止穿过图形）编辑，支持 .vssx 模具导入与布局检查，另有 visio 工具供 Agent 直接读写图纸。引擎为 Python 标准库，无需安装 Visio 或 Office；需要 PATH 中有 Python 3.9+，PNG 导出与快照另需 Pillow。需要 PATH 里有 Python 3。
 - [sangaizhi/dsh-plugin-mermaid-markdown](https://github.com/sangaizhi/dsh-plugin-mermaid-markdown) — 在工作区文件预览中把 Markdown 文件里的 mermaid 代码块渲染成图表，支持点击放大预览。
-- [Sanshui258/dsh-hwp-translate](https://github.com/Sanshui258/dsh-hwp-translate) — 把 .hwp/.hwpx（한글）与 .docx 文档翻成会话模型能写的语言（中文最常见，韩转英、英转韩同理），保留表格、项目符号、缩进与字号，译文写在原文件旁（原名_zh）。hwp_extract 返回文档段落 JSON（默认每页 50 段、上限 200，用 next_offset 分页）；hwp_apply 按 {段落 id: 译文} 写回，返回输出路径与 applied/missing。插件不访问任何 API、也不接受 API Key；随包的 10 MB 翻译器只在本地读写文件。仅 Windows：.hwpx 与 .docx 纯 Python 解析，旧版 .hwp 通过 COM 驱动本机 한글，需要 allow_hangul。
+- [Sanshui258/dsh-hwp-translate](https://github.com/Sanshui258/dsh-hwp-translate) — 处理 .hwp/.hwpx（한글）与 .docx：翻成会话模型能写的语言（中文最常见，韩转英、英转韩同理）、纯阅读成整篇文本（不写文件）、或经 한글 自带的 OOXML 导出转成 Word .docx。四个离线工具：hwp_extract 返回段落 JSON（默认每页 50 段、上限 200，用 next_offset 分页）；hwp_read 按字符预算返回可读文本与 next_offset；hwp_apply 按 {段落 id: 译文} 写回，返回输出路径与 applied/missing；hwp_to_word 在原件旁写 <原名>_word.docx。译文必须由调用方会话模型提供：插件不访问任何 API、也不接受 API Key；随包的 10 MB 翻译器只在本地读写与转换。仅 Windows：.hwpx 与 .docx 纯 Python 解析，旧版 .hwp 与转 Word 通过 COM 驱动本机 한글，需要 allow_hangul。
 - [scccy/dsh-notes-board](https://github.com/scccy/dsh-notes-board) — 像 DSH 记录自己的决定那样记录工程决策：每次非平凡改动在 .agents/notes/<lifecycle>/<class>/ 下留一篇 Markdown，写清问题、决定、被否决的备选与后果，进 git、可以像代码一样 review。插件提供这套流程：note_search、note_read、note_write、note_verify、note_skip 五个工具，回合末钩子（改过代码的轮次要写笔记或记录一次显式跳过），树、格式、归档三项校验，以及随包分发、由插件挂载的 write-notes-like-deepseek 技能。另附把这些笔记渲染成四个视图（架构基线、演进时间线、避坑智库、决策清单）的侧边栏看板；笔记本体仍是普通 Markdown。
 - [scientificmaniac/dsh-code-highlight](https://github.com/scientificmaniac/dsh-code-highlight) — 报告代码高亮：一个 highlight_code 工具，68 种语言、15 套主题、11 种输出（内联 HTML、Word 可插 SVG/PNG、LaTeX 等），含 codeinword.com 同款 SyntaxHighlighter 经典主题。PNG 输出需 Python 3 与 Pillow，其他格式无额外依赖。
 - [scottzhb-hue/dsh-ai-translation](https://github.com/scottzhb-hue/dsh-ai-translation) — DeepSeek Harness 中的 CAT 翻译工作台：翻译记忆、术语库、句段编辑、AI 译文建议，支持 TXT、Markdown、DOCX、XLSX、PPTX、EPUB、SDLXLIFF、TMX 导入导出并保留原版式。CAIT 的持续维护分支，新增句段合并与拆分、选中原文与译文即建术语、未确认译文草稿恢复、Token 用量与费用统计。
@@ -9521,6 +9612,7 @@ dsh plugin --profile web add dshmarket
 - [SuperstructureJH/dsh-workbuddy-ppt](https://github.com/SuperstructureJH/dsh-workbuddy-ppt) — 在 DSH 中使用包内编排 Skill、确定性 PPTD 场景检查和原生 PowerPoint 对象生成可编辑 PPTX，并在本地交付 PPTD 源项目。
 - [Suren-ViLL/dsh-plugin-doc-review](https://github.com/Suren-ViLL/dsh-plugin-doc-review) — 在官方预览里审阅 Word、PowerPoint、PDF 与 HTML：框选问题、就地改字，再把批注交给 AI。PDF 与图片仅可批注；改字依赖 Harness 自带的 LibreOffice 与 Python。
 - [svestar/dsh-readpilot](https://github.com/svestar/dsh-readpilot) — 面向 DSH 的 AI 辅助阅读工作区：本地 TXT/Markdown/EPUB/PDF 书库、批注、提示词预设、长笔记、记忆、导出与伴读工具。
+- [Tanloon/dsh-share-chat-card](https://github.com/Tanloon/dsh-share-chat-card) — 从已加载的会话里逐条勾选记录，导出成分页 PNG、单文件 HTML，或直接复制到剪贴板；思考过程与时间戳可开关，文件头给出记录数、工具调用、耗时、跨度与 token。
 - [taoziliyouchong/dsh-pdf-jump](https://github.com/taoziliyouchong/dsh-pdf-jump) — 在 DSH 侧栏里看本地 PDF：跳到任意一页，整本连着看。
 - [Tazio7/dsh-mermaid-pele](https://github.com/Tazio7/dsh-mermaid-pele) — 使用内置 Pele 引擎将聊天中的 mermaid 代码围栏渲染为内联 SVG，配色桥接主题令牌；流式、超长或无法解析的源码保持普通代码块。
 - [teanuky/dsh-textbook-parser](https://github.com/teanuky/dsh-textbook-parser) — 把理工科教材拆成「全书、章、节、知识点」四层卡片知识地图（侧边栏面板）：每个知识点写明它修复了前方案的什么缺陷，每章用「仍存短板」作为下一章的动机；重点知识点标 ★，定理以卡片呈现（结论／适用条件／符号说明），推导过程可折叠，并可将同一张地图导出为离线自包含 HTML、Word 或 PDF。内置 textbook-parser 技能与 textbook_archive 工具（save_book／save_chapter／list_books／get_book／delete_book），附带《信号与系统》12 章示例（116 节、263 个知识点、601 道例题）。零运行时依赖、不联网。
@@ -9533,6 +9625,7 @@ dsh plugin --profile web add dshmarket
 - [violector/dsh-latex-studio](https://github.com/violector/dsh-latex-studio) — 面向 Windows 桌面版的 LaTeX 工作区，提供 24 个模板入口、dsh AI 写作与选区修改、受管 TeX 编译、PDF 预览和 BibTeX 校验。
 - [vlln/dsh-video2text](https://github.com/vlln/dsh-video2text) — 视频链接转文案的侧栏工作台：播放器 + 逐字稿 + 发布导出，自带 video2text skill。
 - [void2anything/dsh-qingagent](https://github.com/void2anything/dsh-qingagent) — 青简写作桥：agent 通过 qing_ 前缀工具起草改稿，右侧宣纸面板排版呈现（mermaid、drawio、表格、公式）；每处修改先摆在纸上供审阅，提交才落稿。需本机运行开源的青简桌面客户端。
+- [Vvdollar0120/dsh-lens-reader](https://github.com/Vvdollar0120/dsh-lens-reader) — DSH 里的本地文档阅读器，支持 PDF、Office、EPUB、Markdown，划词翻译/解释/总结、框选提问、页面截图与按指令编辑。
 - [w4xxx/dsh-xia-plugins#packages/gameassist-knowledge](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-knowledge) — 树状 Markdown 知识库：为 DSH Agent 提供 kb_list/kb_read/kb_write 工具、目录/正文 HTTP 接口，并配套浏览器面板。
 - [walvka-code/proj-doc-builder](https://github.com/walvka-code/proj-doc-builder) — 用随包的 Python 3.12+ 工具扫描仓库，为每个源码目录生成一份 Markdown 大纲，并随索引发布可证明文档与代码一致的哈希 manifest；自带读取器在输出概览或单份文档前会先校验 manifest。项目根需已有 project_docs/ 目录与 CLAUDE.md 入口。
 - [wang678678/dsh-local-plugins#dsh-doc-routing-guard](https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-doc-routing-guard) — 加入全局文档路由提示，让 PDF、图片和 Office 文件自动走正确的读取工具。
@@ -9601,6 +9694,7 @@ dsh plugin --profile web add dshmarket
 - [AAAlenwow/dsh-spring-admin-kit](https://github.com/AAAlenwow/dsh-spring-admin-kit) — Spring Boot 后台开发套件：EasyExcel 批量导入导出代码生成与 Thymeleaf + LayUI 模板安全守卫。
 - [aawef/dsh-skill-manager-tags](https://github.com/aawef/dsh-skill-manager-tags) — 按标签筛选技能：给 DSH 技能打标签，再用布尔表达式为每个工作区或对话选出下发给模型的子集（例如 `pdf + docx` 或 `aegis * plugin`）。命中以外的技能会被 deny-shadow 真正从模型目录里移走，而不只是在设置页隐藏；表达式之外的技能可手动添加或强制禁用，另附带 `tagging-skills` 教 agent 从本机技能清单自建标签体系。
 - [addie-ace/dsh-mattpocock-skills](https://github.com/addie-ace/dsh-mattpocock-skills) — 技能包插件：把 mattpocock/skills 的 25 个 promoted 技能（工程与效率）全文汉化，注册为 DSH 捆绑技能 provider，经技能系统发现与调用。
+- [Ade-hale/dsh-skill-conflicts](https://github.com/Ade-hale/dsh-skill-conflicts) — 检测已安装 skill 之间的冲突：按能力分组，区分「同类型但不冲突」与「互相冲突」。
 - [adithyanraj03/dsh-skills-pack](https://github.com/adithyanraj03/dsh-skills-pack) — 把 36 个内置 agent 技能（科研写作、LaTeX、实验、设计评审、办公文档、动画、Windows shell 与 dsh 插件规范）注册为一个纯宿主侧的技能提供者：没有界面、没有网络请求，也没有自己的遥测；技能脚本以用户的权限运行。
 - [afterpartyai/ss33-skill-store-for-agents#dsh](https://github.com/afterpartyai/ss33-skill-store-for-agents/tree/main/adapters/dsh) — 根据项目技术栈摘要检索 ss33 Skill Store，将选中的技能作为原生 SKILL.md 安装并钉入 ss33.lock，支持按需开启提示词匹配。
 - [AhaCrazy/action-hub#dsh-action-hub](https://github.com/AhaCrazy/action-hub/tree/main/packages/dsh) — 面向 DSH 的标准 Agent Skill 库：同一份 SKILL.md 可作为模型可见的 Skill 或仅由用户调用的 Command，支持分组、项目范围、导入导出和原生 Alt+A 面板。
@@ -9644,7 +9738,7 @@ dsh plugin --profile web add dshmarket
 - [chenhao6682108/dsh-skill-musicbee](https://github.com/chenhao6682108/dsh-skill-musicbee) — MusicBee 歌单与曲库工具：扫曲库建 JSON 索引、写 ID3/Vorbis/MP4 标签、按整场规则排 3dj 舞会歌单、批量重写 .mbp 歌单；需 Windows 与本机 MusicBee。
 - [chenhao6682108/dsh-skill-netease-playlist](https://github.com/chenhao6682108/dsh-skill-netease-playlist) — 网易云歌单工具：复用客户端登录态搜索曲目、建/改/删歌单、下载歌曲 mp3、把 MusicBee 的 .mbp 歌单批量搬上云端；需 Windows 且客户端已登录。
 - [chenjrastro-tech/github-release-download-acceleration](https://github.com/chenjrastro-tech/github-release-download-acceleration) — 在 Windows PowerShell 5.1 上下载 GitHub Release 大资产的技能：先只读自检宿主环境（在监听的本地代理端口、系统代理与环境变量、已安装的 Clash Verge 内核及其配置、curl 版本），四条路线（现有代理 / 无头拉起内核 / 公共镜像 / 直连）并行实测 KB/s，在胜出路线上做限时并发阶梯，再用 curl 多段 range 并发下载，并按 release 的 digest 校验字节数与 SHA256。资产小于 100 MB 或单连接已到 3 MB/s 时直接跳过阶梯——并发只在「单连接被限速」时才有收益：实测限速节点 6.3×（1,234 → 7,759 KB/s），节点不限速时反而是 0.72×（单流 5,829 vs 16 段 4,175 KB/s）。不要求预装 aria2/7z，不改系统代理，不向用户索要端口或并发数；资产名对不上会报 ASSET_NOT_FOUND 并列出真实候选，绝不静默换文件；老 release 没有 digest 时降级为 DOWNLOAD_SIZE_OK_NO_DIGEST。
-- [chenxyzcyxpp/dsh-invest-skill](https://github.com/chenxyzcyxpp/dsh-invest-skill) — 新增一个 A 股投研专家预设，内置 15 个技能，覆盖政策解读、市场热点、产业链拆解、个股诊断、行情复盘与量化选股。
+- [chenxyzcyxpp/dsh-invest-skill](https://github.com/chenxyzcyxpp/dsh-invest-skill) — 新增一个 A 股投研专家预设，内置 15 个技能，覆盖政策解读、市场热点、产业链拆解、个股诊断、行情复盘与量化选股，并自带盘前/午盘/盘后综合分析场景。
 - [ChenYiming-aaa/better-trip-planner](https://github.com/ChenYiming-aaa/better-trip-planner) — 把境内旅行规划技能注册进 DSH 技能目录：逐小时每日时间线、12306 与携程/去哪儿预订深链、离线 KML 与七套 HTML 主题。需 PATH 上有 Python 3.9+（内置脚本仅依赖标准库）。
 - [cheshireez/dsh-skill-hub](https://github.com/cheshireez/dsh-skill-hub) — DSH Web GUI 技能中枢：基于官方 ctx.skills 注册表浏览、搜索、启停、查看、诊断并新建本地技能，附技能市场：来源快照跟踪、一键全量更新。包名 dsh-skill-hub 和挂载 id skill-hub 与 hoshino114/dsh-skill-hub、amd47802574/dsh-skill-hub 相同，三者只能装一个。
 - [chrischjh/dsh-stageshow](https://github.com/chrischjh/dsh-stageshow) — 把 Stageshow 技能（benjitaylor/skills v1.1.1）作为 DSH 技能提供：用 React 制作以假乱真的产品 UI 插图、功能卡片、光标演示与 bento 网格，内嵌 kit 与全部示例，附哈希锁自检工具。
@@ -9747,6 +9841,7 @@ dsh plugin --profile web add dshmarket
 - [hoyyang/dsh-best-ponytail](https://github.com/hoyyang/dsh-best-ponytail) — 把「最懒资深工程师」规则集 ponytail 装进 DeepSeek Harness：7 级最小代码阶梯（YAGNI、复用、标准库、平台原生、已装依赖、一行、最小实现），六个技能（主规则、过度工程 review、全仓 audit、debt 欠账台账、gain 计分板、help 速查），/ponytail 会话级调档命令（lite/full/ultra/off），以及可选的每轮常驻规则注入。上游内容 MIT 原样打包，零工具注册，卸载零残留。
 - [huanlin-labs/dsh-skill-cockpit](https://github.com/huanlin-labs/dsh-skill-cockpit) — DSH 应用级导航里的「技能中心」页（sidebar.panellist 席位）：列出本机实际暴露的全部技能（覆盖六类技能根），说明某技能为何不可见（被丢弃的原因、根目录缺失、已停用），只改入口文件名（SKILL.md 与 SKILL.md.disabled）即可单独启停；项目级技能根保持只读。
 - [huaweicloudskill/scenes-skill-creator](https://github.com/huaweicloudskill/scenes-skill-creator) — DeepSeek Harness 技能创建面板：调用官方通用/华为云技能创建器生成技能，并提供评测、修复、安装与创建记录。需要 git、bash 与 python3，并能访问 gitcode.com（创建器与参考数据从那里拉取）；创建器默认以 danger-full-access 权限执行 shell 命令。
+- [hutao48/dsh-plugin-keyboard-score](https://github.com/hutao48/dsh-plugin-keyboard-score) — 原神风物之诗琴键盘谱规则：21 键字母映射、和弦与拍/段语法、谱面校验、简谱与键位互转；包含一个技能和一个 keyboard_score 工具。
 - [hxlog/dsh-skills-tools](https://github.com/hxlog/dsh-skills-tools) — 在 DSH 设置中从 Git 仓库导入 Agent Skills，按仓库分组管理，并逐项启用或停用。
 - [hyhmrright/brooks-lint](https://github.com/hyhmrright/brooks-lint) — 提供六个代码质量技能，涵盖代码审查、架构审计、技术债、测试质量、健康看板与修复。
 - [hzh5021/dsh-research-commands](https://github.com/hzh5021/dsh-research-commands) — 把装好的研究技能变成斜杠命令：/idea、/novelty、/review、/poster……一共十五条，敲一下就把对应的 SKILL.md 塞进对话，照着跑那个技能。技能不随包提供，须已装在 ~/.dsh/skills 或 ~/.agents/skills 下，否则命令只提示找不到技能。
@@ -9799,6 +9894,7 @@ dsh plugin --profile web add dshmarket
 - [kp-z/dsh-plugins#dsh-prompt-notes](https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-prompt-notes) — 右侧栏的便签簿：管理常驻提示词、技能与 MCP，每张便签有作用域（所有会话 / 一个工作区 / 单个会话）与图钉；MCP 便签只能由人钉住。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [KratosLee-6/dsh-plugin-spark](https://github.com/KratosLee-6/dsh-plugin-spark) — 把两个技能契约本地组合成可追溯的未验证草案，列出缺口并保留双方约束；组合引擎在本机运行，不调用模型。
 - [kulebbb/dsh-context-optimize](https://github.com/kulebbb/dsh-context-optimize) — DSH 左侧栏「Skill 管理」：列出全局与项目级 skill 的调用次数、最近使用时间与估算占用 tokens，支持把 skill 目录移入同级可逆的 skills-archived 归档、以及一键还原。
+- [KunKun24/autonomous-dev-security-auditor-skills](https://github.com/KunKun24/autonomous-dev-security-auditor-skills) — 面向编程零基础用户的自主开发与安全审计技能：检查项目、制定方案、编写代码、跑真实测试、审计认证与越权与支付逻辑，最后交付一份把事实、推测和建议分开写的六节报告。
 - [KunKun24/tg-bot-security-auditor](https://github.com/KunKun24/tg-bot-security-auditor) — 只读审计 Telegram Bot 仓库的安全、授权与业务逻辑问题，语言不限。每条发现都锚定 file:line，标注严重度、置信度并附可复现的只读命令；内置 8 个审计域规则、9 种语言的危险 API 对照、威胁模型、授权矩阵，以及可在 CI 校验的 findings JSON Schema。
 - [l359199387/dsh-pet-enhance#dsh-pet-enhance](https://github.com/l359199387/dsh-pet-enhance/tree/master/packages/dsh-pet-enhance) — 增强 dsh-pet：看屏/干活走 computer-use，口述带教写入 ~/.dsh/skills，并可再执行技能。
 - [laohuguihuadalaohu-del/dsh-skill-bilibili-video-to-gif](https://github.com/laohuguihuadalaohu-del/dsh-skill-bilibili-video-to-gif) — 把 B站视频截成 GIF 动图，绕开 412 风控与 CDN 403。
@@ -9830,10 +9926,10 @@ dsh plugin --profile web add dshmarket
 - [LTJ002/dsh-eval-harness](https://github.com/LTJ002/dsh-eval-harness) — 面向 DeepSeek Harness 的 Agent 应用程序开发评测技能（技能包）：以审计副作用为判定依据的离线/在线评测套件、对安全类退化零容忍的基线对比、验证评测器自身有效性的变异测试。框架无关——只要有可调用的对话接口与可查询的工具调用记录即可接入；宿主版本兼容范围刻意未声明。
 - [wb-exec](https://github.com/Luminousyyh/skill-wb-exec) — 把边界明确的编码任务派给无头 CLI 执行体（默认 WorkBuddy，也可选 codex、claude、aider 或自定义命令），回收结构化结论与真实 diff，并带可写路径白名单、重叠路径派发锁、独立 worktree 隔离与结构化 needs_human 标记。需本机安装 Python 3.10+（仅标准库）与其中一个 CLI 执行体（默认 WorkBuddy/CodeBuddy，也可选 codex、claude、aider 或自定义）。
 - [Lumos-789/delivery-video-plugin](https://github.com/Lumos-789/delivery-video-plugin) — 把真实运行的功能做成可信交付演示视频，或把缺陷做成可追溯的问题反馈视频：真实录屏、edge-tts 旁白与逐字对齐字幕、自包含 ffmpeg 管线，配一道拒绝放过造假或残次演示的确定性质量闸（规格、音轨、响度、黑帧/冻结/静音扫描），含渲染前预检与成片证据核验。反馈模式带严重级别/阶段徽标、复现步骤浮层，以及按成片 SHA256 绑定的工单级问题报告。需 Python 3.9+、PATH 上的 ffmpeg/ffprobe，以及 `pip install edge-tts Pillow`；旁白会调用 edge-tts 公共接口。
-- [Lumos-789/make-it-a-bit-better](https://github.com/Lumos-789/make-it-a-bit-better) — 自主产品打磨循环技能：每轮强制开一轮全新三视角头脑风暴，选一个 ≤3 文件 / ≈100 行的小角度实现，用仓库自身的测试、构建或 lint 验证后以单个 commit 提交；轮次记入项目内 ledger，一轮装不下的好想法进 icebox。检查红灯不发版——先提交再立即 revert，失败 diff 留在历史。非 git 目标开工前即拒绝。纯技能包：无 MCP 服务、无运行时依赖。要求 DSH 0.2.1-rc.2 或更新、低于 0.3.0。
+- [Lumos-789/make-it-a-bit-better](https://github.com/Lumos-789/make-it-a-bit-better) — 自主产品打磨循环技能：每轮强制开一轮全新三视角头脑风暴，选一个 ≤3 文件 / ≈100 行的小角度实现，用仓库自身的测试、构建或 lint 验证后以单个 commit 提交；轮次记入项目内 ledger（自带校验器每轮核对），一轮装不下的好想法进 icebox，没被选中的小候选进待选池。检查红灯不发版——先提交再立即 revert，失败 diff 留在历史。git 模式要求仓根目录；非 git 目录或单个文件仅在点名开启的 no-git 模式下打磨，以备份代替 commit。无 MCP 服务、无运行时依赖；校验器需要 Node 18.13+。要求 DSH 0.2.1-rc.2 或更新、低于 0.3.0。
 - [Lumos-789/react-monitor-agent](https://github.com/Lumos-789/react-monitor-agent) — 安装壳技能：安装、跑起并排障 React-Monitor-Agent 人机协作操作板——agent 把工作过程写成由截图、diff、文本、链接、文件节点组成的结构化回放时间线，人在方案/阶段/风险/完工四类检查点上拍板，决策改变时间线走向，被否定/改向的旧分支灰掉保留以供审计。技能引导克隆主仓，启动零依赖 Node 事件服务（127.0.0.1:8790）与 React 操作板（localhost:5173），操作板内置离线 FIXTURE 演示模式。bundle 只内嵌技能，产品源码以主仓为准。
 - [lunw/shopline-ai-toolkit-dsh](https://github.com/lunw/shopline-ai-toolkit-dsh) — SHOPLINE AI 工具包：接入 SHOPLINE 官方开发者 MCP 服务器，内置七个 SHOPLINE 平台技能（Admin REST、GraphQL、OAuth、Webhook、Sline），是 Shopify AI Toolkit 的 SHOPLINE 对应版。
-- [lwh-chinese/DSH-SKILL-FORGE](https://github.com/lwh-chinese/DSH-SKILL-FORGE) — 提供左侧栏面板，用于列出、查看、隐藏、新建和删除已安装的 skill，并附带制作 skill 预设与 GitHub skill 搜索。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [lwh-chinese/DSH-SKILL-FORGE](https://github.com/lwh-chinese/DSH-SKILL-FORGE) — 提供左侧栏面板，用于列出、查看、隐藏、新建和删除已安装的 skill，并附带制作 skill 预设与 GitHub skill 搜索。
 - [lzyxczw-cyber/dsh-thinking-cn#zh-thinking](https://github.com/lzyxczw-cyber/dsh-thinking-cn/tree/main/skills/zh-thinking) — 把思考过程切换成简体中文显示的技能：启用内置实验性思考翻译、固定 bing + zh，并给出验证与排障步骤；同一仓库另提供可选的一键预设插件，供不想逐步操作的用户直接安装。需要带实验性思考翻译包的 DSH 0.2.1 线以及 Web/桌面 GUI；默认 provider 为 bing，展开的思考正文会发送给 Bing。
 - [MAOLEIJIN/dsh-mattpocock-skills](https://github.com/MAOLEIJIN/dsh-mattpocock-skills) — 将完整 mattpocock/skills 技能树打包为 DSH 插件，保留上游调用策略，并在自动同步上游时校验和应用精确匹配的 DSH 语义适配层。
 - [Mark-mph/dsh-kb-curator](https://github.com/Mark-mph/dsh-kb-curator) — 捆绑 kb-curator 技能，用本地三层知识库保存资料，未获用户批准前不写入索引。L2 检索层需另装 @kenz1117/dsh-engram，且引擎目前仅支持 Windows。
@@ -9946,8 +10042,10 @@ dsh plugin --profile web add dshmarket
 - [TencentCloud/cloudq-for-dsh](https://github.com/TencentCloud/cloudq-for-dsh) — 腾讯云智能顾问集成：CloudQ 对话模式，附用量、灵感、制品与架构图面板。
 - [tetckx/deep-structural-analysis-skill](https://github.com/tetckx/deep-structural-analysis-skill) — 多视角深层结构分析技能：16 透镜 4 类别、10 个结构工具，先攻击默认立场，产出置信度校准、事实绑定的分层结论。
 - [TheFold060629/dsh-task-assist](https://github.com/TheFold060629/dsh-task-assist) — 在对话框发送键旁添加一个「辅助」按钮：扫描本会话可用的技能与 MCP 工具，按输入框里的当前草稿排序，并可把选中的技能作为 steering 消息注入正在运行的对话。
+- [TidaltoLabs/tidalto-plugins#dsh](https://github.com/TidaltoLabs/tidalto-plugins/tree/main/plugins/eng-system/dsh) — 七个技能组成的工程文档体系：骨架 / 调研 / 决策 / 架构 / 里程碑 / 审查 + 总入口路由，把项目文档固化成带门禁、可判真伪的流程约束——两条合法路径、轻量分档、里程碑阶段分档门禁与全库一致性审查。每个技能可单独使用；以一个 bundled skill provider 装入 DSH。
 - [tiger0012/dsh-we-wallpaper-sync](https://github.com/tiger0012/dsh-we-wallpaper-sync) — 可复用技能：批量浏览、搜索、下载 Wallpaper Engine（小红车，Steam 431960）创意工坊壁纸并接入 DSH 皮肤中心；含绕过 Steam HTTP 封锁与异地登录拦截（经出口 IP 与账号一致的 SOCKS 代理）。
 - [Tiger20240331/Intschool](https://github.com/Tiger20240331/Intschool) — 任意学科/角色的 IntSchool 单页雷达报告卡：课程雷达与任务下钻、每周跟进队列、班级热力图、家长草稿。
+- [Tiger20240331/Intschool#teacher-workbench-skill](https://github.com/Tiger20240331/Intschool/tree/main/teacher-workbench-skill) — IntSchool+ 教师工作台：基于教师自己的 IntSchool 与 Radar 导出，搭建本地双语课表、出勤、成绩分析与干预看板。
 - [tomcatle/dsh-stock-probability-chart](https://github.com/tomcatle/dsh-stock-probability-chart) — 注册一个技能，评估单只股票未来短周期（1周至1个月）的涨跌情景概率，并按 A 股红涨绿跌惯例输出四情景概率分布图；结果是基于信号加权的结构化主观估计，非统计回测。
 - [TongjieYang/dsh-skill-hub](https://github.com/TongjieYang/dsh-skill-hub) — 技能中枢：把你已经装好的 skill 列清、分类、编成有角色有阶段的专家团，一键把 skill 提示词插进输入框；第三方 API Key 收进系统钥匙串，agent 全程接触不到。本身不自带任何 skill。
 - [tongqing1130-png/dsh-skill-zh](https://github.com/tongqing1130-png/dsh-skill-zh) — 把 DSH 技能菜单里的英文说明翻成简体中文并压成一句话，新装的插件也会自动跟着变。自带预翻译缓存，手工短句优先于规则压缩。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -10011,7 +10109,7 @@ dsh plugin --profile web add dshmarket
 - [xiatian-wuhan/dsh-skills-hub](https://github.com/xiatian-wuhan/dsh-skills-hub) — 显示每个已安装 skill 在模型上下文中占多少，并能在不删除文件的前提下把它从目录里摘掉。按 DSH 的渲染规则给出模型实际看到的那一行（介绍归一化并按目录上限截断）、正文体积与 token 估算；可逐字预览模型将收到的目录消息，与会话里已发布的那份比对，并列出来自磁盘却进不了目录的 skill（frontmatter 无效，或被更高优先级的同名 skill 覆盖）。隐藏会写入 disable-model-invocation 并保留文件，skill 仍可通过 /名字 调用。同时支持从 ClawHub、Skills.sh 与 GitHub 链接导入，以及卸载用户目录下的 skill。
 - [xiaxi626/dsh-skills-nexus](https://github.com/xiaxi626/dsh-skills-nexus) — 通用 skill 适配器，将含 SKILL.md 的 GitHub 仓库克隆并 symlink 到官方 skills 根目录，注册为 DSH skill。
 - [xiex16070-jpg/dsh-learn](https://github.com/xiex16070-jpg/dsh-learn) — 读取会话自身的事件流（不额外发起模型调用），把纠正、失败与修法变成待确认的候选教训。每条候选按写死的标准逐项判定，并给出通过或被拒的理由；只有确认之后才写成技能，而且只能经过唯一的写入口 `learn_skill_manage`。闲置时由 curator 把长期不用的技能标为陈旧并归档（是移动，不是删除），仍在被加载的技能会被豁免。五个工具：`learn`、`learn_review`、`learn_curator`、`learn_skill_manage`、`learn_skills`。另外注册一段写明判定标准的提示词段落，并挂一个工具守卫，拒绝直接编辑技能文件，使写入口无法被绕过。
-- [xingwang0/research-ml-modeling](https://github.com/xingwang0/research-ml-modeling) — 注册一个科研级建模技能：面向光谱与表格数据的回归与分类，做分组嵌套交叉验证、Y 随机化置换检验、四类适用域判定，产出论文级图表与 Methods 草稿；底层是 6 阶段 Python 命令行与 55 项环境自检。
+- [xingwang0/chemometrics-agent-skill](https://github.com/xingwang0/chemometrics-agent-skill) — 化学计量学 agent skill：面向光谱与表格数据的回归与分类，做分组嵌套交叉验证、Y 随机化置换检验、四类适用域判定，产出论文级图表与 Methods 草稿；底层是 6 阶段 Python 命令行与 55 项环境自检。
 - [xishaochen/dsh-aa-killline](https://github.com/xishaochen/dsh-aa-killline) — 模型斩杀线图：读取 Artificial Analysis 模型数据与 OpenRouter 缓存价，渲染全球与国产两张自包含 HTML 图，横轴为价格、纵轴为智能指数，并画出帕累托前沿（即斩杀线）；可在官方 3:1 混合价与 Agent 口径（输入输出 50:1、缓存命中 90%、按模型真实缓存读价）之间切换。支持离线模式：用本地缓存重算，不消耗 API 额度；纯 python3 标准库，无需 pip 安装。
 - [xsnnnnnn/dsh-endurance-coach](https://github.com/xsnnnnnn/dsh-endurance-coach) — 以 COROS 为唯一数据源的耐力训练决策技能包（数据来自另行安装的 dsh-coros MCP 插件：跑步、含码表功率的骑行、训练计划、睡眠与 HRV、恢复分与训练负荷）。它把这些数据变成可执行决策：恢复闸门、VDOT 配速与心率区间、周期化周计划（确认后写回 COROS 计划）、单次复盘、赛前配速与补给、按天气修正训练。天气取自 Open-Meteo，空气质量改用官方监测站实测（aqicn）锚定、模型只贡献逐小时形状，判级用中国 AQI 并看实际训练时段，避免模型高估导致误取消户外课。新增越野跑模块：赛事需求分析、周爬升护栏、上坡与下坡专项课、按小时的越野补给。插件在 profile 注册 endurance-coach 技能，内置确定性脚本（VDOT、恢复判定、补给、天气、越野 km-effort），只需 Python 3.10+ 与标准库；取不到数据时要求如实说明、不得编造。
 - [xsoc1/math-research-dsh](https://github.com/xsoc1/math-research-dsh) — 严谨开放数学研究套件：4 个 agent skill（rigorous-open-math-research、manage-math-research-program、math-research-workflow、lean-verify），覆盖对抗性审计的定理求解、研究项目管理、流水线编排与 Lean 4 形式化审计；CI 测试与机械式上游同步。
@@ -10056,12 +10154,15 @@ dsh plugin --profile web add dshmarket
 - [zimai233/dsh-adhd-copilot](https://github.com/zimai233/dsh-adhd-copilot) — ADHD 行为辅导技能：任务拆解、事项过载管理、启动仪式与失败重启。
 - [ZiMing-X/wishos-plan-book](https://github.com/ZiMing-X/wishos-plan-book) — 给 DeepSeek Harness 的文档态计划任务书插件：一个入口技能，加上「四要素校验 / 骨架生成 / 包自检」三个工具，规程全文随包分发。只有生成工具会写盘，且默认拒绝覆盖已存在文件（需显式 force）。
 - [ZiYuan258/dsh-skill-router](https://github.com/ZiYuan258/dsh-skill-router) — DeepSeek Harness 的按需技能工具：注册 skill_search / skill_load / skill_ref 三个工具，让模型先从分层的技能库里检索、再按需加载正文，库里的技能因而不必进入常驻目录、不占每轮上下文；并在对话视图栏加一个「技能」标签页，回读整个会话、列出本次真正加载过哪些技能及其轮次。零依赖，所有技能调用记录只在客户端渲染，不进入模型上下文。
+- [zizhennini/nextskills#dsh-plugin-esp-dev-skill](https://github.com/zizhennini/nextskills/tree/main/plugins/dsh-plugin-esp-dev-skill) — DeepSeek Harness 的 ESP32 / ESP8266 开发技能，基于 41 个 Espressif SDK 仓库，含 554 个场景 recipe 与 API、配置、陷阱参考。
 - [zjsthmjialin/commercial-ui-ux-codex-skill#dsh-commercial-ui-ux](https://github.com/zjsthmjialin/commercial-ui-ux-codex-skill/tree/main/dsh-commercial-ui-ux) — 注册 commercial-ui-ux 技能：以任务为中心的商业界面 UI/UX/GUI 设计、审查、修复与实现（SaaS、仪表盘、后台、表单、表格、设计系统），带参考文档体系与质量门禁。
 - [znlgis/dsh-opengis-skill](https://github.com/znlgis/dsh-opengis-skill) — 把 opengis-skills 的 32 个 gis/ 技能（GDAL、QGIS、GeoServer、PostGIS、PROJ、PDAL、GRASS GIS、JTS、GeoPandas、Shapely、CesiumJS、OpenLayers、Leaflet、deck.gl 等）打包进 DSH 技能目录；目录只列出名称与描述，技能正文与参考文档按需加载。
 - [znlgis/dsh-video-studio-skill](https://github.com/znlgis/dsh-video-studio-skill) — 把 video-studio 技能注册进 DSH 技能目录。它按剧本生成中文旁白视频：edge-tts 合成旁白，时间轴由每条音频的实测时长反推而非按字数估算，Pillow 逐帧确定性渲染并把原始帧以 rawvideo 管道交给 ffmpeg，烧录字幕与 SRT/ASS 外挂字幕由同一条时间轴生成，物理建模音效与程序化配乐用 numpy 采样级混音，质检分容器、信号、时间、页面四层（页面层只在走浏览器引擎时才有）。整片可改用可选的 Playwright 无头浏览器引擎渲染 Canvas2D 画面，帧以 PNG 经 image2pipe 送入编码器。需要联网合成旁白，PATH 上有 ffmpeg，以及装了 numpy、Pillow、edge-tts 的 Python；浏览器引擎还需要 Playwright 与本机 Edge/Chromium。
 - [Ztqing4Agents/dsh-skill-panel](https://github.com/Ztqing4Agents/dsh-skill-panel) — DSH Web GUI 原生风格技能管理面板：统一管理内置、本地与市场技能，支持无损启停开关、本机/GitHub 仓库导入，以及内置 SkillHub 镜像技能市场。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zuoyunlai/lunheng-article-pipeline-dsh](https://github.com/zuoyunlai/lunheng-article-pipeline-dsh) — DSH bundle 技能包：把深度长文生产（学术论文 / 行业分析 / 商业评论）拆成 9 角色流水线——T1 文献 / T2 数据 / T3 案例三线并行检索、T4 分析、T5 写作、T6 批判伙伴、T7 审计、T8 终检（主控亲执行）、T9 同行评审，跨 6 个阶段，含三角验证、M 门 26 项终检（25 项机检 + 1 项人工）、G0-G16 独立审计（含中文 AI 痕迹闸）、审稿评分与期刊匹配，以及 4 个人在环节点。以 bundle 分发（`package.json#dsh.bundle.patch` + `lib/index.js` 入口注册技能），`dsh plugin add lunheng-article-pipeline` 即装；随包 T1-T9 角色卡、模板与 36 个零依赖校验脚本，README 五语。
 - [zz12hui/dsh-local-writing-suite](https://github.com/zz12hui/dsh-local-writing-suite) — 提供两个审查工具与四个技能，覆盖中长文本（例如小说）与文档审稿：七维 AI 味打分、带行号的阻断项，以及落盘的长篇连续性状态。不要与同作者的旧版 dsh-deai-audit 同装，二者注册同名工具。
+- [ZZR-rui-997/dsh-academic-figure-ops](https://github.com/ZZR-rui-997/dsh-academic-figure-ops) — 出图前按正文宽度反算印刷字号，落盘后逐张验收印刷字号、有效分辨率与像素宽三项，并按表达意图选图型。自带样式模块、只读验收器、压盖检查、CFD 云图范式，以及 19 个用合成数据渲染的可复现配方。
+- [ZZR-rui-997/dsh-fluent-pyfluent-ops](https://github.com/ZZR-rui-997/dsh-fluent-pyfluent-ops) — Windows 下的 PyFluent 实操规程，来自真实生产算例：启动握手、设置顺序、会话状态机陷阱、时间步与 Courant 判定、长跑与断点续算、VOF 与多相及非牛顿设置、UDS 与 UDF 编译、.dat.h5 结果读取，以及十二条环境坑与它们的原始报错。
 - [ZZR-rui-997/dsh-project-dept](https://github.com/ZZR-rui-997/dsh-project-dept) — 加一个 project-dept skill，把一次复杂工作当成一个可验收的板块串行推进：开工前跑闸门脚本，项目台账显示还没准备好就拦住不干；验收分三层，中间一层必须由没动手的人独立盲审；基准本身可能过期时先审基准；交付进登记簿，完成是一次被记录的决定而不是自称。
 - [Zzzk187/dsh-file-state-cache](https://github.com/Zzzk187/dsh-file-state-cache) — 文件状态缓存技能：一次 explore 代替 ls+grep+read，读过的文件不再重复全量读，改完只回 diff 与精确变更行区间而不是重读全文。状态存在磁盘上的 JSON 缓存里，跨工具调用与重启都有效。需要 Python 3.8+（仅标准库，无需安装第三方依赖）。
 
@@ -10207,8 +10308,8 @@ dsh plugin --profile web add dshmarket
 - [Dely0/dsh-personal-workbench](https://github.com/Dely0/dsh-personal-workbench) — 日历 + 层级任务个人工作台：AI 辅助澄清、咨询、拆解、执行（用户验收）与复盘，支持到期提醒与按任务组织的 AI 会话工作区。
 - [dennisrongo/dsh-plugins#dsh-plan-board](https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-plan-board) — 将智能体通过 exit_plan_mode 呈现的每个计划捕获为 <workspace>/.dsh/plans 下的 markdown，打开审阅窗口，并以 Plans 历史标签页记录每个计划的结果。
 - [dickpy/dsh-cloud-sync](https://github.com/dickpy/dsh-cloud-sync) — 通过 WebDAV 和兼容 S3 的存储同步 DSH profile 与本地插件源码归档，支持加密快照、冲突感知恢复和显式自更新。
-- [dingchenhui0618-arch/dsh-daily](https://github.com/dingchenhui0618-arch/dsh-daily) — DSH 日报：每天定点按真实下载量与 star 把插件市场排一遍，再对照你自己的 agent 记忆与工作约定，产出两类条目——对已经有很多人在用的插件的具体改法（原版是 A，提案做成 B），以及生态里还没有的新方向。热度数字取自市场对外发布的目录并原样写进提示词，不由模型猜测；市场没测到的条目会标成「无热门度数据」，绝不当作 0。批准一条会按它的项目名新建一个会话，并把一份固定交付契约交给那个会话：独立实现、不许 fork、测试全绿才发布。标记「不感兴趣」的来源会被记住，不再重复出现。
 - [dingchenhui0618-arch/dsh-den](https://github.com/dingchenhui0618-arch/dsh-den) — 给 DeepSeek Harness 的常驻助理，刻意不做成又一个会话框：一个浮窗 + 一个常驻会话，两者都独立于其他所有会话。心跳受四道门约束——授权、每日回合预算、安静时段、冷却——并靠必须持续持有的租约跨重启续接。每次唤醒都交给模型裁决：回 SKIP 就一个字都不说，所以沉默是一次决定，而不是一次失败。浮窗显示常驻会话的真实消息流（优先读宿主会话存储；宿主不发布该会话时改读落盘日志），并且可以直接在里面发话。den 拥有人同等的触达范围，但有一条硬限制：只读。它可以读所有会话、本机以及 GitHub 等工作渠道，却不写、不发送、不发布，从不向任何人索要许可，也从不拦别人的工具调用。`npm run digest:github` 把 GitHub 通知和你自己开着的 PR 整理成三区中文摘要——等你回的、等你审的、你自己的——并给出明确标注「未发送」的回复草稿。
+- [dingchenhui0618-arch/dsh-plugin-daily](https://github.com/dingchenhui0618-arch/dsh-plugin-daily) — DSH 每日简报。到点（默认 11:00）读市场自己发布的目录——就是市场浏览器用的那份 JSON——按真实下载量与 star 排一遍，产出两类条目：对已经有人真在用的插件的具体改法（原版是 A，提案做成 B），以及生态里还没有的新方向。热度数字原样写进提示词而不是由模型猜；市场没测到的条目保持「无热门度数据」，绝不当作 0。每条在你看到之前都要过纯函数校验：证据必须逐字命中候选池里的仓库，只写「优化体验」的改法会被丢弃并计数，把标题写成原仓库名的「改名重发」会被拒。批准一条会走 GUI「新会话」用的同一条宿主路径，按项目名开一个会话，并把一份固定交付契约交给它：独立实现、不许 fork、测试全绿才发布。面板是对话视图里的一个「日报」Tab；202 个单测、零运行时依赖。原名 dsh-daily，包名与仓库现已改为 dsh-plugin-daily。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [dingminhua/dsh-ldvh](https://github.com/dingminhua/dsh-ldvh) — DSH 原生 AI 协作与治理框架：以规范与事实为据的双源召回、受控事实写入与 Git 守护提交。
 - [do-nothing/media-suite#media-runninghub](https://github.com/do-nothing/media-suite/tree/main/packages/media-runninghub) — 把 RunningHub 云端 ComfyUI 工作流当作后台任务池来跑：提交一批任务后，watcher 按并发上限自动派发、逐轮询每个任务、把产物全部下载到本地，池子排空时唤醒会话。共享台账记录批次、费用、实例规格、发起与完成时间以及每个文件的保存位置，右侧边栏有实时看板。
 - [dogbotowo-oss/dsh-agent-manager](https://github.com/dogbotowo-oss/dsh-agent-manager) — DeepSeek Harness 的子代理和团队队友管理：停掉正在跑的实例，或者真正移除——日志一行不删，只在原位置把记录标记为已移除，子会话目录移入可恢复的回收站；带模型工具、会话头部面板和离线 CLI。
@@ -10224,7 +10325,8 @@ dsh plugin --profile web add dshmarket
 - [Drkoh-wz/team-craft#team-flowise](https://github.com/Drkoh-wz/team-craft/tree/main/packages/team-flowise) — DSH 的多角色团队编排插件：给每个角色各自的模型、人设与工具，按依赖跑节点图，带独立评审与有上限的返工，并在界面里看进度。
 - [drliuhuan/dsh-plugin-folder-trust](https://github.com/drliuhuan/dsh-plugin-folder-trust) — 仅 Windows：新增工作区时授权一次，补齐 workspace-write 沙箱所需的 NTFS 权限，并把授权与 Low 完整性标签铺进已有子目录；修复过程带实时进度与日志。
 - [dryw/dsh-egm](https://github.com/dryw/dsh-egm) — 面向 DeepSeek Harness 的设计评审闸门，移植自 Google 的 Elephant-Goldfish Model：具备完整上下文的“大象”起草设计，再由零上下文的只读“金鱼”评审者严格审查，通过后才进入实现。注册的插件 id 为 `egm`，同一 profile 请只安装一个 EGM 插件。
-- [dsh-agent-roster/dsh-agent-roster](https://github.com/dsh-agent-roster/dsh-agent-roster) — 用 YAML/JSON 定义多智能体团队档案，校验后把成员桥接成 dsh-agent-teams 的建员参数，并对照运行中的团队核对结果。
+- [dsAI-Q/dsh-mg-video](https://github.com/dsAI-Q/dsh-mg-video) — 用 JSON 清单渲染 MG 动画视频：九个卡片模板、五种转场、面向录屏的截图标注、程序化合成音轨，逐帧渲染后由 ffmpeg 编码。
+- [dsh-agent-roster/dsh-agent-roster](https://github.com/dsh-agent-roster/dsh-agent-roster) — 把多 Agent 团队写成可评审、可版本化的档案文件，再逐字段核对真正跑起来的团队：「漂移 / 被覆盖 / 运行时未携带」三档分开报；跑偏了可以把运行值回写档案或整队换代，队长人设是活文件、每步重读。
 - [DSH-Extensions-list/dsh-elephant-goldfish-model](https://github.com/DSH-Extensions-list/dsh-elephant-goldfish-model) — Google Elephant-Goldfish Model 的 DeepSeek Harness 独立移植版：七条斜杠命令（/egm-*），用于设计、文档与借助 DSH 原生子代理的全新上下文评审。不依赖其他插件，但与其他 EGM 移植版注册的 /egm-* 命令同名，同一 profile 请只安装一个 EGM 插件。
 - [dsh-plugin-collection/dsh-later](https://github.com/dsh-plugin-collection/dsh-later) — 给 DSH 加上定时提醒与延迟发送：一句话到点送达——/later 以你的身份发出，定时面板或 /schedule 发提醒行；关掉网页也准时触发。（定时发送 / 定时提醒 / 延迟发送 / 提醒）
 - [dsh-teamwork/dsh-teamwork](https://github.com/dsh-teamwork/dsh-teamwork) — 将团队模型、智能体预设和审批后的插件同步到 DeepSeek Harness，并提供绑定团队的助理操作。
@@ -10271,6 +10373,7 @@ dsh plugin --profile web add dshmarket
 - [fuhefei/dsh-sentinel](https://github.com/fuhefei/dsh-sentinel) — 条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。
 - [fujingzhai/youxia-dsh-plugins#dsh-pi-mode](https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-pi-mode) — 为 DeepSeek Harness 新增三个以 pi 为蓝本的模式：Pi（精简基线）、Pi+（额外启用官方 apply_patch，便于批量改同一文件多处或多个文件）、Pi-IM（面向 IM 机器人调整交付方式）。一次安装注册三个模式，DSH 自带模式不受影响。需要 DSH 0.2.2-rc.1 或更新版本；每个模式都用自带的简短中文系统提示取代标准系统提示。
 - [fxylabs/superself#dsh-plugin](https://github.com/fxylabs/superself/tree/main/apps/dsh-plugin) — 把 Superself 的 self CLI 暴露为模型工具（项目上下文、工作单元、报告、决策）并提供 /self 命令——跨会话、跨项目的项目状态，保存在代码仓库之外。
+- [fzjmaclearn/zack-calendar](https://github.com/fzjmaclearn/zack-calendar) — DSH 的本地日程与待办面板：日、周、月三种视图围着每天六个固定时间块，支持目标拆解、分类盒、进度与卡点快照、只追加的进展时间线、笔记与合集、间隔复习、每日运动处方，以及只往空槽排程的 calendar_read/calendar_write 工具。数据保存在本地 JSON 文件，无网络请求与遥测。
 - [GaoHu1997/dsh-maestro-codex](https://github.com/GaoHu1997/dsh-maestro-codex) — 在 dsh 中管理 Claude Code / Codex / Grok CLI，并把任务派发给它们作为子智能体执行：dsh 的模型、技能与工具随任务桥接，CLI 子会话可回放续聊，右侧栏提供分层任务看板（看板 tab 需另装 DSH-better-sidebar 插件，未安装时不会注册）。
 - [gavinc-cn/touchstone-dsh](https://github.com/gavinc-cn/touchstone-dsh) — 面向 DeepSeek Harness（dsh）的 AI 智能体驱动自动化测试平台：以长期多轮会话驱动 agent 编写并执行 Markdown 用例、产出 bug 报告、修复代码并复验，配套按项目串行的统一队列、开发看板与内置压测。
 - [GEB-lab/dsh-codex-mcp](https://github.com/GEB-lab/dsh-codex-mcp) — 让 Codex 通过 dsh_env、dsh_run、dsh_resume 三个 MCP 工具启动和续跑 DSH headless 会话的桥。
@@ -10279,7 +10382,7 @@ dsh plugin --profile web add dshmarket
 - [genesis-agents/dsh-deep-insight](https://github.com/genesis-agents/dsh-deep-insight) — 提供原始资料归档、知识图谱、精确引文和可导出报告的循证研究工作区。处于 alpha 阶段。需要 Node 24.9 及以上、uv 和 Python 3.13，另有一步必须执行的安装脚本（setup-engine.mjs，复制引擎并按锁文件执行 uv sync）；pnpm 还需允许 onnxruntime-node 与 protobufjs 运行构建脚本。
 - [gezi-wen/dsh-subagent-delegation](https://github.com/gezi-wen/dsh-subagent-delegation) — 携带一份讲「什么该交给子 agent 做、而不是自己顺手做」的技能——哪些任务值得扇出、一次派几个、并行怎么发，以及子 agent 回来后怎么核对它真的做了什么，而不是信它的总结。
 - [github-yousen/dsh-novel-mode](https://github.com/github-yousen/dsh-novel-mode) — 用代码驱动的工作流把一个想法写成校验通过的小说：JavaScript 状态机推进各阶段（宪法、大纲、设计、写作、校验、批量、导出）和每章 15 步的循环，每道门禁由 PowerShell 脚本校验，版本化断点可在重启后从原章节续写；起草与评审由 9 个子代理角色完成。需要 PowerShell 7（pwsh）与 Python 3.7+；没有 pwsh 时门禁记为 DEGRADED，运行暂停。
-- [gluztm/dsh-chief](https://github.com/gluztm/dsh-chief) — 蹲在 DeepSeek Harness 旁的小助手：平时歇着不打扰，你在电脑前提建议、防手滑，离开后帮你包办到底。
+- [gluztm/dsh-chief](https://github.com/gluztm/dsh-chief) — 蹲在 DeepSeek Harness 旁的小助手：普通窗口不打扰，支持音箱告警与唤醒遥控、6 通道手机传呼、主题多端同步、三层档案检索与执行前安全拦截。
 - [GM-HZ/agent-dag-workflow](https://github.com/GM-HZ/agent-dag-workflow) — 面向 Agent 的 Host-neutral 持久化 DAG 工作流，提供 CLI、MCP、按需 Skill、Trigger、重放和可视化 Canvas。
 - [godv61/dsh-task-engine](https://github.com/godv61/dsh-task-engine) — 为 DeepSeek Harness 提供预设工程流程：dev_task 工具把阶段流转、产物、验证、审核与提交范围做成硬门禁，并带一个安装项目级与个人级技能和规则的工作台。
 - [Golden2002/dsh-teaching-material-workbench](https://github.com/Golden2002/dsh-teaching-material-workbench) — 按证据链生产教学物料的可视化工作台：页模型、逐页改讲义与课件、PAEG 中文检查、三层门禁、检查中心、版本回退、讲义/课件/分镜/Manim 脚本导出与版权审计。
@@ -10391,8 +10494,10 @@ dsh plugin --profile web add dshmarket
 - [Kayungko/dsh-plugin-task-coordinator](https://github.com/Kayungko/dsh-plugin-task-coordinator) — 总控式工作流编排：确认闸门批量派发、团队编组、向运行中任务纠偏、等待收口与模型路线发现——11 个 task_* 工具加 /tasks 斜杠命令。
 - [KazeLiu/codex-dsh-dispatch](https://github.com/KazeLiu/codex-dsh-dispatch) — 让 Codex 向 DeepSeek Harness 派单、等待结果，并在原 DSH 对话中继续派单。
 - [KelaoHu/dsh-lowtide#dsh-lowtide](https://github.com/KelaoHu/dsh-lowtide/tree/main/packages/dsh-lowtide) — lowtide（退潮）插件能够实现闲时自动批量跑任务——任务框架高度自定义，四种执行策略，L1–L3 半自动/全自动裁决，支持任务编辑与预检，Cordis 微内核集成，桌面网页端通用。
+- [KianWu/dsh-oh-my-workflow](https://github.com/KianWu/dsh-oh-my-workflow) — 一个 DeepSeek Harness 代理预设：把任务分为快速、标准、深入三档，内置 22 个技能覆盖需求追问、写规格、拆工单、实现、评审、验证与交接，并带轮次守卫——改完必须给出真实验证证据，同一修法失败两次就停下重新核对前提。
 - [Kippythisway/dsh-team-v3](https://github.com/Kippythisway/dsh-team-v3) — AgentTeams 的团队预置：内置 audit6 / impl5 / lite2 三套编制与 seed 任务 DAG（每个角色带回报合同），并注入一段 captain 开团纪律——新会话一次批准就开出结构正确的团队，不用再贴提示词。需要先把引擎 @nanmicoder/dsh-agent-teams 装进同一个 profile；团队补丁按 id 指向该引擎，并会整段替换其 agent-teams 配置。
 - [kira905/dsh-task-board-local](https://github.com/kira905/dsh-task-board-local) — 自维护的 DSH 网页任务看板：带人工验收闸门、卡片类型与已执行卡片的可编辑备注。
+- [Kirakila7/dsh-plugin-devlog-poster](https://github.com/Kirakila7/dsh-plugin-devlog-poster) — 从本地 Git 提交自动生成多平台开发日志、四图轮播卡片与工作日报周报，支持 GitHub 发布、Playwright 草稿箱填表、生图提示词模板与六大办公渠道 Webhook 推送。
 - [kiritoko1029/dsh-multi-agent](https://github.com/kiritoko1029/dsh-multi-agent) — 按可配置的自然语言规则将独立任务派发给 DSH、Codex、Kimi Code 或 Antigravity 子代理，支持会话续接和统一任务面板。
 - [kkomia/dsh-code-team](https://github.com/kkomia/dsh-code-team) — DeepSeek Harness 的「项目开发模式」预设与聊天内开发看板：主对话只澄清需求并向 Agent Team 派活，悬浮看板把每个用户修改点按派单、执行、测试、验收追踪（含 7 个看板工具）。
 - [kongbai9420/dsh-boss-worker](https://github.com/kongbai9420/dsh-boss-worker) — 具备主控审查门禁、文件范围隔离与悬浮工作台的多模型主从协同插件。
@@ -10503,6 +10608,7 @@ dsh plugin --profile web add dshmarket
 - [Meltllsy/dsh-todo-reminder](https://github.com/Meltllsy/dsh-todo-reminder) — 全局个人待办（与任何会话无关）：侧边栏面板 + 贴边待办条（悬停探出、快到点自动弹开），到期桌面通知与自定义音效。
 - [meng-lx/dsh-blueprint-tree](https://github.com/meng-lx/dsh-blueprint-tree) — 图形化工作流蓝图：单元分开始、结束、软、硬、选择、子蓝图，每个蓝图一份由插件生成、上游契约变化时自动重写的 TypeScript 方法文件，运行按六状态（正常、提醒、报错、废弃、失效、断联）跳过不该跑的格子，另有单元、蓝图、项目三种测试。
 - [mengzhongjie/dsh-superagent-local](https://github.com/mengzhongjie/dsh-superagent-local) — dsh-superagent 的本地版：每个侧栏工作区各有一个主会话，把需求转成工单，并由 Worker 会话在该工作区目录内执行。不能与上游 dsh-superagent 同时安装：两者包名同为 dsh-superagent，挂载的插件 id 也相同。
+- [MeZenith/dsh-flow](https://github.com/MeZenith/dsh-flow) — 为 DSH 增加 Plan / Plan Ultra / Build / Review / Flow 五种可切换工作流模式，包含分层提示词注入、编号文档流水线，以及可在桌面或 IM 中回复的审批门禁。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [mhzdsb/dsh-tripipelines#dsh-tripipelines](https://github.com/mhzdsb/dsh-tripipelines/tree/main/plugins/dsh-tripipelines) — 三级模型协作流水线：你选的模型负责规划与验收，长活二级写模块代码，便宜的三级干碎活；严格相邻、逐任务质量门（真跑断言）、预算护栏、GUI 看板。
 - [Miaotofu01/Study-Mate](https://github.com/Miaotofu01/Study-Mate) — 你的AI学习搭档：定计划、讲知识、做项目，学透一门科目。
 - [micellince/dsh-long-novel-workbench](https://github.com/micellince/dsh-long-novel-workbench) — 装在 DeepSeek Harness 里的长篇中文小说工作台：正文页直接阅读、编辑和批注；AI 找问题并写好修改稿，你采纳后正文才会变。人物、事实、伏笔的账本加世界地图，让长篇不前后打架；还能让 AI 续写、扩写或改写整章。
@@ -10561,6 +10667,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-advisor](https://github.com/omdsh-dev/dsh-advisor) — 搭配一个副模型，每轮被动审查并注入见解。
 - [omdsh-dev/dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research) — 自适应深度研究编排器（基于官方 workflow 引擎）。
 - [omdsh-dev/dsh-inspect](https://github.com/omdsh-dev/dsh-inspect) — 发现问题→修复交付→质量复查的对抗式闭环工具集。
+- [omnimux-ai/omnimux-client#omnimux-workflow](https://github.com/omnimux-ai/omnimux-client/tree/main/plugins/plugins/omnimux-workflow) — 基于 React Flow 的 DeepSeek Harness 可视化 DAG 工作流无限画布插件，支持拓扑子图调度、断点恢复、本地文件存储与 Agent 画布操作工具。
 - [onesmash/dsh-reflex](https://github.com/onesmash/dsh-reflex) — 给 DS Bot 的反射弧：作为兄弟插件运行、不改 ds-bot，用低成本层持续采集事实并在本地决策模型上打分，只有越过阈值时才唤醒 Bot 的推理层。
 - [openfcp/dsh-fcp](https://github.com/openfcp/dsh-fcp) — DSH 侧栏里的金融消保工作台：六位专家按关键词调度或手动点选；技能页对齐 dsh-financial-skills v0.2.3，技能真实安装到共享 skills 目录，即时生效、跨插件同步；支持 IMA、Obsidian 与本地知识源。输入框展示模型全名、话筒、发送和模式选择（标准 / PTC / 极简 / 创造），需求一键直达流程。本地路由带回环、Host 白名单与同源校验。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [orion-nebula-dev/dsh-Dynamic-Workflow](https://github.com/orion-nebula-dev/dsh-Dynamic-Workflow) — 使用 /workflow 运行 JSON 工作流，查看进度、选择 Agent 模型、复用已有会话继续执行，并通过有次数上限的独立审查与修复控制交付。
@@ -10621,7 +10728,7 @@ dsh plugin --profile web add dshmarket
 - [rainbowzhu22-eng/dsh-document-redactor](https://github.com/rainbowzhu22-eng/dsh-document-redactor) — 基于 whatcccup/cece_legal_skills（MIT）适配的 DeepSeek Harness 文书脱敏工作台。在本机处理 DOCX、PDF、TXT 和 Markdown，提供人工复核、PDF 框选遮盖与 OCR 行核对、同案占位符、Word 还原、历史记录及可选 Agent 规则预览与回退。需 Python 3.9+，首次准备依赖需要联网；仅规则生成需要模型。1.4.0 为预发布，已在 macOS Web 与 DSH 桌面验证；新增 Windows 安装与 OCR 路径待实机复验。上游是独立离线工具/SkillHub 技能，不是 DSH 插件，无法在 DSH 内与本插件同装。
 - [Rainier-Z/dsh-workspace-monitor](https://github.com/Rainier-Z/dsh-workspace-monitor) — 一个适配 DeepSeek Harness 的工作区监测插件，按周期检测并报告文件的新增、修改和删除。
 - [randomix777/dsh-image-gen](https://github.com/randomix777/dsh-image-gen) — dsh-image-gen 优化版：支持批量生图（count 参数）、画廊分页懒加载、请求超时/重试，兼容 7 个提供商：Gemini/OpenAI/Seedream/通义万相/Agnes/智谱 GLM/Stability AI。
-- [ranranyya/dsh-taskbridge](https://github.com/ranranyya/dsh-taskbridge) — 跨宿主派工桥接插件：让上层宿主端专注架构规划与交付验收，将繁重编码与测试调测交给 DSH 黑盒执行；通过 11 个有界 MCP 工具提供一键宿主集成、隔离 Git 工作树与跨子包复用、静默长等、按参数指纹单次权限审批及结构化验收（已支持 Codex 与 Antigravity）。
+- [ranranyya/dsh-taskbridge](https://github.com/ranranyya/dsh-taskbridge) — 让 Codex 与 Antigravity 专注架构规划与验收，把重度写代码和跑测试交给 DeepSeek Harness 在独立 Git worktree 中并行执行：不污染主分支、静默长等免轮询、越权调用按参数指纹逐次审批，验收通过后经冲突预检安全写回原目录，大幅节省主力模型配额。
 - [recoluan/recowork#recowork-dsh](https://github.com/recoluan/recowork/tree/main/packages/recowork-dsh) — 通过两个受限的 DSH 工具和网页工作区卡片，创建并检查 RecoWork local-agent-project 工作区。
 - [renjiegod/dsh-godbot](https://github.com/renjiegod/dsh-godbot) — 在同一个 DSH 工作台给 Claude Code、Codex、Antigravity 和 DSH Bot 分派任务、验收结果，按需接管原生会话。
 - [ReWebaiyu/dsh-novel-assist#dsh-novel-assist](https://github.com/ReWebaiyu/dsh-novel-assist/tree/main/dsh-novel-assist) — DSH 侧边栏的小说创作面板：绑定本地书稿目录，把导入的 Agent 技能当作分析视角，并扫描平台榜单归纳故事架构。
@@ -10690,6 +10797,7 @@ dsh plugin --profile web add dshmarket
 - [spheritier/dsh-plugin-bulk-update](https://github.com/spheritier/dsh-plugin-bulk-update) — 检查已安装的 DSH registry 插件是否有兼容更新，并选择要应用的版本。
 - [SpookyWaste/dsh-plan-compact-execute](https://github.com/SpookyWaste/dsh-plan-compact-execute) — 在 DSH Web 的计划审批卡上增加「压缩后执行」：先把计划提交之前的历史压成检查点，再批准计划。
 - [SPYfighting/dsh-science-plugin](https://github.com/SPYfighting/dsh-science-plugin) — 在科研工作台中整理论文研究问题、目标结果及支持证据，并向专业子代理分派任务。
+- [SPYfighting/dsh-science-review](https://github.com/SPYfighting/dsh-science-review) — 对照用户要求、工具执行记录和交付文件，审查科研与日常任务的回答，并在原回答下展示问题和证据原文。
 - [squirrel20/dsh-cron](https://github.com/squirrel20/dsh-cron) — 宿主侧无人值守定时任务：按 cron 表达式、固定间隔或一次性时点运行一次性 agent 任务或 shell 命令，调度状态持久化（至多一次语义），支持重叠/错过策略与有界运行历史。
 - [SShiRkiT/dsh-orchestrator](https://github.com/SShiRkiT/dsh-orchestrator) — 面向 DeepSeek Harness本地研发会话的主从编排(Orchestrator)插件：用硬门禁让主代理专心负责理解需求、拆分任务、后台定时巡检与最终验收，让子代理在隔离环境里并行承担具体施工。改前防撞车，交工查账单丨热重载不断联，冷重启可对账丨支持并行 delegate、多阶段批量 orchestrate 流水线。
 - [SSHOOTING/dsh-plugin-skill-distiller](https://github.com/SSHOOTING/dsh-plugin-skill-distiller) — 从成功任务提炼可复用技能草稿，附适用条件与最小测试。
@@ -10757,6 +10865,7 @@ dsh plugin --profile web add dshmarket
 - [Wang-Chuming/dsh-work-review](https://github.com/Wang-Chuming/dsh-work-review) — 面向 Obsidian 风格 vault 的工作回顾闭环：每晚生成当天 Dream 与编号 T/G 计划，只执行标记为「常规」的条目（默认只读，--live 才本地 commit），把七天汇总成 ISO 周周报，并在只读侧栏面板里展示日报与周报。
 - [wangbobo-coder/gitee-ai-employee](https://github.com/wangbobo-coder/gitee-ai-employee) — Gitee/GitHub AI 员工：在 issue 里 @ 机器人并指定目标分支（如"需要修改 release-v1.2 分支"），它自动克隆仓库开发、向指定分支提交 PR，可自动合并并自动关闭 issue。v1.2 新增代码安全扫描：配置扫描仓库后按内置/自定义提示词审计代码，去重后把新发现提交 issue。
 - [wanghao815/dsh-rtl-flow](https://github.com/wanghao815/dsh-rtl-flow) — 为 DeepSeek Harness 提供 RTL 设计与验证指导、工程脚手架、证据核对和 OpenROAD/ORFS 环境准备。
+- [wangqiqi/planrun](https://github.com/wangqiqi/planrun) — 面向 DSH 的 plan→run→verify 成长型开发流程：.growing/ 镜像（计划、逐任务复盘、教训台账）由仓库自身 dogfood；内置 28 个技能与 4 个子代理预设，外加可移植 bash 守卫（gate-check、task-verify、next-task、doctor）——复盘必交门、教训排名注入、防假绿检查（opt-in），以及回合收尾守卫：工作区有改动却没有成功 verify 印记时打回本回合。
 - [wangyz911/dsh-deferred-ask](https://github.com/wangyz911/dsh-deferred-ask) — 把输入框里的问题排进队列，只在 DeepSeek 低谷计价时段（半价）发出。投递由每 30 秒一次的时钟检查驱动，而不是预先排定触发时间，因此应用关闭期间错过的问题不会被补投进高峰。最多 50 条、localStorage 持久化、失败指数退避重试，也可按高峰价立即发送。
 - [Wasabi2575/dsh-workflow-canvas](https://github.com/Wasabi2575/dsh-workflow-canvas) — DeepSeek Harness 侧边栏可视化多代理工作流画布：支持并行子代理、三种语义连线、条件分支与受控回环重试、Lead 节点暂停拍板、参考资料注入、横竖版布局、一键终止以及对话搭图与改图。
 - [WaterDJiang/wtt-dsh-plugin#dsh-creation-workbench](https://github.com/WaterDJiang/wtt-dsh-plugin/tree/main/plugins/dsh-creation-workbench) — 一块神奇的无限画布，你能够在这上面通过卡片的方式连接任意的流程，包括制作 PPT、制作视频以及文案创作。每个卡片可以独立设置 AI 模型，还可以通过内置的 super agent 小瓦，一句话创建连续工作流卡片来完成任务。
@@ -10790,13 +10899,15 @@ dsh plugin --profile web add dshmarket
 - [xiangzz/dsh-subagent-qodercn](https://github.com/xiangzz/dsh-subagent-qodercn) — 把 Qoder CLI CN（qoderclicn）注册为一次性 DSH 子智能体提供方（ACP 协议），沿用官方 Codex 提供方的约定：每次调用在任务目录里全新启动一个 qoderclicn --acp 进程，只把最终回答返回父会话（失败时返回部分输出和只含固定事实的诊断）。需本机已安装并登录 Qoder CLI CN。
 - [xiao0o0/dsh-workflow-execute](https://github.com/xiao0o0/dsh-workflow-execute) — 多阶段 agent 工作流：工作流是含阶段、环节、门禁与期望产物的 YAML 文件，运行时只输入一次需求并按环节依次推进；面板展示每环节进度、门禁得分、返工次数与产物文件，并提供 workflow_list、workflow_get、workflow_validate、workflow_save 四个工具，让 agent 读取、校验与保存工作流。
 - [xiaobaifly7/dsh-codex-conductor](https://github.com/xiaobaifly7/dsh-codex-conductor) — 将 DeepSeek Harness 的编码任务委派给 WSL 内的 Codex CLI，提供必填验收标准、后台进度与取消、线程续跑、逐条结果汇报、改动记录及可选工作区护栏。需要 Windows 与 WSL2；WSL 内需有 Python 3.11+ 和已登录的 Codex CLI。
+- [xiaobaijiadepugongyingpai-coder/dsh-crew-x](https://github.com/xiaobaijiadepugongyingpai-coder/dsh-crew-x) — ZSeven-W/dsh-crew 的增强分支，面向 Claude Code、Codex、Antigravity 与 Grok 提供 8 个 MCP 工具：新增可选持久会话、hub.json 动态端口发现、可视化模型路由与连通性探测、4 档逐任务权限及 Windows 自动 Worktree 降级，以及阈值报告落档。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [xiaofeng-bm/dsh-clarify-mode](https://github.com/xiaofeng-bm/dsh-clarify-mode) — 加一个需求澄清模式：模式内移除写文件工具，Agent 只能提问，覆盖完必需维度后产出带验收标准的 spec，再开始实现。
 - [xiaohai-78/dsh-modes](https://github.com/xiaohai-78/dsh-modes) — Agent 模式（预设）设置页：按模式开关最多 15 项能力（运行命令、读写或只读文件、网页、子代理等），也能逐个开关插件；编辑每个模式的系统提示词，带变量校验、完整预览和历史版本，可选让正在运行的会话即时生效，并提供每次保存都需审批的对话内修改工具 mode_prompt；用四个起步模板或复制现有模式新建模式；dsh 升级后合并内置更新并保留你的修改，一键关闭加载失败的插件。
 - [xiaomengxinbb/dsh-todo-freshness](https://github.com/xiaomengxinbb/dsh-todo-freshness) — 告诉你任务卡片已经过期。插件注册一个 todoFreshness 会话投影，从会话里已有的事件折叠出：上次 todo_write 之后又跑了多少次工具调用、清单里还有几项没有结论、这一轮结束时是不是还留着未完成项。清单落后时按阈值注入一条提醒，要求模型用真实状态整表重写；同时在输入框上方标明这份清单只是旧快照，而不是实时进度。插件自己不写 todo/write，也不会把没做完的项标成 completed。
 - [XiaoOu2024/dsh-root-planner-preset](https://github.com/XiaoOu2024/dsh-root-planner-preset) — dsh agent 树的递归委派：用预设与 Host 限制划定每个子 agent 的能力边界，子 agent 在各自 _agents/ 工作区独立工作，成果由父 agent 决定是否合并、如何合并。
-- [xiaosejun/dsh-golden-partner](https://github.com/xiaosejun/dsh-golden-partner) — 把仓库上下文（浅层目录、技术栈与脚本、既有约定、指定文件的摘录）打成一份上下文包交给外部方案模型，再把返回的六段执行简报落成带日期的计划文件；左侧栏面板负责把指令与简报复制好，长文本不进入对话。
+- [xiaosejun/dsh-golden-partner](https://github.com/xiaosejun/dsh-golden-partner) — 把仓库上下文（浅层目录、技术栈与脚本、既有约定、指定文件的摘录）打成一份上下文包交给外部方案模型，再把返回的六段执行简报落成带日期的计划文件；左侧栏面板负责把指令与简报复制好，长文本不进入对话。中文别名「黄金搭档」。
 - [xiaoso456/dsh-workflow-lite](https://github.com/xiaoso456/dsh-workflow-lite) — 支持一句话生成软工作流的插件，适用于许愿式生成简单自动化以及固定任务，把步骤、资源与条件编译成提示词计划交给模型执行，并支持自动触发和导出成 Skill。
 - [xiaoxue-car/dsh-card-workbench](https://github.com/xiaoxue-car/dsh-card-workbench) — 为 DeepSeek Harness 提供卡片任务编排：拆分任务、派单盯办、处理卡顿、核对结果，并接管工作对话。
+- [xiaoyuanGP/dsh-codenow](https://github.com/xiaoyuanGP/dsh-codenow) — 多智能体协同工作台：19 个岗位模板、团队面板（任务板 / 用量 / 缓存），以及让主智能体自己派活、复核、交付的 codenow 工具。
 - [WhaleMaid](https://github.com/Xiaxin1235/WhaleMaid/tree/master/packages/host) — 支持 DSH 0.2.1-rc.2、0.2.1-rc.3，提供范围授权、独立验收、可编辑记忆和伙伴聊天的项目自动推进插件，自动安装配套桌宠 fork。配套桌宠是 takboo/dsh-coopanion 的 fork（AGPL-3.0-or-later），不能与上游桌宠同装。
 - [xiebaiyuan/dsh-lead-mode](https://github.com/xiebaiyuan/dsh-lead-mode) — 给官方 Agent Teams 运行时配的 Lead 模式预设与两个 runtime skill：一套拆活、派活、验收的工作法，以及收尾时把多个成员产出合并成一份文件的团队汇总。本身不带 Team 运行时。
 - [XMoon/dsh-subagent-router](https://github.com/XMoon/dsh-subagent-router) — 新增 subagent_route 与 subagent_fork_route 委托工具：由模型自主为子代理挑选 provider/model 路由，部署方仅配置 spawn/fork 后端、调度策略与 allowedProviders 白名单；续聊子代理与后台任务复用官方 send_message / job_output 工具。
@@ -10956,7 +11067,7 @@ dsh plugin --profile web add dshmarket
 - [ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-repopanel](https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-repopanel) — 浏览工作区 origin 远端对应的 GitHub issue 与 pull request，筛选、评论、关闭或重开，并可转成任务写到 dsh-plugin-taskboard 的看板上等 agent 领取。
 - [IKUN798ProMax/dsh-git-tree-GUI](https://github.com/IKUN798ProMax/dsh-git-tree-GUI) — DSH 的 Git 面板：分支树与逐分支提交记录、WebStorm 风格的日志 / 提交 / 储藏窗口、分支右键菜单（签出、新建分支、更新、抓取、推送、合并、删除）、整文件的左右并排差异与差异块跳转，以及未提交文件的直接编辑；工作区根目录不是仓库时会扫描子目录里的仓库。
 - [imcaibaicai/dsh-github-push](https://github.com/imcaibaicai/dsh-github-push) — 一句话把本地目录推到 GitHub：自动探测代理，令牌从系统凭据管理器直读并从每行日志里清洗掉，推送前做敏感信息闸门，推送后回读远端分支 SHA 校验。
-- [ItQianChen/dsh-github-flow](https://github.com/ItQianChen/dsh-github-flow) — 把本机 GitHub CLI (gh) 包装成 Agent 工具集（PR、Issue、Actions 运行、仓库检索与原始 API 调用），另提供 /gh status 与 /gh help 两个斜杠命令，以及全局仓库驾驶舱和会话工作区两个 Web 面板。
+- [ItQianChen/dsh-github-flow](https://github.com/ItQianChen/dsh-github-flow) — 把宿主机 GitHub CLI (gh) 包装成 19 个 Agent 工具、100+ 个 action，覆盖 PR、Issue、Actions、Release、Secret、Projects v2、Codespaces、Discussions 与 Copilot 智能体；PR / Issue 的 21 个写操作可要求执行前人工审核（三档 + 按仓库 / action 规则），并写入本地操作记录、可导出 Markdown / JSON；另提供 /gh 指令与两个 Web 面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [jacky-aj/dsh-plugin-daily-report](https://github.com/jacky-aj/dsh-plugin-daily-report) — 按天汇总多个 Git 仓库与分支的提交和本地文档，可由 AI 生成摘要，并导出 XLSX、Markdown、CSV 或 HTML 日报。
 - [jamen-jiang/dsh-qoder-worktree](https://github.com/jamen-jiang/dsh-qoder-worktree) — Qoder 风格的工作区模式与分支 chip，选择分支即挂起意图，发送第一条消息时自动创建独立 git worktree 并把会话迁入其中。仅 Windows：放行写入依赖 PowerShell Set-Acl，其他平台进 Worktree 会报错并留在主检出。
 - [JasonFreeLab/dsh-command-code-review](https://github.com/JasonFreeLab/dsh-command-code-review) — 注册 /code-review 斜杠命令，五个并行审查视角、逐发现置信度打分，同时支持拉取请求与本地代码审查。
@@ -10981,7 +11092,7 @@ dsh plugin --profile web add dshmarket
 - [Letter2025/dsh-task-worktree](https://github.com/Letter2025/dsh-task-worktree) — 任务级 git worktree：per-repo manifest 持久保存；Worktree 模式在首条消息注入创建指引并统一 worktree/ 分支前缀，头部徽标替代工作区注册，支持带回主目录或强制删除收尾。
 - [LHCWN/dsh-triage-desk](https://github.com/LHCWN/dsh-triage-desk) — 将 GitHub 审核请求、可合并的拉取请求、失败的检查和议题汇集到一个收件箱，可带着预先填好的提示词打开编码智能体或新的 DSH 对话。
 - [LighghtEeloo/dsh-vcs-panel](https://github.com/LighghtEeloo/dsh-vcs-panel) — DSH 的版本控制面板，除 Git 上游同步与本地分支切换外只读：工作区改动、语法高亮差异、Git 与 Jujutsu 的提交历史轨道图，以及每轮结束的改动横幅。
-- [LijunTong/git-branch-tool](https://github.com/LijunTong/git-branch-tool) — 在 DSH 对话中切换与创建 Git 分支，支持初始化仓库并自定义入口标签位置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [LijunTong/git-branch-tool](https://github.com/LijunTong/git-branch-tool) — 在 DSH 对话中切换与创建 Git 分支，支持初始化仓库并自定义入口标签位置。
 - [LingQi-07-std/dsh-client-ui-git](https://github.com/LingQi-07-std/dsh-client-ui-git) — DSH Web GUI 的 Git 面板：提交图与分支筛选、工作区状态、单提交 diff、暂存、合并冲突处理、远程同步与仓库设置。
 - [LingYingNX/dsh-codex-parity](https://github.com/LingYingNX/dsh-codex-parity) — 为 DeepSeek Harness 提供 Codex 风格的 Git 面板：会话头部按钮打开菜单，提供提交、推送、切换分支、创建并切换与初始化仓库；显示当前分支与未提交文件的总增减。
 - [LinXueyuanStdio/dsh-git](https://github.com/LinXueyuanStdio/dsh-git) — DSH 官方右侧栏里的本地 Git 与四个 GitHub 远端页签：Changes（按文件暂存、逐行 diff、提交信息由 DSH 里已配好的模型生成）、History，以及由 host 半代理的 Code / Issues / Pull requests / Actions。令牌只存在 host 半（ctx.credentials），/dsh-git/* 只接受 loopback 请求。
@@ -11010,6 +11121,7 @@ dsh plugin --profile web add dshmarket
 - [MoonlitDropOfBlood/dsh-git-manager](https://github.com/MoonlitDropOfBlood/dsh-git-manager) — DeepSeek Harness 的 Git 工作区管理：输入框「模式」选择器旁的仓库感知入口，打开与设置同规格的面板，覆盖 diff/commit、分支、冲突、worktree 管理与带分支线的提交历史。
 - [Moowningstar/gitnexus-plus](https://github.com/Moowningstar/gitnexus-plus) — 在 DSH 侧栏读取 GitNexus 索引，报告被跳过的文件、索引新鲜度与语言覆盖，支持符号搜索和最近的 Git 活动审查。
 - [NEAZ71eve/dsh-tool-github](https://github.com/NEAZ71eve/dsh-tool-github) — GitHub REST API 工具 + 浏览器侧边栏面板：仓库/搜索/Issue/PR/评论、账号绑定（凭据库）与一键克隆为工作区。
+- [Niefee/dsh-svn-viewer](https://github.com/Niefee/dsh-svn-viewer) — DeepSeek Harness 的 SVN 只读查看器：目录树、文件名与全文搜索、Office/文本/图片/PDF 预览、历史、逐行归属、差异对比与 zip 导出。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [nightosong/gord-dsh-worktree](https://github.com/nightosong/gord-dsh-worktree) — 为 DeepSeek Harness 管理 git worktree —— 让并行工作各自隔离在自己的目录与分支里。自带快速模式（Fast mode）。
 - [No-PRM/dsh-explorer#dsh-explorer](https://github.com/No-PRM/dsh-explorer/tree/main/dsh-plugins/dsh-explorer) — Git 优先的文件树侧栏：VS Code 风格层级线、M/A/U/D/R git 状态装饰、HEAD 与工作区对照预览、媒体预览、拖拽引用（文件/文件夹/选中代码带行号）—— 纯插件。
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) — 零终端的 GitHub 可视化登录插件：窗口内完成设备码授权，令牌同步进 gh CLI，附宿主端状态与唤起接口。
@@ -11044,6 +11156,7 @@ dsh plugin --profile web add dshmarket
 - [Sycada/dsh-git-connector](https://github.com/Sycada/dsh-git-connector) — DeepSeek Harness 的 Git 仓库连接：按档案名操作仓库（clone/fetch/pull/push/commit）、Gitea/Forgejo/GitHub API、密钥存 DSH 凭据中心，并按仓库单独授权忽略证书/允许覆盖/force push 等危险开关。
 - [tangyixiao/dsh-pr-release-workspace](https://github.com/tangyixiao/dsh-pr-release-workspace) — 在 DSH 中只读查看 GitHub 拉取请求与发布状态，浏览差异、评论和 CI 检查，并保存本地评审草稿。所有 GitHub 读取都经由 GitHub CLI，需先安装并执行 gh auth login 登录。 0.1.8 要求 DSH >=0.2.2-rc.1 <0.3.0-0 且提供同步 connection.requestRejection 与 connection.admit API，仅已认证 owner 可使用宿主 GitHub 会话或本地草稿；缺方法、异常、无效或异步返回均拒绝。 0.1.9 已在 DSH 0.2.2-rc.5 验证。
 - [Tanjintao2/dsh-version-history](https://github.com/Tanjintao2/dsh-version-history) — 本地 git 仓库的侧边栏面板：按标签列出每个版本的改动文件与提交，旁边一栏是磁盘健康与 SMART，能用局域网 Smart HTTP 分享裸仓库，还有一张把仓库绑定到 GitHub 一键推送的卡片。展示的数据来自用户自己 PowerShell 脚本生成的快照，插件提供面板与调用这些脚本的路由。
+- [Thomas-zz/dsh-worktree-desk](https://github.com/Thomas-zz/dsh-worktree-desk) — 在 DSH 侧栏只读总览本机的全部 Git 工作树，按仓库分组：状态、未推送和落后数、未提交与未推送改动的就地差异、本地分支，以及匹配到的 Codex / ZCode / DSH 会话；获取、拉取、推送和 AI 代码审查都只在你触发之后才执行。
 - [TiChuXiXi/dsh-git-vcs](https://github.com/TiChuXiXi/dsh-git-vcs) — 右侧栏的 IDEA 风格 Git 面板：本地变更与按文件勾选提交、提交树与提交详情、分支 / 远程 / 贮藏管理、带凭据兜底的推送，以及 git 命令流水，全部通过原生 git CLI 执行。
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — 把 agent 的每次写入、编辑和 shell `rm` 删除记录进一个 shadow git 仓库，然后在 VS Code 里逐 hunk 接受或撤回。需要配合 dsh-review-vscode 扩展；面板只出现在 VS Code 的 webview 里，独立浏览器中的对话界面不变。
 - [TristGek/dsh-github-tool](https://github.com/TristGek/dsh-github-tool) — 侧栏里的 GitHub 工作区：用个人访问令牌登录并保持登录，浏览最近 7 天 star 最多的新公开仓库、搜索仓库，并在插件内打开带 Code/Issues 标签、分支切换、克隆地址、文件与 README 视图和 Star 的仓库页。
@@ -11089,7 +11202,7 @@ dsh plugin --profile web add dshmarket
 - [zhaohaix/DeepSeek-GitHub](https://github.com/zhaohaix/DeepSeek-GitHub) — 在 DeepSeek Harness 内完成 GitHub 授权、仓库浏览、AI 生成项目介绍与 Release 发布，所有写操作先预览再确认。
 - [zhitiaojun/dsh-auto-git](https://github.com/zhitiaojun/dsh-auto-git) — 在 DSH 每次注册新工作区时自动 git init 并补一个空提交；已在工作树内的目录会被跳过。
 - [zhu1090093659/dsh-web#packages/dsh-git-graph](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-git-graph) — 输入框上方提供 Git 分支选择器，并把分支泳道与提交历史画成图谱，沿着时间线找到任意变更。作者已将其退役并改用官方 workspace-changes 插件；已发布的 npm 包仍可安装，但不再开发。
-- [Zhucy123/dsh-update](https://github.com/Zhucy123/dsh-update) — DeepSeek Harness 源码安装版的一键更新插件：用 git ls-remote 只读比对本地 checkout 与 origin 的 dsh-v* 发布 tag，展示版本差异与发布说明，不点就不动手。更新链路依次 fetch、过四道安全闸门（必需路径、插件 peer 冲突、被删包的残留 lib/、重启后的启动日志）、暂存未提交与未跟踪改动、checkout、pnpm install、clean、build，成功后自动重启 DSH 并轮询 /ping 等新进程绑定端口再刷新页面。任一步失败自动回滚到原版本并重建，本地改动留在 stash 中不丢。同一条链路也能前滚或回退到任一历史 dsh-v* tag。网络来源可选自动（先直连再逐个试镜像）、官方直连（可填本地代理端口）或固定镜像（gh-proxy.com、ghproxy.net、ghfast.top）；自动检查支持 1 / 6 / 12 / 24 小时（默认 6），有新版时按钮带红点。界面中文、English、日本語三语，跟随 DSH 语言设置实时切换。所有 API 路由只接受本机请求。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Zhucy123/dsh-update](https://github.com/Zhucy123/dsh-update) — DeepSeek Harness 源码安装版的一键更新插件：用 git ls-remote 只读比对本地 checkout 与 origin 的 dsh-v* 发布 tag，展示版本差异与发布说明，不点就不动手。更新链路依次 fetch、过四道安全闸门（必需路径、插件 peer 冲突、被删包的残留 lib/、重启后的启动日志）、暂存未提交与未跟踪改动、checkout、pnpm install、clean、build，成功后自动重启 DSH 并轮询 /ping 等新进程绑定端口再刷新页面。任一步失败自动回滚到原版本并重建，本地改动留在 stash 中不丢。同一条链路也可回退到任一更早的历史 dsh-v* tag。网络来源可选自动（先直连再逐个试镜像）、官方直连（可填本地代理端口，同时覆盖版本检查、拉取更新与 GitHub 发布说明）或固定镜像（gh-proxy.com、ghproxy.net、ghfast.top）；自动检查支持 1 / 6 / 12 / 24 小时（默认 6），有新版时按钮带红点。界面中文、English、日本語三语，跟随 DSH 语言设置实时切换。5 个 API 路由全部注册在 DSH 共享 /api 鉴权通道（ctx.connection.fetch），由宿主统一校验 Host/Origin 信任栅栏与浏览器登录态（需要 DSH ≥ 0.2.3）。
 - [Zhucy123/source-code-mgmt](https://github.com/Zhucy123/source-code-mgmt) — DSH 网页界面的代码管理面板，五步搞定 Git 日常：① 环境检查自动检测 git/gh/ssh，缺工具一键安装（gh 支持镜像下载源加速，Windows 也可用）并带检查更新；② SSH ed25519 密钥生成/连接测试 + 一键写 443 配置绕过 22 端口封锁，Gitee 私人令牌在此配置；③ 查看仓库状态、并排 diff、暂存提交、切换分支、查看/回滚历史，一键新建仓库并推送，自动忽略超 100MB 文件；④ 列出账号名下所有远程仓库一键克隆；⑤ 五步发布 npm 包。支持 GitHub / Gitee 双平台，界面中英文跟随 DSH 设置实时切换。
 - [ZIye1208/dsh-github-mcp](https://github.com/ZIye1208/dsh-github-mcp) — 把 GitHub 官方远程 MCP server 接进 DSH：token 与工具集在「设置 → GitHub MCP」里选，值存凭据中心，改完自动重连；GitHub 工具以 mcp__github__* 形式提供。
 - [ZIye1208/dsh-github-mcp-hint](https://github.com/ZIye1208/dsh-github-mcp-hint) — GitHub MCP 辅助面板：在「设置 → 插件 → GitHub MCP」展示可复制的示例提示（30 条示例池随机 4 条）、可视化公开仓库的星/fork/语言，并提供 gh_repo_stats / gh_current_user 模型工具。
@@ -11103,6 +11216,7 @@ dsh plugin --profile web add dshmarket
 - [11ze/dsh-session-bell](https://github.com/11ze/dsh-session-bell) — 回合结束、有提问等待回答或有审批等待决定时各发一条桌面通知。每类事件可单独开关；子代理会话不发通知；点击通知打开对应会话。走页面自带的 Notification API，不需要辅助程序或安装时注册。
 - [3150481853/molly-qq-whale#dsh-qq-whale](https://github.com/3150481853/molly-qq-whale/tree/main/plugin/dsh-qq-whale) — 基于 OneBot 11 / NapCat 的 QQ 通道：跨会话保持同一人设并带长期记忆，在群聊和私聊里接话，会发表情包、会发语音，另附一个本地 Web 控制台，能看见她此刻在做什么。人设与记忆文件由你自己写，仓库只提供样例。
 - [423324324/dsh-complete-chime](https://github.com/423324324/dsh-complete-chime) — 一轮任务真正跑完时播放提示音或一小段旋律：五种合成音色加自定义音频上传，可选语音播报、可选系统通知，子代理任务可单独开关，设置持久化在宿主侧。
+- [4Nz/dsh-agent-relay](https://github.com/4Nz/dsh-agent-relay) — 将 DSH 与本机 Claude Code、Codex 和 Antigravity 会话相连，支持进度关注、双向通知与跨 Agent 任务接力。
 - [534119219/chicheng-push](https://github.com/534119219/chicheng-push) — DSH 多渠道消息推送插件：支持 Server酱、PushPlus、Bark、钉钉、企业微信、Telegram、飞书、ntfy、自定义 Webhook 等，可在设置面板配置多个渠道，并通过 pushNotifier 服务供其他插件调用。
 - [534119219/dsh-messaging#messaging-core](https://github.com/534119219/dsh-messaging/tree/main/packages/messaging-core) — DeepSeek Harness 的统一消息网关：一个插件接入 27 个 IM 平台（Telegram、QQ、微信、Discord、WhatsApp、飞书等），支持扫码授权、每平台独立工作区、斜杠命令与 Web 配置弹窗。
 - [593682963wd-wq/dsh-tibo-reset-watch](https://github.com/593682963wd-wq/dsh-tibo-reset-watch) — 右上角卡片：盯 Tibo（@thsottiaux）在 X 上的新帖与回复，自动配中文译文，重置类消息加标；支持追加 JSON 数据源，Host 侧抓取与翻译，不消耗对话 token。数据来自第三方文字镜像 tiboreset.com 而非 X 本身（有数分钟延迟，仅文字）；翻译走宿主翻译服务，帖子文字可能经公共翻译服务商，把 translate 设为 false 可只留本地。
@@ -11222,6 +11336,7 @@ dsh plugin --profile web add dshmarket
 - [GuoFengyu110429/dsh-high-fee-alert](https://github.com/GuoFengyu110429/dsh-high-fee-alert) — 自动获取分时电价数据（按北京时间），在高峰时段提醒用户，以降低用电成本。
 - [gusu45/dsh-wechat-persistent](https://github.com/gusu45/dsh-wechat-persistent) — DSH 的持久微信桥：一个微信用户对应一个持久智能体会话，走官方 iLink 通道，上下文与用户→会话映射在重启后保留。没有发送者白名单——任何能给所配对微信号发消息的人都能发起对话并获得拥有工具权限的会话，工作目录默认是用户主目录；请使用专用账号并设置 WECHAT_PERSISTENT_CWD。
 - [gyxsza/approval-alert](https://github.com/gyxsza/approval-alert) — 当有工具请求权限审批时播放提示音并弹出系统通知。
+- [haidanQAQ/dsh-session-push](https://github.com/haidanQAQ/dsh-session-push) — 面向 DeepSeek Harness 的推送插件：会话持续达到设定时长后结束时推送会话开头，提问框或审批框等待回应超时后推送问题本身。支持 Bark、Server酱 与自定义 Webhook。
 - [Hakuno410/dsh-board-bridge](https://github.com/Hakuno410/dsh-board-bridge) — 多个 DSH 会话与一个人共用的留言板；有人写新话就直接作为用户消息投进目标会话，不用切窗口喊人。
 - [hanmoxu9/dsh-taskbar-glow](https://github.com/hanmoxu9/dsh-taskbar-glow) — DSH 桌面版在后台跑完一轮、或等你审批 / 回答时，闪烁 Windows 任务栏图标。
 - [Hanson0901/dsh-line-bot](https://github.com/Hanson0901/dsh-line-bot) — 把 DeepSeek Harness 接到 LINE 的橋接外掛：內建簽章驗證的 webhook 伺服器、Cloudflare Tunnel（quick URL 或 API Token）、自動把 LINE webhook 端點指向目前的隧道、每位 LINE 使用者獨立 session 與可選人設，並可排程主動傳訊。需要 LINE Messaging API 頻道（Channel ID／Channel Secret）；只有白名單內、或在面板核准的使用者能與機器人對話。
@@ -11242,6 +11357,7 @@ dsh plugin --profile web add dshmarket
 - [HMYDK/dsh-notify](https://github.com/HMYDK/dsh-notify) — 会话完成一轮任务或需要你审批时，弹出系统桌面通知。
 - [HonestShine/dsh-desktop-notify](https://github.com/HonestShine/dsh-desktop-notify) — DSH 的原生桌面通知。仅支持 Windows / macOS 桌面端（DSH Web 不在支持范围）。窗口在后台时权限确认直接出现在系统通知里；平台支持通知按钮时，点「拒绝 / 允许一次」即把结果交回宿主审批流程，切回窗口或超时则退回应用内审批面板。权限确认与提问还会播放独立于窗口焦点的交互提示音；任务完成、提问、错误提醒、通知铃声与提示音都在「通知提醒」设置页配置。
 - [HOPE-LGNF/dsh-state-notifier](https://github.com/HOPE-LGNF/dsh-state-notifier) — 为 DeepSeek Harness 提供五类任务状态提醒（完成、审批、提问、受阻、出错）：四种浏览器合成音方案、可在通知中显示提问正文、可选的原生 Windows/WSL 通知通道（可越过专注助手），没有就绪浏览器时降级为终端 BEL。
+- [HowardXue7790/dsh-approval-notify](https://github.com/HowardXue7790/dsh-approval-notify) — DSH 请求审批时弹 Windows 通知，正文由模型改写成一句大白话，通知上带允许和拒绝按钮；点通知正文会把 DSH 抬到前台并交回网页卡片。
 - [hoyin-law/dsh-feishu-cli](https://github.com/hoyin-law/dsh-feishu-cli) — 通过飞书官方 lark-cli 接入 DeepSeek Harness：侧边栏面板完成应用初始化与扫码登录，内置命令控制台，并提供 Agent 工具执行任意 lark-cli 命令，覆盖 18 大业务域、200+ 高层命令与全量 OpenAPI；首次使用时自动下载对应平台的官方 CLI（Windows / macOS / Linux）。
 - [hsiu1214/dsh-a2a-notify](https://github.com/hsiu1214/dsh-a2a-notify) — 会话生命周期事件（新建 / 运行中 / 完成 / 出错）的 Windows 气泡通知，覆盖所有工作区；还会监听会话存储，捕捉事件从不经过宿主总线的无头与 A2A 派发会话。仅支持 Windows。
 - [HughPython/dsh-tc-mail](https://github.com/HughPython/dsh-tc-mail) — 腾讯智能体邮箱（Agent Mail）客户端：侧边栏面板浏览收件箱与发件箱，HTML 正文在沙箱内渲染并默认拦截外链图片，支持写信、回复、转发、附件收发、搜索与永久删除，可调字体与界面透明度；另注册 5 个工具（mail_health、mail_list、mail_read、mail_search、mail_send），发信走已授权的 agently-cli 账号。需腾讯账号（设备码授权），面板可一键安装 agently-cli；仅在 Windows 上实测。
@@ -11473,7 +11589,7 @@ dsh plugin --profile web add dshmarket
 - [wphhyan/dsh-approval-notify](https://github.com/wphhyan/dsh-approval-notify) — DSH 的 Agent 停下来等你时，弹一条 macOS 通知中心横幅：需要授权的工具调用、ask_user_question 提问、会话跑完一轮、会话出错四个时刻，各有开关与提示音；横幅由自带的 DSH Notify 发送、可点击并切回 DSH，完成提醒可按前台判断或系统空闲时间（60 秒）触发，多个会话同时结束会合并成一条，出错提醒有上限，设置页中英双语并提供测试通知、自检与「Open DSH」动作。
 - [wsxwj123/dsh-plugins#dsh-pet-bridge](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-pet-bridge) — dsh ↔ cc-pet 桌面宠物状态桥：把会话状态（思考中 / 读取文件 / 运行命令 / 完成）实时推送到桌面宠物气泡。npm 包名 `dsh-pet-bridge`。
 - [wsz987/dsh-channels#channels](https://github.com/wsz987/dsh-channels/tree/main/packages/channels) — 将微信、QQ、钉钉、飞书和 Telegram 接入 DeepSeek Harness，提供统一配置、私聊与群聊访问范围管理，以及渠道内 Agent 对话和会话指令。
-- [wunankun/dsh-task-traffic-light](https://github.com/wunankun/dsh-task-traffic-light) — 贴在屏幕边上的 macOS 红绿灯：会话在跑亮红灯，有东西等你亮黄灯，跑完还没看亮绿灯；点亮着的那盏灯会跳到对应会话。
+- [wunankun/dsh-task-traffic-light](https://github.com/wunankun/dsh-task-traffic-light) — 运行在 macOS 上的红绿灯：不用切回 DeepSeek Harness，也能知道每个任务是在跑、在等你，还是已经跑完；点一下亮着的那盏灯，就回到对应会话。
 - [wuuuuu123-32/dsh-mailbox-notify](https://github.com/wuuuuu123-32/dsh-mailbox-notify) — 耗时较长或工具调用较多的任务结束时发邮件到手机，出错、目标完成或目标受阻也发；审批或提问挂起超过设定时间没人处理会另外提醒（正文带问题原文与候选项，提醒不依赖任务档位）。每封新通知会通过 IMAP 删掉收件箱里的上一封，收件箱里最多留一封；其它文件夹不扫描。
 - [wz-heng/dsh-feishu-bridge](https://github.com/wz-heng/dsh-feishu-bridge) — Fail-closed 的飞书（Lark）channel 桥：和机器人聊天即驱动 dsh agent turn，可选人在环工具审批（每次 bash 调用前飞书弹 Allow/Deny 卡，超时默认拒绝）。仅经官方 Python SDK 集成（精确锁版）；白名单默认全拒、webhook 验签/时间窗/防重放、按 chat 粘性会话；每日最新 SDK 兼容金丝雀；中英双语文档。
 - [X-Xyy/dsh-auto-email](https://github.com/X-Xyy/dsh-auto-email) — 每日 AI 三报：抓取 10 个信源（OpenAI、Anthropic、Google DeepMind、Hugging Face、arXiv、Hacker News 等），语义聚类去重，程序打分加 LLM 打分，每天定时把选出的三条发到邮箱，并附「事实／为什么重要／影响／存疑」四段解读；另提供 4 个对话工具与侧边栏面板，用于预览、立即发送和改配置。
@@ -11535,7 +11651,7 @@ dsh plugin --profile web add dshmarket
 - [zhengjy01/dsh-ticktick](https://github.com/zhengjy01/dsh-ticktick) — 基于官方 OAuth Open API 双向同步滴答清单（TickTick/Dida365）任务：拉取各清单任务、创建/更新/完成/删除、按标题去重的一键同步，带 Web 设置面板。
 - [zhiquanchi/dsh-mac-notifications](https://github.com/zhiquanchi/dsh-mac-notifications) — 为 DeepSeek Harness 提供原生 macOS 通知中心提醒：智能体需要你做出选择、任务完成或任务失败时弹出通知，可在配置中分别开关、在后台任务运行时抑制完成提醒，点击通知可直接跳回对应会话。
 - [zhnew2/health-reminders](https://github.com/zhnew2/health-reminders) — 久坐健康提醒：每 60 分钟提醒喝水、每 30 分钟提醒起身站立，安装即默认开启。
-- [zhou200310/dsh-imessage](https://github.com/zhou200310/dsh-imessage) — photon-hq/dsh-imessage 的 DSH 0.2.2 适配版：同样是 Photon 托管的双向 iMessage 通道，修好了在 0.2.2 上的断层——settings 注册方式、会话持久化读取、消息 source kind、冷启动后 listener 自动恢复、插件新建会话的工作区挂载；附件双向打通。设置页面已全中文。
+- [zhou200310/dsh-imessage](https://github.com/zhou200310/dsh-imessage) — photon-hq/dsh-imessage 的 DSH 0.2.3 适配版：Photon 托管的双向 iMessage 通道，0.2.2 与 0.2.3 两条版本线都能跑——settings 注册方式、会话持久化读取、消息 source kind、冷启动后 listener 自动恢复、iPhone HEIC 转 JPEG、语音条，\[音频] 也发成真语音条。已声明 engines.dsh，升级到 0.2.3-alpha.2 不再被跳过。设置页面全中文。
 - [ZIye1208/dsh-approval-voice](https://github.com/ZIye1208/dsh-approval-voice) — DSH Web GUI 中出现审批、提问或计划审批弹窗时，播放提示音并中文语音播报，避免漏看待处理请求。
 - [zjbc2000/attention-plugins](https://github.com/zjbc2000/attention-plugins) — 面向 DSH 的任务分级会话通知：标记的主线任务完成或失败时立即提醒，其余会话汇总为一声；另有逐条提醒的均衡模式与完全不响的静音模式（提问与权限请求仍提醒）。支持每类事件独立音效或自定义音频、按会话静音、点击通知直达会话，以及等待子代理结束再提醒。
 - [zjhaaa042-cloud/dsh-mobile-notify](https://github.com/zjhaaa042-cloud/dsh-mobile-notify) — DSH 任务停下来时把通知推送到手机，支持 10 个渠道：ntfy、Bark、钉钉、企业微信、飞书、Server酱、PushPlus、Telegram、Qmsg 与通用 webhook；消息里带会话、目录、耗时、回合号与回复摘要，运行在 Host 侧而不是浏览器页面里。
@@ -11621,6 +11737,7 @@ dsh plugin --profile web add dshmarket
 - [Arthas1in/dsh-net-hosts](https://github.com/Arthas1in/dsh-net-hosts) — 看清本机每个软件在连哪些 host：经本地 Clash/mihomo 还原真实域名，并给出精确到秒的首次/最近时间。
 - [asdf17128/dsh-doctor](https://github.com/asdf17128/dsh-doctor) — 注册 `config_doctor` 工具，检查 harness 自身配置里那些会静默通过启动的问题：patch 整体替换 config 而丢失的字段、指向不存在 entry id 的 patch、工具重名冲突。只读。
 - [asdf17128/dshp](https://github.com/asdf17128/dshp) — 注册 `list_profiles` 与 `export_profile`：让 agent 列出本机有哪些配置，并把整套 profile（bundle 顺序、插件版本、patch）导出成一个可直接分享的文件。只读。
+- [augustineclark10145-star/dsh-chat-idea-jump](https://github.com/augustineclark10145-star/dsh-chat-idea-jump) — 在 DSH 聊天里按行打开文件引用：点击路径即可选右侧栏或本机已装编辑器，支持 IntelliJ IDEA、VS Code、Trae、Qoder、CodeBuddy、Sublime Text 与 Typora。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [avego/dsh-api-monitor](https://github.com/avego/dsh-api-monitor) — 在右侧栏标签页里查看宿主发出的 API 调用：URL、方法、所有请求头、JSON 请求体与响应，把流式回复拼成可读文本，并在每个视图里高亮搜索结果。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [aXYer-SI/dsh-architecture-trace](https://github.com/aXYer-SI/dsh-architecture-trace) — 把一次 DSH 任务的完整过程记录成 Markdown（系统提示、请求头、每次模型调用与流式回答、工具调用、耗时与首字延迟），用来看清一轮任务如何编组，并横向比较模型。
 - [ayahunter/dsh-plugin-clinic](https://github.com/ayahunter/dsh-plugin-clinic) — 已安装 DSH 插件集合的只读体检诊所：加载健康、依赖完整、版本兼容、安装脚本风险、重复与 patch 引用，交付模型工具、设置面板与 JSON 报告。
@@ -11669,6 +11786,7 @@ dsh plugin --profile web add dshmarket
 - [chenkai2/dsh-daemon](https://github.com/chenkai2/dsh-daemon) — 将 DeepSeek Harness 的 web 服务（dsh web）注册为自启动、自愈的后台服务：LaunchAgent / systemd / cron 加 30 秒健康检查 watchdog，并提供 7 个 dsh_daemon_* 工具（安装/卸载/重装/状态/启动/停止/更新）。
 - [chenkui-luo/dsh-plugin-restart](https://github.com/chenkui-luo/dsh-plugin-restart) — 在设置页增加「重启」卡片：一键把重启交给 DeepSeek Harness 启动器（`Launch-DeepSeekHarness.ps1`）替换正在为页面提供服务的 web 进程，新实例就绪后页面自行重连。仅支持 Windows；缺少该启动器时按钮会报错，而不是完成重启。
 - [chenxiaojie1009/dsh-console](https://github.com/chenxiaojie1009/dsh-console) — 串口与 SSH 设备控制台：面板内模型按需求生成命令、执行前确认、中文注释与输出解读。
+- [ChongYuGit/dsh-rider-mcp](https://github.com/ChongYuGit/dsh-rider-mcp) — 把 DeepSeek Harness 接到 JetBrains Rider 内置的 MCP server，并给每个会话一个项目选择器、一个连接徽标和 mcp__rider__* 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [chouyong/dsh-effect-doctor](https://github.com/chouyong/dsh-effect-doctor) — 隔离插件卸载后验证 Cordis 管理的运行时资源是否回到基线，并生成确定性清理回执。
 - [chrischjh/dsh-copilotkit](https://github.com/chrischjh/dsh-copilotkit) — 为 DSH 提供官方 CopilotKit skills 与文档 MCP，详情页可一键自检并自动修复 MCP 行。
 - [chunfenxiazhi-collab/dsh-stability-audit](https://github.com/chunfenxiazhi-collab/dsh-stability-audit) — 已安装 dsh 插件的稳定性审计：静态风险分级（钩子面/启动任务/inject/入口/依赖区间）加可选隔离安装验证。
@@ -11679,7 +11797,7 @@ dsh plugin --profile web add dshmarket
 - [Codenestra/deepseek-harness-plugins#dsh-plugin-doctor](https://github.com/Codenestra/deepseek-harness-plugins/tree/main/plugins/dsh-plugin-doctor) — 插件健康诊断、冲突检测、依赖兼容性、安装历史与带审计记录的禁用和恢复。
 - [coldrainthreeautumnleaves/dsh-concierge](https://github.com/coldrainthreeautumnleaves/dsh-concierge) — DSH 维护中心：检测应用与插件更新、更新与回退插件、监控 GitHub 来源，让长对话保持流畅，并提供可选的玻璃皮肤。
 - [comer2031/dsh-desktop-auto-restart](https://github.com/comer2031/dsh-desktop-auto-restart) — 重启 Windows 上的 DSH 桌面端，并在重启后唤醒清单里指定的会话。面向 agent 的重启工具默认关闭，宿主繁忙时拒绝重启。
-- [compilink/dsh-docker-upgrade-plugin](https://github.com/compilink/dsh-docker-upgrade-plugin) — 在 DSH Web 设置中查看 Docker 升级状态和下次计划检查时间，并向另行配置的宿主服务提交源码检查或升级请求。
+- [compilink/dsh-docker-upgrade-plugin](https://github.com/compilink/dsh-docker-upgrade-plugin) — dsh-bundle-docker-upgrade 可在 Mac 上自动发现兼容的 Docker Compose 部署，支持手动或定时从官方源码升级 DSH。
 - [cq-guojia/rulemux#dsh-plugin](https://github.com/cq-guojia/rulemux/tree/master/dsh-plugin) — rulemux 的 DeepSeek Harness 插件：通过 rulemux inject --agent dsh 取当前工作区渲染出的规则，在每次会话的首条用户消息时把输出注入一次。规则不往工作区写任何文件；只有技能会落盘。
 - [CresBigB/dsh-oracle-gate](https://github.com/CresBigB/dsh-oracle-gate) — DSH 验收闸门：动手前把验收判据冻结成 oracle 账本，之后只认真实执行回执——冻结后被改过的文件直接拒绝执行，硬门失败时人工放行也无效。
 - [csuwzw/dsh-restart](https://github.com/csuwzw/dsh-restart) — 在 DeepSeek Harness 标题栏加一个重启按钮，让新安装的插件生效：第一次点击进入确认态，第二次点击结束当前桌面实例并重新拉起可执行文件。重启由 WMI 创建的 PowerShell 脚本执行，处于应用的 job object 之外，且不弹出控制台窗口；每一步写入 $DSH_HOME/logs/dsh-restart-plugin.log。仅支持 Windows 桌面版。
@@ -11692,6 +11810,7 @@ dsh plugin --profile web add dshmarket
 - [DaJiang07/dsh-plugin-backup](https://github.com/DaJiang07/dsh-plugin-backup) — 换机迁移 DSH profile，连插件本身一起：把插件包选择与整个配置层打包成一个 JSON 文件，恢复时写回配置、还原本地插件源码与插件数据，并安装备份里记录、新机器缺失的插件包（优先插件管理器，失败回退 pnpm）。
 - [DamonKoy/dsh-plugin-toggle](https://github.com/DamonKoy/dsh-plugin-toggle) — 设置→插件开关面板：每个已加载插件的卡片显示简述与运行阶段，支持模糊搜索与运行时启动/关闭（不改写配置文件）。
 - [DamonKoy/dsh-plugins#dsh-system-proxy](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-system-proxy) — 系统代理检测（scutil/env/PAC）：状态工具 + proxy_export 导出 bash 代理片段。
+- [DAnonyvinciT/dsh-preset-composer](https://github.com/DAnonyvinciT/dsh-preset-composer) — 在设置页以插件树编辑 DSH Agent 预设，为每个插件提供参数表单，并支持自定义预设。
 - [DanYikona/DSH-script-hub](https://github.com/DanYikona/DSH-script-hub) — 把任意会话里写出的脚本归档到按类别分好的目录，逐个生成 Markdown 文档，并能启动/停止、按真实进程与计划任务核对状态。
 - [daoyan2142/dsh-plugin-git-sync](https://github.com/daoyan2142/dsh-plugin-git-sync) — 把 DSH 配置档里已安装的第三方插件连同源码打包成 tarball 推送到 GitHub 或 Gitee 仓库；另一台电脑拉取清单、比对版本，只安装缺失或过期的插件。需要对该仓库有写权限的个人访问令牌（存于 DSH 凭据服务）；压缩包含各插件已安装的源码，建议使用私有仓库。
 - [daoyan2142/dsh-repot](https://github.com/daoyan2142/dsh-repot) — 通过一个私有 GitHub / Gitee 仓库在机器之间搬运 DSH 环境：第三方插件（按版本重装，或携带 tarball / 源码目录）、四个 profile 配置文件、以及文件夹快照。还原时逐文件比对，本机改过的文件不覆盖，被替换的文件先备份，并按绝对路径、已登记的根、或显式确认三级解析落点；逃出根、穿越 junction、覆盖非本插件目录的写入一律拒绝。配置文件和文件夹内容原样上传（不做密钥脱敏），插件也不检查仓库是否私有；访问令牌保存在凭据服务里，首次启动会把 dsh-plugin-git-sync 留下的 GIT_SYNC_* 令牌复制过来。需要 Node 22.12 及以上。
@@ -11757,6 +11876,7 @@ dsh plugin --profile web add dshmarket
 - [FuriousKinght/dsh-fk-rollback](https://github.com/FuriousKinght/dsh-fk-rollback) — DSH 配置快照与回滚：危险操作前自动留痕，附带独立还原脚本，DSH 起不来时也能救回。仅 Windows；还原脚本为 .bat，需 Node.js。
 - [Fuxfantx/dsh-startup-command](https://github.com/Fuxfantx/dsh-startup-command) — 在 DSH 启动时按用户设定的顺序运行启用的 PowerShell、CMD、Bash 与 Python Preset，在左侧边栏页查看所选 Preset 的实时输出，并在停止、重启、停用、删除或退出时结束对应进程树。
 - [fuyue521/dsh-desktop-shortcut](https://github.com/fuyue521/dsh-desktop-shortcut) — Windows 桌面快捷方式：一键启动 dsh web，就绪后自动打开浏览器，关闭 Harness 窗口即停服务。
+- [G-TY/dsh-restart-refresh](https://github.com/G-TY/dsh-restart-refresh) — 用侧栏 DSH 标志旁的两个图标重启或退出桌面端（正常关闭不是强杀，不会响系统提示音与报错），再用对话右上角的按钮刷新页面和热更新插件代码。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [G57651/dsh-one-click-restart](https://github.com/G57651/dsh-one-click-restart) — DeepSeek Harness 一键重启：侧边栏按钮、模型工具与独立守护进程。
 - [gabrielbav/dsh-workspace#dsh-code](https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-code/packages/dsh-code) — 自托管的 Codex 云端式编码会话：选择 GitHub 仓库和分支，每个会话都有独立的检出和分支、所构建应用的实时预览和环境标签页，全部运行在 gVisor 沙箱中（非 root、无 capabilities、无 Docker 套接字），流量经过出站白名单，新主机由你逐个批准；你的 GitHub 令牌从不进入沙箱。可在本机或通过 SSH 在你自己的虚拟机上运行。
 - [GeekRicardo/dsh-cordis-mcp](https://github.com/GeekRicardo/dsh-cordis-mcp) — 把 DSH 的动态 Cordis 工具集以 MCP（streamable HTTP，挂在现有 web 端口上，不新开监听）暴露给 Claude Code：10 个工具，可列出、查看、定义、运行、停止与永久删除某个活 DSH 会话里的动态插件；含 client half 的包仍走 GUI 那套审批流。强制 Bearer 认证——token 在 DSH 设置页配置，未配置时端点直接 503 而不是降级放行，只接受回环访问，且永不返回 CORS 头。
@@ -11848,7 +11968,7 @@ dsh plugin --profile web add dshmarket
 - [k0ndrateff/dsh-plugins#sentry](https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/sentry) — 把 Sentry 接进 DeepSeek Harness：提供 Sentry MCP 服务器的工具、结果卡片，以及可解决、忽略与指派的问题面板。
 - [kaine380/dsh-mcp-unified-panel](https://github.com/kaine380/dsh-mcp-unified-panel) — 一站式 MCP 与技能管理中心，支持特征识别与原生 OAuth 2.1 浏览器鉴权。
 - [kanneiren/dsh-network-settings](https://github.com/kanneiren/dsh-network-settings) — 可视化 DSH 进程在 Windows 或 WSL 上的网络链路（DNS/TCP/TLS/HTTP 分层探测），检测失效的代理配置，并提供带快照回滚的安全修复。
-- [kasshuang/dsh-plugin-profile-sync](https://github.com/kasshuang/dsh-plugin-profile-sync) — 通过私有 GitHub 仓库或同步文件夹，在多台机器之间同步已装插件列表与白名单内的插件设置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [kasshuang/dsh-plugin-profile-sync](https://github.com/kasshuang/dsh-plugin-profile-sync) — 通过私有 GitHub 仓库或同步文件夹，在多台机器之间同步已装插件列表与白名单内的插件设置。
 - [KDreamelf/dsh-phoenix](https://github.com/KDreamelf/dsh-phoenix) — 进程内崩溃兜底：接管本该让 DSH 退出的致命错误处理器，从栈里认出是哪个插件，只在 home 层停用那一行——profile 与里面的供应商配置一个字节都不写。崩溃页给出恢复、保持禁用、卸载三个选择；认不出是谁时，开一个临时的安全模式会话（仅命令行与 web 启动）。
 - [kelvin0304ykx-coder/dsh-task-readiness](https://github.com/kelvin0304ykx-coder/dsh-task-readiness) — 开工前检查当前会话能否真正执行一项任务：本轮工具准入、模型路由、工作区写入边界、文档引擎与 MCP 可见性，逐项给出状态与依据；可选最小探测，并在经批准的处理后复检。
 - [kennethfan/dsh-sandbox-tune](https://github.com/kennethfan/dsh-sandbox-tune) — 让构建命令直接在 DSH 沙箱内跑通，不再每次申请提权：把纯缓存（GOCACHE、NPM_CONFIG_CACHE、BUN_INSTALL_CACHE_DIR、PIP_CACHE_DIR）重定向到临时目录，或原地授权真实缓存目录以与终端共用。依赖仓库（GOMODCACHE、CARGO_HOME）永不重定向，只做授权。另提供可选的用户目录授权（~/.config 等，默认全关）与命令白名单：支持逐字符匹配，或按 &&、||、;、| 拆段后逐段匹配，写文件的重定向（fd 复制如 2>&1 与 /dev/null 除外）、命令替换与后台执行一律拒绝。配置支持按 profile 或按会话生效，改配置文件无需重启。
@@ -11880,7 +12000,7 @@ dsh plugin --profile web add dshmarket
 - [Leo-Ayh-Oday/dsh-orcana#dsh-bundle](https://github.com/Leo-Ayh-Oday/dsh-orcana/tree/main/packages/dsh-bundle) — DeepSeek Harness 运行时治理器：零进展回合引导、按代际绑定的验证证据、基于证据的完成守卫，以及按任务配置限制工具集。
 - [leo666-cloud/dsh-miniprogram-helper](https://github.com/leo666-cloud/dsh-miniprogram-helper) — 微信小程序工程工具：体检扫出没写进 app.json 的页面，建页面时自动注册，一键修复孤儿页，管理分包、tabBar 与组件，并可调用微信开发者工具出预览二维码、上传体验版。
 - [LeoGoat2004/dsh-eval-harness#dsh-eval-harness](https://github.com/LeoGoat2004/dsh-eval-harness/tree/main/dsh-eval-harness/packages/dsh-eval-harness) — DeepSeek Harness 的诊断型评测插件：冻结已确认的 Harness 配置，跑一遍基准测试，保留完整会话轨迹，并把失败归因到模型、Harness、基准或环境。
-- [Leonlee114514/dsh-better-debug](https://github.com/Leonlee114514/dsh-better-debug) — 模型打转时，在下一步之前追加一条简短用户消息：同一绝对路径连续写了三次而中间没有任何测量落地、同一个错误 episode（工具、目标、归一化指纹）第二次出现、或一次写入后过了两步仍无测量——第三种只先上膛，消息在**下一次写入之前**才落，不打断阅读。测量拆成两态：调用时按工具参数判意图，结果回来了才清零，且只清与该命令目录相关的文件。失败的测试同样算测量，因为它给出了错在哪一行。硬测量是 `lsp_diagnostics`、`verify`、`run_tests`、`run_test`；`ops_bash`、`bash`、`shell`、`pwsh` 只有命令命中测量模式才算，所以 `ls` 不再能洗白盲改计数。每条信号每个 episode 一次，真测量后重新武装，每回合有总预算；`present` 成功后闸门休眠到下一次写入；子会话跳过。生成物（构建产物、锁文件、日志）不计入；错误目标能从真实的 `file:///` ESM 栈里读出来，两个不同文件不会塌成同一个 episode；`cd <目录> && 命令` 算那个目录的测量，不再算成它的父目录。自带 `stuck-gate` 技能（bundled rank 600，用户级 400 的同名技能可覆盖措辞），并附只读观测面板 `/better-debug`：数触发次数、覆盖会话、每条消息之后第一个动作的六类分布、以及真正闭合的测量回路数量。日志默认写 `$DSH_HOME/logs/better-debug.log` 并在首次写入时创建，装完面板就有数据。可选宿主服务走动态订阅，缺少它们的宿主也能正常加载。不估算省下的 token，也不声称这条消息导致了改变。面板横幅只数最近一次加载之后的失败（`log.current`），历史里挂过一次不会再显示成「当前被关闭」。测试读日志改成等条件、不等固定时长（0.2.5 只有测试改动，行为不变）。 面板自带亮/暗两套调色板，并读宿主文档来选，因此在 iframe 里也能跟随应用主题，不会退回深色。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。0.3.1 让方案层三条判据在健康的工作上不再误报：补丁链改成比较**失败条目集合**而不是只数轮次，所以「lint 一批错越修越少」和「逐个修互不相干的文件」都不再算成补丁链，同时删掉了与证据不符的那句措辞；错误目标改为认十种编译器方言（tsc、cargo、pytest、go、webpack、mypy、C# 与 Windows 反斜杠路径），不再只认 ESM 栈，所以不相干的项目永远不会落进同一族，而读不出路径的报错直接不进族、不再汇成一个匿名族；振荡的静音按回路记，一条回路安静下来不会再重新武装另一条；搜索只对搜索之前出现的指纹免疫。七条反例先写、在 0.3.0 上全部失败，修复后才通过。 0.3.2 补上深审在 0.3.1 里查出的六处状态机缺口。失败的测量（`isError:false`、退出码非零）现在单独记重复 episode，于是「同一个失败一字未变地重复八轮」不再全程沉默；这类 episode 只在连续失败时累加，因为「失败→绿→同一失败」是振荡、归 O 管。搜索免疫改成计数基线，不再是一次搜索终生免责。补丁链在失败集合一字未变时清零而不只是暂停，`movedSite` 改比本 turn 见过的所有目标，`A→B→A→B` 不再每轮清零。振荡的身份改用失败条目集合，一行无关 warning 不再把同一失败藏起来。M 移到通用幂等提前返回之前——它最该说话的时刻（提醒过、随后既没写入也没新错误）恰好被幂等闸吞掉。用例数 73 → 79。 0.3.3 修掉第二轮深审在 0.3.2 上找出的四个缺陷。失败身份把源位置当成了语义：指纹覆盖「路径 + 位置 + 消息」整行，编辑一行就让同一个错误变成新错误，补丁链与收缩判断同时失真；现在改成结构化——先切掉路径与紧跟其后的位置，剩余消息再取指纹，消息里的数字保留语义，因为 `case-1` 与 `case-2` 绝不能合并。Python 栈帧被当成了失败本体：原先只排除 JS 的 `at ...` 行，两个不同断言共用栈帧就塌成同一条失败，健康 TDD 反过来被判成振荡；现在栈帧只贡献目标，异常消息一律并入集合，紧跟栈帧的源码回显行按结构识别并跳过。O 比较整集合相等，于是 `{A}→{A,B}→{A,C}` 永远不响；现在保留最近四次失败集合，条目有交集即算复发。失败测量不推进幂等状态，`失败 → 提醒 → 再失败到阈值` 里的第二次提醒被当成「什么都没变」挡掉；新增单调 `failSeq`。用例数 79 → 89。 第三轮深审（0.3.4）修掉五处解析层缺陷，它们出自同一个缺口：前两轮一直在给具体形态补正则，而没有先给行分类。根目录裸文件名 `a.ts(12,9)` 抽不出目标，行号一漂就成了新失败；绝对路径遇空格被截断（`C:/work/My Project/src/a.ts` 变成 `c:/work/my`）；webpack 的空格分隔位置范围 `./src/index.js 5:0-20` 没被剥掉；任何含路径的行都进失败集合，于是 ESLint 的 warning 变量名每轮在变、错误本身一字未动，P 却说「修出了下一个错误」；pytest 的 `> assert …` 源码回显成了公共条目，O 因此把健康 TDD 读成「旧失败回来了」。现在一行先分类再决定是否进集合：只有 error 算失败，栈帧只贡献目标，`E` 行是诊断本体，`>`/`<` 与栈帧块内的缩进行是回显，warning 列与聚合汇总一律不进；严重级别只看行首那一列、不看正文，所以 `AssertionError: warning total mismatch` 这种真失败仍然算数。用例 89 → 102，新增 13 条覆盖裸文件名、带空格路径（含反例：路径后的错误消息不得被吃进目标）、webpack 位置、ESLint warning 正反两面、pytest 回显；这组在 0.3.3 上红 9 条。
+- [Leonlee114514/dsh-better-debug](https://github.com/Leonlee114514/dsh-better-debug) — 编码 Agent 的卡住检测：用事件流里的行为证据（盲改、重复报错、错误族、验证振荡、补丁链、干预失效）判断是否陷入无效迭代，并在下一步之前注入一条观察与恢复建议。不调 LLM、不改 agent loop、不解析模型输出。
 - [Leonlee114514/dsh-turn-cleanup](https://github.com/Leonlee114514/dsh-turn-cleanup) — 本轮刚写下的临时文件没清完，这一轮就结束不了。留在 .agent-tmp/ 约定目录里的东西一律直接报出；本轮真实写入的路径则要命中临时件模式、落在会话 cwd 之内、且文件此刻仍在才报——所以工作区里早就躺着的垃圾不会被算成本轮的问题。清单交回模型时给两条出路：删掉，或者逐条说明理由后挪到明确位置。每轮只拦一次，子会话跳过，除非显式开启备份清理，插件自己不删文件。面板统计拦截次数、已清文件数、释放空间与依从率。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Less410/dsh-aidevops](https://github.com/Less410/dsh-aidevops) — 把 AI DevOps 控制台接入 DeepSeek Harness，提供平台健康检查、智能体交付状态、已同步云资源与交付任务等原生工具；应用创建防重，智能体交付复用已有应用。
 - [LFY-bot/dsh-api-probe](https://github.com/LFY-bot/dsh-api-probe) — 侧边栏体检第三方 LLM 接口：四层检查（DNS/TCP/TLS、Key 与模型、真实流式对话、连测多轮），报出首字延迟、输出速度与成功率；失败时标明卡在第几步、实际写出多少字节。内置 37 个服务商预设，不硬编码任何模型名。
@@ -12182,6 +12302,7 @@ dsh plugin --profile web add dshmarket
 - [wuying1630/dsh-chain-check](https://github.com/wuying1630/dsh-chain-check) — 只读诊断：DSH → 桥接 → OneBot → QQ 这条链断在哪一段——进程、端口、登录、preset、最近的唤醒失败——每一项都给出修法。可以直接 `node check.mjs` 跑（默认只读；可选的 `--fix` 只把桥接 baseUrl 对齐到当前端口、拉起没在运行的桥接），也可以装成 `chain_check` 工具。
 - [wweir/dsh-advisor](https://github.com/wweir/dsh-advisor) — 自动二审：受限子会话用只读工具复核 agent 最近的工作，最多投递一条有证据支撑的提醒，没有问题则保持沉默。
 - [WwW7olFWwW/dsh-codebase-watcher](https://github.com/WwW7olFWwW/dsh-codebase-watcher) — Codebase Memory 知識圖譜的保鮮插件：比對圖譜 Branch 節點的 head_sha 與 git rev-parse HEAD、給出精確的落後提交數，只重建落後的專案且走 codebase-memory-mcp CLI（不受 MCP 工具 60 秒上限約束），逐專案監看檔案變更，並把同一份狀態呈現在設定卡片與 REST 控制面。
+- [WyankinzZ/dsh-plugin-abap-diff](https://github.com/WyankinzZ/dsh-plugin-abap-diff) — 面向 abap-adt MCP 的只读 SAP ABAP 代码变更追踪插件，维护本地影子 Git 仓库并提供内置分栏/行内 Diff 面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [wyzh0117/dsh-port-manager](https://github.com/wyzh0117/dsh-port-manager) — dsh 原生右侧栏页签：列出本机监听的端口及占用它的进程，并可对每个端口执行打开、复制地址、定位工作目录或结束进程。
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) — 开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。
 - [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) — 脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。
@@ -12325,7 +12446,7 @@ dsh plugin --profile web add dshmarket
 - [BuvkB/dsh-vaultwarden](https://github.com/BuvkB/dsh-vaultwarden) — 让任意会话直接读写自建的 Bitwarden/Vaultwarden 保险库：十一个 bitwarden_* 工具、WebSocket 实时同步（不可用时降级轮询）、readonly/ask/auto 三档写权限设置面板，以及可开启的本地脱敏——开启后密码默认以稳定占位符出现，需要时按条目+字段单次取回，落盘会话日志中的 bitwarden 明文也会被定期擦除；面板展示的密码与动态码会打码。脱敏与日志擦除是两个独立开关。
 - [CatBox215/dsh-safety-remove](https://github.com/CatBox215/dsh-safety-remove) — 把每条 shell 删除命令的目标移入本 Session 暂存夹并拒绝原命令，文件首次被覆写时保留一份副本，右侧栏分页可预览、还原、送入回收站或永久删除。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [cdxiaodong/dsh-guardian](https://github.com/cdxiaodong/dsh-guardian) — Agent 安全护栏：拦截并审计所有工具调用，命中敏感操作就要求人工确认。
-- [cengcengcai-creator/dsh-ruleset](https://github.com/cengcengcai-creator/dsh-ruleset) — 审计 agent 是否真的遵守 AGENTS.md 式规则：15 类判据基于 DSH 原生事件、红线在执行前弹审批、发现级误报标记、与基线做显著性比较（噪声大的日子不等于变差）。
+- [cengcengcai-creator/dsh-ruleset](https://github.com/cengcengcai-creator/dsh-ruleset) — 审计 agent 是否真的遵守 AGENTS.md 式规则：20 类判据基于 DSH 原生事件、红线在执行前弹审批、发现级误报标记、与基线做显著性比较（噪声大的日子不等于变差），并对规则本身给制定建议（判据能否开工前求值）支持一键采纳。已发布 npm：dsh-ruleset。
 - [ChaoJie0/dsh-tm-guard](https://github.com/ChaoJie0/dsh-tm-guard) — macOS 上 DSH 智能体的零干预权限门 —— 安装即生效。可经本地 Git 或时间机器回滚的写操作自动放行并自动打快照，拦截网络、装包、进程 / 系统管理与敏感路径读取，并记录完整审计日志（可配置启用自动清理最旧审计记录）。
 - [ChenLaoshiYF/dsh-mcpguard](https://github.com/ChenLaoshiYF/dsh-mcpguard) — 扫描 skill 与 MCP 配置中的提示注入、同形字、Unicode 隐形字符、危险 shell 与凭据泄露。
 - [chjy090/dsh-pairing-gate](https://github.com/chjy090/dsh-pairing-gate) — DeepSeek Harness 的设备配对网关：默认只监听 127.0.0.1:3443（明文 HTTP）并把请求反代到本机 http://127.0.0.1:3080，本机安装无需证书即可使用。生产/跨机/App 配对必须配置 TLS 证书（自签即可）与 https 的 publicUrl；若在前置 Caddy/Nginx 终止对外 TLS，网关自身仍须配置 tlsCert/tlsKey，并由代理以 HTTPS 回源。功能：TOTP 授权的扫码设备配对、用户名密码登录、带绝对上限的滑动会话、设备吊销、WebUI 管理面板与审计日志、含 WebSocket 隧道的反向代理。首次初始化在 WebUI 向导中完成。测试：单测 171/171、e2e 29 步。
@@ -12340,6 +12461,7 @@ dsh plugin --profile web add dshmarket
 - [Darren-Tang/dsh-provenance](https://github.com/Darren-Tang/dsh-provenance) — 为 DeepSeek Harness 插件做安装前供应链校验：在代码运行前核对即将安装的包是否与你读到的源码一致。
 - [deepestevan/dsh-delete-guard](https://github.com/deepestevan/dsh-delete-guard) — 拦截 agent 的删除命令，改为经 file_trash 工具移入 Windows 回收站；拒绝“读改写同一文件”，共享删除先复制到本地 NTFS 卷、校验并回收副本后再删原件。
 - [deepsleepAquarium/dsh-whale-post#verify](https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/verify) — 校验其他 agent 写来的信：规范字段顺序、摘要与 HMAC 校验。默认关闭；开启后，缺字段或未登记字段不放行，任何一项不过就拒收。
+- [dengmuming/dsh-cloud-sandbox](https://github.com/dengmuming/dsh-cloud-sandbox) — 为 DSH 命令、终端和 Skill 脚本提供 Docker 沙箱，支持工作目录隔离、资源限额及公平调度。
 - [devil233-ui/dsh-auto-review-default](https://github.com/devil233-ui/dsh-auto-review-default) — 让会话进入内置的 Auto review 权限预设：新建会话在创建时进入，已有的根会话在重新打开时切过去。
 - [DevilSpiderX/dsh-workspace-only-plugin](https://github.com/DevilSpiderX/dsh-workspace-only-plugin) — 把任何沙箱模式（read-only / workspace-write / danger-full-access / auto）下代理的文件访问限制在会话工作区内，越界访问一律请用户裁决；每个会话还能用 composer 旁的档位选择框把越界门禁放宽为「工作区外只读」或「完全放开」。
 - [dingchenhui0618-arch/dsh-ps-preflight](https://github.com/dingchenhui0618-arch/dsh-ps-preflight) — agent 要跑的每条 PowerShell 命令，执行前先分级：删除 / 覆盖 / 网络下载 / 触碰凭据四类必测，另加动态执行、系统改动、权限改动。判定是纯确定性规则函数——不调模型、不联网、亚毫秒，另有一条组合升级（下载+执行、凭据+外发直接判高危）。高危会停住这次工具调用等一次确认（面板队列或原生审批），拒绝或超时即不执行；中危只记录不拦。每条命令和它的判定（含脱敏后的命令原文）都追加到本地 JSONL 审计日志。引号里的危险字样当数据不当命令，-WhatIf 尊重空跑，-EncodedCommand 先解码再分析。host + client 双半、零运行时依赖、55 条规则、136 个测试。
@@ -12353,6 +12475,7 @@ dsh plugin --profile web add dshmarket
 - [DWJZ/dsh-allow](https://github.com/DWJZ/dsh-allow) — 按路径与能力（read / write / create / delete / execute）授予 shell 调用的文件权限，而不是按命令名判断。命令行的文件效果由解析得出，缺哪个能力就出审批卡片而不是一律拒绝，同一套规则还会编译成进程、它的子进程、以及命令行根本没露出来的代码共同运行其下的 macOS Seatbelt profile。会话里的「审批」标签页把审计日志读回来，显示每次判定是规则、自动复核还是人拍的板。
 - [elegant01/dsh-honey-guard](https://github.com/elegant01/dsh-honey-guard) — 在密钥离开本机前，将其确定性地替换为结构合法的蜜罐假值（OpenAI、AWS、GitHub、PEM、Bearer 模式）；支持手动标记检测器认不出的值、用户可见的显式还原、蜜罐跨会话出现时的金丝雀告警，以及可选的 JSONL 替换计数日志（只记来源与类别计数，绝不记录真实值）。
 - [Eligahyu/dsh-sentinel-scanner](https://github.com/Eligahyu/dsh-sentinel-scanner) — DSH 插件安全扫描器：只读静态审计（执行、凭据、外传、混淆、安装脚本、bundle 清单），输出 0-100 风险分。
+- [EricScottLin/dsh-plugin-repeat-tool-guard](https://github.com/EricScottLin/dsh-plugin-repeat-tool-guard) — 硬止损无人值守的工具调用空转：归一化网页抓取目标、限制重复抓取，并在单轮 60 次工具调用、30 次抓取或 15 分钟后直接结束本轮。
 - [EricStoneChina/better-auto-review](https://github.com/EricStoneChina/better-auto-review) — Codex 风格的沙箱提权自动审查：auto-mode 预设接管 Claude 样式界面的 Auto 按钮并成为新会话默认档，保留 workspace-write；由只读 spawn 审查子代理在每轮预算和拒绝熔断下返回结构化裁决。
 - [Ethan1999991231/dsh-auth-cookie-guard](https://github.com/Ethan1999991231/dsh-auth-cookie-guard) — 当一次响应里已经带上 4 条以上 dsh-auth-* Cookie 时，把更早启动绑定到其它端口的那些逐条过期；对已经撞上 HTTP 头长度上限的请求回一个顺带清掉它们的跳转，让卡住的桌面端无需手动清 Cookie 也能重新打开。是 jitianjiyan/dsh-auth-cookie-guard 的衍生版本（目录中已收录）；两者声明同名 npm 包，不能同时安装。需要 DSH 0.2.1-rc.5 或更新版本。
 - [ethanrise/dsh-privacy-gateway](https://github.com/ethanrise/dsh-privacy-gateway) — 在对话消息发给模型前，把个人信息替换为占位符（按上下文识别的中文姓名、大陆手机号与身份证号、邮箱、银行卡号，以及用户词库中的词），原文只在本机界面还原显示；并可生成 CSV/XLSX 的脱敏副本。
@@ -12366,6 +12489,7 @@ dsh plugin --profile web add dshmarket
 - [floatDreamWithSong/dsh-lifecycle](https://github.com/floatDreamWithSong/dsh-lifecycle) — 【仅支持 Web，不支持 Electron Desktop】专为 Web profile 设计；Windows 支持仅指 Windows 上的 Web 版，不是桌面应用。请勿安装到 Desktop profile，误装可能导致启动或重启失败。安装后立即刷新页面或打开 /login，旧页 401 不代表安装失败。仅未初始化的数据目录展示临时初始密码；已有密码不会因重装而清空或再次展示。首次密码在页面公开展示，终端不打印，请在受控网络立即改密。提供 Web 锁屏、密码／OTP／Passkey、持久登录和壁纸，Windows Web 支持页面一键配置电源服务。Linux/macOS 需部署独立控制服务；npm 更新限独立托管安装，停止会中断运行任务。认证内核改编自 xbzbing/dsh-auth-gateway（MIT），不能与其同装。
 - [flyhai/dsh-auto-approval-frame](https://github.com/flyhai/dsh-auto-approval-frame) — DSH 工具调用的自动审批（自动审核）与审计框架：四档规则表（拒绝／问人／AI 评审／放行）对命令审批、文件读写、网络访问与工具调用逐条拦截，能按规则自动放行或自动拒绝，疑难项交给 AI 审查或人工审批／授权；带权限档、工作区边界、敏感信息脱敏、秘密占位符回填、哈希链审计日志与台账、模拟审批设置页。目标文件只查元数据。
 - [FM112/dsh-secret-guard](https://github.com/FM112/dsh-secret-guard) — 在工具调用和 shell 命令引用凭据文件时于执行前拒绝，并在结果回传模型前脱敏 API 密钥、JWT、私钥块与连接串密码。
+- [G-TY/dsh-tokens](https://github.com/G-TY/dsh-tokens) — 把各个服务的令牌存进 DSH 凭据库，提供侧栏面板管理，并让每个会话都能用 token_vault 工具列出、读取或保存。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [gabrielbav/dsh-workspace#dsh-plugin-airlock](https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-plugin-airlock) — 让每个插件、技能和子代理组合包在禁用安装脚本的隔离区中通过 6 个安全扫描器（Cisco Skill Scanner、SkillScan、Cisco MCP Scanner、OSV-Scanner、Trivy、Gitleaks）和基于你自己 DSH 模型的可选 LLM 判定，检查提示词注入、MCP 工具投毒、有漏洞的依赖和泄露的密钥；随后放行、询问你或阻止，并确认安装的文件就是扫描过的文件。可在原版 DSH 上运行。
 - [GDWhisper/dsh-web-startup-auth](https://github.com/GDWhisper/dsh-web-startup-auth) — 替换 dsh web 启动器以允许绑定 0.0.0.0，并以账号密码登录为门槛：签名会话 cookie、/api 路由保护、设置面板认证标签页，以及轮换签名密钥使全部会话失效的重置 CLI。
 - [GEMJay118/dsh-file-integrity-check](https://github.com/GEMJay118/dsh-file-integrity-check) — 右侧栏面板：在 Windows 上扫描当前 DSH 工作区文件与目录的 Low 完整性标签（quick / deep），恢复为 Medium 并复扫验证；保留快照与恢复脚本，可处理 DACL 未给 owner WRITE_OWNER 的对象。
@@ -12443,11 +12567,12 @@ dsh plugin --profile web add dshmarket
 - [loud404/dsh-burp-mcp](https://github.com/loud404/dsh-burp-mcp) — 将 Burp MCP 接入 DeepSeek Harness，HTTP 请求默认经过 Burp Proxy，并可显式选择原扩展 HTTP API。
 - [lovezi0/dsh-workspace-acl-allow](https://github.com/lovezi0/dsh-workspace-acl-allow) — Windows 工作区预授权：为用户显式声明的工作区目录补一条完全控制的 DACL 授权项（含 dsh ≥0.1.7 沙箱启动所需的 WRITE_OWNER），消除反复出现的完全访问升权弹框。仅在新增工作区记录或插件设置页手动添加路径时授权，系统目录硬拒绝。仅支持 Windows。
 - [Luawig/dsh-cloudflare-access](https://github.com/Luawig/dsh-cloudflare-access) — 在 DSH Origin 校验 Cloudflare Access JWT，使 Settings、凭据、Agent Preset 管理与模型发现可在远程主机名下使用。
+- [Lubin-Github/stillpoint](https://github.com/Lubin-Github/stillpoint) — 面向 DeepSeek Harness 的活动感知工作区锁屏插件：支持定时（按周预设或 Cron）与手动锁屏，等待 90 秒界面空闲并在 DSH 跟踪的 Agent 与后台作业完成后卸载托管 Host .cjs 插件；使用 Argon2id + AES-256-GCM 加密导入的插件源码（上限 128 KiB，内存编译执行）与 SMTP 授权码；通过主密码与六位邮件验证码（内置 QQ 邮箱预设及自定义 SMTP）解锁，保留最近 15 天锁定日志。
 - [luokexiaoguo/dsh-redact-gateway](https://github.com/luokexiaoguo/dsh-redact-gateway) — 在模型请求离开本机前，把身份证、手机号、银行卡、邮箱、地址、客户名与密钥替换成编号占位符，响应回来自动回填；映射表加密存本机，每次替换写入带哈希链的审计日志，可导出 CSV。
 - [lvxianchao/dsh-web-guard](https://github.com/lvxianchao/dsh-web-guard) — 给 DSH Web UI 加密码登录，同时修掉反向代理导致的 403，带可吊销会话、管理页和零依赖。
 - [LWLAymh/dsh-edit-guardian](https://github.com/LWLAymh/dsh-edit-guardian) — 文件修改 diff 栏与保留/撤销汇总，以及对 bash/pwsh 危险命令的审批与标红。
 - [maburykh-gif/dsh-plugins#pii-guard](https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/pii-guard) — 在 undici 传输层对发往模型的请求做可逆脱敏：把俄罗斯个人数据（СНИЛС、ИНН、ОГРН/ОГРНИП、КПП、БИК、银行账号、俄罗斯护照、ОМС 保单、银行卡、+7 电话、邮箱、地址、姓名）与密钥类数据（API key、JWT、PEM、密码）替换为稳定占位符，并在 SSE/JSON 响应中还原原值，因此服务商只看到占位符，而智能体、工具与会话日志保留真实值。默认 fail-closed，审计日志不写原值，支持 enforce/audit/off 模式、按类别开关、自定义词典与白名单。
-- [MaRi23333/dsh-second-look](https://github.com/MaRi23333/dsh-second-look) — 为 DeepSeek Harness 提供按会话切换的日常与加强审查，日常审查按规则放行常规操作，并在覆盖整个文件等变更前交给独立模型审核。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [MaRi23333/dsh-second-look](https://github.com/MaRi23333/dsh-second-look) — 为 DeepSeek Harness 提供按会话切换的日常与加强审查，日常审查按规则放行常规操作，并在覆盖整个文件等变更前交给独立模型审核。从 0.1.6 起，设置和审查记录接口只接受经 DSH 认证的所有者访问。旧版本用户请升级。
 - [Martlet-Tech/dsh-approval-explain](https://github.com/Martlet-Tech/dsh-approval-explain) — 在审批卡片上加一个「解释」按钮：一次模型调用返回固定三行解读——做什么、读写改了什么、是否安全（风险等级加一句理由）。同时补上 `write`/`edit` 类调用详情区留白的问题——官方渲染器只读 `command` 字段，那两类调用没有该字段。
 - [maxmilian/dsh-sonarqube](https://github.com/maxmilian/dsh-sonarqube) — 面向 SonarQube Community Build 的只读工具：实例状态、分支或 PR 的项目质量阈、议题与安全热点搜索、单个热点详情，以及覆盖率、重复率或调用方指定的度量项。议题与热点结果附带标准化的位置信息，包含组件 key、文件路径、行号与文本范围。
 - [mdalboni/dsh-static-token](https://github.com/mdalboni/dsh-static-token) — 为 DeepSeek Harness Web GUI 配置固定的静态启动令牌，方便跨服务重启和反向代理访问。
@@ -12639,7 +12764,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-qq-bot](https://github.com/arrow1031-dev/dsh-qq-bot) — 把 DeepSeek Harness 接到 QQ。支持 OneBot 11/12、Satori、Milky 与 QQ 官方机器人接口，群聊和私聊各有一条独立会话；内置九个工具：群管理、聊天记录与图片理解、联网搜索、网页抓取、图片反搜、生图等，另有按间隔自主接话的主动发言（判断与发言可分用两个模型）。模型、代理、白名单等全部在 DSH 设置页里配置，不需要改代码。首次使用必须先填拥有者 auth.owners：留空时插件不驱动任何会话（默认拒绝，避免装机即对外开放）；填好后私聊与群聊立即可用，访客只能使用访客工具白名单，qqbot 与 qqconfig 仅限拥有者。
 - [Artenx/dsh-honeybee#dshb](https://github.com/Artenx/dsh-honeybee/tree/main/packages/dshb) — 为 DSH 提供多节点执行路由，将文件系统、Shell、子进程和 PTY 操作分发到本地、SSH 与 Docker 执行节点，并包含节点注册表、认证门禁、移动端管理 UI，以及可注入新对话的工作区自定义项目指令。
 - [Autumn984/dsh-remote](https://github.com/Autumn984/dsh-remote) — 扫码即可用手机远程控制 DeepSeek Harness：查看会话、发送消息、上传图片，支持局域网、IPv6 与 Cloudflare 隧道。
-- [AXTUT/dsh-plugin-dualtransfer-trial#dualtransfer](https://github.com/AXTUT/dsh-plugin-dualtransfer-trial/tree/main/packages/dualtransfer) — 跨电脑 Agent 通信、带精确 commit 的任务交接，以及分支并行或共同基线 Git 项目协作，提供差异与冲突预览。须先配对、绑定，并遵守接收端本机既有授权。macOS 与 Windows 分发同一个免费评估试用包（UNLICENSED，非开源，勿用于生产）；需要 Node.js 24+，项目协作另需 Git 2.38+。7.0.public.1 候选更正发布元数据，保留 7.0 运行代码与 Native 载荷。已有 macOS 记录不代表本次已新增 Windows 执行、fresh SDK、完整 Host/浏览器或跨平台模型端到端验收。
+- [AXTUT/dsh-plugin-dualtransfer-trial#dualtransfer](https://github.com/AXTUT/dsh-plugin-dualtransfer-trial/tree/main/packages/dualtransfer) — 为已配对的电脑提供 Harness 消息传递、指定提交的任务交接，以及分支并行或共同基线的 Git 协作，可预览差异和冲突。7.0.public.2 候选版新增会话关联：可单发给本机或已配对设备上的一个关联会话，也可核对名单和正文后群发给全部关联会话，并分别查看每个目标的投递结果。原有绑定和本机权限保持不变。macOS 和 Windows 共用同一个免费试用包（UNLICENSED，勿用于生产）。需要 Node.js 24+；Git 协作另需 Git 2.38+。
 - [AyahaShirane/dsh-network-continue](https://github.com/AyahaShirane/dsh-network-continue) — dsh-network 的维护续作：为 DSH 主机提供经认证的局域网、Tailnet 与 HTTPS 接入，含配对二维码并适配新版 Web 浏览器认证。替代上游 dsh-network（先卸载它，两者注册相同的 /dsh-network 路由）；网关默认监听 0.0.0.0:3081，可用 bindHost 限制。
 - [AyaoJies/dsh-mobile-android-test](https://github.com/AyaoJies/dsh-mobile-android-test) — 在 DSH 页面里托管安卓模拟器运行 APK：上传安装、实时投屏、用鼠标和电脑键盘操作，并像 DevTools 一样查看解密后的 HTTPS 请求。需要 Windows + 硬件虚拟化、JDK 17+、Python 3.10+，首次安装 Android SDK 约 5GB。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Aztech-Lab/dsh-3301](https://github.com/Aztech-Lab/dsh-3301) — 将DSH Web GUI代理到3301端口供局域网访问。口令可选，无明文保存，初始3080端口保存回环不暴露。
@@ -12707,8 +12832,9 @@ dsh plugin --profile web add dshmarket
 - [Eternalloveone/dsh-palm#dsh-palm](https://github.com/Eternalloveone/dsh-palm/tree/main/packages/dsh-palm) — dsh 的独立手机端界面：扫码配对设备信任、实时 SSE 同步、三通道完成通知（应用内 / Web Push / Server酱·Bark·Telegram）、离线发件箱、审批与提问面板、多提供方用量卡、PWA；从零为窄屏设计的原生手机 UI。
 - [evanfang0054/dsh-tailscale-console](https://github.com/evanfang0054/dsh-tailscale-console) — Tailscale 远程访问运维面板：健康检查、HTTPS 入口（tailscale serve）开关、macOS 代理绕过、中继服务器运维与 ACL 片段生成。
 - [EviMing/dsh-qq-shell-commands](https://github.com/EviMing/dsh-qq-shell-commands) — 目的是能远程运行 Shell 命令，而不是让 DSH 运行，适用于需要重复工作或托管行为但不能直接给权限到 DSH 的情况。原理是通过 NapCat 进程与 QQ 进行交互，当 QQ 发送特定消息，判断是否完全相等与哪个键的字符串，并执行对应的 Shell 命令。执行 Shell="执行 Shell 命令：\n文本"。添加新的键值对="增加 Shell 命令：\n{"文本": \["Shell 命令", "使用哪个 Shell (例如 cmd，或 PowerShell) 运行 Shell 命令"]}"，最终会被拼接为 "Shell 命令" 的格式被系统运行，依赖前置插件 "EviMing/dsh-napcat-tools"需先安装 EviMing/dsh-napcat-tools，并准备 NapCat 与 Python 3.10+。
+- [fabulousnm/HiFairy#dsh-host-probe](https://github.com/fabulousnm/HiFairy/tree/main/agent-pc/dsh-host-probe) — 将 HiFairy 手机 Agent 连接到本机 DSH 会话和已挂载的手机工作区。
 - [fanrj3/dsh-presence](https://github.com/fanrj3/dsh-presence) — 像操作本地一样使用 ssh config 中的任意远程机器：持久连接、原生文件编辑、搜索、命令执行与终端，远端无需安装任何东西。
-- [femnn/dsh-plugin-remote-control](https://github.com/femnn/dsh-plugin-remote-control) — 在 DeepSeek Harness 侧边栏远程操控安卓手机与电视：无线 ADB 自动发现、可点击的实时画面、由多模态模型看屏幕自行决策的 AI 操控、电脑投屏到设备、设备间转串流、文件传输、APK 安装与多设备群聊。它的 HTTP 路由仅限本机，并通过宿主上的 adb 二进制访问设备。
+- [femnn/dsh-plugin-remote-control](https://github.com/femnn/dsh-plugin-remote-control) — 在 DeepSeek Harness 侧边栏远程操控安卓手机、眼镜与电视：无线 ADB 自动发现与断线重连、低带宽实时画面（可点按、长按、滑动，电视拖动映射为方向键）、手机与眼镜可开 scrcpy 60fps 真流畅窗口、可弹出的副屏、按设备类型区分的功能键与手动熄屏/唤醒、由多模态模型看屏幕自行决策的 AI 操控、投屏、文件传输、APK 安装与多设备群聊。它的 HTTP 路由仅限本机，并通过宿主上的 adb 二进制访问设备。
 - [feng-yifan/dsh-plugins#dsh-enhancement](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enhancement) — DSH 增强套件：为 Web GUI 提供独立的密码访问网关（可选 HTTPS，支持上传证书或由插件自签发本地 CA），无需 `?token=` 即可在局域网 / 远程登录；整合 PWA 安装与应用名 / 图标、桌面通知与手机 Web Push（任务完成、等待审批等事件），并可选地把当前会话的 session id 注入第三方 OpenAI 兼容路由的请求头，均在设置页统一配置。
 - [Firefox2100/dsh-proxy-trust](https://github.com/Firefox2100/dsh-proxy-trust) — 让 DSH Web UI 可在带身份验证的反向代理后运行，并分别控制受信任主机、跳过登录、跨站导航、本地页面信任和可选的网络监听器。
 - [flyhigao/dsh-produced-file-paths](https://github.com/flyhigao/dsh-produced-file-paths) — 在远程 Web 中显示并复制 DSH 每轮产出文件的绝对路径。
@@ -12730,7 +12856,7 @@ dsh plugin --profile web add dshmarket
 - [hanhan9999999999999999999/remote-connect-dsh#dsh-remote-connect](https://github.com/hanhan9999999999999999999/remote-connect-dsh/tree/main/plugins/dsh-remote-connect) — 手机扫码即可在浏览器里操作电脑上的 DSH；两台电脑配对后能把插件、技能、规则、配置与会话一键搬过去。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Heart3-XDUGT2/dsh-qq-bridge](https://github.com/Heart3-XDUGT2/dsh-qq-bridge) — dsh-memory-agent（Echo）的 QQ 桥：支持 OneBot 11 与可选的官方 QQ 文字通道、有限群聊上下文、文件处理和投递审计。需先安装 dsh-memory-agent；OneBot 通道另需 NapCat 或 SnowLuma 等 OneBot 11 客户端，官方通道是同仓库里需单独安装的可选包。
 - [heavenJiang/dsh-switchboard](https://github.com/heavenJiang/dsh-switchboard) — 在 Telegram 和飞书中指挥 DeepSeek Harness：每轮一条实时进度消息，按钮审批与提问，收发文件和语音，断线和重启不丢消息，飞书扫码接入，按人设置权限。
-- [Henvy-Mango/dsh-porthole](https://github.com/Henvy-Mango/dsh-porthole) — 为运行在 NAS 等常开设备上的 DeepSeek Harness 提供局域网访问门户：手机浏览器即可访问该设备上的 DSH 实例，支持经 frps、EasyTier 等外部隧道进行内网穿透。其 HTTP/WebSocket 反向代理针对子域名、子路径和二级目录做了专门优化（登录入口、Location、Cookie Path 自动适配），并提供可选的访客/管理员双密码认证和远程工作区注册。派生自 wenbin-wb/dsh-bridge v2.17.8（MIT，部分模块逐字沿用）；两者默认端口均为 3082，同开前需修改其中一个的端口。
+- [Henvy-Mango/dsh-porthole](https://github.com/Henvy-Mango/dsh-porthole) — 专为内网穿透场景优化的 DeepSeek Harness 远程访问门户，配合 frps、EasyTier 等外部链路，可通过浏览器访问内网的 DSH。支持 HTTP 和 WebSocket 转发，适配子域名和子路径部署的登录入口、重定向及 Cookie 路径，并提供可选的访客和管理员双密码认证及远程工作区注册。
 - [HFTXsws/dsh-au](https://github.com/HFTXsws/dsh-au) — DSH 多机工作区插件，内置跨设备待办、模型快捷切换、移动端抽屉及本地服务与云插件同步。
 - [Hongjun1-RGB/dsh-phone-access](https://github.com/Hongjun1-RGB/dsh-phone-access) — 在 DSH 界面里加一个开关，经由内嵌的 loopback 反向代理与 Cloudflare 快速隧道把当前会话开放给手机浏览器，并把每次的新隧道地址推送到微信。
 - [hoshino114/dsh-server-box](https://github.com/hoshino114/dsh-server-box) — DSH 服务器面板：每台主机展示在线状态、CPU/内存/磁盘/网速与趋势图，点卡片进入 xterm.js 终端并支持 SFTP 上传下载；提供 server_box_hosts、server_box_exec、server_box_upload、server_box_download 对话工具，可导入 ~/.ssh/config，挂载为右侧栏页签或独立抽屉。
@@ -12825,7 +12951,7 @@ dsh plugin --profile web add dshmarket
 - [Mzy123l/dsh-plugin-remote-access](https://github.com/Mzy123l/dsh-plugin-remote-access) — 只把本机 DSH 网页界面开放给指定的一个网段（默认 Tailscale 100.64.0.0/10），不绑 0.0.0.0：网段外的对端一律拒绝，进入方式可选带票网址或 4–12 位数字/字母访问密码；远程页面可强制手机布局而不动本机界面，官方「通用设置」里的外观 / 字号大小 / 工作步骤展示 / 显示代码工作视图 / 性能与用量可存进本插件配置，并在每次打开远程页面时重新套用。
 - [mzzsfy/dsh-plugin#dsh-auto-trust-all](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-auto-trust-all) — 把实际到达的 Host 动态登记为受信任入口:包装全部 webServer 路由,解析出的域名写入 connection.trustedHosts(仍有 webRuntime 的宿主世代同步镜像),泛域名等无法枚举的入口免改 --trusted-host 启动参数,超出可配容量的按 LRU 淘汰。不改监听绑定(监听地址始终由部署层 --host 或宿主缺省决定),认证层原样保留。由于任何 Host 头都会被接受，主机白名单不再能防 DNS 重绑定；只应在可信网络中使用。
 - [NattoCB/dsh-plugin-wechat-bridge](https://github.com/NattoCB/dsh-plugin-wechat-bridge) — 把微信私聊桥接进 DSH agent 会话并流式回传回复，支持热插拔与设置页签。
-- [NelsonLongXiang/dsh-open-a2a-net](https://github.com/NelsonLongXiang/dsh-open-a2a-net) — 0.8 预览版提供 Superagent 团队的需求受理、工单分派、进展汇报和属主决策卡；A2A 底座支持签名节点发现、已链接主机间路由及回执追踪。
+- [NelsonLongXiang/dsh-open-a2a-net](https://github.com/NelsonLongXiang/dsh-open-a2a-net) — 用 Superagent 团队受理需求、分派工单、跟踪进展，并通过决策卡交由属主选择；A2A 底座支持签名节点发现、已链接主机间协作和回执追踪。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [netbka/local-commander-plugins](https://github.com/netbka/local-commander-plugins) — 通过 mcp-remote 把 DeepSeek Harness 接到 localcmd.app 上托管的 Local Commander MCP 服务（浏览器登录），在你的 Windows 电脑上读文件、查 Git、执行你批准的检查并探测本地服务。需 Local Commander 账号，且配对的 agent 要跑在那台 Windows 电脑上。
 - [NishimiyaFukinoto/dimensional-portal-dsh](https://github.com/NishimiyaFukinoto/dimensional-portal-dsh) — 让 DSH 里的 Agent 直接操作安卓手机：看屏幕、点按滑动、打字、开应用。需要电脑侧 Python 3.10+ 并安装 aiohttp 与 mcp，手机侧运行 AutoX.js 脚本并授予屏幕录制与无障碍权限；手机主动长轮询本机，不开公网端口、不经中转。
 - [NNNNyang/dsh-remote-gpu](https://github.com/NNNNyang/dsh-remote-gpu) — 在会话顶栏显示 dsh-remote 所连服务器还有几张空闲显卡，右侧边栏面板展示每张卡的利用率、显存、温度与占用用户，并提供返回同一快照的 remote_gpu 工具。
@@ -12844,9 +12970,11 @@ dsh plugin --profile web add dshmarket
 - [peng456/dsh-plugin-mesh](https://github.com/peng456/dsh-plugin-mesh) — 通过 UDP 组播或端口扫描发现局域网内的其他 DSH 实例，在侧栏面板中列出它们以及各自上报的能力，并可经局域网或自动下载的用户态 Tailscale 节点在两台机器之间双向派发任务。
 - [PerryLink/dsh-reach](https://github.com/PerryLink/dsh-reach) — 把 DSH 的审批卡与提问卡推送到 IM 渠道（先支持微信），可在聊天里直接作答，带会话控制台、逐渠道安全与开放推送服务。
 - [polaris-smart/dsh-devices](https://github.com/polaris-smart/dsh-devices) — 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。
+- [PonChunhui/dsh-gostc](https://github.com/PonChunhui/dsh-gostc) — 管理 gostc 内网穿透的客户端、隧道与 P2P 连接；可复用已有后端，或按操作系统与处理器架构自动下载、拉起并守护命令版客户端，支持安装为 Windows 服务。
 - [Poy-Coder/dsh-channel-feishu](https://github.com/Poy-Coder/dsh-channel-feishu) — 飞书通道：一个飞书私聊绑定一个 DSH 会话，流式卡片回答、原生思考过程、交互式问答卡、附件双向收发，并针对无人值守做了断线自愈与消息去重。入站默认关闭；开启后 allowedUsers 留空时第一个发消息的人被绑定为主人；通道会话默认使用 workspace-write 权限预设（写入限制在工作区内，可改）。
 - [Poy-Coder/dsh-channel-wechat-ilink](https://github.com/Poy-Coder/dsh-channel-wechat-ilink) — 微信通道（ClawBot / iLink 协议）：一轮一条完整回答、输入中状态与阶段进度、图片文件双向收发，通道独占工作区，可与飞书通道并存。入站默认关闭；开启后只有登录的微信账号（或 allowedUsers 里的人）能驱动它；通道会话默认使用 workspace-write 权限预设（可改）。
 - [prgrmrwy/dsh-host-browsing](https://github.com/prgrmrwy/dsh-host-browsing) — 为 better-sidebar 添加「本地服务」标签页，经 DSH 服务端的同源代理打开 DSH Host 机器上的回环端口（127.0.0.1、localhost、\[::1]），远程 Host 的本地页面无需逐端口建 SSH 隧道即可查看。
+- [pxvp2008/dsh-feishu-pilot](https://github.com/pxvp2008/dsh-feishu-pilot) — 把飞书变成 DSH 的远程控制台：在飞书里驱动桌面会话、双端处理审批与提问、切换工作区与会话、接收任务完成通知；扫码即可接入，无需公网 IP。
 - [qiaohelenjoe/dsh-app#dsh-mobile-tunnel](https://github.com/qiaohelenjoe/dsh-app/tree/main/dsh-mobile-tunnel) — DeepSeek Harness 移动端：用手机使用你电脑上的 DSH。安卓 App 用同一账号登录，在设备列表里选中这台电脑，就能在手机上打开并进入它的 DeepSeek Harness 界面。桌面端插件负责注册与连接，本机不用开公网端口；界面会自己适应屏幕——手机上变成适合手指操作的布局，折叠屏展开或窗口变大时回到桌面布局。PC 端面板可以看到登录态、设备配额、设备列表与 App 下载二维码。
 - [QIC-9821/dsh-pc-bridge](https://github.com/QIC-9821/dsh-pc-bridge) — 本机回环 HTTP 桥：让对端机器 ping 并执行 shell 命令，可选 ssh 反向隧道看守。
 - [qingshuiliuyun/dsh-node-monitor](https://github.com/qingshuiliuyun/dsh-node-monitor) — 多 DSH 节点监控与集中管控：逐节点状态与只读会话、UDP 发现零配置组网、一键/内嵌打开真实 DSH、跨网反向接入的远程主节点、无服务器接入码/IPv6，以及默认关闭的插件启停/重启（干跑、二次确认、JSONL 审计）。默认监听 :: / 0.0.0.0 用于局域网发现，状态与控制路由由令牌保护；它的 HTTP 路由没有 DSH 的访问检查。
@@ -12905,7 +13033,7 @@ dsh plugin --profile web add dshmarket
 - [TomCatV/dsh-miniwin](https://github.com/TomCatV/dsh-miniwin) — DSH 侧边栏手机投屏：扫码配对后，画面以 scrcpy 的 H.264 流显示在桌面透明迷你窗里（不进浏览器），支持内容/背景透明度分别调节、八向缩放与置顶。自带 adb、scrcpy 与手机端 APK，无需另装；仅支持 Windows 主机。
 - [TongaiLinC/dsh-mobile-access](https://github.com/TongaiLinC/dsh-mobile-access) — 移动端访问网关：独立子进程反向代理 + 首次访问 PC 审批（管理 token 认证、DNS rebinding 防护）+ 局域网/VPN/公网自动识别与网络模式切换 + 扫码访问 + WebSocket 实时转发 + 窄屏 UI 适配（输入区重排、第三方插件弹窗适配、crypto.randomUUID polyfill）。
 - [tonytanglab/deepseek-harness-relay-mcp](https://github.com/tonytanglab/deepseek-harness-relay-mcp) — 在 Web profile 中安装适配层，检测并写入 MCP 配置，供 Codex、Cursor 或 Claude Code 拉起 dsh --profile codex.
-- [TryToFindHeart/dsh-feishu-mcp](https://github.com/TryToFindHeart/dsh-feishu-mcp) — DeepSeek Harness 飞书通道：群 Webhook 把每轮任务结束变成一张内嵌 @all 的卡片强提醒；自建飞书应用机器人（扫码创建、WebSocket 长连接、无需公网回调）把私聊的文本、图片和文件送进绑定的 DSH 会话，并在聊天里处理审批/提问/权限卡片；每张通知底部显示当前模型且 /model 可切换，会话支持短码切换，Typing 反应在每轮结束时自动撤销。
+- [TryToFindHeart/dsh-feishu-mcp](https://github.com/TryToFindHeart/dsh-feishu-mcp) — DeepSeek Harness 飞书通道：群 Webhook 把每轮任务结束变成一张内嵌 @all 的卡片强提醒；自建飞书应用机器人（扫码创建、WebSocket 长连接、无需公网回调）把私聊的文本、图片和文件送进绑定的 DSH 会话，并在聊天里处理审批/提问/权限卡片；每张通知底部显示当前模型且 /model 可切换，会话支持短码切换，Typing 反应在每轮结束时自动撤销。未配置 allowedOpenIds 时，首个私聊机器人的飞书发送者会自动认领为唯一使用者（TOFU）。
 - [Tuiltex-0216/dsh-wechat-share](https://github.com/Tuiltex-0216/dsh-wechat-share) — 把微信聊天记录转发进 DSH 会话：Windows 分享目标接收合并转发的 ZIP，GUI 浮层选择目标工作区与会话，ZIP 以文件附件用户消息到达，agent 解压并读取。按魔数纠正媒体扩展名（微信常把 PNG/HEIC 字节命名为 .jpg），投递失败时批次保留可重试。需 Windows 10/11 并开启开发者模式，先运行仓库安装脚本注册分享目标。
 - [TwinsEarth/dsh-windows2macos](https://github.com/TwinsEarth/dsh-windows2macos) — 一条指令同时下发给所有在线的 Windows 与 macOS 机器，可跨网络跨区域：零依赖中继只通过出站连接与各机通信（Tailscale 内网、公网 VPS + TLS、或隧道），各机在各自的项目副本上执行，结果连同 commit、工作区指纹与命令哈希一并回传，因此"环境不一致"会被判为 unverifiable，而不会被误当成结果分歧。下发指令需要独立于设备令牌的 operator token。
 - [TZHR-invest/dsh-plugins#dsh-lan-gateway](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-lan-access) — 完整的 Web GUI 局域网/远程访问方案：0.0.0.0 绑定、crypto.randomUUID polyfill、令牌门卫（401 登录页 + WebSocket 拦截，回环豁免）、特权围栏与设置持久化放行，附带幂等安装器与升级恢复。
@@ -12971,6 +13099,7 @@ dsh plugin --profile web add dshmarket
 - [Z-6354/dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) — DSH Web 界面的移动端适配：窄屏下把桌面三栏布局改造成触屏友好的手机布局（覆盖式抽屉、可拖拽悬浮按钮、全屏弹窗、上滑加载历史），1024px 断点内生效，桌面端零影响。 — 基于 dsh-mobile-gate 的完整移动端 PWA：安全远程访问网关 + 可安装到主屏（manifest + service worker）+ 离线可用 + 触屏手势（下拉刷新/边缘返弹/捏合缩放字体）+ agent 完成推送 + 触屏优先布局，桌面零影响。
 - [zbzbhs/dsh-remote-agent](https://github.com/zbzbhs/dsh-remote-agent) — 把另一台电脑变成你的远程 Agent 同事：副机本地跑自己的 DSH 与完整 Agent 循环，所以链路断开时任务照常继续、模型凭证也永不离开那台机器。主机用 8 个 remote_* 工具派活，只收回 handoff 摘要与产物清单，成品按需拉取——中间产物留在副机。配对码接入，direct 或 relay 两种传输穿 NAT，两侧都有 Web 面板。
 - [zccz14/eXe#dsh](https://github.com/zccz14/eXe/tree/main/plugins/dsh) — 在你已与 eXe 配对的机器上跑 shell，并把设备上的图片作为图片内容块交给模型，往返经 eXe 中继：三个模型工具（设备列表、shell、图片——截图需先用 shell 工具生成再读回），外加一页侧边栏——本机调用方地址、可改名的设备与受信调用方清单，以及按设备一键测量一次真实调用的往返耗时。那些机器上需运行 eXe 客户端，本机需有 `exe mcp init` 生成的调用方键。
+- [zddzhangdada/dsh-remote-task](https://github.com/zddzhangdada/dsh-remote-task) — DSH 远程任务插件：两台 DSH 主机通过 Iroh 配对，把任务发到另一台的会话并读回进度；未指定会话时，默认在对端新开会话。基于 Xiang Bai 的 dsh-weave。
 - [zdx8637-gitdog/dshmobile#dshmobile-plugin](https://github.com/zdx8637-gitdog/dshmobile/tree/main/plugins) — 通过自建中继从手机访问 DSH（WSS 由你自己的 TLS 终止代理提供）：含桥接守护与扫码登录的 bundle 插件、原生 Android 应用，并支持服务端设备吊销。
 - [zengpu987-ctrl/dsh-deep-connect#plugin](https://github.com/zengpu987-ctrl/dsh-deep-connect/tree/main/plugin) — 同账号多台 DSH 的会话与任务互通：一台机器生成中继站，其它机器用邀请链接加入；逐帧端到端加密，中继只路由哈希频道、读不到内容。对端可读完整对话与任务板，向拥有该会话的那台机器正在跑的一轮插话，按发送方选定的目标工作区与模型强度下发命令，也可把一条会话复制成本机新会话并继续在这里干活。另带令牌手机页，可查看设备、读取任务与下发命令。
 - [zexadev/dsh-tether](https://github.com/zexadev/dsh-tether) — 用 Android/iOS 手机远程使用电脑上的 dsh 完整网页界面,经 iroh 跨网点对点打洞直连,不用架任何服务器;打不通才退回 relay,relay 只见密文。
@@ -13097,8 +13226,9 @@ dsh plugin --profile web add dshmarket
 - [Mrxieyong/dsh-mcp-market](https://github.com/Mrxieyong/dsh-mcp-market) — Web 侧边栏的 MCP 市场与管理面板：官方模板一键配置（Apifox 公有云/私有化、Apipost、MasterGo、Pixso）、粘贴完整 mcpServers JSON、我的服务增删改启停，热加载生效。
 - [MS666666/dsh-archive-manager](https://github.com/MS666666/dsh-archive-manager) — 归档管理：在设置页列出已归档会话，并可真正删除，连同会话日志、归档标记与投影缓存一并清理。
 - [nanshan1995/DSH-Plugin-Market](https://github.com/nanshan1995/DSH-Plugin-Market) — 另一款 DSH 插件市场：精选目录 + GitHub 实时浏览、中英互通搜索、安装前 fail-closed 静态安全审计（拦截安装钩子），每个插件可直接查看 README 且乱码自动修复。
-- [nonentity303/dsh-drydock](https://github.com/nonentity303/dsh-drydock) — 插件管理器 + 引擎外救援层：按必要程度分组启停、来源三分区（核心 / 官方 / 用户）、事务化卸载可撤销、npm/GitHub/自定义镜像一键更新、ADP 精选目录、下载完整性校验；引擎起不来时 3081 兜底页照常可用——自检、隔离坏包并把它拉起来。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [nonentity303/dsh-drydock](https://github.com/nonentity303/dsh-drydock) — 插件管理器 + 引擎外救援层：按必要程度分组启停、来源三分区（核心 / 官方 / 用户）、事务化卸载可撤销、npm/GitHub/自定义镜像一键更新、ADP 精选目录、下载完整性校验；引擎起不来时 3081 兜底页照常可用——自检、隔离坏包并把它拉起来。
 - [nuolingmo/dsh-market-notes](https://github.com/nuolingmo/dsh-market-notes) — 给 dshmarket 里还没有备注的插件自动写一句中文说明，显示在市场卡片上；手写备注不会动（只有带 🤖 标记的条目会在 force=ai 时重新生成），使用时需要先装好 dshmarket。
+- [omnimux-ai/omnimux-client#omnimux-market](https://github.com/omnimux-ai/omnimux-client/tree/main/plugins/plugins/omnimux-market) — DeepSeek Harness 插件与技能市场面板，提供技能、插件、专家与连接器四个标签页，支持搜索并安装技能、社区插件、内置专家预设与托管 MCP 连接器。
 - [open-dshai/dsh-employee](https://github.com/open-dshai/dsh-employee) — 数字员工，整合专家、技能、连接器三大目录，支持浏览、收藏、召唤与发布，且无需改动宿主代码。
 - [openfcp/dsh-financial-skills](https://github.com/openfcp/dsh-financial-skills) — 在 DSH 左侧栏加一个「金融技能」入口，点开是整页精选金融行业技能目录，数据构建自 openfcp/awesome-financial-skills 的 catalog.json。支持搜索、按业务分类筛选和已安装视图；详情弹窗渲染技能的 SKILL.md，并列出文件清单、大小、许可证与来源坐标。安装按清单声明的来源取回正文（SkillHub zip，或 GitHub raw 并回退 API 与 jsDelivr），校验文件数与体积上限后先暂存再重命名落位；卸载把目录移进 .trash 而不是删除。页面由 6 条仅限本机回环的路由支撑，客户端只能传技能 id，目录不可达时回落到随包快照并如实标注为快照。
 - [Oscar-Williams/dsh-deepatlas](https://github.com/Oscar-Williams/dsh-deepatlas) — 任务感知的 DSH 插件导航：聚合 GitHub topic 与社区清单建立本地索引，按 28 类中英能力检索；提供 commit 级静态风险审计、用户确认后的锁定版本安装、组合验证与恢复流程。
@@ -13184,6 +13314,7 @@ dsh plugin --profile web add dshmarket
 - [AnacondaKC/dsh-stock-market](https://github.com/AnacondaKC/dsh-stock-market) — 有效解决了写代码的时候账户不能同时亏钱的 BUG。
 - [Andersen216/dsh-whale-girl-live2d](https://github.com/Andersen216/dsh-whale-girl-live2d) — DSH 里的 Live2D 桌宠「鲸鱼娘」：模型常驻 Web 界面，跟着 agent 的真实状态换表情与动作（思考、调工具、逐字输出、报错、收工庆祝），点一下就能直接给 agent 发消息、回复逐字冒进气泡；右键菜单可换表情、戴眼镜贴纸、摆桌面场景、演一次性小动作，动作全部照模型作者自己的按键表设计，互不冲突、到点自动收回。模型素材非商业（CC BY-NC-SA 4.0），代码 MIT，作者 Andersen216。
 - [Artificialimbecile/dsh-whale-chat](https://github.com/Artificialimbecile/dsh-whale-chat) — DSH Web 界面右下角的会说话的鲸鱼桌宠：可配置人设与持久对话记忆，还会按间隔自己随机上网，把见闻总结成消息带回来告诉你。基于 PC2005-cloud/dsh-pet 的二次创作（沿用其形象与动画素材，素材不可商用），请替代 dsh-pet 安装，不要与上游同装。
+- [augustineclark10145-star/dsh-niuma-harness-widget](https://github.com/augustineclark10145-star/dsh-niuma-harness-widget) — 侧栏小组件：按配置的月薪与工作时间实时累计收入，带下班倒计时、目标进度，金额可一键隐藏。
 - [auwc/dsh-tarot](https://github.com/auwc/dsh-tarot) — 从洗乱的 78 张塔罗牌中亲选三张，查看带来源链接的牌义，并通过追问细化解读。
 - [Awesome-AI-Pedia/Awesome-DSH-Pet](https://github.com/Awesome-AI-Pedia/Awesome-DSH-Pet) — DSH Web GUI 的可扩展桌面宠物插件，支持投喂、玩耍、切换角色，并使用 Codex 8x9 spritesheet 添加自定义角色。
 - [Awu12277/dsh-stock-watch](https://github.com/Awu12277/dsh-stock-watch) — A 股自选股实时行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面的右上角显示一个可折叠弹窗，实时监控自选股行情、切换分组、查看分时与 K 线、设置买卖目标价。
@@ -13298,6 +13429,7 @@ dsh plugin --profile web add dshmarket
 - [hmhm2333/dsh-braingames](https://github.com/hmhm2333/dsh-braingames) — 等 Agent 执行任务时，玩几分钟像素风认知训练小游戏。
 - [hongxin-y/codex-pet-Astra-Yao](https://github.com/hongxin-y/codex-pet-Astra-Yao) — 把 Astra Yao（耀嘉音）的 Codex 桌宠图集搬进 DSH Web 界面：随会话状态切换到构思、执行、候场、破音等动作，头顶气泡显示正在跑的工具和余额（默认开启，可关），空闲时轮播她的官方台词。
 - [hosinonisiki/dsh-stay-calm](https://github.com/hosinonisiki/dsh-stay-calm) — DSH Web 界面角落里的一只鲸鱼娘：每 N 个用户轮次额外调用一次模型，把对话里的烦躁程度按 0–3 级判一次；级别高时只浮一句「先歇会儿或开个新对话」的提醒，不碰会话内容。可以摸头、喂饭、拖动，有 6 种运动模式、12 个互动动作、一个发送时才调用模型的迷你对话框，以及不调用模型的本地自动闲聊。情绪检查默认每 3 轮一次，设为 0 可关闭；检查和对话框回复都是真实模型调用，会消耗 token。
+- [huang2000di/dsh-pet-coo-link](https://github.com/huang2000di/dsh-pet-coo-link) — 把 dsh-pet 的小女仆和 Coopanion 的大肥鱼接成一条自动对话通道：间隔可调，四档记忆（近期轮次、关键词回忆、每日摘要、事实卡），带开关与全局快捷键的设置页。需要已安装并运行 dsh-pet 与 Coopanion。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [huangxn29/dsh-shooter](https://github.com/huangxn29/dsh-shooter) — DSH 侧栏里的俯视角生存射击：AI 托管替你把蓝鱼主角打起来，dsh-pet 桌宠逐波解说并念出声；连杀倍率、每 5 波 Boss、局内三选一强化、本机排行榜、成就与皮肤，切面板后还能缩成右下角的小鱼挂件继续打——点一下摸摸它，双击展开画面。
 - [huangzhilin-hzl/dsh-power-type](https://github.com/huangzhilin-hzl/dsh-power-type) — DSH Web 输入框的 Power Mode 打字特效：光标粒子与发光残影，连击越高当前输入行越热（暖黄到红）并升起余烬，按可视字符累计的连击计数，以及合成的按键音与更重的回车冲击音。
 - [huangziyuan-general/dsh-xuanji](https://github.com/huangziyuan-general/dsh-xuanji) — 玄学算命插件：八字、紫微斗数、梅花易数、六爻纳甲、黄历、称骨、星座、择日、奇门遁甲、风水、起名、合婚、生命数字、人生K线、塔罗、小六壬共 16 个工具，干支、星曜、卦象、骨重全部由本地确定性引擎计算，模型只负责解读；支持公历/农历（含闰月）输入，自动校正中国夏令时与真太阳时，附带十页只读侧栏面板。
@@ -13404,6 +13536,7 @@ dsh plugin --profile web add dshmarket
 - [miku00039-01/dsh-whale-pet](https://github.com/miku00039-01/dsh-whale-pet) — DeepSeek Harness 的鲸鱼娘桌面宠物，一键启动/停止/监测服务，双击唤起 GUI。
 - [minybear/DeepSeek-Harness-Pet](https://github.com/minybear/DeepSeek-Harness-Pet) — Codex 风格桌面宠物：右下角悬浮动画精灵，随 agent 运行状态实时变化（工作、等待、报错、完成）。
 - [Mng12345/dsh-desktop-pet-codex](https://github.com/Mng12345/dsh-desktop-pet-codex/tree/main/plugin) — DeepSeek Harness 的桌面宠物：置顶角色加一块会话面板，显示受关注会话的实时状态；七套动画、按 Workspace 分组、子代理挂在父会话下面、点击一行即可打开会话。包内自带 Windows、macOS（Intel 与 Apple 芯片）和 Linux 的窗口可执行文件，安装时不跑脚本、无需构建。
+- [mochi-fish/dsh-fish](https://github.com/mochi-fish/dsh-fish) — 在DSH里养一只大肥鱼宠物，你可以陪伴她长大。养成系体验，没有人格设置，通过你和她的互动学习成长。她可以自己刷B站，写日记，提取信息去问你，你的反馈决定了她成为什么样的人。通过事件流突破四个阶段、三道瓶颈，去积累「立场清单」，四个阶段完成后才会开始有立场。她的日记默认只给自己看，你在设置里打开就能读。事件流不能删除记录，是唯一可信源。没有任何运行时依赖。
 - [Moeblack/deepseek-manners](https://github.com/Moeblack/deepseek-manners) — 给每次消息后注入感谢语，做个有礼貌的人。
 - [Moolight/dsh-tes-spinner](https://github.com/Moolight/dsh-tes-spinner) — 可拖动的浮动 TES 陀螺挂件：点击抽一下就会转，转速按恒定摩擦线性衰减（转得越快停得越久），用滑条调转速，播放内置歌曲并同步滚动 LRC 歌词；位置与转速会被记住。
 - [MoonlitDropOfBlood/dsh-whale-pet](https://github.com/MoonlitDropOfBlood/dsh-whale-pet) — 鲸港 WhaleHarbor 大白鲸娘桌面窗宠：13 个 AI 生成零件以 CSS 纸片人方式驱动（呼吸、眨眼、呆毛摇摆、汗滴、蹦跳与抖动），八种状态实时反映 DSH 工作情况——空闲、忙碌、审批、提问、出错、庆祝、打盹、子代理分身——支持戳一戳、拖动、三档尺寸、托盘开关与气泡实时统计。需 WhaleHarbor 桌面壳（当前提供 Windows 构建）。
@@ -13445,6 +13578,7 @@ dsh plugin --profile web add dshmarket
 - [pucco-OD/dsh-sumika-widget](https://github.com/pucco-OD/dsh-sumika-widget) — 仅限 Windows 10 1903+/11 x64：DeepSeek Harness 的桌面角色——空闲时在书架前翻书，工作时坐在桌前打字，需要你回答时举起问号并弹出像素风提问卡片，回合结束时起身举起感叹号。
 - [pwping/moyu_games](https://github.com/pwping/moyu_games) — 任务开始时自动弹出的 5 个休闲小游戏（数字华容道、数独、贪吃蛇、舒尔特方格、数字记忆），支持跨会话自动保存进度。
 - [pyyxzi/dsh-deepmoyu](https://github.com/pyyxzi/dsh-deepmoyu) — 让桌宠鲸鱼娘自主刷 B站：自己搜片、读字幕原文，经你允许后发评论、发动态，并写日报、做视频。c1overzz/dsh-bili-scroll（MIT）的维护分支，新增逐项授权、记忆、表情与本地视频制作；与上游注册同名的 bili_* 工具，不能与 dsh-bili-scroll 同装。视频制作需要 Python 3.11–3.13（或 uv），首次使用时自动安装媒体依赖。
+- [qianhaoq/dota2.ai#dsh](https://github.com/qianhaoq/dota2.ai/tree/main/packages/dsh) — 在 DSH 侧边栏提供独立的 Dota 2 赛后复盘页（10 人记分板、经事实核查的录像证据卡、10 英雄逐秒走位与眼位小地图回放、教练追问栏、下局训练目标追踪）及 7 个 dota2ai_* 教练工具与 dota2ai 技能，基于从 dota2.ai 获取并缓存在本地的录像轨迹调用你配置的 DSH 宿主模型完成深度复盘与查证追问。
 - [单机游戏内 AI 同伴「小汤圆」](https://github.com/qimidandapigu/dsh-xiaotangyuan-game/tree/main/apps/harness-plugin) — 单机游戏内 AI 同伴「小汤圆」：理解游戏画面，支持文字或按住说话交流并语音回复；现已支持《星露谷物语》，《饥荒联机版》和《缺氧》正在迁移接入。
 - [qinghuidaqzp/dsh-pixel-report](https://github.com/qinghuidaqzp/dsh-pixel-report) — 在右侧栏把 Agent 今天或本周的活做成一张 1080×1632 复古像素风战报卡片：旁观 llm/stream、tools/result、session/event 和 workspace/changes，真实统计改动文件与增删行数、执行命令、会话与轮次、按 DeepSeek 峰谷价估算的花费与缓存省钱、24 小时（或近 7 天）像素活跃柱状图、像素鲸角色以及确定性 RPG 评级称号。内置深海、掌机、街机三套配色，支持一键隐藏文件名、下载 PNG 和复制图片分享。
 - [qinghuidaqzp/dsh-workroom](https://github.com/qinghuidaqzp/dsh-workroom) — 右侧栏里一间会看 Agent 脸色的 176×50 像素小书房：会话在跑时显示器敲代码，等你确认时灯牌闪黄、猫坐起来，跑完亮绿灯，出错变红，可开提示音。WebGL2 玻璃旋钮把房间拨到白天、黄昏或深夜，同时通过 tools/pre-execute 决定 Agent 改文件、跑命令、装依赖前要不要先问你（每步确认、常规、放手跑）；git push、发布、sudo 在任何一档都要确认。
@@ -13476,7 +13610,6 @@ dsh plugin --profile web add dshmarket
 - [sknagato/dsh-plugin-fc-emulator](https://github.com/sknagato/dsh-plugin-fc-emulator) — 在 DSH Web 右下角挂悬浮球打开 FC/NES 游戏厅（fceumm），支持本地上传与自填 GitHub 在线库。
 - [skr311/dsh-codex-pet#dsh-codex-pet](https://github.com/skr311/dsh-codex-pet/tree/main/packages/dsh-codex-pet) — 导入/上传 Codex 风格精灵图序列帧宠物，在 DSH Web GUI 以悬浮浮层渲染，含图库管理、交互与 Agent 状态联动。
 - [skymecode/dsh-bgm](https://github.com/skymecode/dsh-bgm) — 将本地分析的系统音频映射为 DSH Web 的对话律动、音游判定、分数与连击反馈，以及可选的 RGB 频谱柱。
-- [ssamurias/dsh-fish](https://github.com/ssamurias/dsh-fish) — 在DSH里养一只大肥鱼宠物，你可以陪伴她长大。养成系体验，没有人格设置，通过你和她的互动学习成长。她可以自己刷B站，写日记，提取信息去问你，你的反馈决定了她成为什么样的人。通过事件流突破四个阶段、三道瓶颈，去积累「立场清单」，四个阶段完成后才会开始有立场。她的日记默认只给自己看，你在设置里打开就能读。事件流不能删除记录，是唯一可信源。没有任何运行时依赖。
 - [stallenlu/dsh-game-center](https://github.com/stallenlu/dsh-game-center) — 面板插件：把开发的小游戏集中到一处，并在同一窗口内直接游玩。首发俄罗斯方块：10×20 棋盘、七种方块、落点虚影与下一个方块预览、消行与等级计分、三档难度，最高分存在 localStorage。
 - [Stellum-Waq/dsh-pet-ronaldo](https://github.com/Stellum-Waq/dsh-pet-ronaldo) — DSH 桌宠：Web 界面右下角的 C 罗精灵，动画随 Agent 状态切换——工具执行中颠球、回合中思考、等待审批、出错假摔——回合完成时跳起 SIU 庆祝并由宿主进程播放提示音；支持拖动、悬停注视光标、连点三次假摔，设置面板可管理多只宠物并导入自定义 spritesheet。同时提供一个无边框、始终置顶的原生 Windows 窗口，关掉浏览器也还在：悬停显示当前工作区与对话名，双击用 Edge 打开 Harness 页面，拖动、滚轮改大小、右键菜单都可用，位置/大小/行为与网页设置面板共用同一份状态。素材单格分辨率不限、等比缩放（atlas.scaling: smooth | pixelated）。v2.2 新增视频路线：喂一段视频（绿幕或普通素材都行），里面的真实动作直接变成宠物动作——自动取幕布色、色度抠像带溢色抑制、按运动量切分动作、并集包围盒对齐落格；也支持直接喂已经抽好的 PNG 帧（不需要装视频解码器），并能把视频原声按动作切成音效。宠物还可按 DPSL-1.0 分享协议发布到宠物社区，并从社区一键安装。 v2.3 适配 DSH 0.2 桌面版——宿主不再提供 shell 服务时，庆祝音效改为直接启动 PowerShell 播放——并让单击播放一段可配置的挑衅动作（`interactions.clickAnim`）。
 - [stitchmaps/dsh-ikunchick-pet](https://github.com/stitchmaps/dsh-ikunchick-pet) — DSH 右下角的「鸡你太美」篮球小鸡桌面宠物：像素帧动画、拖拽吸附、点击音效、会话等待回答或授权时弹提醒、每轮消耗气泡、账单明细与 DeepSeek 余额角标。
@@ -13489,6 +13622,7 @@ dsh plugin --profile web add dshmarket
 - [swaylq/dsh-digipet](https://github.com/swaylq/dsh-digipet) — 数码宝贝式养成：孵一颗吃真实工作长大的蛋（回合、工具调用、报错都是营养），按你的工作方式走四条进化分支；零 token，模型完全看不见。
 - [swaylq/dsh-wildmon](https://github.com/swaylq/dsh-wildmon) — 宝可梦式捕捉收集：真实工作就是草丛 —— 回合、工具调用、报错刷出野外遭遇；投球捕捉、集 28 格图鉴、带 6 只队伍。零 token，模型完全看不见。
 - [takboo/dsh-coopanion](https://github.com/takboo/dsh-coopanion) — 为 DeepSeek Harness 添加动画桌面伙伴，支持任务提醒、会话聊天、角色包和原生设置。
+- [tanxiaolong/dsh-battlefield](https://github.com/tanxiaolong/dsh-battlefield) — 悬浮在 Harness 里的键盘战场 HUD：把每次按键的按下时长换算成 1–99 冲击力，敲击即响炮声，底下铺着不断的战场背景音。只读物理键位，拿不到你敲出的字符，也不联网。
 - [tanxiaolong/dsh-i-hao-hai-pa](https://github.com/tanxiaolong/dsh-i-hao-hai-pa) — 骂 DSH 一句，左侧栏、编辑区和会话区会像地震一样塌成一地瓦砾，一直瘫着，直到 DSH 开口回答才从下往上长回来。
 - [Teloi/dsh-pindou](https://github.com/Teloi/dsh-pindou) — 在 DSH Web 右侧边栏拼小拼豆的轻量小游戏，等模型回复的空档拼一张：12 个带引导豆的内置图案、16 色在 12/16/24 格板上自由拼、一句话让模型生成图纸、照片在本机转成图纸（不上传）、拼完熨烫存入最多 60 件的作品墙，并可导出 PNG。
 - [theskywilldawn/dsh-stamina-pet](https://github.com/theskywilldawn/dsh-stamina-pet) — 给 DSH 每个会话加一只体力条桌宠：会话头部显示上下文与清醒度两条，点一下就能把她放到桌面上，可以拖动、戳、摸头、换装。
@@ -13553,6 +13687,7 @@ dsh plugin --profile web add dshmarket
 - [xnwang1999/dsh-dragon-maid-pet](https://github.com/xnwang1999/dsh-dragon-maid-pet) — DSH Web GUI 的桌宠：形象随当前模型的思考强度在五档之间切换，龙女仆／Claude／DeepSeek 三套立绘按模型自动选择；可拖动、可收起，每一档都能换成自己的图片，并为自定义服务商补上「设置 → 模型」里的思考强度档位。
 - [xrn1997/dsh-novel](https://github.com/xrn1997/dsh-novel) — 在 DSH 里读网络小说：导入 legado 书源、跨源搜索、带进度的书架、连续滚动阅读、听书、导入本地 TXT 与 EPUB，并让 AI 助手工具接到同一套书源、书架与正文上。
 - [xxxiii/dsh-fish-dream](https://github.com/xxxiii/dsh-fish-dream) — 给 dsh-fish 里的她做梦：安静够久之后，从她真实的事件流里挑碎片，按六种梦理论之一拼成「梦的种子」，她自己把梦写完。提供三个工具（dream_recall、dream_record、dream_now），插件自己不调用模型，数据放在 ~/.dsh-fish-dream。梦只能用真实发生过的事重拼，理论只决定怎么拼。
+- [Xyk0729/dsh-lulu-pet](https://github.com/Xyk0729/dsh-lulu-pet) — 住在 DSH 窗口里的透明水豚桌宠：15 段动作、27 张表情、可拖拽换位置，设置页能调大小、停靠角落和开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Yang-wudi/dsh-kun-like-pet#kunpet-dsh](https://github.com/Yang-wudi/dsh-kun-like-pet/tree/main/packages/kunpet-dsh) — 住在 DSH Web 界面右下角的坤坤桌宠：随 Agent 状态切换动作，任务完成时播放「你干嘛~哎哟」。
 - [yanmoren/dsh-whale-letter](https://github.com/yanmoren/dsh-whale-letter) — 在独立页面给蓝发鲸鱼娘少女写一封信，2 到 8 小时后桌面弹提醒，点开是信封，牛皮信纸上用中文手写字体写着回信，带墨水晕开、纸面折痕与划掉补写的错字，按页换纸而不是上下滚动。回信由插件自带的本地 4B 模型（Qwen3-4B GGUF，llama.cpp CPU 推理，按需起停）写出，请求不出本机，也不需要另装模型服务。信件队列在 ~/.dsh/whale-letter/letters.json，dsh 关着时到点的信重启后自动补投。
 - [ygc06/fishpet-release#fishpet](https://github.com/ygc06/fishpet-release/tree/main/plugins/fishpet) — 为 DSH 提供情绪状态、陪伴上下文，以及默认关闭、按需调用的单次截图工具的桌宠插件。
