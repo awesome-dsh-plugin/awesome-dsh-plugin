@@ -1,0 +1,6 @@
+url: https://github.com/noctisynth/dsh-plugin-rioterm
+name: noctisynth/dsh-plugin-rioterm
+category: ui
+description:
+  en: Interactive Rio WebAssembly terminal in the right sidebar with session recovery, output search, and customizable themes.
+  zh: 在右侧栏提供基于 Rio WebAssembly 的交互式用户终端，支持会话恢复、输出查找与自定义配色。
