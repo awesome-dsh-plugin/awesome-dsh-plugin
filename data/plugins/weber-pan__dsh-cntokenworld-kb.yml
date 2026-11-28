@@ -1,0 +1,8 @@
+url: https://github.com/weber-pan/dsh-cntokenworld-kb
+name: weber-pan/dsh-cntokenworld-kb
+category: memory
+icon: https://raw.githubusercontent.com/weber-pan/dsh-cntokenworld-kb/main/assets/icon-180.png
+tarball: https://github.com/weber-pan/dsh-cntokenworld-kb/releases/download/v1.0.0/dsh-cntokenworld-kb-1.0.0.tgz
+description:
+  en: 'Connects DeepSeek Harness to a CntokenWorld knowledge base: a sidebar workbench for the documents, the wiki, the link graph and the gallery, plus four read-only tools for retrieval, reading the original passages and answering with references.'
+  zh: '把 DeepSeek Harness 接到 CntokenWorld 知识库：侧边栏提供文档、Wiki、图谱与画廊的工作台，模型侧提供检索、读原文与带引用问答四个只读工具。'
