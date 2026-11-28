@@ -2,5 +2,5 @@ url: https://github.com/heiyedehen/dsh-whale-whispers
 name: heiyedehen/dsh-whale-whispers
 category: ui
 description:
-  en: "Quote books in the conversation header: one markdown file per chat, with search, a random pick, line and favourite counts, a keep button under every reply, and a trash with restore. The agent gets four tools (append, list, remove, merge) and a system-prompt guide, so by default it may save up to a line or two per chat on its own; capture rules can be set per chat or globally. Local-only. Needs DSH >=0.2.3-alpha.0 (below 0.4)."
-  zh: "会话头部的「鲸语」：每个对话一本 markdown 语录，带搜索、翻一句、句数与收藏计数、每条回复旁的一键收入，以及能恢复的回收站。agent 有增、查、删、合并四个工具，系统提示里也带一段记录指引，所以默认每个对话它最多自己记一两句；记什么可按对话或全局设置。全部只存本地。需要 DSH >=0.2.3-alpha.0（0.4 以下）。"
+  en: "Whale Whispers: a quote book for the lines worth reading twice — what you said, and what the agent said back. Every line lives in a tab above the input box, keeps the moment it came from, and can be searched, picked at random, or exported. Local only."
+  zh: "鲸语：给说过的话留一本句子本——你说过的、它回你的，那句值得再看一遍的话都收进输入框上方的「鲸语」标签里，每句都带着当时的上下文，能搜、能随手翻一句、能导出。只存本地。"
