@@ -1,0 +1,5 @@
+url: 'https://github.com/yuxiangwu239-alt/dsh-moli-memory'
+name: 'yuxiangwu239-alt/dsh-moli-memory'
+category: ui
+description:
+  en: 'Character memory plugin for DeepSeek Harness: decayed recall, appraisal-based emotion slots, two-layer personality (temperament + dispositions), layered forgetting, and session archaeology — all local-first and prefix-cache friendly.'
