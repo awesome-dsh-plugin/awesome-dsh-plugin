@@ -1,0 +1,7 @@
+url: https://github.com/Charlie-Wang-03/dsh-sightline
+name: Charlie-Wang-03/dsh-sightline
+category: dev
+description:
+  en: Compare the workspace instructions observed in a DSH session with those predicted for Codex and Claude Code across directories.
+  zh: 跨目录比较 DSH 会话观测到的指令文件与按加载规则预测的 Codex、Claude Code 指令文件。
+tarball: https://github.com/Charlie-Wang-03/dsh-sightline/releases/download/v0.2.0/dsh-sightline-0.2.0.tgz
