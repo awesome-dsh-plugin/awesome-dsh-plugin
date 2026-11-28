@@ -1,0 +1,6 @@
+url: https://github.com/EastMG/dsh-jianying-mcp
+name: EastMG/dsh-jianying-mcp
+category: tools
+description:
+  en: 'Connects DeepSeek Harness to JianYing Pro (CapCut desktop, Windows and macOS) through the official MCP connector published on npm: lists and opens local projects, previews and exports them, and hands editing tasks — subtitles, spoken-video trimming, packaging — to the agent built into the JianYing client. Requires JianYing 11.9.1+ and Node.js 18.17+. Ships a skill covering project-kind selection, the two-stage Hub handoff and write-operation consent, plus a read-only smoke check for version drift.'
+  zh: '通过 npm 上的官方 MCP 连接器把 DeepSeek Harness 接到剪映专业版（Windows / macOS）：列出并打开本地工程、预览与导出，并把字幕、口播删减、包装等剪辑任务交给剪映客户端内置的 Agent。需要剪映 11.9.1 以上与 Node.js 18.17 以上。附带一份 skill，覆盖工程类型判断、Hub 两段式交接与写操作授权，以及针对版本漂移的只读冒烟检查。'
