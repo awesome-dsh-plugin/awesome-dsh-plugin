@@ -1,0 +1,7 @@
+url: https://github.com/morning-start/dsh-plugin-creator
+name: morning-start/dsh-plugin-creator
+category: dev
+description:
+  en: 'Adds a plugin-development toolkit to Creator mode: scaffolds a plugin from a template, checks structure, privacy and security, runs project-declared rules, provisions isolated sandboxes, drives browser UI assertions, normalizes an existing plugin project, and checks release readiness with a sandbox rehearsal.'
+  zh: '在创造模式中加入插件开发工具链：按模板起插件包、结构与隐私安全检查、项目自定义规则、隔离沙盒、浏览器驱动的 UI 断言、把已有插件项目规范化，以及带沙盒演练的发版检查。'
+tarball: https://github.com/morning-start/dsh-plugin-creator/releases/latest/download/dsh-plugin-creator.tgz
