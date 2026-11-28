@@ -1,0 +1,7 @@
+url: https://github.com/encoyang/dsh-prompt-hub
+name: encoyang/dsh-prompt-hub
+category: ui
+description:
+  en: Sidebar prompt template library with categories, variables, favorites, and one-click insert into chat.
+  zh: 侧栏提示词模板库，支持分类、变量、收藏，并可一键带入会话。
+icon: https://raw.githubusercontent.com/encoyang/dsh-prompt-hub/main/assets/icon-180.png
