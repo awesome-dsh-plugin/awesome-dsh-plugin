@@ -2,5 +2,5 @@ url: https://github.com/Existence001100/dsh-budget-guard-plugin
 name: Existence001100/dsh-budget-guard-plugin
 category: security
 description:
-  en: 'Add a budget line to every DSH task: support real-time accounting, automatic interception, and estimated degradation. Support viewing, modifying, or adding third-party models and model unit prices on the settings page UI and in the workbench. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '给 DSH 的每一次任务加一条预算线：支持实时核算、自动拦截、预估降级。支持在设置页 UI 和工作台中查看、修改或新增来自第三方的模型及模型单价。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'Add a budget line to every DSH task. Features real-time accounting, automatic interception, and downgraded estimates to prevent runaway costs. Includes a full-screen Budget Workbench and a UI to view, modify, or add third-party model prices. Fully complies with DSH HTTP route admission control.'
+  zh: '给 DSH 的每一次任务加一条预算线。支持实时核算、自动拦截与预估降级，彻底防止 Agent 过度消费。内置全屏预算工作台，支持在 UI 中直接查看、修改或新增第三方模型及单价。已全面接入 DSH HTTP 路由准入安全规范。'
