@@ -1,0 +1,6 @@
+url: https://github.com/northwang-lucky/workloom/tree/main/packages/dsh-workloom
+name: northwang-lucky/workloom#dsh-workloom
+category: workflow
+description:
+  en: 'A DSH bundle that runs AI coding tasks through a fixed delivery workflow: requirements alignment, plan review, role-based execution and evidence-based checks, keeping tasks and records in the project .workloom/ directory.'
+  zh: 'DSH 组合包，让 AI 编码任务按固定流程交付：需求对齐、计划评审、角色分工执行和有据可依的检查，任务与记录保存在项目 .workloom/ 目录下。'
