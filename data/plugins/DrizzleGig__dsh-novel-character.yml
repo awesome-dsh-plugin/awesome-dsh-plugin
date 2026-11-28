@@ -2,5 +2,5 @@ url: https://github.com/DrizzleGig/dsh-novel-character
 name: DrizzleGig/dsh-novel-character
 category: fun
 description:
-  en: 'Turn a novel into a character conversation: import TXT/MD/EPUB/DOCX or your own draft, build evidence-based character cards, and talk to a character who keeps their canon memories, voice, relationships and a choosable chapter-memory boundary. Includes 12 themes, local avatars with web search / official matching / upload, and built-in expression cards; chats stay local and never edit the novel.'
-  zh: '把小说变成角色对话：导入 TXT/MD/EPUB/DOCX 或原创稿，建带原文依据的角色卡，和保留原文记忆、口吻、关系与可调章节记忆边界的角色聊天。12 套主题、本地头像（网页搜图/官方匹配/上传）、内置表情卡；聊天只存本机，不改正文。'
+  en: 'Import a novel you like, choose a character, and talk with a familiar character. It extracts character information, speech samples, relationships and mental states from the original text to build an evidence-based character profile. As you chat, the character accumulates memories, adjusts trust and attitude toward you, and carries the relationship across sessions.'
+  zh: '导入你喜欢的小说，选择其中的人物，让熟悉的角色与你展开对话。它从原文中提取角色信息、语言样本、人物关系和心理状态，建立有原文依据的角色档案。聊天过程中，角色会根据对话积累记忆、调整对你的信任与态度，并在不同会话之间延续关系。'
