@@ -1,0 +1,6 @@
+url: https://github.com/monta-6969/dsh-composite-preset
+name: monta-6969/dsh-composite-preset
+category: workflow
+description:
+  en: 'The Codex operating model rebuilt as two DeepSeek Harness agent presets: a dispatcher that may only read, search the web and present, enforced by a tools guard rather than by prompt discipline, and a worker that carries the full apply_patch and PTC toolset. The worker prompt is eleven editable segments in settings, and each saved edit translates English into a read-only Chinese reference with one model call.'
+  zh: '把 Codex 的操作模型做成一对外一个的 DeepSeek Harness 预设：调度层只读、只联网、只声明交付，靠 tools.guard 强制执行而不是靠提示词自律；执行层带 apply_patch 与 PTC 全工具。执行层提示词是设置里可编辑的十一段，每次保存只对改动的那段调一次模型，生成只供阅读的中文对照。'
