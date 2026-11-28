@@ -1,5 +1,5 @@
-url: https://github.com/Howell5/dsh-open-desktop
-name: Howell5/dsh-open-desktop
+url: https://github.com/Howell5/dsh-little-widgets
+name: Howell5/dsh-little-widgets
 category: ui
 description:
   en: 'Turns the DSH middle pane into a draggable board of live data cards, each backed by its own session and refresh schedule. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
