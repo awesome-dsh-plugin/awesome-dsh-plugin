@@ -1,0 +1,6 @@
+url: https://github.com/skyrocks/dsh-token-stats
+name: skyrocks/dsh-token-stats
+category: usage
+description:
+  zh: 按日 / 周 / 月统计所有会话的 token 消耗。
+  en: Token usage across all sessions by day, week and month.
