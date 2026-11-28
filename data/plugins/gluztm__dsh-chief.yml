@@ -5,4 +5,4 @@ description:
   en: "A quiet sidekick beside DeepSeek Harness: stays out of the way in plain chats, speaks alerts & takes wake-word commands, sends 6-channel mobile pagers, syncs Theme Studio skins, and guards workspaces before execution."
   zh: '蹲在 DeepSeek Harness 旁的小助手：普通窗口不打扰，支持音箱告警与唤醒遥控、6 通道手机传呼、主题多端同步、三层档案检索与执行前安全拦截。'
 icon: https://raw.githubusercontent.com/gluztm/dsh-chief/main/assets/icon-256.png
-tarball: https://github.com/gluztm/dsh-chief/releases/download/v2.0.0/dsh-chief-2.0.0.tgz
+tarball: https://github.com/gluztm/dsh-chief/releases/download/v2.0.1/dsh-chief-2.0.1.tgz
