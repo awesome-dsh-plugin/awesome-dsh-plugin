@@ -1,0 +1,6 @@
+url: https://github.com/skyrocks/dsh-news-digest
+name: skyrocks/dsh-news-digest
+category: notify
+description:
+  zh: 定时抓取 RSS，按类别生成可回看的新闻日报。
+  en: Fetches RSS on a schedule and builds a reviewable news digest by category.
