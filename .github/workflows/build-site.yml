@@ -108,7 +108,7 @@ jobs:
           # (2026-10-19). Fetch from npmjs in CI; local installs keep their own registry.
           npm_config_registry: https://registry.npmjs.org/
           npm_config_replace_registry_host: always
-      - run: node --test scripts/download-window.test.mjs scripts/targeted-probes.test.mjs
+      - run: node --test scripts/download-window.test.mjs scripts/targeted-probes.test.mjs scripts/probe-versions.test.mjs scripts/audit-catalog.test.mjs
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
       #
@@ -264,6 +264,15 @@ jobs:
             # re-scans a handful. The scanner is pinned inside the script; it
             # executes nothing from the scanned package and opens no sockets.
             node scripts/probe-capabilities.mjs
+            # Version-only refresh (#11337 / #11901 / #19425): rewrite
+            # data/npm-map.json's version/publishedAt/enginesDsh from npm on every
+            # build, so a plugin published after the nightly no longer shows
+            # yesterday's version for up to 24h. It never re-decides the npm
+            # verdict, never requests raw.githubusercontent, and skips (without
+            # writing or bumping checkedAt) any entry whose fetch fails. Kept
+            # inside the non-target guard: a targeted dispatch must not refresh
+            # unrelated rows.
+            node scripts/probe-versions.mjs
           fi
           node scripts/build-site.mjs
       # Only a build that ran the probes has anything newer to remember.

@@ -1033,8 +1033,18 @@ for (const loc of LOCALES) {
     const rmNote = rmMismatch
       ? `\n    <p class="note">${esc(loc.strings.P_README_ONLY.replace('{LANG}', loc.langNames[rmLang] ?? rmLang))}</p>`
       : ''
+    // #19425 proposal B: show when this README snapshot was fetched so a
+    // weeks-old copy is not mistaken for current documentation. probe-readmes
+    // stores a date-only ISO string at the entry top level (next to the locale
+    // keys), not inside the locale object; legacy rows lack it.
+    const fetched = typeof entry?.fetchedAt === 'string' && entry.fetchedAt
+      ? entry.fetchedAt.slice(0, 10)
+      : null
+    const rmFetched = fetched
+      ? `\n    <p class="note">${loc.strings.P_README_FETCHED.replace('{DATE}', esc(fetched))}</p>`
+      : ''
     const readmeSection = readmeHtml ? `<section class="panel readme">
-    <h2>README</h2>${rmNote}
+    <h2>README</h2>${rmNote}${rmFetched}
     <div class="md" lang="${rmLocale?.htmlLang ?? loc.htmlLang}" translate="no">
 ${readmeHtml}
     </div>
@@ -1162,6 +1172,11 @@ const registry = {
       // Current npm `latest` when known. null = github-only (`npm` null) or
       // probed with no latest tag. Not the same signal as `downloads`.
       version: e.version,
+      // When the npm version above was last checked, aligned with the other
+      // *CheckedAt fields (#19425 proposal A). null when the entry is not on
+      // npm or has not been probed yet. probe-npm.mjs writes a date and
+      // probe-versions.mjs a full timestamp; both are ISO-parseable.
+      versionCheckedAt: e.npm ? (npmMap[e.url]?.checkedAt ?? null) : null,
       stars: e.stars,
       starsCheckedAt: starsMap[e.url]?.checkedAt ?? null,
       ...e.releaseMetadata,
@@ -1221,6 +1236,10 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
     const langs = {}
     for (const l of LOCALES) if (entry[l.code]) langs[l.code] = entry[l.code]
     if (!Object.keys(langs).length) continue
+    // Carry the probe's fetch time alongside the snapshot so a detail page can
+    // label it (#19425 proposal B). Without it a weeks-old README reads as
+    // current documentation. Null only for a legacy row that predates the field.
+    langs.fetchedAt = entry.fetchedAt ?? null
     payload.readmes[url] = langs
     payload.count++
   }
