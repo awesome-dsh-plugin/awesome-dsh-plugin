@@ -1,0 +1,6 @@
+url: https://github.com/skyrocks/dsh-session-trash
+name: skyrocks/dsh-session-trash
+category: session
+description:
+  zh: 右键删除会话先移入回收站，可撤销与恢复。
+  en: Moves deleted sessions to a trash bin with undo and restore.
