@@ -1,0 +1,6 @@
+url: https://github.com/YZY131425/dsh-fish-channel
+name: YZY131425/dsh-fish-channel
+category: notify
+description:
+  en: School channel plugin for DSH that binds a workspace or session and delivers school messages, notices, and wake-ups; unmatched sessions hold messages instead of spending tokens.
+  zh: 学校通道插件：绑定 DSH 工作区/会话，投递学校消息、通知与主动唤醒；匹配不到会话时先压着，不丢消息、不花 token。
