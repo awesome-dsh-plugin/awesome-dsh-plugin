@@ -1,0 +1,6 @@
+url: https://github.com/N006Unnamed/dsh-dsimport
+name: N006Unnamed/dsh-dsimport
+category: session
+description:
+  en: 'Import your DeepSeek web (chat.deepseek.com) conversation history into DeepSeek Harness as real, resumable dsh sessions. Drives a dedicated browser through CDP to read your logged-in web session, lists your chats so you can pick which to import, and converts each one into a proper dsh session log (environment events, model selection, turns) that shows up in the sidebar and can be continued. Thinking/reasoning is dropped by default, titles are marked with a suffix, and every HTTP route is guarded by the DSH access check. Exposes three model tools (dsimport_list, dsimport_import, dsimport_status), provides a dsimport Cordis service, and adds a settings panel card for login, listing and checkbox import.'
+  zh: '把你的 DeepSeek 网页（chat.deepseek.com）历史对话导入到 DeepSeek Harness，成为真实、可续聊的 dsh 会话。通过 CDP 驱动一个专用浏览器读取你已登录的网页会话，列出对话供你勾选要导入的项，并把每个对话转换成规范的 dsh 会话日志（环境事件、模型选择、对话轮次），导入后出现在侧边栏、可以继续追问。默认丢弃思考/推理，标题带后缀标记，所有 HTTP 路由都经过 DSH 访问检查。提供三个模型工具（dsimport_list、dsimport_import、dsimport_status），通过 dsimport 服务供其他插件调用，并在设置面板提供登录、列表与勾选导入的卡片。'
