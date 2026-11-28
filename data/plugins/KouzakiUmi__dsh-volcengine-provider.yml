@@ -1,0 +1,7 @@
+url: https://github.com/KouzakiUmi/dsh-volcengine-provider
+name: KouzakiUmi/dsh-volcengine-provider
+category: model
+description:
+  en: 'Adds Volcengine Ark Agent Plan and Coding Plan model routes to DeepSeek Harness, with separate account and quota management, model catalog sync, and Seedream 5.5 transparent images, layer decomposition, and text recognition on Agent Plan.'
+  zh: '为 DeepSeek Harness 接入火山方舟 Agent Plan 和 Coding Plan 模型路由，分别管理账号和额度、同步模型目录，并在 Agent Plan 中使用 Seedream 5.5 生成透明图、拆分图层和识别图层文字。'
+tarball: https://github.com/KouzakiUmi/dsh-volcengine-provider/releases/download/v0.2.23/dsh-volcengine-provider-0.2.23.tgz
