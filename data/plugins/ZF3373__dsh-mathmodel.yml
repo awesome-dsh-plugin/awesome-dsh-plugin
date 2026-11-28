@@ -1,0 +1,6 @@
+url: https://github.com/ZF3373/dsh-mathmodel
+name: ZF3373/dsh-mathmodel
+category: workflow
+description:
+  en: 'Math modeling contest and research paper workflow in a right-sidebar panel: one-click project init, staged pipeline with approval gates, idea/novelty/experiment loops, ensemble review, translation and nine mma_* tools.'
+  zh: '数模竞赛与科研论文工作流：右栏面板一键初始化项目、分阶段流水线与审批门、想法/新颖性/实验闭环、对抗审稿、翻译与九个 mma_* 工具。'
