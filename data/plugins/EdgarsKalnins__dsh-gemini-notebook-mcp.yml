@@ -1,0 +1,6 @@
+url: https://github.com/EdgarsKalnins/dsh-gemini-notebook-mcp
+name: EdgarsKalnins/dsh-gemini-notebook-mcp
+category: tools
+description:
+  en: Connect Gemini Notebook (NotebookLM) to DSH through the third-party notebooklm-mcp-cli for notebooks, sources, cited answers, research, and Studio content generation; requires Google sign-in.
+  zh: 通过第三方 notebooklm-mcp-cli 将 Gemini Notebook（NotebookLM）接入 DSH，支持笔记本与来源管理、带引用问答、研究和 Studio 内容生成；需登录 Google 账号。
