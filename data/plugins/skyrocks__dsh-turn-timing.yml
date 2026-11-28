@@ -1,0 +1,6 @@
+url: https://github.com/skyrocks/dsh-turn-timing
+name: skyrocks/dsh-turn-timing
+category: dev
+description:
+  zh: 每轮结束显示耗时去向（模型 / 编码 / 构建 / 测试 / 清理）。
+  en: 'Breaks down each turn''s elapsed time by phase: model, coding, build, test and cleanup.'
