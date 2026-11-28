@@ -1,0 +1,7 @@
+url: https://github.com/Yuhan-Wg/dsh-knowledge-is-power
+name: Yuhan-Wg/dsh-knowledge-is-power
+category: docs
+description:
+  en: Turns a folder or GitHub repository of Markdown into a browsable knowledge base with a chapter outline, tutorial tags, a frontmatter header, and HTML / Markdown / RAW views.
+  zh: 把本地目录或 GitHub 仓库里的 Markdown 变成可浏览的知识库：章节导航、教程风格组件、frontmatter 头部，以及 HTML / Markdown / RAW 三种视图。
+icon: https://raw.githubusercontent.com/Yuhan-Wg/dsh-knowledge-is-power/main/assets/icon-180.png
