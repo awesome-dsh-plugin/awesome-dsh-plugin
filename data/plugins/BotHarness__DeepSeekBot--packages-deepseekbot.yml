@@ -1,0 +1,7 @@
+url: https://github.com/BotHarness/DeepSeekBot/tree/main/packages/deepseekbot
+name: BotHarness/DeepSeekBot#deepseekbot
+category: workflow
+description:
+  en: 'Tobs (formerly DeepSeekBot) runs a team of persistent PersonaBots inside DeepSeek Harness: each bot has its own identity, personality and Git-backed memory, with group chats, task delegation, scheduled jobs and Slack, Discord, Feishu, QQ and WeChat channels.'
+  zh: 'Tobs（原 DeepSeekBot）在 DeepSeek Harness 中运行一支常驻的 PersonaBot 团队：每个 Bot 都有独立身份、人格和 Git 记忆，支持群聊、任务委派、定时任务，并可接入 Slack、Discord、飞书、QQ 和微信。'
+icon: https://raw.githubusercontent.com/BotHarness/DeepSeekBot/main/apps/mobile/assets/app-icons/deepseekbot-light.png
