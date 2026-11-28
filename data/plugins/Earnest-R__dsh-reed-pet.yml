@@ -1,0 +1,13 @@
+url: https://github.com/Earnest-R/dsh-reed-pet
+name: Earnest-R/dsh-reed-pet
+category: fun
+description:
+  en: >-
+    A desktop pet for DeepSeek Harness that sits on the composer edge, with idle
+    actions, per-line voice clips, replaceable sprites, drag, color themes, and
+    local DeepSeek balance and usage tracking.
+  zh: >-
+    挂在 DeepSeek Harness 输入框上边框的桌宠：会自己走动、坐下、打盹，被戳时有动作和台词；
+    支持逐条台词配语音、整套替换形象、拖动和菜单配色，并在本地显示 DeepSeek 余额、
+    峰谷时段、今日消耗与每轮花费。
+icon: https://raw.githubusercontent.com/Earnest-R/dsh-reed-pet/main/assets/icon.png
