@@ -1,0 +1,6 @@
+url: https://github.com/mantou132/dsh-plugin-agentdeck
+name: mantou132/dsh-plugin-agentdeck
+category: remote
+description:
+  en: 'Connects DeepSeek Harness to the AgentDeck mobile app (iOS / Android): auto-installs the ACP client and agentdeckd daemon with login autostart on startup, and adds a Settings panel with pairing QR code, keep-awake modes, and mobile default model selection over XChaCha20-Poly1305 end-to-end encryption.'
+  zh: '把 DeepSeek Harness 接入 AgentDeck（iOS / Android）手机端：启动时自动安装 ACP 客户端与 agentdeckd 守护进程并开启登录自启，在设置页提供配对二维码、防自动休眠模式与手机端默认模型配置，通信采用 XChaCha20-Poly1305 端到端加密。'
