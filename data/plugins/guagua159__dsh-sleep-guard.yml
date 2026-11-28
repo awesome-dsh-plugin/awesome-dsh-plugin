@@ -1,0 +1,6 @@
+url: https://github.com/guagua159/dsh-sleep-guard
+name: guagua159/dsh-sleep-guard
+category: security
+description:
+  en: Refuses shell commands that would block the whole turn, such as foreground sleeps of 20 seconds or more, follow-mode log readers and dev servers, and points the agent at background jobs instead.
+  zh: 拒绝会把整个回合卡住的 shell 命令——20 秒及以上的前台 sleep、follow 模式的日志读取、开发服务器——并引导 agent 改用后台任务。
