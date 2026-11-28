@@ -1,0 +1,7 @@
+url: https://github.com/kapibalawang-max/dsh-capybara-theme
+name: kapibalawang-max/dsh-capybara-theme
+category: theme
+description:
+  en: Turns the DSH three-column shell into rounded cards with five colour presets.
+  zh: 把 DSH 三栏界面改成圆角卡片，并提供五套配色预设。
+icon: https://raw.githubusercontent.com/kapibalawang-max/dsh-capybara-theme/main/assets/icon-180.png
