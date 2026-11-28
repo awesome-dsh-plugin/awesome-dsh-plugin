@@ -2,6 +2,6 @@ url: https://github.com/MagicMOl/dsh-org-talent
 name: MagicMOl/dsh-org-talent
 category: ui
 description:
-  en: 'Organization-wide employee matching in the DSH sidebar: editable current project requirements with pool sync; default team configuration with missing-role and skill prompts; project progress/outcomes/alerts; editable talent profiles and drag-to-team org chart; one best team with a base team; local SVG charts; one-paste feedback, memo, requirement pool, project conversations and capability advice.'
-  zh: 'DSH 左侧栏的组织人才匹配：当前项目需求可编辑并同步需求池；默认团队配置显示缺口角色与所需技能点；项目进度/成果/预警；人才库编辑与组织架构拖拽调队；一组最佳团队与基础团队；本地 SVG 数据图；粘贴反馈、备忘录、需求池、项目对话与培养建议。'
-tarball: https://github.com/MagicMOl/dsh-org-talent/releases/download/v1.18.0/dsh-org-talent-1.18.0.tgz
+  en: 'Organization-wide employee matching in the DSH sidebar: editable project requirements with pool sync; default team configuration and missing-role prompts; compact project-alert matrix with count summaries and drill-down; project progress/outcomes; editable talent profiles and drag-to-team org chart; one best team with a base team; local SVG charts; one-paste feedback, memo, requirement pool, project conversations and capability advice.'
+  zh: 'DSH 左侧栏的组织人才匹配：当前需求可编辑并同步需求池；默认团队配置与缺口角色提示；项目预警矩阵按项目×类型汇总并可下钻；项目进度/成果；人才库编辑与组织架构拖拽；一组最佳团队与基础团队；本地 SVG 数据图；粘贴反馈、备忘录、需求池、项目对话与培养建议。'
+tarball: https://github.com/MagicMOl/dsh-org-talent/releases/download/v1.19.0/dsh-org-talent-1.19.0.tgz
