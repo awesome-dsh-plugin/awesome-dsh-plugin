@@ -1,0 +1,7 @@
+url: https://github.com/morning-start/dsh-code-toolkit
+name: morning-start/dsh-code-toolkit
+category: git
+icon: https://raw.githubusercontent.com/morning-start/dsh-code-toolkit/main/assets/icon-180.png
+description:
+  en: 'Code-quality commands for DSH: /code-review reviews the uncommitted work (or the branch against its base) and fixes what it finds, /code-simplify rewrites without changing behavior, /code-scrub finds and redacts secrets and local paths, /code-caption runs a hard task through a step-and-verify loop with a Markdown ledger, and /pua installs a protocol for changing method instead of retrying; each check takes sub to run in an isolated subagent, or report to plan without editing files.'
+  zh: '面向 DSH 的代码质量命令：/code-review 审查未提交的改动（或当前分支相对基线的改动）并修复发现的问题，/code-simplify 在不改变行为的前提下重写，/code-scrub 找出并脱敏密钥与本机路径，/code-caption 把难任务装进「一步一验 + Markdown 台账」的循环，/pua 装上「换方法而不是重试」的协议；三件检查都支持 sub 走隔离子 agent、report 只出方案不改文件。'
