@@ -1,0 +1,6 @@
+url: https://github.com/zz19940402/pointPdf-builder
+name: zz19940402/pointPdf-builder
+category: skill
+description:
+  en: 'DSH skill that renders a JSON resume into a standalone print-ready HTML file using five bundled A4 templates, with inlined CSS and no editor UI; the user prints to PDF from the browser.'
+  zh: 'DSH 简历技能：把 JSON 简历数据用内置的 5 套 A4 模板渲染成独立可打印的 HTML（CSS 内联、无编辑界面），浏览器打印即可存为 PDF。'

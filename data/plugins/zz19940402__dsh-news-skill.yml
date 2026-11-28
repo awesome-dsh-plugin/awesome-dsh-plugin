@@ -1,0 +1,6 @@
+url: https://github.com/zz19940402/dsh-news-skill
+name: zz19940402/dsh-news-skill
+category: skill
+description:
+  en: 'DSH skill that fetches dated news briefings from public RSS and live feeds in four categories (international, domestic economy, domestic tech, global tech), five items each, and always supplements the result with a mandatory web search for the day''s major breaking news.'
+  zh: 'DSH 新闻技能：按日期从公开 RSS 与快讯接口抓取国际经济、国内经济、国内科技、国际科技四类新闻，每类五条，并强制用联网搜索补充当天重大新闻，避免固定源漏报。'
