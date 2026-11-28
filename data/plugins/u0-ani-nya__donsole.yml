@@ -1,0 +1,7 @@
+url: https://github.com/u0-ani-nya/donsole
+name: u0-ani-nya/donsole
+category: tools
+icon: https://raw.githubusercontent.com/u0-ani-nya/donsole/main/assets/icon-180.png
+description:
+  en: Shared terminal for the human and the agent, where commands the agent runs appear in the pty you are watching, it reads the screen and the raw output stream, and it types into foreground programs such as ssh or vim so it can help inside a session you already opened.
+  zh: 人和 agent 共用的终端，agent 跑的命令就出现在你正看着的 pty 里，能读屏幕和原始输出流，也能在 ssh、vim 这类前台程序里直接打字，所以你已经登录的会话它也能搭把手。
