@@ -2,6 +2,6 @@ url: https://github.com/DDVIP/dsh-memory-yuan
 name: DDVIP/dsh-memory-yuan
 category: memory
 description:
-  en: 'Markdown-file long-term memory for DSH: thirteen tools, L0/L1/L2 prompt injection, review and lint passes, and a console panel with a graph view. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: 基于 Markdown 文件的长期记忆：十三个工具、L0/L1/L2 三层注入、体检与结构检查，外加带星图的控制台面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+  en: 'Markdown-file long-term memory for DSH: thirteen tools, L0/L1/L2 prompt injection, review and lint passes, and a console panel with a graph view. Its UI routes are gated by the DSH browser trust check, so only pages this deployment serves can call them.'
+  zh: 基于 Markdown 文件的长期记忆：十三个工具、L0/L1/L2 三层注入、体检与结构检查，外加带星图的控制台面板。界面路由走 DSH 的浏览器信任闸，只有本部署自己的页面能调用。
 icon: https://raw.githubusercontent.com/DDVIP/dsh-memory-yuan/main/assets/icon-180.png
