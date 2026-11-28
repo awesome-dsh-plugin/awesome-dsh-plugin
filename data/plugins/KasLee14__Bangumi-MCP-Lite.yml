@@ -1,0 +1,7 @@
+url: https://github.com/KasLee14/Bangumi-MCP-Lite
+name: KasLee14/Bangumi-MCP-Lite
+category: tools
+icon: https://raw.githubusercontent.com/KasLee14/Bangumi-MCP-Lite/main/dsh/icon.png
+description:
+  en: Read-only Bangumi (bgm.tv) MCP server with 6 compact tools covering 17 public query APIs for anime, manga, games, music, people, characters, comments, and collections.
+  zh: 只读 Bangumi（bgm.tv）MCP 工具插件，默认提供 6 个聚合工具（覆盖 17 个公开查询接口），支持查询作品、人物、角色、吐槽与公开收藏。
