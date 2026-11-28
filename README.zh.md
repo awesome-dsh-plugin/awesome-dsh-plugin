@@ -185,6 +185,7 @@ dsh plugin --profile web add dshmarket
 - [Yukikaze-Ai/dsh-ladder-superagents](https://github.com/Yukikaze-Ai/dsh-ladder-superagents) — 把模型排成十档阶梯，按 1–10 的难度给子代理选档，失败自动降一档。仅支持 Windows，按会话选择启用。子代理还可以启动本机的 agent CLI（Codex 已验证，另有 9 个为实验性），被授予完全权限的子代理会给其 CLI 加 --dangerously-skip-permissions、--yolo 或 --force。运行记录写在工作区的 .dsh-supa/ 里。
 - [yunxiyang/dsh-loop-continue](https://github.com/yunxiyang/dsh-loop-continue) — 续跑「叙述了下一步动作却没调用工具」就结束的 agent 轮次：插件在 agent/turn-stopping 回放该轮日志，让裁判模型回答一次 true/false，命中的话把同一轮再推进一步。
 - [yyty947/dsh-advisor-chain](https://github.com/yyty947/dsh-advisor-chain) — 按需向配置好的顾问模型链征求第二意见；顾问自动继承完整对话，失败沿链顺延，咨询以卡片留痕可回放。
+- [yyyyyyyywsy/dsh-team-dispatch](https://github.com/yyyyyyyywsy/dsh-team-dispatch) — 把多 Agent 派发从“建议”变成“绕不过去”：系统提示词常驻注入四步顺序，tools/pre-execute 直接拒绝“没建任务就 spawn”“建任务不带 write_scopes”“claim 不带 expected_revision”，另有催收、催删、催重新派发三条不阻断提醒；配套跨会话花名册工具、只追加的 JSONL 台账、按会话开关的输入框图标，以及四组二十项的设置页。
 - [ZekaiShi/Orivii](https://github.com/ZekaiShi/Orivii) — 住进 DSH 的会动 AI 搭子：图片文件随聊随发，共享记忆、自然提醒和后台办事；B 站内容需另装 dsh-bili-watch 或 dsh-bili-scroll 插件后读取。
 - [zhoulvyuan/dsh-plugin#dsh-claude-code-web](https://github.com/zhoulvyuan/dsh-plugin/tree/master/dsh-claude-code-web) — 在 DSH 内提供 Claude Code 风格工作台：工作区/会话侧栏、流式文档式对话与统一工具卡、思考过程、Markdown 与 Mermaid 渲染、暗色主题，以及由宿主内 HTTP/WebSocket 服务驱动的可拖动悬浮面板。
 - [zx-yk/dsh-codex-adapter](https://github.com/zx-yk/dsh-codex-adapter) — 从 Claude Code / Codex 把任务派发给 DSH 智能体，作为原生子代理并实时显示进度；配置派发默认值、执行模式，以及视觉 / 生图访问，一键安装到宿主。

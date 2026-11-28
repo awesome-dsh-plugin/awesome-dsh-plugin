@@ -1,0 +1,7 @@
+url: https://github.com/yyyyyyyywsy/dsh-team-dispatch
+name: yyyyyyyywsy/dsh-team-dispatch
+category: agi
+icon: https://raw.githubusercontent.com/yyyyyyyywsy/dsh-team-dispatch/main/icon.png
+description:
+  en: 'Enforces agent-team dispatch instead of advising it: a system-prompt section states the four-step order (create the task, spawn the executor, claim with a revision, complete then delete), and a tools/pre-execute hook refuses a spawn with no task on the board, a task without write_scopes, and a claim without a positive expected_revision, while three non-blocking reminders chase open tasks, un-deleted completions, and results that were never re-dispatched. It also ships a roster tool for reusing agents across sessions, an append-only JSONL ledger, a composer switch that turns the rules on for one conversation, and a settings page of four groups and twenty fields.'
+  zh: '把多 Agent 派发从“建议”变成“绕不过去”：系统提示词常驻注入四步顺序，tools/pre-execute 直接拒绝“没建任务就 spawn”“建任务不带 write_scopes”“claim 不带 expected_revision”，另有催收、催删、催重新派发三条不阻断提醒；配套跨会话花名册工具、只追加的 JSONL 台账、按会话开关的输入框图标，以及四组二十项的设置页。'
