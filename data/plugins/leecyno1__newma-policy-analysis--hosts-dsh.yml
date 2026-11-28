@@ -1,0 +1,7 @@
+url: https://github.com/leecyno1/newma-policy-analysis/tree/main/hosts/dsh
+name: leecyno1/newma-policy-analysis#dsh
+category: workflow
+description:
+  en: Adds DSH sidebar links to the channels, calendar, feed, and interpretation workspaces of the separately installed Newma Policy Research service.
+  zh: 通过 DSH 侧栏打开政策渠道、日历、政策流和政策解读，需要先运行本机 Newma 政策研究服务。
+tarball: https://github.com/leecyno1/newma-policy-analysis/releases/download/policy-v0.5.0/newma-policy-dsh-0.1.0.tgz
