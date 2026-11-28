@@ -1,0 +1,6 @@
+url: https://github.com/meka-im/google-trends-for-agent
+name: meka-im/google-trends-for-agent
+category: tools
+description:
+  en: Free MIT Google Trends plugin & pytrends alternative with 4 native tools, sidebar dashboard, 59 Google Ads anchors for daily search volume calibration, and 1-click local/Apify Actor switching.
+  zh: 免费开源（MIT）的 Google Trends 插件与 pytrends 替代品，提供 4 个原生工具与侧边栏仪表盘，基于 59 个 Google Ads 锚点校准真实日搜索量，支持本机直连与开源/自部署 Actor 一键切换。
