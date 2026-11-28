@@ -1,0 +1,7 @@
+url: https://github.com/RSLN-creator/dsh-focus-island
+name: RSLN-creator/dsh-focus-island
+category: ui
+icon: https://raw.githubusercontent.com/RSLN-creator/dsh-focus-island/main/assets/icon-180.png
+description:
+  en: 'A floating countdown island in the corner of the conversation that times only the stretches you spend watching without sending and reminds you when a configured interval is used up; its strict mode covers the screen with the official pixel whale and the sessions that are running or waiting on your answer, each with its own live duration, steps aside when a question is pending, and shows an idle state when nothing is running.'
+  zh: '会话角落的浮动倒计时岛：只统计你没有发送消息、光看着 AI 生成的时间段，到点提醒；严格模式到点整屏遮罩，只留官方像素鲸与正在运行或正等你回答的会话及各自的实时用时，出现提问时自动让位，没有会话时显示「空闲中」。'
