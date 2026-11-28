@@ -1,0 +1,7 @@
+url: https://github.com/NIXOA/dsh-context-hud
+name: NIXOA/dsh-context-hud
+category: usage
+description:
+  en: 'Composer pill showing the wallet balance of the model actually running, plus a card with context occupancy, TTFT, tokens per second, cache hit rate and switchable per-channel quota tabs; other providers are added by editing one JSON file.'
+  zh: '输入框下方的胶囊显示当前模型实际在花的钱包余额，点开是上下文占用、TTFT、吞吐、缓存命中与按渠道切换的额度明细；其它厂商额度改一个 JSON 文件即可接入。'
+icon: https://raw.githubusercontent.com/NIXOA/dsh-context-hud/main/icon.png
