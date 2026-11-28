@@ -1,0 +1,7 @@
+url: https://github.com/mantou132/dsh-plugin-browser4agent
+name: mantou132/dsh-plugin-browser4agent
+category: browser
+description:
+  en: 'Connects DeepSeek Harness to your existing Chrome, Edge, or Firefox browser via Browser4Agent: automatically downloads the SHA-256-verified browser4agent CLI, registers Native Messaging Hosts and installs the DSH skill on startup, and adds a Settings panel that polls local extension readiness with store links.'
+  zh: '通过 Browser4Agent 让 DeepSeek Harness 控制你正在使用的 Chrome、Edge 或 Firefox 浏览器：启动时自动下载并校验 browser4agent CLI、注册 Native Messaging Host 并写入 DSH Skill，并在设置页提供扩展商店链接与连接状态自动检测。'
+tarball: https://github.com/mantou132/dsh-plugin-browser4agent/releases/download/v0.1.0/dsh-plugin-browser4agent-0.1.0.tgz
