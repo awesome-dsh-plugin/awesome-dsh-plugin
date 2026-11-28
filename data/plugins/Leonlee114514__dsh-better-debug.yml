@@ -4,4 +4,4 @@ category: dev
 description:
   en: 'Stuck-loop detection for coding agents: reads behavioral evidence from the event stream (blind edits, repeated errors, error families, verification oscillation, patch chains, futile interventions) and injects one observation plus a recovery suggestion before the next step. No LLM calls, no agent-loop changes, no parsing of model output.'
   zh: 编码 Agent 的卡住检测：用事件流里的行为证据（盲改、重复报错、错误族、验证振荡、补丁链、干预失效）判断是否陷入无效迭代，并在下一步之前注入一条观察与恢复建议。不调 LLM、不改 agent loop、不解析模型输出。
-tarball: https://github.com/Leonlee114514/dsh-better-debug/releases/download/v0.3.5/dsh-better-debug-0.3.5.tgz
+tarball: https://github.com/Leonlee114514/dsh-better-debug/releases/download/v0.3.6/dsh-better-debug-0.3.6.tgz
