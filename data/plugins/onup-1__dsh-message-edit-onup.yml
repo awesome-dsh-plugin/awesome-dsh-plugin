@@ -1,0 +1,6 @@
+url: https://github.com/onup-1/dsh-message-edit-0.3.0
+name: onup-1/dsh-message-edit-onup
+category: session
+description:
+  en: 'Edit any earlier message and continue from that point: the conversation forks into a branch that sees the rewritten prefix, while the original stays untouched. Previously shipped as @onup/dsh-message-edit; the npm package is now the unscoped dsh-message-edit-onup.'
+  zh: '修改任意一条历史消息并从那里重新继续：会话会分叉成一个看到新前缀的分支，原会话保持不动。以前以 @onup/dsh-message-edit 发布，npm 包名现已改为无 scope 的 dsh-message-edit-onup。'
