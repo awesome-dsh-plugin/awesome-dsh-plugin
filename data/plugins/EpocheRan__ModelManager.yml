@@ -1,0 +1,6 @@
+url: https://github.com/EpocheRan/ModelManager
+name: EpocheRan/ModelManager
+category: model
+description:
+  en: Manage model providers, API keys, per-provider proxies, and reasoning levels from one Settings page.
+  zh: 在一个设置页里管理模型供应商、API 密钥、供应商级代理与推理档位。
