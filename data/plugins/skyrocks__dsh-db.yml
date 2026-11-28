@@ -1,0 +1,6 @@
+url: https://github.com/skyrocks/dsh-db
+name: skyrocks/dsh-db
+category: tools
+description:
+  zh: 多数据源数据库查询（Vastbase/PG/MySQL/SQLite），默认只读、写入逐条审批。
+  en: Read-only multi-source database queries across Vastbase, PostgreSQL, MySQL and SQLite, with per-statement approval for writes.
