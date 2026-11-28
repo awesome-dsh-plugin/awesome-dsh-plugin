@@ -1,0 +1,6 @@
+url: https://github.com/YIGULN/dsh-power-off
+name: YIGULN/dsh-power-off
+category: tools
+description:
+  en: 'A power button in the DSH composer toolbar: arm it and DSH shuts down the Windows PC once every session in the batch goes idle, with a cancellable countdown. It only fires after it actually saw a task run, a new task during the countdown cancels the shutdown, and with the default onlyOnSuccess no shutdown happens when any session in the batch errored.'
+  zh: 'DSH 输入栏工具栏的电源按钮：激活后监听任务进度，全部会话空闲时倒计时并自动关闭 Windows 电脑，倒计时内可一键取消。只有确实观察过任务运行、随后全部空闲才会关机；倒计时期间任一会话重新运行立即撤销；默认仅成功时关机（本批次有会话出错则不关机）。'
