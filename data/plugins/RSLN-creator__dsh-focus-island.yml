@@ -1,0 +1,8 @@
+url: https://github.com/RSLN-creator/dsh-focus-island
+name: RSLN-creator/dsh-focus-island
+category: ui
+icon: https://raw.githubusercontent.com/RSLN-creator/dsh-focus-island/main/assets/icon-180.png
+description:
+  en: 'A floating countdown island in the corner of the conversation that counts the time the conversation page stays visible and focused after your last sent message, and reminds you when the configured interval is up. Reading, typing, an unsent draft and model generation do not pause it; sending another message resets it, while hiding the page or losing window focus pauses it. Opt-in strict mode covers the whole frame on time-up with the official 137-frame pixel whale and the sessions that are running or waiting on your answer, each with its own locally tracked elapsed time; it yields automatically when a question or an approval needs you and shows an idle timer when no session is active.'
+  zh: '会话角落的浮动倒计时岛：从你最后一次发送消息起，统计对话页可见且窗口有焦点的时间，到设定间隔就提醒你。阅读、打字、未发送的草稿、模型生成都不会暂停它；再次发送消息会重置，页面隐藏或窗口失焦则暂停。可选的严格模式到点整屏遮罩，只留官方 137 帧像素鲸与正在运行或正等你回答的会话，每行是本地记录的各自用时；有提问或审批需要你时自动让位，没有会话时显示空闲计时。'
+
