@@ -1,0 +1,6 @@
+url: https://github.com/wellsoren/dsh-restart
+name: wellsoren/dsh-restart
+category: dev
+description:
+  zh: "在 DSH 的侧边栏「更多」菜单加两行：「重载插件」让更新或安装插件免重启生效；「重启 DSH」重启DSH进程，二次确认设计，防止误操作。适用于Linux系统。"
+  en: "Adds two rows to the DSH sidebar More menu: Reload plugins applies plugin updates and installs without a restart; Restart DSH restarts the DSH process and asks for a second click to confirm, preventing accidental restarts. For Linux systems."
