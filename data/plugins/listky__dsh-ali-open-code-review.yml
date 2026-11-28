@@ -1,0 +1,7 @@
+url: https://github.com/listky/dsh-ali-open-code-review
+name: listky/dsh-ali-open-code-review
+category: git
+description:
+  en: Reuses Alibaba Open Code Review in DeepSeek Harness for native and host-model reviews, scanning, rules, sessions, and reports.
+  zh: 针对 Alibaba Open Code Review 开发的 DeepSeek Harness 插件，复用原生与宿主模型审查、扫描、规则、会话和报告。
+tarball: https://github.com/listky/dsh-ali-open-code-review/releases/download/v0.1.0/dsh-ali-open-code-review-0.1.0.tgz
