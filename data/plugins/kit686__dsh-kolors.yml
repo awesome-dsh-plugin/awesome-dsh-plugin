@@ -1,0 +1,7 @@
+url: https://github.com/kit686/dsh-kolors
+name: kit686/dsh-kolors
+category: vision
+description:
+  en: 'Free image generation: a sidebar page for DeepSeek Harness that draws with the free Kwai-Kolors/Kolors model on SiliconFlow, plus a `kolors_image` tool so the model can draw in a conversation. Key pool, on-disk quotas and history with trash stay on your machine.'
+  zh: '免费生图：给 DeepSeek Harness 侧栏加一页出图界面，用硅基流动免费的 Kwai-Kolors/Kolors 作画，并注册 `kolors_image` 工具，让模型在对话里出图。本机 Key 池、写盘额度和带回收站的历史都随插件走。'
+icon: https://raw.githubusercontent.com/kit686/dsh-kolors/main/assets/icon-180.png
