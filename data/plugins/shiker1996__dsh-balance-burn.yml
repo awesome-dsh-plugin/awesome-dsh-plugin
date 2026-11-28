@@ -1,0 +1,6 @@
+url: https://github.com/shiker1996/dsh-balance-burn
+name: shiker1996/dsh-balance-burn
+category: usage
+description:
+  en: 'Shows how long the DeepSeek balance lasts: runway days at the current burn rate, 1/7/30-day spend rates from local session logs, period comparisons and a top-up suggestion.'
+  zh: '把 DeepSeek 余额算成还能用多久：按当前消耗速率给出可用天数，用本机会话日志统计 1/7/30 天花费速率，并给出周期对比与充值建议。'
