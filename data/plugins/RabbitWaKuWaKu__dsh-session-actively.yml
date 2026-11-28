@@ -1,0 +1,7 @@
+url: https://github.com/RabbitWaKuWaKu/dsh-session-actively
+name: RabbitWaKuWaKu/dsh-session-actively
+category: session
+description:
+  en: Adds a left-sidebar page that lists running sessions first and every other session by last activity, with each row's last-active time and one-click switching.
+  zh: 在左侧栏新增页面：先列正在运行的会话，再按最近活跃时间排列其他会话，逐行显示最近活跃时间，点击即可切换。
+icon: https://raw.githubusercontent.com/RabbitWaKuWaKu/dsh-session-actively/main/assets/icon-180.png
