@@ -1,0 +1,7 @@
+url: https://github.com/LJL454/dsh-computer-use
+name: LJL454/dsh-computer-use
+category: tools
+description:
+  en: 'Windows computer-use tools for DeepSeek Harness, with screen capture, UI Automation, background browsing, and separate Windows child sessions for supported apps.'
+  zh: '为 DeepSeek Harness 提供 Windows 电脑操作工具，支持截图、UI 自动化、后台浏览器，以及通过独立 Windows 子会话运行已接入的应用。'
+tarball: https://github.com/LJL454/dsh-computer-use/releases/download/v3.1.0/dsh-computer-use-ljl454-3.1.0.tgz
