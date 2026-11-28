@@ -1,0 +1,7 @@
+url: https://github.com/ArmedHelicopter/dsh-timelessNascence-pet
+name: ArmedHelicopter/dsh-timelessNascence-pet
+category: fun
+description:
+  en: 'A desk pet for the DSH client: 18 transparent WebM clips run by an idle / think / sad state machine with enter and exit transitions, editable dialogue pools shipped with 61 pre-generated Chinese voice lines, per-message cost computed from the usage field under Beijing-time peak and valley pricing, and an optional CPU / memory / GPU plate. The code is MIT; the character art is derivative fan art and is not covered by that licence.'
+  zh: 'DSH 客户端桌宠：18 段透明 WebM 片段由 idle / think / sad 状态机驱动（含进入与退出转场），对话池可编辑并自带 61 条中文语音；按 usage 逐条结算星尘花费并使用北京时间峰谷价，另可挂 CPU / 内存 / GPU 状态牌。代码为 MIT；角色美术为同人二创，不在该许可范围内。'
+icon: https://raw.githubusercontent.com/ArmedHelicopter/dsh-timelessNascence-pet/main/icon.png

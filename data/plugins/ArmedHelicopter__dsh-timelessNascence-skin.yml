@@ -1,0 +1,7 @@
+url: https://github.com/ArmedHelicopter/dsh-timelessNascence-skin
+name: ArmedHelicopter/dsh-timelessNascence-skin
+category: theme
+description:
+  en: 'A navy, black and white client theme for DSH: one token set drives both the dark and light palettes, a single 1px light streak is the only decoration, and a 3.9-second startup animation ends on a captioned wordmark. Settings cover the font scheme (sans, mono or pixel), the Chinese font, a faint starfield and the splash sound.'
+  zh: 'DSH 客户端主题，藏青 / 黑 / 白：同一套令牌驱动深色与浅色两套配色，唯一的装饰是一道 1px 横向光痕，启动时播放一段 3.9 秒动画并在结尾淡入字标。设置项包括字体方案（无衬线 / 等宽 / 像素）、中文字体、极淡星野与启动动画声音。'
+icon: https://raw.githubusercontent.com/ArmedHelicopter/dsh-timelessNascence-skin/main/icon.png
