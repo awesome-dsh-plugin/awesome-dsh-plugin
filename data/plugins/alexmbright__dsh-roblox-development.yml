@@ -1,0 +1,5 @@
+url: https://github.com/alexmbright/dsh-roblox-development
+name: alexmbright/dsh-roblox-development
+category: dev
+description:
+  en: 'Roblox development preset: tiered worker agents, pinned Luau tools (lune, stylua, selene, luau-lsp), 29 offline Roblox skills, Studio MCP and Open Cloud API tools.'
