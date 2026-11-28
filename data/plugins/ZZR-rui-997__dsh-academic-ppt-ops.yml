@@ -1,0 +1,11 @@
+url: https://github.com/ZZR-rui-997/dsh-academic-ppt-ops
+name: ZZR-rui-997/dsh-academic-ppt-ops
+category: skill
+description:
+  en: 'Turn an outline into natively editable PowerPoint for group meetings, thesis
+    defenses and conference talks: 31 academic page types, four themes, native charts
+    and OMML formulas, simulated animations, speaker-note export, and a three-layer
+    QA gate (content placeholders, layout guards, rendered slide review).'
+  zh: 把大纲变成原生可编辑的学术 PPT——组会汇报、学位答辩、学术会议报告三大场景：31 种学术页型、四套主题、原生图表与 OMML 公式、模拟动画、讲稿
+    DOCX 导出，以及三层 QA 闸门（内容占位检查 / 布局守卫 / 渲染目检）。
+icon: https://raw.githubusercontent.com/ZZR-rui-997/dsh-academic-ppt-ops/main/icon.png
