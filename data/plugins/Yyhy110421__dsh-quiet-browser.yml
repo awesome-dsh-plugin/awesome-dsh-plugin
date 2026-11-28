@@ -1,0 +1,6 @@
+url: https://github.com/Yyhy110421/dsh-quiet-browser
+name: Yyhy110421/dsh-quiet-browser
+category: browser
+description:
+  en: 'Keeps the built-in browser window from taking foreground focus or covering other windows: a WinEvent hook daemon sets WS_EX_NOACTIVATE and moves it to HWND_BOTTOM, while pages still load, click and screenshot. Windows only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 静默浏览：内置浏览器窗口不再抢前台焦点、不遮挡其他窗口——WinEvent 钩子守护进程为其加 WS_EX_NOACTIVATE 并压到 HWND_BOTTOM，页面照常加载、点击、截图。仅 Windows。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

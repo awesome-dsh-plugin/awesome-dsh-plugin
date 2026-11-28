@@ -1,0 +1,6 @@
+url: https://github.com/pseudonymzjt/dsh-direct-human-style
+name: pseudonymzjt/dsh-direct-human-style
+category: identity
+description:
+  en: 'Always-on writing-style section appended to the system prompt (1449 characters: six principles plus banned-phrase, banned sentence-pattern and English-mirror lists) that steers replies towards a terse engineering register, plus two tools — humanize_check scans text against 58 rules (45 Chinese, 13 English, eight groups) and reports hits with dash, bold and sentence-length statistics, and humanize_rules returns the long-form lists for direct, GPT-style, DeepSeek-style or 31 editing checkpoints.'
+  zh: '常驻 system prompt 的写作风格段（1449 字符：六条原则、必删套话、必拆句式和英文镜像清单），把回复压成直白工程口吻；另配两个工具：humanize_check 按 58 条规则（中文 45、英文 13、八组）扫描文本并报告命中和破折号、加粗、句长统计，humanize_rules 取回 direct、GPT 腔、DeepSeek 腔或 31 个编辑检查点的全文清单。'

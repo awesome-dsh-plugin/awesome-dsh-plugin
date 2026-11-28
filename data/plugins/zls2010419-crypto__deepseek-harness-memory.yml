@@ -1,0 +1,7 @@
+url: https://github.com/zls2010419-crypto/deepseek-harness-memory
+name: zls2010419-crypto/deepseek-harness-memory
+category: memory
+description:
+  en: "Long-term memory plugin with auto-recall, per-repo isolation, a memory graph, user-profile injection, an Ebbinghaus forgetting curve, and OpenVINO embeddings."
+  zh: "长期记忆插件：自动召回、按仓库隔离、记忆图谱、用户画像注入、艾宾浩斯遗忘曲线与 OpenVINO 向量化。"
+icon: https://raw.githubusercontent.com/zls2010419-crypto/deepseek-harness-memory/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/leilengma/dsh-copilot-bridge
+name: leilengma/dsh-copilot-bridge
+category: model
+tarball: https://github.com/leilengma/dsh-copilot-bridge/releases/latest/download/dsh-copilot-bridge.tgz
+description:
+  en: 'GitHub Copilot Bridge provider for DeepSeek Harness, with GitHub/Enterprise device-flow sign-in, a live model catalog, model visibility and pinning controls.'
+  zh: '为 DeepSeek Harness 提供独立的 GitHub Copilot Bridge 模型服务，支持 GitHub/Enterprise 设备码登录、实时模型目录、模型显示控制与置顶。'

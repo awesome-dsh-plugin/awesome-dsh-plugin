@@ -1,0 +1,7 @@
+url: https://github.com/zhang-1239/dsh-yupan
+name: zhang-1239/dsh-yupan
+category: tools
+description:
+  en: 'A local journal for your own price calls: draw the next candles, fill in the actuals when they come due, and see your personal bias profile built only from your own records. No market feed, no auto-fetch, no advice — every number comes from a file you import or a value you confirm.'
+  zh: '记录自己的价格判断：画出下一段走势，到期手动填入实际值，偏差按你自己的历史累计成画像。不接行情、不自动取价、不给建议——每个数字都来自你导入的文件或你确认过的输入。'
+icon: https://raw.githubusercontent.com/zhang-1239/dsh-yupan/main/icon-512.png

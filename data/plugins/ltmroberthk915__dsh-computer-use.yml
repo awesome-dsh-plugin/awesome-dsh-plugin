@@ -1,8 +1,8 @@
 url: https://github.com/ltmroberthk915/dsh-computer-use
 name: ltmroberthk915/dsh-computer-use
 category: tools
-tarball: https://github.com/ltmroberthk915/dsh-computer-use/releases/download/v2.3.4/dsh-codex-style-computer-use-2.3.4.tgz
+tarball: https://github.com/ltmroberthk915/dsh-computer-use/releases/download/v2.3.5/dsh-codex-style-computer-use-2.3.5.tgz
 icon: https://raw.githubusercontent.com/ltmroberthk915/dsh-computer-use/main/docs/images/icon-180.png
 description:
-  en: 'Windows Computer Use 2.3.4 for DeepSeek Harness. Discover available actions per control, scroll either axis to an exact percentage, switch views, and place the caret before or after matching text. Includes screenshot and OCR tools, verified control targeting, batch actions and human handoff. Windows x64, Node 22+.'
-  zh: 'Windows 桌面操控 2.3.4。先查看控件能做什么，再按百分比精确滚动、切换视图或显示离屏条目。可将光标放在匹配文字前后，并回读验证位置。支持截图、OCR、批量操作与人工接管。适用于 Windows x64、Node 22 及以上。'
+  en: 'Windows computer use, desktop automation and UI Automation (UIA) for DeepSeek Harness, in the Codex style: read control trees, click / type / drag by verified numbered marks, then read back to confirm; window screenshots, OCR, batch actions and human handoff. Per-action approval by default; danger-full-access sessions run under that grant and log to policy.jsonl. Windows x64, Node 22+.'
+  zh: 'Windows 电脑操作、电脑控制与桌面自动化插件（Codex 风格）：用 UI Automation（UIA）读控件树，按编号标记精确点击、输入、拖拽并回读验证；内置窗口截图、OCR 找字、批量操作与人工接管。默认逐次审批，完全权限会话按授权执行并记入 policy.jsonl。适用于 Windows x64、Node 22+。'

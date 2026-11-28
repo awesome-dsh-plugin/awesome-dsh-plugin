@@ -1,0 +1,7 @@
+url: https://github.com/mark-qtech/dsh-inline-link-preview
+name: mark-qtech/dsh-inline-link-preview
+category: ui
+icon: https://raw.githubusercontent.com/mark-qtech/dsh-inline-link-preview/main/assets/icon-180.png
+description:
+  en: 'Displays a single pasted link in the DeepSeek Harness chat input as an inline icon and title when available (Feishu/Lark docs via lark-cli, public GitHub pages, WeChat articles, and accessible public web pages), while keeping the original URL on copy and send.'
+  zh: '在 DeepSeek Harness 聊天输入框中单独粘贴链接后，尝试将飞书/Lark 文档（需 lark-cli）、GitHub 公开页面、微信公众号文章及可访问的公开网页就地显示为「图标 + 标题」，复制和发送时保留原始网址。'

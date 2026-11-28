@@ -1,0 +1,6 @@
+url: https://github.com/zzricls/dsh-deepblue-hud
+name: zzricls/dsh-deepblue-hud
+category: ui
+description:
+  en: 'Deep-blue cockpit HUD for the Web UI: a collapsible panel with live session economy (prompt and completion tokens, smoothed tok/s, context occupancy with threshold colours), a typed tool trajectory that takes over the assistant-step renderer, a self-contained Markdown renderer, and a data-flow gallery with token rhythm, a context curve and the thinking/execution stream. Also applies one deep-blue theme token layer plus a generated starfield, and uninstalling restores the original UI exactly.'
+  zh: '深蓝驾驶舱 HUD：右下角可折叠面板显示会话经济（入/出 token、平滑 tok/s、上下文占用与阈值色）；接管 assistant-step 渲染器把思考逐字打出、思考块可折叠、工具调用可展开，正文走自建 Markdown 渲染器；另有数据流弹窗（token 节奏柱、上下文曲线、思考与执行流）。同时用一层 theme token 把整套界面切成深蓝并铺星空，卸载即完全还原。'

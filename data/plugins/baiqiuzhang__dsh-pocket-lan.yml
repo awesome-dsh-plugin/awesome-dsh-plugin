@@ -1,0 +1,6 @@
+url: https://github.com/baiqiuzhang/dsh-pocket-lan
+name: baiqiuzhang/dsh-pocket-lan
+category: notify
+description:
+  en: 'GPL-2.0 fork of dsh-pocket 2.11.0 (by shaobeichen) with two local patches: the LAN QR code embeds the access password, and a read-only /dsh-pocket/entry.json is exposed. Same ideas as dsh-pocket-plus but an independent implementation; upstream is 2.13.1 and later changes are not merged.'
+  zh: 'dsh-pocket 2.11.0 的 GPL-2.0 派生版（原作者 shaobeichen），两处本地补丁：局域网二维码内嵌访问密码、新增只读 /dsh-pocket/entry.json。与 dsh-pocket-plus 思路相同但为独立实现；上游 2.13.1 之后的改动未合并。'

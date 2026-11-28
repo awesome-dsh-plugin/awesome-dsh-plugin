@@ -1,0 +1,7 @@
+url: https://github.com/peng6yu/dsh-design-mode
+name: peng6yu/dsh-design-mode
+category: ui
+description:
+  en: A design-pass agent preset for DeepSeek Harness — picks one visual direction instead of asking, binds a 56-token contract, ships 152 design systems, and exports the finished page to PDF/PNG.
+  zh: 给 DeepSeek Harness 的设计模式 agent 预设——自己选定视觉方向而不是追问，绑定 56 个 token 的契约，内置 152 套设计系统，并把成品导出为 PDF/PNG。
+icon: https://raw.githubusercontent.com/peng6yu/dsh-design-mode/master/assets/icon-180.png

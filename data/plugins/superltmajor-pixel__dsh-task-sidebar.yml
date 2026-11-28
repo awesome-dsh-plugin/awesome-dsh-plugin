@@ -1,0 +1,6 @@
+url: https://github.com/superltmajor-pixel/dsh-task-sidebar
+name: superltmajor-pixel/dsh-task-sidebar
+category: session
+description:
+  en: 'Per-session task panel opened from the conversation header: lists the files attached to this conversation and the file references it mentions, the skills it used with their descriptions, the MCP connectors with their live connection status, and the files it delivered. Images preview inline, and file rows open in the right sidebar.'
+  zh: '在会话标题栏加任务面板，按当前会话汇总：这次对话的附件与提到的文件引用、用到的技能及其说明、MCP 连接器及实时连接状态、以及交付的文件。图片可就地预览，文件可在右侧栏打开。'

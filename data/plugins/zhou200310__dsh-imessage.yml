@@ -1,7 +1,7 @@
 url: https://github.com/zhou200310/dsh-imessage
 name: zhou200310/dsh-imessage
 category: notify
-tarball: https://github.com/zhou200310/dsh-imessage/releases/download/v0.3.2/dsh-imessage-0.3.2.tgz
+tarball: https://github.com/zhou200310/dsh-imessage/releases/download/v0.3.3/dsh-imessage-0.3.3.tgz
 description:
-  en: 'DSH 0.2.2 adaptation of photon-hq/dsh-imessage: the same Photon-hosted two-way iMessage channel, fixed for the 0.2.2 host line — settings registration, session-persistence reads, message source kind, listener auto-restart after a cold boot, and workspace attachment for plugin-created sessions — with attachments carried both ways. The setup page is fully localized in Chinese.'
-  zh: 'photon-hq/dsh-imessage 的 DSH 0.2.2 适配版：同样是 Photon 托管的双向 iMessage 通道，修好了在 0.2.2 上的断层——settings 注册方式、会话持久化读取、消息 source kind、冷启动后 listener 自动恢复、插件新建会话的工作区挂载；附件双向打通。设置页面已全中文。'
+  en: 'DSH 0.2.3 adaptation of photon-hq/dsh-imessage: the same Photon-hosted two-way iMessage channel, running on both the 0.2.2 and 0.2.3 host lines — settings registration, session-persistence reads, message source kind, listener auto-restart after a cold boot, HEIC-to-JPEG conversion for iPhone photos, voice notes, and audio files sent as real voice messages. Declares engines.dsh so 0.2.3-alpha.2 no longer skips it. The setup page is fully localized in Chinese.'
+  zh: 'photon-hq/dsh-imessage 的 DSH 0.2.3 适配版：Photon 托管的双向 iMessage 通道，0.2.2 与 0.2.3 两条版本线都能跑——settings 注册方式、会话持久化读取、消息 source kind、冷启动后 listener 自动恢复、iPhone HEIC 转 JPEG、语音条，[音频] 也发成真语音条。已声明 engines.dsh，升级到 0.2.3-alpha.2 不再被跳过。设置页面全中文。'

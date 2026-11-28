@@ -1,0 +1,6 @@
+url: https://github.com/Elosiad/dsh-script-progress
+name: Elosiad/dsh-script-progress
+category: agi
+description:
+  en: Makes long-running scripts carry a progress bar with percent, rate and ETA, reports milestones at 10/25/50/75/90% in chat, and feeds the DSH progress channel so the UI shows them live.
+  zh: 让长任务脚本自带进度条（百分比 / 速度 / ETA），在 10/25/50/75/90% 里程碑回报聊天，并写进 DSH 进度通道让界面实时显示。

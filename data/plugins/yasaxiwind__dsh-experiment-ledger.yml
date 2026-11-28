@@ -1,0 +1,6 @@
+url: https://github.com/yasaxiwind/dsh-experiment-ledger
+name: yasaxiwind/dsh-experiment-ledger
+category: tools
+description:
+  en: 'Local-first experiment ledger: record runs with parameters, metrics, artifacts and logs; compare runs, reproduce commands, sign conclusions and export reports or bundles, with 33 bounded agent tools and an interactive panel.'
+  zh: 本地实验台账：记录运行的参数、指标、产物与日志，对比运行、复现命令、签名结论并导出报告或包，向 agent 提供 33 个有界工具和交互面板。

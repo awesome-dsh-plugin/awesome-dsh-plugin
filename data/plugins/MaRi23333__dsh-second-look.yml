@@ -1,0 +1,6 @@
+url: https://github.com/MaRi23333/dsh-second-look
+name: MaRi23333/dsh-second-look
+category: security
+description:
+  en: 'Adds per-session routine and enhanced tool review for DeepSeek Harness, with routine review allowing common actions and sending changes such as whole-file overwrites to a separate model for review. Starting with 0.1.6, settings and review-record endpoints require an authenticated DSH owner. Users on earlier versions should upgrade.'
+  zh: '为 DeepSeek Harness 提供按会话切换的日常与加强审查，日常审查按规则放行常规操作，并在覆盖整个文件等变更前交给独立模型审核。从 0.1.6 起，设置和审查记录接口只接受经 DSH 认证的所有者访问。旧版本用户请升级。'

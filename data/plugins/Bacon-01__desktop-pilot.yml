@@ -1,0 +1,6 @@
+url: https://github.com/Bacon-01/desktop-pilot
+name: Bacon-01/desktop-pilot
+category: ui
+description:
+  en: "No screenshot coordinate guessing: it locks onto real controls by name and type through Windows UI Automation, so theme, DPI and window moves don't break the target; OCR only steps in when no semantic control exists, and every action is read back and verified. A native DSH skill with no vision model or per-step token cost, for Windows desktop apps."
+  zh: "不靠截图猜坐标：先用 Windows UI Automation 语义树按名字/类型锁定真实控件，换主题、改 DPI、挪窗口也能重新找到；OCR 只在没有语义控件时兜底，点完回读验证。原生 DSH 技能，不接视觉模型、没有逐步视觉 token 成本，直接操作 Windows 桌面应用。"

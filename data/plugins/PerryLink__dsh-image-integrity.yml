@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-image-integrity
+name: PerryLink/dsh-image-integrity
+category: tools
+description:
+  en: 'Image integrity checks for DeepSeek Harness: zero-dependency 8-bit PNG decoding (grey/RGB/RGBA) with mean-threshold block fingerprints and NCC confirmation to find duplicated or mirrored regions inside one figure or shared between two figures, plus REP evidence and Markdown/SARIF reports. Finds reused pixels, not manipulation intent; JPEG is out of scope.'
+  zh: 'DeepSeek Harness 图像完整性检查：零依赖 8 位 PNG 解码（灰度 / RGB / RGBA），通过均值阈值块指纹与 NCC 确认识别单图内部或两图之间的复制与镜像区域，输出 REP 证据及 Markdown / SARIF 报告。仅识别复用像素、不判断篡改意图；不支持 JPEG。'

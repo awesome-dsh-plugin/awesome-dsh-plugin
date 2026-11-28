@@ -1,0 +1,6 @@
+url: https://github.com/Parado-D/stata-copilot
+name: Parado-D/stata-copilot
+category: tools
+description:
+  en: 'Stata for agent workflows: runs Stata code and do-files, returns coefficients with standard errors, 95% intervals and omitted terms, blocks destructive commands before they reach Stata, and moves imputation or bootstrap runs into background processes.'
+  zh: '让 agent 直接跑 Stata：执行代码与 do 文件，回归结果读成系数、标准误、95% 区间与被省略项；erase、shell 这类命令在到达 Stata 前就被拦下；插补、bootstrap 这类长任务转后台进程跑完，不再被 Stata 忙占掐断。'

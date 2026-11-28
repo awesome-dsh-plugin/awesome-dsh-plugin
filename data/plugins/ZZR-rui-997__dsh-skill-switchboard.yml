@@ -1,0 +1,12 @@
+url: https://github.com/ZZR-rui-997/dsh-skill-switchboard
+name: ZZR-rui-997/dsh-skill-switchboard
+category: ui
+description:
+  en: 'A sidebar switchboard for the skills you own: list them, flip model or user
+    invocation on and off, search the bodies, check and one-click fix spec problems,
+    edit SKILL.md, import a folder or zip, move a skill between roots, tag it, and
+    restore anything you deleted. Toggles are written back to the skill frontmatter
+    and picked up without a restart.'
+  zh: 左侧栏的技能开关台：列出你自己装的技能，逐个拨动「模型调用 / 用户调用」，全文搜索技能正文，按规范检查并一键修复，直接编辑 SKILL.md，导入文件夹或
+    zip，在用户/通用/项目三个根之间移动，打标签，删除后还能从回收站恢复。开关写回技能 frontmatter，无需重启即生效。
+icon: https://raw.githubusercontent.com/ZZR-rui-997/dsh-skill-switchboard/main/icon.png

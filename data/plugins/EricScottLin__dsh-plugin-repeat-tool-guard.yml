@@ -1,0 +1,6 @@
+url: https://github.com/EricScottLin/dsh-plugin-repeat-tool-guard
+name: EricScottLin/dsh-plugin-repeat-tool-guard
+category: security
+description:
+  en: Hard-stops unattended tool-call runaway loops. Normalises web-fetch targets, caps repeated fetches, and cancels a turn after 60 tool calls, 30 fetches, or 15 minutes.
+  zh: 硬止损无人值守的工具调用空转：归一化网页抓取目标、限制重复抓取，并在单轮 60 次工具调用、30 次抓取或 15 分钟后直接结束本轮。

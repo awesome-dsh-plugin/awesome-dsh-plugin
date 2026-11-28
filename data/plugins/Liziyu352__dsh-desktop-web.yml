@@ -1,0 +1,6 @@
+url: https://github.com/Liziyu352/dsh-desktop-web
+name: Liziyu352/dsh-desktop-web
+category: dev
+description:
+  en: 'Runs one `dsh web` child process when DeepSeek Harness Desktop starts, so the browser build is up without typing the command, and writes the tokenized URL it prints to `$DSH_HOME/desktop-autoweb.url`. The child is spawned from the Desktop host CLI entry with the profile markers stripped so the two profiles never nest, and a settings section sets the port plus an experimental switch that boots the Web build over the Desktop profile through a directory junction and a regenerated overlay rebinding the server to loopback.'
+  zh: '桌面端启动时顺带跑一个 `dsh web` 子进程，不必再手敲命令就能有网页版，并把该进程打印的带令牌地址写到 `$DSH_HOME/desktop-autoweb.url`。子进程从桌面宿主的 CLI 入口拉起、剥掉 profile 标记以免两层嵌套；设置页可调端口，还有一个实验性开关：通过目录联接让网页版直接跑在桌面端 Profile 上，并重写一份 overlay 把服务器绑回回环地址。'

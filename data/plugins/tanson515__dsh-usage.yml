@@ -1,0 +1,6 @@
+url: https://github.com/tanson515/dsh-usage
+name: tanson515/dsh-usage
+category: usage
+description:
+  en: 'OpenCode Go usage panel for DeepSeek Harness: plan quota (rolling 5-hour / weekly / monthly), local token stats, per-model cost, and one-click Go model list refresh. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: DeepSeek Harness 的 OpenCode Go 用量面板：滚动 5 小时 / 每周 / 每月三窗口套餐额度、本地 token 统计、按模型费用，以及一键刷新 Go 模型清单。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

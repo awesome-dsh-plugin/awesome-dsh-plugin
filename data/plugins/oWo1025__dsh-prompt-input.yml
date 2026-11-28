@@ -1,0 +1,7 @@
+url: https://github.com/oWo1025/dsh-prompt-input
+name: oWo1025/dsh-prompt-input
+category: ui
+description:
+  en: 'Prompt pad and prompt manager for the DSH composer: a quick-input popover with a searchable library of saved prompts, snippets, quick phrases and reusable templates. Click a card to insert the text at the caret as one undoable edit. Includes presets pages, a recent-used page, hover preview, drag-to-reorder, favorites-style pinning and a global hotkey. Fork of dsh-quick-input (MIT, cm860712ch-cloud); the UI layer has been rewritten. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 输入框旁的快捷输入面板，也是一个提示词库与 prompt 管理工具：在气泡里搜索预设、短语、话术库、常用指令与模板库，点一张卡片就把文字插入到光标处，可撤销、不覆盖草稿。含快捷短语编辑、多页预设、最近使用、悬停预览、拖动排序与全局快捷键。基于 dsh-quick-input（MIT，cm860712ch-cloud）二次开发，界面与交互层已重写。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/oWo1025/dsh-prompt-input/main/icon-256.png

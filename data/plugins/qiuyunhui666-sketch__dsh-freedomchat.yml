@@ -1,0 +1,8 @@
+url: https://github.com/qiuyunhui666-sketch/dsh-freedomchat
+name: qiuyunhui666-sketch/dsh-freedomchat
+category: ui
+description:
+  en: A chat-only side panel in the right sidebar with an isolated context, no local execution, its own model, two-way reading only with explicit consent, and deletion together with an archived session.
+  zh: 在主对话右侧栏开一个独立的纯聊天面板：不继承上下文、没有任何本地执行权限，可自选模型与推理强度，双向读取必须经你明确授权，并随主对话归档自动删除。
+tarball: https://github.com/qiuyunhui666-sketch/dsh-freedomchat/releases/download/v0.1.0/dsh-freedomchat-0.1.0.tgz
+icon: https://raw.githubusercontent.com/qiuyunhui666-sketch/dsh-freedomchat/main/assets/icon-180.png

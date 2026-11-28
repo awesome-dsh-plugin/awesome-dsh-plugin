@@ -1,0 +1,6 @@
+url: https://github.com/ltrsqks/dsh-answer-cost
+name: ltrsqks/dsh-answer-cost
+category: usage
+description:
+  en: "Adds two amounts to each finished answer's action row — that turn's cost and this conversation's running total — priced per turn from that turn's own provider-reported usage, with the model route and DeepSeek's current peak/off-peak prices taken from the same log."
+  zh: "在每条回答的操作行里显示本轮花费与本次对话累计金额，按每轮自己上报的用量计价，模型路由与 DeepSeek 官方现行峰谷价都取自该轮自己的日志。"

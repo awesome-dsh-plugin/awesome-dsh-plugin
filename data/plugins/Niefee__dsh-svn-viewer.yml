@@ -1,0 +1,7 @@
+url: https://github.com/Niefee/dsh-svn-viewer
+name: Niefee/dsh-svn-viewer
+category: git
+description:
+  en: Read-only SVN browser for DeepSeek Harness with directory tree, filename and full-text search, Office/text/image/PDF preview, history, blame, diff and zip export. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: DeepSeek Harness 的 SVN 只读查看器：目录树、文件名与全文搜索、Office/文本/图片/PDF 预览、历史、逐行归属、差异对比与 zip 导出。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/Niefee/dsh-svn-viewer/main/assets/icon-500.png

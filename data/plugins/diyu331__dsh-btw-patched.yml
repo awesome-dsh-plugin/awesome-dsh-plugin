@@ -1,0 +1,6 @@
+url: https://github.com/diyu331/dsh-btw-patched
+name: diyu331/dsh-btw-patched
+category: session
+description:
+  en: 'Ask a side question while the main task keeps running: the answer stays in a popup above the composer, and the question is grounded in the running turn''s live streamed reasoning and tool calls, the most recent finished tool calls, and the completed history.'
+  zh: '主任务继续运行的同时发一句侧问：答案只出现在输入框上方的弹窗里，参考的上下文包括当前这一轮正在流式生成的思考与工具调用、最近完成的工具调用，以及已完成的对话历史。'

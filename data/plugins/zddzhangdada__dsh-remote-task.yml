@@ -1,0 +1,7 @@
+url: https://github.com/zddzhangdada/dsh-remote-task
+name: zddzhangdada/dsh-remote-task
+category: remote
+tarball: https://github.com/zddzhangdada/dsh-remote-task/releases/latest/download/dsh-remote-task.tgz
+description:
+  en: 'Remote task plugin for DSH: pair hosts over Iroh, send a task to a session on another machine, and read its progress back; when no target session is given, the peer opens a new session by default. Based on dsh-weave by Xiang Bai.'
+  zh: 'DSH 远程任务插件：两台 DSH 主机通过 Iroh 配对，把任务发到另一台的会话并读回进度；未指定会话时，默认在对端新开会话。基于 Xiang Bai 的 dsh-weave。'

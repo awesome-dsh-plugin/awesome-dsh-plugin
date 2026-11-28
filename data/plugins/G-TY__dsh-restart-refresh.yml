@@ -1,0 +1,7 @@
+url: https://github.com/G-TY/dsh-restart-refresh
+name: G-TY/dsh-restart-refresh
+category: dev
+description:
+  zh: 用侧栏 DSH 标志旁的两个图标重启或退出桌面端（正常关闭不是强杀，不会响系统提示音与报错），再用对话右上角的按钮刷新页面和热更新插件代码。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+  en: Restart or quit the DSH desktop app from two icons beside the sidebar logo (a normal close, not a force kill — no system chime and no error dialog), and refresh the page / hot-reload plugin code from the button at the top right of the conversation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+icon: https://raw.githubusercontent.com/G-TY/dsh-restart-refresh/main/assets/icon-180.png

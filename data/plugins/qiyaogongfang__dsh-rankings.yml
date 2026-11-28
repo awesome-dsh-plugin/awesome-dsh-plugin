@@ -1,0 +1,7 @@
+url: https://github.com/qiyaogongfang/dsh-rankings
+name: qiyaogongfang/dsh-rankings
+category: tools
+tarball: https://github.com/qiyaogongfang/dsh-rankings/releases/download/v0.2.0/qiyaogongfang-dsh-rankings-0.2.0.tgz
+description:
+  en: Daily Apple App Store and Google Play rankings for 17 countries, with weekly, monthly and rising charts, game charts and one-line Chinese intros.
+  zh: 支持 17 个国家/地区的苹果 App Store 与谷歌 Play 榜单：日榜、周榜、月榜、飙升榜与游戏榜，每款一句话中文简介，侧栏直接看。

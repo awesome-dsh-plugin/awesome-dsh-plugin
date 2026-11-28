@@ -1,0 +1,6 @@
+url: https://github.com/Yunmu1460/douyin-phone-im
+name: Yunmu1460/douyin-phone-im
+category: tools
+description:
+  en: 'Douyin phone-channel DM tools for DSH: read the message list and conversations from an Android phone via adb, send replies through the Douyin app, with a built-in throttle (confirm gate, per-contact and daily caps, cooldown) and a repeat-detection gate so the agent never spams. Works alongside the existing Douyin web tools.'
+  zh: '把抖音手机通道接进 DSH：通过 adb 从安卓手机读私信列表与会话内容、走抖音 App 发送回复；内置发送闸（confirm 确认、单会话与每日条数上限、冷却间隔）和复读检测闸，防止机器人刷屏，与网页端抖音工具互补。'

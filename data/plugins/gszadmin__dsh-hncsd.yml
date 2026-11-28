@@ -1,0 +1,7 @@
+url: https://github.com/gszadmin/dsh-hncsd
+name: gszadmin/dsh-hncsd
+category: ui
+description:
+  en: "Nascent Soul Sea (元婴识海, dsh-hncsd) turns every first-level folder under a local root into one star of a galaxy panel in the DSH sidebar: colour encodes the subfolder count and size encodes the session count. The scan only reads the local root it is given and opens no network connection."
+  zh: "元婴识海（dsh-hncsd）：把本地根目录下的每个一级子目录映射成侧栏星系面板里的一颗星，颜色编码子目录数、大小编码会话数；扫描只读取所指定的本机目录，扫描过程不发起网络请求。"
+tarball: https://github.com/gszadmin/dsh-hncsd/releases/download/v1.0.0/dsh-hncsd-1.0.0.tgz

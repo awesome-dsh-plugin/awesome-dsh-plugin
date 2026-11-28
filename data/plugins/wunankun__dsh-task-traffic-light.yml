@@ -1,0 +1,7 @@
+url: https://github.com/wunankun/dsh-task-traffic-light
+name: wunankun/dsh-task-traffic-light
+category: notify
+icon: https://raw.githubusercontent.com/wunankun/dsh-task-traffic-light/main/assets/icon-180.png
+description:
+  en: 'A traffic light that runs on macOS: see whether each task is running, waiting for you, or already finished without switching back to DeepSeek Harness, then click a lit lamp to jump to that session.'
+  zh: '运行在 macOS 上的红绿灯：不用切回 DeepSeek Harness，也能知道每个任务是在跑、在等你，还是已经跑完；点一下亮着的那盏灯，就回到对应会话。'

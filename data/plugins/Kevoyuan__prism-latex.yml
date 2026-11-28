@@ -1,0 +1,7 @@
+url: https://github.com/Kevoyuan/prism-latex
+name: Kevoyuan/prism-latex
+category: docs
+description:
+  en: 'Compiles a .tex file with your own TeX Live and shows the pages inside DSH: in the right sidebar, and in a LaTeX view with an outline, a syntax-highlighted editor and an optional preview; double-clicking a page moves the editor caret to that character. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '用本机 TeX Live 编译 .tex，在右侧边栏显示页面，并提供带大纲、语法高亮编辑器与可选预览的 LaTeX 视图；双击页面可把编辑器光标移到对应字符。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Kevoyuan/prism-latex/master/assets/icon-180.png

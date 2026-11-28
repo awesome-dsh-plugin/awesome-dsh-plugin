@@ -1,0 +1,7 @@
+url: https://github.com/RickT34/dsh-fake-logos
+name: RickT34/dsh-fake-logos
+category: ui
+description:
+  en: 'Replaces the sidebar and home hero branding with one of 13 AI product logo presets, a custom SVG/image and label, or nothing at all, with separate toggles for the sidebar mark, the hero mark, the blank-home whale animation and monochrome icons.'
+  zh: '把侧边栏与首页标题的品牌标识换成 13 款 AI 产品 Logo 预设、自定义 SVG/图片与文字，或完全隐藏，并可分别控制侧边栏图标、首页图标、空白首页鲸鱼动画与单色图标。'
+icon: https://raw.githubusercontent.com/RickT34/dsh-fake-logos/main/assets/icon-180.png

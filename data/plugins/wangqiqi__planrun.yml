@@ -1,0 +1,6 @@
+url: https://github.com/wangqiqi/planrun
+name: wangqiqi/planrun
+category: workflow
+description:
+  en: 'A plan-to-run-to-verify growth workflow for DSH: a .growing/ mirror (plan, per-task retros, lessons ledger) that the repository dogfoods on itself; 28 bundled skills and 4 subagent presets, plus a portable bash guard (gate-check, task-verify, next-task, doctor) with a retro gate, ranked lesson injection, an opt-in fake-green check, and a turn-end guard that steers the turn back when the working tree moved without a successful verify stamp.'
+  zh: '面向 DSH 的 plan→run→verify 成长型开发流程：.growing/ 镜像（计划、逐任务复盘、教训台账）由仓库自身 dogfood；内置 28 个技能与 4 个子代理预设，外加可移植 bash 守卫（gate-check、task-verify、next-task、doctor）——复盘必交门、教训排名注入、防假绿检查（opt-in），以及回合收尾守卫：工作区有改动却没有成功 verify 印记时打回本回合。'

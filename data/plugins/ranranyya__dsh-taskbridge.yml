@@ -1,6 +1,7 @@
 url: https://github.com/ranranyya/dsh-taskbridge
 name: ranranyya/dsh-taskbridge
 category: workflow
+icon: https://raw.githubusercontent.com/ranranyya/dsh-taskbridge/master/docs/assets/icon-256.png
 description:
-  en: 'Delegate coding tasks from Codex and Antigravity to DSH over 11 bounded MCP tools: one-click host integration, isolated Git worktrees with cross-subtask reuse, silent long waits, per-call permission approval, and structured delivery review.'
-  zh: '通过 11 个有界 MCP 工具将 Codex 与 Antigravity 的编码任务委派给 DSH 执行：支持一键宿主集成、隔离 Git 工作树与跨子包复用、静默长等、按参数指纹单次权限审批及结构化交付验收。'
+  en: 'Let Codex and Antigravity focus on planning and review while DeepSeek Harness runs heavy coding and test loops in isolated Git worktrees: wait silently without polling, approve out-of-sandbox calls per fingerprint, and conflict-check before syncing accepted changes back to save flagship model quota.'
+  zh: '让 Codex 与 Antigravity 专注架构规划与验收，把重度写代码和跑测试交给 DeepSeek Harness 在独立 Git worktree 中并行执行：不污染主分支、静默长等免轮询、越权调用按参数指纹逐次审批，验收通过后经冲突预检安全写回原目录，大幅节省主力模型配额。'

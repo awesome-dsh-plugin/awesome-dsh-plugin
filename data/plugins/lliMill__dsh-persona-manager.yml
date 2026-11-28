@@ -1,0 +1,6 @@
+url: https://github.com/lliMill/dsh-persona-manager
+name: lliMill/dsh-persona-manager
+category: identity
+description:
+  en: 'Per-mode persona control for DeepSeek Harness: one shared role library, and each mode either follows the current role or uses its own character card or prompt, injecting no persona text when neither is set.'
+  zh: '按模式控制角色设定的 DeepSeek Harness 插件：一份共享角色库，每个模式要么跟随当前角色，要么使用自己的角色卡或提示词；两者都没设置时完全不注入角色文本。'

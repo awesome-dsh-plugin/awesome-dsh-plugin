@@ -1,0 +1,7 @@
+url: https://github.com/G-TY/dsh-delete
+name: G-TY/dsh-delete
+category: session
+description:
+  en: Deletes archived DSH sessions from disk, with a red menu item below Unarchive and a confirm dialog that matches the app. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 把已归档的 DSH 会话从磁盘上真正删除；菜单项排在「取消归档」下方并用红字，确认框与应用自身的样式一致。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/G-TY/dsh-delete/main/assets/icon-180.png

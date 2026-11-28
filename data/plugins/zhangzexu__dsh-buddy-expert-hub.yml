@@ -1,0 +1,7 @@
+url: https://github.com/zhangzexu/dsh-buddy-expert-hub
+name: zhangzexu/dsh-buddy-expert-hub
+category: skill
+description:
+  en: 'Adds a side panel to browse, search and import DSH experts, expert teams, skills and connectors, plus a workbench that renders agent-written HTML pages backed by CSV tables. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在侧边栏浏览、检索并导入 DSH 专家、专家团、技能与连接器，并提供由 CSV 表格支撑、可渲染 agent 生成的 HTML 页面的工作台。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/zhangzexu/dsh-buddy-expert-hub/main/assets/avatar.png

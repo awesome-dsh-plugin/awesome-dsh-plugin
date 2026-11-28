@@ -2,5 +2,5 @@ url: https://github.com/ItQianChen/dsh-github-flow
 name: ItQianChen/dsh-github-flow
 category: git
 description:
-  en: 'Wraps the local GitHub CLI (gh) in agent tools for pull requests, issues, Actions runs, repository search and raw API calls, plus /gh status and /gh help slash commands and two web panels (a global repository cockpit and a per-session workspace panel).'
-  zh: '把本机 GitHub CLI (gh) 包装成 Agent 工具集（PR、Issue、Actions 运行、仓库检索与原始 API 调用），另提供 /gh status 与 /gh help 两个斜杠命令，以及全局仓库驾驶舱和会话工作区两个 Web 面板。'
+  en: Wraps the host GitHub CLI (gh) in 19 agent tools with 100+ actions covering pull requests, issues, Actions runs, releases, secrets, Projects v2, Codespaces, Discussions and Copilot agent tasks; the 21 PR / Issue write actions can require a pre-execution human approval (three modes plus per-repo and per-action rules) and are recorded locally with Markdown / JSON export; also ships /gh commands and two web panels. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 把宿主机 GitHub CLI (gh) 包装成 19 个 Agent 工具、100+ 个 action，覆盖 PR、Issue、Actions、Release、Secret、Projects v2、Codespaces、Discussions 与 Copilot 智能体；PR / Issue 的 21 个写操作可要求执行前人工审核（三档 + 按仓库 / action 规则），并写入本地操作记录、可导出 Markdown / JSON；另提供 /gh 指令与两个 Web 面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

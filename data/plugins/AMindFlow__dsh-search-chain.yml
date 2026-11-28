@@ -1,0 +1,7 @@
+url: https://github.com/AMindFlow/dsh-search-chain
+name: AMindFlow/dsh-search-chain
+category: tools
+description:
+  en: 'Ordered multi-provider web search chain that tries your saved vendors in turn, aggregating their free quotas into one high-quota, always-available search tool with per-entry proxy egress.'
+  zh: '有序多厂商搜索降级链：按保存顺序逐个尝试、失败或无结果才降级，把各厂商免费额度聚合为一个高额度、始终可用的 web_search，支持条目级代理出站与 PAC 沙箱。'
+icon: https://raw.githubusercontent.com/AMindFlow/dsh-search-chain/main/src/icon.png

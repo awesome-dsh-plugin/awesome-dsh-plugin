@@ -2,5 +2,5 @@ url: https://github.com/Gaudi-XIX/dsh-agy-cli
 name: Gaudi-XIX/dsh-agy-cli
 category: model
 description:
-  en: "First-class DSH provider via official Antigravity CLI: no binary patch, single account, local credentials, Retry-After backoff, lean tools."
-  zh: "把本机已登录的 Google Antigravity CLI 接成 DSH 一级模型提供方。放弃云端免配与网页逆向，换官方 agy.exe 原生直通：零二进制篡改、单账号合规、凭据本机驻留、Retry-After 退避；工具按需投影、长输出折叠、脱敏防误杀，官方同池，安全透明。"
+  en: 'Use your Gemini account in DSH via official agy.exe: it sends and signs every request, credentials stay local, DSH owns tools and sandbox.'
+  zh: '在 DSH 里用本机已登录的 Gemini 账号跑模型：官方 agy.exe 自己发请求并签名，不反代、不改二进制，凭据留在本机；工具、审批、沙箱归 DSH，每步可见可拦。默认 180 秒自动收尾。'

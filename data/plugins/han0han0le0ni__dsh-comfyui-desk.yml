@@ -1,0 +1,6 @@
+url: https://github.com/han0han0le0ni/dsh-comfyui-desk
+name: han0han0le0ni/dsh-comfyui-desk
+category: ui
+description:
+  en: 'ComfyUI workbench in the DSH right sidebar: live GPU/CPU/queue status, prompt and sampler controls, generation progress, image gallery, AI prompt writing, and an interactive workflow canvas with optional two-way sync through a ComfyUI bridge extension. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 右侧栏里的 ComfyUI 工作台：GPU/CPU/队列实时状态、提示词与采样参数、生成进度、图片库、AI 写提示词，以及可通过 ComfyUI 桥接扩展双向同步的工作流画布。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

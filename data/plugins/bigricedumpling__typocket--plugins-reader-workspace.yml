@@ -1,0 +1,7 @@
+url: https://github.com/bigricedumpling/typocket/tree/main/plugins/reader-workspace
+name: bigricedumpling/typocket#reader-workspace
+category: docs
+description:
+  en: Typocket is a local Markdown editor where you can write with your agent, review its edits, and open files from your DSH workspace.
+  zh: Typocket 是本地 Markdown 编辑器。你可以和 Agent 编辑同一份笔记、核对它的改动，也可以从 DSH 工作区打开文件。
+tarball: https://github.com/bigricedumpling/typocket/releases/download/v0.2.0-preview.9/dsh-reader-workspace-0.2.0-preview.9.tgz

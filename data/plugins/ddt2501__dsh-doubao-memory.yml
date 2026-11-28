@@ -1,0 +1,7 @@
+url: https://github.com/ddt2501/dsh-doubao-memory
+name: ddt2501/dsh-doubao-memory
+category: memory
+tarball: https://github.com/ddt2501/dsh-doubao-memory/releases/latest/download/dsh-doubao-memory.tgz
+description:
+  en: "Persona-memory system: SQLite fact memory with forgetting decay, wiki persona abstraction, per-turn snapshot, and on-demand recall tools; persona data stays in the user's directory."
+  zh: "人格记忆系统：SQLite 事实记忆（带遗忘衰减）、wiki 人格抽象、每轮住相、按需召回工具；人格数据留在用户自己的目录。"

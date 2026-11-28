@@ -1,0 +1,8 @@
+url: https://github.com/huanyu-a/dsh-profile-config-sync
+name: huanyu-a/dsh-profile-config-sync
+category: git
+description:
+  en: 'Backs up the DSH setup into a Git repo — profile, global prompt, skills, agent presets, plugin settings and data, workspaces and sessions, 12 groups in all — and pushes it to your own Git remote or WebDAV. See at a glance how this machine differs from the remote, generate push / pull / restore scripts that run after the client exits, keep both sides when a pull collides with local edits, and restore config snapshots, plugin backups or sessions, including rolling back a broken plugin install. Runs on Windows (PowerShell), macOS and Linux (Node engine). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把整个 DSH 配置抓成一份 Git 仓库：profile、全局提示词、技能、Agent 预设、插件设置与数据、工作区与会话共 12 组，推送到自己的 Git 远端或 WebDAV。一眼看清本机与远端的差异，生成在客户端退出后执行的推送 / 拉取 / 还原脚本；拉取撞上本地改动时两侧都留底；配置快照、插件备份与会话备份都能还原，装坏的插件可整份回滚。支持 Windows（PowerShell）、macOS 与 Linux（Node 引擎）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/huanyu-a/dsh-profile-config-sync/main/docs/icon-180.png
+tarball: https://github.com/huanyu-a/dsh-profile-config-sync/releases/download/v0.6.40/dsh-profile-config-sync-0.6.40.tgz

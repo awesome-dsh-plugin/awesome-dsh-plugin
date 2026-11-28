@@ -1,0 +1,7 @@
+url: https://github.com/kuoci/dsh-bat-think
+name: kuoci/dsh-bat-think
+category: fun
+description:
+  en: 'BATMAN! A draggable Batman desktop pet that switches to a mouse-in-hand pose with a thinking bubble while the agent runs, wears random stickers, and shows token usage and wallet balance when you click its laptop. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '一只可拖动的蝙蝠侠桌宠：Agent 跑动时换成拿鼠标的姿态并冒出思考气泡，骰子随机戴贴纸，点电脑会弹出 token 用量与余额，连点三下可摘面罩。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/kuoci/dsh-bat-think/main/icon-180.png

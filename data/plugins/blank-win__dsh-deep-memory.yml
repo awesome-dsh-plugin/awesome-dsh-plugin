@@ -1,0 +1,7 @@
+url: https://github.com/blank-win/dsh-deep-memory
+name: blank-win/dsh-deep-memory
+category: memory
+description:
+  en: 'Portable memory library for DSH: memory files, verbatim daily logs, and a wiki of accumulated understanding that survives restarts and machine changes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 给 DSH 用的可移植记忆库：记忆文件、按天留底的原话、跨机器搬家的认识层。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+tarball: https://github.com/blank-win/dsh-deep-memory/releases/download/v0.4.0/dsh-deep-memory-0.4.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/G-TY/dsh-tokens
+name: G-TY/dsh-tokens
+category: security
+description:
+  en: Stores API tokens in the DSH credential store and gives every session a token_vault tool to list, read, or save them, with a sidebar panel for editing. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 把各个服务的令牌存进 DSH 凭据库，提供侧栏面板管理，并让每个会话都能用 token_vault 工具列出、读取或保存。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/G-TY/dsh-tokens/main/assets/icon-180.png

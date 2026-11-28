@@ -1,0 +1,7 @@
+url: https://github.com/mingyang66/dsh-gohome
+name: mingyang66/dsh-gohome
+category: ui
+tarball: https://github.com/mingyang66/dsh-gohome/releases/download/v1.1.2/dsh-gohome-1.1.2.tgz
+description:
+  en: A workday countdown under the message composer. It shows the time left, today's progress, an ahead reminder (30 minutes by default, adjustable 0-120), an overtime timer once the workday ends, and a weekend label. Hours and the reminder are edited on the settings page; values stay in this browser. Zero dependencies, no build step, no network requests.
+  zh: 在消息输入框下方显示下班倒计时：剩余时间、今日进度、提前提醒（默认提前 30 分钟，可在设置页改为 0–120）、下班后自动切换为加班计时、周末单独提示。上下班时间与提醒在设置页中修改；配置仅保存在本浏览器。零依赖、无构建步骤、不发起网络请求。

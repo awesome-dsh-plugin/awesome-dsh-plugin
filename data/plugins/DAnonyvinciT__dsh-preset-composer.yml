@@ -1,0 +1,8 @@
+url: https://github.com/DAnonyvinciT/dsh-preset-composer
+name: DAnonyvinciT/dsh-preset-composer
+category: dev
+description:
+  en: Settings page for editing DSH agent presets as a plugin tree, with per-plugin parameter forms and custom presets.
+  zh: 在设置页以插件树编辑 DSH Agent 预设，为每个插件提供参数表单，并支持自定义预设。
+icon: https://raw.githubusercontent.com/DAnonyvinciT/dsh-preset-composer/main/assets/icon-180.png
+tarball: https://github.com/DAnonyvinciT/dsh-preset-composer/releases/latest/download/dsh-preset-composer.tgz

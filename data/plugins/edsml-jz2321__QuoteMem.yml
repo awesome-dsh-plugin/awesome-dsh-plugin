@@ -1,0 +1,7 @@
+url: https://github.com/edsml-jz2321/QuoteMem
+name: edsml-jz2321/QuoteMem
+category: memory
+description:
+  en: 'Long-term memory for DSH that keeps each memory with the exact words it came from: a native plugin saves, recalls and forgets, and a stdio MCP server adds search, a memory list, history, provenance, a two-step forget and a health check.'
+  zh: 'DSH 长期记忆，每条记忆都保留它出自的原话：原生插件负责保存、召回和遗忘，stdio MCP 服务提供搜索、记忆列表、历史、出处、两步遗忘和健康检查。'
+icon: https://raw.githubusercontent.com/edsml-jz2321/QuoteMem/main/docs/images/icon.png

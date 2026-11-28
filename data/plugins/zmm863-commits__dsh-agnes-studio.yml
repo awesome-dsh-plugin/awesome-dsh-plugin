@@ -1,6 +1,6 @@
 url: https://github.com/zmm863-commits/dsh-agnes-studio
 name: zmm863-commits/dsh-agnes-studio
-category: vision
+category: tools
 description:
-  en: 'AI image and video studio as a floating DSH panel, so creation runs alongside the conversation instead of replacing it: text-to-image, image-to-image and multi-image composition at 1K-4K across eight aspect ratios; text-to-video and image-to-video with first-frame control at 4-12 seconds; short-drama mode that imports a script (.txt/.md/.json), breaks it into storyboard shots for preview and batch generation; and a prompt-expert workspace. Zero runtime dependencies.'
-  zh: '一站式 AI 影视创作工作站，作为 DSH 全局浮层面板运行，不占用对话框：生图（文生图 / 图生图 / 多图合成，1K–4K、8 种宽高比）、生视频（文生视频 / 图生视频，4–12 秒、支持首帧控制）、短剧（导入 .txt/.md/.json 剧本自动拆解分镜，故事板预览与批量生成）与提示词专家工作区。零运行时依赖。'
+  en: Film and video studio for the DSH web GUI — text-to-image, text-to-video, short-drama pipeline (story, script, storyboard, per-shot video, merged cut), narration video with burned subtitles, novel covers, video-to-prompt analysis, local media library with ffprobe tagging, lyric alignment and a ComfyUI bridge, with Oh Story writing skills bundled. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 泡泡猫的影视工具 — DSH 内的影视创作工作站：文生图、文生视频、短剧流水线（故事/剧本/分镜/逐镜出片/合成）、数字人口播（烧中文字幕）、小说封面、视频反解提示词、本地素材库（ffprobe 打标）、歌词对齐与 ComfyUI 接入，并内置 Oh Story 写作技能。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

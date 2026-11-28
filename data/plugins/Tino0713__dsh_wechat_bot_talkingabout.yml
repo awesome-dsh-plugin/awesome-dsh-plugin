@@ -1,0 +1,6 @@
+url: https://github.com/Tino0713/dsh_wechat_bot_talkingabout
+name: Tino0713/dsh_wechat_bot_talkingabout
+category: session
+description:
+  en: Adds a WeChat assistant panel to the DSH sidebar that rebuilds the bot's WeChat conversations from the local session store, with search, copy and draft support, and hands plain text to @xmanrui/dsh-im for delivery when a target is already saved.
+  zh: 在 DSH 左侧栏加一个「微信助理」面板，从本机会话库还原机器人收到的微信对话，可搜索、复制和写草稿，装有 @xmanrui/dsh-im 且保存过投递目标时可把纯文字交给它发出。

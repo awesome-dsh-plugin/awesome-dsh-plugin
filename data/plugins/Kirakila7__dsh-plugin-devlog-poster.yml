@@ -1,0 +1,7 @@
+url: https://github.com/Kirakila7/dsh-plugin-devlog-poster
+name: Kirakila7/dsh-plugin-devlog-poster
+category: workflow
+icon: https://raw.githubusercontent.com/Kirakila7/dsh-plugin-devlog-poster/main/assets/mascots/big_fat_fish.png
+description:
+  en: Generates multi-platform devlogs, 4-slide visual cards, and daily or weekly work reports from git commits with GitHub release, Playwright draft saving, image prompt generation, and 6-channel webhook delivery.
+  zh: 从本地 Git 提交自动生成多平台开发日志、四图轮播卡片与工作日报周报，支持 GitHub 发布、Playwright 草稿箱填表、生图提示词模板与六大办公渠道 Webhook 推送。

@@ -1,0 +1,6 @@
+url: https://github.com/gpboyer2/dsh-toolcall-text-guard
+name: gpboyer2/dsh-toolcall-text-guard
+category: workflow
+description:
+  en: Detects structurally when a turn stops halfway without a final answer and steers the same turn with one short message so the agent finishes the work.
+  zh: 回合干到一半没有最终答复就收尾时，按事件结构判定，并往同一回合补一句话让 agent 把活干完。

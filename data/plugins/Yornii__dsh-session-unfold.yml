@@ -1,0 +1,7 @@
+url: https://github.com/Yornii/dsh-session-unfold
+name: Yornii/dsh-session-unfold
+category: session
+description:
+  en: 'A full-screen board that shows every Session as a resizable card with its messages, status, pending questions and approvals, an inline reply box, search and status filters; batch deletion runs through the separate session-delete plugin.'
+  zh: '全屏任务板：把每个会话展开成一张可调整大小的卡片，显示消息、状态、待答问题与审批，并可直接在卡片里回复，另附搜索与状态筛选；批量删除由单独的 session-delete 插件完成。'
+icon: https://raw.githubusercontent.com/Yornii/dsh-session-unfold/main/assets/icon-180.png

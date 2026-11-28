@@ -1,0 +1,6 @@
+url: https://github.com/tachec/dsh-mcp-manage
+name: tachec/dsh-mcp-manage
+category: tools
+description:
+  en: 'Manage this DSH profile''s MCP servers from Settings: add, edit, delete, enable, disable, probe and restart stdio or Streamable HTTP servers; inspect statically composed client rows; import configs from other MCP clients; optional sidebar shortcut. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 统一管理当前 DSH 中的 MCP 服务器：对 stdio 或 Streamable HTTP 服务器做新增、修改、删除、热启停、探测和重启，查看静态接入行，可读取其他agent工具中的 MCP 客户端导入配置，并可选地在左侧栏添加快捷入口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

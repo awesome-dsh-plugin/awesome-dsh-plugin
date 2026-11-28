@@ -1,0 +1,6 @@
+url: https://github.com/julypjyt-creator/dsh-word-translate
+name: julypjyt-creator/dsh-word-translate
+category: ui
+description:
+  en: Select or point at any English word in a DSH conversation and right-click to see its Chinese meaning in a card, without copying it elsewhere. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 在 DSH 对话里选中或指向任意英文单词，右键直接弹出「翻译成中文」卡片，中文释义就地显示，不用复制出去查。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

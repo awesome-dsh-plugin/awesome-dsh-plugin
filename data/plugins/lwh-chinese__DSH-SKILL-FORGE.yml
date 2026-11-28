@@ -1,0 +1,6 @@
+url: https://github.com/lwh-chinese/DSH-SKILL-FORGE
+name: lwh-chinese/DSH-SKILL-FORGE
+category: skill
+description:
+  en: Adds a left-sidebar panel to list, view, hide, create and delete installed skills, a make-skill agent preset, and GitHub skill search.
+  zh: 提供左侧栏面板，用于列出、查看、隐藏、新建和删除已安装的 skill，并附带制作 skill 预设与 GitHub skill 搜索。

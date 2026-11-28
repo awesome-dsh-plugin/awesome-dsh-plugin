@@ -1,0 +1,7 @@
+url: https://github.com/xiaobaijiadepugongyingpai-coder/dsh-crew-x
+name: xiaobaijiadepugongyingpai-coder/dsh-crew-x
+category: workflow
+description:
+  en: 'Enhanced fork of ZSeven-W/dsh-crew for Claude Code, Codex, Antigravity and Grok: adds opt-in persistent sessions, atomic hub.json port discovery, visual provider/model bindings with route probe, 4-tier per-task permissions with Windows auto-worktree fallback, and threshold report offloading across 8 MCP tools. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: ZSeven-W/dsh-crew 的增强分支，面向 Claude Code、Codex、Antigravity 与 Grok 提供 8 个 MCP 工具：新增可选持久会话、hub.json 动态端口发现、可视化模型路由与连通性探测、4 档逐任务权限及 Windows 自动 Worktree 降级，以及阈值报告落档。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+icon: https://raw.githubusercontent.com/xiaobaijiadepugongyingpai-coder/dsh-crew-x/main/docs/assets/icon-180.png

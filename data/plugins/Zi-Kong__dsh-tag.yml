@@ -1,0 +1,7 @@
+url: https://github.com/Zi-Kong/dsh-tag
+name: Zi-Kong/dsh-tag
+category: ui
+icon: https://raw.githubusercontent.com/Zi-Kong/dsh-tag/main/assets/icon-180.png
+description:
+  en: Add colored tags to selected chat passages, then jump back from a left-side rail or a workspace-grouped overview that scrolls to the passage and flashes a highlight on it. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 给聊天内容打标签：划词加彩色标签（可写标题与备注），从左侧标签轨道或按工作区分组的总览面板点回原文，自动滚动到该段并在原文上闪烁高亮。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。

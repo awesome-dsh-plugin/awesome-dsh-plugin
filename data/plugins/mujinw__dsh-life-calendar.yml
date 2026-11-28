@@ -1,0 +1,6 @@
+url: https://github.com/mujinw/dsh-life-calendar
+name: mujinw/dsh-life-calendar
+category: tools
+description:
+  en: 'Memento-style life calendar: one cell per year over a configured birth year and life expectancy, with year and month views, events that add, edit and delete (starred, and typed milestone / work / study / family / health / travel / invest / other), named life stages that filter the grid when clicked, a long-form strategy page and per-year summaries. Data stays in $DSH_HOME/life-calendar/life.json; writes go through a temporary file and rename, and a corrupt file is reported instead of being overwritten.'
+  zh: '人生日历：按出生年份与预期寿命把一生画成一格一年的格子，带年视图与月视图；事件可增删改（可星标，可归类为里程碑／工作／学习／家庭／健康／旅行／投资／其他）；人生阶段点一下即可筛出对应年份；另有战略长文与按年的总结。数据只存 $DSH_HOME/life-calendar/life.json，写盘走临时文件加重命名，文件损坏时报错而不覆盖。'

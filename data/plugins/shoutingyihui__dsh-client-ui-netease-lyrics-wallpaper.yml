@@ -1,0 +1,8 @@
+url: https://github.com/shoutingyihui/dsh-client-ui-netease-lyrics-wallpaper
+name: shoutingyihui/dsh-client-ui-netease-lyrics-wallpaper
+category: ui
+icon: https://raw.githubusercontent.com/shoutingyihui/dsh-client-ui-netease-lyrics-wallpaper/main/assets/icon-180.png
+tarball: https://github.com/shoutingyihui/dsh-client-ui-netease-lyrics-wallpaper/releases/latest/download/dsh-client-ui-netease-lyrics-wallpaper.tgz
+description:
+  en: Paints the currently sung Netease CloudMusic line across the DSH workspace as a low-opacity watermark layer, with an Alt+L panel for color, opacity and the resulting contrast ratio. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 把网易云音乐当前演唱的那句歌词以低透明度水印层铺在 DSH 工作区上，不占用任何面板位置；Alt+L 面板可调颜色、不透明度，并显示合成后的对比度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
