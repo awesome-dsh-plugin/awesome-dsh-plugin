@@ -1,0 +1,6 @@
+url: https://github.com/morning-start/dsh-magpie-creator
+name: morning-start/dsh-magpie-creator
+category: dev
+description:
+  en: 'Develop, debug, test and release magpie plugins inside DSH: a Magpie mode with seven tools, nine skills and seven templates that scaffold a plugin package, check it the way magpie loads it, run it in an isolated sandbox, and prepare its registry entry.'
+  zh: '在 DSH 里开发、调试、测试和发布 magpie 插件：一个 Magpie 模式，带七个工具、九个技能和七套模板，能生成插件包骨架、按 magpie 的加载规则检查、在独立沙箱里跑起来，并生成 registry 条目。'
