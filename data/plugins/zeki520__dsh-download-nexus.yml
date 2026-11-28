@@ -1,7 +1,7 @@
 url: https://github.com/zeki520/dsh-download-nexus
 name: zeki520/dsh-download-nexus
 category: tools
-tarball: https://github.com/zeki520/dsh-download-nexus/releases/download/v0.6.11/dsh-download-nexus-0.6.11.tgz
+tarball: https://github.com/zeki520/dsh-download-nexus/releases/download/v0.6.12/dsh-download-nexus-0.6.12.tgz
 icon: https://raw.githubusercontent.com/zeki520/dsh-download-nexus/main/assets/icon/icon-128.png
 description:
   en: 'Unified download entry for DeepSeek Harness: routes each URL by target to Motrix, built-in direct HTTP, yt-dlp or Hugging Face, and blocks shell write commands such as curl -o. Ships five tools — download, download_status, download_control, download_doctor, motrix_provision — plus a five-tab config page for engines, directories, mirrors and the write boundary.'
