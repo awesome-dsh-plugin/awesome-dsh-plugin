@@ -1,0 +1,6 @@
+url: https://github.com/sevpinna/dsh-frpc
+name: sevpinna/dsh-frpc
+category: remote
+description:
+  en: Manages frpc tunnels from the Settings page — downloads frpc for your platform, creates TCP and UDP tunnels, and shows connection status and logs.
+  zh: 在设置的「插件」里管理 frpc 隧道：按平台下载 frpc、增删 TCP/UDP 隧道、查看连接状态与日志。
