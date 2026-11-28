@@ -1,0 +1,6 @@
+url: https://github.com/fubai-fenzhi/dsh-team-room
+name: fubai-fenzhi/dsh-team-room
+category: tools
+description:
+  en: 'DSH team room as a plugin: chat, tasks, release requests, members, ownership and unread receipts, mounted on DSH webServer and starting/stopping with DSH.'
+  zh: '把协作室做成 DSH 插件：聊天 / 任务 / 发布请求 / 成员 / 归属 / 未读回执，挂 DSH 自身 webServer，随 DSH 启停，无需独立进程。'
