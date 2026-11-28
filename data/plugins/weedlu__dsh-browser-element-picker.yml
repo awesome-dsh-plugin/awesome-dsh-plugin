@@ -1,0 +1,6 @@
+url: https://github.com/weedlu/dsh-browser-element-picker
+name: dsh-browser-element-picker
+category: browser
+description:
+  en: Adds a crosshair to the Desktop built-in Browser toolbar that inserts the selected element's page, CSS selector, attributes, and HTML into the composer with a ready-to-edit instruction.
+  zh: 在 Desktop 内置浏览器工具栏加一个十字准星，把点选元素的页面、CSS 选择器、属性和 HTML 填入输入框，并附上一行可直接修改的指令。
