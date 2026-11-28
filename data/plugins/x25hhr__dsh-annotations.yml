@@ -1,0 +1,7 @@
+url: https://github.com/x25hhr/dsh-annotations
+name: x25hhr/dsh-annotations
+category: ui
+icon: https://raw.githubusercontent.com/x25hhr/dsh-annotations/main/assets/icon-180.png
+description:
+  en: Select text in a DeepSeek Harness reply to file color-coded annotations; annotated passages keep a colored block, notes jump back to those passages, and the whole list inserts into the composer.
+  zh: 在对话里拖选文字按「重要 / 疑问 / 否定 / 补充」做注释：原文保留同色色块，点注释可跳回原文，也可一键汇总插入输入框。
