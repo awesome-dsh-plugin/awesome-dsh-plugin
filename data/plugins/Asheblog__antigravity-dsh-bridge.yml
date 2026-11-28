@@ -1,0 +1,6 @@
+url: https://github.com/Asheblog/antigravity-dsh-bridge
+name: Asheblog/antigravity-dsh-bridge
+category: dev
+description:
+  en: 'Local token-guarded HTTP bridge in DSH Desktop for Antigravity MCP code review, fix, merge, and push (installing inside DSH alone has no effect; you must also install the companion Antigravity MCP plugin via the one-prompt setup in the GitHub repo).'
+  zh: 'DSH Desktop 本地认证 HTTP 桥接插件，供 Antigravity MCP 按需触发代码评审、修复与主分支推送（注意：仅在 DSH 内单方安装无用，必须同步在 Antigravity 中装好配套 MCP，建议前往 GitHub 仓库复制一句话让 Antigravity 一键完成双端安装）。'
