@@ -1,0 +1,6 @@
+url: https://github.com/Ryuu-64/dsh-goal-history
+name: Ryuu-64/dsh-goal-history
+category: ui
+description:
+  en: 'Review completed DeepSeek Harness goals, execution rounds, and recorded token usage for each goal in a read-only sidebar.'
+  zh: '在 DeepSeek Harness 的只读侧栏回看已完成的 Goal、执行轮次和每个目标期间记录的 Token 用量。'
