@@ -1,0 +1,7 @@
+url: https://github.com/zarzy8/quiz-buddy
+name: zarzy8/quiz-buddy
+category: skill
+description:
+  en: Turns a file into a quiz. Given review notes or a textbook it summarises the key points and generates questions; given an existing question bank it runs the questions one at a time, scores every answer and ends with the total, the mistakes and an explanation for each. Covers single-choice, multiple-choice and true/false questions.
+  zh: 给出文档自动出题，支持自备题库和正常的复习资料，现版本仅支持出选择题，多选题，判断题。
+tarball: https://github.com/zarzy8/quiz-buddy/releases/download/v0.1.2/quiz-buddy.tgz
