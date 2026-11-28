@@ -1,0 +1,6 @@
+url: https://github.com/Junfei-Z/dsh-provider-gmi
+name: Junfei-Z/dsh-provider-gmi
+category: model
+description:
+  en: "Adds GMI Cloud as a model provider, a gmi route on the stock llm-pi-ai adapter pointing at GMI Cloud's OpenAI-compatible Inference Engine, with seven models (DeepSeek V4.1 Flash, DeepSeek V4 Pro 0813, DeepSeek V4 Flash, Kimi K2.7 Code, GLM-5.3, Qwen3.8 Max, MiniMax M3) and each model's own reasoning on/off switch mapped for the reasoning picker. The key stays a credential reference (GMI_API_KEY), and a doctor CLI (npx dsh-provider-gmi doctor) runs a streamed tool-call loop on every model and reasoning level against your key."
+  zh: "将 GMI Cloud 接入为模型服务商：在内置的 llm-pi-ai 适配器上新增 gmi 路由，指向 GMI Cloud 的 OpenAI 兼容 Inference Engine，内置七个模型（DeepSeek V4.1 Flash、DeepSeek V4 Pro 0813、DeepSeek V4 Flash、Kimi K2.7 Code、GLM-5.3、Qwen3.8 Max、MiniMax M3），并为推理档位映射各模型自己的思考开关。API Key 仅以凭据引用（GMI_API_KEY）出现；附带 doctor 命令（npx dsh-provider-gmi doctor），用你的 Key 对每个模型、每个推理档位跑一遍流式工具调用循环。"
