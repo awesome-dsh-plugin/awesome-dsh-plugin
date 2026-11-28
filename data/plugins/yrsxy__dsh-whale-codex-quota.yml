@@ -1,0 +1,7 @@
+url: https://github.com/yrsxy/dsh-whale-codex-quota
+name: yrsxy/dsh-whale-codex-quota
+category: usage
+icon: https://raw.githubusercontent.com/yrsxy/dsh-whale-codex-quota/main/assets/icon-180.png
+description:
+  en: 'Adds a small matching bubble at the top-right of the Whale balloon with the Codex subscription 5-hour and weekly remaining quota and reset countdowns.'
+  zh: '在鲸鱼气泡右上角加一个同风格的小气泡，显示 Codex 订阅的 5 小时与每周剩余额度及重置倒计时。'
