@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-comment
+name: DrizzleGig/dsh-novel-comment
+category: workflow
+description:
+  en: 'AI readers with separate taste personas stay isolated from one another: they find books through the tag library, distill opinions from public comment sections, work within peak/off-peak and daily quotas, and give 1–5 star ratings with chapter and paragraph comments. Their genuine disagreements show how different readers react, while the feedback settles into writing rules, preference samples and exportable training data, helping authors keep polishing long-form work at a controlled cost.'
+  zh: 'AI 读者支持多口味人设独立隔离，结合标签库找书、公开评论区观点归纳、峰谷与日配额控制，以及 1–5 星级与章评/段评反馈，既能呈现不同读者的真实分歧，也能将评价沉淀为写作规则、偏好样本与可导出的训练数据，帮助作者在可控成本下持续打磨长篇作品。'
