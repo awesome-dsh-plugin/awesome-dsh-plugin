@@ -1,0 +1,6 @@
+url: https://github.com/shiker1996/wechat-editroom/tree/main/agent-integrations/dsh-workbench
+name: shiker1996/wechat-editroom#dsh-workbench
+category: workflow
+description:
+  en: 'WeChat Official Account workbench for the DSH desktop app: hot-topic collection and triage, article drafting, typesetting and AI covers, wired into the session through its own MCP tools.'
+  zh: '见字工作台（DSH 桌面端）：公众号热点采集与选题研判、文章成稿、排版与 AI 封面制作，通过自带 MCP 工具接入当前会话。'
