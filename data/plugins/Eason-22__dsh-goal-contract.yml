@@ -1,0 +1,6 @@
+url: https://github.com/Eason-22/dsh-goal-contract
+name: Eason-22/dsh-goal-contract
+category: workflow
+description:
+  en: "DeepSeek Harness plugin: keeps a long-running agent honest about what it was asked to do. Before starting work it records a contract — the objective, what may be touched, what must not be, and one or more acceptance points — and nothing that changes files, config or state is allowed until that contract exists. Completing an acceptance point requires a command that the host runs itself and that exits 0; a claim without that exit code is rejected and the real output is returned instead. Milestones, owed items and rounds are recorded in an append-only ledger so 'what is still open' can be read back instead of remembered, and the plugin stops the agent on repeated failures, loops or text repetition rather than grinding all night. It runs no model of its own: every verdict is a local, deterministic check, and the same input always produces the same answer."
+  zh: "让长任务里的 AI 对自己被派了什么活保持诚实。开工前先把契约记下来——目标是什么、允许动什么、不许动什么、要做到哪几条算完——契约不存在时，任何会改文件、改配置、改状态的动作都直接被拒。标完成某条验收点，必须交给宿主亲自跑一条命令、退出码为 0；只写「做完了」不跑命令会被拒，并把它自己的真实输出退回来。里程碑、欠账、轮次都记进追加式台账，「还剩什么没做」是读出来的，不是记出来的；连续失败、打转或文字重复时它会停手，而不是干一整夜。它自己不调模型：每条判定都是本地确定性检查，同样的输入永远得到同样的结论。"
