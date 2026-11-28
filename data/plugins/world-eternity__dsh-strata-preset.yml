@@ -1,0 +1,6 @@
+url: https://github.com/world-eternity/dsh-strata-preset
+name: world-eternity/dsh-strata-preset
+category: agi
+description:
+  en: "A DeepSeek Harness work mode (agent preset, id: strata) that writes a working discipline into the persona — report the image and where it came from, state which differences the projection kernel merges, pre-register the criterion before acting, then return with a new image — and mounts a per-agent tool surface: files, shell and persistent terminal, jobs, schedule, skills, goals, plan mode, compaction, subagents / workflow / ralph, session query, web and todo. Declares no host services, no install scripts and no runtime dependencies."
+  zh: "给 DeepSeek Harness 加一个工作模式（agent preset，id: strata）：把「报像 → 断言核 → 预登记判据 → 行动 → 用新像回来」写进 persona，并挂载一组 per-agent 工具：文件、shell 与持久终端、后台任务、定时、技能、目标、计划模式、压缩、子代理／workflow／ralph、会话查询、web、todo。不声明 Host 服务，无安装脚本，无运行时依赖。"
