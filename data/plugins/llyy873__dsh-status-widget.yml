@@ -1,0 +1,7 @@
+url: https://github.com/llyy873/dsh-status-widget
+name: llyy873/dsh-status-widget
+category: ui
+icon: https://raw.githubusercontent.com/llyy873/dsh-status-widget/plain/assets/icon-180.png
+description:
+  en: 'Windows desktop status capsule for DeepSeek Harness: pins live session status (running / stuck / done / idle) to a screen corner, with a multi-workspace expandable session list, click-to-jump, edge auto-hide, sound alerts and power-mode awareness. Zero-dependency build installs and runs with no extra plugins.'
+  zh: '为 DeepSeek Harness 提供的 Windows 桌面状态悬浮胶囊：把会话实时状态（进行中/卡住/完成/空闲）钉在屏幕角落，支持按工作区展开的会话列表、点击跳转、贴边自动隐藏、提示音与电源模式联动。零依赖版装了就能用。'
