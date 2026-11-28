@@ -1,0 +1,6 @@
+url: https://github.com/Fleey/dsh-plugin-autoreview
+name: Fleey/dsh-plugin-autoreview
+category: security
+description:
+  en: 'Adds an Auto review permission mode that checks each tool call with local rules and then a reviewer model: low- and medium-risk calls run directly by default, while high-risk calls, sensitive-data access and failed reviews ask for confirmation; the reviewer model, reasoning effort, risk threshold and review scope are set on the plugin page.'
+  zh: '提供「自动审查」权限模式，先用本地规则、再用审查模型逐个检查工具调用：低、中风险默认直接执行，高风险、涉及敏感信息或审查失败时请求确认；审查模型、思考程度、风险阈值与审查范围在插件页设置。'
