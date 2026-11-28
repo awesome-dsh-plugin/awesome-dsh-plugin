@@ -1,0 +1,8 @@
+url: https://github.com/anyeduke11/dsh-seckanban
+name: anyeduke11/dsh-seckanban
+category: security
+description:
+  en: 'Read-only security-intelligence kanban for DeepSeek Harness. Five built-in sources (vulnerabilities, security tenders, security news, arXiv papers, AI frontier) appear as sidebar tabs with KPI cards, severity/trend charts and a searchable detail table. Importing a skill zip adds a new tab; a scheduled agent refreshes each source by reading its own manifest and prompt, writing only inside its workdir, and the plugin never writes to business data files. Installs from a prebuilt tarball, so no build step or API key is needed.'
+  zh: 'DeepSeek Harness 的只读安全情报看板。五个内置数据源（漏洞、安全标讯、安全资讯、arXiv 论文、AI 前沿）以侧栏页签呈现，含 KPI 卡片、级别与趋势图表和可搜索的明细表。导入 Skill 压缩包即可新增页签；定时 agent 按各自的 manifest 与 prompt 刷新，只写入自己的工作目录，插件不修改业务数据文件。附带预构建 tarball，免构建、无需配置 API Key。'
+icon: https://raw.githubusercontent.com/anyeduke11/dsh-seckanban/main/assets/icon-180.png
+tarball: https://github.com/anyeduke11/dsh-seckanban/releases/latest/download/local-seckanban-0.0.1.tgz
