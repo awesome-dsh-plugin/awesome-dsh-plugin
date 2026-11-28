@@ -1,0 +1,8 @@
+# Entry for awesome-dsh-plugin catalog
+# Target path in registry: data/plugins/unifilitence__dsh-light-guard.yml
+url: https://github.com/unifilitence/dsh-light-guard
+name: unifilitence/dsh-light-guard
+category: ui
+description:
+  en: 'Zero-polling lightweight performance guard for DeepSeek Harness: reversible cold/hot session archiver via official workspaceRegistry with title search, on-demand storage & frontend/backend memory doctor (with guarded soft UI reload), plugin delta snapshots, pure CSS offscreen optimization, and configurable stream slimming.'
+  zh: '零后台轮询的 DSH 轻量护航插件：对接官方 workspaceRegistry 的可逆会话冷热归档与标题离线搜索、按需存储与前后端内存归因体检（支持带熔断护栏的软刷新前端）、插件前后性能对比快照、纯 CSS 离屏渲染优化及可调参流瘦身（内置 4 套一键预设）。'
