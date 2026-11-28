@@ -1,0 +1,7 @@
+url: https://github.com/wutao-coder/dsh-openai-gateway
+name: wutao-coder/dsh-openai-gateway
+category: dev
+description:
+  en: 'OpenAI-compatible agent gateway backed by real DSH agent sessions. Chat Completions and Responses endpoints with streaming, per-agent model routing across providers, persistent role sessions in SQLite, auto-managed per-agent workspaces, and streamed execution progress so long tasks never stall the client.'
+  zh: '由真实 DSH Agent 会话支撑的 OpenAI 兼容网关。提供 Chat Completions 与 Responses 接口（含流式），按 Agent 预设跨 provider 模型路由，SQLite 持久化角色会话，自动工作区管理，并把工具执行与思考过程流式输出为思考内容，长任务不再让客户端干等。'
+tarball: https://github.com/wutao-coder/dsh-openai-gateway/releases/download/v1.1.0/dsh-openai-gateway-1.1.0.tgz
