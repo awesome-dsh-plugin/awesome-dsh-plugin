@@ -1,0 +1,7 @@
+url: https://github.com/Robin-soulmate/dsh-browser-bridge
+name: Robin-soulmate/dsh-browser-bridge
+category: browser
+icon: https://raw.githubusercontent.com/Robin-soulmate/dsh-browser-bridge/main/icon.png
+description:
+  en: Drives the Chrome, Edge or QQ browser you are already using through a loopback WebSocket bridge and a hand-loaded MV3 extension - one browser tool snapshots a page into e1/e2 element refs, then clicks, fills, types, presses keys, scrolls, waits and captures screenshots on your real logged-in tabs, with a pairing code, a read-only mode, a site blocklist and three emergency stops.
+  zh: 通过本机 WebSocket 桥 + 手工加载的 MV3 扩展接管你正在用的 Chrome / Edge / QQ 浏览器：一个 browser 工具把页面快照成 e1/e2 元素引用，再按引用点击、填写、输入、按键、滚动、等待和截图，操作的是你真实登录的标签页；带配对码、只读模式、站点黑名单与三处紧急停止。
