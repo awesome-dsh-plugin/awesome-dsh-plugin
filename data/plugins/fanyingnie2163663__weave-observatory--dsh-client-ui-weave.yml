@@ -1,0 +1,7 @@
+url: https://github.com/fanyingnie2163663/weave-observatory/tree/main/dsh-client-ui-weave
+name: fanyingnie2163663/weave-observatory#dsh-client-ui-weave
+category: ui
+description:
+  en: 'Adds a replayable multi-agent observatory view to DSH sessions: collaboration topology, execution lanes, event stream and an agent inspector, driven by real session data.'
+  zh: '为 DSH 会话增加可回放的「织造」观测视图：协作拓扑、执行泳道、事件流与智能体检视，由真实会话数据驱动。'
+icon: https://raw.githubusercontent.com/fanyingnie2163663/weave-observatory/main/assets/icon-180.png
