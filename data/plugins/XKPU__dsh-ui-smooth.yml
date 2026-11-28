@@ -1,0 +1,6 @@
+url: https://github.com/XKPU/dsh-ui-smooth
+name: XKPU/dsh-ui-smooth
+category: ui
+description:
+  en: 'Keeps the UI smooth: moves other plugins'' idle animations off per-frame layout, recycles old transcript turns, unloads history by window to free memory, and allows turning off background throttling.'
+  zh: 让 UI 保持流畅：把其他插件的空闲动画移出每帧布局、回收旧轮次、按窗口卸载历史以释放内存，并允许关闭后台节流。
