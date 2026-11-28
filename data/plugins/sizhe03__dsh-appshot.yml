@@ -1,0 +1,7 @@
+url: https://github.com/sizhe03/dsh-appshot
+name: sizhe03/dsh-appshot
+category: ui
+description:
+  en: "Press both Ctrl keys to grab the frontmost window and the text it exposes straight into the composer: the image comes from PrintWindow and the text from the Windows accessibility tree, so content outside the viewport is included and no OCR is involved. An application that exposes no accessibility information degrades to an image-only capture."
+  zh: "按左右两个 Ctrl，把最前台窗口的画面和它向系统暴露的文字一起送进输入框：画面走 PrintWindow，文字走 Windows 无障碍树，屏幕外的内容也在内，不经过 OCR。应用若不暴露无障碍信息，退化为只给图。"
+icon: https://raw.githubusercontent.com/sizhe03/dsh-appshot/main/assets/icon-180.png
