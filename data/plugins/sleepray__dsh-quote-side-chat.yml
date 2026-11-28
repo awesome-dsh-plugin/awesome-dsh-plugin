@@ -1,0 +1,7 @@
+url: https://github.com/sleepray/dsh-quote-side-chat
+name: sleepray/dsh-quote-side-chat
+category: ui
+icon: https://raw.githubusercontent.com/sleepray/dsh-quote-side-chat/main/assets/icon-180.png
+description:
+  en: Quotes selected text into a tray above the composer, keeps one reply box under each quote, sends every quote and reply together as a single message, and runs a side chat that keeps answering while the main turn is busy.
+  zh: 把选中的文字引用到输入框上方的托盘，每条引用下面各带一个回复框，最后把全部引用与回复合成一条消息发出，并附一个在主对话执行期间仍能继续提问的侧聊。
