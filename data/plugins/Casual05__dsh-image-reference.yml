@@ -1,0 +1,6 @@
+url: https://github.com/Casual05/dsh-image-reference
+name: Casual05/dsh-image-reference
+category: vision
+description:
+  en: 'Rewrites outgoing DSH requests so older historical images become a read-only attachment path, a vision-model description and an optional small thumbnail, keeping the most recent user turn''s images intact; the session log is never modified, descriptions are generated in the background, and read_image can reopen accessible attachments.'
+  zh: '改写发往模型的历史图片：较早的图片换成只读附件路径、视觉模型生成的描述和可选小缩略图，最近一轮用户消息里的图片原样保留；会话日志不被修改，描述在后台生成，需要核对细节时仍可用 read_image 重看可访问的附件。'
