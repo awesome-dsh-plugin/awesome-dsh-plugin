@@ -1,0 +1,7 @@
+url: https://github.com/SeveNOlogy7/dsh-labview-mcp-kit
+name: SeveNOlogy7/dsh-labview-mcp-kit
+category: tools
+icon: https://raw.githubusercontent.com/SeveNOlogy7/dsh-labview-mcp-kit/main/assets/icon-180.png
+description:
+  en: LabVIEW MCP bundle for DeepSeek Harness that mounts the upstream Zuehlke labview-mcp server, provisions its pinned Windows runtime, keeps the 124 tool schemas hidden until labview_tools reveals them, and hands LabVIEW work to the eight upstream role agents as subagents.
+  zh: DeepSeek Harness 的 LabVIEW MCP 插件：挂载上游 Zuehlke labview-mcp 服务器，自动安装固定版本的 Windows 运行时，124 个工具默认隐藏、由 labview_tools 按需展开，并把 LabVIEW 任务交给八个上游角色子代理执行。
