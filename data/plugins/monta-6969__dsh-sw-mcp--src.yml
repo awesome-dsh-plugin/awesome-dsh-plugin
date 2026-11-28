@@ -1,0 +1,6 @@
+url: https://github.com/monta-6969/dsh-sw-mcp/tree/main/src
+name: monta-6969/dsh-sw-mcp#src
+category: tools
+description:
+  en: 'Drives SOLIDWORKS 2026 from DeepSeek Harness in two presets, one for parts and drawings and one for assemblies and mates: each MCP call performs a single action, a cross-process write lock guards the model, and acceptance reads geometry back through four states instead of trusting a saved file. A C# COM bridge is compiled on the target machine, and a 3D preview panel picks faces, edges and points on delivered STEP/STL. Windows only.'
+  zh: '从 DeepSeek Harness 驱动 SOLIDWORKS 2026，两个预设分别管零件图纸与装配配合：每次 MCP 调用只做一个动作、跨进程写锁保护模型，验收按四态把几何读回来而不是相信「已保存」。C# COM 桥接在目标机本地编译，3D 预览面板能拾取交付件 STEP/STL 的面、边、点。仅限 Windows。'
